@@ -1,14 +1,14 @@
-#include "Ck2FromImperator/Ck2World.h"
-#include "Ck2Outputter/Ck2WorldOutputter.h"
+#include "Ck2/Ck2World.h"
 #include "Imperator/ImperatorWorld.h"
+#include "OutCk2/OutCk2World.h"
 
 
 
 int main()
 {
-	ImperatorWorld::World impWorld;
-	Ck2World::World ck2World(impWorld);
-	Ck2WorldOutputter::outputWorld(ck2World);
+	const ImperatorWorld::World impWorld;
+	const Ck2World::World ck2World(impWorld);
+	outWorld(ck2World);
 
 	return 0;
 }

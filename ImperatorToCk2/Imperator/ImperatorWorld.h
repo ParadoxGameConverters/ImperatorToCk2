@@ -12,11 +12,14 @@ namespace ImperatorWorld
 
 class World
 {
-	public:
-	std::string getMessage() const { return "Hello World!"; }
+  public:
+	[[nodiscard]] const auto& getSaveName() const { return saveName; }
+
+  private:
+	std::string saveName = "CK2tester";
 };
 
-}
+} // namespace ImperatorWorld
 
 
 

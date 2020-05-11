@@ -130,14 +130,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Ck2Outputter\Ck2WorldOutputter.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="OutCk2\OutCk2World.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Ck2FromImperator\Ck2World.h" />
-    <ClInclude Include="Ck2Interface\Ck2WorldInterface.h" />
-    <ClInclude Include="Ck2Outputter\Ck2WorldOutputter.h" />
+    <ClInclude Include="Ck2\Ck2World.h" />
     <ClInclude Include="Imperator\ImperatorWorld.h" />
+    <ClInclude Include="OutCk2\OutCk2World.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
