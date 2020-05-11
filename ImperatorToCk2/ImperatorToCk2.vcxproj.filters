@@ -10,6 +10,9 @@
     <Filter Include="OutCk2">
       <UniqueIdentifier>{92584bc7-d6cb-4d59-ad4d-9d57c12e1a5f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="DataFiles">
+      <UniqueIdentifier>{088646c6-3857-48d7-826e-3ae94ccb7df7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Imperator\ImperatorWorld.h">
@@ -27,5 +30,10 @@
     <ClCompile Include="OutCk2\OutCk2World.cpp">
       <Filter>OutCk2</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="..\DataFiles\Readme.txt">
+      <Filter>DataFiles</Filter>
+    </CopyFileToFolders>
   </ItemGroup>
 </Project>
