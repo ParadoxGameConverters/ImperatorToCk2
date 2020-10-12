@@ -1,0 +1,1624 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new groups or cultures, make sure they are unique.
+
+# Culture-specific opinion can be added to modifiers (E.G., norse_opinion = 5), but the modifier *has* to be defined in 00_modifier_definitions.txt as well. It also needs localisation. Works for groups as well
+
+# Culture modifiers: modifier (applies to provinces), character_modifier, and settlement modifiers.
+# The ID of the modifier can be defined here (E.G., modifier = modifier_name or character_modifier = modifier_name), while the effect of it must be defined in static_modifiers.txt, and the localisation in localisation. For the settlement modifiers you don't need to (and can't) define the ID; it defaults to culture name + settlement type. E.G., norse_temple
+
+# nomadic_in_alt_start = yes - Will be Nomadic if the "Tribal & Nomadic" option is taken in the alt-start generation
+
+
+
+punic = {
+	graphical_cultures = { easterngfx }
+	alternate_start = { NOT = { has_alternate_start_parameter = { key = special_culture value = animal_world } } }
+	
+	carthaginian = {
+		graphical_cultures = { levantinegfx byzantinegfx }
+		alternate_start = {
+			OR = {
+				year < 1000 
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		
+		color = { 1.48 0.89 0.54 }
+		
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+		
+		male_names = {
+			Abbar Abdmelqart Adonibaal Agbal Ahirom Azimilik Baal Baalhanno Bodashtart Bodo Bodmelqart Bomilcar Bostar Boulomenus Carthalo Chelbes 
+			Eshbaal Eugoras Germelqart Hamilcar Hannibal Hanno Hasdrubal Himilco Hiram Mago Maharbal Mattan Metallo Milkherem Milkiram 
+			Paltibaal Philosir Boodes Bomical Gisgo Malchus Abdhamon Abibaal Abirami Ahumm Eshmounhilles Eshmouniaton Itthobaal
+			Ummashtart Melqartshama Batnoam Urumilki Yehomilk Yadamilk Baaliaton Barekbaal Gerbaal Gerimilki Khiletzbaal Tabnit Yutpan Zimrida
+			Danel Kanmi Maharbaal Milkpilles Melqartpilles Milkyaton Massinissa Hiempsal Juba
+		}
+		female_names = {
+			Abdosir Arishat Astarte Batnoam Dido Shayna Sophonisba Tamar Adiya Tabua Yapa Ytab Suhaima Huldu Mashah Gamila Asherah Izavel Iezabel Elissa Muttunbaal
+		}
+		
+		from_dynasty_prefix = "of "
+		
+		prefix = no # The patronym is added as a suffix
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		seafarer = yes
+
+		modifier = default_culture_modifier
+		
+	}
+
+	phoenician = {
+		graphical_cultures = { levantinegfx byzantinegfx }
+		alternate_start = {
+			OR = {
+				year < 1000 
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		
+		color = { 0.75 0.9 0.73 }
+		
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+		
+		male_names = {
+			Abbar Abdmelqart Adonibaal Agbal Ahirom Azimilik Baal Baalhanno Bodashtart Bodo Bodmelqart Bomilcar Bostar Boulomenus Carthalo Chelbes 
+			Eshbaal Eugoras Germelqart Hamilcar Hannibal Hanno Hasdrubal Himilco Hiram Mago Maharbal Mattan Metallo Milkherem Milkiram 
+			Paltibaal Philosir Boodes Bomical Gisgo Malchus Abdhamon Abibaal Abirami Ahumm Eshmounhilles Eshmouniaton Itthobaal
+			Ummashtart Melqartshama Batnoam Urumilki Yehomilk Yadamilk Baaliaton Barekbaal Gerbaal Gerimilki Khiletzbaal Tabnit Yutpan Zimrida
+			Danel Kanmi Maharbaal Milkpilles Melqartpilles Milkyaton Massinissa Hiempsal Juba
+		}
+		female_names = {
+			Abdosir Arishat Astarte Batnoam Dido Shayna Sophonisba Tamar Adiya Tabua Yapa Ytab Suhaima Huldu Mashah Gamila Asherah Izavel Iezabel Elissa Muttunbaal
+		}
+		
+		from_dynasty_prefix = "of "
+		
+		prefix = no # The patronym is added as a suffix
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		seafarer = yes
+
+		modifier = default_culture_modifier
+		
+	}
+}
+
+
+pre_indo_european = {
+	graphical_cultures = { westerngfx }
+	alternate_start = { NOT = { has_alternate_start_parameter = { key = special_culture value = animal_world } } }
+	
+	etruscan = {
+		graphical_cultures = { romangfx southerngfx trueoccitangfx occitangfx }
+		alternate_start = {
+			OR = {
+				year < 1000 
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		#265.6 0.8971 0.8
+		color = { 0.2  0.25  0.5 }
+		
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+		
+		male_names = {
+			Amtnie Amuni Anche Anthai Aninas Arunth Araz Arzni Arnth Autu Aule Cei Ceile Ceisi
+			Cire Cnaive Clate Cruthni Cuinte Cursni Fapi Felce Felsnas Fulu Hapre Hirumina Husi
+			Carcuna Carthasie Ceisie Cavie Larce Laris Larth Larthuza Laucie Lauche Lethei
+			Licine Lucer Mamurce Marce Murila Numna Pesna Petru Plikasnas Plute Presnte
+			Pumpu Puplie Cupe Ranazu Rasce Ruvfe Ruifre Sanchuna Scarpe Sethre Spitus Spurie Squrie
+			Tarchi Teitur Thefri Thucer Ticusna Tite Tlesna Tursikina Tusnute Uchsie Uchulni Usele
+			Vel Velchaie Velthur Venel Vetus Vipie
+		}
+		female_names = {
+			Anina Aprthni Apunei Arunthia Arzna Arntha Ati Aula Ceia Culni Cursi Cusua Fasthi
+			Hasthi Hercnei Kanuta Larthi Lethi Luci Matun Metli Numni Pulia Racu Ramtha Ranthu
+			Ravnthu Satlnei Sela Semni Sethri Squria Squlina Tanchuil Tarcha Teituri Thanchvil
+			Thana Thefrina Thestia Thuceru Ticusnei Titi Veli Velchina Venela Vesi Vipi
+		}
+		
+		from_dynasty_prefix = "of "
+		
+		prefix = no # The patronym is added as a suffix
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 50
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 50
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+		
+	}	
+	nuragic = {
+		graphical_cultures = { italiangfx trueoccitangfx occitangfx }
+		alternate_start = {
+			OR = {
+				year < 1000 
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		
+		color = { 0.49 0.41 0.37 }
+		
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+		
+		male_names = {
+			Abadutiker Punicus Ambon Abaraban Andobales Balkar Babpo Biurtetel Bosilkas Budar Caro Culcas Gargoris Indo Iscerbeles Kara Korbis Korribilo Mandonio Magavarico
+			Lagunas Orisos Otirgeter Nisunin Nereildun Tiresio Otigirteker Redukeno Sakarbik Sosintaucer Sosian Seihar Skarisker Sacarisker Tureno Turibas Unibelos Urcetices Uxentio Umarilo Talskubilos
+		}
+		female_names = {
+			Ana Ama Aretaunin Aunia Auruningica Canine Daleninar Similce Sicounin Stena Aife Thurinninar Secetaunin Teite Tettingica Nerseada
+		}
+		
+		from_dynasty_prefix = "of "
+		
+		prefix = no # The patronym is added as a suffix
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+		
+	}
+
+	corsian = {
+		graphical_cultures = { italiangfx trueoccitangfx occitangfx }
+		alternate_start = {
+			OR = {
+				year < 1000 
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		
+		color = { 0.44 0.39 0.39 }
+		
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+		
+		male_names = {
+			Abadutiker Punicus Ambon Abaraban Andobales Balkar Babpo Biurtetel Bosilkas Budar Caro Culcas Gargoris Indo Iscerbeles Kara Korbis Korribilo Mandonio Magavarico
+			Lagunas Orisos Otirgeter Nisunin Nereildun Tiresio Otigirteker Redukeno Sakarbik Sosintaucer Sosian Seihar Skarisker Sacarisker Tureno Turibas Unibelos Urcetices Uxentio Umarilo Talskubilos
+		}
+		female_names = {
+			Ana Ama Aretaunin Aunia Auruningica Canine Daleninar Similce Sicounin Stena Aife Thurinninar Secetaunin Teite Tettingica Nerseada
+		}
+		
+		from_dynasty_prefix = "of "
+		
+		prefix = no # The patronym is added as a suffix
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+		
+	}
+
+	aquitani = {
+		graphical_cultures = { italiangfx trueoccitangfx occitangfx }
+		
+		color = { 0.49 0.41 0.37 }
+
+		male_names = {
+			Abadutiker Punicus Ambon Abaraban Andobales Balkar Babpo Biurtetel Bosilkas Budar Caro Culcas Gargoris Indo Iscerbeles Kara Korbis Korribilo Mandonio Magavarico
+			Lagunas Orisos Otirgeter Nisunin Nereildun Tiresio Otigirteker Redukeno Sakarbik Sosintaucer Sosian Seihar Skarisker Sacarisker Tureno Turibas Unibelos Urcetices Uxentio Umarilo Talskubilos
+		}
+		female_names = {
+			Ana Ama Aretaunin Aunia Auruningica Canine Daleninar Similce Sicounin Stena Aife Thurinninar Secetaunin Teite Tettingica Nerseada
+		}
+		from_dynasty_prefix = "de "
+		
+		male_patronym = "ez"
+		female_patronym = "ez"
+		grammar_transform = spanish
+
+		pat_grf_name_chance = 80
+		mat_grf_name_chance = 5
+		father_name_chance = 5
+		
+		pat_grm_name_chance = 55
+		mat_grm_name_chance = 15
+		mother_name_chance = 20
+
+		modifier = default_culture_modifier
+	}
+
+}
+
+
+gallic_group = {
+	graphical_cultures = { westerngfx }
+	alternate_start = { NOT = { has_alternate_start_parameter = { key = special_culture value = animal_world } } }
+
+	gallic = {
+		graphical_cultures = { celticgfx }
+		alternate_start = {
+			OR = {
+				year < 1000 
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		
+		color = { 0.3 0.7 0.4 }
+		
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+		
+		male_names = {
+			Acco Addedomarus Adiatuanus Adminius Aiorix Ambicatos Andecombogius Aneroestes Ariovistus Arverus Arvirargus Atis Avitus 
+			Bellicianus Bellovesus Boduognatus Boio Boiorix Bolgios Brennus Bricussa Britomaris Brucetius Buite Cailtram Caractacus 
+			Carvilius Cassivellaunus Cattulanus Cartorites Catugnatus Cavarinus Cavarus Celatus Cingetorix Coilus Commios Comux Concolitanus Correus Cottius Crixus
+			Cunobelinus Diviciacus Divico Donnus Drappes Dubnovellaunus Dumnacus Ducarius Duratios Dumnocoveros Dumnorix Elitovius Etitovius Epatticus
+			Galan Galba Guiderius Iacus Iccius Immanuentius Inamarcus Inammicus Indutiomarus Kimarcus Lucterius Lugotorix Lutarius Mallaius Mandubracius Marganus Mascelio
+			Orgetorix Prasutagus Segovax Sinatus Sinorix Sisillius Talorc Tasciovanus Tasgetius Taximagulus Teutomalius Tincomarus Togodumnus Vertiscus
+			Venutius Viridorix Vosenius Vodenos
+		}
+		female_names = {
+			Aife Airmed Ancasta Banna Billica Boudica Bricta Cata Cartimandua Chiomara Damona Diseta Gwendolen Litavis Iamcilla Maeve Verica
+			Cingetessa Conna Catia Carssouna Cunovinna Illica Lovernisca Magunna Lucilia Oconea Ria Rosula Senica Sentica Sulicena
+			Vassura Vinoma Vorvena Urca Veloriga Velibia Totia Titocuna Velbutena Seniciana Senila Vrocata Exuperata Deiana Cunolava Cunsa Aucissa
+			Allauna Alatucca Aessicunia Bodicacia Britivenda Catissena Cantisena 
+		}
+		
+		dukes_called_kings = yes
+		
+		from_dynasty_prefix = "de "
+		
+		male_patronym = "mab "
+		female_patronym = "verch "
+		prefix = yes
+
+		modifier = default_culture_modifier
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 80
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+		
+	}
+	
+	lepontic = {
+		graphical_cultures = { celticgfx }
+		alternate_start = {
+			OR = {
+				year < 1000 
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		
+		color = { 0.6 0.88 0.69 }
+		
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+		
+		male_names = {
+			Acco Addedomarus Adiatuanus Adminius Aiorix Ambicatos Andecombogius Aneroestes Ariovistus Arverus Arvirargus Atis Avitus 
+			Bellicianus Bellovesus Boduognatus Boio Boiorix Bolgios Brennus Bricussa Britomaris Brucetius Buite Cailtram Caractacus 
+			Carvilius Cassivellaunus Cattulanus Cartorites Catugnatus Cavarinus Cavarus Celatus Cingetorix Coilus Commios Comux Concolitanus Correus Cottius Crixus
+			Cunobelinus Diviciacus Divico Donnus Drappes Dubnovellaunus Dumnacus Ducarius Duratios Dumnocoveros Dumnorix Elitovius Etitovius Epatticus
+			Galan Galba Guiderius Iacus Iccius Immanuentius Inamarcus Inammicus Indutiomarus Kimarcus Lucterius Lugotorix Lutarius Mallaius Mandubracius Marganus Mascelio
+			Orgetorix Prasutagus Segovax Sinatus Sinorix Sisillius Talorc Tasciovanus Tasgetius Taximagulus Teutomalius Tincomarus Togodumnus Vertiscus
+			Venutius Viridorix Vosenius Vodenos
+		}
+		female_names = {
+			Aife Airmed Ancasta Banna Billica Boudica Bricta Cata Cartimandua Chiomara Damona Diseta Gwendolen Litavis Iamcilla Maeve Verica
+			Cingetessa Conna Catia Carssouna Cunovinna Illica Lovernisca Magunna Lucilia Oconea Ria Rosula Senica Sentica Sulicena
+			Vassura Vinoma Vorvena Urca Veloriga Velibia Totia Titocuna Velbutena Seniciana Senila Vrocata Exuperata Deiana Cunolava Cunsa Aucissa
+			Allauna Alatucca Aessicunia Bodicacia Britivenda Catissena Cantisena 
+		}
+		
+		dukes_called_kings = yes
+		
+		from_dynasty_prefix = "de "
+		
+		male_patronym = "mab "
+		female_patronym = "verch "
+		prefix = yes
+
+		modifier = default_culture_modifier
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 80
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+		
+	}
+
+	belgae = {
+		graphical_cultures = { celticgfx }
+		alternate_start = {
+			OR = {
+				year < 1000 
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		
+		color = { 0.09 0.45 0.34 }
+		
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+		
+		male_names = {
+			Acco Addedomarus Adiatuanus Adminius Aiorix Ambicatos Andecombogius Aneroestes Ariovistus Arverus Arvirargus Atis Avitus 
+			Bellicianus Bellovesus Boduognatus Boio Boiorix Bolgios Brennus Bricussa Britomaris Brucetius Buite Cailtram Caractacus 
+			Carvilius Cassivellaunus Cattulanus Cartorites Catugnatus Cavarinus Cavarus Celatus Cingetorix Coilus Commios Comux Concolitanus Correus Cottius Crixus
+			Cunobelinus Diviciacus Divico Donnus Drappes Dubnovellaunus Dumnacus Ducarius Duratios Dumnocoveros Dumnorix Elitovius Etitovius Epatticus
+			Galan Galba Guiderius Iacus Iccius Immanuentius Inamarcus Inammicus Indutiomarus Kimarcus Lucterius Lugotorix Lutarius Mallaius Mandubracius Marganus Mascelio
+			Orgetorix Prasutagus Segovax Sinatus Sinorix Sisillius Talorc Tasciovanus Tasgetius Taximagulus Teutomalius Tincomarus Togodumnus Vertiscus
+			Venutius Viridorix Vosenius Vodenos
+		}
+		female_names = {
+			Aife Airmed Ancasta Banna Billica Boudica Bricta Cata Cartimandua Chiomara Damona Diseta Gwendolen Litavis Iamcilla Maeve Verica
+			Cingetessa Conna Catia Carssouna Cunovinna Illica Lovernisca Magunna Lucilia Oconea Ria Rosula Senica Sentica Sulicena
+			Vassura Vinoma Vorvena Urca Veloriga Velibia Totia Titocuna Velbutena Seniciana Senila Vrocata Exuperata Deiana Cunolava Cunsa Aucissa
+			Allauna Alatucca Aessicunia Bodicacia Britivenda Catissena Cantisena 
+		}
+		
+		dukes_called_kings = yes
+		
+		from_dynasty_prefix = "de "
+		
+		male_patronym = "mab "
+		female_patronym = "verch "
+		prefix = yes
+
+		modifier = default_culture_modifier
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 80
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+		
+	}
+
+	celtic_pannonian = {
+		graphical_cultures = { celticgfx }
+		alternate_start = {
+			OR = {
+				year < 1000 
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		
+		color = { 0.14 0.25 0.04 }
+		
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+		
+		male_names = {
+			Acco Addedomarus Adiatuanus Adminius Aiorix Ambicatos Andecombogius Aneroestes Ariovistus Arverus Arvirargus Atis Avitus 
+			Bellicianus Bellovesus Boduognatus Boio Boiorix Bolgios Brennus Bricussa Britomaris Brucetius Buite Cailtram Caractacus 
+			Carvilius Cassivellaunus Cattulanus Cartorites Catugnatus Cavarinus Cavarus Celatus Cingetorix Coilus Commios Comux Concolitanus Correus Cottius Crixus
+			Cunobelinus Diviciacus Divico Donnus Drappes Dubnovellaunus Dumnacus Ducarius Duratios Dumnocoveros Dumnorix Elitovius Etitovius Epatticus
+			Galan Galba Guiderius Iacus Iccius Immanuentius Inamarcus Inammicus Indutiomarus Kimarcus Lucterius Lugotorix Lutarius Mallaius Mandubracius Marganus Mascelio
+			Orgetorix Prasutagus Segovax Sinatus Sinorix Sisillius Talorc Tasciovanus Tasgetius Taximagulus Teutomalius Tincomarus Togodumnus Vertiscus
+			Venutius Viridorix Vosenius Vodenos
+		}
+		female_names = {
+			Aife Airmed Ancasta Banna Billica Boudica Bricta Cata Cartimandua Chiomara Damona Diseta Gwendolen Litavis Iamcilla Maeve Verica
+			Cingetessa Conna Catia Carssouna Cunovinna Illica Lovernisca Magunna Lucilia Oconea Ria Rosula Senica Sentica Sulicena
+			Vassura Vinoma Vorvena Urca Veloriga Velibia Totia Titocuna Velbutena Seniciana Senila Vrocata Exuperata Deiana Cunolava Cunsa Aucissa
+			Allauna Alatucca Aessicunia Bodicacia Britivenda Catissena Cantisena 
+		}
+		
+		dukes_called_kings = yes
+		
+		from_dynasty_prefix = "de "
+		
+		male_patronym = "mab "
+		female_patronym = "verch "
+		prefix = yes
+
+		modifier = default_culture_modifier
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 80
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+		
+	}
+
+	#Unused
+
+	belgic = {
+		graphical_cultures = { celticgfx }
+		alternate_start = {
+			OR = {
+				year < 1000 
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		
+		color = { 0.3 0.7 0.4 }
+		
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+		
+		male_names = {
+			Acco Addedomarus Adiatuanus Adminius Aiorix Ambicatos Andecombogius Aneroestes Ariovistus Arverus Arvirargus Atis Avitus 
+			Bellicianus Bellovesus Boduognatus Boio Boiorix Bolgios Brennus Bricussa Britomaris Brucetius Buite Cailtram Caractacus 
+			Carvilius Cassivellaunus Cattulanus Cartorites Catugnatus Cavarinus Cavarus Celatus Cingetorix Coilus Commios Comux Concolitanus Correus Cottius Crixus
+			Cunobelinus Diviciacus Divico Donnus Drappes Dubnovellaunus Dumnacus Ducarius Duratios Dumnocoveros Dumnorix Elitovius Etitovius Epatticus
+			Galan Galba Guiderius Iacus Iccius Immanuentius Inamarcus Inammicus Indutiomarus Kimarcus Lucterius Lugotorix Lutarius Mallaius Mandubracius Marganus Mascelio
+			Orgetorix Prasutagus Segovax Sinatus Sinorix Sisillius Talorc Tasciovanus Tasgetius Taximagulus Teutomalius Tincomarus Togodumnus Vertiscus
+			Venutius Viridorix Vosenius Vodenos
+		}
+		female_names = {
+			Aife Airmed Ancasta Banna Billica Boudica Bricta Cata Cartimandua Chiomara Damona Diseta Gwendolen Litavis Iamcilla Maeve Verica
+			Cingetessa Conna Catia Carssouna Cunovinna Illica Lovernisca Magunna Lucilia Oconea Ria Rosula Senica Sentica Sulicena
+			Vassura Vinoma Vorvena Urca Veloriga Velibia Totia Titocuna Velbutena Seniciana Senila Vrocata Exuperata Deiana Cunolava Cunsa Aucissa
+			Allauna Alatucca Aessicunia Bodicacia Britivenda Catissena Cantisena 
+		}
+		
+		dukes_called_kings = yes
+		
+		from_dynasty_prefix = "de "
+		
+		male_patronym = "mab "
+		female_patronym = "verch "
+		prefix = yes
+
+		modifier = default_culture_modifier
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 80
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+		
+	}
+
+	aremorican = {
+		graphical_cultures = { celticgfx }
+		alternate_start = {
+			OR = {
+				year < 1000 
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		
+		color = { 0.3 0.7 0.4 }
+		
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+		
+		male_names = {
+			Acco Addedomarus Adiatuanus Adminius Aiorix Ambicatos Andecombogius Aneroestes Ariovistus Arverus Arvirargus Atis Avitus 
+			Bellicianus Bellovesus Boduognatus Boio Boiorix Bolgios Brennus Bricussa Britomaris Brucetius Buite Cailtram Caractacus 
+			Carvilius Cassivellaunus Cattulanus Cartorites Catugnatus Cavarinus Cavarus Celatus Cingetorix Coilus Commios Comux Concolitanus Correus Cottius Crixus
+			Cunobelinus Diviciacus Divico Donnus Drappes Dubnovellaunus Dumnacus Ducarius Duratios Dumnocoveros Dumnorix Elitovius Etitovius Epatticus
+			Galan Galba Guiderius Iacus Iccius Immanuentius Inamarcus Inammicus Indutiomarus Kimarcus Lucterius Lugotorix Lutarius Mallaius Mandubracius Marganus Mascelio
+			Orgetorix Prasutagus Segovax Sinatus Sinorix Sisillius Talorc Tasciovanus Tasgetius Taximagulus Teutomalius Tincomarus Togodumnus Vertiscus
+			Venutius Viridorix Vosenius Vodenos
+		}
+		female_names = {
+			Aife Airmed Ancasta Banna Billica Boudica Bricta Cata Cartimandua Chiomara Damona Diseta Gwendolen Litavis Iamcilla Maeve Verica
+			Cingetessa Conna Catia Carssouna Cunovinna Illica Lovernisca Magunna Lucilia Oconea Ria Rosula Senica Sentica Sulicena
+			Vassura Vinoma Vorvena Urca Veloriga Velibia Totia Titocuna Velbutena Seniciana Senila Vrocata Exuperata Deiana Cunolava Cunsa Aucissa
+			Allauna Alatucca Aessicunia Bodicacia Britivenda Catissena Cantisena 
+		}
+		
+		dukes_called_kings = yes
+		
+		from_dynasty_prefix = "de "
+		
+		male_patronym = "mab "
+		female_patronym = "verch "
+		prefix = yes
+
+		modifier = default_culture_modifier
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 80
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+		
+	}
+
+	vindelician = {
+		graphical_cultures = { celticgfx }
+		alternate_start = {
+			OR = {
+				year < 1000 
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		
+		color = { 0.3 0.7 0.4 }
+		
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+		
+		male_names = {
+			Acco Addedomarus Adiatuanus Adminius Aiorix Ambicatos Andecombogius Aneroestes Ariovistus Arverus Arvirargus Atis Avitus 
+			Bellicianus Bellovesus Boduognatus Boio Boiorix Bolgios Brennus Bricussa Britomaris Brucetius Buite Cailtram Caractacus 
+			Carvilius Cassivellaunus Cattulanus Cartorites Catugnatus Cavarinus Cavarus Celatus Cingetorix Coilus Commios Comux Concolitanus Correus Cottius Crixus
+			Cunobelinus Diviciacus Divico Donnus Drappes Dubnovellaunus Dumnacus Ducarius Duratios Dumnocoveros Dumnorix Elitovius Etitovius Epatticus
+			Galan Galba Guiderius Iacus Iccius Immanuentius Inamarcus Inammicus Indutiomarus Kimarcus Lucterius Lugotorix Lutarius Mallaius Mandubracius Marganus Mascelio
+			Orgetorix Prasutagus Segovax Sinatus Sinorix Sisillius Talorc Tasciovanus Tasgetius Taximagulus Teutomalius Tincomarus Togodumnus Vertiscus
+			Venutius Viridorix Vosenius Vodenos
+		}
+		female_names = {
+			Aife Airmed Ancasta Banna Billica Boudica Bricta Cata Cartimandua Chiomara Damona Diseta Gwendolen Litavis Iamcilla Maeve Verica
+			Cingetessa Conna Catia Carssouna Cunovinna Illica Lovernisca Magunna Lucilia Oconea Ria Rosula Senica Sentica Sulicena
+			Vassura Vinoma Vorvena Urca Veloriga Velibia Totia Titocuna Velbutena Seniciana Senila Vrocata Exuperata Deiana Cunolava Cunsa Aucissa
+			Allauna Alatucca Aessicunia Bodicacia Britivenda Catissena Cantisena 
+		}
+		
+		dukes_called_kings = yes
+		
+		from_dynasty_prefix = "de "
+		
+		male_patronym = "mab "
+		female_patronym = "verch "
+		prefix = yes
+
+		modifier = default_culture_modifier
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 80
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+		
+	}
+
+	helvetian = {
+		graphical_cultures = { celticgfx }
+		alternate_start = {
+			OR = {
+				year < 1000 
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		
+		color = { 0.3 0.7 0.4 }
+		
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+		
+		male_names = {
+			Acco Addedomarus Adiatuanus Adminius Aiorix Ambicatos Andecombogius Aneroestes Ariovistus Arverus Arvirargus Atis Avitus 
+			Bellicianus Bellovesus Boduognatus Boio Boiorix Bolgios Brennus Bricussa Britomaris Brucetius Buite Cailtram Caractacus 
+			Carvilius Cassivellaunus Cattulanus Cartorites Catugnatus Cavarinus Cavarus Celatus Cingetorix Coilus Commios Comux Concolitanus Correus Cottius Crixus
+			Cunobelinus Diviciacus Divico Donnus Drappes Dubnovellaunus Dumnacus Ducarius Duratios Dumnocoveros Dumnorix Elitovius Etitovius Epatticus
+			Galan Galba Guiderius Iacus Iccius Immanuentius Inamarcus Inammicus Indutiomarus Kimarcus Lucterius Lugotorix Lutarius Mallaius Mandubracius Marganus Mascelio
+			Orgetorix Prasutagus Segovax Sinatus Sinorix Sisillius Talorc Tasciovanus Tasgetius Taximagulus Teutomalius Tincomarus Togodumnus Vertiscus
+			Venutius Viridorix Vosenius Vodenos
+		}
+		female_names = {
+			Aife Airmed Ancasta Banna Billica Boudica Bricta Cata Cartimandua Chiomara Damona Diseta Gwendolen Litavis Iamcilla Maeve Verica
+			Cingetessa Conna Catia Carssouna Cunovinna Illica Lovernisca Magunna Lucilia Oconea Ria Rosula Senica Sentica Sulicena
+			Vassura Vinoma Vorvena Urca Veloriga Velibia Totia Titocuna Velbutena Seniciana Senila Vrocata Exuperata Deiana Cunolava Cunsa Aucissa
+			Allauna Alatucca Aessicunia Bodicacia Britivenda Catissena Cantisena 
+		}
+		
+		dukes_called_kings = yes
+		
+		from_dynasty_prefix = "de "
+		
+		male_patronym = "mab "
+		female_patronym = "verch "
+		prefix = yes
+
+		modifier = default_culture_modifier
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 80
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+		
+	}
+
+	biturigan = {
+		graphical_cultures = { celticgfx }
+		alternate_start = {
+			OR = {
+				year < 1000 
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		
+		color = { 0.3 0.7 0.4 }
+		
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+		
+		male_names = {
+			Acco Addedomarus Adiatuanus Adminius Aiorix Ambicatos Andecombogius Aneroestes Ariovistus Arverus Arvirargus Atis Avitus 
+			Bellicianus Bellovesus Boduognatus Boio Boiorix Bolgios Brennus Bricussa Britomaris Brucetius Buite Cailtram Caractacus 
+			Carvilius Cassivellaunus Cattulanus Cartorites Catugnatus Cavarinus Cavarus Celatus Cingetorix Coilus Commios Comux Concolitanus Correus Cottius Crixus
+			Cunobelinus Diviciacus Divico Donnus Drappes Dubnovellaunus Dumnacus Ducarius Duratios Dumnocoveros Dumnorix Elitovius Etitovius Epatticus
+			Galan Galba Guiderius Iacus Iccius Immanuentius Inamarcus Inammicus Indutiomarus Kimarcus Lucterius Lugotorix Lutarius Mallaius Mandubracius Marganus Mascelio
+			Orgetorix Prasutagus Segovax Sinatus Sinorix Sisillius Talorc Tasciovanus Tasgetius Taximagulus Teutomalius Tincomarus Togodumnus Vertiscus
+			Venutius Viridorix Vosenius Vodenos
+		}
+		female_names = {
+			Aife Airmed Ancasta Banna Billica Boudica Bricta Cata Cartimandua Chiomara Damona Diseta Gwendolen Litavis Iamcilla Maeve Verica
+			Cingetessa Conna Catia Carssouna Cunovinna Illica Lovernisca Magunna Lucilia Oconea Ria Rosula Senica Sentica Sulicena
+			Vassura Vinoma Vorvena Urca Veloriga Velibia Totia Titocuna Velbutena Seniciana Senila Vrocata Exuperata Deiana Cunolava Cunsa Aucissa
+			Allauna Alatucca Aessicunia Bodicacia Britivenda Catissena Cantisena 
+		}
+		
+		dukes_called_kings = yes
+		
+		from_dynasty_prefix = "de "
+		
+		male_patronym = "mab "
+		female_patronym = "verch "
+		prefix = yes
+
+		modifier = default_culture_modifier
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 80
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+		
+	}
+
+	volcae = {
+		graphical_cultures = { celticgfx }
+		alternate_start = {
+			OR = {
+				year < 1000 
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		
+		color = { 0.3 0.7 0.4 }
+		
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+		
+		male_names = {
+			Acco Addedomarus Adiatuanus Adminius Aiorix Ambicatos Andecombogius Aneroestes Ariovistus Arverus Arvirargus Atis Avitus 
+			Bellicianus Bellovesus Boduognatus Boio Boiorix Bolgios Brennus Bricussa Britomaris Brucetius Buite Cailtram Caractacus 
+			Carvilius Cassivellaunus Cattulanus Cartorites Catugnatus Cavarinus Cavarus Celatus Cingetorix Coilus Commios Comux Concolitanus Correus Cottius Crixus
+			Cunobelinus Diviciacus Divico Donnus Drappes Dubnovellaunus Dumnacus Ducarius Duratios Dumnocoveros Dumnorix Elitovius Etitovius Epatticus
+			Galan Galba Guiderius Iacus Iccius Immanuentius Inamarcus Inammicus Indutiomarus Kimarcus Lucterius Lugotorix Lutarius Mallaius Mandubracius Marganus Mascelio
+			Orgetorix Prasutagus Segovax Sinatus Sinorix Sisillius Talorc Tasciovanus Tasgetius Taximagulus Teutomalius Tincomarus Togodumnus Vertiscus
+			Venutius Viridorix Vosenius Vodenos
+		}
+		female_names = {
+			Aife Airmed Ancasta Banna Billica Boudica Bricta Cata Cartimandua Chiomara Damona Diseta Gwendolen Litavis Iamcilla Maeve Verica
+			Cingetessa Conna Catia Carssouna Cunovinna Illica Lovernisca Magunna Lucilia Oconea Ria Rosula Senica Sentica Sulicena
+			Vassura Vinoma Vorvena Urca Veloriga Velibia Totia Titocuna Velbutena Seniciana Senila Vrocata Exuperata Deiana Cunolava Cunsa Aucissa
+			Allauna Alatucca Aessicunia Bodicacia Britivenda Catissena Cantisena 
+		}
+		
+		dukes_called_kings = yes
+		
+		from_dynasty_prefix = "de "
+		
+		male_patronym = "mab "
+		female_patronym = "verch "
+		prefix = yes
+
+		modifier = default_culture_modifier
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 80
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+		
+	}
+
+	noric = {
+		graphical_cultures = { celticgfx }
+		alternate_start = {
+			OR = {
+				year < 1000 
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		
+		color = { 0.3 0.7 0.4 }
+		
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+		
+		male_names = {
+			Acco Addedomarus Adiatuanus Adminius Aiorix Ambicatos Andecombogius Aneroestes Ariovistus Arverus Arvirargus Atis Avitus 
+			Bellicianus Bellovesus Boduognatus Boio Boiorix Bolgios Brennus Bricussa Britomaris Brucetius Buite Cailtram Caractacus 
+			Carvilius Cassivellaunus Cattulanus Cartorites Catugnatus Cavarinus Cavarus Celatus Cingetorix Coilus Commios Comux Concolitanus Correus Cottius Crixus
+			Cunobelinus Diviciacus Divico Donnus Drappes Dubnovellaunus Dumnacus Ducarius Duratios Dumnocoveros Dumnorix Elitovius Etitovius Epatticus
+			Galan Galba Guiderius Iacus Iccius Immanuentius Inamarcus Inammicus Indutiomarus Kimarcus Lucterius Lugotorix Lutarius Mallaius Mandubracius Marganus Mascelio
+			Orgetorix Prasutagus Segovax Sinatus Sinorix Sisillius Talorc Tasciovanus Tasgetius Taximagulus Teutomalius Tincomarus Togodumnus Vertiscus
+			Venutius Viridorix Vosenius Vodenos
+		}
+		female_names = {
+			Aife Airmed Ancasta Banna Billica Boudica Bricta Cata Cartimandua Chiomara Damona Diseta Gwendolen Litavis Iamcilla Maeve Verica
+			Cingetessa Conna Catia Carssouna Cunovinna Illica Lovernisca Magunna Lucilia Oconea Ria Rosula Senica Sentica Sulicena
+			Vassura Vinoma Vorvena Urca Veloriga Velibia Totia Titocuna Velbutena Seniciana Senila Vrocata Exuperata Deiana Cunolava Cunsa Aucissa
+			Allauna Alatucca Aessicunia Bodicacia Britivenda Catissena Cantisena 
+		}
+		
+		dukes_called_kings = yes
+		
+		from_dynasty_prefix = "de "
+		
+		male_patronym = "mab "
+		female_patronym = "verch "
+		prefix = yes
+
+		modifier = default_culture_modifier
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 80
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+		
+	}
+
+	salluvian = {
+		graphical_cultures = { celticgfx }
+		alternate_start = {
+			OR = {
+				year < 1000 
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		
+		color = { 0.3 0.7 0.4 }
+		
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+		
+		male_names = {
+			Acco Addedomarus Adiatuanus Adminius Aiorix Ambicatos Andecombogius Aneroestes Ariovistus Arverus Arvirargus Atis Avitus 
+			Bellicianus Bellovesus Boduognatus Boio Boiorix Bolgios Brennus Bricussa Britomaris Brucetius Buite Cailtram Caractacus 
+			Carvilius Cassivellaunus Cattulanus Cartorites Catugnatus Cavarinus Cavarus Celatus Cingetorix Coilus Commios Comux Concolitanus Correus Cottius Crixus
+			Cunobelinus Diviciacus Divico Donnus Drappes Dubnovellaunus Dumnacus Ducarius Duratios Dumnocoveros Dumnorix Elitovius Etitovius Epatticus
+			Galan Galba Guiderius Iacus Iccius Immanuentius Inamarcus Inammicus Indutiomarus Kimarcus Lucterius Lugotorix Lutarius Mallaius Mandubracius Marganus Mascelio
+			Orgetorix Prasutagus Segovax Sinatus Sinorix Sisillius Talorc Tasciovanus Tasgetius Taximagulus Teutomalius Tincomarus Togodumnus Vertiscus
+			Venutius Viridorix Vosenius Vodenos
+		}
+		female_names = {
+			Aife Airmed Ancasta Banna Billica Boudica Bricta Cata Cartimandua Chiomara Damona Diseta Gwendolen Litavis Iamcilla Maeve Verica
+			Cingetessa Conna Catia Carssouna Cunovinna Illica Lovernisca Magunna Lucilia Oconea Ria Rosula Senica Sentica Sulicena
+			Vassura Vinoma Vorvena Urca Veloriga Velibia Totia Titocuna Velbutena Seniciana Senila Vrocata Exuperata Deiana Cunolava Cunsa Aucissa
+			Allauna Alatucca Aessicunia Bodicacia Britivenda Catissena Cantisena 
+		}
+		
+		dukes_called_kings = yes
+		
+		from_dynasty_prefix = "de "
+		
+		male_patronym = "mab "
+		female_patronym = "verch "
+		prefix = yes
+
+		modifier = default_culture_modifier
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 80
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+		
+	}
+
+	haedui = {
+		graphical_cultures = { celticgfx }
+		alternate_start = {
+			OR = {
+				year < 1000 
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		
+		color = { 0.3 0.7 0.4 }
+		
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+		
+		male_names = {
+			Acco Addedomarus Adiatuanus Adminius Aiorix Ambicatos Andecombogius Aneroestes Ariovistus Arverus Arvirargus Atis Avitus 
+			Bellicianus Bellovesus Boduognatus Boio Boiorix Bolgios Brennus Bricussa Britomaris Brucetius Buite Cailtram Caractacus 
+			Carvilius Cassivellaunus Cattulanus Cartorites Catugnatus Cavarinus Cavarus Celatus Cingetorix Coilus Commios Comux Concolitanus Correus Cottius Crixus
+			Cunobelinus Diviciacus Divico Donnus Drappes Dubnovellaunus Dumnacus Ducarius Duratios Dumnocoveros Dumnorix Elitovius Etitovius Epatticus
+			Galan Galba Guiderius Iacus Iccius Immanuentius Inamarcus Inammicus Indutiomarus Kimarcus Lucterius Lugotorix Lutarius Mallaius Mandubracius Marganus Mascelio
+			Orgetorix Prasutagus Segovax Sinatus Sinorix Sisillius Talorc Tasciovanus Tasgetius Taximagulus Teutomalius Tincomarus Togodumnus Vertiscus
+			Venutius Viridorix Vosenius Vodenos
+		}
+		female_names = {
+			Aife Airmed Ancasta Banna Billica Boudica Bricta Cata Cartimandua Chiomara Damona Diseta Gwendolen Litavis Iamcilla Maeve Verica
+			Cingetessa Conna Catia Carssouna Cunovinna Illica Lovernisca Magunna Lucilia Oconea Ria Rosula Senica Sentica Sulicena
+			Vassura Vinoma Vorvena Urca Veloriga Velibia Totia Titocuna Velbutena Seniciana Senila Vrocata Exuperata Deiana Cunolava Cunsa Aucissa
+			Allauna Alatucca Aessicunia Bodicacia Britivenda Catissena Cantisena 
+		}
+		
+		dukes_called_kings = yes
+		
+		from_dynasty_prefix = "de "
+		
+		male_patronym = "mab "
+		female_patronym = "verch "
+		prefix = yes
+
+		modifier = default_culture_modifier
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 80
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+		
+	}
+
+	carnuti = {
+		graphical_cultures = { celticgfx }
+		alternate_start = {
+			OR = {
+				year < 1000 
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		
+		color = { 0.3 0.7 0.4 }
+		
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+		
+		male_names = {
+			Acco Addedomarus Adiatuanus Adminius Aiorix Ambicatos Andecombogius Aneroestes Ariovistus Arverus Arvirargus Atis Avitus 
+			Bellicianus Bellovesus Boduognatus Boio Boiorix Bolgios Brennus Bricussa Britomaris Brucetius Buite Cailtram Caractacus 
+			Carvilius Cassivellaunus Cattulanus Cartorites Catugnatus Cavarinus Cavarus Celatus Cingetorix Coilus Commios Comux Concolitanus Correus Cottius Crixus
+			Cunobelinus Diviciacus Divico Donnus Drappes Dubnovellaunus Dumnacus Ducarius Duratios Dumnocoveros Dumnorix Elitovius Etitovius Epatticus
+			Galan Galba Guiderius Iacus Iccius Immanuentius Inamarcus Inammicus Indutiomarus Kimarcus Lucterius Lugotorix Lutarius Mallaius Mandubracius Marganus Mascelio
+			Orgetorix Prasutagus Segovax Sinatus Sinorix Sisillius Talorc Tasciovanus Tasgetius Taximagulus Teutomalius Tincomarus Togodumnus Vertiscus
+			Venutius Viridorix Vosenius Vodenos
+		}
+		female_names = {
+			Aife Airmed Ancasta Banna Billica Boudica Bricta Cata Cartimandua Chiomara Damona Diseta Gwendolen Litavis Iamcilla Maeve Verica
+			Cingetessa Conna Catia Carssouna Cunovinna Illica Lovernisca Magunna Lucilia Oconea Ria Rosula Senica Sentica Sulicena
+			Vassura Vinoma Vorvena Urca Veloriga Velibia Totia Titocuna Velbutena Seniciana Senila Vrocata Exuperata Deiana Cunolava Cunsa Aucissa
+			Allauna Alatucca Aessicunia Bodicacia Britivenda Catissena Cantisena 
+		}
+		
+		dukes_called_kings = yes
+		
+		from_dynasty_prefix = "de "
+		
+		male_patronym = "mab "
+		female_patronym = "verch "
+		prefix = yes
+
+		modifier = default_culture_modifier
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 80
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+		
+	}
+
+	treverian = {
+		graphical_cultures = { celticgfx }
+		alternate_start = {
+			OR = {
+				year < 1000 
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		
+		color = { 0.3 0.7 0.4 }
+		
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+		
+		male_names = {
+			Acco Addedomarus Adiatuanus Adminius Aiorix Ambicatos Andecombogius Aneroestes Ariovistus Arverus Arvirargus Atis Avitus 
+			Bellicianus Bellovesus Boduognatus Boio Boiorix Bolgios Brennus Bricussa Britomaris Brucetius Buite Cailtram Caractacus 
+			Carvilius Cassivellaunus Cattulanus Cartorites Catugnatus Cavarinus Cavarus Celatus Cingetorix Coilus Commios Comux Concolitanus Correus Cottius Crixus
+			Cunobelinus Diviciacus Divico Donnus Drappes Dubnovellaunus Dumnacus Ducarius Duratios Dumnocoveros Dumnorix Elitovius Etitovius Epatticus
+			Galan Galba Guiderius Iacus Iccius Immanuentius Inamarcus Inammicus Indutiomarus Kimarcus Lucterius Lugotorix Lutarius Mallaius Mandubracius Marganus Mascelio
+			Orgetorix Prasutagus Segovax Sinatus Sinorix Sisillius Talorc Tasciovanus Tasgetius Taximagulus Teutomalius Tincomarus Togodumnus Vertiscus
+			Venutius Viridorix Vosenius Vodenos
+		}
+		female_names = {
+			Aife Airmed Ancasta Banna Billica Boudica Bricta Cata Cartimandua Chiomara Damona Diseta Gwendolen Litavis Iamcilla Maeve Verica
+			Cingetessa Conna Catia Carssouna Cunovinna Illica Lovernisca Magunna Lucilia Oconea Ria Rosula Senica Sentica Sulicena
+			Vassura Vinoma Vorvena Urca Veloriga Velibia Totia Titocuna Velbutena Seniciana Senila Vrocata Exuperata Deiana Cunolava Cunsa Aucissa
+			Allauna Alatucca Aessicunia Bodicacia Britivenda Catissena Cantisena 
+		}
+		
+		dukes_called_kings = yes
+		
+		from_dynasty_prefix = "de "
+		
+		male_patronym = "mab "
+		female_patronym = "verch "
+		prefix = yes
+
+		modifier = default_culture_modifier
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 80
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+		
+	}
+
+	santonian = {
+		graphical_cultures = { celticgfx }
+		alternate_start = {
+			OR = {
+				year < 1000 
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		
+		color = { 0.3 0.7 0.4 }
+		
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+		
+		male_names = {
+			Acco Addedomarus Adiatuanus Adminius Aiorix Ambicatos Andecombogius Aneroestes Ariovistus Arverus Arvirargus Atis Avitus 
+			Bellicianus Bellovesus Boduognatus Boio Boiorix Bolgios Brennus Bricussa Britomaris Brucetius Buite Cailtram Caractacus 
+			Carvilius Cassivellaunus Cattulanus Cartorites Catugnatus Cavarinus Cavarus Celatus Cingetorix Coilus Commios Comux Concolitanus Correus Cottius Crixus
+			Cunobelinus Diviciacus Divico Donnus Drappes Dubnovellaunus Dumnacus Ducarius Duratios Dumnocoveros Dumnorix Elitovius Etitovius Epatticus
+			Galan Galba Guiderius Iacus Iccius Immanuentius Inamarcus Inammicus Indutiomarus Kimarcus Lucterius Lugotorix Lutarius Mallaius Mandubracius Marganus Mascelio
+			Orgetorix Prasutagus Segovax Sinatus Sinorix Sisillius Talorc Tasciovanus Tasgetius Taximagulus Teutomalius Tincomarus Togodumnus Vertiscus
+			Venutius Viridorix Vosenius Vodenos
+		}
+		female_names = {
+			Aife Airmed Ancasta Banna Billica Boudica Bricta Cata Cartimandua Chiomara Damona Diseta Gwendolen Litavis Iamcilla Maeve Verica
+			Cingetessa Conna Catia Carssouna Cunovinna Illica Lovernisca Magunna Lucilia Oconea Ria Rosula Senica Sentica Sulicena
+			Vassura Vinoma Vorvena Urca Veloriga Velibia Totia Titocuna Velbutena Seniciana Senila Vrocata Exuperata Deiana Cunolava Cunsa Aucissa
+			Allauna Alatucca Aessicunia Bodicacia Britivenda Catissena Cantisena 
+		}
+		
+		dukes_called_kings = yes
+		
+		from_dynasty_prefix = "de "
+		
+		male_patronym = "mab "
+		female_patronym = "verch "
+		prefix = yes
+
+		modifier = default_culture_modifier
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 80
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+		
+	}
+
+	lemovician = {
+		graphical_cultures = { celticgfx }
+		alternate_start = {
+			OR = {
+				year < 1000 
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		
+		color = { 0.3 0.7 0.4 }
+		
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+		
+		male_names = {
+			Acco Addedomarus Adiatuanus Adminius Aiorix Ambicatos Andecombogius Aneroestes Ariovistus Arverus Arvirargus Atis Avitus 
+			Bellicianus Bellovesus Boduognatus Boio Boiorix Bolgios Brennus Bricussa Britomaris Brucetius Buite Cailtram Caractacus 
+			Carvilius Cassivellaunus Cattulanus Cartorites Catugnatus Cavarinus Cavarus Celatus Cingetorix Coilus Commios Comux Concolitanus Correus Cottius Crixus
+			Cunobelinus Diviciacus Divico Donnus Drappes Dubnovellaunus Dumnacus Ducarius Duratios Dumnocoveros Dumnorix Elitovius Etitovius Epatticus
+			Galan Galba Guiderius Iacus Iccius Immanuentius Inamarcus Inammicus Indutiomarus Kimarcus Lucterius Lugotorix Lutarius Mallaius Mandubracius Marganus Mascelio
+			Orgetorix Prasutagus Segovax Sinatus Sinorix Sisillius Talorc Tasciovanus Tasgetius Taximagulus Teutomalius Tincomarus Togodumnus Vertiscus
+			Venutius Viridorix Vosenius Vodenos
+		}
+		female_names = {
+			Aife Airmed Ancasta Banna Billica Boudica Bricta Cata Cartimandua Chiomara Damona Diseta Gwendolen Litavis Iamcilla Maeve Verica
+			Cingetessa Conna Catia Carssouna Cunovinna Illica Lovernisca Magunna Lucilia Oconea Ria Rosula Senica Sentica Sulicena
+			Vassura Vinoma Vorvena Urca Veloriga Velibia Totia Titocuna Velbutena Seniciana Senila Vrocata Exuperata Deiana Cunolava Cunsa Aucissa
+			Allauna Alatucca Aessicunia Bodicacia Britivenda Catissena Cantisena 
+		}
+		
+		dukes_called_kings = yes
+		
+		from_dynasty_prefix = "de "
+		
+		male_patronym = "mab "
+		female_patronym = "verch "
+		prefix = yes
+
+		modifier = default_culture_modifier
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 80
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+		
+	}
+
+	pictonian = {
+		graphical_cultures = { celticgfx }
+		alternate_start = {
+			OR = {
+				year < 1000 
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		
+		color = { 0.3 0.7 0.4 }
+		
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+		
+		male_names = {
+			Acco Addedomarus Adiatuanus Adminius Aiorix Ambicatos Andecombogius Aneroestes Ariovistus Arverus Arvirargus Atis Avitus 
+			Bellicianus Bellovesus Boduognatus Boio Boiorix Bolgios Brennus Bricussa Britomaris Brucetius Buite Cailtram Caractacus 
+			Carvilius Cassivellaunus Cattulanus Cartorites Catugnatus Cavarinus Cavarus Celatus Cingetorix Coilus Commios Comux Concolitanus Correus Cottius Crixus
+			Cunobelinus Diviciacus Divico Donnus Drappes Dubnovellaunus Dumnacus Ducarius Duratios Dumnocoveros Dumnorix Elitovius Etitovius Epatticus
+			Galan Galba Guiderius Iacus Iccius Immanuentius Inamarcus Inammicus Indutiomarus Kimarcus Lucterius Lugotorix Lutarius Mallaius Mandubracius Marganus Mascelio
+			Orgetorix Prasutagus Segovax Sinatus Sinorix Sisillius Talorc Tasciovanus Tasgetius Taximagulus Teutomalius Tincomarus Togodumnus Vertiscus
+			Venutius Viridorix Vosenius Vodenos
+		}
+		female_names = {
+			Aife Airmed Ancasta Banna Billica Boudica Bricta Cata Cartimandua Chiomara Damona Diseta Gwendolen Litavis Iamcilla Maeve Verica
+			Cingetessa Conna Catia Carssouna Cunovinna Illica Lovernisca Magunna Lucilia Oconea Ria Rosula Senica Sentica Sulicena
+			Vassura Vinoma Vorvena Urca Veloriga Velibia Totia Titocuna Velbutena Seniciana Senila Vrocata Exuperata Deiana Cunolava Cunsa Aucissa
+			Allauna Alatucca Aessicunia Bodicacia Britivenda Catissena Cantisena 
+		}
+		
+		dukes_called_kings = yes
+		
+		from_dynasty_prefix = "de "
+		
+		male_patronym = "mab "
+		female_patronym = "verch "
+		prefix = yes
+
+		modifier = default_culture_modifier
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 80
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+		
+	}
+
+	aulercian = {
+		graphical_cultures = { celticgfx }
+		alternate_start = {
+			OR = {
+				year < 1000 
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		
+		color = { 0.3 0.7 0.4 }
+		
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+		
+		male_names = {
+			Acco Addedomarus Adiatuanus Adminius Aiorix Ambicatos Andecombogius Aneroestes Ariovistus Arverus Arvirargus Atis Avitus 
+			Bellicianus Bellovesus Boduognatus Boio Boiorix Bolgios Brennus Bricussa Britomaris Brucetius Buite Cailtram Caractacus 
+			Carvilius Cassivellaunus Cattulanus Cartorites Catugnatus Cavarinus Cavarus Celatus Cingetorix Coilus Commios Comux Concolitanus Correus Cottius Crixus
+			Cunobelinus Diviciacus Divico Donnus Drappes Dubnovellaunus Dumnacus Ducarius Duratios Dumnocoveros Dumnorix Elitovius Etitovius Epatticus
+			Galan Galba Guiderius Iacus Iccius Immanuentius Inamarcus Inammicus Indutiomarus Kimarcus Lucterius Lugotorix Lutarius Mallaius Mandubracius Marganus Mascelio
+			Orgetorix Prasutagus Segovax Sinatus Sinorix Sisillius Talorc Tasciovanus Tasgetius Taximagulus Teutomalius Tincomarus Togodumnus Vertiscus
+			Venutius Viridorix Vosenius Vodenos
+		}
+		female_names = {
+			Aife Airmed Ancasta Banna Billica Boudica Bricta Cata Cartimandua Chiomara Damona Diseta Gwendolen Litavis Iamcilla Maeve Verica
+			Cingetessa Conna Catia Carssouna Cunovinna Illica Lovernisca Magunna Lucilia Oconea Ria Rosula Senica Sentica Sulicena
+			Vassura Vinoma Vorvena Urca Veloriga Velibia Totia Titocuna Velbutena Seniciana Senila Vrocata Exuperata Deiana Cunolava Cunsa Aucissa
+			Allauna Alatucca Aessicunia Bodicacia Britivenda Catissena Cantisena 
+		}
+		
+		dukes_called_kings = yes
+		
+		from_dynasty_prefix = "de "
+		
+		male_patronym = "mab "
+		female_patronym = "verch "
+		prefix = yes
+
+		modifier = default_culture_modifier
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 80
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+		
+	}
+
+	arverni = {
+		graphical_cultures = { celticgfx }
+		alternate_start = {
+			OR = {
+				year < 1000 
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		
+		color = { 0.3 0.7 0.4 }
+		
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+		
+		male_names = {
+			Acco Addedomarus Adiatuanus Adminius Aiorix Ambicatos Andecombogius Aneroestes Ariovistus Arverus Arvirargus Atis Avitus 
+			Bellicianus Bellovesus Boduognatus Boio Boiorix Bolgios Brennus Bricussa Britomaris Brucetius Buite Cailtram Caractacus 
+			Carvilius Cassivellaunus Cattulanus Cartorites Catugnatus Cavarinus Cavarus Celatus Cingetorix Coilus Commios Comux Concolitanus Correus Cottius Crixus
+			Cunobelinus Diviciacus Divico Donnus Drappes Dubnovellaunus Dumnacus Ducarius Duratios Dumnocoveros Dumnorix Elitovius Etitovius Epatticus
+			Galan Galba Guiderius Iacus Iccius Immanuentius Inamarcus Inammicus Indutiomarus Kimarcus Lucterius Lugotorix Lutarius Mallaius Mandubracius Marganus Mascelio
+			Orgetorix Prasutagus Segovax Sinatus Sinorix Sisillius Talorc Tasciovanus Tasgetius Taximagulus Teutomalius Tincomarus Togodumnus Vertiscus
+			Venutius Viridorix Vosenius Vodenos
+		}
+		female_names = {
+			Aife Airmed Ancasta Banna Billica Boudica Bricta Cata Cartimandua Chiomara Damona Diseta Gwendolen Litavis Iamcilla Maeve Verica
+			Cingetessa Conna Catia Carssouna Cunovinna Illica Lovernisca Magunna Lucilia Oconea Ria Rosula Senica Sentica Sulicena
+			Vassura Vinoma Vorvena Urca Veloriga Velibia Totia Titocuna Velbutena Seniciana Senila Vrocata Exuperata Deiana Cunolava Cunsa Aucissa
+			Allauna Alatucca Aessicunia Bodicacia Britivenda Catissena Cantisena 
+		}
+		
+		dukes_called_kings = yes
+		
+		from_dynasty_prefix = "de "
+		
+		male_patronym = "mab "
+		female_patronym = "verch "
+		prefix = yes
+
+		modifier = default_culture_modifier
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 80
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+		
+	}
+
+	carnian = {
+		graphical_cultures = { celticgfx }
+		alternate_start = {
+			OR = {
+				year < 1000 
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		
+		color = { 0.3 0.7 0.4 }
+		
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+		
+		male_names = {
+			Acco Addedomarus Adiatuanus Adminius Aiorix Ambicatos Andecombogius Aneroestes Ariovistus Arverus Arvirargus Atis Avitus 
+			Bellicianus Bellovesus Boduognatus Boio Boiorix Bolgios Brennus Bricussa Britomaris Brucetius Buite Cailtram Caractacus 
+			Carvilius Cassivellaunus Cattulanus Cartorites Catugnatus Cavarinus Cavarus Celatus Cingetorix Coilus Commios Comux Concolitanus Correus Cottius Crixus
+			Cunobelinus Diviciacus Divico Donnus Drappes Dubnovellaunus Dumnacus Ducarius Duratios Dumnocoveros Dumnorix Elitovius Etitovius Epatticus
+			Galan Galba Guiderius Iacus Iccius Immanuentius Inamarcus Inammicus Indutiomarus Kimarcus Lucterius Lugotorix Lutarius Mallaius Mandubracius Marganus Mascelio
+			Orgetorix Prasutagus Segovax Sinatus Sinorix Sisillius Talorc Tasciovanus Tasgetius Taximagulus Teutomalius Tincomarus Togodumnus Vertiscus
+			Venutius Viridorix Vosenius Vodenos
+		}
+		female_names = {
+			Aife Airmed Ancasta Banna Billica Boudica Bricta Cata Cartimandua Chiomara Damona Diseta Gwendolen Litavis Iamcilla Maeve Verica
+			Cingetessa Conna Catia Carssouna Cunovinna Illica Lovernisca Magunna Lucilia Oconea Ria Rosula Senica Sentica Sulicena
+			Vassura Vinoma Vorvena Urca Veloriga Velibia Totia Titocuna Velbutena Seniciana Senila Vrocata Exuperata Deiana Cunolava Cunsa Aucissa
+			Allauna Alatucca Aessicunia Bodicacia Britivenda Catissena Cantisena 
+		}
+		
+		dukes_called_kings = yes
+		
+		from_dynasty_prefix = "de "
+		
+		male_patronym = "mab "
+		female_patronym = "verch "
+		prefix = yes
+
+		modifier = default_culture_modifier
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 80
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+		
+	}
+
+	letobician = {
+		graphical_cultures = { celticgfx }
+		alternate_start = {
+			OR = {
+				year < 1000 
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		
+		color = { 0.3 0.7 0.4 }
+		
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+		
+		male_names = {
+			Acco Addedomarus Adiatuanus Adminius Aiorix Ambicatos Andecombogius Aneroestes Ariovistus Arverus Arvirargus Atis Avitus 
+			Bellicianus Bellovesus Boduognatus Boio Boiorix Bolgios Brennus Bricussa Britomaris Brucetius Buite Cailtram Caractacus 
+			Carvilius Cassivellaunus Cattulanus Cartorites Catugnatus Cavarinus Cavarus Celatus Cingetorix Coilus Commios Comux Concolitanus Correus Cottius Crixus
+			Cunobelinus Diviciacus Divico Donnus Drappes Dubnovellaunus Dumnacus Ducarius Duratios Dumnocoveros Dumnorix Elitovius Etitovius Epatticus
+			Galan Galba Guiderius Iacus Iccius Immanuentius Inamarcus Inammicus Indutiomarus Kimarcus Lucterius Lugotorix Lutarius Mallaius Mandubracius Marganus Mascelio
+			Orgetorix Prasutagus Segovax Sinatus Sinorix Sisillius Talorc Tasciovanus Tasgetius Taximagulus Teutomalius Tincomarus Togodumnus Vertiscus
+			Venutius Viridorix Vosenius Vodenos
+		}
+		female_names = {
+			Aife Airmed Ancasta Banna Billica Boudica Bricta Cata Cartimandua Chiomara Damona Diseta Gwendolen Litavis Iamcilla Maeve Verica
+			Cingetessa Conna Catia Carssouna Cunovinna Illica Lovernisca Magunna Lucilia Oconea Ria Rosula Senica Sentica Sulicena
+			Vassura Vinoma Vorvena Urca Veloriga Velibia Totia Titocuna Velbutena Seniciana Senila Vrocata Exuperata Deiana Cunolava Cunsa Aucissa
+			Allauna Alatucca Aessicunia Bodicacia Britivenda Catissena Cantisena 
+		}
+		
+		dukes_called_kings = yes
+		
+		from_dynasty_prefix = "de "
+		
+		male_patronym = "mab "
+		female_patronym = "verch "
+		prefix = yes
+
+		modifier = default_culture_modifier
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 80
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+		
+	}
+
+	boian = {
+		graphical_cultures = { celticgfx }
+		alternate_start = {
+			OR = {
+				year < 1000 
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		
+		color = { 0.3 0.7 0.4 }
+		
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+		
+		male_names = {
+			Acco Addedomarus Adiatuanus Adminius Aiorix Ambicatos Andecombogius Aneroestes Ariovistus Arverus Arvirargus Atis Avitus 
+			Bellicianus Bellovesus Boduognatus Boio Boiorix Bolgios Brennus Bricussa Britomaris Brucetius Buite Cailtram Caractacus 
+			Carvilius Cassivellaunus Cattulanus Cartorites Catugnatus Cavarinus Cavarus Celatus Cingetorix Coilus Commios Comux Concolitanus Correus Cottius Crixus
+			Cunobelinus Diviciacus Divico Donnus Drappes Dubnovellaunus Dumnacus Ducarius Duratios Dumnocoveros Dumnorix Elitovius Etitovius Epatticus
+			Galan Galba Guiderius Iacus Iccius Immanuentius Inamarcus Inammicus Indutiomarus Kimarcus Lucterius Lugotorix Lutarius Mallaius Mandubracius Marganus Mascelio
+			Orgetorix Prasutagus Segovax Sinatus Sinorix Sisillius Talorc Tasciovanus Tasgetius Taximagulus Teutomalius Tincomarus Togodumnus Vertiscus
+			Venutius Viridorix Vosenius Vodenos
+		}
+		female_names = {
+			Aife Airmed Ancasta Banna Billica Boudica Bricta Cata Cartimandua Chiomara Damona Diseta Gwendolen Litavis Iamcilla Maeve Verica
+			Cingetessa Conna Catia Carssouna Cunovinna Illica Lovernisca Magunna Lucilia Oconea Ria Rosula Senica Sentica Sulicena
+			Vassura Vinoma Vorvena Urca Veloriga Velibia Totia Titocuna Velbutena Seniciana Senila Vrocata Exuperata Deiana Cunolava Cunsa Aucissa
+			Allauna Alatucca Aessicunia Bodicacia Britivenda Catissena Cantisena 
+		}
+		
+		dukes_called_kings = yes
+		
+		from_dynasty_prefix = "de "
+		
+		male_patronym = "mab "
+		female_patronym = "verch "
+		prefix = yes
+
+		modifier = default_culture_modifier
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 80
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+		
+	}
+
+}
+
+dacian_group = {
+	graphical_cultures = { westerngfx }
+	alternate_start = { NOT = { has_alternate_start_parameter = { key = special_culture value = animal_world } } }
+
+	thracian = {
+		graphical_cultures = { byzantinegfx }
+		
+		color = { 0.94 0.56 0.5 }
+
+		male_names = {
+			Adaios Amatokos Aulouporis Aulouzon Bendidoros Berisades Bessos Bithos Brinkainos Brinkazenis Brinkazeris Brinkazis Bryzos Byzas Delos Dentoubrisa Dentoupes Deopos Deosporis Desakenthos Diaskenthos
+			Diazenis Dizapes Dizapor Dizas Dizazelpis Dolens Drenis Eptaikenthos Eptapis Eptaporis Eptenis Eptezenis Ezbenis Gaidres Hebryzelmis Kelsinos Kelsos Kenthos Kerses Kerzoula Kersibaulos Kersobleptes
+			Ketriporis Ketrizeis Kokaios Kotys Maisades Markipor Moukakenthos Moukapaibes Moukapius Moukaporis Moukatralis Moukazenis Naipor Olipor Poris Pytros Raizdos Raskos Rekiper Rhaskos Rhaskuporis Rheboulas
+			Rhesos Rhoemetalces Sadalas Satres Sautes Seikiper Seuthes Skaris Skilas Skostodokos Sparadokos Taruthinas Teres Tzitzis Zieisis Ziepyros Ziles Zipaibes Zipyron
+		}
+		female_names = {
+			Bendidora Daizo Dentustaina Dentusykos Dida Dinentilla Dizo Drigissa Epteporis Eptepos Eptesykos Ettela Kerza Mania Moka Mokasokos Mukko Mukapora Murko Nanea Purizia Rheskutorme Rhymesikos Sinna Sita Torkoula
+		}
+
+		from_dynasty_prefix = "of "
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 50
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 50
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+		
+		disinherit_from_blinding = yes
+
+		modifier = default_culture_modifier
+	}
+
+	dacian = {
+		graphical_cultures = { byzantinegfx }
+		
+		color = { 1.0 0.5 0.5 }
+
+		male_names = {
+			Bastiza Bikilis Blegissa Blaesus Blaikisa Brasus Burebista Comosicus Cothelas Cotiso Dablosa Dadas Dadazai Daizus Dapyx Dardiolai Danillo Decibalus Dida Denzibalus Diernais Dotouzi Duras 
+			Kaigiza Komozoi Moskon Mucapor Mucatra Natoporus Orola Petipor Pierporus Rhemaxos Rholes Rubobostes Rolouzis Rigozus Scoris Tiati Tarbus Tsiru Zinna Vezina Zoutoula
+		}
+		female_names = {
+			Duccidava Rescuturme Zina Zinai Petriturme Zindurme Roibana Oriza Rescurai Raina Sanziana Claria Eccana
+		}
+
+		from_dynasty_prefix = "of "
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 50
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 50
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+		
+		#disinherit_from_blinding = yes
+
+		modifier = default_culture_modifier
+	}
+}
+
+
+
+
+#Default for if no culture was found 
+#Should only appear if the Imperator:Rome game had modded cultures which don't have a conversion
+#Or if a culture accidently was left out of cultureConversion.txt
+unknown_group = {
+	graphical_cultures = { westerngfx }
+	alternate_start = { NOT = { has_alternate_start_parameter = { key = special_culture value = animal_world } } }
+	
+	unknown_culture = {
+		graphical_cultures = { romangfx }
+		alternate_start = {
+			OR = {
+				year < 1000 
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		
+		color = { 0.3 0.55 0.8 }
+		used_for_random = no
+		
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+		
+		male_names = {
+			Ale Alfr_Alf Alfgeir Anders_Andrew Anlaufr Anundr_Anund Arnbjörn Arngrimr Arni_Arne Arnfast Asbjörn_Asbjörn Bagge Baldr_Balder Barid Bengt_Benedict Bersi Bertil_Berthold Birger Björn_Beorn Bo Borkvard Botulfr_Botulf Bragi_Brage Buðli
+			Dag Dan Dyre Eilif Egill_Egil Emund Einarr_Einar Eirikr_Erik Eskild Falki Faste Filip_Philip Fredrik_Frederick Frirek Froði_Frode Freyr_Frej Folki_Folke Gandalfr Geirr Georg_George Gnupa_Gnupa Gorm_Gorm Greger_Gregory Grimr_Grim Guðfrið_Godfrey Guðmundr_Gudmund Guðröðr_Gudröd Gunnarr_Gunnar Hakon_Hakon Halsten Haraldr_Harold Haukr Helgi_Helge
+			Hemming Holmger Hrafn Hrolfr_Rolf Hrane Hæsteinn Hjalmar_Hjalmar Hroðgar Hroðulfr Hrörekr_Rurik Hysing Ingólfr_Ingolf Ingemar Ingjald Ivar_Ivar Jedvard_Edward Jon_John Karl_Charles Kettil Kettilmund Kjartan Klas_Nicholas Knut_Knut Kol Kolbjörn Magnus_Magnus Markus_Marcus 
+			Magni_Magne Mats_Matthew Nils_Nicholas Niklas_Nicholas Oddr_Odd Ofeig Olafr_Olaf Ormr_Orm Ottarr_Ottar Refr Refil Ragnarr_Rainer Rikulfr Rögnvaldr_Ragnvald Skuli_Skule Snorri Sigbjörn Sigtrygg Sigurðr_Sigurd Starkaðr_Starkad Steinn_Sten Sturla Styrbjörn Styrkar Sumarliði_Somerled Suni_Sune Sveinn_Sven
+			Sverker Sæmundr_Sämund Sölvi_Sölve Sörkver Tjudmund_Tjudmund Toke_Toke Tolir Þorbjörn_Torbjörn Þorfinn_Torfinn Þorbrandr_Torbrand Þordr_Tord Þorgil_Torkel Þorsteinn_Torsten Þorolfr_Thorolf Toste Totil Tryggve Tyke Ulfr_Ulf Vagn Valdemar_Vladimir Åke Yngvar_Ingvar Örvar_Orvar Öysteinn_Eysteinn
+		}
+		female_names = {
+			Aleta Alfhildr_Alfhild Alfrið_Alfridh Alvör Anna_Anna Asa_Åsa Aslaug Asta_Asta Astrid_Astrid Beata Birgitta_Brigid Björg Bodil Bothildr_Bothild Cecilia_Cecilia
+			Edla Elin Elisabet_Elizabeth Freyja_Freja Gerðr Gloð Grima Gunnhildr_Gunhild Gurli Guðrun_Gudrun Gyla Gyrið Gyða_Gytha Hafrid Halla Helena_Helen Holmfrid
+			Iliana Inga_Inge Ingfrid Ingibjörg_Ingeborg Ingjerðr_Ingegerd Ingrid_Ingrid Karin_Catherine Katarina_Catherine Kraka Kristina_Christina Linda Maer
+			Malmfrið_Malmfrid Margareta_Margaret Maria_Maria Rikissa Rögnfrið_Ragnfrid Rögnhildr_Ragnhild Saga Sara_Sarah Sif Sigrid_Sigrid Skuld Sofia_Sophia
+			Svanhildr_Svanhild Ulfhildr_Ulvhilde Vigdis Ylva_Ylva Yrsa_Ursula Þora_Thora Þordis_Thordis Þyra_Thyra
+		}
+		
+		dukes_called_kings = yes
+		baron_titles_hidden = yes
+		count_titles_hidden = yes
+		
+		from_dynasty_prefix = "af "
+		
+		male_patronym = "sson"
+		female_patronym = "sdottir"
+		prefix = no # The patronym is added as a suffix
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+		
+	}
+}
+
