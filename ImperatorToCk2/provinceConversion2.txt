@@ -1,0 +1,172 @@
+ = {
+	# Scandinavia
+	link = { ck2 = 6043 ck2 = 6042 imperator = 269 }	# Arothia, Eunixia -> Rogaland
+	link = { ck2 = 6041 ck2 = 6040 imperator = 268 }	# Aetelrugia, Augandzia -> Agder
+	link = { ck2 = 6038 imperator = 271 }	# Lingum -> Vestfold
+	link = { ck2 = 6039 imperator = 270 }	# Grannia -> Telemark
+	link = { ck2 = 6037 ck2 = 6035 imperator = 272 }	# Raumariki, Vinovilothia -> Akershus
+	link = { ck2 = 6034 ck2 = 6025 imperator = 296 }	# Tanum, Ragnaricia -> Baahuslen
+	# MayBeChanged
+	link = { ck2 = 6036 ck2 = 6033 imperator = 295 }	# Rania, Vrine -> Dal
+	link = { ck2 = 6023 ck2 = 6022 ck2 = 6013 imperator = 297 }	# Gothalia, Hio, Gautigothia -> Westrogothia
+	link = { ck2 = 6024 imperator = 1706 }	# Rane -> Skara
+	link = { ck2 = 6027 ck2 = 6028 imperator = 294 }	# Tivedia, Arbugae -> Närke
+	link = { ck2 = 6021 ck2 = 6019 imperator = 293 }	# Aska, Vikbo -> Ostrogothia
+	link = { ck2 = 6026 ck2 = 6029 ck2 = 6030 ck2 = 6031 imperator = 292 }	# Miriquidui, Rekarne, Birka, Arosia -> Sudermannia
+	link = { ck2 = 6032 imperator = 290 }	# Broborg -> Uppland
+	link = { ck2 = 6018 ck2 = 6016 imperator = 1701 }	# Vist, Thwetum -> Vista
+	link = { ck2 = 6008 imperator = 932 }	# Theustia -> Tjust
+	link = { ck2 = 6010 imperator = 301 }	# Vineta -> Gotland
+	link = { ck2 = 6009 imperator = 300 }	# Eowia -> Öland
+	link = { ck2 = 6007 imperator = 1704 }	# Meore -> Sevede
+	link = { ck2 = 6006 imperator = 931 }	# Borgamo -> Möre
+	link = { ck2 = 6005 imperator = 6 }	# Vang -> Blekinge
+	link = { ck2 = 6002 ck2 = 6000 ck2 = 6001 ck2 = 6003 imperator = 303 }	# Guthisbo, Uppakra, Svimraros, Bergio -> Scania
+	link = { ck2 = 6014 imperator = 1702 }	# Finnaithae -> Finnveden
+	link = { ck2 = 6015 imperator = 298 }	# Warinia -> Värend
+	link = { ck2 = 6017 imperator = 1703 }	# Vitala -> Njudung
+	link = { ck2 = 6020 imperator = 1705 }	# Kinda -> Kinda
+
+	link = { ck2 = 6012 ck2 = 6011 imperator = 302 }	# Konghelle, Feruiria -> Halland
+	link = { ck2 = 6004 imperator = 305 }	# Burgundarholm -> Bornholm
+	link = { ck2 = 3887 ck2 = 3886 ck2 = 3885 imperator = 266 }	# Herulia Orientalis, Herulia Borealis, Herulia Centralis -> Sjælland
+	link = { ck2 = 3879 ck2 = 3880 ck2 = 3875 ck2 = 3878 imperator = 267 }	# Cimbria Borealis, Cimbria Maiores, Teutonia Maiores, Cimbria Centralis -> Skagen
+	link = { ck2 = 3877 ck2 = 3876 imperator = 1685 }	# Cimbria Australis, Teutonia Centralis -> Aalborg
+	link = { ck2 = 3871 ck2 = 3873 ck2 = 3870 ck2 = 3872 ck2 = 3869 imperator = 1684 }	# Eudosia Cimbricaris, Eudosia Borealis, Eudosia Australis, Eudosia Centralis, Cobandia Maiores -> Aarhus
+	link = { ck2 = 3868 ck2 = 3864 ck2 = 3865 ck2 = 3862 ck2 = 3863 imperator = 264 }	# Cobandia Minores, Avionia Maiores, Cimbrica Minores, Anglia Borealis, Avionia Minores -> Slesvig
+	link = { ck2 = 3881 ck2 = 3882 ck2 = 3883 imperator = 265 }	# Anglia Insula, Reudingia Maiores, Reudingia Minores -> Fyn
+	link = { ck2 = 3884 imperator = 1687 }	# Herulia Australis -> Lolland
+	link = { ck2 = 3866 ck2 = 3867 ck2 = 3874 imperator = 1683 }	# Sigulonia Australis, Sigulonia Borealis, Teutonia Minores -> Varde
+	# Germania
+	link = { ck2 = 3892 ck2 = 3891 ck2 = 3858 imperator = 262 }	# Alisus, Laciburaium, Marionis -> Lübeck
+	link = { ck2 = 3861 ck2 = 3860 ck2 = 3859 ck2 = 3857 imperator = 263 }	# Anglia Centralis, Anglia Meridionalis, Sardonia, Charudiana -> Holstein
+	link = { ck2 = 3889 ck2 = 3888 ck2 = 3895 imperator = 261 }	# Treva, Leuphana, Suardonia -> Hamburg
+	link = { ck2 = 4756 ck2 = 4760 imperator = 367 }	# Eughum, Campia -> Slupsk
+	link = { ck2 = 3856 ck2 = 3855 imperator = 1688 }	# Charudia, Mariones -> Dithmarschen
+	link = { ck2 = 4750 imperator = 1587 }	# Rugia -> Bytow
+	link = { ck2 = 4863 ck2 = 6283 imperator = 369 }	# Voreynica, Anacureta -> Chelmno
+	link = { ck2 = 4755 ck2 = 4757 imperator = 368 }	# Sciria Rugia, Lemoviana -> Danzig
+	link = { ck2 = 3890 ck2 = 3838 imperator = 259 }	# Chaucia, Angrivaria -> Bremen
+	link = { ck2 = 3969 ck2 = 3971 ck2 = 3970 ck2 = 3975 imperator = 309 }	# Cistula, Arminia, Langobardia, Angia -> Werben
+	link = { ck2 = 3962 imperator = 1980 }	# Idistavisus -> Verden
+	link = { ck2 = 3968 ck2 = 3974 ck2 = 3967 imperator = 1982 }	# Mersovium, Alaria, Aregellia -> Magdeburg
+	link = { ck2 = 4002 ck2 = 4762 ck2 = 4759 imperator = 434 }	# Budorigum, Buguntia, Iadua -> Lower Silesia
+	link = { ck2 = 3991 ck2 = 3993 ck2 = 3910 ck2 = 3979 ck2 = 3992 ck2 = 3980 imperator = 1589 }	# Buriana, Stragona Buria, Susidaea, Colancorum, Buria, Ad Fines Boiohaemum -> Gorlitz
+	link = { ck2 = 3996 ck2 = 3995 ck2 = 4000 ck2 = 3997 ck2 = 3998 ck2 = 4001 imperator = 364 }	# Graetana, Viaduna, Omania, Suevia Minores, Suevia Maiores, Diduniana -> Lausitz
+	link = { ck2 = 3945 ck2 = 3813 ck2 = 3814 ck2 = 3812 imperator = 439 }	# Sudetiana, Reganus, Parmacampia, Strevinta -> Plzen
+	link = { ck2 = 3912 ck2 = 3913 ck2 = 3944 imperator = 1926 }	# Redintuinum, Marobudum, Extremadura -> Zatec
+	link = { ck2 = 3928 ck2 = 3929 ck2 = 4017 imperator = 440 }	# Felicia Boioa, Auchia, Asanca -> Olomouc
+	link = { ck2 = 3915 ck2 = 4009 ck2 = 3940 ck2 = 3939 ck2 = 4008 imperator = 438 }	# Meliodunum, Galaegia, Corcontia, Budorgis, Asciburgia -> Hradec
+	link = { ck2 = 3811 imperator = 314 }	# Brodentia -> Nürnberg
+	link = { ck2 = 3803 ck2 = 3801 ck2 = 3804 ck2 = 3800 ck2 = 3770 ck2 = 3742 imperator = 253 }	# Armalausia, Segodunum Chattia, Hermunduria, Sedusia, Ad Lunam, Viana -> Württemberg
+	link = { ck2 = 3025 ck2 = 3735 ck2 = 3738 ck2 = 3052 imperator = 125 }	# Aurelia Aquensis, Portus, Vicus Alsinensium, Saletio -> Baden
+	link = { ck2 = 3012 ck2 = 3731 ck2 = 3022 ck2 = 3732 ck2 = 3020 imperator = 250 }	# Rauracia, Tenedo, Tarodunon, Aquae Helveticae, Helvetum -> Breisgau
+	link = { ck2 = 3743 ck2 = 3744 ck2 = 3734 ck2 = 3736 ck2 = 3733 ck2 = 3745 imperator = 251 }	# Riusiava, Bragodurum, Sumelocenna, Grinario, Arae Flaviae, Raetia Occidentalis -> Fürstenberg
+	link = { ck2 = 3820 ck2 = 3806 ck2 = 3807 ck2 = 3805 ck2 = 3802 ck2 = 3809 imperator = 1984 }	# Cantiabis, Varistia, Nariscia, Bergium, Locoritum, Bibacum -> Weinsberg
+	link = { ck2 = 3765 ck2 = 3766 ck2 = 3774 ck2 = 3769 ck2 = 3771 ck2 = 3767 ck2 = 3768 ck2 = 3772 imperator = 252 }	# Abusina, Germanicum, Parrodunum, Losodica, Aquileia Germania, Biriciana, Mediana Vendelicia, Ad Fines Germania -> Ulm
+	link = { ck2 = 3808 imperator = 1985 }	# Vandulia -> Eichstadt
+	link = { ck2 = 3815 imperator = 361 }	# Augustania -> Cham
+	link = { ck2 = 3817 imperator = 447 }	# Brodentica -> Passau
+	link = { ck2 = 3819 ck2 = 3917 imperator = 1698 }	# Furgisatis, Adrabae -> Freistadt
+	link = { ck2 = 3916 ck2 = 3921 ck2 = 3920 imperator = 1697 }	# Abilunum, Regnia Secunda, Regnia Prima -> Chremis
+	link = { ck2 = 3923 ck2 = 3922 imperator = 446 }	# Teracatriae, Medioslanium -> Znojmo
+	link = { ck2 = 3930 ck2 = 3926 ck2 = 3932 imperator = 441 }	# Phargisatus, Eburodunum Carnuntia, Hercyniana -> Brno
+	link = { ck2 = 3934 ck2 = 3818 ck2 = 3933 ck2 = 3931 ck2 = 3935 imperator = 362 }	# Ad Peria, Setuacatum, Quadia, Tavia, Ad Limen -> South Bohemia
+	link = { ck2 = 3938 ck2 = 3937 ck2 = 3936 ck2 = 3816 ck2 = 3914 imperator = 437 }	# Boioa, Baemia, Sylvaria Prima, Marcomannia, Coridorgis -> Prague
+	link = { ck2 = 3911 ck2 = 3941 ck2 = 3942 ck2 = 3943 imperator = 363 }	# Nomisterium, Vandalicia, Hegetmatia, Butonia -> Litomerice
+	link = { ck2 = 3845 imperator = 79 }	# Marsacia -> Zeeland
+	link = { ck2 = 3821 ck2 = 3952 ck2 = 3953 ck2 = 3946 imperator = 313 }	# Moenosgadia, Sudetia, Dandutia, Sudetia Planus -> Bamberg
+	link = { ck2 = 3947 ck2 = 3799 ck2 = 3948 ck2 = 3822 imperator = 254 }	# Turonia, Salinae Chattia, Turoniana, Devona -> Würzburg
+	link = { ck2 = 3741 ck2 = 3746 ck2 = 3639 ck2 = 3740 ck2 = 3739 ck2 = 3638 ck2 = 3637 imperator = 249 }	# Caelius Mons, Raetia Orientalis, Arbor Felix, Cassiliacum, Vemania, Cambodunum, Vernania -> Schwaben
+	link = { ck2 = 3684 ck2 = 3685 ck2 = 3687 ck2 = 3688 imperator = 115 }	# Nasagus, Orolaunum, Caranusca, Ricciacum -> Luxembourg
+	link = { ck2 = 7738 ck2 = 3721 ck2 = 3726 ck2 = 3730 ck2 = 3689 imperator = 118 }	# Remagus, Confluentes, Beda, Ausava, Andethanna -> Trier
+	link = { ck2 = 3728 ck2 = 3727 ck2 = 3718 ck2 = 3719 ck2 = 3729 imperator = 90 }	# Icorigum, Marcomagus, Aquae Granni, Belsonancum, Minerica -> Jülich
+	link = { ck2 = 3720 ck2 = 3717 ck2 = 3715 ck2 = 3716 imperator = 119 }	# Bonna, Novaesium, Sablones, Iullacum -> Cologne
+	link = { ck2 = 3678 ck2 = 3676 ck2 = 3844 imperator = 93 }	# Condacum, Feliciacum, Fletio -> Gent
+	link = { ck2 = 3843 ck2 = 3677 imperator = 78 }	# Ganuenta, Chanelavum -> Brugge
+	link = { ck2 = 3708 ck2 = 3706 ck2 = 3680 ck2 = 3705 imperator = 117 }	# Teudurum, Confluenta Nervia, Geminiacum, Nervia Secunda -> Brabant
+	link = { ck2 = 3024 ck2 = 3019 ck2 = 3018 imperator = 134 }	# Altitona, Argentovaria, Rubiacum -> Sundgau
+	link = { ck2 = 3016 ck2 = 2499 ck2 = 3017 ck2 = 3015 ck2 = 3013 ck2 = 3014 imperator = 127 }	# Vicus Bodatius, Scarponna, Decem Pagi, Aquae Borbonis, Magetobria, Portus Albucinus -> Lorraine
+	link = { ck2 = 3007 ck2 = 3004 ck2 = 3003 ck2 = 2453 imperator = 133 }	# Grannum, Mosa, Solicia, Tullum -> Saintois
+	link = { ck2 = 2494 ck2 = 2498 ck2 = 2496 ck2 = 2497 ck2 = 3002 imperator = 930 }	# Basillia, Sauriciacum, Caturicis, Nasium, Pannorum -> Bar
+	link = { ck2 = 3703 ck2 = 2455 ck2 = 3686 ck2 = 3001 imperator = 129 }	# Remia, Viriodunum, Eposium, Castrum Vabrense -> Verdun
+	link = { ck2 = 3704 ck2 = 3683 ck2 = 3682 ck2 = 3681 ck2 = 3709 imperator = 116 }	# Nervia Prima, Vervigium, Armianum, Tungrorum, Traiectus -> Liege
+	link = { ck2 = 3042 ck2 = 3046 ck2 = 3679 ck2 = 3707 imperator = 94 }	# Bagacum, Hermoniacum, Vodgoriacum, Andellium -> Hainaut
+	link = { ck2 = 3028 ck2 = 3675 ck2 = 3041 imperator = 76 }	# Castellum, Cortoriacum, Turnacum -> Yperen
+	link = { ck2 = 3714 ck2 = 3711 ck2 = 3710 imperator = 91 }	# Castra Vetera, Blariacum, Catualium -> Loon
+	link = { ck2 = 3713 ck2 = 3712 imperator = 92 }	# Ad Duodecimum, Batavodurum -> Breda
+	link = { ck2 = 3634 ck2 = 3633 ck2 = 3632 imperator = 245 }	# Vitudurum, Vindonissa, Salodurum -> Zurichgau
+	link = { ck2 = 3636 ck2 = 3635 imperator = 248 }	# Brigantium, Constantia -> Thurgau
+	link = { ck2 = 3753 ck2 = 3644 ck2 = 3643 ck2 = 3755 ck2 = 3754 ck2 = 3642 ck2 = 3764 imperator = 360 }	# Bratananium, Iuvavum, Artobriga, Turum Breunia, Tessenios, Isinisca, Innaba -> Freising
+	link = { ck2 = 3749 ck2 = 3775 ck2 = 3750 ck2 = 3751 ck2 = 3640 ck2 = 3747 ck2 = 3748 ck2 = 3641 imperator = 315 }	# Vindelicia, Summuntorium, Rapis, Abodiacum, Damasia, Navoa, Rostrum Nemaviae, Covelicae -> Augsburg
+	link = { ck2 = 3762 ck2 = 3645 ck2 = 3646 ck2 = 3763 ck2 = 3647 ck2 = 3648 ck2 = 3649 imperator = 448 }	# Stanacum, Laciacum, Tergolape, Ioviacum, Ovilava, Lauriacum, Loacus Felices -> Salzburg
+	link = { ck2 = 3759 ck2 = 3758 ck2 = 3757 ck2 = 3760 ck2 = 3756 ck2 = 3761 ck2 = 3773 ck2 = 3752 imperator = 1700 }	# Sorviodurum, Castra Regina, Valiatum, Petrensibus, Iovisura, Batavis, Venaxamodurum, Ambrae -> Regensburg
+	link = { ck2 = 3691 ck2 = 3692 ck2 = 2454 imperator = 128 }	# Vicus Contiomagus, Mediomatricia, Divodurum -> Metz
+	link = { ck2 = 3696 ck2 = 3690 ck2 = 3694 ck2 = 3695 imperator = 1986 }	# Cruciniacum, Treveria, Leucia, Mosellia Minoris -> Saarbrücken
+	link = { ck2 = 3053 ck2 = 3023 ck2 = 3021 imperator = 126 }	# Concordia, Brocomagus, Argentorate -> Nordgau
+	link = { ck2 = 3055 ck2 = 3737 ck2 = 3056 ck2 = 3054 ck2 = 3697 ck2 = 3693 imperator = 124 }	# Lopodunum, Vicus Nediensis, Borbetomagus, Tabernae, Rouphiniana, Mosellia -> Worms
+	link = { ck2 = 7732 ck2 = 3701 ck2 = 3723 ck2 = 3698 ck2 = 3722 ck2 = 3724 ck2 = 3725 imperator = 123 }	# Vicus Augustanus, Mogontiacum, Bingium, Altaia, Vosolvia, Belginum, Dumnissus -> Mainz
+	link = { ck2 = 3797 ck2 = 3798 ck2 = 3702 imperator = 122 }	# Mattiacia, Vangionia, Auderiensium -> Aschaffenburg
+	link = { ck2 = 3788 ck2 = 3789 ck2 = 3699 ck2 = 3700 imperator = 1981 }	# Lacobardia, Usipetia, Aquae Mattiacorum, Taunensium -> Frankfurt
+	link = { ck2 = 3790 ck2 = 3787 ck2 = 3785 imperator = 1983 }	# Bacenis, Tenctheria, Alisutum -> Berg
+	link = { ck2 = 3792 ck2 = 3791 ck2 = 3793 imperator = 1987 }	# Sicambria, Chattaia, Landia -> Marburg
+	link = { ck2 = 3824 ck2 = 3795 ck2 = 3794 ck2 = 3796 ck2 = 3823 imperator = 121 }	# Mattium, Gravionarium, Marsiana, Bucinobantia, Melocavus -> Fritzlar
+	link = { ck2 = 3777 imperator = 89 }	# Chattuaria -> Kleve
+	link = { ck2 = 3851 ck2 = 3778 ck2 = 3776 imperator = 83 }	# Isala, Mediolanium Belgicum, Asciburgium -> Gelre
+	link = { ck2 = 3834 ck2 = 3779 ck2 = 3854 ck2 = 3781 imperator = 1989 }	# Noviliacum, Salia Chasuaria, Tubantia, Vidrosia -> Overijssel
+	link = { ck2 = 3850 imperator = 82 }	# Chamoria -> Sticht
+	# ChangedCoastlineMayChange
+	link = { ck2 = 3848 ck2 = 3846 ck2 = 3849 imperator = 80 }	# Traiectum, Lugadurum, Manaritum -> Holland
+	link = { ck2 = 3784 ck2 = 3783 ck2 = 3786 imperator = 88 }	# Alesia Germania, Caesia, Arbalo -> Münster
+	link = { ck2 = 3847 imperator = 81 }	# Baduhenna -> Westfriesland
+	link = { ck2 = 3833 ck2 = 3832 ck2 = 3852 imperator = 84 }	# Amastica, Manarmanis, Flevum -> Friesland
+	link = { ck2 = 3990 ck2 = 3951 ck2 = 3956 ck2 = 3981 ck2 = 3954 imperator = 312 }	# Hercynia, Luphurdum, Melocabus, Thuringiana, Camulia -> Meissen
+	link = { ck2 = 3988 ck2 = 3950 imperator = 311 }	# Caluconia, Calaegia -> Merseburg
+	link = { ck2 = 3909 ck2 = 3989 imperator = 310 }	# Mesuium, Albiana -> Zerbst
+	link = { ck2 = 3983 ck2 = 3986 ck2 = 3994 ck2 = 3999 ck2 = 3984 imperator = 365 }	# Astuia, Uarinia, Silingia, Susidata, Burgia -> Brandenburg
+	link = { ck2 = 3965 ck2 = 3960 ck2 = 3958 ck2 = 3949 imperator = 255 }	# Bicurgium, Teuriona, Salia Chamavia, Vistugia -> Thüringen
+	link = { ck2 = 3964 ck2 = 3977 ck2 = 3963 ck2 = 3976 ck2 = 3973 ck2 = 3978 imperator = 257 }	# Dinia, Luppia, Tropea, Maroia, Chamavia, Meliboia -> Braunschweig
+	link = { ck2 = 3972 imperator = 258 }	# Fosa -> Lüneburg
+	link = { ck2 = 3780 ck2 = 3782 ck2 = 3830 ck2 = 3841 ck2 = 3835 imperator = 87 }	# Teuderium, Amsivaria Bructeria, Marsia, Chasuaria, Ansibaria -> Osnabrück
+	link = { ck2 = 3966 ck2 = 3959 ck2 = 3961 ck2 = 3955 ck2 = 3957 imperator = 256 }	# Aregelliana, Argelia, Fosia, Candulum, Bicurdium -> Weimar
+	link = { ck2 = 3827 ck2 = 3826 ck2 = 3825 imperator = 120 }	# Tulisurgium, Amisia, Pheugarum -> Paderborn
+	link = { ck2 = 3831 ck2 = 3828 ck2 = 3829 imperator = 1979 }	# Dulgia, Tuliphurdum, Ascalingium -> Minden
+	link = { ck2 = 3840 imperator = 86 }	# Ad Pontem -> Oldenburg
+	link = { ck2 = 3836 ck2 = 3839 ck2 = 3842 imperator = 85 }	# Amsivaria, Visurgis, Unsingia -> Ostfriesland
+	link = { ck2 = 3837 imperator = 848 }	# Saxonnia -> Hadeln
+	link = { ck2 = 3907 ck2 = 3982 ck2 = 3987 ck2 = 3894 imperator = 1988 }	# Nuithonia, Coenonia, Caluconiana, Virunum Germania -> Havelberg
+	link = { ck2 = 3897 ck2 = 3900 ck2 = 3896 ck2 = 3893 imperator = 260 }	# Virunia, Bunitium, Rhuticlia, Avarpi -> Mecklenburg
+	link = { ck2 = 3898 imperator = 306 }	# Pharodenia -> Rostock
+	link = { ck2 = 3903 ck2 = 3902 ck2 = 3901 imperator = 307 }	# Sciria, Avioniana, Maryanus -> Werle
+	link = { ck2 = 3904 ck2 = 3906 ck2 = 3985 ck2 = 3905 imperator = 308 }	# Sidenia, Galindia, Vistulia, Helveconia Pharodenia -> Wolgast
+	link = { ck2 = 4754 ck2 = 4758 ck2 = 3908 imperator = 1588 }	# Turcilingia, Seurgium, Viritium -> Neumark
+	link = { ck2 = 4752 ck2 = 4753 ck2 = 4751 imperator = 366 }	# Viadrus, Rhuticlia Helveconia, Rhugium -> Stettin
+	link = { ck2 = 3899 imperator = 304 }	# Lemovia -> Rügen
+	# Aetsia
+	link = { ck2 = 7816 ck2 = 7817 imperator = 1592 }	# Carbonia Occidentalis, Carbonia -> Tukums
+	link = { ck2 = 7812 imperator = 1593 }	# Turuntia Borealis -> Vanema
+	link = { ck2 = 7815 ck2 = 7814 imperator = 373 }	# Veltaea Borealis, Veltaea -> Kurzeme
+	link = { ck2 = 7810 ck2 = 7811 ck2 = 7813 imperator = 421 }	# Turuntia Australis, Turuntia, Veltaea Australis -> Samogitia
+	link = { ck2 = 7818 imperator = 374 }	# Careotaia Borealis -> Zemgale
+	link = { ck2 = 7819 ck2 = 7808 imperator = 1597 }	# Careotaia Australis, Rubonia -> Deltuva
+	link = { ck2 = 7809 imperator = 372 }	# Rubonia Occidentalis -> Memel
+	link = { ck2 = 7823 ck2 = 7805 ck2 = 7822 imperator = 424 }	# Sudionoia Orientalis, Sudinoia, Sudionoia Australis -> Grodno
+	link = { ck2 = 7807 ck2 = 7831 ck2 = 7806 ck2 = 7834 imperator = 426 }	# Saloia, Galindia Orientalis, Sudinoia Borealis, Chrononia Borealis -> Kaunas
+	link = { ck2 = 7830 ck2 = 7832 imperator = 422 }	# Galindia Occidentalis, Venedia Borealis -> Scalovia
+	link = { ck2 = 4865 imperator = 371 }	# Venedicana -> Sambia
+	link = { ck2 = 6286 ck2 = 6285 imperator = 427 }	# Marone, Nullica -> Galindia
+	link = { ck2 = 4864 ck2 = 4862 ck2 = 6282 imperator = 370 }	# Venedica, Vistuliana, Cureta -> Marienburg
+	link = { ck2 = 6287 ck2 = 6284 ck2 = 6279 ck2 = 6278 ck2 = 6288 ck2 = 6277 imperator = 529 }	# Anavella, Anavenedica, Vadina, Mornal, Gurina, Duretica -> Plock
+	link = { ck2 = 7836 ck2 = 7298 ck2 = 7804 ck2 = 6289 imperator = 1583 }	# Chrononia Australis, Venedia Australis, Ossioia Occidentalis, Toll -> Lomza
+	link = { ck2 = 7833 ck2 = 7835 imperator = 423 }	# Venedia, Chrononia -> Sudovia
+	link = { ck2 = 4767 ck2 = 4766 ck2 = 4768 ck2 = 4769 imperator = 431 }	# Buguntiana, Cariniana, Erbia, Manimia -> Poznan
+	link = { ck2 = 4764 ck2 = 4765 imperator = 429 }	# Helveconiana, Carinia -> Naklo
+	link = { ck2 = 4772 ck2 = 4771 imperator = 1586 }	# Calisia, Leucaristus -> Wielun
+	link = { ck2 = 4011 ck2 = 4006 ck2 = 4010 ck2 = 4012 ck2 = 4013 ck2 = 4014 ck2 = 4015 imperator = 433 }	# Cognia, Marsignia, Casurgis, Viadria, Carredunum, Eburum, Gothinia -> Upper Silesia
+	link = { ck2 = 4016 imperator = 1927 }	# Oreinia -> Opava
+	link = { ck2 = 4770 ck2 = 4003 ck2 = 4004 ck2 = 4005 ck2 = 4007 ck2 = 4773 ck2 = 4774 imperator = 435 }	# Vindua, Lugidunum, Didunia, Stragona, Leucara, Elysia, Elysiana -> Wroclaw
+	link = { ck2 = 6281 ck2 = 6280 imperator = 1581 }	# Follia, Brigare -> Dobrzyn
+	link = { ck2 = 6276 ck2 = 6272 ck2 = 6274 imperator = 528 }	# Venedicania, Kavera Venedia, Kunegria -> Gostynin
+	link = { ck2 = 4763 ck2 = 4776 ck2 = 4904 imperator = 428 }	# Helveconia, Naharvalorum, Laudicum -> Kujawy
+	link = { ck2 = 4775 ck2 = 4761 ck2 = 4777 imperator = 432 }	# Setideva, Ascaucalis, Vartia -> Kalisz
+}
