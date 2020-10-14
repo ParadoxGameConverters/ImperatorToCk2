@@ -27,10 +27,10 @@ public class TestQ
                String VM = "\\";
        VM = VM.substring(0);
         String Dir1 = "C:"+VM+"Program Files (x86)"+VM+"Steam"+VM+"steamapps"+VM+"common"+VM+"Crusader Kings II";
-        String Dir2 = "C:"+VM+"Users"+VM+"Hayden"+VM+"Documents"+VM+"Paradox Interactive"+VM+"Crusader Kings II"+VM+"mod";
+        String Dir2 = "C:"+VM+"Users"+VM+"testuser"+VM+"Documents"+VM+"Paradox Interactive"+VM+"Crusader Kings II"+VM+"mod";
       test = Processing.importBaronyNameList(Dir2,y,Dir1);
       int aqq = 0;
-      FileOutputStream fileOut= new FileOutputStream("C:"+VM+"Users"+VM+"Hayden"+VM+"Documents"+VM+"Paradox Interactive"+VM+"Test.txt");
+      FileOutputStream fileOut= new FileOutputStream("C:"+VM+"Users"+VM+"testuser"+VM+"Documents"+VM+"Paradox Interactive"+VM+"Test.txt");
       PrintWriter out = new PrintWriter(fileOut);
       while (aqq < 2015) {
       out.println (test[aqq]);    
@@ -46,7 +46,7 @@ public class TestQ
        VM = VM.substring(0);
        String test;
         String Dir1 = "C:"+VM+"Program Files (x86)"+VM+"Steam"+VM+"steamapps"+VM+"common"+VM+"Crusader Kings II";
-        String Dir2 = "C:"+VM+"Users"+VM+"Hayden"+VM+"Documents"+VM+"Paradox Interactive"+VM+"Crusader Kings II"+VM+"mod";
+        String Dir2 = "C:"+VM+"Users"+VM+"testuser"+VM+"Documents"+VM+"Paradox Interactive"+VM+"Crusader Kings II"+VM+"mod";
       test = Processing.importBaronyName(Dir2,y,Dir1);
         return test;
     }
