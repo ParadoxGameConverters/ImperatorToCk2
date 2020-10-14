@@ -527,7 +527,7 @@ public static String[] importCountry (String name, int natIDnum) throws IOExcept
     
 }
 
- public static String[] importConvList (String name, int provIDnum) throws IOException
+ public static String[] importConvList (String name, int provIDnum) throws IOException //Checks old format first, then new format
    {
     
       //use 0 = province
@@ -585,6 +585,8 @@ public static String[] importCountry (String name, int natIDnum) throws IOExcept
           
           //aqq = aqq + 1;
           }
+          
+          
         
         
         
@@ -606,6 +608,8 @@ public static String[] importCountry (String name, int natIDnum) throws IOExcept
     
     
     }
+    
+   
 
 public static String[] importCultList (String name, String provIDnum) throws IOException
    {

@@ -167,6 +167,10 @@ public class Main
        System.out.println("All temp files created");
        
        System.out.println("Importing territory data..."); 
+       
+       
+       Processing.combineProvConvList("provinceConversionCore.txt","provinceConversion.txt");
+       
            
        //TempFiles.tempCreate(saveName, tab+"country_database={", tab+"state_database={", "tempCountries.txt");
        
@@ -265,7 +269,7 @@ while (flag == 0) {
        
       
         aqq = aqq + 1;
-        //System.out.println (ck2ProvInfo[3][343] + "isst" + "343");
+        //System.out.println (ck2ProvInfo[3][aqq] + "isst" + aqq);
     }
     //System.out.println (ck2ProvInfo[3][343] + "ist" + "343");
     //System.out.println (ck2ProvInfo[3][443] + "is" + "443");

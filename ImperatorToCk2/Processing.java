@@ -194,7 +194,7 @@ public class Processing
       String ckName = "debug";
       //String idStr = provID.toString();
       
-      //String keyWord = "	"+provID+"={";
+      //String keyWord = "  "+provID+"={";
       //System.out.println (key");
       
       int aqq = 0;
@@ -281,7 +281,7 @@ public class Processing
       String ckName = "debug";
       //String idStr = provID.toString();
       
-      //String keyWord = "	"+provID+"={";
+      //String keyWord = "  "+provID+"={";
       //System.out.println (key");
       
       int aqq = 0;
@@ -373,7 +373,7 @@ public class Processing
       String ckName = "debug";
       //String idStr = provID.toString();
       
-      //String keyWord = "	"+provID+"={";
+      //String keyWord = "  "+provID+"={";
       //System.out.println (key");
       
       //int aqq = 0;
@@ -388,6 +388,8 @@ public class Processing
       String tab4 = tab+tab+tab+tab;
       
       provName = importNames(name,provIDnum,ck2Dir)[0];
+      
+      //System.out.println(provName+"_provName");
       provName = provName.toLowerCase();
       provName = provName.replace(" ","_");
       provName = provName.replace("-","_");
@@ -397,24 +399,84 @@ public class Processing
           provName = "padova";
         }
         
-      if (provName.equals("angseley")) {
+      else if (provName.equals("angseley")) {
           
           provName = "anglesey";
         }
         
-      if (provName.equals("padua")) {
+      else if (provName.equals("padua")) {
           
           provName = "padova";
         }
         
-      if (provName.equals("aurilliac")) {
+      else if (provName.equals("aurilliac")) {
           
           provName = "aurillac";
         }
         
-      if (provName.equals("el_arish")) {
+      else if (provName.equals("el_arish")) {
           
           provName = "el-arish";
+        }
+        
+      else if (provName.equals("augstgau")) {
+          
+          provName = "aargau";
+        }
+        
+      else if (provName.equals("franken")) {
+          
+          provName = "wurzburg";
+        }
+        
+      else if (provName.equals("nidaros")) {
+          
+          provName = "trondelag";
+        }
+        
+      else if (provName.equals("jarnbaraland")) {
+          
+          provName = "dalarna";
+        } 
+        
+      else if (provName.equals("trans_portage")) {
+          
+          provName = "trans-portage";
+        }  
+        
+      else if (provName.equals("morava")) {
+          
+          provName = "znojmo";
+        }
+        
+      else if (provName.equals("sieradzko_leczyckie")) {
+          
+          provName = "sieradzko-leczyckie";
+        }
+        
+      else if (provName.equals("sieradzko_leczyckie")) {
+          
+          provName = "sieradzko-leczyckie";
+        }
+        
+      else if (provName.equals("desht_i_kipchak")) {
+          
+          provName = "desht-i-kipchak";
+        }
+        
+      else if (provName.equals("kara_kum")) {
+          
+          provName = "kara-kum";
+        }
+        
+      else if (provName.equals("petra") || provName.equals("al'_aqabah")) {
+          
+          provName = "al_aqabah";
+        }
+        
+      else if (provName.equals("anti_atlas")) {
+          
+          provName = "anti-atlas";
         }
         
       
@@ -427,24 +489,32 @@ public class Processing
       //output[1] = "plains"; //default for no culture, uncolonized province with 0 pops
       //output[2] = "noReligion"; //default for no religion, uncolonized province with 0 pops
       
+      //System.out.println(provName + "_Name");
+      
       try {
       while (flag == 0){
           
           //System.out.println(provName + "_Name");
           qaaa = scnr.nextLine();
+          
           //System.out.println(qaaa);
           //double qaaa2 = Double.parseDouble(qaaa);
-          if (qaaa.split("=")[0].equals(tab3 + "c_" + provName + " ") || qaaa.split("=")[0].equals(tab3 + "c_" + provName)){
+          if (qaaa.split("=")[0].equals(tab3 + "c_" + provName + " ") || qaaa.split("=")[0].equals(tab3 + "c_" + provName)
+           || qaaa.split("=")[0].equals("            "+tab+ "c_" + provName+" ") || qaaa.split("=")[0].equals(tab4 + "c_" + provName + " ") ||
+           qaaa.split("=")[0].equals("            " + "c_" + provName + " ") || qaaa.split("=")[0].equals("           "+tab+tab+ "c_" + provName+" ") ||
+           qaaa.split("=")[0].equals("           " + tab + "c_" + provName + " ")){
           flag = 1;
           output = null;
           while (flag == 1){
           //ckName = qaaa.split(",")[4];
           //output[aqq] = ckName;
-          System.out.println(qaaa);
-          System.out.println(aqq);
+          //System.out.println(qaaa);
+          //System.out.println(aqq);
           //output[1] = importCK2ProvFile(ck2Dir,provIDnum,ckName)[0];
           try {
-          if (qaaa.split("_")[0].equals(tab4+"b")){
+          if (qaaa.split("_")[0].equals(tab4+"b") || qaaa.split("_")[0].equals("                "+tab+"b") ||
+          qaaa.split("_")[0].equals(tab4+tab+"b") || qaaa.split("_")[0].equals("               	"+tab+"b") || 
+          qaaa.split("_")[0].equals("                "+"b")){
           //System.out.println(output[0]+" is 0, "+output[1]+" is 1");
           //System.out.println(output[0]+" is 0, "+output[1]+" is 1");
           qaaa = qaaa.split("b_")[1];
@@ -513,7 +583,7 @@ public class Processing
       String ckName = "debug";
       //String idStr = provID.toString();
       
-      //String keyWord = "	"+provID+"={";
+      //String keyWord = "  "+provID+"={";
       //System.out.println (key");
       
       int aqq = 1;
@@ -531,7 +601,10 @@ public class Processing
       try {
       while (endOrNot = true){
           output[aqq]=importBaronyName(ck2Dir,aqq,ck2Dir);
+          if (output[aqq].equals("debug")) {
           System.out.println(aqq+"is for"+output[aqq]);
+          
+        }
           aqq = aqq + 1;
           
     }
@@ -585,7 +658,7 @@ public class Processing
       String ckName = "debug";
       //String idStr = provID.toString();
       
-      //String keyWord = "	"+provID+"={";
+      //String keyWord = "  "+provID+"={";
       //System.out.println (key");
       
       int aqq = 1;
@@ -653,12 +726,14 @@ public class Processing
           FileInputStream fileIn= new FileInputStream(dir);
       Scanner scnr= new Scanner(fileIn);
       
+      
+      
       int flag = 0;
       //double q = 0.0;
       String ckName = "debug";
       //String idStr = provID.toString();
       
-      //String keyWord = "	"+provID+"={";
+      //String keyWord = "  "+provID+"={";
       //System.out.println (key");
       
       int aqq = 0;
@@ -739,7 +814,7 @@ public class Processing
       
       //String idStr = provID.toString();
       
-      //String keyWord = "	"+provID+"={";
+      //String keyWord = "  "+provID+"={";
       //System.out.println (key");
       
       int aqq = 0;
@@ -754,5 +829,200 @@ public class Processing
     
     
     }
+    
+     public static String[] convertProvConvList (String name, String outputDest) throws IOException //Converts standard mapper tool format into regular format
+   {
+    
+      //use 0 = province
+      //use 1 = 
+      //use 2 = 
+      //use 3 =
+      
+      String tab = "	";
+      
+     //String provID = Integer.toString(provIDnum);
+      
+     //System.out.println ("Load 1 done");
+     
+      
+      FileInputStream fileIn= new FileInputStream(name);
+      Scanner scnr= new Scanner(fileIn);
+      
+      
+      FileOutputStream fileOut= new FileOutputStream(outputDest);
+       PrintWriter out = new PrintWriter(fileOut);
+      
+      int flag = 0;
+      //double q = 0.0;
+      
+      //String idStr = provID.toString();
+      
+      //String keyWord = "        "+provID+"={";
+      //System.out.println (key");
+      
+      //int aqq = 0;
+      //String qaaa = scnr.nextLine();
+      boolean endOrNot = true;
+      //String vmm = scnr.nextLine();
+      String qaaa;
+      String[] output;   // Owner Culture Religeon PopTotal Buildings
+      output = new String[8000];
+      
+      
+      
+      output[0] = "peq"; //default for no owner, uncolonized province
+      output[1] = "99999"; //default for no culture, uncolonized province with 0 pops
+      //output[2] = "good"; //default for no culture, uncolonized province with 0 pops
+      
+      char bracket1 = 123;
+      char bracket2 = 125;
+      
+      String bracket1Str = bracket1+" ";
+      
+      bracket1Str = bracket1Str.replace(" ","");
+      
+      String bracket2Str = bracket2+" ";
+      
+      bracket2Str = bracket2Str.replace(" ","");
+      
+      int aq2 = 0;
+      
+      try {
+      while (endOrNot = true){
+          
+          qaaa = scnr.nextLine();
+          
+          
+          
+
+          //double qaaa2 = Double.parseDouble(qaaa);
+          //output[2] = "good";
+          
+          
+              
+            
+          
+          if (qaaa.split("ink = ")[0].equals(tab+"l")){
+
+                  qaaa = qaaa.split("ink = ")[1];
+                  qaaa = qaaa.split(tab)[0];
+                  qaaa = qaaa.substring(2,qaaa.length()-2);;
+                  qaaa = qaaa.replace(" = ",",");
+                  
+                  String[] provinceMappings = qaaa.split(" ");
+                  
+                  //System.out.println(qaaa); 
+                  
+                  String impProv = "a";
+                  
+                  int aqq = 0;
+                  
+                  while (aqq < provinceMappings.length) {
+                  //System.out.println(provinceMappings[aqq]+"_"+aqq);
+                  if (provinceMappings[aqq].split(",")[0].equals("imperator")){
+                     impProv = provinceMappings[aqq].split(",")[1];
+                     aqq = 99999;
+                     
+                    }
+                  else {aqq = aqq + 1;}  
+                    
+                }
+                 aqq = 0;   
+                if (impProv != "a") {
+                    while (aqq < provinceMappings.length) {
+                          if (provinceMappings[aqq].split(",")[0].equals("ck2")){
+                             output[aq2] = (provinceMappings[aqq].split(",")[1]+","+impProv);
+                              
+                            }
+                          aqq = aqq + 1;
+                          aq2 = aq2 + 1;
+                    }
+                    
+                }
+              
+              
+            //endOrNot = false;
+             //System.out.println ("Load 2 done");
+            //output[0] = qaaa.split(",")[0];
+            //output[1] = qaaa.split(",")[1];
+          
+          
+          
+        
+        
+          
+          //aqq = aqq + 1;
+          }
+          
+        
+        
+        
+    }
+    
+        
+    }catch (java.util.NoSuchElementException exception){
+        endOrNot = false;
+        
+    }   
+     //System.out.println (output[0]);
+     //System.out.println (output[1]);
+     //System.out.println (output[2]);
+     //System.out.println (output[3]);
+     //System.out.println (output[4]);
+      out.flush();
+      fileOut.close();
+      
+      fileIn.close();
+     return output;
+     
+    }
+    
+    public static int combineProvConvList(String source, String destination) throws IOException
+    {
+        
+        String[] toAdd = convertProvConvList("provinceConversion2.txt","provinceConversion2Formatted.txt");
+        String VM = "\\"; 
+        VM = VM.substring(0);
+        
+        FileInputStream fileIn= new FileInputStream(source);
+      Scanner scnr= new Scanner(fileIn);
+      
+       FileOutputStream fileOut= new FileOutputStream(destination);
+       PrintWriter out = new PrintWriter(fileOut);
+      
+      String qaaa = scnr.nextLine();
+      
+      int aqq = 0;
+      
+      while (aqq < toAdd.length) {
+         if (toAdd[aqq] != null) {
+         out.println(toAdd[aqq]); 
+        }
+         aqq = aqq + 1; 
+        }
+      
+      
+      int flag = 0;
+      try {
+      while (flag == 0) {
+          out.println(qaaa);
+          qaaa = scnr.nextLine();
+          
+        }
+        
+        
+    }catch (java.util.NoSuchElementException exception){
+     flag = 1; 
+     out.flush();
+     fileOut.close();
+    }
+    
+    
+        return 0;
+    }
+    
+    
+    
+    
     
 }
