@@ -17,14 +17,6 @@ public class Characters
         public static String[] importChar (String name, String charID) throws IOException
    {
     
-      //use 0 = province
-      //use 1 = 
-      //use 2 = 
-      //use 3 =
-      
-     //String charID = Integer.toString(charIDnum);
-      
-     //System.out.println ("Load 1 done");
      String tab = "	";
      char quote = '"';
       
@@ -32,15 +24,11 @@ public class Characters
       Scanner scnr= new Scanner(fileIn);
       
       int flag = 0;
-      //double q = 0.0;
-      
-      //String idStr = provID.toString();
       
       String keyWord = charID+"={";
-      //System.out.println (key");
-      
+
       int aqq = 0;
-      //String qaaa = scnr.nextLine();
+
       boolean endOrNot = true;
       String vmm = scnr.nextLine();
       String qaaa = vmm;
@@ -62,10 +50,8 @@ public class Characters
       while (endOrNot = true){
           
           qaaa = scnr.nextLine();
-          //double qaaa2 = Double.parseDouble(qaaa);
           if (qaaa.equals(keyWord)){
           endOrNot = false;
-          //System.out.println ("Load 2 done");
           while (flag == 0) {
           qaaa = scnr.nextLine();
             if (qaaa.split("=")[0].equals( tab+tab+"name" ) ) {
@@ -89,16 +75,11 @@ public class Characters
                 
             }
             else if (qaaa.split("=")[0].equals( tab+"traits" ) ) {
-                //try {
                 System.out.println (qaaa); 
                 output[8] = qaaa.split("=")[1];
                 
                 output[8] = output[8].substring(2,output[8].length()-2);
                 System.out.println (output[8]);
-                //}
-                //catch (java.util.regex.PatternSyntaxException exception) {
-                //System.out.println ("noTraits");    
-                //}
             }
             else if (qaaa.split("=")[0].equals( tab+tab+"martial" ) ) {
                 output[10] = qaaa.split("=")[1];
@@ -113,7 +94,6 @@ public class Characters
                 output[13] = qaaa.split("=")[1];
             }
             else if (qaaa.split("=")[0].equals( tab+"spouse" ) ) {
-                //try {
                 output[14] = qaaa.split("=")[1];
                 output[14] = output[14].substring(2,output[14].length()-2); 
                 
@@ -125,10 +105,6 @@ public class Characters
                 }catch (java.lang.ArrayIndexOutOfBoundsException exception) {
                     
                 }
-                //}
-                //catch (java.util.regex.PatternSyntaxException exception) {
-                    
-                //}
             }
             else if (qaaa.split("=")[0].equals( tab+"children" ) ) {
                 
@@ -142,8 +118,6 @@ public class Characters
             //popTotal
             else if (qaaa.split("=")[0].equals( tab+"age" ) ) {
                 aqq = aqq + 1;
-                //double aq = 1;
-                //output[3] = Integer.toString(aqq);
                 output[3] = qaaa.split("=")[1];
             }
             
@@ -151,7 +125,6 @@ public class Characters
             else if (qaaa.equals( tab+"female=yes" ) ) {
                 aqq = aqq + 1;
                 output[4] = "f";
-                //System.out.println ("Load 3 done");
             }
             
             else if (qaaa.split("=")[0].equals( tab+"death_date" ) ) {
@@ -164,20 +137,12 @@ public class Characters
             else if (qaaa.split("=")[0].equals( tab+"character_experience" ) ) {
                 aqq = aqq + 1;
                 flag = 1; //end loop
-                //output[6] = Integer.toString(aqq);
                 output[6] = qaaa.split("=")[1];
             }
              
-            //aqq = aqq + 1;
-            //System.out.println (aqq);
             }
           
-          
-          
-        
-        
-          
-          //aqq = aqq + 1;
+
         }
     }
     
@@ -186,11 +151,7 @@ public class Characters
         endOrNot = false;
       
     }   
-     //System.out.println (output[0]);
-     //System.out.println (output[1]);
-     //System.out.println (output[2]);
-     //System.out.println (output[3]);
-     //System.out.println (output[4]);
+
      
      return output;
     
@@ -201,35 +162,19 @@ public class Characters
      public static String importAndConvDynasty (String dir, String IDnum, String backupName, String file) throws IOException
    {
     
-      //use 0 = province
-      //use 1 = 
-      //use 2 = 
-      //use 3 =
-      
-     //String provID = Integer.toString(IDnum);
-      
-     //System.out.println ("Load 1 done");
      String tab = "	";
       
       FileInputStream fileIn= new FileInputStream(file);
       Scanner scnr= new Scanner(fileIn);
       
       int flag = 0;
-      //double q = 0.0;
-      
-      //String idStr = provID.toString();
-      
-      //String keyWord = tab+tab+IDnum+"={";
+
         String keyWord = tab+tab+IDnum;
-      //System.out.println (key");
       
       int aqq = 0;
-      //String qaaa = scnr.nextLine();
       boolean endOrNot = true;
       String vmm = scnr.nextLine();
       String qaaa = vmm;
-      //String[] output;   // Owner Culture Religeon PopTotal Buildings
-      //output = new String[5];
       String output = "noName"; //default for no name
       
       
@@ -238,10 +183,8 @@ public class Characters
       while (endOrNot = true){
           
           qaaa = scnr.nextLine();
-          //double qaaa2 = Double.parseDouble(qaaa);
           if (qaaa.split("=")[0].equals(keyWord)){
           endOrNot = false;
-          //System.out.println ("Load 2 done");
           while (flag == 0) {
           qaaa = scnr.nextLine();
             if (qaaa.split("=")[0].equals( tab+tab+tab+"key" ) ) {
@@ -250,17 +193,9 @@ public class Characters
                 flag = 1;
             }
             
-             
-            //aqq = aqq + 1;
-            //System.out.println (aqq);
             }
           
-          
-          
-        
-        
-          
-          //aqq = aqq + 1;
+
         }
     }
     
@@ -269,11 +204,7 @@ public class Characters
         endOrNot = false;
       
     }   
-     //System.out.println (output[0]);
-     //System.out.println (output[1]);
-     //System.out.println (output[2]);
-     //System.out.println (output[3]);
-     //System.out.println (output[4]);
+
      if (output.split("_")[0].equals ("minor")) {
          output = backupName;
         }

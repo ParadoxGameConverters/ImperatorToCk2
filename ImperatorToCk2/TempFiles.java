@@ -17,14 +17,7 @@ public class TempFiles
     
     private int x;
 
-    /**
-     * Constructor for objects of class TempFiles
-     */
-    public TempFiles()
-    {
-        // initialise instance variables
-        x = 0;
-    }
+
 
     
     public static void tempCreate(String save, String keyword, String endword, String type) throws IOException
@@ -60,7 +53,6 @@ public class TempFiles
         vmm = scnr.nextLine();     
         }
         }
-        //return x + y;
         //developed by Shinymewtwo99
     }
     catch (java.util.NoSuchElementException exception){

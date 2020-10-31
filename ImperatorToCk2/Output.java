@@ -18,18 +18,6 @@ public class Output
 
     
     
-    public static int provOutput(String pop)
-    {
-        
-        
-        String VM = "\\"; 
-        VM = VM.substring(0);
-        
-        
-        
-        return 0;
-    }
-    
     public static int output(String source, String destination) throws IOException
     {
         
@@ -69,7 +57,6 @@ public class Output
         VM = VM.substring(0);
         
         String ck2CultureInfo;   // Owner Culture Religeon PopTotal Buildings
-        //ck2CultureInfo = new String[2];
         
         Importer importer = new Importer();
         
@@ -88,7 +75,6 @@ public class Output
         VM = VM.substring(0);
         
         String ck2CultureInfo;   // Owner Culture Religeon PopTotal Buildings
-        //ck2CultureInfo = new String[2];
         
         Importer importer = new Importer();
         
@@ -99,24 +85,6 @@ public class Output
         return ck2CultureInfo;
     }
     
-    public static String provinceGrouping(String irCulture)
-    {
-        
-        
-        String VM = "\\"; 
-        VM = VM.substring(0);
-        
-        String ck2CultureInfo ="a";   // Owner Culture Religeon PopTotal Buildings
-        //ck2CultureInfo = new String[2];
-        
-        Importer importer = new Importer();
-        
-        //ck2CultureInfo = importer.importCultList("cultureConversion.txt",irCulture)[1];
-        
-        
-        
-        return ck2CultureInfo;
-    }
     
     public static String titleCreationCommon(String irTAG, String irColor, String isRepublic,String capital,String rank, String Directory) throws IOException
     {
@@ -169,25 +137,18 @@ public class Output
         Directory = Directory + VM + "history" + VM + "titles";
         
         String ck2CultureInfo ="a";   // Owner Culture Religeon PopTotal Buildings
-        //ck2CultureInfo = new String[2];
         
         Importer importer = new Importer();
         
-        //ck2CultureInfo = importer.importCultList("cultureConversion.txt",irCulture)[1];
-        
-      //      FileInputStream fileIn= new FileInputStream(source);
-      //Scanner scnr= new Scanner(fileIn);
       
        FileOutputStream fileOut= new FileOutputStream(Directory + VM + rank+"_" + irTAG + ".txt");
        PrintWriter out = new PrintWriter(fileOut);
       
-      //String qaaa = scnr.nextLine();
       int flag = 0;
       
       String date1 = "100.1.1";
       String date2 = "1066.9.15";
       
-      //Temporarily disabled date 1 for early testing
       
       out.println (date1+"={");
       if (liege != "no_liege") {
@@ -239,19 +200,19 @@ public class Output
        String holding3 = "temple";
        boolean convRepublic = true; //To be done later
        
-       if (gov.equals ("tribal_federation") || gov.equals ("tribal_kingdom")) {
+       if (gov.equals ("tribal_federation") || gov.equals ("tribal_kingdom") || gov.equals ("tribal_chiefdom")) {
         holding1 = "tribal";
         holding2 = "tribal";
         holding3 = "tribal";
         }
-       // else if (gov.split("_").equals ("republic") || convRepublic == true) {
-       //  holding2 = "city";   
-       // }
+        else if (gov.split("_").equals ("republicQ") || convRepublic == true) { //Currently unused, need to figure out how to implement republics
+         holding2 = "city";   
+        }
        
        
        int popNum = Integer.parseInt(pops);
        int holdingTot = 1;
-       //int buildTot = 1;
+
        if (popNum <= 15) {
          holdingTot = 1;  
         } 
@@ -283,7 +244,6 @@ public class Output
        out.println ("# Settlements");
        out.println ("max_settlements = "+holdingTot);
        out.println ("b_"+name+" = "+holding1);
-       //out.println ("");
        
        if (popNum >= 30) {
          out.println ("b_"+barony[1]+" = "+holding2);  
@@ -303,9 +263,6 @@ public class Output
        if (popNum <= 1000) {
          out.println ("b_"+barony[6]+" = "+holding2);  
         }
-       //if (popNum >= 1000) {
-       //  out.println ("b_"+barony[6]+" = "+holding2); 
-       // }
        out.println ("");
         
        out.println ("# Misc");
@@ -314,11 +271,9 @@ public class Output
        if (landType.equals ("plains")){ 
         }
         else {
-       //out.println ("terrain = "+landType);
        out.println (landType);
         }
        
-       //out.println ("}");
        
         if (id == 23) { //Stonehenge
          out.println ("");
@@ -369,25 +324,16 @@ public class Output
         Directory = Directory + VM + "history" + VM + "titles";
         
         String ck2CultureInfo ="a";   // Owner Culture Religeon PopTotal Buildings
-        //ck2CultureInfo = new String[2];
-        
-        //Importer importer = new Importer();
-        
-        //ck2CultureInfo = importer.importCultList("cultureConversion.txt",irCulture)[1];
-        
-      //      FileInputStream fileIn= new FileInputStream(source);
-      //Scanner scnr= new Scanner(fileIn);
+
       
        FileOutputStream fileOut= new FileOutputStream(Directory + VM + "c_" + name + ".txt");
        PrintWriter out = new PrintWriter(fileOut);
       
-      //String qaaa = scnr.nextLine();
       int flag = 0;
       
       String date1 = "100.1.1";
       String date2 = "1066.9.15";
       
-      //Temporarily disabled date 1 for early testing
       
       out.println (date1+"={");
       out.println ("	holder="+irKING100);
@@ -434,7 +380,6 @@ public class Output
             }
         }
         
-        //String child1066 = Integer.toString( 3000000 + Integer.parseInt(spouse));
         if (father != "q") {
         hasFather = 1;
         
@@ -444,7 +389,6 @@ public class Output
         hasMother = 1;
         
         }
-        //String childFather = irKING;
         
         int aq4 = 0;
         
@@ -486,7 +430,6 @@ public class Output
         
         int numAge = Integer.parseInt(age);
         
-        //if
         
         
         Directory = Directory + VM + "history" + VM + "characters";
@@ -496,7 +439,6 @@ public class Output
         dynasty = Integer.toString(Integer.parseInt(dynasty) + 700000000);
         }
         
-        //String[] convTraitList;
         String tempTrait = "a";
         int aqq = 0;
         int aq2 = 0;
@@ -507,7 +449,6 @@ public class Output
         System.out.println("traitsGood"); 
         String[] traitList = traits.split(" ");
         
-        //int traitTot = traitList.length;
         try {
         while (aqq < 99) {
         if (traitList[aqq].charAt(0) == quote) {
@@ -531,8 +472,6 @@ public class Output
         
         aqq = 0;
         
-        //int traitTot = traitList.length;
-        
         
         Importer importer = new Importer();
         
@@ -544,28 +483,15 @@ public class Output
        FileOutputStream fileOut= new FileOutputStream(Directory + VM + name + "k_" + irKING + ".txt");
        PrintWriter out = new PrintWriter(fileOut);
       
-      //String qaaa = scnr.nextLine();
       int flag = 0;
       
       String date1 = "100.1.1";
       String date2 = "1066.9.15";
-      //int birthdayNum2 = Integer.parseInt(date2.split(".")[0]) - numAge;
-      //String birthday2 = Integer.toString(birthdayNum2) + date2.split(".")[1] + date2.split(".")[2];
       int birthdayNum2 = 1066 - numAge;
       int birthdayNum = 100 - numAge;
-      ////System.out.println(birthdayNum2);
       String birthday2 = Integer.toString(birthdayNum2)+".9.15";
       String birthday = Integer.toString(birthdayNum)+".1.1";
       
-      //int deathdayNum2 = 1066 - numAge;
-      //int deathdayNum = 100 - numAge;
-      ////System.out.println(birthday2);
-      
-      //Temporarily disabled date 1 for early testing
-      //String tempTest = "999999";
-      //out.println (date1+"={");
-      //out.println ("	holder="+irKING);
-      //out.println ("}");
       //Military/Martial Charisma/Stewardship Zeal/Learning
       
       //1066 Start date
@@ -634,7 +560,6 @@ public class Output
         out.println (tab+date2+" ={");   
         }
       
-      //out.println (tab+"culture="+culture);
       out.println ("}");
       
       
@@ -661,7 +586,6 @@ public class Output
         if (convTraitList.get(aqq).charAt(convTraitList.get(aqq).length()-1) == 'B' && hasFather == 0) { //bloodline
         out.println (tab+date1+"={");
         out.println (tab+tab+"create_bloodline = {");
-        //out.println (tab+tab+tab+"type = "+convTraitList.get(aqq).split("_")[0]);
         out.println (tab+tab+tab+"type = "+convTraitList.get(aqq).substring(0,convTraitList.get(aqq).length()-1));
         out.println (tab+tab+tab+"has_dlc = "+quote+"Holy Fury"+quote);
         out.println (tab+tab+"}");
@@ -679,7 +603,6 @@ public class Output
       if (sex != "69") { //if a character is dynamically generated or not
       out.println (tab+"disallow_random_traits = yes");    
         }
-      //out.println (tab+"disallow_random_traits = yes");
       
       if (hasFather == 1) {
         out.println (tab+"father="+father100);
@@ -709,7 +632,6 @@ public class Output
         }
       out.println (tab+tab+"death= yes");
       out.println (tab+"}");
-      //out.println (tab+"culture="+culture);
       out.println ("}");
       
       
@@ -730,34 +652,20 @@ public class Output
         char VMq = '"';
         String tab = "	";
         
-        //name = name.toLowerCase();
         
         Directory = Directory + VM + "common" + VM + "dynasties";
         
         String ck2CultureInfo ="a";   // Owner Culture Religeon PopTotal Buildings
-        //ck2CultureInfo = new String[2];
-        
-        //Importer importer = new Importer();
-        
-        //ck2CultureInfo = importer.importCultList("cultureConversion.txt",irCulture)[1];
-        
-      //      FileInputStream fileIn= new FileInputStream(source);
-      //Scanner scnr= new Scanner(fileIn);
       
        FileOutputStream fileOut= new FileOutputStream(Directory + VM + "c_" + id + ".txt");
        PrintWriter out = new PrintWriter(fileOut);
       
-      //String qaaa = scnr.nextLine();
       int flag = 0;
       
       String date1 = "100.1.1";
       String date2 = "1066.9.15";
       
-      //Temporarily disabled date 1 for early testing
       
-      //out.println (date1+"={");
-      //out.println ("	holder="+irKING);
-      //out.println ("}");
       
       out.println (id+"=");
       out.println ("{");
@@ -789,29 +697,14 @@ public class Output
         Directory = Directory + VM + "common" + VM + "landed_titles";
         
         String ck2CultureInfo ="a";   // Owner Culture Religeon PopTotal Buildings
-        //ck2CultureInfo = new String[2];
-        
-        //Importer importer = new Importer();
-        
-        //ck2CultureInfo = importer.importCultList("cultureConversion.txt",irCulture)[1];
-        
-      //      FileInputStream fileIn= new FileInputStream(source);
-      //Scanner scnr= new Scanner(fileIn);
+
       
        FileOutputStream fileOut= new FileOutputStream(Directory + VM + "b_" + name + ".txt");
        PrintWriter out = new PrintWriter(fileOut);
       
-      //String qaaa = scnr.nextLine();
       int flag = 0;
       
-      //String date1 = "100.1.1";
-      //String date2 = "1066.9.15";
       
-      //Temporarily disabled date 1 for early testing
-      
-      //out.println (date1+"={");
-      //out.println ("	holder="+irKING);
-      //out.println ("}");
       
       out.println ("c_"+name+"={");
       out.println (tab+"b_"+name+"={");
@@ -835,24 +728,15 @@ public class Output
         
         oldFile = Importer.importModLocalisation(Directory);
         
-        //title = title.toLowerCase();
         
         Directory = Directory + VM + "localisation";
         
         String ck2CultureInfo ="a";   // Owner Culture Religeon PopTotal Buildings
-        //ck2CultureInfo = new String[2];
-        
-        //Importer importer = new Importer();
-        
-        //ck2CultureInfo = importer.importCultList("cultureConversion.txt",irCulture)[1];
-        
-      //      FileInputStream fileIn= new FileInputStream(source);
-      //Scanner scnr= new Scanner(fileIn);
+
       
        FileOutputStream fileOut= new FileOutputStream(Directory + VM + "converted_title_localisation.csv");
        PrintWriter out = new PrintWriter(fileOut);
       
-      //String qaaa = scnr.nextLine();
       int flag = 0;
       int aqq = 0;
       
@@ -870,18 +754,8 @@ public class Output
     } 
       
       
-      //Temporarily disabled date 1 for early testing
-      
-      //out.println (date1+"={");
-      //out.println ("	holder="+irKING);
-      //out.println ("}");
-      
-      //out.println ("k_"+title+";"+VMq+name[0]+VMq+";"+VMq+name[0]+VMq+";"+VMq+name[0]+VMq+";;"+VMq+name[0]+VMq+";;;;;;;;;x");
-      //out.println ("k_"+title+"_adj"+";"+VMq+name[1]+VMq+";"+VMq+name[1]+VMq+";"+VMq+name[1]+VMq+";;"+VMq+name[1]+VMq+";;;;;;;;;x");
       out.println ("k_"+title+";"+name[0]+";"+name[0]+";"+name[0]+";;"+name[0]+";;;;;;;;;x");
       out.println ("k_"+title+"_adj"+";"+name[1]+";"+name[1]+";"+name[1]+";;"+name[1]+";;;;;;;;;x");
-      //out.println ("	holder="+irKING);
-      //out.println ("}");
       out.flush();
       fileOut.close();
         
@@ -896,28 +770,17 @@ public class Output
         VM = VM.substring(0);
         char VMq = '"';
         
-        //name = name.toLowerCase();
         
         Directory = Directory + VM + "localisation";
         
-        String ck2CultureInfo ="a";   // Owner Culture Religeon PopTotal Buildings
-        //ck2CultureInfo = new String[2];
-        
-        //Importer importer = new Importer();
-        
-        //ck2CultureInfo = importer.importCultList("cultureConversion.txt",irCulture)[1];
-        
-      //      FileInputStream fileIn= new FileInputStream(source);
-      //Scanner scnr= new Scanner(fileIn);
+        String ck2CultureInfo ="a";   // blank default
       
-       FileOutputStream fileOut= new FileOutputStream(Directory + VM + "converted_title_localisation.csv");
-       PrintWriter out = new PrintWriter(fileOut);
+        FileOutputStream fileOut= new FileOutputStream(Directory + VM + "converted_title_localisation.csv");
+        PrintWriter out = new PrintWriter(fileOut);
       
-       out.println ("#Localization for all kingdom titles");
-      //out.println ("	holder="+irKING);
-      //out.println ("}");
-      out.flush();
-      fileOut.close();
+        out.println ("#Localization for all kingdom titles");
+        out.flush();
+        fileOut.close();
         
         return ck2CultureInfo;
     }

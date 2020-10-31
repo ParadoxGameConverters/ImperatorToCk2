@@ -33,7 +33,6 @@ public class Main
        Output output = new Output();
        Directories directories = new Directories();
        
-       //System.out.println("Please input your HOI4 documents directory");
        System.out.println("Please input your system profile username");
        Dir = input.next();
        String VM = "\\";
@@ -79,10 +78,8 @@ public class Main
       
       String[] impProvRegions = Processing.importRegionList(8000,impGameDir);
       //[0] is owner, [1] is culture, [2] is religion, [3] is calculated from pop
-      //impProvInfo[3] = "0"; //pop total
-      int totalPop = 0;
+      int totalPop = 0;//pop total
       int totalCKProv = 2050;
-      //int totalCKProv = 9999;
       
       String[] ck2PopTotals;   // Owner Culture Religeon PopTotal Buildings
       ck2PopTotals = new String[totalCKProv];
@@ -103,7 +100,6 @@ public class Main
       
       output.localizationBlankFile(modDirectory); //creates the country localization file
       
-      //ArrayList<String> ck2HasLand = new ArrayList<String>();
       String[] ck2HasLand;   // Owner Culture Religeon PopTotal Buildings
       ck2HasLand = new String[5000];
       int aqtest = 0;
@@ -116,7 +112,6 @@ public class Main
       int cultNum = 0;
       int relNum = 0;
       
-      //System.out.println(5 + Integer.parseInt("5"));
       
       String tempTest = "1000000";
       int tempNum = 1000000;
@@ -172,19 +167,15 @@ public class Main
        Processing.combineProvConvList("provinceConversionCore.txt","provinceConversion.txt");
        
            
-       //TempFiles.tempCreate(saveName, tab+"country_database={", tab+"state_database={", "tempCountries.txt");
        
        //processing information
        totalPop = 0;
 while (flag == 0) {
        impProvtoCK = importer.importConvList("provinceConversion.txt",aqq); 
-       
-       //System.out.println(impProvtoCK[0]);
-       //System.out.println(impProvtoCK[1]);
-       //aqq = aqq + 1;
+
        
        if (impProvtoCK[0].equals ("peq")) {
-       //System.out.println("all"+aqq);    
+ 
         }
         
        
@@ -200,13 +191,7 @@ while (flag == 0) {
            
            impProvInfo = importer.importProv(saveProvinces,aqq);
            
-           //ArrayList<String> cultProv = new ArrayList<String>();
-           //ArrayList<String> ownerProv = new ArrayList<String>();
-      
-           //cultProv.add("DEBUG,0");
-           //ownerProv.add
-           //System.out.println (("DEBUG,"+impProvtoCK[0]));
-           //System.out.println (ownerProv.get(aqq));
+
            temp = 0;
            temp2 = 0;
            //nation
@@ -238,29 +223,21 @@ while (flag == 0) {
             ck2RegionTotals[ckProvNum] = ck2RegionTotals[ckProvNum] + "~" + impProvRegions[aqq] + "," + impProvInfo[3];
         }
         
-           //ck2ProvInfo[aqq] = impProvInfo; //Sets 
            try {
            totalPop = Integer.parseInt(ck2PopTotals[ckProvNum]);
            
         }catch (java.lang.NumberFormatException exception) {
           totalPop = 0;  
         }
-           //System.out.println(impProvInfo[3] + "_" + ckProvNum);
+
            if (impProvInfo[3] == null) {
              impProvInfo[3] = "0";  
             }
            totalPop = Integer.parseInt(impProvInfo[3]) + totalPop;
            ck2ProvInfo[3][ckProvNum] = Integer.toString(totalPop);
            
-           //System.out.println (ck2ProvInfo[3][ckProvNum] + "is" + aqq); 
-           
-           //System.out.println (ck2TagTotals[ckProvNum]);
-           //System.out.println (ck2CultureTotals[ckProvNum]);
-           //System.out.println (ck2RelTotals[ckProvNum]);
-           //ckProvNum = 0;
            ck2PopTotals[ckProvNum] = Integer.toString(totalPop);
            
-           //System.out.println (ck2ProvInfo[3][343] + "isw" + aqq);
         }
        
        if (aqq == 7843) {
@@ -269,14 +246,8 @@ while (flag == 0) {
        
       
         aqq = aqq + 1;
-        //System.out.println (ck2ProvInfo[3][aqq] + "isst" + aqq);
     }
-    //System.out.println (ck2ProvInfo[3][343] + "ist" + "343");
-    //System.out.println (ck2ProvInfo[3][443] + "is" + "443");
-    //System.out.println (ck2ProvInfo[3][1] + "is" + "1");
-    //System.out.println(ck2ProvInfo[0][341] + "_is_341");
-    //System.out.println(ck2TagTotals[341] + "_341 tag totals");
-    //System.out.println(ck2TagTotals[343] + "_343 tag totals");
+
     //Culture, rel, tag Info, and pop total returned
     System.out.println("Territory data imported");
     System.out.println("Combining territories into provinces...");
@@ -287,21 +258,13 @@ while (flag == 0) {
     int aq5 = 0;
     int aq6 = 0;
     String[] irOwners;
-    //String[] owners;
-    //String[] provtags; //NotUsed
-    //String[] pops; //NotUsed
-    //aq2 = 339;
-    //System.out.println(ck2TagTotals[339].split("~")[0]);
-    //System.out.println(ck2TagTotals[340].split("~")[0]);
+
     
     while( aq2 < totalCKProv) {
         if (ck2TagTotals[aq2] != null)  {
-            //System.out.println(ck2ProvInfo[0][340]);
-        //if (ck2TagTotals[aq2] == null) {
-            
-        //}
+
         irOwners = ck2TagTotals[aq2].split("~"); 
-        //System.out.println(irOwners[0]+"a"+irOwners.length);
+
        
        
        
@@ -327,17 +290,9 @@ while (flag == 0) {
             System.out.println(aq5);
         }
         
-        //ownerTot[Integer.parseInt(owners[0])] = Integer.parseInt(owners[1]);
         ownerTot[ownNum] = Integer.parseInt(owners[1]);
-        //    while (aq6 > irOwners.length) {
-            //if (owners[aq6]) {
         System.out.println(owners[0]+owners[1]+"b_owners");    
-            //}
-            //pops[
-        //}
-        //if (ck2ProvInfo[0][aq2] == null) {
         ck2ProvInfo[0][aq2] = owners[0];
-        //}
         aq6 = 1;
         while (aq6 < totalCKProv) {
          if (ownerTot[aq6] > ownerTot[aq6-1]){
@@ -348,14 +303,12 @@ while (flag == 0) {
          
         }
         aq5 = aq5 + 1;
-        //ck2HasLand.get(aq2);
         int tempQ = Integer.parseInt(ck2ProvInfo[0][aq2]);
         System.out.println(tempQ);
         if (tempQ != 9999){
         ck2HasLand[tempQ] = "yes";
         }
-        //System.out.println(Integer.parseInt(ck2ProvInfo[0][aq2]) + "Has land");
-        //aq6 = 0;
+
         }
         aq5 = 0;
        
@@ -366,17 +319,14 @@ while (flag == 0) {
         aq2 = aq2 + 1;
     
     }
-    //System.out.println(ck2ProvInfo[0][340] + "is the owner of Province 340");
-    //System.out.println(ck2ProvInfo[0][343] + "is the owner of Province 343");
     System.out.println("Province ownership calculated");
     aq2 = 0;
     flag = 0;
-    //System.out.println(ck2RelTotals[343]);
-    //Integer.parseInt(ck2ProvInfo[0][343]))
+
     
     while( aq2 < totalCKProv) {
         try {
-            //System.out.println(ck2ProvInfo[0][343]);
+
         if (ck2TagTotals[aq2] == null) {
             
         }
@@ -393,10 +343,8 @@ while (flag == 0) {
     System.out.println("Province religion and culture calculated");
     System.out.println("Province data combined");
     System.out.println("Importing country data...");
-    //System.out.println("The culture is" + ck2ProvInfo[1][343]);
-    //System.out.println("The culture is" + ck2ProvInfo[2][343]);
+
     System.out.println("The region is" + ck2ProvInfo[4][343]);
-    //System.out.println(Processing.basicProvinceTotal(totalCKProv,ck2CultureTotals,ck2ProvInfo,1,342));
     int flagCount = 0;
     
     ArrayList<String[]> impTagInfo = new ArrayList<String[]>();
@@ -406,9 +354,7 @@ while (flag == 0) {
         impTagInfo.add(importer.importCountry(saveCountries,aq2));
         
         System.out.println (impTagInfo.get(aq2)[0] + " " +  impTagInfo.get(aq2)[6] + " " + impTagInfo.get(aq2)[4]);
-        
-        //System.out.println ("Test");
-        
+
         aq2 = aq2 + 1;
         
         if (aq2 > 1) {
@@ -420,8 +366,7 @@ while (flag == 0) {
         flagCount = 0;    
         }
         }
-        
-        //if (aq2 == 850) {
+
         if (flagCount == 5) {
         flag = 1; //temp testing, to be removed later
         }
@@ -435,9 +380,7 @@ while (flag == 0) {
     
     System.out.println(impTagInfo.get(Integer.parseInt(ck2ProvInfo[0][1574]))[0] + "is the owner of Province 1574, the religion is" + ck2ProvInfo[2][1574]);
     System.out.println("and the culture is" + ck2ProvInfo[1][1574]);
-    //System.out.println (impTagInfo.get(56)[0]);
     int aq4 = 0;
-    //System.out.println (impTagInfo.get(5)[0] + "Sparta");
     System.out.println(ck2TagTotals[343]);
     //output
     //DebugChar
@@ -454,7 +397,6 @@ while (flag == 0) {
     Output.output("defaultOutput"+VM+"eu4Converter"+VM+"religion_table.csv",modDirectory+VM+"eu4_converter"+VM+"religion_table.csv");
     Output.output("defaultOutput"+VM+"eu4Converter"+VM+"50_romeCultures.txt",modDirectory+VM+"eu4_converter"+VM+"copy"+VM+"common"+VM+"cultures"+VM+"50_romeCultures.txt");
     Output.output("defaultOutput"+VM+"eu4Converter"+VM+"50_romeReligions.txt",modDirectory+VM+"eu4_converter"+VM+"copy"+VM+"common"+VM+"religions"+VM+"50_romeReligions.txt");
-    //Output.output("defaultOutput"+VM+"gfx"+VM+"pick_era_image_test.dds",modDirectory+VM+"gfx"+VM+"interface"+VM+"pick_era_image_test.dds");
     flag = 0;
     String[] Character;
     
@@ -468,14 +410,11 @@ while (flag == 0) {
     try {
     try {
     while (flag == 0) {
-        //System.out.println (ck2HasLand[aq4]+"_"+aq4);
-        //System.out.println (ck2HasLand[117]+"_"+117);
-        //flag = 1;
+
         if (ck2HasLand[aq4] != null) {
         if (ck2HasLand[aq4].equals ("yes")) {
         String tempNum2 = Integer.toString( tempNum + Integer.parseInt(impTagInfo.get(aq4)[16]));
-            
-        //Output.titleCreation(impTagInfo.get(aq4)[0],tempNum +impTagInfo.get(aq4)[16],impTagInfo.get(aq4)[3],"no",modDirectory);
+
         Output.titleCreation(impTagInfo.get(aq4)[0],tempNum2,impTagInfo.get(aq4)[3],"no",impTagInfo.get(aq4)[5],"k","no_liege",modDirectory);
         
         
@@ -484,11 +423,7 @@ while (flag == 0) {
         
         
         Character = Characters.importChar(saveCharacters,impTagInfo.get(aq4)[16]);
-        //System.out.println ("b");
-        //int tempNum = Integer.parseInt(impTagInfo.get(aq4)[16]);
-        //tempNum = tempTest + tempNum;
-        
-        //Output.characterCreation(tempNum + Integer.parseInt(impTagInfo.get(aq4)[16]),
+
         Output.characterCreation(tempNum2, Output.cultureOutput(Character[1]),Output.religionOutput(Character[2]),Character[3],Character[0],
         Character[7],Character[4],Character[8],Character[10],Character[11],Character[12],Character[13],Character[14],Character[15],saveCharacters,
         "q","q",modDirectory);
@@ -502,7 +437,6 @@ while (flag == 0) {
         System.out.println(tempTest+impTagInfo.get(aq4)[16] + "_" +Character[3]+Character[0]+Character[7]);
         System.out.println ("Name is " + locName[0] + " for " +impTagInfo.get(aq4)[0]);
         System.out.println ("output1");
-        //System.out.println (ck2HasLand[4888]+"4888");
         aq7 = 0;
         //governor conversion
         if (impTagInfo.get(aq4)[20] != "none") {
@@ -520,11 +454,8 @@ while (flag == 0) {
              Output.characterCreation(governorID, Output.cultureOutput(govCharacter[1]),Output.religionOutput(govCharacter[2]),govCharacter[3],
              govCharacter[0],govCharacter[7],govCharacter[4],govCharacter[8],govCharacter[10],govCharacter[11],govCharacter[12],govCharacter[13],
              govCharacter[14],govCharacter[15],saveCharacters,"q","q",modDirectory);
-             
-             //String[] govLocName = importer.importLocalisation(impGameDir,impTagInfo.get(aq4)[19]);
-             //output.localizationCreation(locName[1]+"_"+govReg,impTagInfo.get(aq4)[0],modDirectory);
-             
-             
+
+
              aq7 = aq7 + 1;
             }
         
@@ -556,31 +487,9 @@ while (flag == 0) {
     try {
     try {
     while (flag == 1) {
-        //System.out.println(ck2ProvInfo[1][aq4]);
-        //System.out.println(ck2ProvInfo[1][343]);
-        
-        //System.out.println(aq4);
-        //flag = 1;
-        //System.out.println("__ck2ProvInfo[1]["+aq4+"] ist "+ck2ProvInfo[1][aq4]);
+
         if (ck2ProvInfo[1][aq4] != null) {
-        //try {
-        //impTagInfo.get(aq4)[0]
-        
-        //ck2ProvInfo[0][aq2]
-        //int tempNum2q = tempNum + Integer.parseInt(tempNum2b);
-        
-        
-        //String tempNum2b = Integer.toString( tempNum + Integer.parseInt(impTagInfo.get(ck2ProvInfo[0][aq4])[16]));
-        
-        //String[] importedInfo = Processing.importNames(modDirectory,aq4,ck2Dir);
-        //Output.provinceCreation(Integer.toString(aq4),Output.cultureOutput(ck2ProvInfo[1][aq4]),Output.religionOutput(ck2ProvInfo[2][aq4]),
-        //modDirectory, importedInfo[1],importedInfo[0],importedInfo[17],ck2PopTotals[aq4]);
-        //Input.importChar(
-        //Output.ctitleCreation(importedInfo[0],tempNum2x,modDirectory);
-        
-        //System.out.println (ck2ProvInfo[0][aq4] + "_0 for " + aq4);
-        //System.out.println (ck2ProvInfo[0][340] + "_0 for " + 340);
-        //System.out.println (ck2ProvInfo[1][340] + "_1 for " + 340);
+
         int tempNum2b = 0;
         
         String ruler;
@@ -609,8 +518,7 @@ while (flag == 0) {
         if (importedInfo[0].charAt(importedInfo[0].length()-1) == 'a' || importedInfo[0].charAt(importedInfo[0].length()-1) == 'e'){
           dynLoc[1] = importedInfo[0]+"n";    
             }
-        //dynRel = output.cultureOutput(dynRel);
-        //dynCult = output.religionOutput(dynCult);
+
         dynRel = output.religionOutput(dynRel);
         dynCult = output.cultureOutput(dynCult);
         
@@ -623,7 +531,6 @@ while (flag == 0) {
         output.localizationCreation(dynLoc,"dynamic"+aq4,modDirectory);
         } else {
         tempNum2b = Integer.parseInt(ck2ProvInfo[0][aq4]);
-        //tempNum2b = tempNum + tempNum2b;
         
         ruler = impTagInfo.get(tempNum2b)[16];
         gov = impTagInfo.get(tempNum2b)[17];
@@ -648,33 +555,12 @@ while (flag == 0) {
         
         
         }
-        //
-        //System.out.println (impTagInfo.get(343) + "343");
-        //System.out.println (impTagInfo.get(342) + "342");
-        //System.out.println (impTagInfo.get(341) + "341");
-        //System.out.println (impTagInfo.get(340) + "340");
-        //System.out.println (impTagInfo.get(339) + "339");
-        //System.out.println (impTagInfo.get(343) + "343");
-        
-        //String[] importedInfo = Processing.importNames(modDirectory,aq4,ck2Dir);
+
         Output.provinceCreation(Integer.toString(aq4),Output.cultureOutput(ck2ProvInfo[1][aq4]),Output.religionOutput(ck2ProvInfo[2][aq4]),
         modDirectory, importedInfo[1],importedInfo[0],gov,ck2PopTotals[aq4],bList,aq4);
         
-         
-        //tempNum2b = Integer.parseInt(impTagInfo.get(ck2ProvInfo[0][aq4])[16]);
-        //String tempV = impTagInfo.get(Integer.parseInt(ck2ProvInfo[0][aq4]))[16];
-        //String tempV = impTagInfo.get(Integer.parseInt(ck2ProvInfo[0][aq4]))[19];
-        //String tempNum2 = Integer.toString( tempNum + Integer.parseInt(impTagInfo.get(ck2ProvInfo[0][aq4])[16]));
-        //tempNum2b = Integer.parseInt(tempV);
-          
-        ///int tempNum2q = tempNum + tempNum2b;
-        //String tempNum2x = Integer.toString(tempNum2q);
+
         Output.ctitleCreation(importedInfo[0],ruler,modDirectory,aq4);
-        //System.out.println ("importedInfo_" + importedInfo[0] + "__ck2ProvInfo[1]["+aq4+"] is "+ck2ProvInfo[1][aq4]);
-        //System.out.println ("output2");
-        //}catch (java.lang.NumberFormatException exception) {
-        //    System.out.println ("Exception3 with " + aq4);
-        //}
         
         }
         

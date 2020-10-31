@@ -15,13 +15,6 @@ public class Directories
     private int x;
 
     
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
     public static int modFolders (String Dir,String modName ) throws IOException
    {
      //Nessicery to create all of the folders required for the mod
@@ -30,7 +23,6 @@ public class Directories
      String VM = "\\";
      VM = VM.substring(0);
      String mainModFolder = Dir+VM+modName;
-     //double[] numFahr = new double[temperatures.length-1];
      File f = new File(mainModFolder);
         f.mkdir();
         
@@ -112,13 +104,10 @@ public class Directories
         char VMq = '"';
         String VN = "//";
        VN = VN.substring(0);
-        //VMq is to get around problems with printing quotation marks (")
         VM = VM.substring(0);
         int aqq = 1;
         String mainModFolder = Dir+VM+modName;
         String dotModFolder = Dir2+VN+modName;
-        //FileOutputStream fileOut= new FileOutputStream(modName+".mod");
-        //First .mod//
         
         FileOutputStream fileOut= new FileOutputStream(mainModFolder+".mod");
        PrintWriter out = new PrintWriter(fileOut);
@@ -128,71 +117,14 @@ public class Directories
        out.println("path="+VMq+"mod"+VN+modName+VMq);
        
        out.println("user_dir="+VMq+modName+VMq);
-       //String QV = friends.get(0).name;
-       //out.println(QV);
+
        out.flush();
        
-       //Second .mod//
-       
-      //  FileOutputStream fileOut2= new FileOutputStream(mainModFolder+VM+"descriptor.mod");
-      // PrintWriter out2 = new PrintWriter(fileOut2);
-     //  out2.println("version="+VMq+"1.8.1"+VMq);
-      // out2.println("tags={");
-     //  out2.println("   "+VMq+"Alternative History"+VMq);
-     //  out2.println("}");
-     //  out2.println("name="+VMq+modName+VMq);
-     //  out2.println("supported_version="+VMq+"1.8.1"+VMq);
-       //String QV = friends.get(0).name;
-       //out.println(QV);
-    //   out2.flush();
        
        fileOut.close();
-       //FileInputStream fileInq= new FileInputStream("hwebbUS1.txt");
-       //Scanner scnr= new Scanner(fileInq);
-       //String Ǵɀȭȵǳɶɱ = scnr.nextLine();
-       //fileInq.close();
-       // String Aq = Ǵɀȭȵǳɶɱ;
-        //while (aqq < friends.size()){
-        //    out.println(friends.get(aqq).name);
-        //    out.flush();
-        //    Ǵɀȭȵǳɶɱ = scnr.nextLine();
-        //    Aq = Aq + "," + Ǵɀȭȵǳɶɱ;
-        //    aqq = aqq + 1;
-        //}
-       // fileInq.close();
+
         return "q";
     }
     
-    public static void files(String fileDirectory, String file) throws IOException 
-    {
-        
-      String VM = "\\"; 
-      VM = VM.substring(0);
-      FileInputStream fileIn= new FileInputStream(file);
-      Scanner scnr= new Scanner(fileIn);
-      String line;
-      
-      //FileOutputStream fileOut= new FileOutputStream(mainModFolder+VM+"history"+VM+"characters"+file);
-      FileOutputStream fileOut= new FileOutputStream(fileDirectory+file);
-      PrintWriter out = new PrintWriter(fileOut);
-      
-      int flag = 0;
-      
-        try {
-            while (flag == 0) {
-                
-                line = scnr.nextLine();
-                out.println(line);
-            
-            
-            }
-        
-        
-        }catch (java.util.NoSuchElementException exception){
-        flag = 1;
-      
-    }  
-    fileIn.close(); 
-    //return y;
-    }
+ 
 }
