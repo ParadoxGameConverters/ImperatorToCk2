@@ -1,0 +1,382 @@
+#Localization compatibility for popular Imperator:Rome mods
+ #MolonLabe mod formables
+
+ formable_gloriousolbia:0 "Glorious Olbian"
+ GLORIOUSOLBIA_NAME:0 "The Glorious Democratic Peoples' Republic of Olbia"
+ GLORIOUSOLBIA_ADJECTIVE:0 "Glorious Olbian"
+ 
+ formable_kavkasia:0 "Kavkasia"
+ KAVKASIA_NAME:0 "Kavkasia"
+ KAVKASIA_ADJECTIVE:0 "Kavkasi"
+ 
+ formable_konkan:0 "Konkan"
+ KONKAN_NAME:0 "Konkan"
+ KONKAN_ADJECTIVE:0 "Konkani"
+
+ BOD_NAME:0 "Bod"
+ BOD_ADJECTIVE:0 "Bodan"
+ 
+ formable_bod:0 "Asia"
+ ASIA_NAME:0 "Asia"
+ ASIA_ADJECTIVE:0 "Asian"
+ asia_not_exists:0 "#Y Asia#! must NOT exist."
+ 
+ BALHIKA_NAME:0 "Balhika"
+ BALHIKA_ADJECTIVE:0 "Balhikan"
+ balhika_not_exists:0 "#Y Balhika#! must NOT exist."
+ 
+ formable_mahajanapadan_league:0 "Mahajanapadan League"
+ MAHAJANAPADA_LEAGUE_NAME:0 "Mahajanapadan League"
+ MAHAJANAPADA_LEAGUE_ADJECTIVE:0 "Mahajanapadan"
+ mahajanapadan_league_not_exists:0 "#Y Mahajanapadan League#! must NOT exist."
+ 
+ #Anatolia
+ form_anatolia:0 "Form Anatolia"
+ form_anatolia_desc:0 "The Persian and Macedonian empires are no more and we Anatolians have taken our destiny into our own hands. No longer will be the playthings of foreign kings. Let the world hear the hooves of our mounts beat the ground before them and tremble! Henceforth we shall be to known to all as #Y Anatolia#!"
+ formable_anatolia:0 "Anatolia"
+ ANATOLIA_NAME:0 "Anatolia"
+ ANATOLIA_ADJECTIVE:0 "Anatolian"
+ anatolia_not_exists:0 "#Y Anatolia#! must NOT exist."
+ 
+ #Arabia
+ form_arabia:0 "Form Arabia"
+ form_arabia_desc:0 "We hereby unite all the sands and oases of #Y Arabia#!"
+ formable_arabia:0 "Arabia"
+ ARABIA_NAME:0 "Arabia"
+ ARABIA_ADJECTIVE:0 "Arabian"
+
+ ARVASTHAN_NAME:0 "Arvasthan"
+ ARVASTHAN_ADJECTIVE:0 "Arvasthani"
+
+ ARYANA_NAME:0 "Aryana"
+ ARYANA_ADJECTIVE:0 "Aryan"
+
+ CELTIC_EMPIRE_NAME:0 "Celtic Empire"
+ CELTIC_EMPIRE_ADJECTIVE:0 "Celtic Empire"
+
+ DANAPRIS_NAME:0 "Danapris"
+ DANAPRIS_ADJECTIVE:0 "Danaprisan"
+
+ formable_eretz_yisrael:0 "Eretz Yisrael"
+ ERETZ_YISRAEL_NAME:0 "Eretz Yisrael"
+ ERETZ_YISRAEL_ADJECTIVE:0 "Israeli"
+
+ EUSKAL_HERRIA_NAME:0 "Euskal Herria"
+ EUSKAL_HERRIA_ADJECTIVE:0 "Euskara"
+
+ formable_heraklean_league:0 "Heraklean League"
+ HERAKLEAN_LEAGUE_NAME:0 "Heraklean League"
+ HERAKLEAN_LEAGUE_ADJECTIVE:0 "Heraklean"
+
+ ERYTHRAEAN_LEAGUE_NAME:0 "Erythraean League"
+ ERYTHRAEAN_LEAGUE_ADJECTIVE:0 "Erythraean"
+
+ ERYTHRAEAN_EMPIRE_NAME:0 "Erythraean Empire"
+ ERYTHRAEAN_EMPIRE_ADJECTIVE:0 "Erythraean"
+
+ EUXINE_EMPIRE_NAME:0 "Euxine Empire"
+ EUXINE_EMPIRE_ADJECTIVE:0 "Euxine"
+
+ EUXINE_LEAGUE_NAME:0 "Euxine League"
+ EUXINE_LEAGUE_ADJECTIVE:0 "Euxine"
+
+ HIND_NAME:0 "Hind"
+ HIND_ADJECTIVE:0 "Hindi"
+
+ INDIA_NAME:0 "India"
+ INDIA_ADJECTIVE:0 "Indian"
+
+ ISPANIAN_LEAGUE_NAME:0 "Ispanian League"
+ ISPANIAN_LEAGUE_ADJECTIVE:0 "Ispanian"
+
+ ITALIA_NAME:0 "Italia"
+ ITALIA_ADJECTIVE:0 "Italian"
+
+ KSHAHARATA_NAME:0 "Kshaharata"
+ KSHAHARATA_ADJECTIVE:0 "Kshaharatan"
+
+ LANKA_NAME:0 "Lanka"
+ LANKA_ADJECTIVE:0 "Lankan"
+
+ LIBYA_NAME:0 "Libya"
+ LIBYA_ADJECTIVE:0 "Libyan"
+
+ MAHAMEGHAVAHANA_NAME:0 "Mahameghavahana"
+ MAHAMEGHAVAHANA_ADJECTIVE:0 "Mahameghavahani"
+
+ MALWA_NAME:0 "Malwa"
+ MALWA_ADJECTIVE:0 "Malavi"
+
+ NEO_ASSYRIAN_EMPIRE_NAME:0 "Neo-Assyrian Empire"
+ NEO_ASSYRIAN_EMPIRE_ADJECTIVE:0 "Neo-Assyrian"
+
+ NEO-LYDIAN_KINGDOM_NAME:0 "Neo-Lydian Kingdom"
+ NEO-LYDIAN_KINGDOM_ADJECTIVE:0 "Neo-Lydian"
+
+ NEPAL_NAME:0 "Nepal"
+ NEPAL_ADJECTIVE:0 "Nepali"
+
+ NUBIA_NAME:0 "Nubia"
+ NUBIA_ADJECTIVE:0 "Nubian"
+
+ AETHIOPIA_NAME:0 "Aethiopia"
+ AETHIOPIA_ADJECTIVE:0 "Aethiopian"
+
+ PUNT_NAME:0 "Punt"
+ PUNT_ADJECTIVE:0 "Puntic"
+
+ SAKASTAN_NAME:0 "Sakastan"
+ SAKASTAN_ADJECTIVE:0 "Sakastani"
+
+ SATAVAHANA_NAME:0 "Satavahana"
+ SATAVAHANA_ADJECTIVE:0 "Satavahani"
+
+ SHUNGA_NAME:0 "Shunga"
+ SHUNGA_ADJECTIVE:0 "Shungi"
+
+ SUREN_NAME:0 "Suren"
+ SUREN_ADJECTIVE:0 "Sureni"
+
+ TOKHARIA_NAME:0 "Tokharia"
+ TOKHARIA_ADJECTIVE:0 "Tokharian"
+
+ YAVANA_RAJYA_NAME:0 "Yavana Rajya"
+ YAVANA_RAJYA_ADJECTIVE:0 "Yavani"
+
+ GREATER_ARMENIA_NAME:0 "Greater Armenia"
+ GREATER_ARMENIA_ADJECTIVE:0 "Greater Armenian"
+
+ LAIETANIA_NAME:0 "Laietania"
+ LAIETANIA_ADJECTIVE:0 "Laietanian"
+
+ RHODANIA_NAME:0 "Rhodania"
+ RHODANIA_ADJECTIVE:0 "Rhodanian"
+
+ BRYTHONIA_NAME:0 "Brythonia"
+ BRYTHONIA_ADJECTIVE:0 "Brythonic"
+
+ AENGLAND_NAME:0 "Aengland"
+ AENGLAND_ADJECTIVE:0 "Aenglander"
+
+ SCANDIA_NAME:0 "Scandia"
+ SCANDIA_ADJECTIVE:0 "Scandian"
+
+ DANMORK_NAME:0 "Danmork"
+ DANMORK_ADJECTIVE:0 "Danmorker"
+
+ GERMANIC_EMPIRE_NAME:0 "Germanic Empire"
+ GERMANIC_EMPIRE_ADJECTIVE:0 "Germanic"
+
+ TYRRHENIAN_EMPIRE_NAME:0 "Tyrrhenian Empire"
+ TYRRHENIAN_EMPIRE_ADJECTIVE:0 "Tyrrhenian"
+
+ OIKUMENE_NAME:0 "Oikumene"
+ OIKUMENE_ADJECTIVE:0 "Oikumenic"
+
+ GANGARIDA_NAME:0 "Gangarida"
+ GANGARIDA_ADJECTIVE:0 "Gangari"
+
+ MACROBIA_NAME:0 "Macrobia"
+ MACROBIA_ADJECTIVE:0 "Macrobian"
+
+ GREATER_LEPONTIA_NAME:0 "Greater Lepontia"
+ GREATER_LEPONTIA_ADJECTIVE:0 "Lepontic"
+
+ LOMBARDY_NAME:0 "Lombardy"
+ LOMBARDY_ADJECTIVE:0 "Lombard"
+
+ ITALY_NAME:0 "Italy"
+ ITALY_ADJECTIVE:0 "Italian"
+
+ MANN_NAME:0 "Isle of Mann"
+ MANN_ADJECTIVE:0 "Manx"
+
+ MANN_EMPIRE_NAME:0 "Empire of Mann"
+ MANN_EMPIRE_ADJECTIVE:0 "Manx"
+
+ INDGER_NAME:0 "Indo-Germanic Kingdom"
+ INDGER_ADJECTIVE:0 "Indo-Germanic"
+
+ OSTROGOTH_NAME:0 "Ostrogothic Kingdom"
+ OSTROGOTH_ADJECTIVE:0 "Ostrogoth"
+
+ VANDALIA_NAME:0 "Vandalia"
+ VANDALIA_ADJECTIVE:0 "Vandal"
+ vandalia_not_exists:0 "#Y Vandalia#! must NOT exist."
+
+ PUNIC_LEAGUE_NAME:0 "Punic League"
+ PUNIC_LEAGUE_ADJECTIVE:0 "Punic"
+
+ VISIGOTH_NAME:0 "Visigothic Kingdom"
+ VISIGOTH_ADJECTIVE:0 "Visigoth"
+
+ BRENNUSOVIA_NAME:0 "Brennusovia"
+ BRENNUSOVIA_ADJECTIVE:0 "Brennusovian"
+
+ ZIQANMAKOM_NAME:0 "Ziqanmak'om"
+ ZIQANMAKOM_ADJECTIVE:0 "Ziqanmak'om"
+
+ ALBA_NAME:0 "Alba"
+ ALBA_ADJECTIVE:0 "Scottish"
+
+ GRAECIA_OCCIDENTIS_NAME:0 "Graecia Occidentis"
+ GRAECIA_OCCIDENTIS_ADJECTIVE:0 "Graecia Occidentian"
+ graecia_occidentis_not_exists:0 "#Y Graecia Occidentis#! must NOT exist."
+ formable_graecia_occidentis_capital:0 "Our capital must be located in the regions of #Y Germania#!, #Y Scandia#!, or #Y Venedia#!."
+
+ GHABATALEANBAR_NAME:0 "Ghabataleanbar"
+ GHABATALEANBAR_ADJECTIVE:0 "Ghabataleanbari"
+ ghabataleanbar_not_exists:0 "#Y Ghabataleanbar#! must NOT exist."
+
+ JALABHUMI_NAME:0 "Jalabhumi"
+ JALABHUMI_ADJECTIVE:0 "Jalabhumi"
+ jalabhumi_not_exists:0 "#Y Jalabhumi#! must NOT exist."
+
+ CHALDEAN_EMPIRE_NAME:0 "Chaldean Empire"
+ CHALDEAN_EMPIRE_ADJECTIVE:0 "Chaldean"
+ 
+ ADRIATICA_NAME:0 "Adriatica"
+ ADRIATICA_ADJECTIVE:0 "Adriatic"
+
+ SICSYRIA_NAME:0 "Sicsyria"
+ SICSYRIA_ADJECTIVE:0 "Sicsyria"
+ 
+ #MolonLabe mod new countries
+ A01:0 "Saurashtra"
+ A01_ADJ:0 "Saurashtri"
+ A03:0 "Gandhara"
+ A03_ADJ:0 "Gandhari"
+ A06:0 "Varendra"
+ A06_ADJ:0 "Varendri"
+ A10:0 "Anupa"
+ A10_ADJ:0 "Anupi"
+ A13:0 "Sindh"
+ A13_ADJ:0 "Sindhi"
+ A31:0 "Avanti"
+ A31_ADJ:0 "Avanti"
+ A44:0 "Anartta"
+ A44_ADJ:0 "Anartti"
+ A48:0 "Madhyamika"
+ A48_ADJ:0 "Madhyamiki"
+ A49:0 "Abhiria"
+ A49_ADJ:0 "Abhiri"
+ A50:0 "Pravapura"
+ A50_ADJ:0 "Pravapuri"
+ A51:0 "Babylon"
+ A51_ADJ:0 "Babylonian"
+ A53:0 "Nineveh"
+ A53_ADJ:0 "Ninevite"
+ A54:0 "Hyrcania"
+ A54_ADJ:0 "Hyrcanian"
+ A55:0 "Sophene"
+ A55_ADJ:0 "Sophenite"
+ A60:0 "Elam"
+ A60_ADJ:0 "Elamite"
+ A61:0 "Kelonai"
+ A61_ADJ:0 "Kelonite"
+ A65:0 "Persis"
+ A65_ADJ:0 "Persian"
+ A69:0 "Carmania"
+ A69_ADJ:0 "Carmanian"
+ A75:0 "Alexandria Areia"
+ A75_ADJ:0 "Areian"
+ A76:0 "Alexandria Limen"
+ A76_ADJ:0 "Limenite"
+ A80:0 "Arsacene"
+ A80_ADJ:0 "Arsacene"
+ A82:0 "Corinth"
+ A82_ADJ:0 "Corinthian"
+ A89:0 "Alexandria Eschate"
+ A89_ADJ:0 "Eschatean"
+ A96:0 "Antiocheia Persidos"
+ A96_ADJ:0 "Persidian"
+ B01:0 "Sogdiana"
+ B01_ADJ:0 "Sogdian"
+ B06:0 "Khamboja"
+ B06_ADJ:0 "Khambojan"
+ B10:0 "Palmyra"
+ B10_ADJ:0 "Palmyran"
+ DCP:0 "Decapolis"
+ DCP_ADJ:0 "Decapolan"
+ B13:0 "Apollonia Palaistinai"
+ B13_ADJ:0 "Phillistine"
+ B17:0 "Osroene"
+ B17_ADJ:0 "Osroenite"
+ B19:0 "Damascus"
+ B19_ADJ:0 "Damascene"
+ B31:0 "Tamralipti"
+ B31_ADJ:0 "Tamralipti"
+ B34:0 "Memphis"
+ B34_ADJ:0 "Memphite"
+ B39:0 "Ta Mefkat"
+ B39_ADJ:0 "Ta Mefkati"
+ B40:0 "Waset"
+ B40_ADJ:0 "Waseti"
+ CRA:0 "Caria"
+ CRA_ADJ:0 "Carian"
+ B58:0 "Pergamon"
+ B58_ADJ:0 "Pergamonese"
+ B59:0 "Lycia"
+ B59_ADJ:0 "Lycian"
+ B62:0 "Lydia"
+ B62_ADJ:0 "Lydian"
+ B66:0 "Pamphylia"
+ B66_ADJ:0 "Pamphylian"
+ B68:0 "Cilicia"
+ B68_ADJ:0 "Cilician"
+ B70:0 "Phrygia"
+ B70_ADJ:0 "Phrygian"
+ B72:0 "Isauria"
+ B72_ADJ:0 "Isaurian"
+ B86:0 "Alexandreia Indos"
+ B86_ADJ:0 "Indikite"
+ B90:0 "Malaka"
+ B90_ADJ:0 "Malakite"
+ C00:0 "Olbia Rasna"
+ C00_ADJ:0 "Rasnan"
+ C03:0 "Tingitania"
+ C03_ADJ:0 "Tingitanian"
+ C06:0 "Sulki"
+ C06_ADJ:0 "Sulkite"
+ C11:0 "Corinth"
+ C11_ADJ:0 "Corinthian"
+ C14:0 "Skyros"
+ C14_ADJ:0 "Skyrian"
+ C16:0 "Pelagonia"
+ C16_ADJ:0 "Pelagonian"
+ C17:0 "Amphipolis"
+ C17_ADJ:0 "Amphipolitan"
+ C25:0 "Thessaly"
+ C25_ADJ:0 "Thessalian"
+ C28:0 "Capua"
+ C28_ADJ:0 "Capuan"
+ C29:0 "Amphipolis"
+ C29_ADJ:0 "Amphipolitan"
+ C31:0 "Odessos"
+ C31_ADJ:0 "Odessan"
+ C33:0 "Ammon"
+ C33_ADJ:0 "Ammonese"
+ C36:0 "Lilibaya"
+ C36_ADJ:0 "Lilibayan"
+ C37:0 "Malla"
+ C37_ADJ:0 "Malli"
+ C38:0 "Panchala"
+ C38_ADJ:0 "Panchali"
+ C39:0 "Kuru"
+ C39_ADJ:0 "Kuru"
+ C40:0 "Prayaga"
+ C40_ADJ:0 "Prayagi"
+ C43:0 "Shurasena"
+ C43_ADJ:0 "Shuraseni"
+ C46:0 "Karin"
+ C46_ADJ:0 "Karinite"
+ C55:0 "Articene"
+ C55_ADJ:0 "Articene"
+ C56:0 "Tigranakert"
+ C56_ADJ:0 "Tigranakertite"
+ C58:0 "Parecania"
+ C58_ADJ:0 "Parecani"
+ C59:0 "Agartia"
+ C59_ADJ:0 "Agarti"
+ C63:0 "Alalie"
+ C63_ADJ:0 "Alalian" 

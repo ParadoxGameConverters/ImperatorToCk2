@@ -99,6 +99,12 @@ public class Main
 
         String[] ck2HasLand;   // Owner Culture Religeon PopTotal Buildings
         ck2HasLand = new String[5000];
+        
+        ArrayList<String> convertedCharacters = new ArrayList<String>(); //characters who have been converted
+        
+        convertedCharacters.add("0"); //Debug at id 0 so list will never be empty
+        
+        
         int aqtest = 0;
         while (aqtest < 5000) {
             ck2HasLand[aqtest] = "no";
@@ -404,15 +410,16 @@ public class Main
                             System.out.println (impTagInfo.get(aq4)[16] + "rules" + impTagInfo.get(aq4)[0] + "_" + aq4);
 
                             Character = Characters.importChar(saveCharacters,impTagInfo.get(aq4)[16]);
-                            Output.characterCreation(tempNum2, Output.cultureOutput(Character[1]),Output.religionOutput(Character[2]),Character[3],Character[0],
-                                Character[7],Character[4],Character[8],Character[10],Character[11],Character[12],Character[13],Character[14],Character[15],saveCharacters,
-                                "q","q",modDirectory);
+                            
+                            convertedCharacters = Output.characterCreation(tempNum2, Output.cultureOutput(Character[1]),Output.religionOutput(Character[2]),
+                                Character[3],Character[0],Character[7],Character[4],Character[8],Character[10],Character[11],Character[12],Character[13],Character[14],
+                                Character[15],saveCharacters,"q","q",convertedCharacters,modDirectory);
                             System.out.println ("c");
 
-                            Characters.importAndConvDynasty(modDirectory,Character[7],Character[16],saveDynasty);
+                            String rulerDynasty = Characters.importAndConvDynasty(modDirectory,Character[7],Character[16],saveDynasty);
 
-                            String[] locName = importer.importLocalisation(impGameDir,impTagInfo.get(aq4)[19]);
-                            output.localizationCreation(locName,impTagInfo.get(aq4)[0],modDirectory);
+                            String[] locName = importer.importLocalisation(impGameDir,impTagInfo.get(aq4)[19],rulerDynasty);
+                            output.localizationCreation(locName,impTagInfo.get(aq4)[0],"k",modDirectory);
 
                             System.out.println(tempTest+impTagInfo.get(aq4)[16] + "_" +Character[3]+Character[0]+Character[7]);
                             System.out.println ("Name is " + locName[0] + " for " +impTagInfo.get(aq4)[0]);
@@ -431,9 +438,14 @@ public class Main
 
                                     govCharacter = Characters.importChar(saveCharacters,governor);
 
-                                    Output.characterCreation(governorID, Output.cultureOutput(govCharacter[1]),Output.religionOutput(govCharacter[2]),govCharacter[3],
+                                    convertedCharacters = Output.characterCreation(governorID, Output.cultureOutput(govCharacter[1]),Output.religionOutput(govCharacter[2]),govCharacter[3],
                                         govCharacter[0],govCharacter[7],govCharacter[4],govCharacter[8],govCharacter[10],govCharacter[11],govCharacter[12],govCharacter[13],
-                                        govCharacter[14],govCharacter[15],saveCharacters,"q","q",modDirectory);
+                                        govCharacter[14],govCharacter[15],saveCharacters,"q","q",convertedCharacters,modDirectory);
+                                        
+                                    String[] govLocName = importer.importLocalisation(impGameDir,govReg,"00Region00");
+                                    govLocName[0] = locName[1] + " " + govLocName[0];
+                                    govLocName[1] = locName[1] + " " + govLocName[1];
+                                    output.localizationCreation(govLocName,govRegID,"d",modDirectory);
 
                                     aq7 = aq7 + 1;
                                 }
@@ -501,9 +513,11 @@ public class Main
 
           
                             Output.dynastyCreation("of "+importedInfo[0],ruler,modDirectory);
-                            Output.characterCreation(ruler,dynCult,dynRel,"30","Glorious_Debug",ruler,"69","q","5","5","5","5","0","0",saveCharacters,"q","q",modDirectory);
-                            Output.titleCreation("dynamic"+aq4,ruler,"40 40 40","no",Integer.toString(aq4),"k","no_liege",modDirectory);
-                            output.localizationCreation(dynLoc,"dynamic"+aq4,modDirectory);
+                            Output.characterCreation(ruler,dynCult,dynRel,"30","Glorious_Debug",ruler,"69","q","5","5","5","5","0","0",
+                            saveCharacters,"q","q",convertedCharacters,modDirectory);
+                            
+                            Output.titleCreation("dynamic"+aq4,ruler,"40 40 40","no",Integer.toString(aq4),"d","no_liege",modDirectory);
+                            output.localizationCreation(dynLoc,"dynamic"+aq4,"d",modDirectory);
                         } else {
                             tempNum2b = Integer.parseInt(ck2ProvInfo[0][aq4]);
 

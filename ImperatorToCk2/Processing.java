@@ -13,7 +13,6 @@ import java.util.Random;
 public class Processing
 {
 
-    private int x;
 
 
     public static String basicProvinceTotal(int totalCKProv, String[] ck2TagTotals, String[][] ck2ProvInfo, int typeToCollect,int aq2)
@@ -294,6 +293,21 @@ public class Processing
 
             provName = "anti-atlas";
         }
+        
+        else if (provName.equals("asaita")) {
+
+            provName = "asayita";
+        }
+        
+        else if (provName.equals("al_qusair")) {
+
+            provName = "alqusair";
+        }
+        
+        else if (provName.equals("kyzyl_su")) {
+
+            provName = "kyzyl-su";
+        }
 
       
         if (provName.equals ("error")) {
@@ -502,7 +516,7 @@ public class Processing
         boolean endOrNot = true;
         String qaaa;
         String[] output;   // Owner Culture Religeon PopTotal Buildings
-        output = new String[8000];
+        output = new String[15000];
 
       
         output[0] = "peq"; //default for no owner, uncolonized province
@@ -542,7 +556,7 @@ public class Processing
 
                     while (aqq < provinceMappings.length) {
 
-                        if (provinceMappings[aqq].split(",")[0].equals("imperator")){
+                        if (provinceMappings[aqq].split(",")[0].equals("ck2")){
                             impProv = provinceMappings[aqq].split(",")[1];
                             aqq = 99999;
 
@@ -553,7 +567,7 @@ public class Processing
                     aqq = 0;   
                     if (impProv != "a") {
                         while (aqq < provinceMappings.length) {
-                            if (provinceMappings[aqq].split(",")[0].equals("ck2")){
+                            if (provinceMappings[aqq].split(",")[0].equals("imperator")){
                                 output[aq2] = (provinceMappings[aqq].split(",")[1]+","+impProv);
 
                             }

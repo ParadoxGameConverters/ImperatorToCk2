@@ -14,7 +14,6 @@ import java.util.Random;
 public class TempFiles
 {
 
-    private int x;
 
 
     public static void tempCreate(String save, String keyword, String endword, String type) throws IOException

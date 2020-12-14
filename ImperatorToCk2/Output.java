@@ -326,10 +326,23 @@ public class Output
         return ck2CultureInfo;
     }
 
-    public static String characterCreation(String irKING, String cult, String rel, String age, String name, String dynasty,
+    public static ArrayList<String> characterCreation(String irKING, String cult, String rel, String age, String name, String dynasty,
     String sex, String traits, String martial, String zeal, String charisma, String finesse, String spouse, String children,String tempFile,String father,
-    String mother,String Directory) throws IOException
+    String mother,ArrayList<String> convertedList,String Directory) throws IOException
     {
+        
+        int characterCount = 0;
+        
+        
+        while (characterCount < convertedList.size()) { //checks if a character has been converted or not
+        if (irKING.equals(convertedList.get(characterCount))) {
+        return convertedList; //If a character has already been converted, no point to repeat and avoids children with jobs not having fathers
+        } else {
+        characterCount = characterCount + 1;    
+        }
+            
+        }
+        
 
         String VM = "\\"; 
         VM = VM.substring(0);
@@ -368,11 +381,11 @@ public class Output
 
         int aq4 = 0;
 
-        if (spouse != "0") {
+        if (spouse != "0") {//Recursively calls to get rest of family
             spouseInfo = Characters.importChar(tempFile,spouse);
 
-            characterCreation( spouse1066,  spouseInfo[1],  spouseInfo[2],  spouseInfo[3],  spouseInfo[0],  spouseInfo[7],
-                spouseInfo[4],  spouseInfo[8],  martial,  zeal,  charisma,  finesse,  "0",  "0", tempFile,"q",  "q", Directory);
+            characterCreation( spouse1066,  cultureOutput(spouseInfo[1]),  religionOutput(spouseInfo[2]),  spouseInfo[3],  spouseInfo[0],  spouseInfo[7],
+                spouseInfo[4],  spouseInfo[8],  martial,  zeal,  charisma,  finesse,  "0",  "0", tempFile,"q",  "q",convertedList, Directory);
         }
 
         if (children != "0") {
@@ -385,14 +398,15 @@ public class Output
 
             }
 
-            while (aq4 < childCount) {
+            while (aq4 < childCount) {//Recursively calls to get rest of family
 
                 childInfo = Characters.importChar(tempFile,children.split(" ")[aq4]);
                 System.out.println ("Child " + aq4 + " out of " + childCount);
                 child1066 = Integer.toString( 1000000 + Integer.parseInt(children.split(" ")[aq4]) );
 
-                characterCreation( child1066,  childInfo[1],  childInfo[2],  childInfo[3],  childInfo[0],  childInfo[7],
-                    childInfo[4],  childInfo[8],  martial,  zeal,  charisma,  finesse,  childInfo[14],  childInfo[15], tempFile,irKING,spouse1066, Directory);
+                characterCreation( child1066,  cultureOutput(childInfo[1]),  religionOutput(childInfo[2]),  childInfo[3],  childInfo[0],  childInfo[7],
+                    childInfo[4],  childInfo[8],  martial,  zeal,  charisma,  finesse,  childInfo[14],  childInfo[15], tempFile,irKING,spouse1066,
+                    convertedList,Directory);
 
                 aq4 = aq4 + 1;
             }
@@ -527,7 +541,9 @@ public class Output
         }
 
         if (dead.equals("yes")) {
-            out.println (tab+date2+" ={");   
+            out.println (tab+date2+" ={");
+            out.println (tab+tab+"death= yes");
+            out.println (tab+"}");   
         }
 
         out.println ("}");
@@ -604,8 +620,10 @@ public class Output
       
         out.flush();
         fileOut.close();
+        
+        convertedList.add(irKING);
 
-        return irKING;
+        return convertedList;
     }
 
     public static String dynastyCreation(String name, String id, String Directory) throws IOException
@@ -673,7 +691,7 @@ public class Output
         return ck2CultureInfo;
     }
 
-    public static String localizationCreation(String[] name, String title, String Directory) throws IOException
+    public static String localizationCreation(String[] name, String title, String rank, String Directory) throws IOException
     {
 
         String VM = "\\"; 
@@ -706,8 +724,8 @@ public class Output
 
         } 
 
-        out.println ("k_"+title+";"+name[0]+";"+name[0]+";"+name[0]+";;"+name[0]+";;;;;;;;;x");
-        out.println ("k_"+title+"_adj"+";"+name[1]+";"+name[1]+";"+name[1]+";;"+name[1]+";;;;;;;;;x");
+        out.println (rank+"_"+title+";"+name[0]+";"+name[0]+";"+name[0]+";;"+name[0]+";;;;;;;;;x");
+        out.println (rank+"_"+title+"_adj"+";"+name[1]+";"+name[1]+";"+name[1]+";;"+name[1]+";;;;;;;;;x");
         out.flush();
         fileOut.close();
 

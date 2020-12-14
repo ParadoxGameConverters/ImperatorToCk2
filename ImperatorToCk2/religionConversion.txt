@@ -20,3 +20,4 @@ anatolian_religion,cybelene
 armenian_religion,khaldic
 caucasian_religion,armazic
 indo_iranian_religion,scythian
+eastern_animism,ritualistic
