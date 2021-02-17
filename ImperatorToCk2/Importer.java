@@ -280,6 +280,86 @@ public class Importer
         return output;
 
     }
+    
+    public static ArrayList<String> importSubjects (String name, int overlordIDnum, ArrayList<String> currentList) throws IOException
+    {
+        
+        //Primarily used for subjects/vassals in IR
+
+        String overlordID = Integer.toString(overlordIDnum);
+
+        FileInputStream fileIn= new FileInputStream(name);
+        Scanner scnr= new Scanner(fileIn);
+
+        int flag = 0;
+        
+        String tab = "	";
+
+        String keyWord = tab+tab+"first="+overlordID;
+
+        int aqq = 0;
+
+        boolean endOrNot = true;
+        String vmm = scnr.nextLine();
+        String qaaa = vmm;
+        String[] output;
+        output = new String[5];
+
+        output[0] = "9999"; //default for no overlord, overlord has no subjects
+        output[1] = "9999"; //default for no subject
+        output[2] = "9999"; //default for no subject relation
+
+        try {
+            while (endOrNot = true){
+
+                qaaa = scnr.nextLine();
+
+                if (qaaa.equals(keyWord)){
+                    //endOrNot = false;
+                    output[0] = Integer.toString(overlordIDnum);
+
+                    while (flag == 0) {
+                        qaaa = scnr.nextLine();
+                        //subject
+                        if (qaaa.split("=")[0].equals( tab+tab+"second" ) ) {
+                            output[1] = qaaa.split("=")[1];
+                        }
+                        //subject type
+                        if (qaaa.split("=")[0].equals( tab+tab+"subject_type" ) ) {
+                            output[2] = qaaa.split("=")[1];
+                            output[2] = output[2].substring(1,output[2].length()-1);
+                            flag = 1; //end loop
+                            currentList.add(output[0]+","+output[1]+","+output[2]);
+                        }
+                        
+                        if (qaaa.split("=")[0].equals( tab+"}" ) ) { //If there isn't a subject type, prevents it from going over to the next
+                            output[0] = "9999";
+                            output[1] = "9999";
+                            output[2] = "9999";
+                            flag = 1; //end loop
+                        }
+
+                    }
+
+                }
+                
+                flag = 0;
+            }
+
+        }catch (java.util.NoSuchElementException exception){
+            endOrNot = false;
+
+        }
+        
+        if (output[1].equals("9999") || output[2].equals("9999")) { //Fallback in case something goes wrong, subject relation won't be converted
+            output[0] = "9999"; //default for no overlord, overlord has no subjects
+            output[1] = "9999"; //default for no subject
+            output[2] = "9999"; //default for no subject relation    
+        }
+
+        return currentList;
+
+    }
 
     public static String[] importConvList (String name, int provIDnum) throws IOException //Checks old format first, then new format
     {

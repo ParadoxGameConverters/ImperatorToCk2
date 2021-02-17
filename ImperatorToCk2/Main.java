@@ -71,9 +71,9 @@ public class Main
         impProvInfo = new String[5];
 
         String[][] ck2ProvInfo;   // Array list of array lists...
-        ck2ProvInfo = new String[5][8000];
+        ck2ProvInfo = new String[5][8500];
 
-        String[] impProvRegions = Processing.importRegionList(8000,impGameDir);
+        String[] impProvRegions = Processing.importRegionList(8500,impGameDir);
         //[0] is owner, [1] is culture, [2] is religion, [3] is calculated from pop
         int totalPop = 0;//pop total
         int totalCKProv = 2050;
@@ -103,6 +103,8 @@ public class Main
         ArrayList<String> convertedCharacters = new ArrayList<String>(); //characters who have been converted
         
         convertedCharacters.add("0"); //Debug at id 0 so list will never be empty
+        
+        ArrayList<String> impSubjectInfo = new ArrayList<String>(); //Overlord-Subject relations
         
         
         int aqtest = 0;
@@ -142,6 +144,8 @@ public class Main
         String saveCharacters = "tempCharacters.txt";
 
         String saveDynasty = "tempDynasty.txt";
+        
+        String saveDiplo = "tempDiplo.txt";
 
         System.out.println("Creating temp files...");
 
@@ -160,6 +164,10 @@ public class Main
         TempFiles.tempCreate(impDirSave, tab+"families={", "character={", saveDynasty);
 
         System.out.println("temp Dynasties created");
+        
+        TempFiles.tempCreate(impDirSave, "diplomacy={", "jobs={", saveDiplo);
+            
+        System.out.println("temp Diplo created");
 
         System.out.println("All temp files created");
 
@@ -371,6 +379,12 @@ public class Main
         System.out.println("and the culture is" + ck2ProvInfo[1][1574]);
         int aq4 = 0;
         System.out.println(ck2TagTotals[343]);
+        
+        int totCountries = aq2;
+        
+        impSubjectInfo = Processing.generateSubjectList(totCountries+100,saveDiplo);
+        
+        
         //output
         //DebugChar
         Output.output("CharTest.txt",modDirectory+VM+"history"+VM+"characters"+VM+"CharTest.txt");
@@ -386,6 +400,12 @@ public class Main
         Output.output("defaultOutput"+VM+"eu4Converter"+VM+"religion_table.csv",modDirectory+VM+"eu4_converter"+VM+"religion_table.csv");
         Output.output("defaultOutput"+VM+"eu4Converter"+VM+"50_romeCultures.txt",modDirectory+VM+"eu4_converter"+VM+"copy"+VM+"common"+VM+"cultures"+VM+"50_romeCultures.txt");
         Output.output("defaultOutput"+VM+"eu4Converter"+VM+"50_romeReligions.txt",modDirectory+VM+"eu4_converter"+VM+"copy"+VM+"common"+VM+"religions"+VM+"50_romeReligions.txt");
+        
+        //defaultLocalization
+        Output.output("defaultOutput"+VM+"localization"+VM+"culture_loc.csv",modDirectory+VM+"localisation"+VM+"culture_loc.csv");
+        Output.output("defaultOutput"+VM+"localization"+VM+"religion_loc.csv",modDirectory+VM+"localisation"+VM+"religion_loc.csv");
+        Output.output("defaultOutput"+VM+"localization"+VM+"bookmark_loc.csv",modDirectory+VM+"localisation"+VM+"bookmark_loc.csv");
+        
         flag = 0;
         String[] Character;
 
@@ -403,8 +423,36 @@ public class Main
                     if (ck2HasLand[aq4] != null) {
                         if (ck2HasLand[aq4].equals ("yes")) {
                             String tempNum2 = Integer.toString( tempNum + Integer.parseInt(impTagInfo.get(aq4)[16]));
+                            String rank = "k";
+                            
+                            int subjectOrNot = Processing.checkSubjectList(aq4,impSubjectInfo);
+                            System.out.println("subjectOrNot at " + aq4 + " is " + subjectOrNot);
+                            if (subjectOrNot == 9999) { //if tag is free or independent
+                                Output.titleCreation(impTagInfo.get(aq4)[0],tempNum2,impTagInfo.get(aq4)[3],"no",impTagInfo.get(aq4)[5],rank,
+                                "no_liege",modDirectory);
+                                System.out.println("Free Nation at " + aq4);
+                            } else {
+                                String[] subjectInfo = impSubjectInfo.get(subjectOrNot).split(",");
+                                String overlord = impTagInfo.get(Integer.parseInt(subjectInfo[0]))[0];
+                                if (subjectInfo[2].equals ("feudatory") || subjectInfo[2].equals ("satrapy") || subjectInfo[2].equals ("client_state")) { 
+                                    //convert as vassal
+                                    rank = "d";
+                                    Output.titleCreation(impTagInfo.get(aq4)[0],tempNum2,impTagInfo.get(aq4)[3],"no",
+                                    impTagInfo.get(aq4)[5],rank,overlord,modDirectory);
+                                    System.out.println("Subject Nation at " + aq4 + " Overlord is " + subjectInfo[0]);
+                                }
+                                
+                                else { 
+                                    //convert as CK II tributary
+                                    //WIP
+                                    rank = "d";
+                                    Output.titleCreation(impTagInfo.get(aq4)[0],tempNum2,impTagInfo.get(aq4)[3],"no",
+                                    impTagInfo.get(aq4)[5],rank,overlord,modDirectory);
+                                    System.out.println("Subject Nation at " + aq4 + " Overlord(temptrib) is " + subjectInfo[0]);
+                                }
+                            }
 
-                            Output.titleCreation(impTagInfo.get(aq4)[0],tempNum2,impTagInfo.get(aq4)[3],"no",impTagInfo.get(aq4)[5],"k","no_liege",modDirectory);
+                            
 
         
                             System.out.println (impTagInfo.get(aq4)[16] + "rules" + impTagInfo.get(aq4)[0] + "_" + aq4);
@@ -419,14 +467,16 @@ public class Main
                             String rulerDynasty = Characters.importAndConvDynasty(modDirectory,Character[7],Character[16],saveDynasty);
 
                             String[] locName = importer.importLocalisation(impGameDir,impTagInfo.get(aq4)[19],rulerDynasty);
-                            output.localizationCreation(locName,impTagInfo.get(aq4)[0],"k",modDirectory);
+                            output.localizationCreation(locName,impTagInfo.get(aq4)[0],rank,modDirectory);
 
                             System.out.println(tempTest+impTagInfo.get(aq4)[16] + "_" +Character[3]+Character[0]+Character[7]);
                             System.out.println ("Name is " + locName[0] + " for " +impTagInfo.get(aq4)[0]);
                             System.out.println ("output1");
                             aq7 = 0;
+                            
+                            
                             //governor conversion
-                            if (impTagInfo.get(aq4)[20] != "none") {
+                            if (impTagInfo.get(aq4)[20] != "none" && subjectOrNot == 9999) {
                                 governorships = impTagInfo.get(aq4)[20].split(",");
                                 while (aq7 < governorships.length) {
                                     governor = governorships[aq7].split("~")[1]; 
@@ -486,6 +536,8 @@ public class Main
                         String gov;
 
                         String[] importedInfo = Processing.importNames(modDirectory,aq4,ck2Dir);
+                        
+                        
 
                         if (ck2ProvInfo[0][aq4].equals ("9999")) { // Dynamically creates a country and character for an uncolonized territory with no owner
                             ruler = Integer.toString((tempNum * 6) + aq4);
@@ -525,8 +577,10 @@ public class Main
                             gov = impTagInfo.get(tempNum2b)[17];
                             int tempNum2q = Integer.parseInt(ruler) + tempNum;
                             ruler = Integer.toString(tempNum2q);
+                            
+                            int subjectOrNot = Processing.checkSubjectList(tempNum2b,impSubjectInfo);
 
-                            if (impTagInfo.get(tempNum2b)[20] != "none") { //governors
+                            if (impTagInfo.get(tempNum2b)[20] != "none" && subjectOrNot == 9999) { //governors without 9999 check, creates hole
                                 governorships = impTagInfo.get(tempNum2b)[20].split(",");
                                 aq7 = 0;
                                 while (aq7 < governorships.length) {

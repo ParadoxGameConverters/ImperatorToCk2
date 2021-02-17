@@ -15,7 +15,7 @@ berber_religion,megalithic
 animism,iberian
 mesopotamian_religion,sumerian
 arabian_pantheon,arabic
-eastern_animism,ritualism
+#eastern_animism,ritualism
 anatolian_religion,cybelene
 armenian_religion,khaldic
 caucasian_religion,armazic
