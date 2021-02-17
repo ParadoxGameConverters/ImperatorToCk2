@@ -902,7 +902,7 @@ latin = {
 
 		modifier = default_culture_modifier
 	}
-	ligurian = {
+	old_ligurian = {
 		graphical_cultures = { romangfx southerngfx trueoccitangfx occitangfx }
 		
 		color = { 0.7 0.3 0.2 }
