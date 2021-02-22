@@ -16,7 +16,7 @@ jobs:
       env:
         API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
       with:
-        destination_file: 'Vic2ToHoI4.txt'
+        destination_file: 'ImperatorToCk2.txt'
         user_email: 'idhrendur@hotmail.com'
         user_name: 'idhrendur'
         destination_branch: 'main'
