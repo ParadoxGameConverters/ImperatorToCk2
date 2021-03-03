@@ -94,6 +94,9 @@ public class Main
 
         String[] ck2RegionTotals;   // Regions for governorship
         ck2RegionTotals = new String[totalCKProv];
+        
+        String[] ck2MonumentTotals;   // Province monuments
+        ck2MonumentTotals = new String[totalCKProv];
 
         output.localizationBlankFile(modDirectory); //creates the country localization file
 
@@ -108,7 +111,7 @@ public class Main
         
         
         int aqtest = 0;
-        while (aqtest < 5000) {
+        while (aqtest < 5000) { //sets the default for all tags as landless in CKII
             ck2HasLand[aqtest] = "no";
             aqtest = aqtest + 1;
         }
@@ -146,6 +149,8 @@ public class Main
         String saveDynasty = "tempDynasty.txt";
         
         String saveDiplo = "tempDiplo.txt";
+        
+        String saveMonuments = "tempMonuments.txt";
 
         System.out.println("Creating temp files...");
 
@@ -168,12 +173,16 @@ public class Main
         TempFiles.tempCreate(impDirSave, "diplomacy={", "jobs={", saveDiplo);
             
         System.out.println("temp Diplo created");
+        
+        TempFiles.tempCreate(impDirSave, "great_work_manager={", "country_culture_manager={", saveMonuments);
+            
+        System.out.println("temp Monuments created");
 
         System.out.println("All temp files created");
 
         System.out.println("Importing territory data..."); 
 
-        Processing.combineProvConvList("provinceConversionCore.txt","provinceConversion.txt");
+        Processing.combineProvConvList("provinceConversionCore.txt","provinceConversion.txt"); //combines old style mappings and new style mappings
            
         //processing information
         totalPop = 0;
@@ -224,6 +233,13 @@ public class Main
                 }else {
                     ck2RegionTotals[ckProvNum] = ck2RegionTotals[ckProvNum] + "~" + impProvRegions[aqq] + "," + impProvInfo[3];
                 }
+                //monuments
+                //if (ck2MonumentTotals[ckProvNum] == (null)) {
+
+                //    ck2MonumentTotals[ckProvNum] = impProvInfo[5] + "," + impProvInfo[3];
+                //}else {
+                //    ck2MonumentTotals[ckProvNum] = ck2MonumentTotals[ckProvNum] + "~" + impProvInfo[5] + "," + impProvInfo[3];
+                //}
 
                 try {
                     totalPop = Integer.parseInt(ck2PopTotals[ckProvNum]);
@@ -260,7 +276,7 @@ public class Main
         int aq6 = 0;
         String[] irOwners;
 
-        while( aq2 < totalCKProv) {
+        while( aq2 < totalCKProv) { // Calculate province ownership
             if (ck2TagTotals[aq2] != null)  {
 
                 irOwners = ck2TagTotals[aq2].split("~"); 
@@ -321,7 +337,7 @@ public class Main
         aq2 = 0;
         flag = 0;
 
-        while( aq2 < totalCKProv) {
+        while( aq2 < totalCKProv) { // Combines data based off of majority ownership, 30 Roman pops and 15 Punic'll make CKII prov Roman
             try {
 
                 if (ck2TagTotals[aq2] == null) {
@@ -385,11 +401,11 @@ public class Main
         impSubjectInfo = Processing.generateSubjectList(totCountries+100,saveDiplo);
         
         
-        //output
-        //DebugChar
-        Output.output("CharTest.txt",modDirectory+VM+"history"+VM+"characters"+VM+"CharTest.txt");
+        //Default output, will be included in every conversion regardless of what occured in the save file
+
         Output.output("defaultOutput"+VM+"cultures"+VM+"00_cultures.txt",modDirectory+VM+"common"+VM+"cultures"+VM+"00_cultures.txt");
         Output.output("defaultOutput"+VM+"cultures"+VM+"50_convertedCultures.txt",modDirectory+VM+"common"+VM+"cultures"+VM+"50_convertedCultures.txt");
+        Output.output("defaultOutput"+VM+"religions"+VM+"00_religions.txt",modDirectory+VM+"common"+VM+"religions"+VM+"00_religions.txt");
         Output.output("defaultOutput"+VM+"religions"+VM+"50_convertedReligions.txt",modDirectory+VM+"common"+VM+"religions"+VM+"50_convertedReligions.txt");
         Output.output("defaultOutput"+VM+"bookmarks"+VM+"50_customBookmark.txt",modDirectory+VM+"common"+VM+"bookmarks"+VM+"50_customBookmark.txt");
         Output.output("defaultOutput"+VM+"bookmarks"+VM+"00_bookmarks.txt",modDirectory+VM+"common"+VM+"bookmarks"+VM+"00_bookmarks.txt");
@@ -597,7 +613,7 @@ public class Main
 
                         }
                         Output.provinceCreation(Integer.toString(aq4),Output.cultureOutput(ck2ProvInfo[1][aq4]),Output.religionOutput(ck2ProvInfo[2][aq4]),
-                            modDirectory, importedInfo[1],importedInfo[0],gov,ck2PopTotals[aq4],bList,aq4);
+                            modDirectory, importedInfo[1],importedInfo[0],gov,ck2PopTotals[aq4],bList,saveMonuments,aq4);
 
                         Output.ctitleCreation(importedInfo[0],ruler,modDirectory,aq4);
                     }
