@@ -1,0 +1,5 @@
+#For monuments which exist in vanilla CKII
+giza_pyramids,wonder_pyramid_giza
+stonehenge,wonder_pagan_stones_stonehenge
+lighthouse_of_alexandria,wonder_lighthouse_alexandria
+halicarnassus_mausoleum,wonder_mausoleum_halicarnassus
