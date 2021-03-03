@@ -169,6 +169,8 @@ gaetulian,maghreb_arabic
 socossian,maghreb_arabic
 massaesylian,maghreb_arabic
 massylian,maghreb_arabic
+garamantic,maghreb_arabic
+libyan,maghreb_arabic
 
 #Illyrian
 
@@ -180,6 +182,10 @@ catari,arberian
 deraemestian,arberian
 deurian,arberian
 messapian,arberian
+paeonian,arberian
+dardanian,arberian
+abrian,arberian
+greco_illyrian,arberian
 
 #Scythian
 scythian,saka
