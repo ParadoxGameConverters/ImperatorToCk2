@@ -682,6 +682,23 @@ public class Processing
 
         return output;
     }
+    
+    public static int checkMonumentList(String name) throws IOException //Checks if save is from 2.0+ or before
+    {
+        
+        FileInputStream fileIn= new FileInputStream(name);
+        Scanner scnr= new Scanner(fileIn);
+        String qaaa = scnr.nextLine();
+        
+        int flag = 0;
+        
+        if (qaaa.equals ("great_work_manager={")) {
+            flag = 1;
+            
+        }
+
+        return flag;
+    }
 
     
     

@@ -22,10 +22,12 @@ public class Importer
 
         FileInputStream fileIn= new FileInputStream(name);
         Scanner scnr= new Scanner(fileIn);
+        
+        String tab = "	";
 
         int flag = 0;
 
-        String keyWord = "	"+provID+"={";
+        String keyWord = tab+provID+"={";
 
         int aqq = 0;
 
@@ -33,11 +35,12 @@ public class Importer
         String vmm = scnr.nextLine();
         String qaaa = vmm;
         String[] output;   // Owner Culture Religeon PopTotal Buildings
-        output = new String[5];
+        output = new String[6];
 
         output[0] = "9999"; //default for no owner, uncolonized province
         output[1] = "noCulture"; //default for no culture, uncolonized province with 0 pops
         output[2] = "noReligion"; //default for no religion, uncolonized province with 0 pops
+        output[5] = "9999"; //default for no monument
 
         try {
             while (endOrNot = true){
@@ -49,28 +52,37 @@ public class Importer
 
                     while (flag == 0) {
                         qaaa = scnr.nextLine();
-                        if (qaaa.split("=")[0].equals( "		owner" ) ) {
+                        if (qaaa.split("=")[0].equals( tab+tab+"owner" ) ) {
                             output[0] = qaaa.split("=")[1];
                         }
-                        if (qaaa.split("=")[0].equals( "		culture" ) ) {
+                        if (qaaa.split("=")[0].equals( tab+tab+"culture" ) ) {
                             output[1] = qaaa.split("=")[1];
                             output[1] = output[1].substring(1,output[1].length()-1);
                         }
-                        if (qaaa.split("=")[0].equals( "		religion" ) ) {
+                        if (qaaa.split("=")[0].equals( tab+tab+"religion" ) ) {
                             output[2] = qaaa.split("=")[1];
                             output[2] = output[2].substring(1,output[2].length()-1);
                         }
 
                         //popTotal
-                        if (qaaa.split("=")[0].equals( "		pop" ) ) {
+                        if (qaaa.split("=")[0].equals( tab+tab+"pop" ) ) {
                             aqq = aqq + 1;
                             //double aq = 1;
                             output[3] = Integer.toString(aqq);
                         }
 
                         //might be used or ignored
-                        if (qaaa.split("=")[0].equals( "		buildings" ) ) {
+                        if (qaaa.split("=")[0].equals( tab+tab+"buildings" ) ) {
                             output[4] = qaaa.split("=")[1];
+
+                        }
+                        
+                        if (qaaa.split("=")[0].equals( tab+tab+"great_work" ) ) {
+                            output[5] = qaaa.split("=")[1];
+
+                        }
+                        
+                        if (qaaa.split("=")[0].equals( tab+"}" ) ) { //ends here
                             flag = 1; //end loop
 
                         }
