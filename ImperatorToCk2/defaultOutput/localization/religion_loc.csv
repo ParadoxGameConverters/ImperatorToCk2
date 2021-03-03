@@ -1,4 +1,6 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+
+#religions
 polytheistic;Polytheistic;Polytheistic;Polytheistisch;;Polytheistic;;;;;;;;;x
 canaanite;Canaanite;Canaanite;Kanaanisch;;Canaanite;;;;;;;;;x
 druidic;Druidic;Druidic;Druidisch;;Druidic;;;;;;;;;x
@@ -13,4 +15,174 @@ cybelene;Cybelene;Cybelene;Kybelenisch;;Cybelene;;;;;;;;;x
 khaldic;Khaldic;Khaldic;Khaldisch;;Khaldic;;;;;;;;;x
 armazic;Armazic;Armazic;Armazisch;;Armazic;;;;;;;;;x
 scythian;Scythian;Scythian;Scythisch;;Scythian;;;;;;;;;x
+
+#religion groups
+polytheistic;Polytheistic;Polytheistic;Polytheistisch;;Polytheistic;;;;;;;;;x
+
+#Details done by Thinking_waffle
+
+#Canaanite details
+canaanite_scripture;Cycle of Ba'al;Cycle of Ba'al;Zyklus des Ba'al;;Cycle of Ba'al;;;;;;;;;x
+canaanite_high_god;El;El;El;;El;;;;;;;;;x
+dagan;Dagan;Dagan;Dagan;;Dagan;;;;;;;;;x
+astargatis;Astargatis;Astargatis;Astargatis;;Astargatis;;;;;;;;;x
+ashima;Ashima;Ashima;Ashima;;Ashima;;;;;;;;;x
+aglibol;Aglibol;Aglibol;Aglibol;;Aglibol;;;;;;;;;x
+shadrafa;Shadrafa;Shadrafa;Shadrafa;;Shadrafa;;;;;;;;;x
+sydyk;Sydyk;Sydyk;Sydyk;;Sydyk;;;;;;;;;x
+baal;Baal;Baal;Baal;;Baal;;;;;;;;;x
+tanit;Tanit;Tanit;Tanit;;Tanit;;;;;;;;;x
+lotan;Lotan;Lotan;Lotan;;Lotan;;;;;;;;;x
+yam;Yam;Yam;Yam;;Yam;;;;;;;;;x
+
+#Druidic details
+druidic_scripture;The teachings;The teachings;Der Lehren;;The teachings;;;;;;;;;x
+druid_priest;Druid;Druid;Druid;;Druid;;;;;;;;;x
+taranis;Taranis;Taranis;Taranis;;Taranis;;;;;;;;;x
+cerunnos;Cerunnos;Cerunnos;Cerunnos;;Cerunnos;;;;;;;;;x
+epona;Epona;Epona;Epona;;Epona;;;;;;;;;x
+vinotonus;Vinotonus;Vinotonus;Vinotonus;;Vinotonus;;;;;;;;;x
+toutatis;Toutatis;Toutatis;Toutatis;;Toutatis;;;;;;;;;x
+condatis;Condatis;Condatis;Condatis;;Condatis;;;;;;;;;x
+belenos;Belenos;Belenos;Belenos;;Belenos;;;;;;;;;x
+belisama;Belisama;Belisama;Belisama;;Belisama;;;;;;;;;x
+artio;Artio;Artio;Artio;;Artio;;;;;;;;;x
+intarabus;Intarabus;Intarabus;Intarabus;;Intarabus;;;;;;;;;x
+balor;Balor;Balor;Balor;;Balor;;;;;;;;;x
+
+#Iberian details
+iberian_scripture;???;???;???;;???;;;;;;;;;x
+iberian_high_god;???;???;???;;???;;;;;;;;;x
+candamius;Candamius;Candamius;Candamius;;Candamius;;;;;;;;;x
+semnocosus;Semnocosus;Semnocosus;Semnocosus;;Semnocosus;;;;;;;;;x
+cariocecus;Cariocecus;Cariocecus;Cariocecus;;Cariocecus;;;;;;;;;x
+ataecina;Ataecina;Ataecina;Ataecina;;Ataecina;;;;;;;;;x
+eacus;Eacus;Eacus;Eacus;;Eacus;;;;;;;;;x
+detatun;Betatun;Betatun;Betatun;;Betatun;;;;;;;;;x
+dercetius;Dercetius;Dercetius;Dercetius;;Dercetius;;;;;;;;;x
+endouellicus;Endouellicus;Endouellicus;Endouellicus;;Endouellicus;;;;;;;;;x
+iberian_dark_one;The Dark One;The Dark One;Der Dunklegott;;The Dark One;;;;;;;;;x
+
+#Zalmoxian details
+zalmoxian_scripture;???;???;???;;???;;;;;;;;;x
+gabeleisos;Gabeleisos;Gabeleisos;Gabeleisos;;Gabeleisos;;;;;;;;;x
+zalmoxis;Zalmoxis;Zalmoxis;Zalmoxis;;Zalmoxis;;;;;;;;;x
+pleistoros;Pleistoros;Pleistoros;Pleistoros;;Pleistoros;;;;;;;;;x
+sabazios;Sabazios;Sabazios;Sabazios;;Sabazios;;;;;;;;;x
+zibelthiurdos;Zibelthiurdos;Zibelthiurdos;Zibelthiurdos;;Zibelthiurdos;;;;;;;;;x
+bassareus;Bassareus;Bassareus;Bassareus;;Bassareus;;;;;;;;;x
+derzelas;Derzelas;Derzelas;Derzelas;;Derzelas;;;;;;;;;x
+semele;Semele;Semele;Semele;;Semele;;;;;;;;;x
+bendis;Bendis;Bendis;Bendis;;Bendis;;;;;;;;;x
+zalmoxian_dark_god;The Taker;The Taker;The Taker;;The Taker;;;;;;;;;x
+
+#Egyptian details
+egyptian_scripture;Books on the Gods;Books on the Gods;Büchen des Gotten;;Books on the Gods;;;;;;;;;x
+amun;Amun;Amun;Amun;;Amun;;;;;;;;;x
+re;Re;Re;Re;;Re;;;;;;;;;x
+osiris;Osiris;Osiris;Osiris;;Osiris;;;;;;;;;x
+isis;Isis;Isis;Isis;;Isis;;;;;;;;;x
+horus;Horus;Horus;Horus;;Horus;;;;;;;;;x
+bastet;Bastet;Bastet;Bastet;;Bastet;;;;;;;;;x
+sekhmet;Sekhmet;Sekhmet;Sekhmet;;Sekhmet;;;;;;;;;x
+anubis;Anubis;Anubis;Anubis;;Anubis;;;;;;;;;x
+toth;Toth;Toth;Toth;;Toth;;;;;;;;;x
+hapi;Hapi;Hapi;Hapi;;Hapi;;;;;;;;;x
+sarapis;Sarapis;Sarapis;Sarapis;;Sarapis;;;;;;;;;x
+ptah;Ptah;Ptah;Ptah;;Ptah;;;;;;;;;x
+geb;Geb;Geb;Geb;;Geb;;;;;;;;;x
+tenenet;Tenenet;Tenenet;Tenenet;;Tenenet;;;;;;;;;x
+bes;Bès;Bès;Bès;;Bès;;;;;;;;;x
+seth;Seth;Seth;Seth;;Seth;;;;;;;;;x
+aapep;Aapep;Aapep;Aapep;;Aapep;;;;;;;;;x
+
+#Megalithic details
+megalithic_scripture;The Sacred Tales;The Sacred Tales;Der Heiliges Schreiben;;The Sacred Tales;;;;;;;;;x
+gurzil;Gurzil;Gurzil;Gurzil;;Gurzil;;;;;;;;;x
+sinifere;Sinifere;Sinifere;Sinifere;;Sinifere;;;;;;;;;x
+Shaheded;Shaheded;Shaheded;Shaheded;;Shaheded;;;;;;;;;x
+nanna_tala;Nanna Tala;Nanna Tala;Nanna Tala;;Nanna Tala;;;;;;;;;x
+megalithic_dark_one;The Dark One;The Dark One;Der Dunklegott;;The Dark One;;;;;;;;;x
+
+#Cybelene details
+cybelene_scripture;???;???;???;;???;;;;;;;;;x
+cybele;Cybele;Cybele;Cybele;;Cybele;;;;;;;;;x
+attis;Attis;Attis;Attis;;Attis;;;;;;;;;x
+god_ma;Ma;Ma;Ma;;Ma;;;;;;;;;x
+agdistis;Agdistis;Agdistis;Agdistis;;Agdistis;;;;;;;;;x
+dactyls;Dactyls;Dactyls;Dactyls;;Dactyls;;;;;;;;;x
+god_men;Men;Men;Men;;Men;;;;;;;;;x
+kakasbos;Kakasbos;Kakasbos;Kakasbos;;Kakasbos;;;;;;;;;x
+sandon;Sandon;Sandon;Sandon;;Sandon;;;;;;;;;x
+agdistis;Agdistis;Agdistis;Agdistis;;Agdistis;;;;;;;;;x
+cybelene_dark_god;Death;Death;Death;;Tod;;;;;;;;;x
+
+#Scythian details
+scythian_scripture;???;???;???;;???;;;;;;;;;x
+goitosyrus;Goitosyrus;Goitosyrus;Goitosyrus;;Goitosyrus;;;;;;;;;x
+thagimasadas;Thagimasadas;Thagimasadas;Thagimasadas;;Thagimasadas;;;;;;;;;x
+api_god;Api;Api;Api;;Api;;;;;;;;;x
+tabiti;Tabiti;Tabiti;Tabiti;;Tabiti;;;;;;;;;x
+argimpasa;Argimpasa;Argimpasa;Argimpasa;;Argimpasa;;;;;;;;;x
+targitaos;Targitaos;Targitaos;Targitaos;;Targitaos;;;;;;;;;x
+scythian_dark_god;???;???;???;;???;;;;;;;;;x
+
+#Khaldic details
+khaldic_scripture;???;???;???;;???;;;;;;;;;x
+khaldi;Khaldi;Khaldi;Khaldi;;Khaldi;;;;;;;;;x
+shivini;Shivini;Shivini;Shivini;;Shivini;;;;;;;;;x
+theispas;Theispas;Theispas;Theispas;;Theispas;;;;;;;;;x
+arubani;Arubani;Arubani;Arubani;;Arubani;;;;;;;;;x
+dsvininaue;Dsvininaue;Dsvininaue;Dsvininaue;;Dsvininaue;;;;;;;;;x
+epaninaue;Epaninaue;Epaninaue;Epaninaue;;Epaninaue;;;;;;;;;x
+bagvarti;Bagvarti;Bagvarti;Bagvarti;;Bagvarti;;;;;;;;;x
+huba;Huba;Huba;Huba;;Huba;;;;;;;;;x
+khaldic_dark_god;The Evil One;The Evil One;The Evil One;;The Evil One;;;;;;;;;x
+
+#Armazic details
+armazic_scripture;The Holy Books;The Holy Books;Der Heiliges Büchen;;The Holy Books;;;;;;;;;x
+kopala;Kopala;Kopala;Kopala;;Kopala;;;;;;;;;x
+zadeni;Zadeni;Zadeni;Zadeni;;Zadeni;;;;;;;;;x
+armazi;Armazi;Armazi;Armazi;;Armazi;;;;;;;;;x
+ghmerti;Ghmerti;Ghmerti;Ghmerti;;Ghmerti;;;;;;;;;x
+dali;Dali;Dali;Dali;;Dali;;;;;;;;;x
+ga_god;Ga;Ga;Ga;;Ga;;;;;;;;;x
+adgilis_deda;Adgilis Deda;Adgilis Deda;Adgilis Deda;;Adgilis Deda;;;;;;;;;x
+gacim;Gacim;Gacim;Gacim;;Gacim;;;;;;;;;x
+armazic_dark_god;The Hidden One;The Hidden One;The Hidden One;;The Hidden One;;;;;;;;;x
+
+#Arabic details
+arabic_scripture;The Tradition;The Tradition;Die Tradition;;The Tradition;;;;;;;;;x
+dushara;Dushara;Dushara;Dushara;;Dushara;;;;;;;;;x
+ailiah;Ailiah;Ailiah;Ailiah;;Ailiah;;;;;;;;;x
+ta_lab;Ta'lab;Ta'lab;Ta'lab;;Ta'lab;;;;;;;;;x
+orotalt;Orotalt;Orotalt;Orotalt;;Orotalt;;;;;;;;;x
+manat;Manat;Manat;Manat;;Manat;;;;;;;;;x
+al_qaum;Al-Qaum;Al-Qaum;Al-Qaum;;Al-Qaum;;;;;;;;;x
+al_kutbay;Al-Kutbay;Al-Kutbay;Al-Kutbay;;Al-Kutbay;;;;;;;;;x
+al_uzza;Al-Uzza;Al-Uzza;Al-Uzza;;Al-Uzza;;;;;;;;;x
+suly_hram;Suly'Hram;Suly'Hram;Suly'Hram;;Suly'Hram;;;;;;;;;x
+
+#Ritualistic details
+ritualistic_scripture;The Scriptures;The Scriptures;Das Schreiben;;The Scriptures;;;;;;;;;x
+yazata;Yazata;Yazata;Yazata;;Yazata;;;;;;;;;x
+tishtrya;Tishtrya;Tishtrya;Tishtrya;;Tishtrya;;;;;;;;;x
+mah_god;Mah;Mah;Mah;;Mah;;;;;;;;;x
+angra_mainyu;Angra Mainyu;Angra Mainyu;Angra Mainyu;;Angra Mainyu;;;;;;;;;x
+
+#Chaldean details
+sumerian_scripture;Enuma Elish;Enuma Elish;Enuma Elish;;Enuma Elish;;;;;;;;;x
+marduk;Marduk;Marduk;Marduk;;Marduk;;;;;;;;;x
+elil;Elil;Elil;Elil;;Elil;;;;;;;;;x
+ea_god;Ea;Ea;Ea;;Ea;;;;;;;;;x
+nergal;Nergal;Nergal;Nergal;;Nergal;;;;;;;;;x
+ninlil;Ninlil;Ninlil;Ninlil;;Ninlil;;;;;;;;;x
+nabu;Nabu;Nabu;Nabu;;Nabu;;;;;;;;;x
+shamash;Shamash;Shamash;Shamash;;Shamash;;;;;;;;;x
+ishtar;Ishtar;Ishtar;Ishtar;;Ishtar;;;;;;;;;x
+ningirsu;Ninĝirsu;Ninĝirsu;Ninĝirsu;;Ninĝirsu;;;;;;;;;x
+dumuzi;Dumuzi;Dumuzi;Dumuzi;;Dumuzi;;;;;;;;;x
+tiamat;Tiamat;Tiamat;Tiamat;;Tiamat;;;;;;;;;x
+lamashtu;Lamashtu;Lamashtu;Lamashtu;;Lamashtu;;;;;;;;;x
+
 
