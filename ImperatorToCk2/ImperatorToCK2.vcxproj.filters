@@ -21,19 +21,47 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <CopyFileToFolders Include="DataFiles\Fronter\configuration_l_english.yml" />
-    <CopyFileToFolders Include="DataFiles\Fronter\configuration_l_french.yml" />
-    <CopyFileToFolders Include="DataFiles\Fronter\configuration_l_german.yml" />
-    <CopyFileToFolders Include="DataFiles\Fronter\configuration_l_italian.yml" />
-    <CopyFileToFolders Include="DataFiles\Fronter\configuration_l_latin.yml" />
-    <CopyFileToFolders Include="DataFiles\Fronter\configuration_l_russian.yml" />
-    <CopyFileToFolders Include="DataFiles\Fronter\options_l_english.yml" />
-    <CopyFileToFolders Include="DataFiles\Fronter\options_l_french.yml" />
-    <CopyFileToFolders Include="DataFiles\Fronter\options_l_german.yml" />
-    <CopyFileToFolders Include="DataFiles\Fronter\options_l_italian.yml" />
-    <CopyFileToFolders Include="DataFiles\Fronter\options_l_latin.yml" />
-    <CopyFileToFolders Include="DataFiles\Fronter\options_l_russian.yml" />
-    <CopyFileToFolders Include="DataFiles\Fronter\fronter-configuration.txt" />
-    <CopyFileToFolders Include="DataFiles\Fronter\fronter-options.txt" />
+    <CopyFileToFolders Include="DataFiles\Fronter\configuration_l_english.yml">
+      <Filter>Data Files\Fronter</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="DataFiles\Fronter\configuration_l_french.yml">
+      <Filter>Data Files\Fronter</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="DataFiles\Fronter\configuration_l_german.yml">
+      <Filter>Data Files\Fronter</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="DataFiles\Fronter\configuration_l_italian.yml">
+      <Filter>Data Files\Fronter</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="DataFiles\Fronter\configuration_l_latin.yml">
+      <Filter>Data Files\Fronter</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="DataFiles\Fronter\configuration_l_russian.yml">
+      <Filter>Data Files\Fronter</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="DataFiles\Fronter\fronter-configuration.txt">
+      <Filter>Data Files\Fronter</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="DataFiles\Fronter\fronter-options.txt">
+      <Filter>Data Files\Fronter</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="DataFiles\Fronter\options_l_english.yml">
+      <Filter>Data Files\Fronter</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="DataFiles\Fronter\options_l_french.yml">
+      <Filter>Data Files\Fronter</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="DataFiles\Fronter\options_l_german.yml">
+      <Filter>Data Files\Fronter</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="DataFiles\Fronter\options_l_italian.yml">
+      <Filter>Data Files\Fronter</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="DataFiles\Fronter\options_l_latin.yml">
+      <Filter>Data Files\Fronter</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="DataFiles\Fronter\options_l_russian.yml">
+      <Filter>Data Files\Fronter</Filter>
+    </CopyFileToFolders>
   </ItemGroup>
 </Project>
