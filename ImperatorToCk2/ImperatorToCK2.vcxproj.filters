@@ -19,6 +19,12 @@
     <Filter Include="Data Files\Fronter">
       <UniqueIdentifier>{35514f0f-913b-410a-bf50-70d68d299a28}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Data Files\Configuration">
+      <UniqueIdentifier>{d5e1a8f3-31f8-4a03-9bad-0de6ac7e9704}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data Files\jar">
+      <UniqueIdentifier>{b16b07cc-f8a2-43ab-b81f-0a9f65b117cd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <CopyFileToFolders Include="DataFiles\Fronter\configuration_l_english.yml">
@@ -62,6 +68,39 @@
     </CopyFileToFolders>
     <CopyFileToFolders Include="DataFiles\Fronter\options_l_russian.yml">
       <Filter>Data Files\Fronter</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="DataFiles\charTraitConverter.txt">
+      <Filter>Data Files\Configuration</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="DataFiles\cultureConversion.txt">
+      <Filter>Data Files\Configuration</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="DataFiles\monumentConversion.txt">
+      <Filter>Data Files\Configuration</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="DataFiles\provinceConversion.txt">
+      <Filter>Data Files\Configuration</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="DataFiles\provinceConversion2.txt">
+      <Filter>Data Files\Configuration</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="DataFiles\provinceConversionCore.txt">
+      <Filter>Data Files\Configuration</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="DataFiles\provinceNames.txt">
+      <Filter>Data Files\Configuration</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="DataFiles\regionConverter.txt">
+      <Filter>Data Files\Configuration</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="DataFiles\religionConversion.txt">
+      <Filter>Data Files\Configuration</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="DataFiles\supportedModLoc.txt">
+      <Filter>Data Files\Configuration</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Converter.jar">
+      <Filter>Data Files\jar</Filter>
     </CopyFileToFolders>
   </ItemGroup>
 </Project>
