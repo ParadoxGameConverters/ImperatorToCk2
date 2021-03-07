@@ -15,7 +15,7 @@ macedonian,greek
 parthinian,greek
 thracian,thracian
 cretan,greek
-greco_pontic,greco_pontic
+greco_pontic,greek
 italiotian,greek
 massalian,greek
 cyrenaican,greek
@@ -24,7 +24,7 @@ arcadian,greek
 aeolian,greek
 troan,greek
 ionian,greek
-bithynian,greek
+#bithynian,greek
 cypriot,greek
 thessalian,greek
 
@@ -38,19 +38,20 @@ bruttian,sabellian
 osco_umbrian,sabellian
 umbrian,sabellian
 siculian,siculian
-ligurian,ligurian
+ligurian,old_ligurian
 venetic,venetic
 
 #PreIndoEuropean
 
 etruscan,etruscan
 nuragic,nuragic
+corsian,nuragic
+talaiotic,nuragic
 vasconian,basque
 cantabrian,basque
 ilergetian,basque
 aquitani,basque
 autrigonian,basque
-corsian,corsian
 rhaetian,rhaetian
 
 #Gallic
@@ -168,6 +169,8 @@ gaetulian,maghreb_arabic
 socossian,maghreb_arabic
 massaesylian,maghreb_arabic
 massylian,maghreb_arabic
+garamantic,maghreb_arabic
+libyan,maghreb_arabic
 
 #Illyrian
 
@@ -179,6 +182,10 @@ catari,arberian
 deraemestian,arberian
 deurian,arberian
 messapian,arberian
+paeonian,arberian
+dardanian,arberian
+abrian,arberian
+greco_illyrian,arberian
 
 #Scythian
 scythian,saka
@@ -221,8 +228,9 @@ buridavensi,dacian
 caucoensi,dacian
 ratacensi,dacian
 biephi,dacian
-#mayMoveToGreek
 odrysi,thracian
+bithynian,thracian
+mariandynian,thracian
 
 #Georgian
 ibero,georgian
@@ -264,17 +272,25 @@ vardulian,celtiberian
 #Anatolian
 
 pamphylian,greek
+lalasian,greek
 cappadocian,persian
+cataonian,persian
+morimenian,persian
 pontic,persian
 lycian,lycian
 lydian,lycian
 carian,lycian
+pisidian,lycian
+milyadian,lycian
+cabalian,lycian
 mysian,phrygian
 phrygian,phrygian
 lycaonian,isaurian
 isaurian,isaurian
+oroandian,isaurian
 paphlagonian,paphlagonian
 cilician,cilician
+kennataian,cilician
 
 #Armenian
 
@@ -315,10 +331,10 @@ median,persian
 hyrcanian,persian
 sattagydian,persian
 sarangian,persian
+carmanian,persian
 pactyan,afghan
 gedrosian,baloch
 parecanian,baloch
-carmanian,baloch
 
 #Bactrian
 

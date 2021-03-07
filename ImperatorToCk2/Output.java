@@ -16,7 +16,6 @@ public class Output
 
     private int x;
 
-    
     public static int output(String source, String destination) throws IOException
     {
 
@@ -58,7 +57,6 @@ public class Output
 
         ck2CultureInfo = importer.importCultList("cultureConversion.txt",irCulture)[1];
 
-        
         return ck2CultureInfo;
     }
 
@@ -74,7 +72,6 @@ public class Output
 
         ck2CultureInfo = importer.importCultList("religionConversion.txt",irRel)[1];
 
-        
         return ck2CultureInfo;
     }
 
@@ -125,7 +122,7 @@ public class Output
         Directory = Directory + VM + "history" + VM + "titles";
         String ck2CultureInfo ="a";   // Owner Culture Religeon PopTotal Buildings
         Importer importer = new Importer();
-      
+
         FileOutputStream fileOut= new FileOutputStream(Directory + VM + rank+"_" + irTAG + ".txt");
         PrintWriter out = new PrintWriter(fileOut);
 
@@ -157,7 +154,7 @@ public class Output
     }
 
     public static String provinceCreation(String ckProv, String ckCult, String ckRel, String Directory, String landType, 
-    String name, String gov, String pops, String[] bList, int id) throws IOException
+    String name, String gov, String pops, String[] bList, String saveMonuments, int id) throws IOException
     {
 
         String tab = "	";
@@ -217,7 +214,6 @@ public class Output
             holdingTot = 7;  
         }
 
-       
         out.println ("# County Title");
         out.println ("title = c_"+name);
         out.println ("");
@@ -255,27 +251,30 @@ public class Output
             out.println (landType);
         }
 
-        if (id == 23) { //Stonehenge
-            out.println ("");
-            out.println ("# History");
-            out.println ("1.1.1 = {");
-            out.println (tab+"build_wonder = wonder_pagan_stones_stonehenge");
-            out.println (tab+"set_wonder_stage = 3");
-            out.println (tab+"set_wonder_damaged = yes");
-            out.println ("}");
+        if (id == 23) { //Stonehenge in pre-2.0 saves
+            if (Processing.checkMonumentList(saveMonuments) == 0 || 1 == 1) {//if 0, it is an old save before dynamic/custom monuments
+                out.println ("");
+                out.println ("# History");
+                out.println ("1.1.1 = {");
+                out.println (tab+"build_wonder = wonder_pagan_stones_stonehenge");
+                out.println (tab+"set_wonder_stage = 3");
+                out.println (tab+"set_wonder_damaged = yes");
+                out.println ("}");
+            }
         }
 
-        if (id == 800) { //The great pyramids of Giza
-            out.println ("");
-            out.println ("# History");
-            out.println ("1.1.1 = {");
-            out.println (tab+"build_wonder = wonder_pyramid_giza");
-            out.println (tab+"set_wonder_stage = 3");
-            out.println (tab+"build_wonder_upgrade = upgrade_mythological_beast");
-            out.println ("}");
+        if (id == 800) { //The great pyramids of Giza in pre-2.0 saves
+            if (Processing.checkMonumentList(saveMonuments) == 0 || 1 == 1) {//if 0, it is an old save before dynamic/custom monuments
+                out.println ("");
+                out.println ("# History");
+                out.println ("1.1.1 = {");
+                out.println (tab+"build_wonder = wonder_pyramid_giza");
+                out.println (tab+"set_wonder_stage = 3");
+                out.println (tab+"build_wonder_upgrade = upgrade_mythological_beast");
+                out.println ("}");
+            }
         }
 
-       
         out.flush();
         fileOut.close();
 
@@ -330,19 +329,17 @@ public class Output
     String sex, String traits, String martial, String zeal, String charisma, String finesse, String spouse, String children,String tempFile,String father,
     String mother,ArrayList<String> convertedList,String Directory) throws IOException
     {
-        
+
         int characterCount = 0;
-        
-        
+
         while (characterCount < convertedList.size()) { //checks if a character has been converted or not
-        if (irKING.equals(convertedList.get(characterCount))) {
-        return convertedList; //If a character has already been converted, no point to repeat and avoids children with jobs not having fathers
-        } else {
-        characterCount = characterCount + 1;    
+            if (irKING.equals(convertedList.get(characterCount))) {
+                return convertedList; //If a character has already been converted, no point to repeat and avoids children with jobs not having fathers
+            } else {
+                characterCount = characterCount + 1;    
+            }
+
         }
-            
-        }
-        
 
         String VM = "\\"; 
         VM = VM.substring(0);
@@ -419,9 +416,7 @@ public class Output
 
         int numAge = Integer.parseInt(age);
 
-        
         Directory = Directory + VM + "history" + VM + "characters";
-
         if (sex != "69") {
             //for all non-generated characters
             dynasty = Integer.toString(Integer.parseInt(dynasty) + 700000000);
@@ -461,8 +456,7 @@ public class Output
         aqq = 0;
 
         Importer importer = new Importer();
-        
-        
+
       
         FileOutputStream fileOut= new FileOutputStream(Directory + VM + name + "k_" + irKING + ".txt");
         PrintWriter out = new PrintWriter(fileOut);
@@ -617,10 +611,9 @@ public class Output
         out.println (tab+"}");
         out.println ("}");
 
-      
         out.flush();
         fileOut.close();
-        
+
         convertedList.add(irKING);
 
         return convertedList;
@@ -644,7 +637,6 @@ public class Output
         String date1 = "100.1.1";
         String date2 = "1066.9.15";
 
-      
         out.println (id+"=");
         out.println ("{");
         out.println (tab+"name="+VMq+name+VMq);
@@ -680,7 +672,6 @@ public class Output
 
         int flag = 0;
 
-      
         out.println ("c_"+name+"={");
         out.println (tab+"b_"+name+"={");
         out.println (tab+"}");
@@ -704,7 +695,7 @@ public class Output
 
         Directory = Directory + VM + "localisation";
         String ck2CultureInfo ="a";   // Owner Culture Religeon PopTotal Buildings
-      
+
         FileOutputStream fileOut= new FileOutputStream(Directory + VM + "converted_title_localisation.csv");
         PrintWriter out = new PrintWriter(fileOut);
 
@@ -751,5 +742,4 @@ public class Output
         return ck2CultureInfo;
     }
 
-    
 }

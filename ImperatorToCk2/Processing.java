@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.PrintWriter;
 import java.io.FileOutputStream;
 import java.util.Random;
+import java.util.ArrayList;
 /**
  * Write a description of class Processing here.
  *
@@ -382,7 +383,7 @@ public class Processing
             while (endOrNot = true){
                 output[aqq]=importBaronyName(ck2Dir,aqq,ck2Dir);
                 if (output[aqq].equals("debug")) {
-                    System.out.println(aqq+"is for"+output[aqq]);
+                    //System.out.println(aqq+"is for"+output[aqq]);
 
                 }
                 aqq = aqq + 1;
@@ -635,6 +636,68 @@ public class Processing
         }
 
         return 0;
+    }
+    
+    public static ArrayList<String> generateSubjectList(int tot, String source) throws IOException
+    {
+
+        ArrayList<String> subjects = new ArrayList<String>();
+        
+        subjects.add("0,0,feudatory"); //Debug at id 0 so list will never be empty
+
+        int aqq = 0;
+
+        while (aqq < tot) {
+            
+            //String[] relation = Importer.importSubjects(source,aqq,subjects);
+            subjects = Importer.importSubjects(source,aqq,subjects);
+            //if (relation[0] != "9999") {
+                //subjects.add(relation[0]+","+relation[1]+","+relation[2]);
+                
+            //}
+            aqq = aqq + 1; 
+        }
+
+        return subjects;
+    }
+    
+    public static int checkSubjectList(int country, ArrayList<String> subjects) throws IOException
+    {
+        
+        String countryStr = Integer.toString(country);
+        int aqq = 0;
+        
+        int output = 9999;//default, if 9999, country remains free
+
+        while (aqq < subjects.size()) {
+            
+            String subCountry = subjects.get(aqq).split(",")[1];
+
+            if (countryStr.equals(subCountry)) {
+                output = aqq;
+                aqq = subjects.size() + 1000; //end loop
+            }
+            aqq = aqq + 1; 
+        }
+
+        return output;
+    }
+    
+    public static int checkMonumentList(String name) throws IOException //Checks if save is from 2.0+ or before
+    {
+        
+        FileInputStream fileIn= new FileInputStream(name);
+        Scanner scnr= new Scanner(fileIn);
+        String qaaa = scnr.nextLine();
+        
+        int flag = 0;
+        
+        if (qaaa.equals ("great_work_manager={")) {
+            flag = 1;
+            
+        }
+
+        return flag;
     }
 
     

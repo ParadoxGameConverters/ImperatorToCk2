@@ -22,10 +22,12 @@ public class Importer
 
         FileInputStream fileIn= new FileInputStream(name);
         Scanner scnr= new Scanner(fileIn);
+        
+        String tab = "	";
 
         int flag = 0;
 
-        String keyWord = "	"+provID+"={";
+        String keyWord = tab+provID+"={";
 
         int aqq = 0;
 
@@ -33,11 +35,12 @@ public class Importer
         String vmm = scnr.nextLine();
         String qaaa = vmm;
         String[] output;   // Owner Culture Religeon PopTotal Buildings
-        output = new String[5];
+        output = new String[6];
 
         output[0] = "9999"; //default for no owner, uncolonized province
         output[1] = "noCulture"; //default for no culture, uncolonized province with 0 pops
         output[2] = "noReligion"; //default for no religion, uncolonized province with 0 pops
+        output[5] = "9999"; //default for no monument
 
         try {
             while (endOrNot = true){
@@ -49,28 +52,37 @@ public class Importer
 
                     while (flag == 0) {
                         qaaa = scnr.nextLine();
-                        if (qaaa.split("=")[0].equals( "		owner" ) ) {
+                        if (qaaa.split("=")[0].equals( tab+tab+"owner" ) ) {
                             output[0] = qaaa.split("=")[1];
                         }
-                        if (qaaa.split("=")[0].equals( "		culture" ) ) {
+                        if (qaaa.split("=")[0].equals( tab+tab+"culture" ) ) {
                             output[1] = qaaa.split("=")[1];
                             output[1] = output[1].substring(1,output[1].length()-1);
                         }
-                        if (qaaa.split("=")[0].equals( "		religion" ) ) {
+                        if (qaaa.split("=")[0].equals( tab+tab+"religion" ) ) {
                             output[2] = qaaa.split("=")[1];
                             output[2] = output[2].substring(1,output[2].length()-1);
                         }
 
                         //popTotal
-                        if (qaaa.split("=")[0].equals( "		pop" ) ) {
+                        if (qaaa.split("=")[0].equals( tab+tab+"pop" ) ) {
                             aqq = aqq + 1;
                             //double aq = 1;
                             output[3] = Integer.toString(aqq);
                         }
 
                         //might be used or ignored
-                        if (qaaa.split("=")[0].equals( "		buildings" ) ) {
+                        if (qaaa.split("=")[0].equals( tab+tab+"buildings" ) ) {
                             output[4] = qaaa.split("=")[1];
+
+                        }
+                        
+                        if (qaaa.split("=")[0].equals( tab+tab+"great_work" ) ) {
+                            output[5] = qaaa.split("=")[1];
+
+                        }
+                        
+                        if (qaaa.split("=")[0].equals( tab+"}" ) ) { //ends here
                             flag = 1; //end loop
 
                         }
@@ -278,6 +290,86 @@ public class Importer
         }   
 
         return output;
+
+    }
+    
+    public static ArrayList<String> importSubjects (String name, int overlordIDnum, ArrayList<String> currentList) throws IOException
+    {
+        
+        //Primarily used for subjects/vassals in IR
+
+        String overlordID = Integer.toString(overlordIDnum);
+
+        FileInputStream fileIn= new FileInputStream(name);
+        Scanner scnr= new Scanner(fileIn);
+
+        int flag = 0;
+        
+        String tab = "	";
+
+        String keyWord = tab+tab+"first="+overlordID;
+
+        int aqq = 0;
+
+        boolean endOrNot = true;
+        String vmm = scnr.nextLine();
+        String qaaa = vmm;
+        String[] output;
+        output = new String[5];
+
+        output[0] = "9999"; //default for no overlord, overlord has no subjects
+        output[1] = "9999"; //default for no subject
+        output[2] = "9999"; //default for no subject relation
+
+        try {
+            while (endOrNot = true){
+
+                qaaa = scnr.nextLine();
+
+                if (qaaa.equals(keyWord)){
+                    //endOrNot = false;
+                    output[0] = Integer.toString(overlordIDnum);
+
+                    while (flag == 0) {
+                        qaaa = scnr.nextLine();
+                        //subject
+                        if (qaaa.split("=")[0].equals( tab+tab+"second" ) ) {
+                            output[1] = qaaa.split("=")[1];
+                        }
+                        //subject type
+                        if (qaaa.split("=")[0].equals( tab+tab+"subject_type" ) ) {
+                            output[2] = qaaa.split("=")[1];
+                            output[2] = output[2].substring(1,output[2].length()-1);
+                            flag = 1; //end loop
+                            currentList.add(output[0]+","+output[1]+","+output[2]);
+                        }
+                        
+                        if (qaaa.split("=")[0].equals( tab+"}" ) ) { //If there isn't a subject type, prevents it from going over to the next
+                            output[0] = "9999";
+                            output[1] = "9999";
+                            output[2] = "9999";
+                            flag = 1; //end loop
+                        }
+
+                    }
+
+                }
+                
+                flag = 0;
+            }
+
+        }catch (java.util.NoSuchElementException exception){
+            endOrNot = false;
+
+        }
+        
+        if (output[1].equals("9999") || output[2].equals("9999")) { //Fallback in case something goes wrong, subject relation won't be converted
+            output[0] = "9999"; //default for no overlord, overlord has no subjects
+            output[1] = "9999"; //default for no subject
+            output[2] = "9999"; //default for no subject relation    
+        }
+
+        return currentList;
 
     }
 
