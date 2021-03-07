@@ -1,0 +1,10 @@
+option = {
+	name = output_name
+	displayName = MODNAME
+	tooltip = MODNAMETIP
+	textSelector = {	
+		value = ""
+		editable = true
+		tooltip = MODNAMETIP2
+	}
+}

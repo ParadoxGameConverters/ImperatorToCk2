@@ -13,5 +13,27 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Data Files">
+      <UniqueIdentifier>{196b4fab-08e6-4006-8824-02d2dfffa5b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data Files\Fronter">
+      <UniqueIdentifier>{35514f0f-913b-410a-bf50-70d68d299a28}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="DataFiles\Fronter\configuration_l_english.yml" />
+    <CopyFileToFolders Include="DataFiles\Fronter\configuration_l_french.yml" />
+    <CopyFileToFolders Include="DataFiles\Fronter\configuration_l_german.yml" />
+    <CopyFileToFolders Include="DataFiles\Fronter\configuration_l_italian.yml" />
+    <CopyFileToFolders Include="DataFiles\Fronter\configuration_l_latin.yml" />
+    <CopyFileToFolders Include="DataFiles\Fronter\configuration_l_russian.yml" />
+    <CopyFileToFolders Include="DataFiles\Fronter\options_l_english.yml" />
+    <CopyFileToFolders Include="DataFiles\Fronter\options_l_french.yml" />
+    <CopyFileToFolders Include="DataFiles\Fronter\options_l_german.yml" />
+    <CopyFileToFolders Include="DataFiles\Fronter\options_l_italian.yml" />
+    <CopyFileToFolders Include="DataFiles\Fronter\options_l_latin.yml" />
+    <CopyFileToFolders Include="DataFiles\Fronter\options_l_russian.yml" />
+    <CopyFileToFolders Include="DataFiles\Fronter\fronter-configuration.txt" />
+    <CopyFileToFolders Include="DataFiles\Fronter\fronter-options.txt" />
   </ItemGroup>
 </Project>
