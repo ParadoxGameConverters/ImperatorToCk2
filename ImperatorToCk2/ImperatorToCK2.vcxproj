@@ -123,6 +123,10 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PostBuildEvent>
+      <Command>Copy_Files_Debug.bat</Command>
+      <Message>Copying Data Files</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -142,6 +146,10 @@
     <CopyFileToFolders>
       <DestinationFolders>$(OutDir)/$(Configuration)/ImperatorToCK2</DestinationFolders>
     </CopyFileToFolders>
+    <PostBuildEvent>
+      <Command>Copy_Files.bat</Command>
+      <Message>Copying Data Files</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <CopyFileToFolders Include="DataFiles\Fronter\configuration_l_english.yml">
