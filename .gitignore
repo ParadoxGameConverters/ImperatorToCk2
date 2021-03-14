@@ -30,6 +30,7 @@
 *.exe
 *.out
 *.app
+*.jar
 
 #Visual Studio stuff
 .vs
@@ -37,3 +38,4 @@
 #Output folders
 Release
 Debug
+ImperatorToCk2/target

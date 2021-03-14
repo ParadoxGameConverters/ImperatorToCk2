@@ -1,0 +1,15 @@
+lustful,lustful
+chaste,chaste
+incapable,incapable
+arbitrary,arbitrary
+just,just
+lagids,lagidsB
+seleucids,seleucidsB
+argeads,argeadsB
+antipatrid,antipatridB
+antigonids,antigonidsB
+alcimachid,alcimachidB
+silver_tongued,shrewd
+blunt,dull
+sceptical,cynical
+

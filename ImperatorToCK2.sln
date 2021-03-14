@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ImperatorToCK2", "ImperatorToCK2\ImperatorToCK2.vcxproj", "{744134C4-3474-4EFD-8BB9-632F16356451}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D4E43E3D-E131-466D-9AA7-704C2298EACC} = {D4E43E3D-E131-466D-9AA7-704C2298EACC}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Fronter", "Fronter\Fronter.vcxproj", "{D4E43E3D-E131-466D-9AA7-704C2298EACC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{744134C4-3474-4EFD-8BB9-632F16356451}.Debug|x64.ActiveCfg = Debug|x64
+		{744134C4-3474-4EFD-8BB9-632F16356451}.Debug|x64.Build.0 = Debug|x64
+		{744134C4-3474-4EFD-8BB9-632F16356451}.Release|x64.ActiveCfg = Release|x64
+		{744134C4-3474-4EFD-8BB9-632F16356451}.Release|x64.Build.0 = Release|x64
+		{D4E43E3D-E131-466D-9AA7-704C2298EACC}.Debug|x64.ActiveCfg = Debug|x64
+		{D4E43E3D-E131-466D-9AA7-704C2298EACC}.Debug|x64.Build.0 = Debug|x64
+		{D4E43E3D-E131-466D-9AA7-704C2298EACC}.Release|x64.ActiveCfg = Release|x64
+		{D4E43E3D-E131-466D-9AA7-704C2298EACC}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6947DA09-35F6-4B34-B8A1-21A6C865F6F7}
+	EndGlobalSection
+EndGlobal

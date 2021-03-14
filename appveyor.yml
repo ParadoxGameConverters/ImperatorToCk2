@@ -1,0 +1,29 @@
+version: dev.{build}
+skip_tags: true
+image: Visual Studio 2019 Preview
+configuration: Release
+build_script:
+- cmd: >-
+   git submodule update --init --recursive
+
+   msbuild -m ImperatorToCK2.sln /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
+   
+   cd ImperatorToCk2
+   
+   mvn package
+   
+   cp target/ImperatorToCK2.jar ../Release/ImperatorToCK2
+
+artifacts:
+- path: Release
+  name: ImperatorToCK2-0.1
+deploy:
+- provider: GitHub
+  release: 0.1
+  description: Imperator to CK2 Version 0.1
+  auth_token:
+    secure: LBJzs4y9j0N5y0ajp7gmVk3Pvnec1UU5pTCdIMbQYUddEXQnWTJ79FXsd9SCs7YQ
+  repository: ParadoxGameConverters/ImperatorToCk2
+  artifact: ImperatorToCK2-0.1
+  prerelease: true
+  force_update: true
