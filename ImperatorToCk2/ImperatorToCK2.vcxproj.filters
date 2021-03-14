@@ -22,9 +22,6 @@
     <Filter Include="Data Files\Configuration">
       <UniqueIdentifier>{d5e1a8f3-31f8-4a03-9bad-0de6ac7e9704}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Data Files\jar">
-      <UniqueIdentifier>{b16b07cc-f8a2-43ab-b81f-0a9f65b117cd}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <CopyFileToFolders Include="DataFiles\Fronter\configuration_l_english.yml">
@@ -98,9 +95,6 @@
     </CopyFileToFolders>
     <CopyFileToFolders Include="DataFiles\supportedModLoc.txt">
       <Filter>Data Files\Configuration</Filter>
-    </CopyFileToFolders>
-    <CopyFileToFolders Include="Converter.jar">
-      <Filter>Data Files\jar</Filter>
     </CopyFileToFolders>
   </ItemGroup>
 </Project>
