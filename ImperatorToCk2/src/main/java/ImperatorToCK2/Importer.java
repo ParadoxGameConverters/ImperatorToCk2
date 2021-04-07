@@ -1,4 +1,4 @@
-package ImperatorToCK2;
+ 
 
 import java.util.Scanner;
 import java.io.IOException;
@@ -25,7 +25,7 @@ public class Importer
         FileInputStream fileIn= new FileInputStream(name);
         Scanner scnr= new Scanner(fileIn);
         
-        String tab = "	";
+        String tab = "    ";
 
         int flag = 0;
 
@@ -106,7 +106,7 @@ public class Importer
     public static String[] importCountry (String name, int natIDnum) throws IOException
     {
 
-        String tab = "	";
+        String tab = "    ";
 
         String VQ2 = "{}q";
 
@@ -122,10 +122,10 @@ public class Importer
 
         //String idStr = provID.toString();
 
-        String startWord = "	country_database={";
-        String endWord = "	state_database={";
+        String startWord = "    country_database={";
+        String endWord = "    state_database={";
 
-        String keyWord = "		"+tagID+"={";
+        String keyWord = "        "+tagID+"={";
 
         int aqq = 0;
         boolean endOrNot = true;
@@ -158,11 +158,11 @@ public class Importer
                             flag = 1;
                             while (flag == 1) {
                                 qaaa = scnr.nextLine();
-                                if (qaaa.split("=")[0].equals( "			tag" ) ) {
+                                if (qaaa.split("=")[0].equals( "            tag" ) ) {
                                     output[0] = qaaa.split("=")[1];
                                     output[0] = output[0].substring(1,output[0].length()-1);
                                 }
-                                else if (qaaa.split("=")[0].equals( "			country_name" ) ) {
+                                else if (qaaa.split("=")[0].equals( "            country_name" ) ) {
                                     qaaa = scnr.nextLine(); 
                                     output[19] = qaaa.split("=")[1];
                                     output[19] = output[19].substring(1,output[19].length()-1);
@@ -183,33 +183,33 @@ public class Importer
                                     //System.out.println ("Load 3 done");
                                 }
 
-                                else if (qaaa.split("=")[0].equals( "				seed" ) ) {
+                                else if (qaaa.split("=")[0].equals( "                seed" ) ) {
                                     output[1] = qaaa.split("=")[1];
                                 }
-                                else if (qaaa.split("=")[0].equals( "			gender_equality" ) ) {
+                                else if (qaaa.split("=")[0].equals( "            gender_equality" ) ) {
                                     output[2] = qaaa.split("=")[1]; //used for determining inheiratance laws
                                 }
-                                else if (qaaa.split("=")[0].equals( "			color" ) ) {
+                                else if (qaaa.split("=")[0].equals( "            color" ) ) {
 
-                                    output[3] = qaaa.split("			color2")[0];
+                                    output[3] = qaaa.split("            color2")[0];
                                     output[3] = qaaa.substring(15,output[3].length()-2);
                                 }
-                                else if (qaaa.split("=")[0].equals( "				gold" ) ) {
+                                else if (qaaa.split("=")[0].equals( "                gold" ) ) {
                                     output[4] = qaaa.split("=")[1];
                                 }
-                                else if (qaaa.split("=")[0].equals( "			capital" ) ) {
+                                else if (qaaa.split("=")[0].equals( "            capital" ) ) {
                                     output[5] = qaaa.split("=")[1];
                                 }
-                                else if (qaaa.split("=")[0].equals( "			primary_culture" ) ) {
+                                else if (qaaa.split("=")[0].equals( "            primary_culture" ) ) {
                                     output[6] = qaaa.split("=")[1];
                                     output[6] = output[6].substring(1,output[6].length()-1);
                                 }
-                                else if (qaaa.split("=")[0].equals( "			religion" ) ) {
+                                else if (qaaa.split("=")[0].equals( "            religion" ) ) {
                                     output[7] = qaaa.split("=")[1];
                                     output[7] = output[7].substring(1,output[7].length()-1);
                                 }
                                 //Technology
-                                else if (qaaa.split("=")[0].equals( "				military_tech" ) ) {
+                                else if (qaaa.split("=")[0].equals( "                military_tech" ) ) {
                                     if (qaaa.substring(qaaa.length()-14, qaaa.length()-13).equals( "c" )) {
 
                                         output[12] = qaaa.substring(33,qaaa.length()); //researcher
@@ -217,7 +217,7 @@ public class Importer
                                     qaaa = scnr.nextLine();
                                     output[8] = qaaa.split("=")[1]; //technology
                                 }
-                                else if (qaaa.split("=")[0].equals( "				civic_tech" ) ) {
+                                else if (qaaa.split("=")[0].equals( "                civic_tech" ) ) {
                                     if (qaaa.substring(qaaa.length()-14, qaaa.length()-13).equals( "c" )) {
 
                                         output[13] = qaaa.substring(30,qaaa.length()); //researcher
@@ -226,7 +226,7 @@ public class Importer
                                     qaaa = scnr.nextLine();
                                     output[9] = qaaa.split("=")[1]; //technology
                                 }
-                                else if (qaaa.split("=")[0].equals( "				oratory_tech" ) ) {
+                                else if (qaaa.split("=")[0].equals( "                oratory_tech" ) ) {
                                     if (qaaa.substring(qaaa.length()-14, qaaa.length()-13).equals( "c" )) {
 
                                         output[14] = qaaa.substring(32,qaaa.length()); //researcher
@@ -235,7 +235,7 @@ public class Importer
                                     qaaa = scnr.nextLine();
                                     output[10] = qaaa.split("=")[1]; //technology
                                 }
-                                else if (qaaa.split("=")[0].equals( "				religious_tech" ) ) {
+                                else if (qaaa.split("=")[0].equals( "                religious_tech" ) ) {
                                     if (qaaa.substring(qaaa.length()-14, qaaa.length()-13).equals( "c" )) {
 
                                         output[15] = qaaa.substring(34,qaaa.length()); //researcher
@@ -245,15 +245,15 @@ public class Importer
                                     output[11] = qaaa.split("=")[1]; //technology
                                 }
 
-                                else if (qaaa.split("=")[0].equals( "			monarch" ) ) {
+                                else if (qaaa.split("=")[0].equals( "            monarch" ) ) {
                                     output[16] = qaaa.split("=")[1];
 
                                 }
-                                else if (qaaa.split("=")[0].equals( "			government_key" ) ) {
+                                else if (qaaa.split("=")[0].equals( "            government_key" ) ) {
                                     output[17] = qaaa.split("=")[1];
                                     output[17] = output[17].substring(1,output[17].length()-1);
                                 }
-                                else if (qaaa.split("=")[0].equals( "			succession_law" ) ) {
+                                else if (qaaa.split("=")[0].equals( "            succession_law" ) ) {
                                     output[18] = qaaa.split("=")[1];
 
                                 }
@@ -273,7 +273,7 @@ public class Importer
 
                                 }
 
-                                else if (qaaa.split("=")[0].equals( "				budget_dates" ) ) {
+                                else if (qaaa.split("=")[0].equals( "                budget_dates" ) ) {
                                     flag = 2; //end loop
 
                                 }
@@ -307,7 +307,7 @@ public class Importer
 
         int flag = 0;
         
-        String tab = "	";
+        String tab = "    ";
 
         String keyWord = tab+tab+"first="+overlordID;
 
@@ -372,6 +372,79 @@ public class Importer
         }
 
         return currentList;
+
+    }
+    
+    public static String[] importDir (String name) throws IOException //Imports directories from configuration.txt
+    {
+
+        FileInputStream fileIn= new FileInputStream(name);
+        Scanner scnr= new Scanner(fileIn);
+
+        int flag = 0;
+
+        boolean endOrNot = true;
+
+        String qaaa;
+        String[] output;   // Owner Culture Religeon PopTotal Buildings
+        output = new String[7];
+
+        output[0] = "bad"; //default for no CK II game directory
+        output[1] = "bad"; //default for no IR game directory
+        output[2] = "bad"; //default for no IR mod directory
+        output[3] = "bad"; //default for no CK II mod directory
+        output[4] = "bad"; //default for no save game directory
+        output[5] = "bad"; //default for no selected IR mods
+        output[6] = "bad"; //default for no custom CK II mod name
+
+        try {
+            while (endOrNot = true){
+
+                qaaa = scnr.nextLine();
+
+                if (qaaa.split(" = ")[0].equals("CK2Directory")){
+                    output[0] = qaaa.split(" = ")[1];
+                    output[0] = output[0].substring(1,output[0].length()-1);
+
+                }
+                else if (qaaa.split(" = ")[0].equals("ImperatorDirectory")){
+                    output[1] = qaaa.split(" = ")[1];
+                    output[1] = output[1].substring(1,output[1].length()-1);
+
+                }
+                else if (qaaa.split(" = ")[0].equals("ImperatorModPath")){
+                    output[2] = qaaa.split(" = ")[1];
+                    output[2] = output[0].substring(1,output[2].length()-1);
+
+                }
+                else if (qaaa.split(" = ")[0].equals("targetGameModPath")){
+                    output[3] = qaaa.split(" = ")[1];
+                    output[3] = output[3].substring(1,output[3].length()-1);
+
+                }
+                else if (qaaa.split(" = ")[0].equals("SaveGame")){
+                    output[4] = qaaa.split(" = ")[1];
+                    output[4] = output[4].substring(1,output[4].length()-1);
+
+                }
+                else if (qaaa.split(" = ")[0].equals("selectedMods")){
+                    output[5] = qaaa.split(" = ")[1];
+
+                }
+                else if (qaaa.split(" = ")[0].equals("output_name")){
+                    output[6] = qaaa.split(" = ")[1];
+                    output[6] = output[6].substring(1,output[6].length()-1);
+
+                }
+
+            }
+
+        }catch (java.util.NoSuchElementException exception){
+            endOrNot = false;
+
+        }   
+
+        return output;
 
     }
 

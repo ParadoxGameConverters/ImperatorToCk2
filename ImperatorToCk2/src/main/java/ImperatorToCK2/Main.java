@@ -1,4 +1,4 @@
-package ImperatorToCK2;
+ 
 
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -33,29 +33,40 @@ public class Main
         Output output = new Output();
         Directories directories = new Directories();
 
-        System.out.println("Please input your system profile username");
-        Dir = input.next();
+        //System.out.println("Please input your system profile username");
+        
+        String[] configDirectories = Importer.importDir("configuration.txt");
+        //Dir = input.next();
         String VM = "\\";
         VM = VM.substring(0);
         String VN = "//";
         VN = VN.substring(0);
-        Dir2 = "C:"+VN+"Users"+VN+Dir+VN+"Documents"+VN+"Paradox Interactive"+VN+"Crusader Kings II"+VN+"mod";
-        String User = Dir;
-        Dir = "C:"+VM+"Users"+VM+Dir+VM+"Documents"+VM+"Paradox Interactive"+VM+"Crusader Kings II"+VM+"mod";
+        //Dir2 = "C:"+VN+"Users"+VN+Dir+VN+"Documents"+VN+"Paradox Interactive"+VN+"Crusader Kings II"+VN+"mod";
+        Dir2 = configDirectories[1];
+        //String User = Dir;
+        Dir = configDirectories[3];
+        
+        modName = configDirectories[4].replace(VM,"~~~");//.substring() hates working with \ characters
+        modName = modName.replace(VN,"~~~");//.substring() hates working with / characters
+        
+        modName = modName.split("~~~")[modName.split("~~~").length-1];
 
-        System.out.println("Please input the name for your mod");
-        modName = input.next();
+        
+        if (configDirectories[6].equals("")) { //if there is a name or not
+            modName = Processing.formatSaveName(modName);
+        } else {
+            modName = configDirectories[6];
+        }
+        
+        //saveName = input.next();
 
-        System.out.println("Please input the name of your Imperator Rome save (with.rome)");
-        saveName = input.next();
+        //impDir = "C:"+VM+"Users"+VM+User+VM+"Documents"+VM+"Paradox Interactive"+VM+"Imperator"+VM+"save games";
 
-        impDir = "C:"+VM+"Users"+VM+User+VM+"Documents"+VM+"Paradox Interactive"+VM+"Imperator"+VM+"save games";
+        String impGameDir = configDirectories[1];
 
-        String impGameDir = "C:"+VM+"Program Files (x86)"+VM+"Steam"+VM+"steamapps"+VM+"common"+VM+"ImperatorRome";
+        String ck2Dir = configDirectories[0];
 
-        String ck2Dir = "C:"+VM+"Program Files (x86)"+VM+"Steam"+VM+"steamapps"+VM+"common"+VM+"Crusader Kings II";
-
-        String impDirSave = impDir+VM+saveName;
+        String impDirSave = configDirectories[4];
 
         directories.modFolders (Dir,modName); //Creating the folders to write the mod files
         //along with nessicery sub-folders
@@ -75,7 +86,6 @@ public class Main
         String[][] ck2ProvInfo;   // Array list of array lists...
         ck2ProvInfo = new String[5][8500];
 
-        String[] impProvRegions = Processing.importRegionList(8500,impGameDir);
         //[0] is owner, [1] is culture, [2] is religion, [3] is calculated from pop
         int totalPop = 0;//pop total
         int totalCKProv = 2050;
@@ -111,6 +121,8 @@ public class Main
         
         ArrayList<String> impSubjectInfo = new ArrayList<String>(); //Overlord-Subject relations
         
+        String[] impProvRegions = Processing.importRegionList(8500,impGameDir);
+        
         
         int aqtest = 0;
         while (aqtest < 5000) { //sets the default for all tags as landless in CKII
@@ -140,7 +152,7 @@ public class Main
 
         int flag2 = 0;
 
-        String tab = "	";
+        String tab = "    ";
 
         String saveCountries = "tempCountries.txt";
 
