@@ -17,7 +17,10 @@ CK2 - N/A
 -----
 INSTRUCTIONS
 -----
-N/A
+1. Run Frontend.exe
+2. Set all the options, making sure the directories are correct.
+3. Click Convert
+4. Start CK2 and select the mod.
 
 
 ----
@@ -38,5 +41,7 @@ CREDITS
 An list of those who contributed effort to this mammoth undertaking
 
 Idhrendur			- Sanity Checks and Review
+Dr.Dudelsack/Shinymewtwo99			- Project Lead, Programming, Data Files, Localization
+Thinking_Waffle			- Localization, Testing, QA
 
  - AND ALL THE OTHERS WHO GAVE THEIR INPUT ON THE FORUM AND DISCORD -
