@@ -41,7 +41,7 @@ CREDITS
 An list of those who contributed effort to this mammoth undertaking
 
 Idhrendur			- Sanity Checks and Review
-Dr.Dudelsack/Shinymewtwo99		- Project Lead, Programming, Data Files, Localization
+Dr.Dudelsack/Shinymewtwo99	- Project Lead, Programming, Data Files, Localization
 Thinking_Waffle			- Localization, Testing, QA
 
  - AND ALL THE OTHERS WHO GAVE THEIR INPUT ON THE FORUM AND DISCORD -
