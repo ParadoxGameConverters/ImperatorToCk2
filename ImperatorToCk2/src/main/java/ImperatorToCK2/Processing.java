@@ -16,8 +16,6 @@ import java.util.ArrayList;
 public class Processing
 {
 
-
-
     public static String basicProvinceTotal(int totalCKProv, String[] ck2TagTotals, String[][] ck2ProvInfo, int typeToCollect,int aq2)
     {
 
@@ -82,17 +80,14 @@ public class Processing
 
         }
 
-    
         return ck2ProvInfo[typeToCollect][aq2];
     }
 
-    
     public static String[] importNames (String name, int provIDnum, String ck2Dir) throws IOException
     {
 
         String provID = Integer.toString(provIDnum);
 
-      
         FileInputStream fileIn= new FileInputStream("provinceNames.txt");
         Scanner scnr= new Scanner(fileIn);
 
@@ -127,8 +122,9 @@ public class Processing
         }   
         fileIn.close();
         return output;
-    
+
     }
+
     public static String[] importCK2ProvFile (String ck2Dir, int provIDnum, String ck2Prov) throws IOException
     {
 
@@ -164,7 +160,7 @@ public class Processing
                     }
 
                 }
-        
+
             }catch (java.util.NoSuchElementException exception){
                 endOrNot = false;
 
@@ -180,7 +176,6 @@ public class Processing
 
         return output;
 
-    
     }
 
     public static String importBaronyName (String name, int provIDnum, String ck2Dir) throws IOException
@@ -193,7 +188,7 @@ public class Processing
         VM = VM.substring(0);
 
         String provID = Integer.toString(provIDnum);
-      
+
         FileInputStream fileIn= new FileInputStream(ck2Dir+VM+"common"+VM+"landed_titles"+VM+"landed_titles.txt");
         Scanner scnr= new Scanner(fileIn);
 
@@ -296,23 +291,22 @@ public class Processing
 
             provName = "anti-atlas";
         }
-        
+
         else if (provName.equals("asaita")) {
 
             provName = "asayita";
         }
-        
+
         else if (provName.equals("al_qusair")) {
 
             provName = "alqusair";
         }
-        
+
         else if (provName.equals("kyzyl_su")) {
 
             provName = "kyzyl-su";
         }
 
-      
         if (provName.equals ("error")) {
             flag = 3;  
         }
@@ -332,7 +326,7 @@ public class Processing
 
                         try {
                             if (qaaa.split("_")[0].equals(tab4+"b") || qaaa.split("_")[0].equals("                "+tab+"b") ||
-                            qaaa.split("_")[0].equals(tab4+tab+"b") || qaaa.split("_")[0].equals("               	"+tab+"b") || 
+                            qaaa.split("_")[0].equals(tab4+tab+"b") || qaaa.split("_")[0].equals("                   "+tab+"b") || 
                             qaaa.split("_")[0].equals("                "+"b")){
                                 qaaa = qaaa.split("b_")[1];
                                 if (output != null) {
@@ -363,14 +357,13 @@ public class Processing
 
         return output;
 
-    
     }
 
     public static String[] importBaronyNameList (String name, int provIDnum, String ck2Dir) throws IOException
     {
 
         String provID = Integer.toString(provIDnum);
-      
+
         int flag = 0;
         String ckName = "debug";
         int aqq = 1;
@@ -397,14 +390,15 @@ public class Processing
 
         }   
         return output;
-    
+
     }
+
     public static String[] importRegionList (int totProv, String impDir) throws IOException
     {
 
         String VM = "\\";
         VM = VM.substring(0);
-     
+
         FileInputStream fileIn= new FileInputStream("regionConverter.txt");
         Scanner scnr= new Scanner(fileIn);
 
@@ -432,16 +426,15 @@ public class Processing
 
         }   
         return provList;
-    
+
     }
+
     public static String[] importRegion (String[] provList, String dir, String region) throws IOException
     {
 
-     
         FileInputStream fileIn= new FileInputStream(dir);
         Scanner scnr= new Scanner(fileIn);
 
-      
         int flag = 0;
         String ckName = "debug";
         int aqq = 0;
@@ -450,7 +443,6 @@ public class Processing
 
         int number = 0;
 
-      
         try {
             while (endOrNot = true){
                 qaaa = scnr.nextLine();
@@ -466,32 +458,23 @@ public class Processing
 
                     provList[number] = region;   
 
-            
                 }catch (java.lang.NumberFormatException exception) {
-
                 }
-
                 aqq = aqq + 1;    
-
             }
-
         }catch (java.util.NoSuchElementException exception){
             endOrNot = false;
 
         }   
-     
+
         return provList;
 
-    
     }
 
     public static String randomizeColor ()
     {
 
-     
-      
         int flag = 0;
-      
         int aqq = 0;
         String qaaa = "aa";
         int Rng1 = (int) (Math.random() * 255);
@@ -501,7 +484,6 @@ public class Processing
 
         return color;
 
-    
     }
 
     public static String[] convertProvConvList (String name, String outputDest) throws IOException //Converts standard mapper tool format into regular format
@@ -521,7 +503,6 @@ public class Processing
         String[] output;   // Owner Culture Religeon PopTotal Buildings
         output = new String[15000];
 
-      
         output[0] = "peq"; //default for no owner, uncolonized province
         output[1] = "99999"; //default for no culture, uncolonized province with 0 pops
 
@@ -543,9 +524,7 @@ public class Processing
 
                 qaaa = scnr.nextLine();
 
-          
                 if (qaaa.split("ink = ")[0].equals(tab+"l")){
-
                     qaaa = qaaa.split("ink = ")[1];
                     qaaa = qaaa.split(tab)[0];
                     qaaa = qaaa.substring(2,qaaa.length()-2);;
@@ -580,12 +559,10 @@ public class Processing
 
                     }
 
-
                 }
 
-        
             }
-        
+
         }catch (java.util.NoSuchElementException exception){
             endOrNot = false;
 
@@ -639,40 +616,40 @@ public class Processing
 
         return 0;
     }
-    
+
     public static ArrayList<String> generateSubjectList(int tot, String source) throws IOException
     {
 
         ArrayList<String> subjects = new ArrayList<String>();
-        
+
         subjects.add("0,0,feudatory"); //Debug at id 0 so list will never be empty
 
         int aqq = 0;
 
         while (aqq < tot) {
-            
+
             //String[] relation = Importer.importSubjects(source,aqq,subjects);
             subjects = Importer.importSubjects(source,aqq,subjects);
             //if (relation[0] != "9999") {
-                //subjects.add(relation[0]+","+relation[1]+","+relation[2]);
-                
+            //subjects.add(relation[0]+","+relation[1]+","+relation[2]);
+
             //}
             aqq = aqq + 1; 
         }
 
         return subjects;
     }
-    
+
     public static int checkSubjectList(int country, ArrayList<String> subjects) throws IOException
     {
-        
+
         String countryStr = Integer.toString(country);
         int aqq = 0;
-        
+
         int output = 9999;//default, if 9999, country remains free
 
         while (aqq < subjects.size()) {
-            
+
             String subCountry = subjects.get(aqq).split(",")[1];
 
             if (countryStr.equals(subCountry)) {
@@ -684,24 +661,77 @@ public class Processing
 
         return output;
     }
-    
+
     public static int checkMonumentList(String name) throws IOException //Checks if save is from 2.0+ or before
     {
-        
+
         FileInputStream fileIn= new FileInputStream(name);
         Scanner scnr= new Scanner(fileIn);
-        String qaaa = scnr.nextLine();
-        
         int flag = 0;
-        
-        if (qaaa.equals ("great_work_manager={")) {
-            flag = 1;
-            
-        }
+        try {
+            String qaaa = scnr.nextLine();
 
+
+            if (qaaa.equals ("great_work_manager={")) {
+                flag = 1;
+
+            }
+        } catch (java.util.NoSuchElementException exception) {
+
+        }
         return flag;
     }
 
+    public static String formatSaveName(String name) {// replaces /:*?"<>|- and space with _, while removing tabs and .rome
+        String quote = '"'+""; // " character, Java doesn't like isoated " characters
+        String tab = "	";
+
+        name = name.replace("/","_");
+        name = name.replace(":","_");
+        name = name.replace("*","_");
+        name = name.replace("?","_");
+        name = name.replace(quote,"_");
+        name = name.replace("<","_");
+        name = name.replace(">","_");
+        name = name.replace("|","_");
+        name = name.replace("-","_");
+        name = name.replace(" ","_");
+        name = name.replace(tab,"");
+
+        name = name.replace(".","~~~"); //Java's .split() method does not like period characters, temporarily switches "." to "~~~"
+
+        String[] extensionSplit = name.split("~~~");
+
+        if (extensionSplit[extensionSplit.length-1] != name) { //removes .rome or any other extension. If no extension at all, is left untouched
+
+            name = name.replace(extensionSplit[extensionSplit.length-1],"");
+
+            name = name.substring(0,name.length()-3);
+
+        }
+
+        name = name.replace("~~~",".");
+
+        System.out.println(name+"Q");
+
+        return name;
+    }
     
+    public static String convertTitle(String name, String rank, String title) throws IOException
+    {// Converts dynamically generated title to vanilla counterpart
+        String tmpTitle = Importer.importCultList(name,rank+"_"+title)[1];//converts title
+        System.out.println(tmpTitle);
+        tmpTitle = tmpTitle.replace((rank+"_"),"");
+        System.out.println(tmpTitle);
+        
+        if (tmpTitle.equals("99999") || tmpTitle.equals("peq")) {//if there is no vanilla match
+            return title;
+        } else {
+            title = tmpTitle;
+        }
+
+        return title;
+    }
     
+
 }
