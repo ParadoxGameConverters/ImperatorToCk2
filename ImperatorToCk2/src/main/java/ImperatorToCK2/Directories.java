@@ -104,6 +104,7 @@ public class Directories
         String VM = "\\";
         char VMq = '"';
         String VN = "//";
+        char VN2 = '/';
         VN = VN.substring(0);
         VM = VM.substring(0);
         int aqq = 1;
@@ -115,7 +116,7 @@ public class Directories
 
         out.println("name="+VMq+modName+VMq);
 
-        out.println("path="+VMq+"mod"+VN+modName+VMq);
+        out.println("path="+VMq+"mod"+VN2+modName+VMq);
 
         out.println("user_dir="+VMq+modName+VMq);
 
