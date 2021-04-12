@@ -15,7 +15,6 @@ import java.util.ArrayList;
 public class Processing
 {
 
-
     public static String basicProvinceTotal(int totalCKProv, String[] ck2TagTotals, String[][] ck2ProvInfo, int typeToCollect,int aq2)
     {
 
@@ -177,11 +176,12 @@ public class Processing
         return output;
 
     }
+
     public static String importBaronyName (String name, int provIDnum, String ck2Dir) throws IOException
     {
 
         int aqq = 0;
-        String tab = "    ";
+        String tab = "	";
         String VM = "\\";
 
         VM = VM.substring(0);
@@ -357,6 +357,7 @@ public class Processing
         return output;
 
     }
+
     public static String[] importBaronyNameList (String name, int provIDnum, String ck2Dir) throws IOException
     {
 
@@ -468,12 +469,11 @@ public class Processing
         return provList;
 
     }
+
     public static String randomizeColor ()
     {
 
-      
         int flag = 0;
-
         int aqq = 0;
         String qaaa = "aa";
         int Rng1 = (int) (Math.random() * 255);
@@ -484,10 +484,11 @@ public class Processing
         return color;
 
     }
+
     public static String[] convertProvConvList (String name, String outputDest) throws IOException //Converts standard mapper tool format into regular format
     {
 
-        String tab = "    ";
+        String tab = "	";
 
         FileInputStream fileIn= new FileInputStream(name);
         Scanner scnr= new Scanner(fileIn);
@@ -558,7 +559,7 @@ public class Processing
                     }
 
                 }
-        
+
             }
 
         }catch (java.util.NoSuchElementException exception){
@@ -665,21 +666,24 @@ public class Processing
 
         FileInputStream fileIn= new FileInputStream(name);
         Scanner scnr= new Scanner(fileIn);
-        String qaaa = scnr.nextLine();
-
         int flag = 0;
+        try {
+            String qaaa = scnr.nextLine();
 
-        if (qaaa.equals ("great_work_manager={")) {
-            flag = 1;
+
+            if (qaaa.equals ("great_work_manager={")) {
+                flag = 1;
+
+            }
+        } catch (java.util.NoSuchElementException exception) {
 
         }
-
         return flag;
     }
 
     public static String formatSaveName(String name) {// replaces /:*?"<>|- and space with _, while removing tabs and .rome
         String quote = '"'+""; // " character, Java doesn't like isoated " characters
-        String tab = "    ";
+        String tab = "	";
 
         name = name.replace("/","_");
         name = name.replace(":","_");
@@ -692,7 +696,7 @@ public class Processing
         name = name.replace("-","_");
         name = name.replace(" ","_");
         name = name.replace(tab,"");
-        
+
         name = name.replace(".","~~~"); //Java's .split() method does not like period characters, temporarily switches "." to "~~~"
 
         String[] extensionSplit = name.split("~~~");
@@ -700,17 +704,33 @@ public class Processing
         if (extensionSplit[extensionSplit.length-1] != name) { //removes .rome or any other extension. If no extension at all, is left untouched
 
             name = name.replace(extensionSplit[extensionSplit.length-1],"");
-            
+
             name = name.substring(0,name.length()-3);
 
         }
-        
+
         name = name.replace("~~~",".");
-        
+
         System.out.println(name+"Q");
 
         return name;
     }
-
     
+    public static String convertTitle(String name, String rank, String title) throws IOException
+    {// Converts dynamically generated title to vanilla counterpart
+        String tmpTitle = Importer.importCultList(name,rank+"_"+title)[1];//converts title
+        System.out.println(tmpTitle);
+        tmpTitle = tmpTitle.replace((rank+"_"),"");
+        System.out.println(tmpTitle);
+        
+        if (tmpTitle.equals("99999") || tmpTitle.equals("peq")) {//if there is no vanilla match
+            return title;
+        } else {
+            title = tmpTitle;
+        }
+
+        return title;
+    }
+    
+
 }
