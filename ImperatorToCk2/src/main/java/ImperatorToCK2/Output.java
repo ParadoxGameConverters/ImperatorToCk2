@@ -1,5 +1,5 @@
 package ImperatorToCK2;
-
+ 
 import java.util.Scanner;
 import java.io.IOException;
 import java.io.FileInputStream;
@@ -134,9 +134,14 @@ public class Output
         String date2 = "1066.9.15";
 
         out.println (date1+"={");
-        if (liege != "no_liege") {
-            out.println (tab+"liege="+"k_"+liege);
-            out.println (tab+"de_jure_liege="+"k_"+liege);
+        if (liege != "no_liege") { //If country is a subject
+            String overlordRank = "k";
+            if (rank.equals("k")){
+                overlordRank = "e";
+            }
+            
+            out.println (tab+"liege="+overlordRank+"_"+liege);
+            out.println (tab+"de_jure_liege="+overlordRank+"_"+liege);
         }
         out.println (tab+"holder="+irKING100);
         out.println ("}");
@@ -314,12 +319,12 @@ public class Output
         String date2 = "1066.9.15";
 
         out.println (date1+"={");
-        out.println ("	holder="+irKING100);
+        out.println ("    holder="+irKING100);
         out.println ("}");
         out.println ();
 
         out.println (date2+"={");
-        out.println ("	holder="+irKING);
+        out.println ("    holder="+irKING);
         out.println ("}");
         out.flush();
         fileOut.close();
