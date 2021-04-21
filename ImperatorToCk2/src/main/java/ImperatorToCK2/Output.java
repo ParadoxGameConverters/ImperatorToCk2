@@ -319,12 +319,12 @@ public class Output
         String date2 = "1066.9.15";
 
         out.println (date1+"={");
-        out.println ("    holder="+irKING100);
+        out.println (tab+"holder="+irKING100);
         out.println ("}");
         out.println ();
 
         out.println (date2+"={");
-        out.println ("    holder="+irKING);
+        out.println (tab+"holder="+irKING);
         out.println ("}");
         out.flush();
         fileOut.close();
