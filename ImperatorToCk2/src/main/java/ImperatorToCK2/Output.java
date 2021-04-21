@@ -1,5 +1,5 @@
+package ImperatorToCK2;
  
-
 import java.util.Scanner;
 import java.io.IOException;
 import java.io.FileInputStream;
