@@ -717,7 +717,7 @@ public class Processing
         return name;
     }
     
-    public static String convertTitle(String name, String rank, String title) throws IOException
+    public static String convertTitle(String name, String rank, String title, String defaultTitle) throws IOException
     {// Converts dynamically generated title to vanilla counterpart
         String tmpTitle = Importer.importCultList(name,rank+"_"+title)[1];//converts title
         System.out.println(tmpTitle);
@@ -725,7 +725,7 @@ public class Processing
         System.out.println(tmpTitle);
         
         if (tmpTitle.equals("99999") || tmpTitle.equals("peq")) {//if there is no vanilla match
-            return title;
+            return defaultTitle;
         } else {
             title = tmpTitle;
         }
