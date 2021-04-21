@@ -35,14 +35,11 @@ public class Main
         //System.out.println("Please input your system profile username");
 
         String[] configDirectories = Importer.importDir("configuration.txt");
-        //Dir = input.next();
         String VM = "\\";
         VM = VM.substring(0);
         String VN = "//";
         VN = VN.substring(0);
-        //Dir2 = "C:"+VN+"Users"+VN+Dir+VN+"Documents"+VN+"Paradox Interactive"+VN+"Crusader Kings II"+VN+"mod";
         Dir2 = configDirectories[1];
-        //String User = Dir;
         Dir = configDirectories[3];
 
         modName = configDirectories[4].replace(VM,"~~~");//.substring() hates working with \ characters
@@ -55,10 +52,6 @@ public class Main
         } else {
             modName = configDirectories[6];
         }
-
-        //saveName = input.next();
-
-        //impDir = "C:"+VM+"Users"+VM+User+VM+"Documents"+VM+"Paradox Interactive"+VM+"Imperator"+VM+"save games";
 
         String impGameDir = configDirectories[1];
 
@@ -403,10 +396,10 @@ public class Main
             flag = 1;
 
         }  
-        ///System.out.println(impTagInfo.get(Integer.parseInt(ck2ProvInfo[0][343]))[0] + "is the owner of Province 343, the religion is" + ck2ProvInfo[2][343]);
+
         System.out.println("and the culture is" + ck2ProvInfo[1][343]);
 
-        //System.out.println(impTagInfo.get(Integer.parseInt(ck2ProvInfo[0][1574]))[0] + "is the owner of Province 1574, the religion is" + ck2ProvInfo[2][1574]);
+    
         System.out.println("and the culture is" + ck2ProvInfo[1][1574]);
         int aq4 = 0;
         System.out.println(ck2TagTotals[343]);
@@ -464,7 +457,7 @@ public class Main
                                 if (ck2LandTot[aq4] >= empireRank) {
                                     rank = "e";
                                 }
-                                impTagInfo.get(aq4)[0] = Processing.convertTitle("titleConversion.txt",rank,impTagInfo.get(aq4)[21]);
+                                impTagInfo.get(aq4)[0] = Processing.convertTitle("titleConversion.txt",rank,impTagInfo.get(aq4)[21],impTagInfo.get(aq4)[0]);
                                 Output.titleCreation(impTagInfo.get(aq4)[0],tempNum2,impTagInfo.get(aq4)[3],"no",impTagInfo.get(aq4)[5],rank,
                                     "no_liege",modDirectory);
                                 System.out.println("Free Nation at " + aq4);
@@ -478,7 +471,7 @@ public class Main
                                     rank = "d";
                                 }
 
-                                impTagInfo.get(aq4)[0] = Processing.convertTitle("titleConversion.txt",rank,impTagInfo.get(aq4)[21]);
+                                impTagInfo.get(aq4)[0] = Processing.convertTitle("titleConversion.txt",rank,impTagInfo.get(aq4)[21],impTagInfo.get(aq4)[0]);
 
                                 if (subjectInfo[2].equals ("feudatory") || subjectInfo[2].equals ("satrapy") || subjectInfo[2].equals ("client_state")) { 
                                     //convert as vassal
