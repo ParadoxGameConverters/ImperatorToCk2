@@ -25,7 +25,7 @@ requiredFile = {
 	searchPathType = converterFolder
 	searchPath = "ImperatorToCk2"
 	allowedExtension = "*.jar"
-	fileName = "Converter.jar"
+	fileName = "ImperatorToCK2.jar"
 }
 
 requiredFolder = {
