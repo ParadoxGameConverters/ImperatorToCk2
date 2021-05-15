@@ -1,0 +1,4 @@
+l_english:
+ MODNAME: "Mod Output Name (optional):"
+ MODNAMETIP: "Please, stick to Latin letters"
+ MODNAMETIP2: "Optional name for the converted mod (default name is the one of the savegame)"
