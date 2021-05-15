@@ -1,0 +1,12 @@
+converted = {
+	name = "converted_bookmark_name"
+	desc = "converted_bookmark_info"
+	date = 100.1.1
+	
+	era = yes						## Will be shown on Era screen.
+	picture = GFX_pick_era_image_4
+	custom_start = yes				## Choosing "Custom Start" will open this bookmark
+
+	
+	
+}

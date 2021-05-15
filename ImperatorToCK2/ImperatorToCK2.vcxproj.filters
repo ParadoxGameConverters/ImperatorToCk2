@@ -96,5 +96,8 @@
     <CopyFileToFolders Include="DataFiles\supportedModLoc.txt">
       <Filter>Data Files\Configuration</Filter>
     </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\..\..\..\IRCKIIRun Don%27t write code here\ImperatorToCK2-0.1\ImperatorToCK2\titleConversion.txt">
+      <Filter>Data Files\Configuration</Filter>
+    </CopyFileToFolders>
   </ItemGroup>
 </Project>

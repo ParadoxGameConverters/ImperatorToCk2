@@ -1,0 +1,4 @@
+l_french:
+ MODNAME: "Nom de sortie du mod (facultatif):"
+ MODNAMETIP: "Veuillez vous en tenir aux lettres latines"
+ MODNAMETIP2: "Nom facultatif pour le mod converti (le nom par défaut est celui de la sauvegarde)"

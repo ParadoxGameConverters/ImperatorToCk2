@@ -1,0 +1,43 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(505,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  Copying Data Files
+  Deleted file - C:\Users\Hayden\Desktop\Paradox\Converters\QQ\ImperatorToCk2-master\ImperatorToCk2-master\ImperatorToCk2\Release\ImperatorToCK2\defaultOutput\blank
+  Deleted file - C:\Users\Hayden\Desktop\Paradox\Converters\QQ\ImperatorToCk2-master\ImperatorToCk2-master\ImperatorToCk2\Release\ImperatorToCK2\defaultOutput\bloodlines\50_convertedBloodlines.txt
+  Deleted file - C:\Users\Hayden\Desktop\Paradox\Converters\QQ\ImperatorToCk2-master\ImperatorToCk2-master\ImperatorToCk2\Release\ImperatorToCK2\defaultOutput\bookmarks\00_bookmarks.txt
+  Deleted file - C:\Users\Hayden\Desktop\Paradox\Converters\QQ\ImperatorToCk2-master\ImperatorToCk2-master\ImperatorToCk2\Release\ImperatorToCK2\defaultOutput\bookmarks\50_customBookmark.txt
+  Deleted file - C:\Users\Hayden\Desktop\Paradox\Converters\QQ\ImperatorToCk2-master\ImperatorToCk2-master\ImperatorToCk2\Release\ImperatorToCK2\defaultOutput\cultures\00_cultures.txt
+  Deleted file - C:\Users\Hayden\Desktop\Paradox\Converters\QQ\ImperatorToCk2-master\ImperatorToCk2-master\ImperatorToCk2\Release\ImperatorToCK2\defaultOutput\cultures\50_convertedCultures.txt
+  Deleted file - C:\Users\Hayden\Desktop\Paradox\Converters\QQ\ImperatorToCk2-master\ImperatorToCk2-master\ImperatorToCk2\Release\ImperatorToCK2\defaultOutput\eu4Converter\50_romeCultures.txt
+  Deleted file - C:\Users\Hayden\Desktop\Paradox\Converters\QQ\ImperatorToCk2-master\ImperatorToCk2-master\ImperatorToCk2\Release\ImperatorToCK2\defaultOutput\eu4Converter\50_romeReligions.txt
+  Deleted file - C:\Users\Hayden\Desktop\Paradox\Converters\QQ\ImperatorToCk2-master\ImperatorToCk2-master\ImperatorToCk2\Release\ImperatorToCK2\defaultOutput\eu4Converter\culture_table.csv
+  Deleted file - C:\Users\Hayden\Desktop\Paradox\Converters\QQ\ImperatorToCk2-master\ImperatorToCk2-master\ImperatorToCk2\Release\ImperatorToCK2\defaultOutput\eu4Converter\religion_table.csv
+  Deleted file - C:\Users\Hayden\Desktop\Paradox\Converters\QQ\ImperatorToCk2-master\ImperatorToCk2-master\ImperatorToCk2\Release\ImperatorToCK2\defaultOutput\events\culture_conversion_events.txt
+  Deleted file - C:\Users\Hayden\Desktop\Paradox\Converters\QQ\ImperatorToCk2-master\ImperatorToCk2-master\ImperatorToCk2\Release\ImperatorToCK2\defaultOutput\gfx\blank
+  Deleted file - C:\Users\Hayden\Desktop\Paradox\Converters\QQ\ImperatorToCk2-master\ImperatorToCk2-master\ImperatorToCk2\Release\ImperatorToCK2\defaultOutput\localization\bookmark_loc.csv
+  Deleted file - C:\Users\Hayden\Desktop\Paradox\Converters\QQ\ImperatorToCk2-master\ImperatorToCk2-master\ImperatorToCk2\Release\ImperatorToCK2\defaultOutput\localization\culture_loc.csv
+  Deleted file - C:\Users\Hayden\Desktop\Paradox\Converters\QQ\ImperatorToCk2-master\ImperatorToCk2-master\ImperatorToCk2\Release\ImperatorToCK2\defaultOutput\localization\religion_loc.csv
+  Deleted file - C:\Users\Hayden\Desktop\Paradox\Converters\QQ\ImperatorToCk2-master\ImperatorToCk2-master\ImperatorToCk2\Release\ImperatorToCK2\defaultOutput\localization\test
+  Deleted file - C:\Users\Hayden\Desktop\Paradox\Converters\QQ\ImperatorToCk2-master\ImperatorToCk2-master\ImperatorToCk2\Release\ImperatorToCK2\defaultOutput\provinces\readme.txt
+  Deleted file - C:\Users\Hayden\Desktop\Paradox\Converters\QQ\ImperatorToCk2-master\ImperatorToCk2-master\ImperatorToCk2\Release\ImperatorToCK2\defaultOutput\religions\00_religions.txt
+  Deleted file - C:\Users\Hayden\Desktop\Paradox\Converters\QQ\ImperatorToCk2-master\ImperatorToCk2-master\ImperatorToCk2\Release\ImperatorToCK2\defaultOutput\religions\50_convertedReligions.txt
+  Deleted file - C:\Users\Hayden\Desktop\Paradox\Converters\QQ\ImperatorToCk2-master\ImperatorToCk2-master\ImperatorToCk2\Release\ImperatorToCK2\defaultOutput\titles\k_TAG.txt
+  DataFiles\defaultOutput\blank
+  DataFiles\defaultOutput\bloodlines\50_convertedBloodlines.txt
+  DataFiles\defaultOutput\bookmarks\00_bookmarks.txt
+  DataFiles\defaultOutput\bookmarks\50_customBookmark.txt
+  DataFiles\defaultOutput\cultures\00_cultures.txt
+  DataFiles\defaultOutput\cultures\50_convertedCultures.txt
+  DataFiles\defaultOutput\eu4Converter\50_romeCultures.txt
+  DataFiles\defaultOutput\eu4Converter\50_romeReligions.txt
+  DataFiles\defaultOutput\eu4Converter\culture_table.csv
+  DataFiles\defaultOutput\eu4Converter\religion_table.csv
+  DataFiles\defaultOutput\events\culture_conversion_events.txt
+  DataFiles\defaultOutput\gfx\blank
+  DataFiles\defaultOutput\localization\bookmark_loc.csv
+  DataFiles\defaultOutput\localization\culture_loc.csv
+  DataFiles\defaultOutput\localization\religion_loc.csv
+  DataFiles\defaultOutput\localization\test
+  DataFiles\defaultOutput\provinces\readme.txt
+  DataFiles\defaultOutput\religions\00_religions.txt
+  DataFiles\defaultOutput\religions\50_convertedReligions.txt
+  DataFiles\defaultOutput\titles\k_TAG.txt
+  20 File(s) copied
