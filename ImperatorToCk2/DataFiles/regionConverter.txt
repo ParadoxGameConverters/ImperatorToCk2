@@ -72,3 +72,4 @@ upper_egypt_region
 venedia_region
 vindhyaprstha_region
 vistulia_region
+cappadocia_pontica_region
