@@ -9,6 +9,7 @@ argeads,argeadsB
 antipatrid,antipatridB
 antigonids,antigonidsB
 alcimachid,alcimachidB
+aeacidae,aeacidaeB
 silver_tongued,shrewd
 blunt,dull
 sceptical,cynical
