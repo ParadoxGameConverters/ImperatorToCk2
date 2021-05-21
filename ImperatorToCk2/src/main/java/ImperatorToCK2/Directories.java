@@ -1,5 +1,5 @@
-package ImperatorToCK2;
  
+
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.io.File;
@@ -93,6 +93,9 @@ public class Directories
 
         File f23 = new File(mainModFolder+VM+"common"+VM+"bloodlines");
         f23.mkdir();  
+        
+        File f24 = new File(mainModFolder+VM+"common"+VM+"disease");
+        f24.mkdir();
 
         return aqv;
     }
