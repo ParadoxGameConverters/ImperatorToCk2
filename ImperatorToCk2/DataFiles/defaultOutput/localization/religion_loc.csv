@@ -1,28 +1,29 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+#Translations done by PKZB
 
 #religions
-polytheistic;Polytheistic;Polytheistic;Polytheistisch;;Polytheistic;;;;;;;;;x
-canaanite;Canaanite;Canaanite;Kanaanisch;;Canaanite;;;;;;;;;x
-druidic;Druidic;Druidic;Druidisch;;Druidic;;;;;;;;;x
-egyptian;Kemetic;Kemetic;Kemetisch;;Kemetic;;;;;;;;;x
-zalmoxian;Zalmoxian;Zalmoxian;Zalmoxisch;;Zalmoxian;;;;;;;;;x
-megalithic;Megalithic;Megalithic;Megalithisch;;Megalithic;;;;;;;;;x
-iberian;Iberian;Iberian;Iberisch;;Iberian;;;;;;;;;x
-sumerian;Chaldean;Chaldean;Mespotamisch;;Chaldean;;;;;;;;;x
-arabic;Arabic;Arabic;Arabisch;;Arabic;;;;;;;;;x
-ritualistic;Ritualistic;Ritualistic;Ritualistisch;;Ritualistic;;;;;;;;;x
-cybelene;Cybelene;Cybelene;Kybelenisch;;Cybelene;;;;;;;;;x
-khaldic;Khaldic;Khaldic;Khaldisch;;Khaldic;;;;;;;;;x
-armazic;Armazic;Armazic;Armazisch;;Armazic;;;;;;;;;x
-scythian;Scythian;Scythian;Scythisch;;Scythian;;;;;;;;;x
+polytheistic;Polythéiste;Polytheistic;Polytheistisch;;Politeísta;;;;;;;;;x
+canaanite;Canaanite;Canaannéenne;Kanaanisch;;Canaanita;;;;;;;;;x
+druidic;Druidic;Druidique;Druidisch;;Druídica;;;;;;;;;x
+egyptian;Kemetic;Kémitiste;Kemetisch;;Kemética;;;;;;;;;x
+zalmoxian;Zalmoxian;Zalmoxiste;Zalmoxisch;;Zalmoxista;;;;;;;;;x
+megalithic;Megalithic;Mégalithique;Megalithisch;;Megalítica;;;;;;;;;x
+iberian;Iberian;Ibérique;Iberisch;;Ibérica;;;;;;;;;x
+sumerian;Chaldean;Chaldéenne;Mespotamisch;;Caldeana;;;;;;;;;x
+arabic;Arabic;Arabique;Arabisch;;Árabe;;;;;;;;;x
+ritualistic;Ritualiste;Ritualistic;Ritualistisch;;Ritualista;;;;;;;;;x
+cybelene;Cybelene;Cybélienne;Kybelenisch;;Cibeliana;;;;;;;;;x
+khaldic;Khaldic;Khaldique;Khaldisch;;Jaldiana;;;;;;;;;x
+armazic;Armazic;Armazienne;Armazisch;;Armázica;;;;;;;;;x
+scythian;Scythian;Scythe;Scythisch;;Escita;;;;;;;;;x
 
 #religion groups
-polytheistic;Polytheistic;Polytheistic;Polytheistisch;;Polytheistic;;;;;;;;;x
+polytheistic;Polythéiste;Polytheistic;Polytheistisch;;Politeísta;;;;;;;;;x
 
 #Details done by Thinking_waffle
 
 #Canaanite details
-canaanite_scripture;Cycle of Ba'al;Cycle of Ba'al;Zyklus des Ba'al;;Cycle of Ba'al;;;;;;;;;x
+canaanite_scripture;Cycle of Ba'al;Cycle de Ba'al;Zyklus des Ba'al;;Ciclo de Ba'al;;;;;;;;;x
 canaanite_high_god;El;El;El;;El;;;;;;;;;x
 dagan;Dagan;Dagan;Dagan;;Dagan;;;;;;;;;x
 astargatis;Astargatis;Astargatis;Astargatis;;Astargatis;;;;;;;;;x
@@ -36,16 +37,16 @@ lotan;Lotan;Lotan;Lotan;;Lotan;;;;;;;;;x
 yam;Yam;Yam;Yam;;Yam;;;;;;;;;x
 
 #Druidic details
-druidic_scripture;The teachings;The teachings;Der Lehren;;The teachings;;;;;;;;;x
-druid_priest;Druid;Druid;Druid;;Druid;;;;;;;;;x
+druidic_scripture;The teachings;Les enseignements;Der Lehren;;Las enseñanzas;;;;;;;;;x
+druid_priest;Druid;Druide;Druid;;Druida;;;;;;;;;x
 taranis;Taranis;Taranis;Taranis;;Taranis;;;;;;;;;x
 cerunnos;Cerunnos;Cerunnos;Cerunnos;;Cerunnos;;;;;;;;;x
 epona;Epona;Epona;Epona;;Epona;;;;;;;;;x
 vinotonus;Vinotonus;Vinotonus;Vinotonus;;Vinotonus;;;;;;;;;x
-toutatis;Toutatis;Toutatis;Toutatis;;Toutatis;;;;;;;;;x
+toutatis;Toutatis;Toutatis;Toutatis;;Tutatis;;;;;;;;;x
 condatis;Condatis;Condatis;Condatis;;Condatis;;;;;;;;;x
-belenos;Belenos;Belenos;Belenos;;Belenos;;;;;;;;;x
-belisama;Belisama;Belisama;Belisama;;Belisama;;;;;;;;;x
+belenos;Belenos;Bélénos;Belenos;;Belenos;;;;;;;;;x
+belisama;Belisama;Bélisama;Belisama;;Belisama;;;;;;;;;x
 artio;Artio;Artio;Artio;;Artio;;;;;;;;;x
 intarabus;Intarabus;Intarabus;Intarabus;;Intarabus;;;;;;;;;x
 balor;Balor;Balor;Balor;;Balor;;;;;;;;;x
@@ -55,13 +56,13 @@ iberian_scripture;???;???;???;;???;;;;;;;;;x
 iberian_high_god;???;???;???;;???;;;;;;;;;x
 candamius;Candamius;Candamius;Candamius;;Candamius;;;;;;;;;x
 semnocosus;Semnocosus;Semnocosus;Semnocosus;;Semnocosus;;;;;;;;;x
-cariocecus;Cariocecus;Cariocecus;Cariocecus;;Cariocecus;;;;;;;;;x
+cariocecus;Cariocecus;Cariocecus;Cariocecus;;Carioceco;;;;;;;;;x
 ataecina;Ataecina;Ataecina;Ataecina;;Ataecina;;;;;;;;;x
 eacus;Eacus;Eacus;Eacus;;Eacus;;;;;;;;;x
 detatun;Betatun;Betatun;Betatun;;Betatun;;;;;;;;;x
 dercetius;Dercetius;Dercetius;Dercetius;;Dercetius;;;;;;;;;x
 endouellicus;Endouellicus;Endouellicus;Endouellicus;;Endouellicus;;;;;;;;;x
-iberian_dark_one;The Dark One;The Dark One;Der Dunklegott;;The Dark One;;;;;;;;;x
+iberian_dark_one;The Dark One;l'Obscur;Der Dunklegott;;El Oscuro;;;;;;;;;x
 
 #Zalmoxian details
 zalmoxian_scripture;???;???;???;;???;;;;;;;;;x
@@ -77,11 +78,11 @@ bendis;Bendis;Bendis;Bendis;;Bendis;;;;;;;;;x
 zalmoxian_dark_god;The Taker;The Taker;The Taker;;The Taker;;;;;;;;;x
 
 #Egyptian details
-egyptian_scripture;Books on the Gods;Books on the Gods;Büchen des Gotten;;Books on the Gods;;;;;;;;;x
-amun;Amun;Amun;Amun;;Amun;;;;;;;;;x
+egyptian_scripture;Books on the Gods;Livres sur les Dieux;Büchen des Gotten;;Libros de los Dioses;;;;;;;;;x
+amun;Amun;Amon;Amun;;Amón;;;;;;;;;x
 re;Re;Re;Re;;Re;;;;;;;;;x
-osiris;Osiris;Osiris;Osiris;;Osiris;;;;;;;;;x
-isis;Isis;Isis;Isis;;Isis;;;;;;;;;x
+osiris;Osiris;Osiris;Osiris;;Osíris;;;;;;;;;x
+isis;Isis;Isis;Isis;;Ísis;;;;;;;;;x
 horus;Horus;Horus;Horus;;Horus;;;;;;;;;x
 bastet;Bastet;Bastet;Bastet;;Bastet;;;;;;;;;x
 sekhmet;Sekhmet;Sekhmet;Sekhmet;;Sekhmet;;;;;;;;;x
@@ -94,19 +95,19 @@ geb;Geb;Geb;Geb;;Geb;;;;;;;;;x
 tenenet;Tenenet;Tenenet;Tenenet;;Tenenet;;;;;;;;;x
 bes;Bès;Bès;Bès;;Bès;;;;;;;;;x
 seth;Seth;Seth;Seth;;Seth;;;;;;;;;x
-aapep;Aapep;Aapep;Aapep;;Aapep;;;;;;;;;x
+aapep;Aapep;Aapep;Aapep;;Apep;;;;;;;;;x
 
 #Megalithic details
-megalithic_scripture;The Sacred Tales;The Sacred Tales;Der Heiliges Schreiben;;The Sacred Tales;;;;;;;;;x
+megalithic_scripture;The Sacred Tales;Les Histoires Sacrées;Der Heiliges Schreiben;;Las Historias Sagradas;;;;;;;;;x
 gurzil;Gurzil;Gurzil;Gurzil;;Gurzil;;;;;;;;;x
 sinifere;Sinifere;Sinifere;Sinifere;;Sinifere;;;;;;;;;x
 Shaheded;Shaheded;Shaheded;Shaheded;;Shaheded;;;;;;;;;x
 nanna_tala;Nanna Tala;Nanna Tala;Nanna Tala;;Nanna Tala;;;;;;;;;x
-megalithic_dark_one;The Dark One;The Dark One;Der Dunklegott;;The Dark One;;;;;;;;;x
+megalithic_dark_one;The Dark One;L'Obscur;Der Dunklegott;;El Oscuro;;;;;;;;;x
 
 #Cybelene details
 cybelene_scripture;???;???;???;;???;;;;;;;;;x
-cybele;Cybele;Cybele;Cybele;;Cybele;;;;;;;;;x
+cybele;Cybele;Cybèle;Cybele;;Cibeles;;;;;;;;;x
 attis;Attis;Attis;Attis;;Attis;;;;;;;;;x
 god_ma;Ma;Ma;Ma;;Ma;;;;;;;;;x
 agdistis;Agdistis;Agdistis;Agdistis;;Agdistis;;;;;;;;;x
@@ -115,7 +116,7 @@ god_men;Men;Men;Men;;Men;;;;;;;;;x
 kakasbos;Kakasbos;Kakasbos;Kakasbos;;Kakasbos;;;;;;;;;x
 sandon;Sandon;Sandon;Sandon;;Sandon;;;;;;;;;x
 agdistis;Agdistis;Agdistis;Agdistis;;Agdistis;;;;;;;;;x
-cybelene_dark_god;Death;Death;Death;;Tod;;;;;;;;;x
+cybelene_dark_god;Death;La Mort;Der Tod;;La Muerte;;;;;;;;;x
 
 #Scythian details
 scythian_scripture;???;???;???;;???;;;;;;;;;x
@@ -137,10 +138,10 @@ dsvininaue;Dsvininaue;Dsvininaue;Dsvininaue;;Dsvininaue;;;;;;;;;x
 epaninaue;Epaninaue;Epaninaue;Epaninaue;;Epaninaue;;;;;;;;;x
 bagvarti;Bagvarti;Bagvarti;Bagvarti;;Bagvarti;;;;;;;;;x
 huba;Huba;Huba;Huba;;Huba;;;;;;;;;x
-khaldic_dark_god;The Evil One;The Evil One;The Evil One;;The Evil One;;;;;;;;;x
+khaldic_dark_god;The Evil One;Le Malin;Der Böse;;El Mal;;;;;;;;;x
 
 #Armazic details
-armazic_scripture;The Holy Books;The Holy Books;Der Heiliges Büchen;;The Holy Books;;;;;;;;;x
+armazic_scripture;The Holy Books;Les Livres Sacrés;Der Heiliges Büchen;;Los Libros Sagrados;;;;;;;;;x
 kopala;Kopala;Kopala;Kopala;;Kopala;;;;;;;;;x
 zadeni;Zadeni;Zadeni;Zadeni;;Zadeni;;;;;;;;;x
 armazi;Armazi;Armazi;Armazi;;Armazi;;;;;;;;;x
@@ -149,10 +150,10 @@ dali;Dali;Dali;Dali;;Dali;;;;;;;;;x
 ga_god;Ga;Ga;Ga;;Ga;;;;;;;;;x
 adgilis_deda;Adgilis Deda;Adgilis Deda;Adgilis Deda;;Adgilis Deda;;;;;;;;;x
 gacim;Gacim;Gacim;Gacim;;Gacim;;;;;;;;;x
-armazic_dark_god;The Hidden One;The Hidden One;The Hidden One;;The Hidden One;;;;;;;;;x
+armazic_dark_god;The Hidden One;L'Occulte;Der Verbogene;;El Oculto;;;;;;;;;x
 
 #Arabic details
-arabic_scripture;The Tradition;The Tradition;Die Tradition;;The Tradition;;;;;;;;;x
+arabic_scripture;The Tradition;La Tradition;Die Tradition;;La Tradición;;;;;;;;;x
 dushara;Dushara;Dushara;Dushara;;Dushara;;;;;;;;;x
 ailiah;Ailiah;Ailiah;Ailiah;;Ailiah;;;;;;;;;x
 ta_lab;Ta'lab;Ta'lab;Ta'lab;;Ta'lab;;;;;;;;;x
@@ -164,7 +165,7 @@ al_uzza;Al-Uzza;Al-Uzza;Al-Uzza;;Al-Uzza;;;;;;;;;x
 suly_hram;Suly'Hram;Suly'Hram;Suly'Hram;;Suly'Hram;;;;;;;;;x
 
 #Ritualistic details
-ritualistic_scripture;The Scriptures;The Scriptures;Das Schreiben;;The Scriptures;;;;;;;;;x
+ritualistic_scripture;The Scriptures;Les Écritures;Die Heiligen Schriften;;Las Escripturas;;;;;;;;;x
 yazata;Yazata;Yazata;Yazata;;Yazata;;;;;;;;;x
 tishtrya;Tishtrya;Tishtrya;Tishtrya;;Tishtrya;;;;;;;;;x
 mah_god;Mah;Mah;Mah;;Mah;;;;;;;;;x
