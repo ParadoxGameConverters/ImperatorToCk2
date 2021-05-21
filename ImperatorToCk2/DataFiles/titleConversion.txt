@@ -4,6 +4,7 @@
 e_ROM,e_roman_empire
 e_PER,e_persia
 e_AXM,e_abyssinia
+e_AX2,e_abyssinia
 e_BHA,e_india
 e_DRA,e_deccan
 e_YMN,e_arabia
@@ -12,8 +13,10 @@ k_XXS,k_saxony
 k_HIB,k_ireland
 k_YRL,k_yarlung
 k_ARI,k_armenia
+k_ARM,k_armenia
 k_YMN,k_yemen
 k_AXM,k_abyssinia
+k_AX2,k_abyssinia
 k_SII,k_sicily
 k_BRA,k_wales
 k_CYP,k_cyprus
