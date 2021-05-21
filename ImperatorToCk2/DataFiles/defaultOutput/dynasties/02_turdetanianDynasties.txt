@@ -1,0 +1,380 @@
+5160000=
+{
+	name="Punicus"
+	culture="turdetanian"
+}
+5160001=
+{
+	name="Punica"
+	culture="turdetanian"
+}
+5160002=
+{
+	name="Punicii"
+	culture="turdetanian"
+}
+5160003=
+{
+	name="Punicid"
+	culture="turdetanian"
+}
+5160004=
+{
+	name="Orisus"
+	culture="turdetanian"
+}
+5160005=
+{
+	name="Orisa"
+	culture="turdetanian"
+}
+5160006=
+{
+	name="Orisidi"
+	culture="turdetanian"
+}
+5160007=
+{
+	name="Orisid"
+	culture="turdetanian"
+}
+5160008=
+{
+	name="Amidus"
+	culture="turdetanian"
+}
+5160009=
+{
+	name="Amida"
+	culture="turdetanian"
+}
+51600010=
+{
+	name="Amidi"
+	culture="turdetanian"
+}
+51600011=
+{
+	name="Amidian"
+	culture="turdetanian"
+}
+51600012=
+{
+	name="Nisunus"
+	culture="turdetanian"
+}
+51600013=
+{
+	name="Nisuna"
+	culture="turdetanian"
+}
+51600014=
+{
+	name="Nisunidi"
+	culture="turdetanian"
+}
+51600015=
+{
+	name="Nisunidian"
+	culture="turdetanian"
+}
+51600016=
+{
+	name="Tiresidus"
+	culture="turdetanian"
+}
+51600017=
+{
+	name="Tiresida"
+	culture="turdetanian"
+}
+51600018=
+{
+	name="Tiresidi"
+	culture="turdetanian"
+}
+51600019=
+{
+	name="Tiresidian"
+	culture="turdetanian"
+}
+51600020=
+{
+	name="Budidus"
+	culture="turdetanian"
+}
+51600021=
+{
+	name="Budida"
+	culture="turdetanian"
+}
+51600022=
+{
+	name="Budidii"
+	culture="turdetanian"
+}
+51600023=
+{
+	name="Budidian"
+	culture="turdetanian"
+}
+51600024=
+{
+	name="Gargoridus"
+	culture="turdetanian"
+}
+51600025=
+{
+	name="Gargorida"
+	culture="turdetanian"
+}
+51600026=
+{
+	name="Gargoridii"
+	culture="turdetanian"
+}
+51600027=
+{
+	name="Gargoridian"
+	culture="turdetanian"
+}
+51600028=
+{
+	name="Culcidus"
+	culture="turdetanian"
+}
+51600029=
+{
+	name="Culcida"
+	culture="turdetanian"
+}
+51600030=
+{
+	name="Culcidi"
+	culture="turdetanian"
+}
+51600031=
+{
+	name="Culcidian"
+	culture="turdetanian"
+}
+51600032=
+{
+	name="Indicidus"
+	culture="turdetanian"
+}
+51600033=
+{
+	name="Indicida"
+	culture="turdetanian"
+}
+51600034=
+{
+	name="Indicidii"
+	culture="turdetanian"
+}
+51600035=
+{
+	name="Indicidian"
+	culture="turdetanian"
+}
+51600036=
+{
+	name="Iscerbelus"
+	culture="turdetanian"
+}
+51600037=
+{
+	name="Iscerbela"
+	culture="turdetanian"
+}
+51600038=
+{
+	name="Iscerbelidi"
+	culture="turdetanian"
+}
+51600039=
+{
+	name="Iscerbelidian"
+	culture="turdetanian"
+}
+51600040=
+{
+	name="Karidus"
+	culture="turdetanian"
+}
+51600041=
+{
+	name="Karida"
+	culture="turdetanian"
+}
+51600042=
+{
+	name="Karidi"
+	culture="turdetanian"
+}
+51600043=
+{
+	name="Karidian"
+	culture="turdetanian"
+}
+51600044=
+{
+	name="Korbidus"
+	culture="turdetanian"
+}
+51600045=
+{
+	name="Korbida"
+	culture="turdetanian"
+}
+51600046=
+{
+	name="Korbidi"
+	culture="turdetanian"
+}
+51600047=
+{
+	name="Korbidian"
+	culture="turdetanian"
+}
+51600048=
+{
+	name="Lagunus"
+	culture="turdetanian"
+}
+51600049=
+{
+	name="Laguna"
+	culture="turdetanian"
+}
+51600050=
+{
+	name="Lagunidii"
+	culture="turdetanian"
+}
+51600051=
+{
+	name="Lagunidian"
+	culture="turdetanian"
+}
+51600052=
+{
+	name="Mandonus"
+	culture="turdetanian"
+}
+51600053=
+{
+	name="Mandona"
+	culture="turdetanian"
+}
+51600054=
+{
+	name="Mandonidii"
+	culture="turdetanian"
+}
+51600055=
+{
+	name="Mandonidian"
+	culture="turdetanian"
+}
+51600056=
+{
+	name="Magavaricus"
+	culture="turdetanian"
+}
+51600057=
+{
+	name="Magavarica"
+	culture="turdetanian"
+}
+51600058=
+{
+	name="Magavaricidii"
+	culture="turdetanian"
+}
+51600059=
+{
+	name="Magavarician"
+	culture="turdetanian"
+}
+51600060=
+{
+	name="Uxentus"
+	culture="turdetanian"
+}
+51600061=
+{
+	name="Uxenta"
+	culture="turdetanian"
+}
+51600062=
+{
+	name="Uxentidii"
+	culture="turdetanian"
+}
+51600063=
+{
+	name="Uxentican"
+	culture="turdetanian"
+}
+51600064=
+{
+	name="Umarilus"
+	culture="turdetanian"
+}
+51600065=
+{
+	name="Umarila"
+	culture="turdetanian"
+}
+51600066=
+{
+	name="Umarilidi"
+	culture="turdetanian"
+}
+51600067=
+{
+	name="Umarilid"
+	culture="turdetanian"
+}
+51600068=
+{
+	name="Turenus"
+	culture="turdetanian"
+}
+51600069=
+{
+	name="Turena"
+	culture="turdetanian"
+}
+51600070=
+{
+	name="Turenidi"
+	culture="turdetanian"
+}
+51600071=
+{
+	name="Turenidian"
+	culture="turdetanian"
+}
+51600072=
+{
+	name="Urceticus"
+	culture="turdetanian"
+}
+51600073=
+{
+	name="Urcetica"
+	culture="turdetanian"
+}
+51600074=
+{
+	name="Urceticidii"
+	culture="turdetanian"
+}
+51600075=
+{
+	name="Urceticidian"
+	culture="turdetanian"
+}

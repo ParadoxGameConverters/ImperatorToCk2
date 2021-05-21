@@ -1,0 +1,800 @@
+5180000=
+{
+	name="Aburius"
+	culture="old_ligurian"
+}
+5180001=
+{
+	name="Aburia"
+	culture="old_ligurian"
+}
+5180002=
+{
+	name="Aburii"
+	culture="old_ligurian"
+}
+5180003=
+{
+	name="Aburian"
+	culture="old_ligurian"
+}
+5180004=
+{
+	name="Accius"
+	culture="old_ligurian"
+}
+5180005=
+{
+	name="Accia"
+	culture="old_ligurian"
+}
+5180006=
+{
+	name="Accii"
+	culture="old_ligurian"
+}
+5180007=
+{
+	name="Accian"
+	culture="old_ligurian"
+}
+5180008=
+{
+	name="Acilius"
+	culture="old_ligurian"
+}
+5180009=
+{
+	name="Acilia"
+	culture="old_ligurian"
+}
+51800010=
+{
+	name="Acilii"
+	culture="old_ligurian"
+}
+51800011=
+{
+	name="Acilian"
+	culture="old_ligurian"
+}
+51800012=
+{
+	name="Acutius"
+	culture="old_ligurian"
+}
+51800013=
+{
+	name="Acutia"
+	culture="old_ligurian"
+}
+51800014=
+{
+	name="Acutii"
+	culture="old_ligurian"
+}
+51800015=
+{
+	name="Acutian"
+	culture="old_ligurian"
+}
+51800016=
+{
+	name="Aebutius"
+	culture="old_ligurian"
+}
+51800017=
+{
+	name="Aebutia"
+	culture="old_ligurian"
+}
+51800018=
+{
+	name="Aebutii"
+	culture="old_ligurian"
+}
+51800019=
+{
+	name="Aebutian"
+	culture="old_ligurian"
+}
+51800020=
+{
+	name="Aelius"
+	culture="old_ligurian"
+}
+51800021=
+{
+	name="Aelia"
+	culture="old_ligurian"
+}
+51800022=
+{
+	name="Aelii"
+	culture="old_ligurian"
+}
+51800023=
+{
+	name="Aelian"
+	culture="old_ligurian"
+}
+51800024=
+{
+	name="Aemilius"
+	culture="old_ligurian"
+}
+51800025=
+{
+	name="Aemilia"
+	culture="old_ligurian"
+}
+51800026=
+{
+	name="Aemilii"
+	culture="old_ligurian"
+}
+51800027=
+{
+	name="Aemilian"
+	culture="old_ligurian"
+}
+51800028=
+{
+	name="Alienus"
+	culture="old_ligurian"
+}
+51800029=
+{
+	name="Aliena"
+	culture="old_ligurian"
+}
+51800030=
+{
+	name="Alienii"
+	culture="old_ligurian"
+}
+51800031=
+{
+	name="Alien"
+	culture="old_ligurian"
+}
+51800032=
+{
+	name="Anicius"
+	culture="old_ligurian"
+}
+51800033=
+{
+	name="Anicia"
+	culture="old_ligurian"
+}
+51800034=
+{
+	name="Anicii"
+	culture="old_ligurian"
+}
+51800035=
+{
+	name="Anician"
+	culture="old_ligurian"
+}
+51800036=
+{
+	name="Annius"
+	culture="old_ligurian"
+}
+51800037=
+{
+	name="Annia"
+	culture="old_ligurian"
+}
+51800038=
+{
+	name="Anni"
+	culture="old_ligurian"
+}
+51800039=
+{
+	name="Annian"
+	culture="old_ligurian"
+}
+51800040=
+{
+	name="Antius"
+	culture="old_ligurian"
+}
+51800041=
+{
+	name="Antia"
+	culture="old_ligurian"
+}
+51800042=
+{
+	name="Antii"
+	culture="old_ligurian"
+}
+51800043=
+{
+	name="Antian"
+	culture="old_ligurian"
+}
+51800044=
+{
+	name="Antistius"
+	culture="old_ligurian"
+}
+51800045=
+{
+	name="Antistia"
+	culture="old_ligurian"
+}
+51800046=
+{
+	name="Antistii"
+	culture="old_ligurian"
+}
+51800047=
+{
+	name="Antistian"
+	culture="old_ligurian"
+}
+51800048=
+{
+	name="Antonius"
+	culture="old_ligurian"
+}
+51800049=
+{
+	name="Antonia"
+	culture="old_ligurian"
+}
+51800050=
+{
+	name="Antonii"
+	culture="old_ligurian"
+}
+51800051=
+{
+	name="Antonian"
+	culture="old_ligurian"
+}
+51800052=
+{
+	name="Claudius"
+	culture="old_ligurian"
+}
+51800053=
+{
+	name="Claudia"
+	culture="old_ligurian"
+}
+51800054=
+{
+	name="Claudii"
+	culture="old_ligurian"
+}
+51800055=
+{
+	name="Claudian"
+	culture="old_ligurian"
+}
+51800056=
+{
+	name="Cloelius"
+	culture="old_ligurian"
+}
+51800057=
+{
+	name="Cloelia"
+	culture="old_ligurian"
+}
+51800058=
+{
+	name="Cloelii"
+	culture="old_ligurian"
+}
+51800059=
+{
+	name="Cloelian"
+	culture="old_ligurian"
+}
+51800060=
+{
+	name="Cominius"
+	culture="old_ligurian"
+}
+51800061=
+{
+	name="Cominia"
+	culture="old_ligurian"
+}
+51800062=
+{
+	name="Cominii"
+	culture="old_ligurian"
+}
+51800063=
+{
+	name="Cominian"
+	culture="old_ligurian"
+}
+51800064=
+{
+	name="Cornelius"
+	culture="old_ligurian"
+}
+51800065=
+{
+	name="Cornelia"
+	culture="old_ligurian"
+}
+51800066=
+{
+	name="Cornelii"
+	culture="old_ligurian"
+}
+51800067=
+{
+	name="Cornelian"
+	culture="old_ligurian"
+}
+51800068=
+{
+	name="Coruncanius"
+	culture="old_ligurian"
+}
+51800069=
+{
+	name="Coruncania"
+	culture="old_ligurian"
+}
+51800070=
+{
+	name="Coruncanii"
+	culture="old_ligurian"
+}
+51800071=
+{
+	name="Coruncanian"
+	culture="old_ligurian"
+}
+51800072=
+{
+	name="Curiatius"
+	culture="old_ligurian"
+}
+51800073=
+{
+	name="Curiatia"
+	culture="old_ligurian"
+}
+51800074=
+{
+	name="Curiatii"
+	culture="old_ligurian"
+}
+51800075=
+{
+	name="Curiatian"
+	culture="old_ligurian"
+}
+51800076=
+{
+	name="Curtius"
+	culture="old_ligurian"
+}
+51800077=
+{
+	name="Curtia"
+	culture="old_ligurian"
+}
+51800078=
+{
+	name="Curtii"
+	culture="old_ligurian"
+}
+51800079=
+{
+	name="Curtian"
+	culture="old_ligurian"
+}
+51800080=
+{
+	name="Curius"
+	culture="old_ligurian"
+}
+51800081=
+{
+	name="Curia"
+	culture="old_ligurian"
+}
+51800082=
+{
+	name="Curii"
+	culture="old_ligurian"
+}
+51800083=
+{
+	name="Curian"
+	culture="old_ligurian"
+}
+51800084=
+{
+	name="Decius"
+	culture="old_ligurian"
+}
+51800085=
+{
+	name="Decia"
+	culture="old_ligurian"
+}
+51800086=
+{
+	name="Decii"
+	culture="old_ligurian"
+}
+51800087=
+{
+	name="Decian"
+	culture="old_ligurian"
+}
+51800088=
+{
+	name="Domitius"
+	culture="old_ligurian"
+}
+51800089=
+{
+	name="Domitia"
+	culture="old_ligurian"
+}
+51800090=
+{
+	name="Domitii"
+	culture="old_ligurian"
+}
+51800091=
+{
+	name="Domitian"
+	culture="old_ligurian"
+}
+51800092=
+{
+	name="Sestius"
+	culture="old_ligurian"
+}
+51800093=
+{
+	name="Sestia"
+	culture="old_ligurian"
+}
+51800094=
+{
+	name="Sestii"
+	culture="old_ligurian"
+}
+51800095=
+{
+	name="Sestian"
+	culture="old_ligurian"
+}
+51800096=
+{
+	name="Sextius"
+	culture="old_ligurian"
+}
+51800097=
+{
+	name="Sextia"
+	culture="old_ligurian"
+}
+51800098=
+{
+	name="Sextii"
+	culture="old_ligurian"
+}
+51800099=
+{
+	name="Sextian"
+	culture="old_ligurian"
+}
+518000100=
+{
+	name="Sextilius"
+	culture="old_ligurian"
+}
+518000101=
+{
+	name="Sextilia"
+	culture="old_ligurian"
+}
+518000102=
+{
+	name="Sextilii"
+	culture="old_ligurian"
+}
+518000103=
+{
+	name="Sextilian"
+	culture="old_ligurian"
+}
+518000104=
+{
+	name="Sicinius"
+	culture="old_ligurian"
+}
+518000105=
+{
+	name="Sicinia"
+	culture="old_ligurian"
+}
+518000106=
+{
+	name="Sicinii"
+	culture="old_ligurian"
+}
+518000107=
+{
+	name="Sicinian"
+	culture="old_ligurian"
+}
+518000108=
+{
+	name="Silius"
+	culture="old_ligurian"
+}
+518000109=
+{
+	name="Silia"
+	culture="old_ligurian"
+}
+518000110=
+{
+	name="Silii"
+	culture="old_ligurian"
+}
+518000111=
+{
+	name="Silian"
+	culture="old_ligurian"
+}
+518000112=
+{
+	name="Sulpicius"
+	culture="old_ligurian"
+}
+518000113=
+{
+	name="Sulpicia"
+	culture="old_ligurian"
+}
+518000114=
+{
+	name="Sulpicii"
+	culture="old_ligurian"
+}
+518000115=
+{
+	name="Sulpician"
+	culture="old_ligurian"
+}
+518000116=
+{
+	name="Titius"
+	culture="old_ligurian"
+}
+518000117=
+{
+	name="Titia"
+	culture="old_ligurian"
+}
+518000118=
+{
+	name="Titii"
+	culture="old_ligurian"
+}
+518000119=
+{
+	name="Titian"
+	culture="old_ligurian"
+}
+518000120=
+{
+	name="Tremulus"
+	culture="old_ligurian"
+}
+518000121=
+{
+	name="Tremulia"
+	culture="old_ligurian"
+}
+518000122=
+{
+	name="Tremulii"
+	culture="old_ligurian"
+}
+518000123=
+{
+	name="Tremulan"
+	culture="old_ligurian"
+}
+518000124=
+{
+	name="Tullius"
+	culture="old_ligurian"
+}
+518000125=
+{
+	name="Tullia"
+	culture="old_ligurian"
+}
+518000126=
+{
+	name="Tullii"
+	culture="old_ligurian"
+}
+518000127=
+{
+	name="Tullian"
+	culture="old_ligurian"
+}
+518000128=
+{
+	name="Ulpius"
+	culture="old_ligurian"
+}
+518000129=
+{
+	name="Ulpia"
+	culture="old_ligurian"
+}
+518000130=
+{
+	name="Ulpii"
+	culture="old_ligurian"
+}
+518000131=
+{
+	name="Ulpian"
+	culture="old_ligurian"
+}
+518000132=
+{
+	name="Valerius"
+	culture="old_ligurian"
+}
+518000133=
+{
+	name="Valeria"
+	culture="old_ligurian"
+}
+518000134=
+{
+	name="Valerii"
+	culture="old_ligurian"
+}
+518000135=
+{
+	name="Valerian"
+	culture="old_ligurian"
+}
+518000136=
+{
+	name="Verginius"
+	culture="old_ligurian"
+}
+518000137=
+{
+	name="Verginia"
+	culture="old_ligurian"
+}
+518000138=
+{
+	name="Verginii"
+	culture="old_ligurian"
+}
+518000139=
+{
+	name="Verginian"
+	culture="old_ligurian"
+}
+518000140=
+{
+	name="Veturius"
+	culture="old_ligurian"
+}
+518000141=
+{
+	name="Veturia"
+	culture="old_ligurian"
+}
+518000142=
+{
+	name="Veturii"
+	culture="old_ligurian"
+}
+518000143=
+{
+	name="Veturian"
+	culture="old_ligurian"
+}
+518000144=
+{
+	name="Vesuvius"
+	culture="old_ligurian"
+}
+518000145=
+{
+	name="Vesuvia"
+	culture="old_ligurian"
+}
+518000146=
+{
+	name="Vesuvii"
+	culture="old_ligurian"
+}
+518000147=
+{
+	name="Vesuvian"
+	culture="old_ligurian"
+}
+518000148=
+{
+	name="Villius"
+	culture="old_ligurian"
+}
+518000149=
+{
+	name="Villia"
+	culture="old_ligurian"
+}
+518000150=
+{
+	name="Villii"
+	culture="old_ligurian"
+}
+518000151=
+{
+	name="Villian"
+	culture="old_ligurian"
+}
+518000152=
+{
+	name="Viridius"
+	culture="old_ligurian"
+}
+518000153=
+{
+	name="Viridia"
+	culture="old_ligurian"
+}
+518000154=
+{
+	name="Viridii"
+	culture="old_ligurian"
+}
+518000155=
+{
+	name="Viridian"
+	culture="old_ligurian"
+}
+518000156=
+{
+	name="Volumnius"
+	culture="old_ligurian"
+}
+518000157=
+{
+	name="Volumnia"
+	culture="old_ligurian"
+}
+518000158=
+{
+	name="Volumnii"
+	culture="old_ligurian"
+}
+518000159=
+{
+	name="Volumnian"
+	culture="old_ligurian"
+}

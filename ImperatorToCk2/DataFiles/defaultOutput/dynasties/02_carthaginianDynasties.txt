@@ -1,0 +1,480 @@
+5090000=
+{
+	name="Abbarid"
+	culture="carthaginian"
+}
+5090001=
+{
+	name="Abbarid"
+	culture="carthaginian"
+}
+5090002=
+{
+	name="Abbarid"
+	culture="carthaginian"
+}
+5090003=
+{
+	name="Abbarid"
+	culture="carthaginian"
+}
+5090004=
+{
+	name="Adonibaal"
+	culture="carthaginian"
+}
+5090005=
+{
+	name="Adonibaalid"
+	culture="carthaginian"
+}
+5090006=
+{
+	name="Adonibaalid"
+	culture="carthaginian"
+}
+5090007=
+{
+	name="Adonibaalid"
+	culture="carthaginian"
+}
+5090008=
+{
+	name="Ahirom"
+	culture="carthaginian"
+}
+5090009=
+{
+	name="Ahiromid"
+	culture="carthaginian"
+}
+50900010=
+{
+	name="Ahiromid"
+	culture="carthaginian"
+}
+50900011=
+{
+	name="Ahiromid"
+	culture="carthaginian"
+}
+50900012=
+{
+	name="Baalhannid"
+	culture="carthaginian"
+}
+50900013=
+{
+	name="Baalhannid"
+	culture="carthaginian"
+}
+50900014=
+{
+	name="Baalhannid"
+	culture="carthaginian"
+}
+50900015=
+{
+	name="Baalhannid"
+	culture="carthaginian"
+}
+50900016=
+{
+	name="Baalid"
+	culture="carthaginian"
+}
+50900017=
+{
+	name="Baalid"
+	culture="carthaginian"
+}
+50900018=
+{
+	name="Baalid"
+	culture="carthaginian"
+}
+50900019=
+{
+	name="Baalid"
+	culture="carthaginian"
+}
+50900020=
+{
+	name="Barca"
+	culture="carthaginian"
+}
+50900021=
+{
+	name="Barca"
+	culture="carthaginian"
+}
+50900022=
+{
+	name="Barcid"
+	culture="carthaginian"
+}
+50900023=
+{
+	name="Barcid"
+	culture="carthaginian"
+}
+50900024=
+{
+	name="Bodona"
+	culture="carthaginian"
+}
+50900025=
+{
+	name="Bodona"
+	culture="carthaginian"
+}
+50900026=
+{
+	name="Bodonid"
+	culture="carthaginian"
+}
+50900027=
+{
+	name="Bodonid"
+	culture="carthaginian"
+}
+50900028=
+{
+	name="Bostara"
+	culture="carthaginian"
+}
+50900029=
+{
+	name="Bostara"
+	culture="carthaginian"
+}
+50900030=
+{
+	name="Bostarid"
+	culture="carthaginian"
+}
+50900031=
+{
+	name="Bostarid"
+	culture="carthaginian"
+}
+50900032=
+{
+	name="Chelbesid"
+	culture="carthaginian"
+}
+50900033=
+{
+	name="Chelbesid"
+	culture="carthaginian"
+}
+50900034=
+{
+	name="Chelbesid"
+	culture="carthaginian"
+}
+50900035=
+{
+	name="Chelbesid"
+	culture="carthaginian"
+}
+50900036=
+{
+	name="Eshbaalid"
+	culture="carthaginian"
+}
+50900037=
+{
+	name="Eshbaalid"
+	culture="carthaginian"
+}
+50900038=
+{
+	name="Eshbaalid"
+	culture="carthaginian"
+}
+50900039=
+{
+	name="Eshbaalid"
+	culture="carthaginian"
+}
+50900040=
+{
+	name="Eugorid"
+	culture="carthaginian"
+}
+50900041=
+{
+	name="Eugorid"
+	culture="carthaginian"
+}
+50900042=
+{
+	name="Eugorid"
+	culture="carthaginian"
+}
+50900043=
+{
+	name="Eugorid"
+	culture="carthaginian"
+}
+50900044=
+{
+	name="Hannid"
+	culture="carthaginian"
+}
+50900045=
+{
+	name="Hannid"
+	culture="carthaginian"
+}
+50900046=
+{
+	name="Hannid"
+	culture="carthaginian"
+}
+50900047=
+{
+	name="Hannid"
+	culture="carthaginian"
+}
+50900048=
+{
+	name="Hiramid"
+	culture="carthaginian"
+}
+50900049=
+{
+	name="Hiramid"
+	culture="carthaginian"
+}
+50900050=
+{
+	name="Hiramid"
+	culture="carthaginian"
+}
+50900051=
+{
+	name="Hiramid"
+	culture="carthaginian"
+}
+50900052=
+{
+	name="Mago"
+	culture="carthaginian"
+}
+50900053=
+{
+	name="Mago"
+	culture="carthaginian"
+}
+50900054=
+{
+	name="Magid"
+	culture="carthaginian"
+}
+50900055=
+{
+	name="Magid"
+	culture="carthaginian"
+}
+50900056=
+{
+	name="Mattanid"
+	culture="carthaginian"
+}
+50900057=
+{
+	name="Mattanid"
+	culture="carthaginian"
+}
+50900058=
+{
+	name="Mattanid"
+	culture="carthaginian"
+}
+50900059=
+{
+	name="Mattanid"
+	culture="carthaginian"
+}
+50900060=
+{
+	name="Metallid"
+	culture="carthaginian"
+}
+50900061=
+{
+	name="Metallid"
+	culture="carthaginian"
+}
+50900062=
+{
+	name="Metallid"
+	culture="carthaginian"
+}
+50900063=
+{
+	name="Metallid"
+	culture="carthaginian"
+}
+50900064=
+{
+	name="Milkiramid"
+	culture="carthaginian"
+}
+50900065=
+{
+	name="Milkiramid"
+	culture="carthaginian"
+}
+50900066=
+{
+	name="Milkiramid"
+	culture="carthaginian"
+}
+50900067=
+{
+	name="Milkiramid"
+	culture="carthaginian"
+}
+50900068=
+{
+	name="Philosirid"
+	culture="carthaginian"
+}
+50900069=
+{
+	name="Philosirid"
+	culture="carthaginian"
+}
+50900070=
+{
+	name="Philosirid"
+	culture="carthaginian"
+}
+50900071=
+{
+	name="Philosirid"
+	culture="carthaginian"
+}
+50900072=
+{
+	name="Gisgo"
+	culture="carthaginian"
+}
+50900073=
+{
+	name="Gisgo"
+	culture="carthaginian"
+}
+50900074=
+{
+	name="Gisgoid"
+	culture="carthaginian"
+}
+50900075=
+{
+	name="Gisgoid"
+	culture="carthaginian"
+}
+50900076=
+{
+	name="Gerbalid"
+	culture="carthaginian"
+}
+50900077=
+{
+	name="Gerbalid"
+	culture="carthaginian"
+}
+50900078=
+{
+	name="Gerbalid"
+	culture="carthaginian"
+}
+50900079=
+{
+	name="Gerbalid"
+	culture="carthaginian"
+}
+50900080=
+{
+	name="Hammid"
+	culture="carthaginian"
+}
+50900081=
+{
+	name="Hammid"
+	culture="carthaginian"
+}
+50900082=
+{
+	name="Hammid"
+	culture="carthaginian"
+}
+50900083=
+{
+	name="Hammid"
+	culture="carthaginian"
+}
+50900084=
+{
+	name="Eugarid"
+	culture="carthaginian"
+}
+50900085=
+{
+	name="Eugarid"
+	culture="carthaginian"
+}
+50900086=
+{
+	name="Eugarid"
+	culture="carthaginian"
+}
+50900087=
+{
+	name="Eugarid"
+	culture="carthaginian"
+}
+50900088=
+{
+	name="Mashhid"
+	culture="carthaginian"
+}
+50900089=
+{
+	name="Mashhid"
+	culture="carthaginian"
+}
+50900090=
+{
+	name="Mashhid"
+	culture="carthaginian"
+}
+50900091=
+{
+	name="Mashhid"
+	culture="carthaginian"
+}
+50900092=
+{
+	name="Ummashid"
+	culture="carthaginian"
+}
+50900093=
+{
+	name="Ummashid"
+	culture="carthaginian"
+}
+50900094=
+{
+	name="Ummashid"
+	culture="carthaginian"
+}
+50900095=
+{
+	name="Ummashid"
+	culture="carthaginian"
+}

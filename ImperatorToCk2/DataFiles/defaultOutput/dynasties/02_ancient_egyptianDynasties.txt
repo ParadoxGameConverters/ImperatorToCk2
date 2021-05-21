@@ -1,0 +1,620 @@
+5320000=
+{
+	name="Ahmid"
+	culture="ancient_egyptian"
+}
+5320001=
+{
+	name="Ahmid"
+	culture="ancient_egyptian"
+}
+5320002=
+{
+	name="Ahmid"
+	culture="ancient_egyptian"
+}
+5320003=
+{
+	name="Ahmid"
+	culture="ancient_egyptian"
+}
+5320004=
+{
+	name="Galestus"
+	culture="ancient_egyptian"
+}
+5320005=
+{
+	name="Galestid"
+	culture="ancient_egyptian"
+}
+5320006=
+{
+	name="Galestid"
+	culture="ancient_egyptian"
+}
+5320007=
+{
+	name="Galestid"
+	culture="ancient_egyptian"
+}
+5320008=
+{
+	name="Kenamus"
+	culture="ancient_egyptian"
+}
+5320009=
+{
+	name="Kenamid"
+	culture="ancient_egyptian"
+}
+53200010=
+{
+	name="Kenamid"
+	culture="ancient_egyptian"
+}
+53200011=
+{
+	name="Kenamid"
+	culture="ancient_egyptian"
+}
+53200012=
+{
+	name="Naravid"
+	culture="ancient_egyptian"
+}
+53200013=
+{
+	name="Naravid"
+	culture="ancient_egyptian"
+}
+53200014=
+{
+	name="Naravid"
+	culture="ancient_egyptian"
+}
+53200015=
+{
+	name="Naravid"
+	culture="ancient_egyptian"
+}
+53200016=
+{
+	name="Penamus"
+	culture="ancient_egyptian"
+}
+53200017=
+{
+	name="Penamid"
+	culture="ancient_egyptian"
+}
+53200018=
+{
+	name="Penamid"
+	culture="ancient_egyptian"
+}
+53200019=
+{
+	name="Penamid"
+	culture="ancient_egyptian"
+}
+53200020=
+{
+	name="Senuid"
+	culture="ancient_egyptian"
+}
+53200021=
+{
+	name="Senuid"
+	culture="ancient_egyptian"
+}
+53200022=
+{
+	name="Senuid"
+	culture="ancient_egyptian"
+}
+53200023=
+{
+	name="Senuid"
+	culture="ancient_egyptian"
+}
+53200024=
+{
+	name="Setnid"
+	culture="ancient_egyptian"
+}
+53200025=
+{
+	name="Setnid"
+	culture="ancient_egyptian"
+}
+53200026=
+{
+	name="Setnid"
+	culture="ancient_egyptian"
+}
+53200027=
+{
+	name="Setnid"
+	culture="ancient_egyptian"
+}
+53200028=
+{
+	name="Arganid"
+	culture="ancient_egyptian"
+}
+53200029=
+{
+	name="Arganid"
+	culture="ancient_egyptian"
+}
+53200030=
+{
+	name="Arganid"
+	culture="ancient_egyptian"
+}
+53200031=
+{
+	name="Arganid"
+	culture="ancient_egyptian"
+}
+53200032=
+{
+	name="Psammid"
+	culture="ancient_egyptian"
+}
+53200033=
+{
+	name="Psammid"
+	culture="ancient_egyptian"
+}
+53200034=
+{
+	name="Psammid"
+	culture="ancient_egyptian"
+}
+53200035=
+{
+	name="Psammid"
+	culture="ancient_egyptian"
+}
+53200036=
+{
+	name="Philothid"
+	culture="ancient_egyptian"
+}
+53200037=
+{
+	name="Philothid"
+	culture="ancient_egyptian"
+}
+53200038=
+{
+	name="Philothid"
+	culture="ancient_egyptian"
+}
+53200039=
+{
+	name="Philothid"
+	culture="ancient_egyptian"
+}
+53200040=
+{
+	name="Timolid"
+	culture="ancient_egyptian"
+}
+53200041=
+{
+	name="Timolid"
+	culture="ancient_egyptian"
+}
+53200042=
+{
+	name="Timolid"
+	culture="ancient_egyptian"
+}
+53200043=
+{
+	name="Timolid"
+	culture="ancient_egyptian"
+}
+53200044=
+{
+	name="Zosid"
+	culture="ancient_egyptian"
+}
+53200045=
+{
+	name="Zosid"
+	culture="ancient_egyptian"
+}
+53200046=
+{
+	name="Zosid"
+	culture="ancient_egyptian"
+}
+53200047=
+{
+	name="Zosid"
+	culture="ancient_egyptian"
+}
+53200048=
+{
+	name="Phileid"
+	culture="ancient_egyptian"
+}
+53200049=
+{
+	name="Phileid"
+	culture="ancient_egyptian"
+}
+53200050=
+{
+	name="Phileid"
+	culture="ancient_egyptian"
+}
+53200051=
+{
+	name="Phileid"
+	culture="ancient_egyptian"
+}
+53200052=
+{
+	name="Nicodemid"
+	culture="ancient_egyptian"
+}
+53200053=
+{
+	name="Nicodemid"
+	culture="ancient_egyptian"
+}
+53200054=
+{
+	name="Nicodemid"
+	culture="ancient_egyptian"
+}
+53200055=
+{
+	name="Nicodemid"
+	culture="ancient_egyptian"
+}
+53200056=
+{
+	name="Nefarid"
+	culture="ancient_egyptian"
+}
+53200057=
+{
+	name="Nefarid"
+	culture="ancient_egyptian"
+}
+53200058=
+{
+	name="Nefarid"
+	culture="ancient_egyptian"
+}
+53200059=
+{
+	name="Nefarid"
+	culture="ancient_egyptian"
+}
+53200060=
+{
+	name="Bastid"
+	culture="ancient_egyptian"
+}
+53200061=
+{
+	name="Bastid"
+	culture="ancient_egyptian"
+}
+53200062=
+{
+	name="Bastid"
+	culture="ancient_egyptian"
+}
+53200063=
+{
+	name="Bastid"
+	culture="ancient_egyptian"
+}
+53200064=
+{
+	name="Xeneid"
+	culture="ancient_egyptian"
+}
+53200065=
+{
+	name="Xeneid"
+	culture="ancient_egyptian"
+}
+53200066=
+{
+	name="Xeneid"
+	culture="ancient_egyptian"
+}
+53200067=
+{
+	name="Xeneid"
+	culture="ancient_egyptian"
+}
+53200068=
+{
+	name="Naravid"
+	culture="ancient_egyptian"
+}
+53200069=
+{
+	name="Naravid"
+	culture="ancient_egyptian"
+}
+53200070=
+{
+	name="Naravid"
+	culture="ancient_egyptian"
+}
+53200071=
+{
+	name="Naravid"
+	culture="ancient_egyptian"
+}
+53200072=
+{
+	name="Ezanid"
+	culture="ancient_egyptian"
+}
+53200073=
+{
+	name="Ezanid"
+	culture="ancient_egyptian"
+}
+53200074=
+{
+	name="Ezanid"
+	culture="ancient_egyptian"
+}
+53200075=
+{
+	name="Ezanid"
+	culture="ancient_egyptian"
+}
+53200076=
+{
+	name="Ahmid"
+	culture="ancient_egyptian"
+}
+53200077=
+{
+	name="Ahmid"
+	culture="ancient_egyptian"
+}
+53200078=
+{
+	name="Ahmid"
+	culture="ancient_egyptian"
+}
+53200079=
+{
+	name="Ahmid"
+	culture="ancient_egyptian"
+}
+53200080=
+{
+	name="Alarus"
+	culture="ancient_egyptian"
+}
+53200081=
+{
+	name="Alara"
+	culture="ancient_egyptian"
+}
+53200082=
+{
+	name="Alarid"
+	culture="ancient_egyptian"
+}
+53200083=
+{
+	name="Alarid"
+	culture="ancient_egyptian"
+}
+53200084=
+{
+	name="Harsiotes"
+	culture="ancient_egyptian"
+}
+53200085=
+{
+	name="Harsiotes"
+	culture="ancient_egyptian"
+}
+53200086=
+{
+	name="Harsiotid"
+	culture="ancient_egyptian"
+}
+53200087=
+{
+	name="Harsiotid"
+	culture="ancient_egyptian"
+}
+53200088=
+{
+	name="Henus"
+	culture="ancient_egyptian"
+}
+53200089=
+{
+	name="Hena"
+	culture="ancient_egyptian"
+}
+53200090=
+{
+	name="Henid"
+	culture="ancient_egyptian"
+}
+53200091=
+{
+	name="Henid"
+	culture="ancient_egyptian"
+}
+53200092=
+{
+	name="Ibus"
+	culture="ancient_egyptian"
+}
+53200093=
+{
+	name="Iba"
+	culture="ancient_egyptian"
+}
+53200094=
+{
+	name="Ibid"
+	culture="ancient_egyptian"
+}
+53200095=
+{
+	name="Ibid"
+	culture="ancient_egyptian"
+}
+53200096=
+{
+	name="Khabbash"
+	culture="ancient_egyptian"
+}
+53200097=
+{
+	name="Khabbash"
+	culture="ancient_egyptian"
+}
+53200098=
+{
+	name="Khabbashid"
+	culture="ancient_egyptian"
+}
+53200099=
+{
+	name="Khabbashid"
+	culture="ancient_egyptian"
+}
+532000100=
+{
+	name="Amasus"
+	culture="ancient_egyptian"
+}
+532000101=
+{
+	name="Amasa"
+	culture="ancient_egyptian"
+}
+532000102=
+{
+	name="Amasid"
+	culture="ancient_egyptian"
+}
+532000103=
+{
+	name="Amasid"
+	culture="ancient_egyptian"
+}
+532000104=
+{
+	name="Nectanebo"
+	culture="ancient_egyptian"
+}
+532000105=
+{
+	name="Nectanebo"
+	culture="ancient_egyptian"
+}
+532000106=
+{
+	name="Nectanebid"
+	culture="ancient_egyptian"
+}
+532000107=
+{
+	name="Nectanebid"
+	culture="ancient_egyptian"
+}
+532000108=
+{
+	name="Petubast"
+	culture="ancient_egyptian"
+}
+532000109=
+{
+	name="Petubast"
+	culture="ancient_egyptian"
+}
+532000110=
+{
+	name="Petubastes"
+	culture="ancient_egyptian"
+}
+532000111=
+{
+	name="Petubastid"
+	culture="ancient_egyptian"
+}
+532000112=
+{
+	name="Djedhid"
+	culture="ancient_egyptian"
+}
+532000113=
+{
+	name="Djedhid"
+	culture="ancient_egyptian"
+}
+532000114=
+{
+	name="Djedhid"
+	culture="ancient_egyptian"
+}
+532000115=
+{
+	name="Djedhid"
+	culture="ancient_egyptian"
+}
+532000116=
+{
+	name="Tachys"
+	culture="ancient_egyptian"
+}
+532000117=
+{
+	name="Tachya"
+	culture="ancient_egyptian"
+}
+532000118=
+{
+	name="Tachyes"
+	culture="ancient_egyptian"
+}
+532000119=
+{
+	name="Tachyid"
+	culture="ancient_egyptian"
+}
+532000120=
+{
+	name="Mago"
+	culture="ancient_egyptian"
+}
+532000121=
+{
+	name="Mago"
+	culture="ancient_egyptian"
+}
+532000122=
+{
+	name="Mago"
+	culture="ancient_egyptian"
+}
+532000123=
+{
+	name="Magid"
+	culture="ancient_egyptian"
+}

@@ -1,0 +1,5320 @@
+5130000=
+{
+	name="Uclina"
+	culture="etruscan"
+}
+5130001=
+{
+	name="Uclinei"
+	culture="etruscan"
+}
+5130002=
+{
+	name="Uclinii"
+	culture="etruscan"
+}
+5130003=
+{
+	name="Ucli"
+	culture="etruscan"
+}
+5130004=
+{
+	name="Acnatru"
+	culture="etruscan"
+}
+5130005=
+{
+	name="Acnatrui"
+	culture="etruscan"
+}
+5130006=
+{
+	name="Acnatrui"
+	culture="etruscan"
+}
+5130007=
+{
+	name="Acnatr"
+	culture="etruscan"
+}
+5130008=
+{
+	name="Acriena"
+	culture="etruscan"
+}
+5130009=
+{
+	name="Acrienei"
+	culture="etruscan"
+}
+51300010=
+{
+	name="Acriena"
+	culture="etruscan"
+}
+51300011=
+{
+	name="Acrinian"
+	culture="etruscan"
+}
+51300012=
+{
+	name="Acvilnas"
+	culture="etruscan"
+}
+51300013=
+{
+	name="Acvilnei"
+	culture="etruscan"
+}
+51300014=
+{
+	name="Acvilnas"
+	culture="etruscan"
+}
+51300015=
+{
+	name="Acvilnian"
+	culture="etruscan"
+}
+51300016=
+{
+	name="Afunas"
+	culture="etruscan"
+}
+51300017=
+{
+	name="Afunei"
+	culture="etruscan"
+}
+51300018=
+{
+	name="Afunas"
+	culture="etruscan"
+}
+51300019=
+{
+	name="Afunian"
+	culture="etruscan"
+}
+51300020=
+{
+	name="Aisina"
+	culture="etruscan"
+}
+51300021=
+{
+	name="Aisinei"
+	culture="etruscan"
+}
+51300022=
+{
+	name="Aisina"
+	culture="etruscan"
+}
+51300023=
+{
+	name="Aisinian"
+	culture="etruscan"
+}
+51300024=
+{
+	name="Alethnas"
+	culture="etruscan"
+}
+51300025=
+{
+	name="Alethnei"
+	culture="etruscan"
+}
+51300026=
+{
+	name="Alethnas"
+	culture="etruscan"
+}
+51300027=
+{
+	name="Alethnasian"
+	culture="etruscan"
+}
+51300028=
+{
+	name="Alfi"
+	culture="etruscan"
+}
+51300029=
+{
+	name="Alfi"
+	culture="etruscan"
+}
+51300030=
+{
+	name="Alfi"
+	culture="etruscan"
+}
+51300031=
+{
+	name="Alfian"
+	culture="etruscan"
+}
+51300032=
+{
+	name="Alfni"
+	culture="etruscan"
+}
+51300033=
+{
+	name="Alfni"
+	culture="etruscan"
+}
+51300034=
+{
+	name="Alfni"
+	culture="etruscan"
+}
+51300035=
+{
+	name="Alfnian"
+	culture="etruscan"
+}
+51300036=
+{
+	name="Alsinas"
+	culture="etruscan"
+}
+51300037=
+{
+	name="Alsinei"
+	culture="etruscan"
+}
+51300038=
+{
+	name="Alsinas"
+	culture="etruscan"
+}
+51300039=
+{
+	name="Alsinasian"
+	culture="etruscan"
+}
+51300040=
+{
+	name="Alvethna"
+	culture="etruscan"
+}
+51300041=
+{
+	name="Alvethnei"
+	culture="etruscan"
+}
+51300042=
+{
+	name="Alvethna"
+	culture="etruscan"
+}
+51300043=
+{
+	name="Alvethnian"
+	culture="etruscan"
+}
+51300044=
+{
+	name="Amuni"
+	culture="etruscan"
+}
+51300045=
+{
+	name="Amuni"
+	culture="etruscan"
+}
+51300046=
+{
+	name="Amuni"
+	culture="etruscan"
+}
+51300047=
+{
+	name="Amunian"
+	culture="etruscan"
+}
+51300048=
+{
+	name="Anani"
+	culture="etruscan"
+}
+51300049=
+{
+	name="Aninei"
+	culture="etruscan"
+}
+51300050=
+{
+	name="Anani"
+	culture="etruscan"
+}
+51300051=
+{
+	name="Ananian"
+	culture="etruscan"
+}
+51300052=
+{
+	name="Aneithur"
+	culture="etruscan"
+}
+51300053=
+{
+	name="Aneithuri"
+	culture="etruscan"
+}
+51300054=
+{
+	name="Aneithur"
+	culture="etruscan"
+}
+51300055=
+{
+	name="Aneithurian"
+	culture="etruscan"
+}
+51300056=
+{
+	name="Anes"
+	culture="etruscan"
+}
+51300057=
+{
+	name="Anis"
+	culture="etruscan"
+}
+51300058=
+{
+	name="Anes"
+	culture="etruscan"
+}
+51300059=
+{
+	name="Anesian"
+	culture="etruscan"
+}
+51300060=
+{
+	name="Aninas"
+	culture="etruscan"
+}
+51300061=
+{
+	name="Aninei"
+	culture="etruscan"
+}
+51300062=
+{
+	name="Aninas"
+	culture="etruscan"
+}
+51300063=
+{
+	name="Aninasian"
+	culture="etruscan"
+}
+51300064=
+{
+	name="Anthiaia"
+	culture="etruscan"
+}
+51300065=
+{
+	name="Anthiaei"
+	culture="etruscan"
+}
+51300066=
+{
+	name="Anthiaia"
+	culture="etruscan"
+}
+51300067=
+{
+	name="Anthiaian"
+	culture="etruscan"
+}
+51300068=
+{
+	name="Apatru"
+	culture="etruscan"
+}
+51300069=
+{
+	name="Apatrui"
+	culture="etruscan"
+}
+51300070=
+{
+	name="Apatru"
+	culture="etruscan"
+}
+51300071=
+{
+	name="Apatrian"
+	culture="etruscan"
+}
+51300072=
+{
+	name="Apianas"
+	culture="etruscan"
+}
+51300073=
+{
+	name="Apianei"
+	culture="etruscan"
+}
+51300074=
+{
+	name="Apianas"
+	culture="etruscan"
+}
+51300075=
+{
+	name="Apianian"
+	culture="etruscan"
+}
+51300076=
+{
+	name="Apries"
+	culture="etruscan"
+}
+51300077=
+{
+	name="Apria"
+	culture="etruscan"
+}
+51300078=
+{
+	name="Apries"
+	culture="etruscan"
+}
+51300079=
+{
+	name="Apriesian"
+	culture="etruscan"
+}
+51300080=
+{
+	name="Aprthnas"
+	culture="etruscan"
+}
+51300081=
+{
+	name="Aprthnei"
+	culture="etruscan"
+}
+51300082=
+{
+	name="Aprthnas"
+	culture="etruscan"
+}
+51300083=
+{
+	name="Aprthnasian"
+	culture="etruscan"
+}
+51300084=
+{
+	name="Apunas"
+	culture="etruscan"
+}
+51300085=
+{
+	name="Apunei"
+	culture="etruscan"
+}
+51300086=
+{
+	name="Apunas"
+	culture="etruscan"
+}
+51300087=
+{
+	name="Apunian"
+	culture="etruscan"
+}
+51300088=
+{
+	name="Apvcuia"
+	culture="etruscan"
+}
+51300089=
+{
+	name="Apvcuia"
+	culture="etruscan"
+}
+51300090=
+{
+	name="Apvcuia"
+	culture="etruscan"
+}
+51300091=
+{
+	name="Apvcuian"
+	culture="etruscan"
+}
+51300092=
+{
+	name="Araziia"
+	culture="etruscan"
+}
+51300093=
+{
+	name="Arazei"
+	culture="etruscan"
+}
+51300094=
+{
+	name="Araziia"
+	culture="etruscan"
+}
+51300095=
+{
+	name="Arazian"
+	culture="etruscan"
+}
+51300096=
+{
+	name="Arnthna"
+	culture="etruscan"
+}
+51300097=
+{
+	name="Arnthi"
+	culture="etruscan"
+}
+51300098=
+{
+	name="Arnthna"
+	culture="etruscan"
+}
+51300099=
+{
+	name="Arnthnian"
+	culture="etruscan"
+}
+513000100=
+{
+	name="Aremsnas"
+	culture="etruscan"
+}
+513000101=
+{
+	name="Aremsnei"
+	culture="etruscan"
+}
+513000102=
+{
+	name="Aremsnas"
+	culture="etruscan"
+}
+513000103=
+{
+	name="Aremsnasian"
+	culture="etruscan"
+}
+513000104=
+{
+	name="Arnies"
+	culture="etruscan"
+}
+513000105=
+{
+	name="Arnia"
+	culture="etruscan"
+}
+513000106=
+{
+	name="Arnies"
+	culture="etruscan"
+}
+513000107=
+{
+	name="Arniesian"
+	culture="etruscan"
+}
+513000108=
+{
+	name="Arthunas"
+	culture="etruscan"
+}
+513000109=
+{
+	name="Arth"
+	culture="etruscan"
+}
+513000110=
+{
+	name="Arthunas"
+	culture="etruscan"
+}
+513000111=
+{
+	name="Arthunian"
+	culture="etruscan"
+}
+513000112=
+{
+	name="Arunzina"
+	culture="etruscan"
+}
+513000113=
+{
+	name="Arunzinei"
+	culture="etruscan"
+}
+513000114=
+{
+	name="Arunzina"
+	culture="etruscan"
+}
+513000115=
+{
+	name="Arunzian"
+	culture="etruscan"
+}
+513000116=
+{
+	name="Arznas"
+	culture="etruscan"
+}
+513000117=
+{
+	name="Arznei"
+	culture="etruscan"
+}
+513000118=
+{
+	name="Arznas"
+	culture="etruscan"
+}
+513000119=
+{
+	name="Arnznasian"
+	culture="etruscan"
+}
+513000120=
+{
+	name="Ateina"
+	culture="etruscan"
+}
+513000121=
+{
+	name="Ateinei"
+	culture="etruscan"
+}
+513000122=
+{
+	name="Ateina"
+	culture="etruscan"
+}
+513000123=
+{
+	name="Ateinian"
+	culture="etruscan"
+}
+513000124=
+{
+	name="Atelinas"
+	culture="etruscan"
+}
+513000125=
+{
+	name="Atelinei"
+	culture="etruscan"
+}
+513000126=
+{
+	name="Atelinas"
+	culture="etruscan"
+}
+513000127=
+{
+	name="Atelinian"
+	culture="etruscan"
+}
+513000128=
+{
+	name="Aties"
+	culture="etruscan"
+}
+513000129=
+{
+	name="Atia"
+	culture="etruscan"
+}
+513000130=
+{
+	name="Aties"
+	culture="etruscan"
+}
+513000131=
+{
+	name="Atian"
+	culture="etruscan"
+}
+513000132=
+{
+	name="Atnas"
+	culture="etruscan"
+}
+513000133=
+{
+	name="Atnei"
+	culture="etruscan"
+}
+513000134=
+{
+	name="Atnas"
+	culture="etruscan"
+}
+513000135=
+{
+	name="Atnasian"
+	culture="etruscan"
+}
+513000136=
+{
+	name="Ufle"
+	culture="etruscan"
+}
+513000137=
+{
+	name="Ufli"
+	culture="etruscan"
+}
+513000138=
+{
+	name="Ufle"
+	culture="etruscan"
+}
+513000139=
+{
+	name="Uflian"
+	culture="etruscan"
+}
+513000140=
+{
+	name="Aucana"
+	culture="etruscan"
+}
+513000141=
+{
+	name="Aucanei"
+	culture="etruscan"
+}
+513000142=
+{
+	name="Aucana"
+	culture="etruscan"
+}
+513000143=
+{
+	name="Aucanian"
+	culture="etruscan"
+}
+513000144=
+{
+	name="Auclina"
+	culture="etruscan"
+}
+513000145=
+{
+	name="Auclinei"
+	culture="etruscan"
+}
+513000146=
+{
+	name="Auclina"
+	culture="etruscan"
+}
+513000147=
+{
+	name="Auclinian"
+	culture="etruscan"
+}
+513000148=
+{
+	name="Aves"
+	culture="etruscan"
+}
+513000149=
+{
+	name="Avenei"
+	culture="etruscan"
+}
+513000150=
+{
+	name="Aves"
+	culture="etruscan"
+}
+513000151=
+{
+	name="Avesian"
+	culture="etruscan"
+}
+513000152=
+{
+	name="Aznie"
+	culture="etruscan"
+}
+513000153=
+{
+	name="Aznia"
+	culture="etruscan"
+}
+513000154=
+{
+	name="Aznie"
+	culture="etruscan"
+}
+513000155=
+{
+	name="Aznesian"
+	culture="etruscan"
+}
+513000156=
+{
+	name="Cafates"
+	culture="etruscan"
+}
+513000157=
+{
+	name="Cafati"
+	culture="etruscan"
+}
+513000158=
+{
+	name="Cafates"
+	culture="etruscan"
+}
+513000159=
+{
+	name="Cafatian"
+	culture="etruscan"
+}
+513000160=
+{
+	name="Cahate"
+	culture="etruscan"
+}
+513000161=
+{
+	name="Cahati"
+	culture="etruscan"
+}
+513000162=
+{
+	name="Cahate"
+	culture="etruscan"
+}
+513000163=
+{
+	name="Cahatian"
+	culture="etruscan"
+}
+513000164=
+{
+	name="Ceie"
+	culture="etruscan"
+}
+513000165=
+{
+	name="Ceinei"
+	culture="etruscan"
+}
+513000166=
+{
+	name="Cee"
+	culture="etruscan"
+}
+513000167=
+{
+	name="Ceian"
+	culture="etruscan"
+}
+513000168=
+{
+	name="Cale"
+	culture="etruscan"
+}
+513000169=
+{
+	name="Cali"
+	culture="etruscan"
+}
+513000170=
+{
+	name="Cale"
+	culture="etruscan"
+}
+513000171=
+{
+	name="Calian"
+	culture="etruscan"
+}
+513000172=
+{
+	name="Caliathe"
+	culture="etruscan"
+}
+513000173=
+{
+	name="Calitahi"
+	culture="etruscan"
+}
+513000174=
+{
+	name="Caliathe"
+	culture="etruscan"
+}
+513000175=
+{
+	name="Caliathian"
+	culture="etruscan"
+}
+513000176=
+{
+	name="Calisna"
+	culture="etruscan"
+}
+513000177=
+{
+	name="Calisnei"
+	culture="etruscan"
+}
+513000178=
+{
+	name="Calisna"
+	culture="etruscan"
+}
+513000179=
+{
+	name="Calisnan"
+	culture="etruscan"
+}
+513000180=
+{
+	name="Camitlnas"
+	culture="etruscan"
+}
+513000181=
+{
+	name="Camitlnei"
+	culture="etruscan"
+}
+513000182=
+{
+	name="Camitlnas"
+	culture="etruscan"
+}
+513000183=
+{
+	name="Camitlan"
+	culture="etruscan"
+}
+513000184=
+{
+	name="Camnas"
+	culture="etruscan"
+}
+513000185=
+{
+	name="Camnai"
+	culture="etruscan"
+}
+513000186=
+{
+	name="Camnas"
+	culture="etruscan"
+}
+513000187=
+{
+	name="Camnasian"
+	culture="etruscan"
+}
+513000188=
+{
+	name="Campanes"
+	culture="etruscan"
+}
+513000189=
+{
+	name="Campanis"
+	culture="etruscan"
+}
+513000190=
+{
+	name="Campanes"
+	culture="etruscan"
+}
+513000191=
+{
+	name="Campanian"
+	culture="etruscan"
+}
+513000192=
+{
+	name="Canatnes"
+	culture="etruscan"
+}
+513000193=
+{
+	name="Canatnei"
+	culture="etruscan"
+}
+513000194=
+{
+	name="Canatnes"
+	culture="etruscan"
+}
+513000195=
+{
+	name="Canatnian"
+	culture="etruscan"
+}
+513000196=
+{
+	name="Carpnate"
+	culture="etruscan"
+}
+513000197=
+{
+	name="Carpnati"
+	culture="etruscan"
+}
+513000198=
+{
+	name="Carpnate"
+	culture="etruscan"
+}
+513000199=
+{
+	name="Carpnatian"
+	culture="etruscan"
+}
+513000200=
+{
+	name="Carsu"
+	culture="etruscan"
+}
+513000201=
+{
+	name="Carsui"
+	culture="etruscan"
+}
+513000202=
+{
+	name="Carsu"
+	culture="etruscan"
+}
+513000203=
+{
+	name="Carsunian"
+	culture="etruscan"
+}
+513000204=
+{
+	name="Catne"
+	culture="etruscan"
+}
+513000205=
+{
+	name="Catni"
+	culture="etruscan"
+}
+513000206=
+{
+	name="Catne"
+	culture="etruscan"
+}
+513000207=
+{
+	name="Catnian"
+	culture="etruscan"
+}
+513000208=
+{
+	name="Cazi"
+	culture="etruscan"
+}
+513000209=
+{
+	name="Cazi"
+	culture="etruscan"
+}
+513000210=
+{
+	name="Cazi"
+	culture="etruscan"
+}
+513000211=
+{
+	name="Cazian"
+	culture="etruscan"
+}
+513000212=
+{
+	name="Ceisinies"
+	culture="etruscan"
+}
+513000213=
+{
+	name="Ceisinia"
+	culture="etruscan"
+}
+513000214=
+{
+	name="Ceisinies"
+	culture="etruscan"
+}
+513000215=
+{
+	name="Ceisinian"
+	culture="etruscan"
+}
+513000216=
+{
+	name="Celatina"
+	culture="etruscan"
+}
+513000217=
+{
+	name="Celatinei"
+	culture="etruscan"
+}
+513000218=
+{
+	name="Celatina"
+	culture="etruscan"
+}
+513000219=
+{
+	name="Celatinian"
+	culture="etruscan"
+}
+513000220=
+{
+	name="Cheiras"
+	culture="etruscan"
+}
+513000221=
+{
+	name="Cheirei"
+	culture="etruscan"
+}
+513000222=
+{
+	name="Cheiras"
+	culture="etruscan"
+}
+513000223=
+{
+	name="Cheirian"
+	culture="etruscan"
+}
+513000224=
+{
+	name="Churcles"
+	culture="etruscan"
+}
+513000225=
+{
+	name="Churcles"
+	culture="etruscan"
+}
+513000226=
+{
+	name="Churcles"
+	culture="etruscan"
+}
+513000227=
+{
+	name="Churclian"
+	culture="etruscan"
+}
+513000228=
+{
+	name="Churinas"
+	culture="etruscan"
+}
+513000229=
+{
+	name="Churinei"
+	culture="etruscan"
+}
+513000230=
+{
+	name="Churinas"
+	culture="etruscan"
+}
+513000231=
+{
+	name="Churinian"
+	culture="etruscan"
+}
+513000232=
+{
+	name="Cicunias"
+	culture="etruscan"
+}
+513000233=
+{
+	name="Cicuniei"
+	culture="etruscan"
+}
+513000234=
+{
+	name="Cicunias"
+	culture="etruscan"
+}
+513000235=
+{
+	name="Cicunian"
+	culture="etruscan"
+}
+513000236=
+{
+	name="Cilnii"
+	culture="etruscan"
+}
+513000237=
+{
+	name="Cilnei"
+	culture="etruscan"
+}
+513000238=
+{
+	name="Cilnii"
+	culture="etruscan"
+}
+513000239=
+{
+	name="Cilnian"
+	culture="etruscan"
+}
+513000240=
+{
+	name="Cisvite"
+	culture="etruscan"
+}
+513000241=
+{
+	name="Cisviti"
+	culture="etruscan"
+}
+513000242=
+{
+	name="Cisvite"
+	culture="etruscan"
+}
+513000243=
+{
+	name="Cisvitian"
+	culture="etruscan"
+}
+513000244=
+{
+	name="Clute"
+	culture="etruscan"
+}
+513000245=
+{
+	name="Clutei"
+	culture="etruscan"
+}
+513000246=
+{
+	name="Clute"
+	culture="etruscan"
+}
+513000247=
+{
+	name="Clutian"
+	culture="etruscan"
+}
+513000248=
+{
+	name="Clavtiethur"
+	culture="etruscan"
+}
+513000249=
+{
+	name="Clavtiethuri"
+	culture="etruscan"
+}
+513000250=
+{
+	name="Clavtiethur"
+	culture="etruscan"
+}
+513000251=
+{
+	name="Clavtiethurian"
+	culture="etruscan"
+}
+513000252=
+{
+	name="Clevsinas"
+	culture="etruscan"
+}
+513000253=
+{
+	name="Clevsinei"
+	culture="etruscan"
+}
+513000254=
+{
+	name="Clevsinas"
+	culture="etruscan"
+}
+513000255=
+{
+	name="Clevsinian"
+	culture="etruscan"
+}
+513000256=
+{
+	name="Cneuna"
+	culture="etruscan"
+}
+513000257=
+{
+	name="Cneunei"
+	culture="etruscan"
+}
+513000258=
+{
+	name="Cneuna"
+	culture="etruscan"
+}
+513000259=
+{
+	name="Cneunian"
+	culture="etruscan"
+}
+513000260=
+{
+	name="Cravzathura"
+	culture="etruscan"
+}
+513000261=
+{
+	name="Cravzathurei"
+	culture="etruscan"
+}
+513000262=
+{
+	name="Cravzathura"
+	culture="etruscan"
+}
+513000263=
+{
+	name="Cravzathurian"
+	culture="etruscan"
+}
+513000264=
+{
+	name="Creicese"
+	culture="etruscan"
+}
+513000265=
+{
+	name="Creicesa"
+	culture="etruscan"
+}
+513000266=
+{
+	name="Creicese"
+	culture="etruscan"
+}
+513000267=
+{
+	name="Creicesian"
+	culture="etruscan"
+}
+513000268=
+{
+	name="Crepus"
+	culture="etruscan"
+}
+513000269=
+{
+	name="Crepui"
+	culture="etruscan"
+}
+513000270=
+{
+	name="Crepus"
+	culture="etruscan"
+}
+513000271=
+{
+	name="Crepian"
+	culture="etruscan"
+}
+513000272=
+{
+	name="Cuclni"
+	culture="etruscan"
+}
+513000273=
+{
+	name="Cuclni"
+	culture="etruscan"
+}
+513000274=
+{
+	name="Cuclni"
+	culture="etruscan"
+}
+513000275=
+{
+	name="Cuclinian"
+	culture="etruscan"
+}
+513000276=
+{
+	name="Cucrinathur"
+	culture="etruscan"
+}
+513000277=
+{
+	name="Cucrinathuri"
+	culture="etruscan"
+}
+513000278=
+{
+	name="Cucrinathur"
+	culture="etruscan"
+}
+513000279=
+{
+	name="Cucrinathurian"
+	culture="etruscan"
+}
+513000280=
+{
+	name="Curunas"
+	culture="etruscan"
+}
+513000281=
+{
+	name="Curunei"
+	culture="etruscan"
+}
+513000282=
+{
+	name="Curunas"
+	culture="etruscan"
+}
+513000283=
+{
+	name="Curunian"
+	culture="etruscan"
+}
+513000284=
+{
+	name="Cusinas"
+	culture="etruscan"
+}
+513000285=
+{
+	name="Cusinei"
+	culture="etruscan"
+}
+513000286=
+{
+	name="Cusinas"
+	culture="etruscan"
+}
+513000287=
+{
+	name="Cusinian"
+	culture="etruscan"
+}
+513000288=
+{
+	name="Cusuthur"
+	culture="etruscan"
+}
+513000289=
+{
+	name="Cusuthuri"
+	culture="etruscan"
+}
+513000290=
+{
+	name="Cusuthur"
+	culture="etruscan"
+}
+513000291=
+{
+	name="Cusuthurian"
+	culture="etruscan"
+}
+513000292=
+{
+	name="Cvinte"
+	culture="etruscan"
+}
+513000293=
+{
+	name="Cvinti"
+	culture="etruscan"
+}
+513000294=
+{
+	name="Cvinte"
+	culture="etruscan"
+}
+513000295=
+{
+	name="Cvintian"
+	culture="etruscan"
+}
+513000296=
+{
+	name="Cuthnas"
+	culture="etruscan"
+}
+513000297=
+{
+	name="Cuthnei"
+	culture="etruscan"
+}
+513000298=
+{
+	name="Cuthnas"
+	culture="etruscan"
+}
+513000299=
+{
+	name="Cuthnian"
+	culture="etruscan"
+}
+513000300=
+{
+	name="Cutu"
+	culture="etruscan"
+}
+513000301=
+{
+	name="Cutu"
+	culture="etruscan"
+}
+513000302=
+{
+	name="Cutu"
+	culture="etruscan"
+}
+513000303=
+{
+	name="Cute"
+	culture="etruscan"
+}
+513000304=
+{
+	name="Ecnate"
+	culture="etruscan"
+}
+513000305=
+{
+	name="Ecnati"
+	culture="etruscan"
+}
+513000306=
+{
+	name="Ecnate"
+	culture="etruscan"
+}
+513000307=
+{
+	name="Ecnatian"
+	culture="etruscan"
+}
+513000308=
+{
+	name="Einana"
+	culture="etruscan"
+}
+513000309=
+{
+	name="Einanei"
+	culture="etruscan"
+}
+513000310=
+{
+	name="Einana"
+	culture="etruscan"
+}
+513000311=
+{
+	name="Einanian"
+	culture="etruscan"
+}
+513000312=
+{
+	name="Eucle"
+	culture="etruscan"
+}
+513000313=
+{
+	name="Eucli"
+	culture="etruscan"
+}
+513000314=
+{
+	name="Eucle"
+	culture="etruscan"
+}
+513000315=
+{
+	name="Euclian"
+	culture="etruscan"
+}
+513000316=
+{
+	name="Ezpus"
+	culture="etruscan"
+}
+513000317=
+{
+	name="Ezpui"
+	culture="etruscan"
+}
+513000318=
+{
+	name="Ezpus"
+	culture="etruscan"
+}
+513000319=
+{
+	name="Ezpusian"
+	culture="etruscan"
+}
+513000320=
+{
+	name="Fapi"
+	culture="etruscan"
+}
+513000321=
+{
+	name="Fapi"
+	culture="etruscan"
+}
+513000322=
+{
+	name="Fapi"
+	culture="etruscan"
+}
+513000323=
+{
+	name="Fapian"
+	culture="etruscan"
+}
+513000324=
+{
+	name="Felces"
+	culture="etruscan"
+}
+513000325=
+{
+	name="Felcis"
+	culture="etruscan"
+}
+513000326=
+{
+	name="Felces"
+	culture="etruscan"
+}
+513000327=
+{
+	name="Felcian"
+	culture="etruscan"
+}
+513000328=
+{
+	name="Felsnas"
+	culture="etruscan"
+}
+513000329=
+{
+	name="Felsnei"
+	culture="etruscan"
+}
+513000330=
+{
+	name="Felsnas"
+	culture="etruscan"
+}
+513000331=
+{
+	name="Felsnasian"
+	culture="etruscan"
+}
+513000332=
+{
+	name="Felsni"
+	culture="etruscan"
+}
+513000333=
+{
+	name="Felsni"
+	culture="etruscan"
+}
+513000334=
+{
+	name="Felsni"
+	culture="etruscan"
+}
+513000335=
+{
+	name="Felsnian"
+	culture="etruscan"
+}
+513000336=
+{
+	name="Felusce"
+	culture="etruscan"
+}
+513000337=
+{
+	name="Felusci"
+	culture="etruscan"
+}
+513000338=
+{
+	name="Felusce"
+	culture="etruscan"
+}
+513000339=
+{
+	name="Feluscian"
+	culture="etruscan"
+}
+513000340=
+{
+	name="Fisis"
+	culture="etruscan"
+}
+513000341=
+{
+	name="Fisis"
+	culture="etruscan"
+}
+513000342=
+{
+	name="Fisis"
+	culture="etruscan"
+}
+513000343=
+{
+	name="Fisisian"
+	culture="etruscan"
+}
+513000344=
+{
+	name="Fulni"
+	culture="etruscan"
+}
+513000345=
+{
+	name="Fulni"
+	culture="etruscan"
+}
+513000346=
+{
+	name="Fulni"
+	culture="etruscan"
+}
+513000347=
+{
+	name="Fulnian"
+	culture="etruscan"
+}
+513000348=
+{
+	name="Fulu"
+	culture="etruscan"
+}
+513000349=
+{
+	name="Fului"
+	culture="etruscan"
+}
+513000350=
+{
+	name="Fulu"
+	culture="etruscan"
+}
+513000351=
+{
+	name="Fulian"
+	culture="etruscan"
+}
+513000352=
+{
+	name="Fulvena"
+	culture="etruscan"
+}
+513000353=
+{
+	name="Fulvenas"
+	culture="etruscan"
+}
+513000354=
+{
+	name="Fulvena"
+	culture="etruscan"
+}
+513000355=
+{
+	name="Fulvenian"
+	culture="etruscan"
+}
+513000356=
+{
+	name="Hanu"
+	culture="etruscan"
+}
+513000357=
+{
+	name="Hanunia"
+	culture="etruscan"
+}
+513000358=
+{
+	name="Hanu"
+	culture="etruscan"
+}
+513000359=
+{
+	name="Hanian"
+	culture="etruscan"
+}
+513000360=
+{
+	name="Hapisna"
+	culture="etruscan"
+}
+513000361=
+{
+	name="Hapisnei"
+	culture="etruscan"
+}
+513000362=
+{
+	name="Hapisna"
+	culture="etruscan"
+}
+513000363=
+{
+	name="Hapisnian"
+	culture="etruscan"
+}
+513000364=
+{
+	name="Hapre"
+	culture="etruscan"
+}
+513000365=
+{
+	name="Hapri"
+	culture="etruscan"
+}
+513000366=
+{
+	name="Hapre"
+	culture="etruscan"
+}
+513000367=
+{
+	name="Haprian"
+	culture="etruscan"
+}
+513000368=
+{
+	name="Hepni"
+	culture="etruscan"
+}
+513000369=
+{
+	name="Hepni"
+	culture="etruscan"
+}
+513000370=
+{
+	name="Hepni"
+	culture="etruscan"
+}
+513000371=
+{
+	name="Hepnian"
+	culture="etruscan"
+}
+513000372=
+{
+	name="Havrnas"
+	culture="etruscan"
+}
+513000373=
+{
+	name="Havrnei"
+	culture="etruscan"
+}
+513000374=
+{
+	name="Havrnas"
+	culture="etruscan"
+}
+513000375=
+{
+	name="Havrinian"
+	culture="etruscan"
+}
+513000376=
+{
+	name="Hele"
+	culture="etruscan"
+}
+513000377=
+{
+	name="Heli"
+	culture="etruscan"
+}
+513000378=
+{
+	name="Hele"
+	culture="etruscan"
+}
+513000379=
+{
+	name="Helian"
+	culture="etruscan"
+}
+513000380=
+{
+	name="Hercnas"
+	culture="etruscan"
+}
+513000381=
+{
+	name="Hercnei"
+	culture="etruscan"
+}
+513000382=
+{
+	name="Hercnas"
+	culture="etruscan"
+}
+513000383=
+{
+	name="Hercnasian"
+	culture="etruscan"
+}
+513000384=
+{
+	name="Herma"
+	culture="etruscan"
+}
+513000385=
+{
+	name="Hermei"
+	culture="etruscan"
+}
+513000386=
+{
+	name="Herma"
+	culture="etruscan"
+}
+513000387=
+{
+	name="Hermian"
+	culture="etruscan"
+}
+513000388=
+{
+	name="Hermenas"
+	culture="etruscan"
+}
+513000389=
+{
+	name="Hermenei"
+	culture="etruscan"
+}
+513000390=
+{
+	name="Hermenas"
+	culture="etruscan"
+}
+513000391=
+{
+	name="Hermenian"
+	culture="etruscan"
+}
+513000392=
+{
+	name="Hirsuneie"
+	culture="etruscan"
+}
+513000393=
+{
+	name="Hirsuneia"
+	culture="etruscan"
+}
+513000394=
+{
+	name="Hirsuneie"
+	culture="etruscan"
+}
+513000395=
+{
+	name="Hirsnusian"
+	culture="etruscan"
+}
+513000396=
+{
+	name="Hulchnie"
+	culture="etruscan"
+}
+513000397=
+{
+	name="Hulchnia"
+	culture="etruscan"
+}
+513000398=
+{
+	name="Hulchnie"
+	culture="etruscan"
+}
+513000399=
+{
+	name="Hulchnian"
+	culture="etruscan"
+}
+513000400=
+{
+	name="Hupni"
+	culture="etruscan"
+}
+513000401=
+{
+	name="Hupni"
+	culture="etruscan"
+}
+513000402=
+{
+	name="Hupni"
+	culture="etruscan"
+}
+513000403=
+{
+	name="Hupnid"
+	culture="etruscan"
+}
+513000404=
+{
+	name="Ceicna"
+	culture="etruscan"
+}
+513000405=
+{
+	name="Ceicnei"
+	culture="etruscan"
+}
+513000406=
+{
+	name="Ceicna"
+	culture="etruscan"
+}
+513000407=
+{
+	name="Ceicnian"
+	culture="etruscan"
+}
+513000408=
+{
+	name="Cansinei"
+	culture="etruscan"
+}
+513000409=
+{
+	name="Cansineie"
+	culture="etruscan"
+}
+513000410=
+{
+	name="Cansinei"
+	culture="etruscan"
+}
+513000411=
+{
+	name="Cansinian"
+	culture="etruscan"
+}
+513000412=
+{
+	name="Culeniie"
+	culture="etruscan"
+}
+513000413=
+{
+	name="Culeniia"
+	culture="etruscan"
+}
+513000414=
+{
+	name="Culeniie"
+	culture="etruscan"
+}
+513000415=
+{
+	name="Culenian"
+	culture="etruscan"
+}
+513000416=
+{
+	name="Curtinas"
+	culture="etruscan"
+}
+513000417=
+{
+	name="Curtinei"
+	culture="etruscan"
+}
+513000418=
+{
+	name="Curtinas"
+	culture="etruscan"
+}
+513000419=
+{
+	name="Curtinian"
+	culture="etruscan"
+}
+513000420=
+{
+	name="Lapicane"
+	culture="etruscan"
+}
+513000421=
+{
+	name="Lapicani"
+	culture="etruscan"
+}
+513000422=
+{
+	name="Lapicane"
+	culture="etruscan"
+}
+513000423=
+{
+	name="Lapicanian"
+	culture="etruscan"
+}
+513000424=
+{
+	name="Larani"
+	culture="etruscan"
+}
+513000425=
+{
+	name="Larani"
+	culture="etruscan"
+}
+513000426=
+{
+	name="Larani"
+	culture="etruscan"
+}
+513000427=
+{
+	name="Laranian"
+	culture="etruscan"
+}
+513000428=
+{
+	name="Larecena"
+	culture="etruscan"
+}
+513000429=
+{
+	name="Larecenei"
+	culture="etruscan"
+}
+513000430=
+{
+	name="Larecena"
+	culture="etruscan"
+}
+513000431=
+{
+	name="Larecinian"
+	culture="etruscan"
+}
+513000432=
+{
+	name="Larna"
+	culture="etruscan"
+}
+513000433=
+{
+	name="Larnei"
+	culture="etruscan"
+}
+513000434=
+{
+	name="Larna"
+	culture="etruscan"
+}
+513000435=
+{
+	name="Larnian"
+	culture="etruscan"
+}
+513000436=
+{
+	name="Lucina"
+	culture="etruscan"
+}
+513000437=
+{
+	name="Lucinei"
+	culture="etruscan"
+}
+513000438=
+{
+	name="Lucina"
+	culture="etruscan"
+}
+513000439=
+{
+	name="Lucinian"
+	culture="etruscan"
+}
+513000440=
+{
+	name="Larecena"
+	culture="etruscan"
+}
+513000441=
+{
+	name="Larecenei"
+	culture="etruscan"
+}
+513000442=
+{
+	name="Larecena"
+	culture="etruscan"
+}
+513000443=
+{
+	name="Larecinian"
+	culture="etruscan"
+}
+513000444=
+{
+	name="Lartle"
+	culture="etruscan"
+}
+513000445=
+{
+	name="Lartli"
+	culture="etruscan"
+}
+513000446=
+{
+	name="Lartle"
+	culture="etruscan"
+}
+513000447=
+{
+	name="Lartlian"
+	culture="etruscan"
+}
+513000448=
+{
+	name="Latherna"
+	culture="etruscan"
+}
+513000449=
+{
+	name="Lathernei"
+	culture="etruscan"
+}
+513000450=
+{
+	name="Latherna"
+	culture="etruscan"
+}
+513000451=
+{
+	name="Lathernian"
+	culture="etruscan"
+}
+513000452=
+{
+	name="Latni"
+	culture="etruscan"
+}
+513000453=
+{
+	name="Latni"
+	culture="etruscan"
+}
+513000454=
+{
+	name="Latni"
+	culture="etruscan"
+}
+513000455=
+{
+	name="Latnian"
+	culture="etruscan"
+}
+513000456=
+{
+	name="Leinies"
+	culture="etruscan"
+}
+513000457=
+{
+	name="Leinia"
+	culture="etruscan"
+}
+513000458=
+{
+	name="Leinies"
+	culture="etruscan"
+}
+513000459=
+{
+	name="Leinisian"
+	culture="etruscan"
+}
+513000460=
+{
+	name="Lethe"
+	culture="etruscan"
+}
+513000461=
+{
+	name="Lethi"
+	culture="etruscan"
+}
+513000462=
+{
+	name="Lethe"
+	culture="etruscan"
+}
+513000463=
+{
+	name="Lethian"
+	culture="etruscan"
+}
+513000464=
+{
+	name="Luisna"
+	culture="etruscan"
+}
+513000465=
+{
+	name="Luisnei"
+	culture="etruscan"
+}
+513000466=
+{
+	name="Luisna"
+	culture="etruscan"
+}
+513000467=
+{
+	name="Luisnian"
+	culture="etruscan"
+}
+513000468=
+{
+	name="Macre"
+	culture="etruscan"
+}
+513000469=
+{
+	name="Macri"
+	culture="etruscan"
+}
+513000470=
+{
+	name="Macre"
+	culture="etruscan"
+}
+513000471=
+{
+	name="Macrian"
+	culture="etruscan"
+}
+513000472=
+{
+	name="Malamena"
+	culture="etruscan"
+}
+513000473=
+{
+	name="Malamenas"
+	culture="etruscan"
+}
+513000474=
+{
+	name="Malamena"
+	culture="etruscan"
+}
+513000475=
+{
+	name="Malamenian"
+	culture="etruscan"
+}
+513000476=
+{
+	name="Marcna"
+	culture="etruscan"
+}
+513000477=
+{
+	name="Marcnei"
+	culture="etruscan"
+}
+513000478=
+{
+	name="Marcna"
+	culture="etruscan"
+}
+513000479=
+{
+	name="Marcnid"
+	culture="etruscan"
+}
+513000480=
+{
+	name="Marcnithur"
+	culture="etruscan"
+}
+513000481=
+{
+	name="Marcnithuri"
+	culture="etruscan"
+}
+513000482=
+{
+	name="Marcnithur"
+	culture="etruscan"
+}
+513000483=
+{
+	name="Marcnithurian"
+	culture="etruscan"
+}
+513000484=
+{
+	name="Matulna"
+	culture="etruscan"
+}
+513000485=
+{
+	name="Matulnei"
+	culture="etruscan"
+}
+513000486=
+{
+	name="Matulna"
+	culture="etruscan"
+}
+513000487=
+{
+	name="Matulnid"
+	culture="etruscan"
+}
+513000488=
+{
+	name="Mutunas"
+	culture="etruscan"
+}
+513000489=
+{
+	name="Matunei"
+	culture="etruscan"
+}
+513000490=
+{
+	name="Mutunas"
+	culture="etruscan"
+}
+513000491=
+{
+	name="Mutunid"
+	culture="etruscan"
+}
+513000492=
+{
+	name="Meclas"
+	culture="etruscan"
+}
+513000493=
+{
+	name="Meclei"
+	culture="etruscan"
+}
+513000494=
+{
+	name="Meclas"
+	culture="etruscan"
+}
+513000495=
+{
+	name="Meclid"
+	culture="etruscan"
+}
+513000496=
+{
+	name="Mefanates"
+	culture="etruscan"
+}
+513000497=
+{
+	name="Mefanatis"
+	culture="etruscan"
+}
+513000498=
+{
+	name="Mefanates"
+	culture="etruscan"
+}
+513000499=
+{
+	name="Mefanatian"
+	culture="etruscan"
+}
+513000500=
+{
+	name="Melacina"
+	culture="etruscan"
+}
+513000501=
+{
+	name="Melacinei"
+	culture="etruscan"
+}
+513000502=
+{
+	name="Melacina"
+	culture="etruscan"
+}
+513000503=
+{
+	name="Malacinian"
+	culture="etruscan"
+}
+513000504=
+{
+	name="Meluta"
+	culture="etruscan"
+}
+513000505=
+{
+	name="Melutei"
+	culture="etruscan"
+}
+513000506=
+{
+	name="Meluta"
+	culture="etruscan"
+}
+513000507=
+{
+	name="Melutid"
+	culture="etruscan"
+}
+513000508=
+{
+	name="Metle"
+	culture="etruscan"
+}
+513000509=
+{
+	name="Metli"
+	culture="etruscan"
+}
+513000510=
+{
+	name="Metle"
+	culture="etruscan"
+}
+513000511=
+{
+	name="Metlid"
+	culture="etruscan"
+}
+513000512=
+{
+	name="Minie"
+	culture="etruscan"
+}
+513000513=
+{
+	name="Minia"
+	culture="etruscan"
+}
+513000514=
+{
+	name="Minie"
+	culture="etruscan"
+}
+513000515=
+{
+	name="Minian"
+	culture="etruscan"
+}
+513000516=
+{
+	name="Murias"
+	culture="etruscan"
+}
+513000517=
+{
+	name="Murei"
+	culture="etruscan"
+}
+513000518=
+{
+	name="Murias"
+	culture="etruscan"
+}
+513000519=
+{
+	name="Murian"
+	culture="etruscan"
+}
+513000520=
+{
+	name="Murinas"
+	culture="etruscan"
+}
+513000521=
+{
+	name="Murinei"
+	culture="etruscan"
+}
+513000522=
+{
+	name="Murinas"
+	culture="etruscan"
+}
+513000523=
+{
+	name="Murinid"
+	culture="etruscan"
+}
+513000524=
+{
+	name="Nerinei"
+	culture="etruscan"
+}
+513000525=
+{
+	name="Nerineie"
+	culture="etruscan"
+}
+513000526=
+{
+	name="Nerinei"
+	culture="etruscan"
+}
+513000527=
+{
+	name="Nereinian"
+	culture="etruscan"
+}
+513000528=
+{
+	name="Ninie"
+	culture="etruscan"
+}
+513000529=
+{
+	name="Ninia"
+	culture="etruscan"
+}
+513000530=
+{
+	name="Ninie"
+	culture="etruscan"
+}
+513000531=
+{
+	name="Ninian"
+	culture="etruscan"
+}
+513000532=
+{
+	name="Nuiclnas"
+	culture="etruscan"
+}
+513000533=
+{
+	name="Nuiclnei"
+	culture="etruscan"
+}
+513000534=
+{
+	name="Nuiclnas"
+	culture="etruscan"
+}
+513000535=
+{
+	name="Nuiclian"
+	culture="etruscan"
+}
+513000536=
+{
+	name="Numclanie"
+	culture="etruscan"
+}
+513000537=
+{
+	name="Numclania"
+	culture="etruscan"
+}
+513000538=
+{
+	name="Numclanie"
+	culture="etruscan"
+}
+513000539=
+{
+	name="Numclanid"
+	culture="etruscan"
+}
+513000540=
+{
+	name="Numnas"
+	culture="etruscan"
+}
+513000541=
+{
+	name="Numnei"
+	culture="etruscan"
+}
+513000542=
+{
+	name="Numnas"
+	culture="etruscan"
+}
+513000543=
+{
+	name="Numnid"
+	culture="etruscan"
+}
+513000544=
+{
+	name="Nuni"
+	culture="etruscan"
+}
+513000545=
+{
+	name="Nuni"
+	culture="etruscan"
+}
+513000546=
+{
+	name="Nuni"
+	culture="etruscan"
+}
+513000547=
+{
+	name="Nunian"
+	culture="etruscan"
+}
+513000548=
+{
+	name="Nufre"
+	culture="etruscan"
+}
+513000549=
+{
+	name="Nufri"
+	culture="etruscan"
+}
+513000550=
+{
+	name="Nufre"
+	culture="etruscan"
+}
+513000551=
+{
+	name="Nufrian"
+	culture="etruscan"
+}
+513000552=
+{
+	name="Pachie"
+	culture="etruscan"
+}
+513000553=
+{
+	name="Pachia"
+	culture="etruscan"
+}
+513000554=
+{
+	name="Pachie"
+	culture="etruscan"
+}
+513000555=
+{
+	name="Pachid"
+	culture="etruscan"
+}
+513000556=
+{
+	name="Peithunas"
+	culture="etruscan"
+}
+513000557=
+{
+	name="Peithunei"
+	culture="etruscan"
+}
+513000558=
+{
+	name="Peithunas"
+	culture="etruscan"
+}
+513000559=
+{
+	name="Peithunid"
+	culture="etruscan"
+}
+513000560=
+{
+	name="Palazus"
+	culture="etruscan"
+}
+513000561=
+{
+	name="Palazui"
+	culture="etruscan"
+}
+513000562=
+{
+	name="Palazus"
+	culture="etruscan"
+}
+513000563=
+{
+	name="Palazusian"
+	culture="etruscan"
+}
+513000564=
+{
+	name="Paprsina"
+	culture="etruscan"
+}
+513000565=
+{
+	name="Paprsinei"
+	culture="etruscan"
+}
+513000566=
+{
+	name="Paprsina"
+	culture="etruscan"
+}
+513000567=
+{
+	name="Paprsinid"
+	culture="etruscan"
+}
+513000568=
+{
+	name="Papathnas"
+	culture="etruscan"
+}
+513000569=
+{
+	name="Papathnei"
+	culture="etruscan"
+}
+513000570=
+{
+	name="Papathnas"
+	culture="etruscan"
+}
+513000571=
+{
+	name="Papathnid"
+	culture="etruscan"
+}
+513000572=
+{
+	name="Papni"
+	culture="etruscan"
+}
+513000573=
+{
+	name="Papni"
+	culture="etruscan"
+}
+513000574=
+{
+	name="Papni"
+	culture="etruscan"
+}
+513000575=
+{
+	name="Papnid"
+	culture="etruscan"
+}
+513000576=
+{
+	name="Parmne"
+	culture="etruscan"
+}
+513000577=
+{
+	name="Parmni"
+	culture="etruscan"
+}
+513000578=
+{
+	name="Parmne"
+	culture="etruscan"
+}
+513000579=
+{
+	name="Paramnian"
+	culture="etruscan"
+}
+513000580=
+{
+	name="Partunus"
+	culture="etruscan"
+}
+513000581=
+{
+	name="Partunui"
+	culture="etruscan"
+}
+513000582=
+{
+	name="Partunus"
+	culture="etruscan"
+}
+513000583=
+{
+	name="Partunid"
+	culture="etruscan"
+}
+513000584=
+{
+	name="Paziathe"
+	culture="etruscan"
+}
+513000585=
+{
+	name="Paziathi"
+	culture="etruscan"
+}
+513000586=
+{
+	name="Paziathe"
+	culture="etruscan"
+}
+513000587=
+{
+	name="Paziathid"
+	culture="etruscan"
+}
+513000588=
+{
+	name="Percumsna"
+	culture="etruscan"
+}
+513000589=
+{
+	name="Percumsnei"
+	culture="etruscan"
+}
+513000590=
+{
+	name="Percumsna"
+	culture="etruscan"
+}
+513000591=
+{
+	name="Percumid"
+	culture="etruscan"
+}
+513000592=
+{
+	name="Petrnii"
+	culture="etruscan"
+}
+513000593=
+{
+	name="Petrnei"
+	culture="etruscan"
+}
+513000594=
+{
+	name="Petrnii"
+	culture="etruscan"
+}
+513000595=
+{
+	name="Petrnid"
+	culture="etruscan"
+}
+513000596=
+{
+	name="Phersnalas"
+	culture="etruscan"
+}
+513000597=
+{
+	name="Phersnalei"
+	culture="etruscan"
+}
+513000598=
+{
+	name="Phersnalas"
+	culture="etruscan"
+}
+513000599=
+{
+	name="Phersnalid"
+	culture="etruscan"
+}
+513000600=
+{
+	name="Phursethna"
+	culture="etruscan"
+}
+513000601=
+{
+	name="Phursethnei"
+	culture="etruscan"
+}
+513000602=
+{
+	name="Phursethna"
+	culture="etruscan"
+}
+513000603=
+{
+	name="Phursethid"
+	culture="etruscan"
+}
+513000604=
+{
+	name="Pinies"
+	culture="etruscan"
+}
+513000605=
+{
+	name="Pinia"
+	culture="etruscan"
+}
+513000606=
+{
+	name="Pinies"
+	culture="etruscan"
+}
+513000607=
+{
+	name="Pinian"
+	culture="etruscan"
+}
+513000608=
+{
+	name="Pithe"
+	culture="etruscan"
+}
+513000609=
+{
+	name="Pithi"
+	culture="etruscan"
+}
+513000610=
+{
+	name="Pithe"
+	culture="etruscan"
+}
+513000611=
+{
+	name="Pithid"
+	culture="etruscan"
+}
+513000612=
+{
+	name="Platia"
+	culture="etruscan"
+}
+513000613=
+{
+	name="Platiei"
+	culture="etruscan"
+}
+513000614=
+{
+	name="Platia"
+	culture="etruscan"
+}
+513000615=
+{
+	name="Platian"
+	culture="etruscan"
+}
+513000616=
+{
+	name="Plute"
+	culture="etruscan"
+}
+513000617=
+{
+	name="Pluti"
+	culture="etruscan"
+}
+513000618=
+{
+	name="Plute"
+	culture="etruscan"
+}
+513000619=
+{
+	name="Plutian"
+	culture="etruscan"
+}
+513000620=
+{
+	name="Plecus"
+	culture="etruscan"
+}
+513000621=
+{
+	name="Plecui"
+	culture="etruscan"
+}
+513000622=
+{
+	name="Plecus"
+	culture="etruscan"
+}
+513000623=
+{
+	name="Plecid"
+	culture="etruscan"
+}
+513000624=
+{
+	name="Plinia"
+	culture="etruscan"
+}
+513000625=
+{
+	name="Pliniei"
+	culture="etruscan"
+}
+513000626=
+{
+	name="Plinia"
+	culture="etruscan"
+}
+513000627=
+{
+	name="Plinian"
+	culture="etruscan"
+}
+513000628=
+{
+	name="Prastna"
+	culture="etruscan"
+}
+513000629=
+{
+	name="Prastnei"
+	culture="etruscan"
+}
+513000630=
+{
+	name="Prastna"
+	culture="etruscan"
+}
+513000631=
+{
+	name="Prastnid"
+	culture="etruscan"
+}
+513000632=
+{
+	name="Precuthur"
+	culture="etruscan"
+}
+513000633=
+{
+	name="Precuthuri"
+	culture="etruscan"
+}
+513000634=
+{
+	name="Precuthur"
+	culture="etruscan"
+}
+513000635=
+{
+	name="Precuthurian"
+	culture="etruscan"
+}
+513000636=
+{
+	name="Presnte"
+	culture="etruscan"
+}
+513000637=
+{
+	name="Presnti"
+	culture="etruscan"
+}
+513000638=
+{
+	name="Presnte"
+	culture="etruscan"
+}
+513000639=
+{
+	name="Presntid"
+	culture="etruscan"
+}
+513000640=
+{
+	name="Puince"
+	culture="etruscan"
+}
+513000641=
+{
+	name="Puinci"
+	culture="etruscan"
+}
+513000642=
+{
+	name="Puince"
+	culture="etruscan"
+}
+513000643=
+{
+	name="Puincian"
+	culture="etruscan"
+}
+513000644=
+{
+	name="Pulenas"
+	culture="etruscan"
+}
+513000645=
+{
+	name="Pulenei"
+	culture="etruscan"
+}
+513000646=
+{
+	name="Pulenas"
+	culture="etruscan"
+}
+513000647=
+{
+	name="Pulenian"
+	culture="etruscan"
+}
+513000648=
+{
+	name="Pumpli"
+	culture="etruscan"
+}
+513000649=
+{
+	name="Pumpli"
+	culture="etruscan"
+}
+513000650=
+{
+	name="Pumpli"
+	culture="etruscan"
+}
+513000651=
+{
+	name="Pumplid"
+	culture="etruscan"
+}
+513000652=
+{
+	name="Pumpna"
+	culture="etruscan"
+}
+513000653=
+{
+	name="Pumpnei"
+	culture="etruscan"
+}
+513000654=
+{
+	name="Pumpna"
+	culture="etruscan"
+}
+513000655=
+{
+	name="Pumpnid"
+	culture="etruscan"
+}
+513000656=
+{
+	name="Pumpus"
+	culture="etruscan"
+}
+513000657=
+{
+	name="Pumpui"
+	culture="etruscan"
+}
+513000658=
+{
+	name="Pumpus"
+	culture="etruscan"
+}
+513000659=
+{
+	name="Pumpid"
+	culture="etruscan"
+}
+513000660=
+{
+	name="Pupena"
+	culture="etruscan"
+}
+513000661=
+{
+	name="Pupena"
+	culture="etruscan"
+}
+513000662=
+{
+	name="Pupena"
+	culture="etruscan"
+}
+513000663=
+{
+	name="Pupenian"
+	culture="etruscan"
+}
+513000664=
+{
+	name="Puplina"
+	culture="etruscan"
+}
+513000665=
+{
+	name="Puplinei"
+	culture="etruscan"
+}
+513000666=
+{
+	name="Puplina"
+	culture="etruscan"
+}
+513000667=
+{
+	name="Puplinian"
+	culture="etruscan"
+}
+513000668=
+{
+	name="Purni"
+	culture="etruscan"
+}
+513000669=
+{
+	name="Purni"
+	culture="etruscan"
+}
+513000670=
+{
+	name="Purni"
+	culture="etruscan"
+}
+513000671=
+{
+	name="Purnid"
+	culture="etruscan"
+}
+513000672=
+{
+	name="Purzena"
+	culture="etruscan"
+}
+513000673=
+{
+	name="Purzenei"
+	culture="etruscan"
+}
+513000674=
+{
+	name="Purzena"
+	culture="etruscan"
+}
+513000675=
+{
+	name="Purzenian"
+	culture="etruscan"
+}
+513000676=
+{
+	name="Puslina"
+	culture="etruscan"
+}
+513000677=
+{
+	name="Puslinei"
+	culture="etruscan"
+}
+513000678=
+{
+	name="Puslina"
+	culture="etruscan"
+}
+513000679=
+{
+	name="Puslenian"
+	culture="etruscan"
+}
+513000680=
+{
+	name="Pustmina"
+	culture="etruscan"
+}
+513000681=
+{
+	name="Pustminei"
+	culture="etruscan"
+}
+513000682=
+{
+	name="Pustmina"
+	culture="etruscan"
+}
+513000683=
+{
+	name="Pustminian"
+	culture="etruscan"
+}
+513000684=
+{
+	name="Rufi"
+	culture="etruscan"
+}
+513000685=
+{
+	name="Rufi"
+	culture="etruscan"
+}
+513000686=
+{
+	name="Rufi"
+	culture="etruscan"
+}
+513000687=
+{
+	name="Rufid"
+	culture="etruscan"
+}
+513000688=
+{
+	name="Ramnuna"
+	culture="etruscan"
+}
+513000689=
+{
+	name="Ramnunei"
+	culture="etruscan"
+}
+513000690=
+{
+	name="Ramnuna"
+	culture="etruscan"
+}
+513000691=
+{
+	name="Ramnunian"
+	culture="etruscan"
+}
+513000692=
+{
+	name="Ranazu"
+	culture="etruscan"
+}
+513000693=
+{
+	name="Ranazuia"
+	culture="etruscan"
+}
+513000694=
+{
+	name="Ranazu"
+	culture="etruscan"
+}
+513000695=
+{
+	name="Ranazunian"
+	culture="etruscan"
+}
+513000696=
+{
+	name="Rasunies"
+	culture="etruscan"
+}
+513000697=
+{
+	name="Rasunia"
+	culture="etruscan"
+}
+513000698=
+{
+	name="Rasunies"
+	culture="etruscan"
+}
+513000699=
+{
+	name="Rasunian"
+	culture="etruscan"
+}
+513000700=
+{
+	name="Remzna"
+	culture="etruscan"
+}
+513000701=
+{
+	name="Remznei"
+	culture="etruscan"
+}
+513000702=
+{
+	name="Remzna"
+	culture="etruscan"
+}
+513000703=
+{
+	name="Remznid"
+	culture="etruscan"
+}
+513000704=
+{
+	name="Riertu"
+	culture="etruscan"
+}
+513000705=
+{
+	name="Riertui"
+	culture="etruscan"
+}
+513000706=
+{
+	name="Riertu"
+	culture="etruscan"
+}
+513000707=
+{
+	name="Riertunian"
+	culture="etruscan"
+}
+513000708=
+{
+	name="Rufres"
+	culture="etruscan"
+}
+513000709=
+{
+	name="Rufris"
+	culture="etruscan"
+}
+513000710=
+{
+	name="Rufres"
+	culture="etruscan"
+}
+513000711=
+{
+	name="Rufrid"
+	culture="etruscan"
+}
+513000712=
+{
+	name="Rusci"
+	culture="etruscan"
+}
+513000713=
+{
+	name="Rusci"
+	culture="etruscan"
+}
+513000714=
+{
+	name="Rusci"
+	culture="etruscan"
+}
+513000715=
+{
+	name="Ruscid"
+	culture="etruscan"
+}
+513000716=
+{
+	name="Santu"
+	culture="etruscan"
+}
+513000717=
+{
+	name="Santui"
+	culture="etruscan"
+}
+513000718=
+{
+	name="Santu"
+	culture="etruscan"
+}
+513000719=
+{
+	name="Santid"
+	culture="etruscan"
+}
+513000720=
+{
+	name="Safice"
+	culture="etruscan"
+}
+513000721=
+{
+	name="Safici"
+	culture="etruscan"
+}
+513000722=
+{
+	name="Safice"
+	culture="etruscan"
+}
+513000723=
+{
+	name="Saficinian"
+	culture="etruscan"
+}
+513000724=
+{
+	name="Salini"
+	culture="etruscan"
+}
+513000725=
+{
+	name="Salini"
+	culture="etruscan"
+}
+513000726=
+{
+	name="Salini"
+	culture="etruscan"
+}
+513000727=
+{
+	name="Salinian"
+	culture="etruscan"
+}
+513000728=
+{
+	name="Saties"
+	culture="etruscan"
+}
+513000729=
+{
+	name="Satia"
+	culture="etruscan"
+}
+513000730=
+{
+	name="Saties"
+	culture="etruscan"
+}
+513000731=
+{
+	name="Satinian"
+	culture="etruscan"
+}
+513000732=
+{
+	name="Satlna"
+	culture="etruscan"
+}
+513000733=
+{
+	name="Satlnei"
+	culture="etruscan"
+}
+513000734=
+{
+	name="Satlna"
+	culture="etruscan"
+}
+513000735=
+{
+	name="Satlnid"
+	culture="etruscan"
+}
+513000736=
+{
+	name="Savpunias"
+	culture="etruscan"
+}
+513000737=
+{
+	name="Savpuniei"
+	culture="etruscan"
+}
+513000738=
+{
+	name="Savpunias"
+	culture="etruscan"
+}
+513000739=
+{
+	name="Savpunid"
+	culture="etruscan"
+}
+513000740=
+{
+	name="Scevas"
+	culture="etruscan"
+}
+513000741=
+{
+	name="Scevei"
+	culture="etruscan"
+}
+513000742=
+{
+	name="Scevas"
+	culture="etruscan"
+}
+513000743=
+{
+	name="Scevid"
+	culture="etruscan"
+}
+513000744=
+{
+	name="Scurfiu"
+	culture="etruscan"
+}
+513000745=
+{
+	name="Scurfiui"
+	culture="etruscan"
+}
+513000746=
+{
+	name="Scurfiu"
+	culture="etruscan"
+}
+513000747=
+{
+	name="Scurfid"
+	culture="etruscan"
+}
+513000748=
+{
+	name="Sefre"
+	culture="etruscan"
+}
+513000749=
+{
+	name="Sefri"
+	culture="etruscan"
+}
+513000750=
+{
+	name="Sefre"
+	culture="etruscan"
+}
+513000751=
+{
+	name="Sefrid"
+	culture="etruscan"
+}
+513000752=
+{
+	name="Seiante"
+	culture="etruscan"
+}
+513000753=
+{
+	name="Seianti"
+	culture="etruscan"
+}
+513000754=
+{
+	name="Seiante"
+	culture="etruscan"
+}
+513000755=
+{
+	name="Seiantid"
+	culture="etruscan"
+}
+513000756=
+{
+	name="Seitithe"
+	culture="etruscan"
+}
+513000757=
+{
+	name="Seitithi"
+	culture="etruscan"
+}
+513000758=
+{
+	name="Seitithe"
+	culture="etruscan"
+}
+513000759=
+{
+	name="Seitithid"
+	culture="etruscan"
+}
+513000760=
+{
+	name="Semne"
+	culture="etruscan"
+}
+513000761=
+{
+	name="Semni"
+	culture="etruscan"
+}
+513000762=
+{
+	name="Semne"
+	culture="etruscan"
+}
+513000763=
+{
+	name="Semnid"
+	culture="etruscan"
+}
+513000764=
+{
+	name="Sentinate"
+	culture="etruscan"
+}
+513000765=
+{
+	name="Sentinei"
+	culture="etruscan"
+}
+513000766=
+{
+	name="Sentinate"
+	culture="etruscan"
+}
+513000767=
+{
+	name="Sentinatid"
+	culture="etruscan"
+}
+513000768=
+{
+	name="Sepu"
+	culture="etruscan"
+}
+513000769=
+{
+	name="Sepia"
+	culture="etruscan"
+}
+513000770=
+{
+	name="Sepu"
+	culture="etruscan"
+}
+513000771=
+{
+	name="Sepid"
+	culture="etruscan"
+}
+513000772=
+{
+	name="Sethre"
+	culture="etruscan"
+}
+513000773=
+{
+	name="Sethra"
+	culture="etruscan"
+}
+513000774=
+{
+	name="Sethre"
+	culture="etruscan"
+}
+513000775=
+{
+	name="Sethrid"
+	culture="etruscan"
+}
+513000776=
+{
+	name="Silgatana"
+	culture="etruscan"
+}
+513000777=
+{
+	name="Silgatanei"
+	culture="etruscan"
+}
+513000778=
+{
+	name="Silgatana"
+	culture="etruscan"
+}
+513000779=
+{
+	name="Silgatanian"
+	culture="etruscan"
+}
+513000780=
+{
+	name="Sinu"
+	culture="etruscan"
+}
+513000781=
+{
+	name="Sinui"
+	culture="etruscan"
+}
+513000782=
+{
+	name="Sinu"
+	culture="etruscan"
+}
+513000783=
+{
+	name="Sinid"
+	culture="etruscan"
+}
+513000784=
+{
+	name="Siprisni"
+	culture="etruscan"
+}
+513000785=
+{
+	name="Siprisni"
+	culture="etruscan"
+}
+513000786=
+{
+	name="Siprisni"
+	culture="etruscan"
+}
+513000787=
+{
+	name="Siprisnian"
+	culture="etruscan"
+}
+513000788=
+{
+	name="Slanzu"
+	culture="etruscan"
+}
+513000789=
+{
+	name="Slanzui"
+	culture="etruscan"
+}
+513000790=
+{
+	name="Slanzu"
+	culture="etruscan"
+}
+513000791=
+{
+	name="Slanzid"
+	culture="etruscan"
+}
+513000792=
+{
+	name="Spantu"
+	culture="etruscan"
+}
+513000793=
+{
+	name="Spantui"
+	culture="etruscan"
+}
+513000794=
+{
+	name="Spantu"
+	culture="etruscan"
+}
+513000795=
+{
+	name="Spantid"
+	culture="etruscan"
+}
+513000796=
+{
+	name="Spite"
+	culture="etruscan"
+}
+513000797=
+{
+	name="Spiti"
+	culture="etruscan"
+}
+513000798=
+{
+	name="Spite"
+	culture="etruscan"
+}
+513000799=
+{
+	name="Spitid"
+	culture="etruscan"
+}
+513000800=
+{
+	name="Spurinas"
+	culture="etruscan"
+}
+513000801=
+{
+	name="Spurina"
+	culture="etruscan"
+}
+513000802=
+{
+	name="Spurinas"
+	culture="etruscan"
+}
+513000803=
+{
+	name="Spurinian"
+	culture="etruscan"
+}
+513000804=
+{
+	name="Srutzna"
+	culture="etruscan"
+}
+513000805=
+{
+	name="Srutznei"
+	culture="etruscan"
+}
+513000806=
+{
+	name="Srutzna"
+	culture="etruscan"
+}
+513000807=
+{
+	name="Srutznid"
+	culture="etruscan"
+}
+513000808=
+{
+	name="Statlanes"
+	culture="etruscan"
+}
+513000809=
+{
+	name="Statlanis"
+	culture="etruscan"
+}
+513000810=
+{
+	name="Statlanes"
+	culture="etruscan"
+}
+513000811=
+{
+	name="Statlanian"
+	culture="etruscan"
+}
+513000812=
+{
+	name="Supelnas"
+	culture="etruscan"
+}
+513000813=
+{
+	name="Supelnei"
+	culture="etruscan"
+}
+513000814=
+{
+	name="Supelnas"
+	culture="etruscan"
+}
+513000815=
+{
+	name="Supelnid"
+	culture="etruscan"
+}
+513000816=
+{
+	name="Suthrina"
+	culture="etruscan"
+}
+513000817=
+{
+	name="Surthinei"
+	culture="etruscan"
+}
+513000818=
+{
+	name="Suthrina"
+	culture="etruscan"
+}
+513000819=
+{
+	name="Suthrinian"
+	culture="etruscan"
+}
+513000820=
+{
+	name="Sveitus"
+	culture="etruscan"
+}
+513000821=
+{
+	name="Sveitui"
+	culture="etruscan"
+}
+513000822=
+{
+	name="Sveitus"
+	culture="etruscan"
+}
+513000823=
+{
+	name="Sveitid"
+	culture="etruscan"
+}
+513000824=
+{
+	name="Svelthienas"
+	culture="etruscan"
+}
+513000825=
+{
+	name="Svelthienei"
+	culture="etruscan"
+}
+513000826=
+{
+	name="Svelthienas"
+	culture="etruscan"
+}
+513000827=
+{
+	name="Svelthinian"
+	culture="etruscan"
+}
+513000828=
+{
+	name="Tarchunies"
+	culture="etruscan"
+}
+513000829=
+{
+	name="Tarchunia"
+	culture="etruscan"
+}
+513000830=
+{
+	name="Tarchunies"
+	culture="etruscan"
+}
+513000831=
+{
+	name="Tarchunian"
+	culture="etruscan"
+}
+513000832=
+{
+	name="Tarcnas"
+	culture="etruscan"
+}
+513000833=
+{
+	name="Tarcnei"
+	culture="etruscan"
+}
+513000834=
+{
+	name="Tarcnas"
+	culture="etruscan"
+}
+513000835=
+{
+	name="Tarcnid"
+	culture="etruscan"
+}
+513000836=
+{
+	name="Tarna"
+	culture="etruscan"
+}
+513000837=
+{
+	name="Tarnei"
+	culture="etruscan"
+}
+513000838=
+{
+	name="Tarna"
+	culture="etruscan"
+}
+513000839=
+{
+	name="Tarnid"
+	culture="etruscan"
+}
+513000840=
+{
+	name="Teithurna"
+	culture="etruscan"
+}
+513000841=
+{
+	name="Teithurnei"
+	culture="etruscan"
+}
+513000842=
+{
+	name="Teithurna"
+	culture="etruscan"
+}
+513000843=
+{
+	name="Teithurnid"
+	culture="etruscan"
+}
+513000844=
+{
+	name="Teitur"
+	culture="etruscan"
+}
+513000845=
+{
+	name="Teituri"
+	culture="etruscan"
+}
+513000846=
+{
+	name="Teitur"
+	culture="etruscan"
+}
+513000847=
+{
+	name="Teiturid"
+	culture="etruscan"
+}
+513000848=
+{
+	name="Telathur"
+	culture="etruscan"
+}
+513000849=
+{
+	name="Telathuri"
+	culture="etruscan"
+}
+513000850=
+{
+	name="Telathur"
+	culture="etruscan"
+}
+513000851=
+{
+	name="Telathurid"
+	culture="etruscan"
+}
+513000852=
+{
+	name="Telicles"
+	culture="etruscan"
+}
+513000853=
+{
+	name="Telicles"
+	culture="etruscan"
+}
+513000854=
+{
+	name="Telicles"
+	culture="etruscan"
+}
+513000855=
+{
+	name="Teliclid"
+	culture="etruscan"
+}
+513000856=
+{
+	name="Tetnies"
+	culture="etruscan"
+}
+513000857=
+{
+	name="Tetnia"
+	culture="etruscan"
+}
+513000858=
+{
+	name="Tetnies"
+	culture="etruscan"
+}
+513000859=
+{
+	name="Tetnid"
+	culture="etruscan"
+}
+513000860=
+{
+	name="Thactra"
+	culture="etruscan"
+}
+513000861=
+{
+	name="Thactrei"
+	culture="etruscan"
+}
+513000862=
+{
+	name="Thactra"
+	culture="etruscan"
+}
+513000863=
+{
+	name="Thactrian"
+	culture="etruscan"
+}
+513000864=
+{
+	name="Thansina"
+	culture="etruscan"
+}
+513000865=
+{
+	name="Thansi"
+	culture="etruscan"
+}
+513000866=
+{
+	name="Thansina"
+	culture="etruscan"
+}
+513000867=
+{
+	name="Thansinian"
+	culture="etruscan"
+}
+513000868=
+{
+	name="Thefri"
+	culture="etruscan"
+}
+513000869=
+{
+	name="Thefri"
+	culture="etruscan"
+}
+513000870=
+{
+	name="Thefri"
+	culture="etruscan"
+}
+513000871=
+{
+	name="Thefrid"
+	culture="etruscan"
+}
+513000872=
+{
+	name="Thucerna"
+	culture="etruscan"
+}
+513000873=
+{
+	name="Thucernei"
+	culture="etruscan"
+}
+513000874=
+{
+	name="Thucerna"
+	culture="etruscan"
+}
+513000875=
+{
+	name="Thucernid"
+	culture="etruscan"
+}
+513000876=
+{
+	name="Thusatur"
+	culture="etruscan"
+}
+513000877=
+{
+	name="Thusaturi"
+	culture="etruscan"
+}
+513000878=
+{
+	name="Thusatur"
+	culture="etruscan"
+}
+513000879=
+{
+	name="Thusaturnian"
+	culture="etruscan"
+}
+513000880=
+{
+	name="Tiphile"
+	culture="etruscan"
+}
+513000881=
+{
+	name="Tiphili"
+	culture="etruscan"
+}
+513000882=
+{
+	name="Tiphile"
+	culture="etruscan"
+}
+513000883=
+{
+	name="Tiphilid"
+	culture="etruscan"
+}
+513000884=
+{
+	name="Titie"
+	culture="etruscan"
+}
+513000885=
+{
+	name="Titia"
+	culture="etruscan"
+}
+513000886=
+{
+	name="Titie"
+	culture="etruscan"
+}
+513000887=
+{
+	name="Titid"
+	culture="etruscan"
+}
+513000888=
+{
+	name="Tlesna"
+	culture="etruscan"
+}
+513000889=
+{
+	name="Tlesna"
+	culture="etruscan"
+}
+513000890=
+{
+	name="Tlesna"
+	culture="etruscan"
+}
+513000891=
+{
+	name="Tlesnian"
+	culture="etruscan"
+}
+513000892=
+{
+	name="Tularia"
+	culture="etruscan"
+}
+513000893=
+{
+	name="Tulariei"
+	culture="etruscan"
+}
+513000894=
+{
+	name="Tularia"
+	culture="etruscan"
+}
+513000895=
+{
+	name="Tularian"
+	culture="etruscan"
+}
+513000896=
+{
+	name="Tulumnes"
+	culture="etruscan"
+}
+513000897=
+{
+	name="Tulumnis"
+	culture="etruscan"
+}
+513000898=
+{
+	name="Tulumnes"
+	culture="etruscan"
+}
+513000899=
+{
+	name="Tulumnian"
+	culture="etruscan"
+}
+513000900=
+{
+	name="Turmna"
+	culture="etruscan"
+}
+513000901=
+{
+	name="Turmnei"
+	culture="etruscan"
+}
+513000902=
+{
+	name="Turmna"
+	culture="etruscan"
+}
+513000903=
+{
+	name="Turmnid"
+	culture="etruscan"
+}
+513000904=
+{
+	name="Thursethna"
+	culture="etruscan"
+}
+513000905=
+{
+	name="Thursethnei"
+	culture="etruscan"
+}
+513000906=
+{
+	name="Thursethna"
+	culture="etruscan"
+}
+513000907=
+{
+	name="Thursethnid"
+	culture="etruscan"
+}
+513000908=
+{
+	name="Trepe"
+	culture="etruscan"
+}
+513000909=
+{
+	name="Trepi"
+	culture="etruscan"
+}
+513000910=
+{
+	name="Trepe"
+	culture="etruscan"
+}
+513000911=
+{
+	name="Trepian"
+	culture="etruscan"
+}
+513000912=
+{
+	name="Tutna"
+	culture="etruscan"
+}
+513000913=
+{
+	name="Tutnei"
+	culture="etruscan"
+}
+513000914=
+{
+	name="Tutna"
+	culture="etruscan"
+}
+513000915=
+{
+	name="Tutnid"
+	culture="etruscan"
+}
+513000916=
+{
+	name="Tutes"
+	culture="etruscan"
+}
+513000917=
+{
+	name="Tutis"
+	culture="etruscan"
+}
+513000918=
+{
+	name="Tutes"
+	culture="etruscan"
+}
+513000919=
+{
+	name="Tutid"
+	culture="etruscan"
+}
+513000920=
+{
+	name="Ucrine"
+	culture="etruscan"
+}
+513000921=
+{
+	name="Ucrini"
+	culture="etruscan"
+}
+513000922=
+{
+	name="Ucrine"
+	culture="etruscan"
+}
+513000923=
+{
+	name="Ucrinian"
+	culture="etruscan"
+}
+513000924=
+{
+	name="Uftave"
+	culture="etruscan"
+}
+513000925=
+{
+	name="Uftavi"
+	culture="etruscan"
+}
+513000926=
+{
+	name="Uftave"
+	culture="etruscan"
+}
+513000927=
+{
+	name="Uftavian"
+	culture="etruscan"
+}
+513000928=
+{
+	name="Ulthes"
+	culture="etruscan"
+}
+513000929=
+{
+	name="Ulthis"
+	culture="etruscan"
+}
+513000930=
+{
+	name="Ulthes"
+	culture="etruscan"
+}
+513000931=
+{
+	name="Ulthian"
+	culture="etruscan"
+}
+513000932=
+{
+	name="Ultimne"
+	culture="etruscan"
+}
+513000933=
+{
+	name="Ultimni"
+	culture="etruscan"
+}
+513000934=
+{
+	name="Ultimne"
+	culture="etruscan"
+}
+513000935=
+{
+	name="Ultimnid"
+	culture="etruscan"
+}
+513000936=
+{
+	name="Ulzna"
+	culture="etruscan"
+}
+513000937=
+{
+	name="Ulznei"
+	culture="etruscan"
+}
+513000938=
+{
+	name="Ulzna"
+	culture="etruscan"
+}
+513000939=
+{
+	name="Ulznid"
+	culture="etruscan"
+}
+513000940=
+{
+	name="Ursmna"
+	culture="etruscan"
+}
+513000941=
+{
+	name="Ursmnei"
+	culture="etruscan"
+}
+513000942=
+{
+	name="Ursmna"
+	culture="etruscan"
+}
+513000943=
+{
+	name="Ursmnid"
+	culture="etruscan"
+}
+513000944=
+{
+	name="Uslna"
+	culture="etruscan"
+}
+513000945=
+{
+	name="Ulsnei"
+	culture="etruscan"
+}
+513000946=
+{
+	name="Uslna"
+	culture="etruscan"
+}
+513000947=
+{
+	name="Uslnid"
+	culture="etruscan"
+}
+513000948=
+{
+	name="Vania"
+	culture="etruscan"
+}
+513000949=
+{
+	name="Vaniei"
+	culture="etruscan"
+}
+513000950=
+{
+	name="Vania"
+	culture="etruscan"
+}
+513000951=
+{
+	name="Vanid"
+	culture="etruscan"
+}
+513000952=
+{
+	name="Varati"
+	culture="etruscan"
+}
+513000953=
+{
+	name="Varati"
+	culture="etruscan"
+}
+513000954=
+{
+	name="Varati"
+	culture="etruscan"
+}
+513000955=
+{
+	name="Varatian"
+	culture="etruscan"
+}
+513000956=
+{
+	name="Velara"
+	culture="etruscan"
+}
+513000957=
+{
+	name="Velaruna"
+	culture="etruscan"
+}
+513000958=
+{
+	name="Velara"
+	culture="etruscan"
+}
+513000959=
+{
+	name="Velarian"
+	culture="etruscan"
+}
+513000960=
+{
+	name="Velcheina"
+	culture="etruscan"
+}
+513000961=
+{
+	name="Velcheinei"
+	culture="etruscan"
+}
+513000962=
+{
+	name="Velcheina"
+	culture="etruscan"
+}
+513000963=
+{
+	name="Velchenian"
+	culture="etruscan"
+}
+513000964=
+{
+	name="Velchas"
+	culture="etruscan"
+}
+513000965=
+{
+	name="Velchei"
+	culture="etruscan"
+}
+513000966=
+{
+	name="Velchas"
+	culture="etruscan"
+}
+513000967=
+{
+	name="Velchid"
+	culture="etruscan"
+}
+513000968=
+{
+	name="Velcii"
+	culture="etruscan"
+}
+513000969=
+{
+	name="Velcei"
+	culture="etruscan"
+}
+513000970=
+{
+	name="Velcii"
+	culture="etruscan"
+}
+513000971=
+{
+	name="Velcian"
+	culture="etruscan"
+}
+513000972=
+{
+	name="Vlesi"
+	culture="etruscan"
+}
+513000973=
+{
+	name="Vlesi"
+	culture="etruscan"
+}
+513000974=
+{
+	name="Vlesi"
+	culture="etruscan"
+}
+513000975=
+{
+	name="Vlesian"
+	culture="etruscan"
+}
+513000976=
+{
+	name="Velie"
+	culture="etruscan"
+}
+513000977=
+{
+	name="Velia"
+	culture="etruscan"
+}
+513000978=
+{
+	name="Velie"
+	culture="etruscan"
+}
+513000979=
+{
+	name="Velian"
+	culture="etruscan"
+}
+513000980=
+{
+	name="Velna"
+	culture="etruscan"
+}
+513000981=
+{
+	name="Velnei"
+	culture="etruscan"
+}
+513000982=
+{
+	name="Velna"
+	culture="etruscan"
+}
+513000983=
+{
+	name="Velnid"
+	culture="etruscan"
+}
+513000984=
+{
+	name="Velethna"
+	culture="etruscan"
+}
+513000985=
+{
+	name="Velethnei"
+	culture="etruscan"
+}
+513000986=
+{
+	name="Velethna"
+	culture="etruscan"
+}
+513000987=
+{
+	name="Velethnid"
+	culture="etruscan"
+}
+513000988=
+{
+	name="Velimnas"
+	culture="etruscan"
+}
+513000989=
+{
+	name="Velimnei"
+	culture="etruscan"
+}
+513000990=
+{
+	name="Velimnas"
+	culture="etruscan"
+}
+513000991=
+{
+	name="Velimnid"
+	culture="etruscan"
+}
+513000992=
+{
+	name="Velthina"
+	culture="etruscan"
+}
+513000993=
+{
+	name="Velthinei"
+	culture="etruscan"
+}
+513000994=
+{
+	name="Velthina"
+	culture="etruscan"
+}
+513000995=
+{
+	name="Velthinid"
+	culture="etruscan"
+}
+513000996=
+{
+	name="Velthinathur"
+	culture="etruscan"
+}
+513000997=
+{
+	name="Velthinathuri"
+	culture="etruscan"
+}
+513000998=
+{
+	name="Velthinathur"
+	culture="etruscan"
+}
+513000999=
+{
+	name="Velthinathurian"
+	culture="etruscan"
+}
+5130001000=
+{
+	name="Velthurna"
+	culture="etruscan"
+}
+5130001001=
+{
+	name="Velthurnei"
+	culture="etruscan"
+}
+5130001002=
+{
+	name="Velthurna"
+	culture="etruscan"
+}
+5130001003=
+{
+	name="Velthurian"
+	culture="etruscan"
+}
+5130001004=
+{
+	name="Venala"
+	culture="etruscan"
+}
+5130001005=
+{
+	name="Venalei"
+	culture="etruscan"
+}
+5130001006=
+{
+	name="Venala"
+	culture="etruscan"
+}
+5130001007=
+{
+	name="Venalian"
+	culture="etruscan"
+}
+5130001008=
+{
+	name="Venete"
+	culture="etruscan"
+}
+5130001009=
+{
+	name="Veneti"
+	culture="etruscan"
+}
+5130001010=
+{
+	name="Venete"
+	culture="etruscan"
+}
+5130001011=
+{
+	name="Venetian"
+	culture="etruscan"
+}
+5130001012=
+{
+	name="Verate"
+	culture="etruscan"
+}
+5130001013=
+{
+	name="Verati"
+	culture="etruscan"
+}
+5130001014=
+{
+	name="Verate"
+	culture="etruscan"
+}
+5130001015=
+{
+	name="Veratian"
+	culture="etruscan"
+}
+5130001016=
+{
+	name="Vestarenies"
+	culture="etruscan"
+}
+5130001017=
+{
+	name="Vestarenia"
+	culture="etruscan"
+}
+5130001018=
+{
+	name="Vestarenies"
+	culture="etruscan"
+}
+5130001019=
+{
+	name="Vestarenian"
+	culture="etruscan"
+}
+5130001020=
+{
+	name="Vestirci"
+	culture="etruscan"
+}
+5130001021=
+{
+	name="Vestircina"
+	culture="etruscan"
+}
+5130001022=
+{
+	name="Vestirci"
+	culture="etruscan"
+}
+5130001023=
+{
+	name="Vestircian"
+	culture="etruscan"
+}
+5130001024=
+{
+	name="Vete"
+	culture="etruscan"
+}
+5130001025=
+{
+	name="Vetui"
+	culture="etruscan"
+}
+5130001026=
+{
+	name="Vete"
+	culture="etruscan"
+}
+5130001027=
+{
+	name="Vetian"
+	culture="etruscan"
+}
+5130001028=
+{
+	name="Vilasnas"
+	culture="etruscan"
+}
+5130001029=
+{
+	name="Vilasnei"
+	culture="etruscan"
+}
+5130001030=
+{
+	name="Vilasnas"
+	culture="etruscan"
+}
+5130001031=
+{
+	name="Vilasnian"
+	culture="etruscan"
+}
+5130001032=
+{
+	name="Visnas"
+	culture="etruscan"
+}
+5130001033=
+{
+	name="Visnei"
+	culture="etruscan"
+}
+5130001034=
+{
+	name="Visnas"
+	culture="etruscan"
+}
+5130001035=
+{
+	name="Visnasian"
+	culture="etruscan"
+}
+5130001036=
+{
+	name="Vipena"
+	culture="etruscan"
+}
+5130001037=
+{
+	name="Vipenei"
+	culture="etruscan"
+}
+5130001038=
+{
+	name="Vipena"
+	culture="etruscan"
+}
+5130001039=
+{
+	name="Vipenian"
+	culture="etruscan"
+}
+5130001040=
+{
+	name="Vipinans"
+	culture="etruscan"
+}
+5130001041=
+{
+	name="Vipinanei"
+	culture="etruscan"
+}
+5130001042=
+{
+	name="Vipinans"
+	culture="etruscan"
+}
+5130001043=
+{
+	name="Vipinansian"
+	culture="etruscan"
+}
+5130001044=
+{
+	name="Vipithur"
+	culture="etruscan"
+}
+5130001045=
+{
+	name="Vipithuri"
+	culture="etruscan"
+}
+5130001046=
+{
+	name="Vipithur"
+	culture="etruscan"
+}
+5130001047=
+{
+	name="Vipithurid"
+	culture="etruscan"
+}
+5130001048=
+{
+	name="Zalthu"
+	culture="etruscan"
+}
+5130001049=
+{
+	name="Zalthui"
+	culture="etruscan"
+}
+5130001050=
+{
+	name="Zalthu"
+	culture="etruscan"
+}
+5130001051=
+{
+	name="Zalthid"
+	culture="etruscan"
+}
+5130001052=
+{
+	name="Zane"
+	culture="etruscan"
+}
+5130001053=
+{
+	name="Zani"
+	culture="etruscan"
+}
+5130001054=
+{
+	name="Zane"
+	culture="etruscan"
+}
+5130001055=
+{
+	name="Zanid"
+	culture="etruscan"
+}
+5130001056=
+{
+	name="Zertnei"
+	culture="etruscan"
+}
+5130001057=
+{
+	name="Zertneie"
+	culture="etruscan"
+}
+5130001058=
+{
+	name="Zertnei"
+	culture="etruscan"
+}
+5130001059=
+{
+	name="Zertneian"
+	culture="etruscan"
+}
+5130001060=
+{
+	name="Zili"
+	culture="etruscan"
+}
+5130001061=
+{
+	name="Zilina"
+	culture="etruscan"
+}
+5130001062=
+{
+	name="Zili"
+	culture="etruscan"
+}
+5130001063=
+{
+	name="Zilinid"
+	culture="etruscan"
+}

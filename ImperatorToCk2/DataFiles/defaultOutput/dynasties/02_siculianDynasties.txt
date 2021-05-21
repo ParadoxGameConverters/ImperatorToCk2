@@ -1,0 +1,800 @@
+5200000=
+{
+	name="Aburius"
+	culture="siculian"
+}
+5200001=
+{
+	name="Aburia"
+	culture="siculian"
+}
+5200002=
+{
+	name="Aburii"
+	culture="siculian"
+}
+5200003=
+{
+	name="Aburian"
+	culture="siculian"
+}
+5200004=
+{
+	name="Accius"
+	culture="siculian"
+}
+5200005=
+{
+	name="Accia"
+	culture="siculian"
+}
+5200006=
+{
+	name="Accii"
+	culture="siculian"
+}
+5200007=
+{
+	name="Accian"
+	culture="siculian"
+}
+5200008=
+{
+	name="Acilius"
+	culture="siculian"
+}
+5200009=
+{
+	name="Acilia"
+	culture="siculian"
+}
+52000010=
+{
+	name="Acilii"
+	culture="siculian"
+}
+52000011=
+{
+	name="Acilian"
+	culture="siculian"
+}
+52000012=
+{
+	name="Acutius"
+	culture="siculian"
+}
+52000013=
+{
+	name="Acutia"
+	culture="siculian"
+}
+52000014=
+{
+	name="Acutii"
+	culture="siculian"
+}
+52000015=
+{
+	name="Acutian"
+	culture="siculian"
+}
+52000016=
+{
+	name="Aebutius"
+	culture="siculian"
+}
+52000017=
+{
+	name="Aebutia"
+	culture="siculian"
+}
+52000018=
+{
+	name="Aebutii"
+	culture="siculian"
+}
+52000019=
+{
+	name="Aebutian"
+	culture="siculian"
+}
+52000020=
+{
+	name="Aelius"
+	culture="siculian"
+}
+52000021=
+{
+	name="Aelia"
+	culture="siculian"
+}
+52000022=
+{
+	name="Aelii"
+	culture="siculian"
+}
+52000023=
+{
+	name="Aelian"
+	culture="siculian"
+}
+52000024=
+{
+	name="Aemilius"
+	culture="siculian"
+}
+52000025=
+{
+	name="Aemilia"
+	culture="siculian"
+}
+52000026=
+{
+	name="Aemilii"
+	culture="siculian"
+}
+52000027=
+{
+	name="Aemilian"
+	culture="siculian"
+}
+52000028=
+{
+	name="Alienus"
+	culture="siculian"
+}
+52000029=
+{
+	name="Aliena"
+	culture="siculian"
+}
+52000030=
+{
+	name="Alienii"
+	culture="siculian"
+}
+52000031=
+{
+	name="Alien"
+	culture="siculian"
+}
+52000032=
+{
+	name="Anicius"
+	culture="siculian"
+}
+52000033=
+{
+	name="Anicia"
+	culture="siculian"
+}
+52000034=
+{
+	name="Anicii"
+	culture="siculian"
+}
+52000035=
+{
+	name="Anician"
+	culture="siculian"
+}
+52000036=
+{
+	name="Annius"
+	culture="siculian"
+}
+52000037=
+{
+	name="Annia"
+	culture="siculian"
+}
+52000038=
+{
+	name="Anni"
+	culture="siculian"
+}
+52000039=
+{
+	name="Annian"
+	culture="siculian"
+}
+52000040=
+{
+	name="Antius"
+	culture="siculian"
+}
+52000041=
+{
+	name="Antia"
+	culture="siculian"
+}
+52000042=
+{
+	name="Antii"
+	culture="siculian"
+}
+52000043=
+{
+	name="Antian"
+	culture="siculian"
+}
+52000044=
+{
+	name="Antistius"
+	culture="siculian"
+}
+52000045=
+{
+	name="Antistia"
+	culture="siculian"
+}
+52000046=
+{
+	name="Antistii"
+	culture="siculian"
+}
+52000047=
+{
+	name="Antistian"
+	culture="siculian"
+}
+52000048=
+{
+	name="Antonius"
+	culture="siculian"
+}
+52000049=
+{
+	name="Antonia"
+	culture="siculian"
+}
+52000050=
+{
+	name="Antonii"
+	culture="siculian"
+}
+52000051=
+{
+	name="Antonian"
+	culture="siculian"
+}
+52000052=
+{
+	name="Claudius"
+	culture="siculian"
+}
+52000053=
+{
+	name="Claudia"
+	culture="siculian"
+}
+52000054=
+{
+	name="Claudii"
+	culture="siculian"
+}
+52000055=
+{
+	name="Claudian"
+	culture="siculian"
+}
+52000056=
+{
+	name="Cloelius"
+	culture="siculian"
+}
+52000057=
+{
+	name="Cloelia"
+	culture="siculian"
+}
+52000058=
+{
+	name="Cloelii"
+	culture="siculian"
+}
+52000059=
+{
+	name="Cloelian"
+	culture="siculian"
+}
+52000060=
+{
+	name="Cominius"
+	culture="siculian"
+}
+52000061=
+{
+	name="Cominia"
+	culture="siculian"
+}
+52000062=
+{
+	name="Cominii"
+	culture="siculian"
+}
+52000063=
+{
+	name="Cominian"
+	culture="siculian"
+}
+52000064=
+{
+	name="Cornelius"
+	culture="siculian"
+}
+52000065=
+{
+	name="Cornelia"
+	culture="siculian"
+}
+52000066=
+{
+	name="Cornelii"
+	culture="siculian"
+}
+52000067=
+{
+	name="Cornelian"
+	culture="siculian"
+}
+52000068=
+{
+	name="Coruncanius"
+	culture="siculian"
+}
+52000069=
+{
+	name="Coruncania"
+	culture="siculian"
+}
+52000070=
+{
+	name="Coruncanii"
+	culture="siculian"
+}
+52000071=
+{
+	name="Coruncanian"
+	culture="siculian"
+}
+52000072=
+{
+	name="Curiatius"
+	culture="siculian"
+}
+52000073=
+{
+	name="Curiatia"
+	culture="siculian"
+}
+52000074=
+{
+	name="Curiatii"
+	culture="siculian"
+}
+52000075=
+{
+	name="Curiatian"
+	culture="siculian"
+}
+52000076=
+{
+	name="Curtius"
+	culture="siculian"
+}
+52000077=
+{
+	name="Curtia"
+	culture="siculian"
+}
+52000078=
+{
+	name="Curtii"
+	culture="siculian"
+}
+52000079=
+{
+	name="Curtian"
+	culture="siculian"
+}
+52000080=
+{
+	name="Curius"
+	culture="siculian"
+}
+52000081=
+{
+	name="Curia"
+	culture="siculian"
+}
+52000082=
+{
+	name="Curii"
+	culture="siculian"
+}
+52000083=
+{
+	name="Curian"
+	culture="siculian"
+}
+52000084=
+{
+	name="Decius"
+	culture="siculian"
+}
+52000085=
+{
+	name="Decia"
+	culture="siculian"
+}
+52000086=
+{
+	name="Decii"
+	culture="siculian"
+}
+52000087=
+{
+	name="Decian"
+	culture="siculian"
+}
+52000088=
+{
+	name="Domitius"
+	culture="siculian"
+}
+52000089=
+{
+	name="Domitia"
+	culture="siculian"
+}
+52000090=
+{
+	name="Domitii"
+	culture="siculian"
+}
+52000091=
+{
+	name="Domitian"
+	culture="siculian"
+}
+52000092=
+{
+	name="Sestius"
+	culture="siculian"
+}
+52000093=
+{
+	name="Sestia"
+	culture="siculian"
+}
+52000094=
+{
+	name="Sestii"
+	culture="siculian"
+}
+52000095=
+{
+	name="Sestian"
+	culture="siculian"
+}
+52000096=
+{
+	name="Sextius"
+	culture="siculian"
+}
+52000097=
+{
+	name="Sextia"
+	culture="siculian"
+}
+52000098=
+{
+	name="Sextii"
+	culture="siculian"
+}
+52000099=
+{
+	name="Sextian"
+	culture="siculian"
+}
+520000100=
+{
+	name="Sextilius"
+	culture="siculian"
+}
+520000101=
+{
+	name="Sextilia"
+	culture="siculian"
+}
+520000102=
+{
+	name="Sextilii"
+	culture="siculian"
+}
+520000103=
+{
+	name="Sextilian"
+	culture="siculian"
+}
+520000104=
+{
+	name="Sicinius"
+	culture="siculian"
+}
+520000105=
+{
+	name="Sicinia"
+	culture="siculian"
+}
+520000106=
+{
+	name="Sicinii"
+	culture="siculian"
+}
+520000107=
+{
+	name="Sicinian"
+	culture="siculian"
+}
+520000108=
+{
+	name="Silius"
+	culture="siculian"
+}
+520000109=
+{
+	name="Silia"
+	culture="siculian"
+}
+520000110=
+{
+	name="Silii"
+	culture="siculian"
+}
+520000111=
+{
+	name="Silian"
+	culture="siculian"
+}
+520000112=
+{
+	name="Sulpicius"
+	culture="siculian"
+}
+520000113=
+{
+	name="Sulpicia"
+	culture="siculian"
+}
+520000114=
+{
+	name="Sulpicii"
+	culture="siculian"
+}
+520000115=
+{
+	name="Sulpician"
+	culture="siculian"
+}
+520000116=
+{
+	name="Titius"
+	culture="siculian"
+}
+520000117=
+{
+	name="Titia"
+	culture="siculian"
+}
+520000118=
+{
+	name="Titii"
+	culture="siculian"
+}
+520000119=
+{
+	name="Titian"
+	culture="siculian"
+}
+520000120=
+{
+	name="Tremulus"
+	culture="siculian"
+}
+520000121=
+{
+	name="Tremulia"
+	culture="siculian"
+}
+520000122=
+{
+	name="Tremulii"
+	culture="siculian"
+}
+520000123=
+{
+	name="Tremulan"
+	culture="siculian"
+}
+520000124=
+{
+	name="Tullius"
+	culture="siculian"
+}
+520000125=
+{
+	name="Tullia"
+	culture="siculian"
+}
+520000126=
+{
+	name="Tullii"
+	culture="siculian"
+}
+520000127=
+{
+	name="Tullian"
+	culture="siculian"
+}
+520000128=
+{
+	name="Ulpius"
+	culture="siculian"
+}
+520000129=
+{
+	name="Ulpia"
+	culture="siculian"
+}
+520000130=
+{
+	name="Ulpii"
+	culture="siculian"
+}
+520000131=
+{
+	name="Ulpian"
+	culture="siculian"
+}
+520000132=
+{
+	name="Valerius"
+	culture="siculian"
+}
+520000133=
+{
+	name="Valeria"
+	culture="siculian"
+}
+520000134=
+{
+	name="Valerii"
+	culture="siculian"
+}
+520000135=
+{
+	name="Valerian"
+	culture="siculian"
+}
+520000136=
+{
+	name="Verginius"
+	culture="siculian"
+}
+520000137=
+{
+	name="Verginia"
+	culture="siculian"
+}
+520000138=
+{
+	name="Verginii"
+	culture="siculian"
+}
+520000139=
+{
+	name="Verginian"
+	culture="siculian"
+}
+520000140=
+{
+	name="Veturius"
+	culture="siculian"
+}
+520000141=
+{
+	name="Veturia"
+	culture="siculian"
+}
+520000142=
+{
+	name="Veturii"
+	culture="siculian"
+}
+520000143=
+{
+	name="Veturian"
+	culture="siculian"
+}
+520000144=
+{
+	name="Vesuvius"
+	culture="siculian"
+}
+520000145=
+{
+	name="Vesuvia"
+	culture="siculian"
+}
+520000146=
+{
+	name="Vesuvii"
+	culture="siculian"
+}
+520000147=
+{
+	name="Vesuvian"
+	culture="siculian"
+}
+520000148=
+{
+	name="Villius"
+	culture="siculian"
+}
+520000149=
+{
+	name="Villia"
+	culture="siculian"
+}
+520000150=
+{
+	name="Villii"
+	culture="siculian"
+}
+520000151=
+{
+	name="Villian"
+	culture="siculian"
+}
+520000152=
+{
+	name="Viridius"
+	culture="siculian"
+}
+520000153=
+{
+	name="Viridia"
+	culture="siculian"
+}
+520000154=
+{
+	name="Viridii"
+	culture="siculian"
+}
+520000155=
+{
+	name="Viridian"
+	culture="siculian"
+}
+520000156=
+{
+	name="Volumnius"
+	culture="siculian"
+}
+520000157=
+{
+	name="Volumnia"
+	culture="siculian"
+}
+520000158=
+{
+	name="Volumnii"
+	culture="siculian"
+}
+520000159=
+{
+	name="Volumnian"
+	culture="siculian"
+}

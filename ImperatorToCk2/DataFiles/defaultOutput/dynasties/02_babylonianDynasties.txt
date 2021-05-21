@@ -1,0 +1,750 @@
+5280000=
+{
+	name="Marduk-beli"
+	culture="babylonian"
+}
+5280001=
+{
+	name="Marduk-belshunu"
+	culture="babylonian"
+}
+5280002=
+{
+	name="Marduk-eriba"
+	culture="babylonian"
+}
+5280003=
+{
+	name="Marduk-etir"
+	culture="babylonian"
+}
+5280004=
+{
+	name="Marduk-ibni"
+	culture="babylonian"
+}
+5280005=
+{
+	name="Marduk-iddin"
+	culture="babylonian"
+}
+5280006=
+{
+	name="Marduk-uballit"
+	culture="babylonian"
+}
+5280007=
+{
+	name="Kidin-Marduk"
+	culture="babylonian"
+}
+5280008=
+{
+	name="Lusthammar-Marduk"
+	culture="babylonian"
+}
+5280009=
+{
+	name="Nidinti-Marduk"
+	culture="babylonian"
+}
+52800010=
+{
+	name="Rihat-Marduk"
+	culture="babylonian"
+}
+52800011=
+{
+	name="Shamshi-Marduk"
+	culture="babylonian"
+}
+52800012=
+{
+	name="Shipqat-Marduk"
+	culture="babylonian"
+}
+52800013=
+{
+	name="Tanittu-Marduk"
+	culture="babylonian"
+}
+52800014=
+{
+	name="Tukulti-Marduk"
+	culture="babylonian"
+}
+52800015=
+{
+	name="Bel-beli"
+	culture="babylonian"
+}
+52800016=
+{
+	name="Bel-belshunu"
+	culture="babylonian"
+}
+52800017=
+{
+	name="Bel-eriba"
+	culture="babylonian"
+}
+52800018=
+{
+	name="Bel-etir"
+	culture="babylonian"
+}
+52800019=
+{
+	name="Bel-ibni"
+	culture="babylonian"
+}
+52800020=
+{
+	name="Bel-iddin"
+	culture="babylonian"
+}
+52800021=
+{
+	name="Bel-uballit"
+	culture="babylonian"
+}
+52800022=
+{
+	name="Kidin-Bel"
+	culture="babylonian"
+}
+52800023=
+{
+	name="Lusthammar-Bel"
+	culture="babylonian"
+}
+52800024=
+{
+	name="Nidinti-Bel"
+	culture="babylonian"
+}
+52800025=
+{
+	name="Rihat-Bel"
+	culture="babylonian"
+}
+52800026=
+{
+	name="Shamshi-Bel"
+	culture="babylonian"
+}
+52800027=
+{
+	name="Shipqat-Bel"
+	culture="babylonian"
+}
+52800028=
+{
+	name="Tanittu-Bel"
+	culture="babylonian"
+}
+52800029=
+{
+	name="Tukulti-Bel"
+	culture="babylonian"
+}
+52800030=
+{
+	name="Shamash-beli"
+	culture="babylonian"
+}
+52800031=
+{
+	name="Shamash-belshunu"
+	culture="babylonian"
+}
+52800032=
+{
+	name="Shamash-eriba"
+	culture="babylonian"
+}
+52800033=
+{
+	name="Shamash-etir"
+	culture="babylonian"
+}
+52800034=
+{
+	name="Shamash-ibni"
+	culture="babylonian"
+}
+52800035=
+{
+	name="Shamash-iddin"
+	culture="babylonian"
+}
+52800036=
+{
+	name="Shamash-uballit"
+	culture="babylonian"
+}
+52800037=
+{
+	name="Kidin-Shamash"
+	culture="babylonian"
+}
+52800038=
+{
+	name="Lusthammar-Shamash"
+	culture="babylonian"
+}
+52800039=
+{
+	name="Nidinti-Shamash"
+	culture="babylonian"
+}
+52800040=
+{
+	name="Rihat-Shamash"
+	culture="babylonian"
+}
+52800041=
+{
+	name="Shamshi-Shamash"
+	culture="babylonian"
+}
+52800042=
+{
+	name="Shipqat-Shamash"
+	culture="babylonian"
+}
+52800043=
+{
+	name="Tanittu-Shamash"
+	culture="babylonian"
+}
+52800044=
+{
+	name="Tukulti-Shamash"
+	culture="babylonian"
+}
+52800045=
+{
+	name="Ashshur-beli"
+	culture="babylonian"
+}
+52800046=
+{
+	name="Ashshur-belshunu"
+	culture="babylonian"
+}
+52800047=
+{
+	name="Ashshur-eriba"
+	culture="babylonian"
+}
+52800048=
+{
+	name="Ashshur-etir"
+	culture="babylonian"
+}
+52800049=
+{
+	name="Ashshur-ibni"
+	culture="babylonian"
+}
+52800050=
+{
+	name="Ashshur-iddin"
+	culture="babylonian"
+}
+52800051=
+{
+	name="Ashshur-uballit"
+	culture="babylonian"
+}
+52800052=
+{
+	name="Kidin-Ashshur"
+	culture="babylonian"
+}
+52800053=
+{
+	name="Lusthammar-Ashshur"
+	culture="babylonian"
+}
+52800054=
+{
+	name="Nidinti-Ashshur"
+	culture="babylonian"
+}
+52800055=
+{
+	name="Rihat-Ashshur"
+	culture="babylonian"
+}
+52800056=
+{
+	name="Shamshi-Ashshur"
+	culture="babylonian"
+}
+52800057=
+{
+	name="Shipqat-Ashshur"
+	culture="babylonian"
+}
+52800058=
+{
+	name="Tanittu-Ashshur"
+	culture="babylonian"
+}
+52800059=
+{
+	name="Tukulti-Ashshur"
+	culture="babylonian"
+}
+52800060=
+{
+	name="Ishtar-beli"
+	culture="babylonian"
+}
+52800061=
+{
+	name="Ishtar-belshunu"
+	culture="babylonian"
+}
+52800062=
+{
+	name="Ishtar-eriba"
+	culture="babylonian"
+}
+52800063=
+{
+	name="Ishtar-etir"
+	culture="babylonian"
+}
+52800064=
+{
+	name="Ishtar-ibni"
+	culture="babylonian"
+}
+52800065=
+{
+	name="Ishtar-iddin"
+	culture="babylonian"
+}
+52800066=
+{
+	name="Ishtar-uballit"
+	culture="babylonian"
+}
+52800067=
+{
+	name="Kidin-Ishtar"
+	culture="babylonian"
+}
+52800068=
+{
+	name="Lusthammar-Ishtar"
+	culture="babylonian"
+}
+52800069=
+{
+	name="Nidinti-Ishtar"
+	culture="babylonian"
+}
+52800070=
+{
+	name="Rihat-Ishtar"
+	culture="babylonian"
+}
+52800071=
+{
+	name="Shamshi-Ishtar"
+	culture="babylonian"
+}
+52800072=
+{
+	name="Shipqat-Ishtar"
+	culture="babylonian"
+}
+52800073=
+{
+	name="Tanittu-Ishtar"
+	culture="babylonian"
+}
+52800074=
+{
+	name="Tukulti-Ishtar"
+	culture="babylonian"
+}
+52800075=
+{
+	name="Adad-beli"
+	culture="babylonian"
+}
+52800076=
+{
+	name="Adad-belshunu"
+	culture="babylonian"
+}
+52800077=
+{
+	name="Adad-eriba"
+	culture="babylonian"
+}
+52800078=
+{
+	name="Adad-etir"
+	culture="babylonian"
+}
+52800079=
+{
+	name="Adad-ibni"
+	culture="babylonian"
+}
+52800080=
+{
+	name="Adad-iddin"
+	culture="babylonian"
+}
+52800081=
+{
+	name="Adad-uballit"
+	culture="babylonian"
+}
+52800082=
+{
+	name="Kidin-Adad"
+	culture="babylonian"
+}
+52800083=
+{
+	name="Lusthammar-Adad"
+	culture="babylonian"
+}
+52800084=
+{
+	name="Nidinti-Adad"
+	culture="babylonian"
+}
+52800085=
+{
+	name="Rihat-Adad"
+	culture="babylonian"
+}
+52800086=
+{
+	name="Shamshi-Adad"
+	culture="babylonian"
+}
+52800087=
+{
+	name="Shipqat-Adad"
+	culture="babylonian"
+}
+52800088=
+{
+	name="Tanittu-Adad"
+	culture="babylonian"
+}
+52800089=
+{
+	name="Tukulti-Adad"
+	culture="babylonian"
+}
+52800090=
+{
+	name="Nergal-beli"
+	culture="babylonian"
+}
+52800091=
+{
+	name="Nergal-belshunu"
+	culture="babylonian"
+}
+52800092=
+{
+	name="Nergal-eriba"
+	culture="babylonian"
+}
+52800093=
+{
+	name="Nergal-etir"
+	culture="babylonian"
+}
+52800094=
+{
+	name="Nergal-ibni"
+	culture="babylonian"
+}
+52800095=
+{
+	name="Nergal-iddin"
+	culture="babylonian"
+}
+52800096=
+{
+	name="Nergal-uballit"
+	culture="babylonian"
+}
+52800097=
+{
+	name="Kidin-Nergal"
+	culture="babylonian"
+}
+52800098=
+{
+	name="Lusthammar-Nergal"
+	culture="babylonian"
+}
+52800099=
+{
+	name="Nidinti-Nergal"
+	culture="babylonian"
+}
+528000100=
+{
+	name="Rihat-Nergal"
+	culture="babylonian"
+}
+528000101=
+{
+	name="Shamshi-Nergal"
+	culture="babylonian"
+}
+528000102=
+{
+	name="Shipqat-Nergal"
+	culture="babylonian"
+}
+528000103=
+{
+	name="Tanittu-Nergal"
+	culture="babylonian"
+}
+528000104=
+{
+	name="Tukulti-Nergal"
+	culture="babylonian"
+}
+528000105=
+{
+	name="Sin-beli"
+	culture="babylonian"
+}
+528000106=
+{
+	name="Sin-belshunu"
+	culture="babylonian"
+}
+528000107=
+{
+	name="Sin-eriba"
+	culture="babylonian"
+}
+528000108=
+{
+	name="Sin-etir"
+	culture="babylonian"
+}
+528000109=
+{
+	name="Sin-ibni"
+	culture="babylonian"
+}
+528000110=
+{
+	name="Sin-iddin"
+	culture="babylonian"
+}
+528000111=
+{
+	name="Sin-uballit"
+	culture="babylonian"
+}
+528000112=
+{
+	name="Kidin-Sin"
+	culture="babylonian"
+}
+528000113=
+{
+	name="Lusthammar-Sin"
+	culture="babylonian"
+}
+528000114=
+{
+	name="Nidinti-Sin"
+	culture="babylonian"
+}
+528000115=
+{
+	name="Rihat-Sin"
+	culture="babylonian"
+}
+528000116=
+{
+	name="Shamshi-Sin"
+	culture="babylonian"
+}
+528000117=
+{
+	name="Shipqat-Sin"
+	culture="babylonian"
+}
+528000118=
+{
+	name="Tanittu-Sin"
+	culture="babylonian"
+}
+528000119=
+{
+	name="Tukulti-Sin"
+	culture="babylonian"
+}
+528000120=
+{
+	name="Enlil-beli"
+	culture="babylonian"
+}
+528000121=
+{
+	name="Enlil-belshunu"
+	culture="babylonian"
+}
+528000122=
+{
+	name="Enlil-eriba"
+	culture="babylonian"
+}
+528000123=
+{
+	name="Enlil-etir"
+	culture="babylonian"
+}
+528000124=
+{
+	name="Enlil-ibni"
+	culture="babylonian"
+}
+528000125=
+{
+	name="Enlil-iddin"
+	culture="babylonian"
+}
+528000126=
+{
+	name="Enlil-uballit"
+	culture="babylonian"
+}
+528000127=
+{
+	name="Kidin-Enlil"
+	culture="babylonian"
+}
+528000128=
+{
+	name="Lusthammar-Enlil"
+	culture="babylonian"
+}
+528000129=
+{
+	name="Nidinti-Enlil"
+	culture="babylonian"
+}
+528000130=
+{
+	name="Rihat-Enlil"
+	culture="babylonian"
+}
+528000131=
+{
+	name="Shamshi-Enlil"
+	culture="babylonian"
+}
+528000132=
+{
+	name="Shipqat-Enlil"
+	culture="babylonian"
+}
+528000133=
+{
+	name="Tanittu-Enlil"
+	culture="babylonian"
+}
+528000134=
+{
+	name="Tukulti-Enlil"
+	culture="babylonian"
+}
+528000135=
+{
+	name="Ninurta-beli"
+	culture="babylonian"
+}
+528000136=
+{
+	name="Ninurta-belshunu"
+	culture="babylonian"
+}
+528000137=
+{
+	name="Ninurta-eriba"
+	culture="babylonian"
+}
+528000138=
+{
+	name="Ninurta-etir"
+	culture="babylonian"
+}
+528000139=
+{
+	name="Ninurta-ibni"
+	culture="babylonian"
+}
+528000140=
+{
+	name="Ninurta-iddin"
+	culture="babylonian"
+}
+528000141=
+{
+	name="Ninurta-uballit"
+	culture="babylonian"
+}
+528000142=
+{
+	name="Kidin-Ninurta"
+	culture="babylonian"
+}
+528000143=
+{
+	name="Lusthammar-Ninurta"
+	culture="babylonian"
+}
+528000144=
+{
+	name="Nidinti-Ninurta"
+	culture="babylonian"
+}
+528000145=
+{
+	name="Rihat-Ninurta"
+	culture="babylonian"
+}
+528000146=
+{
+	name="Shamshi-Ninurta"
+	culture="babylonian"
+}
+528000147=
+{
+	name="Shipqat-Ninurta"
+	culture="babylonian"
+}
+528000148=
+{
+	name="Tanittu-Ninurta"
+	culture="babylonian"
+}
+528000149=
+{
+	name="Tukulti-Ninurta"
+	culture="babylonian"
+}

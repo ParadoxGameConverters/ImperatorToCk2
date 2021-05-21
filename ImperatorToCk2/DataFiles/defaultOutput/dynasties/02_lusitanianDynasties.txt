@@ -1,0 +1,580 @@
+5060000=
+{
+	name="Ambonus"
+	culture="lusitanian"
+}
+5060001=
+{
+	name="Ambona"
+	culture="lusitanian"
+}
+5060002=
+{
+	name="Ambonii"
+	culture="lusitanian"
+}
+5060003=
+{
+	name="Ambonid"
+	culture="lusitanian"
+}
+5060004=
+{
+	name="Auaroses"
+	culture="lusitanian"
+}
+5060005=
+{
+	name="Auarosa"
+	culture="lusitanian"
+}
+5060006=
+{
+	name="Auarosii"
+	culture="lusitanian"
+}
+5060007=
+{
+	name="Auarosian"
+	culture="lusitanian"
+}
+5060008=
+{
+	name="Audaxus"
+	culture="lusitanian"
+}
+5060009=
+{
+	name="Audaxa"
+	culture="lusitanian"
+}
+50600010=
+{
+	name="Audaxii"
+	culture="lusitanian"
+}
+50600011=
+{
+	name="Audaxian"
+	culture="lusitanian"
+}
+50600012=
+{
+	name="Carosus"
+	culture="lusitanian"
+}
+50600013=
+{
+	name="Carosa"
+	culture="lusitanian"
+}
+50600014=
+{
+	name="Carosii"
+	culture="lusitanian"
+}
+50600015=
+{
+	name="Carosian"
+	culture="lusitanian"
+}
+50600016=
+{
+	name="Culchus"
+	culture="lusitanian"
+}
+50600017=
+{
+	name="Culcha"
+	culture="lusitanian"
+}
+50600018=
+{
+	name="Culchi"
+	culture="lusitanian"
+}
+50600019=
+{
+	name="Culchian"
+	culture="lusitanian"
+}
+50600020=
+{
+	name="Leukus"
+	culture="lusitanian"
+}
+50600021=
+{
+	name="Leuka"
+	culture="lusitanian"
+}
+50600022=
+{
+	name="Leuki"
+	culture="lusitanian"
+}
+50600023=
+{
+	name="Leukian"
+	culture="lusitanian"
+}
+50600024=
+{
+	name="Mandonus"
+	culture="lusitanian"
+}
+50600025=
+{
+	name="Mandonia"
+	culture="lusitanian"
+}
+50600026=
+{
+	name="Mandonii"
+	culture="lusitanian"
+}
+50600027=
+{
+	name="Mandonian"
+	culture="lusitanian"
+}
+50600028=
+{
+	name="Punicus"
+	culture="lusitanian"
+}
+50600029=
+{
+	name="Punica"
+	culture="lusitanian"
+}
+50600030=
+{
+	name="Punici"
+	culture="lusitanian"
+}
+50600031=
+{
+	name="Punician"
+	culture="lusitanian"
+}
+50600032=
+{
+	name="Tautalus"
+	culture="lusitanian"
+}
+50600033=
+{
+	name="Tautala"
+	culture="lusitanian"
+}
+50600034=
+{
+	name="Tautalii"
+	culture="lusitanian"
+}
+50600035=
+{
+	name="Tautalid"
+	culture="lusitanian"
+}
+50600036=
+{
+	name="Correius"
+	culture="lusitanian"
+}
+50600037=
+{
+	name="Correia"
+	culture="lusitanian"
+}
+50600038=
+{
+	name="Correid"
+	culture="lusitanian"
+}
+50600039=
+{
+	name="Correian"
+	culture="lusitanian"
+}
+50600040=
+{
+	name="Divicus"
+	culture="lusitanian"
+}
+50600041=
+{
+	name="Divica"
+	culture="lusitanian"
+}
+50600042=
+{
+	name="Divici"
+	culture="lusitanian"
+}
+50600043=
+{
+	name="Divicid"
+	culture="lusitanian"
+}
+50600044=
+{
+	name="Duratus"
+	culture="lusitanian"
+}
+50600045=
+{
+	name="Durata"
+	culture="lusitanian"
+}
+50600046=
+{
+	name="Duratii"
+	culture="lusitanian"
+}
+50600047=
+{
+	name="Duratian"
+	culture="lusitanian"
+}
+50600048=
+{
+	name="Elitovus"
+	culture="lusitanian"
+}
+50600049=
+{
+	name="Elitova"
+	culture="lusitanian"
+}
+50600050=
+{
+	name="Elitovii"
+	culture="lusitanian"
+}
+50600051=
+{
+	name="Elitovian"
+	culture="lusitanian"
+}
+50600052=
+{
+	name="Galbus"
+	culture="lusitanian"
+}
+50600053=
+{
+	name="Galba"
+	culture="lusitanian"
+}
+50600054=
+{
+	name="Galbi"
+	culture="lusitanian"
+}
+50600055=
+{
+	name="Galbid"
+	culture="lusitanian"
+}
+50600056=
+{
+	name="Iacus"
+	culture="lusitanian"
+}
+50600057=
+{
+	name="Iaca"
+	culture="lusitanian"
+}
+50600058=
+{
+	name="Iaci"
+	culture="lusitanian"
+}
+50600059=
+{
+	name="Iacid"
+	culture="lusitanian"
+}
+50600060=
+{
+	name="Marganus"
+	culture="lusitanian"
+}
+50600061=
+{
+	name="Margana"
+	culture="lusitanian"
+}
+50600062=
+{
+	name="Marganii"
+	culture="lusitanian"
+}
+50600063=
+{
+	name="Marganid"
+	culture="lusitanian"
+}
+50600064=
+{
+	name="Sinatus"
+	culture="lusitanian"
+}
+50600065=
+{
+	name="Sinata"
+	culture="lusitanian"
+}
+50600066=
+{
+	name="Sinatii"
+	culture="lusitanian"
+}
+50600067=
+{
+	name="Sinatid"
+	culture="lusitanian"
+}
+50600068=
+{
+	name="Vodenosus"
+	culture="lusitanian"
+}
+50600069=
+{
+	name="Vodenosa"
+	culture="lusitanian"
+}
+50600070=
+{
+	name="Vodenosii"
+	culture="lusitanian"
+}
+50600071=
+{
+	name="Vodenosian"
+	culture="lusitanian"
+}
+50600072=
+{
+	name="Indutius"
+	culture="lusitanian"
+}
+50600073=
+{
+	name="Indutia"
+	culture="lusitanian"
+}
+50600074=
+{
+	name="Indutii"
+	culture="lusitanian"
+}
+50600075=
+{
+	name="Indutian"
+	culture="lusitanian"
+}
+50600076=
+{
+	name="Dumnus"
+	culture="lusitanian"
+}
+50600077=
+{
+	name="Dumna"
+	culture="lusitanian"
+}
+50600078=
+{
+	name="Dumnii"
+	culture="lusitanian"
+}
+50600079=
+{
+	name="Dumnid"
+	culture="lusitanian"
+}
+50600080=
+{
+	name="Epatticus"
+	culture="lusitanian"
+}
+50600081=
+{
+	name="Epattica"
+	culture="lusitanian"
+}
+50600082=
+{
+	name="Epatticii"
+	culture="lusitanian"
+}
+50600083=
+{
+	name="Epatticid"
+	culture="lusitanian"
+}
+50600084=
+{
+	name="Teutomalus"
+	culture="lusitanian"
+}
+50600085=
+{
+	name="Teutomala"
+	culture="lusitanian"
+}
+50600086=
+{
+	name="Teutomalii"
+	culture="lusitanian"
+}
+50600087=
+{
+	name="Teutomalian"
+	culture="lusitanian"
+}
+50600088=
+{
+	name="Viridorrius"
+	culture="lusitanian"
+}
+50600089=
+{
+	name="Viridorria"
+	culture="lusitanian"
+}
+50600090=
+{
+	name="Viridorrii"
+	culture="lusitanian"
+}
+50600091=
+{
+	name="Viridorrian"
+	culture="lusitanian"
+}
+50600092=
+{
+	name="Magunnus"
+	culture="lusitanian"
+}
+50600093=
+{
+	name="Magunna"
+	culture="lusitanian"
+}
+50600094=
+{
+	name="Magunnii"
+	culture="lusitanian"
+}
+50600095=
+{
+	name="Magunnid"
+	culture="lusitanian"
+}
+50600096=
+{
+	name="Brennus"
+	culture="lusitanian"
+}
+50600097=
+{
+	name="Brenna"
+	culture="lusitanian"
+}
+50600098=
+{
+	name="Brennii"
+	culture="lusitanian"
+}
+50600099=
+{
+	name="Brennid"
+	culture="lusitanian"
+}
+506000100=
+{
+	name="Boius"
+	culture="lusitanian"
+}
+506000101=
+{
+	name="Boia"
+	culture="lusitanian"
+}
+506000102=
+{
+	name="Boii"
+	culture="lusitanian"
+}
+506000103=
+{
+	name="Boian"
+	culture="lusitanian"
+}
+506000104=
+{
+	name="Tannus"
+	culture="lusitanian"
+}
+506000105=
+{
+	name="Tanna"
+	culture="lusitanian"
+}
+506000106=
+{
+	name="Tanni"
+	culture="lusitanian"
+}
+506000107=
+{
+	name="Tannid"
+	culture="lusitanian"
+}
+506000108=
+{
+	name="Iccuius"
+	culture="lusitanian"
+}
+506000109=
+{
+	name="Iccuia"
+	culture="lusitanian"
+}
+506000110=
+{
+	name="Iccui"
+	culture="lusitanian"
+}
+506000111=
+{
+	name="Iccian"
+	culture="lusitanian"
+}
+506000112=
+{
+	name="Galanus"
+	culture="lusitanian"
+}
+506000113=
+{
+	name="Galana"
+	culture="lusitanian"
+}
+506000114=
+{
+	name="Galanii"
+	culture="lusitanian"
+}
+506000115=
+{
+	name="Galanid"
+	culture="lusitanian"
+}

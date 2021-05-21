@@ -1,0 +1,700 @@
+5270000=
+{
+	name="Abeghean"
+	culture="caucasian_albanian"
+}
+5270001=
+{
+	name="Abeghean"
+	culture="caucasian_albanian"
+}
+5270002=
+{
+	name="Abegheans"
+	culture="caucasian_albanian"
+}
+5270003=
+{
+	name="Abegheanid"
+	culture="caucasian_albanian"
+}
+5270004=
+{
+	name="Amatuni"
+	culture="caucasian_albanian"
+}
+5270005=
+{
+	name="Amatuni"
+	culture="caucasian_albanian"
+}
+5270006=
+{
+	name="Amatunis"
+	culture="caucasian_albanian"
+}
+5270007=
+{
+	name="Amatunid"
+	culture="caucasian_albanian"
+}
+5270008=
+{
+	name="Andzevatsi"
+	culture="caucasian_albanian"
+}
+5270009=
+{
+	name="Andzevatsi"
+	culture="caucasian_albanian"
+}
+52700010=
+{
+	name="Andzevatsis"
+	culture="caucasian_albanian"
+}
+52700011=
+{
+	name="Andzevatsid"
+	culture="caucasian_albanian"
+}
+52700012=
+{
+	name="Artsruni"
+	culture="caucasian_albanian"
+}
+52700013=
+{
+	name="Artsruni"
+	culture="caucasian_albanian"
+}
+52700014=
+{
+	name="Artsrunis"
+	culture="caucasian_albanian"
+}
+52700015=
+{
+	name="Artsrunid"
+	culture="caucasian_albanian"
+}
+52700016=
+{
+	name="Bagean"
+	culture="caucasian_albanian"
+}
+52700017=
+{
+	name="Bagean"
+	culture="caucasian_albanian"
+}
+52700018=
+{
+	name="Bageans"
+	culture="caucasian_albanian"
+}
+52700019=
+{
+	name="Bagid"
+	culture="caucasian_albanian"
+}
+52700020=
+{
+	name="Bagratid"
+	culture="caucasian_albanian"
+}
+52700021=
+{
+	name="Bagratid"
+	culture="caucasian_albanian"
+}
+52700022=
+{
+	name="Bagratids"
+	culture="caucasian_albanian"
+}
+52700023=
+{
+	name="Bagratid"
+	culture="caucasian_albanian"
+}
+52700024=
+{
+	name="Bznuni"
+	culture="caucasian_albanian"
+}
+52700025=
+{
+	name="Bznuni"
+	culture="caucasian_albanian"
+}
+52700026=
+{
+	name="Bznunis"
+	culture="caucasian_albanian"
+}
+52700027=
+{
+	name="Bznunid"
+	culture="caucasian_albanian"
+}
+52700028=
+{
+	name="Dimaksean"
+	culture="caucasian_albanian"
+}
+52700029=
+{
+	name="Dimaksean"
+	culture="caucasian_albanian"
+}
+52700030=
+{
+	name="Dimakseans"
+	culture="caucasian_albanian"
+}
+52700031=
+{
+	name="Dimakid"
+	culture="caucasian_albanian"
+}
+52700032=
+{
+	name="Ensayatsi"
+	culture="caucasian_albanian"
+}
+52700033=
+{
+	name="Ensayatsi"
+	culture="caucasian_albanian"
+}
+52700034=
+{
+	name="Ensayatsis"
+	culture="caucasian_albanian"
+}
+52700035=
+{
+	name="Ensayatsid"
+	culture="caucasian_albanian"
+}
+52700036=
+{
+	name="Gabeghean"
+	culture="caucasian_albanian"
+}
+52700037=
+{
+	name="Gabeghean"
+	culture="caucasian_albanian"
+}
+52700038=
+{
+	name="Gabegheans"
+	culture="caucasian_albanian"
+}
+52700039=
+{
+	name="Gabeghid"
+	culture="caucasian_albanian"
+}
+52700040=
+{
+	name="Gntuni"
+	culture="caucasian_albanian"
+}
+52700041=
+{
+	name="Gntuni"
+	culture="caucasian_albanian"
+}
+52700042=
+{
+	name="Gntunis"
+	culture="caucasian_albanian"
+}
+52700043=
+{
+	name="Gntunid"
+	culture="caucasian_albanian"
+}
+52700044=
+{
+	name="Gnuni"
+	culture="caucasian_albanian"
+}
+52700045=
+{
+	name="Gnuni"
+	culture="caucasian_albanian"
+}
+52700046=
+{
+	name="Gnunis"
+	culture="caucasian_albanian"
+}
+52700047=
+{
+	name="Gnunid"
+	culture="caucasian_albanian"
+}
+52700048=
+{
+	name="Habuzhean"
+	culture="caucasian_albanian"
+}
+52700049=
+{
+	name="Habuzhean"
+	culture="caucasian_albanian"
+}
+52700050=
+{
+	name="Habuzheans"
+	culture="caucasian_albanian"
+}
+52700051=
+{
+	name="Habuzhid"
+	culture="caucasian_albanian"
+}
+52700052=
+{
+	name="Hashteank"
+	culture="caucasian_albanian"
+}
+52700053=
+{
+	name="Hashteank"
+	culture="caucasian_albanian"
+}
+52700054=
+{
+	name="Hashteanks"
+	culture="caucasian_albanian"
+}
+52700055=
+{
+	name="Hashteank"
+	culture="caucasian_albanian"
+}
+52700056=
+{
+	name="Hawnuni"
+	culture="caucasian_albanian"
+}
+52700057=
+{
+	name="Hawnuni"
+	culture="caucasian_albanian"
+}
+52700058=
+{
+	name="Hawnunis"
+	culture="caucasian_albanian"
+}
+52700059=
+{
+	name="Hawnunid"
+	culture="caucasian_albanian"
+}
+52700060=
+{
+	name="Kajberuni"
+	culture="caucasian_albanian"
+}
+52700061=
+{
+	name="Kajberuni"
+	culture="caucasian_albanian"
+}
+52700062=
+{
+	name="Kajberunis"
+	culture="caucasian_albanian"
+}
+52700063=
+{
+	name="Kajberunid"
+	culture="caucasian_albanian"
+}
+52700064=
+{
+	name="Kamsarakan"
+	culture="caucasian_albanian"
+}
+52700065=
+{
+	name="Kamsarakan"
+	culture="caucasian_albanian"
+}
+52700066=
+{
+	name="Kamsarakans"
+	culture="caucasian_albanian"
+}
+52700067=
+{
+	name="Kamsarakanid"
+	culture="caucasian_albanian"
+}
+52700068=
+{
+	name="Koghean"
+	culture="caucasian_albanian"
+}
+52700069=
+{
+	name="Koghean"
+	culture="caucasian_albanian"
+}
+52700070=
+{
+	name="Kogheans"
+	culture="caucasian_albanian"
+}
+52700071=
+{
+	name="Koghid"
+	culture="caucasian_albanian"
+}
+52700072=
+{
+	name="Mamikonean"
+	culture="caucasian_albanian"
+}
+52700073=
+{
+	name="Mamikonean"
+	culture="caucasian_albanian"
+}
+52700074=
+{
+	name="Mamikoneans"
+	culture="caucasian_albanian"
+}
+52700075=
+{
+	name="Mamikonid"
+	culture="caucasian_albanian"
+}
+52700076=
+{
+	name="Manawazean"
+	culture="caucasian_albanian"
+}
+52700077=
+{
+	name="Manawazean"
+	culture="caucasian_albanian"
+}
+52700078=
+{
+	name="Manawazeans"
+	culture="caucasian_albanian"
+}
+52700079=
+{
+	name="Manawazid"
+	culture="caucasian_albanian"
+}
+52700080=
+{
+	name="Mandakuni"
+	culture="caucasian_albanian"
+}
+52700081=
+{
+	name="Mandakuni"
+	culture="caucasian_albanian"
+}
+52700082=
+{
+	name="Mandakunis"
+	culture="caucasian_albanian"
+}
+52700083=
+{
+	name="Mandakunid"
+	culture="caucasian_albanian"
+}
+52700084=
+{
+	name="Paluni"
+	culture="caucasian_albanian"
+}
+52700085=
+{
+	name="Paluni"
+	culture="caucasian_albanian"
+}
+52700086=
+{
+	name="Palunis"
+	culture="caucasian_albanian"
+}
+52700087=
+{
+	name="Palunid"
+	culture="caucasian_albanian"
+}
+52700088=
+{
+	name="Oroduni"
+	culture="caucasian_albanian"
+}
+52700089=
+{
+	name="Oroduni"
+	culture="caucasian_albanian"
+}
+52700090=
+{
+	name="Orodunis"
+	culture="caucasian_albanian"
+}
+52700091=
+{
+	name="Orodunid"
+	culture="caucasian_albanian"
+}
+52700092=
+{
+	name="Eruanduni"
+	culture="caucasian_albanian"
+}
+52700093=
+{
+	name="Eruanduni"
+	culture="caucasian_albanian"
+}
+52700094=
+{
+	name="Eruandunis"
+	culture="caucasian_albanian"
+}
+52700095=
+{
+	name="Eruandunid"
+	culture="caucasian_albanian"
+}
+52700096=
+{
+	name="Orontid"
+	culture="caucasian_albanian"
+}
+52700097=
+{
+	name="Orontid"
+	culture="caucasian_albanian"
+}
+52700098=
+{
+	name="Orontids"
+	culture="caucasian_albanian"
+}
+52700099=
+{
+	name="Orontid"
+	culture="caucasian_albanian"
+}
+527000100=
+{
+	name="Ropsean"
+	culture="caucasian_albanian"
+}
+527000101=
+{
+	name="Ropsean"
+	culture="caucasian_albanian"
+}
+527000102=
+{
+	name="Ropseans"
+	culture="caucasian_albanian"
+}
+527000103=
+{
+	name="Ropsid"
+	culture="caucasian_albanian"
+}
+527000104=
+{
+	name="Rshtuni"
+	culture="caucasian_albanian"
+}
+527000105=
+{
+	name="Rshtuni"
+	culture="caucasian_albanian"
+}
+527000106=
+{
+	name="Rshtunis"
+	culture="caucasian_albanian"
+}
+527000107=
+{
+	name="Rshtunid"
+	culture="caucasian_albanian"
+}
+527000108=
+{
+	name="Sghkuni"
+	culture="caucasian_albanian"
+}
+527000109=
+{
+	name="Sghkuni"
+	culture="caucasian_albanian"
+}
+527000110=
+{
+	name="Sghkunis"
+	culture="caucasian_albanian"
+}
+527000111=
+{
+	name="Sghkunid"
+	culture="caucasian_albanian"
+}
+527000112=
+{
+	name="Sisakean"
+	culture="caucasian_albanian"
+}
+527000113=
+{
+	name="Sisakean"
+	culture="caucasian_albanian"
+}
+527000114=
+{
+	name="Sisakeans"
+	culture="caucasian_albanian"
+}
+527000115=
+{
+	name="Sisakid"
+	culture="caucasian_albanian"
+}
+527000116=
+{
+	name="Siwnid"
+	culture="caucasian_albanian"
+}
+527000117=
+{
+	name="Siwnid"
+	culture="caucasian_albanian"
+}
+527000118=
+{
+	name="Siwnids"
+	culture="caucasian_albanian"
+}
+527000119=
+{
+	name="Siwnid"
+	culture="caucasian_albanian"
+}
+527000120=
+{
+	name="Sruanjit"
+	culture="caucasian_albanian"
+}
+527000121=
+{
+	name="Sruanjit"
+	culture="caucasian_albanian"
+}
+527000122=
+{
+	name="Sruanjits"
+	culture="caucasian_albanian"
+}
+527000123=
+{
+	name="Sruanjit"
+	culture="caucasian_albanian"
+}
+527000124=
+{
+	name="Truni"
+	culture="caucasian_albanian"
+}
+527000125=
+{
+	name="Truni"
+	culture="caucasian_albanian"
+}
+527000126=
+{
+	name="Trunis"
+	culture="caucasian_albanian"
+}
+527000127=
+{
+	name="Trunid"
+	culture="caucasian_albanian"
+}
+527000128=
+{
+	name="Urts"
+	culture="caucasian_albanian"
+}
+527000129=
+{
+	name="Urts"
+	culture="caucasian_albanian"
+}
+527000130=
+{
+	name="Urtsis"
+	culture="caucasian_albanian"
+}
+527000131=
+{
+	name="Urtsid"
+	culture="caucasian_albanian"
+}
+527000132=
+{
+	name="Vahuni"
+	culture="caucasian_albanian"
+}
+527000133=
+{
+	name="Vahuni"
+	culture="caucasian_albanian"
+}
+527000134=
+{
+	name="Vahunis"
+	culture="caucasian_albanian"
+}
+527000135=
+{
+	name="Vahunid"
+	culture="caucasian_albanian"
+}
+527000136=
+{
+	name="Varazhnuni"
+	culture="caucasian_albanian"
+}
+527000137=
+{
+	name="Varazhnuni"
+	culture="caucasian_albanian"
+}
+527000138=
+{
+	name="Varazhnunis"
+	culture="caucasian_albanian"
+}
+527000139=
+{
+	name="Varazhnunid"
+	culture="caucasian_albanian"
+}

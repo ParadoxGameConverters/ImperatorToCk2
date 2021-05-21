@@ -1,0 +1,580 @@
+5020000=
+{
+	name="Ambonus"
+	culture="celtic_pannonian"
+}
+5020001=
+{
+	name="Ambona"
+	culture="celtic_pannonian"
+}
+5020002=
+{
+	name="Ambonii"
+	culture="celtic_pannonian"
+}
+5020003=
+{
+	name="Ambonid"
+	culture="celtic_pannonian"
+}
+5020004=
+{
+	name="Auaroses"
+	culture="celtic_pannonian"
+}
+5020005=
+{
+	name="Auarosa"
+	culture="celtic_pannonian"
+}
+5020006=
+{
+	name="Auarosii"
+	culture="celtic_pannonian"
+}
+5020007=
+{
+	name="Auarosian"
+	culture="celtic_pannonian"
+}
+5020008=
+{
+	name="Audaxus"
+	culture="celtic_pannonian"
+}
+5020009=
+{
+	name="Audaxa"
+	culture="celtic_pannonian"
+}
+50200010=
+{
+	name="Audaxii"
+	culture="celtic_pannonian"
+}
+50200011=
+{
+	name="Audaxian"
+	culture="celtic_pannonian"
+}
+50200012=
+{
+	name="Carosus"
+	culture="celtic_pannonian"
+}
+50200013=
+{
+	name="Carosa"
+	culture="celtic_pannonian"
+}
+50200014=
+{
+	name="Carosii"
+	culture="celtic_pannonian"
+}
+50200015=
+{
+	name="Carosian"
+	culture="celtic_pannonian"
+}
+50200016=
+{
+	name="Culchus"
+	culture="celtic_pannonian"
+}
+50200017=
+{
+	name="Culcha"
+	culture="celtic_pannonian"
+}
+50200018=
+{
+	name="Culchi"
+	culture="celtic_pannonian"
+}
+50200019=
+{
+	name="Culchian"
+	culture="celtic_pannonian"
+}
+50200020=
+{
+	name="Leukus"
+	culture="celtic_pannonian"
+}
+50200021=
+{
+	name="Leuka"
+	culture="celtic_pannonian"
+}
+50200022=
+{
+	name="Leuki"
+	culture="celtic_pannonian"
+}
+50200023=
+{
+	name="Leukian"
+	culture="celtic_pannonian"
+}
+50200024=
+{
+	name="Mandonus"
+	culture="celtic_pannonian"
+}
+50200025=
+{
+	name="Mandonia"
+	culture="celtic_pannonian"
+}
+50200026=
+{
+	name="Mandonii"
+	culture="celtic_pannonian"
+}
+50200027=
+{
+	name="Mandonian"
+	culture="celtic_pannonian"
+}
+50200028=
+{
+	name="Punicus"
+	culture="celtic_pannonian"
+}
+50200029=
+{
+	name="Punica"
+	culture="celtic_pannonian"
+}
+50200030=
+{
+	name="Punici"
+	culture="celtic_pannonian"
+}
+50200031=
+{
+	name="Punician"
+	culture="celtic_pannonian"
+}
+50200032=
+{
+	name="Tautalus"
+	culture="celtic_pannonian"
+}
+50200033=
+{
+	name="Tautala"
+	culture="celtic_pannonian"
+}
+50200034=
+{
+	name="Tautalii"
+	culture="celtic_pannonian"
+}
+50200035=
+{
+	name="Tautalid"
+	culture="celtic_pannonian"
+}
+50200036=
+{
+	name="Correius"
+	culture="celtic_pannonian"
+}
+50200037=
+{
+	name="Correia"
+	culture="celtic_pannonian"
+}
+50200038=
+{
+	name="Correid"
+	culture="celtic_pannonian"
+}
+50200039=
+{
+	name="Correian"
+	culture="celtic_pannonian"
+}
+50200040=
+{
+	name="Divicus"
+	culture="celtic_pannonian"
+}
+50200041=
+{
+	name="Divica"
+	culture="celtic_pannonian"
+}
+50200042=
+{
+	name="Divici"
+	culture="celtic_pannonian"
+}
+50200043=
+{
+	name="Divicid"
+	culture="celtic_pannonian"
+}
+50200044=
+{
+	name="Duratus"
+	culture="celtic_pannonian"
+}
+50200045=
+{
+	name="Durata"
+	culture="celtic_pannonian"
+}
+50200046=
+{
+	name="Duratii"
+	culture="celtic_pannonian"
+}
+50200047=
+{
+	name="Duratian"
+	culture="celtic_pannonian"
+}
+50200048=
+{
+	name="Elitovus"
+	culture="celtic_pannonian"
+}
+50200049=
+{
+	name="Elitova"
+	culture="celtic_pannonian"
+}
+50200050=
+{
+	name="Elitovii"
+	culture="celtic_pannonian"
+}
+50200051=
+{
+	name="Elitovian"
+	culture="celtic_pannonian"
+}
+50200052=
+{
+	name="Galbus"
+	culture="celtic_pannonian"
+}
+50200053=
+{
+	name="Galba"
+	culture="celtic_pannonian"
+}
+50200054=
+{
+	name="Galbi"
+	culture="celtic_pannonian"
+}
+50200055=
+{
+	name="Galbid"
+	culture="celtic_pannonian"
+}
+50200056=
+{
+	name="Iacus"
+	culture="celtic_pannonian"
+}
+50200057=
+{
+	name="Iaca"
+	culture="celtic_pannonian"
+}
+50200058=
+{
+	name="Iaci"
+	culture="celtic_pannonian"
+}
+50200059=
+{
+	name="Iacid"
+	culture="celtic_pannonian"
+}
+50200060=
+{
+	name="Marganus"
+	culture="celtic_pannonian"
+}
+50200061=
+{
+	name="Margana"
+	culture="celtic_pannonian"
+}
+50200062=
+{
+	name="Marganii"
+	culture="celtic_pannonian"
+}
+50200063=
+{
+	name="Marganid"
+	culture="celtic_pannonian"
+}
+50200064=
+{
+	name="Sinatus"
+	culture="celtic_pannonian"
+}
+50200065=
+{
+	name="Sinata"
+	culture="celtic_pannonian"
+}
+50200066=
+{
+	name="Sinatii"
+	culture="celtic_pannonian"
+}
+50200067=
+{
+	name="Sinatid"
+	culture="celtic_pannonian"
+}
+50200068=
+{
+	name="Vodenosus"
+	culture="celtic_pannonian"
+}
+50200069=
+{
+	name="Vodenosa"
+	culture="celtic_pannonian"
+}
+50200070=
+{
+	name="Vodenosii"
+	culture="celtic_pannonian"
+}
+50200071=
+{
+	name="Vodenosian"
+	culture="celtic_pannonian"
+}
+50200072=
+{
+	name="Indutius"
+	culture="celtic_pannonian"
+}
+50200073=
+{
+	name="Indutia"
+	culture="celtic_pannonian"
+}
+50200074=
+{
+	name="Indutii"
+	culture="celtic_pannonian"
+}
+50200075=
+{
+	name="Indutian"
+	culture="celtic_pannonian"
+}
+50200076=
+{
+	name="Dumnus"
+	culture="celtic_pannonian"
+}
+50200077=
+{
+	name="Dumna"
+	culture="celtic_pannonian"
+}
+50200078=
+{
+	name="Dumnii"
+	culture="celtic_pannonian"
+}
+50200079=
+{
+	name="Dumnid"
+	culture="celtic_pannonian"
+}
+50200080=
+{
+	name="Epatticus"
+	culture="celtic_pannonian"
+}
+50200081=
+{
+	name="Epattica"
+	culture="celtic_pannonian"
+}
+50200082=
+{
+	name="Epatticii"
+	culture="celtic_pannonian"
+}
+50200083=
+{
+	name="Epatticid"
+	culture="celtic_pannonian"
+}
+50200084=
+{
+	name="Teutomalus"
+	culture="celtic_pannonian"
+}
+50200085=
+{
+	name="Teutomala"
+	culture="celtic_pannonian"
+}
+50200086=
+{
+	name="Teutomalii"
+	culture="celtic_pannonian"
+}
+50200087=
+{
+	name="Teutomalian"
+	culture="celtic_pannonian"
+}
+50200088=
+{
+	name="Viridorrius"
+	culture="celtic_pannonian"
+}
+50200089=
+{
+	name="Viridorria"
+	culture="celtic_pannonian"
+}
+50200090=
+{
+	name="Viridorrii"
+	culture="celtic_pannonian"
+}
+50200091=
+{
+	name="Viridorrian"
+	culture="celtic_pannonian"
+}
+50200092=
+{
+	name="Magunnus"
+	culture="celtic_pannonian"
+}
+50200093=
+{
+	name="Magunna"
+	culture="celtic_pannonian"
+}
+50200094=
+{
+	name="Magunnii"
+	culture="celtic_pannonian"
+}
+50200095=
+{
+	name="Magunnid"
+	culture="celtic_pannonian"
+}
+50200096=
+{
+	name="Brennus"
+	culture="celtic_pannonian"
+}
+50200097=
+{
+	name="Brenna"
+	culture="celtic_pannonian"
+}
+50200098=
+{
+	name="Brennii"
+	culture="celtic_pannonian"
+}
+50200099=
+{
+	name="Brennid"
+	culture="celtic_pannonian"
+}
+502000100=
+{
+	name="Boius"
+	culture="celtic_pannonian"
+}
+502000101=
+{
+	name="Boia"
+	culture="celtic_pannonian"
+}
+502000102=
+{
+	name="Boii"
+	culture="celtic_pannonian"
+}
+502000103=
+{
+	name="Boian"
+	culture="celtic_pannonian"
+}
+502000104=
+{
+	name="Tannus"
+	culture="celtic_pannonian"
+}
+502000105=
+{
+	name="Tanna"
+	culture="celtic_pannonian"
+}
+502000106=
+{
+	name="Tanni"
+	culture="celtic_pannonian"
+}
+502000107=
+{
+	name="Tannid"
+	culture="celtic_pannonian"
+}
+502000108=
+{
+	name="Iccuius"
+	culture="celtic_pannonian"
+}
+502000109=
+{
+	name="Iccuia"
+	culture="celtic_pannonian"
+}
+502000110=
+{
+	name="Iccui"
+	culture="celtic_pannonian"
+}
+502000111=
+{
+	name="Iccian"
+	culture="celtic_pannonian"
+}
+502000112=
+{
+	name="Galanus"
+	culture="celtic_pannonian"
+}
+502000113=
+{
+	name="Galana"
+	culture="celtic_pannonian"
+}
+502000114=
+{
+	name="Galanii"
+	culture="celtic_pannonian"
+}
+502000115=
+{
+	name="Galanid"
+	culture="celtic_pannonian"
+}
