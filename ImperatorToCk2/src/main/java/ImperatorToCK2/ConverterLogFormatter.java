@@ -13,23 +13,23 @@ public class ConverterLogFormatter  extends Formatter {
 
         buf.append(calcDate(rec.getMillis()));
 
-        if (rec.getLevel() == Level.SEVERE)
+        if (rec.getLevel().equals(Level.SEVERE))
         {
             buf.append("   [ERROR] ");
         }
-        else if (rec.getLevel() == Level.WARNING)
+        else if (rec.getLevel().equals(Level.WARNING))
         {
             buf.append(" [WARNING] ");
         }
-        else if (rec.getLevel() == Level.INFO)
+        else if (rec.getLevel().equals(Level.INFO))
         {
             buf.append("    [INFO] ");
         }
-        else if (rec.getLevel() == Level.CONFIG)
+        else if (rec.getLevel().equals(Level.CONFIG))
         {
             buf.append("   [DEBUG]     ");
         }
-        else if (rec.getLevel() == Level.FINEST)
+        else if (rec.getLevel().equals(Level.FINEST))
         {
             buf.append("[PROGRESS] ");
         }
