@@ -3,7 +3,7 @@ converterFolder = ImperatorToCK2
 displayName = IMPTOCK2DISPLAYNAME
 sourceGame = IMPERATOR
 targetGame = CK2GAME
-autoGenerateModsFrom = Vic2ModPath
+autoGenerateModsFrom = ImperatorModPath
 
 requiredFile = {
 	name = SaveGame
@@ -23,9 +23,9 @@ requiredFile = {
 	mandatory = true
 	outputtable = false
 	searchPathType = converterFolder
-	searchPath = "ImperatorToCk2"
+	searchPath = "ImperatorToCK2"
 	allowedExtension = "*.jar"
-	fileName = "Converter.jar"
+	fileName = "ImperatorToCK2.jar"
 }
 
 requiredFolder = {
@@ -42,7 +42,6 @@ requiredFolder = {
 	displayName = IMPERATORMOD
 	tooltip = IMPERATORMODTIP
 	mandatory = true
-	searchPathType = steamFolder
 	searchPathType = windowsUsersFolder
 	searchPath = "Paradox Interactive\Imperator\mod"
 }
@@ -61,6 +60,7 @@ requiredFolder = {
 	displayName = CK2MOD
 	tooltip = CK2MODTIP
 	mandatory = true
+	searchPathType = steamFolder
 	searchPathType = windowsUsersFolder
 	searchPath = "Paradox Interactive\Crusader Kings II\mod"
 }
