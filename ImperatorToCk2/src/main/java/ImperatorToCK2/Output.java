@@ -1,5 +1,4 @@
-package ImperatorToCK2;
- 
+
 import java.util.Scanner;
 import java.io.IOException;
 import java.io.FileInputStream;
@@ -133,13 +132,14 @@ public class Output
         String date1 = "100.1.1";
         String date2 = "1066.9.15";
 
+        String overlordRank = "k";
+        if (rank.equals("k")){
+            overlordRank = "e";
+        }
+
         out.println (date1+"={");
         if (liege != "no_liege") { //If country is a subject
-            String overlordRank = "k";
-            if (rank.equals("k")){
-                overlordRank = "e";
-            }
-            
+
             out.println (tab+"liege="+overlordRank+"_"+liege);
             out.println (tab+"de_jure_liege="+overlordRank+"_"+liege);
         }
@@ -149,8 +149,8 @@ public class Output
 
         out.println (date2+"={");
         if (liege != "no_liege") {
-            out.println (tab+"liege="+"k_"+liege);
-            out.println (tab+"de_jure_liege="+"k_"+liege);
+            out.println (tab+"liege="+overlordRank+"_"+liege);
+            out.println (tab+"de_jure_liege="+overlordRank+"_"+liege);
         }
         out.println ("\tholder="+irKING);
         out.println ("}");
@@ -405,7 +405,7 @@ public class Output
             while (aq4 < childCount) {//Recursively calls to get rest of family
 
                 childInfo = Characters.importChar(tempFile,children.split(" ")[aq4]);
-                System.out.println ("Child " + aq4 + " out of " + childCount);
+                logPrint ("Child " + aq4 + " out of " + childCount);
                 child1066 = Integer.toString( 1000000 + Integer.parseInt(children.split(" ")[aq4]) );
 
                 characterCreation( child1066,  cultureOutput(childInfo[1]),  religionOutput(childInfo[2]),  childInfo[3],  childInfo[0],  childInfo[7],
@@ -436,7 +436,7 @@ public class Output
         ArrayList<String> convTraitList = new ArrayList<String>();
 
         if (traits != "q") {
-            System.out.println("traitsGood"); 
+            logPrint("traitsGood"); 
             String[] traitList = traits.split(" ");
 
             try {
@@ -464,7 +464,6 @@ public class Output
 
         Importer importer = new Importer();
 
-      
         FileOutputStream fileOut= new FileOutputStream(Directory + VM + name + "k_" + irKING + ".txt");
         PrintWriter out = new PrintWriter(fileOut);
 
@@ -747,6 +746,60 @@ public class Output
         fileOut.close();
 
         return ck2CultureInfo;
+    }
+    
+    public static void logPrint(String name) throws IOException //outputs to log.txt
+    {
+        
+        String logFile = "log.txt";
+
+
+        ArrayList<String> oldFile = new ArrayList<String>();
+        
+        oldFile = Importer.importBasicFile(logFile);
+
+
+        FileOutputStream fileOut= new FileOutputStream(logFile);
+        PrintWriter out = new PrintWriter(fileOut);
+
+        int flag = 0;
+        int aqq = 0;
+
+        try {
+
+            while (flag == 0) {
+                out.println (oldFile.get(aqq));
+                aqq = aqq + 1;
+
+            }
+
+        }catch (java.lang.IndexOutOfBoundsException exception){
+            flag = 1;
+
+        } 
+
+        out.println(name);
+        out.flush();
+        fileOut.close();
+
+    }
+    
+    public static void logBlank() throws IOException //creates/replaces new log file
+    {
+        
+        String logFile = "log.txt";
+
+
+        FileOutputStream fileOut= new FileOutputStream(logFile);
+        PrintWriter out = new PrintWriter(fileOut);
+
+        out.println ("Log File for I:R to CK II converter");
+        out.println ("If I:R to CK II crashes or has problems, send this log file and your I:R save game to the Paradox Converter team ASAP!");
+        out.println ("");
+        out.flush();
+        fileOut.close();
+
+
     }
 
 }
