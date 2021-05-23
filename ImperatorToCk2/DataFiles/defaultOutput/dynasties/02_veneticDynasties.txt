@@ -1,0 +1,800 @@
+5210000=
+{
+	name="Aburius"
+	culture="venetic"
+}
+5210001=
+{
+	name="Aburia"
+	culture="venetic"
+}
+5210002=
+{
+	name="Aburii"
+	culture="venetic"
+}
+5210003=
+{
+	name="Aburian"
+	culture="venetic"
+}
+5210004=
+{
+	name="Accius"
+	culture="venetic"
+}
+5210005=
+{
+	name="Accia"
+	culture="venetic"
+}
+5210006=
+{
+	name="Accii"
+	culture="venetic"
+}
+5210007=
+{
+	name="Accian"
+	culture="venetic"
+}
+5210008=
+{
+	name="Acilius"
+	culture="venetic"
+}
+5210009=
+{
+	name="Acilia"
+	culture="venetic"
+}
+52100010=
+{
+	name="Acilii"
+	culture="venetic"
+}
+52100011=
+{
+	name="Acilian"
+	culture="venetic"
+}
+52100012=
+{
+	name="Acutius"
+	culture="venetic"
+}
+52100013=
+{
+	name="Acutia"
+	culture="venetic"
+}
+52100014=
+{
+	name="Acutii"
+	culture="venetic"
+}
+52100015=
+{
+	name="Acutian"
+	culture="venetic"
+}
+52100016=
+{
+	name="Aebutius"
+	culture="venetic"
+}
+52100017=
+{
+	name="Aebutia"
+	culture="venetic"
+}
+52100018=
+{
+	name="Aebutii"
+	culture="venetic"
+}
+52100019=
+{
+	name="Aebutian"
+	culture="venetic"
+}
+52100020=
+{
+	name="Aelius"
+	culture="venetic"
+}
+52100021=
+{
+	name="Aelia"
+	culture="venetic"
+}
+52100022=
+{
+	name="Aelii"
+	culture="venetic"
+}
+52100023=
+{
+	name="Aelian"
+	culture="venetic"
+}
+52100024=
+{
+	name="Aemilius"
+	culture="venetic"
+}
+52100025=
+{
+	name="Aemilia"
+	culture="venetic"
+}
+52100026=
+{
+	name="Aemilii"
+	culture="venetic"
+}
+52100027=
+{
+	name="Aemilian"
+	culture="venetic"
+}
+52100028=
+{
+	name="Alienus"
+	culture="venetic"
+}
+52100029=
+{
+	name="Aliena"
+	culture="venetic"
+}
+52100030=
+{
+	name="Alienii"
+	culture="venetic"
+}
+52100031=
+{
+	name="Alien"
+	culture="venetic"
+}
+52100032=
+{
+	name="Anicius"
+	culture="venetic"
+}
+52100033=
+{
+	name="Anicia"
+	culture="venetic"
+}
+52100034=
+{
+	name="Anicii"
+	culture="venetic"
+}
+52100035=
+{
+	name="Anician"
+	culture="venetic"
+}
+52100036=
+{
+	name="Annius"
+	culture="venetic"
+}
+52100037=
+{
+	name="Annia"
+	culture="venetic"
+}
+52100038=
+{
+	name="Anni"
+	culture="venetic"
+}
+52100039=
+{
+	name="Annian"
+	culture="venetic"
+}
+52100040=
+{
+	name="Antius"
+	culture="venetic"
+}
+52100041=
+{
+	name="Antia"
+	culture="venetic"
+}
+52100042=
+{
+	name="Antii"
+	culture="venetic"
+}
+52100043=
+{
+	name="Antian"
+	culture="venetic"
+}
+52100044=
+{
+	name="Antistius"
+	culture="venetic"
+}
+52100045=
+{
+	name="Antistia"
+	culture="venetic"
+}
+52100046=
+{
+	name="Antistii"
+	culture="venetic"
+}
+52100047=
+{
+	name="Antistian"
+	culture="venetic"
+}
+52100048=
+{
+	name="Antonius"
+	culture="venetic"
+}
+52100049=
+{
+	name="Antonia"
+	culture="venetic"
+}
+52100050=
+{
+	name="Antonii"
+	culture="venetic"
+}
+52100051=
+{
+	name="Antonian"
+	culture="venetic"
+}
+52100052=
+{
+	name="Claudius"
+	culture="venetic"
+}
+52100053=
+{
+	name="Claudia"
+	culture="venetic"
+}
+52100054=
+{
+	name="Claudii"
+	culture="venetic"
+}
+52100055=
+{
+	name="Claudian"
+	culture="venetic"
+}
+52100056=
+{
+	name="Cloelius"
+	culture="venetic"
+}
+52100057=
+{
+	name="Cloelia"
+	culture="venetic"
+}
+52100058=
+{
+	name="Cloelii"
+	culture="venetic"
+}
+52100059=
+{
+	name="Cloelian"
+	culture="venetic"
+}
+52100060=
+{
+	name="Cominius"
+	culture="venetic"
+}
+52100061=
+{
+	name="Cominia"
+	culture="venetic"
+}
+52100062=
+{
+	name="Cominii"
+	culture="venetic"
+}
+52100063=
+{
+	name="Cominian"
+	culture="venetic"
+}
+52100064=
+{
+	name="Cornelius"
+	culture="venetic"
+}
+52100065=
+{
+	name="Cornelia"
+	culture="venetic"
+}
+52100066=
+{
+	name="Cornelii"
+	culture="venetic"
+}
+52100067=
+{
+	name="Cornelian"
+	culture="venetic"
+}
+52100068=
+{
+	name="Coruncanius"
+	culture="venetic"
+}
+52100069=
+{
+	name="Coruncania"
+	culture="venetic"
+}
+52100070=
+{
+	name="Coruncanii"
+	culture="venetic"
+}
+52100071=
+{
+	name="Coruncanian"
+	culture="venetic"
+}
+52100072=
+{
+	name="Curiatius"
+	culture="venetic"
+}
+52100073=
+{
+	name="Curiatia"
+	culture="venetic"
+}
+52100074=
+{
+	name="Curiatii"
+	culture="venetic"
+}
+52100075=
+{
+	name="Curiatian"
+	culture="venetic"
+}
+52100076=
+{
+	name="Curtius"
+	culture="venetic"
+}
+52100077=
+{
+	name="Curtia"
+	culture="venetic"
+}
+52100078=
+{
+	name="Curtii"
+	culture="venetic"
+}
+52100079=
+{
+	name="Curtian"
+	culture="venetic"
+}
+52100080=
+{
+	name="Curius"
+	culture="venetic"
+}
+52100081=
+{
+	name="Curia"
+	culture="venetic"
+}
+52100082=
+{
+	name="Curii"
+	culture="venetic"
+}
+52100083=
+{
+	name="Curian"
+	culture="venetic"
+}
+52100084=
+{
+	name="Decius"
+	culture="venetic"
+}
+52100085=
+{
+	name="Decia"
+	culture="venetic"
+}
+52100086=
+{
+	name="Decii"
+	culture="venetic"
+}
+52100087=
+{
+	name="Decian"
+	culture="venetic"
+}
+52100088=
+{
+	name="Domitius"
+	culture="venetic"
+}
+52100089=
+{
+	name="Domitia"
+	culture="venetic"
+}
+52100090=
+{
+	name="Domitii"
+	culture="venetic"
+}
+52100091=
+{
+	name="Domitian"
+	culture="venetic"
+}
+52100092=
+{
+	name="Sestius"
+	culture="venetic"
+}
+52100093=
+{
+	name="Sestia"
+	culture="venetic"
+}
+52100094=
+{
+	name="Sestii"
+	culture="venetic"
+}
+52100095=
+{
+	name="Sestian"
+	culture="venetic"
+}
+52100096=
+{
+	name="Sextius"
+	culture="venetic"
+}
+52100097=
+{
+	name="Sextia"
+	culture="venetic"
+}
+52100098=
+{
+	name="Sextii"
+	culture="venetic"
+}
+52100099=
+{
+	name="Sextian"
+	culture="venetic"
+}
+521000100=
+{
+	name="Sextilius"
+	culture="venetic"
+}
+521000101=
+{
+	name="Sextilia"
+	culture="venetic"
+}
+521000102=
+{
+	name="Sextilii"
+	culture="venetic"
+}
+521000103=
+{
+	name="Sextilian"
+	culture="venetic"
+}
+521000104=
+{
+	name="Sicinius"
+	culture="venetic"
+}
+521000105=
+{
+	name="Sicinia"
+	culture="venetic"
+}
+521000106=
+{
+	name="Sicinii"
+	culture="venetic"
+}
+521000107=
+{
+	name="Sicinian"
+	culture="venetic"
+}
+521000108=
+{
+	name="Silius"
+	culture="venetic"
+}
+521000109=
+{
+	name="Silia"
+	culture="venetic"
+}
+521000110=
+{
+	name="Silii"
+	culture="venetic"
+}
+521000111=
+{
+	name="Silian"
+	culture="venetic"
+}
+521000112=
+{
+	name="Sulpicius"
+	culture="venetic"
+}
+521000113=
+{
+	name="Sulpicia"
+	culture="venetic"
+}
+521000114=
+{
+	name="Sulpicii"
+	culture="venetic"
+}
+521000115=
+{
+	name="Sulpician"
+	culture="venetic"
+}
+521000116=
+{
+	name="Titius"
+	culture="venetic"
+}
+521000117=
+{
+	name="Titia"
+	culture="venetic"
+}
+521000118=
+{
+	name="Titii"
+	culture="venetic"
+}
+521000119=
+{
+	name="Titian"
+	culture="venetic"
+}
+521000120=
+{
+	name="Tremulus"
+	culture="venetic"
+}
+521000121=
+{
+	name="Tremulia"
+	culture="venetic"
+}
+521000122=
+{
+	name="Tremulii"
+	culture="venetic"
+}
+521000123=
+{
+	name="Tremulan"
+	culture="venetic"
+}
+521000124=
+{
+	name="Tullius"
+	culture="venetic"
+}
+521000125=
+{
+	name="Tullia"
+	culture="venetic"
+}
+521000126=
+{
+	name="Tullii"
+	culture="venetic"
+}
+521000127=
+{
+	name="Tullian"
+	culture="venetic"
+}
+521000128=
+{
+	name="Ulpius"
+	culture="venetic"
+}
+521000129=
+{
+	name="Ulpia"
+	culture="venetic"
+}
+521000130=
+{
+	name="Ulpii"
+	culture="venetic"
+}
+521000131=
+{
+	name="Ulpian"
+	culture="venetic"
+}
+521000132=
+{
+	name="Valerius"
+	culture="venetic"
+}
+521000133=
+{
+	name="Valeria"
+	culture="venetic"
+}
+521000134=
+{
+	name="Valerii"
+	culture="venetic"
+}
+521000135=
+{
+	name="Valerian"
+	culture="venetic"
+}
+521000136=
+{
+	name="Verginius"
+	culture="venetic"
+}
+521000137=
+{
+	name="Verginia"
+	culture="venetic"
+}
+521000138=
+{
+	name="Verginii"
+	culture="venetic"
+}
+521000139=
+{
+	name="Verginian"
+	culture="venetic"
+}
+521000140=
+{
+	name="Veturius"
+	culture="venetic"
+}
+521000141=
+{
+	name="Veturia"
+	culture="venetic"
+}
+521000142=
+{
+	name="Veturii"
+	culture="venetic"
+}
+521000143=
+{
+	name="Veturian"
+	culture="venetic"
+}
+521000144=
+{
+	name="Vesuvius"
+	culture="venetic"
+}
+521000145=
+{
+	name="Vesuvia"
+	culture="venetic"
+}
+521000146=
+{
+	name="Vesuvii"
+	culture="venetic"
+}
+521000147=
+{
+	name="Vesuvian"
+	culture="venetic"
+}
+521000148=
+{
+	name="Villius"
+	culture="venetic"
+}
+521000149=
+{
+	name="Villia"
+	culture="venetic"
+}
+521000150=
+{
+	name="Villii"
+	culture="venetic"
+}
+521000151=
+{
+	name="Villian"
+	culture="venetic"
+}
+521000152=
+{
+	name="Viridius"
+	culture="venetic"
+}
+521000153=
+{
+	name="Viridia"
+	culture="venetic"
+}
+521000154=
+{
+	name="Viridii"
+	culture="venetic"
+}
+521000155=
+{
+	name="Viridian"
+	culture="venetic"
+}
+521000156=
+{
+	name="Volumnius"
+	culture="venetic"
+}
+521000157=
+{
+	name="Volumnia"
+	culture="venetic"
+}
+521000158=
+{
+	name="Volumnii"
+	culture="venetic"
+}
+521000159=
+{
+	name="Volumnian"
+	culture="venetic"
+}

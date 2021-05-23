@@ -1,0 +1,600 @@
+5240000=
+{
+	name="Aramid"
+	culture="isaurian"
+}
+5240001=
+{
+	name="Aramid"
+	culture="isaurian"
+}
+5240002=
+{
+	name="Aramids"
+	culture="isaurian"
+}
+5240003=
+{
+	name="Aramid"
+	culture="isaurian"
+}
+5240004=
+{
+	name="Arid"
+	culture="isaurian"
+}
+5240005=
+{
+	name="Arid"
+	culture="isaurian"
+}
+5240006=
+{
+	name="Arids"
+	culture="isaurian"
+}
+5240007=
+{
+	name="Arid"
+	culture="isaurian"
+}
+5240008=
+{
+	name="Arkhid"
+	culture="isaurian"
+}
+5240009=
+{
+	name="Arkhid"
+	culture="isaurian"
+}
+52400010=
+{
+	name="Arkhids"
+	culture="isaurian"
+}
+52400011=
+{
+	name="Arkhid"
+	culture="isaurian"
+}
+52400012=
+{
+	name="Asinid"
+	culture="isaurian"
+}
+52400013=
+{
+	name="Asinid"
+	culture="isaurian"
+}
+52400014=
+{
+	name="Asinids"
+	culture="isaurian"
+}
+52400015=
+{
+	name="Asinid"
+	culture="isaurian"
+}
+52400016=
+{
+	name="Arsacid"
+	culture="isaurian"
+}
+52400017=
+{
+	name="Arsacid"
+	culture="isaurian"
+}
+52400018=
+{
+	name="Arsacids"
+	culture="isaurian"
+}
+52400019=
+{
+	name="Arsacid"
+	culture="isaurian"
+}
+52400020=
+{
+	name="Deiocid"
+	culture="isaurian"
+}
+52400021=
+{
+	name="Deiocid"
+	culture="isaurian"
+}
+52400022=
+{
+	name="Deiocids"
+	culture="isaurian"
+}
+52400023=
+{
+	name="Deiocid"
+	culture="isaurian"
+}
+52400024=
+{
+	name="Menid"
+	culture="isaurian"
+}
+52400025=
+{
+	name="Menid"
+	culture="isaurian"
+}
+52400026=
+{
+	name="Menids"
+	culture="isaurian"
+}
+52400027=
+{
+	name="Menid"
+	culture="isaurian"
+}
+52400028=
+{
+	name="Pacorid"
+	culture="isaurian"
+}
+52400029=
+{
+	name="Pacorid"
+	culture="isaurian"
+}
+52400030=
+{
+	name="Pacorids"
+	culture="isaurian"
+}
+52400031=
+{
+	name="Pacorid"
+	culture="isaurian"
+}
+52400032=
+{
+	name="Savacid"
+	culture="isaurian"
+}
+52400033=
+{
+	name="Savacid"
+	culture="isaurian"
+}
+52400034=
+{
+	name="Savacids"
+	culture="isaurian"
+}
+52400035=
+{
+	name="Savacid"
+	culture="isaurian"
+}
+52400036=
+{
+	name="Vardanid"
+	culture="isaurian"
+}
+52400037=
+{
+	name="Vardanid"
+	culture="isaurian"
+}
+52400038=
+{
+	name="Vardanids"
+	culture="isaurian"
+}
+52400039=
+{
+	name="Vardanid"
+	culture="isaurian"
+}
+52400040=
+{
+	name="Suren"
+	culture="isaurian"
+}
+52400041=
+{
+	name="Suren"
+	culture="isaurian"
+}
+52400042=
+{
+	name="Surenids"
+	culture="isaurian"
+}
+52400043=
+{
+	name="Surenid"
+	culture="isaurian"
+}
+52400044=
+{
+	name="Karin"
+	culture="isaurian"
+}
+52400045=
+{
+	name="Karin"
+	culture="isaurian"
+}
+52400046=
+{
+	name="Karinids"
+	culture="isaurian"
+}
+52400047=
+{
+	name="Karinid"
+	culture="isaurian"
+}
+52400048=
+{
+	name="Gaumatid"
+	culture="isaurian"
+}
+52400049=
+{
+	name="Gaumatid"
+	culture="isaurian"
+}
+52400050=
+{
+	name="Gaumatids"
+	culture="isaurian"
+}
+52400051=
+{
+	name="Gaumatid"
+	culture="isaurian"
+}
+52400052=
+{
+	name="Gobryasid"
+	culture="isaurian"
+}
+52400053=
+{
+	name="Gobryasid"
+	culture="isaurian"
+}
+52400054=
+{
+	name="Gobryasids"
+	culture="isaurian"
+}
+52400055=
+{
+	name="Gobryasid"
+	culture="isaurian"
+}
+52400056=
+{
+	name="Hydarnid"
+	culture="isaurian"
+}
+52400057=
+{
+	name="Hydarnid"
+	culture="isaurian"
+}
+52400058=
+{
+	name="Hydarnids"
+	culture="isaurian"
+}
+52400059=
+{
+	name="Hydarnid"
+	culture="isaurian"
+}
+52400060=
+{
+	name="Smerdid"
+	culture="isaurian"
+}
+52400061=
+{
+	name="Smerdid"
+	culture="isaurian"
+}
+52400062=
+{
+	name="Smerdids"
+	culture="isaurian"
+}
+52400063=
+{
+	name="Smerdid"
+	culture="isaurian"
+}
+52400064=
+{
+	name="Vivanid"
+	culture="isaurian"
+}
+52400065=
+{
+	name="Vivanid"
+	culture="isaurian"
+}
+52400066=
+{
+	name="Vivanids"
+	culture="isaurian"
+}
+52400067=
+{
+	name="Vivanid"
+	culture="isaurian"
+}
+52400068=
+{
+	name="Xerxid"
+	culture="isaurian"
+}
+52400069=
+{
+	name="Xerxid"
+	culture="isaurian"
+}
+52400070=
+{
+	name="Xerxids"
+	culture="isaurian"
+}
+52400071=
+{
+	name="Xerxid"
+	culture="isaurian"
+}
+52400072=
+{
+	name="Abadanid"
+	culture="isaurian"
+}
+52400073=
+{
+	name="Abadanid"
+	culture="isaurian"
+}
+52400074=
+{
+	name="Abadanids"
+	culture="isaurian"
+}
+52400075=
+{
+	name="Abadanid"
+	culture="isaurian"
+}
+52400076=
+{
+	name="Orontid"
+	culture="isaurian"
+}
+52400077=
+{
+	name="Orontid"
+	culture="isaurian"
+}
+52400078=
+{
+	name="Orontids"
+	culture="isaurian"
+}
+52400079=
+{
+	name="Orontid"
+	culture="isaurian"
+}
+52400080=
+{
+	name="Atropatid"
+	culture="isaurian"
+}
+52400081=
+{
+	name="Atropatid"
+	culture="isaurian"
+}
+52400082=
+{
+	name="Atropatids"
+	culture="isaurian"
+}
+52400083=
+{
+	name="Atropatid"
+	culture="isaurian"
+}
+52400084=
+{
+	name="Mithridatid"
+	culture="isaurian"
+}
+52400085=
+{
+	name="Mithridatid"
+	culture="isaurian"
+}
+52400086=
+{
+	name="Mithridatids"
+	culture="isaurian"
+}
+52400087=
+{
+	name="Mithridatid"
+	culture="isaurian"
+}
+52400088=
+{
+	name="Artiaxid"
+	culture="isaurian"
+}
+52400089=
+{
+	name="Artiaxid"
+	culture="isaurian"
+}
+52400090=
+{
+	name="Artiaxids"
+	culture="isaurian"
+}
+52400091=
+{
+	name="Artiaxid"
+	culture="isaurian"
+}
+52400092=
+{
+	name="Sassanid"
+	culture="isaurian"
+}
+52400093=
+{
+	name="Sassanid"
+	culture="isaurian"
+}
+52400094=
+{
+	name="Sassanids"
+	culture="isaurian"
+}
+52400095=
+{
+	name="Sassanid"
+	culture="isaurian"
+}
+52400096=
+{
+	name="Mihranid"
+	culture="isaurian"
+}
+52400097=
+{
+	name="Mihranid"
+	culture="isaurian"
+}
+52400098=
+{
+	name="Mihranids"
+	culture="isaurian"
+}
+52400099=
+{
+	name="Mihranid"
+	culture="isaurian"
+}
+524000100=
+{
+	name="Chosroid"
+	culture="isaurian"
+}
+524000101=
+{
+	name="Chosroid"
+	culture="isaurian"
+}
+524000102=
+{
+	name="Chosroids"
+	culture="isaurian"
+}
+524000103=
+{
+	name="Chosroid"
+	culture="isaurian"
+}
+524000104=
+{
+	name="Artashid"
+	culture="isaurian"
+}
+524000105=
+{
+	name="Artashid"
+	culture="isaurian"
+}
+524000106=
+{
+	name="Artashids"
+	culture="isaurian"
+}
+524000107=
+{
+	name="Artashid"
+	culture="isaurian"
+}
+524000108=
+{
+	name="Bagabignid"
+	culture="isaurian"
+}
+524000109=
+{
+	name="Bagabignid"
+	culture="isaurian"
+}
+524000110=
+{
+	name="Bagabignids"
+	culture="isaurian"
+}
+524000111=
+{
+	name="Bagabignid"
+	culture="isaurian"
+}
+524000112=
+{
+	name="Cambysid"
+	culture="isaurian"
+}
+524000113=
+{
+	name="Cambysid"
+	culture="isaurian"
+}
+524000114=
+{
+	name="Cambysids"
+	culture="isaurian"
+}
+524000115=
+{
+	name="Cambysid"
+	culture="isaurian"
+}
+524000116=
+{
+	name="Frataraka"
+	culture="isaurian"
+}
+524000117=
+{
+	name="Frataraka"
+	culture="isaurian"
+}
+524000118=
+{
+	name="Frataraka"
+	culture="isaurian"
+}
+524000119=
+{
+	name="Frataraka"
+	culture="isaurian"
+}

@@ -1,0 +1,600 @@
+5220000=
+{
+	name="Aramid"
+	culture="phrygian"
+}
+5220001=
+{
+	name="Aramid"
+	culture="phrygian"
+}
+5220002=
+{
+	name="Aramids"
+	culture="phrygian"
+}
+5220003=
+{
+	name="Aramid"
+	culture="phrygian"
+}
+5220004=
+{
+	name="Arid"
+	culture="phrygian"
+}
+5220005=
+{
+	name="Arid"
+	culture="phrygian"
+}
+5220006=
+{
+	name="Arids"
+	culture="phrygian"
+}
+5220007=
+{
+	name="Arid"
+	culture="phrygian"
+}
+5220008=
+{
+	name="Arkhid"
+	culture="phrygian"
+}
+5220009=
+{
+	name="Arkhid"
+	culture="phrygian"
+}
+52200010=
+{
+	name="Arkhids"
+	culture="phrygian"
+}
+52200011=
+{
+	name="Arkhid"
+	culture="phrygian"
+}
+52200012=
+{
+	name="Asinid"
+	culture="phrygian"
+}
+52200013=
+{
+	name="Asinid"
+	culture="phrygian"
+}
+52200014=
+{
+	name="Asinids"
+	culture="phrygian"
+}
+52200015=
+{
+	name="Asinid"
+	culture="phrygian"
+}
+52200016=
+{
+	name="Arsacid"
+	culture="phrygian"
+}
+52200017=
+{
+	name="Arsacid"
+	culture="phrygian"
+}
+52200018=
+{
+	name="Arsacids"
+	culture="phrygian"
+}
+52200019=
+{
+	name="Arsacid"
+	culture="phrygian"
+}
+52200020=
+{
+	name="Deiocid"
+	culture="phrygian"
+}
+52200021=
+{
+	name="Deiocid"
+	culture="phrygian"
+}
+52200022=
+{
+	name="Deiocids"
+	culture="phrygian"
+}
+52200023=
+{
+	name="Deiocid"
+	culture="phrygian"
+}
+52200024=
+{
+	name="Menid"
+	culture="phrygian"
+}
+52200025=
+{
+	name="Menid"
+	culture="phrygian"
+}
+52200026=
+{
+	name="Menids"
+	culture="phrygian"
+}
+52200027=
+{
+	name="Menid"
+	culture="phrygian"
+}
+52200028=
+{
+	name="Pacorid"
+	culture="phrygian"
+}
+52200029=
+{
+	name="Pacorid"
+	culture="phrygian"
+}
+52200030=
+{
+	name="Pacorids"
+	culture="phrygian"
+}
+52200031=
+{
+	name="Pacorid"
+	culture="phrygian"
+}
+52200032=
+{
+	name="Savacid"
+	culture="phrygian"
+}
+52200033=
+{
+	name="Savacid"
+	culture="phrygian"
+}
+52200034=
+{
+	name="Savacids"
+	culture="phrygian"
+}
+52200035=
+{
+	name="Savacid"
+	culture="phrygian"
+}
+52200036=
+{
+	name="Vardanid"
+	culture="phrygian"
+}
+52200037=
+{
+	name="Vardanid"
+	culture="phrygian"
+}
+52200038=
+{
+	name="Vardanids"
+	culture="phrygian"
+}
+52200039=
+{
+	name="Vardanid"
+	culture="phrygian"
+}
+52200040=
+{
+	name="Suren"
+	culture="phrygian"
+}
+52200041=
+{
+	name="Suren"
+	culture="phrygian"
+}
+52200042=
+{
+	name="Surenids"
+	culture="phrygian"
+}
+52200043=
+{
+	name="Surenid"
+	culture="phrygian"
+}
+52200044=
+{
+	name="Karin"
+	culture="phrygian"
+}
+52200045=
+{
+	name="Karin"
+	culture="phrygian"
+}
+52200046=
+{
+	name="Karinids"
+	culture="phrygian"
+}
+52200047=
+{
+	name="Karinid"
+	culture="phrygian"
+}
+52200048=
+{
+	name="Gaumatid"
+	culture="phrygian"
+}
+52200049=
+{
+	name="Gaumatid"
+	culture="phrygian"
+}
+52200050=
+{
+	name="Gaumatids"
+	culture="phrygian"
+}
+52200051=
+{
+	name="Gaumatid"
+	culture="phrygian"
+}
+52200052=
+{
+	name="Gobryasid"
+	culture="phrygian"
+}
+52200053=
+{
+	name="Gobryasid"
+	culture="phrygian"
+}
+52200054=
+{
+	name="Gobryasids"
+	culture="phrygian"
+}
+52200055=
+{
+	name="Gobryasid"
+	culture="phrygian"
+}
+52200056=
+{
+	name="Hydarnid"
+	culture="phrygian"
+}
+52200057=
+{
+	name="Hydarnid"
+	culture="phrygian"
+}
+52200058=
+{
+	name="Hydarnids"
+	culture="phrygian"
+}
+52200059=
+{
+	name="Hydarnid"
+	culture="phrygian"
+}
+52200060=
+{
+	name="Smerdid"
+	culture="phrygian"
+}
+52200061=
+{
+	name="Smerdid"
+	culture="phrygian"
+}
+52200062=
+{
+	name="Smerdids"
+	culture="phrygian"
+}
+52200063=
+{
+	name="Smerdid"
+	culture="phrygian"
+}
+52200064=
+{
+	name="Vivanid"
+	culture="phrygian"
+}
+52200065=
+{
+	name="Vivanid"
+	culture="phrygian"
+}
+52200066=
+{
+	name="Vivanids"
+	culture="phrygian"
+}
+52200067=
+{
+	name="Vivanid"
+	culture="phrygian"
+}
+52200068=
+{
+	name="Xerxid"
+	culture="phrygian"
+}
+52200069=
+{
+	name="Xerxid"
+	culture="phrygian"
+}
+52200070=
+{
+	name="Xerxids"
+	culture="phrygian"
+}
+52200071=
+{
+	name="Xerxid"
+	culture="phrygian"
+}
+52200072=
+{
+	name="Abadanid"
+	culture="phrygian"
+}
+52200073=
+{
+	name="Abadanid"
+	culture="phrygian"
+}
+52200074=
+{
+	name="Abadanids"
+	culture="phrygian"
+}
+52200075=
+{
+	name="Abadanid"
+	culture="phrygian"
+}
+52200076=
+{
+	name="Orontid"
+	culture="phrygian"
+}
+52200077=
+{
+	name="Orontid"
+	culture="phrygian"
+}
+52200078=
+{
+	name="Orontids"
+	culture="phrygian"
+}
+52200079=
+{
+	name="Orontid"
+	culture="phrygian"
+}
+52200080=
+{
+	name="Atropatid"
+	culture="phrygian"
+}
+52200081=
+{
+	name="Atropatid"
+	culture="phrygian"
+}
+52200082=
+{
+	name="Atropatids"
+	culture="phrygian"
+}
+52200083=
+{
+	name="Atropatid"
+	culture="phrygian"
+}
+52200084=
+{
+	name="Mithridatid"
+	culture="phrygian"
+}
+52200085=
+{
+	name="Mithridatid"
+	culture="phrygian"
+}
+52200086=
+{
+	name="Mithridatids"
+	culture="phrygian"
+}
+52200087=
+{
+	name="Mithridatid"
+	culture="phrygian"
+}
+52200088=
+{
+	name="Artiaxid"
+	culture="phrygian"
+}
+52200089=
+{
+	name="Artiaxid"
+	culture="phrygian"
+}
+52200090=
+{
+	name="Artiaxids"
+	culture="phrygian"
+}
+52200091=
+{
+	name="Artiaxid"
+	culture="phrygian"
+}
+52200092=
+{
+	name="Sassanid"
+	culture="phrygian"
+}
+52200093=
+{
+	name="Sassanid"
+	culture="phrygian"
+}
+52200094=
+{
+	name="Sassanids"
+	culture="phrygian"
+}
+52200095=
+{
+	name="Sassanid"
+	culture="phrygian"
+}
+52200096=
+{
+	name="Mihranid"
+	culture="phrygian"
+}
+52200097=
+{
+	name="Mihranid"
+	culture="phrygian"
+}
+52200098=
+{
+	name="Mihranids"
+	culture="phrygian"
+}
+52200099=
+{
+	name="Mihranid"
+	culture="phrygian"
+}
+522000100=
+{
+	name="Chosroid"
+	culture="phrygian"
+}
+522000101=
+{
+	name="Chosroid"
+	culture="phrygian"
+}
+522000102=
+{
+	name="Chosroids"
+	culture="phrygian"
+}
+522000103=
+{
+	name="Chosroid"
+	culture="phrygian"
+}
+522000104=
+{
+	name="Artashid"
+	culture="phrygian"
+}
+522000105=
+{
+	name="Artashid"
+	culture="phrygian"
+}
+522000106=
+{
+	name="Artashids"
+	culture="phrygian"
+}
+522000107=
+{
+	name="Artashid"
+	culture="phrygian"
+}
+522000108=
+{
+	name="Bagabignid"
+	culture="phrygian"
+}
+522000109=
+{
+	name="Bagabignid"
+	culture="phrygian"
+}
+522000110=
+{
+	name="Bagabignids"
+	culture="phrygian"
+}
+522000111=
+{
+	name="Bagabignid"
+	culture="phrygian"
+}
+522000112=
+{
+	name="Cambysid"
+	culture="phrygian"
+}
+522000113=
+{
+	name="Cambysid"
+	culture="phrygian"
+}
+522000114=
+{
+	name="Cambysids"
+	culture="phrygian"
+}
+522000115=
+{
+	name="Cambysid"
+	culture="phrygian"
+}
+522000116=
+{
+	name="Frataraka"
+	culture="phrygian"
+}
+522000117=
+{
+	name="Frataraka"
+	culture="phrygian"
+}
+522000118=
+{
+	name="Frataraka"
+	culture="phrygian"
+}
+522000119=
+{
+	name="Frataraka"
+	culture="phrygian"
+}

@@ -1,0 +1,380 @@
+5170000=
+{
+	name="Punicus"
+	culture="iberic"
+}
+5170001=
+{
+	name="Punica"
+	culture="iberic"
+}
+5170002=
+{
+	name="Punicii"
+	culture="iberic"
+}
+5170003=
+{
+	name="Punicid"
+	culture="iberic"
+}
+5170004=
+{
+	name="Orisus"
+	culture="iberic"
+}
+5170005=
+{
+	name="Orisa"
+	culture="iberic"
+}
+5170006=
+{
+	name="Orisidi"
+	culture="iberic"
+}
+5170007=
+{
+	name="Orisid"
+	culture="iberic"
+}
+5170008=
+{
+	name="Amidus"
+	culture="iberic"
+}
+5170009=
+{
+	name="Amida"
+	culture="iberic"
+}
+51700010=
+{
+	name="Amidi"
+	culture="iberic"
+}
+51700011=
+{
+	name="Amidian"
+	culture="iberic"
+}
+51700012=
+{
+	name="Nisunus"
+	culture="iberic"
+}
+51700013=
+{
+	name="Nisuna"
+	culture="iberic"
+}
+51700014=
+{
+	name="Nisunidi"
+	culture="iberic"
+}
+51700015=
+{
+	name="Nisunidian"
+	culture="iberic"
+}
+51700016=
+{
+	name="Tiresidus"
+	culture="iberic"
+}
+51700017=
+{
+	name="Tiresida"
+	culture="iberic"
+}
+51700018=
+{
+	name="Tiresidi"
+	culture="iberic"
+}
+51700019=
+{
+	name="Tiresidian"
+	culture="iberic"
+}
+51700020=
+{
+	name="Budidus"
+	culture="iberic"
+}
+51700021=
+{
+	name="Budida"
+	culture="iberic"
+}
+51700022=
+{
+	name="Budidii"
+	culture="iberic"
+}
+51700023=
+{
+	name="Budidian"
+	culture="iberic"
+}
+51700024=
+{
+	name="Gargoridus"
+	culture="iberic"
+}
+51700025=
+{
+	name="Gargorida"
+	culture="iberic"
+}
+51700026=
+{
+	name="Gargoridii"
+	culture="iberic"
+}
+51700027=
+{
+	name="Gargoridian"
+	culture="iberic"
+}
+51700028=
+{
+	name="Culcidus"
+	culture="iberic"
+}
+51700029=
+{
+	name="Culcida"
+	culture="iberic"
+}
+51700030=
+{
+	name="Culcidi"
+	culture="iberic"
+}
+51700031=
+{
+	name="Culcidian"
+	culture="iberic"
+}
+51700032=
+{
+	name="Indicidus"
+	culture="iberic"
+}
+51700033=
+{
+	name="Indicida"
+	culture="iberic"
+}
+51700034=
+{
+	name="Indicidii"
+	culture="iberic"
+}
+51700035=
+{
+	name="Indicidian"
+	culture="iberic"
+}
+51700036=
+{
+	name="Iscerbelus"
+	culture="iberic"
+}
+51700037=
+{
+	name="Iscerbela"
+	culture="iberic"
+}
+51700038=
+{
+	name="Iscerbelidi"
+	culture="iberic"
+}
+51700039=
+{
+	name="Iscerbelidian"
+	culture="iberic"
+}
+51700040=
+{
+	name="Karidus"
+	culture="iberic"
+}
+51700041=
+{
+	name="Karida"
+	culture="iberic"
+}
+51700042=
+{
+	name="Karidi"
+	culture="iberic"
+}
+51700043=
+{
+	name="Karidian"
+	culture="iberic"
+}
+51700044=
+{
+	name="Korbidus"
+	culture="iberic"
+}
+51700045=
+{
+	name="Korbida"
+	culture="iberic"
+}
+51700046=
+{
+	name="Korbidi"
+	culture="iberic"
+}
+51700047=
+{
+	name="Korbidian"
+	culture="iberic"
+}
+51700048=
+{
+	name="Lagunus"
+	culture="iberic"
+}
+51700049=
+{
+	name="Laguna"
+	culture="iberic"
+}
+51700050=
+{
+	name="Lagunidii"
+	culture="iberic"
+}
+51700051=
+{
+	name="Lagunidian"
+	culture="iberic"
+}
+51700052=
+{
+	name="Mandonus"
+	culture="iberic"
+}
+51700053=
+{
+	name="Mandona"
+	culture="iberic"
+}
+51700054=
+{
+	name="Mandonidii"
+	culture="iberic"
+}
+51700055=
+{
+	name="Mandonidian"
+	culture="iberic"
+}
+51700056=
+{
+	name="Magavaricus"
+	culture="iberic"
+}
+51700057=
+{
+	name="Magavarica"
+	culture="iberic"
+}
+51700058=
+{
+	name="Magavaricidii"
+	culture="iberic"
+}
+51700059=
+{
+	name="Magavarician"
+	culture="iberic"
+}
+51700060=
+{
+	name="Uxentus"
+	culture="iberic"
+}
+51700061=
+{
+	name="Uxenta"
+	culture="iberic"
+}
+51700062=
+{
+	name="Uxentidii"
+	culture="iberic"
+}
+51700063=
+{
+	name="Uxentican"
+	culture="iberic"
+}
+51700064=
+{
+	name="Umarilus"
+	culture="iberic"
+}
+51700065=
+{
+	name="Umarila"
+	culture="iberic"
+}
+51700066=
+{
+	name="Umarilidi"
+	culture="iberic"
+}
+51700067=
+{
+	name="Umarilid"
+	culture="iberic"
+}
+51700068=
+{
+	name="Turenus"
+	culture="iberic"
+}
+51700069=
+{
+	name="Turena"
+	culture="iberic"
+}
+51700070=
+{
+	name="Turenidi"
+	culture="iberic"
+}
+51700071=
+{
+	name="Turenidian"
+	culture="iberic"
+}
+51700072=
+{
+	name="Urceticus"
+	culture="iberic"
+}
+51700073=
+{
+	name="Urcetica"
+	culture="iberic"
+}
+51700074=
+{
+	name="Urceticidii"
+	culture="iberic"
+}
+51700075=
+{
+	name="Urceticidian"
+	culture="iberic"
+}

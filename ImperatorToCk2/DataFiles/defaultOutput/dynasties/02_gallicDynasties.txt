@@ -1,0 +1,580 @@
+5030000=
+{
+	name="Ambonus"
+	culture="gallic"
+}
+5030001=
+{
+	name="Ambona"
+	culture="gallic"
+}
+5030002=
+{
+	name="Ambonii"
+	culture="gallic"
+}
+5030003=
+{
+	name="Ambonid"
+	culture="gallic"
+}
+5030004=
+{
+	name="Auaroses"
+	culture="gallic"
+}
+5030005=
+{
+	name="Auarosa"
+	culture="gallic"
+}
+5030006=
+{
+	name="Auarosii"
+	culture="gallic"
+}
+5030007=
+{
+	name="Auarosian"
+	culture="gallic"
+}
+5030008=
+{
+	name="Audaxus"
+	culture="gallic"
+}
+5030009=
+{
+	name="Audaxa"
+	culture="gallic"
+}
+50300010=
+{
+	name="Audaxii"
+	culture="gallic"
+}
+50300011=
+{
+	name="Audaxian"
+	culture="gallic"
+}
+50300012=
+{
+	name="Carosus"
+	culture="gallic"
+}
+50300013=
+{
+	name="Carosa"
+	culture="gallic"
+}
+50300014=
+{
+	name="Carosii"
+	culture="gallic"
+}
+50300015=
+{
+	name="Carosian"
+	culture="gallic"
+}
+50300016=
+{
+	name="Culchus"
+	culture="gallic"
+}
+50300017=
+{
+	name="Culcha"
+	culture="gallic"
+}
+50300018=
+{
+	name="Culchi"
+	culture="gallic"
+}
+50300019=
+{
+	name="Culchian"
+	culture="gallic"
+}
+50300020=
+{
+	name="Leukus"
+	culture="gallic"
+}
+50300021=
+{
+	name="Leuka"
+	culture="gallic"
+}
+50300022=
+{
+	name="Leuki"
+	culture="gallic"
+}
+50300023=
+{
+	name="Leukian"
+	culture="gallic"
+}
+50300024=
+{
+	name="Mandonus"
+	culture="gallic"
+}
+50300025=
+{
+	name="Mandonia"
+	culture="gallic"
+}
+50300026=
+{
+	name="Mandonii"
+	culture="gallic"
+}
+50300027=
+{
+	name="Mandonian"
+	culture="gallic"
+}
+50300028=
+{
+	name="Punicus"
+	culture="gallic"
+}
+50300029=
+{
+	name="Punica"
+	culture="gallic"
+}
+50300030=
+{
+	name="Punici"
+	culture="gallic"
+}
+50300031=
+{
+	name="Punician"
+	culture="gallic"
+}
+50300032=
+{
+	name="Tautalus"
+	culture="gallic"
+}
+50300033=
+{
+	name="Tautala"
+	culture="gallic"
+}
+50300034=
+{
+	name="Tautalii"
+	culture="gallic"
+}
+50300035=
+{
+	name="Tautalid"
+	culture="gallic"
+}
+50300036=
+{
+	name="Correius"
+	culture="gallic"
+}
+50300037=
+{
+	name="Correia"
+	culture="gallic"
+}
+50300038=
+{
+	name="Correid"
+	culture="gallic"
+}
+50300039=
+{
+	name="Correian"
+	culture="gallic"
+}
+50300040=
+{
+	name="Divicus"
+	culture="gallic"
+}
+50300041=
+{
+	name="Divica"
+	culture="gallic"
+}
+50300042=
+{
+	name="Divici"
+	culture="gallic"
+}
+50300043=
+{
+	name="Divicid"
+	culture="gallic"
+}
+50300044=
+{
+	name="Duratus"
+	culture="gallic"
+}
+50300045=
+{
+	name="Durata"
+	culture="gallic"
+}
+50300046=
+{
+	name="Duratii"
+	culture="gallic"
+}
+50300047=
+{
+	name="Duratian"
+	culture="gallic"
+}
+50300048=
+{
+	name="Elitovus"
+	culture="gallic"
+}
+50300049=
+{
+	name="Elitova"
+	culture="gallic"
+}
+50300050=
+{
+	name="Elitovii"
+	culture="gallic"
+}
+50300051=
+{
+	name="Elitovian"
+	culture="gallic"
+}
+50300052=
+{
+	name="Galbus"
+	culture="gallic"
+}
+50300053=
+{
+	name="Galba"
+	culture="gallic"
+}
+50300054=
+{
+	name="Galbi"
+	culture="gallic"
+}
+50300055=
+{
+	name="Galbid"
+	culture="gallic"
+}
+50300056=
+{
+	name="Iacus"
+	culture="gallic"
+}
+50300057=
+{
+	name="Iaca"
+	culture="gallic"
+}
+50300058=
+{
+	name="Iaci"
+	culture="gallic"
+}
+50300059=
+{
+	name="Iacid"
+	culture="gallic"
+}
+50300060=
+{
+	name="Marganus"
+	culture="gallic"
+}
+50300061=
+{
+	name="Margana"
+	culture="gallic"
+}
+50300062=
+{
+	name="Marganii"
+	culture="gallic"
+}
+50300063=
+{
+	name="Marganid"
+	culture="gallic"
+}
+50300064=
+{
+	name="Sinatus"
+	culture="gallic"
+}
+50300065=
+{
+	name="Sinata"
+	culture="gallic"
+}
+50300066=
+{
+	name="Sinatii"
+	culture="gallic"
+}
+50300067=
+{
+	name="Sinatid"
+	culture="gallic"
+}
+50300068=
+{
+	name="Vodenosus"
+	culture="gallic"
+}
+50300069=
+{
+	name="Vodenosa"
+	culture="gallic"
+}
+50300070=
+{
+	name="Vodenosii"
+	culture="gallic"
+}
+50300071=
+{
+	name="Vodenosian"
+	culture="gallic"
+}
+50300072=
+{
+	name="Indutius"
+	culture="gallic"
+}
+50300073=
+{
+	name="Indutia"
+	culture="gallic"
+}
+50300074=
+{
+	name="Indutii"
+	culture="gallic"
+}
+50300075=
+{
+	name="Indutian"
+	culture="gallic"
+}
+50300076=
+{
+	name="Dumnus"
+	culture="gallic"
+}
+50300077=
+{
+	name="Dumna"
+	culture="gallic"
+}
+50300078=
+{
+	name="Dumnii"
+	culture="gallic"
+}
+50300079=
+{
+	name="Dumnid"
+	culture="gallic"
+}
+50300080=
+{
+	name="Epatticus"
+	culture="gallic"
+}
+50300081=
+{
+	name="Epattica"
+	culture="gallic"
+}
+50300082=
+{
+	name="Epatticii"
+	culture="gallic"
+}
+50300083=
+{
+	name="Epatticid"
+	culture="gallic"
+}
+50300084=
+{
+	name="Teutomalus"
+	culture="gallic"
+}
+50300085=
+{
+	name="Teutomala"
+	culture="gallic"
+}
+50300086=
+{
+	name="Teutomalii"
+	culture="gallic"
+}
+50300087=
+{
+	name="Teutomalian"
+	culture="gallic"
+}
+50300088=
+{
+	name="Viridorrius"
+	culture="gallic"
+}
+50300089=
+{
+	name="Viridorria"
+	culture="gallic"
+}
+50300090=
+{
+	name="Viridorrii"
+	culture="gallic"
+}
+50300091=
+{
+	name="Viridorrian"
+	culture="gallic"
+}
+50300092=
+{
+	name="Magunnus"
+	culture="gallic"
+}
+50300093=
+{
+	name="Magunna"
+	culture="gallic"
+}
+50300094=
+{
+	name="Magunnii"
+	culture="gallic"
+}
+50300095=
+{
+	name="Magunnid"
+	culture="gallic"
+}
+50300096=
+{
+	name="Brennus"
+	culture="gallic"
+}
+50300097=
+{
+	name="Brenna"
+	culture="gallic"
+}
+50300098=
+{
+	name="Brennii"
+	culture="gallic"
+}
+50300099=
+{
+	name="Brennid"
+	culture="gallic"
+}
+503000100=
+{
+	name="Boius"
+	culture="gallic"
+}
+503000101=
+{
+	name="Boia"
+	culture="gallic"
+}
+503000102=
+{
+	name="Boii"
+	culture="gallic"
+}
+503000103=
+{
+	name="Boian"
+	culture="gallic"
+}
+503000104=
+{
+	name="Tannus"
+	culture="gallic"
+}
+503000105=
+{
+	name="Tanna"
+	culture="gallic"
+}
+503000106=
+{
+	name="Tanni"
+	culture="gallic"
+}
+503000107=
+{
+	name="Tannid"
+	culture="gallic"
+}
+503000108=
+{
+	name="Iccuius"
+	culture="gallic"
+}
+503000109=
+{
+	name="Iccuia"
+	culture="gallic"
+}
+503000110=
+{
+	name="Iccui"
+	culture="gallic"
+}
+503000111=
+{
+	name="Iccian"
+	culture="gallic"
+}
+503000112=
+{
+	name="Galanus"
+	culture="gallic"
+}
+503000113=
+{
+	name="Galana"
+	culture="gallic"
+}
+503000114=
+{
+	name="Galanii"
+	culture="gallic"
+}
+503000115=
+{
+	name="Galanid"
+	culture="gallic"
+}

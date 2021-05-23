@@ -1,0 +1,400 @@
+5310000=
+{
+	name="Hyrcanus"
+	culture="hebrew"
+}
+5310001=
+{
+	name="Hyrcanus"
+	culture="hebrew"
+}
+5310002=
+{
+	name="Hyrcanus"
+	culture="hebrew"
+}
+5310003=
+{
+	name="Hyrcanian"
+	culture="hebrew"
+}
+5310004=
+{
+	name="Iscariot"
+	culture="hebrew"
+}
+5310005=
+{
+	name="Iscariot"
+	culture="hebrew"
+}
+5310006=
+{
+	name="Iscariot"
+	culture="hebrew"
+}
+5310007=
+{
+	name="Iscarian"
+	culture="hebrew"
+}
+5310008=
+{
+	name="Laganiat"
+	culture="hebrew"
+}
+5310009=
+{
+	name="Laganiat"
+	culture="hebrew"
+}
+53100010=
+{
+	name="Laganiat"
+	culture="hebrew"
+}
+53100011=
+{
+	name="Laganian"
+	culture="hebrew"
+}
+53100012=
+{
+	name="Braham"
+	culture="hebrew"
+}
+53100013=
+{
+	name="Braham"
+	culture="hebrew"
+}
+53100014=
+{
+	name="Braham"
+	culture="hebrew"
+}
+53100015=
+{
+	name="Brahamid"
+	culture="hebrew"
+}
+53100016=
+{
+	name="Gedide"
+	culture="hebrew"
+}
+53100017=
+{
+	name="Gedide"
+	culture="hebrew"
+}
+53100018=
+{
+	name="Gedide"
+	culture="hebrew"
+}
+53100019=
+{
+	name="Gedidid"
+	culture="hebrew"
+}
+53100020=
+{
+	name="Kohan"
+	culture="hebrew"
+}
+53100021=
+{
+	name="Kohan"
+	culture="hebrew"
+}
+53100022=
+{
+	name="Kohan"
+	culture="hebrew"
+}
+53100023=
+{
+	name="Kohanid"
+	culture="hebrew"
+}
+53100024=
+{
+	name="Yochanan"
+	culture="hebrew"
+}
+53100025=
+{
+	name="Yochanan"
+	culture="hebrew"
+}
+53100026=
+{
+	name="Yochanan"
+	culture="hebrew"
+}
+53100027=
+{
+	name="Yochanid"
+	culture="hebrew"
+}
+53100028=
+{
+	name="Maiman"
+	culture="hebrew"
+}
+53100029=
+{
+	name="Maiman"
+	culture="hebrew"
+}
+53100030=
+{
+	name="Maiman"
+	culture="hebrew"
+}
+53100031=
+{
+	name="Maimanian"
+	culture="hebrew"
+}
+53100032=
+{
+	name="Megiston"
+	culture="hebrew"
+}
+53100033=
+{
+	name="Megiston"
+	culture="hebrew"
+}
+53100034=
+{
+	name="Megiston"
+	culture="hebrew"
+}
+53100035=
+{
+	name="Megistonid"
+	culture="hebrew"
+}
+53100036=
+{
+	name="Likhluket"
+	culture="hebrew"
+}
+53100037=
+{
+	name="Likhluket"
+	culture="hebrew"
+}
+53100038=
+{
+	name="Likhluket"
+	culture="hebrew"
+}
+53100039=
+{
+	name="Likhlukid"
+	culture="hebrew"
+}
+53100040=
+{
+	name="Marsyam"
+	culture="hebrew"
+}
+53100041=
+{
+	name="Marsyam"
+	culture="hebrew"
+}
+53100042=
+{
+	name="Marsyam"
+	culture="hebrew"
+}
+53100043=
+{
+	name="Marsyamid"
+	culture="hebrew"
+}
+53100044=
+{
+	name="Neron"
+	culture="hebrew"
+}
+53100045=
+{
+	name="Neron"
+	culture="hebrew"
+}
+53100046=
+{
+	name="Neron"
+	culture="hebrew"
+}
+53100047=
+{
+	name="Neronid"
+	culture="hebrew"
+}
+53100048=
+{
+	name="Nicoliat"
+	culture="hebrew"
+}
+53100049=
+{
+	name="Nicoliat"
+	culture="hebrew"
+}
+53100050=
+{
+	name="Nicoliat"
+	culture="hebrew"
+}
+53100051=
+{
+	name="Nicolid"
+	culture="hebrew"
+}
+53100052=
+{
+	name="Nisat"
+	culture="hebrew"
+}
+53100053=
+{
+	name="Nisat"
+	culture="hebrew"
+}
+53100054=
+{
+	name="Nisat"
+	culture="hebrew"
+}
+53100055=
+{
+	name="Nisatid"
+	culture="hebrew"
+}
+53100056=
+{
+	name="Nuri"
+	culture="hebrew"
+}
+53100057=
+{
+	name="Nuri"
+	culture="hebrew"
+}
+53100058=
+{
+	name="Nuri"
+	culture="hebrew"
+}
+53100059=
+{
+	name="Nurian"
+	culture="hebrew"
+}
+53100060=
+{
+	name="Mahana"
+	culture="hebrew"
+}
+53100061=
+{
+	name="Mahana"
+	culture="hebrew"
+}
+53100062=
+{
+	name="Mahana"
+	culture="hebrew"
+}
+53100063=
+{
+	name="Mahanian"
+	culture="hebrew"
+}
+53100064=
+{
+	name="Manale"
+	culture="hebrew"
+}
+53100065=
+{
+	name="Manale"
+	culture="hebrew"
+}
+53100066=
+{
+	name="Manale"
+	culture="hebrew"
+}
+53100067=
+{
+	name="Manalian"
+	culture="hebrew"
+}
+53100068=
+{
+	name="Josephus"
+	culture="hebrew"
+}
+53100069=
+{
+	name="Josephus"
+	culture="hebrew"
+}
+53100070=
+{
+	name="Josephus"
+	culture="hebrew"
+}
+53100071=
+{
+	name="Josephiad"
+	culture="hebrew"
+}
+53100072=
+{
+	name="Kalatha"
+	culture="hebrew"
+}
+53100073=
+{
+	name="Kalatha"
+	culture="hebrew"
+}
+53100074=
+{
+	name="Kalatha"
+	culture="hebrew"
+}
+53100075=
+{
+	name="Kalathid"
+	culture="hebrew"
+}
+53100076=
+{
+	name="Karkema"
+	culture="hebrew"
+}
+53100077=
+{
+	name="Karkema"
+	culture="hebrew"
+}
+53100078=
+{
+	name="Karkema"
+	culture="hebrew"
+}
+53100079=
+{
+	name="Karkemid"
+	culture="hebrew"
+}

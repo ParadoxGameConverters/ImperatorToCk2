@@ -1,0 +1,420 @@
+5080000=
+{
+	name="Adaios"
+	culture="thracian"
+}
+5080001=
+{
+	name="Amatokos"
+	culture="thracian"
+}
+5080002=
+{
+	name="Aulouporis"
+	culture="thracian"
+}
+5080003=
+{
+	name="Aulouzon"
+	culture="thracian"
+}
+5080004=
+{
+	name="Bendidoros"
+	culture="thracian"
+}
+5080005=
+{
+	name="Berisades"
+	culture="thracian"
+}
+5080006=
+{
+	name="Bessos"
+	culture="thracian"
+}
+5080007=
+{
+	name="Bithos"
+	culture="thracian"
+}
+5080008=
+{
+	name="Brinkainos"
+	culture="thracian"
+}
+5080009=
+{
+	name="Brinkazenis"
+	culture="thracian"
+}
+50800010=
+{
+	name="Brinkazeris"
+	culture="thracian"
+}
+50800011=
+{
+	name="Brinkazis"
+	culture="thracian"
+}
+50800012=
+{
+	name="Bryzos"
+	culture="thracian"
+}
+50800013=
+{
+	name="Byzas"
+	culture="thracian"
+}
+50800014=
+{
+	name="Delos"
+	culture="thracian"
+}
+50800015=
+{
+	name="Dentoubrisa"
+	culture="thracian"
+}
+50800016=
+{
+	name="Dentoupes"
+	culture="thracian"
+}
+50800017=
+{
+	name="Deopos"
+	culture="thracian"
+}
+50800018=
+{
+	name="Deosporis"
+	culture="thracian"
+}
+50800019=
+{
+	name="Desakenthos"
+	culture="thracian"
+}
+50800020=
+{
+	name="Diaskenthos"
+	culture="thracian"
+}
+50800021=
+{
+	name="Diazenis"
+	culture="thracian"
+}
+50800022=
+{
+	name="Dizapes"
+	culture="thracian"
+}
+50800023=
+{
+	name="Dizapor"
+	culture="thracian"
+}
+50800024=
+{
+	name="Dizas"
+	culture="thracian"
+}
+50800025=
+{
+	name="Dizazelpis"
+	culture="thracian"
+}
+50800026=
+{
+	name="Dolens"
+	culture="thracian"
+}
+50800027=
+{
+	name="Drenis"
+	culture="thracian"
+}
+50800028=
+{
+	name="Eptaikenthos"
+	culture="thracian"
+}
+50800029=
+{
+	name="Eptapis"
+	culture="thracian"
+}
+50800030=
+{
+	name="Eptaporis"
+	culture="thracian"
+}
+50800031=
+{
+	name="Eptenis"
+	culture="thracian"
+}
+50800032=
+{
+	name="Eptezenis"
+	culture="thracian"
+}
+50800033=
+{
+	name="Ezbenis"
+	culture="thracian"
+}
+50800034=
+{
+	name="Gaidres"
+	culture="thracian"
+}
+50800035=
+{
+	name="Hebryzelmis"
+	culture="thracian"
+}
+50800036=
+{
+	name="Kelsinos"
+	culture="thracian"
+}
+50800037=
+{
+	name="Kelsos"
+	culture="thracian"
+}
+50800038=
+{
+	name="Kenthos"
+	culture="thracian"
+}
+50800039=
+{
+	name="Kerses"
+	culture="thracian"
+}
+50800040=
+{
+	name="Kerzoula"
+	culture="thracian"
+}
+50800041=
+{
+	name="Kersibaulos"
+	culture="thracian"
+}
+50800042=
+{
+	name="Kersobleptes"
+	culture="thracian"
+}
+50800043=
+{
+	name="Ketriporis"
+	culture="thracian"
+}
+50800044=
+{
+	name="Ketrizeis"
+	culture="thracian"
+}
+50800045=
+{
+	name="Kokaios"
+	culture="thracian"
+}
+50800046=
+{
+	name="Kotys"
+	culture="thracian"
+}
+50800047=
+{
+	name="Maisades"
+	culture="thracian"
+}
+50800048=
+{
+	name="Markipor"
+	culture="thracian"
+}
+50800049=
+{
+	name="Moukakenthos"
+	culture="thracian"
+}
+50800050=
+{
+	name="Moukapaibes"
+	culture="thracian"
+}
+50800051=
+{
+	name="Moukapius"
+	culture="thracian"
+}
+50800052=
+{
+	name="Moukaporis"
+	culture="thracian"
+}
+50800053=
+{
+	name="Moukatralis"
+	culture="thracian"
+}
+50800054=
+{
+	name="Moukazenis"
+	culture="thracian"
+}
+50800055=
+{
+	name="Naipor"
+	culture="thracian"
+}
+50800056=
+{
+	name="Olipor"
+	culture="thracian"
+}
+50800057=
+{
+	name="Poris"
+	culture="thracian"
+}
+50800058=
+{
+	name="Pytros"
+	culture="thracian"
+}
+50800059=
+{
+	name="Raizdos"
+	culture="thracian"
+}
+50800060=
+{
+	name="Raskos"
+	culture="thracian"
+}
+50800061=
+{
+	name="Rekiper"
+	culture="thracian"
+}
+50800062=
+{
+	name="Rhaskos"
+	culture="thracian"
+}
+50800063=
+{
+	name="Rhaskuporis"
+	culture="thracian"
+}
+50800064=
+{
+	name="Rheboulas"
+	culture="thracian"
+}
+50800065=
+{
+	name="Rhesos"
+	culture="thracian"
+}
+50800066=
+{
+	name="Rhoemetalces"
+	culture="thracian"
+}
+50800067=
+{
+	name="Sadalas"
+	culture="thracian"
+}
+50800068=
+{
+	name="Satres"
+	culture="thracian"
+}
+50800069=
+{
+	name="Sautes"
+	culture="thracian"
+}
+50800070=
+{
+	name="Seikiper"
+	culture="thracian"
+}
+50800071=
+{
+	name="Seuthes"
+	culture="thracian"
+}
+50800072=
+{
+	name="Skaris"
+	culture="thracian"
+}
+50800073=
+{
+	name="Skilas"
+	culture="thracian"
+}
+50800074=
+{
+	name="Skostodokos"
+	culture="thracian"
+}
+50800075=
+{
+	name="Sparadokos"
+	culture="thracian"
+}
+50800076=
+{
+	name="Taruthinas"
+	culture="thracian"
+}
+50800077=
+{
+	name="Teres"
+	culture="thracian"
+}
+50800078=
+{
+	name="Tzitzis"
+	culture="thracian"
+}
+50800079=
+{
+	name="Zieisis"
+	culture="thracian"
+}
+50800080=
+{
+	name="Ziepyros"
+	culture="thracian"
+}
+50800081=
+{
+	name="Ziles"
+	culture="thracian"
+}
+50800082=
+{
+	name="Zipaibes"
+	culture="thracian"
+}
+50800083=
+{
+	name="Zipyron"
+	culture="thracian"
+}

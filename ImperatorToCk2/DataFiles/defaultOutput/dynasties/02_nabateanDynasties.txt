@@ -1,0 +1,480 @@
+5300000=
+{
+	name="Abbarid"
+	culture="nabatean"
+}
+5300001=
+{
+	name="Abbarid"
+	culture="nabatean"
+}
+5300002=
+{
+	name="Abbarid"
+	culture="nabatean"
+}
+5300003=
+{
+	name="Abbarid"
+	culture="nabatean"
+}
+5300004=
+{
+	name="Adonibaal"
+	culture="nabatean"
+}
+5300005=
+{
+	name="Adonibaalid"
+	culture="nabatean"
+}
+5300006=
+{
+	name="Adonibaalid"
+	culture="nabatean"
+}
+5300007=
+{
+	name="Adonibaalid"
+	culture="nabatean"
+}
+5300008=
+{
+	name="Ahirom"
+	culture="nabatean"
+}
+5300009=
+{
+	name="Ahiromid"
+	culture="nabatean"
+}
+53000010=
+{
+	name="Ahiromid"
+	culture="nabatean"
+}
+53000011=
+{
+	name="Ahiromid"
+	culture="nabatean"
+}
+53000012=
+{
+	name="Baalhannid"
+	culture="nabatean"
+}
+53000013=
+{
+	name="Baalhannid"
+	culture="nabatean"
+}
+53000014=
+{
+	name="Baalhannid"
+	culture="nabatean"
+}
+53000015=
+{
+	name="Baalhannid"
+	culture="nabatean"
+}
+53000016=
+{
+	name="Baalid"
+	culture="nabatean"
+}
+53000017=
+{
+	name="Baalid"
+	culture="nabatean"
+}
+53000018=
+{
+	name="Baalid"
+	culture="nabatean"
+}
+53000019=
+{
+	name="Baalid"
+	culture="nabatean"
+}
+53000020=
+{
+	name="Barca"
+	culture="nabatean"
+}
+53000021=
+{
+	name="Barca"
+	culture="nabatean"
+}
+53000022=
+{
+	name="Barcid"
+	culture="nabatean"
+}
+53000023=
+{
+	name="Barcid"
+	culture="nabatean"
+}
+53000024=
+{
+	name="Bodona"
+	culture="nabatean"
+}
+53000025=
+{
+	name="Bodona"
+	culture="nabatean"
+}
+53000026=
+{
+	name="Bodonid"
+	culture="nabatean"
+}
+53000027=
+{
+	name="Bodonid"
+	culture="nabatean"
+}
+53000028=
+{
+	name="Bostara"
+	culture="nabatean"
+}
+53000029=
+{
+	name="Bostara"
+	culture="nabatean"
+}
+53000030=
+{
+	name="Bostarid"
+	culture="nabatean"
+}
+53000031=
+{
+	name="Bostarid"
+	culture="nabatean"
+}
+53000032=
+{
+	name="Chelbesid"
+	culture="nabatean"
+}
+53000033=
+{
+	name="Chelbesid"
+	culture="nabatean"
+}
+53000034=
+{
+	name="Chelbesid"
+	culture="nabatean"
+}
+53000035=
+{
+	name="Chelbesid"
+	culture="nabatean"
+}
+53000036=
+{
+	name="Eshbaalid"
+	culture="nabatean"
+}
+53000037=
+{
+	name="Eshbaalid"
+	culture="nabatean"
+}
+53000038=
+{
+	name="Eshbaalid"
+	culture="nabatean"
+}
+53000039=
+{
+	name="Eshbaalid"
+	culture="nabatean"
+}
+53000040=
+{
+	name="Eugorid"
+	culture="nabatean"
+}
+53000041=
+{
+	name="Eugorid"
+	culture="nabatean"
+}
+53000042=
+{
+	name="Eugorid"
+	culture="nabatean"
+}
+53000043=
+{
+	name="Eugorid"
+	culture="nabatean"
+}
+53000044=
+{
+	name="Hannid"
+	culture="nabatean"
+}
+53000045=
+{
+	name="Hannid"
+	culture="nabatean"
+}
+53000046=
+{
+	name="Hannid"
+	culture="nabatean"
+}
+53000047=
+{
+	name="Hannid"
+	culture="nabatean"
+}
+53000048=
+{
+	name="Hiramid"
+	culture="nabatean"
+}
+53000049=
+{
+	name="Hiramid"
+	culture="nabatean"
+}
+53000050=
+{
+	name="Hiramid"
+	culture="nabatean"
+}
+53000051=
+{
+	name="Hiramid"
+	culture="nabatean"
+}
+53000052=
+{
+	name="Mago"
+	culture="nabatean"
+}
+53000053=
+{
+	name="Mago"
+	culture="nabatean"
+}
+53000054=
+{
+	name="Magid"
+	culture="nabatean"
+}
+53000055=
+{
+	name="Magid"
+	culture="nabatean"
+}
+53000056=
+{
+	name="Mattanid"
+	culture="nabatean"
+}
+53000057=
+{
+	name="Mattanid"
+	culture="nabatean"
+}
+53000058=
+{
+	name="Mattanid"
+	culture="nabatean"
+}
+53000059=
+{
+	name="Mattanid"
+	culture="nabatean"
+}
+53000060=
+{
+	name="Metallid"
+	culture="nabatean"
+}
+53000061=
+{
+	name="Metallid"
+	culture="nabatean"
+}
+53000062=
+{
+	name="Metallid"
+	culture="nabatean"
+}
+53000063=
+{
+	name="Metallid"
+	culture="nabatean"
+}
+53000064=
+{
+	name="Milkiramid"
+	culture="nabatean"
+}
+53000065=
+{
+	name="Milkiramid"
+	culture="nabatean"
+}
+53000066=
+{
+	name="Milkiramid"
+	culture="nabatean"
+}
+53000067=
+{
+	name="Milkiramid"
+	culture="nabatean"
+}
+53000068=
+{
+	name="Philosirid"
+	culture="nabatean"
+}
+53000069=
+{
+	name="Philosirid"
+	culture="nabatean"
+}
+53000070=
+{
+	name="Philosirid"
+	culture="nabatean"
+}
+53000071=
+{
+	name="Philosirid"
+	culture="nabatean"
+}
+53000072=
+{
+	name="Gisgo"
+	culture="nabatean"
+}
+53000073=
+{
+	name="Gisgo"
+	culture="nabatean"
+}
+53000074=
+{
+	name="Gisgoid"
+	culture="nabatean"
+}
+53000075=
+{
+	name="Gisgoid"
+	culture="nabatean"
+}
+53000076=
+{
+	name="Gerbalid"
+	culture="nabatean"
+}
+53000077=
+{
+	name="Gerbalid"
+	culture="nabatean"
+}
+53000078=
+{
+	name="Gerbalid"
+	culture="nabatean"
+}
+53000079=
+{
+	name="Gerbalid"
+	culture="nabatean"
+}
+53000080=
+{
+	name="Hammid"
+	culture="nabatean"
+}
+53000081=
+{
+	name="Hammid"
+	culture="nabatean"
+}
+53000082=
+{
+	name="Hammid"
+	culture="nabatean"
+}
+53000083=
+{
+	name="Hammid"
+	culture="nabatean"
+}
+53000084=
+{
+	name="Eugarid"
+	culture="nabatean"
+}
+53000085=
+{
+	name="Eugarid"
+	culture="nabatean"
+}
+53000086=
+{
+	name="Eugarid"
+	culture="nabatean"
+}
+53000087=
+{
+	name="Eugarid"
+	culture="nabatean"
+}
+53000088=
+{
+	name="Mashhid"
+	culture="nabatean"
+}
+53000089=
+{
+	name="Mashhid"
+	culture="nabatean"
+}
+53000090=
+{
+	name="Mashhid"
+	culture="nabatean"
+}
+53000091=
+{
+	name="Mashhid"
+	culture="nabatean"
+}
+53000092=
+{
+	name="Ummashid"
+	culture="nabatean"
+}
+53000093=
+{
+	name="Ummashid"
+	culture="nabatean"
+}
+53000094=
+{
+	name="Ummashid"
+	culture="nabatean"
+}
+53000095=
+{
+	name="Ummashid"
+	culture="nabatean"
+}

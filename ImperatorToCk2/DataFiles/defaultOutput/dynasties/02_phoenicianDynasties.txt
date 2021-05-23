@@ -1,0 +1,480 @@
+5100000=
+{
+	name="Abbarid"
+	culture="phoenician"
+}
+5100001=
+{
+	name="Abbarid"
+	culture="phoenician"
+}
+5100002=
+{
+	name="Abbarid"
+	culture="phoenician"
+}
+5100003=
+{
+	name="Abbarid"
+	culture="phoenician"
+}
+5100004=
+{
+	name="Adonibaal"
+	culture="phoenician"
+}
+5100005=
+{
+	name="Adonibaalid"
+	culture="phoenician"
+}
+5100006=
+{
+	name="Adonibaalid"
+	culture="phoenician"
+}
+5100007=
+{
+	name="Adonibaalid"
+	culture="phoenician"
+}
+5100008=
+{
+	name="Ahirom"
+	culture="phoenician"
+}
+5100009=
+{
+	name="Ahiromid"
+	culture="phoenician"
+}
+51000010=
+{
+	name="Ahiromid"
+	culture="phoenician"
+}
+51000011=
+{
+	name="Ahiromid"
+	culture="phoenician"
+}
+51000012=
+{
+	name="Baalhannid"
+	culture="phoenician"
+}
+51000013=
+{
+	name="Baalhannid"
+	culture="phoenician"
+}
+51000014=
+{
+	name="Baalhannid"
+	culture="phoenician"
+}
+51000015=
+{
+	name="Baalhannid"
+	culture="phoenician"
+}
+51000016=
+{
+	name="Baalid"
+	culture="phoenician"
+}
+51000017=
+{
+	name="Baalid"
+	culture="phoenician"
+}
+51000018=
+{
+	name="Baalid"
+	culture="phoenician"
+}
+51000019=
+{
+	name="Baalid"
+	culture="phoenician"
+}
+51000020=
+{
+	name="Barca"
+	culture="phoenician"
+}
+51000021=
+{
+	name="Barca"
+	culture="phoenician"
+}
+51000022=
+{
+	name="Barcid"
+	culture="phoenician"
+}
+51000023=
+{
+	name="Barcid"
+	culture="phoenician"
+}
+51000024=
+{
+	name="Bodona"
+	culture="phoenician"
+}
+51000025=
+{
+	name="Bodona"
+	culture="phoenician"
+}
+51000026=
+{
+	name="Bodonid"
+	culture="phoenician"
+}
+51000027=
+{
+	name="Bodonid"
+	culture="phoenician"
+}
+51000028=
+{
+	name="Bostara"
+	culture="phoenician"
+}
+51000029=
+{
+	name="Bostara"
+	culture="phoenician"
+}
+51000030=
+{
+	name="Bostarid"
+	culture="phoenician"
+}
+51000031=
+{
+	name="Bostarid"
+	culture="phoenician"
+}
+51000032=
+{
+	name="Chelbesid"
+	culture="phoenician"
+}
+51000033=
+{
+	name="Chelbesid"
+	culture="phoenician"
+}
+51000034=
+{
+	name="Chelbesid"
+	culture="phoenician"
+}
+51000035=
+{
+	name="Chelbesid"
+	culture="phoenician"
+}
+51000036=
+{
+	name="Eshbaalid"
+	culture="phoenician"
+}
+51000037=
+{
+	name="Eshbaalid"
+	culture="phoenician"
+}
+51000038=
+{
+	name="Eshbaalid"
+	culture="phoenician"
+}
+51000039=
+{
+	name="Eshbaalid"
+	culture="phoenician"
+}
+51000040=
+{
+	name="Eugorid"
+	culture="phoenician"
+}
+51000041=
+{
+	name="Eugorid"
+	culture="phoenician"
+}
+51000042=
+{
+	name="Eugorid"
+	culture="phoenician"
+}
+51000043=
+{
+	name="Eugorid"
+	culture="phoenician"
+}
+51000044=
+{
+	name="Hannid"
+	culture="phoenician"
+}
+51000045=
+{
+	name="Hannid"
+	culture="phoenician"
+}
+51000046=
+{
+	name="Hannid"
+	culture="phoenician"
+}
+51000047=
+{
+	name="Hannid"
+	culture="phoenician"
+}
+51000048=
+{
+	name="Hiramid"
+	culture="phoenician"
+}
+51000049=
+{
+	name="Hiramid"
+	culture="phoenician"
+}
+51000050=
+{
+	name="Hiramid"
+	culture="phoenician"
+}
+51000051=
+{
+	name="Hiramid"
+	culture="phoenician"
+}
+51000052=
+{
+	name="Mago"
+	culture="phoenician"
+}
+51000053=
+{
+	name="Mago"
+	culture="phoenician"
+}
+51000054=
+{
+	name="Magid"
+	culture="phoenician"
+}
+51000055=
+{
+	name="Magid"
+	culture="phoenician"
+}
+51000056=
+{
+	name="Mattanid"
+	culture="phoenician"
+}
+51000057=
+{
+	name="Mattanid"
+	culture="phoenician"
+}
+51000058=
+{
+	name="Mattanid"
+	culture="phoenician"
+}
+51000059=
+{
+	name="Mattanid"
+	culture="phoenician"
+}
+51000060=
+{
+	name="Metallid"
+	culture="phoenician"
+}
+51000061=
+{
+	name="Metallid"
+	culture="phoenician"
+}
+51000062=
+{
+	name="Metallid"
+	culture="phoenician"
+}
+51000063=
+{
+	name="Metallid"
+	culture="phoenician"
+}
+51000064=
+{
+	name="Milkiramid"
+	culture="phoenician"
+}
+51000065=
+{
+	name="Milkiramid"
+	culture="phoenician"
+}
+51000066=
+{
+	name="Milkiramid"
+	culture="phoenician"
+}
+51000067=
+{
+	name="Milkiramid"
+	culture="phoenician"
+}
+51000068=
+{
+	name="Philosirid"
+	culture="phoenician"
+}
+51000069=
+{
+	name="Philosirid"
+	culture="phoenician"
+}
+51000070=
+{
+	name="Philosirid"
+	culture="phoenician"
+}
+51000071=
+{
+	name="Philosirid"
+	culture="phoenician"
+}
+51000072=
+{
+	name="Gisgo"
+	culture="phoenician"
+}
+51000073=
+{
+	name="Gisgo"
+	culture="phoenician"
+}
+51000074=
+{
+	name="Gisgoid"
+	culture="phoenician"
+}
+51000075=
+{
+	name="Gisgoid"
+	culture="phoenician"
+}
+51000076=
+{
+	name="Gerbalid"
+	culture="phoenician"
+}
+51000077=
+{
+	name="Gerbalid"
+	culture="phoenician"
+}
+51000078=
+{
+	name="Gerbalid"
+	culture="phoenician"
+}
+51000079=
+{
+	name="Gerbalid"
+	culture="phoenician"
+}
+51000080=
+{
+	name="Hammid"
+	culture="phoenician"
+}
+51000081=
+{
+	name="Hammid"
+	culture="phoenician"
+}
+51000082=
+{
+	name="Hammid"
+	culture="phoenician"
+}
+51000083=
+{
+	name="Hammid"
+	culture="phoenician"
+}
+51000084=
+{
+	name="Eugarid"
+	culture="phoenician"
+}
+51000085=
+{
+	name="Eugarid"
+	culture="phoenician"
+}
+51000086=
+{
+	name="Eugarid"
+	culture="phoenician"
+}
+51000087=
+{
+	name="Eugarid"
+	culture="phoenician"
+}
+51000088=
+{
+	name="Mashhid"
+	culture="phoenician"
+}
+51000089=
+{
+	name="Mashhid"
+	culture="phoenician"
+}
+51000090=
+{
+	name="Mashhid"
+	culture="phoenician"
+}
+51000091=
+{
+	name="Mashhid"
+	culture="phoenician"
+}
+51000092=
+{
+	name="Ummashid"
+	culture="phoenician"
+}
+51000093=
+{
+	name="Ummashid"
+	culture="phoenician"
+}
+51000094=
+{
+	name="Ummashid"
+	culture="phoenician"
+}
+51000095=
+{
+	name="Ummashid"
+	culture="phoenician"
+}

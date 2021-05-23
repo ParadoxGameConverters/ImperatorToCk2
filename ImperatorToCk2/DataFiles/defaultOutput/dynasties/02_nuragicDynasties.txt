@@ -1,0 +1,380 @@
+5150000=
+{
+	name="Punicus"
+	culture="nuragic"
+}
+500150001=
+{
+	name="Punica"
+	culture="nuragic"
+}
+5150002=
+{
+	name="Punicii"
+	culture="nuragic"
+}
+5150003=
+{
+	name="Punicid"
+	culture="nuragic"
+}
+5150004=
+{
+	name="Orisus"
+	culture="nuragic"
+}
+5150005=
+{
+	name="Orisa"
+	culture="nuragic"
+}
+5150006=
+{
+	name="Orisidi"
+	culture="nuragic"
+}
+5150007=
+{
+	name="Orisid"
+	culture="nuragic"
+}
+5150008=
+{
+	name="Amidus"
+	culture="nuragic"
+}
+5150009=
+{
+	name="Amida"
+	culture="nuragic"
+}
+51500010=
+{
+	name="Amidi"
+	culture="nuragic"
+}
+51500011=
+{
+	name="Amidian"
+	culture="nuragic"
+}
+51500012=
+{
+	name="Nisunus"
+	culture="nuragic"
+}
+51500013=
+{
+	name="Nisuna"
+	culture="nuragic"
+}
+51500014=
+{
+	name="Nisunidi"
+	culture="nuragic"
+}
+51500015=
+{
+	name="Nisunidian"
+	culture="nuragic"
+}
+51500016=
+{
+	name="Tiresidus"
+	culture="nuragic"
+}
+51500017=
+{
+	name="Tiresida"
+	culture="nuragic"
+}
+51500018=
+{
+	name="Tiresidi"
+	culture="nuragic"
+}
+51500019=
+{
+	name="Tiresidian"
+	culture="nuragic"
+}
+51500020=
+{
+	name="Budidus"
+	culture="nuragic"
+}
+51500021=
+{
+	name="Budida"
+	culture="nuragic"
+}
+51500022=
+{
+	name="Budidii"
+	culture="nuragic"
+}
+51500023=
+{
+	name="Budidian"
+	culture="nuragic"
+}
+51500024=
+{
+	name="Gargoridus"
+	culture="nuragic"
+}
+51500025=
+{
+	name="Gargorida"
+	culture="nuragic"
+}
+51500026=
+{
+	name="Gargoridii"
+	culture="nuragic"
+}
+51500027=
+{
+	name="Gargoridian"
+	culture="nuragic"
+}
+51500028=
+{
+	name="Culcidus"
+	culture="nuragic"
+}
+51500029=
+{
+	name="Culcida"
+	culture="nuragic"
+}
+51500030=
+{
+	name="Culcidi"
+	culture="nuragic"
+}
+51500031=
+{
+	name="Culcidian"
+	culture="nuragic"
+}
+51500032=
+{
+	name="Indicidus"
+	culture="nuragic"
+}
+51500033=
+{
+	name="Indicida"
+	culture="nuragic"
+}
+51500034=
+{
+	name="Indicidii"
+	culture="nuragic"
+}
+51500035=
+{
+	name="Indicidian"
+	culture="nuragic"
+}
+51500036=
+{
+	name="Iscerbelus"
+	culture="nuragic"
+}
+51500037=
+{
+	name="Iscerbela"
+	culture="nuragic"
+}
+51500038=
+{
+	name="Iscerbelidi"
+	culture="nuragic"
+}
+51500039=
+{
+	name="Iscerbelidian"
+	culture="nuragic"
+}
+51500040=
+{
+	name="Karidus"
+	culture="nuragic"
+}
+51500041=
+{
+	name="Karida"
+	culture="nuragic"
+}
+51500042=
+{
+	name="Karidi"
+	culture="nuragic"
+}
+51500043=
+{
+	name="Karidian"
+	culture="nuragic"
+}
+51500044=
+{
+	name="Korbidus"
+	culture="nuragic"
+}
+51500045=
+{
+	name="Korbida"
+	culture="nuragic"
+}
+51500046=
+{
+	name="Korbidi"
+	culture="nuragic"
+}
+51500047=
+{
+	name="Korbidian"
+	culture="nuragic"
+}
+51500048=
+{
+	name="Lagunus"
+	culture="nuragic"
+}
+51500049=
+{
+	name="Laguna"
+	culture="nuragic"
+}
+51500050=
+{
+	name="Lagunidii"
+	culture="nuragic"
+}
+51500051=
+{
+	name="Lagunidian"
+	culture="nuragic"
+}
+51500052=
+{
+	name="Mandonus"
+	culture="nuragic"
+}
+51500053=
+{
+	name="Mandona"
+	culture="nuragic"
+}
+51500054=
+{
+	name="Mandonidii"
+	culture="nuragic"
+}
+51500055=
+{
+	name="Mandonidian"
+	culture="nuragic"
+}
+51500056=
+{
+	name="Magavaricus"
+	culture="nuragic"
+}
+51500057=
+{
+	name="Magavarica"
+	culture="nuragic"
+}
+51500058=
+{
+	name="Magavaricidii"
+	culture="nuragic"
+}
+51500059=
+{
+	name="Magavarician"
+	culture="nuragic"
+}
+51500060=
+{
+	name="Uxentus"
+	culture="nuragic"
+}
+51500061=
+{
+	name="Uxenta"
+	culture="nuragic"
+}
+51500062=
+{
+	name="Uxentidii"
+	culture="nuragic"
+}
+51500063=
+{
+	name="Uxentican"
+	culture="nuragic"
+}
+51500064=
+{
+	name="Umarilus"
+	culture="nuragic"
+}
+51500065=
+{
+	name="Umarila"
+	culture="nuragic"
+}
+51500066=
+{
+	name="Umarilidi"
+	culture="nuragic"
+}
+51500067=
+{
+	name="Umarilid"
+	culture="nuragic"
+}
+51500068=
+{
+	name="Turenus"
+	culture="nuragic"
+}
+51500069=
+{
+	name="Turena"
+	culture="nuragic"
+}
+51500070=
+{
+	name="Turenidi"
+	culture="nuragic"
+}
+51500071=
+{
+	name="Turenidian"
+	culture="nuragic"
+}
+51500072=
+{
+	name="Urceticus"
+	culture="nuragic"
+}
+51500073=
+{
+	name="Urcetica"
+	culture="nuragic"
+}
+51500074=
+{
+	name="Urceticidii"
+	culture="nuragic"
+}
+51500075=
+{
+	name="Urceticidian"
+	culture="nuragic"
+}

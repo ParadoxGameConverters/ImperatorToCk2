@@ -1,0 +1,480 @@
+5110000=
+{
+	name="Tuome"
+	culture="gothic"
+}
+5110001=
+{
+	name="Tuoma"
+	culture="gothic"
+}
+5110002=
+{
+	name="Tuomes"
+	culture="gothic"
+}
+5110003=
+{
+	name="Tuomid"
+	culture="gothic"
+}
+5110004=
+{
+	name="Andicus"
+	culture="gothic"
+}
+5110005=
+{
+	name="Andica"
+	culture="gothic"
+}
+5110006=
+{
+	name="Andices"
+	culture="gothic"
+}
+5110007=
+{
+	name="Andicid"
+	culture="gothic"
+}
+5110008=
+{
+	name="Dagaricus"
+	culture="gothic"
+}
+5110009=
+{
+	name="Dagarica"
+	culture="gothic"
+}
+51100010=
+{
+	name="Dagarices"
+	culture="gothic"
+}
+51100011=
+{
+	name="Dagaricid"
+	culture="gothic"
+}
+51100012=
+{
+	name="Gelimerus"
+	culture="gothic"
+}
+51100013=
+{
+	name="Gelimera"
+	culture="gothic"
+}
+51100014=
+{
+	name="Gelimeres"
+	culture="gothic"
+}
+51100015=
+{
+	name="Gelimerian"
+	culture="gothic"
+}
+51100016=
+{
+	name="Geroldus"
+	culture="gothic"
+}
+51100017=
+{
+	name="Gerolda"
+	culture="gothic"
+}
+51100018=
+{
+	name="Geroldes"
+	culture="gothic"
+}
+51100019=
+{
+	name="Geroldian"
+	culture="gothic"
+}
+51100020=
+{
+	name="Malaricus"
+	culture="gothic"
+}
+51100021=
+{
+	name="Malarica"
+	culture="gothic"
+}
+51100022=
+{
+	name="Malarici"
+	culture="gothic"
+}
+51100023=
+{
+	name="Malaricid"
+	culture="gothic"
+}
+51100024=
+{
+	name="Marbodus"
+	culture="gothic"
+}
+51100025=
+{
+	name="Marboda"
+	culture="gothic"
+}
+51100026=
+{
+	name="Marbodes"
+	culture="gothic"
+}
+51100027=
+{
+	name="Marbodian"
+	culture="gothic"
+}
+51100028=
+{
+	name="Theodus"
+	culture="gothic"
+}
+51100029=
+{
+	name="Theoda"
+	culture="gothic"
+}
+51100030=
+{
+	name="Theodes"
+	culture="gothic"
+}
+51100031=
+{
+	name="Theodian"
+	culture="gothic"
+}
+51100032=
+{
+	name="Marcolus"
+	culture="gothic"
+}
+51100033=
+{
+	name="Marcola"
+	culture="gothic"
+}
+51100034=
+{
+	name="Marcoles"
+	culture="gothic"
+}
+51100035=
+{
+	name="Marcolian"
+	culture="gothic"
+}
+51100036=
+{
+	name="Sigid"
+	culture="gothic"
+}
+51100037=
+{
+	name="Sigida"
+	culture="gothic"
+}
+51100038=
+{
+	name="Sigi"
+	culture="gothic"
+}
+51100039=
+{
+	name="Sigid"
+	culture="gothic"
+}
+51100040=
+{
+	name="Rigleikus"
+	culture="gothic"
+}
+51100041=
+{
+	name="Rigleika"
+	culture="gothic"
+}
+51100042=
+{
+	name="Rigleikes"
+	culture="gothic"
+}
+51100043=
+{
+	name="Rigleikid"
+	culture="gothic"
+}
+51100044=
+{
+	name="Tancreid"
+	culture="gothic"
+}
+51100045=
+{
+	name="Tancra"
+	culture="gothic"
+}
+51100046=
+{
+	name="Tancri"
+	culture="gothic"
+}
+51100047=
+{
+	name="Tancrid"
+	culture="gothic"
+}
+51100048=
+{
+	name="Malogrus"
+	culture="gothic"
+}
+51100049=
+{
+	name="Malogra"
+	culture="gothic"
+}
+51100050=
+{
+	name="Malogri"
+	culture="gothic"
+}
+51100051=
+{
+	name="Malogrian"
+	culture="gothic"
+}
+51100052=
+{
+	name="Gundrud"
+	culture="gothic"
+}
+51100053=
+{
+	name="Gundruda"
+	culture="gothic"
+}
+51100054=
+{
+	name="Gundrudii"
+	culture="gothic"
+}
+51100055=
+{
+	name="Gundrid"
+	culture="gothic"
+}
+51100056=
+{
+	name="Segimandrus"
+	culture="gothic"
+}
+51100057=
+{
+	name="Segimandra"
+	culture="gothic"
+}
+51100058=
+{
+	name="Segimandri"
+	culture="gothic"
+}
+51100059=
+{
+	name="Segimandrid"
+	culture="gothic"
+}
+51100060=
+{
+	name="Dwaldus"
+	culture="gothic"
+}
+51100061=
+{
+	name="Dwalda"
+	culture="gothic"
+}
+51100062=
+{
+	name="Dwaldes"
+	culture="gothic"
+}
+51100063=
+{
+	name="Dwaldid"
+	culture="gothic"
+}
+51100064=
+{
+	name="Merobaudes"
+	culture="gothic"
+}
+51100065=
+{
+	name="Merobauda"
+	culture="gothic"
+}
+51100066=
+{
+	name="Merobaudes"
+	culture="gothic"
+}
+51100067=
+{
+	name="Merobaudian"
+	culture="gothic"
+}
+51100068=
+{
+	name="Eidgid"
+	culture="gothic"
+}
+51100069=
+{
+	name="Eidgida"
+	culture="gothic"
+}
+51100070=
+{
+	name="Eidiges"
+	culture="gothic"
+}
+51100071=
+{
+	name="Eidigian"
+	culture="gothic"
+}
+51100072=
+{
+	name="Gerhaucres"
+	culture="gothic"
+}
+51100073=
+{
+	name="Gerhaucra"
+	culture="gothic"
+}
+51100074=
+{
+	name="Gerhaucres"
+	culture="gothic"
+}
+51100075=
+{
+	name="Gerhaucrian"
+	culture="gothic"
+}
+51100076=
+{
+	name="Hildganes"
+	culture="gothic"
+}
+51100077=
+{
+	name="Hildgana"
+	culture="gothic"
+}
+51100078=
+{
+	name="Hildganes"
+	culture="gothic"
+}
+51100079=
+{
+	name="Hildganid"
+	culture="gothic"
+}
+51100080=
+{
+	name="Hramdrid"
+	culture="gothic"
+}
+51100081=
+{
+	name="Hramdra"
+	culture="gothic"
+}
+51100082=
+{
+	name="Hramdri"
+	culture="gothic"
+}
+51100083=
+{
+	name="Hramrid"
+	culture="gothic"
+}
+51100084=
+{
+	name="Ingohdres"
+	culture="gothic"
+}
+51100085=
+{
+	name="Ingohdra"
+	culture="gothic"
+}
+51100086=
+{
+	name="Ingohdres"
+	culture="gothic"
+}
+51100087=
+{
+	name="Ingohdrid"
+	culture="gothic"
+}
+51100088=
+{
+	name="Ingrammus"
+	culture="gothic"
+}
+51100089=
+{
+	name="Ingramma"
+	culture="gothic"
+}
+51100090=
+{
+	name="Ingrammii"
+	culture="gothic"
+}
+51100091=
+{
+	name="Ingrammid"
+	culture="gothic"
+}
+51100092=
+{
+	name="Malactus"
+	culture="gothic"
+}
+51100093=
+{
+	name="Malacta"
+	culture="gothic"
+}
+51100094=
+{
+	name="Malactii"
+	culture="gothic"
+}
+51100095=
+{
+	name="Malactian"
+	culture="gothic"
+}

@@ -1,0 +1,580 @@
+5010000=
+{
+	name="Ambonus"
+	culture="belgae"
+}
+5010001=
+{
+	name="Ambona"
+	culture="belgae"
+}
+5010002=
+{
+	name="Ambonii"
+	culture="belgae"
+}
+5010003=
+{
+	name="Ambonid"
+	culture="belgae"
+}
+5010004=
+{
+	name="Auaroses"
+	culture="belgae"
+}
+5010005=
+{
+	name="Auarosa"
+	culture="belgae"
+}
+5010006=
+{
+	name="Auarosii"
+	culture="belgae"
+}
+5010007=
+{
+	name="Auarosian"
+	culture="belgae"
+}
+5010008=
+{
+	name="Audaxus"
+	culture="belgae"
+}
+5010009=
+{
+	name="Audaxa"
+	culture="belgae"
+}
+50100010=
+{
+	name="Audaxii"
+	culture="belgae"
+}
+50100011=
+{
+	name="Audaxian"
+	culture="belgae"
+}
+50100012=
+{
+	name="Carosus"
+	culture="belgae"
+}
+50100013=
+{
+	name="Carosa"
+	culture="belgae"
+}
+50100014=
+{
+	name="Carosii"
+	culture="belgae"
+}
+50100015=
+{
+	name="Carosian"
+	culture="belgae"
+}
+50100016=
+{
+	name="Culchus"
+	culture="belgae"
+}
+50100017=
+{
+	name="Culcha"
+	culture="belgae"
+}
+50100018=
+{
+	name="Culchi"
+	culture="belgae"
+}
+50100019=
+{
+	name="Culchian"
+	culture="belgae"
+}
+50100020=
+{
+	name="Leukus"
+	culture="belgae"
+}
+50100021=
+{
+	name="Leuka"
+	culture="belgae"
+}
+50100022=
+{
+	name="Leuki"
+	culture="belgae"
+}
+50100023=
+{
+	name="Leukian"
+	culture="belgae"
+}
+50100024=
+{
+	name="Mandonus"
+	culture="belgae"
+}
+50100025=
+{
+	name="Mandonia"
+	culture="belgae"
+}
+50100026=
+{
+	name="Mandonii"
+	culture="belgae"
+}
+50100027=
+{
+	name="Mandonian"
+	culture="belgae"
+}
+50100028=
+{
+	name="Punicus"
+	culture="belgae"
+}
+50100029=
+{
+	name="Punica"
+	culture="belgae"
+}
+50100030=
+{
+	name="Punici"
+	culture="belgae"
+}
+50100031=
+{
+	name="Punician"
+	culture="belgae"
+}
+50100032=
+{
+	name="Tautalus"
+	culture="belgae"
+}
+50100033=
+{
+	name="Tautala"
+	culture="belgae"
+}
+50100034=
+{
+	name="Tautalii"
+	culture="belgae"
+}
+50100035=
+{
+	name="Tautalid"
+	culture="belgae"
+}
+50100036=
+{
+	name="Correius"
+	culture="belgae"
+}
+50100037=
+{
+	name="Correia"
+	culture="belgae"
+}
+50100038=
+{
+	name="Correid"
+	culture="belgae"
+}
+50100039=
+{
+	name="Correian"
+	culture="belgae"
+}
+50100040=
+{
+	name="Divicus"
+	culture="belgae"
+}
+50100041=
+{
+	name="Divica"
+	culture="belgae"
+}
+50100042=
+{
+	name="Divici"
+	culture="belgae"
+}
+50100043=
+{
+	name="Divicid"
+	culture="belgae"
+}
+50100044=
+{
+	name="Duratus"
+	culture="belgae"
+}
+50100045=
+{
+	name="Durata"
+	culture="belgae"
+}
+50100046=
+{
+	name="Duratii"
+	culture="belgae"
+}
+50100047=
+{
+	name="Duratian"
+	culture="belgae"
+}
+50100048=
+{
+	name="Elitovus"
+	culture="belgae"
+}
+50100049=
+{
+	name="Elitova"
+	culture="belgae"
+}
+50100050=
+{
+	name="Elitovii"
+	culture="belgae"
+}
+50100051=
+{
+	name="Elitovian"
+	culture="belgae"
+}
+50100052=
+{
+	name="Galbus"
+	culture="belgae"
+}
+50100053=
+{
+	name="Galba"
+	culture="belgae"
+}
+50100054=
+{
+	name="Galbi"
+	culture="belgae"
+}
+50100055=
+{
+	name="Galbid"
+	culture="belgae"
+}
+50100056=
+{
+	name="Iacus"
+	culture="belgae"
+}
+50100057=
+{
+	name="Iaca"
+	culture="belgae"
+}
+50100058=
+{
+	name="Iaci"
+	culture="belgae"
+}
+50100059=
+{
+	name="Iacid"
+	culture="belgae"
+}
+50100060=
+{
+	name="Marganus"
+	culture="belgae"
+}
+50100061=
+{
+	name="Margana"
+	culture="belgae"
+}
+50100062=
+{
+	name="Marganii"
+	culture="belgae"
+}
+50100063=
+{
+	name="Marganid"
+	culture="belgae"
+}
+50100064=
+{
+	name="Sinatus"
+	culture="belgae"
+}
+50100065=
+{
+	name="Sinata"
+	culture="belgae"
+}
+50100066=
+{
+	name="Sinatii"
+	culture="belgae"
+}
+50100067=
+{
+	name="Sinatid"
+	culture="belgae"
+}
+50100068=
+{
+	name="Vodenosus"
+	culture="belgae"
+}
+50100069=
+{
+	name="Vodenosa"
+	culture="belgae"
+}
+50100070=
+{
+	name="Vodenosii"
+	culture="belgae"
+}
+50100071=
+{
+	name="Vodenosian"
+	culture="belgae"
+}
+50100072=
+{
+	name="Indutius"
+	culture="belgae"
+}
+50100073=
+{
+	name="Indutia"
+	culture="belgae"
+}
+50100074=
+{
+	name="Indutii"
+	culture="belgae"
+}
+50100075=
+{
+	name="Indutian"
+	culture="belgae"
+}
+50100076=
+{
+	name="Dumnus"
+	culture="belgae"
+}
+50100077=
+{
+	name="Dumna"
+	culture="belgae"
+}
+50100078=
+{
+	name="Dumnii"
+	culture="belgae"
+}
+50100079=
+{
+	name="Dumnid"
+	culture="belgae"
+}
+50100080=
+{
+	name="Epatticus"
+	culture="belgae"
+}
+50100081=
+{
+	name="Epattica"
+	culture="belgae"
+}
+50100082=
+{
+	name="Epatticii"
+	culture="belgae"
+}
+50100083=
+{
+	name="Epatticid"
+	culture="belgae"
+}
+50100084=
+{
+	name="Teutomalus"
+	culture="belgae"
+}
+50100085=
+{
+	name="Teutomala"
+	culture="belgae"
+}
+50100086=
+{
+	name="Teutomalii"
+	culture="belgae"
+}
+50100087=
+{
+	name="Teutomalian"
+	culture="belgae"
+}
+50100088=
+{
+	name="Viridorrius"
+	culture="belgae"
+}
+50100089=
+{
+	name="Viridorria"
+	culture="belgae"
+}
+50100090=
+{
+	name="Viridorrii"
+	culture="belgae"
+}
+50100091=
+{
+	name="Viridorrian"
+	culture="belgae"
+}
+50100092=
+{
+	name="Magunnus"
+	culture="belgae"
+}
+50100093=
+{
+	name="Magunna"
+	culture="belgae"
+}
+50100094=
+{
+	name="Magunnii"
+	culture="belgae"
+}
+50100095=
+{
+	name="Magunnid"
+	culture="belgae"
+}
+50100096=
+{
+	name="Brennus"
+	culture="belgae"
+}
+50100097=
+{
+	name="Brenna"
+	culture="belgae"
+}
+50100098=
+{
+	name="Brennii"
+	culture="belgae"
+}
+50100099=
+{
+	name="Brennid"
+	culture="belgae"
+}
+501000100=
+{
+	name="Boius"
+	culture="belgae"
+}
+501000101=
+{
+	name="Boia"
+	culture="belgae"
+}
+501000102=
+{
+	name="Boii"
+	culture="belgae"
+}
+501000103=
+{
+	name="Boian"
+	culture="belgae"
+}
+501000104=
+{
+	name="Tannus"
+	culture="belgae"
+}
+501000105=
+{
+	name="Tanna"
+	culture="belgae"
+}
+501000106=
+{
+	name="Tanni"
+	culture="belgae"
+}
+501000107=
+{
+	name="Tannid"
+	culture="belgae"
+}
+501000108=
+{
+	name="Iccuius"
+	culture="belgae"
+}
+501000109=
+{
+	name="Iccuia"
+	culture="belgae"
+}
+501000110=
+{
+	name="Iccui"
+	culture="belgae"
+}
+501000111=
+{
+	name="Iccian"
+	culture="belgae"
+}
+501000112=
+{
+	name="Galanus"
+	culture="belgae"
+}
+501000113=
+{
+	name="Galana"
+	culture="belgae"
+}
+501000114=
+{
+	name="Galanii"
+	culture="belgae"
+}
+501000115=
+{
+	name="Galanid"
+	culture="belgae"
+}

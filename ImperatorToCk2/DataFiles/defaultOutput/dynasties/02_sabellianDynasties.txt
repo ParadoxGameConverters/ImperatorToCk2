@@ -1,0 +1,800 @@
+5190000=
+{
+	name="Aburius"
+	culture="sabellian"
+}
+5190001=
+{
+	name="Aburia"
+	culture="sabellian"
+}
+5190002=
+{
+	name="Aburii"
+	culture="sabellian"
+}
+5190003=
+{
+	name="Aburian"
+	culture="sabellian"
+}
+5190004=
+{
+	name="Accius"
+	culture="sabellian"
+}
+5190005=
+{
+	name="Accia"
+	culture="sabellian"
+}
+5190006=
+{
+	name="Accii"
+	culture="sabellian"
+}
+5190007=
+{
+	name="Accian"
+	culture="sabellian"
+}
+5190008=
+{
+	name="Acilius"
+	culture="sabellian"
+}
+5190009=
+{
+	name="Acilia"
+	culture="sabellian"
+}
+51900010=
+{
+	name="Acilii"
+	culture="sabellian"
+}
+51900011=
+{
+	name="Acilian"
+	culture="sabellian"
+}
+51900012=
+{
+	name="Acutius"
+	culture="sabellian"
+}
+51900013=
+{
+	name="Acutia"
+	culture="sabellian"
+}
+51900014=
+{
+	name="Acutii"
+	culture="sabellian"
+}
+51900015=
+{
+	name="Acutian"
+	culture="sabellian"
+}
+51900016=
+{
+	name="Aebutius"
+	culture="sabellian"
+}
+51900017=
+{
+	name="Aebutia"
+	culture="sabellian"
+}
+51900018=
+{
+	name="Aebutii"
+	culture="sabellian"
+}
+51900019=
+{
+	name="Aebutian"
+	culture="sabellian"
+}
+51900020=
+{
+	name="Aelius"
+	culture="sabellian"
+}
+51900021=
+{
+	name="Aelia"
+	culture="sabellian"
+}
+51900022=
+{
+	name="Aelii"
+	culture="sabellian"
+}
+51900023=
+{
+	name="Aelian"
+	culture="sabellian"
+}
+51900024=
+{
+	name="Aemilius"
+	culture="sabellian"
+}
+51900025=
+{
+	name="Aemilia"
+	culture="sabellian"
+}
+51900026=
+{
+	name="Aemilii"
+	culture="sabellian"
+}
+51900027=
+{
+	name="Aemilian"
+	culture="sabellian"
+}
+51900028=
+{
+	name="Alienus"
+	culture="sabellian"
+}
+51900029=
+{
+	name="Aliena"
+	culture="sabellian"
+}
+51900030=
+{
+	name="Alienii"
+	culture="sabellian"
+}
+51900031=
+{
+	name="Alien"
+	culture="sabellian"
+}
+51900032=
+{
+	name="Anicius"
+	culture="sabellian"
+}
+51900033=
+{
+	name="Anicia"
+	culture="sabellian"
+}
+51900034=
+{
+	name="Anicii"
+	culture="sabellian"
+}
+51900035=
+{
+	name="Anician"
+	culture="sabellian"
+}
+51900036=
+{
+	name="Annius"
+	culture="sabellian"
+}
+51900037=
+{
+	name="Annia"
+	culture="sabellian"
+}
+51900038=
+{
+	name="Anni"
+	culture="sabellian"
+}
+51900039=
+{
+	name="Annian"
+	culture="sabellian"
+}
+51900040=
+{
+	name="Antius"
+	culture="sabellian"
+}
+51900041=
+{
+	name="Antia"
+	culture="sabellian"
+}
+51900042=
+{
+	name="Antii"
+	culture="sabellian"
+}
+51900043=
+{
+	name="Antian"
+	culture="sabellian"
+}
+51900044=
+{
+	name="Antistius"
+	culture="sabellian"
+}
+51900045=
+{
+	name="Antistia"
+	culture="sabellian"
+}
+51900046=
+{
+	name="Antistii"
+	culture="sabellian"
+}
+51900047=
+{
+	name="Antistian"
+	culture="sabellian"
+}
+51900048=
+{
+	name="Antonius"
+	culture="sabellian"
+}
+51900049=
+{
+	name="Antonia"
+	culture="sabellian"
+}
+51900050=
+{
+	name="Antonii"
+	culture="sabellian"
+}
+51900051=
+{
+	name="Antonian"
+	culture="sabellian"
+}
+51900052=
+{
+	name="Claudius"
+	culture="sabellian"
+}
+51900053=
+{
+	name="Claudia"
+	culture="sabellian"
+}
+51900054=
+{
+	name="Claudii"
+	culture="sabellian"
+}
+51900055=
+{
+	name="Claudian"
+	culture="sabellian"
+}
+51900056=
+{
+	name="Cloelius"
+	culture="sabellian"
+}
+51900057=
+{
+	name="Cloelia"
+	culture="sabellian"
+}
+51900058=
+{
+	name="Cloelii"
+	culture="sabellian"
+}
+51900059=
+{
+	name="Cloelian"
+	culture="sabellian"
+}
+51900060=
+{
+	name="Cominius"
+	culture="sabellian"
+}
+51900061=
+{
+	name="Cominia"
+	culture="sabellian"
+}
+51900062=
+{
+	name="Cominii"
+	culture="sabellian"
+}
+51900063=
+{
+	name="Cominian"
+	culture="sabellian"
+}
+51900064=
+{
+	name="Cornelius"
+	culture="sabellian"
+}
+51900065=
+{
+	name="Cornelia"
+	culture="sabellian"
+}
+51900066=
+{
+	name="Cornelii"
+	culture="sabellian"
+}
+51900067=
+{
+	name="Cornelian"
+	culture="sabellian"
+}
+51900068=
+{
+	name="Coruncanius"
+	culture="sabellian"
+}
+51900069=
+{
+	name="Coruncania"
+	culture="sabellian"
+}
+51900070=
+{
+	name="Coruncanii"
+	culture="sabellian"
+}
+51900071=
+{
+	name="Coruncanian"
+	culture="sabellian"
+}
+51900072=
+{
+	name="Curiatius"
+	culture="sabellian"
+}
+51900073=
+{
+	name="Curiatia"
+	culture="sabellian"
+}
+51900074=
+{
+	name="Curiatii"
+	culture="sabellian"
+}
+51900075=
+{
+	name="Curiatian"
+	culture="sabellian"
+}
+51900076=
+{
+	name="Curtius"
+	culture="sabellian"
+}
+51900077=
+{
+	name="Curtia"
+	culture="sabellian"
+}
+51900078=
+{
+	name="Curtii"
+	culture="sabellian"
+}
+51900079=
+{
+	name="Curtian"
+	culture="sabellian"
+}
+51900080=
+{
+	name="Curius"
+	culture="sabellian"
+}
+51900081=
+{
+	name="Curia"
+	culture="sabellian"
+}
+51900082=
+{
+	name="Curii"
+	culture="sabellian"
+}
+51900083=
+{
+	name="Curian"
+	culture="sabellian"
+}
+51900084=
+{
+	name="Decius"
+	culture="sabellian"
+}
+51900085=
+{
+	name="Decia"
+	culture="sabellian"
+}
+51900086=
+{
+	name="Decii"
+	culture="sabellian"
+}
+51900087=
+{
+	name="Decian"
+	culture="sabellian"
+}
+51900088=
+{
+	name="Domitius"
+	culture="sabellian"
+}
+51900089=
+{
+	name="Domitia"
+	culture="sabellian"
+}
+51900090=
+{
+	name="Domitii"
+	culture="sabellian"
+}
+51900091=
+{
+	name="Domitian"
+	culture="sabellian"
+}
+51900092=
+{
+	name="Sestius"
+	culture="sabellian"
+}
+51900093=
+{
+	name="Sestia"
+	culture="sabellian"
+}
+51900094=
+{
+	name="Sestii"
+	culture="sabellian"
+}
+51900095=
+{
+	name="Sestian"
+	culture="sabellian"
+}
+51900096=
+{
+	name="Sextius"
+	culture="sabellian"
+}
+51900097=
+{
+	name="Sextia"
+	culture="sabellian"
+}
+51900098=
+{
+	name="Sextii"
+	culture="sabellian"
+}
+51900099=
+{
+	name="Sextian"
+	culture="sabellian"
+}
+519000100=
+{
+	name="Sextilius"
+	culture="sabellian"
+}
+519000101=
+{
+	name="Sextilia"
+	culture="sabellian"
+}
+519000102=
+{
+	name="Sextilii"
+	culture="sabellian"
+}
+519000103=
+{
+	name="Sextilian"
+	culture="sabellian"
+}
+519000104=
+{
+	name="Sicinius"
+	culture="sabellian"
+}
+519000105=
+{
+	name="Sicinia"
+	culture="sabellian"
+}
+519000106=
+{
+	name="Sicinii"
+	culture="sabellian"
+}
+519000107=
+{
+	name="Sicinian"
+	culture="sabellian"
+}
+519000108=
+{
+	name="Silius"
+	culture="sabellian"
+}
+519000109=
+{
+	name="Silia"
+	culture="sabellian"
+}
+519000110=
+{
+	name="Silii"
+	culture="sabellian"
+}
+519000111=
+{
+	name="Silian"
+	culture="sabellian"
+}
+519000112=
+{
+	name="Sulpicius"
+	culture="sabellian"
+}
+519000113=
+{
+	name="Sulpicia"
+	culture="sabellian"
+}
+519000114=
+{
+	name="Sulpicii"
+	culture="sabellian"
+}
+519000115=
+{
+	name="Sulpician"
+	culture="sabellian"
+}
+519000116=
+{
+	name="Titius"
+	culture="sabellian"
+}
+519000117=
+{
+	name="Titia"
+	culture="sabellian"
+}
+519000118=
+{
+	name="Titii"
+	culture="sabellian"
+}
+519000119=
+{
+	name="Titian"
+	culture="sabellian"
+}
+519000120=
+{
+	name="Tremulus"
+	culture="sabellian"
+}
+519000121=
+{
+	name="Tremulia"
+	culture="sabellian"
+}
+519000122=
+{
+	name="Tremulii"
+	culture="sabellian"
+}
+519000123=
+{
+	name="Tremulan"
+	culture="sabellian"
+}
+519000124=
+{
+	name="Tullius"
+	culture="sabellian"
+}
+519000125=
+{
+	name="Tullia"
+	culture="sabellian"
+}
+519000126=
+{
+	name="Tullii"
+	culture="sabellian"
+}
+519000127=
+{
+	name="Tullian"
+	culture="sabellian"
+}
+519000128=
+{
+	name="Ulpius"
+	culture="sabellian"
+}
+519000129=
+{
+	name="Ulpia"
+	culture="sabellian"
+}
+519000130=
+{
+	name="Ulpii"
+	culture="sabellian"
+}
+519000131=
+{
+	name="Ulpian"
+	culture="sabellian"
+}
+519000132=
+{
+	name="Valerius"
+	culture="sabellian"
+}
+519000133=
+{
+	name="Valeria"
+	culture="sabellian"
+}
+519000134=
+{
+	name="Valerii"
+	culture="sabellian"
+}
+519000135=
+{
+	name="Valerian"
+	culture="sabellian"
+}
+519000136=
+{
+	name="Verginius"
+	culture="sabellian"
+}
+519000137=
+{
+	name="Verginia"
+	culture="sabellian"
+}
+519000138=
+{
+	name="Verginii"
+	culture="sabellian"
+}
+519000139=
+{
+	name="Verginian"
+	culture="sabellian"
+}
+519000140=
+{
+	name="Veturius"
+	culture="sabellian"
+}
+519000141=
+{
+	name="Veturia"
+	culture="sabellian"
+}
+519000142=
+{
+	name="Veturii"
+	culture="sabellian"
+}
+519000143=
+{
+	name="Veturian"
+	culture="sabellian"
+}
+519000144=
+{
+	name="Vesuvius"
+	culture="sabellian"
+}
+519000145=
+{
+	name="Vesuvia"
+	culture="sabellian"
+}
+519000146=
+{
+	name="Vesuvii"
+	culture="sabellian"
+}
+519000147=
+{
+	name="Vesuvian"
+	culture="sabellian"
+}
+519000148=
+{
+	name="Villius"
+	culture="sabellian"
+}
+519000149=
+{
+	name="Villia"
+	culture="sabellian"
+}
+519000150=
+{
+	name="Villii"
+	culture="sabellian"
+}
+519000151=
+{
+	name="Villian"
+	culture="sabellian"
+}
+519000152=
+{
+	name="Viridius"
+	culture="sabellian"
+}
+519000153=
+{
+	name="Viridia"
+	culture="sabellian"
+}
+519000154=
+{
+	name="Viridii"
+	culture="sabellian"
+}
+519000155=
+{
+	name="Viridian"
+	culture="sabellian"
+}
+519000156=
+{
+	name="Volumnius"
+	culture="sabellian"
+}
+519000157=
+{
+	name="Volumnia"
+	culture="sabellian"
+}
+519000158=
+{
+	name="Volumnii"
+	culture="sabellian"
+}
+519000159=
+{
+	name="Volumnian"
+	culture="sabellian"
+}

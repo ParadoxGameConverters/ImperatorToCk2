@@ -1,0 +1,480 @@
+5120000=
+{
+	name="Tuome"
+	culture="vandal"
+}
+5120001=
+{
+	name="Tuoma"
+	culture="vandal"
+}
+5120002=
+{
+	name="Tuomes"
+	culture="vandal"
+}
+5120003=
+{
+	name="Tuomid"
+	culture="vandal"
+}
+5120004=
+{
+	name="Andicus"
+	culture="vandal"
+}
+5120005=
+{
+	name="Andica"
+	culture="vandal"
+}
+5120006=
+{
+	name="Andices"
+	culture="vandal"
+}
+5120007=
+{
+	name="Andicid"
+	culture="vandal"
+}
+5120008=
+{
+	name="Dagaricus"
+	culture="vandal"
+}
+5120009=
+{
+	name="Dagarica"
+	culture="vandal"
+}
+51200010=
+{
+	name="Dagarices"
+	culture="vandal"
+}
+51200011=
+{
+	name="Dagaricid"
+	culture="vandal"
+}
+51200012=
+{
+	name="Gelimerus"
+	culture="vandal"
+}
+51200013=
+{
+	name="Gelimera"
+	culture="vandal"
+}
+51200014=
+{
+	name="Gelimeres"
+	culture="vandal"
+}
+51200015=
+{
+	name="Gelimerian"
+	culture="vandal"
+}
+51200016=
+{
+	name="Geroldus"
+	culture="vandal"
+}
+51200017=
+{
+	name="Gerolda"
+	culture="vandal"
+}
+51200018=
+{
+	name="Geroldes"
+	culture="vandal"
+}
+51200019=
+{
+	name="Geroldian"
+	culture="vandal"
+}
+51200020=
+{
+	name="Malaricus"
+	culture="vandal"
+}
+51200021=
+{
+	name="Malarica"
+	culture="vandal"
+}
+51200022=
+{
+	name="Malarici"
+	culture="vandal"
+}
+51200023=
+{
+	name="Malaricid"
+	culture="vandal"
+}
+51200024=
+{
+	name="Marbodus"
+	culture="vandal"
+}
+51200025=
+{
+	name="Marboda"
+	culture="vandal"
+}
+51200026=
+{
+	name="Marbodes"
+	culture="vandal"
+}
+51200027=
+{
+	name="Marbodian"
+	culture="vandal"
+}
+51200028=
+{
+	name="Theodus"
+	culture="vandal"
+}
+51200029=
+{
+	name="Theoda"
+	culture="vandal"
+}
+51200030=
+{
+	name="Theodes"
+	culture="vandal"
+}
+51200031=
+{
+	name="Theodian"
+	culture="vandal"
+}
+51200032=
+{
+	name="Marcolus"
+	culture="vandal"
+}
+51200033=
+{
+	name="Marcola"
+	culture="vandal"
+}
+51200034=
+{
+	name="Marcoles"
+	culture="vandal"
+}
+51200035=
+{
+	name="Marcolian"
+	culture="vandal"
+}
+51200036=
+{
+	name="Sigid"
+	culture="vandal"
+}
+51200037=
+{
+	name="Sigida"
+	culture="vandal"
+}
+51200038=
+{
+	name="Sigi"
+	culture="vandal"
+}
+51200039=
+{
+	name="Sigid"
+	culture="vandal"
+}
+51200040=
+{
+	name="Rigleikus"
+	culture="vandal"
+}
+51200041=
+{
+	name="Rigleika"
+	culture="vandal"
+}
+51200042=
+{
+	name="Rigleikes"
+	culture="vandal"
+}
+51200043=
+{
+	name="Rigleikid"
+	culture="vandal"
+}
+51200044=
+{
+	name="Tancreid"
+	culture="vandal"
+}
+51200045=
+{
+	name="Tancra"
+	culture="vandal"
+}
+51200046=
+{
+	name="Tancri"
+	culture="vandal"
+}
+51200047=
+{
+	name="Tancrid"
+	culture="vandal"
+}
+51200048=
+{
+	name="Malogrus"
+	culture="vandal"
+}
+51200049=
+{
+	name="Malogra"
+	culture="vandal"
+}
+51200050=
+{
+	name="Malogri"
+	culture="vandal"
+}
+51200051=
+{
+	name="Malogrian"
+	culture="vandal"
+}
+51200052=
+{
+	name="Gundrud"
+	culture="vandal"
+}
+51200053=
+{
+	name="Gundruda"
+	culture="vandal"
+}
+51200054=
+{
+	name="Gundrudii"
+	culture="vandal"
+}
+51200055=
+{
+	name="Gundrid"
+	culture="vandal"
+}
+51200056=
+{
+	name="Segimandrus"
+	culture="vandal"
+}
+51200057=
+{
+	name="Segimandra"
+	culture="vandal"
+}
+51200058=
+{
+	name="Segimandri"
+	culture="vandal"
+}
+51200059=
+{
+	name="Segimandrid"
+	culture="vandal"
+}
+51200060=
+{
+	name="Dwaldus"
+	culture="vandal"
+}
+51200061=
+{
+	name="Dwalda"
+	culture="vandal"
+}
+51200062=
+{
+	name="Dwaldes"
+	culture="vandal"
+}
+51200063=
+{
+	name="Dwaldid"
+	culture="vandal"
+}
+51200064=
+{
+	name="Merobaudes"
+	culture="vandal"
+}
+51200065=
+{
+	name="Merobauda"
+	culture="vandal"
+}
+51200066=
+{
+	name="Merobaudes"
+	culture="vandal"
+}
+51200067=
+{
+	name="Merobaudian"
+	culture="vandal"
+}
+51200068=
+{
+	name="Eidgid"
+	culture="vandal"
+}
+51200069=
+{
+	name="Eidgida"
+	culture="vandal"
+}
+51200070=
+{
+	name="Eidiges"
+	culture="vandal"
+}
+51200071=
+{
+	name="Eidigian"
+	culture="vandal"
+}
+51200072=
+{
+	name="Gerhaucres"
+	culture="vandal"
+}
+51200073=
+{
+	name="Gerhaucra"
+	culture="vandal"
+}
+51200074=
+{
+	name="Gerhaucres"
+	culture="vandal"
+}
+51200075=
+{
+	name="Gerhaucrian"
+	culture="vandal"
+}
+51200076=
+{
+	name="Hildganes"
+	culture="vandal"
+}
+51200077=
+{
+	name="Hildgana"
+	culture="vandal"
+}
+51200078=
+{
+	name="Hildganes"
+	culture="vandal"
+}
+51200079=
+{
+	name="Hildganid"
+	culture="vandal"
+}
+51200080=
+{
+	name="Hramdrid"
+	culture="vandal"
+}
+51200081=
+{
+	name="Hramdra"
+	culture="vandal"
+}
+51200082=
+{
+	name="Hramdri"
+	culture="vandal"
+}
+51200083=
+{
+	name="Hramrid"
+	culture="vandal"
+}
+51200084=
+{
+	name="Ingohdres"
+	culture="vandal"
+}
+51200085=
+{
+	name="Ingohdra"
+	culture="vandal"
+}
+51200086=
+{
+	name="Ingohdres"
+	culture="vandal"
+}
+51200087=
+{
+	name="Ingohdrid"
+	culture="vandal"
+}
+51200088=
+{
+	name="Ingrammus"
+	culture="vandal"
+}
+51200089=
+{
+	name="Ingramma"
+	culture="vandal"
+}
+51200090=
+{
+	name="Ingrammii"
+	culture="vandal"
+}
+51200091=
+{
+	name="Ingrammid"
+	culture="vandal"
+}
+51200092=
+{
+	name="Malactus"
+	culture="vandal"
+}
+51200093=
+{
+	name="Malacta"
+	culture="vandal"
+}
+51200094=
+{
+	name="Malactii"
+	culture="vandal"
+}
+51200095=
+{
+	name="Malactian"
+	culture="vandal"
+}
