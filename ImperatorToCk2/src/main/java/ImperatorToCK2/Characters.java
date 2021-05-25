@@ -77,11 +77,11 @@ public class Characters
 
                         }
                         else if (qaaa.split("=")[0].equals( tab+"traits" ) ) {
-                            System.out.println (qaaa); 
+                            Output.logPrint (qaaa); 
                             output[8] = qaaa.split("=")[1];
 
                             output[8] = output[8].substring(2,output[8].length()-2);
-                            System.out.println (output[8]);
+                            Output.logPrint (output[8]);
                         }
                         else if (qaaa.split("=")[0].equals( tab+tab+"martial" ) ) {
                             output[10] = qaaa.split("=")[1];

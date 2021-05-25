@@ -1,5 +1,5 @@
-package ImperatorToCK2;
- 
+package ImperatorToCK2; 
+
 import java.util.Scanner;
 import java.io.IOException;
 import java.io.FileInputStream;
@@ -921,6 +921,39 @@ public class Importer
         String name = directory + VM + "localisation" + VM + "converted_title_localisation.csv";
 
         FileInputStream fileIn= new FileInputStream(name);
+        Scanner scnr= new Scanner(fileIn);
+
+        int flag = 0;
+        boolean endOrNot = true;
+        String qaaa;
+
+        try {
+            while (endOrNot = true){
+
+                qaaa = scnr.nextLine();
+
+                oldFile.add(qaaa);
+
+            }
+
+        }catch (java.util.NoSuchElementException exception){
+            endOrNot = false;
+
+        }   
+
+        return oldFile;
+
+    }
+    
+    public static ArrayList<String> importBasicFile (String directory) throws IOException
+    {
+
+        String VM = "\\";
+        VM = VM.substring(0);
+        ArrayList<String> oldFile = new ArrayList<String>();
+        char quote = '"';
+
+        FileInputStream fileIn= new FileInputStream(directory);
         Scanner scnr= new Scanner(fileIn);
 
         int flag = 0;

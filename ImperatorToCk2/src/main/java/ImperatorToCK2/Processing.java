@@ -1,5 +1,4 @@
 package ImperatorToCK2;
-
 import java.util.Scanner;
 import java.io.IOException;
 import java.io.FileInputStream;
@@ -378,7 +377,7 @@ public class Processing
             while (endOrNot = true){
                 output[aqq]=importBaronyName(ck2Dir,aqq,ck2Dir);
                 if (output[aqq].equals("debug")) {
-                    //System.out.println(aqq+"is for"+output[aqq]);
+                    //Output.logPrint(aqq+"is for"+output[aqq]);
 
                 }
                 aqq = aqq + 1;
@@ -481,6 +480,33 @@ public class Processing
         int Rng2 = (int) (Math.random() * 255);
         int Rng3 = (int) (Math.random() * 255);
         String color = Integer.toString(Rng1) + " " + Integer.toString(Rng2) + " " + Integer.toString(Rng3); 
+
+        return color;
+
+    }
+    
+    public static String randomizeColorGrey ()
+    {
+
+        int flag = 0;
+        int aqq = 0;
+        String qaaa = "aa";
+        int Rng = (int) (Math.random() * 70);
+        String color = Integer.toString(Rng) + " " + Integer.toString(Rng) + " " + Integer.toString(Rng); 
+
+        return color;
+
+    }
+    
+    public static String randomizeAge ()
+    {
+
+        int flag = 0;
+        int aqq = 0;
+        String qaaa = "aa";
+        int Rng = (int) (Math.random() * 34);
+        Rng = Rng + 16;
+        String color = Integer.toString(Rng); 
 
         return color;
 
@@ -712,7 +738,7 @@ public class Processing
 
         name = name.replace("~~~",".");
 
-        System.out.println(name+"Q");
+        //Output.logPrint(name+"Q");
 
         return name;
     }
@@ -720,9 +746,9 @@ public class Processing
     public static String convertTitle(String name, String rank, String title, String defaultTitle) throws IOException
     {// Converts dynamically generated title to vanilla counterpart
         String tmpTitle = Importer.importCultList(name,rank+"_"+title)[1];//converts title
-        System.out.println(tmpTitle);
+        //Output.logPrint(tmpTitle);
         tmpTitle = tmpTitle.replace((rank+"_"),"");
-        System.out.println(tmpTitle);
+        //Output.logPrint(tmpTitle);
         
         if (tmpTitle.equals("99999") || tmpTitle.equals("peq")) {//if there is no vanilla match
             return defaultTitle;

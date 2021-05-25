@@ -1,0 +1,320 @@
+5290000=
+{
+	name="Bolgi"
+	culture="manx"
+}
+5290001=
+{
+	name="Bolgi"
+	culture="manx"
+}
+5290002=
+{
+	name="Bolgi"
+	culture="manx"
+}
+5290003=
+{
+	name="Bolgian"
+	culture="manx"
+}
+5290004=
+{
+	name="Cruitini"
+	culture="manx"
+}
+5290005=
+{
+	name="Cruitini"
+	culture="manx"
+}
+5290006=
+{
+	name="Cruitini"
+	culture="manx"
+}
+5290007=
+{
+	name="Cruitinian"
+	culture="manx"
+}
+5290008=
+{
+	name="Dairini"
+	culture="manx"
+}
+5290009=
+{
+	name="Dairini"
+	culture="manx"
+}
+52900010=
+{
+	name="Dairini"
+	culture="manx"
+}
+52900011=
+{
+	name="Dairene"
+	culture="manx"
+}
+52900012=
+{
+	name="Deblanni"
+	culture="manx"
+}
+52900013=
+{
+	name="Deblanni"
+	culture="manx"
+}
+52900014=
+{
+	name="Deblanni"
+	culture="manx"
+}
+52900015=
+{
+	name="Deblanian"
+	culture="manx"
+}
+52900016=
+{
+	name="Deirgtini"
+	culture="manx"
+}
+52900017=
+{
+	name="Deirgtini"
+	culture="manx"
+}
+52900018=
+{
+	name="Deirgtini"
+	culture="manx"
+}
+52900019=
+{
+	name="Deirgtinian"
+	culture="manx"
+}
+52900020=
+{
+	name="Domgnanni"
+	culture="manx"
+}
+52900021=
+{
+	name="Domgnanni"
+	culture="manx"
+}
+52900022=
+{
+	name="Domgnanni"
+	culture="manx"
+}
+52900023=
+{
+	name="Domgnannid"
+	culture="manx"
+}
+52900024=
+{
+	name="Ecmacti"
+	culture="manx"
+}
+52900025=
+{
+	name="Ecmacti"
+	culture="manx"
+}
+52900026=
+{
+	name="Ecmacti"
+	culture="manx"
+}
+52900027=
+{
+	name="Emactid"
+	culture="manx"
+}
+52900028=
+{
+	name="Eranni"
+	culture="manx"
+}
+52900029=
+{
+	name="Eranni"
+	culture="manx"
+}
+52900030=
+{
+	name="Eranni"
+	culture="manx"
+}
+52900031=
+{
+	name="Erannian"
+	culture="manx"
+}
+52900032=
+{
+	name="Gamagnragni"
+	culture="manx"
+}
+52900033=
+{
+	name="Gamagnragni"
+	culture="manx"
+}
+52900034=
+{
+	name="Gamagnragni"
+	culture="manx"
+}
+52900035=
+{
+	name="Gamagnragnid"
+	culture="manx"
+}
+52900036=
+{
+	name="Laggigni"
+	culture="manx"
+}
+52900037=
+{
+	name="Laggigni"
+	culture="manx"
+}
+52900038=
+{
+	name="Laggigni"
+	culture="manx"
+}
+52900039=
+{
+	name="Laggidnid"
+	culture="manx"
+}
+52900040=
+{
+	name="Laiggisi"
+	culture="manx"
+}
+52900041=
+{
+	name="Laiggisi"
+	culture="manx"
+}
+52900042=
+{
+	name="Laiggisi"
+	culture="manx"
+}
+52900043=
+{
+	name="Laiggisinid"
+	culture="manx"
+}
+52900044=
+{
+	name="Moggagni"
+	culture="manx"
+}
+52900045=
+{
+	name="Moggagni"
+	culture="manx"
+}
+52900046=
+{
+	name="Moggagni"
+	culture="manx"
+}
+52900047=
+{
+	name="Moggagnid"
+	culture="manx"
+}
+52900048=
+{
+	name="Sogagni"
+	culture="manx"
+}
+52900049=
+{
+	name="Sogagni"
+	culture="manx"
+}
+52900050=
+{
+	name="Sogagni"
+	culture="manx"
+}
+52900051=
+{
+	name="Sogagnid"
+	culture="manx"
+}
+52900052=
+{
+	name="Tadegni"
+	culture="manx"
+}
+52900053=
+{
+	name="Tadegni"
+	culture="manx"
+}
+52900054=
+{
+	name="Tadegni"
+	culture="manx"
+}
+52900055=
+{
+	name="Tadegnid"
+	culture="manx"
+}
+52900056=
+{
+	name="Uaitani"
+	culture="manx"
+}
+52900057=
+{
+	name="Uaitani"
+	culture="manx"
+}
+52900058=
+{
+	name="Uaitani"
+	culture="manx"
+}
+52900059=
+{
+	name="Uatinid"
+	culture="manx"
+}
+52900060=
+{
+	name="Ultacci"
+	culture="manx"
+}
+52900061=
+{
+	name="Ultacca"
+	culture="manx"
+}
+52900062=
+{
+	name="Ultacci"
+	culture="manx"
+}
+52900063=
+{
+	name="Ultaccian"
+	culture="manx"
+}

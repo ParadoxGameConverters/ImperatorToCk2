@@ -1,0 +1,580 @@
+5040000=
+{
+	name="Ambonus"
+	culture="lepontic"
+}
+5040001=
+{
+	name="Ambona"
+	culture="lepontic"
+}
+5040002=
+{
+	name="Ambonii"
+	culture="lepontic"
+}
+5040003=
+{
+	name="Ambonid"
+	culture="lepontic"
+}
+5040004=
+{
+	name="Auaroses"
+	culture="lepontic"
+}
+5040005=
+{
+	name="Auarosa"
+	culture="lepontic"
+}
+5040006=
+{
+	name="Auarosii"
+	culture="lepontic"
+}
+5040007=
+{
+	name="Auarosian"
+	culture="lepontic"
+}
+5040008=
+{
+	name="Audaxus"
+	culture="lepontic"
+}
+5040009=
+{
+	name="Audaxa"
+	culture="lepontic"
+}
+50400010=
+{
+	name="Audaxii"
+	culture="lepontic"
+}
+50400011=
+{
+	name="Audaxian"
+	culture="lepontic"
+}
+50400012=
+{
+	name="Carosus"
+	culture="lepontic"
+}
+50400013=
+{
+	name="Carosa"
+	culture="lepontic"
+}
+50400014=
+{
+	name="Carosii"
+	culture="lepontic"
+}
+50400015=
+{
+	name="Carosian"
+	culture="lepontic"
+}
+50400016=
+{
+	name="Culchus"
+	culture="lepontic"
+}
+50400017=
+{
+	name="Culcha"
+	culture="lepontic"
+}
+50400018=
+{
+	name="Culchi"
+	culture="lepontic"
+}
+50400019=
+{
+	name="Culchian"
+	culture="lepontic"
+}
+50400020=
+{
+	name="Leukus"
+	culture="lepontic"
+}
+50400021=
+{
+	name="Leuka"
+	culture="lepontic"
+}
+50400022=
+{
+	name="Leuki"
+	culture="lepontic"
+}
+50400023=
+{
+	name="Leukian"
+	culture="lepontic"
+}
+50400024=
+{
+	name="Mandonus"
+	culture="lepontic"
+}
+50400025=
+{
+	name="Mandonia"
+	culture="lepontic"
+}
+50400026=
+{
+	name="Mandonii"
+	culture="lepontic"
+}
+50400027=
+{
+	name="Mandonian"
+	culture="lepontic"
+}
+50400028=
+{
+	name="Punicus"
+	culture="lepontic"
+}
+50400029=
+{
+	name="Punica"
+	culture="lepontic"
+}
+50400030=
+{
+	name="Punici"
+	culture="lepontic"
+}
+50400031=
+{
+	name="Punician"
+	culture="lepontic"
+}
+50400032=
+{
+	name="Tautalus"
+	culture="lepontic"
+}
+50400033=
+{
+	name="Tautala"
+	culture="lepontic"
+}
+50400034=
+{
+	name="Tautalii"
+	culture="lepontic"
+}
+50400035=
+{
+	name="Tautalid"
+	culture="lepontic"
+}
+50400036=
+{
+	name="Correius"
+	culture="lepontic"
+}
+50400037=
+{
+	name="Correia"
+	culture="lepontic"
+}
+50400038=
+{
+	name="Correid"
+	culture="lepontic"
+}
+50400039=
+{
+	name="Correian"
+	culture="lepontic"
+}
+50400040=
+{
+	name="Divicus"
+	culture="lepontic"
+}
+50400041=
+{
+	name="Divica"
+	culture="lepontic"
+}
+50400042=
+{
+	name="Divici"
+	culture="lepontic"
+}
+50400043=
+{
+	name="Divicid"
+	culture="lepontic"
+}
+50400044=
+{
+	name="Duratus"
+	culture="lepontic"
+}
+50400045=
+{
+	name="Durata"
+	culture="lepontic"
+}
+50400046=
+{
+	name="Duratii"
+	culture="lepontic"
+}
+50400047=
+{
+	name="Duratian"
+	culture="lepontic"
+}
+50400048=
+{
+	name="Elitovus"
+	culture="lepontic"
+}
+50400049=
+{
+	name="Elitova"
+	culture="lepontic"
+}
+50400050=
+{
+	name="Elitovii"
+	culture="lepontic"
+}
+50400051=
+{
+	name="Elitovian"
+	culture="lepontic"
+}
+50400052=
+{
+	name="Galbus"
+	culture="lepontic"
+}
+50400053=
+{
+	name="Galba"
+	culture="lepontic"
+}
+50400054=
+{
+	name="Galbi"
+	culture="lepontic"
+}
+50400055=
+{
+	name="Galbid"
+	culture="lepontic"
+}
+50400056=
+{
+	name="Iacus"
+	culture="lepontic"
+}
+50400057=
+{
+	name="Iaca"
+	culture="lepontic"
+}
+50400058=
+{
+	name="Iaci"
+	culture="lepontic"
+}
+50400059=
+{
+	name="Iacid"
+	culture="lepontic"
+}
+50400060=
+{
+	name="Marganus"
+	culture="lepontic"
+}
+50400061=
+{
+	name="Margana"
+	culture="lepontic"
+}
+50400062=
+{
+	name="Marganii"
+	culture="lepontic"
+}
+50400063=
+{
+	name="Marganid"
+	culture="lepontic"
+}
+50400064=
+{
+	name="Sinatus"
+	culture="lepontic"
+}
+50400065=
+{
+	name="Sinata"
+	culture="lepontic"
+}
+50400066=
+{
+	name="Sinatii"
+	culture="lepontic"
+}
+50400067=
+{
+	name="Sinatid"
+	culture="lepontic"
+}
+50400068=
+{
+	name="Vodenosus"
+	culture="lepontic"
+}
+50400069=
+{
+	name="Vodenosa"
+	culture="lepontic"
+}
+50400070=
+{
+	name="Vodenosii"
+	culture="lepontic"
+}
+50400071=
+{
+	name="Vodenosian"
+	culture="lepontic"
+}
+50400072=
+{
+	name="Indutius"
+	culture="lepontic"
+}
+50400073=
+{
+	name="Indutia"
+	culture="lepontic"
+}
+50400074=
+{
+	name="Indutii"
+	culture="lepontic"
+}
+50400075=
+{
+	name="Indutian"
+	culture="lepontic"
+}
+50400076=
+{
+	name="Dumnus"
+	culture="lepontic"
+}
+50400077=
+{
+	name="Dumna"
+	culture="lepontic"
+}
+50400078=
+{
+	name="Dumnii"
+	culture="lepontic"
+}
+50400079=
+{
+	name="Dumnid"
+	culture="lepontic"
+}
+50400080=
+{
+	name="Epatticus"
+	culture="lepontic"
+}
+50400081=
+{
+	name="Epattica"
+	culture="lepontic"
+}
+50400082=
+{
+	name="Epatticii"
+	culture="lepontic"
+}
+50400083=
+{
+	name="Epatticid"
+	culture="lepontic"
+}
+50400084=
+{
+	name="Teutomalus"
+	culture="lepontic"
+}
+50400085=
+{
+	name="Teutomala"
+	culture="lepontic"
+}
+50400086=
+{
+	name="Teutomalii"
+	culture="lepontic"
+}
+50400087=
+{
+	name="Teutomalian"
+	culture="lepontic"
+}
+50400088=
+{
+	name="Viridorrius"
+	culture="lepontic"
+}
+50400089=
+{
+	name="Viridorria"
+	culture="lepontic"
+}
+50400090=
+{
+	name="Viridorrii"
+	culture="lepontic"
+}
+50400091=
+{
+	name="Viridorrian"
+	culture="lepontic"
+}
+50400092=
+{
+	name="Magunnus"
+	culture="lepontic"
+}
+50400093=
+{
+	name="Magunna"
+	culture="lepontic"
+}
+50400094=
+{
+	name="Magunnii"
+	culture="lepontic"
+}
+50400095=
+{
+	name="Magunnid"
+	culture="lepontic"
+}
+50400096=
+{
+	name="Brennus"
+	culture="lepontic"
+}
+50400097=
+{
+	name="Brenna"
+	culture="lepontic"
+}
+50400098=
+{
+	name="Brennii"
+	culture="lepontic"
+}
+50400099=
+{
+	name="Brennid"
+	culture="lepontic"
+}
+504000100=
+{
+	name="Boius"
+	culture="lepontic"
+}
+504000101=
+{
+	name="Boia"
+	culture="lepontic"
+}
+504000102=
+{
+	name="Boii"
+	culture="lepontic"
+}
+504000103=
+{
+	name="Boian"
+	culture="lepontic"
+}
+504000104=
+{
+	name="Tannus"
+	culture="lepontic"
+}
+504000105=
+{
+	name="Tanna"
+	culture="lepontic"
+}
+504000106=
+{
+	name="Tanni"
+	culture="lepontic"
+}
+504000107=
+{
+	name="Tannid"
+	culture="lepontic"
+}
+504000108=
+{
+	name="Iccuius"
+	culture="lepontic"
+}
+504000109=
+{
+	name="Iccuia"
+	culture="lepontic"
+}
+504000110=
+{
+	name="Iccui"
+	culture="lepontic"
+}
+504000111=
+{
+	name="Iccian"
+	culture="lepontic"
+}
+504000112=
+{
+	name="Galanus"
+	culture="lepontic"
+}
+504000113=
+{
+	name="Galana"
+	culture="lepontic"
+}
+504000114=
+{
+	name="Galanii"
+	culture="lepontic"
+}
+504000115=
+{
+	name="Galanid"
+	culture="lepontic"
+}

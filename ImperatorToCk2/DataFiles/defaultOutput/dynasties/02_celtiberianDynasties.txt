@@ -1,0 +1,580 @@
+5050000=
+{
+	name="Ambonus"
+	culture="celtiberian"
+}
+5050001=
+{
+	name="Ambona"
+	culture="celtiberian"
+}
+5050002=
+{
+	name="Ambonii"
+	culture="celtiberian"
+}
+5050003=
+{
+	name="Ambonid"
+	culture="celtiberian"
+}
+5050004=
+{
+	name="Auaroses"
+	culture="celtiberian"
+}
+5050005=
+{
+	name="Auarosa"
+	culture="celtiberian"
+}
+5050006=
+{
+	name="Auarosii"
+	culture="celtiberian"
+}
+5050007=
+{
+	name="Auarosian"
+	culture="celtiberian"
+}
+5050008=
+{
+	name="Audaxus"
+	culture="celtiberian"
+}
+5050009=
+{
+	name="Audaxa"
+	culture="celtiberian"
+}
+50500010=
+{
+	name="Audaxii"
+	culture="celtiberian"
+}
+50500011=
+{
+	name="Audaxian"
+	culture="celtiberian"
+}
+50500012=
+{
+	name="Carosus"
+	culture="celtiberian"
+}
+50500013=
+{
+	name="Carosa"
+	culture="celtiberian"
+}
+50500014=
+{
+	name="Carosii"
+	culture="celtiberian"
+}
+50500015=
+{
+	name="Carosian"
+	culture="celtiberian"
+}
+50500016=
+{
+	name="Culchus"
+	culture="celtiberian"
+}
+50500017=
+{
+	name="Culcha"
+	culture="celtiberian"
+}
+50500018=
+{
+	name="Culchi"
+	culture="celtiberian"
+}
+50500019=
+{
+	name="Culchian"
+	culture="celtiberian"
+}
+50500020=
+{
+	name="Leukus"
+	culture="celtiberian"
+}
+50500021=
+{
+	name="Leuka"
+	culture="celtiberian"
+}
+50500022=
+{
+	name="Leuki"
+	culture="celtiberian"
+}
+50500023=
+{
+	name="Leukian"
+	culture="celtiberian"
+}
+50500024=
+{
+	name="Mandonus"
+	culture="celtiberian"
+}
+50500025=
+{
+	name="Mandonia"
+	culture="celtiberian"
+}
+50500026=
+{
+	name="Mandonii"
+	culture="celtiberian"
+}
+50500027=
+{
+	name="Mandonian"
+	culture="celtiberian"
+}
+50500028=
+{
+	name="Punicus"
+	culture="celtiberian"
+}
+50500029=
+{
+	name="Punica"
+	culture="celtiberian"
+}
+50500030=
+{
+	name="Punici"
+	culture="celtiberian"
+}
+50500031=
+{
+	name="Punician"
+	culture="celtiberian"
+}
+50500032=
+{
+	name="Tautalus"
+	culture="celtiberian"
+}
+50500033=
+{
+	name="Tautala"
+	culture="celtiberian"
+}
+50500034=
+{
+	name="Tautalii"
+	culture="celtiberian"
+}
+50500035=
+{
+	name="Tautalid"
+	culture="celtiberian"
+}
+50500036=
+{
+	name="Correius"
+	culture="celtiberian"
+}
+50500037=
+{
+	name="Correia"
+	culture="celtiberian"
+}
+50500038=
+{
+	name="Correid"
+	culture="celtiberian"
+}
+50500039=
+{
+	name="Correian"
+	culture="celtiberian"
+}
+50500040=
+{
+	name="Divicus"
+	culture="celtiberian"
+}
+50500041=
+{
+	name="Divica"
+	culture="celtiberian"
+}
+50500042=
+{
+	name="Divici"
+	culture="celtiberian"
+}
+50500043=
+{
+	name="Divicid"
+	culture="celtiberian"
+}
+50500044=
+{
+	name="Duratus"
+	culture="celtiberian"
+}
+50500045=
+{
+	name="Durata"
+	culture="celtiberian"
+}
+50500046=
+{
+	name="Duratii"
+	culture="celtiberian"
+}
+50500047=
+{
+	name="Duratian"
+	culture="celtiberian"
+}
+50500048=
+{
+	name="Elitovus"
+	culture="celtiberian"
+}
+50500049=
+{
+	name="Elitova"
+	culture="celtiberian"
+}
+50500050=
+{
+	name="Elitovii"
+	culture="celtiberian"
+}
+50500051=
+{
+	name="Elitovian"
+	culture="celtiberian"
+}
+50500052=
+{
+	name="Galbus"
+	culture="celtiberian"
+}
+50500053=
+{
+	name="Galba"
+	culture="celtiberian"
+}
+50500054=
+{
+	name="Galbi"
+	culture="celtiberian"
+}
+50500055=
+{
+	name="Galbid"
+	culture="celtiberian"
+}
+50500056=
+{
+	name="Iacus"
+	culture="celtiberian"
+}
+50500057=
+{
+	name="Iaca"
+	culture="celtiberian"
+}
+50500058=
+{
+	name="Iaci"
+	culture="celtiberian"
+}
+50500059=
+{
+	name="Iacid"
+	culture="celtiberian"
+}
+50500060=
+{
+	name="Marganus"
+	culture="celtiberian"
+}
+50500061=
+{
+	name="Margana"
+	culture="celtiberian"
+}
+50500062=
+{
+	name="Marganii"
+	culture="celtiberian"
+}
+50500063=
+{
+	name="Marganid"
+	culture="celtiberian"
+}
+50500064=
+{
+	name="Sinatus"
+	culture="celtiberian"
+}
+50500065=
+{
+	name="Sinata"
+	culture="celtiberian"
+}
+50500066=
+{
+	name="Sinatii"
+	culture="celtiberian"
+}
+50500067=
+{
+	name="Sinatid"
+	culture="celtiberian"
+}
+50500068=
+{
+	name="Vodenosus"
+	culture="celtiberian"
+}
+50500069=
+{
+	name="Vodenosa"
+	culture="celtiberian"
+}
+50500070=
+{
+	name="Vodenosii"
+	culture="celtiberian"
+}
+50500071=
+{
+	name="Vodenosian"
+	culture="celtiberian"
+}
+50500072=
+{
+	name="Indutius"
+	culture="celtiberian"
+}
+50500073=
+{
+	name="Indutia"
+	culture="celtiberian"
+}
+50500074=
+{
+	name="Indutii"
+	culture="celtiberian"
+}
+50500075=
+{
+	name="Indutian"
+	culture="celtiberian"
+}
+50500076=
+{
+	name="Dumnus"
+	culture="celtiberian"
+}
+50500077=
+{
+	name="Dumna"
+	culture="celtiberian"
+}
+50500078=
+{
+	name="Dumnii"
+	culture="celtiberian"
+}
+50500079=
+{
+	name="Dumnid"
+	culture="celtiberian"
+}
+50500080=
+{
+	name="Epatticus"
+	culture="celtiberian"
+}
+50500081=
+{
+	name="Epattica"
+	culture="celtiberian"
+}
+50500082=
+{
+	name="Epatticii"
+	culture="celtiberian"
+}
+50500083=
+{
+	name="Epatticid"
+	culture="celtiberian"
+}
+50500084=
+{
+	name="Teutomalus"
+	culture="celtiberian"
+}
+50500085=
+{
+	name="Teutomala"
+	culture="celtiberian"
+}
+50500086=
+{
+	name="Teutomalii"
+	culture="celtiberian"
+}
+50500087=
+{
+	name="Teutomalian"
+	culture="celtiberian"
+}
+50500088=
+{
+	name="Viridorrius"
+	culture="celtiberian"
+}
+50500089=
+{
+	name="Viridorria"
+	culture="celtiberian"
+}
+50500090=
+{
+	name="Viridorrii"
+	culture="celtiberian"
+}
+50500091=
+{
+	name="Viridorrian"
+	culture="celtiberian"
+}
+50500092=
+{
+	name="Magunnus"
+	culture="celtiberian"
+}
+50500093=
+{
+	name="Magunna"
+	culture="celtiberian"
+}
+50500094=
+{
+	name="Magunnii"
+	culture="celtiberian"
+}
+50500095=
+{
+	name="Magunnid"
+	culture="celtiberian"
+}
+50500096=
+{
+	name="Brennus"
+	culture="celtiberian"
+}
+50500097=
+{
+	name="Brenna"
+	culture="celtiberian"
+}
+50500098=
+{
+	name="Brennii"
+	culture="celtiberian"
+}
+50500099=
+{
+	name="Brennid"
+	culture="celtiberian"
+}
+505000100=
+{
+	name="Boius"
+	culture="celtiberian"
+}
+505000101=
+{
+	name="Boia"
+	culture="celtiberian"
+}
+505000102=
+{
+	name="Boii"
+	culture="celtiberian"
+}
+505000103=
+{
+	name="Boian"
+	culture="celtiberian"
+}
+505000104=
+{
+	name="Tannus"
+	culture="celtiberian"
+}
+505000105=
+{
+	name="Tanna"
+	culture="celtiberian"
+}
+505000106=
+{
+	name="Tanni"
+	culture="celtiberian"
+}
+505000107=
+{
+	name="Tannid"
+	culture="celtiberian"
+}
+505000108=
+{
+	name="Iccuius"
+	culture="celtiberian"
+}
+505000109=
+{
+	name="Iccuia"
+	culture="celtiberian"
+}
+505000110=
+{
+	name="Iccui"
+	culture="celtiberian"
+}
+505000111=
+{
+	name="Iccian"
+	culture="celtiberian"
+}
+505000112=
+{
+	name="Galanus"
+	culture="celtiberian"
+}
+505000113=
+{
+	name="Galana"
+	culture="celtiberian"
+}
+505000114=
+{
+	name="Galanii"
+	culture="celtiberian"
+}
+505000115=
+{
+	name="Galanid"
+	culture="celtiberian"
+}

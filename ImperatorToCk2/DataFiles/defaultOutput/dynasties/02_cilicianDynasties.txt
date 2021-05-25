@@ -1,0 +1,600 @@
+5260000=
+{
+	name="Aramid"
+	culture="cilician"
+}
+5260001=
+{
+	name="Aramid"
+	culture="cilician"
+}
+5260002=
+{
+	name="Aramids"
+	culture="cilician"
+}
+5260003=
+{
+	name="Aramid"
+	culture="cilician"
+}
+5260004=
+{
+	name="Arid"
+	culture="cilician"
+}
+5260005=
+{
+	name="Arid"
+	culture="cilician"
+}
+5260006=
+{
+	name="Arids"
+	culture="cilician"
+}
+5260007=
+{
+	name="Arid"
+	culture="cilician"
+}
+5260008=
+{
+	name="Arkhid"
+	culture="cilician"
+}
+5260009=
+{
+	name="Arkhid"
+	culture="cilician"
+}
+52600010=
+{
+	name="Arkhids"
+	culture="cilician"
+}
+52600011=
+{
+	name="Arkhid"
+	culture="cilician"
+}
+52600012=
+{
+	name="Asinid"
+	culture="cilician"
+}
+52600013=
+{
+	name="Asinid"
+	culture="cilician"
+}
+52600014=
+{
+	name="Asinids"
+	culture="cilician"
+}
+52600015=
+{
+	name="Asinid"
+	culture="cilician"
+}
+52600016=
+{
+	name="Arsacid"
+	culture="cilician"
+}
+52600017=
+{
+	name="Arsacid"
+	culture="cilician"
+}
+52600018=
+{
+	name="Arsacids"
+	culture="cilician"
+}
+52600019=
+{
+	name="Arsacid"
+	culture="cilician"
+}
+52600020=
+{
+	name="Deiocid"
+	culture="cilician"
+}
+52600021=
+{
+	name="Deiocid"
+	culture="cilician"
+}
+52600022=
+{
+	name="Deiocids"
+	culture="cilician"
+}
+52600023=
+{
+	name="Deiocid"
+	culture="cilician"
+}
+52600024=
+{
+	name="Menid"
+	culture="cilician"
+}
+52600025=
+{
+	name="Menid"
+	culture="cilician"
+}
+52600026=
+{
+	name="Menids"
+	culture="cilician"
+}
+52600027=
+{
+	name="Menid"
+	culture="cilician"
+}
+52600028=
+{
+	name="Pacorid"
+	culture="cilician"
+}
+52600029=
+{
+	name="Pacorid"
+	culture="cilician"
+}
+52600030=
+{
+	name="Pacorids"
+	culture="cilician"
+}
+52600031=
+{
+	name="Pacorid"
+	culture="cilician"
+}
+52600032=
+{
+	name="Savacid"
+	culture="cilician"
+}
+52600033=
+{
+	name="Savacid"
+	culture="cilician"
+}
+52600034=
+{
+	name="Savacids"
+	culture="cilician"
+}
+52600035=
+{
+	name="Savacid"
+	culture="cilician"
+}
+52600036=
+{
+	name="Vardanid"
+	culture="cilician"
+}
+52600037=
+{
+	name="Vardanid"
+	culture="cilician"
+}
+52600038=
+{
+	name="Vardanids"
+	culture="cilician"
+}
+52600039=
+{
+	name="Vardanid"
+	culture="cilician"
+}
+52600040=
+{
+	name="Suren"
+	culture="cilician"
+}
+52600041=
+{
+	name="Suren"
+	culture="cilician"
+}
+52600042=
+{
+	name="Surenids"
+	culture="cilician"
+}
+52600043=
+{
+	name="Surenid"
+	culture="cilician"
+}
+52600044=
+{
+	name="Karin"
+	culture="cilician"
+}
+52600045=
+{
+	name="Karin"
+	culture="cilician"
+}
+52600046=
+{
+	name="Karinids"
+	culture="cilician"
+}
+52600047=
+{
+	name="Karinid"
+	culture="cilician"
+}
+52600048=
+{
+	name="Gaumatid"
+	culture="cilician"
+}
+52600049=
+{
+	name="Gaumatid"
+	culture="cilician"
+}
+52600050=
+{
+	name="Gaumatids"
+	culture="cilician"
+}
+52600051=
+{
+	name="Gaumatid"
+	culture="cilician"
+}
+52600052=
+{
+	name="Gobryasid"
+	culture="cilician"
+}
+52600053=
+{
+	name="Gobryasid"
+	culture="cilician"
+}
+52600054=
+{
+	name="Gobryasids"
+	culture="cilician"
+}
+52600055=
+{
+	name="Gobryasid"
+	culture="cilician"
+}
+52600056=
+{
+	name="Hydarnid"
+	culture="cilician"
+}
+52600057=
+{
+	name="Hydarnid"
+	culture="cilician"
+}
+52600058=
+{
+	name="Hydarnids"
+	culture="cilician"
+}
+52600059=
+{
+	name="Hydarnid"
+	culture="cilician"
+}
+52600060=
+{
+	name="Smerdid"
+	culture="cilician"
+}
+52600061=
+{
+	name="Smerdid"
+	culture="cilician"
+}
+52600062=
+{
+	name="Smerdids"
+	culture="cilician"
+}
+52600063=
+{
+	name="Smerdid"
+	culture="cilician"
+}
+52600064=
+{
+	name="Vivanid"
+	culture="cilician"
+}
+52600065=
+{
+	name="Vivanid"
+	culture="cilician"
+}
+52600066=
+{
+	name="Vivanids"
+	culture="cilician"
+}
+52600067=
+{
+	name="Vivanid"
+	culture="cilician"
+}
+52600068=
+{
+	name="Xerxid"
+	culture="cilician"
+}
+52600069=
+{
+	name="Xerxid"
+	culture="cilician"
+}
+52600070=
+{
+	name="Xerxids"
+	culture="cilician"
+}
+52600071=
+{
+	name="Xerxid"
+	culture="cilician"
+}
+52600072=
+{
+	name="Abadanid"
+	culture="cilician"
+}
+52600073=
+{
+	name="Abadanid"
+	culture="cilician"
+}
+52600074=
+{
+	name="Abadanids"
+	culture="cilician"
+}
+52600075=
+{
+	name="Abadanid"
+	culture="cilician"
+}
+52600076=
+{
+	name="Orontid"
+	culture="cilician"
+}
+52600077=
+{
+	name="Orontid"
+	culture="cilician"
+}
+52600078=
+{
+	name="Orontids"
+	culture="cilician"
+}
+52600079=
+{
+	name="Orontid"
+	culture="cilician"
+}
+52600080=
+{
+	name="Atropatid"
+	culture="cilician"
+}
+52600081=
+{
+	name="Atropatid"
+	culture="cilician"
+}
+52600082=
+{
+	name="Atropatids"
+	culture="cilician"
+}
+52600083=
+{
+	name="Atropatid"
+	culture="cilician"
+}
+52600084=
+{
+	name="Mithridatid"
+	culture="cilician"
+}
+52600085=
+{
+	name="Mithridatid"
+	culture="cilician"
+}
+52600086=
+{
+	name="Mithridatids"
+	culture="cilician"
+}
+52600087=
+{
+	name="Mithridatid"
+	culture="cilician"
+}
+52600088=
+{
+	name="Artiaxid"
+	culture="cilician"
+}
+52600089=
+{
+	name="Artiaxid"
+	culture="cilician"
+}
+52600090=
+{
+	name="Artiaxids"
+	culture="cilician"
+}
+52600091=
+{
+	name="Artiaxid"
+	culture="cilician"
+}
+52600092=
+{
+	name="Sassanid"
+	culture="cilician"
+}
+52600093=
+{
+	name="Sassanid"
+	culture="cilician"
+}
+52600094=
+{
+	name="Sassanids"
+	culture="cilician"
+}
+52600095=
+{
+	name="Sassanid"
+	culture="cilician"
+}
+52600096=
+{
+	name="Mihranid"
+	culture="cilician"
+}
+52600097=
+{
+	name="Mihranid"
+	culture="cilician"
+}
+52600098=
+{
+	name="Mihranids"
+	culture="cilician"
+}
+52600099=
+{
+	name="Mihranid"
+	culture="cilician"
+}
+526000100=
+{
+	name="Chosroid"
+	culture="cilician"
+}
+526000101=
+{
+	name="Chosroid"
+	culture="cilician"
+}
+526000102=
+{
+	name="Chosroids"
+	culture="cilician"
+}
+526000103=
+{
+	name="Chosroid"
+	culture="cilician"
+}
+526000104=
+{
+	name="Artashid"
+	culture="cilician"
+}
+526000105=
+{
+	name="Artashid"
+	culture="cilician"
+}
+526000106=
+{
+	name="Artashids"
+	culture="cilician"
+}
+526000107=
+{
+	name="Artashid"
+	culture="cilician"
+}
+526000108=
+{
+	name="Bagabignid"
+	culture="cilician"
+}
+526000109=
+{
+	name="Bagabignid"
+	culture="cilician"
+}
+526000110=
+{
+	name="Bagabignids"
+	culture="cilician"
+}
+526000111=
+{
+	name="Bagabignid"
+	culture="cilician"
+}
+526000112=
+{
+	name="Cambysid"
+	culture="cilician"
+}
+526000113=
+{
+	name="Cambysid"
+	culture="cilician"
+}
+526000114=
+{
+	name="Cambysids"
+	culture="cilician"
+}
+526000115=
+{
+	name="Cambysid"
+	culture="cilician"
+}
+526000116=
+{
+	name="Frataraka"
+	culture="cilician"
+}
+526000117=
+{
+	name="Frataraka"
+	culture="cilician"
+}
+526000118=
+{
+	name="Frataraka"
+	culture="cilician"
+}
+526000119=
+{
+	name="Frataraka"
+	culture="cilician"
+}

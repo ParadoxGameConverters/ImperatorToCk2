@@ -1,47 +1,30 @@
 #Localization compatibility for popular Imperator:Rome mods
  #MolonLabe mod formables
 
- formable_gloriousolbia:0 "Glorious Olbian"
  GLORIOUSOLBIA_NAME:0 "The Glorious Democratic Peoples' Republic of Olbia"
  GLORIOUSOLBIA_ADJECTIVE:0 "Glorious Olbian"
  
- formable_kavkasia:0 "Kavkasia"
  KAVKASIA_NAME:0 "Kavkasia"
  KAVKASIA_ADJECTIVE:0 "Kavkasi"
  
- formable_konkan:0 "Konkan"
  KONKAN_NAME:0 "Konkan"
  KONKAN_ADJECTIVE:0 "Konkani"
 
  BOD_NAME:0 "Bod"
  BOD_ADJECTIVE:0 "Bodan"
  
- formable_bod:0 "Asia"
  ASIA_NAME:0 "Asia"
  ASIA_ADJECTIVE:0 "Asian"
- asia_not_exists:0 "#Y Asia#! must NOT exist."
  
  BALHIKA_NAME:0 "Balhika"
  BALHIKA_ADJECTIVE:0 "Balhikan"
- balhika_not_exists:0 "#Y Balhika#! must NOT exist."
  
- formable_mahajanapadan_league:0 "Mahajanapadan League"
  MAHAJANAPADA_LEAGUE_NAME:0 "Mahajanapadan League"
  MAHAJANAPADA_LEAGUE_ADJECTIVE:0 "Mahajanapadan"
- mahajanapadan_league_not_exists:0 "#Y Mahajanapadan League#! must NOT exist."
  
- #Anatolia
- form_anatolia:0 "Form Anatolia"
- form_anatolia_desc:0 "The Persian and Macedonian empires are no more and we Anatolians have taken our destiny into our own hands. No longer will be the playthings of foreign kings. Let the world hear the hooves of our mounts beat the ground before them and tremble! Henceforth we shall be to known to all as #Y Anatolia#!"
- formable_anatolia:0 "Anatolia"
  ANATOLIA_NAME:0 "Anatolia"
  ANATOLIA_ADJECTIVE:0 "Anatolian"
- anatolia_not_exists:0 "#Y Anatolia#! must NOT exist."
  
- #Arabia
- form_arabia:0 "Form Arabia"
- form_arabia_desc:0 "We hereby unite all the sands and oases of #Y Arabia#!"
- formable_arabia:0 "Arabia"
  ARABIA_NAME:0 "Arabia"
  ARABIA_ADJECTIVE:0 "Arabian"
 
@@ -57,7 +40,6 @@
  DANAPRIS_NAME:0 "Danapris"
  DANAPRIS_ADJECTIVE:0 "Danaprisan"
 
- formable_eretz_yisrael:0 "Eretz Yisrael"
  ERETZ_YISRAEL_NAME:0 "Eretz Yisrael"
  ERETZ_YISRAEL_ADJECTIVE:0 "Israeli"
 
@@ -202,7 +184,6 @@
 
  VANDALIA_NAME:0 "Vandalia"
  VANDALIA_ADJECTIVE:0 "Vandal"
- vandalia_not_exists:0 "#Y Vandalia#! must NOT exist."
 
  PUNIC_LEAGUE_NAME:0 "Punic League"
  PUNIC_LEAGUE_ADJECTIVE:0 "Punic"
@@ -221,16 +202,12 @@
 
  GRAECIA_OCCIDENTIS_NAME:0 "Graecia Occidentis"
  GRAECIA_OCCIDENTIS_ADJECTIVE:0 "Graecia Occidentian"
- graecia_occidentis_not_exists:0 "#Y Graecia Occidentis#! must NOT exist."
- formable_graecia_occidentis_capital:0 "Our capital must be located in the regions of #Y Germania#!, #Y Scandia#!, or #Y Venedia#!."
 
  GHABATALEANBAR_NAME:0 "Ghabataleanbar"
  GHABATALEANBAR_ADJECTIVE:0 "Ghabataleanbari"
- ghabataleanbar_not_exists:0 "#Y Ghabataleanbar#! must NOT exist."
 
  JALABHUMI_NAME:0 "Jalabhumi"
  JALABHUMI_ADJECTIVE:0 "Jalabhumi"
- jalabhumi_not_exists:0 "#Y Jalabhumi#! must NOT exist."
 
  CHALDEAN_EMPIRE_NAME:0 "Chaldean Empire"
  CHALDEAN_EMPIRE_ADJECTIVE:0 "Chaldean"

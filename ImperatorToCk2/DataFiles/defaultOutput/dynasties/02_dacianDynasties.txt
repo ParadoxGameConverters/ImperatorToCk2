@@ -1,0 +1,360 @@
+5070000=
+{
+	name="Gudilanus"
+	culture="dacian"
+}
+5070001=
+{
+	name="Gudilana"
+	culture="dacian"
+}
+5070002=
+{
+	name="Gudilanii"
+	culture="dacian"
+}
+5070003=
+{
+	name="Gudilanian"
+	culture="dacian"
+}
+5070004=
+{
+	name="Cotisus"
+	culture="dacian"
+}
+5070005=
+{
+	name="Cotisa"
+	culture="dacian"
+}
+5070006=
+{
+	name="Cotisi"
+	culture="dacian"
+}
+5070007=
+{
+	name="Cotisian"
+	culture="dacian"
+}
+5070008=
+{
+	name="Durasus"
+	culture="dacian"
+}
+5070009=
+{
+	name="Durasa"
+	culture="dacian"
+}
+50700010=
+{
+	name="Durasii"
+	culture="dacian"
+}
+50700011=
+{
+	name="Durasian"
+	culture="dacian"
+}
+50700012=
+{
+	name="Dromichaetus"
+	culture="dacian"
+}
+50700013=
+{
+	name="Dromichaeta"
+	culture="dacian"
+}
+50700014=
+{
+	name="Dromichaeti"
+	culture="dacian"
+}
+50700015=
+{
+	name="Dromichaetid"
+	culture="dacian"
+}
+50700016=
+{
+	name="Komozus"
+	culture="dacian"
+}
+50700017=
+{
+	name="Komoza"
+	culture="dacian"
+}
+50700018=
+{
+	name="Komozii"
+	culture="dacian"
+}
+50700019=
+{
+	name="Komozian"
+	culture="dacian"
+}
+50700020=
+{
+	name="Moskosus"
+	culture="dacian"
+}
+50700021=
+{
+	name="Moskosa"
+	culture="dacian"
+}
+50700022=
+{
+	name="Moskosii"
+	culture="dacian"
+}
+50700023=
+{
+	name="Moskosian"
+	culture="dacian"
+}
+50700024=
+{
+	name="Mucatralus"
+	culture="dacian"
+}
+50700025=
+{
+	name="Mucatrala"
+	culture="dacian"
+}
+50700026=
+{
+	name="Mucatralii"
+	culture="dacian"
+}
+50700027=
+{
+	name="Mucatralian"
+	culture="dacian"
+}
+50700028=
+{
+	name="Natoporus"
+	culture="dacian"
+}
+50700029=
+{
+	name="Natopora"
+	culture="dacian"
+}
+50700030=
+{
+	name="Natoporii"
+	culture="dacian"
+}
+50700031=
+{
+	name="Natoporian"
+	culture="dacian"
+}
+50700032=
+{
+	name="Orolosus"
+	culture="dacian"
+}
+50700033=
+{
+	name="Orolosa"
+	culture="dacian"
+}
+50700034=
+{
+	name="Orolosii"
+	culture="dacian"
+}
+50700035=
+{
+	name="Orolosian"
+	culture="dacian"
+}
+50700036=
+{
+	name="Pieporus"
+	culture="dacian"
+}
+50700037=
+{
+	name="Piepora"
+	culture="dacian"
+}
+50700038=
+{
+	name="Pieporii"
+	culture="dacian"
+}
+50700039=
+{
+	name="Pieporian"
+	culture="dacian"
+}
+50700040=
+{
+	name="Rhemaxilus"
+	culture="dacian"
+}
+50700041=
+{
+	name="Rhemaxila"
+	culture="dacian"
+}
+50700042=
+{
+	name="Rhemaxilii"
+	culture="dacian"
+}
+50700043=
+{
+	name="Rhemaxilid"
+	culture="dacian"
+}
+50700044=
+{
+	name="Rholicus"
+	culture="dacian"
+}
+50700045=
+{
+	name="Rholica"
+	culture="dacian"
+}
+50700046=
+{
+	name="Rholici"
+	culture="dacian"
+}
+50700047=
+{
+	name="Rholicid"
+	culture="dacian"
+}
+50700048=
+{
+	name="Rubobosticus"
+	culture="dacian"
+}
+50700049=
+{
+	name="Rubobostica"
+	culture="dacian"
+}
+50700050=
+{
+	name="Rubobostici"
+	culture="dacian"
+}
+50700051=
+{
+	name="Rubobosticid"
+	culture="dacian"
+}
+50700052=
+{
+	name="Scorius"
+	culture="dacian"
+}
+50700053=
+{
+	name="Scoria"
+	culture="dacian"
+}
+50700054=
+{
+	name="Scorii"
+	culture="dacian"
+}
+50700055=
+{
+	name="Scorian"
+	culture="dacian"
+}
+50700056=
+{
+	name="Tiatus"
+	culture="dacian"
+}
+50700057=
+{
+	name="Tiata"
+	culture="dacian"
+}
+50700058=
+{
+	name="Tiatii"
+	culture="dacian"
+}
+50700059=
+{
+	name="Tiatian"
+	culture="dacian"
+}
+50700060=
+{
+	name="Tarbus"
+	culture="dacian"
+}
+50700061=
+{
+	name="Tarba"
+	culture="dacian"
+}
+50700062=
+{
+	name="Tarbii"
+	culture="dacian"
+}
+50700063=
+{
+	name="Tarbian"
+	culture="dacian"
+}
+50700064=
+{
+	name="Tsiricus"
+	culture="dacian"
+}
+50700065=
+{
+	name="Tsirica"
+	culture="dacian"
+}
+50700066=
+{
+	name="Tsirici"
+	culture="dacian"
+}
+50700067=
+{
+	name="Tsiricid"
+	culture="dacian"
+}
+50700068=
+{
+	name="Zinnicus"
+	culture="dacian"
+}
+50700069=
+{
+	name="Zinnica"
+	culture="dacian"
+}
+50700070=
+{
+	name="Zinnici"
+	culture="dacian"
+}
+50700071=
+{
+	name="Zinnicid"
+	culture="dacian"
+}

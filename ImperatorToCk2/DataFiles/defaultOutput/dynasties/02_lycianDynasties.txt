@@ -1,0 +1,600 @@
+5230000=
+{
+	name="Aramid"
+	culture="lycian"
+}
+5230001=
+{
+	name="Aramid"
+	culture="lycian"
+}
+5230002=
+{
+	name="Aramids"
+	culture="lycian"
+}
+5230003=
+{
+	name="Aramid"
+	culture="lycian"
+}
+5230004=
+{
+	name="Arid"
+	culture="lycian"
+}
+5230005=
+{
+	name="Arid"
+	culture="lycian"
+}
+5230006=
+{
+	name="Arids"
+	culture="lycian"
+}
+5230007=
+{
+	name="Arid"
+	culture="lycian"
+}
+5230008=
+{
+	name="Arkhid"
+	culture="lycian"
+}
+5230009=
+{
+	name="Arkhid"
+	culture="lycian"
+}
+52300010=
+{
+	name="Arkhids"
+	culture="lycian"
+}
+52300011=
+{
+	name="Arkhid"
+	culture="lycian"
+}
+52300012=
+{
+	name="Asinid"
+	culture="lycian"
+}
+52300013=
+{
+	name="Asinid"
+	culture="lycian"
+}
+52300014=
+{
+	name="Asinids"
+	culture="lycian"
+}
+52300015=
+{
+	name="Asinid"
+	culture="lycian"
+}
+52300016=
+{
+	name="Arsacid"
+	culture="lycian"
+}
+52300017=
+{
+	name="Arsacid"
+	culture="lycian"
+}
+52300018=
+{
+	name="Arsacids"
+	culture="lycian"
+}
+52300019=
+{
+	name="Arsacid"
+	culture="lycian"
+}
+52300020=
+{
+	name="Deiocid"
+	culture="lycian"
+}
+52300021=
+{
+	name="Deiocid"
+	culture="lycian"
+}
+52300022=
+{
+	name="Deiocids"
+	culture="lycian"
+}
+52300023=
+{
+	name="Deiocid"
+	culture="lycian"
+}
+52300024=
+{
+	name="Menid"
+	culture="lycian"
+}
+52300025=
+{
+	name="Menid"
+	culture="lycian"
+}
+52300026=
+{
+	name="Menids"
+	culture="lycian"
+}
+52300027=
+{
+	name="Menid"
+	culture="lycian"
+}
+52300028=
+{
+	name="Pacorid"
+	culture="lycian"
+}
+52300029=
+{
+	name="Pacorid"
+	culture="lycian"
+}
+52300030=
+{
+	name="Pacorids"
+	culture="lycian"
+}
+52300031=
+{
+	name="Pacorid"
+	culture="lycian"
+}
+52300032=
+{
+	name="Savacid"
+	culture="lycian"
+}
+52300033=
+{
+	name="Savacid"
+	culture="lycian"
+}
+52300034=
+{
+	name="Savacids"
+	culture="lycian"
+}
+52300035=
+{
+	name="Savacid"
+	culture="lycian"
+}
+52300036=
+{
+	name="Vardanid"
+	culture="lycian"
+}
+52300037=
+{
+	name="Vardanid"
+	culture="lycian"
+}
+52300038=
+{
+	name="Vardanids"
+	culture="lycian"
+}
+52300039=
+{
+	name="Vardanid"
+	culture="lycian"
+}
+52300040=
+{
+	name="Suren"
+	culture="lycian"
+}
+52300041=
+{
+	name="Suren"
+	culture="lycian"
+}
+52300042=
+{
+	name="Surenids"
+	culture="lycian"
+}
+52300043=
+{
+	name="Surenid"
+	culture="lycian"
+}
+52300044=
+{
+	name="Karin"
+	culture="lycian"
+}
+52300045=
+{
+	name="Karin"
+	culture="lycian"
+}
+52300046=
+{
+	name="Karinids"
+	culture="lycian"
+}
+52300047=
+{
+	name="Karinid"
+	culture="lycian"
+}
+52300048=
+{
+	name="Gaumatid"
+	culture="lycian"
+}
+52300049=
+{
+	name="Gaumatid"
+	culture="lycian"
+}
+52300050=
+{
+	name="Gaumatids"
+	culture="lycian"
+}
+52300051=
+{
+	name="Gaumatid"
+	culture="lycian"
+}
+52300052=
+{
+	name="Gobryasid"
+	culture="lycian"
+}
+52300053=
+{
+	name="Gobryasid"
+	culture="lycian"
+}
+52300054=
+{
+	name="Gobryasids"
+	culture="lycian"
+}
+52300055=
+{
+	name="Gobryasid"
+	culture="lycian"
+}
+52300056=
+{
+	name="Hydarnid"
+	culture="lycian"
+}
+52300057=
+{
+	name="Hydarnid"
+	culture="lycian"
+}
+52300058=
+{
+	name="Hydarnids"
+	culture="lycian"
+}
+52300059=
+{
+	name="Hydarnid"
+	culture="lycian"
+}
+52300060=
+{
+	name="Smerdid"
+	culture="lycian"
+}
+52300061=
+{
+	name="Smerdid"
+	culture="lycian"
+}
+52300062=
+{
+	name="Smerdids"
+	culture="lycian"
+}
+52300063=
+{
+	name="Smerdid"
+	culture="lycian"
+}
+52300064=
+{
+	name="Vivanid"
+	culture="lycian"
+}
+52300065=
+{
+	name="Vivanid"
+	culture="lycian"
+}
+52300066=
+{
+	name="Vivanids"
+	culture="lycian"
+}
+52300067=
+{
+	name="Vivanid"
+	culture="lycian"
+}
+52300068=
+{
+	name="Xerxid"
+	culture="lycian"
+}
+52300069=
+{
+	name="Xerxid"
+	culture="lycian"
+}
+52300070=
+{
+	name="Xerxids"
+	culture="lycian"
+}
+52300071=
+{
+	name="Xerxid"
+	culture="lycian"
+}
+52300072=
+{
+	name="Abadanid"
+	culture="lycian"
+}
+52300073=
+{
+	name="Abadanid"
+	culture="lycian"
+}
+52300074=
+{
+	name="Abadanids"
+	culture="lycian"
+}
+52300075=
+{
+	name="Abadanid"
+	culture="lycian"
+}
+52300076=
+{
+	name="Orontid"
+	culture="lycian"
+}
+52300077=
+{
+	name="Orontid"
+	culture="lycian"
+}
+52300078=
+{
+	name="Orontids"
+	culture="lycian"
+}
+52300079=
+{
+	name="Orontid"
+	culture="lycian"
+}
+52300080=
+{
+	name="Atropatid"
+	culture="lycian"
+}
+52300081=
+{
+	name="Atropatid"
+	culture="lycian"
+}
+52300082=
+{
+	name="Atropatids"
+	culture="lycian"
+}
+52300083=
+{
+	name="Atropatid"
+	culture="lycian"
+}
+52300084=
+{
+	name="Mithridatid"
+	culture="lycian"
+}
+52300085=
+{
+	name="Mithridatid"
+	culture="lycian"
+}
+52300086=
+{
+	name="Mithridatids"
+	culture="lycian"
+}
+52300087=
+{
+	name="Mithridatid"
+	culture="lycian"
+}
+52300088=
+{
+	name="Artiaxid"
+	culture="lycian"
+}
+52300089=
+{
+	name="Artiaxid"
+	culture="lycian"
+}
+52300090=
+{
+	name="Artiaxids"
+	culture="lycian"
+}
+52300091=
+{
+	name="Artiaxid"
+	culture="lycian"
+}
+52300092=
+{
+	name="Sassanid"
+	culture="lycian"
+}
+52300093=
+{
+	name="Sassanid"
+	culture="lycian"
+}
+52300094=
+{
+	name="Sassanids"
+	culture="lycian"
+}
+52300095=
+{
+	name="Sassanid"
+	culture="lycian"
+}
+52300096=
+{
+	name="Mihranid"
+	culture="lycian"
+}
+52300097=
+{
+	name="Mihranid"
+	culture="lycian"
+}
+52300098=
+{
+	name="Mihranids"
+	culture="lycian"
+}
+52300099=
+{
+	name="Mihranid"
+	culture="lycian"
+}
+523000100=
+{
+	name="Chosroid"
+	culture="lycian"
+}
+523000101=
+{
+	name="Chosroid"
+	culture="lycian"
+}
+523000102=
+{
+	name="Chosroids"
+	culture="lycian"
+}
+523000103=
+{
+	name="Chosroid"
+	culture="lycian"
+}
+523000104=
+{
+	name="Artashid"
+	culture="lycian"
+}
+523000105=
+{
+	name="Artashid"
+	culture="lycian"
+}
+523000106=
+{
+	name="Artashids"
+	culture="lycian"
+}
+523000107=
+{
+	name="Artashid"
+	culture="lycian"
+}
+523000108=
+{
+	name="Bagabignid"
+	culture="lycian"
+}
+523000109=
+{
+	name="Bagabignid"
+	culture="lycian"
+}
+523000110=
+{
+	name="Bagabignids"
+	culture="lycian"
+}
+523000111=
+{
+	name="Bagabignid"
+	culture="lycian"
+}
+523000112=
+{
+	name="Cambysid"
+	culture="lycian"
+}
+523000113=
+{
+	name="Cambysid"
+	culture="lycian"
+}
+523000114=
+{
+	name="Cambysids"
+	culture="lycian"
+}
+523000115=
+{
+	name="Cambysid"
+	culture="lycian"
+}
+523000116=
+{
+	name="Frataraka"
+	culture="lycian"
+}
+523000117=
+{
+	name="Frataraka"
+	culture="lycian"
+}
+523000118=
+{
+	name="Frataraka"
+	culture="lycian"
+}
+523000119=
+{
+	name="Frataraka"
+	culture="lycian"
+}

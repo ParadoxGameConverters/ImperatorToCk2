@@ -36,7 +36,7 @@ argeads = {
 	vassal_opinion = 5
 	monthly_character_prestige = 0.1
 	combat_rating = 5
-	inheritance = patrilineal
+	inheritance = all_descendants
 	allow_bastards = yes
 	picture = GFX_bloodlines_placeholder_symbol
 	flags = { historical_bloodline }
@@ -58,6 +58,19 @@ seleucids = {
 	monthly_character_prestige = 0.1
 	vassal_opinion = 10
 	stewardship = 5
+	inheritance = patrilineal
+	allow_bastards = yes
+	picture = GFX_bloodlines_placeholder_symbol
+	flags = { historical_bloodline }
+}
+
+
+aeacidae = {
+	monthly_character_prestige = 0.1
+	combat_rating = 5
+	command_modifier = {
+		morale_offence = 0.05
+	}
 	inheritance = patrilineal
 	allow_bastards = yes
 	picture = GFX_bloodlines_placeholder_symbol

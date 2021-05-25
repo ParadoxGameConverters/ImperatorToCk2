@@ -1,4 +1,4 @@
-package ImperatorToCK2;
+package ImperatorToCK2; 
 
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -10,8 +10,6 @@ import java.io.StringWriter;
 import java.io.FileOutputStream;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
-import ImperatorToCK2.ConverterLogger;
 
 /**
  * Main
@@ -27,6 +25,7 @@ public class Main
 
     public static void main (String[] args) throws IOException
     {
+        
         try {
             ConverterLogger.setup();
             LOGGER.setLevel(Level.FINEST);
@@ -37,6 +36,8 @@ public class Main
 
         LOGGER.info("Converter version 0.1A \"Not picked yet\" - compatible with something");
         LOGGER.finest("0%");
+        
+        long startTime = System.nanoTime(); //Starts the converter clock, used to tell how much time has passed
 
         try {
             Scanner input = new Scanner(System.in);
@@ -50,7 +51,7 @@ public class Main
             Output output = new Output();
             Directories directories = new Directories();
 
-            //System.out.println("Please input your system profile username");
+            //LOGGER.info("Please input your system profile username");
 
             String[] configDirectories = Importer.importDir("configuration.txt");
             String VM = "\\";
@@ -178,35 +179,40 @@ public class Main
 
             String saveMonuments = "tempMonuments.txt";
 
-            System.out.println("Creating temp files...");
+            LOGGER.info("Creating temp files...");
 
             TempFiles.tempCreate(impDirSave, tab+"country_database={", tab+"state_database={", saveCountries);
 
-            System.out.println("temp Countries created");
+            LOGGER.info("temp Countries created");
 
             TempFiles.tempCreate(impDirSave, "provinces={", "road_network={", saveProvinces);
 
-            System.out.println("temp Provinces created");   
+            LOGGER.info("temp Provinces created");   
 
             TempFiles.tempCreate(impDirSave, "character={", "objectives={", saveCharacters);
 
-            System.out.println("temp Characters created");
+            LOGGER.info("temp Characters created");
 
             TempFiles.tempCreate(impDirSave, tab+"families={", "character={", saveDynasty);
 
-            System.out.println("temp Dynasties created");
+            LOGGER.info("temp Dynasties created");
 
             TempFiles.tempCreate(impDirSave, "diplomacy={", "jobs={", saveDiplo);
 
-            System.out.println("temp Diplo created");
+            LOGGER.info("temp Diplo created");
 
             TempFiles.tempCreate(impDirSave, "great_work_manager={", "country_culture_manager={", saveMonuments);
 
-            System.out.println("temp Monuments created");
+            LOGGER.info("temp Monuments created");
+            
+            long tempTime = System.nanoTime();
+            long tempTot = (((tempTime - startTime) / 1000000000)/60) ;
 
-            System.out.println("All temp files created");
+            LOGGER.info("All temp files created after "+ tempTot + " minutes");
+            
+            LOGGER.finest("5%");
 
-            System.out.println("Importing territory data..."); 
+            LOGGER.info("Importing territory data..."); 
 
             Processing.combineProvConvList("provinceConversionCore.txt","provinceConversion.txt"); //combines old style mappings and new style mappings
 
@@ -292,8 +298,14 @@ public class Main
             }
 
             //Culture, rel, tag Info, and pop total returned
-            System.out.println("Territory data imported");
-            System.out.println("Combining territories into provinces...");
+        
+            long territoryTime = System.nanoTime();
+            long territoryTot = (((territoryTime - startTime) / 1000000000)/60);
+            LOGGER.info("Territory data imported after "+ territoryTot + " minutes");
+            
+            LOGGER.finest("25%");
+            
+            LOGGER.info("Combining territories into provinces...");
 
             aq2 = 0;
             flag = 0;
@@ -310,7 +322,7 @@ public class Main
                     while (aq5 < irOwners.length) {
                         String[] owners = irOwners[aq5].split(","); 
 
-                        System.out.println(irOwners[aq5]+"_irOwners_"+aq2);  
+                        LOGGER.info(irOwners[aq5]+"_irOwners_"+aq2);  
 
                         int[] ownerTot;
                         ownerTot = new int[totalCKProv]; //should redefine each time
@@ -320,30 +332,30 @@ public class Main
                         if (ownNum == 9999) {
                             ownNum = 0;
 
-                            System.out.println(aq5);
+                            //LOGGER.info(aq5);
                         }
 
                         if (owners[1].equals ("null")) {
                             owners[1] = "0";
 
-                            System.out.println(aq5);
+                            //LOGGER.info(aq5);
                         }
 
                         ownerTot[ownNum] = Integer.parseInt(owners[1]);
-                        System.out.println(owners[0]+owners[1]+"b_owners");    
+                        LOGGER.info(owners[0]+owners[1]+"b_owners");    
                         ck2ProvInfo[0][aq2] = owners[0];
                         aq6 = 1;
                         while (aq6 < totalCKProv) {
                             if (ownerTot[aq6] > ownerTot[aq6-1]){
                                 ck2ProvInfo[0][aq2] = owners[0];
-                                System.out.println((ck2ProvInfo[0][aq2])+"_"+aq2+"cq");
+                                LOGGER.info((ck2ProvInfo[0][aq2])+"_"+aq2+"cq");
                             }
                             aq6 = aq6 + 1;
 
                         }
                         aq5 = aq5 + 1;
                         int tempQ = Integer.parseInt(ck2ProvInfo[0][aq2]);
-                        System.out.println(tempQ);
+                        //LOGGER.info(tempQ);
                         if (tempQ != 9999){
                             ck2HasLand[tempQ] = "yes"; //marks country as landed in CK II
                             ck2LandTot[tempQ] = ck2LandTot[tempQ] + 1; //adds tag's CK II province count
@@ -354,12 +366,15 @@ public class Main
 
                 }
                 else if (aq2 < 380) {
-                    System.out.println (ck2TagTotals[aq2] + "_" + aq2);    
+                    LOGGER.info (ck2TagTotals[aq2] + "_" + aq2);    
                 }
                 aq2 = aq2 + 1;
 
             }
-            System.out.println("Province ownership calculated");
+            long provinceTime = System.nanoTime();
+            long provinceTimeTot = (((provinceTime - startTime) / 1000000000)/60);
+            LOGGER.info("Province ownership calculated after "+provinceTimeTot+" minutes");
+            LOGGER.finest("35%");
             aq2 = 0;
             flag = 0;
 
@@ -379,11 +394,12 @@ public class Main
                 aq2 = aq2 + 1;
             }
             aq2 = 0;
-            System.out.println("Province religion and culture calculated");
-            System.out.println("Province data combined");
-            System.out.println("Importing country data...");
+            LOGGER.info("Province religion and culture calculated");
+            LOGGER.info("Province data combined");
+            LOGGER.finest("45%");
+            LOGGER.info("Importing country data...");
 
-            System.out.println("The region is" + ck2ProvInfo[4][343]);
+            LOGGER.config("The region is" + ck2ProvInfo[4][343]);
             int flagCount = 0;
 
             ArrayList<String[]> impTagInfo = new ArrayList<String[]>();
@@ -392,7 +408,7 @@ public class Main
                 while (flag == 0) {
                     impTagInfo.add(importer.importCountry(saveCountries,aq2));
 
-                    System.out.println (impTagInfo.get(aq2)[0] + " " +  impTagInfo.get(aq2)[6] + " " + impTagInfo.get(aq2)[4]);
+                    LOGGER.info (impTagInfo.get(aq2)[0] + " " +  impTagInfo.get(aq2)[6] + " " + impTagInfo.get(aq2)[4]);
 
                     aq2 = aq2 + 1;
 
@@ -414,13 +430,18 @@ public class Main
                 flag = 1;
 
             }  
+            
+            long countryTime = System.nanoTime();
+            long countryTimeTot = (((countryTime - startTime) / 1000000000)/60);
+            LOGGER.info("Country data imported after "+countryTimeTot+" minutes");
+            LOGGER.finest("65%");
 
-            System.out.println("and the culture is" + ck2ProvInfo[1][343]);
+            LOGGER.config("and the culture is" + ck2ProvInfo[1][343]);
 
         
-            System.out.println("and the culture is" + ck2ProvInfo[1][1574]);
+            LOGGER.config("and the culture is" + ck2ProvInfo[1][1574]);
             int aq4 = 0;
-            System.out.println(ck2TagTotals[343]);
+            LOGGER.config(ck2TagTotals[343]);
 
             int totCountries = aq2;
 
@@ -445,6 +466,50 @@ public class Main
             Output.output("defaultOutput"+VM+"localization"+VM+"culture_loc.csv",modDirectory+VM+"localisation"+VM+"culture_loc.csv");
             Output.output("defaultOutput"+VM+"localization"+VM+"religion_loc.csv",modDirectory+VM+"localisation"+VM+"religion_loc.csv");
             Output.output("defaultOutput"+VM+"localization"+VM+"bookmark_loc.csv",modDirectory+VM+"localisation"+VM+"bookmark_loc.csv");
+            
+            //defaultDynasties (Used to dynamically generate random dynasty names for new cultures, otherwise will default to Smith)
+            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_belgaeDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_belgaeDynasties.txt");
+            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_celtic_pannonianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_celtic_pannonianDynasties.txt");
+            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_gallicDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_gallicDynasties.txt");
+            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_leponticDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_leponticDynasties.txt");
+            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_celtiberianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_celtiberianDynasties.txt");
+            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_lusitanianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_lusitanianDynasties.txt");
+            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_dacianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_dacianDynasties.txt");
+            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_thracianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_thracianDynasties.txt");
+            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_carthaginianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_carthaginianDynasties.txt");
+            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_phoenicianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_phoenicianDynasties.txt");
+            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_gothicDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_gothicDynasties.txt");
+            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_vandalDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_vandalDynasties.txt");
+            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_etruscanDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_etruscanDynasties.txt");
+            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_rhaetianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_rhaetianDynasties.txt");
+            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_nuragicDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_nuragicDynasties.txt");
+            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_turdetanianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_turdetanianDynasties.txt");
+            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_ibericDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_ibericDynasties.txt");
+            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_old_ligurianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_old_ligurianDynasties.txt");
+            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_sabellianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_sabellianDynasties.txt");
+            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_siculianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_siculianDynasties.txt");
+            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_veneticDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_veneticDynasties.txt");
+            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_phrygianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_phrygianDynasties.txt");
+            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_lycianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_lycianDynasties.txt");
+            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_isaurianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_isaurianDynasties.txt");
+            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_paphlagonianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_paphlagonianDynasties.txt");
+            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_cilicianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_cilicianDynasties.txt");
+            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_caucasian_albanianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_caucasian_albanianDynasties.txt");
+            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_babylonianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_babylonianDynasties.txt");
+            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_manxDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_manxDynasties.txt");
+            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_nabateanDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_nabateanDynasties.txt");
+            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_hebrewDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_hebrewDynasties.txt");
+            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_ancient_egyptianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_ancient_egyptianDynasties.txt");
+            
+            //defaultDiseases
+            Output.output("defaultOutput"+VM+"disease"+VM+"00_disease.txt",modDirectory+VM+"common"+VM+"disease"+VM+"00_disease.txt");
+            Output.output("defaultOutput"+VM+"disease"+VM+"01_disease_old.txt",modDirectory+VM+"common"+VM+"disease"+VM+"01_disease_old.txt");
+            
+            long outputTime = System.nanoTime();
+            long outputTimeTot = (((outputTime - startTime) / 1000000000)/60);
+            
+            LOGGER.info("defaultOutput copied after "+outputTimeTot+" minutes");
+            LOGGER.finest("69%");
 
             flag = 0;
             String[] Character;
@@ -470,7 +535,7 @@ public class Main
                                 String rank = "k";
 
                                 int subjectOrNot = Processing.checkSubjectList(aq4,impSubjectInfo);
-                                System.out.println("subjectOrNot at " + aq4 + " is " + subjectOrNot);
+                                LOGGER.config("subjectOrNot at " + aq4 + " is " + subjectOrNot);
                                 if (subjectOrNot == 9999) { //if tag is free or independent
                                     if (ck2LandTot[aq4] >= empireRank) {
                                         rank = "e";
@@ -478,7 +543,7 @@ public class Main
                                     impTagInfo.get(aq4)[0] = Processing.convertTitle("titleConversion.txt",rank,impTagInfo.get(aq4)[21],impTagInfo.get(aq4)[0]);
                                     Output.titleCreation(impTagInfo.get(aq4)[0],tempNum2,impTagInfo.get(aq4)[3],"no",impTagInfo.get(aq4)[5],rank,
                                         "no_liege",modDirectory);
-                                    System.out.println("Free Nation at " + aq4);
+                                    LOGGER.info("Free Nation at " + aq4);
                                 } else { //if tag is subject
                                     String[] subjectInfo = impSubjectInfo.get(subjectOrNot).split(",");
                                     String overlord = impTagInfo.get(Integer.parseInt(subjectInfo[0]))[0];
@@ -496,7 +561,7 @@ public class Main
 
                                         Output.titleCreation(impTagInfo.get(aq4)[0],tempNum2,impTagInfo.get(aq4)[3],"no",
                                             impTagInfo.get(aq4)[5],rank,overlord,modDirectory);
-                                        System.out.println("Subject Nation at " + aq4 + " Overlord is " + subjectInfo[0]);
+                                        LOGGER.info("Subject Nation at " + aq4 + " Overlord is " + subjectInfo[0]);
                                     }
 
                                     else { 
@@ -504,25 +569,25 @@ public class Main
                                         //WIP
                                         Output.titleCreation(impTagInfo.get(aq4)[0],tempNum2,impTagInfo.get(aq4)[3],"no",
                                             impTagInfo.get(aq4)[5],rank,overlord,modDirectory);
-                                        System.out.println("Subject Nation at " + aq4 + " Overlord(temptrib) is " + subjectInfo[0]);
+                                        LOGGER.info("Tributary Nation at " + aq4 + " Overlord is " + subjectInfo[0]);
                                     }
                                 }
 
-                                System.out.println (impTagInfo.get(aq4)[16] + "rules" + impTagInfo.get(aq4)[0] + "_" + aq4);
+                                LOGGER.info (impTagInfo.get(aq4)[16] + " rules " + impTagInfo.get(aq4)[0] + "_" + aq4);
                                 Character = Characters.importChar(saveCharacters,impTagInfo.get(aq4)[16]);
                                 convertedCharacters = Output.characterCreation(tempNum2, Output.cultureOutput(Character[1]),Output.religionOutput(Character[2]),
                                     Character[3],Character[0],Character[7],Character[4],Character[8],Character[10],Character[11],Character[12],Character[13],Character[14],
                                     Character[15],saveCharacters,"q","q",convertedCharacters,modDirectory);
-                                System.out.println ("c");
+                                LOGGER.config ("c");
 
                                 String rulerDynasty = Characters.importAndConvDynasty(modDirectory,Character[7],Character[16],saveDynasty);
 
                                 String[] locName = importer.importLocalisation(impGameDir,impTagInfo.get(aq4)[19],rulerDynasty);
                                 output.localizationCreation(locName,impTagInfo.get(aq4)[0],rank,modDirectory);
 
-                                System.out.println(tempTest+impTagInfo.get(aq4)[16] + "_" +Character[3]+Character[0]+Character[7]);
-                                System.out.println ("Name is " + locName[0] + " for " +impTagInfo.get(aq4)[0]);
-                                System.out.println ("output1");
+                                LOGGER.info(tempTest+impTagInfo.get(aq4)[16] + "_" +Character[3]+Character[0]+Character[7]);
+                                LOGGER.info ("Name is " + locName[0] + " for " +impTagInfo.get(aq4)[0]);
+                                LOGGER.config ("output1");
                                 aq7 = 0;
                                 String subRank = "d";//rank of governorships, 1 below primary title
                                 if (rank.equals("e")) {
@@ -565,18 +630,24 @@ public class Main
 
                 }catch (java.util.NoSuchElementException exception){
                     flag = 1;
-                    System.out.println("NoSuchElementException and flag = 1");
+                    LOGGER.config("NoSuchElementException and flag = 1");
                 }
             }catch (java.lang.ArrayIndexOutOfBoundsException exception){
                 flag = 1;
-                System.out.println("ArrayIndexOutOfBoundsException and flag = 1" + "_" + aq4);
+                LOGGER.info("ArrayIndexOutOfBoundsException and flag = 1" + "_" + aq4);
             }
             aq4 = 0;
             aq7 = 0;
-            System.out.println(ck2HasLand[343]);
+            LOGGER.config(ck2HasLand[343]);
 
             String[] bList;
             bList = Processing.importBaronyNameList(modDirectory,aq4,ck2Dir);
+            
+            long titleTime = System.nanoTime();
+            long titleTimeTot = (((titleTime - startTime) / 1000000000)/60);
+            LOGGER.info("Titles and characters created after "+titleTimeTot+" minutes");
+            LOGGER.finest("85%");
+            LOGGER.info("Outputting Province info");
 
             try {
                 try {
@@ -592,35 +663,43 @@ public class Main
                             String[] importedInfo = Processing.importNames(modDirectory,aq4,ck2Dir);
 
                             if (ck2ProvInfo[0][aq4].equals ("9999")) { // Dynamically creates a country and character for an uncolonized territory with no owner
-                                ruler = Integer.toString((tempNum * 6) + aq4);
-                                gov = "tribal_federation";
-                                String [] dynLoc = new String[2];
-                                dynLoc[0] = importedInfo[0];
-                                dynLoc[1] = importedInfo[0]+"ian";
-                                String dynRel = ck2ProvInfo[2][aq4];
-                                String dynCult = ck2ProvInfo[1][aq4];
+                            ruler = Integer.toString((tempNum * 6) + aq4);
+                            gov = "tribal_federation";
+                            String [] dynLoc = new String[2];
+                            dynLoc[0] = importedInfo[0];
+                            dynLoc[1] = importedInfo[0]+"ian";
+                            String dynRel = ck2ProvInfo[2][aq4];
+                            String dynCult = ck2ProvInfo[1][aq4];
 
-                                if (dynRel.charAt(0) == '"') {
-                                    dynRel = dynRel.substring(1,dynRel.length()-1);    
-                                }
+                            if (dynRel.charAt(0) == '"') {
+                                dynRel = dynRel.substring(1,dynRel.length()-1);    
+                            }
 
-                                if (dynCult.charAt(0) == '"') {
-                                    dynCult = dynCult.substring(1,dynCult.length()-1);    
-                                }
+                            if (dynCult.charAt(0) == '"') {
+                                dynCult = dynCult.substring(1,dynCult.length()-1);    
+                            }
 
-                                if (importedInfo[0].charAt(importedInfo[0].length()-1) == 'a' || importedInfo[0].charAt(importedInfo[0].length()-1) == 'e'){
-                                    dynLoc[1] = importedInfo[0]+"n";    
-                                } //English adjective endings
+                            if (importedInfo[0].charAt(importedInfo[0].length()-1) == 'a' || importedInfo[0].charAt(importedInfo[0].length()-1) == 'e'){
+                                dynLoc[1] = importedInfo[0]+"n";    
+                            } //English adjective endings
 
-                                dynRel = output.religionOutput(dynRel);
-                                dynCult = output.cultureOutput(dynCult);
+                            dynRel = output.religionOutput(dynRel);
+                            dynCult = output.cultureOutput(dynCult);
+                            
+                            String dynCharName = importedInfo[0] + "icus"; //county_name-icus, temporary naming solution instead of Glorious_Debug
+                            
+                            String dynCharAge = Processing.randomizeAge();
+                            
+                            LOGGER.info("Uncolonized province at ID "+aq4+", creating chiefdom of "+importedInfo[0]+" led by "+dynCharName);
 
-                                Output.dynastyCreation("of "+importedInfo[0],ruler,modDirectory);
-                                Output.characterCreation(ruler,dynCult,dynRel,"30","Glorious_Debug",ruler,"69","q","5","5","5","5","0","0",
-                                    saveCharacters,"q","q",convertedCharacters,modDirectory);
+                            Output.dynastyCreation("of "+importedInfo[0],ruler,modDirectory);
+                            Output.characterCreation(ruler,dynCult,dynRel,dynCharAge,dynCharName,ruler,"69","q","5","5","5","5","0","0",
+                                saveCharacters,"q","q",convertedCharacters,modDirectory);
+                            String greyShade = Processing.randomizeColorGrey();
 
-                                Output.titleCreation("dynamic"+aq4,ruler,"40 40 40","no",Integer.toString(aq4),"d","no_liege",modDirectory);
-                                output.localizationCreation(dynLoc,"dynamic"+aq4,"d",modDirectory);
+                            Output.titleCreation("dynamic"+aq4,ruler,greyShade,"no",Integer.toString(aq4),"d","no_liege",modDirectory);
+                            Output.localizationCreation(dynLoc,"dynamic"+aq4,"d",modDirectory);
+                            
                             } else {
                                 tempNum2b = Integer.parseInt(ck2ProvInfo[0][aq4]);
 
@@ -647,6 +726,8 @@ public class Main
                                 }
 
                             }
+                            LOGGER.info("Creating province "+importedInfo[0]+" at ID "+aq4+" ruled by "+ruler);
+                            
                             Output.provinceCreation(Integer.toString(aq4),Output.cultureOutput(ck2ProvInfo[1][aq4]),Output.religionOutput(ck2ProvInfo[2][aq4]),
                                 modDirectory, importedInfo[1],importedInfo[0],gov,ck2PopTotals[aq4],bList,saveMonuments,aq4);
 
@@ -658,24 +739,29 @@ public class Main
 
                 }catch (java.util.NoSuchElementException exception){
                     flag = 1;
-                    System.out.println ("Exception1");
+                    LOGGER.config ("Exception1");
                 }
             }catch (java.lang.ArrayIndexOutOfBoundsException exception){
                 flag = 2;
-                System.out.println ("Exception2");
-                System.out.println(ck2ProvInfo[1][343] + "_343");
-                System.out.println(ck2ProvInfo[1][342] + "_342");
-                System.out.println(ck2ProvInfo[1][341] + "_341");
-                System.out.println(ck2ProvInfo[1][340] + "_340");
-                System.out.println(ck2ProvInfo[1][339] + "_339");
+                LOGGER.config ("Exception2");
+                LOGGER.config(ck2ProvInfo[1][343] + "_343");
+                LOGGER.config(ck2ProvInfo[1][342] + "_342");
+                LOGGER.config(ck2ProvInfo[1][341] + "_341");
+                LOGGER.config(ck2ProvInfo[1][340] + "_340");
+                LOGGER.config(ck2ProvInfo[1][339] + "_339");
 
             }
-            System.out.println(ck2ProvInfo[1][343] + "_343");
-            System.out.println(ck2ProvInfo[1][342] + "_342");
-            System.out.println(ck2ProvInfo[1][341] + "_341");
-            System.out.println(ck2ProvInfo[1][340] + "_340");
-            System.out.println(ck2ProvInfo[1][339] + "_339");
-            System.out.println(ck2ProvInfo[1][338] + "_338");
+            LOGGER.config(ck2ProvInfo[1][343] + "_343");
+            LOGGER.config(ck2ProvInfo[1][342] + "_342");
+            LOGGER.config(ck2ProvInfo[1][341] + "_341");
+            LOGGER.config(ck2ProvInfo[1][340] + "_340");
+            LOGGER.config(ck2ProvInfo[1][339] + "_339");
+            LOGGER.config(ck2ProvInfo[1][338] + "_338");
+            
+            long endTime = System.nanoTime();
+            long elapsedTot = (((endTime - startTime) / 1000000000)/60) ;
+        
+            LOGGER.info("Converter successfully finished after " + elapsedTot + " minutes!");
 
             LOGGER.finest("100%");
         } catch (Exception e) {

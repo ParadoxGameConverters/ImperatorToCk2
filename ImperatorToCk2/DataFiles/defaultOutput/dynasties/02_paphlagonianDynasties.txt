@@ -1,0 +1,600 @@
+5250000=
+{
+	name="Aramid"
+	culture="paphlagonian"
+}
+5250001=
+{
+	name="Aramid"
+	culture="paphlagonian"
+}
+5250002=
+{
+	name="Aramids"
+	culture="paphlagonian"
+}
+5250003=
+{
+	name="Aramid"
+	culture="paphlagonian"
+}
+5250004=
+{
+	name="Arid"
+	culture="paphlagonian"
+}
+5250005=
+{
+	name="Arid"
+	culture="paphlagonian"
+}
+5250006=
+{
+	name="Arids"
+	culture="paphlagonian"
+}
+5250007=
+{
+	name="Arid"
+	culture="paphlagonian"
+}
+5250008=
+{
+	name="Arkhid"
+	culture="paphlagonian"
+}
+5250009=
+{
+	name="Arkhid"
+	culture="paphlagonian"
+}
+52500010=
+{
+	name="Arkhids"
+	culture="paphlagonian"
+}
+52500011=
+{
+	name="Arkhid"
+	culture="paphlagonian"
+}
+52500012=
+{
+	name="Asinid"
+	culture="paphlagonian"
+}
+52500013=
+{
+	name="Asinid"
+	culture="paphlagonian"
+}
+52500014=
+{
+	name="Asinids"
+	culture="paphlagonian"
+}
+52500015=
+{
+	name="Asinid"
+	culture="paphlagonian"
+}
+52500016=
+{
+	name="Arsacid"
+	culture="paphlagonian"
+}
+52500017=
+{
+	name="Arsacid"
+	culture="paphlagonian"
+}
+52500018=
+{
+	name="Arsacids"
+	culture="paphlagonian"
+}
+52500019=
+{
+	name="Arsacid"
+	culture="paphlagonian"
+}
+52500020=
+{
+	name="Deiocid"
+	culture="paphlagonian"
+}
+52500021=
+{
+	name="Deiocid"
+	culture="paphlagonian"
+}
+52500022=
+{
+	name="Deiocids"
+	culture="paphlagonian"
+}
+52500023=
+{
+	name="Deiocid"
+	culture="paphlagonian"
+}
+52500024=
+{
+	name="Menid"
+	culture="paphlagonian"
+}
+52500025=
+{
+	name="Menid"
+	culture="paphlagonian"
+}
+52500026=
+{
+	name="Menids"
+	culture="paphlagonian"
+}
+52500027=
+{
+	name="Menid"
+	culture="paphlagonian"
+}
+52500028=
+{
+	name="Pacorid"
+	culture="paphlagonian"
+}
+52500029=
+{
+	name="Pacorid"
+	culture="paphlagonian"
+}
+52500030=
+{
+	name="Pacorids"
+	culture="paphlagonian"
+}
+52500031=
+{
+	name="Pacorid"
+	culture="paphlagonian"
+}
+52500032=
+{
+	name="Savacid"
+	culture="paphlagonian"
+}
+52500033=
+{
+	name="Savacid"
+	culture="paphlagonian"
+}
+52500034=
+{
+	name="Savacids"
+	culture="paphlagonian"
+}
+52500035=
+{
+	name="Savacid"
+	culture="paphlagonian"
+}
+52500036=
+{
+	name="Vardanid"
+	culture="paphlagonian"
+}
+52500037=
+{
+	name="Vardanid"
+	culture="paphlagonian"
+}
+52500038=
+{
+	name="Vardanids"
+	culture="paphlagonian"
+}
+52500039=
+{
+	name="Vardanid"
+	culture="paphlagonian"
+}
+52500040=
+{
+	name="Suren"
+	culture="paphlagonian"
+}
+52500041=
+{
+	name="Suren"
+	culture="paphlagonian"
+}
+52500042=
+{
+	name="Surenids"
+	culture="paphlagonian"
+}
+52500043=
+{
+	name="Surenid"
+	culture="paphlagonian"
+}
+52500044=
+{
+	name="Karin"
+	culture="paphlagonian"
+}
+52500045=
+{
+	name="Karin"
+	culture="paphlagonian"
+}
+52500046=
+{
+	name="Karinids"
+	culture="paphlagonian"
+}
+52500047=
+{
+	name="Karinid"
+	culture="paphlagonian"
+}
+52500048=
+{
+	name="Gaumatid"
+	culture="paphlagonian"
+}
+52500049=
+{
+	name="Gaumatid"
+	culture="paphlagonian"
+}
+52500050=
+{
+	name="Gaumatids"
+	culture="paphlagonian"
+}
+52500051=
+{
+	name="Gaumatid"
+	culture="paphlagonian"
+}
+52500052=
+{
+	name="Gobryasid"
+	culture="paphlagonian"
+}
+52500053=
+{
+	name="Gobryasid"
+	culture="paphlagonian"
+}
+52500054=
+{
+	name="Gobryasids"
+	culture="paphlagonian"
+}
+52500055=
+{
+	name="Gobryasid"
+	culture="paphlagonian"
+}
+52500056=
+{
+	name="Hydarnid"
+	culture="paphlagonian"
+}
+52500057=
+{
+	name="Hydarnid"
+	culture="paphlagonian"
+}
+52500058=
+{
+	name="Hydarnids"
+	culture="paphlagonian"
+}
+52500059=
+{
+	name="Hydarnid"
+	culture="paphlagonian"
+}
+52500060=
+{
+	name="Smerdid"
+	culture="paphlagonian"
+}
+52500061=
+{
+	name="Smerdid"
+	culture="paphlagonian"
+}
+52500062=
+{
+	name="Smerdids"
+	culture="paphlagonian"
+}
+52500063=
+{
+	name="Smerdid"
+	culture="paphlagonian"
+}
+52500064=
+{
+	name="Vivanid"
+	culture="paphlagonian"
+}
+52500065=
+{
+	name="Vivanid"
+	culture="paphlagonian"
+}
+52500066=
+{
+	name="Vivanids"
+	culture="paphlagonian"
+}
+52500067=
+{
+	name="Vivanid"
+	culture="paphlagonian"
+}
+52500068=
+{
+	name="Xerxid"
+	culture="paphlagonian"
+}
+52500069=
+{
+	name="Xerxid"
+	culture="paphlagonian"
+}
+52500070=
+{
+	name="Xerxids"
+	culture="paphlagonian"
+}
+52500071=
+{
+	name="Xerxid"
+	culture="paphlagonian"
+}
+52500072=
+{
+	name="Abadanid"
+	culture="paphlagonian"
+}
+52500073=
+{
+	name="Abadanid"
+	culture="paphlagonian"
+}
+52500074=
+{
+	name="Abadanids"
+	culture="paphlagonian"
+}
+52500075=
+{
+	name="Abadanid"
+	culture="paphlagonian"
+}
+52500076=
+{
+	name="Orontid"
+	culture="paphlagonian"
+}
+52500077=
+{
+	name="Orontid"
+	culture="paphlagonian"
+}
+52500078=
+{
+	name="Orontids"
+	culture="paphlagonian"
+}
+52500079=
+{
+	name="Orontid"
+	culture="paphlagonian"
+}
+52500080=
+{
+	name="Atropatid"
+	culture="paphlagonian"
+}
+52500081=
+{
+	name="Atropatid"
+	culture="paphlagonian"
+}
+52500082=
+{
+	name="Atropatids"
+	culture="paphlagonian"
+}
+52500083=
+{
+	name="Atropatid"
+	culture="paphlagonian"
+}
+52500084=
+{
+	name="Mithridatid"
+	culture="paphlagonian"
+}
+52500085=
+{
+	name="Mithridatid"
+	culture="paphlagonian"
+}
+52500086=
+{
+	name="Mithridatids"
+	culture="paphlagonian"
+}
+52500087=
+{
+	name="Mithridatid"
+	culture="paphlagonian"
+}
+52500088=
+{
+	name="Artiaxid"
+	culture="paphlagonian"
+}
+52500089=
+{
+	name="Artiaxid"
+	culture="paphlagonian"
+}
+52500090=
+{
+	name="Artiaxids"
+	culture="paphlagonian"
+}
+52500091=
+{
+	name="Artiaxid"
+	culture="paphlagonian"
+}
+52500092=
+{
+	name="Sassanid"
+	culture="paphlagonian"
+}
+52500093=
+{
+	name="Sassanid"
+	culture="paphlagonian"
+}
+52500094=
+{
+	name="Sassanids"
+	culture="paphlagonian"
+}
+52500095=
+{
+	name="Sassanid"
+	culture="paphlagonian"
+}
+52500096=
+{
+	name="Mihranid"
+	culture="paphlagonian"
+}
+52500097=
+{
+	name="Mihranid"
+	culture="paphlagonian"
+}
+52500098=
+{
+	name="Mihranids"
+	culture="paphlagonian"
+}
+52500099=
+{
+	name="Mihranid"
+	culture="paphlagonian"
+}
+525000100=
+{
+	name="Chosroid"
+	culture="paphlagonian"
+}
+525000101=
+{
+	name="Chosroid"
+	culture="paphlagonian"
+}
+525000102=
+{
+	name="Chosroids"
+	culture="paphlagonian"
+}
+525000103=
+{
+	name="Chosroid"
+	culture="paphlagonian"
+}
+525000104=
+{
+	name="Artashid"
+	culture="paphlagonian"
+}
+525000105=
+{
+	name="Artashid"
+	culture="paphlagonian"
+}
+525000106=
+{
+	name="Artashids"
+	culture="paphlagonian"
+}
+525000107=
+{
+	name="Artashid"
+	culture="paphlagonian"
+}
+525000108=
+{
+	name="Bagabignid"
+	culture="paphlagonian"
+}
+525000109=
+{
+	name="Bagabignid"
+	culture="paphlagonian"
+}
+525000110=
+{
+	name="Bagabignids"
+	culture="paphlagonian"
+}
+525000111=
+{
+	name="Bagabignid"
+	culture="paphlagonian"
+}
+525000112=
+{
+	name="Cambysid"
+	culture="paphlagonian"
+}
+525000113=
+{
+	name="Cambysid"
+	culture="paphlagonian"
+}
+525000114=
+{
+	name="Cambysids"
+	culture="paphlagonian"
+}
+525000115=
+{
+	name="Cambysid"
+	culture="paphlagonian"
+}
+525000116=
+{
+	name="Frataraka"
+	culture="paphlagonian"
+}
+525000117=
+{
+	name="Frataraka"
+	culture="paphlagonian"
+}
+525000118=
+{
+	name="Frataraka"
+	culture="paphlagonian"
+}
+525000119=
+{
+	name="Frataraka"
+	culture="paphlagonian"
+}
