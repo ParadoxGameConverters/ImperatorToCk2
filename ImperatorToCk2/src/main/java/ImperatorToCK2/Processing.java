@@ -1,4 +1,4 @@
-
+package ImperatorToCK2;
 import java.util.Scanner;
 import java.io.IOException;
 import java.io.FileInputStream;
@@ -497,6 +497,20 @@ public class Processing
         return color;
 
     }
+    
+    public static String randomizeAge ()
+    {
+
+        int flag = 0;
+        int aqq = 0;
+        String qaaa = "aa";
+        int Rng = (int) (Math.random() * 34);
+        Rng = Rng + 16;
+        String color = Integer.toString(Rng); 
+
+        return color;
+
+    }
 
     public static String[] convertProvConvList (String name, String outputDest) throws IOException //Converts standard mapper tool format into regular format
     {
@@ -732,9 +746,9 @@ public class Processing
     public static String convertTitle(String name, String rank, String title, String defaultTitle) throws IOException
     {// Converts dynamically generated title to vanilla counterpart
         String tmpTitle = Importer.importCultList(name,rank+"_"+title)[1];//converts title
-        Output.logPrint(tmpTitle);
+        //Output.logPrint(tmpTitle);
         tmpTitle = tmpTitle.replace((rank+"_"),"");
-        Output.logPrint(tmpTitle);
+        //Output.logPrint(tmpTitle);
         
         if (tmpTitle.equals("99999") || tmpTitle.equals("peq")) {//if there is no vanilla match
             return defaultTitle;

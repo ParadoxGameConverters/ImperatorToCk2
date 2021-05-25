@@ -1,4 +1,4 @@
-
+package ImperatorToCK2;
 import java.util.Scanner;
 import java.io.IOException;
 import java.io.FileInputStream;
@@ -405,7 +405,7 @@ public class Output
             while (aq4 < childCount) {//Recursively calls to get rest of family
 
                 childInfo = Characters.importChar(tempFile,children.split(" ")[aq4]);
-                logPrint ("Child " + aq4 + " out of " + childCount);
+                //oldlogPrint ("Child " + aq4 + " out of " + childCount);
                 child1066 = Integer.toString( 1000000 + Integer.parseInt(children.split(" ")[aq4]) );
 
                 characterCreation( child1066,  cultureOutput(childInfo[1]),  religionOutput(childInfo[2]),  childInfo[3],  childInfo[0],  childInfo[7],
@@ -436,7 +436,7 @@ public class Output
         ArrayList<String> convTraitList = new ArrayList<String>();
 
         if (traits != "q") {
-            logPrint("traitsGood"); 
+            //oldlogPrint("traitsGood"); 
             String[] traitList = traits.split(" ");
 
             try {
@@ -492,6 +492,9 @@ public class Output
         out.println (tab+"stewardship="+finesse);
         out.println (tab+"religion="+quote+rel+quote);
         out.println (tab+"culture="+quote+cult+quote);
+        if (rel.equals("hindu") || rel.equals("buddhist") || rel.equals("jain")) { //Caste system defaults to merchant unless specified, sets to ruler
+            out.println (tab+"trait=kshatriya");
+        }
 
         if (traits != "q") {
 
@@ -563,6 +566,9 @@ public class Output
         out.println (tab+"stewardship="+charisma);
         out.println (tab+"religion="+quote+rel+quote);
         out.println (tab+"culture="+quote+cult+quote);
+        if (rel.equals("hindu") || rel.equals("buddhist") || rel.equals("jain")) { //Caste system defaults to merchant unless specified, sets to ruler
+            out.println (tab+"trait=kshatriya");
+        }
 
         if (traits != "q") {
             while (aqq < aq2) {
@@ -602,7 +608,7 @@ public class Output
         out.println (tab+"}");
 
         if (spouse != "0") {
-            out.println (tab+date2+"={");
+            out.println (tab+date1+"={");
             out.println (tab+tab+"add_spouse="+spouse100);
             out.println (tab+"}");
         }
