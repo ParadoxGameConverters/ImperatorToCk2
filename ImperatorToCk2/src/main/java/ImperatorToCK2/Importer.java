@@ -1,5 +1,4 @@
 package ImperatorToCK2; 
-
 import java.util.Scanner;
 import java.io.IOException;
 import java.io.FileInputStream;
@@ -17,19 +16,21 @@ import java.util.ArrayList;
 public class Importer
 {
 
-    public static String[] importProv (String name, int provIDnum) throws IOException
+    public static ArrayList<String[]> importProv (String name) throws IOException
     {
 
-        String provID = Integer.toString(provIDnum);
+        //String provID = Integer.toString(provIDnum);
 
         FileInputStream fileIn= new FileInputStream(name);
         Scanner scnr= new Scanner(fileIn);
-        
+
+        ArrayList<String[]> impProvList= new ArrayList<String[]>();
+
         String tab = "	";
 
         int flag = 0;
 
-        String keyWord = tab+provID+"={";
+        String keyWord = tab+1+"={";
 
         int aqq = 0;
 
@@ -42,7 +43,11 @@ public class Importer
         output[0] = "9999"; //default for no owner, uncolonized province
         output[1] = "noCulture"; //default for no culture, uncolonized province with 0 pops
         output[2] = "noReligion"; //default for no religion, uncolonized province with 0 pops
+        output[3] = "0"; //default for no pops, uncolonized or uninhabitible province
+        output[4] = "{ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }"; //default for no buildinga
         output[5] = "9999"; //default for no monument
+
+        impProvList.add(output); //default at ID 0
 
         try {
             while (endOrNot = true){
@@ -68,8 +73,7 @@ public class Importer
 
                         //popTotal
                         if (qaaa.split("=")[0].equals( tab+tab+"pop" ) ) {
-                            aqq = aqq + 1;
-                            //double aq = 1;
+                            aqq = aqq + 1; //count pop
                             output[3] = Integer.toString(aqq);
                         }
 
@@ -78,14 +82,34 @@ public class Importer
                             output[4] = qaaa.split("=")[1];
 
                         }
-                        
+
                         if (qaaa.split("=")[0].equals( tab+tab+"great_work" ) ) {
                             output[5] = qaaa.split("=")[1];
 
                         }
-                        
+
                         if (qaaa.split("=")[0].equals( tab+"}" ) ) { //ends here
-                            flag = 1; //end loop
+                            //flag = 1; //end loop
+
+                            String[] tmpOutput = new String[output.length];
+
+                            int aq2 = 0;
+
+                            while (aq2 < output.length) {
+                                tmpOutput[aq2] = output[aq2];
+                                aq2 = aq2 + 1;
+                            }
+
+                            impProvList.add(tmpOutput);
+
+                            output[0] = "9999"; //default for no owner, uncolonized province
+                            output[1] = "noCulture"; //default for no culture, uncolonized province with 0 pops
+                            output[2] = "noReligion"; //default for no religion, uncolonized province with 0 pops
+                            output[3] = "0"; //default for no pops, uncolonized or uninhabitible province
+                            output[4] = "{ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }"; //default for no buildinga
+                            output[5] = "9999"; //default for no monument
+                            
+                            aqq = 0; //reset pop count
 
                         }
 
@@ -99,11 +123,11 @@ public class Importer
 
         }   
 
-        return output;
+        return impProvList;
 
     }
 
-    public static String[] importCountry (String name, int natIDnum) throws IOException
+    public static ArrayList<String[]> importCountry (String name) throws IOException
     {
 
         String tab = "	";
@@ -112,12 +136,15 @@ public class Importer
 
         String bracket1 = VQ2.substring(0,1);
         String bracket2 = VQ2.substring(1,2);
-        String tagID = Integer.toString(natIDnum);
+        //String tagID = Integer.toString(natIDnum);
         //System.out.println ("Load 1 done");
         FileInputStream fileIn= new FileInputStream(name);
         Scanner scnr= new Scanner(fileIn);
 
         int flag = 0;
+
+        ArrayList<String[]> impTagInfo = new ArrayList<String[]>();
+
         //double q = 0.0;
 
         //String idStr = provID.toString();
@@ -125,7 +152,7 @@ public class Importer
         String startWord = tab+"country_database={";
         String endWord = tab+"state_database={";
 
-        String keyWord = tab+tab+tagID+"={";
+        String keyWord = tab+tab+"}";
 
         int aqq = 0;
         boolean endOrNot = true;
@@ -134,9 +161,18 @@ public class Importer
         String[] output;   // Owner Culture Religeon PopTotal Buildings
         output = new String[22];
 
-        output[0] = "9999"; //default for no owner, uncolonized province
-        output[1] = "noCulture"; //default for no culture, uncolonized province with 0 pops
-        output[2] = "noReligion"; //default for no religion, uncolonized province with 0 pops
+        output[0] = "9999"; //default for no tag
+        output[1] = "6969"; //default for no flag seed
+        output[2] = "no"; //default for no gender equality laws
+        output[3] = "0 0 0"; //default for no color
+        output[4] = "0"; //default for no gold
+        output[5] = "4529"; //default for no capital (Province of Olbia)
+        output[6] = "noCulture"; //default for no culture, uncolonized province with 0 pops";
+        output[7] = "noReligion"; //default for no religion, uncolonized province with 0 pops
+        output[8] = "0"; //default for no technology
+        output[9] = "0"; //default for no technology
+        output[10] = "0"; //default for no technology
+        output[11] = "0"; //default for no technology
         output[12] = "0"; //default for no researcher, will either be a random character in CKII or no character 
         output[13] = "0"; //default for no researcher, will either be a random character in CKII or no character 
         output[14] = "0"; //default for no researcher, will either be a random character in CKII or no character 
@@ -145,18 +181,21 @@ public class Importer
         output[20] = "none"; //default for no governors/governorships, land will be directly held by the ruler
         output[21] = "9999"; //default for no historical tag used in nation formation
 
+        impTagInfo.add(output); //default entry at ID 0
+
         try {
             while (endOrNot = true){
 
                 qaaa = scnr.nextLine();
                 if (vmm.equals(startWord)){
 
-                    endOrNot = false;  
+                    //endOrNot = false;  
                     while (flag == 0) {
                         qaaa = scnr.nextLine(); 
 
                         if (qaaa.equals(keyWord)){
                             flag = 1;
+
                             while (flag == 1) {
                                 qaaa = scnr.nextLine();
                                 if (qaaa.split("=")[0].equals( tab+tab+tab+"tag" ) ) {
@@ -279,12 +318,47 @@ public class Importer
                                 }
 
                                 else if (qaaa.split("=")[0].equals( tab+tab+tab+tab+"budget_dates" ) ) {
-                                    flag = 2; //end loop
+                                    //flag = 2; //end loop
+                                    if (output[21].equals("9999")) { //failsafe if somehow there is no historical tag
+                                        output[21] = output[0];
+                                    }
+
+                                    String[] tmpOutput = new String[output.length];
+
+                                    int aq2 = 0;
+
+                                    while (aq2 < output.length) {
+                                        tmpOutput[aq2] = output[aq2];
+                                        aq2 = aq2 + 1;
+                                    }
+
+                                    impTagInfo.add(tmpOutput);
+
+                                    aqq = aqq + 1;
+                                    //System.out.println(output[0] + " " + aqq);
+
+                                    output[0] = "9999"; //default for no tag
+                                    output[1] = "6969"; //default for no flag seed
+                                    output[2] = "no"; //default for no gender equality laws
+                                    output[3] = "0 0 0"; //default for no color
+                                    output[4] = "0"; //default for no gold
+                                    output[5] = "4529"; //default for no capital (Province of Olbia)
+                                    output[6] = "noCulture"; //default for no culture, uncolonized province with 0 pops";
+                                    output[7] = "noReligion"; //default for no religion, uncolonized province with 0 pops
+                                    output[8] = "0"; //default for no technology
+                                    output[9] = "0"; //default for no technology
+                                    output[10] = "0"; //default for no technology
+                                    output[11] = "0"; //default for no technology
+                                    output[12] = "0"; //default for no researcher, will either be a random character in CKII or no character 
+                                    output[13] = "0"; //default for no researcher, will either be a random character in CKII or no character 
+                                    output[14] = "0"; //default for no researcher, will either be a random character in CKII or no character 
+                                    output[15] = "0"; //default for no researcher, will either be a random character in CKII or no character
+                                    output[16] = "0"; //default for no leader, will either be a random character in CKII or no character
+                                    output[20] = "none"; //default for no governors/governorships, land will be directly held by the ruler
+                                    output[21] = "9999"; //default for no historical tag used in nation formation
 
                                 }
-
                             }
-
                         }
                     }   
 
@@ -295,18 +369,13 @@ public class Importer
             endOrNot = false;
 
         }   
-        
-        if (output[21].equals("9999")) { //failsafe if somehow there is no historical tag
-            output[21] = output[0];
-        }
 
-        return output;
-
+        return impTagInfo;
     }
-    
+
     public static ArrayList<String> importSubjects (String name, int overlordIDnum, ArrayList<String> currentList) throws IOException
     {
-        
+
         //Primarily used for subjects/vassals in IR
 
         String overlordID = Integer.toString(overlordIDnum);
@@ -315,7 +384,7 @@ public class Importer
         Scanner scnr= new Scanner(fileIn);
 
         int flag = 0;
-        
+
         String tab = "	";
 
         String keyWord = tab+tab+"first="+overlordID;
@@ -354,7 +423,7 @@ public class Importer
                             flag = 1; //end loop
                             currentList.add(output[0]+","+output[1]+","+output[2]);
                         }
-                        
+
                         if (qaaa.split("=")[0].equals( tab+"}" ) ) { //If there isn't a subject type, prevents it from going over to the next
                             output[0] = "9999";
                             output[1] = "9999";
@@ -365,7 +434,7 @@ public class Importer
                     }
 
                 }
-                
+
                 flag = 0;
             }
 
@@ -373,7 +442,7 @@ public class Importer
             endOrNot = false;
 
         }
-        
+
         if (output[1].equals("9999") || output[2].equals("9999")) { //Fallback in case something goes wrong, subject relation won't be converted
             output[0] = "9999"; //default for no overlord, overlord has no subjects
             output[1] = "9999"; //default for no subject
@@ -383,7 +452,7 @@ public class Importer
         return currentList;
 
     }
-    
+
     public static String[] importDir (String name) throws IOException //Imports directories from configuration.txt
     {
 
@@ -640,7 +709,7 @@ public class Importer
         } else if (output[0].equals(tag)) {
             output = importAreaLocalisation(directory,tag);    
         } 
-        
+
         if (output[0].equals(tag)) { //Mod support
             output = importCustCountryLocalisation (tag);    
         }
@@ -750,7 +819,7 @@ public class Importer
         return output;
 
     }
-    
+
     public static String[] importCustCountryLocalisation (String tag) throws IOException //Supported Loc for popular IR mods
     {
 
@@ -944,7 +1013,7 @@ public class Importer
         return oldFile;
 
     }
-    
+
     public static ArrayList<String> importBasicFile (String directory) throws IOException
     {
 
@@ -979,3 +1048,4 @@ public class Importer
     }
     //developed originally by Shinymewtwo99
 }
+
