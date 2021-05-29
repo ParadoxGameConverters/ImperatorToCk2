@@ -1,4 +1,5 @@
 package ImperatorToCK2; 
+
 import java.util.Scanner;
 import java.io.IOException;
 import java.io.FileInputStream;
@@ -89,7 +90,7 @@ public class Importer
                         }
 
                         if (qaaa.split("=")[0].equals( tab+"}" ) ) { //ends here
-                            //flag = 1; //end loop
+                            
 
                             String[] tmpOutput = new String[output.length];
 
@@ -136,7 +137,7 @@ public class Importer
 
         String bracket1 = VQ2.substring(0,1);
         String bracket2 = VQ2.substring(1,2);
-        //String tagID = Integer.toString(natIDnum);
+        
         //System.out.println ("Load 1 done");
         FileInputStream fileIn= new FileInputStream(name);
         Scanner scnr= new Scanner(fileIn);
@@ -189,7 +190,7 @@ public class Importer
                 qaaa = scnr.nextLine();
                 if (vmm.equals(startWord)){
 
-                    //endOrNot = false;  
+                    
                     while (flag == 0) {
                         qaaa = scnr.nextLine(); 
 
@@ -318,7 +319,7 @@ public class Importer
                                 }
 
                                 else if (qaaa.split("=")[0].equals( tab+tab+tab+tab+"budget_dates" ) ) {
-                                    //flag = 2; //end loop
+                                    
                                     if (output[21].equals("9999")) { //failsafe if somehow there is no historical tag
                                         output[21] = output[0];
                                     }
@@ -335,7 +336,7 @@ public class Importer
                                     impTagInfo.add(tmpOutput);
 
                                     aqq = aqq + 1;
-                                    //System.out.println(output[0] + " " + aqq);
+                                    
 
                                     output[0] = "9999"; //default for no tag
                                     output[1] = "6969"; //default for no flag seed
@@ -1048,4 +1049,5 @@ public class Importer
     }
     //developed originally by Shinymewtwo99
 }
+
 
