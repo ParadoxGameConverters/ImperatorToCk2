@@ -56,7 +56,7 @@ public class Characters
                     endOrNot = false;
                     while (flag == 0) {
                         qaaa = scnr.nextLine();
-                        if (qaaa.split("=")[0].equals( tab+tab+"name" ) ) {
+                        if (qaaa.split("=")[0].equals( tab+tab+"name" ) || qaaa.split("=")[0].equals( tab+tab+"custom_name" )) {
                             output[0] = qaaa.split("=")[1];
                             output[0] = output[0].substring(1,output[0].length()-1);
                         }
@@ -208,3 +208,4 @@ public class Characters
     
     }
 }
+

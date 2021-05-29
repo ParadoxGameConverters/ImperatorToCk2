@@ -92,6 +92,8 @@ public class Main
 
             String[] impProvInfo;   // Owner Culture Religeon PopTotal Buildings
             impProvInfo = new String[5];
+            
+            ArrayList<String[]> impProvInfoList = new ArrayList<String[]>();
 
             String[][] ck2ProvInfo;   // Array list of array lists...
             ck2ProvInfo = new String[5][8500];
@@ -217,6 +219,8 @@ public class Main
             Processing.combineProvConvList("provinceConversionCore.txt","provinceConversion.txt"); //combines old style mappings and new style mappings
 
             //processing information
+            
+            impProvInfoList = importer.importProv(saveProvinces);
             totalPop = 0;
             while (flag == 0) {
                 impProvtoCK = importer.importConvList("provinceConversion.txt",aqq); 
@@ -233,7 +237,7 @@ public class Main
                         relNum = 0;
                     }
 
-                    impProvInfo = importer.importProv(saveProvinces,aqq);
+                    impProvInfo = impProvInfoList.get(aqq);
 
                     temp = 0;
                     temp2 = 0;
@@ -404,32 +408,7 @@ public class Main
 
             ArrayList<String[]> impTagInfo = new ArrayList<String[]>();
             //Country processing
-            try{
-                while (flag == 0) {
-                    impTagInfo.add(importer.importCountry(saveCountries,aq2));
-
-                    LOGGER.info (impTagInfo.get(aq2)[0] + " " +  impTagInfo.get(aq2)[6] + " " + impTagInfo.get(aq2)[4]);
-
-                    aq2 = aq2 + 1;
-
-                    if (aq2 > 1) {
-
-                        if ( impTagInfo.get(aq2-1)[0].equals("9999")) {
-                            flagCount = flagCount + 1; //temp testing, to be removed later
-                        }
-                        else {
-                            flagCount = 0;    
-                        }
-                    }
-
-                    if (flagCount == 5) {
-                        flag = 1; //temp testing, to be removed later
-                    }
-                }
-            }catch (java.util.NoSuchElementException exception){
-                flag = 1;
-
-            }  
+            impTagInfo = importer.importCountry(saveCountries);
             
             long countryTime = System.nanoTime();
             long countryTimeTot = (((countryTime - startTime) / 1000000000)/60);
@@ -443,7 +422,7 @@ public class Main
             int aq4 = 0;
             LOGGER.config(ck2TagTotals[343]);
 
-            int totCountries = aq2;
+            int totCountries = impTagInfo.size(); //ammount of IR countries in save file
 
             impSubjectInfo = Processing.generateSubjectList(totCountries+100,saveDiplo);
 

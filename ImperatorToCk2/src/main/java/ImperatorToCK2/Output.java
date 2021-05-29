@@ -1,4 +1,5 @@
 package ImperatorToCK2;
+
 import java.util.Scanner;
 import java.io.IOException;
 import java.io.FileInputStream;
@@ -463,8 +464,11 @@ public class Output
         aqq = 0;
 
         Importer importer = new Importer();
+        
+        //any filename with non-asci characters won't render in CK II, changed file output name to use GloriousCharacter instead of character name
+        //in case player created interesting names in I:R
 
-        FileOutputStream fileOut= new FileOutputStream(Directory + VM + name + "k_" + irKING + ".txt");
+        FileOutputStream fileOut= new FileOutputStream(Directory + VM + "GloriousCharacter" + "_" + irKING + ".txt");
         PrintWriter out = new PrintWriter(fileOut);
 
         int flag = 0;
@@ -757,7 +761,7 @@ public class Output
     public static void logPrint(String name) throws IOException //outputs to log.txt
     {
         
-        String logFile = "log.txt";
+        String logFile = "debugTest.txt";
 
 
         ArrayList<String> oldFile = new ArrayList<String>();
@@ -809,3 +813,4 @@ public class Output
     }
 
 }
+

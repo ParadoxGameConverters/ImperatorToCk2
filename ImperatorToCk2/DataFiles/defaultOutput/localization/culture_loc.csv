@@ -1,42 +1,42 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-#Translations done by PKZB
-thracian;Thracian;Thrace;Thracisch;;Tracio;;;;;;;;;x
-sabellian;Sabellian;Sabéllienne;Sabellisch;;Sabelio;;;;;;;;;x
-old_ligurian;Ligurian;Ligure;Ligurisch;;Ligurio;;;;;;;;;x
-venetic;Venetic;Vénétique;Venetisch;;Venético;;;;;;;;;x
-siculian;Siculian;Sicule;Siculisch;;Siceliota;;;;;;;;;x
-etruscan;Etruscan;Étrusque;Etruscisch;;Etrusco;;;;;;;;;x
-nuragic;Nuragic;Nuragique;Nuragisch;;Nurágico;;;;;;;;;x
-rhaetian;Rhaetian;Rhétique;Rhaetisch;;Rético;;;;;;;;;x
-lepontic;Lepontic;Lépontique;Lepontisch;;Lepóntio;;;;;;;;;x
-gallic;Gallic;Gaulois;Gallisch;;Galo;;;;;;;;;x
-celtic_pannonian;Noric;Norique;Norisch;;Nórico;;;;;;;;;x
-belgae;Belgae;Belge;Belgisch;;Belga;;;;;;;;;x
-manx;Manx;Mannoise;Manxisch;;Manx;;;;;;;;;x
-carthaginian;Punic;Punique;Punisch;;Púnico;;;;;;;;;x
-phoenician;Phoenician;Phénicienne;Phoenicisch;;Fenicio;;;;;;;;;x
-vandal;Vandal;Vandale;Vandalisch;;Vándalo;;;;;;;;;x
-gothic;Gothic;Goth;Gothisch;;Godo;;;;;;;;;x
-ancient_egyptian;Ancient Egyptian;Ancien Égyptienne;Altägyptisch;;Antiguo Egipcio;;;;;;;;;x
-nabatean;Nabatean;Nabatéen;Nabatisch;;Nabateo;;;;;;;;;x
-hebrew;Hebrew;Hébreu;Hebrewisch;;Hebreo;;;;;;;;;x
-dacian;Dacian;Dace;Dacisch;;Dacio;;;;;;;;;x
-caucasian_albanian;Caucasian Albanian;Caucaso-Albanienne;Kaucasischalbanisch;;Cáucasoalbanés;;;;;;;;;x
-iberic;Iberic;Ibérique;Iberisch;;Ibérico;;;;;;;;;x
-turdetanian;Turdetanian;Turdétane;Turdetanisch;;Turdetanio;;;;;;;;;x
-celtiberian;Celtiberian;Celtibérique;Keltiberisch;;Celtibérico;;;;;;;;;x
-lusitanian;Lusitanian;Lusitanienne;Lusitanisch;;Lusitano;;;;;;;;;x
-lycian;Lycian;Lycienne;Lycisch;;Licio;;;;;;;;x
-phrygian;Phrygian;Phrygienne;Phrygisch;;Frigio;;;;;;;;;x
-isaurian;Isaurian;Isaurienne;Isaurisch;;Isauro;;;;;;;;;x
-paphlagonian;Paphlagonian;Paphlagonienne;Paphlagonisch;;Palaíta;;;;;;;;;x
-cilician;Cilician;Cilicienne;Cilicisch;;Cilicio;;;;;;;;;x
-babylonian;Babylonian;Babylonienne;Babylonisch;;Babilonio;;;;;;;;;x
+#French and Spanish translations done by PKZB
+thracian;Thracian;Thrace;Thracische;;Tracio;;;;;;;;;x
+sabellian;Sabellian;Sabéllienne;Sabellische;;Sabelio;;;;;;;;;x
+old_ligurian;Ligurian;Ligure;Ligurische;;Ligurio;;;;;;;;;x
+venetic;Venetic;Vénétique;Venetische;;Venético;;;;;;;;;x
+siculian;Siculian;Sicule;Siculische;;Siceliota;;;;;;;;;x
+etruscan;Etruscan;Étrusque;Etruscische;;Etrusco;;;;;;;;;x
+nuragic;Nuragic;Nuragique;Nuragische;;Nurágico;;;;;;;;;x
+rhaetian;Rhaetian;Rhétique;Rhaetische;;Rético;;;;;;;;;x
+lepontic;Lepontic;Lépontique;Lepontische;;Lepóntio;;;;;;;;;x
+gallic;Gallic;Gaulois;Gallische;;Galo;;;;;;;;;x
+celtic_pannonian;Noric;Norique;Norische;;Nórico;;;;;;;;;x
+belgae;Belgae;Belge;Belgische;;Belga;;;;;;;;;x
+manx;Manx;Mannoise;Manxische;;Manx;;;;;;;;;x
+carthaginian;Punic;Punique;Punische;;Púnico;;;;;;;;;x
+phoenician;Phoenician;Phénicienne;Phoenicische;;Fenicio;;;;;;;;;x
+vandal;Vandal;Vandale;Vandalische;;Vándalo;;;;;;;;;x
+gothic;Gothic;Goth;Gothische;;Godo;;;;;;;;;x
+ancient_egyptian;Ancient Egyptian;Ancien Égyptienne;Altägyptische;;Antiguo Egipcio;;;;;;;;;x
+nabatean;Nabatean;Nabatéen;Nabatische;;Nabateo;;;;;;;;;x
+hebrew;Hebrew;Hébreu;Hebrewische;;Hebreo;;;;;;;;;x
+dacian;Dacian;Dace;Dacische;;Dacio;;;;;;;;;x
+caucasian_albanian;Caucasian Albanian;Caucaso-Albanienne;Kaucasischalbanische;;Cáucasoalbanés;;;;;;;;;x
+iberic;Iberic;Ibérique;Iberische;;Ibérico;;;;;;;;;x
+turdetanian;Turdetanian;Turdétane;Turdetanische;;Turdetanio;;;;;;;;;x
+celtiberian;Celtiberian;Celtibérique;Keltiberische;;Celtibérico;;;;;;;;;x
+lusitanian;Lusitanian;Lusitanienne;Lusitanische;;Lusitano;;;;;;;;;x
+lycian;Lycian;Lycienne;Lycische;;Licio;;;;;;;;x
+phrygian;Phrygian;Phrygienne;Phrygische;;Frigio;;;;;;;;;x
+isaurian;Isaurian;Isaurienne;Isaurische;;Isauro;;;;;;;;;x
+paphlagonian;Paphlagonian;Paphlagonienne;Paphlagonische;;Palaíta;;;;;;;;;x
+cilician;Cilician;Cilicienne;Cilicische;;Cilicio;;;;;;;;;x
+babylonian;Babylonian;Babylonienne;Babylonische;;Babilonio;;;;;;;;;x
 
 #Culture groups
 
-punic;Punic;Punic;Punisch;;Punic;;;;;;;;;x
-pre_indo_european;Pre-Indo-European;Pre-Indo-European;Vorindoeuropänisch;;Pre-Indo-European;;;;;;;;;x
-gallic_group;Continental Celtic;Continental Celtic;Kontinentalkeltisch;;Continental Celtic;;;;;;;;;x
-dacian_group;Dacian;Dace;Dacisch;;Dacio;;;;;;;;;x
+punic;Punic;Punic;Punische;;Punic;;;;;;;;;x
+pre_indo_european;Pre-Indo-European;Pre-Indo-European;Vorindoeuropänische;;Pre-Indo-European;;;;;;;;;x
+gallic_group;Continental Celtic;Continental Celtic;Kontinentalkeltische;;Continental Celtic;;;;;;;;;x
+dacian_group;Dacian;Dace;Dacische;;Dacio;;;;;;;;;x
 east_germanic;East Germanic;East Germanic;Ost Germanische;;East Germanic;;;;;;;;;x
