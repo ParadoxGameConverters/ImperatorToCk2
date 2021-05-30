@@ -1,4 +1,4 @@
-package ImperatorToCK2; 
+package ImperatorToCK2;  
 
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -135,6 +135,10 @@ public class Main
             convertedCharacters.add("0"); //Debug at id 0 so list will never be empty
 
             ArrayList<String> impSubjectInfo = new ArrayList<String>(); //Overlord-Subject relations
+            
+            ArrayList<String[]> impCharInfoList = new ArrayList<String[]>();
+            
+            ArrayList<String> impDynList = new ArrayList<String>();
 
             String[] impProvRegions = Processing.importRegionList(8500,impGameDir);
 
@@ -413,7 +417,7 @@ public class Main
             long countryTime = System.nanoTime();
             long countryTimeTot = (((countryTime - startTime) / 1000000000)/60);
             LOGGER.info("Country data imported after "+countryTimeTot+" minutes");
-            LOGGER.finest("65%");
+            LOGGER.finest("55%");
 
             LOGGER.config("and the culture is" + ck2ProvInfo[1][343]);
 
@@ -423,8 +427,15 @@ public class Main
             LOGGER.config(ck2TagTotals[343]);
 
             int totCountries = impTagInfo.size(); //ammount of IR countries in save file
+            
+            LOGGER.info("Importing subject data...");
 
             impSubjectInfo = Processing.generateSubjectList(totCountries+100,saveDiplo);
+            
+            LOGGER.info("Subject data imported after "+countryTimeTot+" minutes");
+            LOGGER.finest("65%");
+            
+            LOGGER.info("Copying default output...");
 
             //Default output, will be included in every conversion regardless of what occured in the save file
             Output.output("defaultOutput"+VM+"cultures"+VM+"00_cultures.txt",modDirectory+VM+"common"+VM+"cultures"+VM+"00_cultures.txt");
@@ -503,6 +514,12 @@ public class Main
             
             int empireRank = 350; //Ammount of holdings to be Empire
             
+            impCharInfoList = Characters.importChar(saveCharacters);
+            
+            impDynList = Characters.importDynasty(saveDynasty);
+            
+            //Array
+            
             try {
                 try {
                     while (flag == 0) {
@@ -553,13 +570,17 @@ public class Main
                                 }
 
                                 LOGGER.info (impTagInfo.get(aq4)[16] + " rules " + impTagInfo.get(aq4)[0] + "_" + aq4);
-                                Character = Characters.importChar(saveCharacters,impTagInfo.get(aq4)[16]);
+                                Character = impCharInfoList.get(Integer.parseInt(impTagInfo.get(aq4)[16]));
                                 convertedCharacters = Output.characterCreation(tempNum2, Output.cultureOutput(Character[1]),Output.religionOutput(Character[2]),
                                     Character[3],Character[0],Character[7],Character[4],Character[8],Character[10],Character[11],Character[12],Character[13],Character[14],
-                                    Character[15],saveCharacters,"q","q",convertedCharacters,modDirectory);
+                                    Character[15],saveCharacters,"q","q",convertedCharacters,impCharInfoList,modDirectory);
                                 LOGGER.config ("c");
 
-                                String rulerDynasty = Characters.importAndConvDynasty(modDirectory,Character[7],Character[16],saveDynasty);
+                                String rulerDynasty = Characters.searchDynasty(impDynList,Character[7]);
+                                
+                                
+                                
+                                Output.dynastyCreation(rulerDynasty,Character[7],Character[16],modDirectory);
 
                                 String[] locName = importer.importLocalisation(impGameDir,impTagInfo.get(aq4)[19],rulerDynasty);
                                 output.localizationCreation(locName,impTagInfo.get(aq4)[0],rank,modDirectory);
@@ -585,11 +606,11 @@ public class Main
 
                                         Output.titleCreation(govRegID,governorID,Processing.randomizeColor(),"no","none",subRank,impTagInfo.get(aq4)[0],modDirectory);
 
-                                        govCharacter = Characters.importChar(saveCharacters,governor);
+                                        govCharacter = impCharInfoList.get(Integer.parseInt(governor));
 
                                         convertedCharacters = Output.characterCreation(governorID, Output.cultureOutput(govCharacter[1]),Output.religionOutput(govCharacter[2]),govCharacter[3],
                                             govCharacter[0],govCharacter[7],govCharacter[4],govCharacter[8],govCharacter[10],govCharacter[11],govCharacter[12],govCharacter[13],
-                                            govCharacter[14],govCharacter[15],saveCharacters,"q","q",convertedCharacters,modDirectory);
+                                            govCharacter[14],govCharacter[15],saveCharacters,"q","q",convertedCharacters,impCharInfoList,modDirectory);
 
                                         String[] govLocName = importer.importLocalisation(impGameDir,govReg,"00Region00");
                                         govLocName[0] = locName[1] + " " + govLocName[0];
@@ -671,9 +692,9 @@ public class Main
                             
                             LOGGER.info("Uncolonized province at ID "+aq4+", creating chiefdom of "+importedInfo[0]+" led by "+dynCharName);
 
-                            Output.dynastyCreation("of "+importedInfo[0],ruler,modDirectory);
+                            Output.dynastyCreation("of "+importedInfo[0],ruler,"debug",modDirectory);
                             Output.characterCreation(ruler,dynCult,dynRel,dynCharAge,dynCharName,ruler,"69","q","5","5","5","5","0","0",
-                                saveCharacters,"q","q",convertedCharacters,modDirectory);
+                                saveCharacters,"q","q",convertedCharacters,impCharInfoList,modDirectory);
                             String greyShade = Processing.randomizeColorGrey();
 
                             Output.titleCreation("dynamic"+aq4,ruler,greyShade,"no",Integer.toString(aq4),"d","no_liege",modDirectory);
