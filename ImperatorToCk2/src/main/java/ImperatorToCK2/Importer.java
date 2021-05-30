@@ -1,4 +1,4 @@
-package ImperatorToCK2; 
+package ImperatorToCK2;   
 
 import java.util.Scanner;
 import java.io.IOException;
@@ -1049,5 +1049,3 @@ public class Importer
     }
     //developed originally by Shinymewtwo99
 }
-
-
