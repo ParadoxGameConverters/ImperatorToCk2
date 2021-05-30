@@ -335,7 +335,7 @@ public class Output
 
     public static ArrayList<String> characterCreation(String irKING, String cult, String rel, String age, String name, String dynasty,
     String sex, String traits, String martial, String zeal, String charisma, String finesse, String spouse, String children,String tempFile,String father,
-    String mother,ArrayList<String> convertedList,String Directory) throws IOException
+    String mother,ArrayList<String> convertedList,ArrayList<String[]> charList,String Directory) throws IOException
     {
 
         int characterCount = 0;
@@ -387,10 +387,11 @@ public class Output
         int aq4 = 0;
 
         if (spouse != "0") {//Recursively calls to get rest of family
-            spouseInfo = Characters.importChar(tempFile,spouse);
+            int spouseID = Integer.parseInt(spouse);
+            spouseInfo = charList.get(spouseID);
 
             characterCreation( spouse1066,  cultureOutput(spouseInfo[1]),  religionOutput(spouseInfo[2]),  spouseInfo[3],  spouseInfo[0],  spouseInfo[7],
-                spouseInfo[4],  spouseInfo[8],  martial,  zeal,  charisma,  finesse,  "0",  "0", tempFile,"q",  "q",convertedList, Directory);
+                spouseInfo[4],  spouseInfo[8],  martial,  zeal,  charisma,  finesse,  "0",  "0", tempFile,"q",  "q",convertedList,charList, Directory);
         }
 
         if (children != "0") {
@@ -405,13 +406,15 @@ public class Output
 
             while (aq4 < childCount) {//Recursively calls to get rest of family
 
-                childInfo = Characters.importChar(tempFile,children.split(" ")[aq4]);
+                int childID = Integer.parseInt(children.split(" ")[aq4]);
+
+                childInfo = charList.get(childID);
                 //oldlogPrint ("Child " + aq4 + " out of " + childCount);
                 child1066 = Integer.toString( 1000000 + Integer.parseInt(children.split(" ")[aq4]) );
 
                 characterCreation( child1066,  cultureOutput(childInfo[1]),  religionOutput(childInfo[2]),  childInfo[3],  childInfo[0],  childInfo[7],
                     childInfo[4],  childInfo[8],  martial,  zeal,  charisma,  finesse,  childInfo[14],  childInfo[15], tempFile,irKING,spouse1066,
-                    convertedList,Directory);
+                    convertedList,charList,Directory);
 
                 aq4 = aq4 + 1;
             }
@@ -464,7 +467,7 @@ public class Output
         aqq = 0;
 
         Importer importer = new Importer();
-        
+
         //any filename with non-asci characters won't render in CK II, changed file output name to use GloriousCharacter instead of character name
         //in case player created interesting names in I:R
 
@@ -635,7 +638,7 @@ public class Output
         return convertedList;
     }
 
-    public static String dynastyCreation(String name, String id, String Directory) throws IOException
+    public static String dynastyCreation(String name, String id, String backupName, String Directory) throws IOException
     {
 
         String VM = "\\"; 
@@ -643,8 +646,18 @@ public class Output
         char VMq = '"';
         String tab = "	";
 
+        if (name.split("_")[0].equals ("minor")) {
+            name = backupName;
+        }
+
+        if (backupName.equals("debug")) { //gives all IR character dynasties + 700000000 to prevent conflict, generated ones (debug) use + 6000000
+        } else {
+
+            id = Integer.toString(Integer.parseInt(id) + 700000000);
+        }
+
         Directory = Directory + VM + "common" + VM + "dynasties";
-        String ck2CultureInfo ="a";   // Owner Culture Religeon PopTotal Buildings
+        String ck2CultureInfo ="a";   // debug output
         FileOutputStream fileOut= new FileOutputStream(Directory + VM + "c_" + id + ".txt");
         PrintWriter out = new PrintWriter(fileOut);
 
@@ -757,17 +770,14 @@ public class Output
 
         return ck2CultureInfo;
     }
-    
+
     public static void logPrint(String name) throws IOException //outputs to log.txt
     {
-        
+
         String logFile = "debugTest.txt";
 
-
         ArrayList<String> oldFile = new ArrayList<String>();
-        
         oldFile = Importer.importBasicFile(logFile);
-
 
         FileOutputStream fileOut= new FileOutputStream(logFile);
         PrintWriter out = new PrintWriter(fileOut);
@@ -793,12 +803,11 @@ public class Output
         fileOut.close();
 
     }
-    
+
     public static void logBlank() throws IOException //creates/replaces new log file
     {
-        
-        String logFile = "log.txt";
 
+        String logFile = "log.txt";
 
         FileOutputStream fileOut= new FileOutputStream(logFile);
         PrintWriter out = new PrintWriter(fileOut);
@@ -809,8 +818,5 @@ public class Output
         out.flush();
         fileOut.close();
 
-
     }
-
 }
-
