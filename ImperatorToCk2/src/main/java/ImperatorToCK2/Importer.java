@@ -1,4 +1,4 @@
-package ImperatorToCK2;   
+//package ImperatorToCK2;   
 
 import java.util.Scanner;
 import java.io.IOException;
@@ -90,12 +90,9 @@ public class Importer
                         }
 
                         if (qaaa.split("=")[0].equals( tab+"}" ) ) { //ends here
-                            
 
                             String[] tmpOutput = new String[output.length];
-
                             int aq2 = 0;
-
                             while (aq2 < output.length) {
                                 tmpOutput[aq2] = output[aq2];
                                 aq2 = aq2 + 1;
@@ -109,7 +106,7 @@ public class Importer
                             output[3] = "0"; //default for no pops, uncolonized or uninhabitible province
                             output[4] = "{ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }"; //default for no buildinga
                             output[5] = "9999"; //default for no monument
-                            
+
                             aqq = 0; //reset pop count
 
                         }
@@ -137,7 +134,7 @@ public class Importer
 
         String bracket1 = VQ2.substring(0,1);
         String bracket2 = VQ2.substring(1,2);
-        
+
         //System.out.println ("Load 1 done");
         FileInputStream fileIn= new FileInputStream(name);
         Scanner scnr= new Scanner(fileIn);
@@ -190,7 +187,6 @@ public class Importer
                 qaaa = scnr.nextLine();
                 if (vmm.equals(startWord)){
 
-                    
                     while (flag == 0) {
                         qaaa = scnr.nextLine(); 
 
@@ -319,7 +315,7 @@ public class Importer
                                 }
 
                                 else if (qaaa.split("=")[0].equals( tab+tab+tab+tab+"budget_dates" ) ) {
-                                    
+
                                     if (output[21].equals("9999")) { //failsafe if somehow there is no historical tag
                                         output[21] = output[0];
                                     }
@@ -336,7 +332,6 @@ public class Importer
                                     impTagInfo.add(tmpOutput);
 
                                     aqq = aqq + 1;
-                                    
 
                                     output[0] = "9999"; //default for no tag
                                     output[1] = "6969"; //default for no flag seed
@@ -374,12 +369,10 @@ public class Importer
         return impTagInfo;
     }
 
-    public static ArrayList<String> importSubjects (String name, int overlordIDnum, ArrayList<String> currentList) throws IOException
+    public static ArrayList<String> importSubjects (String name) throws IOException
     {
 
         //Primarily used for subjects/vassals in IR
-
-        String overlordID = Integer.toString(overlordIDnum);
 
         FileInputStream fileIn= new FileInputStream(name);
         Scanner scnr= new Scanner(fileIn);
@@ -388,9 +381,9 @@ public class Importer
 
         String tab = "	";
 
-        String keyWord = tab+tab+"first="+overlordID;
-
         int aqq = 0;
+        
+        ArrayList<String> currentList = new ArrayList<String>();
 
         boolean endOrNot = true;
         String vmm = scnr.nextLine();
@@ -407,34 +400,34 @@ public class Importer
 
                 qaaa = scnr.nextLine();
 
-                if (qaaa.equals(keyWord)){
-                    //endOrNot = false;
-                    output[0] = Integer.toString(overlordIDnum);
+                //overlord
+                if (qaaa.split("=")[0].equals( tab+tab+"first" ) ) {
+                    output[0] = qaaa.split("=")[1];
+                }
 
-                    while (flag == 0) {
-                        qaaa = scnr.nextLine();
-                        //subject
-                        if (qaaa.split("=")[0].equals( tab+tab+"second" ) ) {
-                            output[1] = qaaa.split("=")[1];
-                        }
-                        //subject type
-                        if (qaaa.split("=")[0].equals( tab+tab+"subject_type" ) ) {
-                            output[2] = qaaa.split("=")[1];
-                            output[2] = output[2].substring(1,output[2].length()-1);
-                            flag = 1; //end loop
-                            currentList.add(output[0]+","+output[1]+","+output[2]);
-                        }
-
-                        if (qaaa.split("=")[0].equals( tab+"}" ) ) { //If there isn't a subject type, prevents it from going over to the next
-                            output[0] = "9999";
-                            output[1] = "9999";
-                            output[2] = "9999";
-                            flag = 1; //end loop
-                        }
-
+                //subject
+                if (qaaa.split("=")[0].equals( tab+tab+"second" ) ) {
+                    output[1] = qaaa.split("=")[1];
+                }
+                //subject type
+                if (qaaa.split("=")[0].equals( tab+tab+"subject_type" ) ) {
+                    output[2] = qaaa.split("=")[1];
+                    output[2] = output[2].substring(1,output[2].length()-1);
+                    flag = 1; //end loop
+                    String[] tmpOutput = new String[output.length];
+                    int aq2 = 0;
+                    while (aq2 < output.length) {
+                        tmpOutput[aq2] = output[aq2];
+                        aq2 = aq2 + 1;
                     }
 
+                    currentList.add(tmpOutput[0]+","+tmpOutput[1]+","+tmpOutput[2]);
+                    
+                    output[0] = "9999";
+                    output[1] = "9999";
+                    output[2] = "9999";
                 }
+
 
                 flag = 0;
             }
