@@ -1,0 +1,1 @@
+This file is to ensure that the output directory is created on Github

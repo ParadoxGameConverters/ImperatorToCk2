@@ -44,8 +44,8 @@ public class Main
             String Dir; //Desired user directory, usually located in documents
             String Dir2; //.mod files use reverse slashes (/ instead of \) 
             String modName; //important for creating directories
-            String saveName; //The save file (.eu4) to read from
-            String impDir; //The directory of the save file (.eu4) to read from
+            String saveName; //The save file (.rome) to read from
+            String impDir; //The directory of the save file (.rome) to read from
 
             Importer importer = new Importer();
             Output output = new Output();
@@ -59,7 +59,8 @@ public class Main
             String VN = "//";
             VN = VN.substring(0);
             Dir2 = configDirectories[1];
-            Dir = configDirectories[3];
+            //Dir = configDirectories[3];
+            Dir = "output";
 
             modName = configDirectories[4].replace(VM,"~~~");//.substring() hates working with \ characters
             modName = modName.replace(VN,"~~~");//.substring() hates working with / characters
@@ -430,9 +431,12 @@ public class Main
             
             LOGGER.info("Importing subject data...");
 
-            impSubjectInfo = Processing.generateSubjectList(totCountries+100,saveDiplo);
+            impSubjectInfo = Importer.importSubjects(saveDiplo);
             
-            LOGGER.info("Subject data imported after "+countryTimeTot+" minutes");
+            long subjectTime = System.nanoTime();
+            long subjectTimeTot = (((subjectTime - startTime) / 1000000000)/60);
+            
+            LOGGER.info("Subject data imported after "+subjectTimeTot+" minutes");
             LOGGER.finest("65%");
             
             LOGGER.info("Copying default output...");
@@ -445,12 +449,6 @@ public class Main
             Output.output("defaultOutput"+VM+"bookmarks"+VM+"50_customBookmark.txt",modDirectory+VM+"common"+VM+"bookmarks"+VM+"50_customBookmark.txt");
             Output.output("defaultOutput"+VM+"bookmarks"+VM+"00_bookmarks.txt",modDirectory+VM+"common"+VM+"bookmarks"+VM+"00_bookmarks.txt");
             Output.output("defaultOutput"+VM+"bloodlines"+VM+"50_convertedBloodlines.txt",modDirectory+VM+"common"+VM+"bloodlines"+VM+"50_convertedBloodlines.txt");
-
-            //eu4Converter
-            Output.output("defaultOutput"+VM+"eu4Converter"+VM+"culture_table.csv",modDirectory+VM+"eu4_converter"+VM+"culture_table.csv");
-            Output.output("defaultOutput"+VM+"eu4Converter"+VM+"religion_table.csv",modDirectory+VM+"eu4_converter"+VM+"religion_table.csv");
-            Output.output("defaultOutput"+VM+"eu4Converter"+VM+"50_romeCultures.txt",modDirectory+VM+"eu4_converter"+VM+"copy"+VM+"common"+VM+"cultures"+VM+"50_romeCultures.txt");
-            Output.output("defaultOutput"+VM+"eu4Converter"+VM+"50_romeReligions.txt",modDirectory+VM+"eu4_converter"+VM+"copy"+VM+"common"+VM+"religions"+VM+"50_romeReligions.txt");
 
             //defaultLocalization
             Output.output("defaultOutput"+VM+"localization"+VM+"culture_loc.csv",modDirectory+VM+"localisation"+VM+"culture_loc.csv");
@@ -634,20 +632,23 @@ public class Main
                 }
             }catch (java.lang.ArrayIndexOutOfBoundsException exception){
                 flag = 1;
-                LOGGER.info("ArrayIndexOutOfBoundsException and flag = 1" + "_" + aq4);
+                LOGGER.config("ArrayIndexOutOfBoundsException and flag = 1" + "_" + aq4);
             }
             aq4 = 0;
             aq7 = 0;
             LOGGER.config(ck2HasLand[343]);
-
-            String[] bList;
-            bList = Processing.importBaronyNameList(modDirectory,aq4,ck2Dir);
             
             long titleTime = System.nanoTime();
             long titleTimeTot = (((titleTime - startTime) / 1000000000)/60);
             LOGGER.info("Titles and characters created after "+titleTimeTot+" minutes");
             LOGGER.finest("85%");
             LOGGER.info("Outputting Province info");
+
+            String[] bList;
+            bList = Processing.importBaronyNameList(modDirectory,aq4,ck2Dir);
+            
+            LOGGER.info("Barony Name List collected");
+
 
             try {
                 try {

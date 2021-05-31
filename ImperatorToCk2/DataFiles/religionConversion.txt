@@ -22,3 +22,4 @@ caucasian_religion,armazic
 indo_iranian_religion,scythian
 eastern_animism,ritualistic
 pre_indo_european_religion,iberian
+nuragic_pantheon,iberian

@@ -655,7 +655,7 @@ public class Processing
         while (aqq < tot) {
 
             //String[] relation = Importer.importSubjects(source,aqq,subjects);
-            subjects = Importer.importSubjects(source,aqq,subjects);
+            //subjects = Importer.importSubjects(source,aqq,subjects);
             //if (relation[0] != "9999") {
             //subjects.add(relation[0]+","+relation[1]+","+relation[2]);
 
