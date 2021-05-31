@@ -1,4 +1,4 @@
-package ImperatorToCK2; 
+//package ImperatorToCK2;  
 
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -78,18 +78,6 @@ public class Directories
 
         File f18 = new File(mainModFolder+VM+"gfx"+VM+"interface");
         f18.mkdir(); 
-
-        File f19 = new File(mainModFolder+VM+"eu4_converter"+VM+"copy");
-        f19.mkdir();
-
-        File f20 = new File(mainModFolder+VM+"eu4_converter"+VM+"copy"+VM+"common");
-        f20.mkdir();
-
-        File f21 = new File(mainModFolder+VM+"eu4_converter"+VM+"copy"+VM+"common"+VM+"religions");
-        f21.mkdir();
-
-        File f22 = new File(mainModFolder+VM+"eu4_converter"+VM+"copy"+VM+"common"+VM+"cultures");
-        f22.mkdir();
 
         File f23 = new File(mainModFolder+VM+"common"+VM+"bloodlines");
         f23.mkdir();  
