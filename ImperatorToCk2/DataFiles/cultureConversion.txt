@@ -47,6 +47,8 @@ etruscan,etruscan
 nuragic,nuragic
 corsian,nuragic
 talaiotic,nuragic
+ilienses,nuragic
+balares,nuragic
 vasconian,basque
 cantabrian,basque
 ilergetian,basque
@@ -147,6 +149,7 @@ gutones,norse
 raumarician,norse
 teutonian,norse
 cimbrian,norse
+scandian,norse
 vandal,vandal
 helveconian,vandal
 lemovian,gothic
@@ -186,6 +189,8 @@ paeonian,arberian
 dardanian,arberian
 abrian,arberian
 greco_illyrian,arberian
+pannonian,arberian
+iapodian,arberian
 
 #Scythian
 scythian,saka
