@@ -2,7 +2,6 @@
 #Translations done by PKZB
 
 #religions
-polytheistic;Polythéiste;Polytheistic;Polytheistische;;Politeísta;;;;;;;;;x
 canaanite;Canaanite;Canaannéenne;Kanaanische;;Canaanita;;;;;;;;;x
 druidic;Druidic;Druidique;Druidische;;Druídica;;;;;;;;;x
 egyptian;Kemetic;Kémitiste;Kemetische;;Kemética;;;;;;;;;x
@@ -11,11 +10,25 @@ megalithic;Megalithic;Mégalithique;Megalithische;;Megalítica;;;;;;;;;x
 iberian;Iberian;Ibérique;Iberische;;Ibérica;;;;;;;;;x
 sumerian;Chaldean;Chaldéenne;Mespotamische;;Caldeana;;;;;;;;;x
 arabic;Arabic;Arabique;Arabische;;Árabe;;;;;;;;;x
-ritualistic;Ritualiste;Ritualistic;Ritualistische;;Ritualista;;;;;;;;;x
+ritualistic;Ritualistic;Ritualiste;Ritualistische;;Ritualista;;;;;;;;;x
 cybelene;Cybelene;Cybélienne;Kybelenische;;Cibeliana;;;;;;;;;x
 khaldic;Khaldic;Khaldique;Khaldische;;Jaldiana;;;;;;;;;x
 armazic;Armazic;Armazienne;Armazische;;Armázica;;;;;;;;;x
 scythian;Scythian;Scythe;Scythische;;Escita;;;;;;;;;x
+
+#reformed religions
+canaanite_reformed;Canaanite;Canaannéenne;Kanaanische;;Canaanita;;;;;;;;;x
+druidic_reformed;Druidic;Druidique;Druidische;;Druídica;;;;;;;;;x
+zalmoxian_reformed;Zalmoxian;Zalmoxiste;Zalmoxische;;Zalmoxista;;;;;;;;;x
+megalithic_reformed;Megalithic;Mégalithique;Megalithische;;Megalítica;;;;;;;;;x
+iberian_reformed;Iberian;Ibérique;Iberische;;Ibérica;;;;;;;;;x
+sumerian_reformed;Chaldean;Chaldéenne;Mespotamische;;Caldeana;;;;;;;;;x
+arabic_reformed;Arabic;Arabique;Arabische;;Árabe;;;;;;;;;x
+ritualistic_reformed;Ritualiste;Ritualistic;Ritualistische;;Ritualista;;;;;;;;;x
+cybelene_reformed;Cybelene;Cybélienne;Kybelenische;;Cibeliana;;;;;;;;;x
+khaldic_reformed;Khaldic;Khaldique;Khaldische;;Jaldiana;;;;;;;;;x
+armazic_reformed;Armazic;Armazienne;Armazische;;Armázica;;;;;;;;;x
+scythian_reformed;Scythian;Scythe;Scythische;;Escita;;;;;;;;;x
 
 #religion groups
 polytheistic;Polytheistic;Polythéiste;Polytheistische;;Politeísta;;;;;;;;;x
