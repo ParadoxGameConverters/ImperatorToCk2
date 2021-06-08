@@ -1,0 +1,293 @@
+#Druidic
+
+c_angseley={
+	holy_site = druidic
+	holy_site = druidic_reformed
+}
+c_dijon={
+	holy_site = druidic
+	holy_site = druidic_reformed
+}
+c_santiago={
+	holy_site = druidic
+	holy_site = druidic_reformed
+}
+c_gent={
+	holy_site = druidic
+	holy_site = druidic_reformed
+}
+c_venaissin={
+	holy_site = druidic
+	holy_site = druidic_reformed
+}
+
+#iberian
+
+c_burgos={
+	holy_site = iberian
+	holy_site = iberian_reformed
+}
+c_urgell={
+	holy_site = iberian
+	holy_site = iberian_reformed
+}
+c_castellon={
+	holy_site = iberian
+	holy_site = iberian_reformed
+}
+c_granada={
+	holy_site = iberian
+	holy_site = iberian_reformed
+}
+c_mertola={
+	holy_site = iberian
+	holy_site = iberian_reformed
+}
+
+#Megalithic
+
+c_taza={
+	holy_site = megalithic
+	holy_site = megalithic_reformed
+}
+c_al_djazair={
+	holy_site = megalithic
+	holy_site = megalithic_reformed
+}
+c_leptis_magna={
+	holy_site = megalithic
+	holy_site = megalithic_reformed
+}
+c_tripolitana={
+	holy_site = megalithic
+	holy_site = megalithic_reformed
+}
+c_medjerda={
+	holy_site = megalithic
+	holy_site = megalithic_reformed
+}
+
+#Canaanite
+
+c_tunis={
+	holy_site = canaanite
+	holy_site = canaanite_reformed
+}
+c_tyrus={
+	holy_site = canaanite
+	holy_site = canaanite_reformed
+}
+c_tripoli={
+	holy_site = canaanite
+	holy_site = canaanite_reformed
+}
+c_tell_bashir={
+	holy_site = canaanite
+	holy_site = canaanite_reformed
+}
+c_murcia={
+	holy_site = canaanite
+	holy_site = canaanite_reformed
+}
+
+#Arabic
+
+c_mecca={
+	holy_site = arabic
+	holy_site = arabic_reformed
+}
+c_medina={
+	holy_site = arabic
+	holy_site = arabic_reformed
+}
+c_sanaa={
+	holy_site = arabic
+	holy_site = arabic_reformed
+}
+c_maan={
+	holy_site = arabic
+	holy_site = arabic_reformed
+}
+c_palmyra={
+	holy_site = arabic
+	holy_site = arabic_reformed
+}
+
+#Cybelene
+
+c_ankyra={
+	holy_site = cybelene
+	holy_site = cybelene_reformed
+}
+c_lykia={
+	holy_site = cybelene
+	holy_site = cybelene_reformed
+}
+c_lykandos={
+	holy_site = cybelene
+	holy_site = cybelene_reformed
+}
+c_dorylaion={
+	holy_site = cybelene
+	holy_site = cybelene_reformed
+}
+c_sardis={
+	holy_site = cybelene
+	holy_site = cybelene_reformed
+}
+
+#Chaldean
+
+c_baghdad={
+	holy_site = sumerian
+	holy_site = sumerian_reformed
+}
+c_kufa={
+	holy_site = sumerian
+	holy_site = sumerian_reformed
+}
+c_mosul={
+	holy_site = sumerian
+	holy_site = sumerian_reformed
+}
+c_uwal={
+	holy_site = sumerian
+	holy_site = sumerian_reformed
+}
+c_jerusalem={
+	holy_site = sumerian
+	holy_site = sumerian_reformed
+}
+
+#Khaldic
+
+c_ani={
+	holy_site = khaldic
+	holy_site = khaldic_reformed
+}
+c_vaspurakan={
+	holy_site = khaldic
+	holy_site = khaldic_reformed
+}
+c_amisos={
+	holy_site = khaldic
+	holy_site = khaldic_reformed
+}
+c_antiocheia={
+	holy_site = khaldic
+	holy_site = khaldic_reformed
+}
+c_seleukeia={
+	holy_site = khaldic
+	holy_site = khaldic_reformed
+}
+
+#Armazic
+
+c_kartli={
+	holy_site = armazic
+	holy_site = armazic_reformed
+}
+c_shemakha={
+	holy_site = armazic
+	holy_site = armazic_reformed
+}
+c_imeretia={
+	holy_site = armazic
+	holy_site = armazic_reformed
+}
+c_amisos={
+	holy_site = armazic
+	holy_site = armazic_reformed
+}
+c_abkhazia={
+	holy_site = armazic
+	holy_site = armazic_reformed
+}
+
+#Scythian
+
+c_crimea={
+	holy_site = scythian
+	holy_site = scythian_reformed
+}
+c_tana={
+	holy_site = scythian
+	holy_site = scythian_reformed
+}
+c_kuma={
+	holy_site = scythian
+	holy_site = scythian_reformed
+}
+c_kasogs={
+	holy_site = scythian
+	holy_site = scythian_reformed
+}
+c_dihistan={
+	holy_site = scythian
+	holy_site = scythian_reformed
+}
+
+#Zalmoxian
+
+c_szekelyfold={
+	holy_site = zalmoxian
+	holy_site = zalmoxian_reformed
+}
+c_serdica={
+	holy_site = zalmoxian
+	holy_site = zalmoxian_reformed
+}
+c_karvuna={
+	holy_site = zalmoxian
+	holy_site = zalmoxian_reformed
+}
+c_philippopolis={
+	holy_site = zalmoxian
+	holy_site = zalmoxian_reformed
+}
+c_saris={
+	holy_site = zalmoxian
+	holy_site = zalmoxian_reformed
+}
+
+#Ritualistic
+
+c_pamir={
+	holy_site = ritualistic
+	holy_site = ritualistic_reformed
+}
+c_chuy={
+	holy_site = ritualistic
+	holy_site = ritualistic_reformed
+}
+c_keriya={
+	holy_site = ritualistic
+	holy_site = ritualistic_reformed
+}
+c_kucha={
+	holy_site = ritualistic
+	holy_site = ritualistic_reformed
+}
+c_charkliq={
+	holy_site = ritualistic
+	holy_site = ritualistic_reformed
+}
+
+#Kemetic
+
+c_cairo={
+	holy_site = egyptian
+}
+c_esna={
+	holy_site = egyptian
+}
+c_aswan={
+	holy_site = egyptian
+}
+c_sarqihya={
+	holy_site = egyptian
+}
+c_gizeh={
+	holy_site = egyptian
+}
