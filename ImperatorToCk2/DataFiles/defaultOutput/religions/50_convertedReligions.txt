@@ -33,19 +33,59 @@ polytheistic = {
 		evil_god_names = {
 			lotan yam
 		}
+
+		reformed = canaanite_reformed
 		
-		investiture = yes
-		can_grant_divorce = yes
-		can_grant_invasion_cb = invasion
-		can_grant_claim = yes
-		can_call_crusade = yes
-		can_retire_to_monastery = yes
+		priests_can_marry = no
 		priests_can_inherit = no
-		rel_head_defense = yes
+		female_temple_holders = yes
+		
+		religious_clothing_head = 7
+		religious_clothing_priest = 7
+		
+		can_demand_religious_conversion = no
 		
 		intermarry = egyptian
 		intermarry = sumerian
 		intermarry = cybelene
+	}
+
+	canaanite_reformed = {
+		graphical_culture = jewishgfx
+
+		icon = 5
+		heresy_icon = 6
+		
+		color = { 0.5 0.1 0.8 }
+		
+		crusade_name = GREAT_HOLY_WAR
+		use_new_crusade = yes
+		crusade_cb = new_crusade
+		scripture_name = canaanite_scripture
+		priest_title = PRIEST
+		
+		high_god_name = canaanite_high_god
+		
+		god_names = {
+			dagan astargatis ashima aglibol shadrafa sydyk baal tanit
+		}
+		
+		evil_god_names = {
+			lotan yam
+		}
+		
+		priests_can_marry = no
+		priests_can_inherit = no
+		
+		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
+		
+		religious_clothing_head = 7
+		religious_clothing_priest = 7
+		
+		allow_in_ruler_designer = no
+		
+		intermarry = canaanite
 	}
 	
 	druidic = {
@@ -71,20 +111,63 @@ polytheistic = {
 		evil_god_names = {
 			balor
 		}
-		
-		investiture = yes
-		can_grant_divorce = yes
-		can_grant_invasion_cb = invasion
-		can_grant_claim = yes
-		can_call_crusade = yes
-		can_retire_to_monastery = yes
-		priests_can_inherit = no
-		rel_head_defense = yes
+
+		reformed = druidic_reformed
+
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+
+		priests_can_marry = yes
+		dislike_tribal_organization = yes
+		can_demand_religious_conversion = no
+		allow_looting = yes
+		female_temple_holders = yes
+		max_consorts = 3
 		
 		intermarry = iberian
 		#intermarry = germanic
 		intermarry = norse_pagan
 		intermarry = zalmoxian
+		intermarry = druidic_reformed
+	}
+
+	druidic_reformed = {
+		graphical_culture = pagangfx
+
+		icon = 5
+		heresy_icon = 6
+		
+		color = { 0.4 0.8 0.5 }
+		
+		crusade_name = GREAT_HOLY_WAR
+		use_new_crusade = yes
+		crusade_cb = new_crusade
+		scripture_name = druidic_scripture
+		priest_title = druid_priest
+		
+		high_god_name = taranis
+		
+		god_names = {
+			cerunnos epona vinotonus toutatis condatis belenos belisama artio intarabus 
+		}
+		
+		evil_god_names = {
+			balor
+		}
+
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
+		allow_looting = yes
+		max_consorts = 3
+
+		allow_in_ruler_designer = no
+		
+		intermarry = druidic
 	}
 
 	iberian = {
@@ -110,17 +193,59 @@ polytheistic = {
 		evil_god_names = {
 			iberian_dark_one
 		}
+
+		reformed = iberian_reformed
 		
-		investiture = yes
-		can_grant_divorce = yes
-		can_grant_invasion_cb = invasion
-		can_grant_claim = yes
-		can_call_crusade = yes
-		can_retire_to_monastery = yes
-		priests_can_inherit = no
-		rel_head_defense = yes
+		priests_can_marry = yes
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+		dislike_tribal_organization = yes
+		can_demand_religious_conversion = no
+		allow_looting = yes
+		female_temple_holders = yes
+		max_consorts = 3
 		
 		intermarry = druidic
+		intermarry = iberian_reformed
+	}
+
+	iberian_reformed = {
+		graphical_culture = pagangfx
+
+		icon = 5
+		heresy_icon = 6
+		
+		color = { 1.0 0.5 0.1 }
+		
+		crusade_name = GREAT_HOLY_WAR
+		use_new_crusade = yes
+		crusade_cb = new_crusade
+		scripture_name = iberian_scripture
+		priest_title = PRIEST
+		
+		high_god_name = iberian_high_god
+		
+		god_names = {
+			candamius semnocosus cariocecus ataecina eacus betatun dercetius endouellicus
+		}
+		
+		evil_god_names = {
+			iberian_dark_one
+		}
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
+		allow_looting = yes
+		max_consorts = 3
+
+		allow_in_ruler_designer = no
+		
+		intermarry = iberian
 	}
 
 	zalmoxian = {
@@ -147,16 +272,58 @@ polytheistic = {
 			zalmoxian_dark_god
 		}
 		
-		investiture = yes
-		can_grant_divorce = yes
-		can_grant_invasion_cb = invasion
-		can_grant_claim = yes
-		can_call_crusade = yes
-		can_retire_to_monastery = yes
-		priests_can_inherit = no
-		rel_head_defense = yes
+		reformed = zalmoxian_reformed
 		
-		#intermarry = catholic
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+
+		priests_can_marry = yes
+		dislike_tribal_organization = yes
+		can_demand_religious_conversion = no
+		allow_looting = yes
+		female_temple_holders = yes
+		max_consorts = 3
+
+		intermarry = zalmoxian_reformed
+	}
+
+	zalmoxian_reformed = {
+		graphical_culture = pagangfx
+
+		icon = 5
+		heresy_icon = 6
+		
+		color = { 1.0 0.6 0.6 }
+		
+		crusade_name = GREAT_HOLY_WAR
+		use_new_crusade = yes
+		crusade_cb = new_crusade
+		scripture_name = zalmoxian_scripture
+		priest_title = PRIEST
+		
+		high_god_name = gabeleisos
+		
+		god_names = {
+			zalmoxis pleistoros sabazios zibelthiurdos bassareus derzelas semele bendis
+		}
+		
+		evil_god_names = { #made up something
+			zalmoxian_dark_god
+		}
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
+		allow_looting = yes
+		max_consorts = 3
+
+		allow_in_ruler_designer = no
+
+		intermarry = zalmoxian
 	}
 
 	egyptian = {
@@ -183,14 +350,21 @@ polytheistic = {
 			seth aapep
 		}
 		
-		investiture = yes
 		can_grant_divorce = yes
-		can_grant_invasion_cb = invasion
-		can_grant_claim = yes
 		can_call_crusade = yes
-		can_retire_to_monastery = yes
-		priests_can_inherit = no
-		rel_head_defense = yes
+		join_crusade_if_bordering_hostile = yes
+		can_grant_invasion_cb = invasion
+		
+		max_consorts = 3 # Can take concubines
+
+		feminist = yes      # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
+		
+		divine_blood = yes # Sacred close-kin marriage mechanics
+		pc_marriage = yes # Parent/child marriage allowed
+		bs_marriage = yes # Brother/sister marriage allowed
+		
+		religious_clothing_head = 5
+		religious_clothing_priest = 5
 		
 		intermarry = canaanite
 		intermarry = hellenic_pagan
@@ -220,16 +394,60 @@ polytheistic = {
 			megalithic_dark_one
 		}
 		
-		investiture = yes
-		can_grant_divorce = yes
-		can_grant_invasion_cb = invasion
-		can_grant_claim = yes
-		can_call_crusade = yes
-		can_retire_to_monastery = yes
-		priests_can_inherit = no
-		rel_head_defense = yes
+		reformed = megalithic_reformed
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+
+		priests_can_marry = yes
+		dislike_tribal_organization = yes
+		can_demand_religious_conversion = no
+		allow_looting = yes
+		female_temple_holders = yes
+		max_consorts = 3
 		
 		intermarry = canaanite
+		intermarry = megalithic_reformed
+	}
+
+
+	megalithic_reformed = {
+		graphical_culture = pagangfx
+
+		icon = 5
+		heresy_icon = 6
+		
+		color = { 0.5 0.36 0.3 }
+		
+		crusade_name = GREAT_HOLY_WAR
+		use_new_crusade = yes
+		crusade_cb = new_crusade
+		scripture_name = megalithic_scripture
+		priest_title = PRIEST
+		
+		high_god_name = gurzil
+		
+		god_names = { #taken from Omperator Wiki
+			sinifere shaheded nanna_tala
+		}
+		
+		evil_god_names = { #maybe improvable
+			megalithic_dark_one
+		}
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
+		allow_looting = yes
+		max_consorts = 3
+
+		allow_in_ruler_designer = no
+		
+		intermarry = megalithic
 	}
 
 	cybelene = {
@@ -256,16 +474,58 @@ polytheistic = {
 			cybelene_dark_god
 		}
 		
-		investiture = yes
-		can_grant_divorce = yes
-		can_grant_invasion_cb = invasion
-		can_grant_claim = yes
-		can_call_crusade = yes
-		can_retire_to_monastery = yes
-		priests_can_inherit = no
-		rel_head_defense = yes
+		reformed = cybelene_reformed
 		
-		#intermarry = catholic
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+
+		priests_can_marry = yes
+		dislike_tribal_organization = yes
+		can_demand_religious_conversion = no
+		allow_looting = yes
+		female_temple_holders = yes
+		max_consorts = 3
+		
+		intermarry = cybelene_reformed
+	}
+
+	cybelene_reformed = {
+		graphical_culture = persiangfx
+
+		icon = 5
+		heresy_icon = 6
+		
+		color = { 0.23 0.3 0.22 }
+		
+		crusade_name = GREAT_HOLY_WAR
+		use_new_crusade = yes
+		crusade_cb = new_crusade
+		scripture_name = cybelene_scripture
+		priest_title = PRIEST
+		
+		high_god_name = cybele
+		
+		god_names = {
+			attis god_ma agdistis dactyls god_men kakasbos sandon agdistis
+		}
+		
+		evil_god_names = { #Improvable
+			cybelene_dark_god
+		}
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
+		allow_looting = yes
+		max_consorts = 3
+
+		allow_in_ruler_designer = no
+		
+		intermarry = cybelene
 	}
 
 	scythian = {
@@ -292,17 +552,61 @@ polytheistic = {
 			scythian_dark_god
 		}
 		
-		investiture = yes
-		can_grant_divorce = yes
-		can_grant_invasion_cb = invasion
-		can_grant_claim = yes
-		can_call_crusade = yes
-		can_retire_to_monastery = yes
-		priests_can_inherit = no
-		rel_head_defense = yes
+		reformed = scythian_reformed
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+
+		priests_can_marry = yes
+		dislike_tribal_organization = yes
+		can_demand_religious_conversion = no
+		allow_looting = yes
+		female_temple_holders = yes
+		max_consorts = 3
+		
+		intermarry = scythian_reformed
 		
 		intermarry = canaanite
 		intermarry = hellenic_pagan
+	}
+
+	scythian_reformed = {
+		graphical_culture = mongolgfx
+
+		icon = 5
+		heresy_icon = 6
+		
+		color = { 0.71 0.8 0.4 }
+		
+		crusade_name = GREAT_HOLY_WAR
+		use_new_crusade = yes
+		crusade_cb = new_crusade
+		scripture_name = scythian_scripture
+		priest_title = PRIEST
+		
+		high_god_name = Papaios
+		
+		god_names = {
+			goitosyrus thagimasadas api_god tabiti argimpasa targitaos
+		}
+		
+		evil_god_names = {
+			scythian_dark_god
+		}
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
+		allow_looting = yes
+		max_consorts = 3
+
+		allow_in_ruler_designer = no
+		
+		intermarry = scythian
 	}
 
 	khaldic = {
@@ -329,20 +633,64 @@ polytheistic = {
 			khaldic_dark_god
 		}
 		
-		investiture = yes
-		can_grant_divorce = yes
-		can_grant_invasion_cb = invasion
-		can_grant_claim = yes
-		can_call_crusade = yes
-		can_retire_to_monastery = yes
-		priests_can_inherit = no
-		rel_head_defense = yes
+		reformed = khaldic_reformed
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+
+		priests_can_marry = yes
+		dislike_tribal_organization = yes
+		can_demand_religious_conversion = no
+		allow_looting = yes
+		female_temple_holders = yes
+		max_consorts = 3
+		
+		intermarry = khaldic_reformed
 		
 		intermarry = zoroastrian
 		intermarry = zalmoxian
 		intermarry = hellenic_pagan
 		intermarry = sumerian
 		intermarry = canaanite
+	}
+
+	khaldic_reformed = {
+		graphical_culture = persiangfx
+
+		icon = 5
+		heresy_icon = 6
+		
+		color = { 0.4 0.2 0.3 }
+		
+		crusade_name = GREAT_HOLY_WAR
+		use_new_crusade = yes
+		crusade_cb = new_crusade
+		scripture_name = khaldic_scripture
+		priest_title = PRIEST
+		
+		high_god_name = khaldi
+		
+		god_names = {
+			shivini theispas arubani dsvininaue epaninaue bagvarti huba
+		}
+		
+		evil_god_names = {
+			khaldic_dark_god
+		}
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
+		allow_looting = yes
+		max_consorts = 3
+
+		allow_in_ruler_designer = no
+		
+		intermarry = khaldic
 	}
 
 	armazic = {
@@ -369,16 +717,58 @@ polytheistic = {
 			armazic_dark_god
 		}
 		
-		investiture = yes
-		can_grant_divorce = yes
-		can_grant_invasion_cb = invasion
-		can_grant_claim = yes
-		can_call_crusade = yes
-		can_retire_to_monastery = yes
-		priests_can_inherit = no
-		rel_head_defense = yes
+		reformed = armazic_reformed
 		
-		#intermarry = catholic
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+
+		priests_can_marry = yes
+		dislike_tribal_organization = yes
+		can_demand_religious_conversion = no
+		allow_looting = yes
+		female_temple_holders = yes
+		max_consorts = 3
+		
+		intermarry = armazic_reformed
+	}
+
+	armazic_reformed = {
+		graphical_culture = persiangfx
+
+		icon = 5
+		heresy_icon = 6
+		
+		color = { 0.4 0.2 0.5 }
+		
+		crusade_name = GREAT_HOLY_WAR
+		use_new_crusade = yes
+		crusade_cb = new_crusade
+		scripture_name = armazic_scripture
+		priest_title = PRIEST
+		
+		high_god_name = kopala
+		
+		god_names = {
+			zadeni armazi ghmerti dali ga_god adgilis_deda gacim
+		}
+		
+		evil_god_names = {
+			armazic_dark_god
+		}
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
+		allow_looting = yes
+		max_consorts = 3
+
+		allow_in_ruler_designer = no
+		
+		intermarry = armazic
 	}
 
 	arabic = {
@@ -405,16 +795,64 @@ polytheistic = {
 			"suly_hram"
 		}
 		
-		investiture = yes
-		can_grant_divorce = yes
-		can_grant_invasion_cb = invasion
-		can_grant_claim = yes
-		can_call_crusade = yes
-		can_retire_to_monastery = yes
-		priests_can_inherit = no
-		rel_head_defense = yes
+		reformed = arabic_reformed
 		
-		#intermarry = catholic
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+
+		dislike_tribal_organization = yes
+		can_demand_religious_conversion = no
+		allow_looting = yes
+		female_temple_holders = yes
+		max_consorts = 3
+		priests_can_marry = yes
+		psc_marriage = no # Disallow uncle-nice and aunt-nephew marriages
+		max_wives = 4
+		matrilineal_marriages = no
+		
+		intermarry = arabic_reformed
+	}
+
+	arabic_reformed = {
+		graphical_culture = persiangfx
+
+		icon = 5
+		heresy_icon = 6
+		
+		color = { 0.36 0.7 0.28 }
+		
+		crusade_name = CRUSADE
+		use_new_crusade = yes
+		crusade_cb = new_crusade
+		scripture_name = arabic_scripture
+		priest_title = PRIEST
+		
+		high_god_name = dushara #Specific to the Nabateans but works
+		
+		god_names = {
+			ailiah ta_lab orotalt manat al_qaum al_kutbay al_uzza
+		}
+		
+		evil_god_names = {
+			"suly_hram"
+		}
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
+		allow_looting = yes
+		max_consorts = 3
+		psc_marriage = no # Disallow uncle-nice and aunt-nephew marriages
+		max_wives = 4
+		matrilineal_marriages = no
+
+		allow_in_ruler_designer = no
+		
+		intermarry = arabic
 	}
 
 	ritualistic = {
@@ -441,17 +879,62 @@ polytheistic = {
 			angra_mainyu
 		}
 		
-		investiture = yes
-		can_grant_divorce = yes
-		can_grant_invasion_cb = invasion
-		can_grant_claim = yes
-		can_call_crusade = yes
-		can_retire_to_monastery = yes
-		priests_can_inherit = no
-		rel_head_defense = yes
+		reformed = ritualistic_reformed
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+
+		priests_can_marry = yes
+		dislike_tribal_organization = yes
+		can_demand_religious_conversion = no
+		allow_looting = yes
+		female_temple_holders = yes
+		max_consorts = 3
+		
+		intermarry = ritualistic_reformed
 		
 		intermarry = sumerian
 		intermarry = zoroastrian
+	}
+
+	ritualistic_reformed = {
+		graphical_culture = persiangfx
+
+		icon = 5
+		heresy_icon = 6
+		
+		color = { 0.87 0.38 0.28 }
+		
+		crusade_name = GREAT_HOLY_WAR
+		use_new_crusade = yes
+		crusade_cb = new_crusade
+		scripture_name = ritualistic_scripture
+		priest_title = PRIEST
+		
+		high_god_name = yazata
+		
+		god_names = { #Took some Zoroastrian elmeents there
+			tishtrya mah_god
+		}
+		
+		evil_god_names = {
+			angra_mainyu
+		}
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
+		allow_looting = yes
+		max_consorts = 3
+
+		allow_in_ruler_designer = no
+		
+		intermarry = ritualistic
+
 	}
 
 	sumerian = {
@@ -478,17 +961,61 @@ polytheistic = {
 			tiamat lamashtu
 		}
 		
-		investiture = yes
-		can_grant_divorce = yes
-		can_grant_invasion_cb = invasion
-		can_grant_claim = yes
-		can_call_crusade = yes
-		can_retire_to_monastery = yes
-		priests_can_inherit = no
-		rel_head_defense = yes
+		reformed = sumerian_reformed
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+
+		priests_can_marry = yes
+		dislike_tribal_organization = yes
+		can_demand_religious_conversion = no
+		allow_looting = yes
+		female_temple_holders = yes
+		max_consorts = 3
+		
+		intermarry = sumerian_reformed
 		
 		intermarry = canaanite
 		intermarry = cybelene
+	}
+
+	sumerian_reformed = {
+		graphical_culture = persiangfx
+
+		icon = 5
+		heresy_icon = 6
+		
+		color = { 0.6 0.25 0.1 }
+		
+		crusade_name = GREAT_HOLY_WAR
+		use_new_crusade = yes
+		crusade_cb = new_crusade
+		scripture_name = sumerian_scripture
+		priest_title = PRIEST
+		
+		high_god_name = marduk
+		
+		god_names = {
+			elil ea_god nergal ninlil nabu shamash ishtar ningirsu dumuzi
+		}
+		
+		evil_god_names = {
+			tiamat lamashtu
+		}
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
+		allow_looting = yes
+		max_consorts = 3
+
+		allow_in_ruler_designer = no
+		
+		intermarry = sumerian
 	}
 
 
