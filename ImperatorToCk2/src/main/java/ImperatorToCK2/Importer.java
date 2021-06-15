@@ -486,8 +486,7 @@ public class Importer
                 }
                 else if (qaaa.split(" = ")[0].equals("ImperatorModPath")){
                     output[2] = qaaa.split(" = ")[1];
-                    output[2] = output[0].substring(1,output[2].length()-1);
-
+                    output[2] = output[2].substring(1,output[2].length()-1);
                 }
                 else if (qaaa.split(" = ")[0].equals("targetGameModPath")){
                     output[3] = qaaa.split(" = ")[1];

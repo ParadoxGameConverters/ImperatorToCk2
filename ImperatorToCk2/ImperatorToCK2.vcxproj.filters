@@ -96,5 +96,8 @@
     <CopyFileToFolders Include="DataFiles\supportedModLoc.txt">
       <Filter>Data Files\Configuration</Filter>
     </CopyFileToFolders>
+    <CopyFileToFolders Include="DataFiles\titleConversion.txt">
+      <Filter>Data Files\Configuration</Filter>
+    </CopyFileToFolders>
   </ItemGroup>
 </Project>

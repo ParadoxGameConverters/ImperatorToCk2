@@ -18,7 +18,10 @@ public class Directories
 
     public static int modFolders (String Dir,String modName ) throws IOException
     {
-        //Nessicery to create all of the folders required for the mod
+        //Necessary to create all of the folders required for the mod
+        File output = new File(Dir);
+        output.mkdir();
+
         int aqv = 0;
         boolean  endOrNot2 = true;
         String VM = "\\";
