@@ -10,6 +10,44 @@ polytheistic = {
 	
 	color = { 0.75 0.9 0.73 }
 
+	canaanite_reformed = {
+		graphical_culture = jewishgfx
+
+		icon = 5
+		heresy_icon = 6
+		
+		color = { 0.5 0.1 0.8 }
+		
+		crusade_name = GREAT_HOLY_WAR
+		use_new_crusade = yes
+		crusade_cb = new_crusade
+		scripture_name = canaanite_scripture
+		priest_title = PRIEST
+		
+		high_god_name = canaanite_high_god
+		
+		god_names = {
+			dagan astargatis ashima aglibol shadrafa sydyk baal tanit
+		}
+		
+		evil_god_names = {
+			lotan yam
+		}
+		
+		priests_can_marry = no
+		priests_can_inherit = no
+		
+		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
+		
+		religious_clothing_head = 7
+		religious_clothing_priest = 7
+		
+		allow_in_ruler_designer = no
+		
+		intermarry = canaanite
+	}
+
 	canaanite = {
 		graphical_culture = jewishgfx
 
@@ -48,46 +86,49 @@ polytheistic = {
 		intermarry = egyptian
 		intermarry = sumerian
 		intermarry = cybelene
+		intermarry = canaanite_reformed
 	}
+	
 
-	canaanite_reformed = {
-		graphical_culture = jewishgfx
+	druidic_reformed = {
+		graphical_culture = pagangfx
 
 		icon = 5
 		heresy_icon = 6
 		
-		color = { 0.5 0.1 0.8 }
+		color = { 0.4 0.8 0.5 }
 		
 		crusade_name = GREAT_HOLY_WAR
 		use_new_crusade = yes
 		crusade_cb = new_crusade
-		scripture_name = canaanite_scripture
-		priest_title = PRIEST
+		scripture_name = druidic_scripture
+		priest_title = druid_priest
 		
-		high_god_name = canaanite_high_god
+		high_god_name = taranis
 		
 		god_names = {
-			dagan astargatis ashima aglibol shadrafa sydyk baal tanit
+			cerunnos epona vinotonus toutatis condatis belenos belisama artio intarabus 
 		}
 		
 		evil_god_names = {
-			lotan yam
+			balor
 		}
+
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
 		
-		priests_can_marry = no
-		priests_can_inherit = no
-		
+		priests_can_marry = yes
+		female_temple_holders = yes
 		can_call_crusade = yes
 		join_crusade_if_bordering_hostile = yes
-		
-		religious_clothing_head = 7
-		religious_clothing_priest = 7
-		
+		allow_looting = yes
+		max_consorts = 3
+
 		allow_in_ruler_designer = no
 		
-		intermarry = canaanite
+		intermarry = druidic
 	}
-	
+
 	druidic = {
 		graphical_culture = pagangfx
 
@@ -131,30 +172,30 @@ polytheistic = {
 		intermarry = druidic_reformed
 	}
 
-	druidic_reformed = {
+	iberian_reformed = {
 		graphical_culture = pagangfx
 
 		icon = 5
 		heresy_icon = 6
 		
-		color = { 0.4 0.8 0.5 }
+		color = { 1.0 0.5 0.1 }
 		
 		crusade_name = GREAT_HOLY_WAR
 		use_new_crusade = yes
 		crusade_cb = new_crusade
-		scripture_name = druidic_scripture
-		priest_title = druid_priest
+		scripture_name = iberian_scripture
+		priest_title = PRIEST
 		
-		high_god_name = taranis
+		high_god_name = iberian_high_god
 		
 		god_names = {
-			cerunnos epona vinotonus toutatis condatis belenos belisama artio intarabus 
+			candamius semnocosus cariocecus ataecina eacus betatun dercetius endouellicus
 		}
 		
 		evil_god_names = {
-			balor
+			iberian_dark_one
 		}
-
+		
 		religious_clothing_head = 14
 		religious_clothing_priest = 3
 		
@@ -167,7 +208,7 @@ polytheistic = {
 
 		allow_in_ruler_designer = no
 		
-		intermarry = druidic
+		intermarry = iberian
 	}
 
 	iberian = {
@@ -209,28 +250,28 @@ polytheistic = {
 		intermarry = iberian_reformed
 	}
 
-	iberian_reformed = {
+	zalmoxian_reformed = {
 		graphical_culture = pagangfx
 
 		icon = 5
 		heresy_icon = 6
 		
-		color = { 1.0 0.5 0.1 }
+		color = { 1.0 0.6 0.6 }
 		
 		crusade_name = GREAT_HOLY_WAR
 		use_new_crusade = yes
 		crusade_cb = new_crusade
-		scripture_name = iberian_scripture
+		scripture_name = zalmoxian_scripture
 		priest_title = PRIEST
 		
-		high_god_name = iberian_high_god
+		high_god_name = gabeleisos
 		
 		god_names = {
-			candamius semnocosus cariocecus ataecina eacus betatun dercetius endouellicus
+			zalmoxis pleistoros sabazios zibelthiurdos bassareus derzelas semele bendis
 		}
 		
-		evil_god_names = {
-			iberian_dark_one
+		evil_god_names = { #made up something
+			zalmoxian_dark_god
 		}
 		
 		religious_clothing_head = 14
@@ -244,8 +285,8 @@ polytheistic = {
 		max_consorts = 3
 
 		allow_in_ruler_designer = no
-		
-		intermarry = iberian
+
+		intermarry = zalmoxian
 	}
 
 	zalmoxian = {
@@ -285,45 +326,6 @@ polytheistic = {
 		max_consorts = 3
 
 		intermarry = zalmoxian_reformed
-	}
-
-	zalmoxian_reformed = {
-		graphical_culture = pagangfx
-
-		icon = 5
-		heresy_icon = 6
-		
-		color = { 1.0 0.6 0.6 }
-		
-		crusade_name = GREAT_HOLY_WAR
-		use_new_crusade = yes
-		crusade_cb = new_crusade
-		scripture_name = zalmoxian_scripture
-		priest_title = PRIEST
-		
-		high_god_name = gabeleisos
-		
-		god_names = {
-			zalmoxis pleistoros sabazios zibelthiurdos bassareus derzelas semele bendis
-		}
-		
-		evil_god_names = { #made up something
-			zalmoxian_dark_god
-		}
-		
-		religious_clothing_head = 14
-		religious_clothing_priest = 3
-		
-		priests_can_marry = yes
-		female_temple_holders = yes
-		can_call_crusade = yes
-		join_crusade_if_bordering_hostile = yes
-		allow_looting = yes
-		max_consorts = 3
-
-		allow_in_ruler_designer = no
-
-		intermarry = zalmoxian
 	}
 
 	egyptian = {
@@ -370,6 +372,46 @@ polytheistic = {
 		intermarry = hellenic_pagan
 	}
 
+
+	megalithic_reformed = {
+		graphical_culture = pagangfx
+
+		icon = 5
+		heresy_icon = 6
+		
+		color = { 0.5 0.36 0.3 }
+		
+		crusade_name = GREAT_HOLY_WAR
+		use_new_crusade = yes
+		crusade_cb = new_crusade
+		scripture_name = megalithic_scripture
+		priest_title = PRIEST
+		
+		high_god_name = gurzil
+		
+		god_names = { #taken from Omperator Wiki
+			sinifere shaheded nanna_tala
+		}
+		
+		evil_god_names = { #maybe improvable
+			megalithic_dark_one
+		}
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
+		allow_looting = yes
+		max_consorts = 3
+
+		allow_in_ruler_designer = no
+		
+		intermarry = megalithic
+	}
+
 	megalithic = {
 		graphical_culture = pagangfx
 
@@ -410,29 +452,28 @@ polytheistic = {
 		intermarry = megalithic_reformed
 	}
 
-
-	megalithic_reformed = {
-		graphical_culture = pagangfx
+	cybelene_reformed = {
+		graphical_culture = persiangfx
 
 		icon = 5
 		heresy_icon = 6
 		
-		color = { 0.5 0.36 0.3 }
+		color = { 0.23 0.3 0.22 }
 		
 		crusade_name = GREAT_HOLY_WAR
 		use_new_crusade = yes
 		crusade_cb = new_crusade
-		scripture_name = megalithic_scripture
+		scripture_name = cybelene_scripture
 		priest_title = PRIEST
 		
-		high_god_name = gurzil
+		high_god_name = cybele
 		
-		god_names = { #taken from Omperator Wiki
-			sinifere shaheded nanna_tala
+		god_names = {
+			attis god_ma agdistis dactyls god_men kakasbos sandon agdistis
 		}
 		
-		evil_god_names = { #maybe improvable
-			megalithic_dark_one
+		evil_god_names = { #Improvable
+			cybelene_dark_god
 		}
 		
 		religious_clothing_head = 14
@@ -447,7 +488,7 @@ polytheistic = {
 
 		allow_in_ruler_designer = no
 		
-		intermarry = megalithic
+		intermarry = cybelene
 	}
 
 	cybelene = {
@@ -489,28 +530,28 @@ polytheistic = {
 		intermarry = cybelene_reformed
 	}
 
-	cybelene_reformed = {
-		graphical_culture = persiangfx
+	scythian_reformed = {
+		graphical_culture = mongolgfx
 
 		icon = 5
 		heresy_icon = 6
 		
-		color = { 0.23 0.3 0.22 }
+		color = { 0.71 0.8 0.4 }
 		
 		crusade_name = GREAT_HOLY_WAR
 		use_new_crusade = yes
 		crusade_cb = new_crusade
-		scripture_name = cybelene_scripture
+		scripture_name = scythian_scripture
 		priest_title = PRIEST
 		
-		high_god_name = cybele
+		high_god_name = Papaios
 		
 		god_names = {
-			attis god_ma agdistis dactyls god_men kakasbos sandon agdistis
+			goitosyrus thagimasadas api_god tabiti argimpasa targitaos
 		}
 		
-		evil_god_names = { #Improvable
-			cybelene_dark_god
+		evil_god_names = {
+			scythian_dark_god
 		}
 		
 		religious_clothing_head = 14
@@ -525,7 +566,7 @@ polytheistic = {
 
 		allow_in_ruler_designer = no
 		
-		intermarry = cybelene
+		intermarry = scythian
 	}
 
 	scythian = {
@@ -570,28 +611,28 @@ polytheistic = {
 		intermarry = hellenic_pagan
 	}
 
-	scythian_reformed = {
-		graphical_culture = mongolgfx
+	khaldic_reformed = {
+		graphical_culture = persiangfx
 
 		icon = 5
 		heresy_icon = 6
 		
-		color = { 0.71 0.8 0.4 }
+		color = { 0.4 0.2 0.3 }
 		
 		crusade_name = GREAT_HOLY_WAR
 		use_new_crusade = yes
 		crusade_cb = new_crusade
-		scripture_name = scythian_scripture
+		scripture_name = khaldic_scripture
 		priest_title = PRIEST
 		
-		high_god_name = Papaios
+		high_god_name = khaldi
 		
 		god_names = {
-			goitosyrus thagimasadas api_god tabiti argimpasa targitaos
+			shivini theispas arubani dsvininaue epaninaue bagvarti huba
 		}
 		
 		evil_god_names = {
-			scythian_dark_god
+			khaldic_dark_god
 		}
 		
 		religious_clothing_head = 14
@@ -606,7 +647,7 @@ polytheistic = {
 
 		allow_in_ruler_designer = no
 		
-		intermarry = scythian
+		intermarry = khaldic
 	}
 
 	khaldic = {
@@ -654,84 +695,6 @@ polytheistic = {
 		intermarry = canaanite
 	}
 
-	khaldic_reformed = {
-		graphical_culture = persiangfx
-
-		icon = 5
-		heresy_icon = 6
-		
-		color = { 0.4 0.2 0.3 }
-		
-		crusade_name = GREAT_HOLY_WAR
-		use_new_crusade = yes
-		crusade_cb = new_crusade
-		scripture_name = khaldic_scripture
-		priest_title = PRIEST
-		
-		high_god_name = khaldi
-		
-		god_names = {
-			shivini theispas arubani dsvininaue epaninaue bagvarti huba
-		}
-		
-		evil_god_names = {
-			khaldic_dark_god
-		}
-		
-		religious_clothing_head = 14
-		religious_clothing_priest = 3
-		
-		priests_can_marry = yes
-		female_temple_holders = yes
-		can_call_crusade = yes
-		join_crusade_if_bordering_hostile = yes
-		allow_looting = yes
-		max_consorts = 3
-
-		allow_in_ruler_designer = no
-		
-		intermarry = khaldic
-	}
-
-	armazic = {
-		graphical_culture = persiangfx
-
-		icon = 5
-		heresy_icon = 6
-		
-		color = { 0.3 0.1 0.4 }
-		
-		crusade_name = GREAT_HOLY_WAR
-		use_new_crusade = yes
-		crusade_cb = new_crusade
-		scripture_name = armazic_scripture
-		priest_title = PRIEST
-		
-		high_god_name = kopala
-		
-		god_names = {
-			zadeni armazi ghmerti dali ga_god adgilis_deda gacim
-		}
-		
-		evil_god_names = {
-			armazic_dark_god
-		}
-		
-		reformed = armazic_reformed
-		
-		religious_clothing_head = 14
-		religious_clothing_priest = 3
-
-		priests_can_marry = yes
-		dislike_tribal_organization = yes
-		can_demand_religious_conversion = no
-		allow_looting = yes
-		female_temple_holders = yes
-		max_consorts = 3
-		
-		intermarry = armazic_reformed
-	}
-
 	armazic_reformed = {
 		graphical_culture = persiangfx
 
@@ -771,46 +734,43 @@ polytheistic = {
 		intermarry = armazic
 	}
 
-	arabic = {
+	armazic = {
 		graphical_culture = persiangfx
 
 		icon = 5
 		heresy_icon = 6
 		
-		color = { 0.26 0.6 0.18 }
+		color = { 0.3 0.1 0.4 }
 		
-		crusade_name = CRUSADE
+		crusade_name = GREAT_HOLY_WAR
 		use_new_crusade = yes
 		crusade_cb = new_crusade
-		scripture_name = arabic_scripture
+		scripture_name = armazic_scripture
 		priest_title = PRIEST
 		
-		high_god_name = dushara #Specific to the Nabateans but works
+		high_god_name = kopala
 		
 		god_names = {
-			ailiah ta_lab orotalt manat al_qaum al_kutbay al_uzza
+			zadeni armazi ghmerti dali ga_god adgilis_deda gacim
 		}
 		
 		evil_god_names = {
-			"suly_hram"
+			armazic_dark_god
 		}
 		
-		reformed = arabic_reformed
+		reformed = armazic_reformed
 		
 		religious_clothing_head = 14
 		religious_clothing_priest = 3
 
+		priests_can_marry = yes
 		dislike_tribal_organization = yes
 		can_demand_religious_conversion = no
 		allow_looting = yes
 		female_temple_holders = yes
 		max_consorts = 3
-		priests_can_marry = yes
-		psc_marriage = no # Disallow uncle-nice and aunt-nephew marriages
-		max_wives = 4
-		matrilineal_marriages = no
 		
-		intermarry = arabic_reformed
+		intermarry = armazic_reformed
 	}
 
 	arabic_reformed = {
@@ -855,46 +815,46 @@ polytheistic = {
 		intermarry = arabic
 	}
 
-	ritualistic = {
+	arabic = {
 		graphical_culture = persiangfx
 
 		icon = 5
 		heresy_icon = 6
 		
-		color = { 0.77 0.28 0.18 }
+		color = { 0.26 0.6 0.18 }
 		
-		crusade_name = GREAT_HOLY_WAR
+		crusade_name = CRUSADE
 		use_new_crusade = yes
 		crusade_cb = new_crusade
-		scripture_name = ritualistic_scripture
+		scripture_name = arabic_scripture
 		priest_title = PRIEST
 		
-		high_god_name = yazata
+		high_god_name = dushara #Specific to the Nabateans but works
 		
-		god_names = { #Took some Zoroastrian elmeents there
-			tishtrya mah_god
+		god_names = {
+			ailiah ta_lab orotalt manat al_qaum al_kutbay al_uzza
 		}
 		
 		evil_god_names = {
-			angra_mainyu
+			"suly_hram"
 		}
 		
-		reformed = ritualistic_reformed
+		reformed = arabic_reformed
 		
 		religious_clothing_head = 14
 		religious_clothing_priest = 3
 
-		priests_can_marry = yes
 		dislike_tribal_organization = yes
 		can_demand_religious_conversion = no
 		allow_looting = yes
 		female_temple_holders = yes
 		max_consorts = 3
+		priests_can_marry = yes
+		psc_marriage = no # Disallow uncle-nice and aunt-nephew marriages
+		max_wives = 4
+		matrilineal_marriages = no
 		
-		intermarry = ritualistic_reformed
-		
-		intermarry = sumerian
-		intermarry = zoroastrian
+		intermarry = arabic_reformed
 	}
 
 	ritualistic_reformed = {
@@ -937,6 +897,87 @@ polytheistic = {
 
 	}
 
+	ritualistic = {
+		graphical_culture = persiangfx
+
+		icon = 5
+		heresy_icon = 6
+		
+		color = { 0.77 0.28 0.18 }
+		
+		crusade_name = GREAT_HOLY_WAR
+		use_new_crusade = yes
+		crusade_cb = new_crusade
+		scripture_name = ritualistic_scripture
+		priest_title = PRIEST
+		
+		high_god_name = yazata
+		
+		god_names = { #Took some Zoroastrian elmeents there
+			tishtrya mah_god
+		}
+		
+		evil_god_names = {
+			angra_mainyu
+		}
+		
+		reformed = ritualistic_reformed
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+
+		priests_can_marry = yes
+		dislike_tribal_organization = yes
+		can_demand_religious_conversion = no
+		allow_looting = yes
+		female_temple_holders = yes
+		max_consorts = 3
+		
+		intermarry = ritualistic_reformed
+		
+		intermarry = sumerian
+		intermarry = zoroastrian
+	}
+
+	sumerian_reformed = {
+		graphical_culture = persiangfx
+
+		icon = 5
+		heresy_icon = 6
+		
+		color = { 0.6 0.25 0.1 }
+		
+		crusade_name = GREAT_HOLY_WAR
+		use_new_crusade = yes
+		crusade_cb = new_crusade
+		scripture_name = sumerian_scripture
+		priest_title = PRIEST
+		
+		high_god_name = marduk
+		
+		god_names = {
+			elil ea_god nergal ninlil nabu shamash ishtar ningirsu dumuzi
+		}
+		
+		evil_god_names = {
+			tiamat lamashtu
+		}
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
+		allow_looting = yes
+		max_consorts = 3
+
+		allow_in_ruler_designer = no
+		
+		intermarry = sumerian
+	}
+
 	sumerian = {
 		graphical_culture = persiangfx
 
@@ -977,45 +1018,6 @@ polytheistic = {
 		
 		intermarry = canaanite
 		intermarry = cybelene
-	}
-
-	sumerian_reformed = {
-		graphical_culture = persiangfx
-
-		icon = 5
-		heresy_icon = 6
-		
-		color = { 0.6 0.25 0.1 }
-		
-		crusade_name = GREAT_HOLY_WAR
-		use_new_crusade = yes
-		crusade_cb = new_crusade
-		scripture_name = sumerian_scripture
-		priest_title = PRIEST
-		
-		high_god_name = marduk
-		
-		god_names = {
-			elil ea_god nergal ninlil nabu shamash ishtar ningirsu dumuzi
-		}
-		
-		evil_god_names = {
-			tiamat lamashtu
-		}
-		
-		religious_clothing_head = 14
-		religious_clothing_priest = 3
-		
-		priests_can_marry = yes
-		female_temple_holders = yes
-		can_call_crusade = yes
-		join_crusade_if_bordering_hostile = yes
-		allow_looting = yes
-		max_consorts = 3
-
-		allow_in_ruler_designer = no
-		
-		intermarry = sumerian
 	}
 
 
