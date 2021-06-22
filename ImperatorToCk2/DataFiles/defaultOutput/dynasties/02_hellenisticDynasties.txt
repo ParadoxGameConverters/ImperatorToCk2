@@ -1,0 +1,1045 @@
+5330000=
+{
+	name="Agathoklid"
+	culture="hellenistic"
+}
+5330001=
+{
+	name="Alketid"
+	culture="hellenistic"
+}
+5330002=
+{
+	name="Apollonid"
+	culture="hellenistic"
+}
+5330003=
+{
+	name="Aratid"
+	culture="hellenistic"
+}
+5330004=
+{
+	name="Helladid"
+	culture="hellenistic"
+}
+5330005=
+{
+	name="Omirid"
+	culture="hellenistic"
+}
+5330006=
+{
+	name="Peithid"
+	culture="hellenistic"
+}
+5330007=
+{
+	name="Peneid"
+	culture="hellenistic"
+}
+5330008=
+{
+	name="Philonid"
+	culture="hellenistic"
+}
+5330009=
+{
+	name="Proktid"
+	culture="hellenistic"
+}
+53300010=
+{
+	name="Pytheid"
+	culture="hellenistic"
+}
+53300011=
+{
+	name="Sosiklid"
+	culture="hellenistic"
+}
+53300012=
+{
+	name="Tauromeneid"
+	culture="hellenistic"
+}
+53300013=
+{
+	name="Therid"
+	culture="hellenistic"
+}
+53300014=
+{
+	name="Theronid"
+	culture="hellenistic"
+}
+53300015=
+{
+	name="Timolid"
+	culture="hellenistic"
+}
+53300016=
+{
+	name="Xenonid"
+	culture="hellenistic"
+}
+53300017=
+{
+	name="Zagreid"
+	culture="hellenistic"
+}
+53300018=
+{
+	name="Zosimid"
+	culture="hellenistic"
+}
+53300019=
+{
+	name="Zotikid"
+	culture="hellenistic"
+}
+53300020=
+{
+	name="Pelopid"
+	culture="hellenistic"
+}
+53300021=
+{
+	name="Philetid"
+	culture="hellenistic"
+}
+53300022=
+{
+	name="Proteid"
+	culture="hellenistic"
+}
+53300023=
+{
+	name="Zenonid"
+	culture="hellenistic"
+}
+53300024=
+{
+	name="Sostratid"
+	culture="hellenistic"
+}
+53300025=
+{
+	name="Tauriskid"
+	culture="hellenistic"
+}
+53300026=
+{
+	name="Sosthenid"
+	culture="hellenistic"
+}
+53300027=
+{
+	name="Pyhrrid"
+	culture="hellenistic"
+}
+53300028=
+{
+	name="Leonidid"
+	culture="hellenistic"
+}
+53300029=
+{
+	name="Killistratid"
+	culture="hellenistic"
+}
+53300030=
+{
+	name="Nikoklid"
+	culture="hellenistic"
+}
+53300031=
+{
+	name="Pantauchid"
+	culture="hellenistic"
+}
+53300032=
+{
+	name="Leukonid"
+	culture="hellenistic"
+}
+53300033=
+{
+	name="Onomastid"
+	culture="hellenistic"
+}
+53300034=
+{
+	name="Kephistodid"
+	culture="hellenistic"
+}
+53300035=
+{
+	name="Karsid"
+	culture="hellenistic"
+}
+53300036=
+{
+	name="Nikokrid"
+	culture="hellenistic"
+}
+53300037=
+{
+	name="Persid"
+	culture="hellenistic"
+}
+53300038=
+{
+	name="Hippostratid"
+	culture="hellenistic"
+}
+53300039=
+{
+	name="Epandrid"
+	culture="hellenistic"
+}
+53300040=
+{
+	name="Gylippid"
+	culture="hellenistic"
+}
+53300041=
+{
+	name="Helenid"
+	culture="hellenistic"
+}
+53300042=
+{
+	name="Megalid"
+	culture="hellenistic"
+}
+53300043=
+{
+	name="Charinid"
+	culture="hellenistic"
+}
+53300044=
+{
+	name="Dydid"
+	culture="hellenistic"
+}
+53300045=
+{
+	name="Dionid"
+	culture="hellenistic"
+}
+53300046=
+{
+	name="Hiketasid"
+	culture="hellenistic"
+}
+53300047=
+{
+	name="Stratoklid"
+	culture="hellenistic"
+}
+53300048=
+{
+	name="Spartokid"
+	culture="hellenistic"
+}
+53300049=
+{
+	name="Stratonikid"
+	culture="hellenistic"
+}
+53300050=
+{
+	name="Taurid"
+	culture="hellenistic"
+}
+53300051=
+{
+	name="Timaid"
+	culture="hellenistic"
+}
+53300052=
+{
+	name="Timarchid"
+	culture="hellenistic"
+}
+53300053=
+{
+	name="Timoleid"
+	culture="hellenistic"
+}
+53300054=
+{
+	name="Timotheid"
+	culture="hellenistic"
+}
+53300055=
+{
+	name="Tryphid"
+	culture="hellenistic"
+}
+53300056=
+{
+	name="Xanthippid"
+	culture="hellenistic"
+}
+53300057=
+{
+	name="Xenarid"
+	culture="hellenistic"
+}
+53300058=
+{
+	name="Xenokratid"
+	culture="hellenistic"
+}
+53300059=
+{
+	name="Xenophid"
+	culture="hellenistic"
+}
+53300060=
+{
+	name="Zenid"
+	culture="hellenistic"
+}
+53300061=
+{
+	name="Lagid"
+	culture="hellenistic"
+}
+53300062=
+{
+	name="Magid"
+	culture="hellenistic"
+}
+53300063=
+{
+	name="Euryklid"
+	culture="hellenistic"
+}
+53300064=
+{
+	name="Aleuadai"
+	culture="hellenistic"
+}
+53300065=
+{
+	name="Philaidai"
+	culture="hellenistic"
+}
+53300066=
+{
+	name="Demostenid"
+	culture="hellenistic"
+}
+53300067=
+{
+	name="Achaid"
+	culture="hellenistic"
+}
+53300068=
+{
+	name="Agatharchidid"
+	culture="hellenistic"
+}
+53300069=
+{
+	name="Agathid"
+	culture="hellenistic"
+}
+53300070=
+{
+	name="Agelaid"
+	culture="hellenistic"
+}
+53300071=
+{
+	name="Agenid"
+	culture="hellenistic"
+}
+53300072=
+{
+	name="Agesipolid"
+	culture="hellenistic"
+}
+53300073=
+{
+	name="Agid"
+	culture="hellenistic"
+}
+53300074=
+{
+	name="Aknonid"
+	culture="hellenistic"
+}
+53300075=
+{
+	name="Akrotatid"
+	culture="hellenistic"
+}
+53300076=
+{
+	name="Alexandrid"
+	culture="hellenistic"
+}
+53300077=
+{
+	name="Alexarchid"
+	culture="hellenistic"
+}
+53300078=
+{
+	name="Alketid"
+	culture="hellenistic"
+}
+53300079=
+{
+	name="Alkimid"
+	culture="hellenistic"
+}
+53300080=
+{
+	name="Amantid"
+	culture="hellenistic"
+}
+53300081=
+{
+	name="Amnytid"
+	culture="hellenistic"
+}
+53300082=
+{
+	name="Amphoterid"
+	culture="hellenistic"
+}
+53300083=
+{
+	name="Anaxarchid"
+	culture="hellenistic"
+}
+53300084=
+{
+	name="Anaxikratid"
+	culture="hellenistic"
+}
+53300085=
+{
+	name="Anaximandrid"
+	culture="hellenistic"
+}
+53300086=
+{
+	name="Andagorid"
+	culture="hellenistic"
+}
+53300087=
+{
+	name="Andromachid"
+	culture="hellenistic"
+}
+53300088=
+{
+	name="Andromenid"
+	culture="hellenistic"
+}
+53300089=
+{
+	name="Andronikid"
+	culture="hellenistic"
+}
+53300090=
+{
+	name="Apollodorid"
+	culture="hellenistic"
+}
+53300091=
+{
+	name="Aristodemid"
+	culture="hellenistic"
+}
+53300092=
+{
+	name="Asandrid"
+	culture="hellenistic"
+}
+53300093=
+{
+	name="Bryaxid"
+	culture="hellenistic"
+}
+53300094=
+{
+	name="Charid"
+	culture="hellenistic"
+}
+53300095=
+{
+	name="Charidemid"
+	culture="hellenistic"
+}
+53300096=
+{
+	name="Chariklid"
+	culture="hellenistic"
+}
+53300097=
+{
+	name="Demadid"
+	culture="hellenistic"
+}
+53300098=
+{
+	name="Eupolemid"
+	culture="hellenistic"
+}
+53300099=
+{
+	name="Gorgid"
+	culture="hellenistic"
+}
+533000100=
+{
+	name="Gylippid"
+	culture="hellenistic"
+}
+533000101=
+{
+	name="Hekataid"
+	culture="hellenistic"
+}
+533000102=
+{
+	name="Aramid"
+	culture="hellenistic"
+}
+533000103=
+{
+	name="Aramid"
+	culture="hellenistic"
+}
+533000104=
+{
+	name="Aramids"
+	culture="hellenistic"
+}
+533000105=
+{
+	name="Aramid"
+	culture="hellenistic"
+}
+533000106=
+{
+	name="Arid"
+	culture="hellenistic"
+}
+533000107=
+{
+	name="Arids"
+	culture="hellenistic"
+}
+533000108=
+{
+	name="Arid"
+	culture="hellenistic"
+}
+533000109=
+{
+	name="Arkhids"
+	culture="hellenistic"
+}
+533000110=
+{
+	name="Arkhid"
+	culture="hellenistic"
+}
+533000111=
+{
+	name="Asinid"
+	culture="hellenistic"
+}
+533000112=
+{
+	name="Asinid"
+	culture="hellenistic"
+}
+533000113=
+{
+	name="Asinids"
+	culture="hellenistic"
+}
+533000114=
+{
+	name="Asinid"
+	culture="hellenistic"
+}
+533000115=
+{
+	name="Arsacid"
+	culture="hellenistic"
+}
+533000116=
+{
+	name="Arsacid"
+	culture="hellenistic"
+}
+533000117=
+{
+	name="Arsacids"
+	culture="hellenistic"
+}
+533000118=
+{
+	name="Arsacid"
+	culture="hellenistic"
+}
+533000119=
+{
+	name="Deiocid"
+	culture="hellenistic"
+}
+533000120=
+{
+	name="Deiocid"
+	culture="hellenistic"
+}
+533000121=
+{
+	name="Deiocids"
+	culture="hellenistic"
+}
+533000122=
+{
+	name="Deiocid"
+	culture="hellenistic"
+}
+533000123=
+{
+	name="Menid"
+	culture="hellenistic"
+}
+533000124=
+{
+	name="Menid"
+	culture="hellenistic"
+}
+533000125=
+{
+	name="Menids"
+	culture="hellenistic"
+}
+533000126=
+{
+	name="Menid"
+	culture="hellenistic"
+}
+533000127=
+{
+	name="Pacorid"
+	culture="hellenistic"
+}
+533000128=
+{
+	name="Pacorid"
+	culture="hellenistic"
+}
+533000129=
+{
+	name="Pacorids"
+	culture="hellenistic"
+}
+533000130=
+{
+	name="Pacorid"
+	culture="hellenistic"
+}
+533000131=
+{
+	name="Savacid"
+	culture="hellenistic"
+}
+533000132=
+{
+	name="Savacid"
+	culture="hellenistic"
+}
+533000133=
+{
+	name="Savacids"
+	culture="hellenistic"
+}
+533000134=
+{
+	name="Savacid"
+	culture="hellenistic"
+}
+533000135=
+{
+	name="Vardanid"
+	culture="hellenistic"
+}
+533000136=
+{
+	name="Vardanid"
+	culture="hellenistic"
+}
+533000137=
+{
+	name="Vardanids"
+	culture="hellenistic"
+}
+533000138=
+{
+	name="Vardanid"
+	culture="hellenistic"
+}
+533000139=
+{
+	name="Suren"
+	culture="hellenistic"
+}
+533000140=
+{
+	name="Suren"
+	culture="hellenistic"
+}
+533000141=
+{
+	name="Surenids"
+	culture="hellenistic"
+}
+533000142=
+{
+	name="Surenid"
+	culture="hellenistic"
+}
+533000143=
+{
+	name="Karin"
+	culture="hellenistic"
+}
+533000144=
+{
+	name="Karin"
+	culture="hellenistic"
+}
+533000145=
+{
+	name="Karinids"
+	culture="hellenistic"
+}
+533000146=
+{
+	name="Karinid"
+	culture="hellenistic"
+}
+533000147=
+{
+	name="Gaumatid"
+	culture="hellenistic"
+}
+533000148=
+{
+	name="Gaumatid"
+	culture="hellenistic"
+}
+533000149=
+{
+	name="Gaumatids"
+	culture="hellenistic"
+}
+533000150=
+{
+	name="Gaumatid"
+	culture="hellenistic"
+}
+533000151=
+{
+	name="Gobryasids"
+	culture="hellenistic"
+}
+533000152=
+{
+	name="Gobryasid"
+	culture="hellenistic"
+}
+533000153=
+{
+	name="Hydarnid"
+	culture="hellenistic"
+}
+533000154=
+{
+	name="Hydarnid"
+	culture="hellenistic"
+}
+533000155=
+{
+	name="Hydarnids"
+	culture="hellenistic"
+}
+533000156=
+{
+	name="Hydarnid"
+	culture="hellenistic"
+}
+533000157=
+{
+	name="Smerdid"
+	culture="hellenistic"
+}
+533000158=
+{
+	name="Smerdid"
+	culture="hellenistic"
+}
+533000159=
+{
+	name="Smerdids"
+	culture="hellenistic"
+}
+533000160=
+{
+	name="Smerdid"
+	culture="hellenistic"
+}
+533000161=
+{
+	name="Vivanid"
+	culture="hellenistic"
+}
+533000162=
+{
+	name="Vivanid"
+	culture="hellenistic"
+}
+533000163=
+{
+	name="Vivanids"
+	culture="hellenistic"
+}
+533000164=
+{
+	name="Vivanid"
+	culture="hellenistic"
+}
+533000165=
+{
+	name="Xerxid"
+	culture="hellenistic"
+}
+533000166=
+{
+	name="Xerxid"
+	culture="hellenistic"
+}
+533000167=
+{
+	name="Xerxids"
+	culture="hellenistic"
+}
+533000168=
+{
+	name="Xerxid"
+	culture="hellenistic"
+}
+533000169=
+{
+	name="Abadanid"
+	culture="hellenistic"
+}
+533000170=
+{
+	name="Abadanid"
+	culture="hellenistic"
+}
+533000171=
+{
+	name="Abadanids"
+	culture="hellenistic"
+}
+533000172=
+{
+	name="Abadanid"
+	culture="hellenistic"
+}
+533000173=
+{
+	name="Orontids"
+	culture="hellenistic"
+}
+533000174=
+{
+	name="Orontid"
+	culture="hellenistic"
+}
+533000175=
+{
+	name="Atropatid"
+	culture="hellenistic"
+}
+533000176=
+{
+	name="Atropatid"
+	culture="hellenistic"
+}
+533000177=
+{
+	name="Atropatids"
+	culture="hellenistic"
+}
+533000178=
+{
+	name="Atropatid"
+	culture="hellenistic"
+}
+533000179=
+{
+	name="Mithridatid"
+	culture="hellenistic"
+}
+533000180=
+{
+	name="Mithridatid"
+	culture="hellenistic"
+}
+533000181=
+{
+	name="Mithridatids"
+	culture="hellenistic"
+}
+533000182=
+{
+	name="Mithridatid"
+	culture="hellenistic"
+}
+533000183=
+{
+	name="Artiaxid"
+	culture="hellenistic"
+}
+533000184=
+{
+	name="Artiaxid"
+	culture="hellenistic"
+}
+533000185=
+{
+	name="Artiaxids"
+	culture="hellenistic"
+}
+533000186=
+{
+	name="Artiaxid"
+	culture="hellenistic"
+}
+533000187=
+{
+	name="Sassanid"
+	culture="hellenistic"
+}
+533000188=
+{
+	name="Sassanid"
+	culture="hellenistic"
+}
+533000189=
+{
+	name="Sassanids"
+	culture="hellenistic"
+}
+533000190=
+{
+	name="Sassanid"
+	culture="hellenistic"
+}
+533000191=
+{
+	name="Mihranid"
+	culture="hellenistic"
+}
+533000192=
+{
+	name="Mihranid"
+	culture="hellenistic"
+}
+533000193=
+{
+	name="Mihranids"
+	culture="hellenistic"
+}
+533000194=
+{
+	name="Mihranid"
+	culture="hellenistic"
+}
+533000195=
+{
+	name="Chosroid"
+	culture="hellenistic"
+}
+533000196=
+{
+	name="Chosroid"
+	culture="hellenistic"
+}
+533000197=
+{
+	name="Chosroids"
+	culture="hellenistic"
+}
+533000198=
+{
+	name="Chosroid"
+	culture="hellenistic"
+}
+533000199=
+{
+	name="Artashid"
+	culture="hellenistic"
+}
+533000200=
+{
+	name="Artashid"
+	culture="hellenistic"
+}
+533000201=
+{
+	name="Artashids"
+	culture="hellenistic"
+}
+533000202=
+{
+	name="Artashid"
+	culture="hellenistic"
+}
+533000203=
+{
+	name="Bagabignid"
+	culture="hellenistic"
+}
+533000204=
+{
+	name="Bagabignids"
+	culture="hellenistic"
+}
+533000205=
+{
+	name="Bagabignid"
+	culture="hellenistic"
+}
+533000206=
+{
+	name="Cambysid"
+	culture="hellenistic"
+}
+533000207=
+{
+	name="Cambysids"
+	culture="hellenistic"
+}
+533000208=
+{
+	name="Frataraka"
+	culture="hellenistic"
+}
