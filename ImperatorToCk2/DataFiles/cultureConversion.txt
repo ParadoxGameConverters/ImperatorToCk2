@@ -27,6 +27,8 @@ ionian,greek
 #bithynian,greek
 cypriot,greek
 thessalian,greek
+greco_indian,greek
+hellenistic,hellenistic
 
 #Latin
 
