@@ -1,4 +1,4 @@
-package ImperatorToCK2;
+package ImperatorToCK2;  
 
 import java.util.Scanner;
 import java.io.IOException;
@@ -815,6 +815,126 @@ public class Output
         out.println ("Log File for I:R to CK II converter");
         out.println ("If I:R to CK II crashes or has problems, send this log file and your I:R save game to the Paradox Converter team ASAP!");
         out.println ("");
+        out.flush();
+        fileOut.close();
+
+    }
+
+    public static void dejureTitleCreation(ArrayList<String[]> impTagInfo, int empireRank, int[] ck2LandTot, ArrayList<String> dejureDuchies,
+    ArrayList<String> impSubjectInfo, String Directory) throws IOException
+    {
+
+        String tab = "	";
+        String VM = "\\"; 
+        VM = VM.substring(0);
+        Directory = Directory + VM + "common" + VM + "landed_titles";
+        FileOutputStream fileOut= new FileOutputStream(Directory + VM + "titlesDejure.txt"); //CK II's engine is picky with the file name
+        PrintWriter out = new PrintWriter(fileOut);
+
+        int aqq = 0;
+
+        while (aqq < dejureDuchies.size()) {
+
+            String duchy = dejureDuchies.get(aqq).split(",")[2];
+            String tag = dejureDuchies.get(aqq).split(",")[0];
+            String region = dejureDuchies.get(aqq).split(",")[3];
+            String culture = dejureDuchies.get(aqq).split(",")[1];
+
+            if (tag.equals("99999") || tag.equals("none") || tag.equals("null")) {
+
+            } 
+
+            else if (tag.equals("9999")) { //uncolonized province, creates dejure provinces based off of culture
+
+                String[] cultureTitles = Processing.defaultDejureConversion(culture);
+                cultureTitles = Processing.calculateUsedTitles(cultureTitles,impTagInfo); //determines if tag exists in I:R
+
+                out.println (cultureTitles[1]+" = {");
+                out.println (tab+cultureTitles[2]+" = {");
+                out.println (tab+tab+duchy+" = {");
+                out.println (tab+tab+"}");
+                out.println (tab+"}");
+                out.println ("}");
+
+            } else {
+
+                int tagID = Integer.parseInt(tag);
+
+                String rank = "k";
+
+                if (ck2LandTot[tagID] >= empireRank) {
+                    rank = "e";
+
+                    int aq2 = 0;
+
+                    int flag = 0;
+
+                    out.println (rank+"_"+impTagInfo.get(tagID)[0]+" = {");
+
+                    if (impTagInfo.get(tagID)[20] != "none") {
+                        String[] governorships = impTagInfo.get(tagID)[20].split(",");
+                        aq2 = 0;
+                        while (aq2 < governorships.length) {
+                            String govReg = governorships[aq2].split("~")[0];
+                            if (region.equals(govReg)) {
+                                tag = impTagInfo.get(tagID)[0]+"__"+govReg;
+                                aq2 = aq2 + governorships.length;
+                                flag = 1;
+
+                            } else {
+                                aq2 = aq2 + 1;    
+                            }
+                        }
+
+                    }
+
+                    if (flag == 0) {
+                        out.println (tab+"k"+"_"+impTagInfo.get(tagID)[0]+" = {");
+                    } else {
+                        out.println (tab+"k"+"_"+tag+" = {");
+                    }
+
+                    out.println (tab+tab+duchy+" = {");
+                    out.println (tab+tab+"}");
+                    out.println (tab+"}");
+
+                    out.println ("}");
+
+                }
+                else {
+                    int subjectOrNot = Processing.checkSubjectList(tagID,impSubjectInfo);
+                    int flag2 = 0;
+
+                    if (subjectOrNot != 9999) { //if tag is not free
+                        String[] subjectInfo = impSubjectInfo.get(subjectOrNot).split(",");
+                            tagID = Integer.parseInt(subjectInfo[0]);
+
+                            if (ck2LandTot[tagID] >= empireRank) { //if overlord is e tier, give subject dejure land with overlord as liege
+                                out.println (tagID+" = {");
+                                tagID = Integer.parseInt(tag);
+                                flag2 = 1;
+                            }
+                    } else { //if tag is independent k tier, assign appropriate dejure culture empire liege
+                        String[] cultureTitles = Processing.defaultDejureConversion(cultureOutput(impTagInfo.get(tagID)[6]));
+                        cultureTitles = Processing.calculateUsedTitles(cultureTitles,impTagInfo); //determines if tag exists in I:R
+                        out.println (cultureTitles[1]+" = {");
+                    }
+
+                    out.println (tab+rank+"_"+impTagInfo.get(tagID)[0]+" = {");
+                    out.println (tab+tab+duchy+" = {");
+                    out.println (tab+tab+"}");
+                    out.println (tab+"}");
+
+                    if (subjectOrNot == 9999 || flag2 == 1) {
+                        out.println ("}");
+                    }
+                }
+            }
+
+            aqq = aqq + 1;
+
+        }
+
         out.flush();
         fileOut.close();
 
