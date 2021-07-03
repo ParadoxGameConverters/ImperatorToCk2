@@ -1,4 +1,4 @@
-package ImperatorToCK2;
+package ImperatorToCK2;  
 import java.util.Scanner;
 import java.io.IOException;
 import java.io.FileInputStream;
@@ -82,7 +82,7 @@ public class Processing
         return ck2ProvInfo[typeToCollect][aq2];
     }
 
-    public static String[] importNames (String name, int provIDnum, String ck2Dir) throws IOException
+    public static String[] importNames (String name, int provIDnum, String ck2Dir) throws IOException //Imports CK II prov name
     {
 
         String provID = Integer.toString(provIDnum);
@@ -484,7 +484,7 @@ public class Processing
         return color;
 
     }
-    
+
     public static String randomizeColorGrey ()
     {
 
@@ -497,7 +497,7 @@ public class Processing
         return color;
 
     }
-    
+
     public static String randomizeAge ()
     {
 
@@ -602,7 +602,7 @@ public class Processing
 
     }
 
-    public static int combineProvConvList(String source, String destination) throws IOException
+    public static int combineProvConvList(String source, String destination) throws IOException //combines the two province mapping files into one
     {
 
         String[] toAdd = convertProvConvList("provinceConversion2.txt","provinceConversion2Formatted.txt");
@@ -697,7 +697,6 @@ public class Processing
         try {
             String qaaa = scnr.nextLine();
 
-
             if (qaaa.equals ("great_work_manager={")) {
                 flag = 1;
 
@@ -742,14 +741,14 @@ public class Processing
 
         return name;
     }
-    
+
     public static String convertTitle(String name, String rank, String title, String defaultTitle) throws IOException
     {// Converts dynamically generated title to vanilla counterpart
         String tmpTitle = Importer.importCultList(name,rank+"_"+title)[1];//converts title
         //Output.logPrint(tmpTitle);
         tmpTitle = tmpTitle.replace((rank+"_"),"");
         //Output.logPrint(tmpTitle);
-        
+
         if (tmpTitle.equals("99999") || tmpTitle.equals("peq")) {//if there is no vanilla match
             return defaultTitle;
         } else {
@@ -758,6 +757,294 @@ public class Processing
 
         return title;
     }
-    
+
+    public static ArrayList<String> calculateDuchyNameList (String ck2Dir, String[][] ck2ProvInfo) throws IOException
+    {
+
+        ArrayList<String> output = new ArrayList<String>(); //owner,culture,duchy
+
+        int aqq = 0;
+
+        int aq2 = 0;
+
+        ArrayList<String> duchies = Importer.importDuchyNameList(ck2Dir);
+
+        ArrayList<String> provNameList = new ArrayList<String>();
+
+        while (aqq < 3000) {
+
+            String provName = importNames("a",aqq,ck2Dir)[0];
+
+            provName = formatProvName(provName);
+
+            if (aqq == 103) { //Leon in Brittany and Spain have the same name in definition.csv
+                provName = "french_leon";  
+            }
+
+            provNameList.add(provName);
+
+            aqq = aqq + 1;
+
+        }
+
+        while (aq2 < duchies.size()) {
+
+            String[] countyList = duchies.get(aq2).split(",");
+
+            String duchy = countyList[0];
+
+            if (countyList.length == 1) {
+
+            } else {
+
+                int aq4 = 0;
+
+                String provCultTotal = "QQQ";
+                String provTagTotal = "QQQ";
+                String provRegTotal = "QQQ";
+
+                while (aq4 < provNameList.size()) {
+
+                    String ckProvName = provNameList.get(aq4);
+
+                    int aq3 = 1;
+
+                    while (aq3 < countyList.length) {
+                        if (countyList[aq3].split("c_")[1].equals(ckProvName)) {
+
+                            provCultTotal = provCultTotal + "," + Output.cultureOutput(ck2ProvInfo[1][aq4]);
+                            provCultTotal = provCultTotal.replace("QQQ,","");
+                            provTagTotal = provTagTotal + "," + ck2ProvInfo[0][aq4];
+                            provTagTotal = provTagTotal.replace("QQQ,","");
+                            provRegTotal = provRegTotal + "," + ck2ProvInfo[4][aq4];
+                            provRegTotal = provRegTotal.replace("QQQ,","");
+
+                        }
+                        aq3 = aq3 + 1;
+                    }
+
+                    aq4 = aq4 + 1;
+
+                }
+
+                String culture = calcDuchyMajority(provCultTotal);
+                String tag = calcDuchyMajority(provTagTotal);
+                String region = calcDuchyMajority(provRegTotal);
+
+                output.add(tag+","+culture+","+duchy+","+region);
+
+            }
+
+            aq2 = aq2 + 1;
+
+        }
+
+        return output;
+    }
+
+    public static String calcDuchyMajority (String duchy) throws IOException //calculates majority dejure ownership of duchy
+    {
+
+        String[] counties = duchy.split(",");
+
+        int aqq = 0;
+
+        ArrayList<String> count = new ArrayList<String>();
+
+        while (aqq < counties.length) {
+            if (aqq == 0) {
+                count.add("debug");
+            }
+            int aq2 = 0;
+            while (aq2 < count.size()) {
+                if (counties[aqq] == count.get(aq2)) {
+                    count.set(aq2,count.get(aq2)+","+counties[aqq]);
+                } else if (counties[aqq] != "null" && counties[aqq] != "99999") {
+                    count.add(counties[aqq]);
+                }
+                aq2 = aq2 + 1;
+            }
+
+            aqq = aqq + 1;
+
+        }
+
+        int aq3 = 0;
+
+        int countNum = 0;
+
+        int id = 0;
+
+        while (aq3 < count.size()) {
+            if (count.get(aq3).split(",").length > countNum) {
+                countNum = count.get(aq3).split(",").length;
+                id = aq3;
+            }
+            aq3 = aq3 + 1;
+        }
+
+        id = id - 1;
+
+        duchy = counties[id];
+
+        return duchy;
+    }
+
+    public static String formatProvName (String provName) throws IOException //formats province name to internal format
+    {
+
+        provName = provName.toLowerCase();
+        provName = provName.replace(" ","_");
+        provName = provName.replace("-","_");
+
+        if (provName.equals("padua")) {
+
+            provName = "padova";
+        }
+
+        else if (provName.equals("angseley")) {
+
+            provName = "anglesey";
+        }
+
+        else if (provName.equals("padua")) {
+
+            provName = "padova";
+        }
+
+        else if (provName.equals("aurilliac")) {
+
+            provName = "aurillac";
+        }
+
+        else if (provName.equals("el_arish")) {
+
+            provName = "el-arish";
+        }
+
+        else if (provName.equals("augstgau")) {
+
+            provName = "aargau";
+        }
+
+        else if (provName.equals("franken")) {
+
+            provName = "wurzburg";
+        }
+
+        else if (provName.equals("nidaros")) {
+
+            provName = "trondelag";
+        }
+
+        else if (provName.equals("jarnbaraland")) {
+
+            provName = "dalarna";
+        } 
+
+        else if (provName.equals("trans_portage")) {
+
+            provName = "trans-portage";
+        }  
+
+        else if (provName.equals("morava")) {
+
+            provName = "znojmo";
+        }
+
+        else if (provName.equals("sieradzko_leczyckie")) {
+
+            provName = "sieradzko-leczyckie";
+        }
+
+        else if (provName.equals("sieradzko_leczyckie")) {
+
+            provName = "sieradzko-leczyckie";
+        }
+
+        else if (provName.equals("desht_i_kipchak")) {
+
+            provName = "desht-i-kipchak";
+        }
+
+        else if (provName.equals("kara_kum")) {
+
+            provName = "kara-kum";
+        }
+
+        else if (provName.equals("petra") || provName.equals("al'_aqabah")|| provName.equals("al_'aqabah")) {
+
+            provName = "al_aqabah";
+        }
+
+        else if (provName.equals("anti_atlas")) {
+
+            provName = "anti-atlas";
+        }
+
+        else if (provName.equals("asaita")) {
+
+            provName = "asayita";
+        }
+
+        else if (provName.equals("al_qusair")) {
+
+            provName = "alqusair";
+        }
+
+        else if (provName.equals("kyzyl_su")) {
+
+            provName = "kyzyl-su";
+        }
+
+        return provName;
+
+    }
+
+    public static String[] defaultDejureConversion(String cult) throws IOException
+    {
+
+        String VM = "\\"; 
+        VM = VM.substring(0);
+
+        String ck2CultureInfo; //e_title,k_title
+
+        Importer importer = new Importer();
+
+        String[] dejureTitles = importer.importDejureList("dejureConversion.txt",cult);
+
+        return dejureTitles;
+    }
+
+    public static String[] calculateUsedTitles(String[] cultureTitles, ArrayList<String[]> impTagInfo) throws IOException //calculates if titles exist
+    {
+
+        String VM = "\\"; 
+        VM = VM.substring(0);
+
+        String ck2CultureInfo; //e_title,k_title
+
+        int aqq = 0;
+        
+        int flag = 0; //Sets it so that only the first correct tag becomes cultureTitle. 
+        
+        int flag2 = 0; //Defeated civil war tags will still exist in save, causing calc to set non-existant civil war faction as cultureTitle without flags
+
+        while (aqq < impTagInfo.size()) {
+            if (("e_"+impTagInfo.get(aqq)[21]).equals(cultureTitles[1]) && flag == 0) {
+                cultureTitles[1] = "e_"+impTagInfo.get(aqq)[0];
+                flag = 1;
+            }
+
+            if (("k_"+impTagInfo.get(aqq)[21]).equals(cultureTitles[2]) && flag2 == 0) {
+                cultureTitles[2] = "k_"+impTagInfo.get(aqq)[0];
+                flag2 = 1;
+            }
+            aqq = aqq + 1;
+
+        }
+
+        return cultureTitles;
+    }
 
 }
