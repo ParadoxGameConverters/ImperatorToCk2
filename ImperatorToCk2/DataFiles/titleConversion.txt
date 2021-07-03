@@ -26,3 +26,4 @@ k_DAN,k_denmark
 k_ZHZ,k_guge
 k_ANH,k_andhra
 k_ASR,k_mesopotamia
+k_KHT,k_khotan
