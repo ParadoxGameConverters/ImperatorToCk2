@@ -1,0 +1,131 @@
+e_GAU = {
+	color={ 94 130 94 }
+	color2={ 94 130 94 }
+}
+
+k_GAU = {
+	color={ 94 130 94 }
+	color2={ 94 130 94 }
+}
+
+e_EGT = {
+	color={ 177 183 23 }
+	color2={ 177 183 23 }
+}
+
+k_EGT = {
+	color={ 177 183 23 }
+	color2={ 177 183 23 }
+}
+
+k_BGG = {
+	color={ 143 155 109 }
+	color2={ 143 155 109 }
+}
+
+e_CAR = {
+	color={ 74 174 85 }
+	color2={ 74 174 85 }
+}
+
+k_CAR = {
+	color={ 74 174 85 }
+	color2={ 74 174 85 }
+}
+
+k_ALB = {
+	color={ 221 138 69 }
+	color2={ 221 138 69 }
+}
+
+
+e_HBR = {
+	color={ 216 184 15 }
+	color2={ 216 184 15 }
+}
+
+k_HBR = {
+	color={ 216 184 15 }
+	color2={ 216 184 15 }
+}
+
+k_CBR = {
+	color={ 255 170 0 }
+	color2={ 255 170 0 }
+}
+
+k_NRM = {
+	color={ 122 116 116 }
+	color2={ 122 116 116 }
+}
+
+e_HLA = {
+	color={ 147 90 156 }
+	color2={ 147 90 156 }
+}
+
+e_DAC = {
+	color={ 105 113 123 }
+	color2={ 105 113 123 }
+}
+
+k_DAC = {
+	color={ 105 113 123 }
+	color2={ 105 113 123 }
+}
+
+k_ROM = {
+	color={ 139 16 13 }
+	color2={ 139 16 13 }
+}
+
+e_ALX = {
+	color={ 34 108 210 }
+	color2={ 34 108 210 }
+}
+
+k_BOI = {
+	color={ 85 7 71 }
+	color2={ 85 7 71 }
+}
+
+k_LST = {
+	color={ 103 78 107 }
+	color2={ 103 78 107 }
+}
+
+k_SAR = {
+	color={ 223 180 78 }
+	color2={ 223 180 78 }
+}
+
+k_PAP = {
+	color={ 32 10 166 }
+	color2={ 32 10 166 }
+}
+
+k_PPN = {
+	color={ 204 161 197 }
+	color2={ 204 161 197 }
+}
+
+k_RAE = {
+	color={ 204 21 203 }
+	color2={ 204 21 203 }
+}
+
+k_VNT = {
+	color={ 20 20 203 }
+	color2={ 20 20 203 }
+}
+
+k_CCC = {
+	color={ 84 90 133 }
+	color2={ 84 90 133 }
+}
+
+k_SCY = {
+	color={ 50 152 100 }
+	color2={ 50 152 100 }
+}
+
