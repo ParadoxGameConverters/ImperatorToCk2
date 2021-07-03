@@ -1,4 +1,4 @@
-package ImperatorToCK2;   
+package ImperatorToCK2;      
 
 import java.util.Scanner;
 import java.io.IOException;
@@ -1039,5 +1039,112 @@ public class Importer
         return oldFile;
 
     }
+    
+    public static String[] importDejureList (String name, String provIDnum) throws IOException
+    {
+
+        FileInputStream fileIn= new FileInputStream(name);
+        Scanner scnr= new Scanner(fileIn);
+
+        int flag = 0;
+
+        boolean endOrNot = true;
+
+        String qaaa;
+        String[] output;   // culture e_title k_title
+        output = new String[3];
+
+        output[0] = "nomap"; //default for no mapping
+        output[1] = "nomap"; //default for no mapping
+        output[2] = "nomap"; //default for no mapping
+
+        try {
+            while (endOrNot = true){
+
+                qaaa = scnr.nextLine();
+
+                if (qaaa.split(",")[0].equals(provIDnum)){
+                    endOrNot = false;
+                    output[0] = qaaa.split(",")[0];
+                    output[1] = qaaa.split(",")[1];
+                    output[2] = qaaa.split(",")[2];
+
+                }
+            }
+
+        }catch (java.util.NoSuchElementException exception){
+            endOrNot = false;
+
+        }   
+
+        return output;
+
+    }
+    
+    public static ArrayList<String> importDuchyNameList (String ck2Dir) throws IOException //imports dejure duchies, along with the counties they go to
+    {
+
+        String VM = "\\";
+        VM = VM.substring(0);
+        String tab = "	";
+
+        FileInputStream fileIn= new FileInputStream(ck2Dir+VM+"common"+VM+"landed_titles"+VM+"landed_titles.txt");
+        Scanner scnr= new Scanner(fileIn);
+
+        String ckName = "debug";
+
+        String qaaa = scnr.nextLine();
+        String provName = "noProv";
+        String tab3 = tab+tab+tab;
+
+        String duchyWord = tab+tab+"d"; //Word used to identify duchies
+        String duchyWord2 = "        d"; //Bohemia and Moravia use different formatting
+        String countyWord = tab3+"c";
+        String countyWord2 = "            "+tab+"c";//Bohemia and Moravia use different formatting
+        String countyWord3 = "            c";
+        String countyWord4 = tab3+tab+"c";
+
+        ArrayList<String> duchies = new ArrayList<String>();
+
+        int aqq = 1;
+        int endOrNot = 0;
+
+        int flag2 = 0;
+
+        String duchyList = " ";
+
+        try {
+            while (endOrNot == 0){
+
+                if (qaaa.split("_")[0].equals(duchyWord) || qaaa.split("_")[0].equals(duchyWord2)) {
+
+                    duchies.add(duchyList);
+
+                    duchyList = qaaa.split(" = ")[0].replace(tab,"");
+                    aqq = aqq + 1;
+                }
+
+                if (qaaa.split("_")[0].equals(countyWord) || qaaa.split("_")[0].equals(countyWord2) || qaaa.split("_")[0].equals(countyWord3) ||
+                    qaaa.split("_")[0].equals(countyWord4)) {
+                    String county = qaaa.split(" = ")[0].replace(tab,"");
+                    duchyList = duchyList + "," + county;
+                    qaaa = scnr.nextLine();
+                }
+
+                qaaa = scnr.nextLine();
+
+                aqq = aqq + 1;
+
+            }
+
+        }catch (java.util.NoSuchElementException exception){
+            endOrNot = 1;
+
+        }   
+        return duchies;
+
+    }
+    
+    
     //developed originally by Shinymewtwo99
 }
