@@ -1,0 +1,54 @@
+#Localization for all default titles used for dejure calculation
+#Will only be used in case tag didn't exist in in I:R
+
+e_GAU;Gaul;Gaul;Gaul;;Gaul;;;;;;;;;x
+e_GAU_adj;Gallic;Gallic;Gallic;;Gallic;;;;;;;;;x
+k_GAU;Gaul;Gaul;Gaul;;Gaul;;;;;;;;;x
+k_GAU_adj;Gallic;Gallic;Gallic;;Gallic;;;;;;;;;x
+e_EGT;Egypt;Egypt;Ägypten;;Egypt;;;;;;;;;x
+e_EGT_adj;Egyptian;Ägyptische;Egyptian;;Egyptian;;;;;;;;;x
+k_EGT;Egypt;Egypt;Ägypten;;Egypt;;;;;;;;;x
+k_EGT_adj;Egyptian;Ägyptische;Egyptian;;Egyptian;;;;;;;;;x
+k_BGG;Belgia;Belgia;Belgia;;Belgia;;;;;;;;;x
+k_BGG_adj;Belgae;Belgae;Belgae;;Belgae;;;;;;;;;x
+e_CAR;Carthage;Carthage;Carthage;;Carthage;;;;;;;;;x
+e_CAR_adj;Carthaginian;Carthaginian;Carthaginian;;Carthaginian;;;;;;;;;x
+k_CAR;Carthage;Carthage;Carthage;;Carthage;;;;;;;;;x
+k_CAR_adj;Carthaginian;Carthaginian;Carthaginian;;Carthaginian;;;;;;;;;x
+k_ALB;Albania;Albania;Albania;;Albania;;;;;;;;;x
+k_ALB_adj;Albanian;Albanian;Albanian;;Albanian;;;;;;;;;x
+e_HBR;Greater Iberia;Greater Iberia;Greater Iberia;;Greater Iberia;;;;;;;;;x
+e_HBR_adj;Iberian;Iberian;Iberian;;Iberian;;;;;;;;;x
+k_CBR;Celtiberia;Celtiberia;Celtiberia;;Celtiberia;;;;;;;;;x
+k_CBR_adj;Celtiberian;Celtiberian;Celtiberian;;Celtiberian;;;;;;;;;x
+k_NRM;Noricum;Noricum;Noricum;;Noricum;;;;;;;;;x
+k_NRM_adj;Noric;Noric;Noric;;Noric;;;;;;;;;x
+e_HLA;Hellenic Empire;Hellenic Empire;Hellenic Empire;;Hellenic Empire;;;;;;;;;x
+e_HLA_adj;Hellenic;Hellenic;Hellenic;;Hellenic;;;;;;;;;x
+e_DAC;Dacia;Dacia;Dacia;;Dacia;;;;;;;;;x
+e_DAC_adj;Dacian;Dacian;Dacian;;Dacian;;;;;;;;;x
+k_DAC;Dacia;Dacia;Dacia;;Dacia;;;;;;;;;x
+k_DAC_adj;Dacian;Dacian;Dacian;;Dacian;;;;;;;;;x
+k_ROM;Rome;Rome;Rome;;Rome;;;;;;;;;x
+k_ROM_adj;Roman;Roman;Roman;;Roman;;;;;;;;;x
+e_ALX;Hellenistic Empire;Hellenistic Empire;Hellenistic Empire;;Hellenistic Empire;;;;;;;;;x
+e_ALX_adj;Hellenistic;Hellenistic;Hellenistic;;Hellenistic;;;;;;;;;x
+k_BOI;Boi;Boi;Boi;;Boi;;;;;;;;;x
+k_BOI_adj;Boian;Boian;Boian;;Boian;;;;;;;;;x
+k_LST;Lusitania;Lusitania;Lusitania;;Lusitania;;;;;;;;;x
+k_LST_adj;Lusitanian;Lusitanian;Lusitanian;;Lusitanian;;;;;;;;;x
+k_SAR;Sardinia;Sardinia;Sardinia;;Sardinia;;;;;;;;;x
+k_SAR_adj;Sardinian;Sardinian;Sardinian;;Sardinian;;;;;;;;;x
+k_PAP;Paphlagonia;Paphlagonia;Paphlagonia;;Paphlagonia;;;;;;;;;x
+k_PAP_adj;Paphlagonian;Paphlagonian;Paphlagonian;;Paphlagonian;;;;;;;;;x
+k_PPN;Phoenicia;Phoenicia;Phoenicia;;Phoenicia;;;;;;;;;x
+k_PPN_adj;Phoenician;Phoenician;Phoenician;;Phoenician;;;;;;;;;x
+k_RAE;Rhaetia;Rhaetia;Rhaetia;;Rhaetia;;;;;;;;;x
+k_RAE_adj;Rhaetian;Rhaetian;Rhaetian;;Rhaetian;;;;;;;;;x
+k_VNT;Veneto;Veneto;Veneto;;Veneto;;;;;;;;;x
+k_VNT_adj;Venetic;Venetic;Venetic;;Venetic;;;;;;;;;x
+k_CCC;Caledonian Confederacy;Caledonian Confederacy;Caledonian Confederacy;;Caledonian Confederacy;;;;;;;;;x
+k_CCC_adj;Caledonian;Caledonian;Caledonian;;Caledonian;;;;;;;;;x
+k_SCY;Scythia;Scythia;Scythia;;Scythia;;;;;;;;;x
+k_SCY_adj;Scythian;Scythian;Scythian;;Scythian;;;;;;;;;x
+
