@@ -1,4 +1,5 @@
 package ImperatorToCK2;  
+
 import java.util.Scanner;
 import java.io.IOException;
 import java.io.FileInputStream;
@@ -1004,11 +1005,6 @@ public class Processing
     public static String[] defaultDejureConversion(String cult) throws IOException
     {
 
-        String VM = "\\"; 
-        VM = VM.substring(0);
-
-        String ck2CultureInfo; //e_title,k_title
-
         Importer importer = new Importer();
 
         String[] dejureTitles = importer.importDejureList("dejureConversion.txt",cult);
@@ -1016,13 +1012,9 @@ public class Processing
         return dejureTitles;
     }
 
-    public static String[] calculateUsedTitles(String[] cultureTitles, ArrayList<String[]> impTagInfo) throws IOException //calculates if titles exist
+    public static String[] calculateUsedTitles(String[] cultureTitles, ArrayList<String[]> impTagInfo,int empireRank,int[] ck2LandTot) throws IOException
+    //calculates if titles exist
     {
-
-        String VM = "\\"; 
-        VM = VM.substring(0);
-
-        String ck2CultureInfo; //e_title,k_title
 
         int aqq = 0;
         
@@ -1031,7 +1023,7 @@ public class Processing
         int flag2 = 0; //Defeated civil war tags will still exist in save, causing calc to set non-existant civil war faction as cultureTitle without flags
 
         while (aqq < impTagInfo.size()) {
-            if (("e_"+impTagInfo.get(aqq)[21]).equals(cultureTitles[1]) && flag == 0) {
+            if (("e_"+impTagInfo.get(aqq)[21]).equals(cultureTitles[1]) && flag == 0 && ck2LandTot[aqq] >= empireRank) {
                 cultureTitles[1] = "e_"+impTagInfo.get(aqq)[0];
                 flag = 1;
             }
