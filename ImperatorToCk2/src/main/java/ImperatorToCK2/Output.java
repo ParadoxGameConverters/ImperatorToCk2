@@ -847,7 +847,7 @@ public class Output
             else if (tag.equals("9999")) { //uncolonized province, creates dejure provinces based off of culture
 
                 String[] cultureTitles = Processing.defaultDejureConversion(culture);
-                cultureTitles = Processing.calculateUsedTitles(cultureTitles,impTagInfo); //determines if tag exists in I:R
+                cultureTitles = Processing.calculateUsedTitles(cultureTitles,impTagInfo,empireRank,ck2LandTot); //determines if tag exists in I:R
 
                 out.println (cultureTitles[1]+" = {");
                 out.println (tab+cultureTitles[2]+" = {");
@@ -916,7 +916,7 @@ public class Output
                             }
                     } else { //if tag is independent k tier, assign appropriate dejure culture empire liege
                         String[] cultureTitles = Processing.defaultDejureConversion(cultureOutput(impTagInfo.get(tagID)[6]));
-                        cultureTitles = Processing.calculateUsedTitles(cultureTitles,impTagInfo); //determines if tag exists in I:R
+                        cultureTitles = Processing.calculateUsedTitles(cultureTitles,impTagInfo,empireRank,ck2LandTot); //determines if tag exists in I:R
                         out.println (cultureTitles[1]+" = {");
                     }
 
