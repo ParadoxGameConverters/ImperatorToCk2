@@ -1091,10 +1091,7 @@ public class Importer
         FileInputStream fileIn= new FileInputStream(ck2Dir+VM+"common"+VM+"landed_titles"+VM+"landed_titles.txt");
         Scanner scnr= new Scanner(fileIn);
 
-        String ckName = "debug";
-
         String qaaa = scnr.nextLine();
-        String provName = "noProv";
         String tab3 = tab+tab+tab;
 
         String duchyWord = tab+tab+"d"; //Word used to identify duchies
@@ -1108,8 +1105,6 @@ public class Importer
 
         int aqq = 1;
         int endOrNot = 0;
-
-        int flag2 = 0;
 
         String duchyList = " ";
 
