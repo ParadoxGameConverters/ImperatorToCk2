@@ -217,6 +217,22 @@ public class Importer
                                             qaaa = scnr.nextLine();
                                             qaaa = qaaa.split("=")[1];
                                             qaaa = qaaa.substring(1,qaaa.length()-1);
+                                            if (qaaa.equals("CIVILWAR_FACTION_NAME")) {
+                                                int civilWarFlag = 0;
+                                                while (civilWarFlag == 0) {
+                                                    qaaa = scnr.nextLine();
+                                                    qaaa = qaaa.replace(tab,"");
+                                                    if (qaaa.split("=")[0].equals("name")) {
+                                                        qaaa = qaaa.split("=")[1];
+                                                        qaaa = qaaa.substring(1,qaaa.length()-1);
+                                                        if (qaaa.equals("CIVILWAR_FACTION_NAME")) {
+                                                        } else {
+                                                            civilWarFlag = 1;
+                                                        }
+                                                    }
+                                                }
+                                                
+                                            }
                                             output[19] = "CIVILWAR-"+qaaa;
                                         }
                                     }
