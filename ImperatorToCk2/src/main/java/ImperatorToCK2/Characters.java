@@ -67,6 +67,7 @@ public class Characters
                     if (qaaa.split("=")[0].equals( tab+tab+"name" ) || qaaa.split("=")[0].equals( tab+tab+"custom_name" )) {
                         output[0] = qaaa.split("=")[1];
                         output[0] = output[0].substring(1,output[0].length()-1);
+                        output[0] = output[0].replace("_","'");
                     }
                     else if (qaaa.split("=")[0].equals( tab+"family_name" ) ) {
                         output[16] = qaaa.split("=")[1];
@@ -236,6 +237,7 @@ public class Characters
                         output = qaaa.split("=")[1];
                         output = output.substring(1,output.length()-1);
                         String tmpOutput = output+","+id;
+                        tmpOutput = tmpOutput.replace("_"," ");
                         dynList.add(tmpOutput);
                         output = "noName"; //default for no name
                         aqq = aqq + 1;

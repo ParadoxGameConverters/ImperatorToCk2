@@ -217,6 +217,21 @@ public class Importer
                                             qaaa = scnr.nextLine();
                                             qaaa = qaaa.split("=")[1];
                                             qaaa = qaaa.substring(1,qaaa.length()-1);
+                                            if (qaaa.equals("CIVILWAR_FACTION_NAME")) {
+                                                int civilWarFlag = 0;
+                                                while (civilWarFlag == 0) {
+                                                    qaaa = scnr.nextLine();
+                                                    qaaa = qaaa.replace(tab,"");
+                                                    if (qaaa.split("=")[0].equals("name")) {
+                                                        qaaa = qaaa.split("=")[1];
+                                                        qaaa = qaaa.substring(1,qaaa.length()-1);
+                                                        if (!qaaa.equals ("CIVILWAR_FACTION_NAME")) {
+                                                            civilWarFlag = 1;
+                                                        }
+                                                    }
+                                                }
+                                                
+                                            }
                                             output[19] = "CIVILWAR-"+qaaa;
                                         }
                                     }
@@ -665,8 +680,13 @@ public class Importer
                             output[0] = output[0].substring(3,output[0].length()-1);
 
                         }
+                        
+                        String adjName = tag.replace("_NAME","");
+                        String feuName = tag.replace("_FEUDATORY_NAME","_FEUDATORY_ADJECTIVE"); //for certain mission tags which have different formatting
 
-                        if (qaaa.split(":")[0].equals(" "+tag+"_ADJ") || qaaa.split(":")[0].equals(" "+tag+"_ADJECTIVE")){
+                        if (qaaa.split(":")[0].equals(" "+tag+"_ADJ") || qaaa.split(":")[0].equals(" "+tag+"_ADJECTIVE")
+                        || qaaa.split(":")[0].equals(" "+adjName+"_ADJ") || qaaa.split(":")[0].equals(" "+adjName+"_ADJECTIVE")
+                        || qaaa.split(":")[0].equals(" "+feuName)){
                             endOrNot = false;
                             output[1] = qaaa.split(":")[1];
                             output[1] = output[1].substring(3,output[1].length()-1);
