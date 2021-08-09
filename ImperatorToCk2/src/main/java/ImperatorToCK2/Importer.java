@@ -225,8 +225,7 @@ public class Importer
                                                     if (qaaa.split("=")[0].equals("name")) {
                                                         qaaa = qaaa.split("=")[1];
                                                         qaaa = qaaa.substring(1,qaaa.length()-1);
-                                                        if (qaaa.equals("CIVILWAR_FACTION_NAME")) {
-                                                        } else {
+                                                        if (!qaaa.equals ("CIVILWAR_FACTION_NAME")) {
                                                             civilWarFlag = 1;
                                                         }
                                                     }
