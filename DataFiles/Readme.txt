@@ -45,10 +45,10 @@ CREDITS
 
 An list of those who contributed effort to this mammoth undertaking
 
-Idhrendur									- Sanity Checks, Review, and Fronter integration
-Shinymewtwo99 (aka Dr. Dudelsack)			- Lead Developer and Programmer
-Thinking_waffle								- Testing, Ideas, and Translation
-Vladimir Ilyich Lenin						- Testing, Events
-Siawosh								        - Testing
+Idhrendur                             - Sanity Checks, Review, and Fronter integration
+Shinymewtwo99 (aka Dr. Dudelsack)     - Lead Developer and Programmer
+Thinking_waffle                       - Testing, Ideas, and Translation
+Vladimir Ilyich Lenin                 - Testing, Events
+Siawosh                               - Testing
 
  - AND ALL THE OTHERS WHO GAVE THEIR INPUT ON THE FORUM AND DISCORD -
