@@ -12,13 +12,14 @@ Windows development build: https://github.com/ParadoxGameConverters/ImperatorToC
 ----
 REQUIREMENTS
 ----
-Imperator - Versions 1.3.0 through 2.0.2
-CK2 - The Old Gods and/or Holy Fury DLC active to play Pagan faith characters
-    - The Old Gods DLC active to play Zoroastrian characters
-    - Sons of Abraham DLC active to play Jewish characters
-    - Rajas of India DLC active to play Eastern faith characters
-    - Holy Fury DLC active to have converted bloodlines enabled
-Java SE - Version 16.0.2 or above installed
+Imperator - Versions 1.3.0 - 2.0.2
+CK2       - Version 3.3.4
+          - The Old Gods and/or Holy Fury DLC active to play Pagan faith characters
+          - The Old Gods DLC active to play Zoroastrian characters
+          - Sons of Abraham DLC active to play Jewish characters
+          - Rajas of India DLC active to play Eastern faith characters
+          - Holy Fury DLC active to have converted bloodlines enabled
+Java SE   - Version 16.0.2 or above installed
 
 -----
 INSTRUCTIONS
@@ -44,10 +45,10 @@ CREDITS
 
 An list of those who contributed effort to this mammoth undertaking
 
-Idhrendur																											- Sanity Checks, Review, and Fronter integration
+Idhrendur									- Sanity Checks, Review, and Fronter integration
 Shinymewtwo99 (aka Dr. Dudelsack)			- Lead Developer and Programmer
-Thinking_waffle																					- Testing, Ideas, and Translation
-Vladimir Ilyich Lenin															- Testing, Events
-Siawosh								              							- Testing
+Thinking_waffle								- Testing, Ideas, and Translation
+Vladimir Ilyich Lenin						- Testing, Events
+Siawosh								        - Testing
 
  - AND ALL THE OTHERS WHO GAVE THEIR INPUT ON THE FORUM AND DISCORD -
