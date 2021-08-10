@@ -1,4 +1,4 @@
-package ImperatorToCK2;  
+package ImperatorToCK2;     
 
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -58,7 +58,7 @@ public class Directories
         File f10 = new File(mainModFolder+VM+"history"+VM+"titles");
         f10.mkdir();  
 
-        File f11 = new File(mainModFolder+VM+"history"+VM+"titles");
+        File f11 = new File(mainModFolder+VM+"common"+VM+"governments");
         f11.mkdir();  
 
         File f12 = new File(mainModFolder+VM+"common"+VM+"cultures");
@@ -87,6 +87,12 @@ public class Directories
         
         File f24 = new File(mainModFolder+VM+"common"+VM+"disease");
         f24.mkdir();
+        
+        File f25 = new File(mainModFolder+VM+"common"+VM+"government_flavor");
+        f25.mkdir();
+        
+        File f26 = new File(mainModFolder+VM+"common"+VM+"laws");
+        f26.mkdir();
 
         return aqv;
     }
