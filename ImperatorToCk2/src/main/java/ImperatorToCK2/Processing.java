@@ -1,5 +1,4 @@
 package ImperatorToCK2;  
-
 import java.util.Scanner;
 import java.io.IOException;
 import java.io.FileInputStream;
@@ -1017,9 +1016,9 @@ public class Processing
     {
 
         int aqq = 0;
-        
+
         int flag = 0; //Sets it so that only the first correct tag becomes cultureTitle. 
-        
+
         int flag2 = 0; //Defeated civil war tags will still exist in save, causing calc to set non-existant civil war faction as cultureTitle without flags
 
         while (aqq < impTagInfo.size()) {
@@ -1037,6 +1036,22 @@ public class Processing
         }
 
         return cultureTitles;
+    }
+
+    public static String checkFile(String directory) throws IOException //checks if file exists or not
+    {
+
+        try {
+
+            FileInputStream fileIn= new FileInputStream(directory);
+            Scanner scnr= new Scanner(fileIn);
+
+        }catch (java.io.FileNotFoundException exception){
+            return "no";
+
+        }
+
+        return "yes";
     }
 
 }
