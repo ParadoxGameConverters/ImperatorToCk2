@@ -331,7 +331,7 @@ public class Main
                     while (aq5 < irOwners.length) {
                         String[] owners = irOwners[aq5].split(","); 
 
-                        LOGGER.info(irOwners[aq5]+"_irOwners_"+aq2);  
+                        //LOGGER.info(irOwners[aq5]+"_irOwners_"+aq2);  
 
                         int[] ownerTot;
                         ownerTot = new int[totalCKProv]; //should redefine each time
@@ -351,13 +351,13 @@ public class Main
                         }
 
                         ownerTot[ownNum] = Integer.parseInt(owners[1]);
-                        LOGGER.info(owners[0]+owners[1]+"b_owners");    
+                        //LOGGER.info(owners[0]+owners[1]+"b_owners");    
                         ck2ProvInfo[0][aq2] = owners[0];
                         aq6 = 1;
                         while (aq6 < totalCKProv) {
                             if (ownerTot[aq6] > ownerTot[aq6-1]){
                                 ck2ProvInfo[0][aq2] = owners[0];
-                                LOGGER.info((ck2ProvInfo[0][aq2])+"_"+aq2+"cq");
+                                //LOGGER.info((ck2ProvInfo[0][aq2])+"_"+aq2+"cq");
                             }
                             aq6 = aq6 + 1;
 
@@ -375,7 +375,7 @@ public class Main
 
                 }
                 else if (aq2 < 380) {
-                    LOGGER.info (ck2TagTotals[aq2] + "_" + aq2);    
+                    //LOGGER.info (ck2TagTotals[aq2] + "_" + aq2);    
                 }
                 aq2 = aq2 + 1;
 
@@ -411,7 +411,7 @@ public class Main
             LOGGER.finest("45%");
             LOGGER.info("Importing country data...");
 
-            LOGGER.config("The region is" + ck2ProvInfo[4][343]);
+            //LOGGER.config("The region is" + ck2ProvInfo[4][343]);
             int flagCount = 0;
 
             ArrayList<String[]> impTagInfo = new ArrayList<String[]>();
@@ -498,6 +498,11 @@ public class Main
             //defaultDiseases
             Output.output("defaultOutput"+VM+"disease"+VM+"00_disease.txt",modDirectory+VM+"common"+VM+"disease"+VM+"00_disease.txt");
             Output.output("defaultOutput"+VM+"disease"+VM+"01_disease_old.txt",modDirectory+VM+"common"+VM+"disease"+VM+"01_disease_old.txt");
+            
+            //imperialGovernments
+            Output.output("defaultOutput"+VM+"governments"+VM+"imperial_governments.txt",modDirectory+VM+"common"+VM+"governments"+VM+"imperial_governments.txt");
+            Output.output("defaultOutput"+VM+"government_flavor"+VM+"50_government_flavor.txt",modDirectory+VM+"common"+VM+"government_flavor"+VM+"50_government_flavor.txt");
+            Output.output("defaultOutput"+VM+"laws"+VM+"succession_laws.txt",modDirectory+VM+"common"+VM+"laws"+VM+"succession_laws.txt");
 
             long outputTime = System.nanoTime();
             long outputTimeTot = (((outputTime - startTime) / 1000000000)/60);
@@ -535,15 +540,15 @@ public class Main
                                 String rank = "k";
 
                                 int subjectOrNot = Processing.checkSubjectList(aq4,impSubjectInfo);
-                                LOGGER.config("subjectOrNot at " + aq4 + " is " + subjectOrNot);
+                                //LOGGER.config("subjectOrNot at " + aq4 + " is " + subjectOrNot);
                                 if (subjectOrNot == 9999) { //if tag is free or independent
                                     if (ck2LandTot[aq4] >= empireRank) {
                                         rank = "e";
                                     }
                                     impTagInfo.get(aq4)[0] = Processing.convertTitle("titleConversion.txt",rank,impTagInfo.get(aq4)[21],impTagInfo.get(aq4)[0]);
-                                    Output.titleCreation(impTagInfo.get(aq4)[0],tempNum2,impTagInfo.get(aq4)[3],"no",impTagInfo.get(aq4)[5],rank,
-                                        "no_liege",modDirectory);
-                                    LOGGER.info("Free Nation at " + aq4);
+                                    Output.titleCreation(impTagInfo.get(aq4)[0],tempNum2,impTagInfo.get(aq4)[3],impTagInfo.get(aq4)[17],
+                                          impTagInfo.get(aq4)[5],rank,"no_liege",modDirectory);
+                                    //LOGGER.info("Free Nation at " + aq4);
                                 } else { //if tag is subject
                                     String[] subjectInfo = impSubjectInfo.get(subjectOrNot).split(",");
                                     String overlord = impTagInfo.get(Integer.parseInt(subjectInfo[0]))[0];
@@ -559,26 +564,26 @@ public class Main
                                     if (subjectInfo[2].equals ("feudatory") || subjectInfo[2].equals ("satrapy") || subjectInfo[2].equals ("client_state")) { 
                                         //convert as vassal
 
-                                        Output.titleCreation(impTagInfo.get(aq4)[0],tempNum2,impTagInfo.get(aq4)[3],"no",
+                                        Output.titleCreation(impTagInfo.get(aq4)[0],tempNum2,impTagInfo.get(aq4)[3],impTagInfo.get(aq4)[17],
                                             impTagInfo.get(aq4)[5],rank,overlord,modDirectory);
-                                        LOGGER.info("Subject Nation at " + aq4 + " Overlord is " + subjectInfo[0]);
+                                        //LOGGER.info("Subject Nation at " + aq4 + " Overlord is " + subjectInfo[0]);
                                     }
 
                                     else { 
                                         //convert as CK II tributary
                                         //WIP
-                                        Output.titleCreation(impTagInfo.get(aq4)[0],tempNum2,impTagInfo.get(aq4)[3],"no",
+                                        Output.titleCreation(impTagInfo.get(aq4)[0],tempNum2,impTagInfo.get(aq4)[3],impTagInfo.get(aq4)[17],
                                             impTagInfo.get(aq4)[5],rank,overlord,modDirectory);
-                                        LOGGER.info("Tributary Nation at " + aq4 + " Overlord is " + subjectInfo[0]);
+                                        //LOGGER.info("Tributary Nation at " + aq4 + " Overlord is " + subjectInfo[0]);
                                     }
                                 }
 
-                                LOGGER.info (impTagInfo.get(aq4)[16] + " rules " + impTagInfo.get(aq4)[0] + "_" + aq4);
+                                //LOGGER.info (impTagInfo.get(aq4)[16] + " rules " + impTagInfo.get(aq4)[0] + "_" + aq4);
                                 Character = impCharInfoList.get(Integer.parseInt(impTagInfo.get(aq4)[16]));
                                 convertedCharacters = Output.characterCreation(tempNum2, Output.cultureOutput(Character[1]),Output.religionOutput(Character[2]),
                                     Character[3],Character[0],Character[7],Character[4],Character[8],Character[10],Character[11],Character[12],Character[13],Character[14],
-                                    Character[15],saveCharacters,"q","q",convertedCharacters,impCharInfoList,modDirectory);
-                                LOGGER.config ("c");
+                                    Character[15],impTagInfo.get(aq4)[17],"q","q",convertedCharacters,impCharInfoList,modDirectory);
+                                //LOGGER.config ("c");
 
                                 String rulerDynasty = Characters.searchDynasty(impDynList,Character[7]);
 
@@ -588,16 +593,16 @@ public class Main
                                 String[] locName = importer.importLocalisation(impGameDir,impTagInfo.get(aq4)[19],rulerDynasty);
                                 output.localizationCreation(locName,impTagInfo.get(aq4)[0],rank,modDirectory);
 
-                                LOGGER.info(tempTest+impTagInfo.get(aq4)[16] + "_" +Character[3]+Character[0]+Character[7]);
-                                LOGGER.info ("Name is " + locName[0] + " for " +impTagInfo.get(aq4)[0]);
-                                LOGGER.config ("output1");
+                                //LOGGER.info(tempTest+impTagInfo.get(aq4)[16] + "_" +Character[3]+Character[0]+Character[7]);
+                                //LOGGER.info ("Name is " + locName[0] + " for " +impTagInfo.get(aq4)[0]);
+                                //LOGGER.config ("output1");
                                 aq7 = 0;
                                 String subRank = "d";//rank of governorships, 1 below primary title
                                 if (rank.equals("e")) {
                                     subRank = "k";
                                     
-                                    Output.titleCreation(impTagInfo.get(aq4)[0],tempNum2,impTagInfo.get(aq4)[3],"no",impTagInfo.get(aq4)[5],subRank,
-                                        "no_liege",modDirectory);
+                                    Output.titleCreation(impTagInfo.get(aq4)[0],tempNum2,impTagInfo.get(aq4)[3],impTagInfo.get(aq4)[17],
+                                        impTagInfo.get(aq4)[5],subRank,"no_liege",modDirectory);
 
                                     String capitalName = Importer.importConvList("provinceConversion.txt",Integer.parseInt(impTagInfo.get(aq4)[5]))[1];
                                     capitalName = Processing.importNames("a",Integer.parseInt(capitalName),ck2Dir)[0];
@@ -639,11 +644,11 @@ public class Main
 
                 }catch (java.util.NoSuchElementException exception){
                     flag = 1;
-                    LOGGER.config("NoSuchElementException and flag = 1");
+                    //LOGGER.config("NoSuchElementException and flag = 1");
                 }
             }catch (java.lang.ArrayIndexOutOfBoundsException exception){
                 flag = 1;
-                LOGGER.config("ArrayIndexOutOfBoundsException and flag = 1" + "_" + aq4);
+                //LOGGER.config("ArrayIndexOutOfBoundsException and flag = 1" + "_" + aq4);
             }
             aq4 = 0;
             aq7 = 0;
@@ -739,7 +744,7 @@ public class Main
                                 }
 
                             }
-                            LOGGER.info("Creating province "+importedInfo[0]+" at ID "+aq4+" ruled by "+ruler);
+                            //LOGGER.info("Creating province "+importedInfo[0]+" at ID "+aq4+" ruled by "+ruler);
 
                             Output.provinceCreation(Integer.toString(aq4),Output.cultureOutput(ck2ProvInfo[1][aq4]),Output.religionOutput(ck2ProvInfo[2][aq4]),
                                 modDirectory, importedInfo[1],importedInfo[0],gov,ck2PopTotals[aq4],bList,saveMonuments,aq4);
@@ -752,24 +757,24 @@ public class Main
 
                 }catch (java.util.NoSuchElementException exception){
                     flag = 1;
-                    LOGGER.config ("Exception1");
+                    //LOGGER.config ("Exception1");
                 }
             }catch (java.lang.ArrayIndexOutOfBoundsException exception){
                 flag = 2;
-                LOGGER.config ("Exception2");
-                LOGGER.config(ck2ProvInfo[1][343] + "_343");
-                LOGGER.config(ck2ProvInfo[1][342] + "_342");
-                LOGGER.config(ck2ProvInfo[1][341] + "_341");
-                LOGGER.config(ck2ProvInfo[1][340] + "_340");
-                LOGGER.config(ck2ProvInfo[1][339] + "_339");
+                //LOGGER.config ("Exception2");
+                //LOGGER.config(ck2ProvInfo[1][343] + "_343");
+                //LOGGER.config(ck2ProvInfo[1][342] + "_342");
+                //LOGGER.config(ck2ProvInfo[1][341] + "_341");
+                //LOGGER.config(ck2ProvInfo[1][340] + "_340");
+                //LOGGER.config(ck2ProvInfo[1][339] + "_339");
 
             }
-            LOGGER.config(ck2ProvInfo[1][343] + "_343");
-            LOGGER.config(ck2ProvInfo[1][342] + "_342");
-            LOGGER.config(ck2ProvInfo[1][341] + "_341");
-            LOGGER.config(ck2ProvInfo[1][340] + "_340");
-            LOGGER.config(ck2ProvInfo[1][339] + "_339");
-            LOGGER.config(ck2ProvInfo[1][338] + "_338");
+            //LOGGER.config(ck2ProvInfo[1][343] + "_343");
+            //LOGGER.config(ck2ProvInfo[1][342] + "_342");
+            //LOGGER.config(ck2ProvInfo[1][341] + "_341");
+            //LOGGER.config(ck2ProvInfo[1][340] + "_340");
+            //LOGGER.config(ck2ProvInfo[1][339] + "_339");
+            //LOGGER.config(ck2ProvInfo[1][338] + "_338");
 
             long endTime = System.nanoTime();
             long elapsedTot = (((endTime - startTime) / 1000000000)/60) ;
