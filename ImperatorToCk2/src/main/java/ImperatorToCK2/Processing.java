@@ -1044,7 +1044,6 @@ public class Processing
         try {
 
             FileInputStream fileIn= new FileInputStream(directory);
-            Scanner scnr= new Scanner(fileIn);
 
         }catch (java.io.FileNotFoundException exception){
             return "no";
