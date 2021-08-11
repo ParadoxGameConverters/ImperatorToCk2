@@ -886,7 +886,7 @@ public class Output
 
                 String rank = "k";
 
-                if (ck2LandTot[tagID] >= empireRank) {
+                if (ck2LandTot[tagID] >= empireRank || impTagInfo.get(tagID)[17].equals("imperium")) {
                     rank = "e";
 
                     int aq2 = 0;
