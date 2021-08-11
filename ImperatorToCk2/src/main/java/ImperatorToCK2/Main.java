@@ -542,7 +542,7 @@ public class Main
                                 int subjectOrNot = Processing.checkSubjectList(aq4,impSubjectInfo);
                                 //LOGGER.config("subjectOrNot at " + aq4 + " is " + subjectOrNot);
                                 if (subjectOrNot == 9999) { //if tag is free or independent
-                                    if (ck2LandTot[aq4] >= empireRank) {
+                                    if (ck2LandTot[aq4] >= empireRank || impTagInfo.get(aq4)[17].equals("imperium")) {
                                         rank = "e";
                                     }
                                     impTagInfo.get(aq4)[0] = Processing.convertTitle("titleConversion.txt",rank,impTagInfo.get(aq4)[21],impTagInfo.get(aq4)[0]);
@@ -553,7 +553,9 @@ public class Main
                                     String[] subjectInfo = impSubjectInfo.get(subjectOrNot).split(",");
                                     String overlord = impTagInfo.get(Integer.parseInt(subjectInfo[0]))[0];
 
-                                    if (ck2LandTot[Integer.parseInt(subjectInfo[0])] >= empireRank) {//if overlord is empire, make subject kingdom, else make duchy
+                                    if (ck2LandTot[Integer.parseInt(subjectInfo[0])] >= empireRank || 
+                                        impTagInfo.get(Integer.parseInt(subjectInfo[0]))[17].equals("imperium")) {
+                                        //if overlord is empire, make subject kingdom, else make duchy
                                         rank = "k";
                                     } else {
                                         rank = "d";
