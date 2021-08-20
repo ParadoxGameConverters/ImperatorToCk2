@@ -1,4 +1,4 @@
-roman_pantheon,hellenic_pagan
+\roman_pantheon,hellenic_pagan
 carthaginian_pantheon,canaanite
 druidism,druidic
 germanic_religion,norse_pagan
@@ -23,3 +23,4 @@ indo_iranian_religion,scythian
 eastern_animism,ritualistic
 pre_indo_european_religion,iberian
 nuragic_pantheon,iberian
+manichaeism,manichean
