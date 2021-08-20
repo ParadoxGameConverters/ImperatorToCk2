@@ -88,9 +88,6 @@ public class Main
             String[] impProvtoCK;   // Owner Culture Religeon PopTotal Buildings
             impProvtoCK = new String[2];
 
-            String[] impNationInfo;   // Owner Culture Religeon PopTotal Buildings
-            impNationInfo = new String[21];
-
             String[] impProvInfo;   // Owner Culture Religeon PopTotal Buildings
             impProvInfo = new String[5];
 
@@ -140,6 +137,10 @@ public class Main
             ArrayList<String[]> impCharInfoList = new ArrayList<String[]>();
 
             ArrayList<String> impDynList = new ArrayList<String>();
+            
+            ArrayList<String> flaggedGovernorships = new ArrayList<String>(); //governorships which have been given flags (GFX)
+            
+            flaggedGovernorships.add("Glorious__Bingo_region"); //debug so that list starts with 1 item
 
             String[] impProvRegions = Processing.importRegionList(8500,impGameDir);
 
@@ -503,6 +504,30 @@ public class Main
             Output.output("defaultOutput"+VM+"governments"+VM+"imperial_governments.txt",modDirectory+VM+"common"+VM+"governments"+VM+"imperial_governments.txt");
             Output.output("defaultOutput"+VM+"government_flavor"+VM+"50_government_flavor.txt",modDirectory+VM+"common"+VM+"government_flavor"+VM+"50_government_flavor.txt");
             Output.output("defaultOutput"+VM+"laws"+VM+"succession_laws.txt",modDirectory+VM+"common"+VM+"laws"+VM+"succession_laws.txt");
+            
+            //blankedDejureTitles
+            Output.output("defaultOutput"+VM+"titles"+VM+"d_angria.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_angria.txt");
+            Output.output("defaultOutput"+VM+"titles"+VM+"d_aragon.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_aragon.txt");
+            Output.output("defaultOutput"+VM+"titles"+VM+"d_barcelona.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_barcelona.txt");
+            Output.output("defaultOutput"+VM+"titles"+VM+"d_bohemia.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_bohemia.txt");
+            Output.output("defaultOutput"+VM+"titles"+VM+"d_brandenburg.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_brandenburg.txt");
+            Output.output("defaultOutput"+VM+"titles"+VM+"d_bremen.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_bremen.txt");
+            Output.output("defaultOutput"+VM+"titles"+VM+"d_burgundy.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_burgundy.txt");
+            Output.output("defaultOutput"+VM+"titles"+VM+"d_castilla.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_castilla.txt");
+            Output.output("defaultOutput"+VM+"titles"+VM+"d_champagne.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_champagne.txt");
+            Output.output("defaultOutput"+VM+"titles"+VM+"d_galicia.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_galicia.txt");
+            Output.output("defaultOutput"+VM+"titles"+VM+"d_holstein.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_holstein.txt");
+            Output.output("defaultOutput"+VM+"titles"+VM+"d_lausitz.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_lausitz.txt");
+            Output.output("defaultOutput"+VM+"titles"+VM+"d_leon.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_leon.txt");
+            Output.output("defaultOutput"+VM+"titles"+VM+"d_meissen.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_meissen.txt");
+            Output.output("defaultOutput"+VM+"titles"+VM+"d_munster_germany.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_munster_germany.txt");
+            Output.output("defaultOutput"+VM+"titles"+VM+"d_navarra.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_navarra.txt");
+            Output.output("defaultOutput"+VM+"titles"+VM+"d_poitou.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_poitou.txt");
+            Output.output("defaultOutput"+VM+"titles"+VM+"d_saxony.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_saxony.txt");
+            Output.output("defaultOutput"+VM+"titles"+VM+"d_asturias.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_asturias.txt");
+            Output.output("defaultOutput"+VM+"titles"+VM+"d_porto.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_porto.txt");
+            Output.output("defaultOutput"+VM+"titles"+VM+"d_moravia.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_moravia.txt");
+            Output.output("defaultOutput"+VM+"titles"+VM+"d_cyrenaica.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_cyrenaica.txt");
 
             long outputTime = System.nanoTime();
             long outputTimeTot = (((outputTime - startTime) / 1000000000)/60);
@@ -538,6 +563,7 @@ public class Main
 
                                 String tempNum2 = Integer.toString( tempNum + Integer.parseInt(impTagInfo.get(aq4)[16]));
                                 String rank = "k";
+                                String oldName = impTagInfo.get(aq4)[0]; //used to determine whether or not title is converted
 
                                 int subjectOrNot = Processing.checkSubjectList(aq4,impSubjectInfo);
                                 //LOGGER.config("subjectOrNot at " + aq4 + " is " + subjectOrNot);
@@ -593,7 +619,10 @@ public class Main
                                 Output.dynastyCreation(rulerDynasty,Character[7],Character[16],modDirectory);
 
                                 String[] locName = importer.importLocalisation(impGameDir,impTagInfo.get(aq4)[19],rulerDynasty);
-                                output.localizationCreation(locName,impTagInfo.get(aq4)[0],rank,modDirectory);
+                                Output.localizationCreation(locName,impTagInfo.get(aq4)[0],rank,modDirectory);
+                                if (oldName.equals(impTagInfo.get(aq4)[0])) {
+                                    Output.copyFlag(ck2Dir,modDirectory,rank,impTagInfo.get(aq4)[5],impTagInfo.get(aq4)[0]);
+                                }
 
                                 //LOGGER.info(tempTest+impTagInfo.get(aq4)[16] + "_" +Character[3]+Character[0]+Character[7]);
                                 //LOGGER.info ("Name is " + locName[0] + " for " +impTagInfo.get(aq4)[0]);
@@ -610,8 +639,11 @@ public class Main
                                     capitalName = Processing.importNames("a",Integer.parseInt(capitalName),ck2Dir)[0];
                                     String[] capitalLoc = (capitalName+","+capitalName).split(",");
 
-                                    output.localizationCreation(capitalLoc,impTagInfo.get(aq4)[0],subRank,modDirectory);
+                                    Output.localizationCreation(capitalLoc,impTagInfo.get(aq4)[0],subRank,modDirectory);
+                                    Output.copyFlag(ck2Dir,modDirectory,subRank,impTagInfo.get(aq4)[5],impTagInfo.get(aq4)[0]);
                                 }
+                                
+                                impTagInfo.get(aq4)[22] = rank;
 
                                 //governor conversion
                                 if (impTagInfo.get(aq4)[20] != "none" && subjectOrNot == 9999) {
@@ -632,6 +664,7 @@ public class Main
                                         govLocName[0] = locName[1] + " " + govLocName[0];
                                         govLocName[1] = locName[1] + " " + govLocName[1];
                                         output.localizationCreation(govLocName,govRegID,subRank,modDirectory);
+                                        Output.copyFlag(ck2Dir,modDirectory,subRank,impTagInfo.get(aq4)[5],govRegID); //default flag for governorships
 
                                         aq7 = aq7 + 1;
                                     }
@@ -682,7 +715,7 @@ public class Main
 
                             String[] importedInfo = Processing.importNames(modDirectory,aq4,ck2Dir);
 
-                            if (ck2ProvInfo[0][aq4].equals ("9999")) { // Dynamically creates a country and character for an uncolonized territory with no owner
+                            if (ck2ProvInfo[0][aq4].equals ("9999")) {// Dynamically creates a country and character for an uncolonized territory with no owner
                                 ruler = Integer.toString((tempNum * 6) + aq4);
                                 gov = "tribal_federation";
                                 String [] dynLoc = new String[2];
@@ -715,10 +748,11 @@ public class Main
                                 Output.dynastyCreation("of "+importedInfo[0],ruler,"debug",modDirectory);
                                 Output.characterCreation(ruler,dynCult,dynRel,dynCharAge,dynCharName,ruler,"69","q","5","5","5","5","0","0",
                                 saveCharacters,"q","q",convertedCharacters,impCharInfoList,modDirectory);
-                            String greyShade = Processing.randomizeColorGrey();
+                                String greyShade = Processing.randomizeColorGrey();
 
-                            Output.titleCreation("dynamic"+aq4,ruler,greyShade,"no",Integer.toString(aq4),"d","no_liege",modDirectory);
-                            Output.localizationCreation(dynLoc,"dynamic"+aq4,"d",modDirectory);
+                                Output.titleCreation("dynamic"+aq4,ruler,greyShade,"no",Integer.toString(aq4),"d","no_liege",modDirectory);
+                                Output.localizationCreation(dynLoc,"dynamic"+aq4,"d",modDirectory);
+                                Output.copyFlag(ck2Dir,modDirectory,"d",Integer.toString(aq4),"dynamic"+aq4);
 
                             } else {
                                 tempNum2b = Integer.parseInt(ck2ProvInfo[0][aq4]);
@@ -733,16 +767,76 @@ public class Main
                                 if (impTagInfo.get(tempNum2b)[20] != "none" && subjectOrNot == 9999) { //governors without 9999 check, creates hole
                                     governorships = impTagInfo.get(tempNum2b)[20].split(",");
                                     aq7 = 0;
+                                    String overlordCapital = impTagInfo.get(tempNum2b)[5];
+                                    
+                                    overlordCapital = Importer.importConvList("provinceConversion.txt",Integer.parseInt(overlordCapital))[1];
+                                    if (overlordCapital.equals("99999")) { //unmapped capital province detected, set 1 as default
+                                        LOGGER.info("Warning, I:R province "+impTagInfo.get(tempNum2b)[5]+" is unmapped!");
+                                        overlordCapital = "69";
+                                    }
+                                    String capitalOwner = ck2ProvInfo[0][Integer.parseInt(overlordCapital)].split("__")[0];
+                                    int capitalOwnerID = Integer.parseInt(capitalOwner);
+                                    if (capitalOwnerID == 9999) { //if capital province is somehow uncolonized, give it to TAG
+                                        capitalOwnerID = tempNum2b;
+                                    }
+                                     capitalOwner = impTagInfo.get(capitalOwnerID)[0];
+                                    if (!capitalOwner.equals(impTagInfo.get(tempNum2b)[0])) {
+                                        //if capital province is owned by another non-subject TAG, eat all governorships as a precaution
+                                        //otherwise, TAG will shatter if all land is not owned directly
+                                        int capitalSubjectOrNot = Processing.checkSubjectList(tempNum2b,impSubjectInfo);
+                                        if (capitalSubjectOrNot == 9999) { //rival TAG owning capital is free
+                                            aq7 = 999;
+                                            LOGGER.info(impTagInfo.get(tempNum2b)[0]+" doesn't own it's capital! Initiating anti-shattering proticol");
+                                        } else {
+                                            String[] capitalTagSubjectInfo = impSubjectInfo.get(subjectOrNot).split(",");
+                                            if (impTagInfo.get(Integer.parseInt(capitalTagSubjectInfo[1]))[0] != impTagInfo.get(tempNum2b)[0]) {
+                                                //rival tag that is a subject and isn't subject to TAG
+
+                                                aq7 = 999;
+                                            }
+                                        }
+                                    }
                                     while (aq7 < governorships.length) {
                                         govReg = governorships[aq7].split("~")[0];
-                                        if (ck2ProvInfo[4][aq4].equals(govReg)) {
+                                        if (ck2ProvInfo[4][aq4].equals(govReg) && aq4 != Integer.parseInt(overlordCapital)) {
+                                            //governorships shall cede capital province of overlord back to overlord
                                             ruler = Integer.toString(tempNum + Integer.parseInt(governorships[aq7].split("~")[1]));
                                             aq7 = aq7 + governorships.length;
+                                            int aq8 = 0;
+                                            while (aq8 < flaggedGovernorships.size()) { //looks through list to see if flag is assigned
+                                                if (flaggedGovernorships.get(aq8).equals(impTagInfo.get(tempNum2b)[0]+"__"+govReg)) {
+                                                    aq8 = 99999;
+                                                } else {
+                                                    aq8 = aq8 + 1;
+                                                }
+                                            }
+                                            if (aq8 != 99999) { //governorship not in list, assign flag for governorship
+                                                String rank = "d";
+                                                if (impTagInfo.get(tempNum2b)[22].equals("e")) {
+                                                    rank = "k";
+                                                }
+                                                flaggedGovernorships.add(impTagInfo.get(tempNum2b)[0]+"__"+govReg);
+                                                String provIDString = (Integer.toString(aq4));
+                                                Output.copyFlag(ck2Dir,modDirectory,rank,provIDString,impTagInfo.get(tempNum2b)[0]+"__"+govReg);
+                                            }
                                         } else {
                                             aq7 = aq7 + 1;    
                                         }
                                     }
 
+                                }
+                                
+                                else if (subjectOrNot != 9999) { //If ruler is subject, check if he/she rules overlord's capital. If yes, give to overlord
+                                    String[] subjectInfo = impSubjectInfo.get(subjectOrNot).split(",");
+                                    
+                                    String overlordCapital = impTagInfo.get(Integer.parseInt(subjectInfo[0]))[5];
+                                    overlordCapital = Importer.importConvList("provinceConversion.txt",Integer.parseInt(overlordCapital))[1];
+                                    if (overlordCapital.equals(Integer.toString(aq4))) {
+                                        ruler = impTagInfo.get(Integer.parseInt(subjectInfo[0]))[16];
+                                        gov = impTagInfo.get(Integer.parseInt(subjectInfo[0]))[17];
+                                        tempNum2q = Integer.parseInt(ruler) + tempNum;
+                                        ruler = Integer.toString(tempNum2q);
+                                    }
                                 }
 
                             }
