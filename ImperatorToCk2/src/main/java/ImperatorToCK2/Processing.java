@@ -185,6 +185,12 @@ public class Processing
         String VM = "\\";
 
         VM = VM.substring(0);
+        
+        String bracket1 = "a{";
+        String bracket2 = "a}";
+
+        bracket1 = bracket1.substring(1);
+        bracket2 = bracket2.substring(1);
 
         String provID = Integer.toString(provIDnum);
 
@@ -328,6 +334,10 @@ public class Processing
                             qaaa.split("_")[0].equals(tab4+tab+"b") || qaaa.split("_")[0].equals("                   "+tab+"b") || 
                             qaaa.split("_")[0].equals("                "+"b")){
                                 qaaa = qaaa.split("b_")[1];
+                                qaaa = qaaa.replace(bracket1,"");
+                                qaaa = qaaa.replace(bracket2,"");
+                                qaaa = qaaa.replace("=","");
+                                qaaa = qaaa.replace(" ","");
                                 if (output != null) {
                                     output = output + "," + qaaa.split(" =")[0];
                                 } else { output = qaaa.split(" =")[0]; }
@@ -1038,19 +1048,19 @@ public class Processing
         return cultureTitles;
     }
 
-    public static String checkFile(String directory) throws IOException //checks if file exists or not
+    public static boolean checkFile(String file) throws IOException //checks if file exists or not
     {
 
         try {
 
-            FileInputStream fileIn= new FileInputStream(directory);
+            FileInputStream fileIn= new FileInputStream(file);
 
         }catch (java.io.FileNotFoundException exception){
-            return "no";
+            return false;
 
         }
 
-        return "yes";
+        return true;
     }
 
 }
