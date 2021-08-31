@@ -1,4 +1,4 @@
-\roman_pantheon,hellenic_pagan
+roman_pantheon,hellenic_pagan
 carthaginian_pantheon,canaanite
 druidism,druidic
 germanic_religion,norse_pagan
