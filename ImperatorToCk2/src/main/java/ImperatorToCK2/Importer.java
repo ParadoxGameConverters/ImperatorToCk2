@@ -157,7 +157,7 @@ public class Importer
         String vmm = scnr.nextLine();
         String qaaa = vmm;
         String[] output;   // Owner Culture Religeon PopTotal Buildings
-        output = new String[22];
+        output = new String[23];
 
         output[0] = "9999"; //default for no tag
         output[1] = "6969"; //default for no flag seed
@@ -178,6 +178,7 @@ public class Importer
         output[16] = "0"; //default for no leader, will either be a random character in CKII or no character
         output[20] = "none"; //default for no governors/governorships, land will be directly held by the ruler
         output[21] = "9999"; //default for no historical tag used in nation formation
+        output[22] = "k"; //default for no rank, ranks are not stored in the save file, will be calculated during output
 
         impTagInfo.add(output); //default entry at ID 0
 
@@ -367,6 +368,7 @@ public class Importer
                                     output[16] = "0"; //default for no leader, will either be a random character in CKII or no character
                                     output[20] = "none"; //default for no governors/governorships, land will be directly held by the ruler
                                     output[21] = "9999"; //default for no historical tag used in nation formation
+                                    output[22] = "k"; //default for no rank, ranks are not stored in the save file, will be calculated during output
 
                                 }
                             }

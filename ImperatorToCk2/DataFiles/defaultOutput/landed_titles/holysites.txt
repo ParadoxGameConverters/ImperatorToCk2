@@ -1,6 +1,6 @@
 #Druidic
 
-c_angseley={
+c_anglesey={
 	holy_site = druidic
 	holy_site = druidic_reformed
 }
