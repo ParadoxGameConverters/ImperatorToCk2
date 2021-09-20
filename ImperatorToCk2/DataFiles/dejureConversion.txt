@@ -3,7 +3,7 @@
 #Empires should only be generated outside of I:R empires
 #Kingdoms should only be generated in duchies where the majority is uncolonized
 
-ancient_egyptian,e_EGT,k_EGT
+ancient_egyptian,e_EGT,k_egypt
 babylonian,e_persia,k_iraq
 belgae,e_GAU,k_BGG
 carthaginian,e_CAR,k_CAR
@@ -34,7 +34,7 @@ siculian,e_roman_empire,k_ROM
 thracian,e_DAC,k_thrace
 turdetanian,e_HBR,k_navarra
 vandal,e_germany,k_pomerania
-venetic,e_roman_empire,k_VNT
+venetic,e_roman_empire,k_venice
 
 persian,e_persia,k_persia
 greek,e_HLA,k_byzantium
@@ -49,7 +49,7 @@ suebi,e_germany,k_germany
 old_saxon,e_germany,k_saxony
 frisian,e_germany,k_frisia
 norse,e_scandinavia,k_norway
-old_frankish,e_germany,k_france
+old_frankish,e_francia,k_france
 maghreb_arabic,e_maghreb,k_mauretania
 arberian,e_HLA,k_byzantium
 saka,e_pontic_steppe,k_SCY
