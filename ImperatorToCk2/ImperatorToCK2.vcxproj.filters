@@ -99,6 +99,9 @@
     <CopyFileToFolders Include="DataFiles\titleConversion.txt">
       <Filter>Data Files\Configuration</Filter>
     </CopyFileToFolders>
+    <CopyFileToFolders Include="DataFiles\dejureConversion.txt">
+      <Filter>Data Files\Configuration</Filter>
+    </CopyFileToFolders>
     <CopyFileToFolders Include="DataFiles\rakaly_win.exe">
       <Filter>Data Files\Configuration</Filter>
     </CopyFileToFolders>
