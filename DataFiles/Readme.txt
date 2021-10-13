@@ -50,5 +50,6 @@ Shinymewtwo99 (aka Dr. Dudelsack)     - Lead Developer and Programmer
 Thinking_waffle                       - Testing, Ideas, and Translation
 Vladimir Ilyich Lenin                 - Testing, Events
 Siawosh                               - Testing
+comagoosie                            - librakaly save melter
 
  - AND ALL THE OTHERS WHO GAVE THEIR INPUT ON THE FORUM AND DISCORD -
