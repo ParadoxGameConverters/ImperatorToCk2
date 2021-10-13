@@ -247,9 +247,15 @@ public class Importer
                                     output[2] = qaaa.split("=")[1]; //used for determining inheiratance laws
                                 }
                                 else if (qaaa.split("=")[0].equals( tab+tab+tab+"color" ) ) {
+                                    
+                                    if (qaaa.length() == 14) { //Rakaly save format
+                                        qaaa = scnr.nextLine();
+                                        output[3] = qaaa.replace(tab,"");
+                                    } else { //regular decompressed save format
 
-                                    output[3] = qaaa.split(tab+tab+tab+"color2")[0];
-                                    output[3] = qaaa.substring(15,output[3].length()-2);
+                                        output[3] = qaaa.split(tab+tab+tab+"color2")[0];
+                                        output[3] = qaaa.substring(15,output[3].length()-2);
+                                    }
                                 }
                                 else if (qaaa.split("=")[0].equals( tab+tab+tab+tab+"gold" ) ) {
                                     output[4] = qaaa.split("=")[1];
@@ -1159,6 +1165,45 @@ public class Importer
 
         }   
         return duchies;
+
+    }
+    
+        public static int compressTest (String saveDir) throws IOException //Checks if the file is compressed or not
+    {
+
+        String VM = "\\";
+        VM = VM.substring(0);
+        String tab = "	";
+
+        FileInputStream fileIn= new FileInputStream(saveDir);
+        Scanner scnr= new Scanner(fileIn);
+        
+        String qaaa = scnr.nextLine();
+        
+        int compressedOrNot = 0; //0 for compressed, 1 for decompressed
+
+        int aqq = 1;
+
+        try {
+            while (aqq != 10){ //loop for the first 10 lines (potential futureproofing), if the key is there, decompressed. Else, compressed
+
+                if (qaaa.split("=")[0].equals("save_game_version")) {
+
+                    compressedOrNot = 1;
+                }
+
+
+                qaaa = scnr.nextLine();
+
+                aqq = aqq + 1;
+
+            }
+
+        }catch (java.util.NoSuchElementException exception){
+            aqq = 10;
+
+        }   
+        return compressedOrNot;
 
     }
     
