@@ -1062,5 +1062,17 @@ public class Processing
 
         return true;
     }
+    
+    public static void fileExcecute(String[] file) throws IOException //checks if file exists or not
+    {
+	try {
+        	Runtime runTime = Runtime.getRuntime();
+        	Process process = runTime.exec(file);
+        	process.waitFor();
+        } catch (Exception q) {
+            
+        }
+                
+    }
 
 }
