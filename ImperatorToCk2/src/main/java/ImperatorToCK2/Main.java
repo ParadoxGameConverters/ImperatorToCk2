@@ -186,6 +186,25 @@ public class Main
             String saveDiplo = "tempDiplo.txt";
 
             String saveMonuments = "tempMonuments.txt";
+            
+            int compressedOrNot = Importer.compressTest(impDirSave); //0 for compressed, 1 for decompressed
+            
+            if (compressedOrNot == 0) { //compressed save! Initiating Rakaly decompressor
+                LOGGER.info("Compressed save detected! Implementing Rakaly Decompressor...");
+                
+                String newImpDirSave = impDirSave.replace(".rome", "_melted.rome");
+                
+                String[] rakalyCommand = new String [3];
+                rakalyCommand[0] = "rakaly_win.exe";
+                rakalyCommand[1] = "melt";
+                rakalyCommand[2] = impDirSave;
+                Processing.fileExcecute(rakalyCommand);
+                impDirSave = newImpDirSave;
+                
+                LOGGER.info("Decompressed save generated at " + newImpDirSave);
+                
+            }
+            
 
             LOGGER.info("Creating temp files...");
 
@@ -548,7 +567,7 @@ public class Main
 
             int empireRank = 350; //Ammount of holdings to be Empire
 
-            impCharInfoList = Characters.importChar(saveCharacters);
+            impCharInfoList = Characters.importChar(saveCharacters,compressedOrNot);
 
             impDynList = Characters.importDynasty(saveDynasty);
 
