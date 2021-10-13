@@ -17,7 +17,7 @@ public class Characters
 {
     private int x;
 
-    public static ArrayList<String[]> importChar (String name) throws IOException
+    public static ArrayList<String[]> importChar (String name,int compressedOrNot) throws IOException
     {
 
         String tab = "	";
@@ -63,6 +63,9 @@ public class Characters
                 //endOrNot = false;
                 while (flag == 0) {
                     qaaa = scnr.nextLine();
+                    if (compressedOrNot == 0 && qaaa.length() >= 3 ) { //Rakaly adds 2 tab characters to most lines in character database
+                        qaaa = qaaa.substring(2,qaaa.length());
+                    }
 
                     if (qaaa.split("=")[0].equals( tab+tab+"name" ) || qaaa.split("=")[0].equals( tab+tab+"custom_name" )) {
                         output[0] = qaaa.split("=")[1];
@@ -86,9 +89,15 @@ public class Characters
 
                     }
                     else if (qaaa.split("=")[0].equals( tab+"traits" ) ) {
-                        output[8] = qaaa.split("=")[1];
+                        if (qaaa.length() == 9) { //Rakaly save format
+                                qaaa = scnr.nextLine();
+                                output[8] = qaaa.replace(tab,"");
+                        } else { //regular decompressed save format
+                                output[8] = qaaa.split("=")[1];
 
-                        output[8] = output[8].substring(2,output[8].length()-2);
+                                output[8] = output[8].substring(2,output[8].length()-2);
+                        }
+                        
                     }
                     else if (qaaa.split("=")[0].equals( tab+tab+"martial" ) ) {
                         output[10] = qaaa.split("=")[1];
@@ -103,8 +112,13 @@ public class Characters
                         output[13] = qaaa.split("=")[1];
                     }
                     else if (qaaa.split("=")[0].equals( tab+"spouse" ) ) {
-                        output[14] = qaaa.split("=")[1];
-                        output[14] = output[14].substring(2,output[14].length()-2); 
+                        if (qaaa.length() == 9) { //Rakaly save format
+                                qaaa = scnr.nextLine();
+                                output[14] = qaaa.replace(tab,"");
+                        } else { //regular decompressed save format
+                                output[14] = qaaa.split("=")[1];
+                                output[14] = output[14].substring(2,output[14].length()-2); 
+                        }
 
                         try {
                             if (output[14].split(" ")[1] != null) {
@@ -115,9 +129,14 @@ public class Characters
                         }
                     }
                     else if (qaaa.split("=")[0].equals( tab+"children" ) ) {
-
-                        output[15] = qaaa.split("=")[1];
-                        output[15] = output[15].substring(2,output[15].length()-2);    
+                        
+                        if (qaaa.length() == 11) { //Rakaly save format
+                                qaaa = scnr.nextLine();
+                                output[15] = qaaa.replace(tab,"");
+                        } else { //regular decompressed save format
+                                output[15] = qaaa.split("=")[1];
+                                output[15] = output[15].substring(2,output[15].length()-2);  
+                        }
 
                     }
 
