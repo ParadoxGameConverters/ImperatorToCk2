@@ -1,5 +1,4 @@
 package ImperatorToCK2;  
-
 import java.util.Scanner;
 import java.io.IOException;
 import java.io.FileInputStream;
@@ -77,7 +76,7 @@ public class Output
         return ck2CultureInfo;
     }
 
-    public static String titleCreationCommon(String irTAG, String irColor, String isRepublic,String capital,String rank, String Directory) throws IOException
+    public static String titleCreationCommon(String irTAG, String irColor, String government,String capital,String rank, String Directory) throws IOException
     {
 
         String tab = "	";
@@ -98,8 +97,11 @@ public class Output
             out.println (tab+"capital = "+capital);
 
         }
-        if ( isRepublic.equals("yes") ) {
+        if ( government.equals("yes") ) {
             out.println (tab+tab+tab+"is_republic = yes"); //if it is a republic and republics are enabled  
+        } else if (government.equals("imperium") && rank.equals("e")) {
+            out.println (tab+"purple_born_heirs = yes"); //if government is imperial, enable born in purple mechanic
+            out.println (tab+"has_top_de_jure_capital = yes");
         }
         out.println ("}");
 
@@ -109,7 +111,7 @@ public class Output
         return irColor;
     }
 
-    public static String titleCreation(String irTAG, String irKING, String irCOLOR, String isRepublic, String capital,String rank,String liege,
+    public static String titleCreation(String irTAG, String irKING, String irCOLOR, String government, String capital,String rank,String liege,
     String Directory) throws IOException
     {
 
@@ -120,7 +122,8 @@ public class Output
 
         String tab = "	";
 
-        titleCreationCommon(irTAG,irCOLOR,isRepublic,capital,rank,Directory);
+        titleCreationCommon(irTAG,irCOLOR,government,capital,rank,Directory);
+        String oldDirectory = Directory;
         Directory = Directory + VM + "history" + VM + "titles";
         String ck2CultureInfo ="a";   // Owner Culture Religeon PopTotal Buildings
         Importer importer = new Importer();
@@ -145,6 +148,17 @@ public class Output
             out.println (tab+"de_jure_liege="+overlordRank+"_"+liege);
         }
         out.println("\tholder="+irKING100);
+        if (government.equals("imperium") && rank.equals("e")) { //If I:R government is imperial, set government to CK II imperial (roman_imperial_government)
+            out.println (tab+"law = crown_authority_2");
+            out.println (tab+"law = succ_byzantine_elective");
+            out.println (tab+"law = centralization_3");
+            out.println (tab+"law = imperial_administration");
+            out.println (tab+"law = ze_administration_laws_2");
+            out.println (tab+"law = vice_royalty_2");
+            out.println (tab+"law = revoke_title_law_1");
+            imperialCreation(irTAG,rank,oldDirectory);
+            imperialSuccession(irTAG,rank,oldDirectory);
+        }
         out.println ("}");
         out.println ();
 
@@ -168,6 +182,8 @@ public class Output
         String tab = "	";
         String VM = "\\"; 
         VM = VM.substring(0);
+        String bracket1 = "{{"; 
+        bracket1 = bracket1.substring(0);
         Directory = Directory + VM + "history" + VM + "provinces";
 
         FileOutputStream fileOut= new FileOutputStream(Directory + VM + ckProv + " - " + name + ".txt");
@@ -181,6 +197,32 @@ public class Output
 
         if (id == 103) { //Leon in Brittany and Spain have the same name in definition.csv
             name = "french_leon";  
+        } else if (id == 1955) {
+            name = "hy_many";  
+        } else if (id == 1966) {
+            name = "aurillac";  
+        } else if (id == 1781) {
+            name = "alqusair";  
+        } else if (id == 722) {
+            name = "al_aqabah";  
+        } else if (id == 1379) {
+            name = "asayita";  
+        } else if (id == 1234) {
+            name = "damin_i_koh";  
+        } else if (id == 254) {
+            name = "wurzburg";  
+        } else if (id == 446) {
+            name = "znojmo";  
+        } else if (id == 715) {
+            name = "zanjan_abhar";  
+        } else if (id == 242) {
+            name = "aargau";  
+        } else if (id == 355) {
+            name = "padova";  
+        } else if (id == 1949) {
+            name = "anglesey";  
+        } else if (id == 935) {
+            //name = "amalfi";  
         }
 
         String holding1 = "castle";
@@ -228,7 +270,7 @@ public class Output
 
         out.println ("# Settlements");
         out.println ("max_settlements = "+holdingTot);
-        out.println ("b_"+name+" = "+holding1);
+        out.println ("b_"+barony[0]+" = "+holding1);
 
         if (popNum >= 30) {
             out.println ("b_"+barony[1]+" = "+holding2);  
@@ -305,12 +347,36 @@ public class Output
 
         if (id == 103) { //Leon in Brittany and Spain have the same name in definition.csv
             name = "french_leon";  
+        }  else if (id == 1955) {
+            name = "hy_many";  
+        } else if (id == 1966) {
+            name = "aurillac";  
+        } else if (id == 1781) {
+            name = "alqusair";  
+        } else if (id == 722) {
+            name = "al_aqabah";  
+        } else if (id == 1379) {
+            name = "asayita";  
+        } else if (id == 1234) {
+            name = "damin_i_koh";  
+        } else if (id == 254) {
+            name = "wurzburg";  
+        } else if (id == 446) {
+            name = "znojmo";  
+        } else if (id == 715) {
+            name = "zanjan_abhar";  
+        } else if (id == 242) {
+            name = "aargau";  
+        } else if (id == 355) {
+            name = "padova";  
+        } else if (id == 1949) {
+            name = "anglesey";  
+        } else if (id == 935) {
+            //name = "amalfi";  
         }
 
         Directory = Directory + VM + "history" + VM + "titles";
-
         String ck2CultureInfo ="a";   // Owner Culture Religeon PopTotal Buildings
-
         FileOutputStream fileOut= new FileOutputStream(Directory + VM + "c_" + name + ".txt");
         PrintWriter out = new PrintWriter(fileOut);
 
@@ -334,7 +400,7 @@ public class Output
     }
 
     public static ArrayList<String> characterCreation(String irKING, String cult, String rel, String age, String name, String dynasty,
-    String sex, String traits, String martial, String zeal, String charisma, String finesse, String spouse, String children,String tempFile,String father,
+    String sex, String traits, String martial, String zeal, String charisma, String finesse, String spouse, String children,String government,String father,
     String mother,ArrayList<String> convertedList,ArrayList<String[]> charList,String Directory) throws IOException
     {
 
@@ -391,7 +457,7 @@ public class Output
             spouseInfo = charList.get(spouseID);
 
             characterCreation( spouse1066,  cultureOutput(spouseInfo[1]),  religionOutput(spouseInfo[2]),  spouseInfo[3],  spouseInfo[0],  spouseInfo[7],
-                spouseInfo[4],  spouseInfo[8],  martial,  zeal,  charisma,  finesse,  "0",  "0", tempFile,"q",  "q",convertedList,charList, Directory);
+                spouseInfo[4],  spouseInfo[8],  martial,  zeal,  charisma,  finesse,  "0",  "0", "no","q",  "q",convertedList,charList, Directory);
         }
 
         if (children != "0") {
@@ -403,6 +469,10 @@ public class Output
             }catch (java.lang.ArrayIndexOutOfBoundsException exception) {
 
             }
+            String isPurple = "no";
+            if (government.equals("imperium") || government.equals("purple")) {
+                isPurple = "purple";
+            }
 
             while (aq4 < childCount) {//Recursively calls to get rest of family
 
@@ -413,7 +483,7 @@ public class Output
                 child1066 = Integer.toString( 1000000 + Integer.parseInt(children.split(" ")[aq4]) );
 
                 characterCreation( child1066,  cultureOutput(childInfo[1]),  religionOutput(childInfo[2]),  childInfo[3],  childInfo[0],  childInfo[7],
-                    childInfo[4],  childInfo[8],  martial,  zeal,  charisma,  finesse,  childInfo[14],  childInfo[15], tempFile,irKING,spouse1066,
+                    childInfo[4],  childInfo[8],  martial,  zeal,  charisma,  finesse,  childInfo[14],  childInfo[15], isPurple,irKING,spouse1066,
                     convertedList,charList,Directory);
 
                 aq4 = aq4 + 1;
@@ -502,6 +572,9 @@ public class Output
         if (rel.equals("hindu") || rel.equals("buddhist") || rel.equals("jain")) { //Caste system defaults to merchant unless specified, sets to ruler
             out.println (tab+"trait=kshatriya");
         }
+        if (government.equals("purple")) {
+            out.println (tab+"trait="+quote+"born_in_the_purple"+quote);    
+        }
 
         if (traits != "q") {
 
@@ -565,6 +638,9 @@ public class Output
         out.println (tab+"name="+quote+name+quote);
         if (sex.equals("f")) {
             out.println (tab+"female = yes");    
+        }
+        if (government.equals("purple")) {
+            out.println (tab+"trait="+quote+"born_in_the_purple"+quote);    
         }
         out.println (tab+"dynasty="+dynasty);
         out.println (tab+"martial="+martial);
@@ -690,6 +766,32 @@ public class Output
 
         if (id == 103) { //Leon in Brittany and Spain have the same name in definition.csv
             name = "french_leon";  
+        } else if (id == 1955) {
+            name = "hy_many";  
+        } else if (id == 1966) {
+            name = "aurillac";  
+        } else if (id == 1781) {
+            name = "alqusair";  
+        } else if (id == 722) {
+            name = "al_aqabah";  
+        } else if (id == 1379) {
+            name = "asayita";  
+        } else if (id == 1234) {
+            name = "damin_i_koh";  
+        } else if (id == 254) {
+            name = "wurzburg";  
+        } else if (id == 446) {
+            name = "znojmo";  
+        } else if (id == 715) {
+            name = "zanjan_abhar";  
+        } else if (id == 242) {
+            name = "aargau";  
+        } else if (id == 355) {
+            name = "padova";  
+        } else if (id == 1949) {
+            name = "anglesey";  
+        } else if (id == 935) {
+            //name = "amalfi";  
         }
 
         Directory = Directory + VM + "common" + VM + "landed_titles";
@@ -862,7 +964,7 @@ public class Output
 
                 String rank = "k";
 
-                if (ck2LandTot[tagID] >= empireRank) {
+                if (ck2LandTot[tagID] >= empireRank || impTagInfo.get(tagID)[17].equals("imperium")) {
                     rank = "e";
 
                     int aq2 = 0;
@@ -907,13 +1009,13 @@ public class Output
 
                     if (subjectOrNot != 9999) { //if tag is not free
                         String[] subjectInfo = impSubjectInfo.get(subjectOrNot).split(",");
-                            tagID = Integer.parseInt(subjectInfo[0]);
+                        tagID = Integer.parseInt(subjectInfo[0]);
 
-                            if (ck2LandTot[tagID] >= empireRank) { //if overlord is e tier, give subject dejure land with overlord as liege
-                                out.println (tagID+" = {");
-                                tagID = Integer.parseInt(tag);
-                                flag2 = 1;
-                            }
+                        if (ck2LandTot[tagID] >= empireRank) { //if overlord is e tier, give subject dejure land with overlord as liege
+                            out.println (tagID+" = {");
+                            tagID = Integer.parseInt(tag);
+                            flag2 = 1;
+                        }
                     } else { //if tag is independent k tier, assign appropriate dejure culture empire liege
                         String[] cultureTitles = Processing.defaultDejureConversion(cultureOutput(impTagInfo.get(tagID)[6]));
                         cultureTitles = Processing.calculateUsedTitles(cultureTitles,impTagInfo,empireRank,ck2LandTot); //determines if tag exists in I:R
@@ -937,6 +1039,135 @@ public class Output
 
         out.flush();
         fileOut.close();
+
+    }
+
+    public static String imperialCreation(String title, String rank, String Directory) throws IOException //needed to allow TAGs imperial government
+    {
+
+        String VM = "\\"; 
+        VM = VM.substring(0);
+        char VMq = '"';
+        String tab = "	";
+
+        Directory = Directory + VM + "common" + VM + "governments" + VM + "imperial_governments.txt";
+
+        ArrayList<String> oldFile = new ArrayList<String>();
+
+        oldFile = Importer.importBasicFile(Directory);
+
+        String ck2CultureInfo ="a";   // Owner Culture Religeon PopTotal Buildings
+        FileOutputStream fileOut= new FileOutputStream(Directory);
+        PrintWriter out = new PrintWriter(fileOut);
+
+        int aqq = 0;
+
+            while (aqq < oldFile.size()) {
+                out.println (oldFile.get(aqq));
+                String key = oldFile.get(aqq).replace(tab,"");
+                key = key.replace("#","");
+                if (key.equals("title = e_TAG")) {
+                    String imperialTag = oldFile.get(aqq).replace("#","");
+                    imperialTag = imperialTag.replace("e_TAG",rank+"_"+title);
+                    out.println (imperialTag);
+                }
+
+                aqq = aqq + 1;
+
+            }
+
+
+        out.flush();
+        fileOut.close();
+
+        return ck2CultureInfo;
+    }
+
+    public static String imperialSuccession(String title, String rank, String Directory) throws IOException //needed to allow TAGs imperial laws
+    {
+
+        String VM = "\\"; 
+        VM = VM.substring(0);
+        char VMq = '"';
+        String tab = "	";
+
+        Directory = Directory + VM + "common" + VM + "laws" + VM + "succession_laws.txt";
+
+        ArrayList<String> oldFile = new ArrayList<String>();
+
+        oldFile = Importer.importBasicFile(Directory);
+
+        String ck2CultureInfo ="a";   // Owner Culture Religeon PopTotal Buildings
+        FileOutputStream fileOut= new FileOutputStream(Directory);
+        PrintWriter out = new PrintWriter(fileOut);
+
+        int aqq = 0;
+
+
+            while (aqq < oldFile.size()) {
+                out.println (oldFile.get(aqq));
+                if (oldFile.get(aqq).contains("e_TAG")) {
+                    String imperialTag = oldFile.get(aqq).replace("e_TAG",rank+"_"+title);
+                    imperialTag = imperialTag.replace("#","");
+                    out.println (imperialTag);
+                }
+
+                aqq = aqq + 1;
+
+            }
+
+
+        out.flush();
+        fileOut.close();
+
+        return ck2CultureInfo;
+    }
+
+    public static void copyRaw(String dir1, String dir2) throws IOException
+    {
+
+        String VM = "\\";
+        VM = VM.substring(0);
+
+        FileInputStream fileIn= new FileInputStream(dir1);
+        FileOutputStream fileOut= new FileOutputStream(dir2);
+
+        boolean endOrNot = true;
+        int aqq = 0;
+
+        try {
+            while (endOrNot = true && aqq != -1){
+                if (aqq != -1) {
+                    aqq = fileIn.read();
+                    fileOut.write(aqq);
+                }
+
+            }
+        }catch (java.util.NoSuchElementException exception){
+            endOrNot = false;
+            fileIn.close();
+            fileOut.close();
+
+        }   
+
+    }
+
+    public static void copyFlag(String ck2Dir, String modDirectory, String rank, String prov, String tag) throws IOException //copies flag files
+    {
+
+        String VM = "\\";
+        VM = VM.substring(0);
+        if (!tag.contains("dynamic") && !tag.contains("__")) { //if the tag is dynamically generated or is governorship, already uses CK II province ID
+            prov = Importer.importConvList("provinceConversion.txt",Integer.parseInt(prov))[1];
+        }
+
+        prov = Processing.importNames("a",Integer.parseInt(prov),ck2Dir)[0];
+        prov = Processing.formatProvName(prov);
+        try {
+            Output.copyRaw(ck2Dir+VM+"gfx"+VM+"flags"+VM+"c_"+prov+".tga",modDirectory+VM+"gfx"+VM+"flags"+VM+rank+"_"+tag+".tga");
+        }catch (java.io.FileNotFoundException exception) { //if flag cannot be found, will use default one
+            Output.copyRaw("defaultOutput"+VM+"gfx"+VM+"flags"+VM+"c_default.tga",modDirectory+VM+"gfx"+VM+"flags"+VM+rank+"_"+tag+".tga");
+        }
 
     }
 }

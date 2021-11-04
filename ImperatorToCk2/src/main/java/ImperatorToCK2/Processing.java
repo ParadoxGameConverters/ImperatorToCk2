@@ -1,5 +1,4 @@
 package ImperatorToCK2;  
-
 import java.util.Scanner;
 import java.io.IOException;
 import java.io.FileInputStream;
@@ -186,6 +185,12 @@ public class Processing
         String VM = "\\";
 
         VM = VM.substring(0);
+        
+        String bracket1 = "a{";
+        String bracket2 = "a}";
+
+        bracket1 = bracket1.substring(1);
+        bracket2 = bracket2.substring(1);
 
         String provID = Integer.toString(provIDnum);
 
@@ -329,6 +334,10 @@ public class Processing
                             qaaa.split("_")[0].equals(tab4+tab+"b") || qaaa.split("_")[0].equals("                   "+tab+"b") || 
                             qaaa.split("_")[0].equals("                "+"b")){
                                 qaaa = qaaa.split("b_")[1];
+                                qaaa = qaaa.replace(bracket1,"");
+                                qaaa = qaaa.replace(bracket2,"");
+                                qaaa = qaaa.replace("=","");
+                                qaaa = qaaa.replace(" ","");
                                 if (output != null) {
                                     output = output + "," + qaaa.split(" =")[0];
                                 } else { output = qaaa.split(" =")[0]; }
@@ -1017,9 +1026,9 @@ public class Processing
     {
 
         int aqq = 0;
-        
+
         int flag = 0; //Sets it so that only the first correct tag becomes cultureTitle. 
-        
+
         int flag2 = 0; //Defeated civil war tags will still exist in save, causing calc to set non-existant civil war faction as cultureTitle without flags
 
         while (aqq < impTagInfo.size()) {
@@ -1037,6 +1046,33 @@ public class Processing
         }
 
         return cultureTitles;
+    }
+
+    public static boolean checkFile(String file) throws IOException //checks if file exists or not
+    {
+
+        try {
+
+            FileInputStream fileIn= new FileInputStream(file);
+
+        }catch (java.io.FileNotFoundException exception){
+            return false;
+
+        }
+
+        return true;
+    }
+    
+    public static void fileExcecute(String[] file) throws IOException //checks if file exists or not
+    {
+	try {
+        	Runtime runTime = Runtime.getRuntime();
+        	Process process = runTime.exec(file);
+        	process.waitFor();
+        } catch (Exception q) {
+            
+        }
+                
     }
 
 }
