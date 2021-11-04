@@ -1,0 +1,45 @@
+[h1]I:R To CK2 Converter[/h1]
+
+Welcome to the I:R to CK2 Converter project! The goal of this project is to allow a Imperator: Rome campaign to be transferred and continued in Crusader Kinks II, so you may continue your game uninterrupted, from 304BCE to 1453AD, and further using our other converters to Europa Universalis 4, Victoria 2 and Hearts of Iron 4.
+
+Running a continuous campaign from Imperator: Rome all the way to HoI4 is called running a [b]mega-campaign[/b].
+
+[h2]Converter is not a mod - it is a mod producing [i]application[/i] (program, software)[/h2]
+[list]
+[*] This converter currently supports I:R 1.3-2.0+ and CK2 3.3. CK2 DLCs are optional.
+[*] This mod is not intended to be enabled in game. It is only a [i]delivery vehicle[/i] for the converter's download link.
+[*] You can also download the converter directly from our [url=https://forum.paradoxplaza.com/forum/threads/imperator-to-ckii-converter-development-thread-not-for-troubleshooting.1294757/]forums thread[/url] or from Github.
+[/list]
+
+[h3]Setting up the converter.[/h3]
+To set up the converter, you’ll need to follow the steps below:
+[olist]
+[*] Subscribe to the this mod.
+[*] If the mod does not immediately begin downloading, you may need to start CK3 launcher to trigger the download.
+[*] Go to your mod folder (usually [i]C:\Program Files (x86)\Steam\steamapps\workshop\content\ ... [/i], or elsewhere if you moved your steam library)
+[*] Inside it find and open [i]downloadLink.txt[/i]. 
+[*] Within that file is a direct link to the converter's download location. Copy the link and paste it into a browser to download it.
+[*] Unzip the downloaded converter to a new folder by right-clicking on it and selecting [i]Extract All…[/i]
+[*] Finally, go to the extracted converter's directory and fire it up by running [i]ConverterFrontend.exe[/i].
+[/olist]
+
+If you downloaded the converter directly from forums or github, you only need to execute steps 6 and 7.
+
+[h2]How does it work?[/h2]
+Every converter has a detailed documentation available at its [url=https://imperator.paradoxwikis.com/Imperator_To_CK2_Converter]wiki page[/url].
+Very generally, it takes your Imperator: Rome [b]saved game[/b] and converts it into a crusader Kings 2 [b]mod[/b].
+You then have to [b]enable that mod[/b] when starting CK2 launcher.
+
+[h2]Troubleshooting[/h2] 
+
+We welcome any questions and will gladly help you out if you hit a problem. 
+
+When seeking help, discussing conversion issues or problems, or if you simply need answers to your questions, come to our [url=https://forum.paradoxplaza.com/forum/threads/imperator-to-ckii-converter-development-thread-not-for-troubleshooting.1294757/]Paradox forum release thread[/url].
+
+To resolve issues we will always need your conversion's [i][b]log.txt[/b][/i]. You can find it in your converter's folder after conversion. Upload your log.txt to the release thread, along with a detailed description of your problem. We may need additional data like your running savegame or mods used, which you can also upload to the forums directly.
+
+Keep in mind Steam discussion below is [b]not suited[/b] to troubleshooting as you cannot upload files we need.
+
+[h2]Suggestions / Development[/h2]
+
+We are always open to suggestions on improving our converters. Best place for that is our [url=https://forum.paradoxplaza.com/forum/threads/imperator-to-ckii-converter-development-thread-not-for-troubleshooting.1294757/]development thread[/url].
