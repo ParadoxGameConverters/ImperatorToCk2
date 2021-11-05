@@ -1,2 +1,2 @@
 Latest release - 0.1 Assyrian:
-https://github.com/ParadoxGameConverters/ImperatorToCK2/releases/latest/download/ImperatorToCK2.zip
+https://github.com/ParadoxGameConverters/ImperatorToCk2/releases/download/0.1Assyrian/ImperatorToCK2-0.1Assyrian.zip
