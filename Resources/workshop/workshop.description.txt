@@ -8,7 +8,7 @@ Running a continuous campaign from Imperator: Rome all the way to HoI4 is called
 [list]
 [*] This converter currently supports I:R 1.3-2.0+ and CK2 3.3. CK2 DLCs are optional.
 [*] This mod is not intended to be enabled in game. It is only a [i]delivery vehicle[/i] for the converter's download link.
-[*] You can also download the converter directly from our [url=https://forum.paradoxplaza.com/forum/threads/imperator-to-ckii-converter-development-thread-not-for-troubleshooting.1294757/]forums thread[/url] or from Github.
+[*] You can also download the converter directly from our [url=https://forum.paradoxplaza.com/forum/threads/imperator-to-ck2-release-thread.1496613/]forums thread[/url] or from Github.
 [/list]
 
 [h3]Setting up the converter.[/h3]
