@@ -28,11 +28,17 @@ ionian,greek
 cypriot,greek
 thessalian,greek
 greco_indian,greek
-hellenistic,hellenistic
+greek,greek
 
 #Latin
 
 roman,roman
+hispania,roman
+gaul,roman
+brittania,roman
+africa,roman	
+illyria,roman
+sardonian,roman
 lucanian,sabellian
 sabellian,sabellian
 samnite,sabellian
@@ -93,6 +99,7 @@ morinian,belgae
 veliocassian,belgae
 bellovacian,belgae
 sennonian,belgae
+ubian,belgae
 
 #CeltPannonian
 celtic_pannonian,celtic_pannonian
@@ -101,6 +108,7 @@ carnian,celtic_pannonian
 noric,celtic_pannonian
 boian,celtic_pannonian
 eravisci,celtic_pannonian
+galatian,celtic_pannonian
 
 #Gaelic
 
@@ -131,8 +139,10 @@ durotrigan,welsh
 dobunnian,welsh
 coritani,welsh
 brigantic,welsh
+briton,welsh
 votadinian,pictish
 damnonian,pictish
+pict,pictish
 
 #Punic
 carthaginian,carthaginian
@@ -159,6 +169,10 @@ herulian,gothic
 gothonic,gothic
 bastarnae,gothic
 istvaeonic,old_frankish
+franks,old_frankish
+anglosaxon,saxon
+lombards,lombard
+
 
 #Egyptian
 
@@ -176,6 +190,15 @@ massaesylian,maghreb_arabic
 massylian,maghreb_arabic
 garamantic,maghreb_arabic
 libyan,maghreb_arabic
+nasamonian,maghreb_arabic
+macaean,maghreb_arabic
+psyllic,maghreb_arabic
+phazani,maghreb_arabic
+lotophagoi,maghreb_arabic
+gyzantian,maghreb_arabic
+moyan,maghreb_arabic
+alutan,maghreb_arabic
+boran,maghreb_arabic
 
 #Illyrian
 
@@ -315,6 +338,7 @@ puntic,somali
 aksumite,ethiopian
 meroitic,nubian
 blemmyan,nubian
+lower_nubian,nubian
 
 #Tibetan
 
@@ -359,9 +383,15 @@ tocharian,tocharian
 
 magadhi,bengali
 bangli,bengali
+pandra,bengali
+vanga,bengali
+kasi,bengali
+vrij,bengali
+malla,bengali
 himalayan,nepali
 kamarupi,assamese
 kalingan,oriya
+savara,oriya
 atavi,hindustani
 
 #WesternIndian
@@ -379,8 +409,29 @@ vidharban,marathi
 
 #Dravidian
 kannadan,kannada
+alupan,kannada
+kuntalan,kannada
 tamil,tamil
+pandyan,tamil
+cheran,tamil
+cholan,tamil
 telugu,telugu
+assaka,telugu
+andhran,telugu
 
 #Baltic
 aestian,prussian
+sporic,prussian
+neuric,prussian
+
+#Turkic
+khazars,khazar
+turks,turkish
+alans,alan
+bulgars,bolghar
+avars,avar
+huns,hunnic
+hunnic,hunnic
+
+#Slavic
+polanes,polish
