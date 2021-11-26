@@ -9,6 +9,7 @@ e_BHA,e_india
 e_DRA,e_deccan
 e_YMN,e_arabia
 #e_NUM,e_maghreb
+e_SBN,e_germany
 k_XXS,k_saxony
 k_HIB,k_ireland
 k_YRL,k_yarlung
@@ -29,3 +30,34 @@ k_ASR,k_mesopotamia
 k_KHT,k_khotan
 k_KRP,k_kamarupa
 k_KAL,k_orissa
+
+#Molon Labe mod formables
+e_ARB,e_arabia
+e_SCN,e_scandinavia
+e_BOD,e_tibet
+e_ITA,e_italy
+k_ARB,k_arabia
+k_NPL,k_nepal
+k_NUB,k_nubia
+k_MWA,k_malwa
+k_BTN,k_brittany
+k_LNK,k_lanka
+k_LOM,k_lombardy
+k_ITA,k_italy
+k_AEN,k_england
+k_SCO,k_scotland
+
+#Dark Ages mod
+e_ERE,e_byzantium
+#e_HRE,e_hre
+#e_ARA,e_arabia
+e_ITY,e_italy
+k_ERE,k_byzantium
+k_BAV,k_bavaria
+k_POL,k_poland
+#k_ARB,k_arabia
+k_ENG,k_england
+k_IRE,k_ireland
+k_ITY,k_italy
+k_KAS,k_kashmir
+k_BAS,k_navarra
