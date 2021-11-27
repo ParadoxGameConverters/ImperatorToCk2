@@ -1,4 +1,4 @@
-package ImperatorToCK2;  
+package ImperatorToCK2;    
 
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -648,18 +648,23 @@ public class Main
                                 //LOGGER.config ("output1");
                                 aq7 = 0;
                                 String subRank = "d";//rank of governorships, 1 below primary title
-                                if (rank.equals("e")) {
+                                if (rank.equals("e")) { //Create kingdom tier title of capital region for empire title
                                     subRank = "k";
                                     
                                     Output.titleCreation(impTagInfo.get(aq4)[0],tempNum2,impTagInfo.get(aq4)[3],impTagInfo.get(aq4)[17],
                                         impTagInfo.get(aq4)[5],subRank,"no_liege",modDirectory);
 
-                                    String capitalName = Importer.importConvList("provinceConversion.txt",Integer.parseInt(impTagInfo.get(aq4)[5]))[1];
-                                    capitalName = Processing.importNames("a",Integer.parseInt(capitalName),ck2Dir)[0];
-                                    String[] capitalLoc = (capitalName+","+capitalName).split(",");
+                                    
+                                    String capitalName = "PROV"+impTagInfo.get(aq4)[5]; //use name of capital for generated kingdom
+                                    String[] capitalLoc = Importer.importProvLocalisation(impGameDir,capitalName);
+                                    if (capitalLoc[0].equals(capitalName)) { //In the event I:R prov has no name, use CK2 prov name
+                                        capitalName = Importer.importConvList("provinceConversion.txt",Integer.parseInt(impTagInfo.get(aq4)[5]))[1];
+                                        capitalName = Processing.importNames("a",Integer.parseInt(capitalName),ck2Dir)[0];
+                                        capitalLoc = (capitalName+","+capitalName).split(",");
+                                    }
 
                                     Output.localizationCreation(capitalLoc,impTagInfo.get(aq4)[0],subRank,modDirectory);
-                                    Output.copyFlag(ck2Dir,modDirectory,subRank,impTagInfo.get(aq4)[5],impTagInfo.get(aq4)[0]);
+                                    Output.copyFlag(ck2Dir,modDirectory,subRank,impTagInfo.get(aq4)[5],impTagInfo.get(aq4)[0]); //use flag of empire
                                 }
                                 
                                 impTagInfo.get(aq4)[22] = rank;
@@ -679,10 +684,6 @@ public class Main
                                             govCharacter[0],govCharacter[7],govCharacter[4],govCharacter[8],govCharacter[10],govCharacter[11],govCharacter[12],govCharacter[13],
                                             govCharacter[14],govCharacter[15],saveCharacters,"q","q",convertedCharacters,impCharInfoList,modDirectory);
 
-                                        String[] govLocName = importer.importLocalisation(impGameDir,govReg,"00Region00");
-                                        govLocName[0] = locName[1] + " " + govLocName[0];
-                                        govLocName[1] = locName[1] + " " + govLocName[1];
-                                        output.localizationCreation(govLocName,govRegID,subRank,modDirectory);
                                         Output.copyFlag(ck2Dir,modDirectory,subRank,impTagInfo.get(aq4)[5],govRegID); //default flag for governorships
 
                                         aq7 = aq7 + 1;
@@ -837,6 +838,13 @@ public class Main
                                                 flaggedGovernorships.add(impTagInfo.get(tempNum2b)[0]+"__"+govReg);
                                                 String provIDString = (Integer.toString(aq4));
                                                 Output.copyFlag(ck2Dir,modDirectory,rank,provIDString,impTagInfo.get(tempNum2b)[0]+"__"+govReg);
+                                                
+                                                String govLoc = Importer.importConvListR("provinceConversion.txt",aq4)[0];
+                                                govLoc = "PROV"+govLoc;
+                                                String[] govLocName = Importer.importProvLocalisation(impGameDir,govLoc);
+                                                output.localizationCreation(govLocName,impTagInfo.get(tempNum2b)[0]+"__"+govReg,rank,modDirectory);
+                                                
+                                                
                                             }
                                         } else {
                                             aq7 = aq7 + 1;    
