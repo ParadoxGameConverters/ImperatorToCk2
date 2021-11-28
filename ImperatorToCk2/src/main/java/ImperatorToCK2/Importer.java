@@ -231,7 +231,7 @@ public class Importer
                                                         }
                                                     }
                                                 }
-                                                
+
                                             }
                                             output[19] = "CIVILWAR-"+qaaa;
                                         }
@@ -247,7 +247,7 @@ public class Importer
                                     output[2] = qaaa.split("=")[1]; //used for determining inheiratance laws
                                 }
                                 else if (qaaa.split("=")[0].equals( tab+tab+tab+"color" ) ) {
-                                    
+
                                     if (qaaa.length() == 14) { //Rakaly save format
                                         qaaa = scnr.nextLine();
                                         output[3] = qaaa.replace(tab,"");
@@ -405,7 +405,7 @@ public class Importer
         String tab = "	";
 
         int aqq = 0;
-        
+
         ArrayList<String> currentList = new ArrayList<String>();
 
         boolean endOrNot = true;
@@ -445,12 +445,11 @@ public class Importer
                     }
 
                     currentList.add(tmpOutput[0]+","+tmpOutput[1]+","+tmpOutput[2]);
-                    
+
                     output[0] = "9999";
                     output[1] = "9999";
                     output[2] = "9999";
                 }
-
 
                 flag = 0;
             }
@@ -583,6 +582,53 @@ public class Importer
 
     }
 
+    public static String[] importConvListR (String name, int provIDnum) throws IOException //Reverse of importConvList
+    {
+
+        String provID = Integer.toString(provIDnum);
+        FileInputStream fileIn= new FileInputStream(name);
+        Scanner scnr= new Scanner(fileIn);
+
+        int flag = 0;
+
+        boolean endOrNot = true;
+
+        String qaaa;
+        String[] output;   // Owner Culture Religeon PopTotal Buildings
+        output = new String[2];
+
+        output[0] = "peq"; //default for no owner, uncolonized province
+        output[1] = "99999"; //default for no culture, uncolonized province with 0 pops
+
+        try {
+            while (endOrNot = true){
+
+                qaaa = scnr.nextLine();
+
+                try {
+
+                    if (qaaa.split(",")[1].equals(provID)){
+                        endOrNot = false;
+                        output[0] = qaaa.split(",")[0];
+                        output[1] = qaaa.split(",")[1];
+
+                    }
+
+                } catch (java.lang.ArrayIndexOutOfBoundsException exception) {
+
+                }
+
+            }
+
+        }catch (java.util.NoSuchElementException exception){
+            endOrNot = false;
+
+        }   
+
+        return output;
+
+    }
+
     public static String[] importCultList (String name, String provIDnum) throws IOException
     {
 
@@ -688,7 +734,7 @@ public class Importer
                             output[0] = output[0].substring(3,output[0].length()-1);
 
                         }
-                        
+
                         String adjName = tag.replace("_NAME","");
                         String feuName = tag.replace("_FEUDATORY_NAME","_FEUDATORY_ADJECTIVE"); //for certain mission tags which have different formatting
 
@@ -1067,7 +1113,7 @@ public class Importer
         return oldFile;
 
     }
-    
+
     public static String[] importDejureList (String name, String provIDnum) throws IOException
     {
 
@@ -1108,7 +1154,7 @@ public class Importer
         return output;
 
     }
-    
+
     public static ArrayList<String> importDuchyNameList (String ck2Dir) throws IOException //imports dejure duchies, along with the counties they go to
     {
 
@@ -1148,7 +1194,7 @@ public class Importer
                 }
 
                 if (qaaa.split("_")[0].equals(countyWord) || qaaa.split("_")[0].equals(countyWord2) || qaaa.split("_")[0].equals(countyWord3) ||
-                    qaaa.split("_")[0].equals(countyWord4)) {
+                qaaa.split("_")[0].equals(countyWord4)) {
                     String county = qaaa.split(" = ")[0].replace(tab,"");
                     duchyList = duchyList + "," + county;
                     qaaa = scnr.nextLine();
@@ -1167,8 +1213,8 @@ public class Importer
         return duchies;
 
     }
-    
-        public static int compressTest (String saveDir) throws IOException //Checks if the file is compressed or not
+
+    public static int compressTest (String saveDir) throws IOException //Checks if the file is compressed or not
     {
 
         String VM = "\\";
@@ -1177,9 +1223,9 @@ public class Importer
 
         FileInputStream fileIn= new FileInputStream(saveDir);
         Scanner scnr= new Scanner(fileIn);
-        
+
         String qaaa = scnr.nextLine();
-        
+
         int compressedOrNot = 0; //0 for compressed, 1 for decompressed
 
         int aqq = 1;
@@ -1192,13 +1238,9 @@ public class Importer
                     compressedOrNot = 1;
                 }
 
-
                 qaaa = scnr.nextLine();
-
                 aqq = aqq + 1;
-
             }
-
         }catch (java.util.NoSuchElementException exception){
             aqq = 10;
 
@@ -1206,7 +1248,6 @@ public class Importer
         return compressedOrNot;
 
     }
-    
-    
+
     //developed originally by Shinymewtwo99
 }
