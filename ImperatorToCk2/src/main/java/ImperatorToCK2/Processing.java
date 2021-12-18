@@ -1,4 +1,5 @@
 package ImperatorToCK2;  
+   
 import java.util.Scanner;
 import java.io.IOException;
 import java.io.FileInputStream;
@@ -1073,6 +1074,110 @@ public class Processing
             
         }
                 
+    }
+    
+        public static String customDate(String date, String oldDirectory, String newDirectory) throws IOException //needed to allow TAGs imperial laws
+    {
+
+        String VM = "\\"; 
+        VM = VM.substring(0);
+        char VMq = '"';
+        String tab = "	";
+
+        ArrayList<String> oldFile = new ArrayList<String>();
+
+        oldFile = Importer.importBasicFile(oldDirectory);
+
+        FileOutputStream fileOut= new FileOutputStream(newDirectory);
+        PrintWriter out = new PrintWriter(fileOut);
+        
+        String tmpDate = date.replace(".",",");
+        
+        int year = Integer.parseInt(tmpDate.split(",")[0]);
+        int month = Integer.parseInt(tmpDate.split(",")[1]);
+        int day = Integer.parseInt(tmpDate.split(",")[2]);
+        
+        String bookmark = "converted";
+        String bookmarkName = "converted_bookmark_name";
+        String bookmarkDesc = "converted_bookmark_info";
+        String image = "GFX_pick_era_image_4";
+        
+        if (year >= 769) {
+            bookmark = "bm_charlemagne";
+            bookmarkName = "BM_CHARLEMAGNE_ERA";
+            bookmarkDesc = "BM_CHARLEMAGNE_ERA_INFO";
+            image = "GFX_pick_era_image_1";
+        }
+        
+        if (year >= 867) {
+            bookmark = "bm_the_old_gods";
+            bookmarkName = "BM_THE_OLD_GODS_ERA";
+            bookmarkDesc = "BM_THE_OLD_GODS_ERA_INFO";
+            image = "GFX_pick_era_image_2";
+        }
+        
+        if (date.equals("936.8.7")) {
+            bookmark = "bm_otto_the_first";
+            bookmarkName = "OTTO_THE_FIRST_ERA";
+            bookmarkDesc = "OTTO_THE_FIRST_ERA_INFO";
+            image = "GFX_pick_era_image_6";
+        }
+        
+        if ((year >= 1066 && month >= 9 && day >= 15) || year >= 1067) {
+            bookmark = "bm_fate_of_england";
+            bookmarkName = "BM_FATE_OF_ENGLAND_ERA";
+            bookmarkDesc = "BM_FATE_OF_ENGLAND_ERA_INFO";
+            image = "GFX_pick_era_image_3";
+        }
+        
+        if (year >= 1337) {
+            bookmark = "bm_100_years_war";
+            bookmarkName = "BM_100_YEARS_WAR_ERA";
+            bookmarkDesc = "BM_100_YEARS_WAR_ERA_INFO";
+            image = "GFX_pick_era_image_5";
+        }
+
+        int aqq = 0;
+
+
+            while (aqq < oldFile.size()) {
+                
+                if (oldFile.get(aqq).contains("converted = ")) {
+                    String newTitle = oldFile.get(aqq).replace("converted = ",bookmark);
+                    out.println (newTitle);
+                }
+                
+                else if (oldFile.get(aqq).contains("converted_bookmark_name")) {
+                    String newName = oldFile.get(aqq).replace("converted_bookmark_name",bookmarkName);
+                    out.println (newName);
+                }
+                
+                else if (oldFile.get(aqq).contains("converted_bookmark_info")) {
+                    String newInfo = oldFile.get(aqq).replace("converted_bookmark_info",bookmarkDesc);
+                    out.println (newInfo);
+                }
+                
+                else if (oldFile.get(aqq).contains("100.1.1")) {
+                    String newDate = oldFile.get(aqq).replace("100.1.1",date);
+                    out.println (newDate);
+                } 
+                
+                else if (oldFile.get(aqq).contains("GFX_pick_era_image_4")) {
+                    String newDate = oldFile.get(aqq).replace("GFX_pick_era_image_4",image);
+                    out.println (newDate);
+                } else {
+                    out.println (oldFile.get(aqq));
+                }
+
+                aqq = aqq + 1;
+
+            }
+
+
+        out.flush();
+        fileOut.close();
+
+        return "a";
     }
 
 }
