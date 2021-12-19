@@ -1,4 +1,47 @@
 option = {
+	name = year
+	displayName = YEAROPTION
+	tooltip = YEAROPTIONTIP
+	radioSelector = {
+		radioOption = {
+			name = saveYear
+			displayName = SAVEYEAR
+			tooltip = SAVEYEARTIP
+			default = true
+		}
+		radioOption = {
+			name = saveYearAUC
+			displayName = SAVEYEARAUC
+			tooltip = SAVEYEARAUCTIP
+			default = false
+		}
+		radioOption = {
+			name = minYear
+			displayName = MINYEAR
+			tooltip = MINYEARTIP
+			default = false
+		}
+		radioOption = {
+			name = customYear
+			displayName = CUSTOMYEAR
+			tooltip = CUSTOMYEARTIP
+			default = false
+		}
+	}
+}
+
+option = {
+	name = customYearDate
+	displayName = CUSTOMYEARDATE
+	tooltip = CUSTOMYEARDATETIP
+	textSelector = {	
+		value = "100.1.1"
+		editable = true
+		tooltip = CUSTOMYEARDATETIP2
+	}
+}
+
+option = {
 	name = output_name
 	displayName = MODNAME
 	tooltip = MODNAMETIP

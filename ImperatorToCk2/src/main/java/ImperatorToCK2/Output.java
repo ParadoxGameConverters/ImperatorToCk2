@@ -1,4 +1,5 @@
 package ImperatorToCK2;  
+   
 import java.util.Scanner;
 import java.io.IOException;
 import java.io.FileInputStream;
@@ -111,7 +112,7 @@ public class Output
         return irColor;
     }
 
-    public static String titleCreation(String irTAG, String irKING, String irCOLOR, String government, String capital,String rank,String liege,
+    public static String titleCreation(String irTAG, String irKING, String irCOLOR, String government, String capital,String rank,String liege,String date1,
     String Directory) throws IOException
     {
 
@@ -133,7 +134,7 @@ public class Output
 
         int flag = 0;
 
-        String date1 = "100.1.1";
+        //String date1 = "100.1.1";
         String date2 = "1066.9.15";
 
         String overlordRank = "k";
@@ -331,7 +332,7 @@ public class Output
         return ckProv;
     }
 
-    public static String ctitleCreation(String name, String irKING, String Directory, int id) throws IOException
+    public static String ctitleCreation(String name, String irKING, String Directory, int id,String date1) throws IOException
     {
 
         btitleCreation(name,Directory,id);
@@ -382,7 +383,7 @@ public class Output
 
         int flag = 0;
 
-        String date1 = "100.1.1";
+        //String date1 = "100.1.1";
         String date2 = "1066.9.15";
 
         out.println (date1+"={");
@@ -401,7 +402,7 @@ public class Output
 
     public static ArrayList<String> characterCreation(String irKING, String cult, String rel, String age, String name, String dynasty,
     String sex, String traits, String martial, String zeal, String charisma, String finesse, String spouse, String children,String government,String father,
-    String mother,ArrayList<String> convertedList,ArrayList<String[]> charList,String Directory) throws IOException
+    String mother,ArrayList<String> convertedList,ArrayList<String[]> charList,String date1,String Directory) throws IOException
     {
 
         int characterCount = 0;
@@ -457,7 +458,7 @@ public class Output
             spouseInfo = charList.get(spouseID);
 
             characterCreation( spouse1066,  cultureOutput(spouseInfo[1]),  religionOutput(spouseInfo[2]),  spouseInfo[3],  spouseInfo[0],  spouseInfo[7],
-                spouseInfo[4],  spouseInfo[8],  martial,  zeal,  charisma,  finesse,  "0",  "0", "no","q",  "q",convertedList,charList, Directory);
+                spouseInfo[4],  spouseInfo[8],  martial,  zeal,  charisma,  finesse,  "0",  "0", "no","q",  "q",convertedList,charList,date1, Directory);
         }
 
         if (children != "0") {
@@ -484,7 +485,7 @@ public class Output
 
                 characterCreation( child1066,  cultureOutput(childInfo[1]),  religionOutput(childInfo[2]),  childInfo[3],  childInfo[0],  childInfo[7],
                     childInfo[4],  childInfo[8],  martial,  zeal,  charisma,  finesse,  childInfo[14],  childInfo[15], isPurple,irKING,spouse1066,
-                    convertedList,charList,Directory);
+                    convertedList,charList,date1,Directory);
 
                 aq4 = aq4 + 1;
             }
@@ -546,90 +547,20 @@ public class Output
 
         int flag = 0;
 
-        String date1 = "100.1.1";
+        //String date1 = "100.1.1";
+        String tmpDate = date1.replace(".",","); //'.' character breaks .split function
+        String monthDay = "." + tmpDate.split(",")[1] + "." + tmpDate.split(",")[2];
+        monthDay = monthDay.replace(",",".");
         String date2 = "1066.9.15";
+        int yearNum = Integer.parseInt(tmpDate.split(",")[0]);
         int birthdayNum2 = 1066 - numAge;
-        int birthdayNum = 100 - numAge;
+        int birthdayNum = yearNum - numAge;
         String birthday2 = Integer.toString(birthdayNum2)+".9.15";
-        String birthday = Integer.toString(birthdayNum)+".1.1";
+        String birthday = Integer.toString(birthdayNum)+monthDay;
 
         //Military/Martial Charisma/Stewardship Zeal/Learning
 
-        //1066 Start date
-
-        out.println (irKING+"={");
-        out.println (tab+"name="+quote+name+quote);
-        if (sex.equals("f")) {
-            out.println (tab+"female = yes");    
-        }
-        out.println (tab+"dynasty="+dynasty);
-        out.println (tab+"martial="+martial);
-        out.println (tab+"diplomacy="+zeal);
-        out.println (tab+"intrigue="+charisma);
-        out.println (tab+"stewardship="+finesse);
-        out.println (tab+"religion="+quote+rel+quote);
-        out.println (tab+"culture="+quote+cult+quote);
-        if (rel.equals("hindu") || rel.equals("buddhist") || rel.equals("jain")) { //Caste system defaults to merchant unless specified, sets to ruler
-            out.println (tab+"trait=kshatriya");
-        }
-        if (government.equals("purple")) {
-            out.println (tab+"trait="+quote+"born_in_the_purple"+quote);    
-        }
-
-        if (traits != "q") {
-
-            while (aqq < aq2) {
-                //if (convTraitList.get(aqq).split("_")[1].equals("B")) { //bloodline
-                if (convTraitList.get(aqq).charAt(convTraitList.get(aqq).length()-1) == 'B' && hasFather == 0) { //bloodline
-                    out.println (tab+date2+"={");
-                    out.println (tab+tab+"create_bloodline = {");
-                    //out.println (tab+tab+tab+"type = "+convTraitList.get(aqq).split("_")[0]);
-                    out.println (tab+tab+tab+"type = "+convTraitList.get(aqq).substring(0,convTraitList.get(aqq).length()-1));
-                    out.println (tab+tab+tab+"has_dlc = "+quote+"Holy Fury"+quote);
-                    out.println (tab+tab+"}");
-                    out.println (tab+"}");    
-                }else { //regular trait
-
-                    out.println (tab+"trait="+convTraitList.get(aqq));
-
-                }
-                aqq = aqq + 1;
-            }
-
-        }
-
-        if (sex != "69") { //if a character is dynamically generated or not
-            out.println (tab+"disallow_random_traits = yes");    
-        }
-        //out.println (tab+"disallow_random_traits = yes");
-
-        if (hasFather == 1) {
-            out.println (tab+"father="+father);
-
-        }
-
-        if (hasMother == 1) {
-            out.println (tab+"mother="+mother);
-
-        }
-
-        out.println (tab+birthday2+"={");
-        out.println (tab+tab+"birth="+quote+birthday2+quote);
-        out.println (tab+"}");
-
-        if (spouse != "0") {
-            out.println (tab+date2+"={");
-            out.println (tab+tab+"add_spouse="+spouse1066);
-            out.println (tab+"}");
-        }
-
-        if (dead.equals("yes")) {
-            out.println (tab+date2+" ={");
-            out.println (tab+tab+"death= yes");
-            out.println (tab+"}");   
-        }
-
-        out.println ("}");
+        
 
         aqq = 0;
         //100 Start date
@@ -700,7 +631,7 @@ public class Output
         if (dead.equals("yes")) {
             out.println (tab+date1+" ={");   
         } else {
-            out.println (tab+"250.1.1 ={");    
+            out.println (tab+(yearNum+250)+".1.1 ={");    
         }
         out.println (tab+tab+"death= yes");
         out.println (tab+"}");
