@@ -1,0 +1,583 @@
+###################################
+#
+# Imperator:Rome to Crusader Kings II
+# - Roman Culture Conversion Events
+#
+###################################
+
+namespace = IR_ROM
+
+# Province culture changes from Roman to Italian
+province_event = {
+	id = IR_ROM.2000
+	desc = EVTDESC_IR_ROM_2000
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+	
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = roman
+		region = custom_irck2_italy
+		NOT = {
+			owner = { 
+				top_liege = { 
+					culture = roman 
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				} 
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_ROM_2000
+		culture = italian
+	}
+}
+
+#################################################
+
+province_event = {
+	id = IR_ROM.2001
+	desc = EVTDESC_IR_ROM_2001
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+	
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = roman
+		region = custom_irck2_dalmatia
+		NOT = {
+			owner = { 
+				top_liege = { 
+					culture = roman 
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				} 
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_ROM_2001
+		culture = dalmatian
+	}
+}
+
+province_event = {
+	id = IR_ROM.2002
+	desc = EVTDESC_IR_ROM_2002
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+	
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = roman
+		region = custom_irck2_romania
+		NOT = {
+			owner = { 
+				top_liege = { 
+					culture = roman 
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				} 
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_ROM_2002
+		culture = romanian
+	}
+}
+
+province_event = {
+	id = IR_ROM.2003
+	desc = EVTDESC_IR_ROM_2003
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+	
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = roman
+		region = custom_irck2_occitania
+		NOT = {
+			owner = { 
+				top_liege = { 
+					culture = roman 
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				} 
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_ROM_2003
+		culture = occitan
+	}
+}
+
+province_event = {
+	id = IR_ROM.2004
+	desc = EVTDESC_IR_ROM_2004
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+	
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = roman
+		region = custom_irck2_france
+		NOT = {
+			owner = { 
+				top_liege = { 
+					culture = roman 
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				} 
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_ROM_2004
+		culture = frankish
+	}
+}
+
+province_event = {
+	id = IR_ROM.2005
+	desc = EVTDESC_IR_ROM_2005
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+	
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = roman
+		region = custom_irck2_catalonia
+		NOT = {
+			owner = { 
+				top_liege = { 
+					culture = roman 
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				} 
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_ROM_2005
+		culture = catalan
+	}
+}
+
+province_event = {
+	id = IR_ROM.2006
+	desc = EVTDESC_IR_ROM_2006
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+	
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = roman
+		region = custom_irck2_spain
+		NOT = {
+			owner = { 
+				top_liege = { 
+					culture = roman 
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				} 
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_ROM_2006
+		culture = castillan
+	}
+}
+
+province_event = {
+	id = IR_ROM.2007
+	desc = EVTDESC_IR_ROM_2007
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+	
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = roman
+		region = custom_irck2_portugal
+		NOT = {
+			owner = { 
+				top_liege = { 
+					culture = roman 
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				} 
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_ROM_2007
+		culture = portuguese
+	}
+}
+
+province_event = {
+	id = IR_ROM.2008
+	desc = EVTDESC_IR_ROM_2008
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+	
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = roman
+		region = custom_irck2_sardinia
+		NOT = {
+			owner = { 
+				top_liege = { 
+					culture = roman 
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				} 
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_ROM_2008
+		culture = sardinian
+	}
+}
+
+############ New Cultures added by the converter
+
+
+province_event = {
+	id = IR_ROM.2009
+	desc = EVTDESC_IR_ROM_2009
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+	
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = roman
+		region = custom_irck2_greece
+		NOT = {
+			owner = { 
+				top_liege = { 
+					culture = roman 
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				} 
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_ROM_2009
+		culture = aromanian
+	}
+}
+
+
+
+province_event = {
+	id = IR_ROM.2010
+	desc = EVTDESC_IR_ROM_2010
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+	
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = roman
+		region = custom_irck2_britannia
+		NOT = {
+			owner = { 
+				top_liege = { 
+					culture = roman 
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				} 
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_ROM_2010
+		culture = cambrian
+	}
+}
+
+
+province_event = {
+	id = IR_ROM.2011
+	desc = EVTDESC_IR_ROM_2011
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+	
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = roman
+		region = custom_irck2_north_africa
+		NOT = {
+			owner = { 
+				top_liege = { 
+					culture = roman 
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				} 
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_ROM_2011
+		culture = romano_african
+	}
+}
+
+
