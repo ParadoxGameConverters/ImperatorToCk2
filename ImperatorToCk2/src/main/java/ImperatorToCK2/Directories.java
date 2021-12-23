@@ -96,6 +96,12 @@ public class Directories
         
         File f27 = new File(mainModFolder+VM+"gfx"+VM+"flags");
         f27.mkdir();
+        
+        File f28 = new File(mainModFolder+VM+"decisions");
+        f28.mkdir();
+        
+        File f29 = new File(mainModFolder+VM+"map");
+        f29.mkdir();
 
         return aqv;
     }

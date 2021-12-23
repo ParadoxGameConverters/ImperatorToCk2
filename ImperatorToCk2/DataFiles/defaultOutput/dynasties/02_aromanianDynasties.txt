@@ -1,0 +1,143 @@
+5321008=
+{
+	name="Basarab"
+	culture="aromanian"
+}
+5321009=
+{
+	name="Dragusin"
+	culture="aromanian"
+}
+5321010=
+{
+	name="Basarab"
+	culture="aromanian"
+	religion="orthodox"
+	coat_of_arms=
+	{
+		data=
+		{
+0 5 0 23 0 0 0 			}
+		religion="catholic"
+	}
+}
+5321011=
+{
+	name="Litovoi"
+	culture="aromanian"
+	religion="orthodox"
+}
+5321012=
+{
+	name="Selimovic"
+	culture="aromanian"
+}
+5321013=
+{
+	name="Csáky"
+	culture="aromanian"
+}
+5321014=
+{
+	name="Dezsõfi"
+	culture="aromanian"
+}
+5321015=
+{
+	name="Guthi-Országh"
+	culture="aromanian"
+}
+5321016=
+{
+	name="Marczaltövi"
+	culture="aromanian"
+}
+5321017=
+{
+	name="Petenye"
+	culture="aromanian"
+}
+5321018=
+{
+	name="Tibai"
+	culture="aromanian"
+}
+5321019=
+{
+	name="Zách"
+	culture="aromanian"
+}
+5321020=
+{
+	name="Szapolyai"
+	culture="aromanian"
+}
+5321021=
+{
+	name="Várdai"
+	culture="aromanian"
+	religion="catholic"
+}
+5321022=
+{
+	name="Prodanic"
+	culture="aromanian"
+	religion="catholic"
+}
+5321023=
+{
+	name="Odescalchi"
+	culture="aromanian"
+	religion="catholic"
+}
+5321024=
+{
+	name="Costin"
+	culture="aromanian"
+	religion="orthodox"
+	coat_of_arms=
+	{
+		data=
+		{
+2 1 0 4 10 0 0 1 0 4 10 0 0 			}
+		religion="orthodox"
+	}
+}
+5321025=
+{
+	name="Szilágyi"
+	culture="aromanian"
+	religion="orthodox"
+	coat_of_arms=
+	{
+		data=
+		{
+4 2 0 12 14 12 3 2 0 12 14 12 3 2 0 12 14 12 3 			}
+		religion="orthodox"
+	}
+}
+5321026=
+{
+	name="Jianu"
+	culture="aromanian"
+	religion="orthodox"
+	coat_of_arms=
+	{
+		data=
+		{
+2 1 0 14 6 0 14 1 0 14 6 0 14 			}
+		religion="orthodox"
+	}
+}
+5321027 = {
+	name = "de Targoviste"
+	culture = aromanian
+}
+5321028 = {
+	name = "de Husi"
+	culture = aromanian
+}
+5321029 = {
+	name = "de Tecuci"
+	culture = aromanian
+}

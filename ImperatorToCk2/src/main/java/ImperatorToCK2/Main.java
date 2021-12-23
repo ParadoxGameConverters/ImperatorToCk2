@@ -1,6 +1,5 @@
 package ImperatorToCK2;    
 
-   
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.io.File;
@@ -501,10 +500,10 @@ public class Main
             LOGGER.info("Copying default output...");
 
             //Default output, will be included in every conversion regardless of what occured in the save file
-            Output.output("defaultOutput"+VM+"cultures"+VM+"00_cultures.txt",modDirectory+VM+"common"+VM+"cultures"+VM+"00_cultures.txt");
-            Output.output("defaultOutput"+VM+"cultures"+VM+"50_convertedCultures.txt",modDirectory+VM+"common"+VM+"cultures"+VM+"50_convertedCultures.txt");
-            Output.output("defaultOutput"+VM+"religions"+VM+"00_religions.txt",modDirectory+VM+"common"+VM+"religions"+VM+"00_religions.txt");
-            Output.output("defaultOutput"+VM+"religions"+VM+"50_convertedReligions.txt",modDirectory+VM+"common"+VM+"religions"+VM+"50_convertedReligions.txt");
+            Output.copyRaw("defaultOutput"+VM+"cultures"+VM+"00_cultures.txt",modDirectory+VM+"common"+VM+"cultures"+VM+"00_cultures.txt");
+            Output.copyRaw("defaultOutput"+VM+"cultures"+VM+"50_convertedCultures.txt",modDirectory+VM+"common"+VM+"cultures"+VM+"50_convertedCultures.txt");
+            Output.copyRaw("defaultOutput"+VM+"religions"+VM+"00_religions.txt",modDirectory+VM+"common"+VM+"religions"+VM+"00_religions.txt");
+            Output.copyRaw("defaultOutput"+VM+"religions"+VM+"50_convertedReligions.txt",modDirectory+VM+"common"+VM+"religions"+VM+"50_convertedReligions.txt");
             //Output.output("defaultOutput"+VM+"bookmarks"+VM+"50_customBookmark.txt",modDirectory+VM+"common"+VM+"bookmarks"+VM+"50_customBookmark.txt");
             Processing.customDate(date,"defaultOutput"+VM+"bookmarks"+VM+"50_customBookmark.txt",modDirectory+VM+"common"+VM+"bookmarks"+VM+"50_customBookmark.txt");
             Output.output("defaultOutput"+VM+"bookmarks"+VM+"00_bookmarks.txt",modDirectory+VM+"common"+VM+"bookmarks"+VM+"00_bookmarks.txt");
@@ -517,6 +516,9 @@ public class Main
             Output.output("defaultOutput"+VM+"localization"+VM+"religion_loc.csv",modDirectory+VM+"localisation"+VM+"religion_loc.csv");
             Output.output("defaultOutput"+VM+"localization"+VM+"bookmark_loc.csv",modDirectory+VM+"localisation"+VM+"bookmark_loc.csv");
             Output.output("defaultOutput"+VM+"localization"+VM+"zzz_default_dejure_localization.csv",modDirectory+VM+"localisation"+VM+"zzz_default_dejure_localization.csv");
+            Output.output("defaultOutput"+VM+"localization"+VM+"irck2_event_loc.csv",modDirectory+VM+"localisation"+VM+"irck2_event_loc.csv");
+            Output.output("defaultOutput"+VM+"localization"+VM+"irck2_decision_loc.csv",modDirectory+VM+"localisation"+VM+"irck2_decision_loc.csv");
+            Output.output("defaultOutput"+VM+"localization"+VM+"irck2_scope_loc.csv",modDirectory+VM+"localisation"+VM+"irck2_scope_loc.csv");
 
             //defaultDynasties (Used to dynamically generate random dynasty names for new cultures, otherwise will default to Smith)
             Output.output("defaultOutput"+VM+"dynasties"+VM+"02_belgaeDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_belgaeDynasties.txt");
@@ -552,7 +554,12 @@ public class Main
             Output.output("defaultOutput"+VM+"dynasties"+VM+"02_hebrewDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_hebrewDynasties.txt");
             Output.output("defaultOutput"+VM+"dynasties"+VM+"02_ancient_egyptianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_ancient_egyptianDynasties.txt");
             Output.output("defaultOutput"+VM+"dynasties"+VM+"02_hellenisticDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_hellenisticDynasties.txt");
-
+            
+            //Roman split Dynasties
+            Output.copyRaw("defaultOutput"+VM+"dynasties"+VM+"02_aromanianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_aromanianDynasties.txt");
+            Output.copyRaw("defaultOutput"+VM+"dynasties"+VM+"02_cambrianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_cambrianDynasties.txt");
+            Output.copyRaw("defaultOutput"+VM+"dynasties"+VM+"02_romano_africanDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_romano_africanDynasties.txt");
+            
             //defaultDiseases
             Output.output("defaultOutput"+VM+"disease"+VM+"00_disease.txt",modDirectory+VM+"common"+VM+"disease"+VM+"00_disease.txt");
             Output.output("defaultOutput"+VM+"disease"+VM+"01_disease_old.txt",modDirectory+VM+"common"+VM+"disease"+VM+"01_disease_old.txt");
@@ -585,6 +592,15 @@ public class Main
             Output.output("defaultOutput"+VM+"titles"+VM+"d_porto.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_porto.txt");
             Output.output("defaultOutput"+VM+"titles"+VM+"d_moravia.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_moravia.txt");
             Output.output("defaultOutput"+VM+"titles"+VM+"d_cyrenaica.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_cyrenaica.txt");
+            
+            //defaultEvents
+            Output.output("defaultOutput"+VM+"events"+VM+"ir_roman_culture_conversion.txt",modDirectory+VM+"events"+VM+"ir_roman_culture_conversion.txt");
+            
+            //defaultDecisions
+            Output.output("defaultOutput"+VM+"decisions"+VM+"ir_roman_conversion_decisions.txt",modDirectory+VM+"decisions"+VM+"ir_roman_conversion_decisions.txt");
+            
+            //defaultMap
+            Output.output("defaultOutput"+VM+"map"+VM+"geographical_region.txt",modDirectory+VM+"map"+VM+"geographical_region.txt");
 
             long outputTime = System.nanoTime();
             long outputTimeTot = (((outputTime - startTime) / 1000000000)/60);
@@ -952,4 +968,3 @@ public class Main
         }
     }
 }
-

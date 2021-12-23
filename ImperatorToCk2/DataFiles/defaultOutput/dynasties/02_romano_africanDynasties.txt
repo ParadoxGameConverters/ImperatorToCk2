@@ -1,0 +1,130 @@
+5323008=
+{
+	name="du Camulodunum"
+	culture="romano_african"
+}
+5323009=
+{
+	name="de Lacon"
+	culture="romano_african"
+	religion="catholic"
+}
+5323010=
+{
+	name="de Gunale"
+	culture="romano_african"
+	religion="catholic"
+}
+5323011=
+{
+	name="de Callaris"
+	culture="romano_african"
+	religion="catholic"
+}
+5323012=
+{
+	name="Oristani"
+	culture="romano_african"
+	religion="catholic"
+}
+5323013=
+{
+	name="Sorrenti"
+	culture="romano_african"
+	religion="catholic"
+}
+5323014 = {
+   name="di Gallura"
+   culture="romano_african"
+   religion="catholic"
+}
+5323015 = {
+   name="di Logudoro"
+   culture="romano_african"
+   religion="catholic"
+}
+
+5323016 = {
+   name="di Agugliastra"
+   culture="romano_african"
+   religion="catholic"
+}
+
+5323017 ={
+   name="Salusiu de Lacon"
+   culture="romano_african"
+   religion="catholic"
+}
+5323018 ={
+   name="Torchitoriu de Ugunale"
+   culture="romano_african"
+   religion="catholic"
+}
+5323019 ={
+   name="de Lacon Gunale"
+   culture="romano_african"
+   religion="catholic"
+}
+5323020 ={
+   name="de Lacon Zori"
+   culture="romano_african"
+   religion="catholic"
+}
+5323021 ={
+   name="de Zori"
+   culture="romano_african"
+   religion="catholic"
+}
+5323022 ={
+   name="Bas Serra"
+   culture="romano_african"
+   religion="catholic"
+}
+5323023 = {
+	name = "di Casteddu"
+	culture = romano_african
+}
+5323024 = {
+	name = "di Santa Igia"
+	culture = romano_african
+}
+5323025 = {
+	name = "di Patiolla"
+	culture = romano_african
+}
+5323026 = {
+	name = "di Ogiastra"
+	culture = romano_african
+}
+5323027 = {
+	name = "di Torres"
+	culture = romano_african
+}
+5323028 = {
+	name = "di Ballau"
+	culture = romano_african
+}
+5323029 = {
+	name = "di Bosa"
+	culture = romano_african
+}
+5323030 = {
+	name = "di Caddura"
+	culture = romano_african
+}
+5323031 = {
+	name = "di Pasada"
+	culture = romano_african
+}
+5323032 = {
+	name = "di Durgali"
+	culture = romano_african
+}
+5323033 = {
+	name = "di Calvi"
+	culture = romano_african
+}
+5323034 = {
+	name = "di Sartena"
+	culture = romano_african
+}
