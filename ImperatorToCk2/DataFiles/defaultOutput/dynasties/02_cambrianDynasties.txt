@@ -1,0 +1,176 @@
+5322008=
+{
+	name="du Camulodunum"
+	culture="cambrian"
+}
+5322009=
+{
+	name="di Maridunum"
+	culture="cambrian"
+}
+5322010=
+{
+	name="Sçarponnis"
+	culture="cambrian"
+	religion="catholic"
+}
+5322011=
+{
+	name="di Lindum"
+	culture="cambrian"
+}
+5322012=
+{
+	name="d'Dyfid"
+	culture="cambrian"
+}
+5322013=
+{
+	name="Constântis"
+	culture="cambrian"
+}
+5322014=
+{
+	name="Plantaçinit"
+	culture="cambrian"
+}
+5322015=
+{
+	name="Birtrând"
+	culture="cambrian"
+}
+5322016=
+{
+	name="Pantilaen"
+	culture="cambrian"
+}
+5322017=
+{
+	name="Saint-Gilliç"
+	culture="cambrian"
+}
+5322018=
+{
+	name="Yalintinânus"
+	culture="cambrian"
+}
+5322019=
+{
+	name="d'Albion"
+	culture="cambrian"
+}
+5322020=
+{
+	name="di Londinium"
+	culture="cambrian"
+}
+5322021=
+{
+	name="Trençyal"
+	culture="cambrian"
+	religion="catholic"
+}
+5322022=
+{
+	name="Constântis"
+	culture="cambrian"
+	religion="catholic"
+}
+5322023=
+{
+	name="Merçadir"
+	culture="cambrian"
+	religion="catholic"
+}
+5322024=
+{
+	name="Pinmân"
+	culture="cambrian"
+}
+5322025=
+{
+	name="Rheçid"
+	culture="cambrian"
+}
+5322026=
+{
+	name="Prydin"
+	culture="cambrian"
+}
+5322027 = {
+	name = "Gyerthrynin"
+	culture = cambrian
+}
+5322028 = {
+	name = "Ebroc"
+	culture = cambrian
+}
+5322029 = {
+	name = "di Aelii"
+	culture = cambrian
+}
+5322030=
+{
+	name="Saeyiris"
+	culture="cambrian"
+}
+1022190=
+{
+	name="Marçinis"
+	culture="cambrian"
+}
+5322032=
+{
+	name="Hadrianis"
+	culture="cambrian"
+}
+5322033=
+{
+	name="Faeçi"
+	culture="cambrian"
+}
+5322034=
+{
+	name="Yillonç"
+	culture="cambrian"
+}
+5322035=
+{
+	name="Lipân"
+	culture="cambrian"
+}
+5322036=
+{
+	name="Salyiç"
+	culture="cambrian"
+}
+5322036=
+{
+	name="di Yoteporiçis"
+	culture="cambrian"
+}
+5322037=
+{
+	name="d'Protictoris"
+	culture="cambrian"
+}
+5322038=
+{
+	name="di Ratae"
+	culture="cambrian"
+}
+5322038=
+{
+	name="di Glivun"
+	culture="cambrian"
+}
+5322038=
+{
+	name="di Aquaesolis"
+	culture="cambrian"
+}
+5322038=
+{
+	name="d'Mamucium"
+	culture="cambrian"
+}
