@@ -248,7 +248,7 @@ public class Main
 
             LOGGER.info("temp Countries created");
 
-            TempFiles.tempCreate(impDirSave, "provinces={", "road_network={", saveProvinces);
+            TempFiles.tempCreate(impDirSave, "provinces={", "}", saveProvinces);
 
             LOGGER.info("temp Provinces created");   
 
@@ -968,3 +968,4 @@ public class Main
         }
     }
 }
+
