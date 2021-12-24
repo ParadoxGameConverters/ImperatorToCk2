@@ -1,5 +1,5 @@
 package ImperatorToCK2;  
-   
+      
 import java.util.Scanner;
 import java.io.IOException;
 import java.io.FileInputStream;
@@ -60,7 +60,7 @@ public class Processing
                 ownerTot[culRelID] = 0;    
             }
             else {
-                ownerTot[culRelID] = Integer.parseInt(owners[1]);
+                ownerTot[culRelID] = Integer.parseInt(owners[1])+1;
             }
 
             aq6 = 1;
@@ -1181,3 +1181,4 @@ public class Processing
     }
 
 }
+
