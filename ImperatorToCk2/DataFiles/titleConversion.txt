@@ -1,5 +1,5 @@
 #For converting certain dynamically generated titles into CK II titles
-#Titles are only converted to vanilla equivelents if dynamically calculated rank matches vanilla rank
+#Titles are only converted to vanilla equivalents if dynamically calculated rank matches vanilla rank
 
 e_ROM,e_roman_empire
 e_PER,e_persia

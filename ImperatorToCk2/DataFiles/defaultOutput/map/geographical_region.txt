@@ -3,7 +3,7 @@
 #	duchies = { }, takes duchy title names declared in landed_titles.txt
 #	counties = { }, takes county title names declared in landed_titles.txt
 #	provinces = { }, takes province id numbers declared in /history/provinces
-#	regions = { }, a region can also include other regions, however the subregions needs to be declared before the parent region. 
+#	regions = { }, a region can also include other regions, however the subregions needs to be declared before the parent region.
 #		E.g. If the region world_europe contains the region world_europe_west then world_europe_west needs to be declared as a region before (i.e. higher up in this file) world_europe.
 
 ###########################################################################
@@ -18,8 +18,8 @@ world_europe_west_brittania = {
 }
 world_europe_west_germania = {
 	duchies = {
-		d_upper_burgundy d_savoie d_holland d_gelre d_luxembourg d_upper_lorraine d_lower_lorraine d_alsace d_bavaria d_salzburg d_osterreich d_styria d_tyrol d_brunswick d_thuringia d_koln d_franconia d_baden d_swabia d_mecklemburg d_pommerania d_pomeralia d_saxony d_brandenburg d_meissen d_bohemia d_moravia d_thurgau d_raetia d_swiss d_rugen d_bremen d_rhine d_angria d_lausitz d_hesse 
-		d_munster_germany d_nordgau d_trier 
+		d_upper_burgundy d_savoie d_holland d_gelre d_luxembourg d_upper_lorraine d_lower_lorraine d_alsace d_bavaria d_salzburg d_osterreich d_styria d_tyrol d_brunswick d_thuringia d_koln d_franconia d_baden d_swabia d_mecklemburg d_pommerania d_pomeralia d_saxony d_brandenburg d_meissen d_bohemia d_moravia d_thurgau d_raetia d_swiss d_rugen d_bremen d_rhine d_angria d_lausitz d_hesse
+		d_munster_germany d_nordgau d_trier
 	}
 }
 world_europe_west_francia = {
@@ -51,13 +51,13 @@ world_europe_north = {
 		d_kola d_finnmark d_sapmi
 	}
 }
-world_europe_south_east = { 
+world_europe_south_east = {
 	duchies = {
 		#West ERE
 		d_thrace d_adrianopolis d_thessalonika d_dyrrachion d_epirus d_athens d_achaia d_krete d_cyprus d_vidin d_turnovo d_karvuna d_rashka d_dioclea d_slavonia d_bosnia d_croatia d_dalmatia d_strymon d_ohrid d_cephalonia d_syrmia d_ragusa
 	}
 }
-world_europe_south_italy = { 
+world_europe_south_italy = {
 	duchies = {
 		d_carinthia d_carniola d_friuli
 		#Italia
@@ -204,7 +204,7 @@ world_steppe_west = {
 		#Tartaria
 		d_itil d_sarkel d_yaik d_sibir d_kipchak d_kimak d_maris d_bulgar d_kazan d_cheremisa d_mordvins d_cherson d_crimea d_alania d_azov d_turkestan d_syr_darya d_wild_fields d_usturt d_emba d_caspian_steppe d_bandja d_atyrau d_aqtobe d_sakmara d_tobol d_ishim d_ubagan d_om d_vasyugan d_kazakh d_turgay
 		# Ural & Nenetsia
-		d_komi d_zavarot d_pechora d_zyriane d_votyaki d_ural 
+		d_komi d_zavarot d_pechora d_zyriane d_votyaki d_ural
 	}
 	counties = {
 		c_kimak
@@ -294,7 +294,7 @@ custom_andalusian = {
 }
 custom_portuguese = {
 	duchies = {
-		d_galicia d_porto d_beja d_algarve 
+		d_galicia d_porto d_beja d_algarve
 	}
 }
 custom_swedish = {
@@ -508,6 +508,3 @@ custom_irck2_north_africa = {
 		d_tunis d_kabylia d_kabylia d_alger d_tangiers d_fes d_marrakech d_sous d_adrar d_sijilmasa d_tlemcen d_tahert d_mzab d_jerid d_tripolitania d_syrte d_fezzan
 	}
 }
-
-
-
