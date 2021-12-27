@@ -9,7 +9,7 @@ province_event = {
 	id = 55000
 	desc = "EVTDESC55000"
 	picture = GFX_evt_culture_change
-	
+
 	trigger = {
 		owner = {
 			top_liege = {
@@ -55,7 +55,7 @@ province_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 1200
 
@@ -232,7 +232,7 @@ province_event = {
 						}
 					}
 				}
-			} 
+			}
 		}
 	}
 
@@ -257,9 +257,9 @@ province_event = {
 	id = 55001
 	desc = "EVTDESC55001"
 	picture = GFX_evt_culture_change
-	
+
 	trigger = {
-		
+
 		OR = {
 			port = yes
 			NOR = {
@@ -273,7 +273,7 @@ province_event = {
 				}
 			}
 		}
-		
+
 		owner = {
 			top_liege = {
 				culture = PREV
@@ -282,7 +282,7 @@ province_event = {
 			capital_scope = {
 				province_id = ROOT
 			}
-			
+
 			OR = {
 				primary_title = {
 					conquest_culture = PREV
@@ -318,7 +318,7 @@ province_event = {
 				}
 			}
 		}
-		
+
 		NOT = { # Exclude provinces covered by event 55000
 			any_neighbor_province = {
 				has_owner = yes
@@ -341,7 +341,7 @@ province_event = {
 				}
 			}
 		}
-		
+
 		NOT = { # No flipping back to Norse culture before 1150
 			AND = {
 				owner = { culture = norse }
@@ -357,10 +357,10 @@ province_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 1200
-		
+
 		modifier = {
 			factor = 1.5
 			owner = { NOT = { stewardship = 2 } }
@@ -513,10 +513,10 @@ character_event = {
 	id = 55002
 	desc = "EVTDESC55002"
 	picture = GFX_evt_stone_church
-	
+
 	only_playable = yes
 	culture = norman
-	
+
 	trigger = {
 		should_evolve_cultures_trigger = yes
 		year = 1100
@@ -529,7 +529,7 @@ character_event = {
 		}
 		NOT = { government = chinese_imperial_government }
 	}
-	
+
 	mean_time_to_happen = {
 		months = 1200
 		modifier = {
@@ -596,10 +596,10 @@ character_event = {
 	id = 55003
 	desc = "EVTDESC55003"
 	picture = GFX_evt_stone_church
-	
+
 	only_playable = yes
 	culture = english
-	
+
 	trigger = {
 		should_evolve_cultures_trigger = yes
 		year = 1100
@@ -614,7 +614,7 @@ character_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 720
 		modifier = {
@@ -637,7 +637,7 @@ character_event = {
 		random_demesne_province = {
 			limit = {
 				region = custom_england
-				OR = {	
+				OR = {
 					culture = saxon
 					culture = norman
 				}
@@ -655,7 +655,7 @@ character_event = {
 	id = 55004
 	desc = "EVTDESC55004"
 	picture = GFX_evt_throne_room
-	
+
 	only_rulers = yes
 	culture = english
 
@@ -677,7 +677,7 @@ character_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 120
 		modifier = {
@@ -699,7 +699,7 @@ character_event = {
 		name = "EVTOPTA55004"
 		any_courtier = {
 			limit = {
-				OR = {	
+				OR = {
 					culture = saxon
 					culture = norman
 				}
@@ -721,7 +721,7 @@ character_event = {
 	id = 55005
 	desc = "EVTDESC55005"
 	picture = GFX_evt_throne_room
-	
+
 	only_playable = yes
 	culture = english
 
@@ -744,7 +744,7 @@ character_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 720
 		modifier = {
@@ -766,7 +766,7 @@ character_event = {
 		name = "EVTOPTA55005"
 		any_vassal = {
 			limit = {
-				OR = {	
+				OR = {
 					culture = saxon
 					culture = norman
 				}
@@ -802,17 +802,17 @@ character_event = {
 	id = 55010
 	desc = "EVTDESC55010"
 	picture = GFX_evt_stone_church
-	
+
 	only_rulers = yes
 	min_age = 16
 	capable_only = yes
 	prisoner = no
 	lacks_dlc = "Rajas of India" # Controlled by Decision: convert_to_local_culture
-	
+
 	trigger = {
 		NOT = { government = nomadic_government }
-		primary_title = { 
-			NOT = { conquest_culture = ROOT } 
+		primary_title = {
+			NOT = { conquest_culture = ROOT }
 			NOT = { culture = ROOT }
 			any_previous_holder = {
 				NOT = { character = ROOT } # The first holder of a title does not convert
@@ -824,7 +824,7 @@ character_event = {
 				NOT = { culture = saxon }
 				NOT = { ROOT = { culture = norman } }
 			}
-			
+
 			OR = { # Not when Norman culture should appear
 				ROOT = { NOT = { culture = norse } }
 				AND = {
@@ -838,7 +838,7 @@ character_event = {
 		top_liege = {
 			OR = {
 				character = ROOT
-				ROOT = { 
+				ROOT = {
 					capital_scope = {
 						culture = PREVPREV
 					}
@@ -847,14 +847,14 @@ character_event = {
 		}
 		NOT = { government = chinese_imperial_government }
 	}
-	
+
 	mean_time_to_happen = {
 		months = 1200
 		modifier = {
 			factor = 0.5
 			top_liege = {
 				NOT = { character = ROOT }
-				ROOT = { 
+				ROOT = {
 					capital_scope = {
 						culture = PREVPREV
 					}
@@ -881,7 +881,7 @@ character_event = {
 
 	option = {
 		name = "EVTOPTA55010"
-		
+
 		# Piss off the appropriate vassals
 		any_vassal = {
 			limit = {
@@ -895,12 +895,12 @@ character_event = {
 			}
 			hidden_tooltip = { character_event = { id = 55011 days = 0 } }
 		}
-		
+
 		capital_scope = {
 			reverse_culture = ROOT
 		}
 	}
-	
+
 	option = {
 		name = "EVTOPTB55010"
 		ai_chance = {
@@ -933,9 +933,9 @@ character_event = {
 	id = 55100
 	desc = EVTDESC55100
 	picture = GFX_evt_courier
-	
+
 	notification = yes
-	
+
 	is_triggered_only = yes
 
 	option = {

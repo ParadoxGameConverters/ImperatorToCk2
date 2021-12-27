@@ -3,28 +3,28 @@
 
  GLORIOUSOLBIA_NAME:0 "The Glorious Democratic Peoples' Republic of Olbia"
  GLORIOUSOLBIA_ADJECTIVE:0 "Glorious Olbian"
- 
+
  KAVKASIA_NAME:0 "Kavkasia"
  KAVKASIA_ADJECTIVE:0 "Kavkasi"
- 
+
  KONKAN_NAME:0 "Konkan"
  KONKAN_ADJECTIVE:0 "Konkani"
 
  BOD_NAME:0 "Bod"
  BOD_ADJECTIVE:0 "Bodan"
- 
+
  ASIA_NAME:0 "Asia"
  ASIA_ADJECTIVE:0 "Asian"
- 
+
  BALHIKA_NAME:0 "Balhika"
  BALHIKA_ADJECTIVE:0 "Balhikan"
- 
+
  MAHAJANAPADA_LEAGUE_NAME:0 "Mahajanapadan League"
  MAHAJANAPADA_LEAGUE_ADJECTIVE:0 "Mahajanapadan"
- 
+
  ANATOLIA_NAME:0 "Anatolia"
  ANATOLIA_ADJECTIVE:0 "Anatolian"
- 
+
  ARABIA_NAME:0 "Arabia"
  ARABIA_ADJECTIVE:0 "Arabian"
 
@@ -211,7 +211,7 @@
 
  CHALDEAN_EMPIRE_NAME:0 "Chaldean Empire"
  CHALDEAN_EMPIRE_ADJECTIVE:0 "Chaldean"
- 
+
  ADRIATICA_NAME:0 "Adriatica"
  ADRIATICA_ADJECTIVE:0 "Adriatic"
 
@@ -241,7 +241,7 @@
 
  ESTU_IMPERIJA_NAME:0 "Estu Imperija"
  ESTU_IMPERIJA_ADJECTIVE:0 "Estu"
- 
+
  #MolonLabe mod new countries
  A01:0 "Saurashtra"
  A01_ADJ:0 "Saurashtri"
@@ -381,9 +381,9 @@
  C59_ADJ:0 "Agarti"
  C63:0 "Alalie"
  C63_ADJ:0 "Alalian"
- 
+
  #Imperator:Invictus mod
- 
+
  EUTHYDEMID_EMPIRE_NAME:0 "Euthydemid Empire"
  EUTHYDEMID_EMPIRE_ADJECTIVE:0 "Euthydemian"
  INDUS_NAME:0 "India"
@@ -497,7 +497,7 @@
  C78_ADJ:0 "Nimen"
  C79:0 "Adonis"
  C79_ADJ:0 "Adonisen"
- C81:0 "Phaedra" 
+ C81:0 "Phaedra"
  C81_ADJ:0 "Phaedrains"
  C80:0 "Aadhavan"
  C80_ADJ:0 "Aadhavans"

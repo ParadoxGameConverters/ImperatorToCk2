@@ -1015,7 +1015,7 @@
 1015,42,177,183,Northern Bay of Biscay,x
 1016,0,174,55,Celtic Sea,x
 1017,84,30,31,Western Cyclades,x
-1018,85,54,6,Päijänne,x 
+1018,85,54,6,Päijänne,x
 1019,84,165,181,Irish Sea,x
 1020,168,186,57,Mediterranean Sea,x
 1021,0,189,185,Golfo de Valencia,x
@@ -1436,7 +1436,7 @@
 1436,43,48,18,Lakomelza,x
 1437,85,51,146,Tigrinya,x
 1438,127,54,19,Yarkand,x
-1439,169,57,147,Kashgar,x 
+1439,169,57,147,Kashgar,x
 1440,1,60,20,Khotan,x
 1441,86,135,186,Cherchen,x
 1442,128,138,59,Charkliq,x
@@ -1701,7 +1701,7 @@
 1701,43,204,178,Vista,x
 1702,85,207,51,Finnveden,x
 1703,127,210,179,Njudung,x
-1704,169,0,52,Sevede,x 
+1704,169,0,52,Sevede,x
 1705,1,3,180,Kinda,x
 1706,43,6,53,Skara,x
 1707,85,9,181,Chieti,x 			# South-eastern Aprutium

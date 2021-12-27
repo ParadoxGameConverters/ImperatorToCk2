@@ -4,9 +4,9 @@ This program will convert an Imperator: Rome save game to a Crusader Kings 2 mod
 IMPORTANT LINKS
 ----
 
-Forum Release Thread: http://forum.paradoxplaza.com/forum/ --- 
+Forum Release Thread: http://forum.paradoxplaza.com/forum/ ---
 Forum Development Thread: https://forum.paradoxplaza.com/forum/threads/imperator-to-ckii-converter-development-thread-not-for-troubleshooting.1294757/
-Github project: https://github.com/ParadoxGameConverters/ImperatorToCk2
+GitHub project: https://github.com/ParadoxGameConverters/ImperatorToCk2
 Windows development build: https://github.com/ParadoxGameConverters/ImperatorToCk2/releases/tag/WindowsRelease
 
 ----

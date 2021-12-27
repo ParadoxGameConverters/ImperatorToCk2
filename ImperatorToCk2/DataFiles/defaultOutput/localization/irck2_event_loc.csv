@@ -1,7 +1,7 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 
 #Roman Split
-EVTDESC_IR_ROM_2000;With the end of imperial rule in our realm, our connection with the rest of the Latin world has been severed, causing localities to establish their own local rites and customs. The local population in [Root.Location.GetName] has diverged so far from the traditional Roman way of life that they can neither command the Latin tongue nor be considered Roman: They are now Italan.;Roman Split;Roman Split;;Roman Split;;;;;;;;;x
+EVTDESC_IR_ROM_2000;With the end of imperial rule in our realm, our connection with the rest of the Latin world has been severed, causing localities to establish their own local rites and customs. The local population in [Root.Location.GetName] has diverged so far from the traditional Roman way of life that they can neither command the Latin tongue nor be considered Roman: They are now Italian.;Roman Split;Roman Split;;Roman Split;;;;;;;;;x
 EVTOPTA_IR_ROM_2000;Interesting;Interesting;Interessant;;Interesting;;;;;;;;;x
 EVTDESC_IR_ROM_2001;With the end of imperial rule in our realm, our connection with the rest of the Latin world has been severed, causing localities to establish their own local rites and customs. The local population in [Root.Location.GetName] has diverged so far from the traditional Roman way of life that they can neither command the Latin tongue nor be considered Roman: They are now Dalmatian.;Roman Split;Roman Split;;Roman Split;;;;;;;;;x
 EVTOPTA_IR_ROM_2001;Interesting;Interesting;Interessant;;Interesting;;;;;;;;;x

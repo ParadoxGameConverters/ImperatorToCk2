@@ -13,25 +13,25 @@ province_event = {
 	desc = EVTDESC_IR_ROM_2000
 	picture = GFX_evt_stone_church
 	border = GFX_event_normal_frame_diplomacy
-	
+
 	trigger = {
 		should_evolve_cultures_trigger = yes
 		year = 475
 		culture = roman
 		region = custom_irck2_italy
 		NOT = {
-			owner = { 
-				top_liege = { 
-					culture = roman 
+			owner = {
+				top_liege = {
+					culture = roman
 					OR = {
 						tier = emperor
 						#num_of_king_titles = 2
 					}
-				} 
+				}
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 600
 		modifier = {
@@ -62,25 +62,25 @@ province_event = {
 	desc = EVTDESC_IR_ROM_2001
 	picture = GFX_evt_stone_church
 	border = GFX_event_normal_frame_diplomacy
-	
+
 	trigger = {
 		should_evolve_cultures_trigger = yes
 		year = 475
 		culture = roman
 		region = custom_irck2_dalmatia
 		NOT = {
-			owner = { 
-				top_liege = { 
-					culture = roman 
+			owner = {
+				top_liege = {
+					culture = roman
 					OR = {
 						tier = emperor
 						#num_of_king_titles = 2
 					}
-				} 
+				}
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 600
 		modifier = {
@@ -109,25 +109,25 @@ province_event = {
 	desc = EVTDESC_IR_ROM_2002
 	picture = GFX_evt_stone_church
 	border = GFX_event_normal_frame_diplomacy
-	
+
 	trigger = {
 		should_evolve_cultures_trigger = yes
 		year = 475
 		culture = roman
 		region = custom_irck2_romania
 		NOT = {
-			owner = { 
-				top_liege = { 
-					culture = roman 
+			owner = {
+				top_liege = {
+					culture = roman
 					OR = {
 						tier = emperor
 						#num_of_king_titles = 2
 					}
-				} 
+				}
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 600
 		modifier = {
@@ -156,25 +156,25 @@ province_event = {
 	desc = EVTDESC_IR_ROM_2003
 	picture = GFX_evt_stone_church
 	border = GFX_event_normal_frame_diplomacy
-	
+
 	trigger = {
 		should_evolve_cultures_trigger = yes
 		year = 475
 		culture = roman
 		region = custom_irck2_occitania
 		NOT = {
-			owner = { 
-				top_liege = { 
-					culture = roman 
+			owner = {
+				top_liege = {
+					culture = roman
 					OR = {
 						tier = emperor
 						#num_of_king_titles = 2
 					}
-				} 
+				}
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 600
 		modifier = {
@@ -203,25 +203,25 @@ province_event = {
 	desc = EVTDESC_IR_ROM_2004
 	picture = GFX_evt_stone_church
 	border = GFX_event_normal_frame_diplomacy
-	
+
 	trigger = {
 		should_evolve_cultures_trigger = yes
 		year = 475
 		culture = roman
 		region = custom_irck2_france
 		NOT = {
-			owner = { 
-				top_liege = { 
-					culture = roman 
+			owner = {
+				top_liege = {
+					culture = roman
 					OR = {
 						tier = emperor
 						#num_of_king_titles = 2
 					}
-				} 
+				}
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 600
 		modifier = {
@@ -250,25 +250,25 @@ province_event = {
 	desc = EVTDESC_IR_ROM_2005
 	picture = GFX_evt_stone_church
 	border = GFX_event_normal_frame_diplomacy
-	
+
 	trigger = {
 		should_evolve_cultures_trigger = yes
 		year = 475
 		culture = roman
 		region = custom_irck2_catalonia
 		NOT = {
-			owner = { 
-				top_liege = { 
-					culture = roman 
+			owner = {
+				top_liege = {
+					culture = roman
 					OR = {
 						tier = emperor
 						#num_of_king_titles = 2
 					}
-				} 
+				}
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 600
 		modifier = {
@@ -297,25 +297,25 @@ province_event = {
 	desc = EVTDESC_IR_ROM_2006
 	picture = GFX_evt_stone_church
 	border = GFX_event_normal_frame_diplomacy
-	
+
 	trigger = {
 		should_evolve_cultures_trigger = yes
 		year = 475
 		culture = roman
 		region = custom_irck2_spain
 		NOT = {
-			owner = { 
-				top_liege = { 
-					culture = roman 
+			owner = {
+				top_liege = {
+					culture = roman
 					OR = {
 						tier = emperor
 						#num_of_king_titles = 2
 					}
-				} 
+				}
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 600
 		modifier = {
@@ -344,25 +344,25 @@ province_event = {
 	desc = EVTDESC_IR_ROM_2007
 	picture = GFX_evt_stone_church
 	border = GFX_event_normal_frame_diplomacy
-	
+
 	trigger = {
 		should_evolve_cultures_trigger = yes
 		year = 475
 		culture = roman
 		region = custom_irck2_portugal
 		NOT = {
-			owner = { 
-				top_liege = { 
-					culture = roman 
+			owner = {
+				top_liege = {
+					culture = roman
 					OR = {
 						tier = emperor
 						#num_of_king_titles = 2
 					}
-				} 
+				}
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 600
 		modifier = {
@@ -391,25 +391,25 @@ province_event = {
 	desc = EVTDESC_IR_ROM_2008
 	picture = GFX_evt_stone_church
 	border = GFX_event_normal_frame_diplomacy
-	
+
 	trigger = {
 		should_evolve_cultures_trigger = yes
 		year = 475
 		culture = roman
 		region = custom_irck2_sardinia
 		NOT = {
-			owner = { 
-				top_liege = { 
-					culture = roman 
+			owner = {
+				top_liege = {
+					culture = roman
 					OR = {
 						tier = emperor
 						#num_of_king_titles = 2
 					}
-				} 
+				}
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 600
 		modifier = {
@@ -441,25 +441,25 @@ province_event = {
 	desc = EVTDESC_IR_ROM_2009
 	picture = GFX_evt_stone_church
 	border = GFX_event_normal_frame_diplomacy
-	
+
 	trigger = {
 		should_evolve_cultures_trigger = yes
 		year = 475
 		culture = roman
 		region = custom_irck2_greece
 		NOT = {
-			owner = { 
-				top_liege = { 
-					culture = roman 
+			owner = {
+				top_liege = {
+					culture = roman
 					OR = {
 						tier = emperor
 						#num_of_king_titles = 2
 					}
-				} 
+				}
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 600
 		modifier = {
@@ -490,25 +490,25 @@ province_event = {
 	desc = EVTDESC_IR_ROM_2010
 	picture = GFX_evt_stone_church
 	border = GFX_event_normal_frame_diplomacy
-	
+
 	trigger = {
 		should_evolve_cultures_trigger = yes
 		year = 475
 		culture = roman
 		region = custom_irck2_britannia
 		NOT = {
-			owner = { 
-				top_liege = { 
-					culture = roman 
+			owner = {
+				top_liege = {
+					culture = roman
 					OR = {
 						tier = emperor
 						#num_of_king_titles = 2
 					}
-				} 
+				}
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 600
 		modifier = {
@@ -538,25 +538,25 @@ province_event = {
 	desc = EVTDESC_IR_ROM_2011
 	picture = GFX_evt_stone_church
 	border = GFX_event_normal_frame_diplomacy
-	
+
 	trigger = {
 		should_evolve_cultures_trigger = yes
 		year = 475
 		culture = roman
 		region = custom_irck2_north_africa
 		NOT = {
-			owner = { 
-				top_liege = { 
-					culture = roman 
+			owner = {
+				top_liege = {
+					culture = roman
 					OR = {
 						tier = emperor
 						#num_of_king_titles = 2
 					}
-				} 
+				}
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 600
 		modifier = {

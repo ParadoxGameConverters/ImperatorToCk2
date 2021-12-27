@@ -1,14 +1,14 @@
 targetted_decisions = {
 
 
-	# Roman character may convert to italian
+	# Roman character may convert to Italian
 	irck2_convert_to_italian = {
 		only_playable = yes
-		
+
 		filter = self
 		ai_target_filter = self
 		ai_check_interval = 12
-		
+
 		potential = {
 			is_playable = yes
 			culture = roman
@@ -54,12 +54,12 @@ targetted_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
-			
+
 			modifier = { #If Ruler has 2 king titles, is emperor, or is under Roman ruler, will not do
 				factor = 0
 				OR = {
-					top_liege = { 
-						culture = roman 
+					top_liege = {
+						culture = roman
 						OR = {
 							tier = emperor
 							#num_of_king_titles = 2
@@ -76,7 +76,7 @@ targetted_decisions = {
 			modifier = {
 				#factor = 0.5 # Slow it down a bit
 			}
-			
+
 			modifier = {
 				factor = 0.01
 				capital_scope = {
@@ -126,14 +126,14 @@ targetted_decisions = {
 	}
 
 
-	# Roman character may convert to dalmatian
+	# Roman character may convert to Dalmatian
 	irck2_convert_to_dalmatian = {
 		only_playable = yes
-		
+
 		filter = self
 		ai_target_filter = self
 		ai_check_interval = 12
-		
+
 		potential = {
 			is_playable = yes
 			culture = roman
@@ -179,12 +179,12 @@ targetted_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
-			
+
 			modifier = { #If Ruler has 2 king titles, is emperor, or is under Roman ruler, will not do
 				factor = 0
 				OR = {
-					top_liege = { 
-						culture = roman 
+					top_liege = {
+						culture = roman
 						OR = {
 							tier = emperor
 							#num_of_king_titles = 2
@@ -201,7 +201,7 @@ targetted_decisions = {
 			modifier = {
 				#factor = 0.5 # Slow it down a bit
 			}
-			
+
 			modifier = {
 				factor = 0.01
 				capital_scope = {
@@ -251,14 +251,14 @@ targetted_decisions = {
 	}
 
 
-	# Roman character may convert to romanian
+	# Roman character may convert to Romanian
 	irck2_convert_to_romanian = {
 		only_playable = yes
-		
+
 		filter = self
 		ai_target_filter = self
 		ai_check_interval = 12
-		
+
 		potential = {
 			is_playable = yes
 			culture = roman
@@ -304,12 +304,12 @@ targetted_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
-			
+
 			modifier = { #If Ruler has 2 king titles, is emperor, or is under Roman ruler, will not do
 				factor = 0
 				OR = {
-					top_liege = { 
-						culture = roman 
+					top_liege = {
+						culture = roman
 						OR = {
 							tier = emperor
 							#num_of_king_titles = 2
@@ -326,7 +326,7 @@ targetted_decisions = {
 			modifier = {
 				#factor = 0.5 # Slow it down a bit
 			}
-			
+
 			modifier = {
 				factor = 0.01
 				capital_scope = {
@@ -379,11 +379,11 @@ targetted_decisions = {
 	# Roman character may convert to occitan
 	irck2_convert_to_occitan = {
 		only_playable = yes
-		
+
 		filter = self
 		ai_target_filter = self
 		ai_check_interval = 12
-		
+
 		potential = {
 			is_playable = yes
 			culture = roman
@@ -429,12 +429,12 @@ targetted_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
-			
+
 			modifier = { #If Ruler has 2 king titles, is emperor, or is under Roman ruler, will not do
 				factor = 0
 				OR = {
-					top_liege = { 
-						culture = roman 
+					top_liege = {
+						culture = roman
 						OR = {
 							tier = emperor
 							#num_of_king_titles = 2
@@ -451,7 +451,7 @@ targetted_decisions = {
 			modifier = {
 				#factor = 0.5 # Slow it down a bit
 			}
-			
+
 			modifier = {
 				factor = 0.01
 				capital_scope = {
@@ -501,14 +501,14 @@ targetted_decisions = {
 	}
 
 
-	# Roman character may convert to frankish
+	# Roman character may convert to Frankish
 	irck2_convert_to_frankish = {
 		only_playable = yes
-		
+
 		filter = self
 		ai_target_filter = self
 		ai_check_interval = 12
-		
+
 		potential = {
 			is_playable = yes
 			culture = roman
@@ -554,12 +554,12 @@ targetted_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
-			
+
 			modifier = { #If Ruler has 2 king titles, is emperor, or is under Roman ruler, will not do
 				factor = 0
 				OR = {
-					top_liege = { 
-						culture = roman 
+					top_liege = {
+						culture = roman
 						OR = {
 							tier = emperor
 							#num_of_king_titles = 2
@@ -576,7 +576,7 @@ targetted_decisions = {
 			modifier = {
 				#factor = 0.5 # Slow it down a bit
 			}
-			
+
 			modifier = {
 				factor = 0.01
 				capital_scope = {
@@ -627,14 +627,14 @@ targetted_decisions = {
 
 
 
-	# Roman character may convert to catalan
+	# Roman character may convert to Catalan
 	irck2_convert_to_catalan = {
 		only_playable = yes
-		
+
 		filter = self
 		ai_target_filter = self
 		ai_check_interval = 12
-		
+
 		potential = {
 			is_playable = yes
 			culture = roman
@@ -680,12 +680,12 @@ targetted_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
-			
+
 			modifier = { #If Ruler has 2 king titles, is emperor, or is under Roman ruler, will not do
 				factor = 0
 				OR = {
-					top_liege = { 
-						culture = roman 
+					top_liege = {
+						culture = roman
 						OR = {
 							tier = emperor
 							#num_of_king_titles = 2
@@ -702,7 +702,7 @@ targetted_decisions = {
 			modifier = {
 				#factor = 0.5 # Slow it down a bit
 			}
-			
+
 			modifier = {
 				factor = 0.01
 				capital_scope = {
@@ -755,11 +755,11 @@ targetted_decisions = {
 	# Roman character may convert to castillan
 	irck2_convert_to_castillan = {
 		only_playable = yes
-		
+
 		filter = self
 		ai_target_filter = self
 		ai_check_interval = 12
-		
+
 		potential = {
 			is_playable = yes
 			culture = roman
@@ -805,12 +805,12 @@ targetted_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
-			
+
 			modifier = { #If Ruler has 2 king titles, is emperor, or is under Roman ruler, will not do
 				factor = 0
 				OR = {
-					top_liege = { 
-						culture = roman 
+					top_liege = {
+						culture = roman
 						OR = {
 							tier = emperor
 							#num_of_king_titles = 2
@@ -827,7 +827,7 @@ targetted_decisions = {
 			modifier = {
 				#factor = 0.5 # Slow it down a bit
 			}
-			
+
 			modifier = {
 				factor = 0.01
 				capital_scope = {
@@ -880,11 +880,11 @@ targetted_decisions = {
 	# Roman character may convert to portuguese
 	irck2_convert_to_portuguese = {
 		only_playable = yes
-		
+
 		filter = self
 		ai_target_filter = self
 		ai_check_interval = 12
-		
+
 		potential = {
 			is_playable = yes
 			culture = roman
@@ -930,12 +930,12 @@ targetted_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
-			
+
 			modifier = { #If Ruler has 2 king titles, is emperor, or is under Roman ruler, will not do
 				factor = 0
 				OR = {
-					top_liege = { 
-						culture = roman 
+					top_liege = {
+						culture = roman
 						OR = {
 							tier = emperor
 							#num_of_king_titles = 2
@@ -952,7 +952,7 @@ targetted_decisions = {
 			modifier = {
 				#factor = 0.5 # Slow it down a bit
 			}
-			
+
 			modifier = {
 				factor = 0.01
 				capital_scope = {
@@ -1005,11 +1005,11 @@ targetted_decisions = {
 	# Roman character may convert to sardinian
 	irck2_convert_to_sardinian = {
 		only_playable = yes
-		
+
 		filter = self
 		ai_target_filter = self
 		ai_check_interval = 12
-		
+
 		potential = {
 			is_playable = yes
 			culture = roman
@@ -1055,12 +1055,12 @@ targetted_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
-			
+
 			modifier = { #If Ruler has 2 king titles, is emperor, or is under Roman ruler, will not do
 				factor = 0
 				OR = {
-					top_liege = { 
-						culture = roman 
+					top_liege = {
+						culture = roman
 						OR = {
 							tier = emperor
 							#num_of_king_titles = 2
@@ -1077,7 +1077,7 @@ targetted_decisions = {
 			modifier = {
 				#factor = 0.5 # Slow it down a bit
 			}
-			
+
 			modifier = {
 				factor = 0.01
 				capital_scope = {
@@ -1132,11 +1132,11 @@ targetted_decisions = {
 	# Roman character may convert to aromanian
 	irck2_convert_to_aromanian = {
 		only_playable = yes
-		
+
 		filter = self
 		ai_target_filter = self
 		ai_check_interval = 12
-		
+
 		potential = {
 			is_playable = yes
 			culture = roman
@@ -1182,12 +1182,12 @@ targetted_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
-			
+
 			modifier = { #If Ruler has 2 king titles, is emperor, or is under Roman ruler, will not do
 				factor = 0
 				OR = {
-					top_liege = { 
-						culture = roman 
+					top_liege = {
+						culture = roman
 						OR = {
 							tier = emperor
 							#num_of_king_titles = 2
@@ -1204,7 +1204,7 @@ targetted_decisions = {
 			modifier = {
 				#factor = 0.5 # Slow it down a bit
 			}
-			
+
 			modifier = {
 				factor = 0.01
 				capital_scope = {
@@ -1255,14 +1255,14 @@ targetted_decisions = {
 
 
 
-	# Roman character may convert to cambrian
+	# Roman character may convert to Cambrian
 	irck2_convert_to_cambrian = {
 		only_playable = yes
-		
+
 		filter = self
 		ai_target_filter = self
 		ai_check_interval = 12
-		
+
 		potential = {
 			is_playable = yes
 			culture = roman
@@ -1308,12 +1308,12 @@ targetted_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
-			
+
 			modifier = { #If Ruler has 2 king titles, is emperor, or is under Roman ruler, will not do
 				factor = 0
 				OR = {
-					top_liege = { 
-						culture = roman 
+					top_liege = {
+						culture = roman
 						OR = {
 							tier = emperor
 							#num_of_king_titles = 2
@@ -1330,7 +1330,7 @@ targetted_decisions = {
 			modifier = {
 				#factor = 0.5 # Slow it down a bit
 			}
-			
+
 			modifier = {
 				factor = 0.01
 				capital_scope = {
@@ -1383,11 +1383,11 @@ targetted_decisions = {
 	# Roman character may convert to romano_african
 	irck2_convert_to_romano_african = {
 		only_playable = yes
-		
+
 		filter = self
 		ai_target_filter = self
 		ai_check_interval = 12
-		
+
 		potential = {
 			is_playable = yes
 			culture = roman
@@ -1433,12 +1433,12 @@ targetted_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
-			
+
 			modifier = { #If Ruler has 2 king titles, is emperor, or is under Roman ruler, will not do
 				factor = 0
 				OR = {
-					top_liege = { 
-						culture = roman 
+					top_liege = {
+						culture = roman
 						OR = {
 							tier = emperor
 							#num_of_king_titles = 2
@@ -1455,7 +1455,7 @@ targetted_decisions = {
 			modifier = {
 				#factor = 0.5 # Slow it down a bit
 			}
-			
+
 			modifier = {
 				factor = 0.01
 				capital_scope = {
