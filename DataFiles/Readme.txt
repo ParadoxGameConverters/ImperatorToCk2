@@ -50,6 +50,10 @@ Shinymewtwo99 (aka Dr. Dudelsack)     - Lead Developer and Programmer
 Thinking_waffle                       - Testing, Ideas, and Translation
 Vladimir Ilyich Lenin                 - Testing, Events
 Siawosh                               - Testing
+Canadian Lemur                        - Events, data files
 comagoosie                            - librakaly save melter
+The When The World Stopped Making Sense (WtWSMS) mod team for allowing the converter to use their content, their mod can be found either on Steam or their forum thread.
+WtWSMS mod Steam link: https://steamcommunity.com/sharedfiles/filedetails/?id=1247380029
+WtWSMS mod Forum link: https://forum.paradoxplaza.com/forum/forums/when-the-world-stopped-making-sense-mod.876/
 
  - AND ALL THE OTHERS WHO GAVE THEIR INPUT ON THE FORUM AND DISCORD -
