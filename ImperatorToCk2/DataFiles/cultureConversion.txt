@@ -433,6 +433,7 @@ bulgars,bolghar
 avars,avar
 huns,hunnic
 hunnic,hunnic
+huna,huna
 
 #Slavic
 polanes,polish

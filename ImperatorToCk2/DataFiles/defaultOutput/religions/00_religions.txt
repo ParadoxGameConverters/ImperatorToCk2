@@ -35,18 +35,16 @@ christian = {
 		Magdalena Margaret Maria Marine Patricia Philippa Rachel
 		Sarah Sophia Stephania
 	}
-
-	catholic = {
+	proto_orthodox = { #ante-nicene christian
 		graphical_culture = westerngfx
 
 		icon = 1
 		heresy_icon = 6
 
-		color = { 0.8 0.8 0.6 }
-
+		color = { 0.65 0.65 0.37 }
+		
+		
 		crusade_name = CRUSADE
-		use_new_crusade = yes
-		crusade_cb = new_crusade
 		scripture_name = THE_BIBLE
 		priest_title = PRIEST
 
@@ -60,6 +58,88 @@ christian = {
 			SATAN LUCIFER THE_DEVIL
 		}
 
+		can_call_crusade = no
+		priests_can_inherit = no
+
+		can_retire_to_monastery = yes
+
+		religious_clothing_head = 2
+		religious_clothing_priest = 2
+
+		intermarry = catholic
+		intermarry = cathar
+		intermarry = fraticelli
+		intermarry = waldensian
+		intermarry = lollard
+
+		intermarry = orthodox
+		intermarry = adoptionism
+		intermarry = bogomilist
+		intermarry = monothelite
+		intermarry = iconoclast
+		intermarry = paulician
+		intermarry = sabellianism
+		intermarry = psilanthropism
+
+		intermarry = aquileian
+
+		intermarry = nicene
+		intermarry = total_depravity
+		intermarry = eutychian
+		intermarry = binitarian
+		intermarry = antinomianism
+		intermarry = ebionites
+		intermarry = marcionism
+		intermarry = montanist
+		intermarry = sethian
+		intermarry = valentinianism
+		intermarry = apollinarian
+		intermarry = docetic
+		intermarry = pneumatomachians
+		intermarry = melchisedechianism
+		intermarry = patripassianism
+		intermarry = arian
+		intermarry = donatism
+		intermarry = priscillianism
+
+		intermarry = insular
+		intermarry = pelagianism
+
+		intermarry = georgian_orthodox
+
+		intermarry = miaphysite
+		intermarry = audianistic
+		intermarry = monophysite
+		intermarry = monarchianism
+
+		intermarry = nestorian
+		intermarry = messalian
+	}
+	# Catholic and heresies
+	catholic = {
+		graphical_culture = westerngfx
+
+		icon = 1
+		heresy_icon = 6
+		
+		color = { 0.8 0.8 0.6 }
+		
+		crusade_name = CRUSADE
+		use_new_crusade = yes
+		crusade_cb = new_crusade
+		scripture_name = THE_BIBLE
+		priest_title = PRIEST
+		
+		high_god_name = GOD_GOD
+		
+		god_names = {
+			GOD_GOD GOD_THE_LORD GOD_JESUS GOD_THE_BLESSED_VIRGIN
+		}
+		
+		evil_god_names = {
+			SATAN LUCIFER THE_DEVIL
+		}
+		
 		investiture = yes
 		can_have_antipopes = yes
 		can_excommunicate = yes
@@ -70,25 +150,60 @@ christian = {
 		can_retire_to_monastery = yes
 		priests_can_inherit = no
 		rel_head_defense = yes
-
+		
 		religious_clothing_head = 0
 		religious_clothing_priest = 1
 
 		#intermarry = catholic
-		intermarry = orthodox
-		intermarry = miaphysite
-		intermarry = nestorian
-
 		intermarry = cathar
 		intermarry = fraticelli
 		intermarry = waldensian
 		intermarry = lollard
-		intermarry = monophysite
+
+		intermarry = orthodox
+		intermarry = adoptionism
 		intermarry = bogomilist
 		intermarry = monothelite
 		intermarry = iconoclast
 		intermarry = paulician
+		intermarry = sabellianism
+		intermarry = psilanthropism
+
+		intermarry = aquileian
+
+		intermarry = nicene
+		intermarry = total_depravity
+		intermarry = eutychian
+		intermarry = binitarian
+		intermarry = antinomianism
+		intermarry = ebionites
+		intermarry = marcionism
+		intermarry = montanist
+		intermarry = sethian
+		intermarry = valentinianism
+		intermarry = apollinarian
+		intermarry = docetic
+		intermarry = pneumatomachians
+		intermarry = melchisedechianism
+		intermarry = patripassianism
+		intermarry = arian
+		intermarry = donatism
+		intermarry = priscillianism
+
+		intermarry = insular
+		intermarry = pelagianism
+
+		intermarry = georgian_orthodox
+
+		intermarry = miaphysite
+		intermarry = audianistic
+		intermarry = monophysite
+		intermarry = monarchianism
+
+		intermarry = nestorian
 		intermarry = messalian
+		
+		allow_in_ruler_designer = no # Not available before Great Schism
 	}
 	cathar = {
 		graphical_culture = westerngfx
@@ -96,33 +211,74 @@ christian = {
 
 		icon = 1
 		heresy_icon = 6
-
+		
 		color = { 0.5 0.5 0.9 }
 		parent = catholic
-
+		
 		crusade_name = CRUSADE
 
 		can_retire_to_monastery = yes
 		female_temple_holders = yes
 		feminist = yes      # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
-
+		
 		religious_clothing_head = 0
 		religious_clothing_priest = 1
 
 		intermarry = catholic
-		intermarry = orthodox
-		intermarry = miaphysite
-		intermarry = nestorian
-
+		#intermarry = cathar
 		intermarry = fraticelli
 		intermarry = waldensian
 		intermarry = lollard
-		intermarry = monophysite
+
+		intermarry = orthodox
+		intermarry = adoptionism
 		intermarry = bogomilist
 		intermarry = monothelite
 		intermarry = iconoclast
 		intermarry = paulician
-		intermarry = messalian
+		intermarry = sabellianism
+		intermarry = psilanthropism
+
+		intermarry = aquileian
+
+		intermarry = nicene
+		intermarry = total_depravity
+		intermarry = eutychian
+		intermarry = binitarian
+		intermarry = antinomianism
+		intermarry = ebionites
+		intermarry = marcionism
+		intermarry = montanist
+		intermarry = sethian
+		intermarry = valentinianism
+		intermarry = apollinarian
+		intermarry = docetic
+		intermarry = pneumatomachians
+		intermarry = melchisedechianism
+		intermarry = patripassianism
+		intermarry = arian
+		intermarry = donatism
+		intermarry = priscillianism
+
+		intermarry = insular
+		intermarry = pelagianism
+
+		intermarry = georgian_orthodox
+
+		intermarry = miaphysite
+		intermarry = audianistic
+		intermarry = monophysite
+		intermarry = monarchianism
+
+		intermarry = nestorian
+		intermarry = messalian		
+		allow_in_ruler_designer = no # Catholic heresy
+		
+		character_modifier = { 
+			general_opinion = -20
+			same_opinion_if_same_religion = 40
+			infidel_opinion = -40
+		}
 	}
 	fraticelli = {
 		graphical_culture = westerngfx
@@ -130,10 +286,10 @@ christian = {
 
 		icon = 1
 		heresy_icon = 6
-
+		
 		color = { 0.7 0.7 0.4 }
 		parent = catholic
-
+		
 		crusade_name = CRUSADE
 		use_new_crusade = yes
 		crusade_cb = new_crusade
@@ -147,24 +303,65 @@ christian = {
 		can_call_crusade = yes
 		can_retire_to_monastery = yes
 		priests_can_inherit = no
-
+		
 		religious_clothing_head = 0
 		religious_clothing_priest = 1
 
 		intermarry = catholic
-		intermarry = orthodox
-		intermarry = miaphysite
-		intermarry = nestorian
-
 		intermarry = cathar
+		#intermarry = fraticelli
 		intermarry = waldensian
 		intermarry = lollard
-		intermarry = monophysite
+
+		intermarry = orthodox
+		intermarry = adoptionism
 		intermarry = bogomilist
 		intermarry = monothelite
 		intermarry = iconoclast
 		intermarry = paulician
-		intermarry = messalian
+		intermarry = sabellianism
+		intermarry = psilanthropism
+
+		intermarry = aquileian
+
+		intermarry = nicene
+		intermarry = total_depravity
+		intermarry = eutychian
+		intermarry = binitarian
+		intermarry = antinomianism
+		intermarry = ebionites
+		intermarry = marcionism
+		intermarry = montanist
+		intermarry = sethian
+		intermarry = valentinianism
+		intermarry = apollinarian
+		intermarry = docetic
+		intermarry = pneumatomachians
+		intermarry = melchisedechianism
+		intermarry = patripassianism
+		intermarry = arian
+		intermarry = donatism
+		intermarry = priscillianism
+
+		intermarry = insular
+		intermarry = pelagianism
+
+		intermarry = georgian_orthodox
+
+		intermarry = miaphysite
+		intermarry = audianistic
+		intermarry = monophysite
+		intermarry = monarchianism
+
+		intermarry = nestorian
+		intermarry = messalian		
+		allow_in_ruler_designer = no # Catholic heresy
+		
+		character_modifier = { 
+			general_opinion = -10
+			same_opinion_if_same_religion = 20
+			infidel_opinion = -20
+		}
 	}
 	waldensian = {
 		graphical_culture = westerngfx
@@ -172,32 +369,73 @@ christian = {
 
 		icon = 1
 		heresy_icon = 6
-
+		
 		color = { 0.4 0.4 0.7 }
 		parent = catholic
-
+		
 		crusade_name = CRUSADE
 
 		can_retire_to_monastery = yes
 		priests_can_inherit = no
-
+		
 		religious_clothing_head = 0
 		religious_clothing_priest = 1
-
+		
 		intermarry = catholic
-		intermarry = orthodox
-		intermarry = miaphysite
-		intermarry = nestorian
-
 		intermarry = cathar
 		intermarry = fraticelli
+		#intermarry = waldensian
 		intermarry = lollard
-		intermarry = monophysite
+
+		intermarry = orthodox
+		intermarry = adoptionism
 		intermarry = bogomilist
 		intermarry = monothelite
 		intermarry = iconoclast
 		intermarry = paulician
-		intermarry = messalian
+		intermarry = sabellianism
+		intermarry = psilanthropism
+
+		intermarry = aquileian
+
+		intermarry = nicene
+		intermarry = total_depravity
+		intermarry = eutychian
+		intermarry = binitarian
+		intermarry = antinomianism
+		intermarry = ebionites
+		intermarry = marcionism
+		intermarry = montanist
+		intermarry = sethian
+		intermarry = valentinianism
+		intermarry = apollinarian
+		intermarry = docetic
+		intermarry = pneumatomachians
+		intermarry = melchisedechianism
+		intermarry = patripassianism
+		intermarry = arian
+		intermarry = donatism
+		intermarry = priscillianism
+
+		intermarry = insular
+		intermarry = pelagianism
+
+		intermarry = georgian_orthodox
+
+		intermarry = miaphysite
+		intermarry = audianistic
+		intermarry = monophysite
+		intermarry = monarchianism
+
+		intermarry = nestorian
+		intermarry = messalian		
+		allow_in_ruler_designer = no # Catholic heresy
+		
+		character_modifier = { 
+			general_opinion = -10
+			same_opinion_if_same_religion = 20
+			infidel_opinion = -20
+		}
 	}
 	lollard = {
 		graphical_culture = westerngfx
@@ -205,56 +443,93 @@ christian = {
 
 		icon = 1
 		heresy_icon = 6
-
+		
 		color = { 0.5 0.8 0.8 }
 		parent = catholic
-
+		
 		crusade_name = CRUSADE
 
 		can_retire_to_monastery = yes
 		priests_can_inherit = no
-
-		religious_clothing_head = 0
-		religious_clothing_priest = 1
-
+		
+		religious_clothing_head = 5 # Lollards would not have worn anything beyond basic robes due to asceticism
+		religious_clothing_priest = 5
+		
 		intermarry = catholic
-		intermarry = orthodox
-		intermarry = miaphysite
-		intermarry = nestorian
-
 		intermarry = cathar
 		intermarry = fraticelli
 		intermarry = waldensian
-		intermarry = monophysite
+		#intermarry = lollard
+
+		intermarry = orthodox
+		intermarry = adoptionism
 		intermarry = bogomilist
 		intermarry = monothelite
 		intermarry = iconoclast
 		intermarry = paulician
-		intermarry = messalian
-	}
+		intermarry = sabellianism
+		intermarry = psilanthropism
 
+		intermarry = aquileian
+
+		intermarry = nicene
+		intermarry = total_depravity
+		intermarry = eutychian
+		intermarry = binitarian
+		intermarry = antinomianism
+		intermarry = ebionites
+		intermarry = marcionism
+		intermarry = montanist
+		intermarry = sethian
+		intermarry = valentinianism
+		intermarry = apollinarian
+		intermarry = docetic
+		intermarry = pneumatomachians
+		intermarry = melchisedechianism
+		intermarry = patripassianism
+		intermarry = arian
+		intermarry = donatism
+		intermarry = priscillianism
+
+		intermarry = insular
+		intermarry = pelagianism
+
+		intermarry = georgian_orthodox
+
+		intermarry = miaphysite
+		intermarry = audianistic
+		intermarry = monophysite
+		intermarry = monarchianism
+
+		intermarry = nestorian
+		intermarry = messalian
+		
+		allow_in_ruler_designer = no # Catholic heresy
+	}
+	
+	# Orthodox and heresies
 	orthodox = {
 		graphical_culture = westerngfx
 
 		icon = 2
 		heresy_icon = 7
-
+		
 		color = { 0.7 0 0.5 }
-
+		
 		crusade_name = CRUSADE
 		scripture_name = THE_BIBLE
 		priest_title = PRIEST
-
+		
 		high_god_name = GOD_GOD
-
+		
 		god_names = {
 			GOD_GOD GOD_THE_LORD GOD_JESUS GOD_THE_BLESSED_VIRGIN
 		}
-
+		
 		evil_god_names = {
 			SATAN LUCIFER THE_DEVIL
 		}
-
+		
 		autocephaly = yes
 		pentarchy = yes
 		can_excommunicate = yes
@@ -262,161 +537,220 @@ christian = {
 		can_grant_invasion_cb = invasion
 		can_call_crusade = no
 		priests_can_inherit = no
-
+		
 		can_retire_to_monastery = yes
-
+		
 		religious_clothing_head = 2
 		religious_clothing_priest = 2
-
+		
 		intermarry = catholic
+		intermarry = cathar
+		intermarry = fraticelli
+		intermarry = waldensian
+		intermarry = lollard
+
+		#intermarry = orthodox
+		intermarry = adoptionism
+		intermarry = bogomilist
+		intermarry = monothelite
+		intermarry = iconoclast
+		intermarry = paulician
+		intermarry = sabellianism
+		intermarry = psilanthropism
+
+		intermarry = aquileian
+
+		intermarry = nicene
+		intermarry = total_depravity
+		intermarry = eutychian
+		intermarry = binitarian
+		intermarry = antinomianism
+		intermarry = ebionites
+		intermarry = marcionism
+		intermarry = montanist
+		intermarry = sethian
+		intermarry = valentinianism
+		intermarry = apollinarian
+		intermarry = docetic
+		intermarry = pneumatomachians
+		intermarry = melchisedechianism
+		intermarry = patripassianism
+		intermarry = arian
+		intermarry = donatism
+		intermarry = priscillianism
+
+		intermarry = insular
+		intermarry = pelagianism
+
+		intermarry = georgian_orthodox
+
 		intermarry = miaphysite
-		intermarry = nestorian
-
-		intermarry = cathar
-		intermarry = fraticelli
-		intermarry = waldensian
-		intermarry = lollard
+		intermarry = audianistic
 		intermarry = monophysite
-		intermarry = bogomilist
-		intermarry = monothelite
-		intermarry = iconoclast
-		intermarry = paulician
-		intermarry = messalian
-	}
+		intermarry = monarchianism
 
-	miaphysite = {
-		graphical_culture = westerngfx
-
-		icon = 11
-		heresy_icon = 13
-
-		color = { 0.7 0.7 0.1 }
-
-		crusade_name = CRUSADE
-		scripture_name = THE_BIBLE
-		priest_title = PRIEST
-
-		high_god_name = GOD_GOD
-
-		god_names = {
-			GOD_GOD GOD_THE_LORD GOD_JESUS GOD_THE_BLESSED_VIRGIN
-		}
-
-		evil_god_names = {
-			SATAN LUCIFER THE_DEVIL
-		}
-
-		autocephaly = yes
-		can_excommunicate = yes
-		can_grant_divorce = yes
-		can_grant_invasion_cb = invasion
-		can_call_crusade = no
-		can_retire_to_monastery = yes
-		priests_can_inherit = no
-
-		religious_clothing_head = 2
-		religious_clothing_priest = 2
-
-		intermarry = catholic
-		intermarry = orthodox
 		intermarry = nestorian
-
-		intermarry = cathar
-		intermarry = fraticelli
-		intermarry = waldensian
-		intermarry = lollard
-		intermarry = monophysite
-		intermarry = bogomilist
-		intermarry = monothelite
-		intermarry = iconoclast
-		intermarry = paulician
-		intermarry = messalian
+		intermarry = messalian		
+		allow_in_ruler_designer = no # Not available before Great Schism
 	}
-
-	monophysite = {
+	adoptionism = {
 		graphical_culture = westerngfx
 		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
 
-		icon = 11
-		heresy_icon = 13
-
-		color = { 0.8 0.4 0.1 }
-		parent = miaphysite
-
-		crusade_name = CRUSADE
-
-		autocephaly = yes
+		icon = 133 # FIXME
+		heresy_icon = 134
+		
+		color = { 0.8 0.0 0.3 }
+		parent = orthodox
+		
+		autocephaly = no
 		can_excommunicate = yes
 		can_grant_divorce = yes
 		can_grant_invasion_cb = invasion
+		can_grant_claim = yes
 		can_call_crusade = no
-		can_retire_to_monastery = yes
 		priests_can_inherit = no
-
+		
+		can_retire_to_monastery = yes
+		
 		religious_clothing_head = 2
 		religious_clothing_priest = 2
-
+		
 		intermarry = catholic
-		intermarry = orthodox
-		intermarry = miaphysite
-		intermarry = nestorian
-
 		intermarry = cathar
 		intermarry = fraticelli
 		intermarry = waldensian
 		intermarry = lollard
+
+		intermarry = orthodox
+		#intermarry = adoptionism
 		intermarry = bogomilist
 		intermarry = monothelite
 		intermarry = iconoclast
 		intermarry = paulician
-		intermarry = messalian
-	}
+		intermarry = sabellianism
+		intermarry = psilanthropism
 
+		intermarry = aquileian
+
+		intermarry = nicene
+		intermarry = total_depravity
+		intermarry = eutychian
+		intermarry = binitarian
+		intermarry = antinomianism
+		intermarry = ebionites
+		intermarry = marcionism
+		intermarry = montanist
+		intermarry = sethian
+		intermarry = valentinianism
+		intermarry = apollinarian
+		intermarry = docetic
+		intermarry = pneumatomachians
+		intermarry = melchisedechianism
+		intermarry = patripassianism
+		intermarry = arian
+		intermarry = donatism
+		intermarry = priscillianism
+
+		intermarry = insular
+		intermarry = pelagianism
+
+		intermarry = georgian_orthodox
+
+		intermarry = miaphysite
+		intermarry = audianistic
+		intermarry = monophysite
+		intermarry = monarchianism
+
+		intermarry = nestorian
+		intermarry = messalian		
+		allow_in_ruler_designer = no # Orthodox heresy
+	}
 	bogomilist = {
 		graphical_culture = westerngfx
 		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
 
 		icon = 2
 		heresy_icon = 7
-
+		
 		color = { 0.7 0 0.2 }
 		parent = orthodox
-
+		
 		crusade_name = CRUSADE
 
 		can_retire_to_monastery = yes
 		female_temple_holders = yes
 		feminist = yes      # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
-
+		
 		religious_clothing_head = 2
 		religious_clothing_priest = 2
-
+		
 		intermarry = catholic
-		intermarry = orthodox
-		intermarry = miaphysite
-		intermarry = nestorian
-
 		intermarry = cathar
 		intermarry = fraticelli
 		intermarry = waldensian
 		intermarry = lollard
-		intermarry = monophysite
+
+		intermarry = orthodox
+		intermarry = adoptionism
+		#intermarry = bogomilist
 		intermarry = monothelite
 		intermarry = iconoclast
 		intermarry = paulician
-		intermarry = messalian
-	}
+		intermarry = sabellianism
+		intermarry = psilanthropism
 
+		intermarry = aquileian
+
+		intermarry = nicene
+		intermarry = total_depravity
+		intermarry = eutychian
+		intermarry = binitarian
+		intermarry = antinomianism
+		intermarry = ebionites
+		intermarry = marcionism
+		intermarry = montanist
+		intermarry = sethian
+		intermarry = valentinianism
+		intermarry = apollinarian
+		intermarry = docetic
+		intermarry = pneumatomachians
+		intermarry = melchisedechianism
+		intermarry = patripassianism
+		intermarry = arian
+		intermarry = donatism
+		intermarry = priscillianism
+
+		intermarry = insular
+		intermarry = pelagianism
+
+		intermarry = georgian_orthodox
+
+		intermarry = miaphysite
+		intermarry = audianistic
+		intermarry = monophysite
+		intermarry = monarchianism
+
+		intermarry = nestorian
+		intermarry = messalian		
+		allow_in_ruler_designer = no # Orthodox heresy
+		
+		character_modifier = { 
+			general_opinion = -20
+			same_opinion_if_same_religion = 40
+			infidel_opinion = -40
+		}
+	}
 	monothelite = {
 		graphical_culture = westerngfx
 		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
 
 		icon = 2
 		heresy_icon = 7
-
+		
 		color = { 0.5 0 0.3 }
 		parent = orthodox
-
+		
 		crusade_name = CRUSADE
 
 		autocephaly = yes
@@ -427,36 +761,70 @@ christian = {
 		can_call_crusade = no
 		can_retire_to_monastery = yes
 		priests_can_inherit = no
-
+		
 		religious_clothing_head = 2
 		religious_clothing_priest = 2
-
+		
 		intermarry = catholic
-		intermarry = orthodox
-		intermarry = miaphysite
-		intermarry = nestorian
-
 		intermarry = cathar
 		intermarry = fraticelli
 		intermarry = waldensian
 		intermarry = lollard
-		intermarry = monophysite
+
+		intermarry = orthodox
+		intermarry = adoptionism
 		intermarry = bogomilist
+		#intermarry = monothelite
 		intermarry = iconoclast
 		intermarry = paulician
-		intermarry = messalian
-	}
+		intermarry = sabellianism
+		intermarry = psilanthropism
 
+		intermarry = aquileian
+
+		intermarry = nicene
+		intermarry = total_depravity
+		intermarry = eutychian
+		intermarry = binitarian
+		intermarry = antinomianism
+		intermarry = ebionites
+		intermarry = marcionism
+		intermarry = montanist
+		intermarry = sethian
+		intermarry = valentinianism
+		intermarry = apollinarian
+		intermarry = docetic
+		intermarry = pneumatomachians
+		intermarry = melchisedechianism
+		intermarry = patripassianism
+		intermarry = arian
+		intermarry = donatism
+		intermarry = priscillianism
+
+		intermarry = insular
+		intermarry = pelagianism
+
+		intermarry = georgian_orthodox
+
+		intermarry = miaphysite
+		intermarry = audianistic
+		intermarry = monophysite
+		intermarry = monarchianism
+
+		intermarry = nestorian
+		intermarry = messalian		
+		allow_in_ruler_designer = no # Orthodox heresy
+	}
 	iconoclast = {
 		graphical_culture = westerngfx
 		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
 
 		icon = 2
 		heresy_icon = 7
-
+		
 		color = { 0.5 0.2 0.4 }
 		parent = orthodox
-
+		
 		crusade_name = CRUSADE
 
 		autocephaly = yes
@@ -467,39 +835,79 @@ christian = {
 		can_call_crusade = no
 		can_retire_to_monastery = yes
 		priests_can_inherit = no
-
-		religious_clothing_head = 2
-		religious_clothing_priest = 2
-
+		
+		religious_clothing_head = 5
+		religious_clothing_priest = 5
+		
 		intermarry = catholic
-		intermarry = orthodox
-		intermarry = miaphysite
-		intermarry = nestorian
-
 		intermarry = cathar
 		intermarry = fraticelli
 		intermarry = waldensian
 		intermarry = lollard
-		intermarry = monophysite
+
+		intermarry = orthodox
+		intermarry = adoptionism
 		intermarry = bogomilist
 		intermarry = monothelite
+		#intermarry = iconoclast
 		intermarry = paulician
-		intermarry = messalian
-	}
+		intermarry = sabellianism
+		intermarry = psilanthropism
 
+		intermarry = aquileian
+
+		intermarry = nicene
+		intermarry = total_depravity
+		intermarry = eutychian
+		intermarry = binitarian
+		intermarry = antinomianism
+		intermarry = ebionites
+		intermarry = marcionism
+		intermarry = montanist
+		intermarry = sethian
+		intermarry = valentinianism
+		intermarry = apollinarian
+		intermarry = docetic
+		intermarry = pneumatomachians
+		intermarry = melchisedechianism
+		intermarry = patripassianism
+		intermarry = arian
+		intermarry = donatism
+		intermarry = priscillianism
+
+		intermarry = insular
+		intermarry = pelagianism
+
+		intermarry = georgian_orthodox
+
+		intermarry = miaphysite
+		intermarry = audianistic
+		intermarry = monophysite
+		intermarry = monarchianism
+
+		intermarry = nestorian
+		intermarry = messalian		
+		allow_in_ruler_designer = no # Orthodox heresy
+		
+		character_modifier = { 
+			general_opinion = -10
+			same_opinion_if_same_religion = 20
+			infidel_opinion = -20
+		}
+	}
 	paulician = {
 		graphical_culture = westerngfx
 		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
 
 		icon = 2
 		heresy_icon = 7
-
+		
 		color = { 0.5 0 0.3 }
-
+		
 		parent = orthodox
-
+		
 		crusade_name = CRUSADE
-
+		
 		evil_god_names = {
 			SATAN LUCIFER THE_DEVIL THE_DEMIURGE
 		}
@@ -512,98 +920,2412 @@ christian = {
 		can_call_crusade = no
 		can_retire_to_monastery = yes
 		priests_can_inherit = no
+		
+		religious_clothing_head = 2
+		religious_clothing_priest = 2
+		
+		intermarry = catholic
+		intermarry = cathar
+		intermarry = fraticelli
+		intermarry = waldensian
+		intermarry = lollard
+
+		intermarry = orthodox
+		intermarry = adoptionism
+		intermarry = bogomilist
+		intermarry = monothelite
+		intermarry = iconoclast
+		#intermarry = paulician
+		intermarry = sabellianism
+		intermarry = psilanthropism
+
+		intermarry = aquileian
+
+		intermarry = nicene
+		intermarry = total_depravity
+		intermarry = eutychian
+		intermarry = binitarian
+		intermarry = antinomianism
+		intermarry = ebionites
+		intermarry = marcionism
+		intermarry = montanist
+		intermarry = sethian
+		intermarry = valentinianism
+		intermarry = apollinarian
+		intermarry = docetic
+		intermarry = pneumatomachians
+		intermarry = melchisedechianism
+		intermarry = patripassianism
+		intermarry = arian
+		intermarry = donatism
+		intermarry = priscillianism
+
+		intermarry = insular
+		intermarry = pelagianism
+
+		intermarry = georgian_orthodox
+
+		intermarry = miaphysite
+		intermarry = audianistic
+		intermarry = monophysite
+		intermarry = monarchianism
+
+		intermarry = nestorian
+		intermarry = messalian		
+		allow_in_ruler_designer = no # Orthodox heresy
+	}
+	sabellianism = {
+		graphical_culture = westerngfx
+		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+
+		icon = 133 # FIXME
+		heresy_icon = 134
+		
+		color = { 0.15 0.1 1.0 }
+		parent = orthodox
+		
+		can_retire_to_monastery = yes
+		female_temple_holders = no
+		
+		religious_clothing_head = 2
+		religious_clothing_priest = 2
+		
+		intermarry = catholic
+		intermarry = cathar
+		intermarry = fraticelli
+		intermarry = waldensian
+		intermarry = lollard
+
+		intermarry = orthodox
+		intermarry = adoptionism
+		intermarry = bogomilist
+		intermarry = monothelite
+		intermarry = iconoclast
+		intermarry = paulician
+		#intermarry = sabellianism
+		intermarry = psilanthropism
+
+		intermarry = aquileian
+
+		intermarry = nicene
+		intermarry = total_depravity
+		intermarry = eutychian
+		intermarry = binitarian
+		intermarry = antinomianism
+		intermarry = ebionites
+		intermarry = marcionism
+		intermarry = montanist
+		intermarry = sethian
+		intermarry = valentinianism
+		intermarry = apollinarian
+		intermarry = docetic
+		intermarry = pneumatomachians
+		intermarry = melchisedechianism
+		intermarry = patripassianism
+		intermarry = arian
+		intermarry = donatism
+		intermarry = priscillianism
+
+		intermarry = insular
+		intermarry = pelagianism
+
+		intermarry = georgian_orthodox
+
+		intermarry = miaphysite
+		intermarry = audianistic
+		intermarry = monophysite
+		intermarry = monarchianism
+
+		intermarry = nestorian
+		intermarry = messalian		
+		allow_in_ruler_designer = no # Orthodox heresy
+	}
+	psilanthropism = {
+		graphical_culture = westerngfx
+		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+
+		icon = 133 # FIXME
+		heresy_icon = 134
+		
+		color = { 0.3 0 0.1 }
+		parent = orthodox
+		
+		can_retire_to_monastery = yes
+		female_temple_holders = no
+		
+		religious_clothing_head = 2
+		religious_clothing_priest = 2
+		
+		intermarry = catholic
+		intermarry = cathar
+		intermarry = fraticelli
+		intermarry = waldensian
+		intermarry = lollard
+
+		intermarry = orthodox
+		intermarry = adoptionism
+		intermarry = bogomilist
+		intermarry = monothelite
+		intermarry = iconoclast
+		intermarry = paulician
+		intermarry = sabellianism
+		#intermarry = psilanthropism
+
+		intermarry = aquileian
+
+		intermarry = nicene
+		intermarry = total_depravity
+		intermarry = eutychian
+		intermarry = binitarian
+		intermarry = antinomianism
+		intermarry = ebionites
+		intermarry = marcionism
+		intermarry = montanist
+		intermarry = sethian
+		intermarry = valentinianism
+		intermarry = apollinarian
+		intermarry = docetic
+		intermarry = pneumatomachians
+		intermarry = melchisedechianism
+		intermarry = patripassianism
+		intermarry = arian
+		intermarry = donatism
+		intermarry = priscillianism
+
+		intermarry = insular
+		intermarry = pelagianism
+
+		intermarry = georgian_orthodox
+
+		intermarry = miaphysite
+		intermarry = audianistic
+		intermarry = monophysite
+		intermarry = monarchianism
+
+		intermarry = nestorian
+		intermarry = messalian		
+		allow_in_ruler_designer = no # Orthodox heresy
+	}	
+	
+	# Aquileian
+	aquileian = {
+		graphical_culture = westerngfx
+
+		icon = 167
+		heresy_icon = 168
+		
+		color = { 0.7 0.7 1.0 }
+		
+		crusade_name = CRUSADE
+		scripture_name = THE_BIBLE
+		priest_title = PRIEST
+		
+		high_god_name = GOD_GOD
+		god_names = {
+			GOD_GOD GOD_THE_LORD GOD_JESUS GOD_THE_BLESSED_VIRGIN
+		}
+		evil_god_names = {
+			SATAN LUCIFER THE_DEVIL
+		}
+		
+		investiture = yes
+		can_have_antipopes = yes
+		can_excommunicate = yes
+		can_grant_divorce = yes
+		can_grant_invasion_cb = invasion
+		can_grant_claim = yes
+		can_call_crusade = yes
+		can_retire_to_monastery = yes
+		priests_can_inherit = no
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+		
+		intermarry = catholic
+		intermarry = cathar
+		intermarry = fraticelli
+		intermarry = waldensian
+		intermarry = lollard
+
+		intermarry = orthodox
+		intermarry = adoptionism
+		intermarry = bogomilist
+		intermarry = monothelite
+		intermarry = iconoclast
+		intermarry = paulician
+		intermarry = sabellianism
+		intermarry = psilanthropism
+
+		intermarry = aquileian
+
+		intermarry = nicene
+		intermarry = total_depravity
+		intermarry = eutychian
+		intermarry = binitarian
+		intermarry = antinomianism
+		intermarry = ebionites
+		intermarry = marcionism
+		intermarry = montanist
+		intermarry = sethian
+		intermarry = valentinianism
+		intermarry = apollinarian
+		intermarry = docetic
+		intermarry = pneumatomachians
+		intermarry = melchisedechianism
+		intermarry = patripassianism
+		intermarry = arian
+		intermarry = donatism
+		intermarry = priscillianism
+
+		intermarry = insular
+		intermarry = pelagianism
+
+		intermarry = georgian_orthodox
+
+		intermarry = miaphysite
+		intermarry = audianistic
+		intermarry = monophysite
+		intermarry = monarchianism
+
+		intermarry = nestorian
+		intermarry = messalian
+	}
+	
+	# Nicene and heresies
+	nicene = {
+		graphical_culture = westerngfx
+
+		icon = 133
+		heresy_icon = 134
+		
+		color = { 0.65 0.65 0.37 }
+		
+		crusade_name = CRUSADE
+		scripture_name = THE_BIBLE
+		priest_title = PRIEST
+		
+		high_god_name = GOD_GOD
+		god_names = {
+			GOD_GOD GOD_THE_LORD GOD_JESUS GOD_THE_BLESSED_VIRGIN
+		}
+		evil_god_names = {
+			SATAN LUCIFER THE_DEVIL
+		}
+		
+		autocephaly = yes
+		pentarchy = yes
+		can_excommunicate = yes
+		can_grant_divorce = yes
+		can_grant_invasion_cb = invasion
+		can_grant_claim = yes
+		can_call_crusade = no
+		priests_can_inherit = no
+		
+		can_retire_to_monastery = yes
+		
+		religious_clothing_head = 2
+		religious_clothing_priest = 2
+
+		intermarry = catholic
+		intermarry = cathar
+		intermarry = fraticelli
+		intermarry = waldensian
+		intermarry = lollard
+
+		intermarry = orthodox
+		intermarry = adoptionism
+		intermarry = bogomilist
+		intermarry = monothelite
+		intermarry = iconoclast
+		intermarry = paulician
+		intermarry = sabellianism
+		intermarry = psilanthropism
+
+		intermarry = aquileian
+
+		#intermarry = nicene
+		intermarry = total_depravity
+		intermarry = eutychian
+		intermarry = binitarian
+		intermarry = antinomianism
+		intermarry = ebionites
+		intermarry = marcionism
+		intermarry = montanist
+		intermarry = sethian
+		intermarry = valentinianism
+		intermarry = apollinarian
+		intermarry = docetic
+		intermarry = pneumatomachians
+		intermarry = melchisedechianism
+		intermarry = patripassianism
+		intermarry = arian
+		intermarry = donatism
+		intermarry = priscillianism
+
+		intermarry = insular
+		intermarry = pelagianism
+
+		intermarry = georgian_orthodox
+
+		intermarry = miaphysite
+		intermarry = audianistic
+		intermarry = monophysite
+		intermarry = monarchianism
+
+		intermarry = nestorian
+		intermarry = messalian
+
+		intermarry = germanic_pagan
+		intermarry = zoroastrian
+	}
+	total_depravity = {
+		graphical_culture = westerngfx
+		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+
+		icon = 107
+		heresy_icon = 134
+		
+		color = { 1.0 0.0 0.1 }
+		parent = nicene
+		
+		crusade_name = CRUSADE
+
+		can_retire_to_monastery = yes
+		priests_can_inherit = no
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+		
+		intermarry = catholic
+		intermarry = cathar
+		intermarry = fraticelli
+		intermarry = waldensian
+		intermarry = lollard
+
+		intermarry = orthodox
+		intermarry = adoptionism
+		intermarry = bogomilist
+		intermarry = monothelite
+		intermarry = iconoclast
+		intermarry = paulician
+		intermarry = sabellianism
+		intermarry = psilanthropism
+
+		intermarry = aquileian
+
+		intermarry = nicene
+		#intermarry = total_depravity
+		intermarry = eutychian
+		intermarry = binitarian
+		intermarry = antinomianism
+		intermarry = ebionites
+		intermarry = marcionism
+		intermarry = montanist
+		intermarry = sethian
+		intermarry = valentinianism
+		intermarry = apollinarian
+		intermarry = docetic
+		intermarry = pneumatomachians
+		intermarry = melchisedechianism
+		intermarry = patripassianism
+		intermarry = arian
+		intermarry = donatism
+		intermarry = priscillianism
+
+		intermarry = insular
+		intermarry = pelagianism
+
+		intermarry = georgian_orthodox
+
+		intermarry = miaphysite
+		intermarry = audianistic
+		intermarry = monophysite
+		intermarry = monarchianism
+
+		intermarry = nestorian
+		intermarry = messalian
+	}
+	eutychian = {
+		graphical_culture = westerngfx
+		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+
+		icon = 98
+		heresy_icon = 134
+		
+		color = { 0.97 0.73 0.14 }
+		parent = nicene
+		
+		crusade_name = CRUSADE
+
+		can_retire_to_monastery = yes
+		priests_can_inherit = no
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+		
+		intermarry = catholic
+		intermarry = cathar
+		intermarry = fraticelli
+		intermarry = waldensian
+		intermarry = lollard
+
+		intermarry = orthodox
+		intermarry = adoptionism
+		intermarry = bogomilist
+		intermarry = monothelite
+		intermarry = iconoclast
+		intermarry = paulician
+		intermarry = sabellianism
+		intermarry = psilanthropism
+
+		intermarry = aquileian
+
+		intermarry = nicene
+		intermarry = total_depravity
+		#intermarry = eutychian
+		intermarry = binitarian
+		intermarry = antinomianism
+		intermarry = ebionites
+		intermarry = marcionism
+		intermarry = montanist
+		intermarry = sethian
+		intermarry = valentinianism
+		intermarry = apollinarian
+		intermarry = docetic
+		intermarry = pneumatomachians
+		intermarry = melchisedechianism
+		intermarry = patripassianism
+		intermarry = arian
+		intermarry = donatism
+		intermarry = priscillianism
+
+		intermarry = insular
+		intermarry = pelagianism
+
+		intermarry = georgian_orthodox
+
+		intermarry = miaphysite
+		intermarry = audianistic
+		intermarry = monophysite
+		intermarry = monarchianism
+
+		intermarry = nestorian
+		intermarry = messalian
+	}
+	binitarian = {
+		graphical_culture = westerngfx
+
+		icon = 111
+		heresy_icon = 134
+		
+		color = { 0.5 0.5 0.23 }
+		parent = nicene
+		
+		crusade_name = CRUSADE
+
+		autocephaly = yes
+		pentarchy = yes
+		can_excommunicate = yes
+		can_grant_divorce = yes
+		can_grant_invasion_cb = invasion
+		can_grant_claim = yes
+		can_call_crusade = no
+		can_retire_to_monastery = yes
+		priests_can_inherit = no
+		
+		religious_clothing_head = 2
+		religious_clothing_priest = 2
+		
+		intermarry = catholic
+		intermarry = cathar
+		intermarry = fraticelli
+		intermarry = waldensian
+		intermarry = lollard
+
+		intermarry = orthodox
+		intermarry = adoptionism
+		intermarry = bogomilist
+		intermarry = monothelite
+		intermarry = iconoclast
+		intermarry = paulician
+		intermarry = sabellianism
+		intermarry = psilanthropism
+
+		intermarry = aquileian
+
+		intermarry = nicene
+		intermarry = total_depravity
+		intermarry = eutychian
+		#intermarry = binitarian
+		intermarry = antinomianism
+		intermarry = ebionites
+		intermarry = marcionism
+		intermarry = montanist
+		intermarry = sethian
+		intermarry = valentinianism
+		intermarry = apollinarian
+		intermarry = docetic
+		intermarry = pneumatomachians
+		intermarry = melchisedechianism
+		intermarry = patripassianism
+		intermarry = arian
+		intermarry = donatism
+		intermarry = priscillianism
+
+		intermarry = insular
+		intermarry = pelagianism
+
+		intermarry = georgian_orthodox
+
+		intermarry = miaphysite
+		intermarry = audianistic
+		intermarry = monophysite
+		intermarry = monarchianism
+
+		intermarry = nestorian
+		intermarry = messalian
+	}
+	antinomianism = {
+		graphical_culture = westerngfx
+
+		icon = 133
+		heresy_icon = 134
+		
+		color = { 0.1 0.1 0 }
+		parent = nicene
+		
+		can_retire_to_monastery = no
+		female_temple_holders = yes
+		priests_can_marry = yes
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 5
+
+		character_modifier = { ### If Antinomians can sin without consequence, few other Christians will like them and they'll sin a ton. ###
+			same_religion_opinion = 30
+			fertility = 0.3
+			sex_appeal_opinion = 5
+			christian_opinion = -30
+		}
+
+		high_god_name = GOD_JESUS
+
+		god_names = {
+			GOD_JESUS GOD_GOD
+		}
+
+		evil_god_names = {
+			THE_DARKNESS LUCIFER
+		}
+
+		bs_marriage = yes ### In the Epistles, Paul explicitly stated some churchgoers with this view committed incest. ###
+		pc_marriage = yes
+		psc_marriage = yes
+		cousin_marriage = yes
+
+		max_consorts = 3
+		
+		intermarry = catholic
+		intermarry = cathar
+		intermarry = fraticelli
+		intermarry = waldensian
+		intermarry = lollard
+
+		intermarry = orthodox
+		intermarry = adoptionism
+		intermarry = bogomilist
+		intermarry = monothelite
+		intermarry = iconoclast
+		intermarry = paulician
+		intermarry = sabellianism
+		intermarry = psilanthropism
+
+		intermarry = aquileian
+
+		intermarry = nicene
+		intermarry = total_depravity
+		intermarry = eutychian
+		intermarry = binitarian
+		#intermarry = antinomianism
+		intermarry = ebionites
+		intermarry = marcionism
+		intermarry = montanist
+		intermarry = sethian
+		intermarry = valentinianism
+		intermarry = apollinarian
+		intermarry = docetic
+		intermarry = pneumatomachians
+		intermarry = melchisedechianism
+		intermarry = patripassianism
+		intermarry = arian
+		intermarry = donatism
+		intermarry = priscillianism
+
+		intermarry = insular
+		intermarry = pelagianism
+
+		intermarry = georgian_orthodox
+
+		intermarry = miaphysite
+		intermarry = audianistic
+		intermarry = monophysite
+		intermarry = monarchianism
+
+		intermarry = nestorian
+		intermarry = messalian
+	}
+	ebionites = {
+		graphical_culture = jewishgfx
+		
+		icon = 108
+		heresy_icon = 134
+		
+		color = { 0.95 0.95 0.60 }
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_TORAH
+		priest_title = RABBI
+		parent = nicene
+		
+		high_god_name = GOD_THE_LORD
+		god_names = {
+			GOD_GOD GOD_THE_LORD GOD_YESHUA
+		}
+		evil_god_names = {
+			SATAN THE_DEVIL
+		}
+
+		can_grant_divorce = yes
+		can_call_crusade = yes
+		can_grant_invasion_cb = invasion
+		priests_can_marry = yes
+		
+		religious_clothing_head = 7
+		religious_clothing_priest = 7
+		
+		intermarry = catholic
+		intermarry = cathar
+		intermarry = fraticelli
+		intermarry = waldensian
+		intermarry = lollard
+
+		intermarry = orthodox
+		intermarry = adoptionism
+		intermarry = bogomilist
+		intermarry = monothelite
+		intermarry = iconoclast
+		intermarry = paulician
+		intermarry = sabellianism
+		intermarry = psilanthropism
+
+		intermarry = aquileian
+
+		intermarry = nicene
+		intermarry = total_depravity
+		intermarry = eutychian
+		intermarry = binitarian
+		intermarry = antinomianism
+		#intermarry = ebionites
+		intermarry = marcionism
+		intermarry = montanist
+		intermarry = sethian
+		intermarry = valentinianism
+		intermarry = apollinarian
+		intermarry = docetic
+		intermarry = pneumatomachians
+		intermarry = melchisedechianism
+		intermarry = patripassianism
+		intermarry = arian
+		intermarry = donatism
+		intermarry = priscillianism
+
+		intermarry = insular
+		intermarry = pelagianism
+
+		intermarry = georgian_orthodox
+
+		intermarry = miaphysite
+		intermarry = audianistic
+		intermarry = monophysite
+		intermarry = monarchianism
+
+		intermarry = nestorian
+		intermarry = messalian
+
+		intermarry = jewish
+		intermarry = jewish_group
+		
+		expel_modifier = expelled_jewish
+		
+		character_modifier = { 
+			general_opinion = -10
+			same_opinion_if_same_religion = 20
+			infidel_opinion = -20
+		}
+	}
+	marcionism = {
+		graphical_culture = westerngfx
+
+		icon = 109
+		heresy_icon = 134
+		
+		color = { 0.7 0.1 0.4 }
+		parent = nicene
+		scripture_name = THE_NEW_TESTAMENT
+		
+		character_modifier = { # Gnostic opinion
+			sethian_opinion = 5
+			valentinianism_opinion = 5
+			melchisedechianism_opinion = 5
+			priscillianism_opinion = 5
+			manichean_opinion = 5
+		}
+
+		high_god_name = GOD_GOD
+		god_names = {
+			GOD_GOD GOD_JESUS GOD_THE_STRANGER GOD_MONAD PROPHET_PAUL
+		}
+		
+		evil_god_names = {
+			GOD_YALTABAOTH GOD_YALDABAOTH
+		}
+		
+		can_retire_to_monastery = yes
+		female_temple_holders = no
+		
+		religious_clothing_head = 2
+		religious_clothing_priest = 2
+		
+		intermarry = catholic
+		intermarry = cathar
+		intermarry = fraticelli
+		intermarry = waldensian
+		intermarry = lollard
+
+		intermarry = orthodox
+		intermarry = adoptionism
+		intermarry = bogomilist
+		intermarry = monothelite
+		intermarry = iconoclast
+		intermarry = paulician
+		intermarry = sabellianism
+		intermarry = psilanthropism
+
+		intermarry = aquileian
+
+		intermarry = nicene
+		intermarry = total_depravity
+		intermarry = eutychian
+		intermarry = binitarian
+		intermarry = antinomianism
+		intermarry = ebionites
+		#intermarry = marcionism
+		intermarry = montanist
+		intermarry = sethian
+		intermarry = valentinianism
+		intermarry = apollinarian
+		intermarry = docetic
+		intermarry = pneumatomachians
+		intermarry = melchisedechianism
+		intermarry = patripassianism
+		intermarry = arian
+		intermarry = donatism
+		intermarry = priscillianism
+
+		intermarry = insular
+		intermarry = pelagianism
+
+		intermarry = georgian_orthodox
+
+		intermarry = miaphysite
+		intermarry = audianistic
+		intermarry = monophysite
+		intermarry = monarchianism
+
+		intermarry = nestorian
+		intermarry = messalian
+	}
+	montanist = {
+		graphical_culture = westerngfx
+
+		icon = 133 #FIXME
+		heresy_icon = 134
+		
+		color = { 0.5 0.0 0.1 }
+		parent = nicene
+		scripture_name = THE_NEW_TESTAMENT
+
+		character_modifier = {
+			global_tax_modifier = 0.20
+			fertility = -0.2
+		}
+
+		high_god_name = GOD_GOD
+		god_names = {
+			GOD_GOD GOD_JESUS GOD_HOLY_SPIRIT GOD_APOLLO
+		}
+		evil_god_names = {
+			GOD_YALTABAOTH 
+		}
+		
+		can_retire_to_monastery = yes
+		female_temple_holders = yes
+		has_heir_designation = yes
+		
+		religious_clothing_head = 1
+		religious_clothing_priest = 5
+		
+		intermarry = catholic
+		intermarry = cathar
+		intermarry = fraticelli
+		intermarry = waldensian
+		intermarry = lollard
+
+		intermarry = orthodox
+		intermarry = adoptionism
+		intermarry = bogomilist
+		intermarry = monothelite
+		intermarry = iconoclast
+		intermarry = paulician
+		intermarry = sabellianism
+		intermarry = psilanthropism
+
+		intermarry = aquileian
+
+		intermarry = nicene
+		intermarry = total_depravity
+		intermarry = eutychian
+		intermarry = binitarian
+		intermarry = antinomianism
+		intermarry = ebionites
+		intermarry = marcionism
+		#intermarry = montanist
+		intermarry = sethian
+		intermarry = valentinianism
+		intermarry = apollinarian
+		intermarry = docetic
+		intermarry = pneumatomachians
+		intermarry = melchisedechianism
+		intermarry = patripassianism
+		intermarry = arian
+		intermarry = donatism
+		intermarry = priscillianism
+
+		intermarry = insular
+		intermarry = pelagianism
+
+		intermarry = georgian_orthodox
+
+		intermarry = miaphysite
+		intermarry = audianistic
+		intermarry = monophysite
+		intermarry = monarchianism
+
+		intermarry = nestorian
+		intermarry = messalian
+		
+		character_modifier = { 
+			general_opinion = -10
+			same_opinion_if_same_religion = 20
+			infidel_opinion = -20
+		}
+	}
+	sethian = {
+		graphical_culture = westerngfx
+
+		icon = 116
+		heresy_icon = 134
+		
+		color = { 0.0 0.0 0.2 }
+		parent = nicene
+		
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_THREE_STELES_OF_SETH
+		priest_title = SNAKE_KEEPER
+		
+		character_modifier = { # Gnostic opinion
+			marcionism_opinion = 5
+			valentinianism_opinion = 5
+			melchisedechianism_opinion = 5
+			priscillianism_opinion = 5
+			manichean_opinion = 5
+		}
+		
+		high_god_name = GOD_SETH
+		god_names = {
+			GOD_THE_SERPENT GOD_SOPHIA GOD_BARBELO GOD_UNKNOWN_GOD GOD_SETH THE_HISSING_GOD THE_FANGED_ONE
+		}
+		evil_god_names = {
+			GOD_YALDABAOTH
+		}
+		
+		can_retire_to_monastery = yes
+		female_temple_holders = yes
+		can_excommunicate = yes
+		can_grant_divorce = yes
+		can_grant_invasion_cb = invasion
+		can_grant_claim = yes
+		can_call_crusade = yes
+
+		max_consorts = 3 # Can take concubines
+
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+		intermarry = catholic
+		intermarry = cathar
+		intermarry = fraticelli
+		intermarry = waldensian
+		intermarry = lollard
+
+		intermarry = orthodox
+		intermarry = adoptionism
+		intermarry = bogomilist
+		intermarry = monothelite
+		intermarry = iconoclast
+		intermarry = paulician
+		intermarry = sabellianism
+		intermarry = psilanthropism
+
+		intermarry = aquileian
+
+		intermarry = nicene
+		intermarry = total_depravity
+		intermarry = eutychian
+		intermarry = binitarian
+		intermarry = antinomianism
+		intermarry = ebionites
+		intermarry = marcionism
+		intermarry = montanist
+		#intermarry = sethian
+		intermarry = valentinianism
+		intermarry = apollinarian
+		intermarry = docetic
+		intermarry = pneumatomachians
+		intermarry = melchisedechianism
+		intermarry = patripassianism
+		intermarry = arian
+		intermarry = donatism
+		intermarry = priscillianism
+
+		intermarry = insular
+		intermarry = pelagianism
+
+		intermarry = georgian_orthodox
+
+		intermarry = miaphysite
+		intermarry = audianistic
+		intermarry = monophysite
+		intermarry = monarchianism
+
+		intermarry = nestorian
+		intermarry = messalian
+		
+		intermarry = manichean
+	}
+	valentinianism = {
+		graphical_culture = muslimgfx
+
+		icon = 106
+		heresy_icon = 134
+		
+		color = { 0.7 0.0 0.2 }
+		parent = nicene
+
+		crusade_name = MEGALOS_SOTERIA
+		scripture_name = GOSPEL_OF_PHILIP
+		priest_title = PRIEST
+		
+		character_modifier = { # Gnostic opinion
+			marcionism_opinion = 5
+			sethian_opinion = 5
+			melchisedechianism_opinion = 5
+			priscillianism_opinion = 5
+			manichean_opinion = 5
+		}
+		
+		high_god_name = GOD_GOD
+		god_names = {
+			GOD_GOD GOD_JESUS GOD_SOPHIA GOD_LOGOS GOD_ZOE THE_AEONS GOD_ANTHROPOS GOD_HORUS
+		}
+		evil_god_names = {
+			GOD_HYLE
+		}
+		
+		can_retire_to_monastery = yes
+		feminist = yes
+		female_temple_holders = yes
+		can_excommunicate = yes
+		can_grant_divorce = yes
+		can_grant_invasion_cb = invasion
+		can_grant_claim = yes
+		can_call_crusade = yes
+		divine_blood = yes # Sacred Xwedodah close-kin marriage mechanics
+		pc_marriage = yes
+		bs_marriage = yes
+
+		religious_clothing_head = 0
+		religious_clothing_priest = 0
+		
+		character_modifier = { 
+			general_opinion = -10
+			same_opinion_if_same_religion = 20
+			infidel_opinion = -20
+		}
+		
+		intermarry = catholic
+		intermarry = cathar
+		intermarry = fraticelli
+		intermarry = waldensian
+		intermarry = lollard
+
+		intermarry = orthodox
+		intermarry = adoptionism
+		intermarry = bogomilist
+		intermarry = monothelite
+		intermarry = iconoclast
+		intermarry = paulician
+		intermarry = sabellianism
+		intermarry = psilanthropism
+
+		intermarry = aquileian
+
+		intermarry = nicene
+		intermarry = total_depravity
+		intermarry = eutychian
+		intermarry = binitarian
+		intermarry = antinomianism
+		intermarry = ebionites
+		intermarry = marcionism
+		intermarry = montanist
+		intermarry = sethian
+		#intermarry = valentinianism
+		intermarry = apollinarian
+		intermarry = docetic
+		intermarry = pneumatomachians
+		intermarry = melchisedechianism
+		intermarry = patripassianism
+		intermarry = arian
+		intermarry = donatism
+		intermarry = priscillianism
+
+		intermarry = insular
+		intermarry = pelagianism
+
+		intermarry = georgian_orthodox
+
+		intermarry = miaphysite
+		intermarry = audianistic
+		intermarry = monophysite
+		intermarry = monarchianism
+
+		intermarry = nestorian
+		intermarry = messalian
+		
+		intermarry = manichean
+	}
+	apollinarian = {
+		graphical_culture = westerngfx
+
+		icon = 133 # FIXME
+		heresy_icon = 134
+		
+		color = { 0.3 0.3 0.75 }
+		parent = nicene
+		
+		autocephaly = no
+		can_excommunicate = yes
+		can_grant_divorce = yes
+		can_grant_invasion_cb = invasion
+		can_grant_claim = yes
+		can_call_crusade = no
+		priests_can_inherit = no
+		
+		can_retire_to_monastery = yes
+		
+		religious_clothing_head = 2
+		religious_clothing_priest = 2
+		
+		intermarry = catholic
+		intermarry = cathar
+		intermarry = fraticelli
+		intermarry = waldensian
+		intermarry = lollard
+
+		intermarry = orthodox
+		intermarry = adoptionism
+		intermarry = bogomilist
+		intermarry = monothelite
+		intermarry = iconoclast
+		intermarry = paulician
+		intermarry = sabellianism
+		intermarry = psilanthropism
+
+		intermarry = aquileian
+
+		intermarry = nicene
+		intermarry = total_depravity
+		intermarry = eutychian
+		intermarry = binitarian
+		intermarry = antinomianism
+		intermarry = ebionites
+		intermarry = marcionism
+		intermarry = montanist
+		intermarry = sethian
+		intermarry = valentinianism
+		#intermarry = apollinarian
+		intermarry = docetic
+		intermarry = pneumatomachians
+		intermarry = melchisedechianism
+		intermarry = patripassianism
+		intermarry = arian
+		intermarry = donatism
+		intermarry = priscillianism
+
+		intermarry = insular
+		intermarry = pelagianism
+
+		intermarry = georgian_orthodox
+
+		intermarry = miaphysite
+		intermarry = audianistic
+		intermarry = monophysite
+		intermarry = monarchianism
+
+		intermarry = nestorian
+		intermarry = messalian
+	}
+	docetic = {
+		graphical_culture = westerngfx
+
+		icon = 133 # FIXME
+		heresy_icon = 134
+		
+		color = { 0.8 0.3 0.5 }
+		parent = nicene
+
+		scripture_name = GOSPEL_OF_CLEMENT
+		
+		can_retire_to_monastery = yes
+		female_temple_holders = no
+		
+		religious_clothing_head = 2
+		religious_clothing_priest = 2
+		
+		intermarry = catholic
+		intermarry = cathar
+		intermarry = fraticelli
+		intermarry = waldensian
+		intermarry = lollard
+
+		intermarry = orthodox
+		intermarry = adoptionism
+		intermarry = bogomilist
+		intermarry = monothelite
+		intermarry = iconoclast
+		intermarry = paulician
+		intermarry = sabellianism
+		intermarry = psilanthropism
+
+		intermarry = aquileian
+
+		intermarry = nicene
+		intermarry = total_depravity
+		intermarry = eutychian
+		intermarry = binitarian
+		intermarry = antinomianism
+		intermarry = ebionites
+		intermarry = marcionism
+		intermarry = montanist
+		intermarry = sethian
+		intermarry = valentinianism
+		intermarry = apollinarian
+		#intermarry = docetic
+		intermarry = pneumatomachians
+		intermarry = melchisedechianism
+		intermarry = patripassianism
+		intermarry = arian
+		intermarry = donatism
+		intermarry = priscillianism
+
+		intermarry = insular
+		intermarry = pelagianism
+
+		intermarry = georgian_orthodox
+
+		intermarry = miaphysite
+		intermarry = audianistic
+		intermarry = monophysite
+		intermarry = monarchianism
+
+		intermarry = nestorian
+		intermarry = messalian
+	}
+	pneumatomachians = {
+		graphical_culture = westerngfx
+
+		icon = 112
+		heresy_icon = 134
+		
+		color = { 0.1 0.1 0.1 }
+		parent = nicene
+
+		character_modifier = {
+			# FIXME heretic_opinion is not a valid modifier
+			# heretic_opinion = 20
+		}
+		
+		can_retire_to_monastery = yes
+		female_temple_holders = no
+		
+		religious_clothing_head = 2
+		religious_clothing_priest = 2
+		
+		intermarry = catholic
+		intermarry = cathar
+		intermarry = fraticelli
+		intermarry = waldensian
+		intermarry = lollard
+
+		intermarry = orthodox
+		intermarry = adoptionism
+		intermarry = bogomilist
+		intermarry = monothelite
+		intermarry = iconoclast
+		intermarry = paulician
+		intermarry = sabellianism
+		intermarry = psilanthropism
+
+		intermarry = aquileian
+
+		intermarry = nicene
+		intermarry = total_depravity
+		intermarry = eutychian
+		intermarry = binitarian
+		intermarry = antinomianism
+		intermarry = ebionites
+		intermarry = marcionism
+		intermarry = montanist
+		intermarry = sethian
+		intermarry = valentinianism
+		intermarry = apollinarian
+		intermarry = docetic
+		#intermarry = pneumatomachians
+		intermarry = melchisedechianism
+		intermarry = patripassianism
+		intermarry = arian
+		intermarry = donatism
+		intermarry = priscillianism
+
+		intermarry = insular
+		intermarry = pelagianism
+
+		intermarry = georgian_orthodox
+
+		intermarry = miaphysite
+		intermarry = audianistic
+		intermarry = monophysite
+		intermarry = monarchianism
+
+		intermarry = nestorian
+		intermarry = messalian
+	}
+	melchisedechianism = {
+		graphical_culture = westerngfx
+
+		icon = 112 # FIXME
+		heresy_icon = 134
+		
+		color = { 1.0 0.5 0.7 }
+		parent = nicene
+
+		high_god_name = GOD_THE_LORD
+		
+		character_modifier = { # Gnostic opinion
+			marcionism_opinion = 5
+			sethian_opinion = 5
+			valentinianism_opinion = 5
+			priscillianism_opinion = 5
+			manichean_opinion = 5
+		}
+
+		god_names = {
+			PROPHET_MELCHISEDECH GOD_GOD GOD_THE_LORD GOD_JESUS ADONAI 
+		}
+
+		evil_god_names = {
+			SATAN THE_DEVIL THE_DARKNESS THE_DARK_SPIRITS
+		}
+
+		dislike_tribal_organization = no
+
+		can_retire_to_monastery = yes
+		female_temple_holders = no
+		
+		religious_clothing_head = 7
+		religious_clothing_priest = 7
+		
+		intermarry = catholic
+		intermarry = cathar
+		intermarry = fraticelli
+		intermarry = waldensian
+		intermarry = lollard
+
+		intermarry = orthodox
+		intermarry = adoptionism
+		intermarry = bogomilist
+		intermarry = monothelite
+		intermarry = iconoclast
+		intermarry = paulician
+		intermarry = sabellianism
+		intermarry = psilanthropism
+
+		intermarry = aquileian
+
+		intermarry = nicene
+		intermarry = total_depravity
+		intermarry = eutychian
+		intermarry = binitarian
+		intermarry = antinomianism
+		intermarry = ebionites
+		intermarry = marcionism
+		intermarry = montanist
+		intermarry = sethian
+		intermarry = valentinianism
+		intermarry = apollinarian
+		intermarry = docetic
+		intermarry = pneumatomachians
+		#intermarry = melchisedechianism
+		intermarry = patripassianism
+		intermarry = arian
+		intermarry = donatism
+		intermarry = priscillianism
+
+		intermarry = insular
+		intermarry = pelagianism
+
+		intermarry = georgian_orthodox
+
+		intermarry = miaphysite
+		intermarry = audianistic
+		intermarry = monophysite
+		intermarry = monarchianism
+
+		intermarry = nestorian
+		intermarry = messalian
+	}
+	patripassianism = {
+		graphical_culture = westerngfx
+
+		icon = 133 # FIXME
+		heresy_icon = 134
+		
+		color = { 0.8 0.4 0.3 }
+		parent = nicene
+		
+		can_retire_to_monastery = yes
+		female_temple_holders = no
+		
+		religious_clothing_head = 2
+		religious_clothing_priest = 2
+		
+		intermarry = catholic
+		intermarry = cathar
+		intermarry = fraticelli
+		intermarry = waldensian
+		intermarry = lollard
+
+		intermarry = orthodox
+		intermarry = adoptionism
+		intermarry = bogomilist
+		intermarry = monothelite
+		intermarry = iconoclast
+		intermarry = paulician
+		intermarry = sabellianism
+		intermarry = psilanthropism
+
+		intermarry = aquileian
+
+		intermarry = nicene
+		intermarry = total_depravity
+		intermarry = eutychian
+		intermarry = binitarian
+		intermarry = antinomianism
+		intermarry = ebionites
+		intermarry = marcionism
+		intermarry = montanist
+		intermarry = sethian
+		intermarry = valentinianism
+		intermarry = apollinarian
+		intermarry = docetic
+		intermarry = pneumatomachians
+		intermarry = melchisedechianism
+		#intermarry = patripassianism
+		intermarry = arian
+		intermarry = donatism
+		intermarry = priscillianism
+
+		intermarry = insular
+		intermarry = pelagianism
+
+		intermarry = georgian_orthodox
+
+		intermarry = miaphysite
+		intermarry = audianistic
+		intermarry = monophysite
+		intermarry = monarchianism
+
+		intermarry = nestorian
+		intermarry = messalian
+	}
+	arian = {
+		graphical_culture = westerngfx
+
+		ai_convert_same_group = 1 # The Vandals were the exception, not the rule.
+		ai_convert_other_group = 1
+
+		icon = 105
+		heresy_icon = 134
+		
+		color = { 0.2 0.1 0.0 }
+		parent = nicene
+
+		crusade_name = CRUSADE
+		scripture_name = THE_BIBLE
+		priest_title = PRIEST
+
+		allow_looting = yes
+		investiture = no
+		autocephaly = yes
+		pentarchy = yes
+		can_excommunicate = yes
+		can_grant_divorce = yes
+		can_grant_invasion_cb = invasion
+		can_grant_claim = yes
+		can_call_crusade = yes
+		can_retire_to_monastery = yes
+		priests_can_inherit = no
 
 		religious_clothing_head = 2
 		religious_clothing_priest = 2
 
 		intermarry = catholic
-		intermarry = orthodox
-		intermarry = miaphysite
-		intermarry = nestorian
-
 		intermarry = cathar
 		intermarry = fraticelli
 		intermarry = waldensian
 		intermarry = lollard
-		intermarry = monophysite
+
+		intermarry = orthodox
+		intermarry = adoptionism
 		intermarry = bogomilist
 		intermarry = monothelite
 		intermarry = iconoclast
-		intermarry = messalian
-	}
+		intermarry = paulician
+		intermarry = sabellianism
+		intermarry = psilanthropism
 
-	nestorian = {
+		intermarry = aquileian
+
+		intermarry = nicene
+		intermarry = total_depravity
+		intermarry = eutychian
+		intermarry = binitarian
+		intermarry = antinomianism
+		intermarry = ebionites
+		intermarry = marcionism
+		intermarry = montanist
+		intermarry = sethian
+		intermarry = valentinianism
+		intermarry = apollinarian
+		intermarry = docetic
+		intermarry = pneumatomachians
+		intermarry = melchisedechianism
+		intermarry = patripassianism
+		#intermarry = arian
+		intermarry = donatism
+		intermarry = priscillianism
+
+		intermarry = insular
+		intermarry = pelagianism
+
+		intermarry = georgian_orthodox
+
+		intermarry = miaphysite
+		intermarry = audianistic
+		intermarry = monophysite
+		intermarry = monarchianism
+
+		intermarry = nestorian
+		intermarry = messalian
+		intermarry = norse_pagan
+	}
+	donatism = {
 		graphical_culture = westerngfx
 
-		icon = 46
-		heresy_icon = 47
+		ai_convert_same_group = 2
+		ai_convert_other_group = 2
 
-		color = { 0.8 0.3 0.5 }
+		icon = 110
+		heresy_icon = 134
+		
+		color = { 0.5 0.1 0.8 }
+		parent = nicene
+		
+		religious_clothing_head = 1
+		religious_clothing_priest = 1
 
 		crusade_name = CRUSADE
 		scripture_name = THE_BIBLE
 		priest_title = PRIEST
 
 		high_god_name = GOD_GOD
+		god_names = {
+			GOD_GOD GOD_THE_LORD GOD_JESUS
+		}
 
+		evil_god_names = {
+			TRADITORES SATAN
+		}
+
+		investiture = yes
+		can_have_antipopes = no
+		can_excommunicate = yes
+		can_grant_divorce = yes
+		can_grant_invasion_cb = invasion
+		can_grant_claim = yes
+		can_call_crusade = yes
+		can_retire_to_monastery = yes
+		priests_can_inherit = no
+		autocephaly = no
+		
+		intermarry = catholic
+		intermarry = cathar
+		intermarry = fraticelli
+		intermarry = waldensian
+		intermarry = lollard
+
+		intermarry = orthodox
+		intermarry = adoptionism
+		intermarry = bogomilist
+		intermarry = monothelite
+		intermarry = iconoclast
+		intermarry = paulician
+		intermarry = sabellianism
+		intermarry = psilanthropism
+
+		intermarry = aquileian
+
+		intermarry = nicene
+		intermarry = total_depravity
+		intermarry = eutychian
+		intermarry = binitarian
+		intermarry = antinomianism
+		intermarry = ebionites
+		intermarry = marcionism
+		intermarry = montanist
+		intermarry = sethian
+		intermarry = valentinianism
+		intermarry = apollinarian
+		intermarry = docetic
+		intermarry = pneumatomachians
+		intermarry = melchisedechianism
+		intermarry = patripassianism
+		intermarry = arian
+		#intermarry = donatism
+		intermarry = priscillianism
+
+		intermarry = insular
+		intermarry = pelagianism
+
+		intermarry = georgian_orthodox
+
+		intermarry = miaphysite
+		intermarry = audianistic
+		intermarry = monophysite
+		intermarry = monarchianism
+
+		intermarry = nestorian
+		intermarry = messalian
+		
+		character_modifier = { 
+			general_opinion = -20
+			same_opinion_if_same_religion = 40
+			infidel_opinion = -40
+		}
+	}
+	priscillianism = {
+		graphical_culture = southerngfx # This, alongside the "occitangfx" unit, is the Iberian GFX
+		secondary_event_pictures = manichean
+
+		icon = 114
+		heresy_icon = 134
+		
+		color = { 0.5 0.7 0.5 }
+		parent = nicene
+		
+		crusade_name = CRUSADE
+		priest_title = PRIEST
+		scripture_name = THE_VULGATE_BIBLE
+		
+		high_god_name = GOD_GOD
+		god_names = {
+			PROPHET_MARCUS PROPHET_PRISCILLIAN PROPHET_HELPIDIUS GOD_CHRISTGOD GOD_JESUS GOD_TWELVE_PATRIARCHS GOD_TWELVE_HEAVENS GOD_GOD GOD_THE_LORD
+		}
+
+		evil_god_names = {
+			THE_ZODIAC_KILLERS THE_DARK_SPIRITS THE_DARKNESS
+		}
+
+		female_temple_holders = yes
+		can_grant_invasion_cb = invasion
+		can_have_antipopes = no
+		raised_vassal_opinion_loss = no
+		can_excommunicate = yes
+		dislike_tribal_organization = no
+		priests_can_marry = no
+		can_retire_to_monastery = yes
+		can_call_crusade = yes
+		
+		religious_clothing_head = 1
+		religious_clothing_priest = 1
+
+		character_modifier = {
+			martial = 1
+			intrigue = 1 #When under the extreme persecution they faced, Priscillianists used bribery and intrigue to stay alive
+			# Gnostic opinion
+			marcionism_opinion = 5
+			sethian_opinion = 5
+			valentinianism_opinion = 5
+			melchisedechianism_opinion = 5
+			manichean_opinion = 5
+		}
+
+		unit_modifier = {
+			heavy_infantry_offensive = 0.15
+
+			key = "OFF_RELIGION"
+		}
+
+		unit_home_modifier = {
+			heavy_infantry_defensive = 0.3
+			
+			key = "OFF_RELIGION"
+		}
+
+		character_modifier = { 
+			general_opinion = -20
+			same_opinion_if_same_religion = 40
+			infidel_opinion = -40
+		}
+		
+		intermarry = catholic
+		intermarry = cathar
+		intermarry = fraticelli
+		intermarry = waldensian
+		intermarry = lollard
+
+		intermarry = orthodox
+		intermarry = adoptionism
+		intermarry = bogomilist
+		intermarry = monothelite
+		intermarry = iconoclast
+		intermarry = paulician
+		intermarry = sabellianism
+		intermarry = psilanthropism
+
+		intermarry = aquileian
+
+		intermarry = nicene
+		intermarry = total_depravity
+		intermarry = eutychian
+		intermarry = binitarian
+		intermarry = antinomianism
+		intermarry = ebionites
+		intermarry = marcionism
+		intermarry = montanist
+		intermarry = apollinarian
+		intermarry = docetic
+		intermarry = pneumatomachians
+		intermarry = melchisedechianism
+		intermarry = patripassianism
+		intermarry = arian
+		intermarry = donatism
+		#intermarry = priscillianism
+
+		intermarry = insular
+		intermarry = pelagianism
+
+		intermarry = georgian_orthodox
+
+		intermarry = miaphysite
+		intermarry = audianistic
+		intermarry = monophysite
+		intermarry = monarchianism
+
+		intermarry = nestorian
+		intermarry = messalian
+
+		intermarry = manichean
+		intermarry = valentinianism
+		intermarry = sethian
+	}
+
+	# Insular and heresies
+	insular = {
+		graphical_culture = westerngfx
+
+		icon = 139
+		heresy_icon = 140
+		
+		color = { 0.23 1.0 0.23 }
+		
+		crusade_name = CRUSADE
+		scripture_name = THE_BIBLE
+		priest_title = PRIEST
+		
+		high_god_name = GOD_GOD
 		god_names = {
 			GOD_GOD GOD_THE_LORD GOD_JESUS GOD_THE_BLESSED_VIRGIN
 		}
+		
+		evil_god_names = {
+			SATAN LUCIFER THE_DEVIL
+		}
+		
+		can_excommunicate = yes
+		can_grant_divorce = yes
+		can_grant_invasion_cb = invasion
+		can_grant_claim = yes
+		can_call_crusade = no
+		priests_can_inherit = no
+		max_wives = 4
+		
+		can_retire_to_monastery = yes
+		
+		religious_clothing_head = 1
+		religious_clothing_priest = 1
+		
+		intermarry = catholic
+		intermarry = cathar
+		intermarry = fraticelli
+		intermarry = waldensian
+		intermarry = lollard
 
+		intermarry = orthodox
+		intermarry = adoptionism
+		intermarry = bogomilist
+		intermarry = monothelite
+		intermarry = iconoclast
+		intermarry = paulician
+		intermarry = sabellianism
+		intermarry = psilanthropism
+
+		intermarry = aquileian
+
+		intermarry = nicene
+		intermarry = total_depravity
+		intermarry = eutychian
+		intermarry = binitarian
+		intermarry = antinomianism
+		intermarry = ebionites
+		intermarry = marcionism
+		intermarry = montanist
+		intermarry = sethian
+		intermarry = valentinianism
+		intermarry = apollinarian
+		intermarry = docetic
+		intermarry = pneumatomachians
+		intermarry = melchisedechianism
+		intermarry = patripassianism
+		intermarry = arian
+		intermarry = donatism
+		intermarry = priscillianism
+
+		#intermarry = insular
+		intermarry = pelagianism
+
+		intermarry = georgian_orthodox
+
+		intermarry = miaphysite
+		intermarry = audianistic
+		intermarry = monophysite
+		intermarry = monarchianism
+
+		intermarry = nestorian
+		intermarry = messalian
+
+		intermarry = celtic_pagan
+		intermarry = celtic_pagan_reformed
+		intermarry = germanic_pagan
+		intermarry = germanic_pagan_reformed
+	}
+	pelagianism = {
+		graphical_culture = westerngfx
+
+		icon = 115
+		heresy_icon = 140
+		
+		color = { 0.5 0.9 0.55 }
+		parent = insular
+		
+		crusade_name = "WAROFEXAMPLE"
+		
+		can_call_crusade = yes
+		can_retire_to_monastery = yes
+		female_temple_holders = no
+		
+		religious_clothing_head = 1
+		religious_clothing_priest = 1
+		
+		character_modifier = { 
+			general_opinion = -10
+			same_opinion_if_same_religion = 20
+			infidel_opinion = -20
+		}
+		
+		intermarry = catholic
+		intermarry = cathar
+		intermarry = fraticelli
+		intermarry = waldensian
+		intermarry = lollard
+
+		intermarry = orthodox
+		intermarry = adoptionism
+		intermarry = bogomilist
+		intermarry = monothelite
+		intermarry = iconoclast
+		intermarry = paulician
+		intermarry = sabellianism
+		intermarry = psilanthropism
+
+		intermarry = aquileian
+
+		intermarry = nicene
+		intermarry = total_depravity
+		intermarry = eutychian
+		intermarry = binitarian
+		intermarry = antinomianism
+		intermarry = ebionites
+		intermarry = marcionism
+		intermarry = montanist
+		intermarry = sethian
+		intermarry = valentinianism
+		intermarry = apollinarian
+		intermarry = docetic
+		intermarry = pneumatomachians
+		intermarry = melchisedechianism
+		intermarry = patripassianism
+		intermarry = arian
+		intermarry = donatism
+		intermarry = priscillianism
+
+		intermarry = insular
+		#intermarry = pelagianism
+
+		intermarry = georgian_orthodox
+
+		intermarry = miaphysite
+		intermarry = audianistic
+		intermarry = monophysite
+		intermarry = monarchianism
+
+		intermarry = nestorian
+		intermarry = messalian
+
+		intermarry = celtic_pagan
+		intermarry = celtic_pagan_reformed
+		intermarry = germanic_pagan
+		intermarry = germanic_pagan_reformed
+	}
+	
+	# Kartvelian
+	georgian_orthodox = {
+		graphical_culture = westerngfx
+
+		icon = 85
+		heresy_icon = 86
+		
+		color = { 0.0 0.45 0.9 }
+		
+		crusade_name = CRUSADE
+		scripture_name = THE_BIBLE
+		priest_title = PRIEST
+		
+		high_god_name = GOD_GOD
+		god_names = {
+			GOD_GOD GOD_THE_LORD GOD_JESUS GOD_THE_BLESSED_VIRGIN
+		}
+		evil_god_names = {
+			SATAN LUCIFER THE_DEVIL
+		}
+		
+		autocephaly = no
+		can_excommunicate = yes
+		can_grant_divorce = yes
+		can_grant_invasion_cb = invasion
+		can_grant_claim = yes
+		can_call_crusade = no
+		priests_can_inherit = no
+		
+		can_retire_to_monastery = yes
+		
+		religious_clothing_head = 2
+		religious_clothing_priest = 2
+		
+		intermarry = catholic
+		intermarry = cathar
+		intermarry = fraticelli
+		intermarry = waldensian
+		intermarry = lollard
+
+		intermarry = orthodox
+		intermarry = adoptionism
+		intermarry = bogomilist
+		intermarry = monothelite
+		intermarry = iconoclast
+		intermarry = paulician
+		intermarry = sabellianism
+		intermarry = psilanthropism
+
+		intermarry = aquileian
+
+		intermarry = nicene
+		intermarry = total_depravity
+		intermarry = eutychian
+		intermarry = binitarian
+		intermarry = antinomianism
+		intermarry = ebionites
+		intermarry = marcionism
+		intermarry = montanist
+		intermarry = sethian
+		intermarry = valentinianism
+		intermarry = apollinarian
+		intermarry = docetic
+		intermarry = pneumatomachians
+		intermarry = melchisedechianism
+		intermarry = patripassianism
+		intermarry = arian
+		intermarry = donatism
+		intermarry = priscillianism
+
+		intermarry = insular
+		intermarry = pelagianism
+
+		#intermarry = georgian_orthodox
+
+		intermarry = miaphysite
+		intermarry = audianistic
+		intermarry = monophysite
+		intermarry = monarchianism
+
+		intermarry = nestorian
+		intermarry = messalian
+	}
+	
+	# Miaphysite and heresies
+	miaphysite = {
+		graphical_culture = westerngfx
+		
+		icon = 11
+		heresy_icon = 13
+		
+		color = { 0.20 0.35 0.50 }
+		
+		crusade_name = CRUSADE
+		scripture_name = THE_BIBLE
+		priest_title = PRIEST
+		
+		high_god_name = GOD_GOD
+		
+		god_names = {
+			GOD_GOD GOD_THE_LORD GOD_JESUS GOD_THE_BLESSED_VIRGIN
+		}
+		
+		evil_god_names = {
+			SATAN LUCIFER THE_DEVIL
+		}
+		
+		autocephaly = yes
+		pentarchy = yes
+		can_excommunicate = yes
+		can_grant_divorce = yes
+		can_grant_invasion_cb = invasion
+		can_call_crusade = no
+		can_retire_to_monastery = yes
+		priests_can_inherit = no
+		
+		religious_clothing_head = 2
+		religious_clothing_priest = 2
+		
+		intermarry = catholic
+		intermarry = cathar
+		intermarry = fraticelli
+		intermarry = waldensian
+		intermarry = lollard
+
+		intermarry = orthodox
+		intermarry = adoptionism
+		intermarry = bogomilist
+		intermarry = monothelite
+		intermarry = iconoclast
+		intermarry = paulician
+		intermarry = sabellianism
+		intermarry = psilanthropism
+
+		intermarry = aquileian
+
+		intermarry = nicene
+		intermarry = total_depravity
+		intermarry = eutychian
+		intermarry = binitarian
+		intermarry = antinomianism
+		intermarry = ebionites
+		intermarry = marcionism
+		intermarry = montanist
+		intermarry = sethian
+		intermarry = valentinianism
+		intermarry = apollinarian
+		intermarry = docetic
+		intermarry = pneumatomachians
+		intermarry = melchisedechianism
+		intermarry = patripassianism
+		intermarry = arian
+		intermarry = donatism
+		intermarry = priscillianism
+
+		intermarry = insular
+		intermarry = pelagianism
+
+		intermarry = georgian_orthodox
+
+		#intermarry = miaphysite
+		intermarry = audianistic
+		intermarry = monophysite
+		intermarry = monarchianism
+
+		intermarry = nestorian
+		intermarry = messalian
+	}
+	audianistic = {
+		graphical_culture = westerngfx
+
+		icon = 113
+		heresy_icon = 13
+		
+		color = { 0.45 0.85 1.0 }
+		parent = miaphysite
+		
+		can_retire_to_monastery = yes
+		female_temple_holders = no
+		
+		religious_clothing_head = 2
+		religious_clothing_priest = 2
+		
+		intermarry = catholic
+		intermarry = cathar
+		intermarry = fraticelli
+		intermarry = waldensian
+		intermarry = lollard
+
+		intermarry = orthodox
+		intermarry = adoptionism
+		intermarry = bogomilist
+		intermarry = monothelite
+		intermarry = iconoclast
+		intermarry = paulician
+		intermarry = sabellianism
+		intermarry = psilanthropism
+
+		intermarry = aquileian
+
+		intermarry = nicene
+		intermarry = total_depravity
+		intermarry = eutychian
+		intermarry = binitarian
+		intermarry = antinomianism
+		intermarry = ebionites
+		intermarry = marcionism
+		intermarry = montanist
+		intermarry = sethian
+		intermarry = valentinianism
+		intermarry = apollinarian
+		intermarry = docetic
+		intermarry = pneumatomachians
+		intermarry = melchisedechianism
+		intermarry = patripassianism
+		intermarry = arian
+		intermarry = donatism
+		intermarry = priscillianism
+
+		intermarry = insular
+		intermarry = pelagianism
+
+		intermarry = georgian_orthodox
+
+		intermarry = miaphysite
+		#intermarry = audianistic
+		intermarry = monophysite
+		intermarry = monarchianism
+
+		intermarry = nestorian
+		intermarry = messalian
+	}
+	monophysite = {
+		graphical_culture = westerngfx
+		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+
+		icon = 11
+		heresy_icon = 13
+		
+		color = { 0.45 0.45 0.65 }
+		parent = miaphysite
+		
+		crusade_name = CRUSADE
+
+		autocephaly = yes
+		pentarchy = yes
+		can_excommunicate = yes
+		can_grant_divorce = yes
+		can_grant_invasion_cb = invasion
+		can_call_crusade = no
+		can_retire_to_monastery = yes
+		priests_can_inherit = no
+		
+		religious_clothing_head = 2
+		religious_clothing_priest = 2
+		
+		intermarry = catholic
+		intermarry = cathar
+		intermarry = fraticelli
+		intermarry = waldensian
+		intermarry = lollard
+
+		intermarry = orthodox
+		intermarry = adoptionism
+		intermarry = bogomilist
+		intermarry = monothelite
+		intermarry = iconoclast
+		intermarry = paulician
+		intermarry = sabellianism
+		intermarry = psilanthropism
+
+		intermarry = aquileian
+
+		intermarry = nicene
+		intermarry = total_depravity
+		intermarry = eutychian
+		intermarry = binitarian
+		intermarry = antinomianism
+		intermarry = ebionites
+		intermarry = marcionism
+		intermarry = montanist
+		intermarry = sethian
+		intermarry = valentinianism
+		intermarry = apollinarian
+		intermarry = docetic
+		intermarry = pneumatomachians
+		intermarry = melchisedechianism
+		intermarry = patripassianism
+		intermarry = arian
+		intermarry = donatism
+		intermarry = priscillianism
+
+		intermarry = insular
+		intermarry = pelagianism
+
+		intermarry = georgian_orthodox
+
+		intermarry = miaphysite
+		intermarry = audianistic
+		#intermarry = monophysite
+		intermarry = monarchianism
+
+		intermarry = nestorian
+		intermarry = messalian
+	}
+	monarchianism = {
+		graphical_culture = westerngfx
+
+		icon = 11 # FIXME
+		heresy_icon = 13
+		
+		color = { 0.7 0.7 0.7 }
+		parent = miaphysite 
+		allow_looting = no
+		
+		religious_clothing_head = 2
+		religious_clothing_priest = 2
+		
+		intermarry = catholic
+		intermarry = cathar
+		intermarry = fraticelli
+		intermarry = waldensian
+		intermarry = lollard
+
+		intermarry = orthodox
+		intermarry = adoptionism
+		intermarry = bogomilist
+		intermarry = monothelite
+		intermarry = iconoclast
+		intermarry = paulician
+		intermarry = sabellianism
+		intermarry = psilanthropism
+
+		intermarry = aquileian
+
+		intermarry = nicene
+		intermarry = total_depravity
+		intermarry = eutychian
+		intermarry = binitarian
+		intermarry = antinomianism
+		intermarry = ebionites
+		intermarry = marcionism
+		intermarry = montanist
+		intermarry = sethian
+		intermarry = valentinianism
+		intermarry = apollinarian
+		intermarry = docetic
+		intermarry = pneumatomachians
+		intermarry = melchisedechianism
+		intermarry = patripassianism
+		intermarry = arian
+		intermarry = donatism
+		intermarry = priscillianism
+
+		intermarry = insular
+		intermarry = pelagianism
+
+		intermarry = georgian_orthodox
+
+		intermarry = miaphysite
+		intermarry = audianistic
+		intermarry = monophysite
+		#intermarry = monarchianism
+
+		intermarry = nestorian
+		intermarry = messalian
+	}
+
+	# Nestorian and heresies
+	nestorian = {
+		graphical_culture = westerngfx
+
+		ai_convert_other_group = 2
+		ai_convert_same_group = 1
+
+		icon = 46
+		heresy_icon = 47
+		
+		color = { 0.8 0.4 0.1 }
+		
+		crusade_name = CRUSADE
+		scripture_name = THE_BIBLE
+		priest_title = PRIEST
+		
+		high_god_name = GOD_GOD
+		
+		god_names = {
+			GOD_GOD GOD_THE_LORD GOD_JESUS GOD_THE_BLESSED_VIRGIN
+		}
+		
 		evil_god_names = {
 			SATAN LUCIFER THE_DEVIL
 		}
 
-		autocephaly = no
+		character_modifier = {
+			learning = 2
+			zoroastrian_opinion = 10
+		}
+		
+		autocephaly = yes
+		pentarchy = yes
 		can_excommunicate = yes
 		can_grant_divorce = yes
 		can_grant_invasion_cb = invasion
 		can_call_crusade = no
 		priests_can_inherit = no
-
+		
 		can_retire_to_monastery = yes
-
+		
 		religious_clothing_head = 2
 		religious_clothing_priest = 2
-
+		
 		intermarry = catholic
-		intermarry = orthodox
-		intermarry = miaphysite
-		intermarry = nestorian
-
 		intermarry = cathar
 		intermarry = fraticelli
 		intermarry = waldensian
 		intermarry = lollard
-		intermarry = monophysite
+
+		intermarry = orthodox
+		intermarry = adoptionism
 		intermarry = bogomilist
 		intermarry = monothelite
 		intermarry = iconoclast
 		intermarry = paulician
-		intermarry = messalian
+		intermarry = sabellianism
+		intermarry = psilanthropism
 
+		intermarry = aquileian
+
+		intermarry = nicene
+		intermarry = total_depravity
+		intermarry = eutychian
+		intermarry = binitarian
+		intermarry = antinomianism
+		intermarry = ebionites
+		intermarry = marcionism
+		intermarry = montanist
+		intermarry = sethian
+		intermarry = valentinianism
+		intermarry = apollinarian
+		intermarry = docetic
+		intermarry = pneumatomachians
+		intermarry = melchisedechianism
+		intermarry = patripassianism
+		intermarry = arian
+		intermarry = donatism
+		intermarry = priscillianism
+
+		intermarry = insular
+		intermarry = pelagianism
+
+		intermarry = georgian_orthodox
+
+		intermarry = miaphysite
+		intermarry = audianistic
+		intermarry = monophysite
+		intermarry = monarchianism
+
+		#intermarry = nestorian
+		intermarry = messalian
+		
 		intermarry = taoist
 		intermarry = bon
 		intermarry = bon_reformed
 		intermarry = buddhist
 		intermarry = zoroastrian_group
+		
+		character_modifier = { 
+			general_opinion = -10
+			same_opinion_if_same_religion = 20
+			infidel_opinion = -20
+		}
 	}
-
 	messalian = {
 		graphical_culture = westerngfx
-		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
 
 		icon = 46
 		heresy_icon = 47
-
+		
 		color = { 0.6 0.1 0.4 }
 		parent = nestorian
-
-		crusade_name = CRUSADE
+		
+		crusade_name = GREAT_HOLY_WAR
 		scripture_name = THE_ASCETICUS
+		
+		high_god_name = LUCIFER
 
 		god_names = {
-			GOD_GOD THE_PANTOKRATOR GOD_JESUS LUCIFER
+			GOD_GOD THE_PANTOKRATOR LUCIFER SATAN THE_DEVIL
 		}
 
 		evil_god_names = {
@@ -613,30 +3335,64 @@ christian = {
 		can_retire_to_monastery = yes
 		female_temple_holders = yes
 		feminist = yes      # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
-
+		
 		divine_blood = yes # Sacred close-kin marriage mechanics
 		pc_marriage = yes
 		bs_marriage = yes
-
-		religious_clothing_head = 2
-		religious_clothing_priest = 2
-
+		
+		religious_clothing_head = 5
+		religious_clothing_priest = 5
+		
 		intermarry = catholic
-		intermarry = orthodox
-		intermarry = miaphysite
-		intermarry = nestorian
-
 		intermarry = cathar
 		intermarry = fraticelli
 		intermarry = waldensian
 		intermarry = lollard
-		intermarry = monophysite
+
+		intermarry = orthodox
+		intermarry = adoptionism
 		intermarry = bogomilist
 		intermarry = monothelite
 		intermarry = iconoclast
 		intermarry = paulician
-		intermarry = messalian
+		intermarry = sabellianism
+		intermarry = psilanthropism
+
+		intermarry = aquileian
+
+		intermarry = nicene
+		intermarry = total_depravity
+		intermarry = eutychian
+		intermarry = binitarian
+		intermarry = antinomianism
+		intermarry = ebionites
+		intermarry = marcionism
+		intermarry = montanist
+		intermarry = sethian
+		intermarry = valentinianism
+		intermarry = apollinarian
+		intermarry = docetic
+		intermarry = pneumatomachians
+		intermarry = melchisedechianism
+		intermarry = patripassianism
+		intermarry = arian
+		intermarry = donatism
+		intermarry = priscillianism
+
+		intermarry = insular
+		intermarry = pelagianism
+
+		intermarry = georgian_orthodox
+
+		intermarry = miaphysite
+		intermarry = audianistic
+		intermarry = monophysite
+		intermarry = monarchianism
+
+		intermarry = nestorian
+		#intermarry = messalian
 	}
+	
 
 }
 
