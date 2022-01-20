@@ -2,6 +2,7 @@ roman_pantheon,hellenic_pagan
 carthaginian_pantheon,canaanite
 druidism,druidic
 germanic_religion,norse_pagan
+christianity,proto_orthodox
 judaism,jewish
 zoroaster,zoroastrian
 buddhism,buddhist

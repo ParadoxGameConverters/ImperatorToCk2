@@ -291,3 +291,21 @@ c_sarqihya={
 c_gizeh={
 	holy_site = egyptian
 }
+
+#Proto Orthodox
+
+c_jerusalem ={ #Holiest of Cities
+	holy_site = proto_orthodox
+}
+c_roma ={ # Saints Paul and Peter
+	holy_site = proto_orthodox
+}
+c_antiocheia ={ # Very Important to early Christianity
+	holy_site = proto_orthodox
+}
+c_alexandria ={ # Mark the Evangelist
+	holy_site = proto_orthodox
+}
+c_ephesos={ # Saint John the Beloved 
+	holy_site = proto_orthodox
+}
