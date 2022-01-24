@@ -420,7 +420,10 @@ custom_irck2_italy = {
 		#Sicily
 		d_benevento d_capua d_apulia d_salerno d_calabria d_sicily d_abruzzo d_amalfi
 		#Alps
-		d_raetia d_tyrol
+		d_raetia d_tyrol d_styria
+	}
+	counties = {
+		c_pongau c_nice
 	}
 }
 
@@ -433,7 +436,10 @@ custom_irck2_sardinia = {
 
 custom_irck2_occitania = {
 	duchies = {
-		d_provence d_toulouse d_gascogne d_aquitaine d_poitou d_auvergne d_bourbon d_dauphine
+		d_toulouse d_gascogne d_aquitaine d_poitou d_auvergne d_bourbon d_dauphine
+	}
+	counties = {
+		c_provence c_venaissin c_forcalquier
 	}
 }
 
@@ -442,7 +448,10 @@ custom_irck2_france = {
 		#Core Francia
 		d_anjou d_berry d_loire d_penthievre d_brittany d_normandy d_orleans d_burgundy d_franche_comte d_upper_burgundy d_champagne d_valois d_picardie d_upper_lorraine d_alsace
 		#Germania
-		d_lower_lorraine d_trier d_brabant d_flanders d_baden d_rhine
+		d_lower_lorraine d_trier d_brabant d_flanders d_rhine
+	}
+	counties = {
+		c_koln
 	}
 }
 
@@ -472,6 +481,9 @@ custom_irck2_romania = {
 		d_turnovo d_karvuna d_vidin
 		#Poland
 		d_galich d_wild_fields
+	}
+	counties = {
+		c_kiev c_medjybij
 	}
 }
 
@@ -508,3 +520,37 @@ custom_irck2_north_africa = {
 		d_tunis d_kabylia d_kabylia d_alger d_tangiers d_fes d_marrakech d_sous d_adrar d_sijilmasa d_tlemcen d_tahert d_mzab d_jerid d_tripolitania d_syrte d_fezzan
 	}
 }
+
+custom_irck2_germania = {
+	duchies = {
+		d_swabia d_osterreich d_bavaria d_nordgau d_franconia d_hesse d_holland d_gelre d_munster_germany d_angria d_bremen d_holstein d_mecklemburg d_rugen d_brandenburg d_lausitz d_saxony d_thuringia d_meissen d_bohemia d_moravia d_thurgau d_baden
+	}
+	counties = {
+		c_salzburg c_berg c_kleve c_wolgast
+	}
+}
+
+custom_irck2_poland = {
+	duchies = {
+		#Poland
+		d_greater_poland d_pomeralia d_silesia d_kuyavia d_lesser_poland d_cherven_cities d_volhynia d_mazovia d_prussia
+		#Baltic
+		d_samogitia d_courland d_livonia d_latgale d_sakala d_esthonia
+		#Russia
+		d_polotsk d_minsk d_turov
+	}
+	counties = {
+		c_stettin c_neumark c_vozviahel c_korosten
+	}
+}
+
+custom_irck2_egypt = {
+	duchies = {
+		#Egypt
+		d_cyrenaica d_paraetonium d_alexandria d_damietta d_sinai d_cairo d_faiyum d_asyut d_aswan d_nobatia
+	}
+}
+
+
+
+
