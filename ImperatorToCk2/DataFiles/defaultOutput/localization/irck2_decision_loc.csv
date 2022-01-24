@@ -1,18 +1,42 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-#Roman split
-irck2_convert_to_italian;Embrace Italian Culture;Embrace Italian Culture;Embrace Italian Culture;;Embrace Italian Culture;;;;;;;;;x
-irck2_convert_to_dalmatian;Embrace Dalmatian Culture;Embrace Dalmatian Culture;Embrace Dalmatian Culture;;Embrace Dalmatian Culture;;;;;;;;;x
-irck2_convert_to_romanian;Embrace Vlach Culture;Embrace Vlach Culture;Embrace Vlach Culture;;Embrace Vlach Culture;;;;;;;;;x
-irck2_convert_to_occitan;Embrace Occitan Culture;Embrace Occitan Culture;Embrace Occitan Culture;;Embrace Occitan Culture;;;;;;;;;x
-irck2_convert_to_frankish;Embrace French Culture;Embrace French Culture;Embrace French Culture;;Embrace French Culture;;;;;;;;;x
-irck2_convert_to_catalan;Embrace Catalan Culture;Embrace Catalan Culture;Embrace Catalan Culture;;Embrace Catalan Culture;;;;;;;;;x
-irck2_convert_to_castillan;Embrace Castilian Culture;Embrace Castilian Culture;Embrace Castilian Culture;;Embrace Castilian Culture;;;;;;;;;x
-irck2_convert_to_portuguese;Embrace Portuguese Culture;Embrace Portuguese Culture;Embrace Portuguese Culture;;Embrace Portuguese Culture;;;;;;;;;x
-irck2_convert_to_sardinian;Embrace Sardinian Culture;Embrace Sardinian Culture;Embrace Sardinian Culture;;Embrace Sardinian Culture;;;;;;;;;x
-#New cultures
-irck2_convert_to_aromanian;Embrace Aromanian Culture;Embrace Aromanian Culture;Embrace Aromanian Culture;;Embrace Aromanian Culture;;;;;;;;;x
-irck2_convert_to_cambrian;Embrace Cambrian Culture;Embrace Cambrian Culture;Embrace Cambrian Culture;;Embrace Cambrian Culture;;;;;;;;;x
-irck2_convert_to_romano_african;Embrace Eifrican Culture;Embrace Eifrican Culture;Embrace Eifrican Culture;;Embrace Eifrican Culture;;;;;;;;;x
 
+#Roman Split
+EVTDESC_IR_ROM_2000;With the end of imperial rule in our realm, our connection with the rest of the Latin world has been severed, causing localities to establish their own local rites and customs. The local population in [Root.Location.GetName] has diverged so far from the traditional Roman way of life that they can neither command the Latin tongue nor be considered Roman: They are now Italan.;Roman Split;Roman Split;;Roman Split;;;;;;;;;x
+EVTOPTA_IR_ROM_2000;Interesting;Interesting;Interessant;;Interesting;;;;;;;;;x
+EVTDESC_IR_ROM_2001;With the end of imperial rule in our realm, our connection with the rest of the Latin world has been severed, causing localities to establish their own local rites and customs. The local population in [Root.Location.GetName] has diverged so far from the traditional Roman way of life that they can neither command the Latin tongue nor be considered Roman: They are now Dalmatian.;Roman Split;Roman Split;;Roman Split;;;;;;;;;x
+EVTOPTA_IR_ROM_2001;Interesting;Interesting;Interessant;;Interesting;;;;;;;;;x
+EVTDESC_IR_ROM_2002;With the end of imperial rule in our realm, our connection with the rest of the Latin world has been severed, causing localities to establish their own local rites and customs. The local population in [Root.Location.GetName] has diverged so far from the traditional Roman way of life that they can neither command the Latin tongue nor be considered Roman: They are now Vlach.;Roman Split;Roman Split;;Roman Split;;;;;;;;;x
+EVTOPTA_IR_ROM_2002;Interesting;Interesting;Interessant;;Interesting;;;;;;;;;x
+EVTDESC_IR_ROM_2003;With the end of imperial rule in our realm, our connection with the rest of the Latin world has been severed, causing localities to establish their own local rites and customs. The local population in [Root.Location.GetName] has diverged so far from the traditional Roman way of life that they can neither command the Latin tongue nor be considered Roman: They are now Occitan.;Roman Split;Roman Split;;Roman Split;;;;;;;;;x
+EVTOPTA_IR_ROM_2003;Interesting;Interesting;Interessant;;Interesting;;;;;;;;;x
+EVTDESC_IR_ROM_2004;With the end of imperial rule in our realm, our connection with the rest of the Latin world has been severed, causing localities to establish their own local rites and customs. The local population in [Root.Location.GetName] has diverged so far from the traditional Roman way of life that they can neither command the Latin tongue nor be considered Roman: They are now French.;Roman Split;Roman Split;;Roman Split;;;;;;;;;x
+EVTOPTA_IR_ROM_2004;Interesting;Interesting;Interessant;;Interesting;;;;;;;;;x
+EVTDESC_IR_ROM_2005;With the end of imperial rule in our realm, our connection with the rest of the Latin world has been severed, causing localities to establish their own local rites and customs. The local population in [Root.Location.GetName] has diverged so far from the traditional Roman way of life that they can neither command the Latin tongue nor be considered Roman: They are now Catalan.;Roman Split;Roman Split;;Roman Split;;;;;;;;;x
+EVTOPTA_IR_ROM_2005;Interesting;Interesting;Interessant;;Interesting;;;;;;;;;x
+EVTDESC_IR_ROM_2006;With the end of imperial rule in our realm, our connection with the rest of the Latin world has been severed, causing localities to establish their own local rites and customs. The local population in [Root.Location.GetName] has diverged so far from the traditional Roman way of life that they can neither command the Latin tongue nor be considered Roman: They are now Castilian.;Roman Split;Roman Split;;Roman Split;;;;;;;;;x
+EVTOPTA_IR_ROM_2006;Interesting;Interesting;Interessant;;Interesting;;;;;;;;;x
+EVTDESC_IR_ROM_2007;With the end of imperial rule in our realm, our connection with the rest of the Latin world has been severed, causing localities to establish their own local rites and customs. The local population in [Root.Location.GetName] has diverged so far from the traditional Roman way of life that they can neither command the Latin tongue nor be considered Roman: They are now Portuguese.;Roman Split;Roman Split;;Roman Split;;;;;;;;;x
+EVTOPTA_IR_ROM_2007;Interesting;Interesting;Interessant;;Interesting;;;;;;;;;x
+EVTDESC_IR_ROM_2008;With the end of imperial rule in our realm, our connection with the rest of the Latin world has been severed, causing localities to establish their own local rites and customs. The local population in [Root.Location.GetName] has diverged so far from the traditional Roman way of life that they can neither command the Latin tongue nor be considered Roman: They are now Sardinian.;Roman Split;Roman Split;;Roman Split;;;;;;;;;x
+EVTOPTA_IR_ROM_2008;Interesting;Interesting;Interessant;;Interesting;;;;;;;;;x
+#New Roman Cultures
+EVTDESC_IR_ROM_2009;With the end of imperial rule in our realm, our connection with the rest of the Latin world has been severed, causing localities to establish their own local rites and customs. The local population in [Root.Location.GetName] has diverged so far from the traditional Roman way of life that they can neither command the Latin tongue nor be considered Roman: They are now Aromanian.;Roman Split;Roman Split;;Roman Split;;;;;;;;;x
+EVTOPTA_IR_ROM_2009;Interesting;Interesting;Interessant;;Interesting;;;;;;;;;x
+EVTDESC_IR_ROM_2010;With the end of imperial rule in our realm, our connection with the rest of the Latin world has been severed, causing localities to establish their own local rites and customs. The local population in [Root.Location.GetName] has diverged so far from the traditional Roman way of life that they can neither command the Latin tongue nor be considered Roman: They are now Cambrian.;Roman Split;Roman Split;;Roman Split;;;;;;;;;x
+EVTOPTA_IR_ROM_2010;Interesting;Interesting;Interessant;;Interesting;;;;;;;;;x
+EVTDESC_IR_ROM_2011;With the end of imperial rule in our realm, our connection with the rest of the Latin world has been severed, causing localities to establish their own local rites and customs. The local population in [Root.Location.GetName] has diverged so far from the traditional Roman way of life that they can neither command the Latin tongue nor be considered Roman: They are now Eifrican.;Roman Split;Roman Split;;Roman Split;;;;;;;;;x
+EVTOPTA_IR_ROM_2011;Interesting;Interesting;Interessant;;Interesting;;;;;;;;;x
+
+#Germanic Split
+EVTDESC_IR_GER_2000;As the migration era begins to come to a close, much has changed in the world: allegiances have shifted, settlements have been abandoned, people have been uprooted, and connection to the old ways has been severed. This has become particularly appearent in [Root.Location.GetName], where the old Suebi identity is all but extinguished: They are now German.;Roman Split;Roman Split;;Roman Split;;;;;;;;;x
+EVTOPTA_IR_GER_2000;Interesting;Interesting;Interessant;;Interesting;;;;;;;;;x
+EVTDESC_IR_GER_2001;Since it's conquest, the Saxons in [Root.Location.GetName] have completely subdued and supplanted the prior inhabitants. However, after many years of living away from their homeland, changes in customs and speech are starting to become apparent, so much so that those living in [Root.Location.GetName] can no longer be seen as true Saxons: They are now Anglo-Saxon.;Roman Split;Roman Split;;Roman Split;;;;;;;;;x
+EVTOPTA_IR_GER_2001;Interesting;Interesting;Interessant;;Interesting;;;;;;;;;x
+EVTDESC_IR_GER_2002;As the dark ages begin to come to a close, much has changed in the world, particularly in [Root.Location.GetName]. Without a strong Saxon emperor to unite them, the old rites there have irreversibly diverged and diminished, to give rise to a new identity: They are now Frisian.;Roman Split;Roman Split;;Roman Split;;;;;;;;;x
+EVTOPTA_IR_GER_2002;Interesting;Interesting;Interessant;;Interesting;;;;;;;;;x
+EVTDESC_IR_GER_2003;As the dark ages begin to come to a close, much has changed in the world, particularly in [Root.Location.GetName]. Without a strong Frankish emperor to unite them, the old rites there have irreversibly diverged and diminished, to give rise to a new identity: They are now Dutch.;Roman Split;Roman Split;;Roman Split;;;;;;;;;x
+EVTOPTA_IR_GER_2003;Interesting;Interesting;Interessant;;Interesting;;;;;;;;;x
+EVTDESC_IR_GER_2004;As the migration era begins to come to a close, much has changed in the world: allegiances have shifted, settlements have been abandoned, people have been uprooted, and connection to the old ways has been severed. This has become particularly appearent in [Root.Location.GetName], where the old Suebi identity is all but extinguished: They are now Lombard.;Roman Split;Roman Split;;Roman Split;;;;;;;;;x
+EVTOPTA_IR_GER_2004;Interesting;Interesting;Interessant;;Interesting;;;;;;;;;x
 
 
