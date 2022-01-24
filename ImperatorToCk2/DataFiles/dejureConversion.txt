@@ -91,3 +91,6 @@ alan,e_pontic_steppe,k_alania
 bolghar,e_bulgaria,k_bulgaria
 avar,e_carpathia,k_hungary
 polish,e_wendish_empire,k_poland
+
+hunnic,e_carpathia,k_hungary
+huna,e_turkestan,k_khiva
