@@ -1,0 +1,281 @@
+decisions = {
+
+	irck2_create_e_italy = {
+		is_high_prio = yes
+		only_independent = yes
+		ai_check_interval = 60
+
+		potential = {
+			e_italy = {
+				has_holder = no
+			}
+			OR = {
+				culture = italian
+			}
+			NOT = {
+				has_alternate_start_setting = {
+					setting = dejure
+					value = random
+				}
+			}
+		}
+		allow = {
+			independent = yes
+			war = no
+			NOT = { trait = incapable }
+			#has_landed_title = k_italy
+			custom_tooltip = { #has at least 1 kingdom tier title
+				text = empire_italy_TT
+				any_demesne_title = {
+					tier = KING
+				}
+			}
+			#prestige = 1000
+			realm_size = 150
+		}
+		effect = {
+			prestige = 500
+			hidden_tooltip = {
+				primary_title = {
+					e_italy = {
+						copy_title_laws = PREV
+						copy_title_history = PREV
+					}
+				}
+			}
+			grant_title = e_italy
+			any_demesne_title = {
+				limit = {
+					tier = KING
+				}
+				de_jure_liege = e_italy
+				#destroy_landed_title = THIS
+			}
+			if = {
+				limit = { has_nickname = no }
+				give_nickname = nick_the_great
+			}
+			set_global_flag = irck2_e_italy_formed
+		}
+	}
+
+	irck2_create_e_france = {
+		is_high_prio = yes
+		only_independent = yes
+		ai_check_interval = 60
+
+		potential = {
+			e_france = {
+				has_holder = no
+			}
+			OR = {
+				culture = frankish
+				culture = occitan
+				culture = norman
+				culture = old_frankish
+			}
+			NOT = {
+				has_alternate_start_setting = {
+					setting = dejure
+					value = random
+				}
+			}
+		}
+		allow = {
+			independent = yes
+			war = no
+			NOT = { trait = incapable }
+			#has_landed_title = k_france
+			custom_tooltip = { #has at least 1 kingdom tier title
+				text = empire_france_TT
+				any_demesne_title = {
+					tier = KING
+				}
+			}
+			#prestige = 1000
+			realm_size = 150
+		}
+		effect = {
+			prestige = 500
+			hidden_tooltip = {
+				primary_title = {
+					e_france = {
+						copy_title_laws = PREV
+						copy_title_history = PREV
+					}
+				}
+			}
+			grant_title = e_france
+			any_demesne_title = {
+				limit = {
+					tier = KING
+				}
+				de_jure_liege = e_france
+				#destroy_landed_title = THIS
+			}
+			if = {
+				limit = { has_nickname = no }
+				give_nickname = nick_the_great
+			}
+			set_global_flag = irck2_e_france_formed
+		}
+	}
+
+
+	irck2_create_e_spain = {
+		is_high_prio = yes
+		only_independent = yes
+		ai_check_interval = 60
+
+		potential = {
+			e_spain = {
+				has_holder = no
+			}
+			OR = {
+				culture = castillan
+				culture = catalan
+				culture = portuguese
+				culture = visigothic
+			}
+			NOT = {
+				has_alternate_start_setting = {
+					setting = dejure
+					value = random
+				}
+			}
+		}
+		allow = {
+			independent = yes
+			war = no
+			NOT = { trait = incapable }
+			#has_landed_title = k_spain
+			custom_tooltip = { #has at least 1 kingdom tier title
+				text = empire_spain_TT
+				any_demesne_title = {
+					tier = KING
+				}
+			}
+			#prestige = 1000
+			realm_size = 150
+		}
+		effect = {
+			prestige = 500
+			hidden_tooltip = {
+				primary_title = {
+					e_spain = {
+						copy_title_laws = PREV
+						copy_title_history = PREV
+					}
+				}
+			}
+			grant_title = e_spain
+			any_demesne_title = {
+				limit = {
+					tier = KING
+				}
+				de_jure_liege = e_spain
+				#destroy_landed_title = THIS
+			}
+			if = {
+				limit = { has_nickname = no }
+				give_nickname = nick_the_great
+			}
+			set_global_flag = irck2_e_spain_formed
+		}
+	}
+
+
+#####################################
+#Kingdoms
+#####################################
+
+	
+	irck2_create_k_dacia = {
+		is_high_prio = yes
+		only_independent = yes
+		ai_check_interval = 60
+
+		potential = {
+			OR = {
+				culture = romanian
+			}
+			k_dacia = {
+				has_holder = no
+			}
+			k_dacia = {
+				is_titular = yes
+			}
+			NOR = {
+				has_alternate_start_setting = {
+					setting = dejure
+					value = random
+				}
+				has_alternate_start_setting = {
+					setting = title_names
+					value = random
+				}
+				has_alternate_start_setting = {
+					setting = title_names
+					value = random_including_duchies
+				}
+			}
+		}
+
+		allow = {
+			is_adult = yes
+			war = no
+			independent = yes
+			AND = {
+				completely_controls = d_wallachia
+				completely_controls = d_moldau
+				completely_controls = d_oltenia
+				completely_controls = d_bessarabia
+				#realm_size = 100
+			}
+		}
+		effect = {
+
+			prestige = 100
+			grant_title = k_dacia
+			hidden_tooltip = {
+				primary_title = {
+					k_dacia = {
+						copy_title_laws = PREV
+						copy_title_history = PREV
+					}
+					if = { #If king tier, replace primary title
+						limit = { tier = KING }
+						any_direct_de_jure_vassal_title = {
+							de_jure_liege = k_dacia
+						}
+						k_dacia = {
+							make_primary_title = yes
+						}
+						destroy_landed_title = THIS
+					}
+				}
+			}
+			any_demesne_title = {
+				limit = {
+					tier = KING
+				}
+				de_jure_liege = e_carpathia
+			}
+			d_wallachia = { de_jure_liege = k_dacia }
+			d_moldau = { de_jure_liege = k_dacia }
+			d_oltenia = { de_jure_liege = k_dacia }
+			d_bessarabia = { de_jure_liege = k_dacia }
+			set_global_flag = irck2_k_dacia_formed
+	}
+
+
+
+
+
+
+
+#####################################
+#End Bracket
+#####################################
+	
+}
