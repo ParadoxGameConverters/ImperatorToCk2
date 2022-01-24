@@ -1,4 +1,4 @@
-package ImperatorToCK2;      
+package ImperatorToCK2; 
 
 import java.util.Scanner;
 import java.io.IOException;
@@ -60,6 +60,7 @@ public class Importer
 
                     while (flag == 0) {
                         qaaa = scnr.nextLine();
+                        //System.out.println(qaaa);
                         if (qaaa.split("=")[0].equals( tab+tab+"owner" ) ) {
                             output[0] = qaaa.split("=")[1];
                         }

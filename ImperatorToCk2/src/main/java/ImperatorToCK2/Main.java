@@ -1,4 +1,4 @@
-package ImperatorToCK2;    
+package ImperatorToCK2;     
 
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -508,8 +508,10 @@ public class Main
             Processing.customDate(date,"defaultOutput"+VM+"bookmarks"+VM+"50_customBookmark.txt",modDirectory+VM+"common"+VM+"bookmarks"+VM+"50_customBookmark.txt");
             Output.output("defaultOutput"+VM+"bookmarks"+VM+"00_bookmarks.txt",modDirectory+VM+"common"+VM+"bookmarks"+VM+"00_bookmarks.txt");
             Output.output("defaultOutput"+VM+"bloodlines"+VM+"50_convertedBloodlines.txt",modDirectory+VM+"common"+VM+"bloodlines"+VM+"50_convertedBloodlines.txt");
+            Output.output("defaultOutput"+VM+"bloodlines"+VM+"00_earlyBloodlines.txt",modDirectory+VM+"common"+VM+"bloodlines"+VM+"00_earlyBloodlines.txt");
             Output.output("defaultOutput"+VM+"landed_titles"+VM+"holysites.txt",modDirectory+VM+"common"+VM+"landed_titles"+VM+"holysites.txt");
             Output.output("defaultOutput"+VM+"landed_titles"+VM+"zzz_default_dejure.txt",modDirectory+VM+"common"+VM+"landed_titles"+VM+"zzz_default_dejure.txt");
+            Output.output("defaultOutput"+VM+"landed_titles"+VM+"WtWSMS_kingdoms.txt",modDirectory+VM+"common"+VM+"landed_titles"+VM+"WtWSMS_kingdoms.txt");
 
             //defaultLocalization
             Output.output("defaultOutput"+VM+"localization"+VM+"culture_loc.csv",modDirectory+VM+"localisation"+VM+"culture_loc.csv");
@@ -594,13 +596,28 @@ public class Main
             Output.output("defaultOutput"+VM+"titles"+VM+"d_cyrenaica.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_cyrenaica.txt");
             
             //defaultEvents
+            Output.output("defaultOutput"+VM+"events"+VM+"cm_culture_conversion_events.txt",modDirectory+VM+"events"+VM+"cm_culture_conversion_events.txt");
             Output.output("defaultOutput"+VM+"events"+VM+"ir_roman_culture_conversion.txt",modDirectory+VM+"events"+VM+"ir_roman_culture_conversion.txt");
+            Output.output("defaultOutput"+VM+"events"+VM+"ir_germanic_culture_conversion.txt",modDirectory+VM+"events"+VM+"ir_germanic_culture_conversion.txt");
+            Output.output("defaultOutput"+VM+"events"+VM+"ir_christianity_and_schisms.txt",modDirectory+VM+"events"+VM+"ir_christianity_and_schisms.txt");
             
             //defaultDecisions
+            Output.output("defaultOutput"+VM+"decisions"+VM+"conversion_decisions.txt",modDirectory+VM+"decisions"+VM+"conversion_decisions.txt");
             Output.output("defaultOutput"+VM+"decisions"+VM+"ir_roman_conversion_decisions.txt",modDirectory+VM+"decisions"+VM+"ir_roman_conversion_decisions.txt");
+            Output.output("defaultOutput"+VM+"decisions"+VM+"ir_roman_title_decisions.txt",modDirectory+VM+"decisions"+VM+"ir_roman_title_decisions.txt");
+            Output.output("defaultOutput"+VM+"decisions"+VM+"ir_germanic_conversion_decisions.txt",modDirectory+VM+"decisions"+VM+"ir_germanic_conversion_decisions.txt");
+            Output.output("defaultOutput"+VM+"decisions"+VM+"ir_christianity_and_schisms_decisions.txt",modDirectory+VM+"decisions"+VM+"ir_christianity_and_schisms_decisions.txt");
             
             //defaultMap
             Output.output("defaultOutput"+VM+"map"+VM+"geographical_region.txt",modDirectory+VM+"map"+VM+"geographical_region.txt");
+            
+            //defaultGFX
+            Output.copyRaw("defaultOutput"+VM+"gfx"+VM+"flags"+VM+"d_aquileia_church.tga",modDirectory+VM+"gfx"+VM+"flags"+VM+"d_aquileia_church.tga");
+            Output.copyRaw("defaultOutput"+VM+"gfx"+VM+"flags"+VM+"d_arian.tga",modDirectory+VM+"gfx"+VM+"flags"+VM+"d_arian.tga");
+            Output.copyRaw("defaultOutput"+VM+"gfx"+VM+"flags"+VM+"d_georgian_orthodox.tga",modDirectory+VM+"gfx"+VM+"flags"+VM+"d_georgian_orthodox.tga");
+            Output.copyRaw("defaultOutput"+VM+"gfx"+VM+"flags"+VM+"d_insular.tga",modDirectory+VM+"gfx"+VM+"flags"+VM+"d_insular.tga");
+            Output.copyRaw("defaultOutput"+VM+"gfx"+VM+"flags"+VM+"d_pelagian.tga",modDirectory+VM+"gfx"+VM+"flags"+VM+"d_pelagian.tga");
+            Output.copyRaw("defaultOutput"+VM+"gfx"+VM+"flags"+VM+"k_nicene.tga",modDirectory+VM+"gfx"+VM+"flags"+VM+"k_nicene.tga");
 
             long outputTime = System.nanoTime();
             long outputTimeTot = (((outputTime - startTime) / 1000000000)/60);
@@ -704,8 +721,9 @@ public class Main
                                 String subRank = "d";//rank of governorships, 1 below primary title
                                 if (rank.equals("e")) { //Create kingdom tier title of capital region for empire title
                                     subRank = "k";
+                                    String capitalColor = Processing.capitalColor(impTagInfo.get(aq4)[3]); //sets the capital region to use different color
                                     
-                                    Output.titleCreation(impTagInfo.get(aq4)[0],tempNum2,impTagInfo.get(aq4)[3],impTagInfo.get(aq4)[17],
+                                    Output.titleCreation(impTagInfo.get(aq4)[0],tempNum2,capitalColor,impTagInfo.get(aq4)[17],
                                         impTagInfo.get(aq4)[5],subRank,"no_liege",date,modDirectory);
 
                                     
@@ -968,4 +986,3 @@ public class Main
         }
     }
 }
-
