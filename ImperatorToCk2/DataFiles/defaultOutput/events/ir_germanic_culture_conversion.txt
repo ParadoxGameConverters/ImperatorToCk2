@@ -1,0 +1,264 @@
+###################################
+#
+# Imperator:Rome to Crusader Kings II
+# - Roman Culture Conversion Events
+#
+###################################
+
+namespace = IR_GER
+
+# Province culture changes from Suebi to German
+province_event = {
+	id = IR_GER.2000
+	desc = EVTDESC_IR_GER_2000
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 550
+		culture = suebi
+		NOT = {
+			region = custom_irck2_italy
+		}
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = suebi
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_GER_2000
+		culture = german
+	}
+}
+
+#################################################
+
+# Province culture changes from Saxon to Anglo-Saxon
+province_event = {
+	id = IR_GER.2001
+	desc = EVTDESC_IR_GER_2001
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		#year = 425
+		culture = old_saxon
+		region = custom_irck2_britannia
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = old_saxon
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_GER_2001
+		culture = saxon
+	}
+}
+
+#################################################
+
+# Province culture changes from Saxon to Frisian
+province_event = {
+	id = IR_GER.2002
+	desc = EVTDESC_IR_GER_2002
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 769
+		culture = old_saxon
+		NOT = {
+			region = custom_irck2_britannia
+		}
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = old_saxon
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_GER_2002
+		culture = frisian
+	}
+}
+
+#################################################
+
+# Province culture changes from Frankish to Dutch
+province_event = {
+	id = IR_GER.2003
+	desc = EVTDESC_IR_GER_2003
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 769
+		culture = old_frankish
+		#region = custom_irck2_britannia
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = old_frankish
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_GER_2003
+		culture = dutch
+	}
+}
+
+#################################################
+
+# Province culture changes from Suebi to Lombard
+province_event = {
+	id = IR_GER.2004
+	desc = EVTDESC_IR_GER_2004
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 550
+		culture = suebi
+		region = custom_irck2_italy
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = suebi
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_GER_2004
+		culture = lombard
+	}
+}
+
+#################################################
+
+

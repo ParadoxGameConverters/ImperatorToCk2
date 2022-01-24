@@ -1,0 +1,378 @@
+
+###########################################
+#                                         #
+# Charlemagne culture conversion events   #
+# 										  #
+# Unlocked as cultures exist in old gods  #
+#                                         #
+# ID OC.1-OC.499                          #
+#                                         #
+###########################################
+
+# Written by Tobias Bodlund
+
+namespace = OC
+
+# Matthew Clohessy
+# Unlocked from CM namespace as cultures appear in Old Gods as well
+
+###########################################
+# Province conversions                    #
+###########################################
+
+# Pictish province converts to Scottish
+province_event = {
+	id = OC.1
+	desc = EVTDESC_CM_1
+	picture = GFX_evt_stone_church
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		culture = pictish
+		owner = {
+			NOT = {	culture = pictish }
+		}
+		NOT = {
+			owner = { 
+				top_liege = { 
+					culture = pictish 
+					OR = {
+						tier = emperor
+						num_of_king_titles = 2
+					}
+				} 
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1200
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_CM_1
+		culture = scottish
+	}
+}
+
+# Visigothic province converts to Occitan
+province_event = {
+	id = OC.6
+	desc = EVTDESC_CM_6
+	picture = GFX_evt_stone_church
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		culture = visigothic
+		NOT = { religion_group = muslim }
+		region = world_europe_west_francia
+		NOT = {
+			owner = { 
+				top_liege = { 
+					culture = visigothic 
+					OR = {
+						tier = emperor
+						num_of_king_titles = 2
+					}
+				} 
+			}
+		}
+		NOT = {
+			owner = { 
+				religion_head = { culture = visigothic }
+			}
+		}
+		year = 850
+	}
+	
+	mean_time_to_happen = {
+		months = 3600
+		modifier = {
+			factor = 0.5
+			owner = {
+				culture = occitan
+			}
+		}
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_CM_6
+		culture = occitan
+	}
+}
+
+# Visigothic province converts to Castilian
+province_event = {
+	id = OC.7
+	desc = EVTDESC_CM_7
+	picture = GFX_evt_stone_church
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		culture = visigothic
+		NOT = { religion_group = muslim }
+		OR = {
+			region = custom_castillian
+			owner = { culture = castillan }
+		}
+		any_province_holding = {
+			NOT = { holding_type = nomad }
+		}
+		NOT = {
+			owner = { 
+				top_liege = { 
+					culture = visigothic 
+					OR = {
+						tier = emperor
+						num_of_king_titles = 2
+					}
+				} 
+			}
+		}
+		NOT = {
+			owner = { 
+				religion_head = { culture = visigothic }
+			}
+		}
+		year = 850
+	}
+	
+	mean_time_to_happen = {
+		months = 3600
+		modifier = {
+			factor = 0.5
+			owner = {
+				culture = castillan
+			}
+		}
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_CM_7
+		culture = castillan
+	}
+}
+
+# Visigothic province converts to Catalan
+province_event = {
+	id = OC.8
+	desc = EVTDESC_CM_8
+	picture = GFX_evt_stone_church
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		culture = visigothic
+		NOT = { religion_group = muslim }
+		OR = {
+			region = custom_catalan
+			owner = { culture = catalan }
+		}
+		any_province_holding = {
+			NOT = { holding_type = nomad }
+		}
+		NOT = {
+			owner = { 
+				top_liege = { 
+					culture = visigothic 
+					OR = {
+						tier = emperor
+						num_of_king_titles = 2
+					}
+				} 
+			}
+		}
+		NOT = {
+			owner = { 
+				religion_head = { culture = visigothic }
+			}
+		}
+		year = 850
+	}
+	
+	mean_time_to_happen = {
+		months = 3600
+		modifier = {
+			factor = 0.5
+			owner = {
+				culture = catalan
+			}
+		}
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_CM_8
+		culture = catalan
+	}
+}
+
+# Visigothic province converts to Andalusian
+province_event = {
+	id = OC.10
+	desc = EVTDESC_CM_10
+	picture = GFX_evt_monk_muslim
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		culture = visigothic
+		religion_group = muslim
+		OR = {
+			region = custom_andalusian
+			owner = { culture_group = arabic }
+		}
+		any_province_holding = {
+			NOT = { holding_type = nomad }
+		}
+		NOT = {
+			owner = { 
+				top_liege = { 
+					culture = visigothic 
+					OR = {
+						tier = emperor
+						num_of_king_titles = 2
+					}
+				} 
+			}
+		}
+		NOT = {
+			owner = { 
+				religion_head = { culture = visigothic }
+			}
+		}
+		year = 850
+	}
+	
+	mean_time_to_happen = {
+		months = 3600
+		modifier = {
+			factor = 0.5
+			owner = {
+				culture_group = arabic
+			}
+		}
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_CM_10
+		culture = andalusian_arabic
+	}
+}
+
+# East Slavic province becomes Russian
+province_event = {
+	id = OC.11
+	desc = EVTDESC_CM_11
+	picture = GFX_evt_tribal_lands
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		culture_group = east_slavic
+		NOT = { culture = russian }
+		owner = {
+			OR = {
+				culture = russian
+				AND = {
+					NOT = { culture_group = east_slavic }
+					NOT = { culture_group = finno_ugric }
+				}
+				NOT = { religion_group = pagan_group }
+				AND = {
+					religion_group = pagan_group
+					is_reformed_religion = yes
+					NOT = {
+						religion_head = { culture = THIS }
+					}
+				}
+			}
+		}
+		any_province_holding = {
+			NOT = { holding_type = nomad }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1200
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_CM_11
+		culture = russian
+	}
+}
