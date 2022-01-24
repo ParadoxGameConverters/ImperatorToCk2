@@ -1,5 +1,6 @@
 package ImperatorToCK2;  
       
+   
 import java.util.Scanner;
 import java.io.IOException;
 import java.io.FileInputStream;
@@ -518,6 +519,40 @@ public class Processing
         int Rng = (int) (Math.random() * 34);
         Rng = Rng + 16;
         String color = Integer.toString(Rng); 
+
+        return color;
+
+    }
+    
+    public static String capitalColor (String overlordColor) //Generates color for kingdom tier capital region, as to be different from main country
+    {
+
+        String[] overlordColorSplit = overlordColor.split(" ");
+        //int c1 = (int) (Integer.parseInt(overlordColorSplit[0]) * 0.97);
+        //int c2 = (int) (Integer.parseInt(overlordColorSplit[1]) / 0.75);
+        //int c3 = (int) (Integer.parseInt(overlordColorSplit[2]) * 0.13);
+        int c1 = (int) (Integer.parseInt(overlordColorSplit[0]) + 60);
+        int c2 = (int) (Integer.parseInt(overlordColorSplit[1]) + 60);
+        int c3 = (int) (Integer.parseInt(overlordColorSplit[2]) + 60);
+        if (c1 < 0) {
+            c1 = 0;
+        }
+        if (c2 < 0) {
+            c2 = 0;
+        }
+        if (c3 < 0) {
+            c3 = 0;
+        }
+        if (c1 > 255) {
+            c1 = 255;
+        }
+        if (c2 > 255) {
+            c2 = 255;
+        }
+        if (c3 > 255) {
+            c3 = 255;
+        }
+        String color = Integer.toString(c1) + " " + Integer.toString(c2) + " " + Integer.toString(c3); 
 
         return color;
 
@@ -1181,4 +1216,3 @@ public class Processing
     }
 
 }
-
