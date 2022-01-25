@@ -1,4 +1,4 @@
-package ImperatorToCK2;     
+package ImperatorToCK2;       
 
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -556,6 +556,7 @@ public class Main
             Output.output("defaultOutput"+VM+"dynasties"+VM+"02_hebrewDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_hebrewDynasties.txt");
             Output.output("defaultOutput"+VM+"dynasties"+VM+"02_ancient_egyptianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_ancient_egyptianDynasties.txt");
             Output.output("defaultOutput"+VM+"dynasties"+VM+"02_hellenisticDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_hellenisticDynasties.txt");
+            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_aestianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_aestianDynasties.txt");
             
             //Roman split Dynasties
             Output.copyRaw("defaultOutput"+VM+"dynasties"+VM+"02_aromanianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_aromanianDynasties.txt");
@@ -599,6 +600,7 @@ public class Main
             Output.output("defaultOutput"+VM+"events"+VM+"cm_culture_conversion_events.txt",modDirectory+VM+"events"+VM+"cm_culture_conversion_events.txt");
             Output.output("defaultOutput"+VM+"events"+VM+"ir_roman_culture_conversion.txt",modDirectory+VM+"events"+VM+"ir_roman_culture_conversion.txt");
             Output.output("defaultOutput"+VM+"events"+VM+"ir_germanic_culture_conversion.txt",modDirectory+VM+"events"+VM+"ir_germanic_culture_conversion.txt");
+            Output.output("defaultOutput"+VM+"events"+VM+"ir_baltic_culture_conversion.txt",modDirectory+VM+"events"+VM+"ir_baltic_culture_conversion.txt");
             Output.output("defaultOutput"+VM+"events"+VM+"ir_christianity_and_schisms.txt",modDirectory+VM+"events"+VM+"ir_christianity_and_schisms.txt");
             
             //defaultDecisions
@@ -606,6 +608,7 @@ public class Main
             Output.output("defaultOutput"+VM+"decisions"+VM+"ir_roman_conversion_decisions.txt",modDirectory+VM+"decisions"+VM+"ir_roman_conversion_decisions.txt");
             Output.output("defaultOutput"+VM+"decisions"+VM+"ir_roman_title_decisions.txt",modDirectory+VM+"decisions"+VM+"ir_roman_title_decisions.txt");
             Output.output("defaultOutput"+VM+"decisions"+VM+"ir_germanic_conversion_decisions.txt",modDirectory+VM+"decisions"+VM+"ir_germanic_conversion_decisions.txt");
+            Output.output("defaultOutput"+VM+"decisions"+VM+"ir_baltic_conversion_decisions.txt",modDirectory+VM+"decisions"+VM+"ir_baltic_conversion_decisions.txt");
             Output.output("defaultOutput"+VM+"decisions"+VM+"ir_christianity_and_schisms_decisions.txt",modDirectory+VM+"decisions"+VM+"ir_christianity_and_schisms_decisions.txt");
             
             //defaultMap
