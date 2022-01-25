@@ -421,9 +421,9 @@ assaka,telugu
 andhran,telugu
 
 #Baltic
-aestian,prussian
-sporic,prussian
-neuric,prussian
+aestian,aestian
+sporic,aestian
+neuric,aestian
 
 #Turkic
 khazars,khazar

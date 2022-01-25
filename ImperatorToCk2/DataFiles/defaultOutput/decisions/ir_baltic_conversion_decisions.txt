@@ -1,0 +1,399 @@
+targetted_decisions = {
+
+
+	# Aestian character may convert to Lithuanian
+	irck2_convert_to_lithuanian = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = aestian
+			capital_scope = {
+				region = custom_irck2_lithuania
+			}
+			any_realm_province = {
+				culture = lithuanian
+			}
+			OR = {
+				year = 475
+				top_liege = {
+					NOT = { culture = aestian }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = aestian
+			capital_scope = {
+				region = custom_irck2_lithuania
+			}
+			any_realm_province = {
+				culture = lithuanian
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = lithuanian
+			}
+			culture = lithuanian
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Roman ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = aestian
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = aestian }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = lithuanian }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = lithuanian }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = lithuanian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = lithuanian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = lithuanian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = lithuanian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = lithuanian
+				}
+			}
+		}
+	}
+
+
+	# Aestian character may convert to Lettigallian
+	irck2_convert_to_lettigallish = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = aestian
+			capital_scope = {
+				region = custom_irck2_latvia
+			}
+			any_realm_province = {
+				culture = lettigallish
+			}
+			OR = {
+				year = 475
+				top_liege = {
+					NOT = { culture = aestian }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = aestian
+			capital_scope = {
+				region = custom_irck2_latvia
+			}
+			any_realm_province = {
+				culture = lettigallish
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = lettigallish
+			}
+			culture = lettigallish
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Roman ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = aestian
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = aestian }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = lettigallish }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = lettigallish }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = lettigallish
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = lettigallish
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = lettigallish
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = lettigallish
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = lettigallish
+				}
+			}
+		}
+	}
+
+
+	# Aestian character may convert to Prussian
+	irck2_convert_to_prussian = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = aestian
+			NOT = { 
+				capital_scope = {
+					region = custom_irck2_lithuania
+				}
+			}
+			NOT = { 
+				capital_scope = {
+					region = custom_irck2_latvia
+				}
+			}
+			any_realm_province = {
+				culture = prussian
+			}
+			OR = {
+				year = 475
+				top_liege = {
+					NOT = { culture = aestian }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = aestian
+			NOT = {
+				capital_scope = {
+					region = custom_irck2_lithuania
+				}
+			}
+			NOT = {
+				capital_scope = {
+					region = custom_irck2_latvia
+				}
+			}
+			any_realm_province = {
+				culture = prussian
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = prussian
+			}
+			culture = prussian
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Roman ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = aestian
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = aestian }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = prussian }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = prussian }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = prussian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = prussian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = prussian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = prussian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = prussian
+				}
+			}
+		}
+	}
+
+
+
+
+#####################################################################
+#End Bracket
+#####################################################################
+
+}
