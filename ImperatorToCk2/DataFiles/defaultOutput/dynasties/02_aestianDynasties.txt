@@ -1,0 +1,162 @@
+5324008=
+{
+	name="Algelgeitis"
+	culture="aestian"
+}
+5324009=
+{
+	name="Algibarteitis"
+	culture="aestian"
+	
+}
+5324010=
+{
+	name="Algimanteitis"
+	culture="aestian"
+	
+}
+5324011=
+{
+	name="Alginoreitis"
+	culture="aestian"
+	
+}
+5324012=
+{
+	name="Daumanteitis"
+	culture="aestian"
+	
+}
+5324013=
+{
+	name="Dautawteitis"
+	culture="aestian"
+	
+}
+5324014 = {
+   name="Dauwaldeitis"
+   culture="aestian"
+   
+}
+5324015 = {
+   name="Dauwilteitis"
+   culture="aestian"
+   
+}
+
+5324016 = {
+   name="Genbuteitis"
+   culture="aestian"
+   
+}
+
+5324017 ={
+   name="Genmanteitis"
+   culture="aestian"
+   
+}
+5324018 ={
+   name="Genwilteitis"
+   culture="aestian"
+   
+}
+5324019 ={
+   name="Girdelgeitis"
+   culture="aestian"
+   
+}
+5324020 ={
+   name="Girdwilteitis"
+   culture="aestian"
+   
+}
+5324021 ={
+   name="Girtawteitis"
+   culture="aestian"
+   
+}
+5324022 ={
+   name="Giwenbuteitis"
+   culture="aestian"
+   
+}
+5324023 = {
+	name = "Ljaubarteitis"
+	culture = aestian
+}
+5324024 = {
+	name = "Ljauelgeitis"
+	culture = aestian
+}
+5324025 = {
+	name = "Ljaugaileitis"
+	culture = aestian
+}
+5324026 = {
+	name = "Ljaugirdeitis"
+	culture = aestian
+}
+5324027 = {
+	name = "Ljautawteitis"
+	culture = aestian
+}
+5324028 = {
+	name = "Mantawteitis"
+	culture = aestian
+}
+5324029 = {
+	name = "Mantwilteitis"
+	culture = aestian
+}
+5324030 = {
+	name = "Minbarteitis"
+	culture = aestian
+}
+5324031 = {
+	name = "Minbuteitis"
+	culture = aestian
+}
+5324032 = {
+	name = "Minelgeitis"
+	culture = aestian
+}
+5324033 = {
+	name = "Mingaileitis"
+	culture = aestian
+}
+5324034 = {
+	name = "Minoreitis"
+	culture = aestian
+}
+5324035 = {
+	name = "Skirbuteitis"
+	culture = aestian
+}
+5324036 = {
+	name = "Skirmanteitis"
+	culture = aestian
+}
+5324037 = {
+	name = "Skirwilteitis"
+	culture = aestian
+}
+5324038 = {
+	name = "Skirwaldeitis"
+	culture = aestian
+}
+5324039 = {
+	name = "Trijwaldeitis"
+	culture = aestian
+}
+5324040 = {
+	name = "Waisbarteitis"
+	culture = aestian
+}
+5324041 = {
+	name = "Waiswaldeitis"
+	culture = aestian
+}
+5324042 = {
+	name = "Waiswilteitis"
+	culture = aestian
+}
