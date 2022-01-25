@@ -39,4 +39,12 @@ EVTOPTA_IR_GER_2003;Interesting;Interesting;Interessant;;Interesting;;;;;;;;;x
 EVTDESC_IR_GER_2004;As the migration era begins to come to a close, much has changed in the world: allegiances have shifted, settlements have been abandoned, people have been uprooted, and connection to the old ways has been severed. This has become particularly appearent in [Root.Location.GetName], where the old Suebi identity is all but extinguished: They are now Lombard.;Roman Split;Roman Split;;Roman Split;;;;;;;;;x
 EVTOPTA_IR_GER_2004;Interesting;Interesting;Interessant;;Interesting;;;;;;;;;x
 
+#Baltic Split
+EVTDESC_IR_BAL_2000;As the migration era begins to come to a close, much has changed in the world: allegiances have shifted, settlements have been abandoned, people have been uprooted, and connection to the old ways has been severed. This has become particularly appearent in [Root.Location.GetName], where the old Aestian identity is all but extinguished: They are now Lithuanian.;Roman Split;Roman Split;;Roman Split;;;;;;;;;x
+EVTOPTA_IR_BAL_2000;Interesting;Interesting;Interessant;;Interesting;;;;;;;;;x
+EVTDESC_IR_BAL_2001;As the migration era begins to come to a close, much has changed in the world: allegiances have shifted, settlements have been abandoned, people have been uprooted, and connection to the old ways has been severed. This has become particularly appearent in [Root.Location.GetName], where the old Aestian identity is all but extinguished: They are now Lettigallian.;Roman Split;Roman Split;;Roman Split;;;;;;;;;x
+EVTOPTA_IR_BAL_2001;Interesting;Interesting;Interessant;;Interesting;;;;;;;;;x
+EVTDESC_IR_BAL_2002;As the migration era begins to come to a close, much has changed in the world: allegiances have shifted, settlements have been abandoned, people have been uprooted, and connection to the old ways has been severed. This has become particularly appearent in [Root.Location.GetName], where the old Aestian identity is all but extinguished: They are now Prussian.;Roman Split;Roman Split;;Roman Split;;;;;;;;;x
+EVTOPTA_IR_BAL_2002;Interesting;Interesting;Interessant;;Interesting;;;;;;;;;x
+
 
