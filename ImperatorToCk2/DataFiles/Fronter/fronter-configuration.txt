@@ -17,18 +17,6 @@ requiredFile = {
 	allowedExtension = "*.rome"
 }
 
-requiredFile = {
-	name = converterExe
-	displayName = IMPERATORFILE
-	tooltip = IMPERATORFILETIP
-	mandatory = true
-	outputtable = false
-	searchPathType = converterFolder
-	searchPath = "ImperatorToCK2"
-	allowedExtension = "*.jar"
-	fileName = "ImperatorToCK2.jar"
-}
-
 requiredFolder = {
 	name = ImperatorDirectory
 	displayName = IMPERATORFOLDER
