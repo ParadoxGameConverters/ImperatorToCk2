@@ -482,7 +482,7 @@ public class Importer
 
         String qaaa;
         String[] output;   // Owner Culture Religeon PopTotal Buildings
-        output = new String[10];
+        output = new String[11];
 
         output[0] = "bad"; //default for no CK II game directory
         output[1] = "bad"; //default for no IR game directory
@@ -494,6 +494,7 @@ public class Importer
         output[7] = "bad"; //default for no year choice
         output[8] = "bad"; //default for no custom year date
         output[9] = "bad"; //default for no dejure conversion
+        output[10] = "bad"; //default for no dejure conversion
 
         try {
             while (endOrNot = true){
@@ -546,6 +547,11 @@ public class Importer
                 else if (qaaa.split(" = ")[0].equals("dejure")){
                     output[9] = qaaa.split(" = ")[1];
                     output[9] = output[9].substring(1,output[9].length()-1);
+
+                }
+                else if (qaaa.split(" = ")[0].equals("republic")){
+                    output[10] = qaaa.split(" = ")[1];
+                    output[10] = output[10].substring(1,output[10].length()-1);
 
                 }
 
@@ -927,6 +933,8 @@ public class Importer
         output[0] = tag; //default for no prov name, will just use prov ID
         output[1] = tag; //default for no prov adjective, will just use prov ID
         String idNum;
+        
+        
 
         try {
             while (endOrNot = true){
