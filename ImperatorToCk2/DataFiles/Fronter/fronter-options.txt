@@ -42,6 +42,26 @@ option = {
 }
 
 option = {
+	name = republic
+	displayName = REPUBLICOPTION
+	tooltip = REPUBLICOPTIONTIP
+	radioSelector = {
+		radioOption = {
+			name = repMer
+			displayName = REPMER
+			tooltip = REPMERTIP
+			default = true
+		}
+		radioOption = {
+			name = repFeu
+			displayName = REPFEU
+			tooltip = REPFEUTIP
+			default = false
+		}
+	}
+}
+
+option = {
 	name = output_name
 	displayName = MODNAME
 	tooltip = MODNAMETIP
