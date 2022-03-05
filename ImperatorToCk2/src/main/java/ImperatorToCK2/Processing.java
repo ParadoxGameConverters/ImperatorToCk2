@@ -187,7 +187,7 @@ public class Processing
         String VM = "\\";
 
         VM = VM.substring(0);
-        
+
         String bracket1 = "a{";
         String bracket2 = "a}";
 
@@ -523,7 +523,7 @@ public class Processing
         return color;
 
     }
-    
+
     public static String capitalColor (String overlordColor) //Generates color for kingdom tier capital region, as to be different from main country
     {
 
@@ -1098,20 +1098,20 @@ public class Processing
 
         return true;
     }
-    
+
     public static void fileExcecute(String[] file) throws IOException //checks if file exists or not
     {
-	try {
-        	Runtime runTime = Runtime.getRuntime();
-        	Process process = runTime.exec(file);
-        	process.waitFor();
+        try {
+            Runtime runTime = Runtime.getRuntime();
+            Process process = runTime.exec(file);
+            process.waitFor();
         } catch (Exception q) {
-            
+
         }
-                
+
     }
-    
-        public static String customDate(String date, String oldDirectory, String newDirectory) throws IOException //needed to allow TAGs imperial laws
+
+    public static String customDate(String date, String oldDirectory, String newDirectory) throws IOException //needed to allow TAGs imperial laws
     {
 
         String VM = "\\"; 
@@ -1125,46 +1125,46 @@ public class Processing
 
         FileOutputStream fileOut= new FileOutputStream(newDirectory);
         PrintWriter out = new PrintWriter(fileOut);
-        
+
         String tmpDate = date.replace(".",",");
-        
+
         int year = Integer.parseInt(tmpDate.split(",")[0]);
         int month = Integer.parseInt(tmpDate.split(",")[1]);
         int day = Integer.parseInt(tmpDate.split(",")[2]);
-        
+
         String bookmark = "converted";
         String bookmarkName = "converted_bookmark_name";
         String bookmarkDesc = "converted_bookmark_info";
         String image = "GFX_pick_era_image_4";
-        
+
         if (year >= 769) {
             bookmark = "bm_charlemagne";
             bookmarkName = "BM_CHARLEMAGNE_ERA";
             bookmarkDesc = "BM_CHARLEMAGNE_ERA_INFO";
             image = "GFX_pick_era_image_1";
         }
-        
+
         if (year >= 867) {
             bookmark = "bm_the_old_gods";
             bookmarkName = "BM_THE_OLD_GODS_ERA";
             bookmarkDesc = "BM_THE_OLD_GODS_ERA_INFO";
             image = "GFX_pick_era_image_2";
         }
-        
+
         if (date.equals("936.8.7")) {
             bookmark = "bm_otto_the_first";
             bookmarkName = "OTTO_THE_FIRST_ERA";
             bookmarkDesc = "OTTO_THE_FIRST_ERA_INFO";
             image = "GFX_pick_era_image_6";
         }
-        
+
         if ((year >= 1066 && month >= 9 && day >= 15) || year >= 1067) {
             bookmark = "bm_fate_of_england";
             bookmarkName = "BM_FATE_OF_ENGLAND_ERA";
             bookmarkDesc = "BM_FATE_OF_ENGLAND_ERA_INFO";
             image = "GFX_pick_era_image_3";
         }
-        
+
         if (year >= 1337) {
             bookmark = "bm_100_years_war";
             bookmarkName = "BM_100_YEARS_WAR_ERA";
@@ -1174,45 +1174,126 @@ public class Processing
 
         int aqq = 0;
 
-
-            while (aqq < oldFile.size()) {
-                
-                if (oldFile.get(aqq).contains("converted = ")) {
-                    String newTitle = oldFile.get(aqq).replace("converted = ",bookmark);
-                    out.println (newTitle);
-                }
-                
-                else if (oldFile.get(aqq).contains("converted_bookmark_name")) {
-                    String newName = oldFile.get(aqq).replace("converted_bookmark_name",bookmarkName);
-                    out.println (newName);
-                }
-                
-                else if (oldFile.get(aqq).contains("converted_bookmark_info")) {
-                    String newInfo = oldFile.get(aqq).replace("converted_bookmark_info",bookmarkDesc);
-                    out.println (newInfo);
-                }
-                
-                else if (oldFile.get(aqq).contains("100.1.1")) {
-                    String newDate = oldFile.get(aqq).replace("100.1.1",date);
-                    out.println (newDate);
-                } 
-                
-                else if (oldFile.get(aqq).contains("GFX_pick_era_image_4")) {
-                    String newDate = oldFile.get(aqq).replace("GFX_pick_era_image_4",image);
-                    out.println (newDate);
-                } else {
-                    out.println (oldFile.get(aqq));
-                }
-
-                aqq = aqq + 1;
-
+        while (aqq < oldFile.size()) {
+            if (oldFile.get(aqq).contains("converted = ")) {
+                String newTitle = oldFile.get(aqq).replace("converted = ",bookmark);
+                out.println (newTitle);
             }
 
+            else if (oldFile.get(aqq).contains("converted_bookmark_name")) {
+                String newName = oldFile.get(aqq).replace("converted_bookmark_name",bookmarkName);
+                out.println (newName);
+            }
+
+            else if (oldFile.get(aqq).contains("converted_bookmark_info")) {
+                String newInfo = oldFile.get(aqq).replace("converted_bookmark_info",bookmarkDesc);
+                out.println (newInfo);
+            }
+
+            else if (oldFile.get(aqq).contains("100.1.1")) {
+                String newDate = oldFile.get(aqq).replace("100.1.1",date);
+                out.println (newDate);
+            } 
+
+            else if (oldFile.get(aqq).contains("GFX_pick_era_image_4")) {
+                String newDate = oldFile.get(aqq).replace("GFX_pick_era_image_4",image);
+                out.println (newDate);
+            } else {
+                out.println (oldFile.get(aqq));
+            }
+
+            aqq = aqq + 1;
+
+        }
 
         out.flush();
         fileOut.close();
 
         return "a";
+    }
+
+    public static String checkGovList (String gov, ArrayList<String> govMap) throws IOException //Imports government mappings
+    {
+
+        int flag = 0;
+
+        boolean endOrNot = true;
+
+        int aqq = 0;
+
+        String qaaa;
+        String output = gov; //backup in case there is no mapping
+
+        String rank = "k"; //may be implemented in the future
+
+        try {
+            while (endOrNot = true){
+
+                qaaa = govMap.get(aqq);
+
+                if (qaaa.split(",")[0].equals(gov)){
+                    if (qaaa.split(",").length == 2) { //if no rank requirement, convert
+                        endOrNot = false;
+                        output = qaaa.split(",")[1];
+                    } else if (qaaa.split(",").length == 3) {
+                        if (qaaa.split(",")[2].equals(rank)) { //if ranks match, convert
+                            endOrNot = false;
+                            output = qaaa.split(",")[1];
+                        }
+                    }
+
+                }
+                aqq = aqq + 1;
+
+            }
+
+        }catch (java.lang.IndexOutOfBoundsException exception){
+            endOrNot = false;
+
+        }   
+
+        return output;
+
+    }
+
+    public static String calcDynID (String id) //gives all IR character dynasties + 700000000 to prevent conflict
+    {
+        if (!id.equals("noDynasty")) {
+            id = Integer.toString(Integer.parseInt(id) + 700000000);
+        }
+
+        return id;
+    }
+    public static String calcCharID (String id) //gives all IR character dynasties + 700000000 to prevent conflict
+    {
+        id = Integer.toString(1000000 + Integer.parseInt(id));
+
+        return id;
+
+    }
+
+    public static String calcHead (ArrayList<String[]> impCharInfoList, String dynasty) //calculates which character is the head of a dynasty
+    {
+        int aqq = 1;
+        String[] dynastyList = dynasty.split("~");
+        String head = dynastyList[0];
+        int age = Integer.parseInt(impCharInfoList.get(Integer.parseInt(head))[3]);
+        String sex = impCharInfoList.get(Integer.parseInt(head))[4];
+        while (aqq > dynastyList.length) {
+            String newHead = dynastyList[aqq];
+            int newAge = Integer.parseInt(impCharInfoList.get(Integer.parseInt(newHead))[3]);
+            if (newAge < age) { //if newHead is older then the current head and is male, newHead becomes the head
+                String newSex = impCharInfoList.get(Integer.parseInt(newHead))[4];
+                if (newSex.equals("m")) {
+                    head = newHead;
+                }
+            }
+            aqq = aqq + 1;
+
+        }
+
+        return head;
+
     }
 
 }
