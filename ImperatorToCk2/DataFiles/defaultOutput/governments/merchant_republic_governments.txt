@@ -1,0 +1,105 @@
+republic_governments = {
+
+	merchant_republic_government = {
+		preferred_holdings = { CITY }
+		allowed_holdings = { 
+			TRADE_POST
+			CITY
+			CASTLE
+			FAMILY_PALACE
+			FORT
+			HOSPITAL
+		}
+		allowed_holdings_culture = { # Will not get the wrong government type penalty for tribes of the same culture
+			TRIBAL
+		}
+		accepts_liege_governments = { # Accepts other republics
+			republic_government
+		}
+		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
+			tribal_government
+		}
+		frame_suffix = "_merchantrepublic"
+		title_prefix = "city_"
+		potential = {
+			OR = {
+				controls_religion = no
+				religion_group = muslim
+				has_religion_feature = religion_temporal_head
+				AND = {
+					religion = norse_pagan_reformed
+					has_religion_features = no # Old saves, and campaigns without HF, need the Fylkirate to continue working
+				}
+			}
+			#is_female = no
+			OR = {
+				AND = {
+					is_patrician = yes
+					OR = {
+						liege_before_war = {
+							NOT = { character = PREV }
+							is_merchant_republic = yes
+							NOT = {
+								liege_before_war = {
+									NOT = { character = PREV }
+									is_merchant_republic = yes
+								}
+							}
+						}
+						has_game_started = no
+					}
+				}
+				AND = {
+					OR = {
+						AND = {
+							has_game_started = yes
+							is_merchant_republic = yes
+						}
+						OR = {
+							capital_scope = { port = yes }
+							primary_title = { #workaround to allow all IR republics be merchant republics
+								OR = { 
+									#title = e_TAG
+								}
+							}
+						}
+					}
+					higher_real_tier_than = count
+					any_demesne_province = {
+						always = yes
+					}
+					NOT = {
+						liege_before_war = {
+							NOT = { character = PREV }
+							is_merchant_republic = yes
+						}
+					}
+				}
+			}
+		}
+		
+		color = { 250 0 0 }
+		
+		merchant_republic = yes
+		
+		can_imprison_without_reason = no
+		can_revoke_without_reason = no
+		can_usurp_kingdoms_and_empires = no
+		have_gender_laws = no
+		can_grant_kingdoms_and_empires_to_other_government = yes
+		allows_matrilineal_marriage = no
+		uses_bride_price = yes
+
+		can_build_tribal = no
+		
+		landed_inheritance = no
+		
+		capital_move_delay = 600
+
+		## Modifiers
+		court_size_modifier = 5
+		court_size_maintenance_cost_modifier = -0.05
+	}
+	
+	
+}
