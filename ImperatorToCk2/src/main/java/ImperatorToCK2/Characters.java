@@ -1,5 +1,6 @@
 package ImperatorToCK2; 
 
+
 import java.util.Scanner;
 import java.io.IOException;
 import java.io.FileInputStream;
@@ -90,14 +91,14 @@ public class Characters
                     }
                     else if (qaaa.split("=")[0].equals( tab+"traits" ) ) {
                         if (qaaa.length() == 9) { //Rakaly save format
-                                qaaa = scnr.nextLine();
-                                output[8] = qaaa.replace(tab,"");
+                            qaaa = scnr.nextLine();
+                            output[8] = qaaa.replace(tab,"");
                         } else { //regular decompressed save format
-                                output[8] = qaaa.split("=")[1];
+                            output[8] = qaaa.split("=")[1];
 
-                                output[8] = output[8].substring(2,output[8].length()-2);
+                            output[8] = output[8].substring(2,output[8].length()-2);
                         }
-                        
+
                     }
                     else if (qaaa.split("=")[0].equals( tab+tab+"martial" ) ) {
                         output[10] = qaaa.split("=")[1];
@@ -113,11 +114,11 @@ public class Characters
                     }
                     else if (qaaa.split("=")[0].equals( tab+"spouse" ) ) {
                         if (qaaa.length() == 9) { //Rakaly save format
-                                qaaa = scnr.nextLine();
-                                output[14] = qaaa.replace(tab,"");
+                            qaaa = scnr.nextLine();
+                            output[14] = qaaa.replace(tab,"");
                         } else { //regular decompressed save format
-                                output[14] = qaaa.split("=")[1];
-                                output[14] = output[14].substring(2,output[14].length()-2); 
+                            output[14] = qaaa.split("=")[1];
+                            output[14] = output[14].substring(2,output[14].length()-2); 
                         }
 
                         try {
@@ -129,13 +130,13 @@ public class Characters
                         }
                     }
                     else if (qaaa.split("=")[0].equals( tab+"children" ) ) {
-                        
+
                         if (qaaa.length() == 11) { //Rakaly save format
-                                qaaa = scnr.nextLine();
-                                output[15] = qaaa.replace(tab,"");
+                            qaaa = scnr.nextLine();
+                            output[15] = qaaa.replace(tab,"");
                         } else { //regular decompressed save format
-                                output[15] = qaaa.split("=")[1];
-                                output[15] = output[15].substring(2,output[15].length()-2);  
+                            output[15] = qaaa.split("=")[1];
+                            output[15] = output[15].substring(2,output[15].length()-2);  
                         }
 
                     }
@@ -164,7 +165,7 @@ public class Characters
                         flag = 1; //end loop
                         output[6] = qaaa.split("=")[1];
                     }
-                    
+
                     else if (qaaa.split("=")[0].equals( Integer.toString(impCharList.size()+1) ) ) { //Somehow has gone past checks, immediately end
                         aqq = aqq + 1;
                         flag = 1; //end loop
@@ -221,12 +222,16 @@ public class Characters
         Scanner scnr= new Scanner(fileIn);
 
         int flag = 0;
+        int flag2 = 0;
 
         int aqq = 0;
         boolean endOrNot = true;
         String vmm = scnr.nextLine();
         String qaaa = vmm;
         String output = "noName"; //default for no name
+        String tag = "noTag"; //default for no tag controlling the dynasty
+        String major = "yes"; //assume major unless proven otherwise
+        String members = "none";
 
         ArrayList<String> dynList= new ArrayList<String>();
 
@@ -255,12 +260,40 @@ public class Characters
 
                         output = qaaa.split("=")[1];
                         output = output.substring(1,output.length()-1);
-                        String tmpOutput = output+","+id;
+                        aqq = aqq + 1;
+                        qaaa = scnr.nextLine();
+                    }
+                    if (qaaa.split("=")[0].replace(tab,"").equals( "owner" )) {
+                        tag = qaaa.split("=")[1];
+                        qaaa = scnr.nextLine();
+                    }
+                    if (qaaa.split("=")[0].replace(tab,"").equals( "minor_family" )) {
+                        major = "no";
+                        members = "none";
+                        flag2 = 1;
+
+                    }
+                    if (qaaa.split("=")[0].replace(tab,"").equals( "member" ) && !output.equals("noName")) {
+                        members = qaaa.split("=")[1];
+                        if (members.length() == 1) { //melted save
+                            qaaa = scnr.nextLine();
+                            members = qaaa.replace(tab,"");
+                        } else {
+                            members = members.substring(2,members.length()-2);
+                        }
+                        flag2 = 1;
+                        members = members.replace(" ","~");
+                    }
+
+                    if (flag2 == 1) {
+                        flag2 = 0;
+                        String tmpOutput = output+","+id+","+tag+","+major+","+members;
                         tmpOutput = tmpOutput.replace("_"," ");
                         dynList.add(tmpOutput);
                         output = "noName"; //default for no name
-                        aqq = aqq + 1;
-                        //flag = 1;
+                        tag = "noTag"; //default for no tag controlling the dynasty
+                        major = "yes"; //assume major unless proven otherwise
+                        members = "none";
                     }
 
                 }
@@ -275,11 +308,11 @@ public class Characters
 
         return dynList;
     }
-    
+
     public static String searchDynasty (ArrayList<String> dynList, String id) throws IOException //searches dynList for id
     {
         int aqq = 0;
-        
+
         while (aqq < dynList.size()) {
             String[] dyn = dynList.get(aqq).split(",");
             if (dyn[1].equals(id)) {
@@ -291,4 +324,40 @@ public class Characters
 
         return id;
     }
+    
+    public static String[] searchWholeDynasty (ArrayList<String> dynList, String id) throws IOException //searches dynList for all info
+    {
+        int aqq = 0;
+
+        while (aqq < dynList.size()) {
+            String[] dyn = dynList.get(aqq).split(",");
+            if (dyn[1].equals(id)) {
+                return dyn;
+            } else {
+                aqq = aqq + 1;
+            }
+        }
+        
+        String[] debug = "debug".split(",");
+
+        return debug;
+    }
+    
+    public static String getMajorFamilies (ArrayList<String> dynList, String id) throws IOException //get's all major families for a country
+    {
+        int aqq = 0;
+        String familyList = "";
+
+        while (aqq < dynList.size()) {
+            String[] dyn = dynList.get(aqq).split(",");
+            if (dyn[2].equals(id) && dyn[3].equals("yes")) {
+                familyList = familyList + "," + dyn[1];
+            }
+            
+            aqq = aqq + 1;
+        }
+
+        return familyList;
+    }
+    
 }
