@@ -26,6 +26,8 @@ EVTDESC_IR_ROM_2010;With the end of imperial rule in our realm, our connection w
 EVTOPTA_IR_ROM_2010;Interesting;Interesting;Interessant;;Interesting;;;;;;;;;x
 EVTDESC_IR_ROM_2011;With the end of imperial rule in our realm, our connection with the rest of the Latin world has been severed, causing localities to establish their own local rites and customs. The local population in [Root.Location.GetName] has diverged so far from the traditional Roman way of life that they can neither command the Latin tongue nor be considered Roman: They are now Eifrican.;Roman Split;Roman Split;;Roman Split;;;;;;;;;x
 EVTOPTA_IR_ROM_2011;Interesting;Interesting;Interessant;;Interesting;;;;;;;;;x
+EVTDESC_IR_ROM_2012;With the end of imperial rule in our realm, our connection with the rest of the Latin world has been severed, causing localities to establish their own local rites and customs. The local population in [Root.Location.GetName] has diverged so far from the traditional Roman way of life that they can neither command the Latin tongue nor be considered Roman: They are now Palmyrene.;Roman Split;Roman Split;;Roman Split;;;;;;;;;x
+EVTOPTA_IR_ROM_2012;Interesting;Interesting;Interessant;;Interesting;;;;;;;;;x
 
 #Germanic Split
 EVTDESC_IR_GER_2000;As the migration era begins to come to a close, much has changed in the world: allegiances have shifted, settlements have been abandoned, people have been uprooted, and connection to the old ways has been severed. This has become particularly appearent in [Root.Location.GetName], where the old Suebi identity is all but extinguished: They are now German.;Roman Split;Roman Split;;Roman Split;;;;;;;;;x
