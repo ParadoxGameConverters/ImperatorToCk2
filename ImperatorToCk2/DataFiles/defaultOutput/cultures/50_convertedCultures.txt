@@ -928,3 +928,179 @@ east_germanic = {
 
 }
 
+northern_romance = {
+	alternate_start = { NOT = { has_alternate_start_parameter = { key = special_culture value = animal_world } } }
+	graphical_cultures = { westerngfx }
+
+	cambrian = { #Roman-split Britain
+		graphical_cultures = { frankishgfx westerngfx trueoccitangfx }
+		alternate_start = {
+			OR = {
+				year >= 1000
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+
+		color = { 0.84 0.62 0.26 }
+		male_names = {
+			 Abelârd_Abelard Adam_Adam Adelard_Adalhard Ademar Alexandir_Alexandir Alfonç_Alphonç Amaury_Amalric Anfroi Anquetil Anselm_Anselm Armand_Armand Arnâld_Arnold Asclettin Aubrey Baldyin_Baldyin
+			 Birnard_Birnard Birold Birtran_Birtrand Beuyeç Blayye_Blaiç Bohemond Botolf_Botulf Brân_Bran Briog_Briog Bryt_Brutus Clâminç_Clemint Cynfael_Cynfael Cynfarç_Cynfarç Drogo Errand Eustache_Eustace Faramond Florènç Firant_Firdinand
+			 Fulk_Folke Fraunk Friry Gaillard Gaufrid Geoffroy_Godfrey Gérard_Girard Giraud_Girald Girbirt Giryas Gilbirt_Gilbirt
+			Godfriy_Godfriy Goubirt Guy_Guy Haimo Hamelin Hinri_Hinry Hirbirt_Hirbirt Hirman_Hirman Hubirt Hugh_Hugh Humbirt_Humbirt Humphrey Ildebrando_Hildebrand Jordân_Jordan Joscelin_Joscelin Justinânius
+			Lambirt_Lambirt Laurènç_Laurence Lançelin Lothaere_Lothir Marçau Nigil Ordiric Osbirn Osmond Osyulf Osyyn Radolf_Ralph Raynaud_Rinhold Renaud_Rinhold Ranulf Raymond_Raymond Raynir_Rainir
+			Rhufon_Roman Richard_Richard  Robirt_Robirt Rogir_Rogir Rolland Roscelin Sayir Sirlo Sirril Seyal Silyestir_Silyestir Simon_Simon Stifen_Stiphen Tancred_Tancredi Torf Tudur Turold Turquetil Turstin
+			Tybalt_Theobald Yaliran Yaltir_Yaltir Yilbirç Yilliam_Yilliam Yicenç_Yincent Ynyr Yortimer Yoteporiçis Yymund
+		}
+		female_names = {
+			Aeronyen Adelaide_Adelaide Adele_Adela Adelin_Adeline Adelise Agnes_Agnes Albirada Alienora_Eleanor Aline Aliç_Alice Alison Amburga Aubrey Ayeis Ayelina_Ayelina Birengaria
+			Busilla Catrin Clarimond Clemenza_Clementia Constânce_Constance Cundo Dolça_Douce Efa Egelina Eleanor_Eleanor Elise_Elizâbeth Elysande Emelenine Emma_Emma Emonie Erembirga Ermyntrude
+			Ffelis Felicia_Felicia Flandina Fredeçende Freçenda_Freçenda Freçende_Freçenda Geya Giselle_Gisela Gohilde Griselda Gundred Gyen_Gyen Gyladys_Claudia Hadyis Heleyisa Hiria Hirleye Hirmessent_Ermesinda Hirmine Hugolina
+			Ida_Ida  Judit_Judith Lesceline Llear Mabel Marie_Maria Matheode Matilda_Matilda Maud_Matilda Mautild_Matilda Maysant Millicent Muriella Onbrâyst Oriel Riçenda_Ricârda
+			Rosalind Sança_Sancha Seloya Siân_Joan Stiphanie_Stiphania Sibyl_Sibylla Sibylla_Sibylla Umfreda Yaldrade Yilmot Yolanda_Yolanda Ysbail Yyon_Yyonne
+		}
+		from_dynasty_prefix = "de "
+		grammar_transform = french
+
+		modifier = default_culture_modifier
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 60
+		mat_grf_name_chance = 10
+		father_name_chance = 10
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 60
+		mother_name_chance = 10
+	}
+}
+
+afro_romance_group = {
+	alternate_start = { NOT = { has_alternate_start_parameter = { key = special_culture value = animal_world } } }
+	graphical_cultures = { westerngfx }
+
+	romano_african = { #Roman-split North African
+		graphical_cultures = { italiangfx southerngfx }
+
+		color = { 0.54 0.53 0.15 }
+
+		male_names = {
+			Abisatu Adàmu_Adam Adriànu_Adrian Alaverru_Oliver Albertu_Albert Albu Alessandru_Alexander
+			Alfonsu_Alphonse Ambròsu_Ambrose Andria_Andrew Antine_Constantine Antiogu Antòni_Anthony Antoninu_Antoninus
+			Armannu_Herman Arrammundu_Raymond Arzoccu Austinu_August Austu_August Baldu Barisoni_Barison Bartholumeu_Bartolomeus
+			Barumini Barusone_Barison Basili_Basil Bassu Batkillu Benedettu_Benedict Bernardu_Bernard Bigenzu Bissente_Vincent
+			Bonnannaro Bustianu_Sebastian Carlus_Charles Carule_Charles Celestìnu_Celestin Cipare Clementi_Clement
+			Comita_Comita Corona Corràdu_Konrad Costantìnu_Constantine Crabiele_Gabriel Cristolu_Christopher
+			Danelu_Daniel Dominigu_Dominic Egizu Enzu_Henry Evisu Fabritziu_Fabrice Floru Franku_Francis Frevare Furadiza Furatu
+			Gabini_Gabin Gabinu_Gabin Gajetànu_Caetan Gallu Gasparru_Caspar Gavini Gitimel Giuanne_John Giustinu_Justin Giustu
+			Gonariu_Gunnar Gòsamu_Cosmo Gosantinu_Constantine Grabrielle_Gabriel Granuzu Gregoriu_Gregory Guantine_Constantine Guglielmu_William
+			Iginu Ignatziu_Ignatius Istevene_Stephen Ittocorre Izocor Jacopu_Jacob Jagu Jerone_Jerome Jisepu_Joseph Juanne Kipriane Kiprianu
+			Larentu_Lawrence Leonardu_Leonard Lisandru_Alexander Loce Luca_Lucas Lucia_Lucas Lussuria Manfredu_Manfred
+			Mankia Marcu_Marcus Marianu_Marius Massimilla Matia_Matthias Mauru_Mauro Mazeu_Matthew Micheli_Michael Migali_Michael
+			Mikelli_Michael Mugedi Murtina_Martin Nigola_Nicholas Nurake Okeri Olisae Orsocorre Orzocor Pagiti Pascale_Pascal
+			Patriziu_Patrick Paulu_Paul Pedru_Peter Pelegrine Perdu_Peter Pirillu Ponzu Porcellu Porkinu Presnage Pretu Pupa
+			Rafiele_Raphael Ramundu_Raymond Robertu_Robert Rodulfu_Rudolf Sadurre Sadurru Salluri Saltaro Salusi Salusiu
+			Salvennor Samaritanu Samuèli_Samuel Saragina Saraginu Sauina Serafinu Serbestianu_Sebastian Serighe Setilo
+			Simione_Simon Sisinni Tedore_Theodore Thanthalu Thipircu Thomas_Thomas Thurungone Tobias Tomasso_Thomas
+			Torbinu_Torbjörn Torchitoriu Trauessu Trogodori Uanios Ubertu_Humbert Ugu_Hugh Urieke Urse Urule
+			Villanu Vivianu Zinga Zirominu_Jerome
+		}
+		female_names = {
+			Adela_Adela Adelàsia_Adelasia Alaberta Albina Amira Amirasoia Angelìca_Angelica Angiola_Angela
+			Angioletta_Angela Angiolina_Angela Anna_Anna Assunta_Assunta Austina_Augustine Barbara_Barbara
+			Beatrìci_Beatrice Benedetta_Benedicta Bibiana_Viviana Bina Bitoria Brigida_Brigid Caderina_Catherine
+			Cassia Catalina_Catherine Catellina_Catherine Cosima Cristìna_Christina Diane_Diana Dominiga_Dominica
+			Dorotea_Dorothy Duminiga_Dominica Elena_Helen Elianora_Eleanor Elisabetta_Elizabeth Eva Fausta
+			Fidula_Dominica Filumena_Philomena Francesca_Francesca Giorgia Giulia_Julia Grazia Guisiana
+			Ippolita Ispella_Elisabeth Jana_Joan Joanna_Joan Jorgia Joscla Lia_Leah Lillia_Lily Lina_Lina
+			Lucia_Lucia Luisa_Louise Luna_Luna Marcusa Margarita Maria_Maria Marianna_Mariana Marisa Maura_Maura
+			Melissa Natalia_Natalie Nibatta Nikita Nivata Nivatora Olimpia Padulesa Paola_Paula Pasca_Pascale
+			Pascalina_Pascale Pellegrina Petrenella Placidia_Placida Preciosa Preziosa Pupa Rita_Margaret Rosa_Rose
+			Rosalia_Rosalia Rosaria_Rosaria Rosina_Rosine Rossana Sabina_Sabina Sardinia Sidonia Sinispella_Elizabeth
+			Stefania_Stephania Subia_Sophia Susanna_Susan Tedora_Theodora Teresa_Teresa Thaita Thana Thanca
+			Valeria Vera Viviane_Vivana Zura
+		}
+		from_dynasty_prefix = "de "
+
+		modifier = default_culture_modifier
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 10
+		father_name_chance = 25
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+	}
+}
+
+oriental_romance = {
+	alternate_start = { NOT = { has_alternate_start_parameter = { key = special_culture value = animal_world } } }
+	graphical_cultures = { westerngfx }
+
+	palmyrene = { #Roman-split Middle East
+		graphical_cultures = { italiangfx southerngfx }
+
+		color = { 0.92 0.95 0.14 }
+
+		male_names = {
+			Adaya_Abaya Adišo Abraham Adàmu_Adam Adlai Adriànu_Adrian Aggai Ahai_Ahha Alaverru_Oliver Aldertu_Albert Albu Alešandar_Alexander
+			Alfonsu_Alphonse Amdròsu_Ambrose Andràyya_Andrew Antine_Constantine Antiogu Antòni_Anthony Antaninu_Antoninus Dadayyus_Babaeus
+			Dadai_Babaeus Dadowai_Babaeus Dadwahi_Babaeus Dar Dar-Addu Dardu'shimin Dar-Nadha Dar-Talmai
+			Ermannu_Herman Arrammundu_Raymond Arzo'qu Austinu_August Austu_August Daldu Darisoni_Barison Dartalumeu_Bartolomeus
+			Darumini Darusone_Barison Dašeli_Basil Dašu Datkillu Benedeya_Benedict Bernardu_Bernard Bigenzu Bišente_Vincent
+			Bonnannaro Bustàyyanu_Sebastian Carlus_Charles Carule_Charles Celestìnu_Celestin Cipare Clementi_Clement
+			Camita_Comita Corona Corràdu_Konrad Costantìnu_Constantine Cradàyyle_Gabriel Cristalu_Christopher
+			Danelu_Daniel Daminigu_Dominic Emmanuel_Emmanuel Enoš Ezekàyyl_Ezekiel Egizu Enzu_Henry Evisu Fadri'qiu_Fabrice
+			Fàrdokhtu_Farbokht Fomà Giwargis_George Grwgari_Gregory Floru Fran'qu_Francis Frevare Furadiza Furatu
+			Gadini_Gabin Gadinu_Gabin Gajetànu_Caetan Gallu Gaisparru_Caspar Gavini Gitimel Yiuanne_John Yiustinu_Justin Giustu
+			Gonariu_Gunnar Gòsamu_Cosmo Gosantinu_Constantine Gradràyylle_Gabriel Granuzu Gregoriu_Gregory Guantine_Constantine Guglàyylmu_William
+			Iginu Ignatziu_Ignatius Istevene_Stephen Itta'qorre Izo'qor Ya'qopu_Jacob Yagu Yerone_Jerome Yisepu_Joseph Yuanne Kipràyyane Kipràyyanu
+			Lazare_Lazarus Larentu_Lawrence Leonardu_Leonard Lišandru_Alexander Lo'qe Lu'qa_Lucas Lu'qàyya_Lucas Lušuràyya Manfredu_Manfred
+			Mankàyya Magna_Ma'na Makkikha Màluch Mà'na_Ma'na Màr'qu_Marcus Maràyyanu_Marius Mašimilla Matàyya_Matthias Mauru_Mauro Mazeu_Matthew Micheli_Michael Migali_Michael
+			Mikelli_Michael Mugedi Murtina_Martin Nehorai Ni'qola_Nicholas Niv Nun Nur Nuràke Okeri Olisàyy Orso'qorre Orzo'qor Pàgiti Paiš'qale_Pascal
+			Patriziu_Patrick Paulu_Paul Pedru_Peter Petros_Peter Petuel Pelegrine Perdu_Peter Pirillu Ponzu Porcellu Porkinu Presnage Pretu Pupa
+			Qaligh Qàyyoma Rafàyyle_Raphael Ramundu_Raymond Rodertu_Robert Rodulfu_Rudolf Sadurre Sadurru Salluri Saltaro Saluše Salušeu
+			Salvennor Samaritanu Samuèli_Samuel Saragina Saraginu Sauina Serafinu Serdestàyyanu_Sebastian Serighe Setilo
+			Šafer Šahdostu Šama Šamir Šammai Šemaàyyah Šem'on_Simon Sišenni Tedore_Theodore Thanthalu Thipir'qu
+			Tam'ais_Thomas Tavi_Tavi Taviš_Tavi Tevis_Tavis Th'amhais_Thomas Thurungone Tadais Tamašo_Thomas
+			Tardinu_Torbjörn Tarchitoriu Trauešu Trogodori Uanios Udertu_Humbert Ugu_Hugh Uràyyke Urse Urule Vaballathus
+			Villanu Vivàyyanu Zinga Yiraminu_Jerome
+		}
+		female_names = {
+			Adva Alya Anena Anina Adela_Adela Adelàsàyya_Adelaisia Aladerta Aldina Amira Amiraisoàyya Angelì'qa_Angelica Angiola_Angela
+			Angioletta_Angela Angiolina_Angela Anna_Anna Ašunta_Assunta Austina_Augustine Bardura_Bardara
+			Beatrì'qi_Beatrice Benedi'qta_Benedicta Bidàyyana_Viviana Bina Bitaràyya Brigida_Brigid Bustana_Bustan
+			Chanina Chašena Chayuta_Chayuta China_Hina Chiyuta_Chayuta Caderina_Catherine
+			Cašàyya Catalina_Catherine Catellina_Catherine Cošema Cristìna_Christina Dàyyane_Diana Daminiga_Dominica
+			Dorotea_Dorothy Duminiga_Dominica Elena_Helen Elàyyanora_Eleanor Elisadetta_Elizabeth Eva Fausta
+			Fidula_Dominica Filumena_Philomena Fran'qeska_Francesca Giorgàyya Giulàyya_Julia Grazàyya Guišeana
+			Ippolita Ispella_Elisabeth Yana_Joan Yoanna_Joan Yorgàyya Yos'qla Làyya_Leah Lillàyya_Lily Lina_Lina
+			Lu'qàyya_Lucia Luiša_Louise Luna_Luna Mar'qusa Mar'qarita Maràyya_Maria Maràyyanna_Mariana Marisa Maura_Maura
+			Meliša Natalàyya_Natalie Nidutta Nikita Nivata Nivatara Olimpàyya Padulesa Paola_Paula Pais'qa_Pascale
+			Pais'qalina_Pascale Pellegrina Petrenella Pla'qidàyya_Placida Pre'qiosa Preziosa Pupa Rita_Margaret Rosa_Rose
+			Rosalàyya_Rosalia Rosaràyya_Rosaria Rošena_Rosine Rošana Sadina_Sabina Sada_Saba Sadah_Saba Samantha Sameah_Sami
+			Samee_Sami Sameea_Sami Samiya_Sami Samiyah_Sami Samiyya_Sami Sardinàyya Šedonàyya Šenispella_Elizabeth
+			Stefanàyya_Stephania Sudàyya_Sophia Susanna_Susan Tadutha_Tabitha Taddy_Tabitha Tadetha_Tabitha
+			Taditha_Tabitha Tadea_Thaddea Talàyya_Talia Talàyyah_Tali Tedora_Theodora Teresa_Teresa Thaita Thana Than'qa
+			Valeràyya Vera Vivàyyane_Vivana Zura Zenodàyya_Zenobia Zenodayya_Zenobia Zenobayya_Zenobia Zenobia_Zenobia Šeptimàyya
+		}
+		from_dynasty_prefix = "d'"
+
+		modifier = default_culture_modifier
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 10
+		father_name_chance = 25
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+	}
+}
+
+
+
+
