@@ -1,5 +1,5 @@
 package ImperatorToCK2;  
-      
+         
 import java.util.Scanner;
 import java.io.IOException;
 import java.io.FileInputStream;
@@ -685,7 +685,7 @@ public class Output
         char VMq = '"';
         String tab = "	";
 
-        if (name.split("_")[0].equals ("minor")) {
+        if (name.split(" ")[0].equals ("minor")) {
             name = backupName;
         }
 
