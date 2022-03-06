@@ -585,5 +585,14 @@ custom_irck2_latvia = {
 	}
 }
 
+custom_irck2_levant = {
+	duchies = {
+		d_ascalon d_jerusalem d_oultrejourdain d_damascus d_galilee d_tripoli d_antioch d_aleppo d_palmyra d_mudar d_edessa d_jazira d_mosul d_samarra d_baghdad d_basra
+	}
+	counties = {
+		c_maan c_al_aqabah c_tabuk
+	}
+}
+
 
 

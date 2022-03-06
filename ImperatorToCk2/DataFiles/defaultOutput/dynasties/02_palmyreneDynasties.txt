@@ -1,0 +1,158 @@
+5325008=
+{
+	name="Arbilàyya"
+	culture="palmyrene"
+}
+5325009=
+{
+	name="du La'qon"
+	culture="palmyrene"
+	#religion="catholic"
+}
+5325010=
+{
+	name="du Gunayl"
+	culture="palmyrene"
+	#religion="catholic"
+}
+5325011=
+{
+	name="du Callaris"
+	culture="palmyrene"
+	#religion="catholic"
+}
+5325012=
+{
+	name="Oristanu"
+	culture="palmyrene"
+	#religion="catholic"
+}
+5325013=
+{
+	name="Sorrenais"
+	culture="palmyrene"
+	#religion="catholic"
+}
+5325014 = {
+   name="d'Galluru"
+   culture="palmyrene"
+   #religion="catholic"
+}
+5325015 = {
+   name="d'Lo'qudoro"
+   culture="palmyrene"
+   #religion="catholic"
+}
+
+5325016 = {
+   name="Zakho"
+   culture="palmyrene"
+   #religion="catholic"
+}
+
+5325017 ={
+   name="Salušeu du La'qon"
+   culture="palmyrene"
+   #religion="catholic"
+}
+5325018 ={
+   name="Torchitariu du Uqunayl"
+   culture="palmyrene"
+   #religion="catholic"
+}
+5325019 ={
+   name="Samikka"
+   culture="palmyrene"
+   #religion="catholic"
+}
+5325020 ={
+   name="du La'qon Zakho"
+   culture="palmyrene"
+   #religion="catholic"
+}
+5325021 ={
+   name="du Zakho"
+   culture="palmyrene"
+   #religion="catholic"
+}
+5325022 ={
+   name="Bais Serra"
+   culture="palmyrene"
+   #religion="catholic"
+}
+5325023 = {
+	name = "d'Caisteddu"
+	culture = palmyrene
+}
+5325024 = {
+	name = "d'Santa Igàyya"
+	culture = palmyrene
+}
+5325025 = {
+	name = "d'Patiollais"
+	culture = palmyrene
+}
+5325026 = {
+	name = "d'Ogàyyaistra"
+	culture = palmyrene
+}
+5325027 = {
+	name = "d'Torram"
+	culture = palmyrene
+}
+5325028 = {
+	name = "d'Ballau"
+	culture = palmyrene
+}
+5325029 = {
+	name = "d'Bosa"
+	culture = palmyrene
+}
+5325030 = {
+	name = "d'Caddura"
+	culture = palmyrene
+}
+5325031 = {
+	name = "d'Paisadu"
+	culture = palmyrene
+}
+5325032 = {
+	name = "d'Durgalu"
+	culture = palmyrene
+}
+5325033 = {
+	name = "d'Calvu"
+	culture = palmyrene
+}
+5325034 = {
+	name = "d'Sartena"
+	culture = palmyrene
+}
+5325035 = {
+	name="Bukhtišu"
+	culture="palmyrene"
+}
+5325036 = {
+	name="Qatwais"
+	culture="palmyrene"
+}
+5325037 = {
+	name="Nimru"
+	culture="palmyrene"
+}
+5325038 = {
+	name="Gazartu"
+	culture="palmyrene"
+}
+5325039 = {
+	name="Odaenathus"
+	culture="palmyrene"
+}
+5325040 = {
+	name="Septimius"
+	culture="palmyrene"
+}
+5325041 = {
+	name="Septimàyya"
+	culture="palmyrene"
+}

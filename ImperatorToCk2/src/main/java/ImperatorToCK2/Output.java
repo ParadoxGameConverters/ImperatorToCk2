@@ -1,5 +1,5 @@
 package ImperatorToCK2;  
-   
+         
 import java.util.Scanner;
 import java.io.IOException;
 import java.io.FileInputStream;
@@ -88,17 +88,19 @@ public class Output
         PrintWriter out = new PrintWriter(fileOut);
 
         out.println (rank+"_"+irTAG+" = {");
-        out.println (tab+"color={ "+irColor+" }");
-        out.println (tab+"color2={ "+irColor+" }");
+        if (!irColor.equals("none")) {
+            out.println (tab+"color={ "+irColor+" }");
+            out.println (tab+"color2={ "+irColor+" }");
+        }
 
-        if (capital != "none") { //governorships don't have set capitals
+        if (!capital.equals("none")) { //governorships don't have set capitals
 
             capital = Importer.importConvList("provinceConversion.txt",Integer.parseInt(capital))[1];
 
             out.println (tab+"capital = "+capital);
 
         }
-        if ( government.equals("yes") ) {
+        if ( government.equals("republic") ) {
             out.println (tab+tab+tab+"is_republic = yes"); //if it is a republic and republics are enabled  
         } else if (government.equals("imperium") && rank.equals("e")) {
             out.println (tab+"purple_born_heirs = yes"); //if government is imperial, enable born in purple mechanic
@@ -112,8 +114,9 @@ public class Output
         return irColor;
     }
 
-    public static String titleCreation(String irTAG, String irKING, String irCOLOR, String government, String capital,String rank,String liege,String date1,
-    String Directory) throws IOException
+    public static ArrayList<String> titleCreation(String irTAG, String irKING, String irCOLOR, String government, String capital,String rank,String liege,
+    String date1,String republicOption,String irDynasty,ArrayList<String> dynList,ArrayList<String[]> impCharInfoList,ArrayList<String> convertedCharacters,
+    int tagIDNum,String liegeGov,String Directory) throws IOException
     {
 
         String VM = "\\"; 
@@ -122,8 +125,13 @@ public class Output
         String irKING100 = "9"+irKING;
 
         String tab = "	";
+        
+        String oldDynasty = irDynasty;
 
-        titleCreationCommon(irTAG,irCOLOR,government,capital,rank,Directory);
+        if (!government.equals("palace")) { //if palace, don't recalculate dynasty and recreate title
+            titleCreationCommon(irTAG,irCOLOR,government,capital,rank,Directory);
+            irDynasty = Processing.calcDynID(irDynasty);
+        }
         String oldDirectory = Directory;
         Directory = Directory + VM + "history" + VM + "titles";
         String ck2CultureInfo ="a";   // Owner Culture Religeon PopTotal Buildings
@@ -136,17 +144,27 @@ public class Output
 
         //String date1 = "100.1.1";
         String date2 = "1066.9.15";
+        out.println (date1+"={");
 
         String overlordRank = "k";
         if (rank.equals("k")){
             overlordRank = "e";
+        } else if (rank.equals("b") && government.equals("palace")) {
+            overlordRank = liege.split(",")[0];
+            liege = liege.split(",")[1];
+            out.println (tab+"holding_dynasty = "+irDynasty);
         }
 
-        out.println (date1+"={");
-        if (liege != "no_liege") { //If country is a subject
+        
+        if (!liege.equals("no_liege")) { //If country is a subject
 
             out.println (tab+"liege="+overlordRank+"_"+liege);
-            out.println (tab+"de_jure_liege="+overlordRank+"_"+liege);
+            if (!rank.equals("b") && !government.equals("palace")) {
+                out.println (tab+"de_jure_liege="+overlordRank+"_"+liege);
+            }
+            if (liegeGov.equals("republic") && republicOption.equals("repMer")) { //If subject, don't convert as merchant republic
+                republicOption = "repFeu";
+            }
         }
         out.println("\tholder="+irKING100);
         if (government.equals("imperium") && rank.equals("e")) { //If I:R government is imperial, set government to CK II imperial (roman_imperial_government)
@@ -157,27 +175,32 @@ public class Output
             out.println (tab+"law = ze_administration_laws_2");
             out.println (tab+"law = vice_royalty_2");
             out.println (tab+"law = revoke_title_law_1");
-            imperialCreation(irTAG,rank,oldDirectory);
+            govCreation(irTAG,rank,"i",oldDirectory);
             imperialSuccession(irTAG,rank,oldDirectory);
+        }
+        if (government.equals("republic") && republicOption.equals("repMer")) { 
+            //If I:R government is republic and option is enabled, set to CK2 merchant republic (regardless of coastline requirements)
+            
+            String palace = irDynasty+"_"+irTAG;
+            titleCreationCommon(palace,"none","none","none","b",oldDirectory); //creates merchant palace for ruler's family
+            convertedCharacters = titleCreation(palace,irKING,irCOLOR,"palace",capital,"b",rank+","+irTAG,date1,republicOption,irDynasty,
+            dynList,impCharInfoList,convertedCharacters,tagIDNum,liegeGov,oldDirectory);
+            convertedCharacters = createFamilies(dynList,irTAG,oldDynasty,rank,impCharInfoList,convertedCharacters,date1,republicOption,tagIDNum,
+            liegeGov,oldDirectory);
+            
+            govCreation(irTAG,rank,"m",oldDirectory);
         }
         out.println ("}");
         out.println ();
-
-        out.println (date2+"={");
-        if (liege != "no_liege") {
-            out.println (tab+"liege="+overlordRank+"_"+liege);
-            out.println (tab+"de_jure_liege="+overlordRank+"_"+liege);
-        }
-        out.println ("\tholder="+irKING);
-        out.println ("}");
         out.flush();
         fileOut.close();
+        //System.out.println(irTAG+"_"+government+"__"+republicOption+"__"+liege+"_"+liegeGov);
 
-        return ck2CultureInfo;
+        return convertedCharacters;
     }
 
     public static String provinceCreation(String ckProv, String ckCult, String ckRel, String Directory, String landType, 
-    String name, String gov, String pops, String[] bList, String saveMonuments, int id) throws IOException
+    String name, String gov, String pops, String[] bList, String saveMonuments, String republicOption, int id) throws IOException
     {
 
         String tab = "	";
@@ -229,16 +252,22 @@ public class Output
         String holding1 = "castle";
         String holding2 = "city";
         String holding3 = "temple";
-        boolean convRepublic = true; //To be done later
+        boolean convRepublic = false;
+        if (republicOption.equals("repMer") || republicOption.equals("repRep")) {
+            convRepublic = true;
+        }
 
-        if (gov.equals ("tribal_federation") || gov.equals ("tribal_kingdom") || gov.equals ("tribal_chiefdom")) {
+        if (gov.equals ("tribal")) {
             holding1 = "tribal";
             holding2 = "tribal";
             holding3 = "tribal";
         }
-        else if (gov.split("_").equals ("republicQ") || convRepublic == true) { //Currently unused, need to figure out how to implement republics
-            holding2 = "city";   
+        else if (gov.equals ("republic") && convRepublic == true) { //If republic, primary holding becomes city instead of castle
+            holding1 = "city";   
+            holding2 = "castle";   
         }
+        
+        //System.out.println(gov+","+convRepublic);
 
         int popNum = Integer.parseInt(pops);
         int holdingTot = 1;
@@ -391,9 +420,10 @@ public class Output
         out.println ("}");
         out.println ();
 
-        out.println (date2+"={");
-        out.println ("    holder="+irKING);
-        out.println ("}");
+        //No longer needed due to using one start date
+        //out.println (date2+"={");
+        //out.println ("    holder="+irKING);
+        //out.println ("}");
         out.flush();
         fileOut.close();
 
@@ -432,6 +462,7 @@ public class Output
         String mother100 = "9" + mother;
 
         String dead = "no";
+        
 
         if (sex.length() > 1) {
             if (sex.charAt(1) == '_') {
@@ -501,7 +532,8 @@ public class Output
         Directory = Directory + VM + "history" + VM + "characters";
         if (sex != "69") {
             //for all non-generated characters
-            dynasty = Integer.toString(Integer.parseInt(dynasty) + 700000000);
+            //dynasty = Integer.toString(Integer.parseInt(dynasty) + 700000000);
+            dynasty = Processing.calcDynID(dynasty);
         }
 
         String tempTrait = "a";
@@ -653,14 +685,14 @@ public class Output
         char VMq = '"';
         String tab = "	";
 
-        if (name.split("_")[0].equals ("minor")) {
+        if (name.split(" ")[0].equals ("minor")) {
             name = backupName;
         }
 
         if (backupName.equals("debug")) { //gives all IR character dynasties + 700000000 to prevent conflict, generated ones (debug) use + 6000000
         } else {
 
-            id = Integer.toString(Integer.parseInt(id) + 700000000);
+            id = Processing.calcDynID(id);
         }
 
         Directory = Directory + VM + "common" + VM + "dynasties";
@@ -727,8 +759,6 @@ public class Output
 
         Directory = Directory + VM + "common" + VM + "landed_titles";
 
-        String ck2CultureInfo ="a";   // Owner Culture Religeon PopTotal Buildings
-
         FileOutputStream fileOut= new FileOutputStream(Directory + VM + "b_" + name + ".txt");
         PrintWriter out = new PrintWriter(fileOut);
 
@@ -741,7 +771,7 @@ public class Output
         out.flush();
         fileOut.close();
 
-        return ck2CultureInfo;
+        return "a";
     }
 
     public static String localizationCreation(String[] name, String title, String rank, String Directory) throws IOException
@@ -973,15 +1003,22 @@ public class Output
 
     }
 
-    public static String imperialCreation(String title, String rank, String Directory) throws IOException //needed to allow TAGs imperial government
+    public static String govCreation(String title, String rank, String govFile, String Directory) throws IOException 
+    //needed to allow TAGs imperial government and merchant republic government
     {
 
         String VM = "\\"; 
         VM = VM.substring(0);
         char VMq = '"';
         String tab = "	";
+        
+        if (govFile.equals("i")) { //for convienience
+            govFile = "imperial_governments.txt";
+        } else if (govFile.equals("m")) {
+            govFile = "merchant_republic_governments.txt";
+        }
 
-        Directory = Directory + VM + "common" + VM + "governments" + VM + "imperial_governments.txt";
+        Directory = Directory + VM + "common" + VM + "governments" + VM + govFile;
 
         ArrayList<String> oldFile = new ArrayList<String>();
 
@@ -1101,4 +1138,52 @@ public class Output
         }
 
     }
+    
+    public static ArrayList<String> createFamilies (ArrayList<String> dynList, String tag, String rulerFamily, String rank,
+    ArrayList<String[]> impCharInfoList,ArrayList<String> convertedCharacters,String date,String republicOption, int tagIDNum, 
+    String liegeGov,String directory) throws IOException
+    //creates families for Merchant Republics
+    {
+        int aqq = 1;
+        String VM = "\\"; 
+        VM = VM.substring(0);
+        String tagID = Integer.toString(tagIDNum);
+        String families = Characters.getMajorFamilies(dynList,tagID);
+        String[] familyList = families.split(",");
+        String rulerFamilyOld = rulerFamily;
+        rulerFamily = Processing.calcDynID(rulerFamily);
+        String bDirectory = directory;
+        while (aqq < familyList.length && aqq <= 5) {
+            String[] dynasty = Characters.searchWholeDynasty(dynList,familyList[aqq]);
+            String newDynasty = Processing.calcDynID(dynasty[1]);
+            if (!newDynasty.equals(rulerFamilyOld)) { //if not of ruler's family
+                String palace = newDynasty + "_" + tag;
+                String palaceDir = bDirectory + VM + "b_" + palace + ".txt";
+                if (Processing.checkFile(palaceDir) == false) { //if barony doesn't already exist
+                    String head = Processing.calcHead(impCharInfoList,dynasty[4]);
+                    String headNum = Processing.calcCharID(head);
+                    String[] headCharacter = impCharInfoList.get(Integer.parseInt(head));
+                    
+                    convertedCharacters = characterCreation(headNum, cultureOutput(headCharacter[1]),Output.religionOutput(headCharacter[2]),
+                    headCharacter[3],headCharacter[0],headCharacter[7],headCharacter[4],headCharacter[8],headCharacter[10],headCharacter[11],
+                    headCharacter[12],headCharacter[13],headCharacter[14],
+                    headCharacter[15],"palace","q","q",convertedCharacters,impCharInfoList,date,directory);
+                    
+                    dynastyCreation(dynasty[0],headCharacter[7],headCharacter[16],directory);
+                    
+                    titleCreationCommon(palace,"none","none","none","b",directory); //creates merchant palace for ruler's family
+                    convertedCharacters = titleCreation(palace,headNum,"none","palace","none","b",rank+","+tag,date,republicOption,newDynasty,dynList,
+                    impCharInfoList,convertedCharacters,tagIDNum,liegeGov,directory);
+                    
+                    
+                }
+            }
+            aqq = aqq + 1;
+            
+        }
+
+        return convertedCharacters;
+    }
+    
+    
 }

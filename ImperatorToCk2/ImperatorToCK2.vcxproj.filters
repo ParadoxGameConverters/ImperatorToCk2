@@ -105,5 +105,8 @@
     <CopyFileToFolders Include="DataFiles\rakaly_win.exe">
       <Filter>Data Files\Configuration</Filter>
     </CopyFileToFolders>
+    <CopyFileToFolders Include="governmentConversion.txt">
+      <Filter>Data Files\Configuration</Filter>
+    </CopyFileToFolders>
   </ItemGroup>
 </Project>

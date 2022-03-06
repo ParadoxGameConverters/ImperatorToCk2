@@ -580,4 +580,51 @@ province_event = {
 	}
 }
 
+province_event = {
+	id = IR_ROM.2012
+	desc = EVTDESC_IR_ROM_2012
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = roman
+		region = custom_irck2_levant
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = roman
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_ROM_2012
+		culture = palmyrene
+	}
+}
+
 

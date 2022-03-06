@@ -1,4 +1,5 @@
 package ImperatorToCK2;       
+   
 
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -80,6 +81,8 @@ public class Main
             String ck2Dir = configDirectories[0];
 
             String impDirSave = configDirectories[4];
+            
+            String republicOption = configDirectories[10];
 
             directories.modFolders (Dir,modName); //Creating the folders to write the mod files
             //along with nessicery sub-folders
@@ -189,6 +192,8 @@ public class Main
 
             String saveMonuments = "tempMonuments.txt";
             
+            ArrayList<String> govMap = Importer.importBasicFile("governmentConversion.txt"); //government mappings
+            
             int compressedOrNot = Importer.compressTest(impDirSave); //0 for compressed, 1 for decompressed
             
             if (compressedOrNot == 0) { //compressed save! Initiating Rakaly decompressor
@@ -240,6 +245,11 @@ public class Main
                 if (tmpYear >= 100) { //if less then 100 AD, game will use 100 AD
                     date = configDirectories[8];
                 }
+            }
+            
+            if (republicOption.equals("bad")) { //If something goes wrong with reading the republic option, default to repMer
+                LOGGER.warning("Error with Republic Conversion Option! Defaulting to Merchant Republic");
+                republicOption = ("repMer");
             }
 
             LOGGER.info("Creating temp files...");
@@ -562,6 +572,7 @@ public class Main
             Output.copyRaw("defaultOutput"+VM+"dynasties"+VM+"02_aromanianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_aromanianDynasties.txt");
             Output.copyRaw("defaultOutput"+VM+"dynasties"+VM+"02_cambrianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_cambrianDynasties.txt");
             Output.copyRaw("defaultOutput"+VM+"dynasties"+VM+"02_romano_africanDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_romano_africanDynasties.txt");
+            Output.copyRaw("defaultOutput"+VM+"dynasties"+VM+"02_palmyreneDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_palmyreneDynasties.txt");
             
             //defaultDiseases
             Output.output("defaultOutput"+VM+"disease"+VM+"00_disease.txt",modDirectory+VM+"common"+VM+"disease"+VM+"00_disease.txt");
@@ -571,6 +582,9 @@ public class Main
             Output.output("defaultOutput"+VM+"governments"+VM+"imperial_governments.txt",modDirectory+VM+"common"+VM+"governments"+VM+"imperial_governments.txt");
             Output.output("defaultOutput"+VM+"government_flavor"+VM+"50_government_flavor.txt",modDirectory+VM+"common"+VM+"government_flavor"+VM+"50_government_flavor.txt");
             Output.output("defaultOutput"+VM+"laws"+VM+"succession_laws.txt",modDirectory+VM+"common"+VM+"laws"+VM+"succession_laws.txt");
+            
+            //republicGovernments
+            Output.output("defaultOutput"+VM+"governments"+VM+"merchant_republic_governments.txt",modDirectory+VM+"common"+VM+"governments"+VM+"merchant_republic_governments.txt");
             
             //blankedDejureTitles
             Output.output("defaultOutput"+VM+"titles"+VM+"d_angria.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_angria.txt");
@@ -660,17 +674,24 @@ public class Main
 
                                 int subjectOrNot = Processing.checkSubjectList(aq4,impSubjectInfo);
                                 //LOGGER.config("subjectOrNot at " + aq4 + " is " + subjectOrNot);
+                                impTagInfo.get(aq4)[17] = Processing.checkGovList(impTagInfo.get(aq4)[17],govMap); //converted government type
+                                
+                                Character = impCharInfoList.get(Integer.parseInt(impTagInfo.get(aq4)[16]));
+                                String rulerDynasty = Characters.searchDynasty(impDynList,Character[7]);
+
                                 if (subjectOrNot == 9999) { //if tag is free or independent
                                     if (ck2LandTot[aq4] >= empireRank || impTagInfo.get(aq4)[17].equals("imperium")) {
                                         rank = "e";
                                     }
                                     impTagInfo.get(aq4)[0] = Processing.convertTitle("titleConversion.txt",rank,impTagInfo.get(aq4)[21],impTagInfo.get(aq4)[0]);
-                                    Output.titleCreation(impTagInfo.get(aq4)[0],tempNum2,impTagInfo.get(aq4)[3],impTagInfo.get(aq4)[17],
-                                          impTagInfo.get(aq4)[5],rank,"no_liege",date,modDirectory);
+                                    convertedCharacters = Output.titleCreation(impTagInfo.get(aq4)[0],tempNum2,impTagInfo.get(aq4)[3],impTagInfo.get(aq4)[17],
+                                    impTagInfo.get(aq4)[5],rank,"no_liege",date,republicOption,Character[7],impDynList,impCharInfoList,convertedCharacters,aq4,
+                                    impTagInfo.get(aq4)[17],modDirectory);
                                     //LOGGER.info("Free Nation at " + aq4);
                                 } else { //if tag is subject
                                     String[] subjectInfo = impSubjectInfo.get(subjectOrNot).split(",");
                                     String overlord = impTagInfo.get(Integer.parseInt(subjectInfo[0]))[0];
+                                    String overlordGov = Processing.checkGovList(impTagInfo.get(Integer.parseInt(subjectInfo[0]))[17],govMap);
 
                                     if (ck2LandTot[Integer.parseInt(subjectInfo[0])] >= empireRank || 
                                         impTagInfo.get(Integer.parseInt(subjectInfo[0]))[17].equals("imperium")) {
@@ -684,31 +705,32 @@ public class Main
 
                                     if (subjectInfo[2].equals ("feudatory") || subjectInfo[2].equals ("satrapy") || subjectInfo[2].equals ("client_state")) { 
                                         //convert as vassal
+                                        
 
-                                        Output.titleCreation(impTagInfo.get(aq4)[0],tempNum2,impTagInfo.get(aq4)[3],impTagInfo.get(aq4)[17],
-                                            impTagInfo.get(aq4)[5],rank,overlord,date,modDirectory);
+                                        convertedCharacters = Output.titleCreation(impTagInfo.get(aq4)[0],tempNum2,impTagInfo.get(aq4)[3],impTagInfo.get(aq4)[17],
+                                        impTagInfo.get(aq4)[5],rank,overlord,date,republicOption,Character[7],impDynList,impCharInfoList,
+                                        convertedCharacters,aq4,overlordGov,modDirectory);
                                         //LOGGER.info("Subject Nation at " + aq4 + " Overlord is " + subjectInfo[0]);
                                     }
 
                                     else { 
                                         //convert as CK II tributary
                                         //WIP
-                                        Output.titleCreation(impTagInfo.get(aq4)[0],tempNum2,impTagInfo.get(aq4)[3],impTagInfo.get(aq4)[17],
-                                            impTagInfo.get(aq4)[5],rank,overlord,date,modDirectory);
+                                        convertedCharacters = Output.titleCreation(impTagInfo.get(aq4)[0],tempNum2,impTagInfo.get(aq4)[3],impTagInfo.get(aq4)[17],
+                                        impTagInfo.get(aq4)[5],rank,overlord,date,republicOption,Character[7],impDynList,impCharInfoList,
+                                        convertedCharacters,aq4,overlordGov,modDirectory);
                                         //LOGGER.info("Tributary Nation at " + aq4 + " Overlord is " + subjectInfo[0]);
                                     }
                                 }
 
                                 //LOGGER.info (impTagInfo.get(aq4)[16] + " rules " + impTagInfo.get(aq4)[0] + "_" + aq4);
-                                Character = impCharInfoList.get(Integer.parseInt(impTagInfo.get(aq4)[16]));
+                                
                                 convertedCharacters = Output.characterCreation(tempNum2, Output.cultureOutput(Character[1]),Output.religionOutput(Character[2]),
                                     Character[3],Character[0],Character[7],Character[4],Character[8],Character[10],Character[11],Character[12],Character[13],Character[14],
                                     Character[15],impTagInfo.get(aq4)[17],"q","q",convertedCharacters,impCharInfoList,date,modDirectory);
                                 //LOGGER.config ("c");
 
-                                String rulerDynasty = Characters.searchDynasty(impDynList,Character[7]);
 
-                                
                                 Output.dynastyCreation(rulerDynasty,Character[7],Character[16],modDirectory);
 
                                 String[] locName = importer.importLocalisation(impGameDir,impTagInfo.get(aq4)[19],rulerDynasty);
@@ -726,8 +748,9 @@ public class Main
                                     subRank = "k";
                                     String capitalColor = Processing.capitalColor(impTagInfo.get(aq4)[3]); //sets the capital region to use different color
                                     
-                                    Output.titleCreation(impTagInfo.get(aq4)[0],tempNum2,capitalColor,impTagInfo.get(aq4)[17],
-                                        impTagInfo.get(aq4)[5],subRank,"no_liege",date,modDirectory);
+                                    convertedCharacters = Output.titleCreation(impTagInfo.get(aq4)[0],tempNum2,capitalColor,impTagInfo.get(aq4)[17],
+                                    impTagInfo.get(aq4)[5],subRank,"no_liege",date,republicOption,Character[7],impDynList,impCharInfoList,convertedCharacters,
+                                    aq4,impTagInfo.get(aq4)[17],modDirectory);
 
                                     
                                     String capitalName = "PROV"+impTagInfo.get(aq4)[5]; //use name of capital for generated kingdom
@@ -753,11 +776,18 @@ public class Main
                                         govReg = governorships[aq7].split("~")[0]; 
                                         govRegID = impTagInfo.get(aq4)[0]+"__"+govReg; 
 
-                                        Output.titleCreation(govRegID,governorID,Processing.randomizeColor(),"no","none",subRank,impTagInfo.get(aq4)[0],date,modDirectory);
+                                        convertedCharacters = Output.titleCreation(govRegID,governorID,Processing.randomizeColor(),"no","none",subRank,
+                                        impTagInfo.get(aq4)[0],date,republicOption,Character[7],impDynList,impCharInfoList,convertedCharacters,aq4,
+                                        "govq",modDirectory);
+                                        
                                         govCharacter = impCharInfoList.get(Integer.parseInt(governor));
                                         convertedCharacters = Output.characterCreation(governorID, Output.cultureOutput(govCharacter[1]),Output.religionOutput(govCharacter[2]),govCharacter[3],
                                             govCharacter[0],govCharacter[7],govCharacter[4],govCharacter[8],govCharacter[10],govCharacter[11],govCharacter[12],govCharacter[13],
                                             govCharacter[14],govCharacter[15],saveCharacters,"q","q",convertedCharacters,impCharInfoList,date,modDirectory);
+                                            
+                                        String governorDynasty = Characters.searchDynasty(impDynList,govCharacter[7]);
+                                        
+                                        Output.dynastyCreation(governorDynasty,govCharacter[7],govCharacter[16],modDirectory);
 
                                         Output.copyFlag(ck2Dir,modDirectory,subRank,impTagInfo.get(aq4)[5],govRegID); //default flag for governorships
 
@@ -812,7 +842,7 @@ public class Main
 
                             if (ck2ProvInfo[0][aq4].equals ("9999")) {// Dynamically creates a country and character for an uncolonized territory with no owner
                                 ruler = Integer.toString((tempNum * 6) + aq4);
-                                gov = "tribal_federation";
+                                gov = "tribal";
                                 String [] dynLoc = new String[2];
                                 dynLoc[0] = importedInfo[0];
                                 dynLoc[1] = importedInfo[0]+"ian";
@@ -845,7 +875,8 @@ public class Main
                                 saveCharacters,"q","q",convertedCharacters,impCharInfoList,date,modDirectory);
                                 String greyShade = Processing.randomizeColorGrey();
 
-                                Output.titleCreation("dynamic"+aq4,ruler,greyShade,"no",Integer.toString(aq4),"d","no_liege",date,modDirectory);
+                                convertedCharacters = Output.titleCreation("dynamic"+aq4,ruler,greyShade,"no",Integer.toString(aq4),"d","no_liege",date,republicOption,
+                                "noDynasty",impDynList,impCharInfoList,convertedCharacters,aq4,Integer.toString(aq4),modDirectory);
                                 Output.localizationCreation(dynLoc,"dynamic"+aq4,"d",modDirectory);
                                 Output.copyFlag(ck2Dir,modDirectory,"d",Integer.toString(aq4),"dynamic"+aq4);
 
@@ -938,14 +969,21 @@ public class Main
                                         gov = impTagInfo.get(Integer.parseInt(subjectInfo[0]))[17];
                                         tempNum2q = Integer.parseInt(ruler) + tempNum;
                                         ruler = Integer.toString(tempNum2q);
+                                    } else { //if does not own capital, check if both are merchant republics
+                                        String overlordGov = Processing.checkGovList(impTagInfo.get(Integer.parseInt(subjectInfo[0]))[17],govMap);
+                                        if (overlordGov.equals("republic") && gov.equals("republic") && republicOption.equals("repMer")) {
+                                            gov = "monarchy"; //Merchant republics under merchant republics crash CK2
+                                        } //If mrepublic is subject to another mrepublic, become feudal to be playable
                                     }
+                                    
                                 }
 
                             }
                             //LOGGER.info("Creating province "+importedInfo[0]+" at ID "+aq4+" ruled by "+ruler);
+                            
 
                             Output.provinceCreation(Integer.toString(aq4),Output.cultureOutput(ck2ProvInfo[1][aq4]),Output.religionOutput(ck2ProvInfo[2][aq4]),
-                                modDirectory, importedInfo[1],importedInfo[0],gov,ck2PopTotals[aq4],bList,saveMonuments,aq4);
+                                modDirectory, importedInfo[1],importedInfo[0],gov,ck2PopTotals[aq4],bList,saveMonuments,republicOption,aq4);
 
                             Output.ctitleCreation(importedInfo[0],ruler,modDirectory,aq4,date);
                         }
@@ -989,3 +1027,4 @@ public class Main
         }
     }
 }
+
