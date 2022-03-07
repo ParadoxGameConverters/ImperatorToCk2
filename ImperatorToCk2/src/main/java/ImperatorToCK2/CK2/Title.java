@@ -25,10 +25,11 @@ public class Title {
             this.isEmpire = false;
         }
 
-        if (!imperatorCapital.equals("none")) {
-            this.capital = Importer.importConvList("provinceConversion.txt",Integer.parseInt(imperatorCapital))[1];
+        if (imperatorCapital.equals("none")) {
+            this.capital = Optional.empty();
         } else {
-            this.capital = "none";
+            String capital = Importer.importConvList("provinceConversion.txt", Integer.parseInt(imperatorCapital))[1];
+            this.capital = Optional.of(capital);
         }
 
         this.rank = rank;
@@ -42,6 +43,6 @@ public class Title {
     public final Optional<String> color;
     public final boolean isRepublic;
     public final boolean isEmpire;
-    public final String capital;
+    public final Optional<String> capital;
     public final String rank;
 }
