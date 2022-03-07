@@ -126,7 +126,13 @@ public class Output
         String oldDynasty = irDynasty;
 
         if (!government.equals("palace")) { //if palace, don't recalculate dynasty and recreate title
-            Title title = new Title(irTAG, irCOLOR, government, Optional.of(Integer.parseInt(capital)), rank);
+            Optional<Integer> capitalNumber;
+            if (capital.equals("none")) {
+                capitalNumber = Optional.empty();
+            } else {
+                capitalNumber = Optional.of(Integer.parseInt(capital));
+            }
+            Title title = new Title(irTAG, irCOLOR, government, capitalNumber, rank);
             titleCreationCommon(title, Directory);
             irDynasty = Processing.calcDynID(irDynasty);
         }
