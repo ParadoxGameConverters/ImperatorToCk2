@@ -4,7 +4,7 @@ import java.util.Optional;
 
 public class Title {
     public Title(String imperatorTag, String imperatorColor, String government, String capital, String rank) {
-        this.name = rank +"_" + imperatorTag;
+        this.name = rank + "_" + imperatorTag;
 
         if (imperatorColor.equals("none")) {
             this.color = Optional.empty();
@@ -12,7 +12,17 @@ public class Title {
             this.color = Optional.of(imperatorColor);
         }
 
-        this.government = government;
+        if (government.equals("republic")) {
+            this.isRepublic = true;
+        } else {
+            this.isRepublic = false;
+        }
+        if (government.equals("imperium") && rank.equals("e")) {
+            this.isEmpire = true;
+        } else {
+            this.isEmpire = false;
+        }
+
         this.capital = capital;
         this.rank = rank;
     }
@@ -23,7 +33,8 @@ public class Title {
 
     private final String name;
     public final Optional<String> color;
-    public final String government;
+    public final boolean isRepublic;
+    public final boolean isEmpire;
     public final String capital;
     public final String rank;
 }
