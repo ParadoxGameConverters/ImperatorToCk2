@@ -79,14 +79,13 @@ public class Output
         return ck2CultureInfo;
     }
 
-    public static void titleCreationCommon(Title title, String Directory) throws IOException
-    {
+    public static void titleCreationCommon(Title title, String Directory) throws IOException {
         Directory = Directory + "\\common\\landed_titles";
-        FileOutputStream fileOut= new FileOutputStream(Directory + '\\' + title.getName() + "_LandedTitle.txt");
+        FileOutputStream fileOut = new FileOutputStream(Directory + '\\' + title.getName() + "_LandedTitle.txt");
         PrintWriter out = new PrintWriter(fileOut);
 
         out.println(title.getName() + " = {");
-        
+
         if (title.getColor().isPresent()) {
             String color = title.getColor().get();
             out.println("\tcolor={ " + color + " }");
