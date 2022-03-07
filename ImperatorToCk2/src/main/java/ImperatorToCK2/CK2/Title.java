@@ -26,13 +26,7 @@ public class Title {
             this.isEmpire = false;
         }
 
-        if (imperatorCapital.isEmpty()) {
-            this.capital = Optional.empty();
-        } else {
-            Integer capital = Integer
-                    .parseInt(Importer.importConvList("provinceConversion.txt", imperatorCapital.get())[1]);
-            this.capital = Optional.of(capital);
-        }
+        this.capital = convertCapital(imperatorCapital);
 
         this.rank = rank;
     }
@@ -47,4 +41,14 @@ public class Title {
     public final boolean isEmpire;
     public final Optional<Integer> capital;
     public final String rank;
+
+    private Optional<Integer> convertCapital(Optional<Integer> imperatorCapital) throws IOException {
+        if (imperatorCapital.isEmpty()) {
+            return Optional.empty();
+        } else {
+            Integer capital = Integer
+                    .parseInt(Importer.importConvList("provinceConversion.txt", imperatorCapital.get())[1]);
+            return Optional.of(capital);
+        }
+    }
 }
