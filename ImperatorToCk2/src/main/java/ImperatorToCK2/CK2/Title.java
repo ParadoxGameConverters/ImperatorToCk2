@@ -5,7 +5,8 @@ import ImperatorToCK2.Importer;
 import java.io.IOException;
 
 public class Title {
-    public Title(String imperatorTag, String imperatorColor, String government, String imperatorCapital, String rank) throws IOException {
+    public Title(String imperatorTag, String imperatorColor, String government, Optional<Integer> imperatorCapital,
+            String rank) throws IOException {
         this.name = rank + "_" + imperatorTag;
 
         if (imperatorColor.equals("none")) {
@@ -25,10 +26,11 @@ public class Title {
             this.isEmpire = false;
         }
 
-        if (imperatorCapital.equals("none")) {
+        if (imperatorCapital.isEmpty()) {
             this.capital = Optional.empty();
         } else {
-            Integer capital = Integer.parseInt(Importer.importConvList("provinceConversion.txt", Integer.parseInt(imperatorCapital))[1]);
+            Integer capital = Integer
+                    .parseInt(Importer.importConvList("provinceConversion.txt", imperatorCapital.get())[1]);
             this.capital = Optional.of(capital);
         }
 
