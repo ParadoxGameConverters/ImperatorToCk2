@@ -96,9 +96,9 @@ public class Output
             out.println("\tcapital = " + title.getCapital().get());
         }
         if (title.isRepublic()) {
-            out.println ("\tis_republic = yes"); //if it is a republic and republics are enabled  
+            out.println ("\tis_republic = yes");
         } else if (title.isEmpire()) {
-            out.println ("\tpurple_born_heirs = yes"); //if government is imperial, enable born in purple mechanic
+            out.println ("\tpurple_born_heirs = yes");
             out.println ("\thas_top_de_jure_capital = yes");
         }
         out.println ("}");
