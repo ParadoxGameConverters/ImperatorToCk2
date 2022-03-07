@@ -60,12 +60,12 @@ public class Title {
     }
 
     private Optional<Integer> convertCapital(Optional<Integer> imperatorCapital) throws IOException {
-        if (imperatorCapital.isEmpty()) {
-            return Optional.empty();
-        } else {
+        if (imperatorCapital.isPresent()) {
             Integer capital = Integer
                     .parseInt(Importer.importConvList("provinceConversion.txt", imperatorCapital.get())[1]);
             return Optional.of(capital);
+        } else {
+            return Optional.empty();
         }
     }
 }
