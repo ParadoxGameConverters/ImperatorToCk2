@@ -9,9 +9,9 @@ public class Title {
         this.rank = rank;
     }
 
-    public String irTAG;
-    public String irColor;
-    public String government;
-    public String capital;
-    public String rank;
+    public final String irTAG;
+    public final String irColor;
+    public final String government;
+    public final String capital;
+    public final String rank;
 }
