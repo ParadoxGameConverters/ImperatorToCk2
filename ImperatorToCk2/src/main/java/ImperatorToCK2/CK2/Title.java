@@ -11,8 +11,8 @@ public class Title {
     private final boolean isEmpire;
     private final Optional<Integer> capital;
 
-    public Title(String imperatorTag, Optional<String> imperatorColor, String government, Optional<Integer> imperatorCapital,
-            String rank) throws IOException {
+    public Title(String imperatorTag, Optional<String> imperatorColor, String government,
+            Optional<Integer> imperatorCapital, String rank) throws IOException {
         this.name = rank + "_" + imperatorTag;
 
         this.color = imperatorColor;
