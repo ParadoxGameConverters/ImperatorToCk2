@@ -90,9 +90,10 @@ public class Output
         PrintWriter out = new PrintWriter(fileOut);
 
         out.println (title.getName() + " = {");
-        if (!title.irColor.equals("none")) {
-            out.println (tab+"color={ "+title.irColor+" }");
-            out.println (tab+"color2={ "+title.irColor+" }");
+        if (!title.color.isPresent()) {
+            String color = title.color.get();
+            out.println(tab + "color={ " + color + " }");
+            out.println(tab + "color2={ "+ color + " }");
         }
 
         if (!title.capital.equals("none")) { //governorships don't have set capitals
@@ -113,7 +114,11 @@ public class Output
         out.flush();
         fileOut.close();
 
-        return title.irColor;
+        if (!title.color.isPresent()) {
+            return title.color.get();
+        } else {
+            return "none";
+        }
     }
 
     public static ArrayList<String> titleCreation(String irTAG, String irKING, String irCOLOR, String government, String capital,String rank,String liege,
