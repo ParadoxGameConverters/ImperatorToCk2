@@ -1,9 +1,11 @@
 package ImperatorToCK2.CK2;
 
 import java.util.Optional;
+import ImperatorToCK2.Importer;
+import java.io.IOException;
 
 public class Title {
-    public Title(String imperatorTag, String imperatorColor, String government, String capital, String rank) {
+    public Title(String imperatorTag, String imperatorColor, String government, String imperatorCapital, String rank) throws IOException {
         this.name = rank + "_" + imperatorTag;
 
         if (imperatorColor.equals("none")) {
@@ -23,7 +25,12 @@ public class Title {
             this.isEmpire = false;
         }
 
-        this.capital = capital;
+        if (!imperatorCapital.equals("none")) {
+            this.capital = Importer.importConvList("provinceConversion.txt",Integer.parseInt(imperatorCapital))[1];
+        } else {
+            this.capital = "none";
+        }
+
         this.rank = rank;
     }
 

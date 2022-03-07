@@ -96,11 +96,7 @@ public class Output
         }
 
         if (!title.capital.equals("none")) { //governorships don't have set capitals
-
-            String capital = Importer.importConvList("provinceConversion.txt",Integer.parseInt(title.capital))[1];
-
-            out.println (tab+"capital = "+ capital);
-
+            out.println(tab + "capital = " + title.capital);
         }
         if (title.isRepublic) {
             out.println (tab+tab+tab+"is_republic = yes"); //if it is a republic and republics are enabled  
