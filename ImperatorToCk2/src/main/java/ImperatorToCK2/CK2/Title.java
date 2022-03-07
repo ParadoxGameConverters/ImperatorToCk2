@@ -11,15 +11,11 @@ public class Title {
     private final boolean isEmpire;
     private final Optional<Integer> capital;
 
-    public Title(String imperatorTag, String imperatorColor, String government, Optional<Integer> imperatorCapital,
+    public Title(String imperatorTag, Optional<String> imperatorColor, String government, Optional<Integer> imperatorCapital,
             String rank) throws IOException {
         this.name = rank + "_" + imperatorTag;
 
-        if (imperatorColor.equals("none")) {
-            this.color = Optional.empty();
-        } else {
-            this.color = Optional.of(imperatorColor);
-        }
+        this.color = imperatorColor;
 
         if (government.equals("republic")) {
             this.isRepublic = true;
