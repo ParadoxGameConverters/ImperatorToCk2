@@ -9,7 +9,11 @@ public class Title {
         this.rank = rank;
     }
 
-    public final String tag;
+    public final String getName() {
+        return rank +"_" + tag;
+    }
+
+    private final String tag;
     public final String irColor;
     public final String government;
     public final String capital;

@@ -85,10 +85,10 @@ public class Output
         String VM = "\\"; 
         VM = VM.substring(0);
         Directory = Directory + VM + "common" + VM + "landed_titles";
-        FileOutputStream fileOut= new FileOutputStream(Directory + VM + title.rank+"_" + title.tag + "_LandedTitle.txt");
+        FileOutputStream fileOut= new FileOutputStream(Directory + VM + title.getName() + "_LandedTitle.txt");
         PrintWriter out = new PrintWriter(fileOut);
 
-        out.println (title.rank + "_"+ title.tag + " = {");
+        out.println (title.getName() + " = {");
         if (!title.irColor.equals("none")) {
             out.println (tab+"color={ "+title.irColor+" }");
             out.println (tab+"color2={ "+title.irColor+" }");
