@@ -78,7 +78,7 @@ public class Output
         return ck2CultureInfo;
     }
 
-    public static String titleCreationCommon(Title title, String Directory) throws IOException
+    public static void titleCreationCommon(Title title, String Directory) throws IOException
     {
 
         String tab = "	";
@@ -112,12 +112,6 @@ public class Output
 
         out.flush();
         fileOut.close();
-
-        if (!title.color.isPresent()) {
-            return title.color.get();
-        } else {
-            return "none";
-        }
     }
 
     public static ArrayList<String> titleCreation(String irTAG, String irKING, String irCOLOR, String government, String capital,String rank,String liege,
