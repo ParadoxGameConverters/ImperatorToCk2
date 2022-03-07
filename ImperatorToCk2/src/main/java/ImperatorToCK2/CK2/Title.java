@@ -35,6 +35,14 @@ public class Title {
         this.capital = convertCapital(imperatorCapital);
     }
 
+    public Title(String imperatorTag) {
+        this.name = "b_" + imperatorTag;
+        this.color = Optional.empty();
+        this.isRepublic = false;
+        this.isEmpire = false;
+        this.capital = Optional.empty();
+    }
+
     public String getName() {
         return name;
     }

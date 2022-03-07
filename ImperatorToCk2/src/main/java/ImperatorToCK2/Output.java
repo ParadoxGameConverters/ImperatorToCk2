@@ -180,8 +180,7 @@ public class Output
             //If I:R government is republic and option is enabled, set to CK2 merchant republic (regardless of coastline requirements)
             
             String palace = irDynasty+"_"+irTAG;
-            Optional<Integer> emptyCapital = Optional.empty();
-            Title title = new Title(palace, "none", "none", emptyCapital, "b");
+            Title title = new Title(palace);
             titleCreationCommon(title, oldDirectory); //creates merchant palace for ruler's family
             convertedCharacters = titleCreation(palace,irKING,irCOLOR,"palace",capital,"b",rank+","+irTAG,date1,republicOption,irDynasty,
             dynList,impCharInfoList,convertedCharacters,tagIDNum,liegeGov,oldDirectory);
@@ -1171,8 +1170,7 @@ public class Output
                     
                     dynastyCreation(dynasty[0],headCharacter[7],headCharacter[16],directory);
                     
-                    Optional<Integer> emptyCapital = Optional.empty();
-                    Title title = new Title(palace, "none", "none", emptyCapital, "b");
+                    Title title = new Title(palace);
                     titleCreationCommon(title, directory); //creates merchant palace for ruler's family
                     convertedCharacters = titleCreation(palace,headNum,"none","palace","none","b",rank+","+tag,date,republicOption,newDynasty,dynList,
                     impCharInfoList,convertedCharacters,tagIDNum,liegeGov,directory);
