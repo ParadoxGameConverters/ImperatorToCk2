@@ -8,6 +8,7 @@ import java.io.FileOutputStream;
 import java.util.Random;
 import java.util.ArrayList;
 import java.io.File;
+import ImperatorToCK2.CK2.Title;
 /**
  * Information which is output
  *
@@ -78,32 +79,32 @@ public class Output
         return ck2CultureInfo;
     }
 
-    public static String titleCreationCommon(String irTAG, String irColor, String government,String capital,String rank, String Directory) throws IOException
+    public static String titleCreationCommon(Title title, String Directory) throws IOException
     {
 
         String tab = "	";
         String VM = "\\"; 
         VM = VM.substring(0);
         Directory = Directory + VM + "common" + VM + "landed_titles";
-        FileOutputStream fileOut= new FileOutputStream(Directory + VM + rank+"_" + irTAG + "_LandedTitle.txt");
+        FileOutputStream fileOut= new FileOutputStream(Directory + VM + title.rank+"_" + title.irTAG + "_LandedTitle.txt");
         PrintWriter out = new PrintWriter(fileOut);
 
-        out.println (rank+"_"+irTAG+" = {");
-        if (!irColor.equals("none")) {
-            out.println (tab+"color={ "+irColor+" }");
-            out.println (tab+"color2={ "+irColor+" }");
+        out.println (title.rank+"_"+ title.irTAG+" = {");
+        if (!title.irColor.equals("none")) {
+            out.println (tab+"color={ "+title.irColor+" }");
+            out.println (tab+"color2={ "+title.irColor+" }");
         }
 
-        if (!capital.equals("none")) { //governorships don't have set capitals
+        if (!title.capital.equals("none")) { //governorships don't have set capitals
 
-            capital = Importer.importConvList("provinceConversion.txt",Integer.parseInt(capital))[1];
+            String capital = Importer.importConvList("provinceConversion.txt",Integer.parseInt(title.capital))[1];
 
-            out.println (tab+"capital = "+capital);
+            out.println (tab+"capital = "+ capital);
 
         }
-        if ( government.equals("republic") ) {
+        if (title.government.equals("republic") ) {
             out.println (tab+tab+tab+"is_republic = yes"); //if it is a republic and republics are enabled  
-        } else if (government.equals("imperium") && rank.equals("e")) {
+        } else if (title.government.equals("imperium") && title.rank.equals("e")) {
             out.println (tab+"purple_born_heirs = yes"); //if government is imperial, enable born in purple mechanic
             out.println (tab+"has_top_de_jure_capital = yes");
         }
@@ -112,7 +113,7 @@ public class Output
         out.flush();
         fileOut.close();
 
-        return irColor;
+        return title.irColor;
     }
 
     public static ArrayList<String> titleCreation(String irTAG, String irKING, String irCOLOR, String government, String capital,String rank,String liege,
