@@ -133,7 +133,14 @@ public class Output
             } else {
                 capitalNumber = Optional.of(Integer.parseInt(capital));
             }
-            Title title = new Title(irTAG, irCOLOR, government, capitalNumber, rank);
+
+            Optional<String> imperatorColor;
+            if (irCOLOR.equals("none")) {
+                imperatorColor = Optional.empty();
+            } else {
+                imperatorColor = Optional.of(irCOLOR);
+            }
+            Title title = new Title(irTAG, imperatorColor, government, capitalNumber, rank);
             titleCreationCommon(title, Directory);
             irDynasty = Processing.calcDynID(irDynasty);
         }
