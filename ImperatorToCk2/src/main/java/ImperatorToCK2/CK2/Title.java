@@ -27,8 +27,6 @@ public class Title {
         }
 
         this.capital = convertCapital(imperatorCapital);
-
-        this.rank = rank;
     }
 
     public final String getName() {
@@ -40,7 +38,6 @@ public class Title {
     public final boolean isRepublic;
     public final boolean isEmpire;
     public final Optional<Integer> capital;
-    public final String rank;
 
     private Optional<Integer> convertCapital(Optional<Integer> imperatorCapital) throws IOException {
         if (imperatorCapital.isEmpty()) {
