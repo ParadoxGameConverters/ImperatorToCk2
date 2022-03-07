@@ -85,23 +85,26 @@ public class Output
         FileOutputStream fileOut= new FileOutputStream(Directory + '\\' + title.getName() + "_LandedTitle.txt");
         PrintWriter out = new PrintWriter(fileOut);
 
-        out.println (title.getName() + " = {");
+        out.println(title.getName() + " = {");
+        
         if (title.getColor().isPresent()) {
             String color = title.getColor().get();
             out.println("\tcolor={ " + color + " }");
-            out.println("\tcolor2={ "+ color + " }");
+            out.println("\tcolor2={ " + color + " }");
         }
 
         if (title.getCapital().isPresent()) {
             out.println("\tcapital = " + title.getCapital().get());
         }
+
         if (title.isRepublic()) {
-            out.println ("\tis_republic = yes");
+            out.println("\tis_republic = yes");
         } else if (title.isEmpire()) {
-            out.println ("\tpurple_born_heirs = yes");
-            out.println ("\thas_top_de_jure_capital = yes");
+            out.println("\tpurple_born_heirs = yes");
+            out.println("\thas_top_de_jure_capital = yes");
         }
-        out.println ("}");
+
+        out.println("}");
 
         out.flush();
         fileOut.close();
