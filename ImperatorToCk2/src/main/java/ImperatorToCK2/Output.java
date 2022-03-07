@@ -81,7 +81,7 @@ public class Output
 
     public static void titleCreationCommon(Title title, String Directory) throws IOException
     {
-        Directory = Directory + "\\common" + "\\landed_titles";
+        Directory = Directory + "\\common\\landed_titles";
         FileOutputStream fileOut= new FileOutputStream(Directory + '\\' + title.getName() + "_LandedTitle.txt");
         PrintWriter out = new PrintWriter(fileOut);
 
