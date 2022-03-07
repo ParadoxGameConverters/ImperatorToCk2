@@ -82,29 +82,25 @@ public class Output
 
     public static void titleCreationCommon(Title title, String Directory) throws IOException
     {
-
-        String tab = "	";
-        String VM = "\\"; 
-        VM = VM.substring(0);
-        Directory = Directory + VM + "common" + VM + "landed_titles";
-        FileOutputStream fileOut= new FileOutputStream(Directory + VM + title.getName() + "_LandedTitle.txt");
+        Directory = Directory + "\\common" + "\\landed_titles";
+        FileOutputStream fileOut= new FileOutputStream(Directory + '\\' + title.getName() + "_LandedTitle.txt");
         PrintWriter out = new PrintWriter(fileOut);
 
         out.println (title.getName() + " = {");
         if (title.getColor().isPresent()) {
             String color = title.getColor().get();
-            out.println(tab + "color={ " + color + " }");
-            out.println(tab + "color2={ "+ color + " }");
+            out.println("\tcolor={ " + color + " }");
+            out.println("\tcolor2={ "+ color + " }");
         }
 
         if (title.getCapital().isPresent()) {
-            out.println(tab + "capital = " + title.getCapital().get());
+            out.println("\tcapital = " + title.getCapital().get());
         }
         if (title.isRepublic()) {
-            out.println (tab+tab+tab+"is_republic = yes"); //if it is a republic and republics are enabled  
+            out.println ("\tis_republic = yes"); //if it is a republic and republics are enabled  
         } else if (title.isEmpire()) {
-            out.println (tab+"purple_born_heirs = yes"); //if government is imperial, enable born in purple mechanic
-            out.println (tab+"has_top_de_jure_capital = yes");
+            out.println ("\tpurple_born_heirs = yes"); //if government is imperial, enable born in purple mechanic
+            out.println ("\thas_top_de_jure_capital = yes");
         }
         out.println ("}");
 
