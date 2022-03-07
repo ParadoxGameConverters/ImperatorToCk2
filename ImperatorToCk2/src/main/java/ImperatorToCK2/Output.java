@@ -103,9 +103,9 @@ public class Output
             out.println (tab+"capital = "+ capital);
 
         }
-        if (title.government.equals("republic") ) {
+        if (title.isRepublic) {
             out.println (tab+tab+tab+"is_republic = yes"); //if it is a republic and republics are enabled  
-        } else if (title.government.equals("imperium") && title.rank.equals("e")) {
+        } else if (title.isEmpire) {
             out.println (tab+"purple_born_heirs = yes"); //if government is imperial, enable born in purple mechanic
             out.println (tab+"has_top_de_jure_capital = yes");
         }
