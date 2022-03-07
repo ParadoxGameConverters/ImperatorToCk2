@@ -130,7 +130,8 @@ public class Output
         String oldDynasty = irDynasty;
 
         if (!government.equals("palace")) { //if palace, don't recalculate dynasty and recreate title
-            titleCreationCommon(irTAG,irCOLOR,government,capital,rank,Directory);
+            Title title = new Title(irTAG,irCOLOR,government,capital,rank);
+            titleCreationCommon(title, Directory);
             irDynasty = Processing.calcDynID(irDynasty);
         }
         String oldDirectory = Directory;
@@ -183,7 +184,8 @@ public class Output
             //If I:R government is republic and option is enabled, set to CK2 merchant republic (regardless of coastline requirements)
             
             String palace = irDynasty+"_"+irTAG;
-            titleCreationCommon(palace,"none","none","none","b",oldDirectory); //creates merchant palace for ruler's family
+            Title title = new Title(palace, "none", "none", "none", "b");
+            titleCreationCommon(title, oldDirectory); //creates merchant palace for ruler's family
             convertedCharacters = titleCreation(palace,irKING,irCOLOR,"palace",capital,"b",rank+","+irTAG,date1,republicOption,irDynasty,
             dynList,impCharInfoList,convertedCharacters,tagIDNum,liegeGov,oldDirectory);
             convertedCharacters = createFamilies(dynList,irTAG,oldDynasty,rank,impCharInfoList,convertedCharacters,date1,republicOption,tagIDNum,
@@ -1172,7 +1174,8 @@ public class Output
                     
                     dynastyCreation(dynasty[0],headCharacter[7],headCharacter[16],directory);
                     
-                    titleCreationCommon(palace,"none","none","none","b",directory); //creates merchant palace for ruler's family
+                    Title title = new Title(palace, "none", "none", "none", "b");
+                    titleCreationCommon(title, directory); //creates merchant palace for ruler's family
                     convertedCharacters = titleCreation(palace,headNum,"none","palace","none","b",rank+","+tag,date,republicOption,newDynasty,dynList,
                     impCharInfoList,convertedCharacters,tagIDNum,liegeGov,directory);
                     
