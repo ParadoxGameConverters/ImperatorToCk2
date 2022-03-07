@@ -89,7 +89,7 @@ public class Output
         PrintWriter out = new PrintWriter(fileOut);
 
         out.println (title.getName() + " = {");
-        if (!title.color.isPresent()) {
+        if (title.color.isPresent()) {
             String color = title.color.get();
             out.println(tab + "color={ " + color + " }");
             out.println(tab + "color2={ "+ color + " }");
