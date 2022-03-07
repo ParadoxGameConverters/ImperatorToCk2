@@ -79,7 +79,7 @@ public class Output
         return ck2CultureInfo;
     }
 
-    public static void titleCreationCommon(Title title, String Directory) throws IOException {
+    public static void outputTitle(Title title, String Directory) throws IOException {
         Directory = Directory + "\\common\\landed_titles";
         FileOutputStream fileOut = new FileOutputStream(Directory + '\\' + title.getName() + "_LandedTitle.txt");
         PrintWriter out = new PrintWriter(fileOut);
@@ -138,7 +138,7 @@ public class Output
                 imperatorColor = Optional.of(irCOLOR);
             }
             Title title = new Title(irTAG, imperatorColor, government, capitalNumber, rank);
-            titleCreationCommon(title, Directory);
+            outputTitle(title, Directory);
             irDynasty = Processing.calcDynID(irDynasty);
         }
         String oldDirectory = Directory;
@@ -192,7 +192,7 @@ public class Output
             
             String palace = irDynasty+"_"+irTAG;
             Title title = new Title(palace);
-            titleCreationCommon(title, oldDirectory); //creates merchant palace for ruler's family
+            outputTitle(title, oldDirectory); //creates merchant palace for ruler's family
             convertedCharacters = titleCreation(palace,irKING,irCOLOR,"palace",capital,"b",rank+","+irTAG,date1,republicOption,irDynasty,
             dynList,impCharInfoList,convertedCharacters,tagIDNum,liegeGov,oldDirectory);
             convertedCharacters = createFamilies(dynList,irTAG,oldDynasty,rank,impCharInfoList,convertedCharacters,date1,republicOption,tagIDNum,
@@ -1182,7 +1182,7 @@ public class Output
                     dynastyCreation(dynasty[0],headCharacter[7],headCharacter[16],directory);
                     
                     Title title = new Title(palace);
-                    titleCreationCommon(title, directory); //creates merchant palace for ruler's family
+                    outputTitle(title, directory); //creates merchant palace for ruler's family
                     convertedCharacters = titleCreation(palace,headNum,"none","palace","none","b",rank+","+tag,date,republicOption,newDynasty,dynList,
                     impCharInfoList,convertedCharacters,tagIDNum,liegeGov,directory);
                     
