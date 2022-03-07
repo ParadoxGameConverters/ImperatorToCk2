@@ -91,18 +91,18 @@ public class Output
         PrintWriter out = new PrintWriter(fileOut);
 
         out.println (title.getName() + " = {");
-        if (title.color.isPresent()) {
-            String color = title.color.get();
+        if (title.getColor().isPresent()) {
+            String color = title.getColor().get();
             out.println(tab + "color={ " + color + " }");
             out.println(tab + "color2={ "+ color + " }");
         }
 
-        if (title.capital.isPresent()) {
-            out.println(tab + "capital = " + title.capital.get());
+        if (title.getCapital().isPresent()) {
+            out.println(tab + "capital = " + title.getCapital().get());
         }
-        if (title.isRepublic) {
+        if (title.isRepublic()) {
             out.println (tab+tab+tab+"is_republic = yes"); //if it is a republic and republics are enabled  
-        } else if (title.isEmpire) {
+        } else if (title.isEmpire()) {
             out.println (tab+"purple_born_heirs = yes"); //if government is imperial, enable born in purple mechanic
             out.println (tab+"has_top_de_jure_capital = yes");
         }

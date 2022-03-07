@@ -5,6 +5,12 @@ import ImperatorToCK2.Importer;
 import java.io.IOException;
 
 public class Title {
+    private final String name;
+    private final Optional<String> color;
+    private final boolean isRepublic;
+    private final boolean isEmpire;
+    private final Optional<Integer> capital;
+
     public Title(String imperatorTag, String imperatorColor, String government, Optional<Integer> imperatorCapital,
             String rank) throws IOException {
         this.name = rank + "_" + imperatorTag;
@@ -29,15 +35,25 @@ public class Title {
         this.capital = convertCapital(imperatorCapital);
     }
 
-    public final String getName() {
+    public String getName() {
         return name;
     }
 
-    private final String name;
-    public final Optional<String> color;
-    public final boolean isRepublic;
-    public final boolean isEmpire;
-    public final Optional<Integer> capital;
+    public Optional<String> getColor() {
+        return color;
+    }
+
+    public boolean isRepublic() {
+        return isRepublic;
+    }
+
+    public boolean isEmpire() {
+        return isEmpire;
+    }
+
+    public Optional<Integer> getCapital() {
+        return capital;
+    }
 
     private Optional<Integer> convertCapital(Optional<Integer> imperatorCapital) throws IOException {
         if (imperatorCapital.isEmpty()) {
