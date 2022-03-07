@@ -2,7 +2,7 @@ package ImperatorToCK2.CK2;
 
 public class Title {
     public Title(String imperatorTag, String irColor, String government, String capital, String rank) {
-        this.tag = imperatorTag;
+        this.name = rank +"_" + imperatorTag;
         this.irColor = irColor;
         this.government = government;
         this.capital = capital;
@@ -10,10 +10,10 @@ public class Title {
     }
 
     public final String getName() {
-        return rank +"_" + tag;
+        return name;
     }
 
-    private final String tag;
+    private final String name;
     public final String irColor;
     public final String government;
     public final String capital;
