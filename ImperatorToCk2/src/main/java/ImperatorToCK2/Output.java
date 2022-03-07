@@ -95,8 +95,8 @@ public class Output
             out.println(tab + "color2={ "+ color + " }");
         }
 
-        if (!title.capital.equals("none")) { //governorships don't have set capitals
-            out.println(tab + "capital = " + title.capital);
+        if (title.capital.isPresent()) {
+            out.println(tab + "capital = " + title.capital.get());
         }
         if (title.isRepublic) {
             out.println (tab+tab+tab+"is_republic = yes"); //if it is a republic and republics are enabled  
