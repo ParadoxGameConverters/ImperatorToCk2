@@ -10,6 +10,7 @@ import java.util.Random;
 import java.util.ArrayList;
 import ImperatorToCK2.CK2.LandedTitle;
 import ImperatorToCK2.CK2.Government;
+import ImperatorToCK2.CK2.Rank;
 
 /**
  * Information which is output
@@ -144,7 +145,21 @@ public class Output
             } else {
                 imperatorColor = Optional.of(irCOLOR);
             }
-            LandedTitle title = new LandedTitle(irTAG, imperatorColor, government, capitalNumber, rank);
+
+            Rank rankEnum;
+            if (rank == "e") {
+                rankEnum = Rank.EMPIRE;
+            } else if (rank == "k") {
+                rankEnum = Rank.KINGDOM;
+            } else if (rank == "d") {
+                rankEnum = Rank.DUCHY;
+            } else if (rank == "c") {
+                rankEnum = Rank.COUNTY;
+            } else { // (rank == "b")
+                rankEnum = Rank.BARONY;
+            }
+
+            LandedTitle title = new LandedTitle(irTAG, imperatorColor, government, capitalNumber, rankEnum);
             outputTitle(title, Directory);
             irDynasty = Processing.calcDynID(irDynasty);
         }

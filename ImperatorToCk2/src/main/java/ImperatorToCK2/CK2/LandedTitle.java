@@ -11,14 +11,14 @@ public class LandedTitle {
     private final Optional<Integer> capital;
 
     public LandedTitle(String imperatorTag, Optional<String> imperatorColor, String imperatorGovernment,
-            Optional<Integer> imperatorCapital, String rank) throws IOException {
-        this.name = rank + "_" + imperatorTag;
+            Optional<Integer> imperatorCapital, Rank rank) throws IOException {
+        this.name = rank.getLetter() + "_" + imperatorTag;
 
         this.color = imperatorColor;
 
         if (imperatorGovernment.equals("republic")) {
             this.government = Government.REPUBLIC;
-        } else if (imperatorGovernment.equals("imperium") && rank.equals("e")) {
+        } else if (imperatorGovernment.equals("imperium") && rank.equals(Rank.EMPIRE)) {
             this.government = Government.EMPIRE;
         } else {
             this.government = Government.MONARCHY;
@@ -28,7 +28,7 @@ public class LandedTitle {
     }
 
     public LandedTitle(String imperatorTag) {
-        this.name = "b_" + imperatorTag;
+        this.name = Rank.BARONY.getLetter() + "_" + imperatorTag;
         this.color = Optional.empty();
         this.government = Government.PALACE;
         this.capital = Optional.empty();
