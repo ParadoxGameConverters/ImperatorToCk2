@@ -10,9 +10,9 @@ public class LandedTitle {
     private final Government government;
     private final Optional<Integer> capital;
 
-    public LandedTitle(String imperatorTag, Optional<String> imperatorColor, String imperatorGovernment,
+    public LandedTitle(String tag, Optional<String> imperatorColor, String imperatorGovernment,
             Optional<Integer> imperatorCapital, Rank rank) throws IOException {
-        this.name = rank.getLetter() + "_" + imperatorTag;
+        this.name = rank.getLetter() + "_" + tag;
 
         this.color = imperatorColor;
 
@@ -27,8 +27,8 @@ public class LandedTitle {
         this.capital = convertCapital(imperatorCapital);
     }
 
-    public LandedTitle(String imperatorTag) {
-        this.name = Rank.BARONY.getLetter() + "_" + imperatorTag;
+    public LandedTitle(String tag) {
+        this.name = Rank.BARONY.getLetter() + "_" + tag;
         this.color = Optional.empty();
         this.government = Government.PALACE;
         this.capital = Optional.empty();
