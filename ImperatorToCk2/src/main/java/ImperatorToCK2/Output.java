@@ -146,22 +146,12 @@ public class Output
                 imperatorColor = Optional.of(irCOLOR);
             }
 
-            Rank rankEnum;
-            if (rank == "e") {
-                rankEnum = Rank.EMPIRE;
-            } else if (rank == "k") {
-                rankEnum = Rank.KINGDOM;
-            } else if (rank == "d") {
-                rankEnum = Rank.DUCHY;
-            } else if (rank == "c") {
-                rankEnum = Rank.COUNTY;
-            } else { // (rank == "b")
-                rankEnum = Rank.BARONY;
+            Optional<Rank> rankEnum = Rank.get(rank);
+            if (rankEnum.isPresent()) {
+                LandedTitle title = new LandedTitle(irTAG, imperatorColor, government, capitalNumber, rankEnum.get());
+                outputTitle(title, Directory);
+                irDynasty = Processing.calcDynID(irDynasty);
             }
-
-            LandedTitle title = new LandedTitle(irTAG, imperatorColor, government, capitalNumber, rankEnum);
-            outputTitle(title, Directory);
-            irDynasty = Processing.calcDynID(irDynasty);
         }
         String oldDirectory = Directory;
         Directory = Directory + VM + "history" + VM + "titles";
