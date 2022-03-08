@@ -4,13 +4,13 @@ import java.util.Optional;
 import ImperatorToCK2.Importer;
 import java.io.IOException;
 
-public class Title {
+public class LandedTitle {
     private final String name;
     private final Optional<String> color;
     private final Government government;
     private final Optional<Integer> capital;
 
-    public Title(String imperatorTag, Optional<String> imperatorColor, String imperatorGovernment,
+    public LandedTitle(String imperatorTag, Optional<String> imperatorColor, String imperatorGovernment,
             Optional<Integer> imperatorCapital, String rank) throws IOException {
         this.name = rank + "_" + imperatorTag;
 
@@ -27,7 +27,7 @@ public class Title {
         this.capital = convertCapital(imperatorCapital);
     }
 
-    public Title(String imperatorTag) {
+    public LandedTitle(String imperatorTag) {
         this.name = "b_" + imperatorTag;
         this.color = Optional.empty();
         this.government = Government.PALACE;

@@ -9,7 +9,7 @@ import java.util.Optional;
 import java.util.Random;
 import java.util.ArrayList;
 import java.io.File;
-import ImperatorToCK2.CK2.Title;
+import ImperatorToCK2.CK2.LandedTitle;
 import ImperatorToCK2.CK2.Government;
 
 /**
@@ -82,7 +82,7 @@ public class Output
         return ck2CultureInfo;
     }
 
-    public static void outputTitle(Title title, String Directory) throws IOException {
+    public static void outputTitle(LandedTitle title, String Directory) throws IOException {
         Directory = Directory + "\\common\\landed_titles";
         FileOutputStream fileOut = new FileOutputStream(Directory + '\\' + title.getName() + "_LandedTitle.txt");
         PrintWriter out = new PrintWriter(fileOut);
@@ -145,7 +145,7 @@ public class Output
             } else {
                 imperatorColor = Optional.of(irCOLOR);
             }
-            Title title = new Title(irTAG, imperatorColor, government, capitalNumber, rank);
+            LandedTitle title = new LandedTitle(irTAG, imperatorColor, government, capitalNumber, rank);
             outputTitle(title, Directory);
             irDynasty = Processing.calcDynID(irDynasty);
         }
@@ -196,7 +196,7 @@ public class Output
             //If I:R government is republic and option is enabled, set to CK2 merchant republic (regardless of coastline requirements)
 
             String palace = irDynasty+"_"+irTAG;
-            Title title = new Title(palace);
+            LandedTitle title = new LandedTitle(palace);
             outputTitle(title, oldDirectory); //creates merchant palace for ruler's family
             convertedCharacters = titleCreation(palace,irKING,irCOLOR,"palace",capital,"b",rank+","+irTAG,date1,republicOption,irDynasty,
                 dynList,impCharInfoList,convertedCharacters,tagIDNum,liegeGov,oldDirectory);
@@ -1256,7 +1256,7 @@ public class Output
 
                     dynastyCreation(dynasty[0],headCharacter[7],headCharacter[16],directory);
                     
-                    Title title = new Title(palace);
+                    LandedTitle title = new LandedTitle(palace);
                     outputTitle(title, directory); //creates merchant palace for ruler's family
                     convertedCharacters = titleCreation(palace,headNum,"none","palace","none","b",rank+","+tag,date,republicOption,newDynasty,dynList,
                         impCharInfoList,convertedCharacters,tagIDNum,liegeGov,directory);
