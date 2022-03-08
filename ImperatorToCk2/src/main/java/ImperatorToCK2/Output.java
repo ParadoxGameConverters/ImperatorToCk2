@@ -9,6 +9,8 @@ import java.util.Optional;
 import java.util.Random;
 import java.util.ArrayList;
 import ImperatorToCK2.CK2.Title;
+import ImperatorToCK2.CK2.Government;
+
 /**
  * Information which is output
  *
@@ -96,11 +98,16 @@ public class Output
             out.println("\tcapital = " + title.getCapital().get());
         }
 
-        if (title.isRepublic()) {
-            out.println("\tis_republic = yes");
-        } else if (title.isEmpire()) {
-            out.println("\tpurple_born_heirs = yes");
-            out.println("\thas_top_de_jure_capital = yes");
+        switch (title.getGovernment()) {
+            case REPUBLIC:
+                out.println("\tis_republic = yes");
+                break;
+            case EMPIRE:
+                out.println("\tpurple_born_heirs = yes");
+                out.println("\thas_top_de_jure_capital = yes");
+                break;
+            default:
+                // Do nothing for palaces and monarchies
         }
 
         out.println("}");
