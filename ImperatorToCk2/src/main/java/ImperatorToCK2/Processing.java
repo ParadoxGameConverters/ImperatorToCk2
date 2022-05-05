@@ -1,6 +1,6 @@
 package ImperatorToCK2;  
       
-   
+
 import java.util.Scanner;
 import java.io.IOException;
 import java.io.FileInputStream;
@@ -1264,6 +1264,7 @@ public class Processing
 
         return id;
     }
+
     public static String calcCharID (String id) //gives all IR character dynasties + 700000000 to prevent conflict
     {
         id = Integer.toString(1000000 + Integer.parseInt(id));
@@ -1293,6 +1294,75 @@ public class Processing
         }
 
         return head;
+
+    }
+
+    public static String deriveRgbFromHsv (String color) //Converts HSV to RGB, adapted from commonItems
+    {
+
+        {
+            float h = Float.parseFloat(color.split(" ")[0]);
+            float s = Float.parseFloat(color.split(" ")[1]);
+            float v = Float.parseFloat(color.split(" ")[2]);
+
+            float r = 0;
+            float g = 0;
+            float b = 0;
+            if (s == 0.0f) // achromatic (grey)
+            {
+                r = g = b = v;
+            }
+            else
+            {
+                if (h >= 1.0f)
+                    h = 0.0f;
+                int sector = (int)((h * 6.0f));
+                float fraction = h * 6.0f - (float)(sector);
+                float p = v * (1 - s);
+                float q = v * (1 - s * fraction);
+                float t = v * (1 - s * (1 - fraction));
+                switch (sector)
+                {
+                    case 0:
+                    r = v;
+                    g = t;
+                    b = p;
+                    break;
+                    case 1:
+                    r = q;
+                    g = v;
+                    b = p;
+                    break;
+                    case 2:
+                    r = p;
+                    g = v;
+                    b = t;
+                    break;
+                    case 3:
+                    r = p;
+                    g = q;
+                    b = v;
+                    break;
+                    case 4:
+                    r = t;
+                    g = p;
+                    b = v;
+                    break;
+                    case 5:
+                    r = v;
+                    g = p;
+                    b = q;
+                    break;
+                    default:
+                }
+            }
+            r *= 255;
+            g *= 255;
+            b *= 255;
+            color = r+" "+g+" "+b;
+        }
+        
+        return color;
 
     }
 
