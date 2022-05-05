@@ -158,7 +158,7 @@ public class Importer
         String vmm = scnr.nextLine();
         String qaaa = vmm;
         String[] output;   // Owner Culture Religeon PopTotal Buildings
-        output = new String[23];
+        output = new String[24];
 
         output[0] = "9999"; //default for no tag
         output[1] = "6969"; //default for no flag seed
@@ -180,6 +180,7 @@ public class Importer
         output[20] = "none"; //default for no governors/governorships, land will be directly held by the ruler
         output[21] = "9999"; //default for no historical tag used in nation formation
         output[22] = "k"; //default for no rank, ranks are not stored in the save file, will be calculated during output
+        output[23] = "noFlag"; //default for no flag
 
         impTagInfo.add(output); //default entry at ID 0
 
@@ -240,12 +241,15 @@ public class Importer
 
                                     //System.out.println ("Load 3 done");
                                 }
-
+                                else if (qaaa.split("=")[0].equals( tab+tab+tab+"flag" ) ) {
+                                    output[23] = qaaa.split("=")[1];
+                                    output[23] = output[23].substring(1,output[23].length()-1);
+                                }
                                 else if (qaaa.split("=")[0].equals( tab+tab+tab+tab+"seed" ) ) {
                                     output[1] = qaaa.split("=")[1];
                                 }
                                 else if (qaaa.split("=")[0].equals( tab+tab+tab+"gender_equality" ) ) {
-                                    output[2] = qaaa.split("=")[1]; //used for determining inheiratance laws
+                                    output[2] = qaaa.split("=")[1]; //will be used for determining inheiratance laws
                                 }
                                 else if (qaaa.split("=")[0].equals( tab+tab+tab+"color" ) ) {
 
@@ -376,6 +380,7 @@ public class Importer
                                     output[20] = "none"; //default for no governors/governorships, land will be directly held by the ruler
                                     output[21] = "9999"; //default for no historical tag used in nation formation
                                     output[22] = "k"; //default for no rank, ranks are not stored in the save file, will be calculated during output
+                                    output[23] = "noFlag"; //default for no flag
 
                                 }
                             }
@@ -933,8 +938,6 @@ public class Importer
         output[0] = tag; //default for no prov name, will just use prov ID
         output[1] = tag; //default for no prov adjective, will just use prov ID
         String idNum;
-        
-        
 
         try {
             while (endOrNot = true){
@@ -1275,7 +1278,7 @@ public class Importer
         return compressedOrNot;
 
     }
-    
+
     public static String[] importSaveInfo (String directory) throws IOException //imports basic save info, like version
     {
 
@@ -1305,12 +1308,12 @@ public class Importer
                 if (qaaa.split("=")[0].equals("version")){
                     output[0] = qaaa.split("=")[1];
                 }
-                
+
                 if (qaaa.split("=")[0].equals("date")){
                     output[1] = qaaa.split("=")[1];
                     endOrNot = false;
                 }
-                
+
                 if (qaaa.split("=")[0].equals("variables")){ //end of save has been found without finding save date
                     endOrNot = false;
                 }
@@ -1326,5 +1329,336 @@ public class Importer
 
     }
 
+    public static ArrayList<String[]> importFlag (String name) throws IOException
+    {
+        String VM = "\\";
+        VM = VM.substring(0);
+        name = name+VM+"game"+VM+"common"+VM+"coat_of_arms"+VM+"coat_of_arms"+VM+"00_pre_scripted_countries.txt";
+        
+        FileInputStream fileIn= new FileInputStream(name);
+        Scanner scnr= new Scanner(fileIn);
+
+        ArrayList<String[]> impFlagList= new ArrayList<String[]>();
+
+        String tab = "	";
+        char quote = '"';
+        String strQuote = quote+"_";
+        strQuote = strQuote.split("_")[0];
+        int flag = 0;
+
+        boolean endOrNot = true;
+        String qaaa;
+        String[] output;   // Owner Culture Religeon PopTotal Buildings
+        output = new String[5];
+
+        output[0] = "unnamedFlag"; //default for no tag/name
+        output[1] = "pattern_solid.tgaq"; //default for no pattern
+        output[2] = "none"; //default for color1, format = hsvOrRgb,r g b
+        output[3] = "none"; //default for color2, format = hsvOrRgb,r g b
+        output[4] = "0"; //default for no emblems, format is texture~_~color1~_~color2~_~scale~_~position~_~rotation~~(nextEmblem)
+        //~_~ divides aspects of an emblem, ~~ divides emblemst
+
+        impFlagList.add(output); //default at ID 0
+
+        try {
+            while (endOrNot = true){
+                endOrNot = false;
+
+                while (flag == 0) {
+                    qaaa = scnr.nextLine();
+                    qaaa = qaaa.replace(" = ","=");
+                    qaaa = qaaa.replace("= ","=");
+                    qaaa = qaaa.replace(" =","=");
+                    qaaa = qaaa.replace("    ",tab); //Some flags have strange formatting
+                    if (qaaa.contains( "=" ) && output[0].equals("unnamedFlag")) {
+                        output[0] = qaaa.split("=")[0];
+                    }
+                    if (qaaa.split("=")[0].equals(tab+"pattern") ) {
+                        output[1] = qaaa.split("=")[1];
+                        output[1] = output[1].substring(1,output[1].length()-1);
+                    }
+                    if (qaaa.split("=").length != 2) { //if using unusual formatting
+                        if (qaaa.contains("color1=")) {
+                            output[2] = qaaa.split(tab+"color1=")[1];
+                            output[2] = output[2].split(tab+"color2=")[0];
+                        }
+                        if (qaaa.contains("color2=")) {
+                            output[3] = qaaa.split("color2=")[1];
+                            output[3] = output[3].split(tab+"color3=")[0];
+                            output[3] = output[3].split("   "+"color3=")[0];
+                        }
+                    } else { //if using regular formatting
+                        if (qaaa.split("=")[0].equals(tab+"color1") ) {
+                            output[2] = qaaa.split("=")[1];
+                            if (qaaa.contains("rgb ")) {
+                                output[2] = output[2].split("rgb ")[1];
+                                output[2] = output[2].split(" }")[0];
+                                output[2] = "rgb," + output[2].substring(2,output[2].length()-1);
+                            }
+                            else if (qaaa.contains("hsv ")) {
+                                output[2] = output[2].split("hsv ")[1];
+                                output[2] = output[2].split(" }")[0];
+                                output[2] = "hsv," + output[2].substring(2,output[2].length()-1);
+                            } else {
+                                if (output[2].contains(strQuote)) {
+                                    output[2] = output[2].substring(1,output[2].length()-1);
+                                }
+                            }
+                        }
+                        if (qaaa.split("=")[0].equals(tab+"color2") ) {
+                            output[3] = qaaa.split("=")[1];
+                            if (qaaa.contains("rgb ")) {
+                                output[3] = output[3].split("rgb ")[1];
+                                output[3] = output[3].split(" }")[0];
+                                output[3] = "rgb," + output[3].substring(2,output[3].length()-1);
+                            }
+                            else if (qaaa.contains("hsv ")) {
+                                output[3] = output[3].split("hsv ")[1];
+                                output[3] = output[3].split(" }")[0];
+                                output[3] = "hsv," + output[3].substring(2,output[3].length()-1);
+                            } else {
+                                if (output[3].contains(strQuote)) {
+                                    output[3] = output[3].substring(1,output[3].length()-1);
+                                }
+                            }
+                        }
+                    }
+
+                    //emblem
+                    if (qaaa.contains("colored_emblem") || qaaa.contains("textured_emblem")) {
+                        String embTexture = "none";
+                        String embColor1 = "none";
+                        String embColor2 = "none";
+                        String embScale = "none";
+                        String embPos = "none";
+                        String embRot = "none";
+                        int instanceYes = 0; //If emblem has no intances, use colored emblem as instance, 0 for no 1 for yes
+                        while (!qaaa.equals(tab+"}")) {
+                            qaaa = scnr.nextLine();
+                            qaaa = qaaa.replace(" = ","=");
+                            qaaa = qaaa.replace("= ","=");
+                            qaaa = qaaa.replace(" =","=");
+                            //qaaa = qaaa.replace("  "," ");
+                            if (qaaa.split("=").length != 2) { //if using unusual formatting
+                                if (qaaa.contains("texture=")) {
+                                    embTexture = qaaa.split("texture=")[1];
+                                    embTexture = embTexture.split(" ")[0];
+                                    embTexture = embTexture.split(tab)[0];
+                                    embTexture = embTexture.substring(1,embTexture.length()-1);
+                                }
+                                if (qaaa.contains("color1=")) {
+                                    embColor1 = qaaa.split("color1=")[1];
+                                    embColor1 = embColor1.split(" ")[0];
+                                    embColor1 = embColor1.split(tab)[0];
+                                }
+                                if (qaaa.contains("color2=")) {
+                                    embColor2 = qaaa.split("color2=")[1];
+                                    embColor2 = embColor2.split(tab+"color3=")[0];
+                                    embColor2 = embColor2.split(" ")[0];
+                                    embColor2 = embColor2.split(tab)[0];
+                                }
+                            } else { //regular formatting
+
+                                if (qaaa.contains( "texture=" ) || qaaa.contains( "texture =" ) ) {
+                                    embTexture = qaaa.split("=")[1];
+                                    embTexture = embTexture.substring(1,embTexture.length()-1);
+                                }
+                                else if (qaaa.contains( "color1=" ) || qaaa.contains("color1 =") ) {
+                                    embColor1 = qaaa.split("=")[1];
+                                    if (embColor1.contains(strQuote)) {
+                                        embColor1 = embColor1.substring(1,embColor1.length()-1);
+                                    }
+                                    
+                                }
+                                else if (qaaa.contains( "color2=" ) || qaaa.contains("color2 =") ) {
+                                    embColor2 = qaaa.split("=")[1];
+                                    if (embColor2.contains(strQuote)) {
+                                        embColor2 = embColor2.substring(1,embColor2.length()-1);
+                                    }
+                                }
+                            }
+                            if (qaaa.contains("instance=") || qaaa.contains("instance =")) { //get instances
+                                instanceYes = 1;
+                                if (qaaa.split("=").length != 2) { //unusual formatting
+                                    if (qaaa.contains("scale=")) {
+                                        embScale = qaaa.split("scale=")[1];
+                                        embScale = embScale.replace("  "," ");
+                                        embScale = embScale.split(" }")[0];
+                                        embScale = embScale.substring(2,embScale.length());
+                                    }
+                                    if (qaaa.contains("position=")) {
+                                        embPos = qaaa.split("position=")[1];
+                                        embPos = embPos.split(" }")[0];
+                                        embPos = embPos.substring(2,embPos.length());
+                                    }
+                                    if (qaaa.contains("rotation=")) {
+                                        embRot = qaaa.split("rotation=")[1];
+                                        embRot = embRot.split(" ")[0];
+                                        //embRot = embRot.substring(2,embRot.length());
+                                    }
+                                    if (output[4].equals("0")) { //build emblem
+                                        output[4] = embTexture+"~_~"+embColor1+"~_~"+embColor2+"~_~"+embScale+"~_~"+embPos+"~_~"+embRot;
+                                    } else {
+                                        output[4] = output[4]+"~~"+embTexture+"~_~"+embColor1+"~_~"+embColor2+"~_~"+embScale+"~_~"+embPos+"~_~"+embRot;
+                                    }
+                                    embScale = "none";
+                                    embPos = "none";
+                                    embRot = "none";
+                                }
+                                else { //normal formatting
+
+                                    while (!qaaa.equals(tab+"}") ) {
+                                        qaaa = scnr.nextLine();
+                                        qaaa = qaaa.replace(" = ","=");
+                                        qaaa = qaaa.replace("= ","=");
+                                        qaaa = qaaa.replace(" =","=");
+                                        //qaaa = qaaa.replace("  "," ");
+                                        qaaa = qaaa.replace("    ",tab);
+                                        if (qaaa.contains("scale=")) {
+                                            embScale = qaaa.split("=")[1];
+                                            //embScale = embScale.replace("  "," ");
+                                            embScale = embScale.substring(2,embScale.length()-2);
+                                        }
+                                        if (qaaa.contains("position=")) {
+                                            embPos = qaaa.split("=")[1];
+                                            embPos = embPos.substring(2,embPos.length()-2);
+                                        }
+                                        if (qaaa.contains("rotation=")) {
+                                            embRot = qaaa.split("=")[1];
+                                            embRot = embRot.replace(" ","");
+                                        }
+                                        if (qaaa.equals(tab+tab+"}")) {
+                                            if (output[4].equals("0")) {//build emblem
+                                                output[4] = embTexture+"~_~"+embColor1+"~_~"+embColor2+"~_~"+embScale+"~_~"+embPos+"~_~"+embRot;
+                                            } else {
+                                                output[4] = output[4]+"~~"+embTexture+"~_~"+embColor1+"~_~"+embColor2+"~_~"+embScale+"~_~"+embPos+"~_~"+embRot;
+                                            }
+                                            embScale = "none";
+                                            embPos = "none";
+                                            embRot = "none";
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+                        if (instanceYes == 0) { //if emblem has no instances specified, generate instance
+                            if (output[4].equals("0")) {//build emblem
+                                output[4] = embTexture+"~_~"+embColor1+"~_~"+embColor2+"~_~"+embScale+"~_~"+embPos+"~_~"+embRot;
+                            } else {
+                                output[4] = output[4]+"~~"+embTexture+"~_~"+embColor1+"~_~"+embColor2+"~_~"+embScale+"~_~"+embPos+"~_~"+embRot;
+                            }
+                        }
+                    }
+
+                    if (qaaa.equals( "}" ) ) { //ends here
+
+                        String[] tmpOutput = new String[output.length];
+                        int aq2 = 0;
+                        while (aq2 < output.length) {
+                            tmpOutput[aq2] = output[aq2];
+                            aq2 = aq2 + 1;
+                        }
+
+                        impFlagList.add(tmpOutput);
+
+                        output[0] = "unnamedFlag"; //default for no tag/name
+                        output[1] = "pattern_solid.tga"; //default for no pattern
+                        output[2] = "none"; //default for color1, format = hsvOrRgb~r,g,b
+                        output[3] = "none"; //default for color2, format = hsvOrRgb~r,g,b
+                        output[4] = "0"; //default for no emblems, format is texture~_~color1~_~color2~_~scale~_~position~_~rotation~~(nextEmblem)
+
+                    }
+
+                }
+
+                //}
+            }
+
+        }catch (java.util.NoSuchElementException exception){
+            endOrNot = false;
+
+        }   
+
+        return impFlagList;
+
+    }
+
+    public static ArrayList<String[]> importColors (String name) throws IOException //named_colors for flags
+    {
+        String VM = "\\";
+        VM = VM.substring(0);
+        name = name+VM+"game"+VM+"common"+VM+"named_colors"+VM+"default_colors.txt";
+        
+        FileInputStream fileIn= new FileInputStream(name);
+        Scanner scnr= new Scanner(fileIn);
+
+        ArrayList<String[]> impColorList= new ArrayList<String[]>();
+
+        String tab = "	";
+
+        int flag = 0;
+
+        String keyWord = tab+1+"={";
+
+        int aqq = 0;
+
+        boolean endOrNot = true;
+        String vmm = scnr.nextLine();
+        String qaaa = vmm;
+        String[] output;   // Owner Culture Religeon PopTotal Buildings
+        output = new String[2];
+
+        output[0] = "none"; //default for no name
+        output[1] = "none"; //default for no color
+
+        impColorList.add(output); //default at ID 0
+
+        try {
+            while (flag == 0){
+                qaaa = scnr.nextLine();
+                qaaa = qaaa.replace(" "+tab,"");
+                qaaa = qaaa.replace(tab,"");
+                qaaa = qaaa.replace("    ","");
+                qaaa = qaaa.replace(" = ","=");
+                qaaa = qaaa.replace("= ","=");
+                qaaa = qaaa.replace(" =","=");
+                if (!qaaa.equals( "colors={" ) && qaaa.contains("=") ) {
+                    output[0] = qaaa.split("=")[0];
+                    output[1] = qaaa.split("=")[1];
+                    if (qaaa.contains("rgb ")) {
+                        output[1] = output[1].split("rgb ")[1];
+                        output[1] = output[1].split(" }")[0];
+                        output[1] = "rgb," + output[1].substring(2,output[1].length());
+                    }
+                    else if (qaaa.contains("hsv ")) {
+                        output[1] = output[1].split("hsv ")[1];
+                        output[1] = output[1].split(" }")[0];
+                        output[1] = "hsv," + output[1].substring(2,output[1].length());
+                    }
+                    String[] tmpOutput = new String[output.length];
+                    int aq2 = 0;
+                    while (aq2 < output.length) {
+                        tmpOutput[aq2] = output[aq2];
+                        aq2 = aq2 + 1;
+                    }
+
+                    impColorList.add(tmpOutput);
+
+                    output[0] = "none"; //default for no name
+                    output[1] = "none"; //default for no color
+                }
+
+            }
+        }catch (java.util.NoSuchElementException exception){
+            endOrNot = false;
+
+        }   
+
+        return impColorList;
+
+    }
+
     //developed originally by Shinymewtwo99
 }
+
