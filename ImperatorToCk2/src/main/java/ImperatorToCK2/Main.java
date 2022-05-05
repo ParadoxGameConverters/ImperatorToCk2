@@ -193,7 +193,9 @@ public class Main
             String saveMonuments = "tempMonuments.txt";
             
             ArrayList<String> govMap = Importer.importBasicFile("governmentConversion.txt"); //government mappings
+            LOGGER.info("Importing flag information...");
             ArrayList<String[]> flagList = Importer.importFlag(impGameDir);
+            LOGGER.info("Importing color information...");
             ArrayList<String[]> colorList = Importer.importColors(impGameDir);
             
             int compressedOrNot = Importer.compressTest(impDirSave); //0 for compressed, 1 for decompressed
@@ -1043,5 +1045,3 @@ public class Main
         }
     }
 }
-
-
