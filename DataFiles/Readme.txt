@@ -57,3 +57,21 @@ WtWSMS mod Steam link: https://steamcommunity.com/sharedfiles/filedetails/?id=12
 WtWSMS mod Forum link: https://forum.paradoxplaza.com/forum/forums/when-the-world-stopped-making-sense-mod.876/
 
  - AND ALL THE OTHERS WHO GAVE THEIR INPUT ON THE FORUM AND DISCORD -
+ 
+ Credit to ImageMagick Studio LLC for their ImageMagick software (magick.exe) used to generate Imperator:Rome flags.
+ Note: Neither ImageMagick Studio LLC nor their affiliates ensorse the Imperator:Rome to Crusader Kings II Converter, nor do they endorse the Paradox Game Converters 
+ Group or this redistribution of their software.
+ 
+ Below is the license under which the ImageMagick software (magick.exe) is redistributed:
+ 
+   Licensed under the ImageMagick License (the "License"); you may not use
+   this file except in compliance with the License.  You may obtain a copy
+   of the License at
+
+     https://imagemagick.org/script/license.php
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+   WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the
+   License for the specific language governing permissions and limitations
+   under the License.  
