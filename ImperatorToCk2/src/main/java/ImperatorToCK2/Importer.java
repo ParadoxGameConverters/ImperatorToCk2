@@ -1381,11 +1381,13 @@ public class Importer
                         if (qaaa.contains("color1=")) {
                             output[2] = qaaa.split(tab+"color1=")[1];
                             output[2] = output[2].split(tab+"color2=")[0];
+                            output[2] = output[2].replace(tab,"");
                         }
                         if (qaaa.contains("color2=")) {
                             output[3] = qaaa.split("color2=")[1];
                             output[3] = output[3].split(tab+"color3=")[0];
                             output[3] = output[3].split("   "+"color3=")[0];
+                            output[3] = output[3].replace(tab,"");
                         }
                     } else { //if using regular formatting
                         if (qaaa.split("=")[0].equals(tab+"color1") ) {
@@ -1404,6 +1406,7 @@ public class Importer
                                     output[2] = output[2].substring(1,output[2].length()-1);
                                 }
                             }
+                            output[2] = output[2].replace(tab,"");
                         }
                         if (qaaa.split("=")[0].equals(tab+"color2") ) {
                             output[3] = qaaa.split("=")[1];
@@ -1421,6 +1424,7 @@ public class Importer
                                     output[3] = output[3].substring(1,output[3].length()-1);
                                 }
                             }
+                            output[3] = output[3].replace(tab,"");
                         }
                     }
 
@@ -1450,12 +1454,14 @@ public class Importer
                                     embColor1 = qaaa.split("color1=")[1];
                                     embColor1 = embColor1.split(" ")[0];
                                     embColor1 = embColor1.split(tab)[0];
+                                    embColor1 = embColor1.replace(tab,"");
                                 }
                                 if (qaaa.contains("color2=")) {
                                     embColor2 = qaaa.split("color2=")[1];
                                     embColor2 = embColor2.split(tab+"color3=")[0];
                                     embColor2 = embColor2.split(" ")[0];
                                     embColor2 = embColor2.split(tab)[0];
+                                    embColor2 = embColor2.replace(tab,"");
                                 }
                             } else { //regular formatting
 
@@ -1468,13 +1474,14 @@ public class Importer
                                     if (embColor1.contains(strQuote)) {
                                         embColor1 = embColor1.substring(1,embColor1.length()-1);
                                     }
-                                    
+                                    embColor1 = embColor1.replace(tab,"");
                                 }
                                 else if (qaaa.contains( "color2=" ) || qaaa.contains("color2 =") ) {
                                     embColor2 = qaaa.split("=")[1];
                                     if (embColor2.contains(strQuote)) {
                                         embColor2 = embColor2.substring(1,embColor2.length()-1);
                                     }
+                                    embColor2 = embColor2.replace(tab,"");
                                 }
                             }
                             if (qaaa.contains("instance=") || qaaa.contains("instance =")) { //get instances
@@ -1661,4 +1668,3 @@ public class Importer
 
     //developed originally by Shinymewtwo99
 }
-
