@@ -1163,12 +1163,12 @@ public class Output
                 String color2 = flagSource[3];
                 String emblems = flagSource[4];
                 
-                System.out.println(ck2Tag+"__"+pattern+"__"+emblems);
+                //System.out.println(ck2Tag+"__"+pattern+"__"+emblems);
                 
                 color1 = getColor(color1,colorList);
                 color2 = getColor(color2,colorList);
-                System.out.println(color1);
-                System.out.println(color2);
+                //System.out.println(color1);
+                //System.out.println(color2);
                 
                 String devFlagName = "defaultOutput"+VM+"flagDev"+VM+ck2Tag+"Dev.gif";
                 String flagName = modDirectory+VM+"gfx"+VM+"flags"+VM+ck2Tag+".tga";
@@ -1178,7 +1178,7 @@ public class Output
                 String[] emblemList = emblems.split("~~");
                 int aq2 = 0;
                 while (aq2 < emblemList.length) {
-                    System.out.println(emblemList[aq2]);
+                    //System.out.println(emblemList[aq2]);
                     String[] emblem = emblemList[aq2].split("~_~");
                     String eTexture = irDirectory + VM + "game" + VM + "gfx" + VM + "coat_of_arms" + VM + "colored_emblems" + VM + emblem[0];
                     String eColor1 = emblem[1];
@@ -1199,16 +1199,16 @@ public class Output
                     
                     if (!eScale.equals("none")) {
                         irFlagScale(eName,eScale);
-                        System.out.println(eName+","+eScale+"_scale");
+                        //System.out.println(eName+","+eScale+"_scale");
                     }
                     
                     if (!ePos.equals("none")) {
                         irFlagPos(eName,ePos);
-                        System.out.println(eName+","+ePos+"_pos");
+                        //System.out.println(eName+","+ePos+"_pos");
                     }
                     if (!eRot.equals("none")) {
                         irFlagRotate(eName,eRot);
-                        System.out.println(eName+","+eRot+"_rot");
+                        //System.out.println(eName+","+eRot+"_rot");
                     }
                     
                     irFlagCombine(devFlagName,eName,devFlagName);
@@ -1313,7 +1313,7 @@ public class Output
     public static String irFlagScale(String name, String percent) throws IOException
     {
 
-        System.out.println(percent);
+        //System.out.println(percent);
         percent = percent.replace("  "," ");
         String[] numbers = percent.split(" ");
         double scaleNum1 = Double.parseDouble(numbers[0]) * 256;
@@ -1417,7 +1417,7 @@ public class Output
             numbers[0] = "0.5";
             numbers[1] = "0.5";
         }
-        System.out.println(numbers[0]);
+        //System.out.println(numbers[0]);
         int posNumX = (int)(Double.parseDouble(numbers[0]) * 256);
         int posNumY = (int)(Double.parseDouble(numbers[1]) * 256);
         String posXY = posNumX+","+posNumY;
@@ -1482,7 +1482,7 @@ public class Output
         int flag = 0;
         while (aqq < colorList.size() && flag == 0) {
             if (colorList.get(aqq)[0].equals(colorName)) {
-                System.out.println(colorList.get(aqq)[0]+","+colorList.get(aqq)[1]+","+colorName);
+                //System.out.println(colorList.get(aqq)[0]+","+colorList.get(aqq)[1]+","+colorName);
                 flag = 1; //end loop
                 String color = colorList.get(aqq)[1];
                 color = color.replace("  "," ");
