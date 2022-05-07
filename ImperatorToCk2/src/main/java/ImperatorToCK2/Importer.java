@@ -1430,19 +1430,19 @@ public class Importer
 
                     //emblem
                     if (qaaa.contains("colored_emblem") || qaaa.contains("textured_emblem")) {
-                        String embTexture = "none";
-                        String embColor1 = "none";
-                        String embColor2 = "none";
+                        String embTexture = "noTexture";
+                        String embColor1 = "noColor1";
+                        String embColor2 = "noColor2";
                         String embScale = "none";
                         String embPos = "none";
                         String embRot = "none";
                         int instanceYes = 0; //If emblem has no intances, use colored emblem as instance, 0 for no 1 for yes
+                        String tmpOutput = "0";
                         while (!qaaa.equals(tab+"}")) {
                             qaaa = scnr.nextLine();
                             qaaa = qaaa.replace(" = ","=");
                             qaaa = qaaa.replace("= ","=");
                             qaaa = qaaa.replace(" =","=");
-                            //qaaa = qaaa.replace("  "," ");
                             if (qaaa.split("=").length != 2) { //if using unusual formatting
                                 if (qaaa.contains("texture=")) {
                                     embTexture = qaaa.split("texture=")[1];
@@ -1503,10 +1503,10 @@ public class Importer
                                         embRot = embRot.split(" ")[0];
                                         //embRot = embRot.substring(2,embRot.length());
                                     }
-                                    if (output[4].equals("0")) { //build emblem
-                                        output[4] = embTexture+"~_~"+embColor1+"~_~"+embColor2+"~_~"+embScale+"~_~"+embPos+"~_~"+embRot;
+                                    if (tmpOutput.equals("0")) { //build emblem
+                                        tmpOutput = embTexture+"~_~"+embColor1+"~_~"+embColor2+"~_~"+embScale+"~_~"+embPos+"~_~"+embRot;
                                     } else {
-                                        output[4] = output[4]+"~~"+embTexture+"~_~"+embColor1+"~_~"+embColor2+"~_~"+embScale+"~_~"+embPos+"~_~"+embRot;
+                                        tmpOutput = tmpOutput+"~~"+embTexture+"~_~"+embColor1+"~_~"+embColor2+"~_~"+embScale+"~_~"+embPos+"~_~"+embRot;
                                     }
                                     embScale = "none";
                                     embPos = "none";
@@ -1534,11 +1534,15 @@ public class Importer
                                             embRot = qaaa.split("=")[1];
                                             embRot = embRot.replace(" ","");
                                         }
+                                        if (qaaa.contains("texture=")) {
+                                            embTexture = qaaa.split("=")[1];
+                                            embTexture = embRot.replace(" ","");
+                                        }
                                         if (qaaa.equals(tab+tab+"}")) {
-                                            if (output[4].equals("0")) {//build emblem
-                                                output[4] = embTexture+"~_~"+embColor1+"~_~"+embColor2+"~_~"+embScale+"~_~"+embPos+"~_~"+embRot;
+                                            if (tmpOutput.equals("0")) {//build emblem
+                                                tmpOutput = embTexture+"~_~"+embColor1+"~_~"+embColor2+"~_~"+embScale+"~_~"+embPos+"~_~"+embRot;
                                             } else {
-                                                output[4] = output[4]+"~~"+embTexture+"~_~"+embColor1+"~_~"+embColor2+"~_~"+embScale+"~_~"+embPos+"~_~"+embRot;
+                                                tmpOutput = tmpOutput+"~~"+embTexture+"~_~"+embColor1+"~_~"+embColor2+"~_~"+embScale+"~_~"+embPos+"~_~"+embRot;
                                             }
                                             embScale = "none";
                                             embPos = "none";
@@ -1549,11 +1553,29 @@ public class Importer
                             }
 
                         }
+                        if (embColor1.equals("noColor1")) {
+                                embColor1 = "none";
+                            }
+                        if (embColor2.equals("noColor2")) {
+                            embColor2 = "none";
+                        }
+                        if (embTexture.equals("noTexture")) {
+                            embTexture = "none";
+                        }
                         if (instanceYes == 0) { //if emblem has no instances specified, generate instance
                             if (output[4].equals("0")) {//build emblem
                                 output[4] = embTexture+"~_~"+embColor1+"~_~"+embColor2+"~_~"+embScale+"~_~"+embPos+"~_~"+embRot;
                             } else {
                                 output[4] = output[4]+"~~"+embTexture+"~_~"+embColor1+"~_~"+embColor2+"~_~"+embScale+"~_~"+embPos+"~_~"+embRot;
+                            }
+                        } else {
+                            tmpOutput = tmpOutput.replace("noColor1",embColor1);
+                            tmpOutput = tmpOutput.replace("noColor2",embColor2);
+                            tmpOutput = tmpOutput.replace("noTexture",embTexture);
+                            if (output[4].equals("0")) { //build emblem
+                                output[4] = tmpOutput;
+                            } else {
+                                output[4] = output[4]+"~~"+tmpOutput;
                             }
                         }
                     }
