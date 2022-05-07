@@ -1202,12 +1202,12 @@ public class Output
                         //System.out.println(eName+","+eScale+"_scale");
                     }
                     
-                    if (!ePos.equals("none")) {
-                        irFlagPos(eName,ePos);
-                        //System.out.println(eName+","+ePos+"_pos");
-                    }
                     if (!eRot.equals("none")) {
                         irFlagRotate(eName,eRot);
+                        //System.out.println(eName+","+ePos+"_pos");
+                    }
+                    if (!ePos.equals("none")) {
+                        irFlagPos(eName,ePos);
                         //System.out.println(eName+","+eRot+"_rot");
                     }
                     
@@ -1273,10 +1273,12 @@ public class Output
     
     public static String irFlagBackground(String oldName, String name, String color, String color2) throws IOException
     {
-
         irFlagColor(name,oldName,color,1);
         if (!color2.equals("none") && !oldName.contains("pattern_solid.tga")) {
-            irFlagColor(name,name,color2,2);
+            String layer2Name = name.replace(".gif","layer2.gif");
+            irFlagColor(layer2Name,oldName,"none",1);
+            irFlagColor(layer2Name,layer2Name,color2,2);
+            irFlagCombine(name,layer2Name,name);
         }
         //irFlagTest6c(name);
         
@@ -1414,8 +1416,7 @@ public class Output
         String[] numbers = position.split(" ");
         if (numbers.length < 2) { //in case flag has broken formatting (OEO's 0.5340.5, for example)
             //numbers[0] = position.split(".")[0] + "." + position.split(".")[1];
-            numbers[0] = "0.5";
-            numbers[1] = "0.5";
+            return "Malformed position data " + position;
         }
         //System.out.println(numbers[0]);
         int posNumX = (int)(Double.parseDouble(numbers[0]) * 256);
