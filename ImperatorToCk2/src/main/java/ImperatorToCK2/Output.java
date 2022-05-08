@@ -1139,14 +1139,10 @@ public class Output
 
     }
     
-    public static int generateFlag(String ck2Dir, String irDirectory, String rank, ArrayList<String[]> flagList, String tag, String flagID,
-    ArrayList<String[]> colorList, String modDirectory)
-    throws IOException
     //creates I:R flag
+    public static int generateFlag(String ck2Dir, String irDirectory, String rank, ArrayList<String[]> flagList, String tag, String flagID,
+    ArrayList<String[]> colorList, String modDirectory) throws IOException
     {
-
-        String VM = "\\";
-        VM = VM.substring(0);
         int flagCreated = 0; //if flag is successfully created, change to 1
         //output[2] format = hsvOrRgb,r g b
         //output[3] format = hsvOrRgb,r g b
@@ -1158,61 +1154,37 @@ public class Output
                 flag = 1; //end loop
                 String[] flagSource = flagList.get(aqq);
                 String ck2Tag = rank+"_"+tag;
-                String pattern = irDirectory + VM + "game" + VM + "gfx" + VM + "coat_of_arms" + VM + "patterns" + VM + flagSource[1];
+                String pattern = irDirectory + "/game/gfx/coat_of_arms/patterns/" + flagSource[1];
                 String color1 = flagSource[2];
                 String color2 = flagSource[3];
                 String emblems = flagSource[4];
                 
-                //System.out.println(ck2Tag+"__"+pattern+"__"+emblems);
-                
                 color1 = getColor(color1,colorList);
                 color2 = getColor(color2,colorList);
-                //System.out.println(color1);
-                //System.out.println(color2);
                 
-                String devFlagName = "defaultOutput"+VM+"flagDev"+VM+ck2Tag+"Dev.gif";
-                String flagName = modDirectory+VM+"gfx"+VM+"flags"+VM+ck2Tag+".tga";
+                String devFlagName = "defaultOutput/flagDev/"+ck2Tag+"Dev.gif";
+                String flagName = modDirectory+"/gfx/flags/"+ck2Tag+".tga";
                 
                 irFlagBackground(pattern,devFlagName,color1,color2);
                 
                 String[] emblemList = emblems.split("~~");
                 int aq2 = 0;
                 while (aq2 < emblemList.length) {
-                    //System.out.println(emblemList[aq2]);
                     String[] emblem = emblemList[aq2].split("~_~");
-                    String eTexture = irDirectory + VM + "game" + VM + "gfx" + VM + "coat_of_arms" + VM + "colored_emblems" + VM + emblem[0];
+                    String eTexture = irDirectory+"/game/gfx/coat_of_arms/colored_emblems/"+emblem[0];
                     String eColor1 = emblem[1];
                     String eColor2 = emblem[2];
                     String eScale = emblem[3];
                     String ePos = emblem[4];
                     String eRot= emblem[5];
-                    String eNameOld = "defaultOutput"+VM+"flagDev"+VM+"emblem"+aq2+"Old"+".gif";
-                    String eName = "defaultOutput"+VM+"flagDev"+VM+"emblem"+aq2+".gif";
-                    
+                    String eNameOld = "defaultOutput/flagDev/emblem"+aq2+"Old"+".gif";
+                    String eName = "defaultOutput/flagDev/emblem"+aq2+".gif";
                     eColor1 = getColor(eColor1,colorList);
                     if (!eColor2.equals("none")) {
                         eColor2 = getColor(eColor2,colorList);
                     }
                     
-                    irFlagBackground(eTexture,eNameOld,eColor1,eColor2);
-                    irFlagScaleExact(eNameOld,eName,"256","256"); //set's size to 256 x 256
-                    
-                    if (!eScale.equals("none")) {
-                        irFlagScale(eName,eScale);
-                        //System.out.println(eName+","+eScale+"_scale");
-                    }
-                    
-                    if (!eRot.equals("none")) {
-                        irFlagRotate(eName,eRot);
-                        //System.out.println(eName+","+ePos+"_pos");
-                    }
-                    if (!ePos.equals("none")) {
-                        irFlagPos(eName,ePos);
-                        //System.out.println(eName+","+eRot+"_rot");
-                    }
-                    
-                    irFlagCombine(devFlagName,eName,devFlagName);
-                    irFlagScaleExact(devFlagName,flagName,"128","128");
+                    irFlagEmblem(eTexture,eNameOld,eColor1,eColor2,eName,eScale,eRot,ePos,devFlagName,flagName);
                     flagCreated = 1; //Flag has been created
                     aq2 = aq2+1;
                 }
@@ -1271,7 +1243,28 @@ public class Output
         return convertedCharacters;
     }
     
-    public static String irFlagBackground(String oldName, String name, String color, String color2) throws IOException
+    public static void irFlagEmblem(String eTexture,String eNameOld,String eColor1,String eColor2,String eName,String eScale,
+    String eRot,String ePos,String devFlagName,String flagName) throws IOException //generates and applies emblem to flag
+    {
+        irFlagBackground(eTexture,eNameOld,eColor1,eColor2);
+        irFlagScaleExact(eNameOld,eName,"256","256"); //set's size to 256 x 256
+        
+        if (!eScale.equals("none")) {
+            irFlagScale(eName,eScale);
+        }
+        
+        if (!eRot.equals("none")) {
+            irFlagRotate(eName,eRot);
+        }
+        if (!ePos.equals("none")) {
+            irFlagPos(eName,ePos);
+        }
+        
+        irFlagCombine(devFlagName,eName,devFlagName);
+        irFlagScaleExact(devFlagName,flagName,"128","128");
+    }
+    
+    public static void irFlagBackground(String oldName, String name, String color, String color2) throws IOException
     {
         irFlagColor(name,oldName,color,1);
         if (!color2.equals("none") && !oldName.contains("pattern_solid.tga")) {
@@ -1280,16 +1273,10 @@ public class Output
             irFlagColor(layer2Name,layer2Name,color2,2);
             irFlagCombine(name,layer2Name,name);
         }
-        //irFlagTest6c(name);
-        
-        
-        String test = " ";
-        return test;
     }
     
-    public static String irFlagColor(String name, String oldName, String color, int oneOrTwo) throws IOException
+    public static void irFlagColor(String name, String oldName, String color, int oneOrTwo) throws IOException
     {
-
         String replaceColor = "red";
         if (oneOrTwo == 2) {
             replaceColor = "yellow";
@@ -1306,16 +1293,11 @@ public class Output
         rakalyCommand[8] = replaceColor;
         rakalyCommand[9] = name;
         Processing.fileExcecute(rakalyCommand);
-        
-        
-        String test = " ";
-        return test;
     }
     
     public static String irFlagScale(String name, String percent) throws IOException
     {
 
-        //System.out.println(percent);
         percent = percent.replace("  "," ");
         String[] numbers = percent.split(" ");
         double scaleNum1 = Double.parseDouble(numbers[0]) * 256;
@@ -1340,14 +1322,11 @@ public class Output
         rakalyCommand[7] = name;
         Processing.fileExcecute(rakalyCommand);
         irFlagCanvas(name,"256","256");
-        
-        String test = " ";
         return scaleNum1 + "x" + scaleNum2;
     }
     
-    public static String irFlagScaleExact(String oldName,String newName, String dim1, String dim2) throws IOException //scales based on exact dimensions
+    public static void irFlagScaleExact(String oldName,String newName, String dim1, String dim2) throws IOException //scales based on exact dimensions
     {
-
         String[] rakalyCommand = new String [8];
         rakalyCommand[0] = "magick.exe";
         rakalyCommand[1] = "convert";
@@ -1358,13 +1337,9 @@ public class Output
         rakalyCommand[6] = "92";
         rakalyCommand[7] = newName;
         Processing.fileExcecute(rakalyCommand);
-        
-        
-        String test = " ";
-        return test;
     }
     
-    public static String irFlagCanvas(String name,String dim1,String dim2) throws IOException //set's the canvas
+    public static void irFlagCanvas(String name,String dim1,String dim2) throws IOException //set's the canvas
     {
         String[] rakalyCommand = new String [8];
         rakalyCommand[0] = "magick.exe";
@@ -1377,21 +1352,10 @@ public class Output
         rakalyCommand[7] = name;
         Processing.fileExcecute(rakalyCommand);
         
-        
-        String test = " ";
-        return test;
-        
     }
     
-    public static String irFlagRotate(String name, String degrees) throws IOException
+    public static void irFlagRotate(String name, String degrees) throws IOException
     {
-        
-        String VM = "\\";
-        VM = VM.substring(0);
-        
-        //int degreeNum = Integer.parseInt(degrees) * -1;
-        //degrees = Integer.toString(degreeNum);
-        
         String[] rakalyCommand = new String [11];
         rakalyCommand[0] = "magick.exe";
         rakalyCommand[1] = "convert";
@@ -1405,20 +1369,15 @@ public class Output
         rakalyCommand[9] = degrees;
         rakalyCommand[10] = name;
         Processing.fileExcecute(rakalyCommand);
-        
-        String test = " ";
-        return VM;
     }
     
     public static String irFlagPos(String name, String position) throws IOException
     {
-
         String[] numbers = position.split(" ");
         if (numbers.length < 2) { //in case flag has broken formatting (OEO's 0.5340.5, for example)
             //numbers[0] = position.split(".")[0] + "." + position.split(".")[1];
             return "Malformed position data " + position;
         }
-        //System.out.println(numbers[0]);
         int posNumX = (int)(Double.parseDouble(numbers[0]) * 256);
         int posNumY = (int)(Double.parseDouble(numbers[1]) * 256);
         String posXY = posNumX+","+posNumY;
@@ -1439,9 +1398,8 @@ public class Output
         return test;
     }
     
-    public static String irFlagCombine(String background, String emblem, String product) throws IOException //combined test
+    public static void irFlagCombine(String background, String emblem, String product) throws IOException //combined test
     {
-
         String[] rakalyCommand = new String [7];
         rakalyCommand[0] = "magick.exe";
         rakalyCommand[1] = "composite";
@@ -1451,12 +1409,9 @@ public class Output
         rakalyCommand[5] = background;
         rakalyCommand[6] = product;
         Processing.fileExcecute(rakalyCommand);
-        
-        String test = " ";
-        return test;
     }
     
-    public static String irFlagFlip(String background, String product, String dim) throws IOException //combined test
+    public static void irFlagFlip(String background, String product, String dim) throws IOException //combined test
     {
         String flipOrFlop = "-flop"; //flof for x, flip for y
         if (dim.equals("y")) {
@@ -1468,22 +1423,16 @@ public class Output
         rakalyCommand[2] = flipOrFlop;
         rakalyCommand[3] = product;
         Processing.fileExcecute(rakalyCommand);
-        
-        String test = " ";
-        return test;
     }
     
     public static String getColor(String colorName,ArrayList<String[]> colorList) throws IOException
     //get's and converts I:R color to correct format
     {
 
-        String VM = "\\";
-        VM = VM.substring(0);
         int aqq = 0;
         int flag = 0;
         while (aqq < colorList.size() && flag == 0) {
             if (colorList.get(aqq)[0].equals(colorName)) {
-                //System.out.println(colorList.get(aqq)[0]+","+colorList.get(aqq)[1]+","+colorName);
                 flag = 1; //end loop
                 String color = colorList.get(aqq)[1];
                 color = color.replace("  "," ");
@@ -1509,3 +1458,4 @@ public class Output
     
     
 }
+
