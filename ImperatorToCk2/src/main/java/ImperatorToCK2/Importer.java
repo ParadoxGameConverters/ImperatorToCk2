@@ -1331,10 +1331,8 @@ public class Importer
 
     public static ArrayList<String[]> importFlag (String name) throws IOException
     {
-        String VM = "\\";
-        VM = VM.substring(0);
-        name = name+VM+"game"+VM+"common"+VM+"coat_of_arms"+VM+"coat_of_arms"+VM+"00_pre_scripted_countries.txt";
-        
+        name = name+"/game/common/coat_of_arms/coat_of_arms/00_pre_scripted_countries.txt";
+
         FileInputStream fileIn= new FileInputStream(name);
         Scanner scnr= new Scanner(fileIn);
 
@@ -1346,7 +1344,6 @@ public class Importer
         strQuote = strQuote.split("_")[0];
         int flag = 0;
 
-        boolean endOrNot = true;
         String qaaa;
         String[] output;   // Owner Culture Religeon PopTotal Buildings
         output = new String[5];
@@ -1356,256 +1353,247 @@ public class Importer
         output[2] = "none"; //default for color1, format = hsvOrRgb,r g b
         output[3] = "none"; //default for color2, format = hsvOrRgb,r g b
         output[4] = "0"; //default for no emblems, format is texture~_~color1~_~color2~_~scale~_~position~_~rotation~~(nextEmblem)
-        //~_~ divides aspects of an emblem, ~~ divides emblemst
+        //~_~ divides aspects of an emblem, ~~ divides emblems
 
         impFlagList.add(output); //default at ID 0
 
         try {
-            while (endOrNot = true){
-                endOrNot = false;
 
-                while (flag == 0) {
-                    qaaa = scnr.nextLine();
-                    qaaa = qaaa.replace(" = ","=");
-                    qaaa = qaaa.replace("= ","=");
-                    qaaa = qaaa.replace(" =","=");
-                    qaaa = qaaa.replace("    ",tab); //Some flags have strange formatting
-                    if (qaaa.contains( "=" ) && output[0].equals("unnamedFlag")) {
-                        output[0] = qaaa.split("=")[0];
+            while (flag == 0) {
+                qaaa = scnr.nextLine();
+                qaaa = qaaa.replace(" = ","=");
+                qaaa = qaaa.replace("= ","=");
+                qaaa = qaaa.replace(" =","=");
+                qaaa = qaaa.replace("    ",tab); //Some flags have strange formatting
+                if (qaaa.contains( "=" ) && output[0].equals("unnamedFlag")) {
+                    output[0] = qaaa.split("=")[0];
+                }
+                if (qaaa.split("=")[0].equals(tab+"pattern") ) {
+                    output[1] = qaaa.split("=")[1];
+                    output[1] = output[1].substring(1,output[1].length()-1);
+                }
+                if (qaaa.split("=").length != 2) { //if using unusual formatting
+                    if (qaaa.contains("color1=")) {
+                        output[2] = qaaa.split(tab+"color1=")[1];
+                        output[2] = output[2].split(tab+"color2=")[0];
+                        output[2] = output[2].replace(tab,"");
                     }
-                    if (qaaa.split("=")[0].equals(tab+"pattern") ) {
-                        output[1] = qaaa.split("=")[1];
-                        output[1] = output[1].substring(1,output[1].length()-1);
+                    if (qaaa.contains("color2=")) {
+                        output[3] = qaaa.split("color2=")[1];
+                        output[3] = output[3].split(tab+"color3=")[0];
+                        output[3] = output[3].split("   "+"color3=")[0];
+                        output[3] = output[3].replace(tab,"");
                     }
-                    if (qaaa.split("=").length != 2) { //if using unusual formatting
-                        if (qaaa.contains("color1=")) {
-                            output[2] = qaaa.split(tab+"color1=")[1];
-                            output[2] = output[2].split(tab+"color2=")[0];
-                            output[2] = output[2].replace(tab,"");
+                } else { //if using regular formatting
+                    if (qaaa.split("=")[0].equals(tab+"color1") ) {
+                        output[2] = qaaa.split("=")[1];
+                        if (qaaa.contains("rgb ")) {
+                            output[2] = output[2].split("rgb ")[1];
+                            output[2] = output[2].split(" }")[0];
+                            output[2] = "rgb," + output[2].substring(2,output[2].length()-1);
                         }
-                        if (qaaa.contains("color2=")) {
-                            output[3] = qaaa.split("color2=")[1];
-                            output[3] = output[3].split(tab+"color3=")[0];
-                            output[3] = output[3].split("   "+"color3=")[0];
-                            output[3] = output[3].replace(tab,"");
+                        else if (qaaa.contains("hsv ")) {
+                            output[2] = output[2].split("hsv ")[1];
+                            output[2] = output[2].split(" }")[0];
+                            output[2] = "hsv," + output[2].substring(2,output[2].length()-1);
+                        } else {
+                            if (output[2].contains(strQuote)) {
+                                output[2] = output[2].substring(1,output[2].length()-1);
+                            }
                         }
-                    } else { //if using regular formatting
-                        if (qaaa.split("=")[0].equals(tab+"color1") ) {
-                            output[2] = qaaa.split("=")[1];
-                            if (qaaa.contains("rgb ")) {
-                                output[2] = output[2].split("rgb ")[1];
-                                output[2] = output[2].split(" }")[0];
-                                output[2] = "rgb," + output[2].substring(2,output[2].length()-1);
-                            }
-                            else if (qaaa.contains("hsv ")) {
-                                output[2] = output[2].split("hsv ")[1];
-                                output[2] = output[2].split(" }")[0];
-                                output[2] = "hsv," + output[2].substring(2,output[2].length()-1);
-                            } else {
-                                if (output[2].contains(strQuote)) {
-                                    output[2] = output[2].substring(1,output[2].length()-1);
-                                }
-                            }
-                            output[2] = output[2].replace(tab,"");
-                        }
-                        if (qaaa.split("=")[0].equals(tab+"color2") ) {
-                            output[3] = qaaa.split("=")[1];
-                            if (qaaa.contains("rgb ")) {
-                                output[3] = output[3].split("rgb ")[1];
-                                output[3] = output[3].split(" }")[0];
-                                output[3] = "rgb," + output[3].substring(2,output[3].length()-1);
-                            }
-                            else if (qaaa.contains("hsv ")) {
-                                output[3] = output[3].split("hsv ")[1];
-                                output[3] = output[3].split(" }")[0];
-                                output[3] = "hsv," + output[3].substring(2,output[3].length()-1);
-                            } else {
-                                if (output[3].contains(strQuote)) {
-                                    output[3] = output[3].substring(1,output[3].length()-1);
-                                }
-                            }
-                            output[3] = output[3].replace(tab,"");
-                        }
+                        output[2] = output[2].replace(tab,"");
                     }
+                    if (qaaa.split("=")[0].equals(tab+"color2") ) {
+                        output[3] = qaaa.split("=")[1];
+                        if (qaaa.contains("rgb ")) {
+                            output[3] = output[3].split("rgb ")[1];
+                            output[3] = output[3].split(" }")[0];
+                            output[3] = "rgb," + output[3].substring(2,output[3].length()-1);
+                        }
+                        else if (qaaa.contains("hsv ")) {
+                            output[3] = output[3].split("hsv ")[1];
+                            output[3] = output[3].split(" }")[0];
+                            output[3] = "hsv," + output[3].substring(2,output[3].length()-1);
+                        } else {
+                            if (output[3].contains(strQuote)) {
+                                output[3] = output[3].substring(1,output[3].length()-1);
+                            }
+                        }
+                        output[3] = output[3].replace(tab,"");
+                    }
+                }
 
-                    //emblem
-                    if (qaaa.contains("colored_emblem") || qaaa.contains("textured_emblem")) {
-                        String embTexture = "noTexture";
-                        String embColor1 = "noColor1";
-                        String embColor2 = "noColor2";
-                        String embScale = "none";
-                        String embPos = "none";
-                        String embRot = "none";
-                        int instanceYes = 0; //If emblem has no intances, use colored emblem as instance, 0 for no 1 for yes
-                        String tmpOutput = "0";
-                        while (!qaaa.equals(tab+"}")) {
-                            qaaa = scnr.nextLine();
-                            qaaa = qaaa.replace(" = ","=");
-                            qaaa = qaaa.replace("= ","=");
-                            qaaa = qaaa.replace(" =","=");
-                            if (qaaa.split("=").length != 2) { //if using unusual formatting
-                                if (qaaa.contains("texture=")) {
-                                    embTexture = qaaa.split("texture=")[1];
-                                    embTexture = embTexture.split(" ")[0];
-                                    embTexture = embTexture.split(tab)[0];
-                                    embTexture = embTexture.substring(1,embTexture.length()-1);
-                                }
-                                if (qaaa.contains("color1=")) {
-                                    embColor1 = qaaa.split("color1=")[1];
-                                    embColor1 = embColor1.split(" ")[0];
-                                    embColor1 = embColor1.split(tab)[0];
-                                    embColor1 = embColor1.replace(tab,"");
-                                }
-                                if (qaaa.contains("color2=")) {
-                                    embColor2 = qaaa.split("color2=")[1];
-                                    embColor2 = embColor2.split(tab+"color3=")[0];
-                                    embColor2 = embColor2.split(" ")[0];
-                                    embColor2 = embColor2.split(tab)[0];
-                                    embColor2 = embColor2.replace(tab,"");
-                                }
-                            } else { //regular formatting
-
-                                if (qaaa.contains( "texture=" ) || qaaa.contains( "texture =" ) ) {
-                                    embTexture = qaaa.split("=")[1];
-                                    embTexture = embTexture.substring(1,embTexture.length()-1);
-                                }
-                                else if (qaaa.contains( "color1=" ) || qaaa.contains("color1 =") ) {
-                                    embColor1 = qaaa.split("=")[1];
-                                    if (embColor1.contains(strQuote)) {
-                                        embColor1 = embColor1.substring(1,embColor1.length()-1);
-                                    }
-                                    embColor1 = embColor1.replace(tab,"");
-                                }
-                                else if (qaaa.contains( "color2=" ) || qaaa.contains("color2 =") ) {
-                                    embColor2 = qaaa.split("=")[1];
-                                    if (embColor2.contains(strQuote)) {
-                                        embColor2 = embColor2.substring(1,embColor2.length()-1);
-                                    }
-                                    embColor2 = embColor2.replace(tab,"");
-                                }
+                //emblem
+                if (qaaa.contains("colored_emblem") || qaaa.contains("textured_emblem")) {
+                    String embTexture = "noTexture";
+                    String embColor1 = "noColor1";
+                    String embColor2 = "noColor2";
+                    String embScale = "none";
+                    String embPos = "none";
+                    String embRot = "none";
+                    int instanceYes = 0; //If emblem has no intances, use colored emblem as instance, 0 for no 1 for yes
+                    String tmpOutput = "0";
+                    while (!qaaa.equals(tab+"}")) {
+                        qaaa = scnr.nextLine();
+                        qaaa = qaaa.replace(" = ","=");
+                        qaaa = qaaa.replace("= ","=");
+                        qaaa = qaaa.replace(" =","=");
+                        if (qaaa.split("=").length != 2) { //if using unusual formatting
+                            if (qaaa.contains("texture=")) {
+                                embTexture = qaaa.split("texture=")[1];
+                                embTexture = embTexture.split(" ")[0];
+                                embTexture = embTexture.split(tab)[0];
+                                embTexture = embTexture.substring(1,embTexture.length()-1);
                             }
-                            if (qaaa.contains("instance=") || qaaa.contains("instance =")) { //get instances
-                                instanceYes = 1;
-                                if (qaaa.split("=").length != 2) { //unusual formatting
+                            if (qaaa.contains("color1=")) {
+                                embColor1 = qaaa.split("color1=")[1];
+                                embColor1 = embColor1.split(" ")[0];
+                                embColor1 = embColor1.split(tab)[0];
+                                embColor1 = embColor1.replace(tab,"");
+                            }
+                            if (qaaa.contains("color2=")) {
+                                embColor2 = qaaa.split("color2=")[1];
+                                embColor2 = embColor2.split(tab+"color3=")[0];
+                                embColor2 = embColor2.split(" ")[0];
+                                embColor2 = embColor2.split(tab)[0];
+                                embColor2 = embColor2.replace(tab,"");
+                            }
+                        } else { //regular formatting
+
+                            if (qaaa.contains( "texture=" ) || qaaa.contains( "texture =" ) ) {
+                                embTexture = qaaa.split("=")[1];
+                                embTexture = embTexture.substring(1,embTexture.length()-1);
+                            }
+                            else if (qaaa.contains( "color1=" ) || qaaa.contains("color1 =") ) {
+                                embColor1 = qaaa.split("=")[1];
+                                if (embColor1.contains(strQuote)) {
+                                    embColor1 = embColor1.substring(1,embColor1.length()-1);
+                                }
+                                embColor1 = embColor1.replace(tab,"");
+                            }
+                            else if (qaaa.contains( "color2=" ) || qaaa.contains("color2 =") ) {
+                                embColor2 = qaaa.split("=")[1];
+                                if (embColor2.contains(strQuote)) {
+                                    embColor2 = embColor2.substring(1,embColor2.length()-1);
+                                }
+                                embColor2 = embColor2.replace(tab,"");
+                            }
+                        }
+                        if (qaaa.contains("instance=") || qaaa.contains("instance =")) { //get instances
+                            instanceYes = 1;
+                            if (qaaa.split("=").length != 2) { //unusual formatting
+                                if (qaaa.contains("scale=")) {
+                                    embScale = qaaa.split("scale=")[1];
+                                    embScale = embScale.replace("  "," ");
+                                    embScale = embScale.split(" }")[0];
+                                    embScale = embScale.substring(2,embScale.length());
+                                }
+                                if (qaaa.contains("position=")) {
+                                    embPos = qaaa.split("position=")[1];
+                                    embPos = embPos.split(" }")[0];
+                                    embPos = embPos.substring(2,embPos.length());
+                                }
+                                if (qaaa.contains("rotation=")) {
+                                    embRot = qaaa.split("rotation=")[1];
+                                    embRot = embRot.split(" ")[0];
+                                }
+                                if (tmpOutput.equals("0")) { //build emblem
+                                    tmpOutput = embTexture+"~_~"+embColor1+"~_~"+embColor2+"~_~"+embScale+"~_~"+embPos+"~_~"+embRot;
+                                } else {
+                                    tmpOutput = tmpOutput+"~~"+embTexture+"~_~"+embColor1+"~_~"+embColor2+"~_~"+embScale+"~_~"+embPos+"~_~"+embRot;
+                                }
+                                embScale = "none";
+                                embPos = "none";
+                                embRot = "none";
+                            }
+                            else { //normal formatting
+
+                                while (!qaaa.equals(tab+"}") ) {
+                                    qaaa = scnr.nextLine();
+                                    qaaa = qaaa.replace(" = ","=");
+                                    qaaa = qaaa.replace("= ","=");
+                                    qaaa = qaaa.replace(" =","=");
+                                    qaaa = qaaa.replace("    ",tab);
                                     if (qaaa.contains("scale=")) {
-                                        embScale = qaaa.split("scale=")[1];
-                                        embScale = embScale.replace("  "," ");
-                                        embScale = embScale.split(" }")[0];
-                                        embScale = embScale.substring(2,embScale.length());
+                                        embScale = qaaa.split("=")[1];
+                                        embScale = embScale.substring(2,embScale.length()-2);
                                     }
                                     if (qaaa.contains("position=")) {
-                                        embPos = qaaa.split("position=")[1];
-                                        embPos = embPos.split(" }")[0];
-                                        embPos = embPos.substring(2,embPos.length());
+                                        embPos = qaaa.split("=")[1];
+                                        embPos = embPos.substring(2,embPos.length()-2);
                                     }
                                     if (qaaa.contains("rotation=")) {
-                                        embRot = qaaa.split("rotation=")[1];
-                                        embRot = embRot.split(" ")[0];
-                                        //embRot = embRot.substring(2,embRot.length());
+                                        embRot = qaaa.split("=")[1];
+                                        embRot = embRot.replace(" ","");
                                     }
-                                    if (tmpOutput.equals("0")) { //build emblem
-                                        tmpOutput = embTexture+"~_~"+embColor1+"~_~"+embColor2+"~_~"+embScale+"~_~"+embPos+"~_~"+embRot;
-                                    } else {
-                                        tmpOutput = tmpOutput+"~~"+embTexture+"~_~"+embColor1+"~_~"+embColor2+"~_~"+embScale+"~_~"+embPos+"~_~"+embRot;
+                                    if (qaaa.contains("texture=")) {
+                                        embTexture = qaaa.split("=")[1];
+                                        embTexture = embRot.replace(" ","");
                                     }
-                                    embScale = "none";
-                                    embPos = "none";
-                                    embRot = "none";
-                                }
-                                else { //normal formatting
-
-                                    while (!qaaa.equals(tab+"}") ) {
-                                        qaaa = scnr.nextLine();
-                                        qaaa = qaaa.replace(" = ","=");
-                                        qaaa = qaaa.replace("= ","=");
-                                        qaaa = qaaa.replace(" =","=");
-                                        //qaaa = qaaa.replace("  "," ");
-                                        qaaa = qaaa.replace("    ",tab);
-                                        if (qaaa.contains("scale=")) {
-                                            embScale = qaaa.split("=")[1];
-                                            //embScale = embScale.replace("  "," ");
-                                            embScale = embScale.substring(2,embScale.length()-2);
+                                    if (qaaa.equals(tab+tab+"}")) {
+                                        if (tmpOutput.equals("0")) {//build emblem
+                                            tmpOutput = embTexture+"~_~"+embColor1+"~_~"+embColor2+"~_~"+embScale+"~_~"+embPos+"~_~"+embRot;
+                                        } else {
+                                            tmpOutput = tmpOutput+"~~"+embTexture+"~_~"+embColor1+"~_~"+embColor2+"~_~"+embScale+"~_~"+embPos+"~_~"+embRot;
                                         }
-                                        if (qaaa.contains("position=")) {
-                                            embPos = qaaa.split("=")[1];
-                                            embPos = embPos.substring(2,embPos.length()-2);
-                                        }
-                                        if (qaaa.contains("rotation=")) {
-                                            embRot = qaaa.split("=")[1];
-                                            embRot = embRot.replace(" ","");
-                                        }
-                                        if (qaaa.contains("texture=")) {
-                                            embTexture = qaaa.split("=")[1];
-                                            embTexture = embRot.replace(" ","");
-                                        }
-                                        if (qaaa.equals(tab+tab+"}")) {
-                                            if (tmpOutput.equals("0")) {//build emblem
-                                                tmpOutput = embTexture+"~_~"+embColor1+"~_~"+embColor2+"~_~"+embScale+"~_~"+embPos+"~_~"+embRot;
-                                            } else {
-                                                tmpOutput = tmpOutput+"~~"+embTexture+"~_~"+embColor1+"~_~"+embColor2+"~_~"+embScale+"~_~"+embPos+"~_~"+embRot;
-                                            }
-                                            embScale = "none";
-                                            embPos = "none";
-                                            embRot = "none";
-                                        }
+                                        embScale = "none";
+                                        embPos = "none";
+                                        embRot = "none";
                                     }
                                 }
                             }
+                        }
 
-                        }
-                        if (embColor1.equals("noColor1")) {
-                                embColor1 = "none";
-                            }
-                        if (embColor2.equals("noColor2")) {
-                            embColor2 = "none";
-                        }
-                        if (embTexture.equals("noTexture")) {
-                            embTexture = "none";
-                        }
-                        if (instanceYes == 0) { //if emblem has no instances specified, generate instance
-                            if (output[4].equals("0")) {//build emblem
-                                output[4] = embTexture+"~_~"+embColor1+"~_~"+embColor2+"~_~"+embScale+"~_~"+embPos+"~_~"+embRot;
-                            } else {
-                                output[4] = output[4]+"~~"+embTexture+"~_~"+embColor1+"~_~"+embColor2+"~_~"+embScale+"~_~"+embPos+"~_~"+embRot;
-                            }
+                    }
+                    if (embColor1.equals("noColor1")) {
+                        embColor1 = "none";
+                    }
+                    if (embColor2.equals("noColor2")) {
+                        embColor2 = "none";
+                    }
+                    if (embTexture.equals("noTexture")) {
+                        embTexture = "none";
+                    }
+                    if (instanceYes == 0) { //if emblem has no instances specified, generate instance
+                        if (output[4].equals("0")) {//build emblem
+                            output[4] = embTexture+"~_~"+embColor1+"~_~"+embColor2+"~_~"+embScale+"~_~"+embPos+"~_~"+embRot;
                         } else {
-                            tmpOutput = tmpOutput.replace("noColor1",embColor1);
-                            tmpOutput = tmpOutput.replace("noColor2",embColor2);
-                            tmpOutput = tmpOutput.replace("noTexture",embTexture);
-                            if (output[4].equals("0")) { //build emblem
-                                output[4] = tmpOutput;
-                            } else {
-                                output[4] = output[4]+"~~"+tmpOutput;
-                            }
+                            output[4] = output[4]+"~~"+embTexture+"~_~"+embColor1+"~_~"+embColor2+"~_~"+embScale+"~_~"+embPos+"~_~"+embRot;
+                        }
+                    } else {
+                        tmpOutput = tmpOutput.replace("noColor1",embColor1);
+                        tmpOutput = tmpOutput.replace("noColor2",embColor2);
+                        tmpOutput = tmpOutput.replace("noTexture",embTexture);
+                        if (output[4].equals("0")) { //build emblem
+                            output[4] = tmpOutput;
+                        } else {
+                            output[4] = output[4]+"~~"+tmpOutput;
                         }
                     }
+                }
 
-                    if (qaaa.equals( "}" ) ) { //ends here
+                if (qaaa.equals( "}" ) ) { //ends here
 
-                        String[] tmpOutput = new String[output.length];
-                        int aq2 = 0;
-                        while (aq2 < output.length) {
-                            tmpOutput[aq2] = output[aq2];
-                            aq2 = aq2 + 1;
-                        }
-
-                        impFlagList.add(tmpOutput);
-
-                        output[0] = "unnamedFlag"; //default for no tag/name
-                        output[1] = "pattern_solid.tga"; //default for no pattern
-                        output[2] = "none"; //default for color1, format = hsvOrRgb~r,g,b
-                        output[3] = "none"; //default for color2, format = hsvOrRgb~r,g,b
-                        output[4] = "0"; //default for no emblems, format is texture~_~color1~_~color2~_~scale~_~position~_~rotation~~(nextEmblem)
-
+                    String[] tmpOutput = new String[output.length];
+                    int aq2 = 0;
+                    while (aq2 < output.length) {
+                        tmpOutput[aq2] = output[aq2];
+                        aq2 = aq2 + 1;
                     }
+
+                    impFlagList.add(tmpOutput);
+
+                    output[0] = "unnamedFlag"; //default for no tag/name
+                    output[1] = "pattern_solid.tga"; //default for no pattern
+                    output[2] = "none"; //default for color1, format = hsvOrRgb~r,g,b
+                    output[3] = "none"; //default for color2, format = hsvOrRgb~r,g,b
+                    output[4] = "0"; //default for no emblems, format is texture~_~color1~_~color2~_~scale~_~position~_~rotation~~(nextEmblem)
 
                 }
 
-                //}
             }
 
         }catch (java.util.NoSuchElementException exception){
-            endOrNot = false;
 
         }   
 
@@ -1615,10 +1603,8 @@ public class Importer
 
     public static ArrayList<String[]> importColors (String name) throws IOException //named_colors for flags
     {
-        String VM = "\\";
-        VM = VM.substring(0);
-        name = name+VM+"game"+VM+"common"+VM+"named_colors"+VM+"default_colors.txt";
-        
+        name = name+"/game/common/named_colors/default_colors.txt";
+
         FileInputStream fileIn= new FileInputStream(name);
         Scanner scnr= new Scanner(fileIn);
 
@@ -1628,11 +1614,6 @@ public class Importer
 
         int flag = 0;
 
-        String keyWord = tab+1+"={";
-
-        int aqq = 0;
-
-        boolean endOrNot = true;
         String vmm = scnr.nextLine();
         String qaaa = vmm;
         String[] output;   // Owner Culture Religeon PopTotal Buildings
@@ -1655,7 +1636,7 @@ public class Importer
                 if (!qaaa.equals( "colors={" ) && qaaa.contains("=") ) {
                     output[0] = qaaa.split("=")[0];
                     output[1] = qaaa.split("=")[1];
-                    if (qaaa.contains("rgb ")) {
+                    if (qaaa.contains("rgb ") || qaaa.contains("rgb ")) {
                         output[1] = output[1].split("rgb ")[1];
                         output[1] = output[1].split(" }")[0];
                         output[1] = "rgb," + output[1].substring(2,output[1].length());
@@ -1664,6 +1645,10 @@ public class Importer
                         output[1] = output[1].split("hsv ")[1];
                         output[1] = output[1].split(" }")[0];
                         output[1] = "hsv," + output[1].substring(2,output[1].length());
+                    }
+                    else if (qaaa.contains("={")) { //if colors do not specify rgb/hsv, default to rgb
+                        output[1] = output[1].split(" }")[0];
+                        output[1] = "rgb," + output[1].substring(2,output[1].length());
                     }
                     String[] tmpOutput = new String[output.length];
                     int aq2 = 0;
@@ -1680,7 +1665,6 @@ public class Importer
 
             }
         }catch (java.util.NoSuchElementException exception){
-            endOrNot = false;
 
         }   
 
