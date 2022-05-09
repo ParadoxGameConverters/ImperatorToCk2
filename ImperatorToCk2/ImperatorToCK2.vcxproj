@@ -300,7 +300,7 @@
       <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)</DestinationFolders>
       <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)</DestinationFolders>
     </CopyFileToFolders>
-    <CopyFileToFolders Include="Data_Files\ReadMe.txt">
+    <CopyFileToFolders Include="Data_Files\Readme.txt">
       <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)/..</DestinationFolders>
       <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)/..</DestinationFolders>
     </CopyFileToFolders>
