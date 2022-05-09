@@ -111,5 +111,8 @@
     <CopyFileToFolders Include="DataFiles\magick.exe">
       <Filter>Data Files\Configuration</Filter>
     </CopyFileToFolders>
+    <CopyFileToFolders Include="Data_Files\ReadMe.txt">
+      <Filter>Data Files</Filter>
+    </CopyFileToFolders>
   </ItemGroup>
 </Project>
