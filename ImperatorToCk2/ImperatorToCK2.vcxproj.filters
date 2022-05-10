@@ -108,5 +108,8 @@
     <CopyFileToFolders Include="governmentConversion.txt">
       <Filter>Data Files\Configuration</Filter>
     </CopyFileToFolders>
+    <CopyFileToFolders Include="DataFiles\magick.exe">
+      <Filter>Data Files\Configuration</Filter>
+    </CopyFileToFolders>
   </ItemGroup>
 </Project>
