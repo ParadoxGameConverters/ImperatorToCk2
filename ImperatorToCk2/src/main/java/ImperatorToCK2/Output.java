@@ -125,7 +125,7 @@ public class Output
         String irKING100 = "9"+irKING;
 
         String tab = "	";
-        
+
         String oldDynasty = irDynasty;
 
         if (!government.equals("palace")) { //if palace, don't recalculate dynasty and recreate title
@@ -155,9 +155,7 @@ public class Output
             out.println (tab+"holding_dynasty = "+irDynasty);
         }
 
-        
         if (!liege.equals("no_liege")) { //If country is a subject
-
             out.println (tab+"liege="+overlordRank+"_"+liege);
             if (!rank.equals("b") && !government.equals("palace")) {
                 out.println (tab+"de_jure_liege="+overlordRank+"_"+liege);
@@ -180,14 +178,14 @@ public class Output
         }
         if (government.equals("republic") && republicOption.equals("repMer")) { 
             //If I:R government is republic and option is enabled, set to CK2 merchant republic (regardless of coastline requirements)
-            
+
             String palace = irDynasty+"_"+irTAG;
             titleCreationCommon(palace,"none","none","none","b",oldDirectory); //creates merchant palace for ruler's family
             convertedCharacters = titleCreation(palace,irKING,irCOLOR,"palace",capital,"b",rank+","+irTAG,date1,republicOption,irDynasty,
-            dynList,impCharInfoList,convertedCharacters,tagIDNum,liegeGov,oldDirectory);
+                dynList,impCharInfoList,convertedCharacters,tagIDNum,liegeGov,oldDirectory);
             convertedCharacters = createFamilies(dynList,irTAG,oldDynasty,rank,impCharInfoList,convertedCharacters,date1,republicOption,tagIDNum,
-            liegeGov,oldDirectory);
-            
+                liegeGov,oldDirectory);
+
             govCreation(irTAG,rank,"m",oldDirectory);
         }
         out.println ("}");
@@ -266,7 +264,7 @@ public class Output
             holding1 = "city";   
             holding2 = "castle";   
         }
-        
+
         //System.out.println(gov+","+convRepublic);
 
         int popNum = Integer.parseInt(pops);
@@ -462,7 +460,6 @@ public class Output
         String mother100 = "9" + mother;
 
         String dead = "no";
-        
 
         if (sex.length() > 1) {
             if (sex.charAt(1) == '_') {
@@ -591,8 +588,6 @@ public class Output
         String birthday = Integer.toString(birthdayNum)+monthDay;
 
         //Military/Martial Charisma/Stewardship Zeal/Learning
-
-        
 
         aqq = 0;
         //100 Start date
@@ -1011,7 +1006,7 @@ public class Output
         VM = VM.substring(0);
         char VMq = '"';
         String tab = "	";
-        
+
         if (govFile.equals("i")) { //for convienience
             govFile = "imperial_governments.txt";
         } else if (govFile.equals("m")) {
@@ -1030,20 +1025,19 @@ public class Output
 
         int aqq = 0;
 
-            while (aqq < oldFile.size()) {
-                out.println (oldFile.get(aqq));
-                String key = oldFile.get(aqq).replace(tab,"");
-                key = key.replace("#","");
-                if (key.equals("title = e_TAG")) {
-                    String imperialTag = oldFile.get(aqq).replace("#","");
-                    imperialTag = imperialTag.replace("e_TAG",rank+"_"+title);
-                    out.println (imperialTag);
-                }
-
-                aqq = aqq + 1;
-
+        while (aqq < oldFile.size()) {
+            out.println (oldFile.get(aqq));
+            String key = oldFile.get(aqq).replace(tab,"");
+            key = key.replace("#","");
+            if (key.equals("title = e_TAG")) {
+                String imperialTag = oldFile.get(aqq).replace("#","");
+                imperialTag = imperialTag.replace("e_TAG",rank+"_"+title);
+                out.println (imperialTag);
             }
 
+            aqq = aqq + 1;
+
+        }
 
         out.flush();
         fileOut.close();
@@ -1071,19 +1065,17 @@ public class Output
 
         int aqq = 0;
 
-
-            while (aqq < oldFile.size()) {
-                out.println (oldFile.get(aqq));
-                if (oldFile.get(aqq).contains("e_TAG")) {
-                    String imperialTag = oldFile.get(aqq).replace("e_TAG",rank+"_"+title);
-                    imperialTag = imperialTag.replace("#","");
-                    out.println (imperialTag);
-                }
-
-                aqq = aqq + 1;
-
+        while (aqq < oldFile.size()) {
+            out.println (oldFile.get(aqq));
+            if (oldFile.get(aqq).contains("e_TAG")) {
+                String imperialTag = oldFile.get(aqq).replace("e_TAG",rank+"_"+title);
+                imperialTag = imperialTag.replace("#","");
+                out.println (imperialTag);
             }
 
+            aqq = aqq + 1;
+
+        }
 
         out.flush();
         fileOut.close();
@@ -1138,10 +1130,10 @@ public class Output
         }
 
     }
-    
+
     //creates I:R flag
     public static int generateFlag(String ck2Dir, String irDirectory, String rank, ArrayList<String[]> flagList, String tag, String flagID,
-    ArrayList<String[]> colorList, String modDirectory) throws IOException
+    ArrayList<String[]> colorList, ArrayList<String> flagGFXList, String modDirectory) throws IOException
     {
         int flagCreated = 0; //if flag is successfully created, change to 1
         //output[2] format = hsvOrRgb,r g b
@@ -1158,15 +1150,24 @@ public class Output
                 String color1 = flagSource[2];
                 String color2 = flagSource[3];
                 String emblems = flagSource[4];
-                
+
+                int aq3 = 0;
+                while (aq3 < flagGFXList.size()) {
+                    if (flagGFXList.get(aq3).contains(flagSource[1])) {
+                        pattern = flagGFXList.get(aq3);
+                        aq3 = flagGFXList.size();
+                    }
+                    aq3 = aq3 + 1;
+                }
+
                 color1 = getColor(color1,colorList);
                 color2 = getColor(color2,colorList);
-                
+
                 String devFlagName = "defaultOutput/flagDev/"+ck2Tag+"Dev.gif";
                 String flagName = modDirectory+"/gfx/flags/"+ck2Tag+".tga";
-                
+
                 irFlagBackground(pattern,devFlagName,color1,color2);
-                
+
                 String[] emblemList = emblems.split("~~");
                 int aq2 = 0;
                 while (aq2 < emblemList.length) {
@@ -1179,24 +1180,34 @@ public class Output
                     String eRot= emblem[5];
                     String eNameOld = "defaultOutput/flagDev/emblem"+aq2+"Old"+".gif";
                     String eName = "defaultOutput/flagDev/emblem"+aq2+".gif";
+
+                    int aq4 = 0;
+                    while (aq4 < flagGFXList.size()) {
+                        if (flagGFXList.get(aq4).contains(emblem[0])) {
+                            eTexture = flagGFXList.get(aq4);
+                            aq4 = flagGFXList.size();
+                        }
+                        aq4 = aq4 + 1;
+                    }
+
                     eColor1 = getColor(eColor1,colorList);
                     if (!eColor2.equals("none")) {
                         eColor2 = getColor(eColor2,colorList);
                     }
-                    
+
                     irFlagEmblem(eTexture,eNameOld,eColor1,eColor2,eName,eScale,eRot,ePos,devFlagName,flagName);
                     flagCreated = 1; //Flag has been created
                     aq2 = aq2+1;
                 }
-                
+
             }
             aqq = aqq + 1;
-            
+
         }
         return flagCreated;
 
     }
-    
+
     public static ArrayList<String> createFamilies (ArrayList<String> dynList, String tag, String rulerFamily, String rank,
     ArrayList<String[]> impCharInfoList,ArrayList<String> convertedCharacters,String date,String republicOption, int tagIDNum, 
     String liegeGov,String directory) throws IOException
@@ -1221,49 +1232,48 @@ public class Output
                     String head = Processing.calcHead(impCharInfoList,dynasty[4]);
                     String headNum = Processing.calcCharID(head);
                     String[] headCharacter = impCharInfoList.get(Integer.parseInt(head));
-                    
+
                     convertedCharacters = characterCreation(headNum, cultureOutput(headCharacter[1]),Output.religionOutput(headCharacter[2]),
-                    headCharacter[3],headCharacter[0],headCharacter[7],headCharacter[4],headCharacter[8],headCharacter[10],headCharacter[11],
-                    headCharacter[12],headCharacter[13],headCharacter[14],
-                    headCharacter[15],"palace","q","q",convertedCharacters,impCharInfoList,date,directory);
-                    
+                        headCharacter[3],headCharacter[0],headCharacter[7],headCharacter[4],headCharacter[8],headCharacter[10],headCharacter[11],
+                        headCharacter[12],headCharacter[13],headCharacter[14],
+                        headCharacter[15],"palace","q","q",convertedCharacters,impCharInfoList,date,directory);
+
                     dynastyCreation(dynasty[0],headCharacter[7],headCharacter[16],directory);
-                    
+
                     titleCreationCommon(palace,"none","none","none","b",directory); //creates merchant palace for ruler's family
                     convertedCharacters = titleCreation(palace,headNum,"none","palace","none","b",rank+","+tag,date,republicOption,newDynasty,dynList,
-                    impCharInfoList,convertedCharacters,tagIDNum,liegeGov,directory);
-                    
-                    
+                        impCharInfoList,convertedCharacters,tagIDNum,liegeGov,directory);
+
                 }
             }
             aqq = aqq + 1;
-            
+
         }
 
         return convertedCharacters;
     }
-    
+
     public static void irFlagEmblem(String eTexture,String eNameOld,String eColor1,String eColor2,String eName,String eScale,
     String eRot,String ePos,String devFlagName,String flagName) throws IOException //generates and applies emblem to flag
     {
         irFlagBackground(eTexture,eNameOld,eColor1,eColor2);
         irFlagScaleExact(eNameOld,eName,"256","256"); //set's size to 256 x 256
-        
+
         if (!eScale.equals("none")) {
             irFlagScale(eName,eScale);
         }
-        
+
         if (!eRot.equals("none")) {
             irFlagRotate(eName,eRot);
         }
         if (!ePos.equals("none")) {
             irFlagPos(eName,ePos);
         }
-        
+
         irFlagCombine(devFlagName,eName,devFlagName);
         irFlagScaleExact(devFlagName,flagName,"128","128");
     }
-    
+
     public static void irFlagBackground(String oldName, String name, String color, String color2) throws IOException
     {
         irFlagColor(name,oldName,color,1);
@@ -1274,7 +1284,7 @@ public class Output
             irFlagCombine(name,layer2Name,name);
         }
     }
-    
+
     public static void irFlagColor(String name, String oldName, String color, int oneOrTwo) throws IOException
     {
         String replaceColor = "red";
@@ -1294,7 +1304,7 @@ public class Output
         rakalyCommand[9] = name;
         Processing.fileExcecute(rakalyCommand);
     }
-    
+
     public static String irFlagScale(String name, String percent) throws IOException
     {
 
@@ -1310,7 +1320,7 @@ public class Output
             scaleNum2 = scaleNum2 * -1;
             irFlagFlip(name,name,"y");
         }
-        
+
         String[] rakalyCommand = new String [8];
         rakalyCommand[0] = "magick.exe";
         rakalyCommand[1] = "convert";
@@ -1324,7 +1334,7 @@ public class Output
         irFlagCanvas(name,"256","256");
         return scaleNum1 + "x" + scaleNum2;
     }
-    
+
     public static void irFlagScaleExact(String oldName,String newName, String dim1, String dim2) throws IOException //scales based on exact dimensions
     {
         String[] rakalyCommand = new String [8];
@@ -1338,7 +1348,7 @@ public class Output
         rakalyCommand[7] = newName;
         Processing.fileExcecute(rakalyCommand);
     }
-    
+
     public static void irFlagCanvas(String name,String dim1,String dim2) throws IOException //set's the canvas
     {
         String[] rakalyCommand = new String [8];
@@ -1351,9 +1361,9 @@ public class Output
         rakalyCommand[6] = dim1+"x"+dim2;
         rakalyCommand[7] = name;
         Processing.fileExcecute(rakalyCommand);
-        
+
     }
-    
+
     public static void irFlagRotate(String name, String degrees) throws IOException
     {
         String[] rakalyCommand = new String [11];
@@ -1370,7 +1380,7 @@ public class Output
         rakalyCommand[10] = name;
         Processing.fileExcecute(rakalyCommand);
     }
-    
+
     public static String irFlagPos(String name, String position) throws IOException
     {
         String[] numbers = position.split(" ");
@@ -1382,7 +1392,7 @@ public class Output
         int posNumY = (int)(Double.parseDouble(numbers[1]) * 256);
         String posXY = posNumX+","+posNumY;
         String test = "'128,128 "+posXY+"'";
-        
+
         String[] rakalyCommand = new String [9];
         rakalyCommand[0] = "magick.exe";
         rakalyCommand[1] = "convert";
@@ -1394,10 +1404,10 @@ public class Output
         rakalyCommand[7] = "128,128 "+posXY;
         rakalyCommand[8] = name;
         Processing.fileExcecute(rakalyCommand);
-        
+
         return test;
     }
-    
+
     public static void irFlagCombine(String background, String emblem, String product) throws IOException //combined test
     {
         String[] rakalyCommand = new String [7];
@@ -1410,7 +1420,7 @@ public class Output
         rakalyCommand[6] = product;
         Processing.fileExcecute(rakalyCommand);
     }
-    
+
     public static void irFlagFlip(String background, String product, String dim) throws IOException //combined test
     {
         String flipOrFlop = "-flop"; //flof for x, flip for y
@@ -1424,7 +1434,7 @@ public class Output
         rakalyCommand[3] = product;
         Processing.fileExcecute(rakalyCommand);
     }
-    
+
     public static String getColor(String colorName,ArrayList<String[]> colorList) throws IOException
     //get's and converts I:R color to correct format
     {
@@ -1432,30 +1442,28 @@ public class Output
         int aqq = 0;
         int flag = 0;
         while (aqq < colorList.size() && flag == 0) {
+            String color = colorName;
             if (colorList.get(aqq)[0].equals(colorName)) {
                 flag = 1; //end loop
-                String color = colorList.get(aqq)[1];
+                color = colorList.get(aqq)[1];
                 color = color.replace("  "," ");
-                if (color.split(",")[0].equals("rgb")) {
-                    color = color.split(",")[1];
-                    color = "rgb(" + color.replace(" ",",") + ")";
-                    return color;
-                }
-                
-                if (color.split(",")[0].equals("hsv")) {
-                    color = color.split(",")[1];
-                    color = Processing.deriveRgbFromHsv(color);
-                    color = "rgb(" + color.replace(" ",",") + ")";
-                    return color;
-                }
-                
+
+            }
+            if (color.split(",")[0].equals("rgb")) {
+                color = color.split(",")[1];
+                color = "rgb(" + color.replace(" ",",") + ")";
+                return color;
+            }
+            if (color.split(",")[0].equals("hsv")) {
+                color = color.split(",")[1];
+                color = Processing.deriveRgbFromHsv(color);
+                color = "rgb(" + color.replace(" ",",") + ")";
+                return color;
             }
             aqq = aqq + 1;
         }
         return colorName;
 
     }
-    
-    
-}
 
+}
