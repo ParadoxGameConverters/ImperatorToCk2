@@ -1821,10 +1821,12 @@ public class Importer
                     while (!qaaa.contains("}") && !qaaa.contains("speed=")) {
                         qaaa = qaaa.replace(tab,"");
                         qaaa = qaaa.substring(1,qaaa.length()-1);
-                        //qaaa = qaaa.replace("ugc_","");
-                        //qaaa = qaaa.replace(".mod","");
-                        output = importModDirInfo(irModDir+"/"+qaaa);
-                        impModList.add(output);
+                        try { //get real mod dir
+                            output = importModDirInfo(irModDir+"/"+qaaa);
+                            impModList.add(output);
+                        } catch (Exception e){ //if something goes wrong in finding the mod dir, ignore mod to prevent entire converter from crashing
+
+                        }
                         qaaa = scnr.nextLine();
                     }
                 }
