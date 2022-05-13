@@ -752,7 +752,7 @@ public class Main
                                         genFlag = Output.generateFlag(ck2Dir,impGameDir,rank,flagList,impTagInfo.get(aq4)[0],impTagInfo.get(aq4)[23],
                                         colorList,modFlagGFX,modDirectory);
                                     } catch(Exception e) { //if something goes wrong, don't crash entire converter
-                                        LOGGER.warning("Exception created while generating flag "+impTagInfo.get(aq4)[23]+".tga"+" for "+impTagInfo.get(aq4)[0]+
+                                        LOGGER.warning("Exception created while generating flag "+impTagInfo.get(aq4)[23]+" for "+impTagInfo.get(aq4)[0]+
                                         ", aborting flag generation");
                                     }
                                     
@@ -760,7 +760,7 @@ public class Main
                                         Output.copyFlag(ck2Dir,modDirectory,rank,impTagInfo.get(aq4)[5],impTagInfo.get(aq4)[0]);
                                     }
                                     else if (genFlag == 1) {
-                                        LOGGER.info("I:R flag "+impTagInfo.get(aq4)[23]+".tga"+" for "+impTagInfo.get(aq4)[0]+" successfully generated!");
+                                        LOGGER.info("I:R flag "+impTagInfo.get(aq4)[23]+" for "+impTagInfo.get(aq4)[0]+" successfully generated!");
                                     }
                                 }
 
