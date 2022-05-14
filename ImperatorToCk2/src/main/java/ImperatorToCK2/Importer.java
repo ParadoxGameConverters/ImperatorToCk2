@@ -7,6 +7,7 @@ import java.io.PrintWriter;
 import java.io.FileOutputStream;
 import java.util.Random;
 import java.util.ArrayList;
+import java.io.File;
 
 /**
  * Importer deals with importing most information from a save file.
@@ -60,7 +61,6 @@ public class Importer
 
                     while (flag == 0) {
                         qaaa = scnr.nextLine();
-                        //System.out.println(qaaa);
                         if (qaaa.split("=")[0].equals( tab+tab+"owner" ) ) {
                             output[0] = qaaa.split("=")[1];
                         }
@@ -1331,7 +1331,6 @@ public class Importer
 
     public static ArrayList<String[]> importFlag (String name) throws IOException
     {
-        name = name+"/game/common/coat_of_arms/coat_of_arms/00_pre_scripted_countries.txt";
 
         FileInputStream fileIn= new FileInputStream(name);
         Scanner scnr= new Scanner(fileIn);
@@ -1345,7 +1344,7 @@ public class Importer
         int flag = 0;
 
         String qaaa;
-        String[] output;   // Owner Culture Religeon PopTotal Buildings
+        String[] output;
         output = new String[5];
 
         output[0] = "unnamedFlag"; //default for no tag/name
@@ -1377,25 +1376,28 @@ public class Importer
                         output[2] = qaaa.split(tab+"color1=")[1];
                         output[2] = output[2].split(tab+"color2=")[0];
                         output[2] = output[2].replace(tab,"");
+                        output[2] = output[2].replace("  "," ");
                     }
                     if (qaaa.contains("color2=")) {
                         output[3] = qaaa.split("color2=")[1];
                         output[3] = output[3].split(tab+"color3=")[0];
                         output[3] = output[3].split("   "+"color3=")[0];
                         output[3] = output[3].replace(tab,"");
+                        output[3] = output[3].replace("  "," ");
                     }
                 } else { //if using regular formatting
                     if (qaaa.split("=")[0].equals(tab+"color1") ) {
                         output[2] = qaaa.split("=")[1];
+                        output[2] = output[2].replace("  "," ");
                         if (qaaa.contains("rgb ")) {
                             output[2] = output[2].split("rgb ")[1];
-                            output[2] = output[2].split(" }")[0];
-                            output[2] = "rgb," + output[2].substring(2,output[2].length()-1);
+                            output[2] = output[2].split(tab)[0]; //Invictus formatting
+                            output[2] = "rgb," + output[2].substring(2,output[2].length()-2);
                         }
                         else if (qaaa.contains("hsv ")) {
                             output[2] = output[2].split("hsv ")[1];
-                            output[2] = output[2].split(" }")[0];
-                            output[2] = "hsv," + output[2].substring(2,output[2].length()-1);
+                            output[2] = output[2].split(tab)[0]; //Invictus formatting
+                            output[2] = "hsv," + output[2].substring(2,output[2].length()-2);
                         } else {
                             if (output[2].contains(strQuote)) {
                                 output[2] = output[2].substring(1,output[2].length()-1);
@@ -1405,15 +1407,20 @@ public class Importer
                     }
                     if (qaaa.split("=")[0].equals(tab+"color2") ) {
                         output[3] = qaaa.split("=")[1];
+                        output[3] = output[3].replace("  "," ");
                         if (qaaa.contains("rgb ")) {
                             output[3] = output[3].split("rgb ")[1];
-                            output[3] = output[3].split(" }")[0];
-                            output[3] = "rgb," + output[3].substring(2,output[3].length()-1);
+                            //output[3] = output[3].split(" }")[0];
+                            //output[3] = "rgb," + output[3].substring(2,output[3].length()-1);
+                            output[3] = output[3].split(tab)[0]; //Invictus formatting
+                            output[3] = "rgb," + output[3].substring(2,output[3].length()-2);
                         }
                         else if (qaaa.contains("hsv ")) {
                             output[3] = output[3].split("hsv ")[1];
-                            output[3] = output[3].split(" }")[0];
-                            output[3] = "hsv," + output[3].substring(2,output[3].length()-1);
+                            //output[3] = output[3].split(" }")[0];
+                            //output[3] = "hsv," + output[3].substring(2,output[3].length()-1);
+                            output[3] = output[3].split(tab)[0]; //Invictus formatting
+                            output[3] = "hsv," + output[3].substring(2,output[3].length()-2);
                         } else {
                             if (output[3].contains(strQuote)) {
                                 output[3] = output[3].substring(1,output[3].length()-1);
@@ -1438,6 +1445,7 @@ public class Importer
                         qaaa = qaaa.replace(" = ","=");
                         qaaa = qaaa.replace("= ","=");
                         qaaa = qaaa.replace(" =","=");
+                        qaaa = qaaa.replace("    ",tab); // to fix Invictus Judea Countries file formatting
                         if (qaaa.split("=").length != 2) { //if using unusual formatting
                             if (qaaa.contains("texture=")) {
                                 embTexture = qaaa.split("texture=")[1];
@@ -1450,6 +1458,17 @@ public class Importer
                                 embColor1 = embColor1.split(" ")[0];
                                 embColor1 = embColor1.split(tab)[0];
                                 embColor1 = embColor1.replace(tab,"");
+                                embColor1 = embColor1.replace("  "," ");
+                                if (embColor1.contains("rgb ")) {
+                                    embColor1 = embColor1.split("rgb ")[1];
+                                    embColor1 = embColor1.split(tab)[0]; //Invictus formatting
+                                    embColor1 = "rgb," + embColor1.substring(2,embColor1.length()-2);
+                                }
+                                else if (qaaa.contains("hsv ")) {
+                                    embColor1 = embColor1.split("hsv ")[1];
+                                    embColor1 = embColor1.split(tab)[0]; //Invictus formatting
+                                    embColor1 = "hsv," + output[2].substring(2,output[2].length()-2);
+                                }
                             }
                             if (qaaa.contains("color2=")) {
                                 embColor2 = qaaa.split("color2=")[1];
@@ -1457,11 +1476,23 @@ public class Importer
                                 embColor2 = embColor2.split(" ")[0];
                                 embColor2 = embColor2.split(tab)[0];
                                 embColor2 = embColor2.replace(tab,"");
+                                embColor2 = embColor2.replace("  "," ");
+                                if (embColor2.contains("rgb ")) {
+                                    embColor2 = embColor2.split("rgb ")[1];
+                                    embColor2 = embColor2.split(tab)[0]; //Invictus formatting
+                                    embColor2 = "rgb," + embColor2.substring(2,embColor2.length()-2);
+                                }
+                                else if (qaaa.contains("hsv ")) {
+                                    embColor2 = embColor2.split("hsv ")[1];
+                                    embColor2 = embColor2.split(tab)[0]; //Invictus formatting
+                                    embColor2 = "hsv," + embColor2.substring(2,embColor2.length()-2);
+                                }
                             }
                         } else { //regular formatting
 
                             if (qaaa.contains( "texture=" ) || qaaa.contains( "texture =" ) ) {
                                 embTexture = qaaa.split("=")[1];
+                                embTexture = embTexture.split(tab)[0];
                                 embTexture = embTexture.substring(1,embTexture.length()-1);
                             }
                             else if (qaaa.contains( "color1=" ) || qaaa.contains("color1 =") ) {
@@ -1470,6 +1501,17 @@ public class Importer
                                     embColor1 = embColor1.substring(1,embColor1.length()-1);
                                 }
                                 embColor1 = embColor1.replace(tab,"");
+                                embColor1 = embColor1.replace("  "," ");
+                                if (embColor1.contains("rgb ")) {
+                                    embColor1 = embColor1.split("rgb ")[1];
+                                    embColor1 = embColor1.split(tab)[0]; //Invictus formatting
+                                    embColor1 = "rgb," + embColor1.substring(2,embColor1.length()-2);
+                                }
+                                else if (qaaa.contains("hsv ")) {
+                                    embColor1 = embColor1.split("hsv ")[1];
+                                    embColor1 = embColor1.split(tab)[0]; //Invictus formatting
+                                    embColor1 = "hsv," + embColor1.substring(2,output[2].length()-2);
+                                }
                             }
                             else if (qaaa.contains( "color2=" ) || qaaa.contains("color2 =") ) {
                                 embColor2 = qaaa.split("=")[1];
@@ -1477,6 +1519,17 @@ public class Importer
                                     embColor2 = embColor2.substring(1,embColor2.length()-1);
                                 }
                                 embColor2 = embColor2.replace(tab,"");
+                                embColor2 = embColor2.replace("  "," ");
+                                if (embColor2.contains("rgb ")) {
+                                    embColor2 = embColor2.split("rgb ")[1];
+                                    embColor2 = embColor2.split(tab)[0]; //Invictus formatting
+                                    embColor2 = "rgb," + embColor2.substring(2,embColor2.length()-2);
+                                }
+                                else if (qaaa.contains("hsv ")) {
+                                    embColor2 = embColor2.split("hsv ")[1];
+                                    embColor2 = embColor2.split(tab)[0]; //Invictus formatting
+                                    embColor2 = "hsv," + embColor2.substring(2,output[2].length()-2);
+                                }
                             }
                         }
                         if (qaaa.contains("instance=") || qaaa.contains("instance =")) { //get instances
@@ -1486,16 +1539,19 @@ public class Importer
                                     embScale = qaaa.split("scale=")[1];
                                     embScale = embScale.replace("  "," ");
                                     embScale = embScale.split(" }")[0];
+                                    embScale = embScale.split(tab)[0];
                                     embScale = embScale.substring(2,embScale.length());
                                 }
                                 if (qaaa.contains("position=")) {
                                     embPos = qaaa.split("position=")[1];
                                     embPos = embPos.split(" }")[0];
+                                    embPos = embPos.split(tab)[0];
                                     embPos = embPos.substring(2,embPos.length());
                                 }
                                 if (qaaa.contains("rotation=")) {
                                     embRot = qaaa.split("rotation=")[1];
                                     embRot = embRot.split(" ")[0];
+                                    embRot = embRot.split(tab)[0];
                                 }
                                 if (tmpOutput.equals("0")) { //build emblem
                                     tmpOutput = embTexture+"~_~"+embColor1+"~_~"+embColor2+"~_~"+embScale+"~_~"+embPos+"~_~"+embRot;
@@ -1516,18 +1572,22 @@ public class Importer
                                     qaaa = qaaa.replace("    ",tab);
                                     if (qaaa.contains("scale=")) {
                                         embScale = qaaa.split("=")[1];
+                                        embScale = embScale.split(tab)[0];
                                         embScale = embScale.substring(2,embScale.length()-2);
                                     }
                                     if (qaaa.contains("position=")) {
                                         embPos = qaaa.split("=")[1];
+                                        embPos = embPos.split(tab)[0];
                                         embPos = embPos.substring(2,embPos.length()-2);
                                     }
                                     if (qaaa.contains("rotation=")) {
                                         embRot = qaaa.split("=")[1];
+                                        embRot = embRot.split(tab)[0];
                                         embRot = embRot.replace(" ","");
                                     }
                                     if (qaaa.contains("texture=")) {
                                         embTexture = qaaa.split("=")[1];
+                                        embTexture = embTexture.split(tab)[0];
                                         embTexture = embRot.replace(" ","");
                                     }
                                     if (qaaa.equals(tab+tab+"}")) {
@@ -1601,9 +1661,37 @@ public class Importer
 
     }
 
+    public static ArrayList<String[]> importAllFlags (String name, ArrayList<String> modDirs) throws IOException
+    {
+        ArrayList<String[]> allFlags = new ArrayList<String[]>();
+        ArrayList<String[]> vanillaFlags = importFlag(name+"/game/common/coat_of_arms/coat_of_arms/00_pre_scripted_countries.txt");
+        int aqq = 0;
+        while (modDirs.size() > aqq) {
+            if (!modDirs.get(aqq).equals("none")) {
+                String modDir = modDirs.get(aqq)+"/common/coat_of_arms/coat_of_arms";
+                File flagInfo = new File (modDir);
+                String[] flagList = flagInfo.list();
+
+                if (flagList != null) {
+                    int aq2 = 0;
+                    while (aq2 < flagList.length) {
+                        ArrayList<String[]> modFlags = importFlag(modDir+"/"+flagList[aq2]);
+                        allFlags.addAll(modFlags);
+                        aq2 = aq2 + 1;
+                    }
+
+                }
+            }
+            aqq = aqq + 1;
+        }
+
+        allFlags.addAll(vanillaFlags);
+
+        return allFlags;
+    }
+
     public static ArrayList<String[]> importColors (String name) throws IOException //named_colors for flags
     {
-        name = name+"/game/common/named_colors/default_colors.txt";
 
         FileInputStream fileIn= new FileInputStream(name);
         Scanner scnr= new Scanner(fileIn);
@@ -1669,6 +1757,186 @@ public class Importer
         }   
 
         return impColorList;
+
+    }
+
+    public static ArrayList<String[]> importAllColors (String name, ArrayList<String> modDirs) throws IOException
+    {
+        ArrayList<String[]> allColors = new ArrayList<String[]>();
+        ArrayList<String[]> vanillaColors = importColors(name+"/game/common/named_colors/default_colors.txt");
+        int aqq = 0;
+        while (modDirs.size() > aqq) {
+            if (!modDirs.get(aqq).equals("none")) {
+                String modDir = modDirs.get(aqq)+"/common/named_colors";
+                File colorInfo = new File (modDir);
+                String[] colorList = colorInfo.list();
+
+                if (colorList != null) {
+                    int aq2 = 0;
+                    while (aq2 < colorList.length) {
+                        ArrayList<String[]> modColors = importColors(modDir+"/"+colorList[aq2]);
+                        allColors.addAll(modColors);
+                        aq2 = aq2 + 1;
+                    }
+
+                }
+            }
+            aqq = aqq + 1;
+        }
+
+        allColors.addAll(vanillaColors);
+
+        return allColors;
+    }
+
+    public static ArrayList<String> importModDirs (String name, String irModDir) throws IOException //imports all directories for mods used in save file
+    {
+
+        FileInputStream fileIn= new FileInputStream(name);
+        Scanner scnr= new Scanner(fileIn);
+
+        ArrayList<String> impModList= new ArrayList<String>();
+
+        irModDir = irModDir.substring(0,irModDir.length()-4);
+
+        String tab = "	";
+
+        int flag = 0;
+
+        String vmm = scnr.nextLine();
+        String qaaa = vmm;
+        String output;   // Owner Culture Religeon PopTotal Buildings
+
+        output = "none"; //default for no name
+
+        impModList.add(output); //default at ID 0
+
+        try {
+            while (flag == 0){
+                qaaa = scnr.nextLine();
+                if (qaaa.contains( "enabled_mods" ) ) {
+                    flag = 1;
+                    qaaa = scnr.nextLine();
+                    String tmpOutput;
+                    while (!qaaa.contains("}") && !qaaa.contains("speed=")) {
+                        qaaa = qaaa.replace(tab,"");
+                        qaaa = qaaa.substring(1,qaaa.length()-1);
+                        try { //get real mod dir
+                            output = importModDirInfo(irModDir+"/"+qaaa);
+                            impModList.add(output);
+                        } catch (Exception e){ //if something goes wrong in finding the mod dir, ignore mod to prevent entire converter from crashing
+
+                        }
+                        qaaa = scnr.nextLine();
+                    }
+                }
+
+            }
+        }catch (java.util.NoSuchElementException exception){
+            return impModList;
+        }   
+
+        return impModList;
+
+    }
+
+    public static String importModDirInfo (String name) throws IOException //imports directory info for a specific mod from the .mod file
+    {
+
+        FileInputStream fileIn= new FileInputStream(name);
+        Scanner scnr= new Scanner(fileIn);
+
+        int flag = 0;
+
+        String output = "none"; //default for no name
+
+        try {
+            //try
+            while (flag == 0){
+                String qaaa = scnr.nextLine();
+                if (qaaa.contains( "path=" ) ) {
+                    flag = 1;
+                    output = qaaa.split("=")[1];
+                    output = output.substring(1,output.length()-1);
+                }
+
+            }
+        }catch (Exception e){ //if anything goes wrong, return to avoid stopping converter
+            return output;
+        }   
+
+        return output;
+
+    }
+
+    public static ArrayList<String> importModFlagDirs (ArrayList<String> modDirs) throws IOException //imports modded flag gfx locations/names
+    {
+
+        String coloredEmblems = "/gfx/coat_of_arms/colored_emblems";
+        String patterns = "/gfx/coat_of_arms/patterns";
+        String texturedEmblems = "/gfx/coat_of_arms/textured_emblems";
+
+        ArrayList<String> gfxList= new ArrayList<String>();
+
+        String tab = "	";
+
+        int flag = 0;
+        int aqq = 0;
+        String qaaa = "";
+        String output;
+
+        output = "none"; //default for no name
+
+        gfxList.add(output); //default at ID 0
+
+        try {
+            while (aqq < modDirs.size()){
+                if (!modDirs.get(aqq).equals ("none")) {
+                    File embDir = new File(modDirs.get(aqq)+coloredEmblems);
+                    String[] emblemFiles = embDir.list();
+                    if (emblemFiles != null) {
+                        int aq2 = 0;
+                        while (aq2 < emblemFiles.length) {
+                            output = emblemFiles[aq2];
+                            output = modDirs.get(aqq)+coloredEmblems+"/"+output;
+                            gfxList.add(output);
+                            aq2 = aq2 + 1;
+
+                        }
+                    }
+                    File patDir = new File(modDirs.get(aqq)+patterns);
+                    String[] patternFiles = patDir.list();
+                    if (patternFiles != null) {
+                        int aq3 = 0;
+                        while (aq3 < patternFiles.length) {
+                            output = patternFiles[aq3];
+                            output = modDirs.get(aqq)+patterns+"/"+output;
+                            gfxList.add(output);
+                            aq3 = aq3 + 1;
+
+                        }
+                    }
+                    File texDir = new File(modDirs.get(aqq)+texturedEmblems);
+                    String[] textureFiles = texDir.list();
+                    if (textureFiles != null) {
+                        int aq4 = 0;
+                        while (aq4 < textureFiles.length) {
+                            output = textureFiles[aq4];
+                            output = modDirs.get(aqq)+texturedEmblems+"/"+output;
+                            gfxList.add(output);
+                            aq4 = aq4 + 1;
+
+                        }
+                    }
+                }
+
+                aqq = aqq + 1;
+            }
+        }catch (java.util.NoSuchElementException exception){
+            flag = 1;
+        }   
+
+        return gfxList;
 
     }
 

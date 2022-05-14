@@ -1,6 +1,5 @@
 package ImperatorToCK2;       
    
-
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.io.File;
@@ -60,6 +59,7 @@ public class Main
             String VN = "//";
             VN = VN.substring(0);
             Dir2 = configDirectories[1];
+            String irModDir = configDirectories[2];
             //Dir = configDirectories[3];
             Dir = "output";
 
@@ -191,13 +191,7 @@ public class Main
             String saveDiplo = "tempDiplo.txt";
 
             String saveMonuments = "tempMonuments.txt";
-            
-            ArrayList<String> govMap = Importer.importBasicFile("governmentConversion.txt"); //government mappings
-            LOGGER.info("Importing flag information...");
-            ArrayList<String[]> flagList = Importer.importFlag(impGameDir);
-            LOGGER.info("Importing color information...");
-            ArrayList<String[]> colorList = Importer.importColors(impGameDir);
-            
+
             int compressedOrNot = Importer.compressTest(impDirSave); //0 for compressed, 1 for decompressed
             
             if (compressedOrNot == 0) { //compressed save! Initiating Rakaly decompressor
@@ -255,6 +249,19 @@ public class Main
                 LOGGER.warning("Error with Republic Conversion Option! Defaulting to Merchant Republic");
                 republicOption = ("repMer");
             }
+            
+            ArrayList<String> govMap = Importer.importBasicFile("governmentConversion.txt"); //government mappings
+            LOGGER.info("Importing mod directories...");
+  
+            ArrayList<String> modDirs = Importer.importModDirs(impDirSave,irModDir);
+            ArrayList<String> modFlagGFX = Importer.importModFlagDirs(modDirs); //flag gfx files
+
+            LOGGER.info("Importing flag information...");
+            
+            ArrayList<String[]> flagList = Importer.importAllFlags(impGameDir,modDirs);
+            LOGGER.info("Importing color information...");
+            
+            ArrayList<String[]> colorList = Importer.importAllColors(impGameDir,modDirs);
 
             LOGGER.info("Creating temp files...");
 
@@ -743,9 +750,9 @@ public class Main
                                     int genFlag = 0;
                                     try {
                                         genFlag = Output.generateFlag(ck2Dir,impGameDir,rank,flagList,impTagInfo.get(aq4)[0],impTagInfo.get(aq4)[23],
-                                        colorList,modDirectory);
+                                        colorList,modFlagGFX,modDirectory);
                                     } catch(Exception e) { //if something goes wrong, don't crash entire converter
-                                        LOGGER.warning("Exception created while generating flag "+impTagInfo.get(aq4)[23]+".tga"+" for "+impTagInfo.get(aq4)[0]+
+                                        LOGGER.warning("Exception created while generating flag "+impTagInfo.get(aq4)[23]+" for "+impTagInfo.get(aq4)[0]+
                                         ", aborting flag generation");
                                     }
                                     
@@ -753,7 +760,7 @@ public class Main
                                         Output.copyFlag(ck2Dir,modDirectory,rank,impTagInfo.get(aq4)[5],impTagInfo.get(aq4)[0]);
                                     }
                                     else if (genFlag == 1) {
-                                        LOGGER.info("I:R flag "+impTagInfo.get(aq4)[23]+".tga"+" for "+impTagInfo.get(aq4)[0]+" successfully generated!");
+                                        LOGGER.info("I:R flag "+impTagInfo.get(aq4)[23]+" for "+impTagInfo.get(aq4)[0]+" successfully generated!");
                                     }
                                 }
 
