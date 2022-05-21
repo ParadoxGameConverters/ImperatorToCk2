@@ -1,5 +1,6 @@
 package ImperatorToCK2; 
 
+
 import java.util.Scanner;
 import java.io.IOException;
 import java.io.FileInputStream;
@@ -1581,9 +1582,11 @@ public class Importer
                                         embPos = embPos.substring(2,embPos.length()-2);
                                     }
                                     if (qaaa.contains("rotation=")) {
-                                        embRot = qaaa.split("=")[1];
-                                        embRot = embRot.split(tab)[0];
-                                        embRot = embRot.replace(" ","");
+                                        if (!qaaa.split("=")[0].contains("#")) {
+                                            embRot = qaaa.split("=")[1];
+                                            embRot = embRot.split(tab)[0];
+                                            embRot = embRot.replace(" ","");
+                                        }
                                     }
                                     if (qaaa.contains("texture=")) {
                                         embTexture = qaaa.split("=")[1];
@@ -1820,12 +1823,17 @@ public class Importer
                     String tmpOutput;
                     while (!qaaa.contains("}") && !qaaa.contains("speed=")) {
                         qaaa = qaaa.replace(tab,"");
-                        qaaa = qaaa.substring(1,qaaa.length()-1);
-                        try { //get real mod dir
-                            output = importModDirInfo(irModDir+"/"+qaaa);
-                            impModList.add(output);
-                        } catch (Exception e){ //if something goes wrong in finding the mod dir, ignore mod to prevent entire converter from crashing
+                        String[] mods = qaaa.split(" ");
+                        int aqq = 0;
+                        while (aqq < mods.length) {
+                            mods[aqq] = mods[aqq].substring(1,mods[aqq].length()-1);
+                            try { //get real mod dir
+                                output = importModDirInfo(irModDir+"/"+mods[aqq]);
+                                impModList.add(output);
+                            } catch (Exception e){ //if something goes wrong in finding the mod dir, ignore mod to prevent entire converter from crashing
 
+                            }
+                            aqq = aqq + 1;
                         }
                         qaaa = scnr.nextLine();
                     }
