@@ -1146,10 +1146,16 @@ public class Output
                 flag = 1; //end loop
                 String[] flagSource = flagList.get(aqq);
                 String ck2Tag = rank+"_"+tag;
+                if (flagSource[1].equals("pattern_horizontal_split_02.tga")) {
+                    flagSource[1] = "pattern_horizontal_split_01.tga";
+                } else if (flagSource[1].equals("pattern_horizontal_split_01.tga")) {
+                    flagSource[1] = "pattern_horizontal_split_02.tga";
+                }
                 String pattern = irDirectory + "/game/gfx/coat_of_arms/patterns/" + flagSource[1];
                 String color1 = flagSource[2];
                 String color2 = flagSource[3];
                 String emblems = flagSource[4];
+                //System.out.println(pattern+" "+emblems+" "+color1+" "+color2);
 
                 int aq3 = 0;
                 while (aq3 < flagGFXList.size()) {
@@ -1195,12 +1201,13 @@ public class Output
                         eColor2 = getColor(eColor2,colorList);
                     }
 
-                    irFlagEmblem(eTexture,eNameOld,eColor1,eColor2,eName,eScale,eRot,ePos,devFlagName,flagName);
-                    flagCreated = 1; //Flag has been created
+                    irFlagEmblem(eTexture,eNameOld,eColor1,eColor2,eName,eScale,eRot,ePos,devFlagName);
                     aq2 = aq2+1;
                 }
-
+                irFlagScaleExact(devFlagName,flagName,"128","128"); //create final .tga flag, scale to CK2 128x128
+                flagCreated = 1; //Flag has been created
             }
+            
             aqq = aqq + 1;
 
         }
@@ -1254,10 +1261,18 @@ public class Output
     }
 
     public static void irFlagEmblem(String eTexture,String eNameOld,String eColor1,String eColor2,String eName,String eScale,
-    String eRot,String ePos,String devFlagName,String flagName) throws IOException //generates and applies emblem to flag
+    String eRot,String ePos,String devFlagName) throws IOException //generates and applies emblem to flag
     {
-        irFlagBackground(eTexture,eNameOld,eColor1,eColor2);
-        irFlagScaleExact(eNameOld,eName,"256","256"); //set's size to 256 x 256
+        //eTexture is source emblem gfx file
+        //eNameOld is modified gfx file potentially not 256x256 (needs to be a separate image from eName due to IM quirks)
+        //eName is modified gfx file set to 256x256, ready to be scaled, rotated, or positioned
+        //devFlagName is the name of the combined development .gif flag
+        if (!eTexture.contains("gfx/coat_of_arms/textured_emblems/")) { //if not a textured emblem, colorize emblem
+            irFlagBackground(eTexture,eNameOld,eColor1,eColor2);
+            irFlagScaleExact(eNameOld,eName,"256","256"); //set's size to 256 x 256
+        } else { //if a textured emblem, don't colorize
+            irFlagScaleExact(eTexture,eName,"256","256"); //set's size to 256 x 256
+        }
 
         if (!eScale.equals("none")) {
             irFlagScale(eName,eScale);
@@ -1270,8 +1285,7 @@ public class Output
             irFlagPos(eName,ePos);
         }
 
-        irFlagCombine(devFlagName,eName,devFlagName);
-        irFlagScaleExact(devFlagName,flagName,"128","128");
+        irFlagCombine(devFlagName,eName,devFlagName); //merge emblem into dev flag
     }
 
     public static void irFlagBackground(String oldName, String name, String color, String color2) throws IOException
@@ -1279,6 +1293,8 @@ public class Output
         irFlagColor(name,oldName,color,1);
         if (!color2.equals("none") && !oldName.contains("pattern_solid.tga")) {
             String layer2Name = name.replace(".gif","layer2.gif");
+            layer2Name = layer2Name.replace(".tga","layer2.gif");
+            layer2Name = layer2Name.replace(".dds","layer2.gif");
             irFlagColor(layer2Name,oldName,"none",1);
             irFlagColor(layer2Name,layer2Name,color2,2);
             irFlagCombine(name,layer2Name,name);
@@ -1447,16 +1463,19 @@ public class Output
                 flag = 1; //end loop
                 color = colorList.get(aqq)[1];
                 color = color.replace("  "," ");
-
             }
             if (color.split(",")[0].equals("rgb")) {
                 color = color.split(",")[1];
+                color = Processing.fixWhite(color);
+                //Pure white(255,255,255) messes with image scaling, turning the entire emblem white. Changing it to 254,254,254 fixes the issue
                 color = "rgb(" + color.replace(" ",",") + ")";
                 return color;
             }
             if (color.split(",")[0].equals("hsv")) {
                 color = color.split(",")[1];
                 color = Processing.deriveRgbFromHsv(color);
+                color = Processing.fixWhite(color);
+                //Pure white(255,255,255) messes with image scaling, turning the entire emblem white. Changing it to 254,254,254 fixes the issue
                 color = "rgb(" + color.replace(" ",",") + ")";
                 return color;
             }

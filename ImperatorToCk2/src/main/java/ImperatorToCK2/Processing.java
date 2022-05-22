@@ -1365,5 +1365,18 @@ public class Processing
         return color;
 
     }
+    
+    public static String fixWhite (String color) //prevents colors from being 255 255 255
+    {
+        if (color.split(" ")[0].contains("255") || color.split(" ")[0].contains("254")) {
+            if (color.split(" ")[1].contains("255") || color.split(" ")[1].contains("254")) {
+                if (color.split(" ")[2].contains("255") || color.split(" ")[2].contains("254")) {
+                    color = color.replace("255","254");
+                }
+            }
+        }
+        return color;
+
+    }
 
 }
