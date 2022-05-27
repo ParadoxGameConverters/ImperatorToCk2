@@ -50,6 +50,27 @@ irck2_convert_to_lithuanian_desc;You and your unlanded Aestian relatives convert
 irck2_convert_to_lettigallish_desc;You and your unlanded Aestian relatives convert to Lettigallian Culture;You and your unlanded Aestian relatives convert to Lettigallian Culture;You and your unlanded Aestian relatives convert to Lettigallian Culture;;You and your unlanded Aestian relatives convert to Lettigallian Culture;;;;;;;;;x
 irck2_convert_to_prussian_desc;You and your unlanded Aestian relatives convert to Prussian Culture;You and your unlanded Aestian relatives convert to Prussian Culture;You and your unlanded Aestian relatives convert to Prussian Culture;;You and your unlanded Aestian relatives convert to Prussian Culture;;;;;;;;;x
 
+#Punic split
+irck2_convert_to_taliaite;Embrace Taliaite Culture;Embrace Taliaite Culture;Embrace Taliaite Culture;;Embrace Taliaite Culture;;;;;;;;;x
+irck2_convert_to_mlachthi;Embrace Mlachthi Culture;Embrace Mlachthi Culture;Embrace Mlachthi Culture;;Embrace Mlachthi Culture;;;;;;;;;x
+irck2_convert_to_ysthyalm;Embrace Ysthyalm Culture;Embrace Ysthyalm Culture;Embrace Ysthyalm Culture;;Embrace Ysthyalm Culture;;;;;;;;;x
+irck2_convert_to_carthago_novan;Embrace Carthago Novan Culture;Embrace Carthago Novan Culture;Embrace Carthago Novan Culture;;Embrace Carthago Novan Culture;;;;;;;;;x
+irck2_convert_to_pmpese;Embrace Pmpese Culture;Embrace Pmpese Culture;Embrace Pmpese Culture;;Embrace Pmpese Culture;;;;;;;;;x
+irck2_convert_to_epicrateian;Embrace Epicrateian Culture;Embrace Epicrateian Culture;Embrace Epicrateian Culture;;Embrace Epicrateian Culture;;;;;;;;;x
+irck2_convert_to_pretan;Embrace Pretan Culture;Embrace Pretan Culture;Embrace Pretan Culture;;Embrace Pretan Culture;;;;;;;;;x
+irck2_convert_to_sidonian;Embrace Sidonian Culture;Embrace Sidonian Culture;Embrace Sidonian Culture;;Embrace Sidonian Culture;;;;;;;;;x
+irck2_convert_to_ziqanmakom;Embrace Ziqanmak'om Culture;Embrace Ziqanmak'om Culture;Embrace Ziqanmak'om Culture;;Embrace Ziqanmak'om Culture;;;;;;;;;x
+irck2_convert_to_sythchy;Embrace Sythchy Culture;Embrace Sythchy Culture;Embrace Sythchy Culture;;Embrace Sythchy Culture;;;;;;;;;x
+irck2_convert_to_taliaite_desc;You and your unlanded Punic relatives convert to Taliaite Culture;You and your unlanded Punic relatives convert to Taliaite Culture;You and your unlanded Punic relatives convert to Taliaite Culture;;You and your unlanded Punic relatives convert to Taliaite Culture;;;;;;;;;x
+irck2_convert_to_mlachthi_desc;You and your unlanded Punic relatives convert to Mlachthi Culture;You and your unlanded Punic relatives convert to Mlachthi Culture;You and your unlanded Punic relatives convert to Mlachthi Culture;;You and your unlanded Punic relatives convert to Mlachthi Culture;;;;;;;;;x
+irck2_convert_to_ysthyalm_desc;You and your unlanded Punic relatives convert to Ysthyalm Culture;You and your unlanded Punic relatives convert to Ysthyalm Culture;You and your unlanded Punic relatives convert to Ysthyalm Culture;;You and your unlanded Punic relatives convert to Ysthyalm Culture;;;;;;;;;x
+irck2_convert_to_carthago_novan_desc;You and your unlanded Punic relatives convert to Carthago Novan Culture;You and your unlanded Punic relatives convert to Carthago Novan Culture;You and your unlanded Punic relatives convert to Carthago Novan Culture;;You and your unlanded Punic relatives convert to Carthago Novan Culture;;;;;;;;;x
+irck2_convert_to_pmpese_desc;You and your unlanded Punic relatives convert to Pmpese Culture;You and your unlanded Punic relatives convert to Pmpese Culture;You and your unlanded Punic relatives convert to Pmpese Culture;;You and your unlanded Punic relatives convert to Pmpese Culture;;;;;;;;;x
+irck2_convert_to_pretan_desc;You and your unlanded Punic relatives convert to Pretan Culture;You and your unlanded Punic relatives convert to Pretan Culture;You and your unlanded Punic relatives convert to Pretan Culture;;You and your unlanded Punic relatives convert to Pretan Culture;;;;;;;;;x
+irck2_convert_to_sidonian_desc;You and your unlanded Punic relatives convert to Sidonian Culture;You and your unlanded Punic relatives convert to Sidonian Culture;You and your unlanded Punic relatives convert to Sidonian Culture;;You and your unlanded Punic relatives convert to Sidonian Culture;;;;;;;;;x
+irck2_convert_to_ziqanmakom_desc;You and your unlanded Punic relatives convert to Ziqanmak'om Culture;You and your unlanded Punic relatives convert to Ziqanmak'om Culture;You and your unlanded Punic relatives convert to Ziqanmak'om Culture;;You and your unlanded Punic relatives convert to Ziqanmak'om Culture;;;;;;;;;x
+irck2_convert_to_sythchy_desc;You and your unlanded Punic relatives convert to Sythchy Culture;You and your unlanded Punic relatives convert to Sythchy Culture;You and your unlanded Punic relatives convert to Sythchy Culture;;You and your unlanded Punic relatives convert to Sythchy Culture;;;;;;;;;x
+
 #Empires
 irck2_create_e_italy;Create Italia;Create Italia;Machen Italien;;Create Italia;;;;;;;;;x
 irck2_create_e_italy_desc;Create Italia;Create Italia;Machen Italien;;Create Italia;;;;;;;;;x
