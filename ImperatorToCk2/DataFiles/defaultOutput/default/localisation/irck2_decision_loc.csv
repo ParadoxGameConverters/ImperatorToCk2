@@ -1,0 +1,88 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+#Roman split
+irck2_convert_to_italian;Embrace Italian Culture;Embrace Italian Culture;Embrace Italian Culture;;Embrace Italian Culture;;;;;;;;;x
+irck2_convert_to_dalmatian;Embrace Dalmatian Culture;Embrace Dalmatian Culture;Embrace Dalmatian Culture;;Embrace Dalmatian Culture;;;;;;;;;x
+irck2_convert_to_romanian;Embrace Vlach Culture;Embrace Vlach Culture;Embrace Vlach Culture;;Embrace Vlach Culture;;;;;;;;;x
+irck2_convert_to_occitan;Embrace Occitan Culture;Embrace Occitan Culture;Embrace Occitan Culture;;Embrace Occitan Culture;;;;;;;;;x
+irck2_convert_to_frankish;Embrace French Culture;Embrace French Culture;Embrace French Culture;;Embrace French Culture;;;;;;;;;x
+irck2_convert_to_catalan;Embrace Catalan Culture;Embrace Catalan Culture;Embrace Catalan Culture;;Embrace Catalan Culture;;;;;;;;;x
+irck2_convert_to_castillan;Embrace Castilian Culture;Embrace Castilian Culture;Embrace Castilian Culture;;Embrace Castilian Culture;;;;;;;;;x
+irck2_convert_to_portuguese;Embrace Portuguese Culture;Embrace Portuguese Culture;Embrace Portuguese Culture;;Embrace Portuguese Culture;;;;;;;;;x
+irck2_convert_to_sardinian;Embrace Sardinian Culture;Embrace Sardinian Culture;Embrace Sardinian Culture;;Embrace Sardinian Culture;;;;;;;;;x
+irck2_convert_to_italian_desc;You and your unlanded Roman relatives convert to Italian Culture;You and your unlanded Roman relatives convert to Italian Culture;You and your unlanded Roman relatives convert to Italian Culture;;You and your unlanded Roman relatives convert to Italian Culture;;;;;;;;;x
+irck2_convert_to_dalmatian_desc;You and your unlanded Roman relatives convert to Dalmatian Culture;You and your unlanded Roman relatives convert to Dalmatian Culture;You and your unlanded Roman relatives convert to Dalmatian Culture;;You and your unlanded Roman relatives convert to Dalmatian Culture;;;;;;;;;x
+irck2_convert_to_romanian_desc;You and your unlanded Roman relatives convert to Vlach Culture;You and your unlanded Roman relatives convert to Vlach Culture;You and your unlanded Roman relatives convert to Vlach Culture;;You and your unlanded Roman relatives convert to Vlach Culture;;;;;;;;;x
+irck2_convert_to_occitan_desc;You and your unlanded Roman relatives convert to Occitan Culture;You and your unlanded Roman relatives convert to Occitan Culture;You and your unlanded Roman relatives convert to Occitan Culture;;You and your unlanded Roman relatives convert to Occitan Culture;;;;;;;;;x
+irck2_convert_to_frankish_desc;You and your unlanded Roman relatives convert to French Culture;You and your unlanded Roman relatives convert to French Culture;You and your unlanded Roman relatives convert to French Culture;;You and your unlanded Roman relatives convert to French Culture;;;;;;;;;x
+irck2_convert_to_catalan_desc;You and your unlanded Roman relatives convert to Catalan Culture;You and your unlanded Roman relatives convert to Catalan Culture;You and your unlanded Roman relatives convert to Catalan Culture;;You and your unlanded Roman relatives convert to Catalan Culture;;;;;;;;;x
+irck2_convert_to_castillan_desc;You and your unlanded Roman relatives convert to Castilian Culture;You and your unlanded Roman relatives convert to Castilian Culture;You and your unlanded Roman relatives convert to Castilian Culture;;You and your unlanded Roman relatives convert to Castilian Culture;;;;;;;;;x
+irck2_convert_to_portuguese_desc;You and your unlanded Roman relatives convert to Portuguese Culture;You and your unlanded Roman relatives convert to Portuguese Culture;You and your unlanded Roman relatives convert to Portuguese Culture;;You and your unlanded Roman relatives convert to Portuguese Culture;;;;;;;;;x
+irck2_convert_to_sardinian_desc;You and your unlanded Roman relatives convert to Sardinian Culture;You and your unlanded Roman relatives convert to Sardinian Culture;You and your unlanded Roman relatives convert to Sardinian Culture;;You and your unlanded Roman relatives convert to Sardinian Culture;;;;;;;;;x
+#New cultures
+irck2_convert_to_aromanian;Embrace Aromanian Culture;Embrace Aromanian Culture;Embrace Aromanian Culture;;Embrace Aromanian Culture;;;;;;;;;x
+irck2_convert_to_cambrian;Embrace Cambrian Culture;Embrace Cambrian Culture;Embrace Cambrian Culture;;Embrace Cambrian Culture;;;;;;;;;x
+irck2_convert_to_romano_african;Embrace Eifrican Culture;Embrace Eifrican Culture;Embrace Eifrican Culture;;Embrace Eifrican Culture;;;;;;;;;x
+irck2_convert_to_indo_ronman;Embrace Indo-Roman Culture;Embrace Eifrican Culture;Embrace Eifrican Culture;;Embrace Eifrican Culture;;;;;;;;;x
+irck2_convert_to_aromanian_desc;You and your unlanded Roman relatives convert to Aromanian Culture;You and your unlanded Roman relatives convert to Aromanian Culture;You and your unlanded Roman relatives convert to Aromanian Culture;;You and your unlanded Roman relatives convert to Aromanian Culture;;;;;;;;;x
+irck2_convert_to_cambrian_desc;You and your unlanded Roman relatives convert to Cambrian Culture;You and your unlanded Roman relatives convert to Cambrian Culture;You and your unlanded Roman relatives convert to Cambrian Culture;;You and your unlanded Roman relatives convert to Cambrian Culture;;;;;;;;;x
+irck2_convert_to_romano_african_desc;You and your unlanded Roman relatives convert to Eifrican Culture;You and your unlanded Roman relatives convert to Eifrican Culture;You and your unlanded Roman relatives convert to Eifrican Culture;;You and your unlanded Roman relatives convert to Eifrican Culture;;;;;;;;;x
+irck2_convert_to_palmyrene_desc;You and your unlanded Roman relatives convert to Palmyrene Culture;You and your unlanded Roman relatives convert to Palmyrene Culture;You and your unlanded Roman relatives convert to Palmyrene Culture;;You and your unlanded Roman relatives convert to Palmyrene Culture;;;;;;;;;x
+irck2_convert_to_indo_roman_desc;You and your unlanded Roman relatives convert to Indo-Roman Culture;You and your unlanded Roman relatives convert to Indo-Roman Culture;You and your unlanded Roman relatives convert to Indo-Roman Culture;;You and your unlanded Roman relatives convert to Indo-Roman Culture;;;;;;;;;x
+
+
+#Germanic split
+irck2_convert_to_german;Embrace German Culture;Embrace German Culture;Embrace German Culture;;Embrace German Culture;;;;;;;;;x
+irck2_convert_to_saxon;Embrace Anglo-Saxon Culture;Embrace Anglo-Saxon Culture;Embrace Anglo-Saxon Culture;;Embrace Anglo-Saxon Culture;;;;;;;;;x
+irck2_convert_to_frisian;Embrace Frisian Culture;Embrace Frisian Culture;Embrace Frisian Culture;;Embrace Frisian Culture;;;;;;;;;x
+irck2_convert_to_dutch;Embrace Dutch Culture;Embrace Dutch Culture;Embrace Dutch Culture;;Embrace Dutch Culture;;;;;;;;;x
+irck2_convert_to_lombard;Embrace Lombard Culture;Embrace Lombard Culture;Embrace Lombard Culture;;Embrace Lombard Culture;;;;;;;;;x
+irck2_convert_to_german_desc;You and your unlanded Suebi relatives convert to German Culture;You and your unlanded Roman relatives convert to German Culture;You and your unlanded Suebi relatives convert to German Culture;;You and your unlanded Suebi relatives convert to German Culture;;;;;;;;;x
+irck2_convert_to_saxon_desc;You and your unlanded Saxon relatives convert to Anglo-Saxon Culture;You and your unlanded Saxon relatives convert to Anglo-Saxon Culture;You and your unlanded Saxon relatives convert to Anglo-Saxon Culture;;You and your unlanded Saxon relatives convert to Anglo-Saxon Culture;;;;;;;;;x
+irck2_convert_to_frisian_desc;You and your unlanded Saxon relatives convert to Frisian Culture;You and your unlanded Saxon relatives convert to Frisian Culture;You and your unlanded Saxon relatives convert to Frisian Culture;;You and your unlanded Saxon relatives convert to Frisian Culture;;;;;;;;;x
+irck2_convert_to_dutch_desc;You and your unlanded Frankish relatives convert to Dutch Culture;You and your unlanded Frankish relatives convert to Dutch Culture;You and your unlanded Frankish relatives convert to Dutch Culture;;You and your unlanded Frankish relatives convert to Dutch Culture;;;;;;;;;x
+irck2_convert_to_lombard_desc;You and your unlanded Suebi relatives convert to Lombard Culture;You and your unlanded Suebi relatives convert to Lombard Culture;You and your unlanded Suebi relatives convert to Lombard Culture;;You and your unlanded Suebi relatives convert to Lombard Culture;;;;;;;;;x
+
+#Baltic split
+irck2_convert_to_lithuanian;Embrace Lithuanian Culture;Embrace Lithuanian Culture;Embrace Lithuanian Culture;;Embrace Lithuanian Culture;;;;;;;;;x
+irck2_convert_to_lettigallish;Embrace Lettigallian Culture;Embrace Lettigallian Culture;Embrace Lettigallian Culture;;Embrace Lettigallian Culture;;;;;;;;;x
+irck2_convert_to_prussian;Embrace Prussian Culture;Embrace Prussian Culture;Embrace Prussian Culture;;Embrace Prussian Culture;;;;;;;;;x
+irck2_convert_to_lithuanian_desc;You and your unlanded Aestian relatives convert to Lithuanian Culture;You and your unlanded Aestian relatives convert to Lithuanian Culture;You and your unlanded Aestian relatives convert to Lithuanian Culture;;You and your unlanded Aestian relatives convert to Lithuanian Culture;;;;;;;;;x
+irck2_convert_to_lettigallish_desc;You and your unlanded Aestian relatives convert to Lettigallian Culture;You and your unlanded Aestian relatives convert to Lettigallian Culture;You and your unlanded Aestian relatives convert to Lettigallian Culture;;You and your unlanded Aestian relatives convert to Lettigallian Culture;;;;;;;;;x
+irck2_convert_to_prussian_desc;You and your unlanded Aestian relatives convert to Prussian Culture;You and your unlanded Aestian relatives convert to Prussian Culture;You and your unlanded Aestian relatives convert to Prussian Culture;;You and your unlanded Aestian relatives convert to Prussian Culture;;;;;;;;;x
+
+#Punic split
+irck2_convert_to_taliaite;Embrace Taliaite Culture;Embrace Taliaite Culture;Embrace Taliaite Culture;;Embrace Taliaite Culture;;;;;;;;;x
+irck2_convert_to_mlachthi;Embrace Mlachthi Culture;Embrace Mlachthi Culture;Embrace Mlachthi Culture;;Embrace Mlachthi Culture;;;;;;;;;x
+irck2_convert_to_ysthyalm;Embrace Ysthyalm Culture;Embrace Ysthyalm Culture;Embrace Ysthyalm Culture;;Embrace Ysthyalm Culture;;;;;;;;;x
+irck2_convert_to_carthago_novan;Embrace Carthago Novan Culture;Embrace Carthago Novan Culture;Embrace Carthago Novan Culture;;Embrace Carthago Novan Culture;;;;;;;;;x
+irck2_convert_to_pmpese;Embrace Pmpese Culture;Embrace Pmpese Culture;Embrace Pmpese Culture;;Embrace Pmpese Culture;;;;;;;;;x
+irck2_convert_to_epicrateian;Embrace Epicrateian Culture;Embrace Epicrateian Culture;Embrace Epicrateian Culture;;Embrace Epicrateian Culture;;;;;;;;;x
+irck2_convert_to_pretan;Embrace Pretan Culture;Embrace Pretan Culture;Embrace Pretan Culture;;Embrace Pretan Culture;;;;;;;;;x
+irck2_convert_to_sidonian;Embrace Sidonian Culture;Embrace Sidonian Culture;Embrace Sidonian Culture;;Embrace Sidonian Culture;;;;;;;;;x
+irck2_convert_to_ziqanmakom;Embrace Ziqanmak'om Culture;Embrace Ziqanmak'om Culture;Embrace Ziqanmak'om Culture;;Embrace Ziqanmak'om Culture;;;;;;;;;x
+irck2_convert_to_sythchy;Embrace Sythchy Culture;Embrace Sythchy Culture;Embrace Sythchy Culture;;Embrace Sythchy Culture;;;;;;;;;x
+irck2_convert_to_taliaite_desc;You and your unlanded Punic relatives convert to Taliaite Culture;You and your unlanded Punic relatives convert to Taliaite Culture;You and your unlanded Punic relatives convert to Taliaite Culture;;You and your unlanded Punic relatives convert to Taliaite Culture;;;;;;;;;x
+irck2_convert_to_mlachthi_desc;You and your unlanded Punic relatives convert to Mlachthi Culture;You and your unlanded Punic relatives convert to Mlachthi Culture;You and your unlanded Punic relatives convert to Mlachthi Culture;;You and your unlanded Punic relatives convert to Mlachthi Culture;;;;;;;;;x
+irck2_convert_to_ysthyalm_desc;You and your unlanded Punic relatives convert to Ysthyalm Culture;You and your unlanded Punic relatives convert to Ysthyalm Culture;You and your unlanded Punic relatives convert to Ysthyalm Culture;;You and your unlanded Punic relatives convert to Ysthyalm Culture;;;;;;;;;x
+irck2_convert_to_carthago_novan_desc;You and your unlanded Punic relatives convert to Carthago Novan Culture;You and your unlanded Punic relatives convert to Carthago Novan Culture;You and your unlanded Punic relatives convert to Carthago Novan Culture;;You and your unlanded Punic relatives convert to Carthago Novan Culture;;;;;;;;;x
+irck2_convert_to_pmpese_desc;You and your unlanded Punic relatives convert to Pmpese Culture;You and your unlanded Punic relatives convert to Pmpese Culture;You and your unlanded Punic relatives convert to Pmpese Culture;;You and your unlanded Punic relatives convert to Pmpese Culture;;;;;;;;;x
+irck2_convert_to_pretan_desc;You and your unlanded Punic relatives convert to Pretan Culture;You and your unlanded Punic relatives convert to Pretan Culture;You and your unlanded Punic relatives convert to Pretan Culture;;You and your unlanded Punic relatives convert to Pretan Culture;;;;;;;;;x
+irck2_convert_to_sidonian_desc;You and your unlanded Punic relatives convert to Sidonian Culture;You and your unlanded Punic relatives convert to Sidonian Culture;You and your unlanded Punic relatives convert to Sidonian Culture;;You and your unlanded Punic relatives convert to Sidonian Culture;;;;;;;;;x
+irck2_convert_to_ziqanmakom_desc;You and your unlanded Punic relatives convert to Ziqanmak'om Culture;You and your unlanded Punic relatives convert to Ziqanmak'om Culture;You and your unlanded Punic relatives convert to Ziqanmak'om Culture;;You and your unlanded Punic relatives convert to Ziqanmak'om Culture;;;;;;;;;x
+irck2_convert_to_sythchy_desc;You and your unlanded Punic relatives convert to Sythchy Culture;You and your unlanded Punic relatives convert to Sythchy Culture;You and your unlanded Punic relatives convert to Sythchy Culture;;You and your unlanded Punic relatives convert to Sythchy Culture;;;;;;;;;x
+
+#Empires
+irck2_create_e_italy;Create Italia;Create Italia;Machen Italien;;Create Italia;;;;;;;;;x
+irck2_create_e_italy_desc;Create Italia;Create Italia;Machen Italien;;Create Italia;;;;;;;;;x
+irck2_create_e_france;Create Francia;Create Francia;Machen Frankreich;;Create Francia;;;;;;;;;x
+irck2_create_e_france_desc;Create Francia;Create Francia;Machen Frankreich;;Create Francia;;;;;;;;;x
+irck2_create_e_spain;Create Hispania;Create Hispania;Machen Hispanien;;Create Hispania;;;;;;;;;x
+irck2_create_e_spain_desc;Create Hispania;Create Hispania;Machen Hispanien;;Create Hispania;;;;;;;;;x
+
+#Kingdoms
+irck2_create_k_dacia;Create Wallachia;Create Wallachia;Machen Wallachien;;Create Wallachia;;;;;;;;;x
+irck2_create_k_dacia_desc;Create Wallachia;Create Wallachia;Machen Wallachien;;Create Wallachia;;;;;;;;;x
+
+
+
+

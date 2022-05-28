@@ -1,0 +1,480 @@
+5331000=
+{
+	name="Abbarid"
+	culture="mlachthi"
+}
+5331001=
+{
+	name="Abbarid"
+	culture="mlachthi"
+}
+5331002=
+{
+	name="Abbarid"
+	culture="mlachthi"
+}
+5331003=
+{
+	name="Abbarid"
+	culture="mlachthi"
+}
+5331004=
+{
+	name="Adonibaal"
+	culture="mlachthi"
+}
+5331005=
+{
+	name="Adonibaalid"
+	culture="mlachthi"
+}
+5331006=
+{
+	name="Adonibaalid"
+	culture="mlachthi"
+}
+5331007=
+{
+	name="Adonibaalid"
+	culture="mlachthi"
+}
+5331008=
+{
+	name="Ahirom"
+	culture="mlachthi"
+}
+5331009=
+{
+	name="Ahiromid"
+	culture="mlachthi"
+}
+5331010=
+{
+	name="Ahiromid"
+	culture="mlachthi"
+}
+5331011=
+{
+	name="Ahiromid"
+	culture="mlachthi"
+}
+5331012=
+{
+	name="Baalhannid"
+	culture="mlachthi"
+}
+5331013=
+{
+	name="Baalhannid"
+	culture="mlachthi"
+}
+5331014=
+{
+	name="Baalhannid"
+	culture="mlachthi"
+}
+5331015=
+{
+	name="Baalhannid"
+	culture="mlachthi"
+}
+5331016=
+{
+	name="Baalid"
+	culture="mlachthi"
+}
+5331017=
+{
+	name="Baalid"
+	culture="mlachthi"
+}
+5331018=
+{
+	name="Baalid"
+	culture="mlachthi"
+}
+5331019=
+{
+	name="Baalid"
+	culture="mlachthi"
+}
+5331020=
+{
+	name="Barca"
+	culture="mlachthi"
+}
+5331021=
+{
+	name="Barca"
+	culture="mlachthi"
+}
+5331022=
+{
+	name="Barcid"
+	culture="mlachthi"
+}
+5331023=
+{
+	name="Barcid"
+	culture="mlachthi"
+}
+5331024=
+{
+	name="Bodona"
+	culture="mlachthi"
+}
+5331025=
+{
+	name="Bodona"
+	culture="mlachthi"
+}
+5331026=
+{
+	name="Bodonid"
+	culture="mlachthi"
+}
+5331027=
+{
+	name="Bodonid"
+	culture="mlachthi"
+}
+5331028=
+{
+	name="Bostara"
+	culture="mlachthi"
+}
+5331029=
+{
+	name="Bostara"
+	culture="mlachthi"
+}
+5331030=
+{
+	name="Bostarid"
+	culture="mlachthi"
+}
+5331031=
+{
+	name="Bostarid"
+	culture="mlachthi"
+}
+5331032=
+{
+	name="Chelbesid"
+	culture="mlachthi"
+}
+5331033=
+{
+	name="Chelbesid"
+	culture="mlachthi"
+}
+5331034=
+{
+	name="Chelbesid"
+	culture="mlachthi"
+}
+5331035=
+{
+	name="Chelbesid"
+	culture="mlachthi"
+}
+5331036=
+{
+	name="Eshbaalid"
+	culture="mlachthi"
+}
+5331037=
+{
+	name="Eshbaalid"
+	culture="mlachthi"
+}
+5331038=
+{
+	name="Eshbaalid"
+	culture="mlachthi"
+}
+5331039=
+{
+	name="Eshbaalid"
+	culture="mlachthi"
+}
+5331040=
+{
+	name="Eugorid"
+	culture="mlachthi"
+}
+5331041=
+{
+	name="Eugorid"
+	culture="mlachthi"
+}
+5331042=
+{
+	name="Eugorid"
+	culture="mlachthi"
+}
+5331043=
+{
+	name="Eugorid"
+	culture="mlachthi"
+}
+5331044=
+{
+	name="Hannid"
+	culture="mlachthi"
+}
+5331045=
+{
+	name="Hannid"
+	culture="mlachthi"
+}
+5331046=
+{
+	name="Hannid"
+	culture="mlachthi"
+}
+5331047=
+{
+	name="Hannid"
+	culture="mlachthi"
+}
+5331048=
+{
+	name="Hiramid"
+	culture="mlachthi"
+}
+5331049=
+{
+	name="Hiramid"
+	culture="mlachthi"
+}
+5331050=
+{
+	name="Hiramid"
+	culture="mlachthi"
+}
+5331051=
+{
+	name="Hiramid"
+	culture="mlachthi"
+}
+5331052=
+{
+	name="Mago"
+	culture="mlachthi"
+}
+5331053=
+{
+	name="Mago"
+	culture="mlachthi"
+}
+5331054=
+{
+	name="Magid"
+	culture="mlachthi"
+}
+5331055=
+{
+	name="Magid"
+	culture="mlachthi"
+}
+5331056=
+{
+	name="Mattanid"
+	culture="mlachthi"
+}
+5331057=
+{
+	name="Mattanid"
+	culture="mlachthi"
+}
+5331058=
+{
+	name="Mattanid"
+	culture="mlachthi"
+}
+5331059=
+{
+	name="Mattanid"
+	culture="mlachthi"
+}
+5331060=
+{
+	name="Metallid"
+	culture="mlachthi"
+}
+5331061=
+{
+	name="Metallid"
+	culture="mlachthi"
+}
+5331062=
+{
+	name="Metallid"
+	culture="mlachthi"
+}
+5331063=
+{
+	name="Metallid"
+	culture="mlachthi"
+}
+5331064=
+{
+	name="Milkiramid"
+	culture="mlachthi"
+}
+5331065=
+{
+	name="Milkiramid"
+	culture="mlachthi"
+}
+5331066=
+{
+	name="Milkiramid"
+	culture="mlachthi"
+}
+5331067=
+{
+	name="Milkiramid"
+	culture="mlachthi"
+}
+5331068=
+{
+	name="Philosirid"
+	culture="mlachthi"
+}
+5331069=
+{
+	name="Philosirid"
+	culture="mlachthi"
+}
+5331070=
+{
+	name="Philosirid"
+	culture="mlachthi"
+}
+5331071=
+{
+	name="Philosirid"
+	culture="mlachthi"
+}
+5331072=
+{
+	name="Gisgo"
+	culture="mlachthi"
+}
+5331073=
+{
+	name="Gisgo"
+	culture="mlachthi"
+}
+5331074=
+{
+	name="Gisgoid"
+	culture="mlachthi"
+}
+5331075=
+{
+	name="Gisgoid"
+	culture="mlachthi"
+}
+5331076=
+{
+	name="Gerbalid"
+	culture="mlachthi"
+}
+5331077=
+{
+	name="Gerbalid"
+	culture="mlachthi"
+}
+5331078=
+{
+	name="Gerbalid"
+	culture="mlachthi"
+}
+5331079=
+{
+	name="Gerbalid"
+	culture="mlachthi"
+}
+5331080=
+{
+	name="Hammid"
+	culture="mlachthi"
+}
+5331081=
+{
+	name="Hammid"
+	culture="mlachthi"
+}
+5331082=
+{
+	name="Hammid"
+	culture="mlachthi"
+}
+5331083=
+{
+	name="Hammid"
+	culture="mlachthi"
+}
+5331084=
+{
+	name="Eugarid"
+	culture="mlachthi"
+}
+5331085=
+{
+	name="Eugarid"
+	culture="mlachthi"
+}
+5331086=
+{
+	name="Eugarid"
+	culture="mlachthi"
+}
+5331087=
+{
+	name="Eugarid"
+	culture="mlachthi"
+}
+5331088=
+{
+	name="Mashhid"
+	culture="mlachthi"
+}
+5331089=
+{
+	name="Mashhid"
+	culture="mlachthi"
+}
+5331090=
+{
+	name="Mashhid"
+	culture="mlachthi"
+}
+5331091=
+{
+	name="Mashhid"
+	culture="mlachthi"
+}
+5331092=
+{
+	name="Ummashid"
+	culture="mlachthi"
+}
+5331093=
+{
+	name="Ummashid"
+	culture="mlachthi"
+}
+5331094=
+{
+	name="Ummashid"
+	culture="mlachthi"
+}
+5331095=
+{
+	name="Ummashid"
+	culture="mlachthi"
+}
