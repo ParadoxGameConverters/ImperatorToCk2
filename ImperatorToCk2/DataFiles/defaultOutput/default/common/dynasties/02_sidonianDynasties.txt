@@ -1,0 +1,480 @@
+5333000=
+{
+	name="Abbarid"
+	culture="sidonian"
+}
+5333001=
+{
+	name="Abbarid"
+	culture="sidonian"
+}
+5333002=
+{
+	name="Abbarid"
+	culture="sidonian"
+}
+5333003=
+{
+	name="Abbarid"
+	culture="sidonian"
+}
+5333004=
+{
+	name="Adonibaal"
+	culture="sidonian"
+}
+5333005=
+{
+	name="Adonibaalid"
+	culture="sidonian"
+}
+5333006=
+{
+	name="Adonibaalid"
+	culture="sidonian"
+}
+5333007=
+{
+	name="Adonibaalid"
+	culture="sidonian"
+}
+5333008=
+{
+	name="Ahirom"
+	culture="sidonian"
+}
+5333009=
+{
+	name="Ahiromid"
+	culture="sidonian"
+}
+5333010=
+{
+	name="Ahiromid"
+	culture="sidonian"
+}
+5333011=
+{
+	name="Ahiromid"
+	culture="sidonian"
+}
+5333012=
+{
+	name="Baalhannid"
+	culture="sidonian"
+}
+5333013=
+{
+	name="Baalhannid"
+	culture="sidonian"
+}
+5333014=
+{
+	name="Baalhannid"
+	culture="sidonian"
+}
+5333015=
+{
+	name="Baalhannid"
+	culture="sidonian"
+}
+5333016=
+{
+	name="Baalid"
+	culture="sidonian"
+}
+5333017=
+{
+	name="Baalid"
+	culture="sidonian"
+}
+5333018=
+{
+	name="Baalid"
+	culture="sidonian"
+}
+5333019=
+{
+	name="Baalid"
+	culture="sidonian"
+}
+5333020=
+{
+	name="Barca"
+	culture="sidonian"
+}
+5333021=
+{
+	name="Barca"
+	culture="sidonian"
+}
+5333022=
+{
+	name="Barcid"
+	culture="sidonian"
+}
+5333023=
+{
+	name="Barcid"
+	culture="sidonian"
+}
+5333024=
+{
+	name="Bodona"
+	culture="sidonian"
+}
+5333025=
+{
+	name="Bodona"
+	culture="sidonian"
+}
+5333026=
+{
+	name="Bodonid"
+	culture="sidonian"
+}
+5333027=
+{
+	name="Bodonid"
+	culture="sidonian"
+}
+5333028=
+{
+	name="Bostara"
+	culture="sidonian"
+}
+5333029=
+{
+	name="Bostara"
+	culture="sidonian"
+}
+5333030=
+{
+	name="Bostarid"
+	culture="sidonian"
+}
+5333031=
+{
+	name="Bostarid"
+	culture="sidonian"
+}
+5333032=
+{
+	name="Chelbesid"
+	culture="sidonian"
+}
+5333033=
+{
+	name="Chelbesid"
+	culture="sidonian"
+}
+5333034=
+{
+	name="Chelbesid"
+	culture="sidonian"
+}
+5333035=
+{
+	name="Chelbesid"
+	culture="sidonian"
+}
+5333036=
+{
+	name="Eshbaalid"
+	culture="sidonian"
+}
+5333037=
+{
+	name="Eshbaalid"
+	culture="sidonian"
+}
+5333038=
+{
+	name="Eshbaalid"
+	culture="sidonian"
+}
+5333039=
+{
+	name="Eshbaalid"
+	culture="sidonian"
+}
+5333040=
+{
+	name="Eugorid"
+	culture="sidonian"
+}
+5333041=
+{
+	name="Eugorid"
+	culture="sidonian"
+}
+5333042=
+{
+	name="Eugorid"
+	culture="sidonian"
+}
+5333043=
+{
+	name="Eugorid"
+	culture="sidonian"
+}
+5333044=
+{
+	name="Hannid"
+	culture="sidonian"
+}
+5333045=
+{
+	name="Hannid"
+	culture="sidonian"
+}
+5333046=
+{
+	name="Hannid"
+	culture="sidonian"
+}
+5333047=
+{
+	name="Hannid"
+	culture="sidonian"
+}
+5333048=
+{
+	name="Hiramid"
+	culture="sidonian"
+}
+5333049=
+{
+	name="Hiramid"
+	culture="sidonian"
+}
+5333050=
+{
+	name="Hiramid"
+	culture="sidonian"
+}
+5333051=
+{
+	name="Hiramid"
+	culture="sidonian"
+}
+5333052=
+{
+	name="Mago"
+	culture="sidonian"
+}
+5333053=
+{
+	name="Mago"
+	culture="sidonian"
+}
+5333054=
+{
+	name="Magid"
+	culture="sidonian"
+}
+5333055=
+{
+	name="Magid"
+	culture="sidonian"
+}
+5333056=
+{
+	name="Mattanid"
+	culture="sidonian"
+}
+5333057=
+{
+	name="Mattanid"
+	culture="sidonian"
+}
+5333058=
+{
+	name="Mattanid"
+	culture="sidonian"
+}
+5333059=
+{
+	name="Mattanid"
+	culture="sidonian"
+}
+5333060=
+{
+	name="Metallid"
+	culture="sidonian"
+}
+5333061=
+{
+	name="Metallid"
+	culture="sidonian"
+}
+5333062=
+{
+	name="Metallid"
+	culture="sidonian"
+}
+5333063=
+{
+	name="Metallid"
+	culture="sidonian"
+}
+5333064=
+{
+	name="Milkiramid"
+	culture="sidonian"
+}
+5333065=
+{
+	name="Milkiramid"
+	culture="sidonian"
+}
+5333066=
+{
+	name="Milkiramid"
+	culture="sidonian"
+}
+5333067=
+{
+	name="Milkiramid"
+	culture="sidonian"
+}
+5333068=
+{
+	name="Philosirid"
+	culture="sidonian"
+}
+5333069=
+{
+	name="Philosirid"
+	culture="sidonian"
+}
+5333070=
+{
+	name="Philosirid"
+	culture="sidonian"
+}
+5333071=
+{
+	name="Philosirid"
+	culture="sidonian"
+}
+5333072=
+{
+	name="Gisgo"
+	culture="sidonian"
+}
+5333073=
+{
+	name="Gisgo"
+	culture="sidonian"
+}
+5333074=
+{
+	name="Gisgoid"
+	culture="sidonian"
+}
+5333075=
+{
+	name="Gisgoid"
+	culture="sidonian"
+}
+5333076=
+{
+	name="Gerbalid"
+	culture="sidonian"
+}
+5333077=
+{
+	name="Gerbalid"
+	culture="sidonian"
+}
+5333078=
+{
+	name="Gerbalid"
+	culture="sidonian"
+}
+5333079=
+{
+	name="Gerbalid"
+	culture="sidonian"
+}
+5333080=
+{
+	name="Hammid"
+	culture="sidonian"
+}
+5333081=
+{
+	name="Hammid"
+	culture="sidonian"
+}
+5333082=
+{
+	name="Hammid"
+	culture="sidonian"
+}
+5333083=
+{
+	name="Hammid"
+	culture="sidonian"
+}
+5333084=
+{
+	name="Eugarid"
+	culture="sidonian"
+}
+5333085=
+{
+	name="Eugarid"
+	culture="sidonian"
+}
+5333086=
+{
+	name="Eugarid"
+	culture="sidonian"
+}
+5333087=
+{
+	name="Eugarid"
+	culture="sidonian"
+}
+5333088=
+{
+	name="Mashhid"
+	culture="sidonian"
+}
+5333089=
+{
+	name="Mashhid"
+	culture="sidonian"
+}
+5333090=
+{
+	name="Mashhid"
+	culture="sidonian"
+}
+5333091=
+{
+	name="Mashhid"
+	culture="sidonian"
+}
+5333092=
+{
+	name="Ummashid"
+	culture="sidonian"
+}
+5333093=
+{
+	name="Ummashid"
+	culture="sidonian"
+}
+5333094=
+{
+	name="Ummashid"
+	culture="sidonian"
+}
+5333095=
+{
+	name="Ummashid"
+	culture="sidonian"
+}

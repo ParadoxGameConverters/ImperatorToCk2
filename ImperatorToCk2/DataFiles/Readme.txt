@@ -46,13 +46,14 @@ CREDITS
 An list of those who contributed effort to this mammoth undertaking
 
 Idhrendur                             - Sanity Checks, Review, and Fronter integration
-Shinymewtwo99 (aka Dr. Dudelsack)     - Lead Developer and Programmer
+Shinymewtwo99 (aka Dr. Dudelsack)     - Lead Developer, Programmer, Events, and Data Files
 Thinking_waffle                       - Testing, Ideas, and Translation
 Vladimir Ilyich Lenin                 - Testing, Events
 Siawosh                               - Testing
-Canadian Lemur                        - Events, data files
-comagoosie                            - librakaly save melter
+Canadian Lemur                        - Events, Data Files
 កាបូន២៦                              - Testing
+OurLordMonty                          - Data Files
+comagoosie                            - librakaly save melter
 The When The World Stopped Making Sense (WtWSMS) mod team for allowing the converter to use their content, their mod can be found either on Steam or their forum thread.
 WtWSMS mod Steam link: https://steamcommunity.com/sharedfiles/filedetails/?id=1247380029
 WtWSMS mod Forum link: https://forum.paradoxplaza.com/forum/forums/when-the-world-stopped-making-sense-mod.876/
@@ -76,3 +77,6 @@ WtWSMS mod Forum link: https://forum.paradoxplaza.com/forum/forums/when-the-worl
    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the
    License for the specific language governing permissions and limitations
    under the License.  
+
+The name "Ziqanmak'om" was devised thanks to contributions by Ivan Štambuk on en.Wiktionary.org, under the GNU Free Documentation License, which can be found here:
+https://en.wiktionary.org/wiki/Wiktionary:GNU_Free_Documentation_License

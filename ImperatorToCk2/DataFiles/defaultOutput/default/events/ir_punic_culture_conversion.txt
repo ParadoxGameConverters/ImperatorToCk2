@@ -1,0 +1,498 @@
+###################################
+#
+# Imperator:Rome to Crusader Kings II
+# - Punic Culture Conversion Events
+#
+###################################
+
+namespace = IR_CAR
+
+# Province culture changes from Punic to Taliaite
+province_event = {
+	id = IR_CAR.2000
+	desc = EVTDESC_IR_CAR_2000
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = carthaginian
+		region = custom_irck2_italy
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = carthaginian
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_CAR_2000
+		culture = taliaite
+	}
+}
+
+#################################################
+
+province_event = {
+	id = IR_CAR.2001
+	desc = EVTDESC_IR_CAR_2001
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = carthaginian
+		OR = {
+			region = custom_irck2_dalmatia
+			region = custom_irck2_romania
+		}
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = carthaginian
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_CAR_2001
+		culture = mlachthi
+	}
+}
+
+province_event = {
+	id = IR_CAR.2003
+	desc = EVTDESC_IR_CAR_2003
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = carthaginian
+		OR = {
+			region = custom_irck2_france
+			region = custom_irck2_occitania
+		}
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = carthaginian
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_CAR_2003
+		culture = ysthyalm
+	}
+}
+
+province_event = {
+	id = IR_CAR.2005
+	desc = EVTDESC_IR_CAR_2005
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = carthaginian
+		OR = {
+			region = custom_irck2_catalonia
+			region = custom_irck2_spain
+			region = custom_irck2_portugal
+		}
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = carthaginian
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_CAR_2005
+		culture = carthago_novan
+	}
+}
+
+province_event = {
+	id = IR_CAR.2008
+	desc = EVTDESC_IR_CAR_2008
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = carthaginian
+		region = custom_irck2_sardinia
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = carthaginian
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_CAR_2008
+		culture = pmpese
+	}
+}
+
+province_event = {
+	id = IR_CAR.2009
+	desc = EVTDESC_IR_CAR_2009
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = carthaginian
+		region = custom_irck2_greece
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = carthaginian
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_CAR_2009
+		culture = epicrateian
+	}
+}
+
+
+
+province_event = {
+	id = IR_CAR.2010
+	desc = EVTDESC_IR_CAR_2010
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = carthaginian
+		region = custom_irck2_britannia
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = carthaginian
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_CAR_2010
+		culture = pretan
+	}
+}
+
+province_event = {
+	id = IR_CAR.2012
+	desc = EVTDESC_IR_CAR_2012
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = carthaginian
+		region = custom_irck2_levant
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = carthaginian
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_CAR_2012
+		culture = sidonian
+	}
+}
+
+province_event = {
+	id = IR_CAR.2013
+	desc = EVTDESC_IR_CAR_2013
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = carthaginian
+		OR = {
+			region = custom_irck2_germania
+			region = world_europe_north
+		}
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = carthaginian
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_CAR_2013
+		culture = ziqanmakom
+	}
+}
+
+province_event = {
+	id = IR_CAR.2014
+	desc = EVTDESC_IR_CAR_2014
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = carthaginian
+		region = custom_irck2_poland
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = carthaginian
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_CAR_2014
+		culture = sythchy
+	}
+}
+
+

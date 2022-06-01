@@ -1,0 +1,480 @@
+5335000=
+{
+	name="Abbarid"
+	culture="pretan"
+}
+5335001=
+{
+	name="Abbarid"
+	culture="pretan"
+}
+5335002=
+{
+	name="Abbarid"
+	culture="pretan"
+}
+5335003=
+{
+	name="Abbarid"
+	culture="pretan"
+}
+5335004=
+{
+	name="Adonibaal"
+	culture="pretan"
+}
+5335005=
+{
+	name="Adonibaalid"
+	culture="pretan"
+}
+5335006=
+{
+	name="Adonibaalid"
+	culture="pretan"
+}
+5335007=
+{
+	name="Adonibaalid"
+	culture="pretan"
+}
+5335008=
+{
+	name="Ahirom"
+	culture="pretan"
+}
+5335009=
+{
+	name="Ahiromid"
+	culture="pretan"
+}
+5335010=
+{
+	name="Ahiromid"
+	culture="pretan"
+}
+5335011=
+{
+	name="Ahiromid"
+	culture="pretan"
+}
+5335012=
+{
+	name="Baalhannid"
+	culture="pretan"
+}
+5335013=
+{
+	name="Baalhannid"
+	culture="pretan"
+}
+5335014=
+{
+	name="Baalhannid"
+	culture="pretan"
+}
+5335015=
+{
+	name="Baalhannid"
+	culture="pretan"
+}
+5335016=
+{
+	name="Baalid"
+	culture="pretan"
+}
+5335017=
+{
+	name="Baalid"
+	culture="pretan"
+}
+5335018=
+{
+	name="Baalid"
+	culture="pretan"
+}
+5335019=
+{
+	name="Baalid"
+	culture="pretan"
+}
+5335020=
+{
+	name="Barca"
+	culture="pretan"
+}
+5335021=
+{
+	name="Barca"
+	culture="pretan"
+}
+5335022=
+{
+	name="Barcid"
+	culture="pretan"
+}
+5335023=
+{
+	name="Barcid"
+	culture="pretan"
+}
+5335024=
+{
+	name="Bodona"
+	culture="pretan"
+}
+5335025=
+{
+	name="Bodona"
+	culture="pretan"
+}
+5335026=
+{
+	name="Bodonid"
+	culture="pretan"
+}
+5335027=
+{
+	name="Bodonid"
+	culture="pretan"
+}
+5335028=
+{
+	name="Bostara"
+	culture="pretan"
+}
+5335029=
+{
+	name="Bostara"
+	culture="pretan"
+}
+5335030=
+{
+	name="Bostarid"
+	culture="pretan"
+}
+5335031=
+{
+	name="Bostarid"
+	culture="pretan"
+}
+5335032=
+{
+	name="Chelbesid"
+	culture="pretan"
+}
+5335033=
+{
+	name="Chelbesid"
+	culture="pretan"
+}
+5335034=
+{
+	name="Chelbesid"
+	culture="pretan"
+}
+5335035=
+{
+	name="Chelbesid"
+	culture="pretan"
+}
+5335036=
+{
+	name="Eshbaalid"
+	culture="pretan"
+}
+5335037=
+{
+	name="Eshbaalid"
+	culture="pretan"
+}
+5335038=
+{
+	name="Eshbaalid"
+	culture="pretan"
+}
+5335039=
+{
+	name="Eshbaalid"
+	culture="pretan"
+}
+5335040=
+{
+	name="Eugorid"
+	culture="pretan"
+}
+5335041=
+{
+	name="Eugorid"
+	culture="pretan"
+}
+5335042=
+{
+	name="Eugorid"
+	culture="pretan"
+}
+5335043=
+{
+	name="Eugorid"
+	culture="pretan"
+}
+5335044=
+{
+	name="Hannid"
+	culture="pretan"
+}
+5335045=
+{
+	name="Hannid"
+	culture="pretan"
+}
+5335046=
+{
+	name="Hannid"
+	culture="pretan"
+}
+5335047=
+{
+	name="Hannid"
+	culture="pretan"
+}
+5335048=
+{
+	name="Hiramid"
+	culture="pretan"
+}
+5335049=
+{
+	name="Hiramid"
+	culture="pretan"
+}
+5335050=
+{
+	name="Hiramid"
+	culture="pretan"
+}
+5335051=
+{
+	name="Hiramid"
+	culture="pretan"
+}
+5335052=
+{
+	name="Mago"
+	culture="pretan"
+}
+5335053=
+{
+	name="Mago"
+	culture="pretan"
+}
+5335054=
+{
+	name="Magid"
+	culture="pretan"
+}
+5335055=
+{
+	name="Magid"
+	culture="pretan"
+}
+5335056=
+{
+	name="Mattanid"
+	culture="pretan"
+}
+5335057=
+{
+	name="Mattanid"
+	culture="pretan"
+}
+5335058=
+{
+	name="Mattanid"
+	culture="pretan"
+}
+5335059=
+{
+	name="Mattanid"
+	culture="pretan"
+}
+5335060=
+{
+	name="Metallid"
+	culture="pretan"
+}
+5335061=
+{
+	name="Metallid"
+	culture="pretan"
+}
+5335062=
+{
+	name="Metallid"
+	culture="pretan"
+}
+5335063=
+{
+	name="Metallid"
+	culture="pretan"
+}
+5335064=
+{
+	name="Milkiramid"
+	culture="pretan"
+}
+5335065=
+{
+	name="Milkiramid"
+	culture="pretan"
+}
+5335066=
+{
+	name="Milkiramid"
+	culture="pretan"
+}
+5335067=
+{
+	name="Milkiramid"
+	culture="pretan"
+}
+5335068=
+{
+	name="Philosirid"
+	culture="pretan"
+}
+5335069=
+{
+	name="Philosirid"
+	culture="pretan"
+}
+5335070=
+{
+	name="Philosirid"
+	culture="pretan"
+}
+5335071=
+{
+	name="Philosirid"
+	culture="pretan"
+}
+5335072=
+{
+	name="Gisgo"
+	culture="pretan"
+}
+5335073=
+{
+	name="Gisgo"
+	culture="pretan"
+}
+5335074=
+{
+	name="Gisgoid"
+	culture="pretan"
+}
+5335075=
+{
+	name="Gisgoid"
+	culture="pretan"
+}
+5335076=
+{
+	name="Gerbalid"
+	culture="pretan"
+}
+5335077=
+{
+	name="Gerbalid"
+	culture="pretan"
+}
+5335078=
+{
+	name="Gerbalid"
+	culture="pretan"
+}
+5335079=
+{
+	name="Gerbalid"
+	culture="pretan"
+}
+5335080=
+{
+	name="Hammid"
+	culture="pretan"
+}
+5335081=
+{
+	name="Hammid"
+	culture="pretan"
+}
+5335082=
+{
+	name="Hammid"
+	culture="pretan"
+}
+5335083=
+{
+	name="Hammid"
+	culture="pretan"
+}
+5335084=
+{
+	name="Eugarid"
+	culture="pretan"
+}
+5335085=
+{
+	name="Eugarid"
+	culture="pretan"
+}
+5335086=
+{
+	name="Eugarid"
+	culture="pretan"
+}
+5335087=
+{
+	name="Eugarid"
+	culture="pretan"
+}
+5335088=
+{
+	name="Mashhid"
+	culture="pretan"
+}
+5335089=
+{
+	name="Mashhid"
+	culture="pretan"
+}
+5335090=
+{
+	name="Mashhid"
+	culture="pretan"
+}
+5335091=
+{
+	name="Mashhid"
+	culture="pretan"
+}
+5335092=
+{
+	name="Ummashid"
+	culture="pretan"
+}
+5335093=
+{
+	name="Ummashid"
+	culture="pretan"
+}
+5335094=
+{
+	name="Ummashid"
+	culture="pretan"
+}
+5335095=
+{
+	name="Ummashid"
+	culture="pretan"
+}

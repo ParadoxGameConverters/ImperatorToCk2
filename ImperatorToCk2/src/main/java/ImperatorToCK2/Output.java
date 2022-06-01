@@ -7,6 +7,7 @@ import java.io.PrintWriter;
 import java.io.FileOutputStream;
 import java.util.Random;
 import java.util.ArrayList;
+import java.io.File;
 /**
  * Information which is output
  *
@@ -1115,8 +1116,6 @@ public class Output
     public static void copyFlag(String ck2Dir, String modDirectory, String rank, String prov, String tag) throws IOException //copies flag files
     {
 
-        String VM = "\\";
-        VM = VM.substring(0);
         if (!tag.contains("dynamic") && !tag.contains("__")) { //if the tag is dynamically generated or is governorship, already uses CK II province ID
             prov = Importer.importConvList("provinceConversion.txt",Integer.parseInt(prov))[1];
         }
@@ -1124,9 +1123,9 @@ public class Output
         prov = Processing.importNames("a",Integer.parseInt(prov),ck2Dir)[0];
         prov = Processing.formatProvName(prov);
         try {
-            Output.copyRaw(ck2Dir+VM+"gfx"+VM+"flags"+VM+"c_"+prov+".tga",modDirectory+VM+"gfx"+VM+"flags"+VM+rank+"_"+tag+".tga");
+            Output.copyRaw(ck2Dir+"/gfx/flags/c_"+prov+".tga",modDirectory+"/gfx/flags/"+rank+"_"+tag+".tga");
         }catch (java.io.FileNotFoundException exception) { //if flag cannot be found, will use default one
-            Output.copyRaw("defaultOutput"+VM+"gfx"+VM+"flags"+VM+"c_default.tga",modDirectory+VM+"gfx"+VM+"flags"+VM+rank+"_"+tag+".tga");
+            Output.copyRaw("defaultOutput/flagDev/c_default.tga",modDirectory+"/gfx/flags/"+rank+"_"+tag+".tga");
         }
 
     }
@@ -1207,7 +1206,7 @@ public class Output
                 irFlagScaleExact(devFlagName,flagName,"128","128"); //create final .tga flag, scale to CK2 128x128
                 flagCreated = 1; //Flag has been created
             }
-            
+
             aqq = aqq + 1;
 
         }
@@ -1483,6 +1482,38 @@ public class Output
         }
         return colorName;
 
+    }
+
+    public static void copyDefaultOutput (String defDir, String outputDir) throws IOException
+    {
+        ArrayList<String[]> allColors = new ArrayList<String[]>();
+        ArrayList<String[]> vanillaColors = new ArrayList<String[]>();
+        //String modDir = "defaultOutput/default";
+        File fileInfo = new File (defDir);
+        String[] fileList = fileInfo.list();
+
+        if (fileList != null) {
+            int aqq = 0;
+            while (aqq < fileList.length) {
+                copyDefaultOutput(defDir+"/"+fileList[aqq],outputDir);
+                aqq = aqq + 1;
+            }
+
+        } else {
+            String fileName = fileInfo.getPath();
+            String newFileName = fileName.substring(21,fileName.length());
+            newFileName = outputDir + newFileName;
+            if (defDir.contains ("common/cultures") || defDir.contains ("common/religions") || defDir.contains ("common/dynasties")
+            || defDir.contains ("/gfx")) {
+                copyRaw(fileName,newFileName);
+            }
+            //else if (defDir.contains ("common/bookmarks")) {
+                
+            //}
+            else {
+                output(fileName,newFileName);
+            }
+        }
     }
 
 }

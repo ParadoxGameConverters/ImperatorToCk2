@@ -1,0 +1,480 @@
+5332000=
+{
+	name="Abbarid"
+	culture="epicrateian"
+}
+5332001=
+{
+	name="Abbarid"
+	culture="epicrateian"
+}
+5332002=
+{
+	name="Abbarid"
+	culture="epicrateian"
+}
+5332003=
+{
+	name="Abbarid"
+	culture="epicrateian"
+}
+5332004=
+{
+	name="Adonibaal"
+	culture="epicrateian"
+}
+5332005=
+{
+	name="Adonibaalid"
+	culture="epicrateian"
+}
+5332006=
+{
+	name="Adonibaalid"
+	culture="epicrateian"
+}
+5332007=
+{
+	name="Adonibaalid"
+	culture="epicrateian"
+}
+5332008=
+{
+	name="Ahirom"
+	culture="epicrateian"
+}
+5332009=
+{
+	name="Ahiromid"
+	culture="epicrateian"
+}
+5332010=
+{
+	name="Ahiromid"
+	culture="epicrateian"
+}
+5332011=
+{
+	name="Ahiromid"
+	culture="epicrateian"
+}
+5332012=
+{
+	name="Baalhannid"
+	culture="epicrateian"
+}
+5332013=
+{
+	name="Baalhannid"
+	culture="epicrateian"
+}
+5332014=
+{
+	name="Baalhannid"
+	culture="epicrateian"
+}
+5332015=
+{
+	name="Baalhannid"
+	culture="epicrateian"
+}
+5332016=
+{
+	name="Baalid"
+	culture="epicrateian"
+}
+5332017=
+{
+	name="Baalid"
+	culture="epicrateian"
+}
+5332018=
+{
+	name="Baalid"
+	culture="epicrateian"
+}
+5332019=
+{
+	name="Baalid"
+	culture="epicrateian"
+}
+5332020=
+{
+	name="Barca"
+	culture="epicrateian"
+}
+5332021=
+{
+	name="Barca"
+	culture="epicrateian"
+}
+5332022=
+{
+	name="Barcid"
+	culture="epicrateian"
+}
+5332023=
+{
+	name="Barcid"
+	culture="epicrateian"
+}
+5332024=
+{
+	name="Bodona"
+	culture="epicrateian"
+}
+5332025=
+{
+	name="Bodona"
+	culture="epicrateian"
+}
+5332026=
+{
+	name="Bodonid"
+	culture="epicrateian"
+}
+5332027=
+{
+	name="Bodonid"
+	culture="epicrateian"
+}
+5332028=
+{
+	name="Bostara"
+	culture="epicrateian"
+}
+5332029=
+{
+	name="Bostara"
+	culture="epicrateian"
+}
+5332030=
+{
+	name="Bostarid"
+	culture="epicrateian"
+}
+5332031=
+{
+	name="Bostarid"
+	culture="epicrateian"
+}
+5332032=
+{
+	name="Chelbesid"
+	culture="epicrateian"
+}
+5332033=
+{
+	name="Chelbesid"
+	culture="epicrateian"
+}
+5332034=
+{
+	name="Chelbesid"
+	culture="epicrateian"
+}
+5332035=
+{
+	name="Chelbesid"
+	culture="epicrateian"
+}
+5332036=
+{
+	name="Eshbaalid"
+	culture="epicrateian"
+}
+5332037=
+{
+	name="Eshbaalid"
+	culture="epicrateian"
+}
+5332038=
+{
+	name="Eshbaalid"
+	culture="epicrateian"
+}
+5332039=
+{
+	name="Eshbaalid"
+	culture="epicrateian"
+}
+5332040=
+{
+	name="Eugorid"
+	culture="epicrateian"
+}
+5332041=
+{
+	name="Eugorid"
+	culture="epicrateian"
+}
+5332042=
+{
+	name="Eugorid"
+	culture="epicrateian"
+}
+5332043=
+{
+	name="Eugorid"
+	culture="epicrateian"
+}
+5332044=
+{
+	name="Hannid"
+	culture="epicrateian"
+}
+5332045=
+{
+	name="Hannid"
+	culture="epicrateian"
+}
+5332046=
+{
+	name="Hannid"
+	culture="epicrateian"
+}
+5332047=
+{
+	name="Hannid"
+	culture="epicrateian"
+}
+5332048=
+{
+	name="Hiramid"
+	culture="epicrateian"
+}
+5332049=
+{
+	name="Hiramid"
+	culture="epicrateian"
+}
+5332050=
+{
+	name="Hiramid"
+	culture="epicrateian"
+}
+5332051=
+{
+	name="Hiramid"
+	culture="epicrateian"
+}
+5332052=
+{
+	name="Mago"
+	culture="epicrateian"
+}
+5332053=
+{
+	name="Mago"
+	culture="epicrateian"
+}
+5332054=
+{
+	name="Magid"
+	culture="epicrateian"
+}
+5332055=
+{
+	name="Magid"
+	culture="epicrateian"
+}
+5332056=
+{
+	name="Mattanid"
+	culture="epicrateian"
+}
+5332057=
+{
+	name="Mattanid"
+	culture="epicrateian"
+}
+5332058=
+{
+	name="Mattanid"
+	culture="epicrateian"
+}
+5332059=
+{
+	name="Mattanid"
+	culture="epicrateian"
+}
+5332060=
+{
+	name="Metallid"
+	culture="epicrateian"
+}
+5332061=
+{
+	name="Metallid"
+	culture="epicrateian"
+}
+5332062=
+{
+	name="Metallid"
+	culture="epicrateian"
+}
+5332063=
+{
+	name="Metallid"
+	culture="epicrateian"
+}
+5332064=
+{
+	name="Milkiramid"
+	culture="epicrateian"
+}
+5332065=
+{
+	name="Milkiramid"
+	culture="epicrateian"
+}
+5332066=
+{
+	name="Milkiramid"
+	culture="epicrateian"
+}
+5332067=
+{
+	name="Milkiramid"
+	culture="epicrateian"
+}
+5332068=
+{
+	name="Philosirid"
+	culture="epicrateian"
+}
+5332069=
+{
+	name="Philosirid"
+	culture="epicrateian"
+}
+5332070=
+{
+	name="Philosirid"
+	culture="epicrateian"
+}
+5332071=
+{
+	name="Philosirid"
+	culture="epicrateian"
+}
+5332072=
+{
+	name="Gisgo"
+	culture="epicrateian"
+}
+5332073=
+{
+	name="Gisgo"
+	culture="epicrateian"
+}
+5332074=
+{
+	name="Gisgoid"
+	culture="epicrateian"
+}
+5332075=
+{
+	name="Gisgoid"
+	culture="epicrateian"
+}
+5332076=
+{
+	name="Gerbalid"
+	culture="epicrateian"
+}
+5332077=
+{
+	name="Gerbalid"
+	culture="epicrateian"
+}
+5332078=
+{
+	name="Gerbalid"
+	culture="epicrateian"
+}
+5332079=
+{
+	name="Gerbalid"
+	culture="epicrateian"
+}
+5332080=
+{
+	name="Hammid"
+	culture="epicrateian"
+}
+5332081=
+{
+	name="Hammid"
+	culture="epicrateian"
+}
+5332082=
+{
+	name="Hammid"
+	culture="epicrateian"
+}
+5332083=
+{
+	name="Hammid"
+	culture="epicrateian"
+}
+5332084=
+{
+	name="Eugarid"
+	culture="epicrateian"
+}
+5332085=
+{
+	name="Eugarid"
+	culture="epicrateian"
+}
+5332086=
+{
+	name="Eugarid"
+	culture="epicrateian"
+}
+5332087=
+{
+	name="Eugarid"
+	culture="epicrateian"
+}
+5332088=
+{
+	name="Mashhid"
+	culture="epicrateian"
+}
+5332089=
+{
+	name="Mashhid"
+	culture="epicrateian"
+}
+5332090=
+{
+	name="Mashhid"
+	culture="epicrateian"
+}
+5332091=
+{
+	name="Mashhid"
+	culture="epicrateian"
+}
+5332092=
+{
+	name="Ummashid"
+	culture="epicrateian"
+}
+5332093=
+{
+	name="Ummashid"
+	culture="epicrateian"
+}
+5332094=
+{
+	name="Ummashid"
+	culture="epicrateian"
+}
+5332095=
+{
+	name="Ummashid"
+	culture="epicrateian"
+}

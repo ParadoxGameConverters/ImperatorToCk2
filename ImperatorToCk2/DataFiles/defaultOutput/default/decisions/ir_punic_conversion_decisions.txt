@@ -1,0 +1,1284 @@
+targetted_decisions = {
+
+
+	# Punic character may convert to Taliaite
+	irck2_convert_to_taliaite = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = carthaginian
+			capital_scope = {
+				region = custom_irck2_italy
+			}
+			any_realm_province = {
+				culture = taliaite
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = carthaginian }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = carthaginian
+			capital_scope = {
+				region = custom_irck2_italy
+			}
+			any_realm_province = {
+				culture = taliaite
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = taliaite
+			}
+			culture = taliaite
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Punic ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = carthaginian
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = carthaginian }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = taliaite }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = taliaite }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = taliaite
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = taliaite
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = taliaite
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = taliaite
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = taliaite
+				}
+			}
+		}
+	}
+
+
+	# Punic character may convert to Mlachthi
+	irck2_convert_to_mlachthi = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = carthaginian
+			capital_scope = {
+				OR = {
+					region = custom_irck2_dalmatia
+					region = custom_irck2_romania
+				}
+			}
+			any_realm_province = {
+				culture = mlachthi
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = carthaginian }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = carthaginian
+			capital_scope = {
+				OR = {
+					region = custom_irck2_dalmatia
+					region = custom_irck2_romania
+				}
+			}
+			any_realm_province = {
+				culture = mlachthi
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = mlachthi
+			}
+			culture = mlachthi
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Punic ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = carthaginian
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = carthaginian }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = mlachthi }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = mlachthi }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = mlachthi
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = mlachthi
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = mlachthi
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = mlachthi
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = mlachthi
+				}
+			}
+		}
+	}
+
+
+	# Punic character may convert to ysthyalm
+	irck2_convert_to_ysthyalm = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = carthaginian
+			capital_scope = {
+				OR = {
+					region = custom_irck2_france
+					region = custom_irck2_occitania
+				}
+			}
+			any_realm_province = {
+				culture = ysthyalm
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = carthaginian }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = carthaginian
+			capital_scope = {
+				OR = {
+					region = custom_irck2_france
+					region = custom_irck2_occitania
+				}
+			}
+			any_realm_province = {
+				culture = ysthyalm
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = ysthyalm
+			}
+			culture = ysthyalm
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Punic ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = carthaginian
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = carthaginian }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = ysthyalm }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = ysthyalm }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = ysthyalm
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = ysthyalm
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = ysthyalm
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = ysthyalm
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = ysthyalm
+				}
+			}
+		}
+	}
+
+
+	# Punic character may convert to Carthago Novan
+	irck2_convert_to_carthago_novan = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = carthaginian
+			capital_scope = {
+				OR = {
+					region = custom_irck2_catalonia
+					region = custom_irck2_spain
+					region = custom_irck2_portugal
+				}
+			}
+			any_realm_province = {
+				culture = carthago_novan
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = carthaginian }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = carthaginian
+			capital_scope = {
+				OR = {
+					region = custom_irck2_catalonia
+					region = custom_irck2_spain
+					region = custom_irck2_portugal
+				}
+			}
+			any_realm_province = {
+				culture = carthago_novan
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = carthago_novan
+			}
+			culture = carthago_novan
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Punic ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = carthaginian
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = carthaginian }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = carthago_novan }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = carthago_novan }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = carthago_novan
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = carthago_novan
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = carthago_novan
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = carthago_novan
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = carthago_novan
+				}
+			}
+		}
+	}
+
+
+	# Punic character may convert to pmpese
+	irck2_convert_to_pmpese = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = carthaginian
+			capital_scope = {
+				region = custom_irck2_sardinia
+			}
+			any_realm_province = {
+				culture = pmpese
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = carthaginian }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = carthaginian
+			capital_scope = {
+				region = custom_irck2_sardinia
+			}
+			any_realm_province = {
+				culture = pmpese
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = pmpese
+			}
+			culture = pmpese
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Punic ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = carthaginian
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = carthaginian }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = pmpese }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = pmpese }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = pmpese
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = pmpese
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = pmpese
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = pmpese
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = pmpese
+				}
+			}
+		}
+	}
+
+
+	# Punic character may convert to epicrateian
+	irck2_convert_to_epicrateian = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = carthaginian
+			capital_scope = {
+				region = custom_irck2_greece
+			}
+			any_realm_province = {
+				culture = epicrateian
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = carthaginian }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = carthaginian
+			capital_scope = {
+				region = custom_irck2_greece
+			}
+			any_realm_province = {
+				culture = epicrateian
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = epicrateian
+			}
+			culture = epicrateian
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Punic ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = carthaginian
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = carthaginian }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = epicrateian }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = epicrateian }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = epicrateian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = epicrateian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = epicrateian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = epicrateian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = epicrateian
+				}
+			}
+		}
+	}
+
+
+
+	# Punic character may convert to Pretan
+	irck2_convert_to_pretan = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = carthaginian
+			capital_scope = {
+				region = custom_irck2_britannia
+			}
+			any_realm_province = {
+				culture = pretan
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = carthaginian }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = carthaginian
+			capital_scope = {
+				region = custom_irck2_britannia
+			}
+			any_realm_province = {
+				culture = pretan
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = pretan
+			}
+			culture = pretan
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Punic ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = carthaginian
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = carthaginian }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = pretan }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = pretan }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = pretan
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = pretan
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = pretan
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = pretan
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = pretan
+				}
+			}
+		}
+	}
+
+	# Punic character may convert to sidonian
+	irck2_convert_to_sidonian = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = carthaginian
+			capital_scope = {
+				region = custom_irck2_levant
+			}
+			any_realm_province = {
+				culture = sidonian
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = carthaginian }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = carthaginian
+			capital_scope = {
+				region = custom_irck2_levant
+			}
+			any_realm_province = {
+				culture = sidonian
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = sidonian
+			}
+			culture = sidonian
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Punic ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = carthaginian
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = carthaginian }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = sidonian }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = sidonian }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = sidonian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = sidonian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = sidonian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = sidonian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = sidonian
+				}
+			}
+		}
+	}
+	
+# Punic character may convert to ziqanmakom
+	irck2_convert_to_ziqanmakom = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = carthaginian
+			capital_scope = {
+				OR = {
+					region = custom_irck2_germania
+					region = world_europe_north
+				}
+			}
+			any_realm_province = {
+				culture = ziqanmakom
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = carthaginian }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = carthaginian
+			capital_scope = {
+				OR = {
+					region = custom_irck2_germania
+					region = world_europe_north
+				}
+			}
+			any_realm_province = {
+				culture = ziqanmakom
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = ziqanmakom
+			}
+			culture = ziqanmakom
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Punic ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = carthaginian
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = carthaginian }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = ziqanmakom }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = ziqanmakom }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = ziqanmakom
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = ziqanmakom
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = ziqanmakom
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = ziqanmakom
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = ziqanmakom
+				}
+			}
+		}
+	}
+	
+# Punic character may convert to sythchy
+	irck2_convert_to_sythchy = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = carthaginian
+			capital_scope = {
+				region = custom_irck2_poland
+			}
+			any_realm_province = {
+				culture = sythchy
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = carthaginian }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = carthaginian
+			capital_scope = {
+				region = custom_irck2_poland
+			}
+			any_realm_province = {
+				culture = sythchy
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = sythchy
+			}
+			culture = sythchy
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Punic ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = carthaginian
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = carthaginian }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = sythchy }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = sythchy }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = sythchy
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = sythchy
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = sythchy
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = sythchy
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = sythchy
+				}
+			}
+		}
+	}
+
+
+
+
+#####################################################################
+#End Bracket
+#####################################################################
+
+}

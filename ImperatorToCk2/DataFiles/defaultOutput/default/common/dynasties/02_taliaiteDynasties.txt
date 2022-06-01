@@ -1,0 +1,480 @@
+5329000=
+{
+	name="Abbarid"
+	culture="taliaite"
+}
+5329001=
+{
+	name="Abbarid"
+	culture="taliaite"
+}
+5329002=
+{
+	name="Abbarid"
+	culture="taliaite"
+}
+5329003=
+{
+	name="Abbarid"
+	culture="taliaite"
+}
+5329004=
+{
+	name="Adonibaal"
+	culture="taliaite"
+}
+5329005=
+{
+	name="Adonibaalid"
+	culture="taliaite"
+}
+5329006=
+{
+	name="Adonibaalid"
+	culture="taliaite"
+}
+5329007=
+{
+	name="Adonibaalid"
+	culture="taliaite"
+}
+5329008=
+{
+	name="Ahirom"
+	culture="taliaite"
+}
+5329009=
+{
+	name="Ahiromid"
+	culture="taliaite"
+}
+5329010=
+{
+	name="Ahiromid"
+	culture="taliaite"
+}
+5329011=
+{
+	name="Ahiromid"
+	culture="taliaite"
+}
+5329012=
+{
+	name="Baalhannid"
+	culture="taliaite"
+}
+5329013=
+{
+	name="Baalhannid"
+	culture="taliaite"
+}
+5329014=
+{
+	name="Baalhannid"
+	culture="taliaite"
+}
+5329015=
+{
+	name="Baalhannid"
+	culture="taliaite"
+}
+5329016=
+{
+	name="Baalid"
+	culture="taliaite"
+}
+5329017=
+{
+	name="Baalid"
+	culture="taliaite"
+}
+5329018=
+{
+	name="Baalid"
+	culture="taliaite"
+}
+5329019=
+{
+	name="Baalid"
+	culture="taliaite"
+}
+5329020=
+{
+	name="Barca"
+	culture="taliaite"
+}
+5329021=
+{
+	name="Barca"
+	culture="taliaite"
+}
+5329022=
+{
+	name="Barcid"
+	culture="taliaite"
+}
+5329023=
+{
+	name="Barcid"
+	culture="taliaite"
+}
+5329024=
+{
+	name="Bodona"
+	culture="taliaite"
+}
+5329025=
+{
+	name="Bodona"
+	culture="taliaite"
+}
+5329026=
+{
+	name="Bodonid"
+	culture="taliaite"
+}
+5329027=
+{
+	name="Bodonid"
+	culture="taliaite"
+}
+5329028=
+{
+	name="Bostara"
+	culture="taliaite"
+}
+5329029=
+{
+	name="Bostara"
+	culture="taliaite"
+}
+5329030=
+{
+	name="Bostarid"
+	culture="taliaite"
+}
+5329031=
+{
+	name="Bostarid"
+	culture="taliaite"
+}
+5329032=
+{
+	name="Chelbesid"
+	culture="taliaite"
+}
+5329033=
+{
+	name="Chelbesid"
+	culture="taliaite"
+}
+5329034=
+{
+	name="Chelbesid"
+	culture="taliaite"
+}
+5329035=
+{
+	name="Chelbesid"
+	culture="taliaite"
+}
+5329036=
+{
+	name="Eshbaalid"
+	culture="taliaite"
+}
+5329037=
+{
+	name="Eshbaalid"
+	culture="taliaite"
+}
+5329038=
+{
+	name="Eshbaalid"
+	culture="taliaite"
+}
+5329039=
+{
+	name="Eshbaalid"
+	culture="taliaite"
+}
+5329040=
+{
+	name="Eugorid"
+	culture="taliaite"
+}
+5329041=
+{
+	name="Eugorid"
+	culture="taliaite"
+}
+5329042=
+{
+	name="Eugorid"
+	culture="taliaite"
+}
+5329043=
+{
+	name="Eugorid"
+	culture="taliaite"
+}
+5329044=
+{
+	name="Hannid"
+	culture="taliaite"
+}
+5329045=
+{
+	name="Hannid"
+	culture="taliaite"
+}
+5329046=
+{
+	name="Hannid"
+	culture="taliaite"
+}
+5329047=
+{
+	name="Hannid"
+	culture="taliaite"
+}
+5329048=
+{
+	name="Hiramid"
+	culture="taliaite"
+}
+5329049=
+{
+	name="Hiramid"
+	culture="taliaite"
+}
+5329050=
+{
+	name="Hiramid"
+	culture="taliaite"
+}
+5329051=
+{
+	name="Hiramid"
+	culture="taliaite"
+}
+5329052=
+{
+	name="Mago"
+	culture="taliaite"
+}
+5329053=
+{
+	name="Mago"
+	culture="taliaite"
+}
+5329054=
+{
+	name="Magid"
+	culture="taliaite"
+}
+5329055=
+{
+	name="Magid"
+	culture="taliaite"
+}
+5329056=
+{
+	name="Mattanid"
+	culture="taliaite"
+}
+5329057=
+{
+	name="Mattanid"
+	culture="taliaite"
+}
+5329058=
+{
+	name="Mattanid"
+	culture="taliaite"
+}
+5329059=
+{
+	name="Mattanid"
+	culture="taliaite"
+}
+5329060=
+{
+	name="Metallid"
+	culture="taliaite"
+}
+5329061=
+{
+	name="Metallid"
+	culture="taliaite"
+}
+5329062=
+{
+	name="Metallid"
+	culture="taliaite"
+}
+5329063=
+{
+	name="Metallid"
+	culture="taliaite"
+}
+5329064=
+{
+	name="Milkiramid"
+	culture="taliaite"
+}
+5329065=
+{
+	name="Milkiramid"
+	culture="taliaite"
+}
+5329066=
+{
+	name="Milkiramid"
+	culture="taliaite"
+}
+5329067=
+{
+	name="Milkiramid"
+	culture="taliaite"
+}
+5329068=
+{
+	name="Philosirid"
+	culture="taliaite"
+}
+5329069=
+{
+	name="Philosirid"
+	culture="taliaite"
+}
+5329070=
+{
+	name="Philosirid"
+	culture="taliaite"
+}
+5329071=
+{
+	name="Philosirid"
+	culture="taliaite"
+}
+5329072=
+{
+	name="Gisgo"
+	culture="taliaite"
+}
+5329073=
+{
+	name="Gisgo"
+	culture="taliaite"
+}
+5329074=
+{
+	name="Gisgoid"
+	culture="taliaite"
+}
+5329075=
+{
+	name="Gisgoid"
+	culture="taliaite"
+}
+5329076=
+{
+	name="Gerbalid"
+	culture="taliaite"
+}
+5329077=
+{
+	name="Gerbalid"
+	culture="taliaite"
+}
+5329078=
+{
+	name="Gerbalid"
+	culture="taliaite"
+}
+5329079=
+{
+	name="Gerbalid"
+	culture="taliaite"
+}
+5329080=
+{
+	name="Hammid"
+	culture="taliaite"
+}
+5329081=
+{
+	name="Hammid"
+	culture="taliaite"
+}
+5329082=
+{
+	name="Hammid"
+	culture="taliaite"
+}
+5329083=
+{
+	name="Hammid"
+	culture="taliaite"
+}
+5329084=
+{
+	name="Eugarid"
+	culture="taliaite"
+}
+5329085=
+{
+	name="Eugarid"
+	culture="taliaite"
+}
+5329086=
+{
+	name="Eugarid"
+	culture="taliaite"
+}
+5329087=
+{
+	name="Eugarid"
+	culture="taliaite"
+}
+5329088=
+{
+	name="Mashhid"
+	culture="taliaite"
+}
+5329089=
+{
+	name="Mashhid"
+	culture="taliaite"
+}
+5329090=
+{
+	name="Mashhid"
+	culture="taliaite"
+}
+5329091=
+{
+	name="Mashhid"
+	culture="taliaite"
+}
+5329092=
+{
+	name="Ummashid"
+	culture="taliaite"
+}
+5329093=
+{
+	name="Ummashid"
+	culture="taliaite"
+}
+5329094=
+{
+	name="Ummashid"
+	culture="taliaite"
+}
+5329095=
+{
+	name="Ummashid"
+	culture="taliaite"
+}

@@ -1,0 +1,480 @@
+5327000=
+{
+	name="Abbarid"
+	culture="ziqanmakom"
+}
+5327001=
+{
+	name="Abbarid"
+	culture="ziqanmakom"
+}
+5327002=
+{
+	name="Abbarid"
+	culture="ziqanmakom"
+}
+5327003=
+{
+	name="Abbarid"
+	culture="ziqanmakom"
+}
+5327004=
+{
+	name="Adonibaal"
+	culture="ziqanmakom"
+}
+5327005=
+{
+	name="Adonibaalid"
+	culture="ziqanmakom"
+}
+5327006=
+{
+	name="Adonibaalid"
+	culture="ziqanmakom"
+}
+5327007=
+{
+	name="Adonibaalid"
+	culture="ziqanmakom"
+}
+5327008=
+{
+	name="Ahirom"
+	culture="ziqanmakom"
+}
+5327009=
+{
+	name="Ahiromid"
+	culture="ziqanmakom"
+}
+5327010=
+{
+	name="Ahiromid"
+	culture="ziqanmakom"
+}
+5327011=
+{
+	name="Ahiromid"
+	culture="ziqanmakom"
+}
+5327012=
+{
+	name="Baalhannid"
+	culture="ziqanmakom"
+}
+5327013=
+{
+	name="Baalhannid"
+	culture="ziqanmakom"
+}
+5327014=
+{
+	name="Baalhannid"
+	culture="ziqanmakom"
+}
+5327015=
+{
+	name="Baalhannid"
+	culture="ziqanmakom"
+}
+5327016=
+{
+	name="Baalid"
+	culture="ziqanmakom"
+}
+5327017=
+{
+	name="Baalid"
+	culture="ziqanmakom"
+}
+5327018=
+{
+	name="Baalid"
+	culture="ziqanmakom"
+}
+5327019=
+{
+	name="Baalid"
+	culture="ziqanmakom"
+}
+5327020=
+{
+	name="Barca"
+	culture="ziqanmakom"
+}
+5327021=
+{
+	name="Barca"
+	culture="ziqanmakom"
+}
+5327022=
+{
+	name="Barcid"
+	culture="ziqanmakom"
+}
+5327023=
+{
+	name="Barcid"
+	culture="ziqanmakom"
+}
+5327024=
+{
+	name="Bodona"
+	culture="ziqanmakom"
+}
+5327025=
+{
+	name="Bodona"
+	culture="ziqanmakom"
+}
+5327026=
+{
+	name="Bodonid"
+	culture="ziqanmakom"
+}
+5327027=
+{
+	name="Bodonid"
+	culture="ziqanmakom"
+}
+5327028=
+{
+	name="Bostara"
+	culture="ziqanmakom"
+}
+5327029=
+{
+	name="Bostara"
+	culture="ziqanmakom"
+}
+5327030=
+{
+	name="Bostarid"
+	culture="ziqanmakom"
+}
+5327031=
+{
+	name="Bostarid"
+	culture="ziqanmakom"
+}
+5327032=
+{
+	name="Chelbesid"
+	culture="ziqanmakom"
+}
+5327033=
+{
+	name="Chelbesid"
+	culture="ziqanmakom"
+}
+5327034=
+{
+	name="Chelbesid"
+	culture="ziqanmakom"
+}
+5327035=
+{
+	name="Chelbesid"
+	culture="ziqanmakom"
+}
+5327036=
+{
+	name="Eshbaalid"
+	culture="ziqanmakom"
+}
+5327037=
+{
+	name="Eshbaalid"
+	culture="ziqanmakom"
+}
+5327038=
+{
+	name="Eshbaalid"
+	culture="ziqanmakom"
+}
+5327039=
+{
+	name="Eshbaalid"
+	culture="ziqanmakom"
+}
+5327040=
+{
+	name="Eugorid"
+	culture="ziqanmakom"
+}
+5327041=
+{
+	name="Eugorid"
+	culture="ziqanmakom"
+}
+5327042=
+{
+	name="Eugorid"
+	culture="ziqanmakom"
+}
+5327043=
+{
+	name="Eugorid"
+	culture="ziqanmakom"
+}
+5327044=
+{
+	name="Hannid"
+	culture="ziqanmakom"
+}
+5327045=
+{
+	name="Hannid"
+	culture="ziqanmakom"
+}
+5327046=
+{
+	name="Hannid"
+	culture="ziqanmakom"
+}
+5327047=
+{
+	name="Hannid"
+	culture="ziqanmakom"
+}
+5327048=
+{
+	name="Hiramid"
+	culture="ziqanmakom"
+}
+5327049=
+{
+	name="Hiramid"
+	culture="ziqanmakom"
+}
+5327050=
+{
+	name="Hiramid"
+	culture="ziqanmakom"
+}
+5327051=
+{
+	name="Hiramid"
+	culture="ziqanmakom"
+}
+5327052=
+{
+	name="Mago"
+	culture="ziqanmakom"
+}
+5327053=
+{
+	name="Mago"
+	culture="ziqanmakom"
+}
+5327054=
+{
+	name="Magid"
+	culture="ziqanmakom"
+}
+5327055=
+{
+	name="Magid"
+	culture="ziqanmakom"
+}
+5327056=
+{
+	name="Mattanid"
+	culture="ziqanmakom"
+}
+5327057=
+{
+	name="Mattanid"
+	culture="ziqanmakom"
+}
+5327058=
+{
+	name="Mattanid"
+	culture="ziqanmakom"
+}
+5327059=
+{
+	name="Mattanid"
+	culture="ziqanmakom"
+}
+5327060=
+{
+	name="Metallid"
+	culture="ziqanmakom"
+}
+5327061=
+{
+	name="Metallid"
+	culture="ziqanmakom"
+}
+5327062=
+{
+	name="Metallid"
+	culture="ziqanmakom"
+}
+5327063=
+{
+	name="Metallid"
+	culture="ziqanmakom"
+}
+5327064=
+{
+	name="Milkiramid"
+	culture="ziqanmakom"
+}
+5327065=
+{
+	name="Milkiramid"
+	culture="ziqanmakom"
+}
+5327066=
+{
+	name="Milkiramid"
+	culture="ziqanmakom"
+}
+5327067=
+{
+	name="Milkiramid"
+	culture="ziqanmakom"
+}
+5327068=
+{
+	name="Philosirid"
+	culture="ziqanmakom"
+}
+5327069=
+{
+	name="Philosirid"
+	culture="ziqanmakom"
+}
+5327070=
+{
+	name="Philosirid"
+	culture="ziqanmakom"
+}
+5327071=
+{
+	name="Philosirid"
+	culture="ziqanmakom"
+}
+5327072=
+{
+	name="Gisgo"
+	culture="ziqanmakom"
+}
+5327073=
+{
+	name="Gisgo"
+	culture="ziqanmakom"
+}
+5327074=
+{
+	name="Gisgoid"
+	culture="ziqanmakom"
+}
+5327075=
+{
+	name="Gisgoid"
+	culture="ziqanmakom"
+}
+5327076=
+{
+	name="Gerbalid"
+	culture="ziqanmakom"
+}
+5327077=
+{
+	name="Gerbalid"
+	culture="ziqanmakom"
+}
+5327078=
+{
+	name="Gerbalid"
+	culture="ziqanmakom"
+}
+5327079=
+{
+	name="Gerbalid"
+	culture="ziqanmakom"
+}
+5327080=
+{
+	name="Hammid"
+	culture="ziqanmakom"
+}
+5327081=
+{
+	name="Hammid"
+	culture="ziqanmakom"
+}
+5327082=
+{
+	name="Hammid"
+	culture="ziqanmakom"
+}
+5327083=
+{
+	name="Hammid"
+	culture="ziqanmakom"
+}
+5327084=
+{
+	name="Eugarid"
+	culture="ziqanmakom"
+}
+5327085=
+{
+	name="Eugarid"
+	culture="ziqanmakom"
+}
+5327086=
+{
+	name="Eugarid"
+	culture="ziqanmakom"
+}
+5327087=
+{
+	name="Eugarid"
+	culture="ziqanmakom"
+}
+5327088=
+{
+	name="Mashhid"
+	culture="ziqanmakom"
+}
+5327089=
+{
+	name="Mashhid"
+	culture="ziqanmakom"
+}
+5327090=
+{
+	name="Mashhid"
+	culture="ziqanmakom"
+}
+5327091=
+{
+	name="Mashhid"
+	culture="ziqanmakom"
+}
+5327092=
+{
+	name="Ummashid"
+	culture="ziqanmakom"
+}
+5327093=
+{
+	name="Ummashid"
+	culture="ziqanmakom"
+}
+5327094=
+{
+	name="Ummashid"
+	culture="ziqanmakom"
+}
+5327095=
+{
+	name="Ummashid"
+	culture="ziqanmakom"
+}

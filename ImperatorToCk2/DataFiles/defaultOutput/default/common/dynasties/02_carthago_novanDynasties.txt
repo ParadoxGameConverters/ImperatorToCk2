@@ -1,0 +1,480 @@
+5326000=
+{
+	name="Abbarid"
+	culture="carthago_novan"
+}
+5326001=
+{
+	name="Abbarid"
+	culture="carthago_novan"
+}
+5326002=
+{
+	name="Abbarid"
+	culture="carthago_novan"
+}
+5326003=
+{
+	name="Abbarid"
+	culture="carthago_novan"
+}
+5326004=
+{
+	name="Adonibaal"
+	culture="carthago_novan"
+}
+5326005=
+{
+	name="Adonibaalid"
+	culture="carthago_novan"
+}
+5326006=
+{
+	name="Adonibaalid"
+	culture="carthago_novan"
+}
+5326007=
+{
+	name="Adonibaalid"
+	culture="carthago_novan"
+}
+5326008=
+{
+	name="Ahirom"
+	culture="carthago_novan"
+}
+5326009=
+{
+	name="Ahiromid"
+	culture="carthago_novan"
+}
+5326010=
+{
+	name="Ahiromid"
+	culture="carthago_novan"
+}
+5326011=
+{
+	name="Ahiromid"
+	culture="carthago_novan"
+}
+5326012=
+{
+	name="Baalhannid"
+	culture="carthago_novan"
+}
+5326013=
+{
+	name="Baalhannid"
+	culture="carthago_novan"
+}
+5326014=
+{
+	name="Baalhannid"
+	culture="carthago_novan"
+}
+5326015=
+{
+	name="Baalhannid"
+	culture="carthago_novan"
+}
+5326016=
+{
+	name="Baalid"
+	culture="carthago_novan"
+}
+5326017=
+{
+	name="Baalid"
+	culture="carthago_novan"
+}
+5326018=
+{
+	name="Baalid"
+	culture="carthago_novan"
+}
+5326019=
+{
+	name="Baalid"
+	culture="carthago_novan"
+}
+5326020=
+{
+	name="Barca"
+	culture="carthago_novan"
+}
+5326021=
+{
+	name="Barca"
+	culture="carthago_novan"
+}
+5326022=
+{
+	name="Barcid"
+	culture="carthago_novan"
+}
+5326023=
+{
+	name="Barcid"
+	culture="carthago_novan"
+}
+5326024=
+{
+	name="Bodona"
+	culture="carthago_novan"
+}
+5326025=
+{
+	name="Bodona"
+	culture="carthago_novan"
+}
+5326026=
+{
+	name="Bodonid"
+	culture="carthago_novan"
+}
+5326027=
+{
+	name="Bodonid"
+	culture="carthago_novan"
+}
+5326028=
+{
+	name="Bostara"
+	culture="carthago_novan"
+}
+5326029=
+{
+	name="Bostara"
+	culture="carthago_novan"
+}
+5326030=
+{
+	name="Bostarid"
+	culture="carthago_novan"
+}
+5326031=
+{
+	name="Bostarid"
+	culture="carthago_novan"
+}
+5326032=
+{
+	name="Chelbesid"
+	culture="carthago_novan"
+}
+5326033=
+{
+	name="Chelbesid"
+	culture="carthago_novan"
+}
+5326034=
+{
+	name="Chelbesid"
+	culture="carthago_novan"
+}
+5326035=
+{
+	name="Chelbesid"
+	culture="carthago_novan"
+}
+5326036=
+{
+	name="Eshbaalid"
+	culture="carthago_novan"
+}
+5326037=
+{
+	name="Eshbaalid"
+	culture="carthago_novan"
+}
+5326038=
+{
+	name="Eshbaalid"
+	culture="carthago_novan"
+}
+5326039=
+{
+	name="Eshbaalid"
+	culture="carthago_novan"
+}
+5326040=
+{
+	name="Eugorid"
+	culture="carthago_novan"
+}
+5326041=
+{
+	name="Eugorid"
+	culture="carthago_novan"
+}
+5326042=
+{
+	name="Eugorid"
+	culture="carthago_novan"
+}
+5326043=
+{
+	name="Eugorid"
+	culture="carthago_novan"
+}
+5326044=
+{
+	name="Hannid"
+	culture="carthago_novan"
+}
+5326045=
+{
+	name="Hannid"
+	culture="carthago_novan"
+}
+5326046=
+{
+	name="Hannid"
+	culture="carthago_novan"
+}
+5326047=
+{
+	name="Hannid"
+	culture="carthago_novan"
+}
+5326048=
+{
+	name="Hiramid"
+	culture="carthago_novan"
+}
+5326049=
+{
+	name="Hiramid"
+	culture="carthago_novan"
+}
+5326050=
+{
+	name="Hiramid"
+	culture="carthago_novan"
+}
+5326051=
+{
+	name="Hiramid"
+	culture="carthago_novan"
+}
+5326052=
+{
+	name="Mago"
+	culture="carthago_novan"
+}
+5326053=
+{
+	name="Mago"
+	culture="carthago_novan"
+}
+5326054=
+{
+	name="Magid"
+	culture="carthago_novan"
+}
+5326055=
+{
+	name="Magid"
+	culture="carthago_novan"
+}
+5326056=
+{
+	name="Mattanid"
+	culture="carthago_novan"
+}
+5326057=
+{
+	name="Mattanid"
+	culture="carthago_novan"
+}
+5326058=
+{
+	name="Mattanid"
+	culture="carthago_novan"
+}
+5326059=
+{
+	name="Mattanid"
+	culture="carthago_novan"
+}
+5326060=
+{
+	name="Metallid"
+	culture="carthago_novan"
+}
+5326061=
+{
+	name="Metallid"
+	culture="carthago_novan"
+}
+5326062=
+{
+	name="Metallid"
+	culture="carthago_novan"
+}
+5326063=
+{
+	name="Metallid"
+	culture="carthago_novan"
+}
+5326064=
+{
+	name="Milkiramid"
+	culture="carthago_novan"
+}
+5326065=
+{
+	name="Milkiramid"
+	culture="carthago_novan"
+}
+5326066=
+{
+	name="Milkiramid"
+	culture="carthago_novan"
+}
+5326067=
+{
+	name="Milkiramid"
+	culture="carthago_novan"
+}
+5326068=
+{
+	name="Philosirid"
+	culture="carthago_novan"
+}
+5326069=
+{
+	name="Philosirid"
+	culture="carthago_novan"
+}
+5326070=
+{
+	name="Philosirid"
+	culture="carthago_novan"
+}
+5326071=
+{
+	name="Philosirid"
+	culture="carthago_novan"
+}
+5326072=
+{
+	name="Gisgo"
+	culture="carthago_novan"
+}
+5326073=
+{
+	name="Gisgo"
+	culture="carthago_novan"
+}
+5326074=
+{
+	name="Gisgoid"
+	culture="carthago_novan"
+}
+5326075=
+{
+	name="Gisgoid"
+	culture="carthago_novan"
+}
+5326076=
+{
+	name="Gerbalid"
+	culture="carthago_novan"
+}
+5326077=
+{
+	name="Gerbalid"
+	culture="carthago_novan"
+}
+5326078=
+{
+	name="Gerbalid"
+	culture="carthago_novan"
+}
+5326079=
+{
+	name="Gerbalid"
+	culture="carthago_novan"
+}
+5326080=
+{
+	name="Hammid"
+	culture="carthago_novan"
+}
+5326081=
+{
+	name="Hammid"
+	culture="carthago_novan"
+}
+5326082=
+{
+	name="Hammid"
+	culture="carthago_novan"
+}
+5326083=
+{
+	name="Hammid"
+	culture="carthago_novan"
+}
+5326084=
+{
+	name="Eugarid"
+	culture="carthago_novan"
+}
+5326085=
+{
+	name="Eugarid"
+	culture="carthago_novan"
+}
+5326086=
+{
+	name="Eugarid"
+	culture="carthago_novan"
+}
+5326087=
+{
+	name="Eugarid"
+	culture="carthago_novan"
+}
+5326088=
+{
+	name="Mashhid"
+	culture="carthago_novan"
+}
+5326089=
+{
+	name="Mashhid"
+	culture="carthago_novan"
+}
+5326090=
+{
+	name="Mashhid"
+	culture="carthago_novan"
+}
+5326091=
+{
+	name="Mashhid"
+	culture="carthago_novan"
+}
+5326092=
+{
+	name="Ummashid"
+	culture="carthago_novan"
+}
+5326093=
+{
+	name="Ummashid"
+	culture="carthago_novan"
+}
+5326094=
+{
+	name="Ummashid"
+	culture="carthago_novan"
+}
+5326095=
+{
+	name="Ummashid"
+	culture="carthago_novan"
+}

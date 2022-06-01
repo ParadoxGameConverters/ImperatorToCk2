@@ -1,0 +1,480 @@
+5334000=
+{
+	name="Abbarid"
+	culture="sythchy"
+}
+5334001=
+{
+	name="Abbarid"
+	culture="sythchy"
+}
+5334002=
+{
+	name="Abbarid"
+	culture="sythchy"
+}
+5334003=
+{
+	name="Abbarid"
+	culture="sythchy"
+}
+5334004=
+{
+	name="Adonibaal"
+	culture="sythchy"
+}
+5334005=
+{
+	name="Adonibaalid"
+	culture="sythchy"
+}
+5334006=
+{
+	name="Adonibaalid"
+	culture="sythchy"
+}
+5334007=
+{
+	name="Adonibaalid"
+	culture="sythchy"
+}
+5334008=
+{
+	name="Ahirom"
+	culture="sythchy"
+}
+5334009=
+{
+	name="Ahiromid"
+	culture="sythchy"
+}
+5334010=
+{
+	name="Ahiromid"
+	culture="sythchy"
+}
+5334011=
+{
+	name="Ahiromid"
+	culture="sythchy"
+}
+5334012=
+{
+	name="Baalhannid"
+	culture="sythchy"
+}
+5334013=
+{
+	name="Baalhannid"
+	culture="sythchy"
+}
+5334014=
+{
+	name="Baalhannid"
+	culture="sythchy"
+}
+5334015=
+{
+	name="Baalhannid"
+	culture="sythchy"
+}
+5334016=
+{
+	name="Baalid"
+	culture="sythchy"
+}
+5334017=
+{
+	name="Baalid"
+	culture="sythchy"
+}
+5334018=
+{
+	name="Baalid"
+	culture="sythchy"
+}
+5334019=
+{
+	name="Baalid"
+	culture="sythchy"
+}
+5334020=
+{
+	name="Barca"
+	culture="sythchy"
+}
+5334021=
+{
+	name="Barca"
+	culture="sythchy"
+}
+5334022=
+{
+	name="Barcid"
+	culture="sythchy"
+}
+5334023=
+{
+	name="Barcid"
+	culture="sythchy"
+}
+5334024=
+{
+	name="Bodona"
+	culture="sythchy"
+}
+5334025=
+{
+	name="Bodona"
+	culture="sythchy"
+}
+5334026=
+{
+	name="Bodonid"
+	culture="sythchy"
+}
+5334027=
+{
+	name="Bodonid"
+	culture="sythchy"
+}
+5334028=
+{
+	name="Bostara"
+	culture="sythchy"
+}
+5334029=
+{
+	name="Bostara"
+	culture="sythchy"
+}
+5334030=
+{
+	name="Bostarid"
+	culture="sythchy"
+}
+5334031=
+{
+	name="Bostarid"
+	culture="sythchy"
+}
+5334032=
+{
+	name="Chelbesid"
+	culture="sythchy"
+}
+5334033=
+{
+	name="Chelbesid"
+	culture="sythchy"
+}
+5334034=
+{
+	name="Chelbesid"
+	culture="sythchy"
+}
+5334035=
+{
+	name="Chelbesid"
+	culture="sythchy"
+}
+5334036=
+{
+	name="Eshbaalid"
+	culture="sythchy"
+}
+5334037=
+{
+	name="Eshbaalid"
+	culture="sythchy"
+}
+5334038=
+{
+	name="Eshbaalid"
+	culture="sythchy"
+}
+5334039=
+{
+	name="Eshbaalid"
+	culture="sythchy"
+}
+5334040=
+{
+	name="Eugorid"
+	culture="sythchy"
+}
+5334041=
+{
+	name="Eugorid"
+	culture="sythchy"
+}
+5334042=
+{
+	name="Eugorid"
+	culture="sythchy"
+}
+5334043=
+{
+	name="Eugorid"
+	culture="sythchy"
+}
+5334044=
+{
+	name="Hannid"
+	culture="sythchy"
+}
+5334045=
+{
+	name="Hannid"
+	culture="sythchy"
+}
+5334046=
+{
+	name="Hannid"
+	culture="sythchy"
+}
+5334047=
+{
+	name="Hannid"
+	culture="sythchy"
+}
+5334048=
+{
+	name="Hiramid"
+	culture="sythchy"
+}
+5334049=
+{
+	name="Hiramid"
+	culture="sythchy"
+}
+5334050=
+{
+	name="Hiramid"
+	culture="sythchy"
+}
+5334051=
+{
+	name="Hiramid"
+	culture="sythchy"
+}
+5334052=
+{
+	name="Mago"
+	culture="sythchy"
+}
+5334053=
+{
+	name="Mago"
+	culture="sythchy"
+}
+5334054=
+{
+	name="Magid"
+	culture="sythchy"
+}
+5334055=
+{
+	name="Magid"
+	culture="sythchy"
+}
+5334056=
+{
+	name="Mattanid"
+	culture="sythchy"
+}
+5334057=
+{
+	name="Mattanid"
+	culture="sythchy"
+}
+5334058=
+{
+	name="Mattanid"
+	culture="sythchy"
+}
+5334059=
+{
+	name="Mattanid"
+	culture="sythchy"
+}
+5334060=
+{
+	name="Metallid"
+	culture="sythchy"
+}
+5334061=
+{
+	name="Metallid"
+	culture="sythchy"
+}
+5334062=
+{
+	name="Metallid"
+	culture="sythchy"
+}
+5334063=
+{
+	name="Metallid"
+	culture="sythchy"
+}
+5334064=
+{
+	name="Milkiramid"
+	culture="sythchy"
+}
+5334065=
+{
+	name="Milkiramid"
+	culture="sythchy"
+}
+5334066=
+{
+	name="Milkiramid"
+	culture="sythchy"
+}
+5334067=
+{
+	name="Milkiramid"
+	culture="sythchy"
+}
+5334068=
+{
+	name="Philosirid"
+	culture="sythchy"
+}
+5334069=
+{
+	name="Philosirid"
+	culture="sythchy"
+}
+5334070=
+{
+	name="Philosirid"
+	culture="sythchy"
+}
+5334071=
+{
+	name="Philosirid"
+	culture="sythchy"
+}
+5334072=
+{
+	name="Gisgo"
+	culture="sythchy"
+}
+5334073=
+{
+	name="Gisgo"
+	culture="sythchy"
+}
+5334074=
+{
+	name="Gisgoid"
+	culture="sythchy"
+}
+5334075=
+{
+	name="Gisgoid"
+	culture="sythchy"
+}
+5334076=
+{
+	name="Gerbalid"
+	culture="sythchy"
+}
+5334077=
+{
+	name="Gerbalid"
+	culture="sythchy"
+}
+5334078=
+{
+	name="Gerbalid"
+	culture="sythchy"
+}
+5334079=
+{
+	name="Gerbalid"
+	culture="sythchy"
+}
+5334080=
+{
+	name="Hammid"
+	culture="sythchy"
+}
+5334081=
+{
+	name="Hammid"
+	culture="sythchy"
+}
+5334082=
+{
+	name="Hammid"
+	culture="sythchy"
+}
+5334083=
+{
+	name="Hammid"
+	culture="sythchy"
+}
+5334084=
+{
+	name="Eugarid"
+	culture="sythchy"
+}
+5334085=
+{
+	name="Eugarid"
+	culture="sythchy"
+}
+5334086=
+{
+	name="Eugarid"
+	culture="sythchy"
+}
+5334087=
+{
+	name="Eugarid"
+	culture="sythchy"
+}
+5334088=
+{
+	name="Mashhid"
+	culture="sythchy"
+}
+5334089=
+{
+	name="Mashhid"
+	culture="sythchy"
+}
+5334090=
+{
+	name="Mashhid"
+	culture="sythchy"
+}
+5334091=
+{
+	name="Mashhid"
+	culture="sythchy"
+}
+5334092=
+{
+	name="Ummashid"
+	culture="sythchy"
+}
+5334093=
+{
+	name="Ummashid"
+	culture="sythchy"
+}
+5334094=
+{
+	name="Ummashid"
+	culture="sythchy"
+}
+5334095=
+{
+	name="Ummashid"
+	culture="sythchy"
+}

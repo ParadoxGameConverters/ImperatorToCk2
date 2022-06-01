@@ -1,5 +1,5 @@
 package ImperatorToCK2;       
-   
+
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.io.File;
@@ -521,131 +521,11 @@ public class Main
             LOGGER.info("Copying default output...");
 
             //Default output, will be included in every conversion regardless of what occured in the save file
-            Output.copyRaw("defaultOutput"+VM+"cultures"+VM+"00_cultures.txt",modDirectory+VM+"common"+VM+"cultures"+VM+"00_cultures.txt");
-            Output.copyRaw("defaultOutput"+VM+"cultures"+VM+"50_convertedCultures.txt",modDirectory+VM+"common"+VM+"cultures"+VM+"50_convertedCultures.txt");
-            Output.copyRaw("defaultOutput"+VM+"religions"+VM+"00_religions.txt",modDirectory+VM+"common"+VM+"religions"+VM+"00_religions.txt");
-            Output.copyRaw("defaultOutput"+VM+"religions"+VM+"50_convertedReligions.txt",modDirectory+VM+"common"+VM+"religions"+VM+"50_convertedReligions.txt");
-            //Output.output("defaultOutput"+VM+"bookmarks"+VM+"50_customBookmark.txt",modDirectory+VM+"common"+VM+"bookmarks"+VM+"50_customBookmark.txt");
-            Processing.customDate(date,"defaultOutput"+VM+"bookmarks"+VM+"50_customBookmark.txt",modDirectory+VM+"common"+VM+"bookmarks"+VM+"50_customBookmark.txt");
-            Output.output("defaultOutput"+VM+"bookmarks"+VM+"00_bookmarks.txt",modDirectory+VM+"common"+VM+"bookmarks"+VM+"00_bookmarks.txt");
-            Output.output("defaultOutput"+VM+"bloodlines"+VM+"50_convertedBloodlines.txt",modDirectory+VM+"common"+VM+"bloodlines"+VM+"50_convertedBloodlines.txt");
-            Output.output("defaultOutput"+VM+"bloodlines"+VM+"00_earlyBloodlines.txt",modDirectory+VM+"common"+VM+"bloodlines"+VM+"00_earlyBloodlines.txt");
-            Output.output("defaultOutput"+VM+"landed_titles"+VM+"holysites.txt",modDirectory+VM+"common"+VM+"landed_titles"+VM+"holysites.txt");
-            Output.output("defaultOutput"+VM+"landed_titles"+VM+"zzz_default_dejure.txt",modDirectory+VM+"common"+VM+"landed_titles"+VM+"zzz_default_dejure.txt");
-            Output.output("defaultOutput"+VM+"landed_titles"+VM+"WtWSMS_kingdoms.txt",modDirectory+VM+"common"+VM+"landed_titles"+VM+"WtWSMS_kingdoms.txt");
-
-            //defaultLocalization
-            Output.output("defaultOutput"+VM+"localization"+VM+"culture_loc.csv",modDirectory+VM+"localisation"+VM+"culture_loc.csv");
-            Output.output("defaultOutput"+VM+"localization"+VM+"religion_loc.csv",modDirectory+VM+"localisation"+VM+"religion_loc.csv");
-            Output.output("defaultOutput"+VM+"localization"+VM+"bookmark_loc.csv",modDirectory+VM+"localisation"+VM+"bookmark_loc.csv");
-            Output.output("defaultOutput"+VM+"localization"+VM+"zzz_default_dejure_localization.csv",modDirectory+VM+"localisation"+VM+"zzz_default_dejure_localization.csv");
-            Output.output("defaultOutput"+VM+"localization"+VM+"irck2_event_loc.csv",modDirectory+VM+"localisation"+VM+"irck2_event_loc.csv");
-            Output.output("defaultOutput"+VM+"localization"+VM+"irck2_decision_loc.csv",modDirectory+VM+"localisation"+VM+"irck2_decision_loc.csv");
-            Output.output("defaultOutput"+VM+"localization"+VM+"irck2_scope_loc.csv",modDirectory+VM+"localisation"+VM+"irck2_scope_loc.csv");
-
-            //defaultDynasties (Used to dynamically generate random dynasty names for new cultures, otherwise will default to Smith)
-            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_belgaeDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_belgaeDynasties.txt");
-            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_celtic_pannonianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_celtic_pannonianDynasties.txt");
-            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_gallicDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_gallicDynasties.txt");
-            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_leponticDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_leponticDynasties.txt");
-            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_celtiberianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_celtiberianDynasties.txt");
-            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_lusitanianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_lusitanianDynasties.txt");
-            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_dacianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_dacianDynasties.txt");
-            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_thracianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_thracianDynasties.txt");
-            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_carthaginianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_carthaginianDynasties.txt");
-            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_phoenicianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_phoenicianDynasties.txt");
-            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_gothicDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_gothicDynasties.txt");
-            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_vandalDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_vandalDynasties.txt");
-            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_etruscanDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_etruscanDynasties.txt");
-            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_rhaetianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_rhaetianDynasties.txt");
-            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_nuragicDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_nuragicDynasties.txt");
-            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_turdetanianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_turdetanianDynasties.txt");
-            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_ibericDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_ibericDynasties.txt");
-            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_old_ligurianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_old_ligurianDynasties.txt");
-            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_sabellianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_sabellianDynasties.txt");
-            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_siculianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_siculianDynasties.txt");
-            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_veneticDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_veneticDynasties.txt");
-            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_phrygianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_phrygianDynasties.txt");
-            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_lycianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_lycianDynasties.txt");
-            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_isaurianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_isaurianDynasties.txt");
-            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_paphlagonianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_paphlagonianDynasties.txt");
-            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_cilicianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_cilicianDynasties.txt");
-            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_caucasian_albanianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_caucasian_albanianDynasties.txt");
-            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_babylonianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_babylonianDynasties.txt");
-            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_manxDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_manxDynasties.txt");
-            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_nabateanDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_nabateanDynasties.txt");
-            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_hebrewDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_hebrewDynasties.txt");
-            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_ancient_egyptianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_ancient_egyptianDynasties.txt");
-            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_hellenisticDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_hellenisticDynasties.txt");
-            Output.output("defaultOutput"+VM+"dynasties"+VM+"02_aestianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_aestianDynasties.txt");
+            //Output.copyRaw("defaultOutput"+VM+"cultures"+VM+"00_cultures.txt",modDirectory+VM+"common"+VM+"cultures"+VM+"00_cultures.txt");
+            //Processing.customDate(date,"defaultOutput/default/bookmarks/50_customBookmark.txt",modDirectory+VM+"common/bookmarks/50_customBookmark.txt");
+            Output.copyDefaultOutput("defaultOutput/default",modDirectory);
+            Processing.customDate(date,modDirectory+"/common/bookmarks/50_customBookmark.txt",modDirectory+"/common/bookmarks/50_customBookmark.txt");
             
-            //Roman split Dynasties
-            Output.copyRaw("defaultOutput"+VM+"dynasties"+VM+"02_aromanianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_aromanianDynasties.txt");
-            Output.copyRaw("defaultOutput"+VM+"dynasties"+VM+"02_cambrianDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_cambrianDynasties.txt");
-            Output.copyRaw("defaultOutput"+VM+"dynasties"+VM+"02_romano_africanDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_romano_africanDynasties.txt");
-            Output.copyRaw("defaultOutput"+VM+"dynasties"+VM+"02_palmyreneDynasties.txt",modDirectory+VM+"common"+VM+"dynasties"+VM+"02_palmyreneDynasties.txt");
-            
-            //defaultDiseases
-            Output.output("defaultOutput"+VM+"disease"+VM+"00_disease.txt",modDirectory+VM+"common"+VM+"disease"+VM+"00_disease.txt");
-            Output.output("defaultOutput"+VM+"disease"+VM+"01_disease_old.txt",modDirectory+VM+"common"+VM+"disease"+VM+"01_disease_old.txt");
-            
-            //imperialGovernments
-            Output.output("defaultOutput"+VM+"governments"+VM+"imperial_governments.txt",modDirectory+VM+"common"+VM+"governments"+VM+"imperial_governments.txt");
-            Output.output("defaultOutput"+VM+"government_flavor"+VM+"50_government_flavor.txt",modDirectory+VM+"common"+VM+"government_flavor"+VM+"50_government_flavor.txt");
-            Output.output("defaultOutput"+VM+"laws"+VM+"succession_laws.txt",modDirectory+VM+"common"+VM+"laws"+VM+"succession_laws.txt");
-            
-            //republicGovernments
-            Output.output("defaultOutput"+VM+"governments"+VM+"merchant_republic_governments.txt",modDirectory+VM+"common"+VM+"governments"+VM+"merchant_republic_governments.txt");
-            
-            //blankedDejureTitles
-            Output.output("defaultOutput"+VM+"titles"+VM+"d_angria.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_angria.txt");
-            Output.output("defaultOutput"+VM+"titles"+VM+"d_aragon.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_aragon.txt");
-            Output.output("defaultOutput"+VM+"titles"+VM+"d_barcelona.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_barcelona.txt");
-            Output.output("defaultOutput"+VM+"titles"+VM+"d_bohemia.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_bohemia.txt");
-            Output.output("defaultOutput"+VM+"titles"+VM+"d_brandenburg.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_brandenburg.txt");
-            Output.output("defaultOutput"+VM+"titles"+VM+"d_bremen.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_bremen.txt");
-            Output.output("defaultOutput"+VM+"titles"+VM+"d_burgundy.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_burgundy.txt");
-            Output.output("defaultOutput"+VM+"titles"+VM+"d_castilla.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_castilla.txt");
-            Output.output("defaultOutput"+VM+"titles"+VM+"d_champagne.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_champagne.txt");
-            Output.output("defaultOutput"+VM+"titles"+VM+"d_galicia.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_galicia.txt");
-            Output.output("defaultOutput"+VM+"titles"+VM+"d_holstein.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_holstein.txt");
-            Output.output("defaultOutput"+VM+"titles"+VM+"d_lausitz.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_lausitz.txt");
-            Output.output("defaultOutput"+VM+"titles"+VM+"d_leon.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_leon.txt");
-            Output.output("defaultOutput"+VM+"titles"+VM+"d_meissen.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_meissen.txt");
-            Output.output("defaultOutput"+VM+"titles"+VM+"d_munster_germany.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_munster_germany.txt");
-            Output.output("defaultOutput"+VM+"titles"+VM+"d_navarra.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_navarra.txt");
-            Output.output("defaultOutput"+VM+"titles"+VM+"d_poitou.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_poitou.txt");
-            Output.output("defaultOutput"+VM+"titles"+VM+"d_saxony.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_saxony.txt");
-            Output.output("defaultOutput"+VM+"titles"+VM+"d_asturias.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_asturias.txt");
-            Output.output("defaultOutput"+VM+"titles"+VM+"d_porto.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_porto.txt");
-            Output.output("defaultOutput"+VM+"titles"+VM+"d_moravia.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_moravia.txt");
-            Output.output("defaultOutput"+VM+"titles"+VM+"d_cyrenaica.txt",modDirectory+VM+"history"+VM+"titles"+VM+"d_cyrenaica.txt");
-            
-            //defaultEvents
-            Output.output("defaultOutput"+VM+"events"+VM+"cm_culture_conversion_events.txt",modDirectory+VM+"events"+VM+"cm_culture_conversion_events.txt");
-            Output.output("defaultOutput"+VM+"events"+VM+"ir_roman_culture_conversion.txt",modDirectory+VM+"events"+VM+"ir_roman_culture_conversion.txt");
-            Output.output("defaultOutput"+VM+"events"+VM+"ir_germanic_culture_conversion.txt",modDirectory+VM+"events"+VM+"ir_germanic_culture_conversion.txt");
-            Output.output("defaultOutput"+VM+"events"+VM+"ir_baltic_culture_conversion.txt",modDirectory+VM+"events"+VM+"ir_baltic_culture_conversion.txt");
-            Output.output("defaultOutput"+VM+"events"+VM+"ir_christianity_and_schisms.txt",modDirectory+VM+"events"+VM+"ir_christianity_and_schisms.txt");
-            
-            //defaultDecisions
-            Output.output("defaultOutput"+VM+"decisions"+VM+"conversion_decisions.txt",modDirectory+VM+"decisions"+VM+"conversion_decisions.txt");
-            Output.output("defaultOutput"+VM+"decisions"+VM+"ir_roman_conversion_decisions.txt",modDirectory+VM+"decisions"+VM+"ir_roman_conversion_decisions.txt");
-            Output.output("defaultOutput"+VM+"decisions"+VM+"ir_roman_title_decisions.txt",modDirectory+VM+"decisions"+VM+"ir_roman_title_decisions.txt");
-            Output.output("defaultOutput"+VM+"decisions"+VM+"ir_germanic_conversion_decisions.txt",modDirectory+VM+"decisions"+VM+"ir_germanic_conversion_decisions.txt");
-            Output.output("defaultOutput"+VM+"decisions"+VM+"ir_baltic_conversion_decisions.txt",modDirectory+VM+"decisions"+VM+"ir_baltic_conversion_decisions.txt");
-            Output.output("defaultOutput"+VM+"decisions"+VM+"ir_christianity_and_schisms_decisions.txt",modDirectory+VM+"decisions"+VM+"ir_christianity_and_schisms_decisions.txt");
-            
-            //defaultMap
-            Output.output("defaultOutput"+VM+"map"+VM+"geographical_region.txt",modDirectory+VM+"map"+VM+"geographical_region.txt");
-            
-            //defaultGFX
-            Output.copyRaw("defaultOutput"+VM+"gfx"+VM+"flags"+VM+"d_aquileia_church.tga",modDirectory+VM+"gfx"+VM+"flags"+VM+"d_aquileia_church.tga");
-            Output.copyRaw("defaultOutput"+VM+"gfx"+VM+"flags"+VM+"d_arian.tga",modDirectory+VM+"gfx"+VM+"flags"+VM+"d_arian.tga");
-            Output.copyRaw("defaultOutput"+VM+"gfx"+VM+"flags"+VM+"d_georgian_orthodox.tga",modDirectory+VM+"gfx"+VM+"flags"+VM+"d_georgian_orthodox.tga");
-            Output.copyRaw("defaultOutput"+VM+"gfx"+VM+"flags"+VM+"d_insular.tga",modDirectory+VM+"gfx"+VM+"flags"+VM+"d_insular.tga");
-            Output.copyRaw("defaultOutput"+VM+"gfx"+VM+"flags"+VM+"d_pelagian.tga",modDirectory+VM+"gfx"+VM+"flags"+VM+"d_pelagian.tga");
-            Output.copyRaw("defaultOutput"+VM+"gfx"+VM+"flags"+VM+"k_nicene.tga",modDirectory+VM+"gfx"+VM+"flags"+VM+"k_nicene.tga");
 
             long outputTime = System.nanoTime();
             long outputTimeTot = (((outputTime - startTime) / 1000000000)/60);

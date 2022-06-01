@@ -1,0 +1,480 @@
+5328000=
+{
+	name="Abbarid"
+	culture="ysthyalm"
+}
+5328001=
+{
+	name="Abbarid"
+	culture="ysthyalm"
+}
+5328002=
+{
+	name="Abbarid"
+	culture="ysthyalm"
+}
+5328003=
+{
+	name="Abbarid"
+	culture="ysthyalm"
+}
+5328004=
+{
+	name="Adonibaal"
+	culture="ysthyalm"
+}
+5328005=
+{
+	name="Adonibaalid"
+	culture="ysthyalm"
+}
+5328006=
+{
+	name="Adonibaalid"
+	culture="ysthyalm"
+}
+5328007=
+{
+	name="Adonibaalid"
+	culture="ysthyalm"
+}
+5328008=
+{
+	name="Ahirom"
+	culture="ysthyalm"
+}
+5328009=
+{
+	name="Ahiromid"
+	culture="ysthyalm"
+}
+5328010=
+{
+	name="Ahiromid"
+	culture="ysthyalm"
+}
+5328011=
+{
+	name="Ahiromid"
+	culture="ysthyalm"
+}
+5328012=
+{
+	name="Baalhannid"
+	culture="ysthyalm"
+}
+5328013=
+{
+	name="Baalhannid"
+	culture="ysthyalm"
+}
+5328014=
+{
+	name="Baalhannid"
+	culture="ysthyalm"
+}
+5328015=
+{
+	name="Baalhannid"
+	culture="ysthyalm"
+}
+5328016=
+{
+	name="Baalid"
+	culture="ysthyalm"
+}
+5328017=
+{
+	name="Baalid"
+	culture="ysthyalm"
+}
+5328018=
+{
+	name="Baalid"
+	culture="ysthyalm"
+}
+5328019=
+{
+	name="Baalid"
+	culture="ysthyalm"
+}
+5328020=
+{
+	name="Barca"
+	culture="ysthyalm"
+}
+5328021=
+{
+	name="Barca"
+	culture="ysthyalm"
+}
+5328022=
+{
+	name="Barcid"
+	culture="ysthyalm"
+}
+5328023=
+{
+	name="Barcid"
+	culture="ysthyalm"
+}
+5328024=
+{
+	name="Bodona"
+	culture="ysthyalm"
+}
+5328025=
+{
+	name="Bodona"
+	culture="ysthyalm"
+}
+5328026=
+{
+	name="Bodonid"
+	culture="ysthyalm"
+}
+5328027=
+{
+	name="Bodonid"
+	culture="ysthyalm"
+}
+5328028=
+{
+	name="Bostara"
+	culture="ysthyalm"
+}
+5328029=
+{
+	name="Bostara"
+	culture="ysthyalm"
+}
+5328030=
+{
+	name="Bostarid"
+	culture="ysthyalm"
+}
+5328031=
+{
+	name="Bostarid"
+	culture="ysthyalm"
+}
+5328032=
+{
+	name="Chelbesid"
+	culture="ysthyalm"
+}
+5328033=
+{
+	name="Chelbesid"
+	culture="ysthyalm"
+}
+5328034=
+{
+	name="Chelbesid"
+	culture="ysthyalm"
+}
+5328035=
+{
+	name="Chelbesid"
+	culture="ysthyalm"
+}
+5328036=
+{
+	name="Eshbaalid"
+	culture="ysthyalm"
+}
+5328037=
+{
+	name="Eshbaalid"
+	culture="ysthyalm"
+}
+5328038=
+{
+	name="Eshbaalid"
+	culture="ysthyalm"
+}
+5328039=
+{
+	name="Eshbaalid"
+	culture="ysthyalm"
+}
+5328040=
+{
+	name="Eugorid"
+	culture="ysthyalm"
+}
+5328041=
+{
+	name="Eugorid"
+	culture="ysthyalm"
+}
+5328042=
+{
+	name="Eugorid"
+	culture="ysthyalm"
+}
+5328043=
+{
+	name="Eugorid"
+	culture="ysthyalm"
+}
+5328044=
+{
+	name="Hannid"
+	culture="ysthyalm"
+}
+5328045=
+{
+	name="Hannid"
+	culture="ysthyalm"
+}
+5328046=
+{
+	name="Hannid"
+	culture="ysthyalm"
+}
+5328047=
+{
+	name="Hannid"
+	culture="ysthyalm"
+}
+5328048=
+{
+	name="Hiramid"
+	culture="ysthyalm"
+}
+5328049=
+{
+	name="Hiramid"
+	culture="ysthyalm"
+}
+5328050=
+{
+	name="Hiramid"
+	culture="ysthyalm"
+}
+5328051=
+{
+	name="Hiramid"
+	culture="ysthyalm"
+}
+5328052=
+{
+	name="Mago"
+	culture="ysthyalm"
+}
+5328053=
+{
+	name="Mago"
+	culture="ysthyalm"
+}
+5328054=
+{
+	name="Magid"
+	culture="ysthyalm"
+}
+5328055=
+{
+	name="Magid"
+	culture="ysthyalm"
+}
+5328056=
+{
+	name="Mattanid"
+	culture="ysthyalm"
+}
+5328057=
+{
+	name="Mattanid"
+	culture="ysthyalm"
+}
+5328058=
+{
+	name="Mattanid"
+	culture="ysthyalm"
+}
+5328059=
+{
+	name="Mattanid"
+	culture="ysthyalm"
+}
+5328060=
+{
+	name="Metallid"
+	culture="ysthyalm"
+}
+5328061=
+{
+	name="Metallid"
+	culture="ysthyalm"
+}
+5328062=
+{
+	name="Metallid"
+	culture="ysthyalm"
+}
+5328063=
+{
+	name="Metallid"
+	culture="ysthyalm"
+}
+5328064=
+{
+	name="Milkiramid"
+	culture="ysthyalm"
+}
+5328065=
+{
+	name="Milkiramid"
+	culture="ysthyalm"
+}
+5328066=
+{
+	name="Milkiramid"
+	culture="ysthyalm"
+}
+5328067=
+{
+	name="Milkiramid"
+	culture="ysthyalm"
+}
+5328068=
+{
+	name="Philosirid"
+	culture="ysthyalm"
+}
+5328069=
+{
+	name="Philosirid"
+	culture="ysthyalm"
+}
+5328070=
+{
+	name="Philosirid"
+	culture="ysthyalm"
+}
+5328071=
+{
+	name="Philosirid"
+	culture="ysthyalm"
+}
+5328072=
+{
+	name="Gisgo"
+	culture="ysthyalm"
+}
+5328073=
+{
+	name="Gisgo"
+	culture="ysthyalm"
+}
+5328074=
+{
+	name="Gisgoid"
+	culture="ysthyalm"
+}
+5328075=
+{
+	name="Gisgoid"
+	culture="ysthyalm"
+}
+5328076=
+{
+	name="Gerbalid"
+	culture="ysthyalm"
+}
+5328077=
+{
+	name="Gerbalid"
+	culture="ysthyalm"
+}
+5328078=
+{
+	name="Gerbalid"
+	culture="ysthyalm"
+}
+5328079=
+{
+	name="Gerbalid"
+	culture="ysthyalm"
+}
+5328080=
+{
+	name="Hammid"
+	culture="ysthyalm"
+}
+5328081=
+{
+	name="Hammid"
+	culture="ysthyalm"
+}
+5328082=
+{
+	name="Hammid"
+	culture="ysthyalm"
+}
+5328083=
+{
+	name="Hammid"
+	culture="ysthyalm"
+}
+5328084=
+{
+	name="Eugarid"
+	culture="ysthyalm"
+}
+5328085=
+{
+	name="Eugarid"
+	culture="ysthyalm"
+}
+5328086=
+{
+	name="Eugarid"
+	culture="ysthyalm"
+}
+5328087=
+{
+	name="Eugarid"
+	culture="ysthyalm"
+}
+5328088=
+{
+	name="Mashhid"
+	culture="ysthyalm"
+}
+5328089=
+{
+	name="Mashhid"
+	culture="ysthyalm"
+}
+5328090=
+{
+	name="Mashhid"
+	culture="ysthyalm"
+}
+5328091=
+{
+	name="Mashhid"
+	culture="ysthyalm"
+}
+5328092=
+{
+	name="Ummashid"
+	culture="ysthyalm"
+}
+5328093=
+{
+	name="Ummashid"
+	culture="ysthyalm"
+}
+5328094=
+{
+	name="Ummashid"
+	culture="ysthyalm"
+}
+5328095=
+{
+	name="Ummashid"
+	culture="ysthyalm"
+}
