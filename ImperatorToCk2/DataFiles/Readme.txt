@@ -80,6 +80,3 @@ WtWSMS mod Forum link: https://forum.paradoxplaza.com/forum/forums/when-the-worl
 
 The name "Ziqanmak'om" was devised thanks to contributions by Ivan Štambuk on en.Wiktionary.org, under the GNU Free Documentation License, which can be found here:
 https://en.wiktionary.org/wiki/Wiktionary:GNU_Free_Documentation_License
-
-The name "Pretan" was devised thanks to reasearch by Dr Caitlin R. Green
-Green C. R. (1970, January 1). Some possible Phoenician/Punic names in Britain and Ireland. Retrieved May 28, 2022, from https://www.caitlingreen.org/2016/12/punic-names-britain.html 
