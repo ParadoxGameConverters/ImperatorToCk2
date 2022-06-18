@@ -715,7 +715,7 @@ public class Importer
         }
 
         if (revoltName.equals("no")) {
-                
+
             output[0] = tag; //default for no name, will just use tag ID
             output[1] = tag; //default for no adjective, will just use tag ID
             int aqq = 0;
@@ -1785,16 +1785,20 @@ public class Importer
         File locInfo = new File (modDir);
         String[] locList = locInfo.list();
 
-        if (locList != null) {
-            while (aqq < locList.length) {
-                importModLoc(modDir+"/"+locList[aqq],modDirs,allModLoc);
-                aqq = aqq + 1;
-            }
+        try {
+            if (locList != null) {
+                while (aqq < locList.length) {
+                    importModLoc(modDir+"/"+locList[aqq],modDirs,allModLoc);
+                    aqq = aqq + 1;
+                }
 
-        }
-        else {
-            ArrayList<String> modLoc = importBasicFile(modDir);
-            allModLoc.addAll(modLoc);
+            }
+            else {
+                ArrayList<String> modLoc = importBasicFile(modDir);
+                allModLoc.addAll(modLoc);
+            }
+        } catch (Exception e){ //if a non-existant file is accessed, cancel so that converter doesn't crash
+            
         }
 
         return allModLoc;
