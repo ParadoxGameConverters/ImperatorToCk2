@@ -698,15 +698,11 @@ public class Importer
 
     }
 
-    public static String[] importLocalisation (String directory, String tag, String dynasty) throws IOException
+    public static String[] importLocalisation (ArrayList<String> locList, String tag, String dynasty) throws IOException
     {
-
-        String VM = "\\";
-        VM = VM.substring(0);
         char quote = '"';
         String[] output;
         output = new String[2];
-        String provOrName = "debug";
         String revoltName = "no";
         int usesDynasty = 0;
 
@@ -718,81 +714,52 @@ public class Importer
             revoltName = "no";
         }
 
-        if (dynasty.equals("00Region00")) {
+        if (revoltName.equals("no")) {
+                
+            output[0] = tag; //default for no name, will just use tag ID
+            output[1] = tag; //default for no adjective, will just use tag ID
+            int aqq = 0;
 
-            output = importRegionLocalisation(directory,tag);    
+            try {
+                while (aqq < locList.size()){
 
-        }
+                    String qaaa = locList.get(aqq);
 
-        else if (revoltName.equals("no")) {
+                    if (qaaa.split(":")[0].equals(" "+tag)){
+                        output[0] = qaaa.split(":")[1];
+                        output[0] = output[0].substring(3,output[0].length()-1);
 
-            try { 
-                provOrName = tag.split("OV")[0];
+                    }
 
-            }catch (java.lang.NullPointerException exception){
-                provOrName = "debug2";
+                    String adjName = tag.replace("_FEUDATORY_NAME","_FEUDATORY_ADJECTIVE"); //for certain mission tags which have different formatting
+                    adjName = adjName.replace("_NAME","");
 
-            }
+                    if (qaaa.split(":")[0].equals(" "+tag+"_ADJ") || qaaa.split(":")[0].equals(" "+tag+"_ADJECTIVE")
+                    || qaaa.split(":")[0].equals(" "+adjName+"_ADJ") || qaaa.split(":")[0].equals(" "+adjName+"_ADJECTIVE")){
+                        aqq = locList.size() + 1;
+                        output[1] = qaaa.split(":")[1];
+                        output[1] = output[1].substring(3,output[1].length()-1);
 
-            if (provOrName.equals ("PR")) {
-                output = importProvLocalisation(directory,tag);
-            }
-            else {  
-
-                String name = directory + VM + "game" + VM + "localization" + VM + "english" + VM + "countries_l_english.yml";
-
-                FileInputStream fileIn= new FileInputStream(name);
-                Scanner scnr= new Scanner(fileIn);
-
-                int flag = 0;
-
-                boolean endOrNot = true;
-
-                String qaaa;
-                qaaa = scnr.nextLine();
-
-                output[0] = tag; //default for no name, will just use tag ID
-                output[1] = tag; //default for no adjective, will just use tag ID
-
-                try {
-                    while (endOrNot = true){
-
-                        qaaa = scnr.nextLine();
-
-                        if (qaaa.split(":")[0].equals(" "+tag)){
-                            output[0] = qaaa.split(":")[1];
-                            output[0] = output[0].substring(3,output[0].length()-1);
-
-                        }
-
-                        String adjName = tag.replace("_NAME","");
-                        String feuName = tag.replace("_FEUDATORY_NAME","_FEUDATORY_ADJECTIVE"); //for certain mission tags which have different formatting
-
-                        if (qaaa.split(":")[0].equals(" "+tag+"_ADJ") || qaaa.split(":")[0].equals(" "+tag+"_ADJECTIVE")
-                        || qaaa.split(":")[0].equals(" "+adjName+"_ADJ") || qaaa.split(":")[0].equals(" "+adjName+"_ADJECTIVE")
-                        || qaaa.split(":")[0].equals(" "+feuName)){
-                            endOrNot = false;
-                            output[1] = qaaa.split(":")[1];
-                            output[1] = output[1].substring(3,output[1].length()-1);
-
+                    } else {
+                        if (output[1].charAt(output[1].length()-1) == 'a') {
+                            output[1] = output[0] + "n";    
+                        } else {
+                            output[1] = output[0];
                         }
                     }
 
-                }catch (java.util.NoSuchElementException exception){
-                    endOrNot = false;
+                    aqq = aqq + 1;
+                }
 
-                }   
+            }catch (java.util.NoSuchElementException exception){
+                aqq = locList.size() + 1;
 
-            }
-
-            if (output[0].equals (tag) && usesDynasty != 1) {
-                output = importFormableLocalisation(directory,tag);   
-            }
+            }   
 
         }
         else {
 
-            String[] revoltNames = importLocalisation (directory, revoltName, dynasty);
+            String[] revoltNames = importLocalisation (locList, revoltName, dynasty);
             output[0] = revoltNames[1] + " Revolt";
             output[1] = revoltNames[1] + " Revolter";
         }
@@ -803,16 +770,6 @@ public class Importer
                 output[1] = output[1] + "n";    
             }
             output[0] = output[1] + " Empire"; //may change out Empire for country rank
-        } else if (output[0].equals(tag)) {
-            output = importAreaLocalisation(directory,tag);    
-        } 
-
-        if (output[0].equals(tag)) { //Mod support
-            output = importCustCountryLocalisation (tag);    
-        }
-
-        if (output[0].equals(tag)) {
-            output = importRegionLocalisation(directory,tag);    
         }
 
         return output;
@@ -1789,6 +1746,58 @@ public class Importer
         allColors.addAll(vanillaColors);
 
         return allColors;
+    }
+
+    public static ArrayList<String> importAllLoc (String name, ArrayList<String> modDirs) throws IOException //imports all localization files
+    {
+        ArrayList<String> allLoc = new ArrayList<String>();
+        ArrayList<String> moddedLoc = new ArrayList<String>();
+        ArrayList<String> regionLoc = importBasicFile(name+"/game/localization/english/macroregions_l_english.yml");
+        ArrayList<String> formableLoc = importBasicFile(name+"/game/localization/english/nation_formation_l_english.yml");
+        ArrayList<String> countryLoc = importBasicFile(name+"/game/localization/english/countries_l_english.yml");
+        ArrayList<String> provLoc = importBasicFile(name+"/game/localization/english/provincenames_l_english.yml");
+        ArrayList<String> areaLoc = importBasicFile(name+"/game/localization/english/regionnames_l_english.yml");
+        ArrayList<String> supportedModLoc = importBasicFile("supportedModLoc.txt"); //default loc for some mods in case mod files are missing
+        int aqq = 0;
+        while (modDirs.size() > aqq) {
+            if (!modDirs.get(aqq).equals("none")) {
+                String modDir = modDirs.get(aqq)+"/localization/english";
+                moddedLoc.addAll(importModLoc(modDir,modDirs,moddedLoc));
+            }
+            aqq = aqq + 1;
+        }
+
+        allLoc.addAll(regionLoc);
+        allLoc.addAll(formableLoc);
+        allLoc.addAll(countryLoc);
+        allLoc.addAll(provLoc);
+        allLoc.addAll(areaLoc);
+        allLoc.addAll(supportedModLoc);
+        allLoc.addAll(moddedLoc);
+
+        return allLoc;
+    }
+
+    public static ArrayList<String> importModLoc (String modDir, ArrayList<String> modDirs, ArrayList<String> allModLoc) throws IOException
+    //imports all modded localization files
+    {
+        int aqq = 0;
+        File locInfo = new File (modDir);
+        String[] locList = locInfo.list();
+
+        if (locList != null) {
+            while (aqq < locList.length) {
+                importModLoc(modDir+"/"+locList[aqq],modDirs,allModLoc);
+                aqq = aqq + 1;
+            }
+
+        }
+        else {
+            ArrayList<String> modLoc = importBasicFile(modDir);
+            allModLoc.addAll(modLoc);
+        }
+
+        return allModLoc;
     }
 
     public static ArrayList<String> importModDirs (String name, String irModDir) throws IOException //imports all directories for mods used in save file

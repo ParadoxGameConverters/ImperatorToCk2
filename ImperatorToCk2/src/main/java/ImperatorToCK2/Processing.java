@@ -1,5 +1,4 @@
 package ImperatorToCK2;  
-      
 
 import java.util.Scanner;
 import java.io.IOException;
@@ -518,9 +517,9 @@ public class Processing
         String qaaa = "aa";
         int Rng = (int) (Math.random() * 34);
         Rng = Rng + 16;
-        String color = Integer.toString(Rng); 
+        String age = Integer.toString(Rng); 
 
-        return color;
+        return age;
 
     }
 
@@ -1361,11 +1360,11 @@ public class Processing
             b *= 255;
             color = r+" "+g+" "+b;
         }
-        
+
         return color;
 
     }
-    
+
     public static String fixWhite (String color) //prevents colors from being 255 255 255
     {
         if (color.split(" ")[0].contains("255") || color.split(" ")[0].contains("254")) {
@@ -1375,6 +1374,152 @@ public class Processing
                 }
             }
         }
+        return color;
+
+    }
+
+    public static String[] eastWestNames (String eastWest, String[] loc) throws IOException
+    {
+        String[] empire = new String[2];
+
+        empire[0] = eastWest+" "+loc[0];
+        empire[1] = eastWest+" "+loc[1];
+        if (empire[0].contains("Republic")) {
+            empire[0] = empire[0].replace("Republic","Empire");
+            empire[1] = empire[0].replace("Republic","Empire");
+        }
+        else if (empire[0].contains("Kingdom")) {
+            empire[0] = empire[0].replace("Kingdom","Empire");
+            empire[1] = empire[0].replace("Kingdom","Empire");
+        }
+        else if (!empire[0].contains("Empire")) {
+            empire[0] = eastWest+" "+loc[1];
+            empire[0] = empire[0] + " Empire";
+        }
+
+        return empire;
+
+    }
+
+    public static void dynamicSplit (String title,String rank,String color,String[] loc,String irFlag,String impGameDir,String capital,
+    ArrayList<String[]> flagList,ArrayList<String[]> colorList,ArrayList<String> modFlagGFX,String government,String ck2Dir, String modDirectory)
+    throws IOException
+    {
+        String country = rank+"_"+title;
+        //events
+        String eventDir = modDirectory+"/events/dynamic_empire_split_"+country+".txt";
+        String eventTemplateDirectory = "defaultOutput/templates/events/dynamic_empire_split.txt";
+        Output.dynamicSplitTemplateFill(country,eventDir,eventTemplateDirectory);
+        
+        //decisions
+        String decisionDir = modDirectory+"/decisions/dynamic_empire_split_decision_"+country+".txt";
+        String decisionTemplateDirectory = "defaultOutput/templates/decisions/dynamic_empire_split_decision.txt";
+        Output.dynamicSplitTemplateFill(country,decisionDir,decisionTemplateDirectory);
+        
+        //bloodlines 
+        String bloodlineDir = modDirectory+"/common/bloodlines/50_empireSplitBloodline_"+country+".txt";
+        String bloodlineTemplateDirectory = "defaultOutput/templates/common/bloodlines/50_empireSplitBloodline.txt";
+        Output.dynamicSplitTemplateFill(country,bloodlineDir,bloodlineTemplateDirectory);
+        
+        String[] easternEmpire = eastWestNames("Eastern",loc);
+        String[] westernEmpire = eastWestNames("Western",loc);
+        String eastColor = eastColor(color);
+        String westColor = westColor(color);
+        String eastTitle = title+"_east";
+        String westTitle = title+"_west";
+        Output.localizationCreation(easternEmpire,eastTitle,rank,modDirectory);
+        Output.localizationCreation(westernEmpire,westTitle,rank,modDirectory);
+
+        int genFlag = 0;
+        try {
+            genFlag = Output.generateFlag(ck2Dir,impGameDir,rank,flagList,eastTitle,irFlag,
+                colorList,modFlagGFX,modDirectory);
+        } catch(Exception e) { //if something goes wrong, don't crash entire converter
+            
+        }
+
+        if (genFlag == 0) {
+            Output.copyFlag(ck2Dir,modDirectory,rank,capital,eastTitle);
+        }
+        
+        genFlag = 0;
+        try {
+            genFlag = Output.generateFlag(ck2Dir,impGameDir,rank,flagList,westTitle,irFlag,
+                colorList,modFlagGFX,modDirectory);
+        } catch(Exception e) { //if something goes wrong, don't crash entire converter
+            
+        }
+
+        if (genFlag == 0) {
+            Output.copyFlag(ck2Dir,modDirectory,rank,capital,westTitle);
+        }
+        
+        Output.eastWestTitle(eastTitle,government,capital,rank,"100.1.1",modDirectory);
+        Output.eastWestTitle(westTitle,government,capital,rank,"100.1.1",modDirectory);
+        
+        Output.titleCreationCommon(eastTitle,eastColor,government,capital,rank,modDirectory);
+        Output.titleCreationCommon(westTitle,westColor,government,capital,rank,modDirectory);
+
+    }
+    
+    public static String eastColor (String overlordColor) //Generates color for easternEmpire
+    {
+
+        String[] overlordColorSplit = overlordColor.split(" ");
+        int c1 = (int) (Integer.parseInt(overlordColorSplit[0]) - 50);
+        int c2 = (int) (Integer.parseInt(overlordColorSplit[1]) - 50);
+        int c3 = (int) (Integer.parseInt(overlordColorSplit[2]) - 50);
+        if (c1 < 0) {
+            c1 = 0;
+        }
+        if (c2 < 0) {
+            c2 = 0;
+        }
+        if (c3 < 0) {
+            c3 = 0;
+        }
+        if (c1 > 255) {
+            c1 = 255;
+        }
+        if (c2 > 255) {
+            c2 = 255;
+        }
+        if (c3 > 255) {
+            c3 = 255;
+        }
+        String color = Integer.toString(c1) + " " + Integer.toString(c2) + " " + Integer.toString(c3); 
+
+        return color;
+
+    }
+    
+    public static String westColor (String overlordColor) //Generates color for easternEmpire
+    {
+
+        String[] overlordColorSplit = overlordColor.split(" ");
+        int c1 = (int) (Integer.parseInt(overlordColorSplit[0]) + 50);
+        int c2 = (int) (Integer.parseInt(overlordColorSplit[1]) + 50);
+        int c3 = (int) (Integer.parseInt(overlordColorSplit[2]) + 50);
+        if (c1 < 0) {
+            c1 = 0;
+        }
+        if (c2 < 0) {
+            c2 = 0;
+        }
+        if (c3 < 0) {
+            c3 = 0;
+        }
+        if (c1 > 255) {
+            c1 = 255;
+        }
+        if (c2 > 255) {
+            c2 = 255;
+        }
+        if (c3 > 255) {
+            c3 = 255;
+        }
+        String color = Integer.toString(c1) + " " + Integer.toString(c2) + " " + Integer.toString(c3); 
+
         return color;
 
     }

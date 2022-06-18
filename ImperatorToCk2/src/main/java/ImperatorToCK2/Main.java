@@ -262,6 +262,10 @@ public class Main
             LOGGER.info("Importing color information...");
             
             ArrayList<String[]> colorList = Importer.importAllColors(impGameDir,modDirs);
+            
+            LOGGER.info("Importing localization information...");
+            
+            ArrayList<String> locList = Importer.importAllLoc(impGameDir,modDirs);
 
             LOGGER.info("Creating temp files...");
 
@@ -624,7 +628,7 @@ public class Main
 
                                 Output.dynastyCreation(rulerDynasty,Character[7],Character[16],modDirectory);
 
-                                String[] locName = importer.importLocalisation(impGameDir,impTagInfo.get(aq4)[19],rulerDynasty);
+                                String[] locName = importer.importLocalisation(locList,impTagInfo.get(aq4)[19],rulerDynasty);
                                 Output.localizationCreation(locName,impTagInfo.get(aq4)[0],rank,modDirectory);
                                 if (oldName.equals(impTagInfo.get(aq4)[0])) { //Try to generate flag, if failure occurs, copy capital flag
                                     int genFlag = 0;
@@ -668,6 +672,12 @@ public class Main
 
                                     Output.localizationCreation(capitalLoc,impTagInfo.get(aq4)[0],subRank,modDirectory);
                                     Output.copyFlag(ck2Dir,modDirectory,subRank,impTagInfo.get(aq4)[5],impTagInfo.get(aq4)[0]); //use flag of empire
+                                    
+                                    if (ck2LandTot[aq4] >= empireRank+600 && impTagInfo.get(aq4)[17].equals("imperium")) { //generate dynamic ew split
+                                        Processing.dynamicSplit(impTagInfo.get(aq4)[0],rank,impTagInfo.get(aq4)[3],locName,impTagInfo.get(aq4)[23],
+                                        impGameDir,impTagInfo.get(aq4)[5],flagList,colorList,modFlagGFX,impTagInfo.get(aq4)[17],ck2Dir,modDirectory);
+                                        LOGGER.info("Generated east/west split for "+impTagInfo.get(aq4)[0]);
+                                    }
                                 }
                                 
                                 impTagInfo.get(aq4)[22] = rank;

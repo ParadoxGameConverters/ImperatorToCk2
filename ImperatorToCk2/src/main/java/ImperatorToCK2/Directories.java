@@ -102,6 +102,9 @@ public class Directories
         
         File f29 = new File(mainModFolder+VM+"map");
         f29.mkdir();
+        
+        File f30 = new File(mainModFolder+"/common/event_modifiers");
+        f30.mkdir();
 
         return aqv;
     }

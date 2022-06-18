@@ -1515,5 +1515,67 @@ public class Output
             }
         }
     }
+    
+    public static void dynamicSplitTemplateFill(String country, String outputDirectory,String templateDirectory) throws IOException
+    //dynamic east/west empire split
+    {
+        
+
+        ArrayList<String> oldFile = new ArrayList<String>();
+
+        oldFile = Importer.importBasicFile(templateDirectory);
+
+        FileOutputStream fileOut= new FileOutputStream(outputDirectory);
+        PrintWriter out = new PrintWriter(fileOut);
+
+        int aqq = 0;
+
+        while (aqq < oldFile.size()) {
+            if (oldFile.get(aqq).contains("e_TAG")) {
+                String imperialTag = oldFile.get(aqq).replace("e_TAG",country);
+                out.println (imperialTag);
+            } else {
+                out.println (oldFile.get(aqq));
+            }
+            
+
+            aqq = aqq + 1;
+
+        }
+
+        out.flush();
+        fileOut.close();
+    }
+    
+    public static void eastWestTitle(String irTAG, String government, String capital,String rank,
+    String date1,String Directory) throws IOException
+    {
+
+        String tab = "	";
+        
+        String oldDirectory = Directory;
+        Directory = Directory+"/history/titles";
+        Importer importer = new Importer();
+
+        FileOutputStream fileOut= new FileOutputStream(Directory + "/" + rank+"_" + irTAG + ".txt");
+        PrintWriter out = new PrintWriter(fileOut);
+        
+        out.println (date1+"={");
+        if (government.equals("imperium") && rank.equals("e")) { //If I:R government is imperial, set government to CK II imperial (roman_imperial_government)
+            out.println (tab+"law = crown_authority_2");
+            out.println (tab+"law = succ_byzantine_elective");
+            out.println (tab+"law = centralization_3");
+            out.println (tab+"law = imperial_administration");
+            out.println (tab+"law = ze_administration_laws_2");
+            out.println (tab+"law = vice_royalty_2");
+            out.println (tab+"law = revoke_title_law_1");
+            govCreation(irTAG,rank,"i",oldDirectory);
+            imperialSuccession(irTAG,rank,oldDirectory);
+        }
+        out.println ("}");
+        out.println ();
+        out.flush();
+        fileOut.close();
+    }
 
 }
