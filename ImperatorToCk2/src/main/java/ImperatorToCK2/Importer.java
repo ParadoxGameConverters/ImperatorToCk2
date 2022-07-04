@@ -719,15 +719,20 @@ public class Importer
             output[0] = tag; //default for no name, will just use tag ID
             output[1] = tag; //default for no adjective, will just use tag ID
             int aqq = 0;
+            boolean name = false;
 
             try {
                 while (aqq < locList.size()){
 
                     String qaaa = locList.get(aqq);
+                    if (tag.equals("DAHAE_NAME")) {
+                        //System.out.println(qaaa);
+                    }
 
                     if (qaaa.split(":")[0].equals(" "+tag)){
                         output[0] = qaaa.split(":")[1];
                         output[0] = output[0].substring(3,output[0].length()-1);
+                        name = true;
 
                     }
 
@@ -736,7 +741,9 @@ public class Importer
 
                     if (qaaa.split(":")[0].equals(" "+tag+"_ADJ") || qaaa.split(":")[0].equals(" "+tag+"_ADJECTIVE")
                     || qaaa.split(":")[0].equals(" "+adjName+"_ADJ") || qaaa.split(":")[0].equals(" "+adjName+"_ADJECTIVE")){
-                        aqq = locList.size() + 1;
+                        if (name) {
+                          aqq = locList.size() + 1;  
+                        }
                         output[1] = qaaa.split(":")[1];
                         output[1] = output[1].substring(3,output[1].length()-1);
 
@@ -1011,6 +1018,7 @@ public class Importer
                 qaaa = scnr.nextLine();
 
                 if (qaaa.split(":")[0].equals(" "+tag)){
+                    
                     output[0] = qaaa.split(":")[1];
                     output[0] = output[0].substring(3,output[0].length()-1);
 

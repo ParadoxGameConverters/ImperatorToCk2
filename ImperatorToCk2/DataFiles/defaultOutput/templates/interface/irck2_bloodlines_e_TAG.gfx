@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_bloodlines_e_TAG_split"
+		texturefile = "gfx\\interface\\bloodlines\\bloodlines_symbol_e_TAG_split.tga"
+	}
+	
+}

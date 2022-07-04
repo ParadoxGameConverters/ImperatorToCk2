@@ -1258,6 +1258,9 @@ public class Processing
     public static String calcDynID (String id) //gives all IR character dynasties + 700000000 to prevent conflict
     {
         if (!id.equals("noDynasty")) {
+            if (id.length() >= 10) {
+                id = id.substring(0,9);
+            }
             id = Integer.toString(Integer.parseInt(id) + 700000000);
         }
 
@@ -1406,23 +1409,32 @@ public class Processing
     throws IOException
     {
         String country = rank+"_"+title;
+        String[] easternEmpire = eastWestNames("Eastern",loc);
+        String[] westernEmpire = eastWestNames("Western",loc);
         //events
         String eventDir = modDirectory+"/events/dynamic_empire_split_"+country+".txt";
         String eventTemplateDirectory = "defaultOutput/templates/events/dynamic_empire_split.txt";
-        Output.dynamicSplitTemplateFill(country,eventDir,eventTemplateDirectory);
-        
+        Output.dynamicSplitTemplateFill(country,loc,easternEmpire,westernEmpire,eventDir,eventTemplateDirectory);
+
         //decisions
         String decisionDir = modDirectory+"/decisions/dynamic_empire_split_decision_"+country+".txt";
         String decisionTemplateDirectory = "defaultOutput/templates/decisions/dynamic_empire_split_decision.txt";
-        Output.dynamicSplitTemplateFill(country,decisionDir,decisionTemplateDirectory);
-        
+        Output.dynamicSplitTemplateFill(country,loc,easternEmpire,westernEmpire,decisionDir,decisionTemplateDirectory);
+
         //bloodlines 
         String bloodlineDir = modDirectory+"/common/bloodlines/50_empireSplitBloodline_"+country+".txt";
         String bloodlineTemplateDirectory = "defaultOutput/templates/common/bloodlines/50_empireSplitBloodline.txt";
-        Output.dynamicSplitTemplateFill(country,bloodlineDir,bloodlineTemplateDirectory);
+        Output.dynamicSplitTemplateFill(country,loc,easternEmpire,westernEmpire,bloodlineDir,bloodlineTemplateDirectory);
         
-        String[] easternEmpire = eastWestNames("Eastern",loc);
-        String[] westernEmpire = eastWestNames("Western",loc);
+        String bloodlineGFXDir = modDirectory+"/interface/irck2_bloodlines_"+country+".gfx";
+        String bloodlineGFXTemplateDirectory = "defaultOutput/templates/interface/irck2_bloodlines_e_TAG.gfx";
+        Output.dynamicSplitTemplateFill(country,loc,easternEmpire,westernEmpire,bloodlineGFXDir,bloodlineGFXTemplateDirectory);
+
+        //loc
+        String locDir = modDirectory+"/localisation/dynamic_empire_split_loc_"+country+".csv";
+        String locTemplateDirectory = "defaultOutput/templates/localisation/dynamic_empire_split_loc.csv";
+        Output.dynamicSplitTemplateFill(country,loc,easternEmpire,westernEmpire,locDir,locTemplateDirectory);
+
         String eastColor = eastColor(color);
         String westColor = westColor(color);
         String eastTitle = title+"_east";
@@ -1431,44 +1443,43 @@ public class Processing
         Output.localizationCreation(westernEmpire,westTitle,rank,modDirectory);
 
         int genFlag = 0;
-        try {
-            genFlag = Output.generateFlag(ck2Dir,impGameDir,rank,flagList,eastTitle,irFlag,
-                colorList,modFlagGFX,modDirectory);
-        } catch(Exception e) { //if something goes wrong, don't crash entire converter
-            
-        }
 
-        if (genFlag == 0) {
-            Output.copyFlag(ck2Dir,modDirectory,rank,capital,eastTitle);
-        }
-        
-        genFlag = 0;
-        try {
-            genFlag = Output.generateFlag(ck2Dir,impGameDir,rank,flagList,westTitle,irFlag,
-                colorList,modFlagGFX,modDirectory);
-        } catch(Exception e) { //if something goes wrong, don't crash entire converter
-            
-        }
+        String baseFlagDir = modDirectory+"/gfx/flags/"+rank+"_"+title+".tga";
+        String eastFlagDir = modDirectory+"/gfx/flags/"+rank+"_"+eastTitle+".tga";
+        //String westFlag = rank+"_"+westTitle+".dds";
 
-        if (genFlag == 0) {
-            Output.copyFlag(ck2Dir,modDirectory,rank,capital,westTitle);
-        }
+        int aqq = 0;
+        int flag = 0;
+
+        String irFlagSource = "none";
+        boolean usesPNG = false;
+
+        Output.eastWestFlagGen(irFlag,title,color,eastColor,eastTitle,flagList,colorList,rank,capital,modFlagGFX,ck2Dir,impGameDir,modDirectory);
+        Output.eastWestFlagGen(irFlag,title,color,color,westTitle,flagList,colorList,rank,capital,modFlagGFX,ck2Dir,impGameDir,modDirectory);
+        //try {
+            //genFlag = Output.generateFlag(ck2Dir,impGameDir,rank,flagList,westTitle,irFlag,colorList,modFlagGFX,modDirectory);
+
+        //} catch(Exception e) { //if something goes wrong, don't crash entire converter
+            //Output.copyFlag(ck2Dir,modDirectory,rank,capital,westTitle);
+        //}
         
+        Output.splitBloodlineEmbGen(ck2Dir,impGameDir,rank,flagList,title,irFlag,colorList,modFlagGFX,modDirectory);
+
         Output.eastWestTitle(eastTitle,government,capital,rank,"100.1.1",modDirectory);
         Output.eastWestTitle(westTitle,government,capital,rank,"100.1.1",modDirectory);
-        
+
         Output.titleCreationCommon(eastTitle,eastColor,government,capital,rank,modDirectory);
         Output.titleCreationCommon(westTitle,westColor,government,capital,rank,modDirectory);
 
     }
-    
+
     public static String eastColor (String overlordColor) //Generates color for easternEmpire
     {
 
         String[] overlordColorSplit = overlordColor.split(" ");
         int c1 = (int) (Integer.parseInt(overlordColorSplit[0]) - 50);
         int c2 = (int) (Integer.parseInt(overlordColorSplit[1]) - 50);
-        int c3 = (int) (Integer.parseInt(overlordColorSplit[2]) - 50);
+        int c3 = (int) (Integer.parseInt(overlordColorSplit[2]) + 50);
         if (c1 < 0) {
             c1 = 0;
         }
@@ -1492,7 +1503,7 @@ public class Processing
         return color;
 
     }
-    
+
     public static String westColor (String overlordColor) //Generates color for easternEmpire
     {
 
@@ -1524,4 +1535,49 @@ public class Processing
 
     }
 
+    public static boolean isWithinColorRange (String color1, String color2, int range) //Checks if RGB color falls within the specified range
+    {
+
+        boolean yn = false;
+        if (color1.equals("none") || color2.equals("none")) {
+            return yn;
+        }
+        color1 = color1.replace(" ",",");
+        color2 = color2.replace(" ",",");
+        color1 = color1.replace("rgb(","");
+        color2 = color2.replace("rgb(","");
+        color1 = color1.replace(")","");
+        color2 = color2.replace(")","");
+        String[] color1Split = color1.split(",");
+        double c1a = (double) (Double.parseDouble(color1Split[0]));
+        double c2a = (double) (Double.parseDouble(color1Split[1]));
+        double c3a = (double) (Double.parseDouble(color1Split[2]));
+
+        String[] color2Split = color2.split(",");
+        double c1b = (double) (Double.parseDouble(color2Split[0]));
+        double c2b = (double) (Double.parseDouble(color2Split[1]));
+        double c3b = (double) (Double.parseDouble(color1Split[2]));
+
+        double range1 = c1a - c1b;
+        if (range1 < 0) {
+            range1 = range1 * -1;
+        }
+        double range2 = c2a - c2b;
+        if (range2 < 0) {
+            range2 = range2 * -1;
+        }
+        double range3 = c3a - c3b;
+        if (range3 < 0) {
+            range3 = range3 * -1;
+        }
+
+        if (range1 <= range && range2 <= range && range3 <= range) {
+            yn = true;
+        }
+
+        return yn;
+
+    }
+
 }
+

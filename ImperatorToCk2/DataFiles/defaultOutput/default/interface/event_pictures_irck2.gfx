@@ -1,0 +1,17 @@
+##################################
+# I:R TO CK2 EVENT PICTURES   	 #
+##################################
+
+spriteTypes = {
+
+	# Imperator:Rome to Crusader Kings II
+	
+	spriteType = {
+		name = "GFX_evt_irck2_roman_empire_split"
+		texturefile = "gfx\\event_pictures\irck2_roman_empire_split.dds"
+		allwaystransparent = yes
+	}
+	
+	
+	
+}

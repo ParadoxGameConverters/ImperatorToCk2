@@ -105,6 +105,15 @@ public class Directories
         
         File f30 = new File(mainModFolder+"/common/event_modifiers");
         f30.mkdir();
+        
+        File f31 = new File(mainModFolder+"/interface");
+        f31.mkdir();
+        
+        File f32 = new File(mainModFolder+"/gfx/event_pictures");
+        f32.mkdir();
+        
+        File f33 = new File(mainModFolder+"/gfx/interface/bloodlines");
+        f33.mkdir();  
 
         return aqv;
     }

@@ -11,7 +11,7 @@ e_TAG_empire_split_bloodline = {
 	diplomacy = 5
 	inheritance = patrilineal
 	allow_bastards = yes
-	picture = GFX_bloodlines_placeholder_symbol
+	picture = GFX_bloodlines_e_TAG_split
 	flags = { created_bloodline }
 }
 
