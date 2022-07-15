@@ -47,6 +47,7 @@ narrative_event = {
 					
 		if = {
 			limit = {
+				has_global_flag = irck2_e_roman_empire_not_has_india
 				NOT = {
 					regional_percentage = {
 						region = world_persia
@@ -67,6 +68,7 @@ narrative_event = {
 					
 		if = {
 			limit = {
+				has_global_flag = irck2_e_roman_empire_not_has_india
 				NOT = {
 					regional_percentage = {
 						region = world_middle_east
@@ -80,7 +82,7 @@ narrative_event = {
 			set_global_flag = irck2_e_TAG_not_has_middle_east
 			subtract_variable = {
 				which = global_splitDistance_e_TAG
-				value = 500
+				value = 175
 			}
 						
 		}
@@ -122,15 +124,25 @@ narrative_event = {
 		
 		if = {
 			limit = {
-				regional_percentage = {
-					region = world_africa
-					percentage > 0
-					owner = {
-						is_vassal_or_below_of = e_TAG
+				OR = {
+					regional_percentage = {
+						region = world_europe_south_italy
+						percentage > 0
+						owner = {
+							is_vassal_or_below_of = e_TAG
+						}
+					}
+					regional_percentage = {
+						region = world_africa
+						percentage > 0
+						owner = {
+							is_vassal_or_below_of = e_TAG
+						}
 					}
 				}
+					
 			}
-			set_global_flag = irck2_e_TAG_has_africa
+			set_global_flag = irck2_e_TAG_has_italo_africa
 			subtract_variable = {
 				which = global_splitDistance_e_TAG
 				value = 250
@@ -149,6 +161,11 @@ narrative_event = {
 				which = global_splitDistance_e_TAG
 				value = 1250
 			}
+		}
+		
+		activate_title = {
+			title = e_TAG
+			status = no
 		}
 	}
 
@@ -221,7 +238,19 @@ narrative_event = {
 		any_landed_title = {
 			limit = {
 				tier = KING
-				de_facto_liege = e_TAG_east
+				OR = {
+					de_facto_liege = e_TAG_east
+					
+					AND = { #For breakaway vassals
+						de_jure_liege_or_above = e_TAG
+						owner = {
+							distance = {
+							where = c_silves
+								distance > global_splitDistance_e_TAG
+							}
+						}
+					}
+				}
 			}
 			de_jure_liege = e_TAG_east
 		}
@@ -331,7 +360,19 @@ narrative_event = {
 		any_landed_title = {
 			limit = {
 				tier = KING
-				de_facto_liege = e_TAG_west
+				OR = {
+					de_facto_liege = e_TAG_west
+					
+					AND = { #For breakaway vassals
+						de_jure_liege_or_above = e_TAG
+						owner = {
+							distance = {
+							where = c_silves
+								distance < global_splitDistance_e_TAG
+							}
+						}
+					}
+				}
 			}
 			de_jure_liege = e_TAG_west
 		}

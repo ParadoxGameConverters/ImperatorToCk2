@@ -6,7 +6,7 @@
 ###################################
 
 e_TAG_empire_split_bloodline = {
-	combat_rating = 5
+	stewardship = 5
 	monthly_character_prestige = 0.2
 	diplomacy = 5
 	inheritance = patrilineal

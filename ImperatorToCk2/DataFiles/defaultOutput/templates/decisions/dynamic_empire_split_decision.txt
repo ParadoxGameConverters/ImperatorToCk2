@@ -6,6 +6,7 @@ decisions = {
 		potential = {
 			has_landed_title = e_TAG
 			year >= 250
+			year <= 475
 			NOT = {
 					has_global_flag = e_TAG_split
 					realm_size < 250
@@ -13,7 +14,19 @@ decisions = {
 			}
 		}
 		allow = {
-
+			war = no
+			NOT = {
+				trait = incapable
+			}
+			age = 16
+			prisoner = no
+			independent = yes
+			is_adult = yes
+			num_of_realm_counties = {
+				value <= 350
+				title = e_TAG
+			}
+			year <= 475 #Visible here so that the player knows that there is a time limit
 		}
 		effect = {
 			narrative_event = {id = IR_EMPIRE_SPLIT_e_TAG.1000}

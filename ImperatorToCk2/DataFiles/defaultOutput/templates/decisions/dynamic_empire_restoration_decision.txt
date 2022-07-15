@@ -1,0 +1,37 @@
+decisions = {
+	e_TAG_restoration = {
+		only_independent = yes
+		is_high_prio = yes
+		ai_check_interval = 24
+		
+		potential = {
+			is_playable = yes
+			OR = { 
+				has_landed_title = e_TAG_east
+				has_landed_title = e_TAG_west
+			}
+			is_adult = yes
+			prisoner = no
+			NOT = { trait = incapable }
+			NOT = { has_global_flag = rome_restored }
+			NOR = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		allow = {
+			OR = {
+				primary_title = { title = e_TAG_east }
+				primary_title = { title = e_TAG_west }
+			}
+			prestige = 3000
+			completely_controls = TAG_capital
+		}
+		effect = {
+			set_global_flag = e_TAG_restored
+			narrative_event = { id = LoR.20 tooltip = EVTTOOLTIPLoR.20 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

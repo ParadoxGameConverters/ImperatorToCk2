@@ -1411,65 +1411,65 @@ public class Processing
         String country = rank+"_"+title;
         String[] easternEmpire = eastWestNames("Eastern",loc);
         String[] westernEmpire = eastWestNames("Western",loc);
+        String eastColor = eastColor(color);
+        String westColor = westColor(color);
+        String eastTitle = title+"_east";
+        if (title.equals("roman_empire")) { //for Eastern Roman Empire, convert to Byzantium
+            eastTitle = "byzantium";
+        }
+        String westTitle = title+"_west";
         //events
         String eventDir = modDirectory+"/events/dynamic_empire_split_"+country+".txt";
         String eventTemplateDirectory = "defaultOutput/templates/events/dynamic_empire_split.txt";
-        Output.dynamicSplitTemplateFill(country,loc,easternEmpire,westernEmpire,eventDir,eventTemplateDirectory);
+        Output.dynamicSplitTemplateFill(country,loc,easternEmpire,westernEmpire,eastTitle,westTitle,eventDir,eventTemplateDirectory);
 
         //decisions
         String decisionDir = modDirectory+"/decisions/dynamic_empire_split_decision_"+country+".txt";
         String decisionTemplateDirectory = "defaultOutput/templates/decisions/dynamic_empire_split_decision.txt";
-        Output.dynamicSplitTemplateFill(country,loc,easternEmpire,westernEmpire,decisionDir,decisionTemplateDirectory);
+        Output.dynamicSplitTemplateFill(country,loc,easternEmpire,westernEmpire,eastTitle,westTitle,decisionDir,decisionTemplateDirectory);
+        
+        String decisionGFXDir = modDirectory+"/interface/irck2_empire_split_decision_icons_"+country+".gfx";
+        String decisionGFXTemplateDirectory = "defaultOutput/templates/interface/irck2_empire_split_decision_icons_e_TAG.gfx";
+        Output.dynamicSplitTemplateFill(country,loc,easternEmpire,westernEmpire,eastTitle,westTitle,decisionGFXDir,decisionGFXTemplateDirectory);
 
         //bloodlines 
         String bloodlineDir = modDirectory+"/common/bloodlines/50_empireSplitBloodline_"+country+".txt";
         String bloodlineTemplateDirectory = "defaultOutput/templates/common/bloodlines/50_empireSplitBloodline.txt";
-        Output.dynamicSplitTemplateFill(country,loc,easternEmpire,westernEmpire,bloodlineDir,bloodlineTemplateDirectory);
+        Output.dynamicSplitTemplateFill(country,loc,easternEmpire,westernEmpire,eastTitle,westTitle,bloodlineDir,bloodlineTemplateDirectory);
         
         String bloodlineGFXDir = modDirectory+"/interface/irck2_bloodlines_"+country+".gfx";
         String bloodlineGFXTemplateDirectory = "defaultOutput/templates/interface/irck2_bloodlines_e_TAG.gfx";
-        Output.dynamicSplitTemplateFill(country,loc,easternEmpire,westernEmpire,bloodlineGFXDir,bloodlineGFXTemplateDirectory);
+        Output.dynamicSplitTemplateFill(country,loc,easternEmpire,westernEmpire,eastTitle,westTitle,bloodlineGFXDir,bloodlineGFXTemplateDirectory);
 
         //loc
         String locDir = modDirectory+"/localisation/dynamic_empire_split_loc_"+country+".csv";
         String locTemplateDirectory = "defaultOutput/templates/localisation/dynamic_empire_split_loc.csv";
-        Output.dynamicSplitTemplateFill(country,loc,easternEmpire,westernEmpire,locDir,locTemplateDirectory);
+        Output.dynamicSplitTemplateFill(country,loc,easternEmpire,westernEmpire,eastTitle,westTitle,locDir,locTemplateDirectory);
+        
+        String bloodDescDir = modDirectory+"/localisation/dynamic_empire_split_bloodline_loc_"+country+".csv";
+        String bloodDescTemplateDirectory = "defaultOutput/templates/localisation/dynamic_empire_split_bloodline_loc.csv";
+        Output.dynamicSplitTemplateFill(country,loc,easternEmpire,westernEmpire,eastTitle,westTitle,bloodDescDir,bloodDescTemplateDirectory);
 
-        String eastColor = eastColor(color);
-        String westColor = westColor(color);
-        String eastTitle = title+"_east";
-        String westTitle = title+"_west";
         Output.localizationCreation(easternEmpire,eastTitle,rank,modDirectory);
         Output.localizationCreation(westernEmpire,westTitle,rank,modDirectory);
 
-        int genFlag = 0;
-
         String baseFlagDir = modDirectory+"/gfx/flags/"+rank+"_"+title+".tga";
         String eastFlagDir = modDirectory+"/gfx/flags/"+rank+"_"+eastTitle+".tga";
-        //String westFlag = rank+"_"+westTitle+".dds";
-
-        int aqq = 0;
-        int flag = 0;
 
         String irFlagSource = "none";
-        boolean usesPNG = false;
 
-        Output.eastWestFlagGen(irFlag,title,color,eastColor,eastTitle,flagList,colorList,rank,capital,modFlagGFX,ck2Dir,impGameDir,modDirectory);
+        if (!eastTitle.equals("byzantium")) { //For Byzantium, use vanilla flag
+            Output.eastWestFlagGen(irFlag,title,color,eastColor,eastTitle,flagList,colorList,rank,capital,modFlagGFX,ck2Dir,impGameDir,modDirectory);
+            Output.titleCreationCommon(eastTitle,eastColor,government,capital,rank,modDirectory);
+        }
         Output.eastWestFlagGen(irFlag,title,color,color,westTitle,flagList,colorList,rank,capital,modFlagGFX,ck2Dir,impGameDir,modDirectory);
-        //try {
-            //genFlag = Output.generateFlag(ck2Dir,impGameDir,rank,flagList,westTitle,irFlag,colorList,modFlagGFX,modDirectory);
-
-        //} catch(Exception e) { //if something goes wrong, don't crash entire converter
-            //Output.copyFlag(ck2Dir,modDirectory,rank,capital,westTitle);
-        //}
+        Output.titleCreationCommon(westTitle,westColor,government,capital,rank,modDirectory);
         
         Output.splitBloodlineEmbGen(ck2Dir,impGameDir,rank,flagList,title,irFlag,colorList,modFlagGFX,modDirectory);
+        Output.eastWestDecisionIcon(country,modDirectory);
 
         Output.eastWestTitle(eastTitle,government,capital,rank,"100.1.1",modDirectory);
         Output.eastWestTitle(westTitle,government,capital,rank,"100.1.1",modDirectory);
-
-        Output.titleCreationCommon(eastTitle,eastColor,government,capital,rank,modDirectory);
-        Output.titleCreationCommon(westTitle,westColor,government,capital,rank,modDirectory);
 
     }
 
@@ -1580,4 +1580,3 @@ public class Processing
     }
 
 }
-

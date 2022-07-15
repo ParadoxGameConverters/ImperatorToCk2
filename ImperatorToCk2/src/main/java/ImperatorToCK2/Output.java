@@ -1502,6 +1502,21 @@ public class Output
         
         Processing.fileExcecute(rakalyCommand);
     }
+    
+    public static void irFlagTexture(String devFlagName, String texture, String output) throws IOException //applies texture to image
+    {
+        String[] rakalyCommand = new String [8];
+        rakalyCommand[0] = "magick.exe";
+        rakalyCommand[1] = "composite";
+        rakalyCommand[2] = texture;
+        rakalyCommand[3] = devFlagName;
+        rakalyCommand[4] = "-tile";
+        rakalyCommand[5] = "-compose";
+        rakalyCommand[6] = "Hardlight";
+        rakalyCommand[7] = output;
+        
+        Processing.fileExcecute(rakalyCommand);
+    }
 
     public static String getColor(String colorName,ArrayList<String[]> colorList) throws IOException
     //get's and converts I:R color to correct format
@@ -1569,8 +1584,8 @@ public class Output
         }
     }
 
-    public static void dynamicSplitTemplateFill(String country, String[] loc, String[] easternEmpire, String[] westernEmpire, 
-    String outputDirectory,String templateDirectory) throws IOException
+    public static void dynamicSplitTemplateFill(String country, String[] loc, String[] easternEmpire, String[] westernEmpire, String eastTitle,
+    String westTitle, String outputDirectory, String templateDirectory) throws IOException
     //dynamic east/west empire split
     {
 
@@ -1593,6 +1608,8 @@ public class Output
                 imperialTag = imperialTag.replace("tagEmpireName",empName);
                 imperialTag = imperialTag.replace("eastEmpireName",easternEmpire[0]);
                 imperialTag = imperialTag.replace("westEmpireName",westernEmpire[0]);
+                imperialTag = imperialTag.replace(country+"_east","e_"+eastTitle);
+                imperialTag = imperialTag.replace(country+"_west","e_"+westTitle);
                 out.println (imperialTag);
             } else {
                 out.println (oldFile.get(aqq));
@@ -1618,6 +1635,7 @@ public class Output
         PrintWriter out = new PrintWriter(fileOut);
 
         out.println (date1+"={");
+        out.println (tab+"active = no");
         if (government.equals("imperium") && rank.equals("e")) { //If I:R government is imperial, set government to CK II imperial (roman_imperial_government)
             out.println (tab+"law = crown_authority_2");
             out.println (tab+"law = succ_byzantine_elective");
@@ -1761,9 +1779,6 @@ public class Output
                     aq3 = aq3 + 1;
                 }
 
-                //color1 = getColor(color1,colorList);
-                //color2 = getColor(color2,colorList);
-
                 irFlagBackground(pattern,devFlagName,"None","None");
 
                 String[] emblemList = emblems.split("~~");
@@ -1812,9 +1827,16 @@ public class Output
         
         if (flagCreated != 1) {
             String oldFlagName = modDirectory+"/gfx/flags/"+ck2Tag+".tga";
+            File oldFlagFile = new File(oldFlagName);
+            if (!oldFlagFile.exists()) { //TAGs converted to existing titles don't copy that title's flag to the mod files
+                oldFlagName = ck2Dir+"/gfx/flags/"+ck2Tag+".tga";
+            }
             String circleMaskName = "defaultOutput/templates/gfx/interface/CircleMask.gif";
+            String greyMaskName = "defaultOutput/templates/gfx/interface/greyMask.gif";
             String transparantOverlay256_256 = "defaultOutput/templates/gfx/interface/transparant256_256.gif";
+            lineGFX = "defaultOutput/templates/gfx/interface/SplitLine05.tga";
             irFlagScaleExact(oldFlagName,devFlagName,"256","256");
+            irFlagTexture(devFlagName,greyMaskName,devFlagName);
             irFlagCombineCutout(devFlagName,circleMaskName,transparantOverlay256_256,devFlagName);
         }
         
@@ -1824,5 +1846,17 @@ public class Output
         irFlagScaleExact(shadowFlagName,flagName,"96","93"); //create final .tga flag, scale to bloodline icon size 96x93
 
     }
+    
+    public static void eastWestDecisionIcon(String country,String modDirectory) throws IOException
+    {
+        String iconDevName = "defaultOutput/flagDev/iconDev"+country+".gif";
+        String iconTemplateName = "defaultOutput/templates/gfx/interface/decision_icon_e_TAG_split.gif";
+        String shadowFlagName = "defaultOutput/flagDev/bloodlines_symbol_"+country+"_splitDevShadow.tga";
+        String iconName = modDirectory+"/gfx/interface/decision_icon_"+country+"_split.tga";
+        irFlagScaleExact(shadowFlagName,iconDevName,"26","26");
+        irFlagCombine(iconTemplateName,iconDevName,iconName);
+        
+    }
 
 }
+
