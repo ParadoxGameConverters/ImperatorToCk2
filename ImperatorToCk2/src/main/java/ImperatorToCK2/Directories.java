@@ -114,6 +114,9 @@ public class Directories
         
         File f33 = new File(mainModFolder+"/gfx/interface/bloodlines");
         f33.mkdir();  
+        
+        File f34 = new File(mainModFolder+"/common/cb_types");
+        f34.mkdir(); 
 
         return aqv;
     }
@@ -148,3 +151,4 @@ public class Directories
     }
 
 }
+

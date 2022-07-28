@@ -1,0 +1,580 @@
+5343000=
+{
+	name="Ambonus"
+	culture="galatian"
+}
+5343001=
+{
+	name="Ambona"
+	culture="galatian"
+}
+5343002=
+{
+	name="Ambonii"
+	culture="galatian"
+}
+5343003=
+{
+	name="Ambonid"
+	culture="galatian"
+}
+5343004=
+{
+	name="Auaroses"
+	culture="galatian"
+}
+5343005=
+{
+	name="Auarosa"
+	culture="galatian"
+}
+5343006=
+{
+	name="Auarosii"
+	culture="galatian"
+}
+5343007=
+{
+	name="Auarosian"
+	culture="galatian"
+}
+5343008=
+{
+	name="Audaxus"
+	culture="galatian"
+}
+5343009=
+{
+	name="Audaxa"
+	culture="galatian"
+}
+53430010=
+{
+	name="Audaxii"
+	culture="galatian"
+}
+53430011=
+{
+	name="Audaxian"
+	culture="galatian"
+}
+53430012=
+{
+	name="Carosus"
+	culture="galatian"
+}
+53430013=
+{
+	name="Carosa"
+	culture="galatian"
+}
+53430014=
+{
+	name="Carosii"
+	culture="galatian"
+}
+53430015=
+{
+	name="Carosian"
+	culture="galatian"
+}
+53430016=
+{
+	name="Culchus"
+	culture="galatian"
+}
+53430017=
+{
+	name="Culcha"
+	culture="galatian"
+}
+53430018=
+{
+	name="Culchi"
+	culture="galatian"
+}
+53430019=
+{
+	name="Culchian"
+	culture="galatian"
+}
+53430020=
+{
+	name="Leukus"
+	culture="galatian"
+}
+53430021=
+{
+	name="Leuka"
+	culture="galatian"
+}
+53430022=
+{
+	name="Leuki"
+	culture="galatian"
+}
+53430023=
+{
+	name="Leukian"
+	culture="galatian"
+}
+53430024=
+{
+	name="Mandonus"
+	culture="galatian"
+}
+53430025=
+{
+	name="Mandonia"
+	culture="galatian"
+}
+53430026=
+{
+	name="Mandonii"
+	culture="galatian"
+}
+53430027=
+{
+	name="Mandonian"
+	culture="galatian"
+}
+53430028=
+{
+	name="Punicus"
+	culture="galatian"
+}
+53430029=
+{
+	name="Punica"
+	culture="galatian"
+}
+53430030=
+{
+	name="Punici"
+	culture="galatian"
+}
+53430031=
+{
+	name="Punician"
+	culture="galatian"
+}
+53430032=
+{
+	name="Tautalus"
+	culture="galatian"
+}
+53430033=
+{
+	name="Tautala"
+	culture="galatian"
+}
+53430034=
+{
+	name="Tautalii"
+	culture="galatian"
+}
+53430035=
+{
+	name="Tautalid"
+	culture="galatian"
+}
+53430036=
+{
+	name="Correius"
+	culture="galatian"
+}
+53430037=
+{
+	name="Correia"
+	culture="galatian"
+}
+53430038=
+{
+	name="Correid"
+	culture="galatian"
+}
+53430039=
+{
+	name="Correian"
+	culture="galatian"
+}
+53430040=
+{
+	name="Divicus"
+	culture="galatian"
+}
+53430041=
+{
+	name="Divica"
+	culture="galatian"
+}
+53430042=
+{
+	name="Divici"
+	culture="galatian"
+}
+53430043=
+{
+	name="Divicid"
+	culture="galatian"
+}
+53430044=
+{
+	name="Duratus"
+	culture="galatian"
+}
+53430045=
+{
+	name="Durata"
+	culture="galatian"
+}
+53430046=
+{
+	name="Duratii"
+	culture="galatian"
+}
+53430047=
+{
+	name="Duratian"
+	culture="galatian"
+}
+53430048=
+{
+	name="Elitovus"
+	culture="galatian"
+}
+53430049=
+{
+	name="Elitova"
+	culture="galatian"
+}
+53430050=
+{
+	name="Elitovii"
+	culture="galatian"
+}
+53430051=
+{
+	name="Elitovian"
+	culture="galatian"
+}
+53430052=
+{
+	name="Galbus"
+	culture="galatian"
+}
+53430053=
+{
+	name="Galba"
+	culture="galatian"
+}
+53430054=
+{
+	name="Galbi"
+	culture="galatian"
+}
+53430055=
+{
+	name="Galbid"
+	culture="galatian"
+}
+53430056=
+{
+	name="Iacus"
+	culture="galatian"
+}
+53430057=
+{
+	name="Iaca"
+	culture="galatian"
+}
+53430058=
+{
+	name="Iaci"
+	culture="galatian"
+}
+53430059=
+{
+	name="Iacid"
+	culture="galatian"
+}
+53430060=
+{
+	name="Marganus"
+	culture="galatian"
+}
+53430061=
+{
+	name="Margana"
+	culture="galatian"
+}
+53430062=
+{
+	name="Marganii"
+	culture="galatian"
+}
+53430063=
+{
+	name="Marganid"
+	culture="galatian"
+}
+53430064=
+{
+	name="Sinatus"
+	culture="galatian"
+}
+53430065=
+{
+	name="Sinata"
+	culture="galatian"
+}
+53430066=
+{
+	name="Sinatii"
+	culture="galatian"
+}
+53430067=
+{
+	name="Sinatid"
+	culture="galatian"
+}
+53430068=
+{
+	name="Vodenosus"
+	culture="galatian"
+}
+53430069=
+{
+	name="Vodenosa"
+	culture="galatian"
+}
+53430070=
+{
+	name="Vodenosii"
+	culture="galatian"
+}
+53430071=
+{
+	name="Vodenosian"
+	culture="galatian"
+}
+53430072=
+{
+	name="Indutius"
+	culture="galatian"
+}
+53430073=
+{
+	name="Indutia"
+	culture="galatian"
+}
+53430074=
+{
+	name="Indutii"
+	culture="galatian"
+}
+53430075=
+{
+	name="Indutian"
+	culture="galatian"
+}
+53430076=
+{
+	name="Dumnus"
+	culture="galatian"
+}
+53430077=
+{
+	name="Dumna"
+	culture="galatian"
+}
+53430078=
+{
+	name="Dumnii"
+	culture="galatian"
+}
+53430079=
+{
+	name="Dumnid"
+	culture="galatian"
+}
+53430080=
+{
+	name="Epatticus"
+	culture="galatian"
+}
+53430081=
+{
+	name="Epattica"
+	culture="galatian"
+}
+53430082=
+{
+	name="Epatticii"
+	culture="galatian"
+}
+53430083=
+{
+	name="Epatticid"
+	culture="galatian"
+}
+53430084=
+{
+	name="Teutomalus"
+	culture="galatian"
+}
+53430085=
+{
+	name="Teutomala"
+	culture="galatian"
+}
+53430086=
+{
+	name="Teutomalii"
+	culture="galatian"
+}
+53430087=
+{
+	name="Teutomalian"
+	culture="galatian"
+}
+53430088=
+{
+	name="Viridorrius"
+	culture="galatian"
+}
+53430089=
+{
+	name="Viridorria"
+	culture="galatian"
+}
+53430090=
+{
+	name="Viridorrii"
+	culture="galatian"
+}
+53430091=
+{
+	name="Viridorrian"
+	culture="galatian"
+}
+53430092=
+{
+	name="Magunnus"
+	culture="galatian"
+}
+53430093=
+{
+	name="Magunna"
+	culture="galatian"
+}
+53430094=
+{
+	name="Magunnii"
+	culture="galatian"
+}
+53430095=
+{
+	name="Magunnid"
+	culture="galatian"
+}
+53430096=
+{
+	name="Brennus"
+	culture="galatian"
+}
+53430097=
+{
+	name="Brenna"
+	culture="galatian"
+}
+53430098=
+{
+	name="Brennii"
+	culture="galatian"
+}
+53430099=
+{
+	name="Brennid"
+	culture="galatian"
+}
+534300100=
+{
+	name="Boius"
+	culture="galatian"
+}
+534300101=
+{
+	name="Boia"
+	culture="galatian"
+}
+534300102=
+{
+	name="Boii"
+	culture="galatian"
+}
+534300103=
+{
+	name="Boian"
+	culture="galatian"
+}
+534300104=
+{
+	name="Tannus"
+	culture="galatian"
+}
+534300105=
+{
+	name="Tanna"
+	culture="galatian"
+}
+534300106=
+{
+	name="Tanni"
+	culture="galatian"
+}
+534300107=
+{
+	name="Tannid"
+	culture="galatian"
+}
+534300108=
+{
+	name="Iccuius"
+	culture="galatian"
+}
+534300109=
+{
+	name="Iccuia"
+	culture="galatian"
+}
+534300110=
+{
+	name="Iccui"
+	culture="galatian"
+}
+534300111=
+{
+	name="Iccian"
+	culture="galatian"
+}
+534300112=
+{
+	name="Galanus"
+	culture="galatian"
+}
+534300113=
+{
+	name="Galana"
+	culture="galatian"
+}
+534300114=
+{
+	name="Galanii"
+	culture="galatian"
+}
+534300115=
+{
+	name="Galanid"
+	culture="galatian"
+}

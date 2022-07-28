@@ -56,6 +56,10 @@ decisions = {
 				give_nickname = nick_the_great
 			}
 			set_global_flag = irck2_e_italy_formed
+			activate_title = {
+				title = e_italy
+				status = yes
+			}
 		}
 	}
 
@@ -118,6 +122,10 @@ decisions = {
 				give_nickname = nick_the_great
 			}
 			set_global_flag = irck2_e_france_formed
+			activate_title = {
+				title = e_france
+				status = yes
+			}
 		}
 	}
 
@@ -156,7 +164,7 @@ decisions = {
 				}
 			}
 			#prestige = 1000
-			realm_size = 150
+			realm_size = 125
 		}
 		effect = {
 			prestige = 500
@@ -176,11 +184,47 @@ decisions = {
 				de_jure_liege = e_spain
 				#destroy_landed_title = THIS
 			}
+			any_landed_title = {
+			limit = {
+				tier = KING
+					OR = {
+						AND = {
+							
+							regional_percentage = { #All Roman kingdoms in Iberia dejure to Hispania
+								region = world_europe_west_iberia
+								percentage >= 0.05
+									owner = {
+										OR = {
+											culture = roman
+											is_vassal_or_below_of = e_roman_empire
+										}
+									}
+								}
+							}
+						
+						AND = { #All Iberian kingdoms become dejure to Hispania
+							owner = {
+								OR = {
+									culture = castillan
+									culture = catalan
+									culture = portuguese
+									culture = visigothic
+								}
+							}
+						}
+					}
+				}
+				de_jure_liege = e_spain
+			}
 			if = {
 				limit = { has_nickname = no }
 				give_nickname = nick_the_great
 			}
 			set_global_flag = irck2_e_spain_formed
+			activate_title = {
+				title = e_spain
+				status = yes
+			}
 		}
 	}
 

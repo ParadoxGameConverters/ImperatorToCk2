@@ -309,3 +309,26 @@ c_alexandria ={ # Mark the Evangelist
 c_ephesos={ # Saint John the Beloved 
 	holy_site = proto_orthodox
 }
+
+#Mayan
+
+c_roma ={
+	holy_site = mayan_pagan
+	holy_site = mayan_reformed
+}
+c_ile_de_france ={
+	holy_site = mayan_pagan
+	holy_site = mayan_reformed
+}
+c_cordoba ={
+	holy_site = mayan_pagan
+	holy_site = mayan_reformed
+}
+c_marrakech ={
+	holy_site = mayan_pagan
+	holy_site = mayan_reformed
+}
+c_dublin ={ #In reference to the original Mayan mod that placed the Mayans in Ireland
+	holy_site = mayan_pagan
+	holy_site = mayan_reformed
+}

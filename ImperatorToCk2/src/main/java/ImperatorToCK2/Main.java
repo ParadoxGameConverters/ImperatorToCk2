@@ -34,7 +34,7 @@ public class Main
             throw new RuntimeException("Problems with creating the log files");
         }
 
-        LOGGER.info("Converter version 0.1A \"Assyrian\" - compatible with Imperator: Rome 1.3-2.0 and Crusader Kings II 3.3");
+        LOGGER.info("Converter version 0.2A \"Belgae\" - compatible with Imperator: Rome 1.3-2.0 and Crusader Kings II 3.3");
         LOGGER.finest("0%");
 
         long startTime = System.nanoTime(); //Starts the converter clock, used to tell how much time has passed
@@ -675,7 +675,8 @@ public class Main
                                     
                                     if (ck2LandTot[aq4] >= empireRank+800 && impTagInfo.get(aq4)[17].equals("imperium")) { //generate dynamic ew split
                                         Processing.dynamicSplit(impTagInfo.get(aq4)[0],rank,impTagInfo.get(aq4)[3],locName,impTagInfo.get(aq4)[23],
-                                        impGameDir,impTagInfo.get(aq4)[5],flagList,colorList,modFlagGFX,impTagInfo.get(aq4)[17],ck2Dir,modDirectory);
+                                        impGameDir,impTagInfo.get(aq4)[5],flagList,colorList,modFlagGFX,impTagInfo.get(aq4)[17],
+                                        impTagInfo.get(aq4)[6],ck2Dir,modDirectory);
                                         LOGGER.info("Generated east/west split for "+impTagInfo.get(aq4)[0]);
                                     }
                                 }

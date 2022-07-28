@@ -51,4 +51,16 @@ k_CCC;Caledonian Confederacy;Caledonian Confederacy;Caledonian Confederacy;;Cale
 k_CCC_adj;Caledonian;Caledonian;Caledonian;;Caledonian;;;;;;;;;x
 k_SCY;Scythia;Scythia;Scythia;;Scythia;;;;;;;;;x
 k_SCY_adj;Scythian;Scythian;Scythian;;Scythian;;;;;;;;;x
+k_MHQ;Maya;Maya;Maya;;Maya;;;;;;;;;x
+k_MHQ_adj;Mayan;Maya;Maya;;Maya;;;;;;;;;x
+e_MHQ;Mayan Empire;Mayan Empire;Mayan Empire;;Mayan Empire;;;;;;;;;x
+e_MHQ_adj;Mayan;Maya;Maya;;Maya;;;;;;;;;x
+k_SYR;Syracusae;Syracusae;Syrakuse;;Syracusae;;;;;;;;;x
+k_SYR_adj;Syracusan;Syracusan;Syrakusische;;Syracusan;;;;;;;;;x
+k_CYR;Cyrenaica;Cyrenaica;Kyrenaika;;Cyrenaica;;;;;;;;;x
+k_CYR_adj;Cyrenaican;Cyrenaica;Kyrenaikanische;;Cyrenaican;;;;;;;;;x
+k_BAC;Bactria;Bactria;Baktria;;Bactria;;;;;;;;;x
+k_BAC_adj;Bactrian;Bactrian;Baktrianische;;Bactrian;;;;;;;;;x
+k_GLT;Galatia;Galatia;Galatia;;Galatia;;;;;;;;;x
+k_GLT_adj;Galatian;Galatian;Galatische;;Galatian;;;;;;;;;x
 

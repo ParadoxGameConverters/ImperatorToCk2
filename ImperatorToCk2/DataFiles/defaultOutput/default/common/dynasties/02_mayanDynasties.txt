@@ -1,0 +1,125 @@
+5344000=
+{
+	name="Ahkinxoc"
+	culture="mayan"
+}
+5344001=
+{
+	name="Ahmetakkukul"
+	culture="mayan"
+}
+5344002=
+{
+	name="Ahmok"
+	culture="mayan"
+}
+5344003=
+{
+	name="Ahnakukpech"
+	culture="mayan"
+}
+5344004=
+{
+	name="Ahpop-Achi"
+	culture="mayan"
+}
+5344005=
+{
+	name="Arana"
+	culture="mayan"
+}
+5344006=
+{
+	name="Bakan"
+	culture="mayan"
+}
+5344007=
+{
+	name="Balam"
+	culture="mayan"
+}
+5344008=
+{
+	name="Bor"
+	culture="mayan"
+}
+5344009=
+{
+	name="Canek"
+	culture="mayan"
+}
+5344010=
+{
+	name="Chaob"
+	culture="mayan"
+}
+5344011=
+{
+	name="Chiam"
+	culture="mayan"
+}
+5344012=
+{
+	name="Hnuyg"
+	culture="mayan"
+}
+5344013=
+{
+	name="Kayom"
+	culture="mayan"
+}
+5344014=
+{
+	name="Kíin"
+	culture="mayan"
+}
+5344015=
+{
+	name="Kukumatz"
+	culture="mayan"
+}
+5344016=
+{
+	name="Mochcouoh"
+	culture="mayan"
+}
+5344017=
+{
+	name="Nachancan"
+	culture="mayan"
+}
+5344018=
+{
+	name="Nohochacyum"
+	culture="mayan"
+}
+5344019=
+{
+	name="Pacal"
+	culture="mayan"
+}
+5344020=
+{
+	name="Quitze Balam"
+	culture="mayan"
+}
+5344021=
+{
+	name="Tecunuman"
+	culture="mayan"
+}
+5344022=
+{
+	name="Vataki"
+	culture="mayan"
+}
+5344023=
+{
+	name="Yumcaax"
+	culture="mayan"
+}
+5344024=
+{
+	name="Zotz"
+	culture="mayan"
+}

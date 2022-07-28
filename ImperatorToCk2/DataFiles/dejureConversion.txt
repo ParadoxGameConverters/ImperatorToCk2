@@ -35,6 +35,10 @@ thracian,e_DAC,k_thrace
 turdetanian,e_HBR,k_navarra
 vandal,e_germany,k_pomerania
 venetic,e_roman_empire,k_VNT
+aestian,e_wendish_empire,k_lithuania
+magnagreek,e_HLA,k_SYR
+cyrenaican,e_HLA,k_CYR
+indogreek,e_HLA,k_BAC
 
 persian,e_persia,k_persia
 greek,e_HLA,k_byzantium
@@ -82,7 +86,6 @@ kannada,e_deccan,k_karnata
 tamil,e_deccan,k_tamilakam
 telugu,e_deccan,k_telingana
 prussian,e_wendish_empire,k_lithuania
-aestian,e_wendish_empire,k_lithuania
 
 saxon,e_britannia,k_england
 lombard,e_germany,k_lombardy
@@ -95,3 +98,10 @@ polish,e_wendish_empire,k_poland
 
 hunnic,e_carpathia,k_hungary
 huna,e_turkestan,k_khiva
+
+protoslavic,e_russia,k_ruthenia
+galatian,e_GAU,k_GLT
+
+mayan,e_MHQ,k_MHQ
+olmec,e_MHQ,k_MHQ
+tol,e_MHQ,k_MHQ

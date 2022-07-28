@@ -24,6 +24,7 @@ punic = {
 		}
 
 		color = { 1.48 0.89 0.54 }
+		#color = { 0.08 0.83 0.66 }
 
 		# Þ 222 þ 254 Ð 208 ð 240 æ
 
@@ -1083,6 +1084,59 @@ gallic_group = {
 		modifier = default_culture_modifier
 
 	}
+	
+	galatian = {
+		graphical_cultures = { celticgfx }
+		alternate_start = {
+			OR = {
+				year < 1000
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+
+		color = { 0.07 0.70 0.55 }
+
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+
+		male_names = {
+			Acco Addedomarus Adiatuanus Adminius Aiorix Ambicatos Andecombogius Aneroestes Ariovistus Arverus Arvirargus Atis Avitus
+			Bellicianus Bellovesus Boduognatus Boio Boiorix Bolgios Brennus Bricussa Britomaris Brucetius Buite Cailtram Caractacus
+			Carvilius Cassivellaunus Cattulanus Cartorites Catugnatus Cavarinus Cavarus Celatus Cingetorix Coilus Commios Comux Concolitanus Correus Cottius Crixus
+			Cunobelinus Diviciacus Divico Donnus Drappes Dubnovellaunus Dumnacus Ducarius Duratios Dumnocoveros Dumnorix Elitovius Etitovius Epatticus
+			Galan Galba Guiderius Iacus Iccius Immanuentius Inamarcus Inammicus Indutiomarus Kimarcus Lucterius Lugotorix Lutarius Mallaius Mandubracius Marganus Mascelio
+			Orgetorix Prasutagus Segovax Sinatus Sinorix Sisillius Talorc Tasciovanus Tasgetius Taximagulus Teutomalius Tincomarus Togodumnus Vertiscus
+			Venutius Viridorix Vosenius Vodenos
+		}
+		female_names = {
+			Aife Airmed Ancasta Banna Billica Boudica Bricta Cata Cartimandua Chiomara Damona Diseta Gwendolen Litavis Iamcilla Maeve Verica
+			Cingetessa Conna Catia Carssouna Cunovinna Illica Lovernisca Magunna Lucilia Oconea Ria Rosula Senica Sentica Sulicena
+			Vassura Vinoma Vorvena Urca Veloriga Velibia Totia Titocuna Velbutena Seniciana Senila Vrocata Exuperata Deiana Cunolava Cunsa Aucissa
+			Allauna Alatucca Aessicunia Bodicacia Britivenda Catissena Cantisena
+		}
+
+		dukes_called_kings = yes
+
+		from_dynasty_prefix = "de "
+
+		male_patronym = "mab "
+		female_patronym = "verch "
+		prefix = yes
+
+		modifier = default_culture_modifier
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 80
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+
+	}
 
 	celtiberian = {
 		graphical_cultures = { celticgfx }
@@ -1414,6 +1468,55 @@ northern_romance = {
 		mat_grm_name_chance = 60
 		mother_name_chance = 10
 	}
+	
+	laessin = { #Roman-split Germania, taken from EU4 to Victoria II
+		graphical_cultures = { frankishgfx westerngfx trueoccitangfx }
+		alternate_start = {
+			OR = {
+				year >= 1000
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+
+		color = { 0.84 0.62 0.5 }
+		male_names = {
+			 "Abucatui" "Achemnatui" "Acheporecui" "Adrian" "Albinui" "Albui" "Allepsandri" "Ambarui" "Ambrošui" "Anaronacui" "Anastašui" "Andriai" "Añechui" "Añerestui"
+			 "Antoñinui" "Antoñui" "Añui" "Aporoñui" "Arcadzui" "Archemnui" "Artapsiai" "Auetui" "Augstinui" "Augstui" "Aurelleanui" "Aurellui" "Bartoromeui" "Bašellui"
+			 "Bechellui" "Bellesariui" "Beñacui" "Beñedeptui" "Betumnatui" "Brañodženui" "Breñui" "Bretañecui" "Brezui" "Buldžui" "Camurodženui" "Carinui" "Carui" "Cašui"
+			 "Centui" "Chèchellui" "Chèllestinui" "Cheprianui" "Cherši" "Chèsa" "Chetsiui" "Chetui" "Chodošui" "Chuspai" "Ciaudzui" "Ciementsui" "Cometai" "Constañi"
+			 "Constantinui" "Constantsui" "Corñellui" "Crasui" "Dadacui" "Dariui" "Decašui" "Dechemui" "Dechui" "Dentupei" "Desachentui" "Domechanui" "Domeñecui" "Dometsui"
+			 "Drusui" "Džerašui" "Džermanui" "Džesatorecui" "Džèui" "Èdžedzui" "Ellanui" "Elpedzui" "Èmelleanui" "Èmellui" "Emnatsui" "Eñodzui" "Eposomnatui" "Eptapori"
+			 "Ercullui" "Esarnui" "Ètsui" "Eubarnacui" "Fabeanui" "Fabiui" "Fabrichui" "Faranši" "Faustui" "Fellepui" "Felli" "Flaueanui" "Floreanui" "Gallenui" "Galleriui"
+			 "Garui" "Gordeanui" "Grachanui" "Gracui" "Ioañi" "Ioueanui" "Iulleanui" "Iullui" "Iuñui" "Iuscheñeanui" "Iustinui" "Laurentsui" "Lleberiui" "Llecheñui" "Llo"
+			 "Llontsui" "Luchui" "Madacui" "Magarui" "Mamnui" "Mapsemeanui" "Mapseminui" "Mapsemui" "Marcheanui" "Marchelinui" "Marcherui" "Marcomamnui" "Marcui" "Marinui"
+			 "Mariui" "Martinui" "Mucapiui" "Ñepochanui" "Ñerua" "Numereanui" "Onoriui" "Optaueanui" "Optauiui" "Pascarui" "Paulinui" "Paurui" "Petroñui" "Pompeiui" "Ponchanui"
+			 "Prescui" "Probui" "Publlui" "Rascui" "Resui" "Romanui" "Romurui" "Rufinui" "Rutsellui" "Sabeñeanui" "Samomnatui" "Sandasatrui" "Satrei" "Saturninui" "Scherai"
+			 "Šemmacui" "Šemproñui" "Šepstui" "Šeptsemiui" "Šerdžui" "Šeuerinui" "Šeuerui" "Sturanui" "Tachetui" "Tarutsenui" "Teberiui" "Teredatsei" "Tollemèui" "Trèanui"
+			 "Uallencheñanui" "Ualleñi" "Uallereanui" "Ualleriui" "Uardañi" "Uedžellui" "Uenantsui" "Ueptorinui" "Ueptro" "Uespašeanui" "Uetalleanui" "Uorušeanui" "Urbanui"
+			 "Žocllechanui" "Žodorui" "Žoñešui" "Žopui" "Žosporui"
+		}
+		female_names = {
+			Adelaide_Adelaide Adele_Adela Adelin_Adeline Adelise Agnes_Agnes Alberada Alienora_Eleanor Aline Alisce_Alice Alison Amburga Aubrey Aveis Avelina_Avelina Berengaria
+			Busilla Clarimond Clemenza_Clementia Constance_Constance Cundo Egelina Eleanor_Eleanor Elise_Elizabeth Elysande Emelenine Emma_Emma Emonie Eremberga Ermyntrude
+			Felicia_Felicia Flandina Fredesende Fressenda_Fressenda Fressende_Fressenda Geva Giselle_Gisela Gohilde Griselda Gundred Hadwis Helewisa Heria Herleve Hermessent_Ermesinda Hermine Hugolina
+			Ida_Ida  Judit_Judith Lesceline Mabel Marie_Maria Matheode Matilda_Matilda Maud_Matilda Mautild_Matilda Maysant Millicent Muriella Oriel Richenda_Ricarda
+			Rosalind Selova Stephanie_Stephania Sibyl_Sibylla Sibylla_Sibylla Umfreda Valdrade Wilmot Yolanda_Yolanda Yvon_Yvonne
+		}
+		from_dynasty_prefix = "de "
+		grammar_transform = french
+
+		modifier = default_culture_modifier
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 60
+		mat_grf_name_chance = 10
+		father_name_chance = 10
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 60
+		mother_name_chance = 10
+	}
 }
 
 afro_romance_group = {
@@ -1528,6 +1631,107 @@ oriental_romance = {
 			Valeràyya Vera Vivàyyane_Vivana Zura Zenodàyya_Zenobia Zenodayya_Zenobia Zenobayya_Zenobia Zenobia_Zenobia Šeptimàyya
 		}
 		from_dynasty_prefix = "d'"
+
+		modifier = default_culture_modifier
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 10
+		father_name_chance = 25
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+	}
+	
+	bazramani = { #Roman-split Persia, taken from EU4 to Victoria II
+		graphical_cultures = { italiangfx southerngfx }
+
+		color = { 0.89 0.73 0.66 }
+
+		male_names = {
+			Aghhelid Yavuyid Yalid Yamelid Avid Amayid Anyaed Anyeid Anyid Andanid Arriuh
+			Artarid Ahenid Ayelid Ayid Aralid Ahranid Kaghhelid Kayeghhid Kalid Kaleyiuh
+			Kavurnid Kahhid Klayid Kloelid Kakhceid Kamenid Karnalid Karunganid Kuriayiuh
+			Kurid Kurtid Daghhid Deyid Dameyid Duilid Durmid Yakhiyid Favid Favreghhid Fanyiuh
+			Flavid Fuvid Furid Gavenid Galarid Gaghhanid Galid Gamenid Ganughhid Ghrayiuh
+			Haranyid Hertid Harayid Hartanhid Hahtelid Eulid Eunid Euvandid Lalid Lartiuh
+			Leghhenid Levid Lughhelid Lukhrayid Manlid Marcid Marid Mammid Mananid Meneghhiuh
+			Menid Menughhid Mayid Mughhid Navid Nayid Numarid Numeghhid Vakhtavid Vaveyiuh
+			Paverid Pahranid Penarid Pambeid Pambelid Pandid Pavelid Parcid Pahtumiuh
+			Khinkhtelid Khinkhtid Ruvalid Rufid Ruyelid Haluhtid Halanid Havid Hkhrevaniuh
+			Heid Hamfranid Handid Hargid Hartarid Harvelid Hahctid Heghhenid Hueyanid Huveghhiuh
+			Tarpeid Tarquiyid Tarandid Teyenid Teyurid Tukhcid Tulid Ovid Valarid Vayiuh
+			Valeid Vargelid Vargenid Vevid Velid Vefhanid Veyalid Vehruvid Valunyiuh
+		}
+		female_names = {
+			Adela_Adela Adelàsia_Adelasia Alaberta Albina Amira Amirasoia Angelìca_Angelica Angiola_Angela
+			Angioletta_Angela Angiolina_Angela Anna_Anna Assunta_Assunta Austina_Augustine Barbara_Barbara
+			Beatrìci_Beatrice Benedetta_Benedicta Bibiana_Viviana Bina Bitoria Brigida_Brigid Caderina_Catherine
+			Cassia Catalina_Catherine Catellina_Catherine Cosima Cristìna_Christina Diane_Diana Dominiga_Dominica
+			Dorotea_Dorothy Duminiga_Dominica Elena_Helen Elianora_Eleanor Elisabetta_Elizabeth Eva Fausta
+			Fidula_Dominica Filumena_Philomena Francesca_Francesca Giorgia Giulia_Julia Grazia Guisiana
+			Ippolita Ispella_Elisabeth Jana_Joan Joanna_Joan Jorgia Joscla Lia_Leah Lillia_Lily Lina_Lina
+			Lucia_Lucia Luisa_Louise Luna_Luna Marcusa Margarita Maria_Maria Marianna_Mariana Marisa Maura_Maura
+			Melissa Natalia_Natalie Nibatta Nikita Nivata Nivatora Olimpia Padulesa Paola_Paula Pasca_Pascale
+			Pascalina_Pascale Pellegrina Petrenella Placidia_Placida Preciosa Preziosa Pupa Rita_Margaret Rosa_Rose
+			Rosalia_Rosalia Rosaria_Rosaria Rosina_Rosine Rossana Sabina_Sabina Sardinia Sidonia Sinispella_Elizabeth
+			Stefania_Stephania Subia_Sophia Susanna_Susan Tedora_Theodora Teresa_Teresa Thaita Thana Thanca
+			Valeria Vera Viviane_Vivana Zura
+		}
+		from_dynasty_prefix = "da "
+
+		modifier = default_culture_modifier
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 10
+		father_name_chance = 25
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+	}
+	
+	indoroman = { #Roman-split India
+		graphical_cultures = { italiangfx southerngfx }
+
+		color = { 0.85 0.2 0.16 }
+
+		male_names = {
+			Abbondãnshpolò Abbondpolò Abelarãjo_Abelard Amritnarayan Achille Achalrãjo_Achalraja Adãlbervo_Albert Adelfo Adelmpolò_Adelmo Adelmo_Adelmo Atrone Adrimano_Adrian Agapivo Aghostimano_Augustine Aimone Alamanmano Alarigho_Alaric
+			Albamano Alberigho Albervo_Albert Albimano Alboimano_Alwin Alcideve Altrobrandimano Alearãjo Aleramo Alessandro_Alexander Alesspolò_Alexis Alighiero Alvise Ambrogpolò_Ambrosius Amedeo Anastaspolò_Anastasius Andrea_Andrew Angelò_Angel Annibale Anselmo_Anselm Anvonimano_Antoninus Anvonpolò_Antonius Anvonpolòtvo Arcibaltro_Archibald Arderigho Armantro_Armand Armanolfo_Arnulf Arrigho Arsenpolò Artempolò Ascanpolò Asvorre
+			Atemanolfo_Atenulf Attilpolò Augusvo_August Aurelpolò_Aurelius Ausilpolò Ausonpolò Averatro Ashshò Ashshòne Baldãssarre Baltrovimano_Baldwin Barnaba_Barnabas Barvolòmeo_Bartolomeus Basilpolò_Basil Bhassimano Bhasso
+			Battista Bheltramano_Bertrand Bhenedetvo_Benedict Bhenvenuvo Bherarãjo Bhernabò_Barnabas Bhernarãjo_Bernard Bhervo Bhervoltro_Berthold Bigpolò Bonaventura Bonifagholò_Bonifacius Borso Brumano_Brumano Bruvo Buonghonte
+			Bhuoso Bhadãr Bhilpolò Bhòjo_Bhoja Bhòvormano_Bhoja Callisvo_Callistus Camillò_Camillus Canditro Cangrandeve Carlò_Charles Casspolò Casvore Cataltro Cavone Cegho Cesare_Caesar Chiffretro Chimano Ciro Ciughpolò Claudpolò_Claudius Clemente_Clement
+			Comita Comanone Cornelpolò_Cornelius Corradimano Corratro_Konrad Cosimo Cosma_Cosmas Costante_Constans Costantimano_Constantine Costanshò_Constantius Crisvoforo_Christopher Damimano_Damian Davideve_David Demetrolò_Demetrius Dolòniso_Dionysus Doménigho_Dominic
+			Durante Eduarãjo_Edward Elpolò Emmanuele_Manuel Ennpolò Enrigho_Henry Enshpolò Enshò Erghole_Heracles Eriprantro Ermeneviltro Evvãrore_Hector Eugenpolò_Eugene Eshpolò Eshshelimano Fabrishpolò Fausvo_Faustus Federigho_Frederick
+			Felishe_Felix Ferdinantro_Ferdinand Ferrughpolò Filippo_Philip Folòrellò Flavolò Folgho_Folke Fortunavo Fosgho Franshesgho_Francis Fresgho Jabriele_Gabriel Jabrimano Jaetamano Jalasso Jaleashshò
+			Jaleovvãro Jaspare_Caspar Jasvone_Gaston Gelaspolò Gentile Geraltro_Gerald Gerarãjo_Gerard Germamano_Germanus Gerolamo Gherarãjo_Gerard Gicinvo_Hyacinth Gighomo_Jacob Gin_John Ginfrangho Ginleone Gimano_John
+			Gibervo Gilbervo_Gilbert Golòlpolò_Julius Golòrdãmano_Jordãn Golòrpolò_George Golòvonni_John Giulpolò_Julius Giuseppe_Joseph Goffretro_Godfrey Greghorpolò_Gregory Gualtiero_Walter Guarnivo Guerrimano Guglielmo_William Guitro_Guy Guitrone_Guy Hammiravormano Harpale Harsa_Harsa Harshapolò_Harsa Hirapale_Hirapala
+			Guiglitrore Iaghopo_Jacob Ivimano Inmanoshenshò_Inmanocent Ippolivo_Hippolytus Isnarãjo Jaghopo_Jacob Jagatpale_Jagatpala Chamale Chanhad Chanvorpale_Kanvarpala Lambervo_Lambert Lantrolfo_Lantrolf Lantrone Lanfrangho Lattanshòlò Lashsharimano Lashsharo_Lazarus
+			Lealtro Leonarãjo_Leonard Leone_Leo Leonellò_Lionel Leopoltro_Leopold Libero Lolònellò_Lionel Livpolò Lotrovigho_Louis Lorenshò_Laurence Luca_Luke Luchimano Lucpolò_Lucius Luivi_Louis Ladãhachandro Lacshmandevo Locpolò Madãnapolò Madãnavormano Maharoana
+			Malacresta Manfretro Manuele_Manuel
+			Margho_Marcus Marimano_Marius Marimano_Marinus Marpolò_Marius Marsiglpolò Martimano_Martin Massimo_Maximus Mastimano Matteo_Matthew Merigho Michelangelò Michele_Michael Naravormano Narayanapolò Narpale Nayapolò Napoleone Nasharomano Nesvore Nigholò_Nicholas Nighola_Nicholas
+			Nimano Nolfo Obervo Obishshimano Obishshò Ottrone Omero Omanorpolò Oreste Orlantro Ottavolò_Octavius Ovvãrobomano Ovvãrone_Otto Pagamano_Pagan Pancrashpolò_Pancras Pantrolfo_Randolph Paolò_Paul Pasquale_Pascal
+			Patrishpolò_Patrick Pellegrimano Pericle Pietro_Peter Polò Prospero Rafaellò_Raphael Radule Raimontro_Raymond Rainero_Rainer Raineri_Rainer Righarãjo_Richard Rinaltro_Reinhold Rishsharãjo Robervo_Robert Rotrolfo_Ralph Rolantro_Roland
+			Rampale_Rampala Rampolò_Rampala Rana Rangraj_Rangraja Rangrãjo_Rangraja Rosso Ruvvãriero Salinguerra Salvovore_Salvodor Salvestro_Silvester Sante_Sancho Saverpolò Scirra Sebastimano_Sebastian Seghontrovvãro Serafimano_Seraphin Serpolò_Sergius Sesvo_Sextus Settimpolò_Septimus Severimano_Severin Severo_Severus
+			Silvomano Silvestro_Silvester Simone_Simon Simonevvãro Sinibaltro Sinushellò Soshshò Spinevvãro Stefamano_Stephen Stenvore Taddeo Tedãltro Tedice Teotroro_Theodore Tibaltro_Theobald Tishimano Tommaso_Thomas
+			Torghotrorpolò Torquavo Ubaltro Ubervo_Hubert Ugho_Hugh Ughoghpolòne Ugholimano Umbervo_Humbert Urbamano_Urban Valentimano_Valentin Valerpolò_Valerius Vinshentellò Vinshenshò_Vincent Virvimanolò Vitale Vivvãrore_Victor Vivvãrorpolò_Victor Vinayacapolò Vindhyavorman
+			Viramdevo Viravormano Virsinghadevo Yasovormano Zaghari_Zachary
+		}
+
+		female_names = {
+			Abelina Adãlberta Acale Anantadevisã Adãlvisa Adelaidã_Adelaideve Adelasi Adeli_Adela Adrina_Adriana Agalina Agnese_Agnes Aghostina Albina Aldã Alessandra Alfonsina Alisi_Alice Alòisi
+			Amali_Amelia Ambrosi Anastasi_Anastasia Anna_Anna Anvonedelli Anvoni_Antonia Argentina Augusta Aureli_Aurelia Ausili Ausoni Bheatrishe_Beatrice Bhenedetta_Benedicta Bhenildeve Bherenishe
+			Bherta_Bertha Bhinca_Blanche Bhona_Bonne Brunildeve Brunhilda Camidelli_Camilla Candidã Caraghosa Carla Carola Caterina_Catherine Cecili_Cecilia Clara_Clara Claudi Clòrindã
+			Clòtildeve Clotilde Constansha_Constance Corneli_Cornelia Damayanti Dattadevisã Dehanagadevisã Dhruvodevisã Dhruvosvomini Delindã Dora Eddã Elena_Helen Eleomamanora_Eleamanor Elisa_Elizabeth Elisabetta_Elizabeth Ermenevildã_Ermengildã Eutrossi Eugeni
+			Fausta Felicia_Felicia Felicita Filippa_Philippa Filòmena Flavi Flòra_Flora Fortunata Fosca Franshesca_Francesca Froishsha Hemavoti Gicinta_Hyacintha Ginevra_Guinevere Golòvonna_Joan Giuditta Giuli_Julia
+			Giuseppa_Josepha Ippolita Isabedelli_Elizabeth Josshedelli Chacanvoti Chalayandevisã Chanchuca Chanwar Charmavoti Chumaradevisã Lacshmano Laura_Laura Lavini Leonideve Letishi Lidi Livi Lotrovica Luci_Lucia Lucinetta Lucreshi Maharoni Mahidevisã Maddãlena_Magdãlena Marshedelli_Marcella
+			Margherita_Margaret Mari_Maria Marina_Mariana Marietta Martina Matildã_Matildã Micaela Nattadevisã Nunshi Paola_Paula Patrishi_Patricia Renata Righirdã_Ricardã Silvona
+			Sofi_Sophia Stefani_Stephania Tishina Tomasina Valentina Volòlante_Yolanda Virvini
+		}
+		from_dynasty_prefix = "da "
 
 		modifier = default_culture_modifier
 		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.

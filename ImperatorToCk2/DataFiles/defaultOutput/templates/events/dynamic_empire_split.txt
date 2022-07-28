@@ -11,6 +11,7 @@ namespace = IR_EMPIRE_SPLIT_e_TAG
 # Player choice in how to split the empire
 narrative_event = {
 	id = IR_EMPIRE_SPLIT_e_TAG.1000
+	title = EVTNAME_IR_EMPIRE_SPLIT_e_TAG_1000
 	desc = EVTDESC_IR_EMPIRE_SPLIT_e_TAG_1000
 	picture = GFX_evt_irck2_roman_empire_split
 
@@ -22,6 +23,34 @@ narrative_event = {
 			value = 2500
 		}
 		set_global_flag = e_TAG_split
+		#Calculate size needed for restoration decision
+		e_TAG = {
+			owner = {
+				export_to_variable = {
+					which = global_restorationSize_e_TAG
+					value = realm_size
+					who = FROM
+				}
+			}
+		}
+		divide_variable = {
+			which = global_restorationSize_e_TAG
+			value = 1.6
+		}
+		
+		#Calculate which duchies a restored empire will have a reconquest CB for
+		any_landed_title = {
+			if = {
+				limit = {
+					tier = DUKE
+					OR = {
+						de_facto_liege = e_TAG
+						de_jure_liege_or_above = e_TAG
+					}
+				}
+				set_title_flag = e_TAG_reconquest
+			}
+		}
 		#Calculate splitting distance
 		#Game essentually draws a line around Hindu Kush, then moves it west x ammount.
 		#Line will be the divider where empire splits
@@ -47,7 +76,7 @@ narrative_event = {
 					
 		if = {
 			limit = {
-				has_global_flag = irck2_e_roman_empire_not_has_india
+				has_global_flag = irck2_e_TAG_not_has_india
 				NOT = {
 					regional_percentage = {
 						region = world_persia
@@ -61,14 +90,14 @@ narrative_event = {
 			set_global_flag = irck2_e_TAG_not_has_persia
 			subtract_variable = {
 				which = global_splitDistance_e_TAG
-				value = 25
+				value = 50
 			}
 			
 		}
 					
 		if = {
 			limit = {
-				has_global_flag = irck2_e_roman_empire_not_has_india
+				has_global_flag = irck2_e_TAG_not_has_india
 				NOT = {
 					regional_percentage = {
 						region = world_middle_east
@@ -146,6 +175,65 @@ narrative_event = {
 			subtract_variable = {
 				which = global_splitDistance_e_TAG
 				value = 250
+			}
+		}
+		
+		if = { #Shouldn't be possible, but if an empire somehow is pushed into only having Western Europe, adjust split
+			limit = {
+				NOT = {
+					regional_percentage = {
+						region = world_europe_south
+						percentage > 0
+						owner = {
+							is_vassal_or_below_of = e_TAG
+						}
+					}
+				}
+				NOT = {
+					regional_percentage = {
+						region = custom_irck2_egypt
+						percentage > 0
+						owner = {
+							is_vassal_or_below_of = e_TAG
+						}
+					}
+				}
+				has_global_flag = irck2_e_TAG_not_has_india
+				has_global_flag = irck2_e_TAG_has_western_europe
+				has_global_flag = irck2_e_TAG_not_has_persia
+				NOT = {
+					has_global_flag = irck2_e_TAG_has_eastern_europe
+				}
+				has_global_flag = irck2_e_TAG_not_has_middle_east
+			}
+			
+			subtract_variable = {
+				which = global_splitDistance_e_TAG
+				value = 250
+			}
+		}
+		
+		if = { #If has India, Greece, and Persia, but not Western Europe, split along Persia
+			limit = {
+				NOT = {
+					has_global_flag = irck2_e_TAG_has_western_europe
+					has_global_flag = irck2_e_TAG_not_has_india
+					has_global_flag = irck2_e_TAG_not_has_middle_east
+					has_global_flag = irck2_e_TAG_not_has_persia
+				}
+				regional_percentage = {
+					region = world_europe_south_italy
+					percentage > 0
+					owner = {
+						is_vassal_or_below_of = e_TAG
+					}
+				}
+				
+			}
+			
+			set_variable = {
+				which = global_splitDistance_e_TAG
+				value = 1500
 			}
 		}
 		
@@ -433,7 +521,6 @@ narrative_event = {
 		}
 		
 		any_independent_ruler = {
-			#limit = { religion = proto_orthodox }
 			character_event = { id = IR_EMPIRE_SPLIT_e_TAG.1001}
 		}
 	}
@@ -443,6 +530,7 @@ narrative_event = {
 
 narrative_event = {
 	id = IR_EMPIRE_SPLIT_e_TAG.1001
+	title = EVTNAME_IR_EMPIRE_SPLIT_e_TAG_1000
 	desc = EVTDESC_IR_EMPIRE_SPLIT_e_TAG_1001
 	picture = GFX_evt_irck2_roman_empire_split
 	

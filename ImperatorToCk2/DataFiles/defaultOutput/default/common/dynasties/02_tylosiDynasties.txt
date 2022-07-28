@@ -1,0 +1,212 @@
+5339008=
+{
+	name="Kantakouzenos"
+	culture="tylosi"
+	religion="orthodox"
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 8
+			texture_internal = 45
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+5339009=
+{
+	name="Palaiologos"
+	culture="tylosi"
+	religion="orthodox"
+	coat_of_arms=
+	{
+		data=
+		{
+0 3 0 32 0 0 0 			}
+		religion="catholic"
+	}
+	used_for_random=no
+}
+5339010=
+{
+	name="Komnenos"
+	culture="tylosi"
+}
+5339011=
+{
+	name="Macrodoukas"
+	culture="tylosi"
+	religion="orthodox"
+}
+5339012=
+{
+	name="Aineidas"
+	culture="tylosi"
+}
+5339013=
+{
+	name="Kantakouzenos"
+	culture="tylosi"
+}
+5339014 = {
+	name="Pegonitissos"
+	culture="tylosi"
+	religion="orthodox"
+	coat_of_arms=
+	{
+		data=
+		{
+0 0 0 26 7 0 0 			}
+		religion="orthodox"
+	}
+}
+5339015 = {
+	name="Angelos"
+	culture="tylosi"
+	religion="orthodox"
+	coat_of_arms=
+	{
+		data=
+		{
+0 5 0 9 0 0 0 			}
+		religion="catholic"
+	}
+}
+
+5339016 = {
+	name="Kastriotis"
+	culture="tylosi"
+}
+
+5339017 ={
+	name="Doukas Kamateros"
+	culture="tylosi"
+}
+5339018 ={
+	name="Kamateros"
+	culture="tylosi"
+	religion="orthodox"
+}
+5339019 ={
+	name="Skleros"
+	culture="tylosi"
+	religion="orthodox"
+	coat_of_arms=
+	{
+		data=
+		{
+0 5 0 18 0 0 0 			}
+		religion="catholic"
+	}
+}
+5339020 ={
+	name="Palaiologos"
+	culture="tylosi"
+	religion="orthodox"
+}
+5339021 ={
+	name="Makrembolites"
+	culture="tylosi"
+	religion="orthodox"
+	coat_of_arms=
+	{
+		data=
+		{
+0 1 0 2 2 1 0 			}
+		religion="orthodox"
+	}
+}
+5339022 ={
+	name="Botaneiates"
+	culture="tylosi"
+	religion="orthodox"
+	coat_of_arms=
+	{
+		data=
+		{
+0 8 0 36 0 0 0 			}
+		religion="catholic"
+	}
+}
+5339023 = {
+	name="Aaron"
+	culture="tylosi"
+}
+5339024 = {
+	name = "Ljauelgeitis"
+	culture = magnatylosi
+}
+5339025 = {
+	name="Grammatikos"
+	culture="tylosi"
+}
+5339026 = {
+	name="Zeno"
+	culture="tylosi"
+}
+5339027 = {
+	name="Bua Spatas"
+	culture="tylosi"
+}
+5339028 = {
+	name="Karatzas"
+	culture="tylosi"
+}
+5339029 = {
+	name="Amiroutzes"
+	culture="tylosi"
+}
+5339030 = {
+	name="Bessarion"
+	culture="tylosi"
+}
+5339031 = {
+	name="Chalkokondyles"
+	culture="tylosi"
+}
+5339032 = {
+	name="Gazis"
+	culture="tylosi"
+}
+5339033 = {
+	name="Kallistos"
+	culture="tylosi"
+}
+5339034 = {
+	name="Kladas"
+	culture="tylosi"
+}
+5339035 = {
+	name="de Patras"
+	culture="tylosi"
+}
+5339036 = {
+	name="Gemistus"
+	culture="tylosi"
+}
+5339037 = {
+	name="Allatios"
+	culture="tylosi"
+}
+5339038 = {
+	name="Chalcocondyles"
+	culture="tylosi"
+}
+5339039 = {
+	name="Korniaktos"
+	culture="tylosi"
+}
+5339040 = {
+	name="Damaskenos"
+	culture="tylosi"
+}
+5339041 = {
+	name="Heraclides"
+	culture="tylosi"
+}
+5339042 = {
+	name="Kallokratos"
+	culture="tylosi"
+}

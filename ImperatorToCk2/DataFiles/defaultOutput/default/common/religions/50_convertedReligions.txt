@@ -1019,6 +1019,95 @@ polytheistic = {
 		intermarry = canaanite
 		intermarry = cybelene
 	}
+	
+	mayan_reformed = {
+		graphical_culture = mesoamericangfx
+		alternate_start = { always = no }
+
+		secondary_event_pictures = mesoamerican
+
+		icon = 17
+		heresy_icon = 18
+
+		ai_convert_other_group = 2 # always try to convert
+
+		color = { 0.80 0.17 0.90 }
+
+		high_god_name = GOD_HUITZILOPOCHTLI
+
+		god_names = {
+			GOD_HUITZILOPOCHTLI GOD_XIPE_TOTEC GOD_TEZCATLIPOCA GOD_QUETZALCOATL GOD_TLALOC
+		}
+		evil_god_names = {
+			TLAZOLTEOTL GOD_MICTLANTECUHTLI XOLOTL
+		}
+
+		unit_modifier = {
+			levy_size = 0.3
+
+			key = "OFF_RELIGION"
+		}
+
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGENDS
+		priest_title = PRIEST
+
+		priests_can_marry = yes
+		max_consorts = 3
+		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
+
+		aggression = 2.0 # AI aggression factor
+
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+
+		allow_in_ruler_designer = no
+	}
+
+	mayan_pagan = {
+		graphical_culture = mesoamericangfx
+		icon = 15
+		heresy_icon = 16
+		color = { 0.70 0.07 0.80 }
+		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } has_dlc = "Sunset Invasion" }
+
+		secondary_event_pictures = mesoamerican
+
+		high_god_name = GOD_HUITZILOPOCHTLI
+
+		god_names = {
+			GOD_HUITZILOPOCHTLI GOD_XIPE_TOTEC GOD_TEZCATLIPOCA GOD_QUETZALCOATL GOD_TLALOC
+		}
+		evil_god_names = {
+			TLAZOLTEOTL GOD_MICTLANTECUHTLI XOLOTL
+		}
+
+		unit_modifier = {
+			levy_size = 0.3
+
+			key = "OFF_RELIGION"
+		}
+
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGENDS
+		priest_title = PRIEST
+
+		priests_can_marry = yes
+		peace_prestige_loss = yes # Lose Prestige while at peace
+		raised_vassal_opinion_loss = no
+		max_consorts = 3
+		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
+		reformed = mayan_reformed
+
+		aggression = 2.0 # AI aggression factor
+
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+
+		dislike_tribal_organization = yes
+		can_demand_religious_conversion = no
+	}
 
 
 }

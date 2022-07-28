@@ -6,7 +6,7 @@ decisions = {
 		potential = {
 			has_landed_title = e_TAG
 			year >= 250
-			year <= 475
+			year <= 500
 			NOT = {
 					has_global_flag = e_TAG_split
 					realm_size < 250
@@ -26,10 +26,13 @@ decisions = {
 				value <= 350
 				title = e_TAG
 			}
-			year <= 475 #Visible here so that the player knows that there is a time limit
+			year <= 500 #Visible here so that the player knows that there is a time limit
 		}
 		effect = {
-			narrative_event = {id = IR_EMPIRE_SPLIT_e_TAG.1000}
+			custom_tooltip = { #Explains that the empire'll split in half and that the player'll get a bloodline
+				text = e_TAG_split_decision_tooltip
+				narrative_event = {id = IR_EMPIRE_SPLIT_e_TAG.1000}
+			}
 			add_character_modifier = {
 				name = irck2_empire_splitter
 				duration = 36500

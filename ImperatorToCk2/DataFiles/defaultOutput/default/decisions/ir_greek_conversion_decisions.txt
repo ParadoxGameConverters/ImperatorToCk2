@@ -1,0 +1,1650 @@
+targetted_decisions = {
+
+
+	# Greek character may convert to Magnagreek
+	irck2_convert_to_magnagreek = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = greek
+			capital_scope = {
+				region = custom_irck2_italy_greek
+			}
+			any_realm_province = {
+				culture = magnagreek
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = greek }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = greek
+			capital_scope = {
+				region = custom_irck2_italy_greek
+			}
+			any_realm_province = {
+				culture = magnagreek
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = magnagreek
+			}
+			culture = magnagreek
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Greek ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = greek
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = greek }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = magnagreek }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = magnagreek }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = magnagreek
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = magnagreek
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = magnagreek
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = magnagreek
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = magnagreek
+				}
+			}
+		}
+	}
+
+
+	# Greek character may convert to massalian
+	irck2_convert_to_massalian = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = greek
+			capital_scope = {
+				OR = {
+					region = custom_irck2_france
+					region = custom_irck2_occitania_greek
+				}
+			}
+			any_realm_province = {
+				culture = massalian
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = greek }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = greek
+			capital_scope = {
+				OR = {
+					region = custom_irck2_france
+					region = custom_irck2_occitania_greek
+					
+				}
+			}
+			any_realm_province = {
+				culture = massalian
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = massalian
+			}
+			culture = massalian
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Greek ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = greek
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = greek }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = massalian }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = massalian }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = massalian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = massalian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = massalian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = massalian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = massalian
+				}
+			}
+		}
+	}
+
+
+	# Greek character may convert to Carthago Novan
+	irck2_convert_to_empurian = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = greek
+			capital_scope = {
+				OR = {
+					region = custom_irck2_catalonia
+					region = custom_irck2_spain
+					region = custom_irck2_portugal
+				}
+			}
+			any_realm_province = {
+				culture = empurian
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = greek }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = greek
+			capital_scope = {
+				OR = {
+					region = custom_irck2_catalonia
+					region = custom_irck2_spain
+					region = custom_irck2_portugal
+				}
+			}
+			any_realm_province = {
+				culture = empurian
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = empurian
+			}
+			culture = empurian
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Greek ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = greek
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = greek }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = empurian }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = empurian }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = empurian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = empurian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = empurian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = empurian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = empurian
+				}
+			}
+		}
+	}
+
+	# Greek character may convert to Massalian2
+	irck2_convert_to_massalian2 = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = greek
+			capital_scope = {
+				region = custom_irck2_britannia
+			}
+			any_realm_province = {
+				culture = massalian
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = greek }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = greek
+			capital_scope = {
+				region = custom_irck2_britannia
+			}
+			any_realm_province = {
+				culture = massalian
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = massalian
+			}
+			culture = massalian
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Greek ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = greek
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = greek }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = massalian }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = massalian }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = massalian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = massalian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = massalian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = massalian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = massalian
+				}
+			}
+		}
+	}
+
+	# Roman character may convert to cyrenaican
+	irck2_convert_to_cyrenaican = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = greek
+			capital_scope = {
+				region = custom_irck2_north_africa_greek
+			}
+			any_realm_province = {
+				culture = cyrenaican
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = greek }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = greek
+			capital_scope = {
+				region = custom_irck2_north_africa_greek
+			}
+			any_realm_province = {
+				culture = cyrenaican
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = cyrenaican
+			}
+			culture = cyrenaican
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Roman ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = greek
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = greek }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = cyrenaican }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = cyrenaican }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = cyrenaican
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = cyrenaican
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = cyrenaican
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = cyrenaican
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = cyrenaican
+				}
+			}
+		}
+	}
+
+	
+# Greek character may convert to pulian
+	irck2_convert_to_pulian = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = greek
+			capital_scope = {
+				OR = {
+					region = custom_irck2_germania
+					region = world_europe_north
+				}
+			}
+			any_realm_province = {
+				culture = pulian
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = greek }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = greek
+			capital_scope = {
+				OR = {
+					region = custom_irck2_germania
+					region = world_europe_north
+				}
+			}
+			any_realm_province = {
+				culture = pulian
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = pulian
+			}
+			culture = pulian
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Greek ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = greek
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = greek }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = pulian }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = pulian }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = pulian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = pulian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = pulian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = pulian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = pulian
+				}
+			}
+		}
+	}
+	
+# Greek character may convert to histrian
+	irck2_convert_to_histrian = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = greek
+			capital_scope = {
+				region = custom_irck2_poland
+			}
+			any_realm_province = {
+				culture = histrian
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = greek }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = greek
+			capital_scope = {
+				region = custom_irck2_poland
+			}
+			any_realm_province = {
+				culture = histrian
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = histrian
+			}
+			culture = histrian
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Greek ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = greek
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = greek }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = histrian }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = histrian }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = histrian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = histrian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = histrian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = histrian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = histrian
+				}
+			}
+		}
+	}
+
+# Greek character may convert to ptolemaic
+	irck2_convert_to_ptolemaic = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = greek
+			capital_scope = {
+				region = custom_irck2_egypt_greek
+			}
+			any_realm_province = {
+				culture = ptolemaic
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = greek }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = greek
+			capital_scope = {
+				region = custom_irck2_egypt_greek
+			}
+			any_realm_province = {
+				culture = ptolemaic
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = ptolemaic
+			}
+			culture = ptolemaic
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Greek ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = greek
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = greek }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = ptolemaic }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = ptolemaic }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = ptolemaic
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = ptolemaic
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = ptolemaic
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = ptolemaic
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = ptolemaic
+				}
+			}
+		}
+	}
+
+# Greek character may convert to indogreek
+	irck2_convert_to_indogreek = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = greek
+			capital_scope = {
+				region = world_india
+			}
+			any_realm_province = {
+				culture = indogreek
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = greek }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = greek
+			capital_scope = {
+				region = world_india
+			}
+			any_realm_province = {
+				culture = indogreek
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = indogreek
+			}
+			culture = indogreek
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Greek ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = greek
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = greek }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = indogreek }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = indogreek }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = indogreek
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = indogreek
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = indogreek
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = indogreek
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = indogreek
+				}
+			}
+		}
+	}
+
+
+# Greek character may convert to seleucian
+	irck2_convert_to_seleucian = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = greek
+			capital_scope = {
+				region = custom_irck2_persia_greek
+			}
+			any_realm_province = {
+				culture = seleucian
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = greek }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = greek
+			capital_scope = {
+				region = custom_irck2_persia_greek
+			}
+			any_realm_province = {
+				culture = seleucian
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = seleucian
+			}
+			culture = seleucian
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Greek ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = greek
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = greek }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = seleucian }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = seleucian }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = seleucian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = seleucian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = seleucian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = seleucian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = seleucian
+				}
+			}
+		}
+	}
+
+# Greek character may convert to bactrian
+	irck2_convert_to_bactrian = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = greek
+			capital_scope = {
+				region = custom_irck2_bactria
+			}
+			any_realm_province = {
+				culture = bactrian
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = greek }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = greek
+			capital_scope = {
+				region = custom_irck2_bactria
+			}
+			any_realm_province = {
+				culture = bactrian
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = bactrian
+			}
+			culture = bactrian
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Greek ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = greek
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = greek }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = bactrian }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = bactrian }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = bactrian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = bactrian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = bactrian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = bactrian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = bactrian
+				}
+			}
+		}
+	}
+
+# Greek character may convert to tylosi
+	irck2_convert_to_tylosi = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = greek
+			capital_scope = {
+				region = custom_irck2_arabia
+			}
+			any_realm_province = {
+				culture = tylosi
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = greek }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = greek
+			capital_scope = {
+				region = custom_irck2_arabia
+			}
+			any_realm_province = {
+				culture = tylosi
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = tylosi
+			}
+			culture = tylosi
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Greek ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = greek
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = greek }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = tylosi }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = tylosi }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = tylosi
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = tylosi
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = tylosi
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = tylosi
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = tylosi
+				}
+			}
+		}
+	}
+
+# Greek character may convert to leucaethiopian
+	irck2_convert_to_leucaethiopian = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = greek
+			capital_scope = {
+				region = world_africa_east
+			}
+			any_realm_province = {
+				culture = leucaethiopian
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = greek }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = greek
+			capital_scope = {
+				region = world_africa_east
+			}
+			any_realm_province = {
+				culture = leucaethiopian
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = leucaethiopian
+			}
+			culture = leucaethiopian
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Greek ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = greek
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = greek }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = leucaethiopian }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = leucaethiopian }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = leucaethiopian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = leucaethiopian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = leucaethiopian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = leucaethiopian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = leucaethiopian
+				}
+			}
+		}
+	}
+
+
+
+
+
+
+#####################################################################
+#End Bracket
+#####################################################################
+
+}

@@ -1,0 +1,475 @@
+5341000=
+{
+	name="Aghhule"
+	culture="bazramani"
+}
+5341001=
+{
+	name="Aghreghhal"
+	culture="bazramani"
+}
+5341002=
+{
+	name="Aghrefv"
+	culture="bazramani"
+}
+5341003=
+{
+	name="Ahal"
+	culture="bazramani"
+}
+5341004=
+{
+	name="Ahanavarbd"
+	culture="bazramani"
+}
+5341005=
+{
+	name="Avend"
+	culture="bazramani"
+}
+5341006=
+{
+	name="Avd"
+	culture="bazramani"
+}
+5341007=
+{
+	name="Ambuhtd"
+	culture="bazramani"
+}
+5341008=
+{
+	name="Anyaleh"
+	culture="bazramani"
+}
+5341009=
+{
+	name="Akhil"
+	culture="bazramani"
+}
+5341010=
+{
+	name="Akhilend"
+	culture="bazramani"
+}
+5341011=
+{
+	name="Arve"
+	culture="bazramani"
+}
+5341012=
+{
+	name="Ahe"
+	culture="bazramani"
+}
+5341013=
+{
+	name="Ayald"
+	culture="bazramani"
+}
+5341014=
+{
+	name="Aveyd"
+	culture="bazramani"
+}
+5341015=
+{
+	name="Bavd"
+	culture="bazramani"
+}
+5341016=
+{
+	name="Barv"
+	culture="bazramani"
+}
+5341017=
+{
+	name="Barbayd"
+	culture="bazramani"
+}
+5341018=
+{
+	name="Bahhd"
+	culture="bazramani"
+}
+5341019=
+{
+	name="Bahy"
+	culture="bazramani"
+}
+5341020=
+{
+	name="Bevaghhuld"
+	culture="bazramani"
+}
+5341021=
+{
+	name="Bevuld"
+	culture="bazramani"
+}
+5341022=
+{
+	name="Vlahd"
+	culture="bazramani"
+}
+5341023=
+{
+	name="Vrakhkhhd"
+	culture="bazramani"
+}
+5341024=
+{
+	name="Vruyd"
+	culture="bazramani"
+}
+5341025=
+{
+	name="Buvucd"
+	culture="bazramani"
+}
+5341026=
+{
+	name="Bukhg"
+	culture="bazramani"
+}
+5341027=
+{
+	name="Buvd"
+	culture="bazramani"
+}
+5341028=
+{
+	name="Buye"
+	culture="bazramani"
+}
+5341029=
+{
+	name="Kaghhd"
+	culture="bazramani"
+}
+5341030=
+{
+	name="Kav"
+	culture="bazramani"
+}
+5341031=
+{
+	name="Kahar"
+	culture="bazramani"
+}
+5341032=
+{
+	name="Kaleyd"
+	culture="bazramani"
+}
+5341033=
+{
+	name="Kavend"
+	culture="bazramani"
+}
+5341034=
+{
+	name="Kavd"
+	culture="bazramani"
+}
+5341035=
+{
+	name="Kameld"
+	culture="bazramani"
+}
+5341036=
+{
+	name="Kanend"
+	culture="bazramani"
+}
+5341037=
+{
+	name="Kand"
+	culture="bazramani"
+}
+5341038=
+{
+	name="Kavey"
+	culture="bazramani"
+}
+5341039=
+{
+	name="Karv"
+	culture="bazramani"
+}
+5341040=
+{
+	name="Kayele"
+	culture="bazramani"
+}
+5341041=
+{
+	name="Kay"
+	culture="bazramani"
+}
+5341042=
+{
+	name="Kayuld"
+	culture="bazramani"
+}
+5341043=
+{
+	name="Kalar"
+	culture="bazramani"
+}
+5341044=
+{
+	name="Keghhurend"
+	culture="bazramani"
+}
+5341045=
+{
+	name="Dandayd"
+	culture="bazramani"
+}
+5341046=
+{
+	name="Dandar"
+	culture="bazramani"
+}
+5341047=
+{
+	name="Dany"
+	culture="bazramani"
+}
+5341048=
+{
+	name="Devah"
+	culture="bazramani"
+}
+5341049=
+{
+	name="Dalaval"
+	culture="bazramani"
+}
+5341050=
+{
+	name="Darh"
+	culture="bazramani"
+}
+5341051=
+{
+	name="Zruhd"
+	culture="bazramani"
+}
+5341052=
+{
+	name="Feghhuld"
+	culture="bazramani"
+}
+5341053=
+{
+	name="Femvr"
+	culture="bazramani"
+}
+5341054=
+{
+	name="Flakhcd"
+	culture="bazramani"
+}
+5341055=
+{
+	name="Favd"
+	culture="bazramani"
+}
+5341056=
+{
+	name="Flard"
+	culture="bazramani"
+}
+5341057=
+{
+	name="Frany"
+	culture="bazramani"
+}
+5341058=
+{
+	name="Ful"
+	culture="bazramani"
+}
+5341059=
+{
+	name="Fuhd"
+	culture="bazramani"
+}
+5341060=
+{
+	name="Gale"
+	culture="bazramani"
+}
+5341061=
+{
+	name="Gamald"
+	culture="bazramani"
+}
+5341062=
+{
+	name="Ghlavr"
+	culture="bazramani"
+}
+5341063=
+{
+	name="Ghrakhkhhd"
+	culture="bazramani"
+}
+5341064=
+{
+	name="Gurgah"
+	culture="bazramani"
+}
+5341065=
+{
+	name="Haveyuh"
+	culture="bazramani"
+}
+5341066=
+{
+	name="Hav"
+	culture="bazramani"
+}
+5341067=
+{
+	name="Embariohd"
+	culture="bazramani"
+}
+5341068=
+{
+	name="Euld"
+	culture="bazramani"
+}
+5341069=
+{
+	name="Lave"
+	culture="bazramani"
+}
+5341070=
+{
+	name="Lakhtug"
+	culture="bazramani"
+}
+5341071=
+{
+	name="Lanah"
+	culture="bazramani"
+}
+5341072=
+{
+	name="Lanayd"
+	culture="bazramani"
+}
+5341073=
+{
+	name="Lavend"
+	culture="bazramani"
+}
+5341074=
+{
+	name="Layaranheh"
+	culture="bazramani"
+}
+5341075=
+{
+	name="Landuld"
+	culture="bazramani"
+}
+5341076=
+{
+	name="Laveyuh"
+	culture="bazramani"
+}
+5341077=
+{
+	name="Lev"
+	culture="bazramani"
+}
+5341078=
+{
+	name="Leghhend"
+	culture="bazramani"
+}
+5341079=
+{
+	name="Langd"
+	culture="bazramani"
+}
+5341080=
+{
+	name="Lughhuld"
+	culture="bazramani"
+}
+5341081=
+{
+	name="Luvd"
+	culture="bazramani"
+}
+5341082=
+{
+	name="Lurg"
+	culture="bazramani"
+}
+5341083=
+{
+	name="Maghhar"
+	culture="bazramani"
+}
+5341084=
+{
+	name="Maghhul"
+	culture="bazramani"
+}
+5341085=
+{
+	name="Maleold"
+	culture="bazramani"
+}
+5341086=
+{
+	name="Mar"
+	culture="bazramani"
+}
+5341087=
+{
+	name="Md"
+	culture="bazramani"
+}
+5341088=
+{
+	name="Muhg"
+	culture="bazramani"
+}
+5341089=
+{
+	name="Navald"
+	culture="bazramani"
+}
+5341090=
+{
+	name="Vaghhal"
+	culture="bazramani"
+}
+5341091=
+{
+	name="Panh"
+	culture="bazramani"
+}
+5341092=
+{
+	name="Pavd"
+	culture="bazramani"
+}
+5341093=
+{
+	name="Fraghhanend"
+	culture="bazramani"
+}
+5341094=
+{
+	name="Rug"
+	culture="bazramani"
+}
