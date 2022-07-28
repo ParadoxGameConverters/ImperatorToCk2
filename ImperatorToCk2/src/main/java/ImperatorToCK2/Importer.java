@@ -725,9 +725,6 @@ public class Importer
                 while (aqq < locList.size()){
 
                     String qaaa = locList.get(aqq);
-                    if (tag.equals("DAHAE_NAME")) {
-                        //System.out.println(qaaa);
-                    }
 
                     if (qaaa.split(":")[0].equals(" "+tag)){
                         output[0] = qaaa.split(":")[1];
