@@ -7,6 +7,7 @@ import java.io.PrintWriter;
 import java.io.FileOutputStream;
 import java.util.Random;
 import java.util.ArrayList;
+import java.io.File;
 /**
  * Write a description of class Processing here.
  *
@@ -790,13 +791,11 @@ public class Processing
     public static String convertTitle(String name, String rank, String title, String defaultTitle) throws IOException
     {// Converts dynamically generated title to vanilla counterpart
         String tmpTitle = Importer.importCultList(name,rank+"_"+title)[1];//converts title
-        //Output.logPrint(tmpTitle);
-        tmpTitle = tmpTitle.replace((rank+"_"),"");
-        //Output.logPrint(tmpTitle);
 
         if (tmpTitle.equals("99999") || tmpTitle.equals("peq")) {//if there is no vanilla match
             return defaultTitle;
         } else {
+            tmpTitle = tmpTitle.substring(2,tmpTitle.length());
             title = tmpTitle;
         }
 
@@ -1478,16 +1477,22 @@ public class Processing
             cbDir,cbTemplateDirectory);
 
         //gfx
-        String baseFlagDir = modDirectory+"/gfx/flags/"+rank+"_"+title+".tga";
         String eastFlagDir = modDirectory+"/gfx/flags/"+rank+"_"+eastTitle+".tga";
+        String westFlagDir = modDirectory+"/gfx/flags/"+rank+"_"+westTitle+".tga";
+        File eastFlag = new File (eastFlagDir);
+        File westFlag = new File (westFlagDir);
 
         String irFlagSource = "none";
 
         if (!eastTitle.equals("byzantium")) { //For Byzantium, use vanilla flag
-            Output.eastWestFlagGen(irFlag,title,color,eastColor,eastTitle,flagList,colorList,rank,capital,modFlagGFX,"no",ck2Dir,impGameDir,modDirectory);
+            if (!eastFlag.exists()) { //For custom-made flags, don't generate new one
+                Output.eastWestFlagGen(irFlag,title,color,eastColor,eastTitle,flagList,colorList,rank,capital,modFlagGFX,"no",ck2Dir,impGameDir,modDirectory);
+            }
             Output.titleCreationCommon(eastTitle,eastColor,government,capital,rank,modDirectory);
         }
-        Output.eastWestFlagGen(irFlag,title,color,color,westTitle,flagList,colorList,rank,capital,modFlagGFX,"no",ck2Dir,impGameDir,modDirectory);
+        if (!westFlag.exists()) { //For custom-made flags, don't generate new one
+            Output.eastWestFlagGen(irFlag,title,color,color,westTitle,flagList,colorList,rank,capital,modFlagGFX,"no",ck2Dir,impGameDir,modDirectory);
+        }
         Output.titleCreationCommon(westTitle,westColor,government,capital,rank,modDirectory);
 
         Output.splitBloodlineEmbGen(ck2Dir,impGameDir,rank,flagList,title,irFlag,colorList,modFlagGFX,modDirectory);

@@ -673,7 +673,10 @@ public class Main
                                     Output.localizationCreation(capitalLoc,impTagInfo.get(aq4)[0],subRank,modDirectory);
                                     Output.copyFlag(ck2Dir,modDirectory,subRank,impTagInfo.get(aq4)[5],impTagInfo.get(aq4)[0]); //use flag of empire
                                     
-                                    if (ck2LandTot[aq4] >= empireRank+800 && impTagInfo.get(aq4)[17].equals("imperium")) { //generate dynamic ew split
+                                    //generate dynamic ew split
+                                    if (ck2LandTot[aq4] >= empireRank+800 && impTagInfo.get(aq4)[17].equals("imperium") &&
+                                    !impTagInfo.get(aq4)[0].equals("byzantium") && !impTagInfo.get(aq4)[0].equals("roman_empire_west") &&
+                                    !impTagInfo.get(aq4)[21].equals("WRE")) {
                                         Processing.dynamicSplit(impTagInfo.get(aq4)[0],rank,impTagInfo.get(aq4)[3],locName,impTagInfo.get(aq4)[23],
                                         impGameDir,impTagInfo.get(aq4)[5],flagList,colorList,modFlagGFX,impTagInfo.get(aq4)[17],
                                         impTagInfo.get(aq4)[6],ck2Dir,modDirectory);
