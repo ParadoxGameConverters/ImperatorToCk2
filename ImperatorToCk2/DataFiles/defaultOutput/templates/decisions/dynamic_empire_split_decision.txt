@@ -13,6 +13,12 @@ decisions = {
 					has_landed_title = e_byzantium
 			}
 		}
+		e_TAG_east = { #In case something strange happens
+				has_holder = no
+			}
+		e_TAG_west = { #In case something strange happens
+				has_holder = no
+			}
 		allow = {
 			war = no
 			NOT = {
@@ -23,10 +29,16 @@ decisions = {
 			independent = yes
 			is_adult = yes
 			num_of_realm_counties = {
-				value <= 350
+				value <= 200
 				title = e_TAG
 			}
 			year <= 500 #Visible here so that the player knows that there is a time limit
+			e_TAG_east = {
+				has_holder = no
+			}
+			e_TAG_west = {
+				has_holder = no
+			}
 		}
 		effect = {
 			custom_tooltip = { #Explains that the empire'll split in half and that the player'll get a bloodline

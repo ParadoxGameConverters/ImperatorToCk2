@@ -1,0 +1,130 @@
+5348008=
+{
+	name="du Camulodunum"
+	culture="nilan"
+}
+5348009=
+{
+	name="de Lacon"
+	culture="nilan"
+	religion="catholic"
+}
+5348010=
+{
+	name="de Gunale"
+	culture="nilan"
+	religion="catholic"
+}
+5348011=
+{
+	name="de Callaris"
+	culture="nilan"
+	religion="catholic"
+}
+5348012=
+{
+	name="Oristani"
+	culture="nilan"
+	religion="catholic"
+}
+5348013=
+{
+	name="Sorrenti"
+	culture="nilan"
+	religion="catholic"
+}
+5348014 = {
+   name="di Gallura"
+   culture="nilan"
+   religion="catholic"
+}
+5348015 = {
+   name="di Logudoro"
+   culture="nilan"
+   religion="catholic"
+}
+
+5348016 = {
+   name="di Agugliastra"
+   culture="nilan"
+   religion="catholic"
+}
+
+5348017 ={
+   name="Salusiu de Lacon"
+   culture="nilan"
+   religion="catholic"
+}
+5348018 ={
+   name="Torchitoriu de Ugunale"
+   culture="nilan"
+   religion="catholic"
+}
+5348019 ={
+   name="de Lacon Gunale"
+   culture="nilan"
+   religion="catholic"
+}
+5348020 ={
+   name="de Lacon Zori"
+   culture="nilan"
+   religion="catholic"
+}
+5348021 ={
+   name="de Zori"
+   culture="nilan"
+   religion="catholic"
+}
+5348022 ={
+   name="Bas Serra"
+   culture="nilan"
+   religion="catholic"
+}
+5348023 = {
+	name = "di Casteddu"
+	culture = nilan
+}
+5348024 = {
+	name = "di Santa Igia"
+	culture = nilan
+}
+5348025 = {
+	name = "di Patiolla"
+	culture = nilan
+}
+5348026 = {
+	name = "di Ogiastra"
+	culture = nilan
+}
+5348027 = {
+	name = "di Torres"
+	culture = nilan
+}
+5348028 = {
+	name = "di Ballau"
+	culture = nilan
+}
+5348029 = {
+	name = "di Bosa"
+	culture = nilan
+}
+5348030 = {
+	name = "di Caddura"
+	culture = nilan
+}
+5348031 = {
+	name = "di Pasada"
+	culture = nilan
+}
+5348032 = {
+	name = "di Durgali"
+	culture = nilan
+}
+5348033 = {
+	name = "di Calvi"
+	culture = nilan
+}
+5348034 = {
+	name = "di Sartena"
+	culture = nilan
+}

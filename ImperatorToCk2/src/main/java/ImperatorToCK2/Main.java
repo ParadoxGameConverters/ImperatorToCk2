@@ -194,6 +194,10 @@ public class Main
 
             int compressedOrNot = Importer.compressTest(impDirSave); //0 for compressed, 1 for decompressed
             
+            int empireRank = 350; //Ammount of holdings to be Empire
+            
+            int splitSize = empireRank+800;
+            
             if (compressedOrNot == 0) { //compressed save! Initiating Rakaly decompressor
                 LOGGER.info("Compressed save detected! Implementing Rakaly Decompressor...");
                 
@@ -242,6 +246,9 @@ public class Main
                 int tmpYear = Integer.parseInt(tmpDate.split(",")[0]);
                 if (tmpYear >= 100) { //if less then 100 AD, game will use 100 AD
                     date = configDirectories[8];
+                }
+                if (tmpYear <= 400) { //Timeline extended save
+                    splitSize = splitSize + 400;
                 }
             }
             
@@ -547,8 +554,6 @@ public class Main
             String govReg;
             String govRegID;
             String[] govCharacter;
-
-            int empireRank = 350; //Ammount of holdings to be Empire
 
             impCharInfoList = Characters.importChar(saveCharacters,compressedOrNot);
 

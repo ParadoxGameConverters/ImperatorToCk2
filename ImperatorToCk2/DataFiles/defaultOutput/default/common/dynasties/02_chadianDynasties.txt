@@ -1,0 +1,130 @@
+5352008=
+{
+	name="du Camulodunum"
+	culture="chadian"
+}
+5352009=
+{
+	name="de Lacon"
+	culture="chadian"
+	religion="catholic"
+}
+5352010=
+{
+	name="de Gunale"
+	culture="chadian"
+	religion="catholic"
+}
+5352011=
+{
+	name="de Callaris"
+	culture="chadian"
+	religion="catholic"
+}
+5352012=
+{
+	name="Oristani"
+	culture="chadian"
+	religion="catholic"
+}
+5352013=
+{
+	name="Sorrenti"
+	culture="chadian"
+	religion="catholic"
+}
+5352014 = {
+   name="di Gallura"
+   culture="chadian"
+   religion="catholic"
+}
+5352015 = {
+   name="di Logudoro"
+   culture="chadian"
+   religion="catholic"
+}
+
+5352016 = {
+   name="di Agugliastra"
+   culture="chadian"
+   religion="catholic"
+}
+
+5352017 ={
+   name="Salusiu de Lacon"
+   culture="chadian"
+   religion="catholic"
+}
+5352018 ={
+   name="Torchitoriu de Ugunale"
+   culture="chadian"
+   religion="catholic"
+}
+5352019 ={
+   name="de Lacon Gunale"
+   culture="chadian"
+   religion="catholic"
+}
+5352020 ={
+   name="de Lacon Zori"
+   culture="chadian"
+   religion="catholic"
+}
+5352021 ={
+   name="de Zori"
+   culture="chadian"
+   religion="catholic"
+}
+5352022 ={
+   name="Bas Serra"
+   culture="chadian"
+   religion="catholic"
+}
+5352023 = {
+	name = "di Casteddu"
+	culture = chadian
+}
+5352024 = {
+	name = "di Santa Igia"
+	culture = chadian
+}
+5352025 = {
+	name = "di Patiolla"
+	culture = chadian
+}
+5352026 = {
+	name = "di Ogiastra"
+	culture = chadian
+}
+5352027 = {
+	name = "di Torres"
+	culture = chadian
+}
+5352028 = {
+	name = "di Ballau"
+	culture = chadian
+}
+5352029 = {
+	name = "di Bosa"
+	culture = chadian
+}
+5352030 = {
+	name = "di Caddura"
+	culture = chadian
+}
+5352031 = {
+	name = "di Pasada"
+	culture = chadian
+}
+5352032 = {
+	name = "di Durgali"
+	culture = chadian
+}
+5352033 = {
+	name = "di Calvi"
+	culture = chadian
+}
+5352034 = {
+	name = "di Sartena"
+	culture = chadian
+}

@@ -503,10 +503,12 @@ custom_irck2_romania = {
 		#Thrace
 		d_turnovo d_karvuna d_vidin
 		#Poland
-		d_galich d_wild_fields
+		d_galich
 	}
 	counties = {
 		c_kiev c_medjybij
+		#Wild Fields
+		c_odessa c_bratslav c_vinnytsia c_korsun
 	}
 }
 
@@ -521,7 +523,7 @@ custom_irck2_greece = {
 		#Greece
 		d_dyrrachion d_ohrid d_strymon d_adrianopolis d_thrace d_thessalonika d_athens d_aegean_islands d_achaia d_cephalonia d_epirus d_krete d_cyprus
 		#Anatolia
-		d_cibyrrhaeot d_thracesia d_samos d_abydos d_nikaea d_optimatoi d_bucellarian d_armenia_minor d_paphlagonia d_armeniacon d_anatolia d_cappadocia d_charsianon d_trebizond
+		d_cibyrrhaeot d_thracesia d_samos d_abydos d_nikaea d_optimatoi d_bucellarian d_armenia_minor d_paphlagonia d_armeniacon d_anatolia d_cappadocia d_charsianon d_trebizond d_coloneia
 	}
 }
 
@@ -633,7 +635,8 @@ custom_irck2_levant = {
 custom_irck2_persia = {
 	duchies = {
 		#Persia minus Mesopotamia and Bactria
-		d_khorasan d_mazandaran d_kerman d_fars d_hamadan d_tabriz d_azerbaijan d_baluchistan d_sistan d_gilan d_khozistan d_kurdistan d_jibal d_mafaza
+		d_khorasan d_mazandaran d_kerman d_fars d_hamadan d_tabriz d_baluchistan d_sistan d_gilan d_khozistan d_kurdistan d_jibal d_mafaza
+		#d_azerbaijan
 	}
 }
 
@@ -660,6 +663,22 @@ custom_irck2_arabia = {
 	}
 	counties = {
 		c_hijaz c_al_jawf
+	}
+}
+
+custom_irck2_divergence_olbia = {
+	duchies = {
+		#Russia
+		d_smolensk d_crimea d_cherson d_azov d_sarkel d_alania d_derbent d_caspian_steppe d_itil d_atyrau d_emba d_aqtobe d_sakmara d_bulgar d_bashkirs d_mordvins d_bandja d_pereyaslavl d_chernigov d_novgorod-seversk d_karachev d_novosil d_ryazan d_moskva d_murom
+	}
+	counties = {
+		c_zoubtsov c_mozhaysk c_tver c_mountain_cheremisa c_chuvash c_olvia c_oleshye
+	}
+}
+
+custom_irck2_montana = {
+	duchies = {
+		d_mesopotamia d_armenia d_tao d_azerbaijan d_kakheti d_kartli d_abkhazia
 	}
 }
 

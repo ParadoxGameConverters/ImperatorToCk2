@@ -1,0 +1,130 @@
+5353008=
+{
+	name="Akulij"
+	culture="rhogian"
+}
+5353009=
+{
+	name="Agriklaja"
+	culture="rhogian"
+	#religion="catholic"
+}
+5353010=
+{
+	name="Agrippaja"
+	culture="rhogian"
+	#religion="catholic"
+}
+5353011=
+{
+	name="Ahalaja"
+	culture="rhogian"
+	#religion="catholic"
+}
+5353012=
+{
+	name="Ajavbarbskij"
+	culture="rhogian"
+	#religion="catholic"
+}
+5353013=
+{
+	name="Albinskij"
+	culture="rhogian"
+	#religion="catholic"
+}
+5353014 = {
+   name="Bibakul'skij"
+   culture="rhogian"
+   #religion="catholic"
+}
+5353015 = {
+   name="Bibul'skij"
+   culture="rhogian"
+   #religion="catholic"
+}
+
+5353016 = {
+   name="Brohskij"
+   culture="rhogian"
+   #religion="catholic"
+}
+
+5353017 ={
+   name="Kajsar"
+   culture="rhogian"
+   #religion="catholic"
+}
+5353018 ={
+   name="Kravinskij"
+   culture="rhogian"
+   #religion="catholic"
+}
+5353019 ={
+   name="Žatatskij"
+   culture="rhogian"
+   #religion="catholic"
+}
+5353020 ={
+   name="Žatrjaja"
+   culture="rhogian"
+   #religion="catholic"
+}
+5353021 ={
+   name="Žatoj"
+   culture="rhogian"
+   #religion="catholic"
+}
+5353022 ={
+   name="Žves"
+   culture="rhogian"
+   #religion="catholic"
+}
+5353023 = {
+	name = "Dlabl'jalaja"
+	culture = rhogian
+}
+5353024 = {
+	name = "Drasvoj"
+	culture = rhogian
+}
+5353025 = {
+	name = "Figul'skij"
+	culture = rhogian
+}
+5353026 = {
+	name = "Fuskij"
+	culture = rhogian
+}
+5353027 = {
+	name = "Galeoj"
+	culture = rhogian
+}
+5353028 = {
+	name = "Gjal'jal'skij"
+	culture = rhogian
+}
+5353029 = {
+	name = "Habitskij"
+	culture = rhogian
+}
+5353030 = {
+	name = "L'javaja"
+	culture = rhogian
+}
+5353031 = {
+	name = "Imprjajoskij"
+	culture = rhogian
+}
+5353032 = {
+	name = "Jul'skij"
+	culture = rhogian
+}
+5353033 = {
+	name = "Njavaja"
+	culture = rhogian
+}
+5353034 = {
+	name = "Ruštil'skij"
+	culture = rhogian
+}

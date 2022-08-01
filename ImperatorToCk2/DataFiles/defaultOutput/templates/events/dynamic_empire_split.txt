@@ -111,7 +111,7 @@ narrative_event = {
 			set_global_flag = irck2_e_TAG_not_has_middle_east
 			subtract_variable = {
 				which = global_splitDistance_e_TAG
-				value = 175
+				value = 100
 			}
 						
 		}
@@ -209,31 +209,35 @@ narrative_event = {
 			
 			subtract_variable = {
 				which = global_splitDistance_e_TAG
-				value = 250
+				value = 325
 			}
 		}
 		
 		if = { #If has India, Greece, and Persia, but not Western Europe, split along Persia
 			limit = {
-				NOT = {
-					has_global_flag = irck2_e_TAG_has_western_europe
-					has_global_flag = irck2_e_TAG_not_has_india
-					has_global_flag = irck2_e_TAG_not_has_middle_east
-					has_global_flag = irck2_e_TAG_not_has_persia
-				}
-				regional_percentage = {
-					region = world_europe_south_italy
-					percentage > 0
-					owner = {
-						is_vassal_or_below_of = e_TAG
+				#NOT = {
+				#	has_global_flag = irck2_e_TAG_has_western_europe
+				#	has_global_flag = irck2_e_TAG_not_has_india
+				#	has_global_flag = irck2_e_TAG_not_has_middle_east
+				#	has_global_flag = irck2_e_TAG_not_has_persia
+				#}
+				OR = {
+					regional_percentage = {
+						region = world_asia_minor
+						percentage > 0
+						owner = {
+							is_vassal_or_below_of = e_TAG
+						}
 					}
+					has_global_flag = irck2_e_TAG_has_italo_africa
 				}
+				check_variable = { which = global_splitDistance_e_TAG value >= 2000 }
 				
 			}
 			
 			set_variable = {
 				which = global_splitDistance_e_TAG
-				value = 1500
+				value = 1480
 			}
 		}
 		

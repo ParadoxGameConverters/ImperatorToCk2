@@ -1,0 +1,130 @@
+5349008=
+{
+	name="du Camulodunum"
+	culture="antonian"
+}
+5349009=
+{
+	name="de Lacon"
+	culture="antonian"
+	religion="catholic"
+}
+5349010=
+{
+	name="de Gunale"
+	culture="antonian"
+	religion="catholic"
+}
+5349011=
+{
+	name="de Callaris"
+	culture="antonian"
+	religion="catholic"
+}
+5349012=
+{
+	name="Oristani"
+	culture="antonian"
+	religion="catholic"
+}
+5349013=
+{
+	name="Sorrenti"
+	culture="antonian"
+	religion="catholic"
+}
+5349014 = {
+   name="di Gallura"
+   culture="antonian"
+   religion="catholic"
+}
+5349015 = {
+   name="di Logudoro"
+   culture="antonian"
+   religion="catholic"
+}
+
+5349016 = {
+   name="di Agugliastra"
+   culture="antonian"
+   religion="catholic"
+}
+
+5349017 ={
+   name="Salusiu de Lacon"
+   culture="antonian"
+   religion="catholic"
+}
+5349018 ={
+   name="Torchitoriu de Ugunale"
+   culture="antonian"
+   religion="catholic"
+}
+5349019 ={
+   name="de Lacon Gunale"
+   culture="antonian"
+   religion="catholic"
+}
+5349020 ={
+   name="de Lacon Zori"
+   culture="antonian"
+   religion="catholic"
+}
+5349021 ={
+   name="de Zori"
+   culture="antonian"
+   religion="catholic"
+}
+5349022 ={
+   name="Bas Serra"
+   culture="antonian"
+   religion="catholic"
+}
+5349023 = {
+	name = "di Casteddu"
+	culture = antonian
+}
+5349024 = {
+	name = "di Santa Igia"
+	culture = antonian
+}
+5349025 = {
+	name = "di Patiolla"
+	culture = antonian
+}
+5349026 = {
+	name = "di Ogiastra"
+	culture = antonian
+}
+5349027 = {
+	name = "di Torres"
+	culture = antonian
+}
+5349028 = {
+	name = "di Ballau"
+	culture = antonian
+}
+5349029 = {
+	name = "di Bosa"
+	culture = antonian
+}
+5349030 = {
+	name = "di Caddura"
+	culture = antonian
+}
+5349031 = {
+	name = "di Pasada"
+	culture = antonian
+}
+5349032 = {
+	name = "di Durgali"
+	culture = antonian
+}
+5349033 = {
+	name = "di Calvi"
+	culture = antonian
+}
+5349034 = {
+	name = "di Sartena"
+	culture = antonian
+}

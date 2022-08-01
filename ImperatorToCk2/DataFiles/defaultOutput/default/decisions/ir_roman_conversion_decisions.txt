@@ -1689,7 +1689,7 @@ targetted_decisions = {
 		ai_will_do = {
 			factor = 1
 
-			modifier = { #If Ruler has 2 king titles, is emperor, or is under Punic ruler, will not do
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Roman ruler, will not do
 				factor = 0
 				OR = {
 					top_liege = {
@@ -1759,7 +1759,7 @@ targetted_decisions = {
 		}
 	}
 	
-# Punic character may convert to indoroman
+# Roman character may convert to indoroman
 	irck2_convert_to_indoroman = {
 		only_playable = yes
 
@@ -1813,7 +1813,7 @@ targetted_decisions = {
 		ai_will_do = {
 			factor = 1
 
-			modifier = { #If Ruler has 2 king titles, is emperor, or is under Punic ruler, will not do
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Roman ruler, will not do
 				factor = 0
 				OR = {
 					top_liege = {
@@ -1883,7 +1883,7 @@ targetted_decisions = {
 		}
 	}
 	
-# Punic character may convert to bazramani
+# Roman character may convert to bazramani
 	irck2_convert_to_bazramani = {
 		only_playable = yes
 
@@ -1895,7 +1895,7 @@ targetted_decisions = {
 			is_playable = yes
 			culture = roman
 			capital_scope = {
-				region = custom_irck2_persia
+				OR = { region = custom_irck2_persia region = custom_irck2_bactria }
 			}
 			any_realm_province = {
 				culture = bazramani
@@ -1914,7 +1914,7 @@ targetted_decisions = {
 		allow = {
 			culture = roman
 			capital_scope = {
-				region = custom_irck2_persia
+				OR = { region = custom_irck2_persia region = custom_irck2_bactria }
 			}
 			any_realm_province = {
 				culture = bazramani
@@ -1937,7 +1937,7 @@ targetted_decisions = {
 		ai_will_do = {
 			factor = 1
 
-			modifier = { #If Ruler has 2 king titles, is emperor, or is under Punic ruler, will not do
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Roman ruler, will not do
 				factor = 0
 				OR = {
 					top_liege = {
@@ -2006,8 +2006,874 @@ targetted_decisions = {
 			}
 		}
 	}
+	
+	# Roman character may convert to azdi
+	irck2_convert_to_azdi = {
+		only_playable = yes
 
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
 
+		potential = {
+			is_playable = yes
+			culture = roman
+			capital_scope = {
+				region = custom_irck2_arabia
+			}
+			any_realm_province = {
+				culture = azdi
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = roman }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = roman
+			capital_scope = {
+				region = custom_irck2_arabia
+			}
+			any_realm_province = {
+				culture = azdi
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = azdi
+			}
+			culture = azdi
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Roman ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = roman
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = roman }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = azdi }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = azdi }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = azdi
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = azdi
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = azdi
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = azdi
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = azdi
+				}
+			}
+		}
+	}
+	
+	# Roman character may convert to nilan
+	irck2_convert_to_nilan = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = roman
+			capital_scope = {
+				region = world_africa_east
+			}
+			any_realm_province = {
+				culture = nilan
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = roman }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = roman
+			capital_scope = {
+				region = world_africa_east
+			}
+			any_realm_province = {
+				culture = nilan
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = nilan
+			}
+			culture = nilan
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Roman ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = roman
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = roman }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = nilan }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = nilan }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = nilan
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = nilan
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = nilan
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = nilan
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = nilan
+				}
+			}
+		}
+	}
+	
+	# Roman character may convert to antonian
+	irck2_convert_to_antonian = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = roman
+			capital_scope = {
+				region = custom_irck2_egypt
+			}
+			any_realm_province = {
+				culture = antonian
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = roman }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = roman
+			capital_scope = {
+				region = custom_irck2_egypt
+			}
+			any_realm_province = {
+				culture = antonian
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = antonian
+			}
+			culture = antonian
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Roman ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = roman
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = roman }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = antonian }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = antonian }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = antonian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = antonian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = antonian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = antonian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = antonian
+				}
+			}
+		}
+	}
+
+# Roman character may convert to montanan
+	irck2_convert_to_montanan = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = roman
+			capital_scope = {
+				region = custom_irck2_montana
+			}
+			any_realm_province = {
+				culture = montanan
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = roman }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = roman
+			capital_scope = {
+				region = custom_irck2_montana
+			}
+			any_realm_province = {
+				culture = montanan
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = montanan
+			}
+			culture = montanan
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Roman ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = roman
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = roman }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = montanan }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = montanan }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = montanan
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = montanan
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = montanan
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = montanan
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = montanan
+				}
+			}
+		}
+	}
+	
+	# Roman character may convert to glorious olbian
+	irck2_convert_to_olbian = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = roman
+			capital_scope = {
+				region = custom_irck2_divergence_olbia
+			}
+			any_realm_province = {
+				culture = olbian
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = roman }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = roman
+			capital_scope = {
+				region = custom_irck2_divergence_olbia
+			}
+			any_realm_province = {
+				culture = olbian
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = olbian
+			}
+			culture = olbian
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Roman ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = roman
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = roman }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = olbian }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = olbian }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = olbian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = olbian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = olbian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = olbian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = olbian
+				}
+			}
+		}
+	}
+	
+	# Roman character may convert to chadian
+	irck2_convert_to_chadian = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = roman
+			capital_scope = {
+				OR = { region = world_africa_west region = world_africa_central }
+			}
+			any_realm_province = {
+				culture = chadian
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = roman }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = roman
+			capital_scope = {
+				OR = { region = world_africa_west region = world_africa_central }
+			}
+			any_realm_province = {
+				culture = chadian
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = chadian
+			}
+			culture = chadian
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Roman ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = roman
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = roman }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = chadian }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = chadian }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = chadian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = chadian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = chadian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = chadian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = chadian
+				}
+			}
+		}
+	}
+	
+	# Roman character may convert to rhogian
+	irck2_convert_to_rhogian = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = roman
+			capital_scope = {
+				region = custom_irck2_poland
+			}
+			any_realm_province = {
+				culture = rhogian
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = roman }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = roman
+			capital_scope = {
+				region = custom_irck2_poland
+			}
+			any_realm_province = {
+				culture = rhogian
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = rhogian
+			}
+			culture = rhogian
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Roman ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = roman
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = roman }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = rhogian }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = rhogian }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = rhogian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = rhogian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = rhogian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = rhogian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = rhogian
+				}
+			}
+		}
+	}
 
 
 #####################################################################
