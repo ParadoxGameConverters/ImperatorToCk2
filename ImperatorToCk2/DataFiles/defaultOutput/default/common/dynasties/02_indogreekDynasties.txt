@@ -1,0 +1,212 @@
+5339008=
+{
+	name="Kantakouzenos"
+	culture="indogreek"
+	religion="orthodox"
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 8
+			texture_internal = 45
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+5339009=
+{
+	name="Palaiologos"
+	culture="indogreek"
+	religion="orthodox"
+	coat_of_arms=
+	{
+		data=
+		{
+0 3 0 32 0 0 0 			}
+		religion="catholic"
+	}
+	used_for_random=no
+}
+5339010=
+{
+	name="Komnenos"
+	culture="indogreek"
+}
+5339011=
+{
+	name="Macrodoukas"
+	culture="indogreek"
+	religion="orthodox"
+}
+5339012=
+{
+	name="Aineidas"
+	culture="indogreek"
+}
+5339013=
+{
+	name="Kantakouzenos"
+	culture="indogreek"
+}
+5339014 = {
+	name="Pegonitissos"
+	culture="indogreek"
+	religion="orthodox"
+	coat_of_arms=
+	{
+		data=
+		{
+0 0 0 26 7 0 0 			}
+		religion="orthodox"
+	}
+}
+5339015 = {
+	name="Angelos"
+	culture="indogreek"
+	religion="orthodox"
+	coat_of_arms=
+	{
+		data=
+		{
+0 5 0 9 0 0 0 			}
+		religion="catholic"
+	}
+}
+
+5339016 = {
+	name="Kastriotis"
+	culture="indogreek"
+}
+
+5339017 ={
+	name="Doukas Kamateros"
+	culture="indogreek"
+}
+5339018 ={
+	name="Kamateros"
+	culture="indogreek"
+	religion="orthodox"
+}
+5339019 ={
+	name="Skleros"
+	culture="indogreek"
+	religion="orthodox"
+	coat_of_arms=
+	{
+		data=
+		{
+0 5 0 18 0 0 0 			}
+		religion="catholic"
+	}
+}
+5339020 ={
+	name="Palaiologos"
+	culture="indogreek"
+	religion="orthodox"
+}
+5339021 ={
+	name="Makrembolites"
+	culture="indogreek"
+	religion="orthodox"
+	coat_of_arms=
+	{
+		data=
+		{
+0 1 0 2 2 1 0 			}
+		religion="orthodox"
+	}
+}
+5339022 ={
+	name="Botaneiates"
+	culture="indogreek"
+	religion="orthodox"
+	coat_of_arms=
+	{
+		data=
+		{
+0 8 0 36 0 0 0 			}
+		religion="catholic"
+	}
+}
+5339023 = {
+	name="Aaron"
+	culture="indogreek"
+}
+5339024 = {
+	name = "Ljauelgeitis"
+	culture = magnaindogreek
+}
+5339025 = {
+	name="Grammatikos"
+	culture="indogreek"
+}
+5339026 = {
+	name="Zeno"
+	culture="indogreek"
+}
+5339027 = {
+	name="Bua Spatas"
+	culture="indogreek"
+}
+5339028 = {
+	name="Karatzas"
+	culture="indogreek"
+}
+5339029 = {
+	name="Amiroutzes"
+	culture="indogreek"
+}
+5339030 = {
+	name="Bessarion"
+	culture="indogreek"
+}
+5339031 = {
+	name="Chalkokondyles"
+	culture="indogreek"
+}
+5339032 = {
+	name="Gazis"
+	culture="indogreek"
+}
+5339033 = {
+	name="Kallistos"
+	culture="indogreek"
+}
+5339034 = {
+	name="Kladas"
+	culture="indogreek"
+}
+5339035 = {
+	name="de Patras"
+	culture="indogreek"
+}
+5339036 = {
+	name="Gemistus"
+	culture="indogreek"
+}
+5339037 = {
+	name="Allatios"
+	culture="indogreek"
+}
+5339038 = {
+	name="Chalcocondyles"
+	culture="indogreek"
+}
+5339039 = {
+	name="Korniaktos"
+	culture="indogreek"
+}
+5339040 = {
+	name="Damaskenos"
+	culture="indogreek"
+}
+5339041 = {
+	name="Heraclides"
+	culture="indogreek"
+}
+5339042 = {
+	name="Kallokratos"
+	culture="indogreek"
+}

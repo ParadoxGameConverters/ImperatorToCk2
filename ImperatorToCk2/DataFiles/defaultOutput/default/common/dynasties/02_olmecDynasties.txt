@@ -1,0 +1,125 @@
+5345000=
+{
+	name="Ahkinxoc"
+	culture="olmec"
+}
+5345001=
+{
+	name="Ahmetakkukul"
+	culture="olmec"
+}
+5345002=
+{
+	name="Ahmok"
+	culture="olmec"
+}
+5345003=
+{
+	name="Ahnakukpech"
+	culture="olmec"
+}
+5345004=
+{
+	name="Ahpop-Achi"
+	culture="olmec"
+}
+5345005=
+{
+	name="Arana"
+	culture="olmec"
+}
+5345006=
+{
+	name="Bakan"
+	culture="olmec"
+}
+5345007=
+{
+	name="Balam"
+	culture="olmec"
+}
+5345008=
+{
+	name="Bor"
+	culture="olmec"
+}
+5345009=
+{
+	name="Canek"
+	culture="olmec"
+}
+5345010=
+{
+	name="Chaob"
+	culture="olmec"
+}
+5345011=
+{
+	name="Chiam"
+	culture="olmec"
+}
+5345012=
+{
+	name="Hnuyg"
+	culture="olmec"
+}
+5345013=
+{
+	name="Kayom"
+	culture="olmec"
+}
+5345014=
+{
+	name="Kíin"
+	culture="olmec"
+}
+5345015=
+{
+	name="Kukumatz"
+	culture="olmec"
+}
+5345016=
+{
+	name="Mochcouoh"
+	culture="olmec"
+}
+5345017=
+{
+	name="Nachancan"
+	culture="olmec"
+}
+5345018=
+{
+	name="Nohochacyum"
+	culture="olmec"
+}
+5345019=
+{
+	name="Pacal"
+	culture="olmec"
+}
+5345020=
+{
+	name="Quitze Balam"
+	culture="olmec"
+}
+5345021=
+{
+	name="Tecunuman"
+	culture="olmec"
+}
+5345022=
+{
+	name="Vataki"
+	culture="olmec"
+}
+5345023=
+{
+	name="Yumcaax"
+	culture="olmec"
+}
+5345024=
+{
+	name="Zotz"
+	culture="olmec"
+}

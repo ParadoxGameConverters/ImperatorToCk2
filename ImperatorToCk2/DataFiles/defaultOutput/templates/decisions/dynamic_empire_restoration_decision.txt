@@ -1,0 +1,63 @@
+decisions = {
+	irck2_e_TAG_restoration = {
+		only_independent = yes
+		is_high_prio = yes
+		ai_check_interval = 24
+		
+		potential = {
+			is_playable = yes
+			OR = { 
+				has_landed_title = e_TAG_east
+				has_landed_title = e_TAG_west
+			}
+			has_global_flag = e_TAG_split
+			NOT = {
+				has_landed_title = e_byzantium #For Byzantium, keep vanilla decision
+			}
+			is_adult = yes
+			prisoner = no
+			NOT = { trait = incapable }
+			NOT = { has_global_flag = e_TAG_restored }
+			NOR = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		allow = {
+			OR = {
+				primary_title = { title = e_TAG_east }
+				primary_title = { title = e_TAG_west }
+			}
+			prestige = 3000
+			TAG_capital = { # Original Empire Capital
+				OR = {
+					owner = { character = ROOT }
+					owner = {
+						top_liege = {
+							character = ROOT
+						}
+					}
+				}
+			}
+			realm_size >= global_restorationSize_e_TAG
+			OR = {
+				primary_title = { title = e_TAG_east }
+				e_TAG_east = {
+					has_holder = no
+				}
+			}
+			OR = {
+				primary_title = { title = e_TAG_west }
+				e_TAG_west = {
+					has_holder = no
+				}
+			}
+		}
+		effect = {
+			set_global_flag = e_TAG_restored
+			narrative_event = { id = IR_EMPIRE_RES_e_TAG.20 tooltip = irck2_e_TAG_restoration_decision_tooltip }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

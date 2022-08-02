@@ -1,0 +1,170 @@
+5340000=
+{
+	name="Amiandy"
+	culture="laessin"
+}
+5340001=
+{
+	name="Bezu"
+	culture="laessin"
+}
+5340002=
+{
+	name="Cèuiaty"
+	culture="laessin"
+}
+5340003=
+{
+	name="Cušeiy"
+	culture="laessin"
+}
+5340004=
+{
+	name="Dentupeany"
+	culture="laessin"
+}
+5340005=
+{
+	name="Dracunsy"
+	culture="laessin"
+}
+5340006=
+{
+	name="Iuy"
+	culture="laessin"
+}
+5340007=
+{
+	name="Floeiy"
+	culture="laessin"
+}
+5340008=
+{
+	name="Ièntury"
+	culture="laessin"
+}
+5340009=
+{
+	name="Iepy"
+	culture="laessin"
+}
+5340010=
+{
+	name="Maršea"
+	culture="laessin"
+}
+5340011=
+{
+	name="Meie"
+	culture="laessin"
+}
+5340012=
+{
+	name="Oiechara"
+	culture="laessin"
+}
+5340013=
+{
+	name="Panuiy"
+	culture="laessin"
+}
+5340014=
+{
+	name="Preuiaty"
+	culture="laessin"
+}
+5340015=
+{
+	name="Prubeany"
+	culture="laessin"
+}
+5340016=
+{
+	name="Prucuiy"
+	culture="laessin"
+}
+5340017=
+{
+	name="Pumpuiy"
+	culture="laessin"
+}
+5340018=
+{
+	name="Pušenseny"
+	culture="laessin"
+}
+5340019=
+{
+	name="Reparaty"
+	culture="laessin"
+}
+5340020=
+{
+	name="Scurzescy"
+	culture="laessin"
+}
+5340021=
+{
+	name="Šèiey"
+	culture="laessin"
+}
+5340022=
+{
+	name="Šèmpruia"
+	culture="laessin"
+}
+5340023=
+{
+	name="Šèrše"
+	culture="laessin"
+}
+5340024=
+{
+	name="Šeru"
+	culture="laessin"
+}
+5340025=
+{
+	name="Šešeru"
+	culture="laessin"
+}
+5340026=
+{
+	name="Šeženy"
+	culture="laessin"
+}
+5340027=
+{
+	name="Šeraiy"
+	culture="laessin"
+}
+5340028=
+{
+	name="Ueatru"
+	culture="laessin"
+}
+5340029=
+{
+	name="Uènusta"
+	culture="laessin"
+}
+5340030=
+{
+	name="Uiebrey"
+	culture="laessin"
+}
+5340031=
+{
+	name="Unue"
+	culture="laessin"
+}
+5340032=
+{
+	name="Útoeany"
+	culture="laessin"
+}
+5340033=
+{
+	name="Žusupureany"
+	culture="laessin"
+}

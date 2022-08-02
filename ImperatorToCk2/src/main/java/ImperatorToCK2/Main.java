@@ -34,7 +34,7 @@ public class Main
             throw new RuntimeException("Problems with creating the log files");
         }
 
-        LOGGER.info("Converter version 0.1A \"Assyrian\" - compatible with Imperator: Rome 1.3-2.0 and Crusader Kings II 3.3");
+        LOGGER.info("Converter version 0.2A \"Belgae\" - compatible with Imperator: Rome 1.3-2.0 and Crusader Kings II 3.3");
         LOGGER.finest("0%");
 
         long startTime = System.nanoTime(); //Starts the converter clock, used to tell how much time has passed
@@ -194,6 +194,10 @@ public class Main
 
             int compressedOrNot = Importer.compressTest(impDirSave); //0 for compressed, 1 for decompressed
             
+            int empireRank = 350; //Ammount of holdings to be Empire
+            
+            int splitSize = empireRank+800;
+            
             if (compressedOrNot == 0) { //compressed save! Initiating Rakaly decompressor
                 LOGGER.info("Compressed save detected! Implementing Rakaly Decompressor...");
                 
@@ -243,6 +247,9 @@ public class Main
                 if (tmpYear >= 100) { //if less then 100 AD, game will use 100 AD
                     date = configDirectories[8];
                 }
+                if (tmpYear <= 400) { //Timeline extended save
+                    splitSize = splitSize + 400;
+                }
             }
             
             if (republicOption.equals("bad")) { //If something goes wrong with reading the republic option, default to repMer
@@ -262,6 +269,10 @@ public class Main
             LOGGER.info("Importing color information...");
             
             ArrayList<String[]> colorList = Importer.importAllColors(impGameDir,modDirs);
+            
+            LOGGER.info("Importing localization information...");
+            
+            ArrayList<String> locList = Importer.importAllLoc(impGameDir,modDirs);
 
             LOGGER.info("Creating temp files...");
 
@@ -544,8 +555,6 @@ public class Main
             String govRegID;
             String[] govCharacter;
 
-            int empireRank = 350; //Ammount of holdings to be Empire
-
             impCharInfoList = Characters.importChar(saveCharacters,compressedOrNot);
 
             impDynList = Characters.importDynasty(saveDynasty);
@@ -624,7 +633,7 @@ public class Main
 
                                 Output.dynastyCreation(rulerDynasty,Character[7],Character[16],modDirectory);
 
-                                String[] locName = importer.importLocalisation(impGameDir,impTagInfo.get(aq4)[19],rulerDynasty);
+                                String[] locName = importer.importLocalisation(locList,impTagInfo.get(aq4)[19],rulerDynasty);
                                 Output.localizationCreation(locName,impTagInfo.get(aq4)[0],rank,modDirectory);
                                 if (oldName.equals(impTagInfo.get(aq4)[0])) { //Try to generate flag, if failure occurs, copy capital flag
                                     int genFlag = 0;
@@ -668,6 +677,16 @@ public class Main
 
                                     Output.localizationCreation(capitalLoc,impTagInfo.get(aq4)[0],subRank,modDirectory);
                                     Output.copyFlag(ck2Dir,modDirectory,subRank,impTagInfo.get(aq4)[5],impTagInfo.get(aq4)[0]); //use flag of empire
+                                    
+                                    //generate dynamic ew split
+                                    if (ck2LandTot[aq4] >= empireRank+800 && impTagInfo.get(aq4)[17].equals("imperium") &&
+                                    !impTagInfo.get(aq4)[0].equals("byzantium") && !impTagInfo.get(aq4)[0].equals("roman_empire_west") &&
+                                    !impTagInfo.get(aq4)[21].equals("WRE")) {
+                                        Processing.dynamicSplit(impTagInfo.get(aq4)[0],rank,impTagInfo.get(aq4)[3],locName,impTagInfo.get(aq4)[23],
+                                        impGameDir,impTagInfo.get(aq4)[5],flagList,colorList,modFlagGFX,impTagInfo.get(aq4)[17],
+                                        impTagInfo.get(aq4)[6],ck2Dir,modDirectory);
+                                        LOGGER.info("Generated east/west split for "+impTagInfo.get(aq4)[0]);
+                                    }
                                 }
                                 
                                 impTagInfo.get(aq4)[22] = rank;

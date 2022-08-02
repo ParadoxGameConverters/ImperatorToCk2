@@ -1,0 +1,549 @@
+###################################
+#
+# Imperator:Rome to Crusader Kings II
+# - Dynamic East-West empire split for e_TAG
+#
+###################################
+
+namespace = IR_EMPIRE_SPLIT_e_TAG
+
+#################################################
+# Player choice in how to split the empire
+narrative_event = {
+	id = IR_EMPIRE_SPLIT_e_TAG.1000
+	title = EVTNAME_IR_EMPIRE_SPLIT_e_TAG_1000
+	desc = EVTDESC_IR_EMPIRE_SPLIT_e_TAG_1000
+	picture = GFX_evt_irck2_roman_empire_split
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_variable = {
+			which = global_splitDistance_e_TAG
+			value = 2500
+		}
+		set_global_flag = e_TAG_split
+		#Calculate size needed for restoration decision
+		e_TAG = {
+			owner = {
+				export_to_variable = {
+					which = global_restorationSize_e_TAG
+					value = realm_size
+					who = FROM
+				}
+			}
+		}
+		divide_variable = {
+			which = global_restorationSize_e_TAG
+			value = 1.6
+		}
+		
+		#Calculate which duchies a restored empire will have a reconquest CB for
+		any_landed_title = {
+			if = {
+				limit = {
+					tier = DUKE
+					OR = {
+						de_facto_liege = e_TAG
+						de_jure_liege_or_above = e_TAG
+					}
+				}
+				set_title_flag = e_TAG_reconquest
+			}
+		}
+		#Calculate splitting distance
+		#Game essentually draws a line around Hindu Kush, then moves it west x ammount.
+		#Line will be the divider where empire splits
+		if = {
+			limit = {
+				NOT = {
+					regional_percentage = {
+						region = world_india
+						percentage > 0
+						owner = {
+							is_vassal_or_below_of = e_TAG
+						}
+					}
+				}
+			}
+			set_global_flag = irck2_e_TAG_not_has_india
+			subtract_variable = {
+				which = global_splitDistance_e_TAG
+				value = 1000
+			}
+						
+		}
+					
+		if = {
+			limit = {
+				has_global_flag = irck2_e_TAG_not_has_india
+				NOT = {
+					regional_percentage = {
+						region = world_persia
+						percentage > 0
+						owner = {
+							is_vassal_or_below_of = e_TAG
+						}
+					}
+				}
+			}
+			set_global_flag = irck2_e_TAG_not_has_persia
+			subtract_variable = {
+				which = global_splitDistance_e_TAG
+				value = 50
+			}
+			
+		}
+					
+		if = {
+			limit = {
+				has_global_flag = irck2_e_TAG_not_has_india
+				NOT = {
+					regional_percentage = {
+						region = world_middle_east
+						percentage > 0
+						owner = {
+							is_vassal_or_below_of = e_TAG
+						}
+					}
+				}
+			}
+			set_global_flag = irck2_e_TAG_not_has_middle_east
+			subtract_variable = {
+				which = global_splitDistance_e_TAG
+				value = 100
+			}
+						
+		}
+					
+		if = {
+			limit = {
+				regional_percentage = {
+					region = world_europe_west
+					percentage > 0
+					owner = {
+						is_vassal_or_below_of = e_TAG
+					}
+				}
+			}
+			set_global_flag = irck2_e_TAG_has_western_europe
+			subtract_variable = {
+				which = global_splitDistance_e_TAG
+				value = 250
+			}
+		}
+					
+		if = {
+			limit = {
+				regional_percentage = {
+					region = world_europe_east
+					percentage > 0
+					owner = {
+						is_vassal_or_below_of = e_TAG
+					}
+				}
+			}
+			set_global_flag = irck2_e_TAG_has_eastern_europe
+			subtract_variable = {
+				which = global_splitDistance_e_TAG
+				value = 150
+			}
+						
+		}
+		
+		if = {
+			limit = {
+				OR = {
+					regional_percentage = {
+						region = world_europe_south_italy
+						percentage > 0
+						owner = {
+							is_vassal_or_below_of = e_TAG
+						}
+					}
+					regional_percentage = {
+						region = world_africa
+						percentage > 0
+						owner = {
+							is_vassal_or_below_of = e_TAG
+						}
+					}
+				}
+					
+			}
+			set_global_flag = irck2_e_TAG_has_italo_africa
+			subtract_variable = {
+				which = global_splitDistance_e_TAG
+				value = 250
+			}
+		}
+		
+		if = { #Shouldn't be possible, but if an empire somehow is pushed into only having Western Europe, adjust split
+			limit = {
+				NOT = {
+					regional_percentage = {
+						region = world_europe_south
+						percentage > 0
+						owner = {
+							is_vassal_or_below_of = e_TAG
+						}
+					}
+				}
+				NOT = {
+					regional_percentage = {
+						region = custom_irck2_egypt
+						percentage > 0
+						owner = {
+							is_vassal_or_below_of = e_TAG
+						}
+					}
+				}
+				has_global_flag = irck2_e_TAG_not_has_india
+				has_global_flag = irck2_e_TAG_has_western_europe
+				has_global_flag = irck2_e_TAG_not_has_persia
+				NOT = {
+					has_global_flag = irck2_e_TAG_has_eastern_europe
+				}
+				has_global_flag = irck2_e_TAG_not_has_middle_east
+			}
+			
+			subtract_variable = {
+				which = global_splitDistance_e_TAG
+				value = 325
+			}
+		}
+		
+		if = { #If has India, Greece, and Persia, but not Western Europe, split along Persia
+			limit = {
+				#NOT = {
+				#	has_global_flag = irck2_e_TAG_has_western_europe
+				#	has_global_flag = irck2_e_TAG_not_has_india
+				#	has_global_flag = irck2_e_TAG_not_has_middle_east
+				#	has_global_flag = irck2_e_TAG_not_has_persia
+				#}
+				OR = {
+					regional_percentage = {
+						region = world_asia_minor
+						percentage > 0
+						owner = {
+							is_vassal_or_below_of = e_TAG
+						}
+					}
+					has_global_flag = irck2_e_TAG_has_italo_africa
+				}
+				check_variable = { which = global_splitDistance_e_TAG value >= 2000 }
+				
+			}
+			
+			set_variable = {
+				which = global_splitDistance_e_TAG
+				value = 1480
+			}
+		}
+		
+		if = { #If has India and Europe, split along Middle East
+			limit = {
+				NOT = {
+					has_global_flag = irck2_e_TAG_not_has_india
+				}
+				has_global_flag = irck2_e_TAG_has_western_europe
+			}
+			
+			set_variable = {
+				which = global_splitDistance_e_TAG
+				value = 1250
+			}
+		}
+		
+		activate_title = {
+			title = e_TAG
+			status = no
+		}
+	}
+
+	#Player plays as the Western Empire
+	option = {
+		name = EVTOPTA_IR_EMPIRE_SPLIT_e_TAG_1000_west
+					
+		any_vassal = { #set leader and carry over feudal vassals
+			limit = {
+					higher_tier_than = BARON
+					OR = {
+						de_facto_liege = e_TAG
+						}
+					distance = {
+						where = c_silves
+						distance > global_splitDistance_e_TAG
+					}
+				}
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = e_TAG_east_has_ruler
+					}
+					government = feudal_government
+				}
+				grant_title = e_TAG_east
+				set_global_flag = e_TAG_east_has_ruler
+			}
+			set_defacto_liege = e_TAG_east
+		}
+		
+		any_vassal = { #carry over non-feudal vassals
+			limit = {
+					higher_tier_than = BARON
+					OR = {
+						de_facto_liege = e_TAG
+						}
+					distance = {
+						where = c_silves
+						distance > global_splitDistance_e_TAG
+					}
+				}
+			set_defacto_liege = e_TAG_east
+		}
+		
+		e_TAG_east = {
+				owner = {
+						save_event_target_as = e_TAG_east_ruler
+					}
+				copy_title_laws = e_TAG
+				copy_title_history = e_TAG
+			}
+			
+			any_vassal = {
+			if = {
+				limit = {
+					lower_tier_than = COUNT
+					distance = {
+						where = c_silves
+						distance > global_splitDistance_e_TAG
+					}
+				}
+
+				defacto_liege_title = {
+					usurp_title = event_target:e_TAG_east_ruler
+				}
+			}
+		}
+		
+		any_landed_title = {
+			limit = {
+				tier = KING
+				OR = {
+					de_facto_liege = e_TAG_east
+					
+					AND = { #For breakaway vassals
+						de_jure_liege_or_above = e_TAG
+						owner = {
+							distance = {
+							where = c_silves
+								distance > global_splitDistance_e_TAG
+							}
+						}
+					}
+				}
+			}
+			de_jure_liege = e_TAG_east
+		}
+		
+		e_TAG_west = {
+				grant_title = ROOT
+				copy_title_laws = e_TAG
+				copy_title_history = e_TAG
+			}
+		e_TAG = {
+			unsafe_destroy_landed_title = THIS
+		}
+		
+		any_landed_title = {
+			if = {
+				limit = {
+					de_facto_liege = e_TAG_west
+					lower_tier_than = EMPEROR
+					distance = {
+						where = c_silves
+						distance > global_splitDistance_e_TAG
+					}
+				}
+			}
+			limit = {
+				tier = KING
+				de_facto_liege = e_TAG_west
+			}
+			de_jure_liege = e_TAG_west
+		}
+		
+		any_landed_title = { #cleanup
+			limit = {
+				tier = KING
+				de_jure_liege = e_TAG
+			}
+			de_jure_liege = e_TAG_west
+		}
+	}
+	
+	#Player plays as the Eastern Empire
+	option = {
+		name = EVTOPTA_IR_EMPIRE_SPLIT_e_TAG_1000_east
+					
+		any_vassal = { #set leader and carry over feudal vassals
+			limit = {
+					higher_tier_than = BARON
+					OR = {
+						de_facto_liege = e_TAG
+						}
+					distance = {
+						where = c_silves
+						distance < global_splitDistance_e_TAG
+					}
+				}
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = e_TAG_west_has_ruler
+					}
+					government = feudal_government
+				}
+				grant_title = e_TAG_west
+				set_global_flag = e_TAG_west_has_ruler
+			}
+			set_defacto_liege = e_TAG_west
+		}
+		
+		any_vassal = { #carry over non-feudal vassals
+			limit = {
+					higher_tier_than = BARON
+					OR = {
+						de_facto_liege = e_TAG
+						}
+					distance = {
+						where = c_silves
+						distance < global_splitDistance_e_TAG
+					}
+				}
+			set_defacto_liege = e_TAG_west
+		}
+		
+		e_TAG_west = {
+				owner = {
+						save_event_target_as = e_TAG_west_ruler
+					}
+				copy_title_laws = e_TAG
+				copy_title_history = e_TAG
+			}
+			
+			any_vassal = {
+			if = {
+				limit = {
+					lower_tier_than = COUNT
+					distance = {
+						where = c_silves
+						distance < global_splitDistance_e_TAG
+					}
+				}
+
+				defacto_liege_title = {
+					usurp_title = event_target:e_TAG_west_ruler
+				}
+			}
+		}
+		
+		any_landed_title = {
+			limit = {
+				tier = KING
+				OR = {
+					de_facto_liege = e_TAG_west
+					
+					AND = { #For breakaway vassals
+						de_jure_liege_or_above = e_TAG
+						owner = {
+							distance = {
+							where = c_silves
+								distance < global_splitDistance_e_TAG
+							}
+						}
+					}
+				}
+			}
+			de_jure_liege = e_TAG_west
+		}
+		
+		e_TAG_east = {
+				grant_title = ROOT
+				copy_title_laws = e_TAG
+				copy_title_history = e_TAG
+			}
+		e_TAG = {
+			unsafe_destroy_landed_title = THIS
+		}
+		
+		any_landed_title = {
+			if = {
+				limit = {
+					de_facto_liege = e_TAG_east
+					lower_tier_than = EMPEROR
+					distance = {
+						where = c_silves
+						distance > global_splitDistance_e_TAG
+					}
+				}
+			}
+			limit = {
+				tier = KING
+				de_facto_liege = e_TAG_east
+			}
+			de_jure_liege = e_TAG_east
+		}
+		
+		any_landed_title = { #cleanup
+			limit = {
+				tier = KING
+				de_jure_liege = e_TAG
+			}
+			de_jure_liege = e_TAG_east
+		}
+	}
+	
+	after = {
+		if = {
+			limit = {
+				is_female = yes
+			}
+			create_bloodline = {
+				type = e_TAG_empire_split_bloodline
+				inheritance = matrilineal
+			}
+		}
+		else_if = {
+			limit = {
+				is_female = no
+			}
+			create_bloodline = {
+				type = e_TAG_empire_split_bloodline
+			}
+		}
+		
+		any_independent_ruler = {
+			character_event = { id = IR_EMPIRE_SPLIT_e_TAG.1001}
+		}
+	}
+}
+
+############
+
+narrative_event = {
+	id = IR_EMPIRE_SPLIT_e_TAG.1001
+	title = EVTNAME_IR_EMPIRE_SPLIT_e_TAG_1000
+	desc = EVTDESC_IR_EMPIRE_SPLIT_e_TAG_1001
+	picture = GFX_evt_irck2_roman_empire_split
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_IR_EMPIRE_SPLIT_e_TAG_1001
+	}
+	
+}
+
+#################################################

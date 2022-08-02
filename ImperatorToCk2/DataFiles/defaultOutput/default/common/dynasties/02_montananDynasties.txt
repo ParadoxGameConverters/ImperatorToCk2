@@ -1,0 +1,158 @@
+5350008=
+{
+	name="Arbilàyya"
+	culture="montanan"
+}
+5350009=
+{
+	name="du La'qon"
+	culture="montanan"
+	#religion="catholic"
+}
+5350010=
+{
+	name="du Gunayl"
+	culture="montanan"
+	#religion="catholic"
+}
+5350011=
+{
+	name="du Callaris"
+	culture="montanan"
+	#religion="catholic"
+}
+5350012=
+{
+	name="Oristanu"
+	culture="montanan"
+	#religion="catholic"
+}
+5350013=
+{
+	name="Sorrenais"
+	culture="montanan"
+	#religion="catholic"
+}
+5350014 = {
+   name="d'Galluru"
+   culture="montanan"
+   #religion="catholic"
+}
+5350015 = {
+   name="d'Lo'qudoro"
+   culture="montanan"
+   #religion="catholic"
+}
+
+5350016 = {
+   name="Zakho"
+   culture="montanan"
+   #religion="catholic"
+}
+
+5350017 ={
+   name="Salušeu du La'qon"
+   culture="montanan"
+   #religion="catholic"
+}
+5350018 ={
+   name="Torchitariu du Uqunayl"
+   culture="montanan"
+   #religion="catholic"
+}
+5350019 ={
+   name="Samikka"
+   culture="montanan"
+   #religion="catholic"
+}
+5350020 ={
+   name="du La'qon Zakho"
+   culture="montanan"
+   #religion="catholic"
+}
+5350021 ={
+   name="du Zakho"
+   culture="montanan"
+   #religion="catholic"
+}
+5350022 ={
+   name="Bais Serra"
+   culture="montanan"
+   #religion="catholic"
+}
+5350023 = {
+	name = "d'Caisteddu"
+	culture = montanan
+}
+5350024 = {
+	name = "d'Santa Igàyya"
+	culture = montanan
+}
+5350025 = {
+	name = "d'Patiollais"
+	culture = montanan
+}
+5350026 = {
+	name = "d'Ogàyyaistra"
+	culture = montanan
+}
+5350027 = {
+	name = "d'Torram"
+	culture = montanan
+}
+5350028 = {
+	name = "d'Ballau"
+	culture = montanan
+}
+5350029 = {
+	name = "d'Bosa"
+	culture = montanan
+}
+5350030 = {
+	name = "d'Caddura"
+	culture = montanan
+}
+5350031 = {
+	name = "d'Paisadu"
+	culture = montanan
+}
+5350032 = {
+	name = "d'Durgalu"
+	culture = montanan
+}
+5350033 = {
+	name = "d'Calvu"
+	culture = montanan
+}
+5350034 = {
+	name = "d'Sartena"
+	culture = montanan
+}
+5350035 = {
+	name="Bukhtišu"
+	culture="montanan"
+}
+5350036 = {
+	name="Qatwais"
+	culture="montanan"
+}
+5350037 = {
+	name="Nimru"
+	culture="montanan"
+}
+5350038 = {
+	name="Gazartu"
+	culture="montanan"
+}
+5350039 = {
+	name="Odaenathus"
+	culture="montanan"
+}
+5350040 = {
+	name="Septimius"
+	culture="montanan"
+}
+5350041 = {
+	name="Septimàyya"
+	culture="montanan"
+}

@@ -1,0 +1,588 @@
+###################################
+#
+# Imperator:Rome to Crusader Kings II
+# - Greek Culture Conversion Events
+#
+###################################
+
+namespace = IR_GRE
+
+# Province culture changes from Greek to Italian
+province_event = {
+	id = IR_GRE.2000
+	desc = EVTDESC_IR_GRE_2000
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = greek
+		region = custom_irck2_italy_greek
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = greek
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_GRE_2000
+		culture = magnagreek
+	}
+}
+
+#################################################
+
+province_event = {
+	id = IR_GRE.2003
+	desc = EVTDESC_IR_GRE_2003
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = greek
+		OR = {
+			region = custom_irck2_france
+			region = custom_irck2_occitania_greek
+			region = custom_irck2_britannia
+		}
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = greek
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_GRE_2003
+		culture = massalian
+	}
+}
+
+province_event = {
+	id = IR_GRE.2005
+	desc = EVTDESC_IR_GRE_2005
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = greek
+		OR = {
+			region = custom_irck2_catalonia
+			region = custom_irck2_spain
+			region = custom_irck2_portugal
+		}
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = greek
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_GRE_2005
+		culture = empurian
+	}
+}
+
+province_event = {
+	id = IR_GRE.2011
+	desc = EVTDESC_IR_GRE_2011
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = greek
+		region = custom_irck2_north_africa_greek
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = greek
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_GRE_2011
+		culture = cyrenaican
+	}
+}
+
+province_event = {
+	id = IR_GRE.2013
+	desc = EVTDESC_IR_GRE_2013
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = greek
+		OR = {
+			region = custom_irck2_germania
+			region = world_europe_north
+		}
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = greek
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_GRE_2013
+		culture = pulian
+	}
+}
+
+province_event = {
+	id = IR_GRE.2014
+	desc = EVTDESC_IR_GRE_2014
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = greek
+		region = custom_irck2_poland
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = greek
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_GRE_2014
+		culture = histrian
+	}
+}
+
+province_event = {
+	id = IR_GRE.2015
+	desc = EVTDESC_IR_GRE_2015
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = greek
+		region = custom_irck2_egypt_greek
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = greek
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_GRE_2015
+		culture = ptolemaic
+	}
+}
+
+province_event = {
+	id = IR_GRE.2016
+	desc = EVTDESC_IR_GRE_2016
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = greek
+		region = world_india
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = greek
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_GRE_2016
+		culture = indogreek
+	}
+}
+
+province_event = {
+	id = IR_GRE.2017
+	desc = EVTDESC_IR_GRE_2017
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = greek
+		region = custom_irck2_persia_greek
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = greek
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_GRE_2017
+		culture = seleucian
+	}
+}
+
+province_event = {
+	id = IR_GRE.2018
+	desc = EVTDESC_IR_GRE_2018
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = greek
+		region = custom_irck2_bactria
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = greek
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_GRE_2018
+		culture = bactrian
+	}
+}
+
+province_event = {
+	id = IR_GRE.2019
+	desc = EVTDESC_IR_GRE_2019
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = greek
+		region = custom_irck2_arabia
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = greek
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_GRE_2019
+		culture = tylosi
+	}
+}
+
+province_event = {
+	id = IR_GRE.2020
+	desc = EVTDESC_IR_GRE_2020
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = greek
+		region = world_africa_east
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = greek
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_GRE_2020
+		culture = leucaethiopian
+	}
+}
+
+

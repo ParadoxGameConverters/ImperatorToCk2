@@ -1,7 +1,7 @@
 #Greek
 
 bosporan,greek
-syracusan,greek
+syracusan,magnagreek
 achaean,greek
 epirote,greek
 boeotian,greek
@@ -13,12 +13,12 @@ aetolian,greek
 aegean,greek
 macedonian,greek
 parthinian,greek
-thracian,thracian
+thracian,greek
 cretan,greek
 greco_pontic,greek
-italiotian,greek
-massalian,greek
-cyrenaican,greek
+italiotian,magnagreek
+massalian,massalian
+cyrenaican,cyrenaican
 argolian,greek
 arcadian,greek
 aeolian,greek
@@ -27,7 +27,7 @@ ionian,greek
 #bithynian,greek
 cypriot,greek
 thessalian,greek
-greco_indian,greek
+greco_indian,indogreek
 hellenistic,hellenistic
 greek,greek
 
@@ -85,6 +85,7 @@ pictonian,gallic
 aulercian,gallic
 celtic_pannonian,celtic_pannonian
 arverni,gallic
+allobrogian,gallic
 #carnian,carnian
 #letobician,letobician
 #boian,boian
@@ -109,12 +110,16 @@ carnian,celtic_pannonian
 noric,celtic_pannonian
 boian,celtic_pannonian
 eravisci,celtic_pannonian
-galatian,celtic_pannonian
+teurian,celtic_pannonian
+galatian,galatian
 
 #Gaelic
 
 hibernian,irish
+ivernian,irish
+voluntian,irish
 manavian,manx
+monapian,manx
 
 #Brythonic
 ordovitian,welsh
@@ -124,6 +129,7 @@ taexalian,pictish
 caledonian,pictish
 dumnonian,breton
 britannic,welsh
+parisian,welsh
 
 #iceni,iceni
 #trinovantian,trinovantian
@@ -200,6 +206,15 @@ gyzantian,maghreb_arabic
 moyan,maghreb_arabic
 alutan,maghreb_arabic
 boran,maghreb_arabic
+autolalean,maghreb_arabic
+lixitoi,maghreb_arabic
+perorsian,maghreb_arabic
+canarian,maghreb_arabic
+nectiberean,maghreb_arabic
+daphnitaean,maghreb_arabic
+capariensian,maghreb_arabic
+abannaean,maghreb_arabic
+cetianian,maghreb_arabic
 
 #Illyrian
 
@@ -232,6 +247,7 @@ sakan,saka
 thyssagetaen,saka
 legian,saka
 agathyrsian,saka
+gelonian,saka
 
 #Arabian
 hadhrami,bedouin_arabic
@@ -299,6 +315,7 @@ vaccaeian,celtiberian
 asturian,celtiberian
 callaecian,celtiberian
 vardulian,celtiberian
+oppidanian,celtiberian
 
 #Anatolian
 
@@ -422,8 +439,6 @@ andhran,telugu
 
 #Baltic
 aestian,aestian
-sporic,aestian
-neuric,aestian
 
 #Turkic
 khazars,khazar
@@ -437,3 +452,17 @@ huna,huna
 
 #Slavic
 polanes,polish
+sporic,protoslavic
+neuric,protoslavic
+budinian,protoslavic
+chernolian,protoslavic
+melanchlaenian,protoslavic
+androphagian,protoslavic
+
+#Mayan
+mayan,mayan
+huastec,mayan
+totomec,olmec
+olmec,olmec
+zoque,olmec
+tol,tol

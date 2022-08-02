@@ -1,5 +1,4 @@
 package ImperatorToCK2;  
-      
 
 import java.util.Scanner;
 import java.io.IOException;
@@ -8,6 +7,7 @@ import java.io.PrintWriter;
 import java.io.FileOutputStream;
 import java.util.Random;
 import java.util.ArrayList;
+import java.io.File;
 /**
  * Write a description of class Processing here.
  *
@@ -518,9 +518,9 @@ public class Processing
         String qaaa = "aa";
         int Rng = (int) (Math.random() * 34);
         Rng = Rng + 16;
-        String color = Integer.toString(Rng); 
+        String age = Integer.toString(Rng); 
 
-        return color;
+        return age;
 
     }
 
@@ -791,13 +791,11 @@ public class Processing
     public static String convertTitle(String name, String rank, String title, String defaultTitle) throws IOException
     {// Converts dynamically generated title to vanilla counterpart
         String tmpTitle = Importer.importCultList(name,rank+"_"+title)[1];//converts title
-        //Output.logPrint(tmpTitle);
-        tmpTitle = tmpTitle.replace((rank+"_"),"");
-        //Output.logPrint(tmpTitle);
 
         if (tmpTitle.equals("99999") || tmpTitle.equals("peq")) {//if there is no vanilla match
             return defaultTitle;
         } else {
+            tmpTitle = tmpTitle.substring(2,tmpTitle.length());
             title = tmpTitle;
         }
 
@@ -1259,6 +1257,9 @@ public class Processing
     public static String calcDynID (String id) //gives all IR character dynasties + 700000000 to prevent conflict
     {
         if (!id.equals("noDynasty")) {
+            if (id.length() >= 10) {
+                id = id.substring(0,9);
+            }
             id = Integer.toString(Integer.parseInt(id) + 700000000);
         }
 
@@ -1361,11 +1362,11 @@ public class Processing
             b *= 255;
             color = r+" "+g+" "+b;
         }
-        
+
         return color;
 
     }
-    
+
     public static String fixWhite (String color) //prevents colors from being 255 255 255
     {
         if (color.split(" ")[0].contains("255") || color.split(" ")[0].contains("254")) {
@@ -1376,6 +1377,343 @@ public class Processing
             }
         }
         return color;
+
+    }
+
+    public static String[] eastWestNames (String eastWest, String[] loc) throws IOException
+    {
+        String[] empire = new String[2];
+
+        empire[0] = eastWest+" "+loc[0];
+        empire[1] = eastWest+" "+loc[1];
+        if (empire[0].contains("Republic")) {
+            empire[0] = empire[0].replace("Republic","Empire");
+            empire[1] = empire[0].replace("Republic","Empire");
+        }
+        else if (empire[0].contains("Kingdom")) {
+            empire[0] = empire[0].replace("Kingdom","Empire");
+            empire[1] = empire[0].replace("Kingdom","Empire");
+        }
+        else if (!empire[0].contains("Empire")) {
+            empire[0] = eastWest+" "+loc[1];
+            empire[0] = empire[0] + " Empire";
+        }
+
+        return empire;
+
+    }
+
+    public static void dynamicSplit (String title,String rank,String color,String[] loc,String irFlag,String impGameDir,String capital,
+    ArrayList<String[]> flagList,ArrayList<String[]> colorList,ArrayList<String> modFlagGFX,String government,String tagCulture,
+    String ck2Dir, String modDirectory) throws IOException
+    {
+        String country = rank+"_"+title;
+        String[] easternEmpire = eastWestNames("Eastern",loc);
+        String[] westernEmpire = eastWestNames("Western",loc);
+        String eastColor = eastColor(color);
+        String westColor = westColor(color);
+        String eastTitle = title+"_east";
+        if (title.equals("roman_empire")) { //for Eastern Roman Empire, convert to Byzantium
+            eastTitle = "byzantium";
+        }
+        String westTitle = title+"_west";
+        String ck2Capital = Importer.importConvList("provinceConversion.txt",Integer.parseInt(capital))[1];
+        tagCulture = Output.cultureOutput(tagCulture);
+        //events
+        String eventDir = modDirectory+"/events/dynamic_empire_split_"+country+".txt";
+        String eventTemplateDirectory = "defaultOutput/templates/events/dynamic_empire_split.txt";
+        Output.dynamicSplitTemplateFill(country,loc,easternEmpire,westernEmpire,eastTitle,westTitle,ck2Capital,tagCulture,eventDir,eventTemplateDirectory);
+
+        String eventRestorationDir = modDirectory+"/events/dynamic_empire_reunification_"+country+".txt";
+        String eventRestorationTemplateDirectory = "defaultOutput/templates/events/dynamic_empire_reunification.txt";
+        Output.dynamicSplitTemplateFill(country,loc,easternEmpire,westernEmpire,eastTitle,westTitle,ck2Capital,tagCulture,eventRestorationDir,
+            eventRestorationTemplateDirectory);
+
+        //decisions
+        String decisionDir = modDirectory+"/decisions/dynamic_empire_split_decision_"+country+".txt";
+        String decisionTemplateDirectory = "defaultOutput/templates/decisions/dynamic_empire_split_decision.txt";
+        Output.dynamicSplitTemplateFill(country,loc,easternEmpire,westernEmpire,eastTitle,westTitle,ck2Capital,tagCulture,
+            decisionDir,decisionTemplateDirectory);
+
+        String decisionRestorationDir = modDirectory+"/decisions/dynamic_empire_restoration_decision_"+country+".txt";
+        String decisionRestorationTemplateDirectory = "defaultOutput/templates/decisions/dynamic_empire_restoration_decision.txt";
+        Output.dynamicSplitTemplateFill(country,loc,easternEmpire,westernEmpire,eastTitle,westTitle,ck2Capital,tagCulture,decisionRestorationDir,
+            decisionRestorationTemplateDirectory);
+
+        String decisionGFXDir = modDirectory+"/interface/irck2_empire_split_decision_icons_"+country+".gfx";
+        String decisionGFXTemplateDirectory = "defaultOutput/templates/interface/irck2_empire_split_decision_icons_e_TAG.gfx";
+        Output.dynamicSplitTemplateFill(country,loc,easternEmpire,westernEmpire,eastTitle,westTitle,ck2Capital,tagCulture,
+            decisionGFXDir,decisionGFXTemplateDirectory);
+
+        //bloodlines 
+        String bloodlineDir = modDirectory+"/common/bloodlines/50_empireSplitBloodline_"+country+".txt";
+        String bloodlineTemplateDirectory = "defaultOutput/templates/common/bloodlines/50_empireSplitBloodline.txt";
+        Output.dynamicSplitTemplateFill(country,loc,easternEmpire,westernEmpire,eastTitle,westTitle,ck2Capital,tagCulture,bloodlineDir,
+            bloodlineTemplateDirectory);
+
+        String bloodlineGFXDir = modDirectory+"/interface/irck2_bloodlines_"+country+".gfx";
+        String bloodlineGFXTemplateDirectory = "defaultOutput/templates/interface/irck2_bloodlines_e_TAG.gfx";
+        Output.dynamicSplitTemplateFill(country,loc,easternEmpire,westernEmpire,eastTitle,westTitle,ck2Capital,tagCulture,bloodlineGFXDir,
+            bloodlineGFXTemplateDirectory);
+
+        //loc
+        String locDir = modDirectory+"/localisation/dynamic_empire_split_loc_"+country+".csv";
+        String locTemplateDirectory = "defaultOutput/templates/localisation/dynamic_empire_split_loc.csv";
+        Output.dynamicSplitTemplateFill(country,loc,easternEmpire,westernEmpire,eastTitle,westTitle,ck2Capital,tagCulture,
+            locDir,locTemplateDirectory);
+
+        String bloodDescDir = modDirectory+"/localisation/dynamic_empire_split_bloodline_loc_"+country+".csv";
+        String bloodDescTemplateDirectory = "defaultOutput/templates/localisation/dynamic_empire_split_bloodline_loc.csv";
+        Output.dynamicSplitTemplateFill(country,loc,easternEmpire,westernEmpire,eastTitle,westTitle,ck2Capital,tagCulture,bloodDescDir,
+            bloodDescTemplateDirectory);
+
+        Output.localizationCreation(easternEmpire,eastTitle,rank,modDirectory);
+        Output.localizationCreation(westernEmpire,westTitle,rank,modDirectory);
+
+        //cbs
+        String cbDir = modDirectory+"/common/cb_types/50_irck2_cb_types_"+country+".txt";
+        String cbTemplateDirectory = "defaultOutput/templates/common/cb_types/50_irck2_cb_types_e_TAG.txt";
+        Output.dynamicSplitTemplateFill(country,loc,easternEmpire,westernEmpire,eastTitle,westTitle,ck2Capital,tagCulture,
+            cbDir,cbTemplateDirectory);
+
+        //gfx
+        String eastFlagDir = modDirectory+"/gfx/flags/"+rank+"_"+eastTitle+".tga";
+        String westFlagDir = modDirectory+"/gfx/flags/"+rank+"_"+westTitle+".tga";
+        File eastFlag = new File (eastFlagDir);
+        File westFlag = new File (westFlagDir);
+
+        String irFlagSource = "none";
+
+        if (!eastTitle.equals("byzantium")) { //For Byzantium, use vanilla flag
+            if (!eastFlag.exists()) { //For custom-made flags, don't generate new one
+                Output.eastWestFlagGen(irFlag,title,color,eastColor,eastTitle,flagList,colorList,rank,capital,modFlagGFX,"no",ck2Dir,impGameDir,modDirectory);
+            }
+            Output.titleCreationCommon(eastTitle,eastColor,government,capital,rank,modDirectory);
+        }
+        if (!westFlag.exists()) { //For custom-made flags, don't generate new one
+            Output.eastWestFlagGen(irFlag,title,color,color,westTitle,flagList,colorList,rank,capital,modFlagGFX,"no",ck2Dir,impGameDir,modDirectory);
+        }
+        Output.titleCreationCommon(westTitle,westColor,government,capital,rank,modDirectory);
+
+        Output.splitBloodlineEmbGen(ck2Dir,impGameDir,rank,flagList,title,irFlag,colorList,modFlagGFX,modDirectory);
+        Output.eastWestDecisionIcon(country,modDirectory);
+        Output.eastWestRestorationIcon(country,irFlag,flagList,ck2Dir,modDirectory);
+
+        Output.eastWestTitle(eastTitle,government,capital,rank,"100.1.1",modDirectory);
+        Output.eastWestTitle(westTitle,government,capital,rank,"100.1.1",modDirectory);
+
+    }
+
+    public static String eastColor (String overlordColor) //Generates color for easternEmpire
+    {
+
+        String[] overlordColorSplit = overlordColor.split(" ");
+        int c1 = (int) (Integer.parseInt(overlordColorSplit[0])); //Red
+        int c2 = (int) (Integer.parseInt(overlordColorSplit[1])); //Green
+        int c3 = (int) (Integer.parseInt(overlordColorSplit[2])); //Blue
+
+        double cTot = c1 + c2 + c3;
+        double rPercent = (c1 / cTot) * 100;
+        double bPercent = (c3 / cTot) * 100;
+
+        c2 = c2 - 50;
+        if (rPercent <= 25 && bPercent >= 50){ //if base country is blue, make purple rather then dark blue
+            c1 = c1 + 50;
+            c3 = c3 - 50;
+        } else {
+            c1 = c1 - 50;
+            c3 = c3 + 50;
+        }
+        if (c1 < 0) {
+            c1 = 0;
+        }
+        if (c2 < 0) {
+            c2 = 0;
+        }
+        if (c3 < 0) {
+            c3 = 0;
+        }
+        if (c1 > 255) {
+            c1 = 255;
+        }
+        if (c2 > 255) {
+            c2 = 255;
+        }
+        if (c3 > 255) {
+            c3 = 255;
+        }
+        String color = Integer.toString(c1) + " " + Integer.toString(c2) + " " + Integer.toString(c3); 
+
+        return color;
+
+    }
+
+    public static String westColor (String overlordColor) //Generates color for westernEmpire
+    {
+
+        String[] overlordColorSplit = overlordColor.split(" ");
+        int c1 = (int) (Integer.parseInt(overlordColorSplit[0]) + 50);
+        int c2 = (int) (Integer.parseInt(overlordColorSplit[1]) + 50);
+        int c3 = (int) (Integer.parseInt(overlordColorSplit[2]) + 50);
+        if (c1 < 0) {
+            c1 = 0;
+        }
+        if (c2 < 0) {
+            c2 = 0;
+        }
+        if (c3 < 0) {
+            c3 = 0;
+        }
+        if (c1 > 255) {
+            c1 = 255;
+        }
+        if (c2 > 255) {
+            c2 = 255;
+        }
+        if (c3 > 255) {
+            c3 = 255;
+        }
+        String color = Integer.toString(c1) + " " + Integer.toString(c2) + " " + Integer.toString(c3); 
+
+        return color;
+
+    }
+
+    public static boolean isWithinColorRange (String color1, String color2, int range) //Checks if RGB color falls within the specified range
+    {
+
+        boolean yn = false;
+        try {
+            if (color1.equals("none") || color2.equals("none")) {
+                return yn;
+            }
+            color1 = color1.replace(" ",",");
+            color2 = color2.replace(" ",",");
+            color1 = color1.replace("rgb(","");
+            color2 = color2.replace("rgb(","");
+            color1 = color1.replace(")","");
+            color2 = color2.replace(")","");
+            String[] color1Split = color1.split(",");
+            double c1a = (double) (Double.parseDouble(color1Split[0]));
+            double c2a = (double) (Double.parseDouble(color1Split[1]));
+            double c3a = (double) (Double.parseDouble(color1Split[2]));
+
+            String[] color2Split = color2.split(",");
+            double c1b = (double) (Double.parseDouble(color2Split[0]));
+            double c2b = (double) (Double.parseDouble(color2Split[1]));
+            double c3b = (double) (Double.parseDouble(color1Split[2]));
+
+            double range1 = c1a - c1b;
+            if (range1 < 0) {
+                range1 = range1 * -1;
+            }
+            double range2 = c2a - c2b;
+            if (range2 < 0) {
+                range2 = range2 * -1;
+            }
+            double range3 = c3a - c3b;
+            if (range3 < 0) {
+                range3 = range3 * -1;
+            }
+
+            if (range1 <= range && range2 <= range && range3 <= range) {
+                yn = true;
+            }
+        } catch(Exception e) {
+
+        }
+
+        return yn;
+
+    }
+
+    public static boolean isWithinColorRatio (String color1, String color2, int range) //Checks if RGB color falls within the specified ratio
+    {
+
+        boolean yn = false;
+        try {
+            if (color1.equals("none") || color2.equals("none")) {
+                return yn;
+            }
+            color1 = color1.replace(" ",",");
+            color2 = color2.replace(" ",",");
+            color1 = color1.replace("rgb(","");
+            color2 = color2.replace("rgb(","");
+            color1 = color1.replace(")","");
+            color2 = color2.replace(")","");
+
+            String[] color1Split = color1.split(",");
+            double c1a = (double) (Double.parseDouble(color1Split[0]));
+            double c2a = (double) (Double.parseDouble(color1Split[1]));
+            double c3a = (double) (Double.parseDouble(color1Split[2]));
+
+            String[] color2Split = color2.split(",");
+            double c1b = (double) (Double.parseDouble(color2Split[0]));
+            double c2b = (double) (Double.parseDouble(color2Split[1]));
+            double c3b = (double) (Double.parseDouble(color2Split[2]));
+
+            double tot1 = c1a + c2a + c3a;
+            double tot2 = c1b + c2b + c3b;
+
+            double r1Ratio = c1a / tot1 * 100;
+            double r2Ratio = c1b / tot2 * 100;
+
+            double g1Ratio = c2a / tot1 * 100;
+            double g2Ratio = c2b / tot2 * 100;
+
+            double b1Ratio = c3a / tot1 * 100;
+            double b2Ratio = c3b / tot2 * 100;
+
+            double range1 = r1Ratio - r2Ratio;
+            if (range1 < 0) {
+                range1 = range1 * -1;
+            }
+            double range2 = g1Ratio - g2Ratio;
+            if (range2 < 0) {
+                range2 = range2 * -1;
+            }
+            double range3 = b1Ratio - b2Ratio;
+            if (range3 < 0) {
+                range3 = range3 * -1;
+            }
+
+            if (range1 <= range && range2 <= range && range3 <= range) {
+                yn = true;
+            }
+        } catch(Exception e) {
+
+        }
+
+        return yn;
+
+    }
+
+    public static boolean isBright (String color1, int range) //Checks if RGB color is at least x bright
+    {
+
+        boolean yn = false;
+        if (color1.equals("none")) {
+            return yn;
+        }
+        color1 = color1.replace(" ",",");
+        color1 = color1.replace("rgb(","");
+        color1 = color1.replace(")","");
+        String[] color1Split = color1.split(",");
+        double c1 = (double) (Double.parseDouble(color1Split[0]));
+        double c2 = (double) (Double.parseDouble(color1Split[1]));
+        double c3 = (double) (Double.parseDouble(color1Split[2]));
+
+        if (c1 >= range) {
+            yn = true;
+        }
+        else if (c2 >= range) {
+            yn = true;
+        }
+        else if (c3 >= range) {
+            yn = true;
+        }
+
+        return yn;
 
     }
 

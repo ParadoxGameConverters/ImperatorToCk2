@@ -29,3 +29,4 @@ miaphysite,miaphysite
 islam,islam
 slavic,slavic_pagan
 tengri,tengri_pagan
+mesoamerican_religion,mayan_pagan

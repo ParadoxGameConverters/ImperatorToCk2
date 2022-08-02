@@ -1,0 +1,125 @@
+5346000=
+{
+	name="Ahkinxoc"
+	culture="tol"
+}
+5346001=
+{
+	name="Ahmetakkukul"
+	culture="tol"
+}
+5346002=
+{
+	name="Ahmok"
+	culture="tol"
+}
+5346003=
+{
+	name="Ahnakukpech"
+	culture="tol"
+}
+5346004=
+{
+	name="Ahpop-Achi"
+	culture="tol"
+}
+5346005=
+{
+	name="Arana"
+	culture="tol"
+}
+5346006=
+{
+	name="Bakan"
+	culture="tol"
+}
+5346007=
+{
+	name="Balam"
+	culture="tol"
+}
+5346008=
+{
+	name="Bor"
+	culture="tol"
+}
+5346009=
+{
+	name="Canek"
+	culture="tol"
+}
+5346010=
+{
+	name="Chaob"
+	culture="tol"
+}
+5346011=
+{
+	name="Chiam"
+	culture="tol"
+}
+5346012=
+{
+	name="Hnuyg"
+	culture="tol"
+}
+5346013=
+{
+	name="Kayom"
+	culture="tol"
+}
+5346014=
+{
+	name="Kíin"
+	culture="tol"
+}
+5346015=
+{
+	name="Kukumatz"
+	culture="tol"
+}
+5346016=
+{
+	name="Mochcouoh"
+	culture="tol"
+}
+5346017=
+{
+	name="Nachancan"
+	culture="tol"
+}
+5346018=
+{
+	name="Nohochacyum"
+	culture="tol"
+}
+5346019=
+{
+	name="Pacal"
+	culture="tol"
+}
+5346020=
+{
+	name="Quitze Balam"
+	culture="tol"
+}
+5346021=
+{
+	name="Tecunuman"
+	culture="tol"
+}
+5346022=
+{
+	name="Vataki"
+	culture="tol"
+}
+5346023=
+{
+	name="Yumcaax"
+	culture="tol"
+}
+5346024=
+{
+	name="Zotz"
+	culture="tol"
+}

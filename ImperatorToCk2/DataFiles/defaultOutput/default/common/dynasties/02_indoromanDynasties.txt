@@ -1,0 +1,200 @@
+5342000=
+{
+	name="Orshini"
+	culture="indoroman"
+}
+5342001=
+{
+	name="da Monferrãvò"
+	culture="indoroman"
+}
+5342002=
+{
+	name="Dantrolò"
+	culture="indoroman"
+}
+5342003=
+{
+	name="Spimanolò"
+	culture="indoroman"
+}
+5342004=
+{
+	name="Moncadã"
+	culture="indoroman"
+}
+5342005=
+{
+	name="da Lãncani"
+	culture="indoroman"
+}
+5342006=
+{
+	name="Palivvãri"
+	culture="indoroman"
+}
+5342007=
+{
+	name="Ventimivli"
+	culture="indoroman"
+}
+5342008=
+{
+	name="da Delhi"
+	culture="indoroman"
+}
+5342009=
+{
+	name="da Pãtaliputri"
+	culture="indoroman"
+}
+5342010=
+{
+	name="Sormedelli"
+	culture="indoroman"
+}
+5342011=
+{
+	name="da Sabran"
+	culture="indoroman"
+}
+5342012=
+{
+	name="da Saboya"
+	culture="indoroman"
+}
+5342013=
+{
+	name="Mastropiero"
+	culture="indoroman"
+}
+5342014=
+{
+	name="da Busca"
+	culture="indoroman"
+}
+5342015=
+{
+	name="Aleramicci"
+	culture="indoroman"
+}
+5342016=
+{
+	name="Visconti"
+	culture="indoroman"
+}
+5342017=
+{
+	name="Ordelòffo"
+	culture="indoroman"
+}
+5342018=
+{
+	name="Faliero"
+	culture="indoroman"
+}
+5342019=
+{
+	name="Silvipolò"
+	culture="indoroman"
+}
+5342020=
+{
+	name="Contarini"
+	culture="indoroman"
+}
+5342021=
+{
+	name="Chatyuri"
+	culture="indoroman"
+}
+5342022=
+{
+	name="Chanvra"
+	culture="indoroman"
+}
+5342023=
+{
+	name="Chumanochale"
+	culture="indoroman"
+}
+5342024=
+{
+	name="Ajaca"
+	culture="indoroman"
+}
+5342025=
+{
+	name="Cedi"
+	culture="indoroman"
+}
+5342026=
+{
+	name="Dasarãtho"
+	culture="indoroman"
+}
+5342027=
+{
+	name="Salisuca"
+	culture="indoroman"
+}
+5342028=
+{
+	name="Savadhanva"
+	culture="indoroman"
+}
+5342029=
+{
+	name="Jahadvalò"
+	culture="indoroman"
+}
+5342030=
+{
+	name="Dharoivvãrale"
+	culture="indoroman"
+}
+5342031=
+{
+	name="Octavinpolò"
+	culture="indoroman"
+}
+5342032=
+{
+	name="Verinpolò"
+	culture="indoroman"
+}
+5342033=
+{
+	name="Marcinpolò"
+	culture="indoroman"
+}
+
+5342034=
+{
+	name="Valentininpolò"
+	culture="indoroman"
+}
+
+5342035=
+{
+	name="Caesarpolò"
+	culture="indoroman"
+}
+
+5342036=
+{
+	name="Auvistulòus"
+	culture="indoroman"
+}
+
+5342037=
+{
+	name="da Guptò"
+	culture="indoroman"
+}
+
+5342038=
+{
+	name="da Gãma"
+	culture="indoroman"
+}

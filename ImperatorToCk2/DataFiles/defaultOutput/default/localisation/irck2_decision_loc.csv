@@ -22,12 +22,31 @@ irck2_convert_to_sardinian_desc;You and your unlanded Roman relatives convert to
 irck2_convert_to_aromanian;Embrace Aromanian Culture;Embrace Aromanian Culture;Embrace Aromanian Culture;;Embrace Aromanian Culture;;;;;;;;;x
 irck2_convert_to_cambrian;Embrace Cambrian Culture;Embrace Cambrian Culture;Embrace Cambrian Culture;;Embrace Cambrian Culture;;;;;;;;;x
 irck2_convert_to_romano_african;Embrace Eifrican Culture;Embrace Eifrican Culture;Embrace Eifrican Culture;;Embrace Eifrican Culture;;;;;;;;;x
-irck2_convert_to_indo_ronman;Embrace Indo-Roman Culture;Embrace Eifrican Culture;Embrace Eifrican Culture;;Embrace Eifrican Culture;;;;;;;;;x
+irck2_convert_to_palmyrene;Embrace Palmyrene Culture;Embrace Palmyrene Culture;Embrace Palmyrene Culture;;Embrace Palmyrene Culture;;;;;;;;;x
+irck2_convert_to_laessin;Embrace Lässin Culture;Embrace Lässin Culture;Embrace Lässin Culture;;Embrace Lässin Culture;;;;;;;;;x
+irck2_convert_to_bazramani;Embrace Bazramani Culture;Embrace Bazramani Culture;Embrace Bazramani Culture;;Embrace Bazramani Culture;;;;;;;;;x
+irck2_convert_to_indoroman;Embrace Indo-Roman Culture;Embrace Indo-Roman Culture;Embrace Indo-Roman Culture;;Embrace Indo-Roman Culture;;;;;;;;;x
+irck2_convert_to_azdi;Embrace Azdi Culture;Embrace Azdi Culture;Embrace Azdi Culture;;Embrace Azdi Culture;;;;;;;;;x
+irck2_convert_to_nilan;Embrace Nilan Culture;Embrace Nilan Culture;Embrace Nilan Culture;;Embrace Nilan Culture;;;;;;;;;x
+irck2_convert_to_antonianEmbrace Antonian Culture;Embrace Antonian Culture;Embrace Antonian Culture;;Embrace Antonian Culture;;;;;;;;;x
+irck2_convert_to_montanan;Embrace Montanan Culture;Embrace Montanan Culture;Embrace Montanan Culture;;Embrace Montanan Culture;;;;;;;;;x
+irck2_convert_to_olbian;Embrace Olbian Culture;Embrace Olbian Culture;Embrace Olbian Culture;;Embrace Olbian Culture;;;;;;;;;x
+irck2_convert_to_chadian;Embrace Chadian Culture;Embrace Chadian Culture;Embrace Chadian Culture;;Embrace Chadian Culture;;;;;;;;;x
+irck2_convert_to_rhogian;Embrace Rhogian Culture;Embrace Rhogian Culture;Embrace Rhogian Culture;;Embrace Rhogian Culture;;;;;;;;;x
 irck2_convert_to_aromanian_desc;You and your unlanded Roman relatives convert to Aromanian Culture;You and your unlanded Roman relatives convert to Aromanian Culture;You and your unlanded Roman relatives convert to Aromanian Culture;;You and your unlanded Roman relatives convert to Aromanian Culture;;;;;;;;;x
 irck2_convert_to_cambrian_desc;You and your unlanded Roman relatives convert to Cambrian Culture;You and your unlanded Roman relatives convert to Cambrian Culture;You and your unlanded Roman relatives convert to Cambrian Culture;;You and your unlanded Roman relatives convert to Cambrian Culture;;;;;;;;;x
 irck2_convert_to_romano_african_desc;You and your unlanded Roman relatives convert to Eifrican Culture;You and your unlanded Roman relatives convert to Eifrican Culture;You and your unlanded Roman relatives convert to Eifrican Culture;;You and your unlanded Roman relatives convert to Eifrican Culture;;;;;;;;;x
 irck2_convert_to_palmyrene_desc;You and your unlanded Roman relatives convert to Palmyrene Culture;You and your unlanded Roman relatives convert to Palmyrene Culture;You and your unlanded Roman relatives convert to Palmyrene Culture;;You and your unlanded Roman relatives convert to Palmyrene Culture;;;;;;;;;x
-irck2_convert_to_indo_roman_desc;You and your unlanded Roman relatives convert to Indo-Roman Culture;You and your unlanded Roman relatives convert to Indo-Roman Culture;You and your unlanded Roman relatives convert to Indo-Roman Culture;;You and your unlanded Roman relatives convert to Indo-Roman Culture;;;;;;;;;x
+irck2_convert_to_laessin_desc;You and your unlanded Roman relatives convert to Lässin Culture;You and your unlanded Roman relatives convert to Lässin Culture;You and your unlanded Roman relatives convert to Lässin Culture;;You and your unlanded Roman relatives convert to Lässin Culture;;;;;;;;;x
+irck2_convert_to_bazramani_desc;You and your unlanded Roman relatives convert to Bazramani Culture;You and your unlanded Roman relatives convert to Bazramani Culture;You and your unlanded Roman relatives convert to Bazramani Culture;;You and your unlanded Roman relatives convert to Bazramani Culture;;;;;;;;;x
+irck2_convert_to_indoroman_desc;You and your unlanded Roman relatives convert to Indo-Roman Culture;You and your unlanded Roman relatives convert to Indo-Roman Culture;You and your unlanded Roman relatives convert to Indo-Roman Culture;;You and your unlanded Roman relatives convert to Indo-Roman Culture;;;;;;;;;x
+irck2_convert_to_azdi_desc;You and your unlanded Roman relatives convert to Azdi Culture;You and your unlanded Roman relatives convert to Azdi Culture;You and your unlanded Roman relatives convert to Azdi Culture;;You and your unlanded Roman relatives convert to Azdi Culture;;;;;;;;;x
+irck2_convert_to_nilan_desc;You and your unlanded Roman relatives convert to Nilan Culture;You and your unlanded Roman relatives convert to Nilan Culture;You and your unlanded Roman relatives convert to Nilan Culture;;You and your unlanded Roman relatives convert to Nilan Culture;;;;;;;;;x
+irck2_convert_to_antonian_desc;You and your unlanded Roman relatives convert to Antonian Culture;You and your unlanded Roman relatives convert to Antonian Culture;You and your unlanded Roman relatives convert to Antonian Culture;;You and your unlanded Roman relatives convert to Antonian Culture;;;;;;;;;x
+irck2_convert_to_montanan_desc;You and your unlanded Roman relatives convert to Montanan Culture;You and your unlanded Roman relatives convert to Montanan Culture;You and your unlanded Roman relatives convert to Montanan Culture;;You and your unlanded Roman relatives convert to Montanan Culture;;;;;;;;;x
+irck2_convert_to_olbian_desc;You and your unlanded Roman relatives convert to Olbian Culture;You and your unlanded Roman relatives convert to Olbian Culture;You and your unlanded Roman relatives convert to Olbian Culture;;You and your unlanded Roman relatives convert to Olbian Culture;;;;;;;;;x
+irck2_convert_to_chadian_desc;You and your unlanded Roman relatives convert to Chadian Culture;You and your unlanded Roman relatives convert to Chadian Culture;You and your unlanded Roman relatives convert to Chadian Culture;;You and your unlanded Roman relatives convert to Chadian Culture;;;;;;;;;x
+irck2_convert_to_rhogian_desc;You and your unlanded Roman relatives convert to Rhogian Culture;You and your unlanded Roman relatives convert to Rhogian Culture;You and your unlanded Roman relatives convert to Rhogian Culture;;You and your unlanded Roman relatives convert to Rhogian Culture;;;;;;;;;x
 
 
 #Germanic split
@@ -70,6 +89,38 @@ irck2_convert_to_pretan_desc;You and your unlanded Punic relatives convert to Ba
 irck2_convert_to_sidonian_desc;You and your unlanded Punic relatives convert to Sidonian Culture;You and your unlanded Punic relatives convert to Sidonian Culture;You and your unlanded Punic relatives convert to Sidonian Culture;;You and your unlanded Punic relatives convert to Sidonian Culture;;;;;;;;;x
 irck2_convert_to_ziqanmakom_desc;You and your unlanded Punic relatives convert to Ziqanmak'om Culture;You and your unlanded Punic relatives convert to Ziqanmak'om Culture;You and your unlanded Punic relatives convert to Ziqanmak'om Culture;;You and your unlanded Punic relatives convert to Ziqanmak'om Culture;;;;;;;;;x
 irck2_convert_to_sythchy_desc;You and your unlanded Punic relatives convert to Sythchy Culture;You and your unlanded Punic relatives convert to Sythchy Culture;You and your unlanded Punic relatives convert to Sythchy Culture;;You and your unlanded Punic relatives convert to Sythchy Culture;;;;;;;;;x
+
+#Greek split
+irck2_convert_to_magnagreek;Embrace Magna Graecian Culture;Embrace Magna Graecian Culture;Embrace Magna Graecian Culture;;Embrace Magna Graecian Culture;;;;;;;;;x
+irck2_convert_to_massalian;Embrace Massalian Culture;Embrace Massalian Culture;Embrace Massalian Culture;;Embrace Massalian Culture;;;;;;;;;x
+irck2_convert_to_massalian2;Embrace Massalian Culture;Embrace Massalian Culture;Embrace Massalian Culture;;Embrace Massalian Culture;;;;;;;;;x
+irck2_convert_to_cyrenaican;Embrace Cyrenaican Culture;Embrace Cyrenaican Culture;Embrace Cyrenaican Culture;;Embrace Cyrenaican Culture;;;;;;;;;x
+irck2_convert_to_indogreek;Embrace Indo-Greek Culture;Embrace Indo-Greek Culture;Embrace Indo-Greek Culture;;Embrace Indo-Greek Culture;;;;;;;;;x
+irck2_convert_to_empurian;Embrace Empurian Culture;Embrace Empurian Culture;Embrace Empurian Culture;;Embrace Empurian Culture;;;;;;;;;x
+irck2_convert_to_histrian;Embrace Histrian Culture;Embrace Histrian Culture;Embrace Histrian Culture;;Embrace Histrian Culture;;;;;;;;;x
+irck2_convert_to_bactrian;Embrace Bactrian Culture;Embrace Bactrian Culture;Embrace Bactrian Culture;;Embrace Bactrian Culture;;;;;;;;;x
+irck2_convert_to_ptolemaic;Embrace Ptolemaic Culture;Embrace Ptolemaic Culture;Embrace Ptolemaic Culture;;Embrace Ptolemaic Culture;;;;;;;;;x
+irck2_convert_to_leucaethiopian;Embrace Leucaethiopian Culture;Embrace Leucaethiopian Culture;Embrace Leucaethiopian Culture;;Embrace Leucaethiopian Culture;;;;;;;;;x
+irck2_convert_to_pulian;Embrace Pulian Culture;Embrace Pulian Culture;Embrace Pulian Culture;;Embrace Pulian Culture;;;;;;;;;x
+irck2_convert_to_seleucian;Embrace Seleucian Culture;Embrace Leucaethiopian Culture;Embrace Leucaethiopian Culture;;Embrace Leucaethiopian Culture;;;;;;;;;x
+irck2_convert_to_tylosi;Embrace Tylosi Culture;Embrace Tylosi Culture;Embrace Tylosi Culture;;Embrace Tylosi Culture;;;;;;;;;x
+irck2_convert_to_magnagreek_desc;You and your unlanded Greek relatives convert to Magna Graecian Culture;You and your unlanded Greek relatives convert to Magna Graecian Culture;You and your unlanded Greek relatives convert to Magna Graecian Culture;;You and your unlanded Greek relatives convert to Magna Graecian Culture;;;;;;;;;x
+irck2_convert_to_massalian_desc;You and your unlanded Greek relatives convert to Massalian Culture;You and your unlanded Greek relatives convert to Massalian Culture;You and your unlanded Greek relatives convert to Massalian Culture;;You and your unlanded Greek relatives convert to Massalian Culture;;;;;;;;;x
+irck2_convert_to_massalian2_desc;You and your unlanded Greek relatives convert to Massalian Culture;You and your unlanded Greek relatives convert to Massalian Culture;You and your unlanded Greek relatives convert to Massalian Culture;;You and your unlanded Greek relatives convert to Massalian Culture;;;;;;;;;x
+irck2_convert_to_cyrenaican_desc;You and your unlanded Greek relatives convert to Cyrenaican Culture;You and your unlanded Greek relatives convert to Cyrenaican Culture;You and your unlanded Greek relatives convert to Cyrenaican Culture;;You and your unlanded Greek relatives convert to Cyrenaican Culture;;;;;;;;;x
+irck2_convert_to_indogreek_desc;You and your unlanded Greek relatives convert to Indo-Greek Culture;You and your unlanded Greek relatives convert to Indo-Greek Culture;You and your unlanded Greek relatives convert to Indo-Greek Culture;;You and your unlanded Greek relatives convert to Indo-Greek Culture;;;;;;;;;x
+irck2_convert_to_empurian_desc;You and your unlanded Greek relatives convert to Empurian Culture;You and your unlanded Greek relatives convert to Empurian Culture;You and your unlanded Greek relatives convert to Empurian Culture;;You and your unlanded Greek relatives convert to Empurian Culture;;;;;;;;;x
+irck2_convert_to_histrian_desc;You and your unlanded Greek relatives convert to Histrian Culture;You and your unlanded Greek relatives convert to Histrian Culture;You and your unlanded Greek relatives convert to Histrian Culture;;You and your unlanded Greek relatives convert to Histrian Culture;;;;;;;;;x
+irck2_convert_to_bactrian_desc;You and your unlanded Greek relatives convert to Bactrian Culture;You and your unlanded Greek relatives convert to Bactrian Culture;You and your unlanded Greek relatives convert to Bactrian Culture;;You and your unlanded Greek relatives convert to Bactrian Culture;;;;;;;;;x
+irck2_convert_to_ptolemaic_desc;You and your unlanded Greek relatives convert to Ptolemaic Culture;You and your unlanded Greek relatives convert to Ptolemaic Culture;You and your unlanded Greek relatives convert to Ptolemaic Culture;;You and your unlanded Greek relatives convert to Ptolemaic Culture;;;;;;;;;x
+irck2_convert_to_leucaethiopian_desc;You and your unlanded Greek relatives convert to Leucaethiopian Culture;You and your unlanded Greek relatives convert to Leucaethiopian Culture;You and your unlanded Greek relatives convert to Leucaethiopian Culture;;You and your unlanded Greek relatives convert to Leucaethiopian Culture;;;;;;;;;x
+irck2_convert_to_pulian_desc;You and your unlanded Greek relatives convert to Pulian Culture;You and your unlanded Greek relatives convert to Pulian Culture;You and your unlanded Greek relatives convert to Pulian Culture;;You and your unlanded Greek relatives convert to Pulian Culture;;;;;;;;;x
+irck2_convert_to_seleucian_desc;You and your unlanded Greek relatives convert to Seleucian Culture;You and your unlanded Greek relatives convert to Seleucian Culture;You and your unlanded Greek relatives convert to Seleucian Culture;;You and your unlanded Greek relatives convert to Seleucian Culture;;;;;;;;;x
+irck2_convert_to_tylosi_desc;You and your unlanded Greek relatives convert to Tylosi Culture;You and your unlanded Greek relatives convert to Tylosi Culture;You and your unlanded Greek relatives convert to Tylosi Culture;;You and your unlanded Greek relatives convert to Tylosi Culture;;;;;;;;;x
+
+#Celtic Split
+irck2_convert_to_galatian;Embrace Galatian Culture;Embrace Galatian Culture;Embrace Galatian Culture;;Embrace Galatian Culture;;;;;;;;;x
+irck2_convert_to_galatian_desc;You and your unlanded Gallic, Belgae, Lepontic, and Noric relatives convert to Galatian Culture;You and your unlanded Gallic, Belgae, Lepontic, and Noric relatives convert to Galatian Culture;You and your unlanded Gallic, Belgae, Lepontic, and Noric relatives convert to Galatian Culture;;You and your unlanded Gallic, Belgae, Lepontic, and Noric relatives convert to Galatian Culture;;;;;;;;;x
 
 #Empires
 irck2_create_e_italy;Create Italia;Create Italia;Machen Italien;;Create Italia;;;;;;;;;x

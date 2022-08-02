@@ -1,0 +1,158 @@
+5347008=
+{
+	name="Arbilàyya"
+	culture="azdi"
+}
+5347009=
+{
+	name="du La'qon"
+	culture="azdi"
+	#religion="catholic"
+}
+5347010=
+{
+	name="du Gunayl"
+	culture="azdi"
+	#religion="catholic"
+}
+5347011=
+{
+	name="du Callaris"
+	culture="azdi"
+	#religion="catholic"
+}
+5347012=
+{
+	name="Oristanu"
+	culture="azdi"
+	#religion="catholic"
+}
+5347013=
+{
+	name="Sorrenais"
+	culture="azdi"
+	#religion="catholic"
+}
+5347014 = {
+   name="d'Galluru"
+   culture="azdi"
+   #religion="catholic"
+}
+5347015 = {
+   name="d'Lo'qudoro"
+   culture="azdi"
+   #religion="catholic"
+}
+
+5347016 = {
+   name="Zakho"
+   culture="azdi"
+   #religion="catholic"
+}
+
+5347017 ={
+   name="Salušeu du La'qon"
+   culture="azdi"
+   #religion="catholic"
+}
+5347018 ={
+   name="Torchitariu du Uqunayl"
+   culture="azdi"
+   #religion="catholic"
+}
+5347019 ={
+   name="Samikka"
+   culture="azdi"
+   #religion="catholic"
+}
+5347020 ={
+   name="du La'qon Zakho"
+   culture="azdi"
+   #religion="catholic"
+}
+5347021 ={
+   name="du Zakho"
+   culture="azdi"
+   #religion="catholic"
+}
+5347022 ={
+   name="Bais Serra"
+   culture="azdi"
+   #religion="catholic"
+}
+5347023 = {
+	name = "d'Caisteddu"
+	culture = azdi
+}
+5347024 = {
+	name = "d'Santa Igàyya"
+	culture = azdi
+}
+5347025 = {
+	name = "d'Patiollais"
+	culture = azdi
+}
+5347026 = {
+	name = "d'Ogàyyaistra"
+	culture = azdi
+}
+5347027 = {
+	name = "d'Torram"
+	culture = azdi
+}
+5347028 = {
+	name = "d'Ballau"
+	culture = azdi
+}
+5347029 = {
+	name = "d'Bosa"
+	culture = azdi
+}
+5347030 = {
+	name = "d'Caddura"
+	culture = azdi
+}
+5347031 = {
+	name = "d'Paisadu"
+	culture = azdi
+}
+5347032 = {
+	name = "d'Durgalu"
+	culture = azdi
+}
+5347033 = {
+	name = "d'Calvu"
+	culture = azdi
+}
+5347034 = {
+	name = "d'Sartena"
+	culture = azdi
+}
+5347035 = {
+	name="Bukhtišu"
+	culture="azdi"
+}
+5347036 = {
+	name="Qatwais"
+	culture="azdi"
+}
+5347037 = {
+	name="Nimru"
+	culture="azdi"
+}
+5347038 = {
+	name="Gazartu"
+	culture="azdi"
+}
+5347039 = {
+	name="Odaenathus"
+	culture="azdi"
+}
+5347040 = {
+	name="Septimius"
+	culture="azdi"
+}
+5347041 = {
+	name="Septimàyya"
+	culture="azdi"
+}

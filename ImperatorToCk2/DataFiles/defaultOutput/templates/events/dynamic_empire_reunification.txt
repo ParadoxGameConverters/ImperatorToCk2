@@ -1,0 +1,166 @@
+#######################################
+#
+# e_TAG Reunifcation Events
+#
+# Event ID IR_EMPIRE_RES_e_TAG.1 - IR_EMPIRE_RES_e_TAG.199 reserved
+#
+#######################################
+
+# Written by Henrik Eklund
+
+namespace = IR_EMPIRE_RES_e_TAG
+
+### e_TAG Empire Restored
+
+# The Restoration of the Empire
+narrative_event = {
+	id = IR_EMPIRE_RES_e_TAG.20
+	title = EVTNAMEIR_EMPIRE_RES_e_TAG.20
+	desc = {
+		text = EVTDESCIR_EMPIRE_RES_e_TAG.20
+		trigger = { 
+			is_alternate_start = no
+		}
+	}
+	desc = {
+		text = EVTDESCIR_EMPIRE_RES_e_TAG20_HF
+		trigger = { 
+			is_alternate_start = yes
+		}
+	}
+	
+	picture = GFX_evt_rome_restored_byzantine
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				ai = no
+			}
+			set_character_flag = achievement_legacy_of_rome
+		}
+	}
+	
+	option = {
+		name = EVTOPTAIR_EMPIRE_RES_e_TAG.20
+		hidden_tooltip = {
+			e_TAG_east = {
+				any_direct_de_jure_vassal_title = {
+					de_jure_liege = e_TAG
+				}
+			}
+			e_TAG_west = {
+				any_direct_de_jure_vassal_title = {
+					de_jure_liege = e_TAG
+				}
+			}
+		}
+		e_TAG = {
+			show_scope_change = no
+			grant_title = ROOT
+			hidden_tooltip = { make_primary_title = yes }
+		}
+		if {
+			limit = {
+				e_TAG_west = {
+					has_holder = no
+				}
+			}
+			e_TAG = {
+				copy_title_laws = e_TAG_east
+				copy_title_history = e_TAG_east
+			}
+			
+		}
+		if {
+			limit = {
+				e_TAG_east = {
+					has_holder = no
+				}
+			}
+			e_TAG = {
+				copy_title_laws = e_TAG_west
+				copy_title_history = e_TAG_west
+			}
+			
+		}
+		e_TAG_east = {
+			show_scope_change = no
+			destroy_landed_title = THIS
+		}
+		e_TAG_west = {
+			show_scope_change = no
+			destroy_landed_title = THIS
+		}
+		hidden_tooltip = {
+			activate_title = { title = e_TAG_east status = no }
+			activate_title = { title = e_TAG_west status = no }
+			any_playable_ruler = {
+				limit = {
+					NOT = { has_landed_title = e_TAG_east }
+					ai = no
+				}
+				narrative_event = { id = IR_EMPIRE_RES_e_TAG.21 }
+			}
+		}
+		#add_trait = augustus
+		give_nickname = nick_the_glorious
+		if = {
+			limit = {
+				is_female = yes
+			}
+			create_bloodline = {
+				type = e_TAG_empire_restoration_bloodline
+				inheritance = matrilineal
+			}
+		}
+		else_if = {
+			limit = {
+				is_female = no
+			}
+			create_bloodline = {
+				type = e_TAG_empire_restoration_bloodline
+			}
+		}
+		
+	}
+}
+
+# Informed about Restoration of Rome
+narrative_event = {
+	id = IR_EMPIRE_RES_e_TAG.21
+	title = EVTNAMEIR_EMPIRE_RES_e_TAG.21
+	desc = {
+		text = EVTDESCIR_EMPIRE_RES_e_TAG.21
+		trigger = { 
+			is_alternate_start = no
+		}
+	}
+	desc = {
+		text = EVTDESCIR_EMPIRE_RES_e_TAG21_HF
+		trigger = { 
+			is_alternate_start = yes
+		}
+	}
+	
+	picture = GFX_evt_rome_restored_byzantine
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAIR_EMPIRE_RES_e_TAG.21
+		trigger = {
+			NOT = { has_landed_title = e_hre }
+		}
+	}
+	option = {
+		name = EVTOPTBIR_EMPIRE_RES_e_TAG.21
+		trigger = {
+			has_landed_title = e_hre
+		}
+		prestige = -500
+	}
+}
+
+

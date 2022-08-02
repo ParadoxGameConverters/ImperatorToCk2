@@ -18,7 +18,6 @@ CK2       - Version 3.3.4
           - The Old Gods DLC active to play Zoroastrian characters
           - Sons of Abraham DLC active to play Jewish characters
           - Rajas of India DLC active to play Eastern faith characters
-          - Holy Fury DLC active to have converted bloodlines enabled
 Java SE   - Version 16.0.2 or above installed
 
 -----

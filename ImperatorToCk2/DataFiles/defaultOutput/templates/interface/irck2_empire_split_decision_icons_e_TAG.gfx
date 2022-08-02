@@ -1,0 +1,12 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_e_TAG_split"
+		texturefile = "gfx\\interface\\decision_icon_e_TAG_split.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_irck2_e_TAG_restoration"
+		texturefile = "gfx\\interface\\decision_icon_e_TAG_restoration.tga"
+	}
+}

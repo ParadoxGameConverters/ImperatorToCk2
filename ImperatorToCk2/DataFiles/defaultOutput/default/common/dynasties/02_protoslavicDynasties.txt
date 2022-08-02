@@ -1,0 +1,162 @@
+5336008=
+{
+	name="Algelgeitis"
+	culture="protoslavic"
+}
+5336009=
+{
+	name="Algibarteitis"
+	culture="protoslavic"
+	
+}
+5336010=
+{
+	name="Algimanteitis"
+	culture="protoslavic"
+	
+}
+5336011=
+{
+	name="Alginoreitis"
+	culture="protoslavic"
+	
+}
+5336012=
+{
+	name="Daumanteitis"
+	culture="protoslavic"
+	
+}
+5336013=
+{
+	name="Dautawteitis"
+	culture="protoslavic"
+	
+}
+5336014 = {
+   name="Dauwaldeitis"
+   culture="protoslavic"
+   
+}
+5336015 = {
+   name="Dauwilteitis"
+   culture="protoslavic"
+   
+}
+
+5336016 = {
+   name="Genbuteitis"
+   culture="protoslavic"
+   
+}
+
+5336017 ={
+   name="Genmanteitis"
+   culture="protoslavic"
+   
+}
+5336018 ={
+   name="Genwilteitis"
+   culture="protoslavic"
+   
+}
+5336019 ={
+   name="Girdelgeitis"
+   culture="protoslavic"
+   
+}
+5336020 ={
+   name="Girdwilteitis"
+   culture="protoslavic"
+   
+}
+5336021 ={
+   name="Girtawteitis"
+   culture="protoslavic"
+   
+}
+5336022 ={
+   name="Giwenbuteitis"
+   culture="protoslavic"
+   
+}
+5336023 = {
+	name = "Ljaubarteitis"
+	culture = protoslavic
+}
+5336024 = {
+	name = "Ljauelgeitis"
+	culture = protoslavic
+}
+5336025 = {
+	name = "Ljaugaileitis"
+	culture = protoslavic
+}
+5336026 = {
+	name = "Ljaugirdeitis"
+	culture = protoslavic
+}
+5336027 = {
+	name = "Ljautawteitis"
+	culture = protoslavic
+}
+5336028 = {
+	name = "Mantawteitis"
+	culture = protoslavic
+}
+5336029 = {
+	name = "Mantwilteitis"
+	culture = protoslavic
+}
+5336030 = {
+	name = "Minbarteitis"
+	culture = protoslavic
+}
+5336031 = {
+	name = "Minbuteitis"
+	culture = protoslavic
+}
+5336032 = {
+	name = "Minelgeitis"
+	culture = protoslavic
+}
+5336033 = {
+	name = "Mingaileitis"
+	culture = protoslavic
+}
+5336034 = {
+	name = "Minoreitis"
+	culture = protoslavic
+}
+5336035 = {
+	name = "Skirbuteitis"
+	culture = protoslavic
+}
+5336036 = {
+	name = "Skirmanteitis"
+	culture = protoslavic
+}
+5336037 = {
+	name = "Skirwilteitis"
+	culture = protoslavic
+}
+5336038 = {
+	name = "Skirwaldeitis"
+	culture = protoslavic
+}
+5336039 = {
+	name = "Trijwaldeitis"
+	culture = protoslavic
+}
+5336040 = {
+	name = "Waisbarteitis"
+	culture = protoslavic
+}
+5336041 = {
+	name = "Waiswaldeitis"
+	culture = protoslavic
+}
+5336042 = {
+	name = "Waiswilteitis"
+	culture = protoslavic
+}

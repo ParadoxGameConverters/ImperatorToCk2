@@ -627,4 +627,477 @@ province_event = {
 	}
 }
 
+province_event = {
+	id = IR_ROM.2013
+	desc = EVTDESC_IR_ROM_2013
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = roman
+		OR = {
+			region = custom_irck2_germania
+			region = world_europe_north
+		}
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = roman
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_ROM_2013
+		culture = laessin
+	}
+}
+
+province_event = {
+	id = IR_ROM.2014
+	desc = EVTDESC_IR_ROM_2014
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = roman
+		region = custom_irck2_poland
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = roman
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_ROM_2014
+		culture = rhogian
+	}
+}
+
+province_event = {
+	id = IR_ROM.2015
+	desc = EVTDESC_IR_ROM_2015
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = roman
+		region = custom_irck2_egypt
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = roman
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_ROM_2015
+		culture = antonian
+	}
+}
+
+province_event = {
+	id = IR_ROM.2016
+	desc = EVTDESC_IR_ROM_2016
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = roman
+		region = world_india
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = roman
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_ROM_2016
+		culture = indoroman
+	}
+}
+
+province_event = {
+	id = IR_ROM.2017
+	desc = EVTDESC_IR_ROM_2017
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = roman
+		OR = { region = custom_irck2_persia region = custom_irck2_bactria }
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = roman
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_ROM_2017
+		culture = bazramani
+	}
+}
+
+province_event = {
+	id = IR_ROM.2019
+	desc = EVTDESC_IR_ROM_2019
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = roman
+		region = custom_irck2_arabia
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = roman
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_ROM_2019
+		culture = azdi
+	}
+}
+
+province_event = {
+	id = IR_ROM.2020
+	desc = EVTDESC_IR_ROM_2020
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = roman
+		region = world_africa_east
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = roman
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_ROM_2020
+		culture = nilan
+	}
+}
+
+province_event = {
+	id = IR_ROM.2021
+	desc = EVTDESC_IR_ROM_2021
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = roman
+		region = custom_irck2_montana
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = roman
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_ROM_2021
+		culture = montanan
+	}
+}
+
+province_event = {
+	id = IR_ROM.2022
+	desc = EVTDESC_IR_ROM_2022
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = roman
+		region = custom_irck2_divergence_olbia
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = roman
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_ROM_2022
+		culture = olbian
+	}
+}
+
+province_event = {
+	id = IR_ROM.2023
+	desc = EVTDESC_IR_ROM_2023
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = roman
+		OR = { region = world_africa_west region = world_africa_central }
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = roman
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_ROM_2023
+		culture = chadian
+	}
+}
+
 

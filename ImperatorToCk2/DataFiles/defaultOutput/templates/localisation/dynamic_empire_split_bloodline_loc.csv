@@ -1,0 +1,8 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+#Split
+e_TAG_empire_split_bloodline;Blood of [This.GetTitledFirstName];Blood of [This.GetTitledFirstName];Blut der [This.GetTitledFirstName];;Blood of [This.GetTitledFirstName];;;;;;;;;x
+e_TAG_empire_split_bloodline_desc;A legendary ruler of the tagEmpireName, [Root.GetTitledFirstName] famously split the hegemonic empire in half, drastically and irrevicably changing the world.;Blood of [Root.GetTitledName];Blut der [Root.GetTitledName];;Blood of [Root.GetTitledName];;;;;;;;;x
+#Reunification
+e_TAG_empire_restoration_bloodline;Blood of [This.GetTitledFirstName];Blood of [This.GetTitledFirstName];Blut der [This.GetTitledFirstName];;Blood of [This.GetTitledFirstName];;;;;;;;;x
+e_TAG_empire_restoration_bloodline_desc;Like a phoenix, [Root.GetTitledFirstName] restored the tagEmpireName from the ashes of its destruction, ushering in a new era of TAGEmpireAdj dominance.;Blood of [Root.GetTitledName];Blut der [Root.GetTitledName];;Blood of [Root.GetTitledName];;;;;;;;;x
+

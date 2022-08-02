@@ -61,3 +61,9 @@ k_IRE,k_ireland
 k_ITY,k_italy
 k_KAS,k_kashmir
 k_BAS,k_navarra
+
+#Invictus
+e_SLA,e_lechczechrus
+
+#Timeline Extender
+e_WRE,e_roman_empire_west

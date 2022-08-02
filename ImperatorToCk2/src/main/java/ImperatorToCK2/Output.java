@@ -143,7 +143,6 @@ public class Output
 
         int flag = 0;
 
-        //String date1 = "100.1.1";
         String date2 = "1066.9.15";
         out.println (date1+"={");
 
@@ -193,7 +192,6 @@ public class Output
         out.println ();
         out.flush();
         fileOut.close();
-        //System.out.println(irTAG+"_"+government+"__"+republicOption+"__"+liege+"_"+liegeGov);
 
         return convertedCharacters;
     }
@@ -266,7 +264,6 @@ public class Output
             holding2 = "castle";   
         }
 
-        //System.out.println(gov+","+convRepublic);
 
         int popNum = Integer.parseInt(pops);
         int holdingTot = 1;
@@ -411,7 +408,6 @@ public class Output
 
         int flag = 0;
 
-        //String date1 = "100.1.1";
         String date2 = "1066.9.15";
 
         out.println (date1+"={");
@@ -509,7 +505,6 @@ public class Output
                 int childID = Integer.parseInt(children.split(" ")[aq4]);
 
                 childInfo = charList.get(childID);
-                //oldlogPrint ("Child " + aq4 + " out of " + childCount);
                 child1066 = Integer.toString( 1000000 + Integer.parseInt(children.split(" ")[aq4]) );
 
                 characterCreation( child1066,  cultureOutput(childInfo[1]),  religionOutput(childInfo[2]),  childInfo[3],  childInfo[0],  childInfo[7],
@@ -577,7 +572,6 @@ public class Output
 
         int flag = 0;
 
-        //String date1 = "100.1.1";
         String tmpDate = date1.replace(".",","); //'.' character breaks .split function
         String monthDay = "." + tmpDate.split(",")[1] + "." + tmpDate.split(",")[2];
         monthDay = monthDay.replace(",",".");
@@ -1154,7 +1148,6 @@ public class Output
                 String color1 = flagSource[2];
                 String color2 = flagSource[3];
                 String emblems = flagSource[4];
-                //System.out.println(pattern+" "+emblems+" "+color1+" "+color2);
 
                 int aq3 = 0;
                 while (aq3 < flagGFXList.size()) {
@@ -1289,21 +1282,24 @@ public class Output
 
     public static void irFlagBackground(String oldName, String name, String color, String color2) throws IOException
     {
-        irFlagColor(name,oldName,color,1);
+        irFlagColor(name,oldName,color,"1");
         if (!color2.equals("none") && !oldName.contains("pattern_solid.tga")) {
             String layer2Name = name.replace(".gif","layer2.gif");
             layer2Name = layer2Name.replace(".tga","layer2.gif");
             layer2Name = layer2Name.replace(".dds","layer2.gif");
-            irFlagColor(layer2Name,oldName,"none",1);
-            irFlagColor(layer2Name,layer2Name,color2,2);
+            irFlagColor(layer2Name,oldName,"none","1");
+            irFlagColor(layer2Name,layer2Name,color2,"2");
             irFlagCombine(name,layer2Name,name);
         }
     }
 
-    public static void irFlagColor(String name, String oldName, String color, int oneOrTwo) throws IOException
+    public static void irFlagColor(String name, String oldName, String color, String oneOrTwo) throws IOException
     {
-        String replaceColor = "red";
-        if (oneOrTwo == 2) {
+        String replaceColor = oneOrTwo;
+        if (oneOrTwo.equals("1")) {
+            replaceColor = "red";
+        }
+        else if (oneOrTwo.equals("2")) {
             replaceColor = "yellow";
         }
         String[] rakalyCommand = new String [10];
@@ -1438,7 +1434,7 @@ public class Output
 
     public static void irFlagFlip(String background, String product, String dim) throws IOException //combined test
     {
-        String flipOrFlop = "-flop"; //flof for x, flip for y
+        String flipOrFlop = "-flop"; //flop for x, flip for y
         if (dim.equals("y")) {
             flipOrFlop = "-flip";
         }
@@ -1448,6 +1444,87 @@ public class Output
         rakalyCommand[2] = flipOrFlop;
         rakalyCommand[3] = product;
         Processing.fileExcecute(rakalyCommand);
+    }
+
+    public static void irFlagHue(String background, String hue, String product) throws IOException //combined test
+    {
+        String[] rakalyCommand = new String [6];
+        rakalyCommand[0] = "magick.exe";
+        rakalyCommand[1] = "convert";
+        rakalyCommand[2] = background;
+        rakalyCommand[3] = "-modulate";
+        rakalyCommand[4] = hue;
+        rakalyCommand[5] = product;
+        Processing.fileExcecute(rakalyCommand);
+    }
+    
+    public static void irFlagShadow(String shadow, String devFlagName) throws IOException //gives image a shadow, doesn't work with .gif files!
+    {
+        String[] rakalyCommand = new String [6];
+        rakalyCommand[0] = "magick.exe";
+        rakalyCommand[1] = "convert";
+        rakalyCommand[2] = devFlagName;
+        rakalyCommand[3] = "-shadow";
+        rakalyCommand[4] = "70x15+60+60";
+        rakalyCommand[5] = shadow;
+        Processing.fileExcecute(rakalyCommand);
+        irFlagCombine(shadow,devFlagName,shadow);
+    }
+    
+    public static void irFlagCombineCutout(String devFlagName,String mask,String overlay,String output) throws IOException
+    //Cuts out parts of the flag based on the mask, then fills those parts back in with the overlay
+    {
+        String[] rakalyCommand = new String [18];
+        rakalyCommand[0] = "magick.exe";
+        rakalyCommand[1] = "convert";
+        rakalyCommand[2] = devFlagName;
+        rakalyCommand[3] = "-alpha";
+        rakalyCommand[4] = "set";
+        rakalyCommand[5] = "-gravity";
+        rakalyCommand[6] = "center";
+        rakalyCommand[7] = "-extent";
+        rakalyCommand[8] = "256x256";
+        rakalyCommand[9] = mask;
+        rakalyCommand[10] = "-compose";
+        rakalyCommand[11] = "DstIn";
+        rakalyCommand[12] = "-composite";
+        rakalyCommand[13] = overlay;
+        rakalyCommand[14] = "-compose";
+        rakalyCommand[15] = "Over";
+        rakalyCommand[16] = "-composite";
+        rakalyCommand[17] = output;
+        
+        Processing.fileExcecute(rakalyCommand);
+    }
+    
+    public static void irFlagTexture(String devFlagName, String texture, String output) throws IOException //applies texture to image
+    {
+        String[] rakalyCommand = new String [8];
+        rakalyCommand[0] = "magick.exe";
+        rakalyCommand[1] = "composite";
+        rakalyCommand[2] = texture;
+        rakalyCommand[3] = devFlagName;
+        rakalyCommand[4] = "-tile";
+        rakalyCommand[5] = "-compose";
+        rakalyCommand[6] = "Hardlight";
+        rakalyCommand[7] = output;
+        
+        Processing.fileExcecute(rakalyCommand);
+    }
+    
+    public static void irFlagGlow(String shadow, String devFlagName, String color, String intensity) throws IOException //combined test
+    {
+        String[] rakalyCommand = new String [8];
+        rakalyCommand[0] = "magick.exe";
+        rakalyCommand[1] = "convert";
+        rakalyCommand[2] = devFlagName;
+        rakalyCommand[3] = "-background";
+        rakalyCommand[4] = color;
+        rakalyCommand[5] = "-shadow";
+        rakalyCommand[6] = "1000x"+intensity+"+60+60";
+        rakalyCommand[7] = shadow;
+        Processing.fileExcecute(rakalyCommand);
+        Output.irFlagCombine(shadow,devFlagName,shadow);
     }
 
     public static String getColor(String colorName,ArrayList<String[]> colorList) throws IOException
@@ -1488,7 +1565,6 @@ public class Output
     {
         ArrayList<String[]> allColors = new ArrayList<String[]>();
         ArrayList<String[]> vanillaColors = new ArrayList<String[]>();
-        //String modDir = "defaultOutput/default";
         File fileInfo = new File (defDir);
         String[] fileList = fileInfo.list();
 
@@ -1504,16 +1580,420 @@ public class Output
             String newFileName = fileName.substring(21,fileName.length());
             newFileName = outputDir + newFileName;
             if (defDir.contains ("common/cultures") || defDir.contains ("common/religions") || defDir.contains ("common/dynasties")
-            || defDir.contains ("/gfx")) {
+            || defDir.contains ("/gfx") || defDir.contains ("/localisation"))  {
                 copyRaw(fileName,newFileName);
             }
-            //else if (defDir.contains ("common/bookmarks")) {
-                
-            //}
             else {
                 output(fileName,newFileName);
             }
         }
     }
 
+    public static void dynamicSplitTemplateFill(String country, String[] loc, String[] easternEmpire, String[] westernEmpire, String eastTitle,
+    String westTitle, String capital, String tagCulture, String outputDirectory, String templateDirectory) throws IOException
+    //dynamic east/west empire split
+    {
+
+        ArrayList<String> oldFile = new ArrayList<String>();
+        oldFile = Importer.importBasicFile(templateDirectory);
+        FileOutputStream fileOut= new FileOutputStream(outputDirectory);
+        PrintWriter out = new PrintWriter(fileOut);
+
+        String empName = loc[0];
+        if (!empName.contains("Empire")) {
+            empName = loc[1] + " Empire";
+        }
+        String adjName = loc[1];
+
+        int aqq = 0;
+
+        while (aqq < oldFile.size()) {
+            if (oldFile.get(aqq).contains("e_TAG") || oldFile.get(aqq).contains("tagEmpireName") || oldFile.get(aqq).contains("eastEmpireName")
+            || oldFile.get(aqq).contains("westEmpireName") || oldFile.get(aqq).contains("TAG_capital") || oldFile.get(aqq).contains("TAGEmpireAdj")
+            || oldFile.get(aqq).contains("TAGCulture")) {
+                String imperialTag = oldFile.get(aqq).replace("e_TAG",country);
+                imperialTag = imperialTag.replace("tagEmpireName",empName);
+                imperialTag = imperialTag.replace("eastEmpireName",easternEmpire[0]);
+                imperialTag = imperialTag.replace("westEmpireName",westernEmpire[0]);
+                imperialTag = imperialTag.replace(country+"_east","e_"+eastTitle);
+                imperialTag = imperialTag.replace(country+"_west","e_"+westTitle);
+                imperialTag = imperialTag.replace("TAG_capital",capital);
+                imperialTag = imperialTag.replace("TAGEmpireAdj",adjName);
+                imperialTag = imperialTag.replace("TAGCulture",tagCulture);
+                out.println (imperialTag);
+            } else {
+                out.println (oldFile.get(aqq));
+            }
+
+            aqq = aqq + 1;
+        }
+        out.flush();
+        fileOut.close();
+    }
+
+    public static void eastWestTitle(String irTAG, String government, String capital,String rank,
+    String date1,String Directory) throws IOException
+    {
+
+        String tab = "	";
+
+        String oldDirectory = Directory;
+        Directory = Directory+"/history/titles";
+        Importer importer = new Importer();
+
+        FileOutputStream fileOut= new FileOutputStream(Directory + "/" + rank+"_" + irTAG + ".txt");
+        PrintWriter out = new PrintWriter(fileOut);
+
+        out.println (date1+"={");
+        out.println (tab+"active = no");
+        if (government.equals("imperium") && rank.equals("e")) { //If I:R government is imperial, set government to CK II imperial (roman_imperial_government)
+            out.println (tab+"law = crown_authority_2");
+            out.println (tab+"law = succ_byzantine_elective");
+            out.println (tab+"law = centralization_3");
+            out.println (tab+"law = imperial_administration");
+            out.println (tab+"law = ze_administration_laws_2");
+            out.println (tab+"law = vice_royalty_2");
+            out.println (tab+"law = revoke_title_law_1");
+            govCreation(irTAG,rank,"i",oldDirectory);
+            imperialSuccession(irTAG,rank,oldDirectory);
+        }
+        out.println ("}");
+        out.println ();
+        out.flush();
+        fileOut.close();
+    }
+
+    public static void eastWestFlagGen(String irFlag, String title, String color, String eastColor, String eastTitle,ArrayList<String[]> flagList,
+    ArrayList<String[]> colorList,String rank,String capital,ArrayList<String> modFlagGFX,String useRatio,String ck2Dir,String impGameDir,String modDirectory)
+    throws IOException
+    {
+
+        int genFlag = 0;
+        int aqq = 0;
+        int flag = 0;
+
+        String irFlagSource = "none";
+        boolean usesPNG = false;
+
+        String baseFlagDir = modDirectory+"/gfx/flags/"+rank+"_"+title+".tga";
+        String eastFlagDir = modDirectory+"/gfx/flags/"+rank+"_"+eastTitle+".tga";
+
+        while (aqq < flagList.size() && flag == 0) {
+            if (flagList.get(aqq)[0].equals(irFlag)) {
+                flag = 1;
+                String[] flagSource = flagList.get(aqq);
+                String[] flagSourceEast = flagSource;
+                String irFlagOriginal = flagSourceEast[0];
+                flagSourceEast[0] = eastTitle;
+                int aq2 = 0;
+                String emblems = flagSource[4];
+                String eastEmblems = flagSource[4];
+                String[] emblemList = emblems.split("~~");
+                String eastColorFormatted = "rgb("+eastColor+")";
+                String colorFormatted = ("rgb("+color+")");
+                int range = 15;
+                boolean changedColor = false;
+                boolean changedColorR = false;
+                ArrayList<String[]> rangeFlag = new ArrayList<String[]>();
+                ArrayList<String[]> ratioFlag = new ArrayList<String[]>(); //Used when building flag using color ratio
+                ArrayList<String[]> backgroundFlag = new ArrayList<String[]>();
+                String rangeC1 = flagSourceEast[2];
+                String rangeC2 = flagSourceEast[3];
+                String ratioC1 = flagSourceEast[2];
+                String ratioC2 = flagSourceEast[3];
+                String backgroundColor1F = Output.getColor(flagSourceEast[2],colorList);
+                String backgroundColor2F = Output.getColor(flagSourceEast[3],colorList);
+                boolean bC1IsWhite = Processing.isWithinColorRatio(backgroundColor1F,"128,128,128",range);
+                boolean bC2IsWhite = Processing.isWithinColorRatio(backgroundColor2F,"128,128,128",range);
+                if (Processing.isWithinColorRange(backgroundColor1F,("rgb("+color+")"),range)) {
+                    rangeC1 = eastColorFormatted;
+                    changedColor = true;
+                }
+                else if (Processing.isWithinColorRatio(backgroundColor1F,("rgb("+color+")"),range) && !bC1IsWhite) {
+                    ratioC1 = eastColorFormatted;
+                    changedColorR = true;
+                }
+                if (Processing.isWithinColorRange(backgroundColor2F,("rgb("+color+")"),range)) {
+                    rangeC2 = eastColorFormatted;
+                    changedColor = true;
+                }
+                else if (Processing.isWithinColorRatio(backgroundColor2F,("rgb("+color+")"),range) && !bC2IsWhite) {
+                    ratioC2 = eastColorFormatted;
+                    changedColorR = true;
+                }
+                String[] rangeFlagString = new String[5];
+                rangeFlagString[0] = eastTitle;
+                rangeFlagString[1] = flagSourceEast[1];
+                rangeFlagString[2] = rangeC1;
+                rangeFlagString[3] = rangeC2;
+                rangeFlagString[4] = eastEmblems;
+                
+                String[] ratioFlagString = new String[5];
+                ratioFlagString[0] = eastTitle;
+                ratioFlagString[1] = flagSourceEast[1];
+                ratioFlagString[2] = ratioC1;
+                ratioFlagString[3] = ratioC2;
+                ratioFlagString[4] = eastEmblems;
+                
+                String[] backgroundFlagString = new String[5];
+                backgroundFlagString[0] = eastTitle;
+                backgroundFlagString[1] = flagSourceEast[1];
+                backgroundFlagString[2] = flagSourceEast[2];
+                backgroundFlagString[3] = flagSourceEast[3];
+                backgroundFlagString[4] = eastEmblems;
+                
+                String rangeEmblems =  rangeFlagString[4];
+                String ratioEmblems =  ratioFlagString[4];
+                while (aq2 < emblemList.length) {
+                    String emblem = emblemList[aq2];
+                    if (emblem.split("~_~")[0].contains(".png")) {
+                        usesPNG = true;
+                        aq2 = aq2 + emblemList.length;
+                    }
+                    String embColor1 = emblem.split("~_~")[1];
+                    String embColor2 = emblem.split("~_~")[2];
+                    String embColor1F = Output.getColor(embColor1,colorList);
+                    String embColor2F = Output.getColor(embColor2,colorList);
+                    boolean c1IsWhite = Processing.isWithinColorRatio(embColor1F,"128,128,128",range);
+                    boolean c2IsWhite = Processing.isWithinColorRatio(embColor2F,"128,128,128",range);
+                    if (Processing.isWithinColorRange(embColor1F,colorFormatted,range)) {
+                        rangeEmblems = rangeEmblems.replace(emblem,emblem.replace(embColor1,eastColorFormatted));
+                        changedColor = true;
+                    }
+                    else if (Processing.isWithinColorRatio(embColor1F,colorFormatted,range) && !c1IsWhite) {
+                        ratioEmblems = ratioEmblems.replace(emblem,emblem.replace(embColor1,eastColorFormatted));
+                        changedColorR = true;
+                    }
+                    if (Processing.isWithinColorRange(embColor2F,colorFormatted,range)) {
+                        rangeEmblems = rangeEmblems.replace(emblem,emblem.replace(embColor2,eastColorFormatted));
+                        changedColor = true;
+                    }
+                    else if (Processing.isWithinColorRatio(embColor2F,colorFormatted,range) && !c2IsWhite) {
+                        ratioEmblems = ratioEmblems.replace(emblem,emblem.replace(embColor2,eastColorFormatted));
+                        changedColorR = true;
+                    }
+                    aq2 = aq2 + 1;
+                }
+                rangeFlagString[4] = rangeEmblems;
+                rangeFlag.add(rangeFlagString);
+                rangeFlag.add(rangeFlagString);
+                ratioFlagString[4] = ratioEmblems;
+                ratioFlag.add(ratioFlagString);
+                ratioFlag.add(ratioFlagString);
+                if (!changedColor) {
+                    if (changedColorR && !usesPNG) { //Try rebuilding flag using color ratio rather then color range
+                        genFlag = generateFlag(ck2Dir,impGameDir,rank,ratioFlag,eastTitle,eastTitle,colorList,modFlagGFX,modDirectory);
+                    } else {
+                        backgroundFlagString[2] = eastColorFormatted;
+                        backgroundFlagString[4] = eastEmblems;
+                        backgroundFlag.add(backgroundFlagString);
+                        backgroundFlag.add(backgroundFlagString);
+                        changedColorR = false;
+                    }
+                }
+
+                if (changedColor) {
+                    genFlag = generateFlag(ck2Dir,impGameDir,rank,rangeFlag,eastTitle,eastTitle,colorList,modFlagGFX,modDirectory);
+                } else {
+                    genFlag = generateFlag(ck2Dir,impGameDir,rank,backgroundFlag,eastTitle,eastTitle,colorList,modFlagGFX,modDirectory);
+                }
+                flagSource[0] = irFlagOriginal;
+
+            }
+            aqq = aqq + 1;
+        }
+
+        if (genFlag == 0) {
+            Output.copyFlag(ck2Dir,modDirectory,rank,capital,eastTitle);
+        }
+        if (usesPNG || genFlag == 0) {
+            if (eastTitle.contains("east")) {
+                Output.irFlagHue(eastFlagDir,"100,100,33.3",eastFlagDir);
+            }
+        }
+    }
+    
+    public static void splitBloodlineEmbGen(String ck2Dir, String irDirectory, String rank, ArrayList<String[]> flagList, String tag, String flagID,
+    ArrayList<String[]> colorList, ArrayList<String> flagGFXList, String modDirectory)
+    throws IOException
+    {
+
+        int flagCreated = 0; //if flag is successfully created, change to 1
+        //output[2] format = hsvOrRgb,r g b
+        //output[3] format = hsvOrRgb,r g b
+        // output[4] format is texture~_~color1~_~color2~_~scale~_~position~_~rotation~~(nextEmblem)
+        int aqq = 1;
+        int flag = 0;
+        boolean usesPNG = false;
+        boolean hasOnlyBorders = true;
+        boolean isBrightBackground = false;
+        String ck2Tag = rank+"_"+tag;
+        String devFlagName = "defaultOutput/flagDev/bloodlines_symbol_"+ck2Tag+"_splitDev.gif";
+        String shadowFlagName = "defaultOutput/flagDev/bloodlines_symbol_"+ck2Tag+"_splitDevShadow.tga";
+        String flagName = modDirectory+"/gfx/interface/bloodlines/bloodlines_symbol_"+ck2Tag+"_split.tga";
+        String lineGFX = "defaultOutput/templates/gfx/interface/SplitLine04.tga";
+        
+        String glowFlagName = "defaultOutput/flagDev/bloodlines_symbol_"+ck2Tag+"_restoredDevShadow.tga";
+        String glowFlagName2 = "defaultOutput/flagDev/bloodlines_symbol_"+ck2Tag+"_restoredDevShadow2.tga";
+        String glowFlagName3 = "defaultOutput/flagDev/bloodlines_symbol_"+ck2Tag+"_restoredDevShadow3.tga";
+        String glowFlagName4 = "defaultOutput/flagDev/bloodlines_symbol_"+ck2Tag+"_restoredDevShadow4.tga";
+        String flagNameR = modDirectory+"/gfx/interface/bloodlines/bloodlines_symbol_"+ck2Tag+"_restored.tga";
+        
+        while (aqq < flagList.size() && flag == 0) {
+            if (flagList.get(aqq)[0].equals(flagID)) {
+                flag = 1; //end loop
+                String[] flagSource = flagList.get(aqq);
+                if (flagSource[1].equals("pattern_horizontal_split_02.tga")) {
+                    flagSource[1] = "pattern_horizontal_split_01.tga";
+                } else if (flagSource[1].equals("pattern_horizontal_split_01.tga")) {
+                    flagSource[1] = "pattern_horizontal_split_02.tga";
+                }
+                String pattern = irDirectory + "/game/gfx/coat_of_arms/patterns/" + "pattern_solid.tga";
+                String color1 = flagSource[2];
+                String color2 = flagSource[3];
+                String emblems = flagSource[4];
+                
+                isBrightBackground = Processing.isBright(getColor(color1,colorList),200);
+
+                int aq3 = 0;
+                while (aq3 < flagGFXList.size()) {
+                    if (flagGFXList.get(aq3).contains(flagSource[1])) {
+                        pattern = flagGFXList.get(aq3);
+                        aq3 = flagGFXList.size();
+                    }
+                    aq3 = aq3 + 1;
+                }
+
+                irFlagBackground(pattern,devFlagName,"None","None");
+
+                String[] emblemList = emblems.split("~~");
+                int aq2 = 0;
+                while (aq2 < emblemList.length) {
+                    String[] emblem = emblemList[aq2].split("~_~");
+                    String eTexture = irDirectory+"/game/gfx/coat_of_arms/colored_emblems/"+emblem[0];
+                    String eColor1 = emblem[1];
+                    String eColor2 = emblem[2];
+                    String eScale = emblem[3];
+                    String ePos = emblem[4];
+                    String eRot= emblem[5];
+                    String eNameOld = "defaultOutput/flagDev/emblem"+aq2+"Old"+".gif";
+                    String eName = "defaultOutput/flagDev/emblem"+aq2+".gif";
+
+                    int aq4 = 0;
+                    while (aq4 < flagGFXList.size()) {
+                        if (flagGFXList.get(aq4).contains(emblem[0])) {
+                            eTexture = flagGFXList.get(aq4);
+                            aq4 = flagGFXList.size();
+                        }
+                        aq4 = aq4 + 1;
+                    }
+                    
+                    if (eTexture.contains(".png")) {
+                        usesPNG = true;
+                        aq2 = aq2 + emblemList.length;
+                    }
+
+                    eColor1 = getColor(eColor1,colorList);
+                    if (!eColor2.equals("none")) {
+                        eColor2 = getColor(eColor2,colorList);
+                    }
+
+                    if (!emblem[0].contains("ce_border_")) { //Don't include borders onto flag GFX
+                        irFlagEmblem(eTexture,eNameOld,eColor1,eColor2,eName,eScale,eRot,ePos,devFlagName);
+                        hasOnlyBorders = false;
+                    }
+                    aq2 = aq2+1;
+                }
+                if (aq2 != 0 && !usesPNG && !hasOnlyBorders) {
+                    flagCreated = 1; //Flag has been created
+                }
+            }
+
+            aqq = aqq + 1;
+
+        }
+        
+        if (flagCreated != 1) {
+            String oldFlagName = modDirectory+"/gfx/flags/"+ck2Tag+".tga";
+            File oldFlagFile = new File(oldFlagName);
+            boolean oldFlag = true;
+            if (!oldFlagFile.exists()) { //TAGs converted to existing titles don't copy that title's flag to the mod files
+                oldFlagName = ck2Dir+"/gfx/flags/"+ck2Tag+".tga";
+                oldFlag = false;
+            }
+            String circleMaskName = "defaultOutput/templates/gfx/interface/CircleMask.gif";
+            String greyMaskName = "defaultOutput/templates/gfx/interface/greyMask.gif";
+            String transparantOverlay256_256 = "defaultOutput/templates/gfx/interface/transparant256_256.gif";
+            lineGFX = "defaultOutput/templates/gfx/interface/SplitLine05.tga";
+            irFlagScaleExact(oldFlagName,devFlagName,"256","256");
+            if (!usesPNG || !oldFlag) {
+                irFlagFlip(devFlagName,devFlagName,"y");
+            }
+            irFlagTexture(devFlagName,greyMaskName,devFlagName);
+            irFlagCombineCutout(devFlagName,circleMaskName,transparantOverlay256_256,devFlagName);
+        }
+        
+        irFlagGlow(glowFlagName,devFlagName,"yellow","15");
+        irFlagGlow(glowFlagName2,devFlagName,"rgb(254,254,180)","5");
+        irFlagGlow(glowFlagName3,devFlagName,"gold","5");
+        String glow4 = "black";
+        if (isBrightBackground) {
+            glow4 = "yellow";
+        }
+        irFlagGlow(glowFlagName4,devFlagName,glow4,"5");
+        irFlagCombine(glowFlagName,glowFlagName2,glowFlagName);
+        irFlagCombine(glowFlagName,glowFlagName3,glowFlagName);
+        irFlagCombine(glowFlagName,glowFlagName4,glowFlagName);
+        
+        irFlagScaleExact(glowFlagName,flagNameR,"96","93"); //create final .tga flag, scale to bloodline icon size 96x93
+        
+        irFlagCombine(devFlagName,lineGFX,devFlagName);
+        irFlagShadow(shadowFlagName,devFlagName);
+        irFlagScaleExact(shadowFlagName,flagName,"96","93"); //create final .tga flag, scale to bloodline icon size 96x93
+
+    }
+    
+    public static void eastWestDecisionIcon(String country,String modDirectory) throws IOException
+    {
+        String iconDevName = "defaultOutput/flagDev/iconDev"+country+".gif";
+        String iconTemplateName = "defaultOutput/templates/gfx/interface/decision_icon_e_TAG_split.gif";
+        String shadowFlagName = "defaultOutput/flagDev/bloodlines_symbol_"+country+"_splitDevShadow.tga";
+        String iconName = modDirectory+"/gfx/interface/decision_icon_"+country+"_split.tga";
+        irFlagScaleExact(shadowFlagName,iconDevName,"26","26");
+        irFlagCombine(iconTemplateName,iconDevName,iconName);
+        
+    }
+    
+    public static void eastWestRestorationIcon(String country,String irFlag,ArrayList<String[]> flagList,String ck2Dir,String modDirectory)
+    throws IOException
+    {
+        String iconDevName = "defaultOutput/flagDev/iconRestorationDev"+country+".gif";
+        String iconTemplateName = "defaultOutput/templates/gfx/interface/decision_icon_e_TAG_restoration.gif";
+        String devFlagName = modDirectory+"/gfx/flags/"+country+".tga";
+        File devFlagFile = new File(devFlagName);
+        String iconName = modDirectory+"/gfx/interface/decision_icon_"+country+"_restoration.tga";
+        if (!devFlagFile.exists()) { //TAGs converted to existing titles don't copy that title's flag to the mod files
+            String sourceFlagName = ck2Dir+"/gfx/flags/"+country+".tga";
+            irFlagFlip(sourceFlagName,iconDevName,"y"); //CK2-sourced flags get flipped, unflips flag
+            devFlagName = iconDevName;
+        } else { //Check to see if flag was converted from I:R. If not, unflip
+            int aqq = 0;
+            boolean hasFlag = false;
+            while (aqq < flagList.size()) {
+                if (flagList.get(aqq)[0].equals(irFlag)) {
+                    hasFlag = true;
+                    aqq = flagList.size() +1;
+                }
+                aqq = aqq + 1;
+            }
+            if (!hasFlag) { //CK2-sourced flags get flipped, unflips flag
+                irFlagFlip(devFlagName,iconDevName,"y");
+            }
+        }
+        irFlagScaleExact(devFlagName,iconDevName,"24","20");
+        irFlagCombine(iconTemplateName,iconDevName,iconName);
+        
+    }
+
 }
+
