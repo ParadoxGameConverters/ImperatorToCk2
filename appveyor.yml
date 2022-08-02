@@ -4,24 +4,18 @@ image: Visual Studio 2022
 configuration: Release
 build_script:
 - cmd: >-
-   git submodule update --init --recursive
+    git submodule update --init --recursive
 
-   msbuild -m ImperatorToCK2.sln /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
-   
-   cd ImperatorToCk2
-   
-   mvn package
-   
-   cp target/ImperatorToCK2.jar ../Release/ImperatorToCK2
-   
-   mkdir ../latest
-   
-   cp ../Release ../latest
+    msbuild -m ImperatorToCK2.sln /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll" cd ImperatorToCk2
+
+    mvn package
+
+    cp target/ImperatorToCK2.jar ../Release/ImperatorToCK2
 
 artifacts:
 - path: Release
   name: ImperatorToCK2-0.1Assyrian
-- path: latest
+- path: Release
   name: ImperatorToCK2-latest
 deploy:
 - provider: GitHub
