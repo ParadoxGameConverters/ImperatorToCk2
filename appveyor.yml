@@ -13,11 +13,15 @@ build_script:
    mvn package
    
    cp target/ImperatorToCK2.jar ../Release/ImperatorToCK2
+   
+   mkdir ../latest
+   
+   cp ../Release ../latest
 
 artifacts:
 - path: Release
   name: ImperatorToCK2-0.1Assyrian
-- path: Release
+- path: latest
   name: ImperatorToCK2-latest
 deploy:
 - provider: GitHub
