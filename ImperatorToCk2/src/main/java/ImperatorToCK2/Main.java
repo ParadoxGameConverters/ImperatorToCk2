@@ -34,7 +34,7 @@ public class Main
             throw new RuntimeException("Problems with creating the log files");
         }
 
-        LOGGER.info("Converter version 0.2A \"Belgae\" - compatible with Imperator: Rome 1.3-2.0 and Crusader Kings II 3.3");
+        LOGGER.info("Converter version 0.2B \"Belgae\" - compatible with Imperator: Rome 1.3-2.0 and Crusader Kings II 3.3");
         LOGGER.finest("0%");
 
         long startTime = System.nanoTime(); //Starts the converter clock, used to tell how much time has passed
