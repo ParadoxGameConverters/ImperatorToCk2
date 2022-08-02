@@ -26,6 +26,8 @@ deploy:
   repository: ParadoxGameConverters/ImperatorToCk2
   artifact: ImperatorToCK2
   force_update: true
+  on:
+    branch: master
 - provider: GitHub
   release: latest
   description: Imperator to CK2 Version - latest
@@ -34,3 +36,5 @@ deploy:
   repository: ParadoxGameConverters/ImperatorToCk2
   artifact: ImperatorToCK2
   force_update: true
+  on:
+    branch: master
