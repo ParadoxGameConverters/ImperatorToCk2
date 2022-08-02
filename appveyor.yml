@@ -16,23 +16,21 @@ build_script:
 
 artifacts:
 - path: Release
-  name: ImperatorToCK2-0.1Assyrian
-- path: Release
-  name: ImperatorToCK2-latest
+  name: ImperatorToCK2
 deploy:
 - provider: GitHub
   release: 0.1Assyrian
   description: Imperator to CK2 Version 0.1 - Assyrian
   auth_token:
-    secure: x+rt6bMRW6SU5WAf7gkW6+TUtjtIP8eGKh/hlaoqm90PJSBdao9YLfOSkxGyHPTXRpt+ZuSZJCqhd4wQOrmLzejgoHHQHqg24KbE269Y/uY=
+    secure: LBJzs4y9j0N5y0ajp7gmVk3Pvnec1UU5pTCdIMbQYUddEXQnWTJ79FXsd9SCs7YQ
   repository: ParadoxGameConverters/ImperatorToCk2
-  artifact: ImperatorToCK2-0.1Assyrian
+  artifact: ImperatorToCK2
   force_update: true
 - provider: GitHub
   release: latest
   description: Imperator to CK2 Version - latest
   auth_token:
-    secure: x+rt6bMRW6SU5WAf7gkW6+TUtjtIP8eGKh/hlaoqm90PJSBdao9YLfOSkxGyHPTXRpt+ZuSZJCqhd4wQOrmLzejgoHHQHqg24KbE269Y/uY=
+    secure: LBJzs4y9j0N5y0ajp7gmVk3Pvnec1UU5pTCdIMbQYUddEXQnWTJ79FXsd9SCs7YQ
   repository: ParadoxGameConverters/ImperatorToCk2
-  artifact: ImperatorToCK2-latest
+  artifact: ImperatorToCK2
   force_update: true
