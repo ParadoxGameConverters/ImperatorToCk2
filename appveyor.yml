@@ -19,8 +19,8 @@ artifacts:
   name: ImperatorToCK2
 deploy:
 - provider: GitHub
-  release: 0.1Assyrian
-  description: Imperator to CK2 Version 0.1 - Assyrian
+  release: 0.2Belgae
+  description: Imperator to CK2 Version 0.2 - Belgae
   auth_token:
     secure: LBJzs4y9j0N5y0ajp7gmVk3Pvnec1UU5pTCdIMbQYUddEXQnWTJ79FXsd9SCs7YQ
   repository: ParadoxGameConverters/ImperatorToCk2
