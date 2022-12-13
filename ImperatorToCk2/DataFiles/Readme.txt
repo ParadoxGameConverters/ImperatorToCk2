@@ -58,7 +58,7 @@ The When The World Stopped Making Sense (WtWSMS) mod team for allowing the conve
 WtWSMS mod Steam link: https://steamcommunity.com/sharedfiles/filedetails/?id=1247380029
 WtWSMS mod Forum link: https://forum.paradoxplaza.com/forum/forums/when-the-world-stopped-making-sense-mod.876/
 An Indo-Rome Mod: Renovatio Imperii by Fritz™ XII for allowing the converter to use many of its events, decisions, GFX, and flavor for the Indo-Roman culture. The mod can be found on Steam.
-Indo-Rome Mod: Renovatio Imperii Steam link: https://steamcommunity.com/sharedfiles/filedetails/?id=2843200203
+An Indo-Rome Mod: Renovatio Imperii Steam link: https://steamcommunity.com/sharedfiles/filedetails/?id=2843200203
 
  - AND ALL THE OTHERS WHO GAVE THEIR INPUT ON THE FORUM AND DISCORD -
  
