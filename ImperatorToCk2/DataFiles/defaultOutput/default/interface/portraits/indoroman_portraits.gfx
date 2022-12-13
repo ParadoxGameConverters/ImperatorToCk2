@@ -1,0 +1,224 @@
+
+spriteTypes = {
+	# Male
+	
+	spriteType = {
+		name = "GFX_indoroman_male_clothes_behind"
+		texturefile = "gfx\\characters\\indoroman_portraits\\indoroman_male_clothes_behind.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_indoroman_male_headgear_behind"
+		texturefile = "gfx\\characters\\indoroman_portraits\\indoroman_male_headgear_behind.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+	
+		spriteType = {
+		name = "GFX_indoroman_male_clothes"
+		texturefile = "gfx\\characters\\indoroman_portraits\\indoroman_male_clothes.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+	
+	spriteType = {
+		name = "GFX_indoroman_male_headgear"
+		texturefile = "gfx\\characters\\indoroman_portraits\\indoroman_male_headgear.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+	
+	spriteType = {
+		name = "GFX_indoroman_male_headgear_mid"
+		texturefile = "gfx\\characters\\indoroman_portraits\\indoroman_male_headgear_mid.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+		
+	spriteType = {
+		name = "GFX_indoromanchamp_male_headgear"
+		texturefile = "gfx\\characters\\indoroman_portraits\\indoromanchamp_male_headgear.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+		
+	spriteType = {
+		name = "GFX_indoromanchamp_male_clothes"
+		texturefile = "gfx\\characters\\indoroman_portraits\\indoromanchamp_male_clothes.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+	
+		spriteType = {
+		name = "GFX_indoromanchamp_male_headgear_behind"
+		texturefile = "gfx\\characters\\indoroman_portraits\\indoromanchamp_male_headgear_behind.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+	
+	spriteType = {
+		name = "GFX_indoromancelestial_male_headgear"
+		texturefile = "gfx\\characters\\indoroman_portraits\\indoromancelestial_male_headgear.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+		
+	spriteType = {
+		name = "GFX_indoromancelestial_male_clothes"
+		texturefile = "gfx\\characters\\indoroman_portraits\\indoromancelestial_male_clothes.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+	spriteType = {
+		name = "GFX_indoromancelestial_male_clothes_behind"
+		texturefile = "gfx\\characters\\indoroman_portraits\\indoromancelestial_male_clothes_behind.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+	
+		spriteType = {
+		name = "GFX_indoromancelestial_male_headgear_behind"
+		texturefile = "gfx\\characters\\indoroman_portraits\\indoromancelestial_male_headgear_behind.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+	
+	spriteType = {
+		name = "GFX_indoromanaugustus_male_clothes"
+		texturefile = "gfx\\characters\\indoroman_portraits\\indoromanaugustus_male_clothes.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+	
+	spriteType = {
+		name = "GFX_indoromanaugustus_male_clothes_behind"
+		texturefile = "gfx\\characters\\indoroman_portraits\\indoromanaugustus_male_clothes_behind.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+	
+		spriteType = {
+		name = "GFX_indoromandiadem_male_headgear"
+		texturefile = "gfx\\characters\\indoroman_portraits\\indoromandiadem_male_headgear.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+	
+	spriteType = {
+		name = "GFX_indoromandiadem_male_headgear_behind"
+		texturefile = "gfx\\characters\\indoroman_portraits\\indoromandiadem_male_headgear_behind.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+	
+	portraitType = {
+		effectFile = "gfx/FX/portrait.lua"
+		name = "PORTRAIT_indo_roman_celestial_male_clothing_male"
+		
+		weight = {
+			additive_modifier = {
+                value = 1000000
+                portrait_clothing = yes
+				OR = {
+					portrait_has_trait = celestial_augustus
+				}
+			}
+		}
+		
+		layer = { 
+			"GFX_indoromancelestial_male_clothes_behind:p3:c0"
+			"GFX_indoromancelestial_male_headgear_behind:p5:c1"
+			"GFX_indoroman_male_headgear_mid:p5:c3"	
+			"GFX_indoromancelestial_male_headgear:p5:c5"
+			"GFX_indoromancelestial_male_clothes:p3:c2"
+		}
+		
+		# Correct rank
+		allow_property_values = {
+		5 = { portrait_has_trait = celestial_augustus }
+		}
+	}
+	
+		portraitType = {
+		effectFile = "gfx/FX/portrait.lua"
+		name = "PORTRAIT_indo_roman_diadem_clothing_male"
+		
+		weight = {
+			additive_modifier = {
+                value = 1000000
+                portrait_clothing = yes
+				portrait_has_trait = indo_roman_augustus
+			}
+		}
+		
+		layer = { 
+			"GFX_indoromandiadem_male_headgear_behind:p5:c1"
+			"GFX_indoromandiadem_male_headgear:p5:c5"
+			"GFX_indoromanaugustus_male_clothes:p3:c2"
+			"GFX_indoromanaugustus_male_clothes_behind:p3:c0"
+		}
+		
+		# Correct rank
+		allow_property_values = {
+		5 = { portrait_has_trait = indo_roman_augustus }
+		}
+	}
+	
+	portraitType = {
+		effectFile = "gfx/FX/portrait.lua"
+		name = "PORTRAIT_indo_roman_male_clothing_male"
+		
+		weight = {
+			additive_modifier = {
+                value = 1000000
+                portrait_clothing = yes
+				OR = {
+					portrait_has_trait = praetorian_ultra
+				}
+			}
+		}
+		
+		layer = { 
+			"GFX_indoroman_male_clothes_behind:p3:c0"
+			"GFX_indoroman_male_headgear_behind:p5:c1"
+			"GFX_indoroman_male_headgear_mid:p5:c3"	
+			"GFX_indoroman_male_headgear:p5:c5"
+			"GFX_indoroman_male_clothes:p3:c2"
+		}
+		
+		# Correct rank
+		allow_property_values = {
+		5 = { portrait_has_trait = praetorian_ultra }
+		}
+	}
+	
+		portraitType = {
+		effectFile = "gfx/FX/portrait.lua"
+		name = "PORTRAIT_indo_roman_champ_male_clothing_male"
+		
+		weight = {
+			additive_modifier = {
+                value = 1000000
+                portrait_clothing = yes
+				OR = {
+					portrait_has_trait = indoroman_champ
+				}
+			}
+		}
+		
+		layer = { 
+			"GFX_indoroman_male_clothes_behind:p3:c0"
+			"GFX_indoromanchamp_male_headgear_behind:p5:c1"
+			"GFX_indoroman_male_headgear_mid:p5:c3"	
+			"GFX_indoromanchamp_male_headgear:p5:c5"
+			"GFX_indoromanchamp_male_clothes:p3:c2"
+		}
+		
+		# Correct rank
+		allow_property_values = {
+		5 = { portrait_has_trait = indoroman_champ }
+		}
+	}
+	}

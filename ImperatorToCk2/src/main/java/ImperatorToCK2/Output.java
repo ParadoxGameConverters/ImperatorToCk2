@@ -1579,6 +1579,12 @@ public class Output
             String fileName = fileInfo.getPath();
             String newFileName = fileName.substring(21,fileName.length());
             newFileName = outputDir + newFileName;
+            String folder = fileInfo.getParent();
+            folder = outputDir + folder.substring(21,folder.length());
+            File folderFile = new File (folder);
+            if (!folderFile.exists()) { //if folders don't exist, make them
+                folderFile.mkdirs();
+            }
             if (defDir.contains ("common/cultures") || defDir.contains ("common/religions") || defDir.contains ("common/dynasties")
             || defDir.contains ("/gfx") || defDir.contains ("/localisation"))  {
                 copyRaw(fileName,newFileName);
@@ -1996,4 +2002,3 @@ public class Output
     }
 
 }
-

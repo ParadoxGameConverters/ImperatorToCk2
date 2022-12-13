@@ -1,0 +1,17 @@
+RETTYPE_CAT_ELEPHANT = 
+{
+	first_type = 6
+	first_amount = 100
+	
+	special_troops = war_elephants
+	
+	potential = {
+		is_nomadic = no
+		culture = romanoindian
+	}
+	
+	modifier = {
+		war_elephants_offensive = 0.25
+		war_elephants_defensive = 0.45
+	}
+}

@@ -25,7 +25,7 @@ irck2_convert_to_romano_african;Embrace Eifrican Culture;Embrace Eifrican Cultur
 irck2_convert_to_palmyrene;Embrace Palmyrene Culture;Embrace Palmyrene Culture;Embrace Palmyrene Culture;;Embrace Palmyrene Culture;;;;;;;;;x
 irck2_convert_to_laessin;Embrace Lässin Culture;Embrace Lässin Culture;Embrace Lässin Culture;;Embrace Lässin Culture;;;;;;;;;x
 irck2_convert_to_bazramani;Embrace Bazramani Culture;Embrace Bazramani Culture;Embrace Bazramani Culture;;Embrace Bazramani Culture;;;;;;;;;x
-irck2_convert_to_indoroman;Embrace Indo-Roman Culture;Embrace Indo-Roman Culture;Embrace Indo-Roman Culture;;Embrace Indo-Roman Culture;;;;;;;;;x
+irck2_convert_to_romanoindian;Embrace Indo-Roman Culture;Embrace Indo-Roman Culture;Embrace Indo-Roman Culture;;Embrace Indo-Roman Culture;;;;;;;;;x
 irck2_convert_to_azdi;Embrace Azdi Culture;Embrace Azdi Culture;Embrace Azdi Culture;;Embrace Azdi Culture;;;;;;;;;x
 irck2_convert_to_nilan;Embrace Nilan Culture;Embrace Nilan Culture;Embrace Nilan Culture;;Embrace Nilan Culture;;;;;;;;;x
 irck2_convert_to_antonianEmbrace Antonian Culture;Embrace Antonian Culture;Embrace Antonian Culture;;Embrace Antonian Culture;;;;;;;;;x
@@ -39,7 +39,7 @@ irck2_convert_to_romano_african_desc;You and your unlanded Roman relatives conve
 irck2_convert_to_palmyrene_desc;You and your unlanded Roman relatives convert to Palmyrene Culture;You and your unlanded Roman relatives convert to Palmyrene Culture;You and your unlanded Roman relatives convert to Palmyrene Culture;;You and your unlanded Roman relatives convert to Palmyrene Culture;;;;;;;;;x
 irck2_convert_to_laessin_desc;You and your unlanded Roman relatives convert to Lässin Culture;You and your unlanded Roman relatives convert to Lässin Culture;You and your unlanded Roman relatives convert to Lässin Culture;;You and your unlanded Roman relatives convert to Lässin Culture;;;;;;;;;x
 irck2_convert_to_bazramani_desc;You and your unlanded Roman relatives convert to Bazramani Culture;You and your unlanded Roman relatives convert to Bazramani Culture;You and your unlanded Roman relatives convert to Bazramani Culture;;You and your unlanded Roman relatives convert to Bazramani Culture;;;;;;;;;x
-irck2_convert_to_indoroman_desc;You and your unlanded Roman relatives convert to Indo-Roman Culture;You and your unlanded Roman relatives convert to Indo-Roman Culture;You and your unlanded Roman relatives convert to Indo-Roman Culture;;You and your unlanded Roman relatives convert to Indo-Roman Culture;;;;;;;;;x
+irck2_convert_to_romanoindian_desc;You and your unlanded Roman relatives convert to Indo-Roman Culture;You and your unlanded Roman relatives convert to Indo-Roman Culture;You and your unlanded Roman relatives convert to Indo-Roman Culture;;You and your unlanded Roman relatives convert to Indo-Roman Culture;;;;;;;;;x
 irck2_convert_to_azdi_desc;You and your unlanded Roman relatives convert to Azdi Culture;You and your unlanded Roman relatives convert to Azdi Culture;You and your unlanded Roman relatives convert to Azdi Culture;;You and your unlanded Roman relatives convert to Azdi Culture;;;;;;;;;x
 irck2_convert_to_nilan_desc;You and your unlanded Roman relatives convert to Nilan Culture;You and your unlanded Roman relatives convert to Nilan Culture;You and your unlanded Roman relatives convert to Nilan Culture;;You and your unlanded Roman relatives convert to Nilan Culture;;;;;;;;;x
 irck2_convert_to_antonian_desc;You and your unlanded Roman relatives convert to Antonian Culture;You and your unlanded Roman relatives convert to Antonian Culture;You and your unlanded Roman relatives convert to Antonian Culture;;You and your unlanded Roman relatives convert to Antonian Culture;;;;;;;;;x
@@ -129,6 +129,9 @@ irck2_create_e_france;Create Francia;Create Francia;Machen Frankreich;;Create Fr
 irck2_create_e_france_desc;Create Francia;Create Francia;Machen Frankreich;;Create Francia;;;;;;;;;x
 irck2_create_e_spain;Create Hispania;Create Hispania;Machen Hispanien;;Create Hispania;;;;;;;;;x
 irck2_create_e_spain_desc;Create Hispania;Create Hispania;Machen Hispanien;;Create Hispania;;;;;;;;;x
+irck2_create_e_indo_roman_empire;Create the Indo-Roman Empire;Create the Indo-Roman Empire;Machen der Indorömanische Reich;;Create the Indo-Roman Empire;;;;;;;;;x
+irck2_create_e_indo_roman_empire_desc;Create the Indo-Roman Empire;Create the Indo-Roman Empire;Machen der Indorömanische Reich;;Create the Indo-Roman Empire;;;;;;;;;x
+irck2_create_e_indo_roman_empire_tooltip;You will acquire the Indo-Roman Imperial government form.;You will acquire the Indo-Roman Imperial government form.;You will acquire the Indo-Roman Imperial government form.;;You will acquire the Indo-Roman Imperial government form.;;;;;;;;;x
 
 #Kingdoms
 irck2_create_k_dacia;Create Wallachia;Create Wallachia;Machen Wallachien;;Create Wallachia;;;;;;;;;x
@@ -137,3 +140,4 @@ irck2_create_k_dacia_desc;Create Wallachia;Create Wallachia;Machen Wallachien;;C
 
 
 
+ÿ

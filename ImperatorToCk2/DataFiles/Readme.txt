@@ -18,6 +18,7 @@ CK2       - Version 3.3.4
           - The Old Gods DLC active to play Zoroastrian characters
           - Sons of Abraham DLC active to play Jewish characters
           - Rajas of India DLC active to play Eastern faith characters
+          - The Republic DLC active to play Merchant Republics
 Java SE   - Version 16.0.2 or above installed
 
 -----
@@ -56,6 +57,8 @@ comagoosie                            - librakaly save melter
 The When The World Stopped Making Sense (WtWSMS) mod team for allowing the converter to use their content, their mod can be found either on Steam or their forum thread.
 WtWSMS mod Steam link: https://steamcommunity.com/sharedfiles/filedetails/?id=1247380029
 WtWSMS mod Forum link: https://forum.paradoxplaza.com/forum/forums/when-the-world-stopped-making-sense-mod.876/
+An Indo-Rome Mod: Renovatio Imperii by Fritz™ XII for allowing the converter to use many of its events, decisions, GFX, and flavor for the Indo-Roman culture. The mod can be found on Steam.
+Indo-Rome Mod: Renovatio Imperii Steam link: https://steamcommunity.com/sharedfiles/filedetails/?id=2843200203
 
  - AND ALL THE OTHERS WHO GAVE THEIR INPUT ON THE FORUM AND DISCORD -
  

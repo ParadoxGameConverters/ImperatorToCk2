@@ -1,0 +1,49 @@
+praetorian_ultra = {
+	martial = 1
+	diplomacy = 1
+	intrigue = 3
+	
+	combat_rating = 5 #old value: 2
+	
+	same_opinion = 10
+	
+	customizer = yes
+	random = no
+}
+
+indoroman_champ = {
+	martial = 1
+	diplomacy = 1
+        monthly_character_prestige = 0.35
+	
+	combat_rating = 5
+	
+	same_opinion = 5
+	
+	customizer = no
+	random = no
+}
+
+indo_roman_augustus = {
+	customizer = no
+	
+	vassal_opinion = 5
+	monthly_character_prestige = 0.4
+	random = no
+	
+	male_compliment = COMPL_AUGUSTUS
+	female_compliment = COMPL_AUGUSTUS
+}
+
+celestial_augustus = {
+	customizer = no
+	
+	vassal_opinion = 5
+	monthly_character_prestige = 0.5
+	random = no
+	
+	male_compliment = COMPL_AUGUSTUS
+	female_compliment = COMPL_AUGUSTUS
+}
+
+

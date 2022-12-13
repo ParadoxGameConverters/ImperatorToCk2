@@ -1,0 +1,40 @@
+spriteTypes = {
+  spriteType = {
+    name = "GFX_summon_india_rome"
+    texturefile = "gfx\\interface\\decision_icon_go_insane.dds"
+  }
+   spriteType = {
+    name = "GFX_form_praetorians_india"
+    texturefile = "gfx\\interface\\decision_icon_indo_praetorians.dds"
+  }
+    spriteType = {
+    name = "GFX_form_knights_of_saint_thomas"
+    texturefile = "gfx\\interface\\decision_icon_form_knights_of_thomas.dds"
+  }
+  
+    spriteType = {
+    name = "GFX_employ_hero_of_rome"
+    texturefile = "gfx\\interface\\decision_icon_recruit_hero.dds"
+  }
+  
+    spriteType = {
+    name = "GFX_reform_comitatenses"
+    texturefile = "gfx\\interface\\decision_icon_reform_comitatenses.dds"
+  }
+  spriteType = {
+    name = "GFX_employ_a_roman_sculptor"
+    texturefile = "gfx\\interface\\decision_icon_commission_roman_portrait.dds"
+  }
+  spriteType = {
+    name = "GFX_acquire_stabby_spatha"
+    texturefile = "gfx\\interface\\decision_icon_acquire_stabby.dds"
+  }
+  spriteType = {
+    name = "GFX_icon_indoroman_imperial_government"
+    texturefile = "gfx\\interface\\indo_roman_imperial_government.dds"
+  }
+  spriteType = {
+    name = "GFX_irck2_create_e_indo_roman_empire"
+    texturefile = "gfx\\interface\\decision_icon_go_insane.dds"
+  }
+}

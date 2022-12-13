@@ -1,0 +1,41 @@
+bloodofwalakrios= {
+	inheritance = patrilineal
+        romanoindian_opinion = 5
+        greek_opinion = 5
+        plot_power_modifier = 0.10
+	allow_bastards = yes
+	picture = GFX_bloodlines_symbol_bloodthirsty
+	flags = { bloodline_heroes bloodline_faster_roman }
+}
+
+bloodofbritanon= {
+	inheritance = patrilineal
+	learning = 2
+	intrigue = 1
+	monthly_character_prestige = 0.15
+	health = 0.2
+	allow_bastards = yes
+	picture = GFX_bloodlines_symbol_stoics
+	flags = { bloodline_heroes }
+}
+
+bloodofsheogorath= {
+	inheritance = patrilineal
+        romanoindian_opinion = 8
+	bloodline_effect_great_heroes_appear = 1
+	combat_rating = 4
+	health = 0.1
+	allow_bastards = yes
+	picture = GFX_bloodlines_symbol_roman
+	flags = { bloodline_heroes bloodline_faster_roman }
+}
+
+bloodofarvidhektorios= {
+	inheritance = patrilineal
+	bloodline_effect_great_heroes_appear = 1
+	combat_rating = 10
+	martial = 1
+	allow_bastards = yes
+	picture = GFX_bloodlines_symbol_roman
+	flags = { bloodline_heroes bloodline_faster_roman }
+}

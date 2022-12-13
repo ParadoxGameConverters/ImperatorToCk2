@@ -183,6 +183,79 @@ decisions = {
 			set_global_flag = irck2_e_spain_formed
 		}
 	}
+	
+	irck2_create_e_indo_roman_empire = {
+		is_high_prio = yes
+		only_independent = yes
+		ai_check_interval = 60
+
+		potential = {
+			e_indo_roman_empire = {
+				has_holder = no
+			}
+			OR = {
+				culture = romanoindian
+			}
+			NOT = {
+				has_alternate_start_setting = {
+					setting = dejure
+					value = random
+				}
+			}
+		}
+		allow = {
+			independent = yes
+			war = no
+			NOT = { trait = incapable }
+			#has_landed_title = k_france
+			#custom_tooltip = { #has at least 1 kingdom tier title
+				#text = empire_india_TT
+				any_demesne_title = {
+					tier = KING
+				}
+			#}
+			#prestige = 1000
+			realm_size = 150
+		}
+		effect = {
+			prestige = 500
+			custom_tooltip = {
+				text = irck2_create_e_indo_roman_empire_tooltip
+				primary_title = {
+					e_indo_roman_empire = {
+					#	copy_title_laws = PREV
+						copy_title_history = PREV
+					}
+				}
+			}
+			grant_title = e_indo_roman_empire
+			any_demesne_title = {
+				limit = {
+					tier = KING
+				}
+				de_jure_liege = e_indo_roman_empire
+				#destroy_landed_title = THIS
+			}
+			if = {
+				limit = { has_nickname = no }
+				give_nickname = nick_dogdays
+			}
+			if = {
+				#limit = {
+				#	has_dlc = "Holy Fury"
+				#}
+				create_bloodline = {
+				type = bloodofsheogorath
+				}
+				new_bloodline = {
+				set_description = "bloodofsheogorath_desc"
+				}
+			}
+			add_artifact = crown_indoroman
+			add_artifact = spatha_tier_3_sheogorath
+			set_global_flag = irck2_e_indo_roman_empire_formed
+		}
+	}
 
 
 #####################################

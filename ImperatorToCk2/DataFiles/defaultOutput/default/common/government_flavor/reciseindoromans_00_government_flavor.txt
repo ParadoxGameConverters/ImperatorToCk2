@@ -1,0 +1,54 @@
+government_flavor = {
+	name = gov_indoroman_imperial_government
+	graphics = GFX_evt_victory_arch_byzantine
+	priority = 3
+	trigger = {
+		is_landed = yes
+		OR = {
+		AND = {
+			has_landed_title = e_indo_roman_empire
+			government = indoroman_imperial_government
+		}
+		AND = {
+			has_landed_title = k_walakrios_expedition
+			government = indoroman_imperial_government
+		}
+		AND = {
+			has_landed_title = k_western_expedition
+			government = indoroman_imperial_government
+		}
+		AND = {
+			has_landed_title = e_orientis
+			government = indoroman_imperial_government
+		}
+		}
+	}	
+}
+government_flavor = {
+	name = gov_britannican_tributary_horde
+	graphics = GFX_evt_mongols
+	priority = 4
+	trigger = {
+		is_landed = yes
+		has_landed_title = e_britannica
+		government = indoroman_imperial_government
+	}	
+}
+government_flavor = {
+	name = gov_army_of_tourists
+	graphics = GFX_evt_chinese_emissary
+	priority = 4
+	trigger = {
+		OR = {
+		AND = {
+		is_landed = no
+		has_landed_title = k_western_expedition
+		government = indoroman_imperial_government
+	}
+		AND = {
+		is_landed = no
+		has_landed_title = k_walakrios_expedition
+		government = indoroman_imperial_government
+	}
+	}	
+}

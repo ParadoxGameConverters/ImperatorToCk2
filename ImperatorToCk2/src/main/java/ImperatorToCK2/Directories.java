@@ -1,4 +1,4 @@
-package ImperatorToCK2;     
+package ImperatorToCK2;       
 
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -151,4 +151,3 @@ public class Directories
     }
 
 }
-

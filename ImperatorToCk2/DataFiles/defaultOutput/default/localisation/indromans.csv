@@ -1,0 +1,406 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+indoromename;Indo-Roman Empire's Name;;;;;;;;;x
+indoromenamedefault_text;Indo-Roman Empire;x
+indoromenamedefault_desc;The Indo-Roman Empire's name will remain unchanged.;x
+
+RULE_GROUP_INDO_ROME;Indo-Rome Related Rules;;;;;;;;;;;
+
+indoromenamesaegoria_text;Saegorian Empire;x
+indoromenamesaegoria_desc;The Indo-Roman Empire will take on the name of its de-facto founder, Saegorius.;x
+
+indoromenamevietia_text;Vieti Empire;x
+indoromenamevietia_desc;The Indo-Roman Empire will be named after the Romano-Vieti peoples.;x
+
+indoromenameindia_text;Indian Empire;x
+indoromenameindia_desc;The Indo-Roman Empire will simply be known as the Empire of India.;x
+
+indoromenameyindu_text;Yindu Empire;x
+indoromenameyindu_desc;The Indo-Roman Empire will be known as the Yindu Empire.;x
+
+indoromenamejustrome_text;Roman Empire;x
+indoromenamejustrome_desc;The Indo-Roman Empire will simply be known as Rome. Maybe Saegorius wasn't as crazy as we thought?;x
+
+indoromenamebigredblob_text;Big Red Blob;x
+indoromenamebigredblob_desc;The Indo-Roman Empire will be known as the Big Red Blob. It isn't exactly subtle, but it gets the message across.;x
+
+indoromenameromalan_text;Romalan Empire;x
+indoromenameromalan_desc;The Indo-Roman Empire will be known as the Romalan Empire.;x
+
+nick_dogdays;the Dog Days;x
+nick_lion_of_the_west;the Lion of the West;x
+
+
+e_indo_roman_empire;Indo-Roman Empire;;;;;;;;;x
+e_indo_roman_empire_adj;Indo-Roman;;;;;;;;;x
+d_latin_praetorians;Praetorian Guard;;;;;;;;;x
+d_indo_praetorians;Yindu Praetorian Guard;;;;;;;;;x
+k_walakrios_expedition;Eastern Expedition;;;;;;;;;x
+k_walakrios_expedition_adj;Eastern Expeditionary;;;;;;;;;x
+k_western_expedition;Western Expedition;;;;;;;;;x
+k_western_expedition_adj;Western Expeditionary;;;;;;;;;x
+e_orientis;Orientis;;;;;;;;;x
+e_orientis_adj;Orientis;;;;;;;;;x
+e_britannica;Britanniclaw;;;;;;;;;x
+e_britannica_adj;Britannican;;;;;;;;;x
+d_vieti_seniores;Vieti Seniores;;;;;;;;;x
+d_vieti_seniores_adj;Vieti Seniore;;;;;;;;;x
+d_solromalus;Solromalus;;;;;;;;;x
+d_solromalus_adj;Solromalan;;;;;;;;;x
+d_occiromalus;Occiromalus;;;;;;;;;x
+d_occiromalus_adj;Occiromalan;;;;;;;;;x
+d_maria;Maria;;;;;;;;;x
+d_maria_adj;Marian;;;;;;;;;x
+d_syrica;Syrica;;;;;;;;;x
+d_syrica_adj;Syrican;;;;;;;;;x
+d_western_dominium;the Dominium;;;;;;;;;x
+d_western_dominium_adj;Dominate;;;;;;;;;x
+d_fidellia;Fidellia;;;;;;;;;x
+d_fidellia_adj;Fidellian;;;;;;;;;x
+k_yindu_dominium;Bengallica;;;;;;;;;x
+k_yindu_dominium_adj;Bengallic;;;;;;;;;x
+d_kalvarea;Kalvarea;;;;;;;;;x
+d_kalvarea_adj;Kalvarean;;;;;;;;;x
+d_arcadi_upper;Upper Arcadi;;;;;;;;;x
+d_arcadi_upper_adj;Upper Arcadian;;;;;;;;;x
+d_arcadi;Arcadi;;;;;;;;;x
+d_arcadi_adj;Arcadian;;;;;;;;;x
+k_arcadi;Arcadi;;;;;;;;;x
+k_arcadi_adj;Arcadian;;;;;;;;;x
+k_vietia;Vietia;;;;;;;;;x
+k_vietia_adj;Vietian;;;;;;;;;x
+k_romala;Romala;;;;;;;;;x
+k_romala_adj;Romalan;;;;;;;;;x
+RETTYPE_CAT_ELEPHANT;Elephant Cataphract;x
+gov_indoroman_imperial_government;Indo-Roman Autocracy;x
+gov_britannican_tributary_horde;Autocratic Taxation Khaganate;x
+gov_army_of_tourists;Aristocratic Expedition;x
+EVTNAMEindoromans;The Eastern Romans?;x
+EVTDESCindoromans;Rumors spread from the silk road, about an unfathomably large army descending upon Hindustan from around and even through the Arakanese mountains. This massive army speaks in a butchered manner of old Latin, wearing elaborate jewelry with the markings of both the cross and the eagle. They are led by a man who was supposedly driven mad by the heat of the stars. Their motives are unknown. Their legions, massive.;x
+indoromanone;But that's ridiculous!;x
+indoromantwo;Surely there must be some truth to these rumors...;x
+summon_india_rome;Summon The Indo-Roman Empire;x
+summon_india_rome_desc;Summon The Indo-Roman Empire;x
+form_praetorians_india;Reform The Praetorian Guard;x
+form_praetorians_india_desc;Our old Vieti Praetorian guard has fattened itself under the indiligent management of the old prefects. If the guard's prestigious position is to be maintained, it must be placed back under the direct authority of the Emperor. The Praetorians must be soldiers and loyalists, instead of politicians and landholders.;x
+indoroman_invasion_desc;The rightful territories of the empire must be unified!;x
+britannican_invasion_desc;The rightful territories of the empire must be unified!;x
+westindoroman_invasion_desc;The rightful territories of the empire must be unified!;x
+praetorian_ultra;Praetorian Ultra;x
+praetorian_ultra_desc;This character is a veteran of the Praetorian Guard.;x
+indoroman_champ;Eques Defensor;x
+indoroman_champ_desc;This character is part of an elite Indo-Roman caste of politicians and commanders.;x
+d_knights_of_saint_thomas;Knights of Saint Thomas;;;;;;;;;x
+form_knights_of_saint_thomas;Form the Knights of Saint Thomas;x
+form_knights_of_saint_thomas_desc;Form the Knights of Saint Thomas;x
+employ_hero_of_rome;Commend A Roman Hero;x
+employ_hero_of_rome_desc;Commend A Roman Hero;x
+indo_roman_augustus;Augustus;x
+indo_roman_augustus_desc;This character is the current ruler of the Indo-Roman Empire and commands the respect an office of such magnitude is due.;x
+celestial_augustus;Celestial Augustus;x
+celestial_augustus_desc;This character is the current ruler of the Celestial Romano-Han Empire and commands the respect you'd expect an office born of the two greatest imperial legacies in history would be owed.;x
+bloodofarvidhektorios;Blood of Arvid 'the Hunter' Makela;x
+bloodofarvidhektorios_desc;A mighty warrior and loyal servant of Rome, Arvid 'Hektorios Abenitatus' travelled across the known world and fought alongside Saegorius and the Romano-Vieti.;x
+bloodofwalakrios;Blood of Walakrios 'the Gambler';x
+bloodofwalakrios_desc;An unpredictable, slippery and willful Praetorian, Walakrios earned a reputation among the Latin fundamentalists as a competent leader with many unorthodox ideas.;x
+bloodofsheogorath;Blood of [This.GetFirstName] 'Ultimus Romanorum';x
+bloodofsheogorath_desc;A long-lived madman and mighty warlord, [Root.GetDynName] unified the Romano-Vieti people under the Labarum, leading a massive army into the Indian subcontinent.;x
+bloodofbritanon;Blood of Britannicus 'the Scythian';x
+bloodofbritanon_desc;A veteran toxotai from the initial invasion, Britannicus has a reputation for a shrewd yet detached manner of politicking, envying the free and 'peaceful' lifestyle of the nomads.;x
+crown_indoroman;Turban Diadem;x
+crown_indoroman_desc;The crown forged by [Root.GetTitledFirstName] symbolizing [Root.GetHersHis] vision of great imperial conquest, a melding of East and West. Typically worn with an Eastern style Turban to represent this union. A magnificent symbol of Roman and Indian prestige, a crown only fit for the True heirs of Rome.;x
+reform_comitatenses;Reform The Comitatenses;x
+reform_comitatenses_desc; ;x
+#romanoindian;Indo-Roman;x
+walakriotic_proto_texts;Field-Journal of Walakrios;x
+walakriotic_proto_texts_desc;A book containing all the fascinating facts and struggles of life for a Legatus in the Orient, as well as an intriguing selection of seemingly unorthodox questions and observations about the nature of life, death, morality, and even God himself.;x
+spatha_tier_1_new;Spatha;x
+spatha_tier_1_new_desc;A well crafted spatha.;x
+spatha_tier_2_new;Spatha;x
+spatha_tier_2_new_desc;A spatha crafted by a grandmaster.;x
+spatha_tier_3_walakrios;Tyrantseeker;x
+spatha_tier_3_walakrios_desc;A sinister glint reflects off of the blade of this well-sharpened sword.;x
+spatha_tier_3_cold;Fieldtaker;x
+spatha_tier_3_cold_desc;A calm and sharp weapon for a calm and sharp leader.;x
+spatha_tier_3_sheogorath;Invicta;x
+spatha_tier_3_sheogorath_desc;The legendary sword of the Indo-Roman [Root.GetTitledFirstName].;x
+indoroman_prev_emperor_sculpture_mastercraft;Magnificent Sculpture of [From.OriginalOwner.GetFirstName] [From.OriginalOwner.GetOnlyDynastyName];x
+indoroman_prev_emperor_sculpture_mastercraft_desc;The level of careful detail and effort put into this magnificent sculpture of [From.OriginalOwner.GetFirstName] clearly puts it up to the standards of even the finest Roman artifacts of old.;x
+indoroman_prev_emperor_sculpture_decent;Sculpture of [From.OriginalOwner.GetFirstName] [From.OriginalOwner.GetOnlyDynastyName];x
+indoroman_prev_emperor_sculpture_decent_desc;A decently crafted sculpture of [From.OriginalOwner.GetFirstName] [From.OriginalOwner.GetOnlyDynastyName].;x
+indoroman_prev_emperor_sculpture_lowquality;Hideous Sculpture of [From.OriginalOwner.GetFirstName] [From.OriginalOwner.GetOnlyDynastyName];x
+indoroman_prev_emperor_sculpture_lowquality_desc;A barely recognizable sculpture of [From.OriginalOwner.GetFirstName] [From.OriginalOwner.GetOnlyDynastyName].;x
+employ_a_roman_sculptor;Commission a Sculpture;x
+employ_a_roman_sculptor_desc; ;x
+acquire_stabby_spatha;Acquire a Spatha;x
+acquire_stabby_spatha_desc; ;x
+title_indoroman_champion;Imperial Defensor;x
+title_indoroman_champion_desc;Imperial Defensors are trained to be competitive and competent in equal measure. Often serving as diplomats and warlords answering directly to the Indo-Roman Emperor.;x
+title_indoroman_personal_praetorian;Personal Praetorian;x
+title_indoroman_personal_praetorian_desc;Personal Praetorians are the presumably loyal elite bodyguards of the Emperor.;x
+title_romanoindian_magister_militum;Magister Militum;x
+title_romanoindian_magister_militum_desc;Magister Militum: Latin for "Master of Soldiers" was a top-level military command used in the later Roman Empire, acting as a senior military officer, only second to the Emperor.;x
+title_indo_roman_food_taster;Food Taster;Goûteur;Vorkoster;;Catador;;;;;;;;;x
+title_indo_roman_food_taster_desc;Food tasters have the dubious pleasure of trying all dishes before their master has a bite...;Le goûteur jouit du plaisir aléatoire de tester tous les plats avant que ceux-ci ne soient servis à son maître...;Vorkoster haben das fragwürdige Vergnügen, alle Speisen zu probieren, bevor ihr Herr den ersten Bissen nimmt...;;Los catadores tienen el dudoso placer de catar todos los platos antes de que su amo los pruebe...;;;;;;;;;x
+title_romanoindian_anthypatos;Proconsul;x
+title_romanoindian_anthypatos_desc; ;x
+title_romanoindian_caesar;Caesar;x
+title_romanoindian_caesar_desc; ;x
+title_romanoindian_hypatos;Consul;x
+title_romanoindian_hypatos_desc; ;x
+title_romanoindian_patrikios;Patrician;x
+title_romanoindian_patrikios_desc; ;x
+indoroman_imperial_government;Indo-Roman Imperial;
+indoroman_imperial_government_desc;An Imperial government differs from its feudal counterpart by placing a larger focus on urban areas and a centralized court whose influence deeply affects internal politics. Councilors and Commanders hold a varying degree of influence, depending on their prestige and competence, which they can use to support or oppose the official heir of the Empire...;
+EVTNAMEireevntten;Victory in the west!;x
+EVTDESCireevntten;I have completed the great migration into the Yindu lands. After much conflict and cooperation with the the so-called 'son of heaven' in the Empire of Serica, the children of Rome have once more found themselves a land to call their own. Already, from our new capital of Romalus, expeditions are being planned by my generals to carve a path west, north, and even back east.;x
+ireevntten.1;Let the generals have their fantasies, but the west is mine!;x
+ireevntten.2;May [Root.Religion.GetRandomGodName] bless Britannicus' expedition!;x
+ireevntten.3;Perhaps Walakrios' expedition will actually do some good for the empire...;x
+ireevntten.4;There will be no expeditions! Not until we've consolidated our gains!;x
+ir_finish_off_the_west;The remaining free Indian realms will be §Rinvaded immediately§W.;x
+ir_join_britanon;Britannicus goes to conquer the §gnorthern steppe nomads§W.;x
+ir_join_hektorios;Hektorios goes to conquer one of the §Mwestern regions§W.;x
+ir_hektorios1;You will invade Persia, making it a permanent target for your expedition.;x
+ir_hektorios2;You will invade Arabia, making it a permanent target for your expedition.;x
+ir_hektorios3;You will invade Eastern Africa, making it a permanent target for your expedition.;x
+ir_join_hektorios_persia;§RThis option will attract the attention of minor Vieti adventurers, causing the ranks of your expedition to swell slightly.§W;x
+ir_join_wally;Walakrios will travel to §Ythe Chinese Empire§W.;x
+ir_and_you_with_him;§FAnd you go with him...§W;x
+ir_sad_generals;Your starry-eyed generals are disappointed.;x
+ir_sad_hektorios;Hektorios is disappointed, mumbling something in a foreign tongue as he walks away with his head low.;x
+ir_disable_expeditions;There will be no §YIndo-Roman Expeditions...§W;x
+ir_the_bureaucrat_is_impressed;The bureaucrat raises an eyebrow, idly twirling his mustache as he does so. He slowly nods in acknowledgement, gesturing the translator to leave the two of you.;x
+ir_flattered_generals;Your generals and legions will not forget your confidence in them.;x
+ir_east_weast;East? I thought you said Weast.;x
+ir_rescue_the_child;You rescue the child, wandering around the city and attempting to locate their parents for some time.;x
+ir_rescue_the_child_latinizer;You initially scoff at the child, as any self-respecting sneering imperialist would.;x
+ir_rescue_the_child_latinizer_2;§YBut what if...§W;x
+ir_rescue_the_child_latinizer_3;§YI could Romanize them?§W;x
+ir_rescue_the_child_latinizer_4;§YSurely that would prove the superiority of our culture, yes?§W;x
+ir_rescue_the_child_latinizer_5;§YYes.§W;x
+ir_rescue_the_child_latinizer_6;§YThis is a brilliant plan.§W;x
+ir_rescue_the_child_latinizer_7;§YI will Romanize the population of China.§W;x
+ir_rescue_the_child_latinizer_8;§YAll of them!§W;x
+ir_rescue_the_child_latinizer_9;§YEvery last one!§W;x
+ir_rescue_the_child_latinizer_10;§YI will teach them all to speak Latin!§W;x
+ir_rescue_the_child_latinizer_11;§RThe [offmap_china.Ruler.Culture.GetName] language will be wiped off of China!§W;x
+ir_rescue_the_child_latinizer_12;§RHahahahaha! Yes!§W;x
+ir_rescue_the_child_latinizer_13;§RYes! Yes! Yes! Yes! Yes! Yes! Yes! Yes! Yes! Yes! Yes! Yes! Yes! Yes! Yes! Yes!§W;x
+ir_han_city_falls;The city falls!;x
+ir_we_defend_successfully;The [offmap_china.Ruler.Culture.GetName] forces are repelled!;x
+ir_we_attack_successfully;The [offmap_china.Ruler.Culture.GetName] forces are defeated!;x
+ir_invasion_continue;The invasion can continue.;x
+ir_failure_not_an_option;§RFailure is not an option.§W;x
+ir_oof_ow_owie;You're hit with several arrows.;x
+ir_your_surgeons;§RYour surgeons will struggle to mend your injuries.§W;x
+ir_courtiers_dislike_ambition;§RYour Expedition will not be pleased by your sudden pretendership.§W;x
+ir_raider_ending;You and your legions return west, with a tremendous bounty of loot, slaves, and even some pandas.;x
+ir_your_generals_learn;You explain to your officers that you intend to surpass if not outright conquer the Indo-Roman Empire. Each of your officers reacting differently.;x
+ir_your_generals_dont_learn;The young officer skeptically squints at you for a moment, before reluctantly nodding in apology for speaking out of turn.;x
+ir_cadius_sacrifice;Cadius confidently and unquestioningly leads his men on a charge, seemingly oblivious to the fact that the maneuver will almost certainly lead to the slaughter of his entire unit.;x
+ir_chinese_strat;You mix Chinese and Roman strategy to ensure your victory.;x
+
+ir_and_so_the_courier_who_cheated_death;You return to the west, and never look back.;x
+
+ir_give_china_to_the_child;You go west to carve out your own celestial kingdom, leaving the east in the hands of one of your most loyal generals, and your adopted [wallyheir.GetSonDaughter].;x
+
+ir_true_ending;You proclaim yourself first Celestial Augustus of the §LHeavenly Oriental Imperium§W.;x
+
+ir_your_journey_ends;§RThis will be the end of your legendary journey.§W;x
+
+ir_gaming_against_the_emperor;The [offmap_china.Ruler.Culture.GetName] [offmap_china.Ruler.GetEmperorEmpress] kicks your ass at weiqi.;x
+ir_gaming_against_the_emperor_trait;You have a satisfying game of  weiqi against the [offmap_china.Ruler.Culture.GetName] [offmap_china.Ruler.GetEmperorEmpress].;x
+
+EVTNAMEireevnteleven;The Eastern Expedition;x
+EVTDESCireevnteleven;With the lands before the Indus firmly under Roman control, I've organized an expedition of some of my comrades from the guard, as well as some fellow veterans from the original conquests. Our destiny will be found not in the lands beyond the Arakanese, but in the celestial realm under heaven. May its treasures enrich our coffers, and may its trials strengthen our legions.;x
+ireevnteleven.1;To the Orient! Carpe diem!;x
+ireevnteleven.2;On second thought , let's not go to China. 'Tis a silly place.;x
+
+
+EVTNAMEireevnttwelve;The Eastern Expedition;x
+EVTDESCireevnttwelve;With our expedition on the move, we'll need to figure out which route we'll be taking back into the celestial realm. Some of my generals are already in the process of figuring out a relatively safe albeit slow path to the Chinese Empire, while some of my other generals are advocating that we go back the way we came, through the hills and mountains. Though the final decision falls on me.;x
+ireevnttwelve.1;Through the mountains. What could go wrong?;x
+ireevnttwelve.2;There's no rush. we'll take our time to find a better route.;x
+ireevntfifteen.1;Rome is no stranger to foreign auxilia I suppose...;x
+ireevntfifteen.2;Can you teach me Chinese strategy perchance?;x	
+ireevntfifteen.3;You and your men would be better off serving the might of Rome!;x
+ireevntfifteen.4;You're mistaken, my good man! My legions need no protection but their spathas.;x
+
+madman_of_deccan;Madman of Deccan;x
+
+vieti_seniores_massacred;Vieti Seniores Massacred;x
+vieti_seniores_massacred_desc;This character recklessly sacrificed his entire retinue of elite Vieti Seniores in an attempt to ensure his own victory!;x
+
+admires_roman_confidence;Admires Roman Confidence;x
+
+
+distrusts_the_chinese;Distrusts the Chinese;x
+
+romanoindian_opinion;Indo-Roman Opinion;x
+
+
+
+EVTNAMEireevntsixteen;The Eastern Expedition;x
+EVTDESCireevntsixteen;Our caravan of expeditionary troops has been marching nonstop these past few days. Our troops are clearly tired, and the sun is beginning to set. It's about time I gave the order to make camp for the night. My generals are already having sudes set up around the encampment.;x
+ireevntsixteen.1;This would be a good opportunity to continue my writings.;x
+ireevntsixteen.2;I guess I should learn more about Han dialect...;x
+ireevntsixteen.3;Julian said that he was a fan of board games, didn't he?;x
+
+EVTNAMEireevntseventeen;The Eastern Expedition;x
+EVTDESCireevntseventeen;As the expedition inches ever closer to the Chinese capital, I've been occupying myself by writing down my own personal thoughts and questions into my journal. Questions that the priests in Romalus would not have allowed me to openly ask. Being able to think freely about the divine, without listening to dogmatic ramblings from our most corrupt preachers, truly a breath of fresh air.;x
+EVTDESCireevntseventeen_B;As the expedition inches ever closer to the Chinese capital, I've been occupying myself by learning more about the various foreign tongues and dialects that one encounters while travelling across the silk road. So many different peoples with so many different manners of speech... The world truly is a big place. My eyes have been opened to sheer scale of mankind.;x
+EVTDESCireevntseventeen_C;As the expedition inches ever closer to the Chinese capital, I've been occupying myself by playing board games with Julian and his officers. Comradeship of this degree was unheard of up until now... Our tent guards even started placing bets on our drunken skirmishes! Even Cadius tried to join us, before he broke down in a fit after reading through one of the introductory guidebooks.;x
+ireevntseventeen.1;Ecce homo. Cogito, ergo sum.;x
+ireevntseventeen.2;The descendants of Adam are too numerous to count.;x
+ireevntseventeen.3;I didn't have the heart to tell him that were still two more...;x
+
+EVTNAMEireevnteighteen;The Eastern Expedition;x
+EVTDESCireevnteighteen;The journey deep into the heart of China has already proven to be one of the greatest decisions of my life. I have not known such a wondrous feeling of personal freedom since before Saegorius first gained dominion over the Viet. Not only that, but me and my men no longer need to fear for the consequences of speaking freely against the eccentricities of our ostensibly genius Imperator.;x
+ireevnteighteen.1;I'm starting to wonder about him...;x
+
+EVTNAMEireevntnineteen;The Eastern Expedition;x
+EVTDESCireevntnineteen;The farther we get from the Saegorian Empire, the clearer I feel my head becoming. Without the Emperor's mad ramblings, I'm beginning to realise just how ridiculous the original objectives of our western incursion actually were. Surely Saegorius didn't think our horde would maintain enough organization and momentum to thunder itself all the way back to Italia, right?;x
+ireevntnineteen.1;That's ridiculous! It's surprising we even got this far.;x
+
+EVTNAMEireevnttwenty;The Eastern Expedition;x
+EVTDESCireevnttwenty;Come to think of it... Aside from the admittedly monumentous achievement of politically unifying the disparate and divided Romano-Vieti, Emperor Saegorius has displayed himself to be an unreasonable, and even outright deranged leader of men. He promised to lead us back to Rome and Our Sea, but now he has already settled himself in his new capital among the Yindus...;x
+ireevnttwenty.1;His promises were false! All lies! This was his plan from the start!;x
+ireevnttwenty.2;Perhaps the 'Emperor' was just a really lucky madman after all...;x
+ireevnttwenty.3;Mad or not, his achievements cannot be denied, He is Ultimus Romanorum!;x
+
+EVTNAMEireevnttwentyone;The [offmap_china.GetFullName];x
+EVTDESCireevnttwentyone;Our expedition has finally reached one of the great cities of the [offmap_china.GetFullName]. The Middle Kingdom's beautiful and oriental architecture, a stark contrast to our well-maintained yet still clearly foreign traditional arms and armor. The bulk of our force stands outside the city, almost as if preparing for a siege, though the [offmap_china.Ruler.GetEmperorEmpress] has surely been keeping track of our movements.;x
+ireevnttwentyone.1;Then [offmap_china.Ruler.GetSheHe] knows I come with peaceful intentions.;x
+ireevnttwentyone.2;Ready the onagers. Prepare for a [offmap_china.Ruler.Culture.GetName] response. I want this city.;x
+
+EVTNAMEireevnttwentytwo;The [offmap_china.GetFullName];x
+EVTDESCireevnttwentytwo;I am brought into a room alongside two of my elite Vieti Seniores. Before me sits a Chinese bureaucrat, with what I presume to be a translator standing beside him. The bureaucrat nods to the translator, gesturing him to begin the introductions.;x
+ireevnttwentytwo.1;Let's begin.;x
+ireevnttwentytwo.2;We won't be needing a translator, my lord, I can speak the [offmap_china.Ruler.Culture.GetName] tongue.;x
+
+
+EVTNAMEireevnttwentythree;The [offmap_china.GetFullName];x
+EVTDESCireevnttwentythree;'You may bring forth your proposal, and the [offmap_china.Ruler.GetChineseComplimentAdjective] [offmap_china.Ruler.GetTitle] will generously consider it.' The minister strokes his chin, awaiting my next action as though we were playing a board game.;x
+ireevnttwentythree.1;Rome desires trade with the [offmap_china.Ruler.GetTitle].;x
+ireevnttwentythree.2;Give me men and supplies, and I'll give your [offmap_china.Ruler.GetTitle] the Yindus.;x
+
+EVTNAMEireevnttwentyfive;The Eastern Expedition's Return;x
+EVTDESCireevnttwentyfive;That treasonous dog, Walakrios! He's marching back to Romalus with an army of disloyal Vieti Comitatenses and Chinese mercenaries! Even now, his expedition intends to ravage our new capital and bring us back to a dark age of Han inferiority! He must be stopped!;x
+EVTDESCireevnttwentyfive_B;It appears Walakrios and his expedition were not a waste of resources after all! Even now, his expedition returns to the capital with a mutually beneficial trade deal with the good [offmap_china.Ruler.GetTitle] of [offmap_china.GetFullName]! It seems that our good relations with the son of Heaven will continue even in the Yindu lands.;x
+EVTDESCireevnttwentyfive_C;It appears Walakrios and his expedition were not a waste of resources after all! Even now, his expedition returns to the capital with a legendary bounty of loot from deep within the Chinese heartland! The treasures of the Orient flow into our lands. The madman and his legions even brought back several caged pandas!;x
+ireevnttwentyfive.1;The sons of Rome will plant the labarum upon his corpse!;x
+ireevnttwentyfive.2;Heroes of Rome, one and all!;x
+
+EVTNAMEireevnttwentysix;The Eastern Invasion;x
+EVTDESCireevnttwentysix;In spite of my best efforts, the [offmap_china.Ruler.Culture.GetName] city continues to stubbornly resist our siege weapons. I have already lost several good centuries of men trying to scale the walls. The inhabitants have proven themselves far more dogged than initially thought...;x
+EVTDESCireevnttwentysix_B;After much preparation and several failed scalings of the walls, the city has finally fallen to Roman arms. With this city under our control, the invasion of the east against the [offmap_china.Ruler.Culture.GetName] can finally be undertaken in earnest. The war for the Dragon Throne begins;x
+ireevnttwentysix.1;Hopefully the city will fall before the Imperial army arrives...;x
+ireevnttwentysix.2;Alea Iacta Est. This land is Roman.;x
+
+EVTNAMEireevntquasitwentyseven;The Eastern Invasion;x
+EVTDESCireevntquasitwentyseven;With the city conquered, I feel renewed confidence now that my army has a fort to call their own, even if we did some damage to the walls during the siege. I've given orders to my Vieti Seniores to patrol the streets to minimize looting and arrest any potential Imperial spies.;x
+ireevntquasitwentyseven.1;Have the infantry refortify the walls. The Imperial army will soon be upon us.;x
+
+EVTNAMEireevnttwentyseven;The Eastern Invasion;x
+EVTDESCireevnttwentyseven;While walking through the empty streets, I encounter a small distressed child, tearfully babbling to me in the [offmap_china.Ruler.Culture.GetName] tongue. I look around, only seeing the patrols of my trusted veterans maintaining order among the ranks and locals alike.;x
+EVTDESCireevnttwentyseven_B;While walking through the empty streets, I encounter a small distressed [offmap_china.Ruler.Culture.GetName] child, tearfully pleading with me to help find their parents. Ever since I learned the [offmap_china.Ruler.Culture.GetName] tongue, I've been sobered by the realisation that they're human as I am.;x
+ireevnttwentyseven.1;I can't waste time talking to locals. I need to get to the citadel.;x
+ireevnttwentyseven.2;If only we could teach it to speak Latin...;x
+ireevnttwentyseven.3;I can't promise that we'll find your parents, but we'll try.;x
+
+
+EVTNAMEireevnttwentyeight;The Eastern Invasion;x
+EVTDESCireevnttwentyeight;I'm discussing our strategy against the oncoming [offmap_china.Ruler.Culture.GetName] army with my generals while my newly adopted [wallyheir.GetSonDaughter] wanders around the room while wearing my helmet. Details on our tactics and plans are discussed in full. Suddenly, a relatively young commander by our standards, raises his hand, asking a single strange question. 'Legatus, what exactly are we fighting for here?';x
+EVTDESCireevnttwentyeight_B;I'm discussing our strategy against the oncoming [offmap_china.Ruler.Culture.GetName] army with my generals. Details on our tactics and plans are discussed in full. My officers seem satisfied by my grand strategy to win this war. However, one of them, a relatively young commander by our standards, raises his hand, asking a single strange question. 'Legatus, what exactly are we fighting for here?';x
+ireevnttwentyeight.1;An empire to surpass the old Rome obviously! What are you implying?;x
+ireevnttwentyeight.2;Truthfully? An empire to surpass the Saegorian Rome.;x
+
+EVTNAMEireevnttwentynine;The Eastern Invasion;x
+EVTDESCireevnttwentynine;The massive [offmap_china.Ruler.Culture.GetName] army arrives, its forces surrounding the city from all sides. I know this battle will not be an easy one. Should we fail to repel this army, we will certainly be annihilated. Even if we hold them off, I'm not sure how we'll turn the tide against this massive force... Perhaps I didn't think this plan through as much as I thought I did...;x
+ireevnttwentynine.1;We hold the walls, no matter what comes.;x
+ireevnttwentynine.2;There is a tactic I could employ, but it would undoubtedly cost us the seniores.;x
+
+EVTNAMEireevntthirty;The Eastern Invasion;x
+EVTDESCireevntthirty;We repel assault after assault, but the [offmap_china.Ruler.Culture.GetName] army is persistent and organized. Their leaders are aggressive and coordinated. We are eventually pushed back to the citadel, and soon even our elite Vieti Seniores are slaughtered to a man. I am eventually forced to hurl myself over the walls to evade capture, shattering one of my legs and fleeing with the few other survivors.;x
+EVTDESCireevntthirty_B;We repel assault after assault, making several strategic sacrifices to defend the city. The [offmap_china.Ruler.Culture.GetName] army is persistent and organized, but ultimately, after losing and reclaiming several districts, a portion of the enemy army is cut down and encircled inside the city. In spite of the heavy casualties we've inflicted, I know we won't be able to fight off the entire army at this rate.;x
+ireevntthirty.1;Curse [Root.Religion.GetRandomGodName]! Curse [Root.Religion.GetHighGodName] for abandoning me!;x
+ireevntthirty.2;Even then... [Root.Religion.GetHighGodName] is clearly on our side.;x
+
+EVTNAMEireevntthirtyone;The Eastern Invasion;x
+EVTDESCireevntthirtyone;We repel assault after assault, but the [offmap_china.Ruler.Culture.GetName] army is persistent and organized. Their leaders are aggressive and coordinated. We are eventually pushed back to the citadel, and soon even our elite Vieti Seniores are slaughtered to a man. I am eventually forced to hurl myself over the walls to evade capture, shattering one of my legs and fleeing with the few other survivors.;x
+EVTDESCireevntthirtyone_B;We repel assault after assault, making several strategic sacrifices to defend the city. The [offmap_china.Ruler.Culture.GetName] army is persistent and organized, but ultimately, after losing and reclaiming several districts, a portion of the enemy army is encircled inside the city and cut down. In spite of the heavy casualties we've inflicted, I know we won't be able to fight off the entire army.;x
+ireevntthirtyone.1;Curse [Root.Religion.GetRandomGodName]! Curse [Root.Religion.GetHighGodName] for abandoning me!;x
+ireevntthirtyone.2;Even then... [Root.Religion.GetHighGodName] is clearly on our side.;x
+
+EVTNAMEireevntthirtythree;The Eastern Invasion;x
+EVTDESCireevntthirtythree;The war for the Dragon Throne felt like it was doomed to end before it could even begin, yet when all hope seemed lost, a majority of the [offmap_china.Ruler.Culture.GetName] army retreated, seemingly for no reason. Could it be allied reinforcements? Out here? No... Something else... A trap? Why now? They almost had us. Regardless, once the main force was long gone, we sallied out to face our remaining attackers.;x
+ireevntthirtythree.1;We were victorious, naturally.;x
+
+
+EVTNAMEireevntthirtytwo;The Eastern Invasion;x
+EVTDESCireevntthirtytwo;A mass funeral was held for our fallen soldiers who defended the walls during the siege. Casualties were heavy. The funeral pyres illuminate the field upon which we stand. Within the gathered crowd, my legions gaze stoically into the blazing inferno before them, the silence is deafening, only occasionally broken by the stifled lamentations of the the odd soldier.;x
+EVTDESCireevntthirtytwo_B;A mass funeral was held for our fallen legions who charged out during the siege. Casualties were heavy. The funeral pyres illuminate the field upon which we stand. 'You traitor!' A voice from the crowd shouts 'You've sacrificed the heroes of Rome to forge your own despotate!' I turn around, preparing to order their punishment, only to see Julian, staring hatefully towards me.;x
+ireevntthirtytwo.1;This trial was only the beginning. Roman blood will drown the [offmap_china.Ruler.Culture.GetName] [offmap_china.Ruler.GetTitle].;x
+ireevntthirtytwo.2;They did as I commanded... What should they have expected?;x
+
+EVTNAMEireevntthirtyfour;The Eastern Invasion;x
+EVTDESCireevntthirtyfour;While trenches are being dug around the city, I receive news from a supposedly trustworthy [offmap_china.Ruler.Culture.GetName] defector, claiming that the reason for the [offmap_china.Ruler.Culture.GetName] army's premature withdrawal was a number of uprisings in [Root.GetRandomChineseRegion] and several other [offmap_china.Ruler.Culture.GetName] provinces, devastating the local infrastructure and taxation. Apparently the [offmap_china.Ruler.Culture.GetName] [offmap_china.Ruler.GetTitle] didn't think we were worth the manpower.;x
+ireevntthirtyfour.1;This was their first mistake! Time to go on the offensive.;x
+
+EVTNAMEireevntthirtyfive;The Eastern Invasion;x
+EVTDESCireevntthirtyfive;My reinvigorated troops march across China, reinforced by [offmap_china.Ruler.Culture.GetName] mercenaries and sympathetic peasants. The few [offmap_china.Ruler.Culture.GetName] armies we encounter are disorganized and damaged, clearly victims of the ongoing civil war. As the Chinese capital grows ever closer, I'm beginning to wonder just what my plan is in this most opportune scenario...;x
+ireevntthirtyfive.1;The age of the [offmap_china.GetFullName] will end with my beginning.;x
+ireevntthirtyfive.2;We'll take advantage of the chaos, loot what we can, then return home.;x
+
+EVTNAMEireevntthirtysix;The Civil War;x
+EVTDESCireevntthirtysix;We are a week's march away from the capital of [offmap_china.GetFullName]. We've encountered several rival [offmap_china.Ruler.Culture.GetName] armies, each one vying for regional power. Our goal is simple, take the capital, continue the conquests. I have already taken several strategically located cities. A path into the heart of China has been made clear. I need only to follow it.;x
+ireevntthirtysix.1;It will be the seat of this new house of mine.;x
+
+EVTNAMEireevntthirtyseven;The Civil War;x
+EVTDESCireevntthirtyseven;We've reached the capital, and it's quite possibly the perfect storm. Our army now numbers in the hundreds of thousands. Countless other [offmap_china.Ruler.Culture.GetName] warlords and armies have gathered here today, each one partaking in their own violent series of clashes against each other. I'm watching from a hilltop. The apocalyptic image I see before me is indescribable.;x
+ireevntthirtyseven.1;All these grand armies... And only mine will triumph.;x
+
+EVTNAMEireevntthirtyeight;The Civil War;x
+EVTDESCireevntthirtyeight;Countless armies, as far as the horizon. I have not seen numbers this great since the western campaign, or my dreams of old Rome. The palace is close, I need only to swallow my fear and lead my troops in the grand assault. I'll need to use every trick I can in order to win this battle. If I can just get to the palace's defenses in time... Then perhaps victory will be ours.;x
+ireevntthirtyeight.1;Roman arms will prevail!;x
+ireevntthirtyeight.2;I'll send Cadius and his men on a suicide charge to buy us time.;x
+ireevntthirtyeight.3;Now, I come as lightning.;x
+
+EVTNAMEireevntthirtynine;The Eastern Invasion;x
+EVTDESCireevntthirtynine;This battle has proven itself to be the ultimate test of our abilities as tacticians and strategists. It seems as though each army is fighting on three separate fronts. Alliances are spontaneously built and shattered in the span of mere minutes. [offmap_china.Ruler.Culture.GetName] loyalists, regional warlords, provincial rebels, and of course, us. We're steadily moving our force to the imperial pala-*thwack*;x
+EVTDESCireevntthirtynine_B;This battle has proven itself to be the ultimate test of our abilities as tacticians and strategists. It seems as though each army is fighting on three separate fronts. Alliances are spontaneously built and shattered in the span of mere minutes. [offmap_china.Ruler.Culture.GetName] loyalists, regional warlords, provincial rebels, and of course, us. We're steadily moving our force to the imperial palace.;x
+ireevntthirtynine.1;No! No! I was so close! So close!;x
+ireevntthirtynine.2;To the palace! Carpe noctem!;x
+
+EVTNAMEireevntforty;The Imperial Palace;x
+EVTDESCireevntforty;As the last of the [offmap_china.Ruler.Culture.GetName] Palace Guards are slain by my men, I walk through the now empty throne room, passing by the seat of power that will soon be mine. While searching for the [offmap_china.Ruler.GetEmperorEmpress], I soon find myself in a majestic garden. Before me I see a [offmap_china.Ruler.GetGirlWomanBoyMan] in truly fine silk robes, seated in front of a gaming table. I'm taken aback when [offmap_china.Ruler.GetSheHe] gestures to me, inviting me over, in perfect Latin no less.;x
+ireevntforty.1;Not the reception I expected...;x
+
+EVTNAMEireevntfortyone;The Imperial Palace;x
+EVTDESCireevntfortyone;'The end times have come to the doorstep of your palace, and you're in a garden playing board games by yourself?' I scoff at who I quickly realise is the [offmap_china.Ruler.Culture.GetName] [offmap_china.Ruler.GetEmperorEmpress]. Upon hearing my words, [offmap_china.Ruler.GetSheHe] gives me a faint smile, still looking down at the table with regretful longing. I see no fear in this [offmap_china.Ruler.GetGirlWomanBoyMan]'s eyes. Only regret. The kind of regret I would expect to see from someone on their deathbed.;x
+ireevntfortyone.1;You know why I'm here, let's get this over with.;x
+ireevntfortyone.2;Perhaps you would like to have one last game, my [offmap_china.Ruler.GetChineseComplimentAdjective] [offmap_china.Ruler.GetTitle]?;x
+
+EVTNAMEireevntfortytwo;The Aftermath;x
+EVTDESCireevntfortytwo;I leave the palace garden, with a freshly bloodstained spatha, and a strange feeling of regret. Before me lies a battlefield of a hundred thousand bodies, each one ruthlessly sacrificed in a bid for hegemony over the Middle Kingdom. But they're dead, and I'm not. I am still here. I am still alive. And I am virtually victorious. Vae victis.;x
+ireevntfortytwo.1;Vanitas vanitatum. Omnia vanitas.;x
+ireevntfortytwo.2;I will rule from the west. The east goes to my [wallyheir.GetSonDaughter].;x
+ireevntfortytwo.3;I must consolidate my new reign here.;x
+
+EVTNAMEireevnthektoriosplan;A Proposal from Hektorios;x
+EVTDESCireevnthektoriosplan;I'm enjoying a nice cup of tea in the palace garden one day, when Arvid Hektorios approaches me, slamming a map onto the bench and eagerly informing me of his ambitions to travel further west. He hopes to establish an imperial dominion beyond the newly-conquered Indus. I must admit, Hektorios has already made great efforts to see this expedition come to fruition. He's already assembled a sizeable retinue of his own troops, as well as a fleet of his own ships. Though I've learned to be skeptical of the ambitions of my generals, Hektorios has shown himself to be a reliable and loyal sort in the past, always seeking to further the glory and prestige of the empire. He promises that all land that he conquers will be directly integrated into the empire.;x
+ireevnthktrios.1;Direct integration you say?;x
+ireevnthktrios.2;What a glorious journey he will have! How I envy him.;x
+ireevnthktrios.3;No. The barbaric lands beyond the Indus are of no concern to us.;x
+
+EVTNAMEireevntfortythree;Final Preparations;x
+EVTDESCireevntfortythree;Our journey to the west is ready to begin. The Emperor of the Romans has given us [red_indo_emperor.GetHerHis] blessing. As we are already celebrating the night before we are to set sail, me and my officers are discussing the details on where exactly our expedition intends to land.;x
+ireevntfortythree.1;We can spare ourselves the seasickness by crossing the Indus into Persia.;x
+ireevntfortythree.2;Arabia calls! It shall belong to the Romans!;x
+ireevntfortythree.3;Naturally, we desire Christian subjects to rule over.;x
+
+
+EVTTITLE_indo_rome_KOWTOW;The Eastern Expedition;Se prosterner devant la Chine;Kotau vor China;;Postrarse ante China;;;;;;;;;x
+EVTDESC_indo_rome_15003;'Aaah, travelers from Daqin!' a military [wallys_chinese_mercenary.GetManWoman] exclaims, emerging alongside a group of soldiers from the trees surrounding our camp. 'I am [wallys_chinese_mercenary.GetTitledFirstName]. We are here to escort my [Root.GetLordLady], the Roman diplomat, to [Root.GetRandomChineseRegion].' [wallys_chinese_mercenary.GetSheHeCap] gestures for [Root.GetHerHis] troops to join my entourage for the evening.;« Oyé, compagnons de voyage ! », s'exclame un[wallys_chinese_mercenary.Get_E] [wallys_chinese_mercenary.GetManWoman] militaire, sorti[wallys_chinese_mercenary.Get_E] du bois entourant notre camp, accompagné[wallys_chinese_mercenary.Get_E] d'un groupe de soldats. « Je suis [wallys_chinese_mercenary.Get_le_TitledFirstName]. Nous sommes ici pour escorter M[Root.GetOnA][Root.GetLordLady] [Root.GetLordLady] en [Root.GetRandomChineseRegion] ».' [wallys_chinese_mercenary.GetIlElleCap] fait signe à ses troupes de se joindre à mon groupe pour la soirée.;"Aaah, weitere Reisende!", ruft [wallys_chinese_mercenary.Geteineine] militärische[wallys_chinese_mercenary.GetrMale] [wallys_chinese_mercenary.GetManWoman] und taucht aus einer Gruppe Soldaten zwischen den Bäumen auf, die unser Lager umgeben. "Ich bin [wallys_chinese_mercenary.GetTitledFirstName]. Wir sind hier, um m[Root.Geteineneine] [Root.GetLordLady] nach [Root.GetRandomChineseRegion] zu eskortieren". [wallys_chinese_mercenary.GetSheHeCap] gestikuliert Richtung [Root.GetHerHis]er Truppen, um gemeinsam weiter zu reisen.;;'¡Amigos viajeros!', exclama un soldado saliendo de entre los árboles con un grupo de soldados. 'Soy [wallys_chinese_mercenary.GetTitledFirstName]. Estamos aquí para escoltar a mi [Root.GetLordLady] a [Root.GetRandomChineseRegion]'. Hace que sus tropas se unirán a mi séquito esta tarde.;;;;;;;;;x
+
+orient_china;Orient;Chine Orient;Orient;;Orient;;;;;;;;;xÿ
