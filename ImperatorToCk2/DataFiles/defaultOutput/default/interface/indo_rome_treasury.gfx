@@ -1,0 +1,74 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_indoroman_portrait_decent"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\indoroman_portrait_decent.dds"
+	}
+	spriteType = {
+		name = "GFX_indoroman_portrait_decent_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\indoroman_portrait_decent_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_indoroman_portrait_lowquality"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\indoroman_portrait_lowquality.dds"
+	}
+	spriteType = {
+		name = "GFX_indoroman_portrait_lowquality_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\indoroman_portrait_lowquality_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_indoroman_portrait_mastercraft"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\indoroman_portrait_mastercraft.dds"
+	}
+	spriteType = {
+		name = "GFX_indoroman_portrait_mastercraft_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\indoroman_portrait_mastercraft_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_indoroman_spatha"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\indoroman_spatha.dds"
+	}
+	spriteType = {
+		name = "GFX_indoroman_spatha_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\indoroman_spatha_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_indoroman_mastercraft_spatha"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\indoroman_mastercraft_spatha.dds"
+	}
+	spriteType = {
+		name = "GFX_indoroman_mastercraft_spatha_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\indoroman_mastercraft_spatha_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_indoroman_cold_spatha"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\indoroman_cold_spatha.dds"
+	}
+	spriteType = {
+		name = "GFX_indoroman_cold_spatha_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\indoroman_cold_spatha_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_indoroman_traitor_spatha"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\indoroman_traitor_spatha.dds"
+	}
+	spriteType = {
+		name = "GFX_indoroman_traitor_spatha_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\indoroman_traitor_spatha_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_indoroman_jack_spatha"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\indoroman_jack_spatha.dds"
+	}
+	spriteType = {
+		name = "GFX_indoroman_jack_spatha_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\indoroman_jack_spatha_small.dds"
+	}
+
+}

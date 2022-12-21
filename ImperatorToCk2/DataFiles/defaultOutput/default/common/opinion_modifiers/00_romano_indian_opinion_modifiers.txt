@@ -1,0 +1,6 @@
+distrusts_the_chinese = {
+	opinion = 15
+}
+admires_roman_confidence = {
+	opinion = 10
+}

@@ -1906,10 +1906,11 @@ oriental_romance = {
 		mother_name_chance = 5
 	}
 	
-	indoroman = { #Roman-split India
-		graphical_cultures = { italiangfx southerngfx }
+	romanoindian = { #Roman-split India
+		graphical_cultures = { romanoindianfx romangfx southerngfx }
 
-		color = { 0.85 0.2 0.16 }
+		#color = { 0.85 0.2 0.16 }
+		color = { 0.8 0.3 0.4 }
 
 		male_names = {
 			Abbondãnshpolò Abbondpolò Abelarãjo_Abelard Amritnarayan Achille Achalrãjo_Achalraja Adãlbervo_Albert Adelfo Adelmpolò_Adelmo Adelmo_Adelmo Atrone Adrimano_Adrian Agapivo Aghostimano_Augustine Aimone Alamanmano Alarigho_Alaric
@@ -1931,7 +1932,7 @@ oriental_romance = {
 			Rampale_Rampala Rampolò_Rampala Rana Rangraj_Rangraja Rangrãjo_Rangraja Rosso Ruvvãriero Salinguerra Salvovore_Salvodor Salvestro_Silvester Sante_Sancho Saverpolò Scirra Sebastimano_Sebastian Seghontrovvãro Serafimano_Seraphin Serpolò_Sergius Sesvo_Sextus Settimpolò_Septimus Severimano_Severin Severo_Severus
 			Silvomano Silvestro_Silvester Simone_Simon Simonevvãro Sinibaltro Sinushellò Soshshò Spinevvãro Stefamano_Stephen Stenvore Taddeo Tedãltro Tedice Teotroro_Theodore Tibaltro_Theobald Tishimano Tommaso_Thomas
 			Torghotrorpolò Torquavo Ubaltro Ubervo_Hubert Ugho_Hugh Ughoghpolòne Ugholimano Umbervo_Humbert Urbamano_Urban Valentimano_Valentin Valerpolò_Valerius Vinshentellò Vinshenshò_Vincent Virvimanolò Vitale Vivvãrore_Victor Vivvãrorpolò_Victor Vinayacapolò Vindhyavorman
-			Viramdevo Viravormano Virsinghadevo Yasovormano Zaghari_Zachary
+			Viramdevo Viravormano Virsinghadevo Yasovormano Zaghari_Zachary Saegoris Walakrios Britannicus
 		}
 
 		female_names = {

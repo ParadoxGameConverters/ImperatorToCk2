@@ -1,0 +1,32 @@
+spriteTypes = {
+    spriteType = {
+		name = "GFX_trait_praetorian_ultra"
+		texturefile = "gfx/traits/praetorian.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_indoroman_champ"
+		texturefile = "gfx/traits/indoromanchamp.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_indo_roman_augustus"
+		texturefile = "gfx/traits/indoaugustus.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_celestial_augustus"
+		texturefile = "gfx/traits/celestialaugustus.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+}

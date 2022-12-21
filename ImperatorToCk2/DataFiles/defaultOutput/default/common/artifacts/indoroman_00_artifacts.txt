@@ -1,0 +1,162 @@
+
+
+#############################
+####### Random/Misc #########
+#############################
+
+crown_indoroman = { 
+	monthly_character_prestige = 1.0
+	monthly_character_piety = 1.0
+        romanoindian_opinion = 10
+        greek_opinion = -10
+        german_opinion = -10
+	stewardship = 3
+	quality = 5
+	active = { 
+	has_landed_title = e_indo_roman_empire
+	}
+	flags = { religious unique crown jewelry crown_jewel }
+	picture = "GFX_crown_byzantine"
+	slot = crown
+	stacking = no
+	indestructible = yes
+	allowed_gift = {
+		OR = {
+		religion_group = christian
+		has_landed_title = e_indo_roman_empire
+		}
+	}
+}
+
+spatha_tier_1_new = {
+	monthly_character_prestige = 0.35
+	martial = 1
+	combat_rating = 5
+	command_modifier = {
+		heavy_infantry = 0.05
+	}
+	quality = 1
+	active = {
+		is_adult = yes
+	}
+	flags = { combat_weapon sword created }
+	stacking = no
+	picture = "GFX_indoroman_spatha"
+	slot = weapon
+}
+
+spatha_tier_2_new = {
+	monthly_character_prestige = 0.6
+	martial = 1
+	combat_rating = 7
+	command_modifier = {
+		heavy_infantry = 0.05
+		cavalry = 0.05
+	}
+	quality = 2
+	active = {
+		is_adult = yes
+	}
+	flags = { combat_weapon sword created }
+	stacking = no
+	picture = "GFX_indoroman_mastercraft_spatha"
+	slot = weapon
+}
+
+spatha_tier_3_walakrios = {
+	monthly_character_prestige = 0.6
+	martial = 1
+	intrigue = 2
+	combat_rating = 11
+	command_modifier = {
+		heavy_infantry = 0.10
+		cavalry = 0.05
+	}
+	quality = 3
+	active = {
+		is_adult = yes
+	}
+	flags = { combat_weapon sword created }
+	stacking = no
+	picture = "GFX_indoroman_traitor_spatha"
+	slot = weapon
+}
+
+spatha_tier_3_cold = {
+	monthly_character_prestige = 0.6
+	martial = 2
+	combat_rating = 11
+	command_modifier = {
+		heavy_infantry = 0.05
+		cavalry = 0.05
+		morale_offence = 0.05
+		morale_defence = 0.05
+	}
+	quality = 3
+	active = {
+		is_adult = yes
+	}
+	flags = { combat_weapon sword created }
+	stacking = no
+	picture = "GFX_indoroman_cold_spatha"
+	slot = weapon
+}
+
+spatha_tier_3_sheogorath = {
+	monthly_character_prestige = 1
+	martial = 2
+	combat_rating = 12
+	command_modifier = {
+		heavy_infantry = 0.15
+		cavalry = 0.12
+	}
+	quality = 4
+	active = {
+		is_adult = yes
+	}
+	flags = { combat_weapon sword created }
+	stacking = no
+	picture = "GFX_indoroman_jack_spatha"
+	slot = weapon
+}
+
+indoroman_prev_emperor_sculpture_mastercraft = {
+	monthly_character_prestige = 0.15
+	global_tax_modifier = 0.05
+	quality = 3
+	flags = { sculpture decor }
+	picture = "GFX_indoroman_portrait_mastercraft"
+	#stacking = no
+}
+
+indoroman_prev_emperor_sculpture_decent = {
+	monthly_character_prestige = 0.10
+	quality = 2
+	flags = { sculpture decor }
+	picture = "GFX_indoroman_portrait_decent"
+	#stacking = no
+}
+
+indoroman_prev_emperor_sculpture_lowquality = {
+	monthly_character_prestige = 0.05
+	quality = 1
+	flags = { sculpture decor }
+	picture = "GFX_indoroman_portrait_lowquality"
+	#stacking = no
+}
+
+walakriotic_proto_texts = {
+	quality = 4
+	martial = 1
+	diplomacy = 1
+	learning = 1
+	infidel_opinion = 15
+	same_religion_opinion = -5
+	active = {
+		religion = FROMFROM
+	}
+	flags = { book created }
+	picture = "GFX_book_red_glow"
+	slot = library
+}
+

@@ -1759,8 +1759,8 @@ targetted_decisions = {
 		}
 	}
 	
-# Roman character may convert to indoroman
-	irck2_convert_to_indoroman = {
+# Roman character may convert to romanoindian
+	irck2_convert_to_romanoindian = {
 		only_playable = yes
 
 		filter = self
@@ -1774,7 +1774,7 @@ targetted_decisions = {
 				region = world_india
 			}
 			any_realm_province = {
-				culture = indoroman
+				culture = romanoindian
 			}
 			OR = {
 				year = 500
@@ -1793,7 +1793,7 @@ targetted_decisions = {
 				region = world_india
 			}
 			any_realm_province = {
-				culture = indoroman
+				culture = romanoindian
 			}
 		}
 		effect = {
@@ -1803,9 +1803,9 @@ targetted_decisions = {
 					employer = { character = ROOT }
 					dynasty = ROOT
 				}
-				culture = indoroman
+				culture = romanoindian
 			}
-			culture = indoroman
+			culture = romanoindian
 		}
 		revoke_allowed = {
 			always = no
@@ -1838,46 +1838,46 @@ targetted_decisions = {
 			modifier = {
 				factor = 0.01
 				capital_scope = {
-					NOT = { culture = indoroman }
+					NOT = { culture = romanoindian }
 				}
 			}
 			modifier = {
 				factor = 2.0
-				liege = { culture = indoroman }
+				liege = { culture = romanoindian }
 			}
 			modifier = {
 				factor = 1.1
 				num_culture_realm_provs = {
 					value = 2
-					culture = indoroman
+					culture = romanoindian
 				}
 			}
 			modifier = {
 				factor = 1.1
 				num_culture_realm_provs = {
 					value = 4
-					culture = indoroman
+					culture = romanoindian
 				}
 			}
 			modifier = {
 				factor = 1.1
 				num_culture_realm_provs = {
 					value = 6
-					culture = indoroman
+					culture = romanoindian
 				}
 			}
 			modifier = {
 				factor = 1.1
 				num_culture_realm_provs = {
 					value = 8
-					culture = indoroman
+					culture = romanoindian
 				}
 			}
 			modifier = {
 				factor = 1.1
 				num_culture_realm_provs = {
 					value = 10
-					culture = indoroman
+					culture = romanoindian
 				}
 			}
 		}

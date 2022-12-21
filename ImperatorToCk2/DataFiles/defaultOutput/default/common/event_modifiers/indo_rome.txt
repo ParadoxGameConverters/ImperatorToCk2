@@ -1,0 +1,9 @@
+madman_of_deccan = {
+	icon = 47
+	demesne_size = 5
+}
+
+vieti_seniores_massacred = {
+	icon = 42
+	romanoindian_opinion = -20
+}
