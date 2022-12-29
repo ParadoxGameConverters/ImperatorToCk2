@@ -6,6 +6,7 @@ build_script:
 - cmd: >-
     git submodule update --init --recursive
 
+    dotnet restore
     msbuild -m ImperatorToCK2.sln /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
 
     cd ImperatorToCk2
