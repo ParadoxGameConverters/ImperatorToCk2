@@ -36,6 +36,7 @@ public class ConverterLogFormatter  extends Formatter {
 
         buf.append(formatMessage(rec));
         buf.append('\n');
+        System.out.println(buf.toString());
 
         return buf.toString();
     }
