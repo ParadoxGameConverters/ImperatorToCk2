@@ -1,13 +1,22 @@
-package ImperatorToCK2;  
+package ImperatorToCK2.Output;  
 
 import java.util.Scanner;
 import java.io.IOException;
 import java.io.FileInputStream;
 import java.io.PrintWriter;
 import java.io.FileOutputStream;
+import java.util.Optional;
 import java.util.Random;
 import java.util.ArrayList;
 import java.io.File;
+import ImperatorToCK2.CK2.LandedTitle;
+import ImperatorToCK2.Characters;
+import ImperatorToCK2.Importer;
+import ImperatorToCK2.Processing;
+import ImperatorToCK2.CK2.Government;
+import ImperatorToCK2.CK2.Rank;
+import ImperatorToCK2.Output.Output;
+
 /**
  * Information which is output
  *
@@ -78,43 +87,6 @@ public class Output
         return ck2CultureInfo;
     }
 
-    public static String titleCreationCommon(String irTAG, String irColor, String government,String capital,String rank, String Directory) throws IOException
-    {
-
-        String tab = "	";
-        String VM = "\\"; 
-        VM = VM.substring(0);
-        Directory = Directory + VM + "common" + VM + "landed_titles";
-        FileOutputStream fileOut= new FileOutputStream(Directory + VM + rank+"_" + irTAG + "_LandedTitle.txt");
-        PrintWriter out = new PrintWriter(fileOut);
-
-        out.println (rank+"_"+irTAG+" = {");
-        if (!irColor.equals("none")) {
-            out.println (tab+"color={ "+irColor+" }");
-            out.println (tab+"color2={ "+irColor+" }");
-        }
-
-        if (!capital.equals("none")) { //governorships don't have set capitals
-
-            capital = Importer.importConvList("provinceConversion.txt",Integer.parseInt(capital))[1];
-
-            out.println (tab+"capital = "+capital);
-
-        }
-        if ( government.equals("republic") ) {
-            out.println (tab+tab+tab+"is_republic = yes"); //if it is a republic and republics are enabled  
-        } else if (government.equals("imperium") && rank.equals("e")) {
-            out.println (tab+"purple_born_heirs = yes"); //if government is imperial, enable born in purple mechanic
-            out.println (tab+"has_top_de_jure_capital = yes");
-        }
-        out.println ("}");
-
-        out.flush();
-        fileOut.close();
-
-        return irColor;
-    }
-
     public static ArrayList<String> titleCreation(String irTAG, String irKING, String irCOLOR, String government, String capital,String rank,String liege,
     String date1,String republicOption,String irDynasty,ArrayList<String> dynList,ArrayList<String[]> impCharInfoList,ArrayList<String> convertedCharacters,
     int tagIDNum,String liegeGov,String Directory) throws IOException
@@ -130,8 +102,26 @@ public class Output
         String oldDynasty = irDynasty;
 
         if (!government.equals("palace")) { //if palace, don't recalculate dynasty and recreate title
-            titleCreationCommon(irTAG,irCOLOR,government,capital,rank,Directory);
-            irDynasty = Processing.calcDynID(irDynasty);
+            Optional<Integer> capitalNumber;
+            if (capital.equals("none")) {
+                capitalNumber = Optional.empty();
+            } else {
+                capitalNumber = Optional.of(Integer.parseInt(capital));
+            }
+
+            Optional<String> imperatorColor;
+            if (irCOLOR.equals("none")) {
+                imperatorColor = Optional.empty();
+            } else {
+                imperatorColor = Optional.of(irCOLOR);
+            }
+
+            Optional<Rank> rankEnum = Rank.get(rank);
+            if (rankEnum.isPresent()) {
+                LandedTitle title = new LandedTitle(irTAG, imperatorColor, government, capitalNumber, rankEnum.get());
+                OutputLandedTitle.outputLandedTitle(title, Directory);
+                irDynasty = Processing.calcDynID(irDynasty);
+            }
         }
         String oldDirectory = Directory;
         Directory = Directory + VM + "history" + VM + "titles";
@@ -180,7 +170,8 @@ public class Output
             //If I:R government is republic and option is enabled, set to CK2 merchant republic (regardless of coastline requirements)
 
             String palace = irDynasty+"_"+irTAG;
-            titleCreationCommon(palace,"none","none","none","b",oldDirectory); //creates merchant palace for ruler's family
+            LandedTitle title = new LandedTitle(palace);
+            OutputLandedTitle.outputLandedTitle(title, oldDirectory); //creates merchant palace for ruler's family
             convertedCharacters = titleCreation(palace,irKING,irCOLOR,"palace",capital,"b",rank+","+irTAG,date1,republicOption,irDynasty,
                 dynList,impCharInfoList,convertedCharacters,tagIDNum,liegeGov,oldDirectory);
             convertedCharacters = createFamilies(dynList,irTAG,oldDynasty,rank,impCharInfoList,convertedCharacters,date1,republicOption,tagIDNum,
@@ -1238,8 +1229,9 @@ public class Output
                         headCharacter[15],"palace","q","q",convertedCharacters,impCharInfoList,date,directory);
 
                     dynastyCreation(dynasty[0],headCharacter[7],headCharacter[16],directory);
-
-                    titleCreationCommon(palace,"none","none","none","b",directory); //creates merchant palace for ruler's family
+                    
+                    LandedTitle title = new LandedTitle(palace);
+                    OutputLandedTitle.outputLandedTitle(title, directory); //creates merchant palace for ruler's family
                     convertedCharacters = titleCreation(palace,headNum,"none","palace","none","b",rank+","+tag,date,republicOption,newDynasty,dynList,
                         impCharInfoList,convertedCharacters,tagIDNum,liegeGov,directory);
 
