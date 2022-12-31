@@ -160,7 +160,7 @@
                           Either module or main-jar option can be specified
                           but not both.
                         -->
-                        <module>imperatortock2/imperatortock2.Main</module>
+                        <module>ImperatorToCK2/imperatortock2.Main</module>
 
                         <!--
                           Specifies the command line arguments to pass to the main class
@@ -182,7 +182,7 @@
                         <addlaunchers>
                           <addlauncher>
                             <name>ImperatorToCK2-cli</name>
-                            <module>imperatortock2/imperatortock2.Main</module>
+                            <module>ImperatorToCK2/imperatortock2.Main</module>
                             <javaoptions>-Xms256m -Xmx512m</javaoptions>
                           </addlauncher>
                         </addlaunchers>
