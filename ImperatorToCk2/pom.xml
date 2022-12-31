@@ -6,11 +6,10 @@
 
     <groupId>com.ParadoxGameConverters</groupId>
     <artifactId>ImperatorToCK2</artifactId>
-    <version>0.1</version>
+    <version>0.2</version>
 
     <name>ImperatorToCK2</name>
-    <!-- FIXME change it to the project's website -->
-    <url>http://www.example.com</url>
+    <url>https://github.com/ParadoxGameConverters/ImperatorToCk2</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -49,10 +48,6 @@
                     <version>3.0.2</version>
                 </plugin>
                 <plugin>
-                    <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.8.0</version>
-                </plugin>
-                <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
                     <dependencies>
@@ -69,7 +64,7 @@
                     <configuration>
                         <archive>
                             <manifest>
-                                <mainClass>ImperatorToCK2.Main</mainClass>
+                                <mainClass>imperatortock2.Main</mainClass>
                             </manifest>
                         </archive>
                     </configuration>
@@ -120,7 +115,7 @@
                           Specifies the name of subdirectory relative to the destination
                           directory in which files of generated application image are placed.
                         -->
-                        <name>ImperatorToCK2</name>
+                        <name>imperatortock2</name>
 
                         <!--
                           Specifies the type of package to
@@ -165,7 +160,7 @@
                           Either module or main-jar option can be specified
                           but not both.
                         -->
-                        <module>ImperatorToCK2/ImperatorToCK2.Main</module>
+                        <module>ImperatorToCK2/imperatortock2.Main</module>
 
                         <!--
                           Specifies the command line arguments to pass to the main class
@@ -187,7 +182,7 @@
                         <addlaunchers>
                           <addlauncher>
                             <name>ImperatorToCK2-cli</name>
-                            <module>ImperatorToCK2/ImperatorToCK2.Main</module>
+                            <module>ImperatorToCK2/imperatortock2.Main</module>
                             <javaoptions>-Xms256m -Xmx512m</javaoptions>
                           </addlauncher>
                         </addlaunchers>

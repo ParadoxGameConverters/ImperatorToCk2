@@ -1,10 +1,10 @@
-package ImperatorToCK2.Output;
+package imperatortock2.output;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.FileOutputStream;
 
-import ImperatorToCK2.CK2.LandedTitle;
+import imperatortock2.ck2.LandedTitle;
 
 public class OutputLandedTitle {
     public static void outputLandedTitle(LandedTitle title, String Directory) throws IOException {
