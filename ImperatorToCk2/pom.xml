@@ -151,7 +151,7 @@
                 Either module or main-jar option can be specified
                 but not both.
               -->
-              <module>ImperatorToCK2/Main</module>
+              <module>ImperatorToCK2/ImperatorToCK2.Main</module>
               
               <!--
                 Specifies the command line arguments to pass to the main class
@@ -172,7 +172,7 @@
               <addlaunchers>
                 <addlauncher>
                   <name>ImperatorToCK2-cli</name>
-                  <module>ImperatorToCK2/Main</module>
+                  <module>ImperatorToCK2/ImperatorToCK2.Main</module>
                   <arguments>--help</arguments>
                   <javaoptions>-Xms256m -Xmx512m</javaoptions>
                   <!--<icon>${project.basedir}/config/jpackage/resources/appname-cli.ico</icon>-->
