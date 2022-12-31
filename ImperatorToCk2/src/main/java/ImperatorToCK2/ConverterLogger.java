@@ -15,6 +15,7 @@ public class ConverterLogger {
 
         // get the global logger to configure it
         Logger logger = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
+        logger.setUseParentHandlers(false);
 
         logger.setLevel(Level.INFO);
         file = new FileHandler("log.txt");
