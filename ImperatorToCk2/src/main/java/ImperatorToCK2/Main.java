@@ -947,6 +947,7 @@ public class Main
             LOGGER.info("Converter successfully finished after " + elapsedTot + " minutes!");
 
             LOGGER.finest("100%");
+            System.exit(0);
         } catch (Exception e) {
             StringWriter sw = new StringWriter();
             PrintWriter pw = new PrintWriter(sw);
