@@ -32,7 +32,7 @@ jobs:
     - name: "Build converter jar"
       run: |
        cd $Env:GITHUB_WORKSPACE\ImperatorToCk2
-       mvn package
+       mvn -e -X clean verify
 
     - name: "Convert jar to executable"
       working-directory: ImperatorToCK2
