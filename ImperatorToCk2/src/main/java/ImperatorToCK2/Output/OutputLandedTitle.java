@@ -3,6 +3,7 @@ package ImperatorToCK2.Output;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.FileOutputStream;
+
 import ImperatorToCK2.CK2.LandedTitle;
 
 public class OutputLandedTitle {

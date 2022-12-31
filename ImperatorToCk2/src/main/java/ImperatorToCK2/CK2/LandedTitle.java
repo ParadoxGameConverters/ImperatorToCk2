@@ -1,7 +1,9 @@
 package ImperatorToCK2.CK2;
 
 import java.util.Optional;
+
 import ImperatorToCK2.Importer;
+
 import java.io.IOException;
 
 public class LandedTitle {
@@ -11,7 +13,7 @@ public class LandedTitle {
     private final Optional<Integer> capital;
 
     public LandedTitle(String tag, Optional<String> imperatorColor, String imperatorGovernment,
-            Optional<Integer> imperatorCapital, Rank rank) throws IOException {
+                       Optional<Integer> imperatorCapital, Rank rank) throws IOException {
         this.name = rank.getLetter() + "_" + tag;
 
         this.color = imperatorColor;
