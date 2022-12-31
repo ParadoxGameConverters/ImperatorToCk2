@@ -1,6 +1,9 @@
 package ImperatorToCK2;  
 
 import java.util.Scanner;
+
+import ImperatorToCK2.Output.Output;
+
 import java.io.IOException;
 import java.io.FileInputStream;
 import java.io.PrintWriter;
@@ -8,6 +11,10 @@ import java.io.FileOutputStream;
 import java.util.Random;
 import java.util.ArrayList;
 import java.io.File;
+import ImperatorToCK2.CK2.LandedTitle;
+import ImperatorToCK2.CK2.Rank;
+import ImperatorToCK2.Output.OutputLandedTitle;
+import java.util.Optional;
 /**
  * Write a description of class Processing here.
  *
@@ -788,9 +795,9 @@ public class Processing
         return name;
     }
 
-    public static String convertTitle(String name, String rank, String title, String defaultTitle) throws IOException
+    public static String convertTitle(String name, String rankString, String title, String defaultTitle) throws IOException
     {// Converts dynamically generated title to vanilla counterpart
-        String tmpTitle = Importer.importCultList(name,rank+"_"+title)[1];//converts title
+        String tmpTitle = Importer.importCultList(name,rankString+"_"+title)[1];//converts title
 
         if (tmpTitle.equals("99999") || tmpTitle.equals("peq")) {//if there is no vanilla match
             return defaultTitle;
@@ -1222,7 +1229,7 @@ public class Processing
         String qaaa;
         String output = gov; //backup in case there is no mapping
 
-        String rank = "k"; //may be implemented in the future
+        String rankString = "k"; //may be implemented in the future
 
         try {
             while (endOrNot = true){
@@ -1234,7 +1241,7 @@ public class Processing
                         endOrNot = false;
                         output = qaaa.split(",")[1];
                     } else if (qaaa.split(",").length == 3) {
-                        if (qaaa.split(",")[2].equals(rank)) { //if ranks match, convert
+                        if (qaaa.split(",")[2].equals(rankString)) { //if rankStrings match, convert
                             endOrNot = false;
                             output = qaaa.split(",")[1];
                         }
@@ -1403,11 +1410,11 @@ public class Processing
 
     }
 
-    public static void dynamicSplit (String title,String rank,String color,String[] loc,String irFlag,String impGameDir,String capital,
+    public static void dynamicSplit (String title,String rankString,String color,String[] loc,String irFlag,String impGameDir,String capital,
     ArrayList<String[]> flagList,ArrayList<String[]> colorList,ArrayList<String> modFlagGFX,String government,String tagCulture,
     String ck2Dir, String modDirectory) throws IOException
     {
-        String country = rank+"_"+title;
+        String country = rankString+"_"+title;
         String[] easternEmpire = eastWestNames("Eastern",loc);
         String[] westernEmpire = eastWestNames("Western",loc);
         String eastColor = eastColor(color);
@@ -1467,8 +1474,8 @@ public class Processing
         Output.dynamicSplitTemplateFill(country,loc,easternEmpire,westernEmpire,eastTitle,westTitle,ck2Capital,tagCulture,bloodDescDir,
             bloodDescTemplateDirectory);
 
-        Output.localizationCreation(easternEmpire,eastTitle,rank,modDirectory);
-        Output.localizationCreation(westernEmpire,westTitle,rank,modDirectory);
+        Output.localizationCreation(easternEmpire,eastTitle,rankString,modDirectory);
+        Output.localizationCreation(westernEmpire,westTitle,rankString,modDirectory);
 
         //cbs
         String cbDir = modDirectory+"/common/cb_types/50_irck2_cb_types_"+country+".txt";
@@ -1477,8 +1484,8 @@ public class Processing
             cbDir,cbTemplateDirectory);
 
         //gfx
-        String eastFlagDir = modDirectory+"/gfx/flags/"+rank+"_"+eastTitle+".tga";
-        String westFlagDir = modDirectory+"/gfx/flags/"+rank+"_"+westTitle+".tga";
+        String eastFlagDir = modDirectory+"/gfx/flags/"+rankString+"_"+eastTitle+".tga";
+        String westFlagDir = modDirectory+"/gfx/flags/"+rankString+"_"+westTitle+".tga";
         File eastFlag = new File (eastFlagDir);
         File westFlag = new File (westFlagDir);
 
@@ -1486,21 +1493,33 @@ public class Processing
 
         if (!eastTitle.equals("byzantium")) { //For Byzantium, use vanilla flag
             if (!eastFlag.exists()) { //For custom-made flags, don't generate new one
-                Output.eastWestFlagGen(irFlag,title,color,eastColor,eastTitle,flagList,colorList,rank,capital,modFlagGFX,"no",ck2Dir,impGameDir,modDirectory);
+                Output.eastWestFlagGen(irFlag,title,color,eastColor,eastTitle,flagList,colorList,rankString,capital,modFlagGFX,"no",ck2Dir,impGameDir,modDirectory);
             }
-            Output.titleCreationCommon(eastTitle,eastColor,government,capital,rank,modDirectory);
+            Optional<Rank> rankStringEnum = Rank.get(rankString);
+            Optional<String> possibleColor = Optional.of(eastColor);
+            Optional<Integer> capitalNumber = Optional.of(Integer.valueOf(capital));
+            if (rankStringEnum.isPresent()) {
+                LandedTitle landed_title = new LandedTitle(eastTitle, possibleColor, government, capitalNumber, rankStringEnum.get());
+                OutputLandedTitle.outputLandedTitle(landed_title, modDirectory);
+            }
         }
         if (!westFlag.exists()) { //For custom-made flags, don't generate new one
-            Output.eastWestFlagGen(irFlag,title,color,color,westTitle,flagList,colorList,rank,capital,modFlagGFX,"no",ck2Dir,impGameDir,modDirectory);
+            Output.eastWestFlagGen(irFlag,title,color,color,westTitle,flagList,colorList,rankString,capital,modFlagGFX,"no",ck2Dir,impGameDir,modDirectory);
         }
-        Output.titleCreationCommon(westTitle,westColor,government,capital,rank,modDirectory);
+        Optional<Rank> rankStringEnum = Rank.get(rankString);
+        Optional<String> possibleColor = Optional.of(westColor);
+        Optional<Integer> capitalNumber = Optional.of(Integer.valueOf(capital));
+        if (rankStringEnum.isPresent()) {
+            LandedTitle landed_title = new LandedTitle(westTitle, possibleColor, government, capitalNumber, rankStringEnum.get());
+            OutputLandedTitle.outputLandedTitle(landed_title, modDirectory);
+        }
 
-        Output.splitBloodlineEmbGen(ck2Dir,impGameDir,rank,flagList,title,irFlag,colorList,modFlagGFX,modDirectory);
+        Output.splitBloodlineEmbGen(ck2Dir,impGameDir,rankString,flagList,title,irFlag,colorList,modFlagGFX,modDirectory);
         Output.eastWestDecisionIcon(country,modDirectory);
         Output.eastWestRestorationIcon(country,irFlag,flagList,ck2Dir,modDirectory);
 
-        Output.eastWestTitle(eastTitle,government,capital,rank,"100.1.1",modDirectory);
-        Output.eastWestTitle(westTitle,government,capital,rank,"100.1.1",modDirectory);
+        Output.eastWestTitle(eastTitle,government,capital,rankString,"100.1.1",modDirectory);
+        Output.eastWestTitle(westTitle,government,capital,rankString,"100.1.1",modDirectory);
 
     }
 
