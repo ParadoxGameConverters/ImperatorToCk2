@@ -8,6 +8,7 @@ import java.util.logging.Logger;
 
 public class ConverterLogger {
     static private FileHandler file;
+    static private ConsoleHandler file;
     static private ConverterLogFormatter formatter;
 
     static public void setup() throws IOException {
