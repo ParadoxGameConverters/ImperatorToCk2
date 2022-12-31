@@ -1,4 +1,4 @@
-package ImperatorToCK2;  
+package ImperatorToCK2.Output;  
 
 import java.util.Scanner;
 import java.io.IOException;
@@ -10,8 +10,12 @@ import java.util.Random;
 import java.util.ArrayList;
 import java.io.File;
 import ImperatorToCK2.CK2.LandedTitle;
+import ImperatorToCK2.Characters;
+import ImperatorToCK2.Importer;
+import ImperatorToCK2.Processing;
 import ImperatorToCK2.CK2.Government;
 import ImperatorToCK2.CK2.Rank;
+import ImperatorToCK2.Output.Output;
 
 /**
  * Information which is output
@@ -83,41 +87,6 @@ public class Output
         return ck2CultureInfo;
     }
 
-    public static void outputTitle(LandedTitle title, String Directory) throws IOException {
-        Directory = Directory + "\\common\\landed_titles";
-        FileOutputStream fileOut = new FileOutputStream(Directory + '\\' + title.getName() + "_LandedTitle.txt");
-        PrintWriter out = new PrintWriter(fileOut);
-
-        out.println(title.getName() + " = {");
-
-        if (title.getColor().isPresent()) {
-            String color = title.getColor().get();
-            out.println("\tcolor={ " + color + " }");
-            out.println("\tcolor2={ " + color + " }");
-        }
-
-        if (title.getCapital().isPresent()) {
-            out.println("\tcapital = " + title.getCapital().get());
-        }
-
-        switch (title.getGovernment()) {
-            case REPUBLIC:
-                out.println("\tis_republic = yes");
-                break;
-            case EMPIRE:
-                out.println("\tpurple_born_heirs = yes");
-                out.println("\thas_top_de_jure_capital = yes");
-                break;
-            default:
-                // Do nothing for palaces and monarchies
-        }
-
-        out.println("}");
-
-        out.flush();
-        fileOut.close();
-    }
-
     public static ArrayList<String> titleCreation(String irTAG, String irKING, String irCOLOR, String government, String capital,String rank,String liege,
     String date1,String republicOption,String irDynasty,ArrayList<String> dynList,ArrayList<String[]> impCharInfoList,ArrayList<String> convertedCharacters,
     int tagIDNum,String liegeGov,String Directory) throws IOException
@@ -150,7 +119,7 @@ public class Output
             Optional<Rank> rankEnum = Rank.get(rank);
             if (rankEnum.isPresent()) {
                 LandedTitle title = new LandedTitle(irTAG, imperatorColor, government, capitalNumber, rankEnum.get());
-                outputTitle(title, Directory);
+                OutputLandedTitle.outputLandedTitle(title, Directory);
                 irDynasty = Processing.calcDynID(irDynasty);
             }
         }
@@ -202,7 +171,7 @@ public class Output
 
             String palace = irDynasty+"_"+irTAG;
             LandedTitle title = new LandedTitle(palace);
-            outputTitle(title, oldDirectory); //creates merchant palace for ruler's family
+            OutputLandedTitle.outputLandedTitle(title, oldDirectory); //creates merchant palace for ruler's family
             convertedCharacters = titleCreation(palace,irKING,irCOLOR,"palace",capital,"b",rank+","+irTAG,date1,republicOption,irDynasty,
                 dynList,impCharInfoList,convertedCharacters,tagIDNum,liegeGov,oldDirectory);
             convertedCharacters = createFamilies(dynList,irTAG,oldDynasty,rank,impCharInfoList,convertedCharacters,date1,republicOption,tagIDNum,
@@ -1262,7 +1231,7 @@ public class Output
                     dynastyCreation(dynasty[0],headCharacter[7],headCharacter[16],directory);
                     
                     LandedTitle title = new LandedTitle(palace);
-                    outputTitle(title, directory); //creates merchant palace for ruler's family
+                    OutputLandedTitle.outputLandedTitle(title, directory); //creates merchant palace for ruler's family
                     convertedCharacters = titleCreation(palace,headNum,"none","palace","none","b",rank+","+tag,date,republicOption,newDynasty,dynList,
                         impCharInfoList,convertedCharacters,tagIDNum,liegeGov,directory);
 
