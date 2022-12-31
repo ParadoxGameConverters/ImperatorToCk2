@@ -1,4 +1,4 @@
-package ImperatorToCK2; 
+package ImperatorToCK2;
 
 import java.util.Scanner;
 import java.io.IOException;
@@ -13,26 +13,23 @@ import java.io.File;
  * Importer deals with importing most information from a save file.
  *
  * @author Shinymewtwo99
- * @version
  */
-public class Importer
-{
+public class Importer {
 
-    public static ArrayList<String[]> importProv (String name) throws IOException
-    {
+    public static ArrayList<String[]> importProv(String name) throws IOException {
 
         //String provID = Integer.toString(provIDnum);
 
-        FileInputStream fileIn= new FileInputStream(name);
-        Scanner scnr= new Scanner(fileIn);
+        FileInputStream fileIn = new FileInputStream(name);
+        Scanner scnr = new Scanner(fileIn);
 
-        ArrayList<String[]> impProvList= new ArrayList<String[]>();
+        ArrayList<String[]> impProvList = new ArrayList<String[]>();
 
         String tab = "	";
 
         int flag = 0;
 
-        String keyWord = tab+1+"={";
+        String keyWord = tab + 1 + "={";
 
         int aqq = 0;
 
@@ -52,45 +49,45 @@ public class Importer
         impProvList.add(output); //default at ID 0
 
         try {
-            while (endOrNot = true){
+            while (endOrNot = true) {
 
                 qaaa = scnr.nextLine();
 
-                if (qaaa.equals(keyWord)){
+                if (qaaa.equals(keyWord)) {
                     endOrNot = false;
 
                     while (flag == 0) {
                         qaaa = scnr.nextLine();
-                        if (qaaa.split("=")[0].equals( tab+tab+"owner" ) ) {
+                        if (qaaa.split("=")[0].equals(tab + tab + "owner")) {
                             output[0] = qaaa.split("=")[1];
                         }
-                        if (qaaa.split("=")[0].equals( tab+tab+"culture" ) ) {
+                        if (qaaa.split("=")[0].equals(tab + tab + "culture")) {
                             output[1] = qaaa.split("=")[1];
-                            output[1] = output[1].substring(1,output[1].length()-1);
+                            output[1] = output[1].substring(1, output[1].length() - 1);
                         }
-                        if (qaaa.split("=")[0].equals( tab+tab+"religion" ) ) {
+                        if (qaaa.split("=")[0].equals(tab + tab + "religion")) {
                             output[2] = qaaa.split("=")[1];
-                            output[2] = output[2].substring(1,output[2].length()-1);
+                            output[2] = output[2].substring(1, output[2].length() - 1);
                         }
 
                         //popTotal
-                        if (qaaa.split("=")[0].equals( tab+tab+"pop" ) ) {
+                        if (qaaa.split("=")[0].equals(tab + tab + "pop")) {
                             aqq = aqq + 1; //count pop
                             output[3] = Integer.toString(aqq);
                         }
 
                         //might be used or ignored
-                        if (qaaa.split("=")[0].equals( tab+tab+"buildings" ) ) {
+                        if (qaaa.split("=")[0].equals(tab + tab + "buildings")) {
                             output[4] = qaaa.split("=")[1];
 
                         }
 
-                        if (qaaa.split("=")[0].equals( tab+tab+"great_work" ) ) {
+                        if (qaaa.split("=")[0].equals(tab + tab + "great_work")) {
                             output[5] = qaaa.split("=")[1];
 
                         }
 
-                        if (qaaa.split("=")[0].equals( tab+"}" ) ) { //ends here
+                        if (qaaa.split("=")[0].equals(tab + "}")) { //ends here
 
                             String[] tmpOutput = new String[output.length];
                             int aq2 = 0;
@@ -117,28 +114,27 @@ public class Importer
                 }
             }
 
-        }catch (java.util.NoSuchElementException exception){
+        } catch (java.util.NoSuchElementException exception) {
             endOrNot = false;
 
-        }   
+        }
 
         return impProvList;
 
     }
 
-    public static ArrayList<String[]> importCountry (String name) throws IOException
-    {
+    public static ArrayList<String[]> importCountry(String name) throws IOException {
 
         String tab = "	";
 
         String VQ2 = "{}q";
 
-        String bracket1 = VQ2.substring(0,1);
-        String bracket2 = VQ2.substring(1,2);
+        String bracket1 = VQ2.substring(0, 1);
+        String bracket2 = VQ2.substring(1, 2);
 
         //System.out.println ("Load 1 done");
-        FileInputStream fileIn= new FileInputStream(name);
-        Scanner scnr= new Scanner(fileIn);
+        FileInputStream fileIn = new FileInputStream(name);
+        Scanner scnr = new Scanner(fileIn);
 
         int flag = 0;
 
@@ -148,10 +144,10 @@ public class Importer
 
         //String idStr = provID.toString();
 
-        String startWord = tab+"country_database={";
-        String endWord = tab+"state_database={";
+        String startWord = tab + "country_database={";
+        String endWord = tab + "state_database={";
 
-        String keyWord = tab+tab+"}";
+        String keyWord = tab + tab + "}";
 
         int aqq = 0;
         boolean endOrNot = true;
@@ -185,163 +181,141 @@ public class Importer
         impTagInfo.add(output); //default entry at ID 0
 
         try {
-            while (endOrNot = true){
+            while (endOrNot = true) {
 
                 qaaa = scnr.nextLine();
-                if (vmm.equals(startWord)){
+                if (vmm.equals(startWord)) {
 
                     while (flag == 0) {
-                        qaaa = scnr.nextLine(); 
+                        qaaa = scnr.nextLine();
 
-                        if (qaaa.equals(keyWord)){
+                        if (qaaa.equals(keyWord)) {
                             flag = 1;
 
                             while (flag == 1) {
                                 qaaa = scnr.nextLine();
-                                if (qaaa.split("=")[0].equals( tab+tab+tab+"tag" ) ) {
+                                if (qaaa.split("=")[0].equals(tab + tab + tab + "tag")) {
                                     output[0] = qaaa.split("=")[1];
-                                    output[0] = output[0].substring(1,output[0].length()-1);
-                                }
-                                else if (qaaa.split("=")[0].equals( tab+tab+tab+"historical" ) ) {
+                                    output[0] = output[0].substring(1, output[0].length() - 1);
+                                } else if (qaaa.split("=")[0].equals(tab + tab + tab + "historical")) {
                                     output[21] = qaaa.split("=")[1];
-                                    output[21] = output[21].substring(1,output[21].length()-1);
-                                }
-                                else if (qaaa.split("=")[0].equals( tab+tab+tab+"country_name" ) ) {
-                                    qaaa = scnr.nextLine(); 
+                                    output[21] = output[21].substring(1, output[21].length() - 1);
+                                } else if (qaaa.split("=")[0].equals(tab + tab + tab + "country_name")) {
+                                    qaaa = scnr.nextLine();
                                     output[19] = qaaa.split("=")[1];
-                                    output[19] = output[19].substring(1,output[19].length()-1);
+                                    output[19] = output[19].substring(1, output[19].length() - 1);
                                     if (output[19].equals("CIVILWAR_FACTION_NAME")) {
                                         qaaa = scnr.nextLine();
-                                        if (qaaa.split("=")[0].equals(tab+tab+tab+tab+"adjective")) {
-                                            qaaa = scnr.nextLine();    
+                                        if (qaaa.split("=")[0].equals(tab + tab + tab + tab + "adjective")) {
+                                            qaaa = scnr.nextLine();
                                         }
-                                        if (qaaa.split("=")[0].equals(tab+tab+tab+tab+"base")) {
+                                        if (qaaa.split("=")[0].equals(tab + tab + tab + tab + "base")) {
 
                                             qaaa = scnr.nextLine();
                                             qaaa = qaaa.split("=")[1];
-                                            qaaa = qaaa.substring(1,qaaa.length()-1);
+                                            qaaa = qaaa.substring(1, qaaa.length() - 1);
                                             if (qaaa.equals("CIVILWAR_FACTION_NAME")) {
                                                 int civilWarFlag = 0;
                                                 while (civilWarFlag == 0) {
                                                     qaaa = scnr.nextLine();
-                                                    qaaa = qaaa.replace(tab,"");
+                                                    qaaa = qaaa.replace(tab, "");
                                                     if (qaaa.split("=")[0].equals("name")) {
                                                         qaaa = qaaa.split("=")[1];
-                                                        qaaa = qaaa.substring(1,qaaa.length()-1);
-                                                        if (!qaaa.equals ("CIVILWAR_FACTION_NAME")) {
+                                                        qaaa = qaaa.substring(1, qaaa.length() - 1);
+                                                        if (!qaaa.equals("CIVILWAR_FACTION_NAME")) {
                                                             civilWarFlag = 1;
                                                         }
                                                     }
                                                 }
 
                                             }
-                                            output[19] = "CIVILWAR-"+qaaa;
+                                            output[19] = "CIVILWAR-" + qaaa;
                                         }
                                     }
 
                                     //System.out.println ("Load 3 done");
-                                }
-                                else if (qaaa.split("=")[0].equals( tab+tab+tab+"flag" ) ) {
+                                } else if (qaaa.split("=")[0].equals(tab + tab + tab + "flag")) {
                                     output[23] = qaaa.split("=")[1];
-                                    output[23] = output[23].substring(1,output[23].length()-1);
-                                }
-                                else if (qaaa.split("=")[0].equals( tab+tab+tab+tab+"seed" ) ) {
+                                    output[23] = output[23].substring(1, output[23].length() - 1);
+                                } else if (qaaa.split("=")[0].equals(tab + tab + tab + tab + "seed")) {
                                     output[1] = qaaa.split("=")[1];
-                                }
-                                else if (qaaa.split("=")[0].equals( tab+tab+tab+"gender_equality" ) ) {
+                                } else if (qaaa.split("=")[0].equals(tab + tab + tab + "gender_equality")) {
                                     output[2] = qaaa.split("=")[1]; //will be used for determining inheiratance laws
-                                }
-                                else if (qaaa.split("=")[0].equals( tab+tab+tab+"color" ) ) {
+                                } else if (qaaa.split("=")[0].equals(tab + tab + tab + "color")) {
 
                                     if (qaaa.length() == 14) { //Rakaly save format
                                         qaaa = scnr.nextLine();
-                                        output[3] = qaaa.replace(tab,"");
+                                        output[3] = qaaa.replace(tab, "");
                                     } else { //regular decompressed save format
 
-                                        output[3] = qaaa.split(tab+tab+tab+"color2")[0];
-                                        output[3] = qaaa.substring(15,output[3].length()-2);
+                                        output[3] = qaaa.split(tab + tab + tab + "color2")[0];
+                                        output[3] = qaaa.substring(15, output[3].length() - 2);
                                     }
-                                }
-                                else if (qaaa.split("=")[0].equals( tab+tab+tab+tab+"gold" ) ) {
+                                } else if (qaaa.split("=")[0].equals(tab + tab + tab + tab + "gold")) {
                                     output[4] = qaaa.split("=")[1];
-                                }
-                                else if (qaaa.split("=")[0].equals( tab+tab+tab+"capital" ) ) {
+                                } else if (qaaa.split("=")[0].equals(tab + tab + tab + "capital")) {
                                     output[5] = qaaa.split("=")[1];
-                                }
-                                else if (qaaa.split("=")[0].equals( tab+tab+tab+"primary_culture" ) ) {
+                                } else if (qaaa.split("=")[0].equals(tab + tab + tab + "primary_culture")) {
                                     output[6] = qaaa.split("=")[1];
-                                    output[6] = output[6].substring(1,output[6].length()-1);
-                                }
-                                else if (qaaa.split("=")[0].equals( tab+tab+tab+"religion" ) ) {
+                                    output[6] = output[6].substring(1, output[6].length() - 1);
+                                } else if (qaaa.split("=")[0].equals(tab + tab + tab + "religion")) {
                                     output[7] = qaaa.split("=")[1];
-                                    output[7] = output[7].substring(1,output[7].length()-1);
+                                    output[7] = output[7].substring(1, output[7].length() - 1);
                                 }
                                 //Technology
-                                else if (qaaa.split("=")[0].equals( tab+tab+tab+tab+"military_tech" ) ) {
-                                    if (qaaa.substring(qaaa.length()-14, qaaa.length()-13).equals( "c" )) {
+                                else if (qaaa.split("=")[0].equals(tab + tab + tab + tab + "military_tech")) {
+                                    if (qaaa.substring(qaaa.length() - 14, qaaa.length() - 13).equals("c")) {
 
-                                        output[12] = qaaa.substring(33,qaaa.length()); //researcher
+                                        output[12] = qaaa.substring(33, qaaa.length()); //researcher
                                     }
                                     qaaa = scnr.nextLine();
                                     output[8] = qaaa.split("=")[1]; //technology
-                                }
-                                else if (qaaa.split("=")[0].equals( tab+tab+tab+tab+"civic_tech" ) ) {
-                                    if (qaaa.substring(qaaa.length()-14, qaaa.length()-13).equals( "c" )) {
+                                } else if (qaaa.split("=")[0].equals(tab + tab + tab + tab + "civic_tech")) {
+                                    if (qaaa.substring(qaaa.length() - 14, qaaa.length() - 13).equals("c")) {
 
-                                        output[13] = qaaa.substring(30,qaaa.length()); //researcher
+                                        output[13] = qaaa.substring(30, qaaa.length()); //researcher
                                     }
 
                                     qaaa = scnr.nextLine();
                                     output[9] = qaaa.split("=")[1]; //technology
-                                }
-                                else if (qaaa.split("=")[0].equals( tab+tab+tab+tab+"oratory_tech" ) ) {
-                                    if (qaaa.substring(qaaa.length()-14, qaaa.length()-13).equals( "c" )) {
+                                } else if (qaaa.split("=")[0].equals(tab + tab + tab + tab + "oratory_tech")) {
+                                    if (qaaa.substring(qaaa.length() - 14, qaaa.length() - 13).equals("c")) {
 
-                                        output[14] = qaaa.substring(32,qaaa.length()); //researcher
+                                        output[14] = qaaa.substring(32, qaaa.length()); //researcher
                                     }
 
                                     qaaa = scnr.nextLine();
                                     output[10] = qaaa.split("=")[1]; //technology
-                                }
-                                else if (qaaa.split("=")[0].equals( tab+tab+tab+tab+"religious_tech" ) ) {
-                                    if (qaaa.substring(qaaa.length()-14, qaaa.length()-13).equals( "c" )) {
+                                } else if (qaaa.split("=")[0].equals(tab + tab + tab + tab + "religious_tech")) {
+                                    if (qaaa.substring(qaaa.length() - 14, qaaa.length() - 13).equals("c")) {
 
-                                        output[15] = qaaa.substring(34,qaaa.length()); //researcher
+                                        output[15] = qaaa.substring(34, qaaa.length()); //researcher
                                     }
 
                                     qaaa = scnr.nextLine();
                                     output[11] = qaaa.split("=")[1]; //technology
-                                }
-
-                                else if (qaaa.split("=")[0].equals( tab+tab+tab+"monarch" ) ) {
+                                } else if (qaaa.split("=")[0].equals(tab + tab + tab + "monarch")) {
                                     output[16] = qaaa.split("=")[1];
 
-                                }
-                                else if (qaaa.split("=")[0].equals( tab+tab+tab+"government_key" ) ) {
+                                } else if (qaaa.split("=")[0].equals(tab + tab + tab + "government_key")) {
                                     output[17] = qaaa.split("=")[1];
-                                    output[17] = output[17].substring(1,output[17].length()-1);
-                                }
-                                else if (qaaa.split("=")[0].equals( tab+tab+tab+"succession_law" ) ) {
+                                    output[17] = output[17].substring(1, output[17].length() - 1);
+                                } else if (qaaa.split("=")[0].equals(tab + tab + tab + "succession_law")) {
                                     output[18] = qaaa.split("=")[1];
 
-                                }
-
-                                else if (qaaa.split("=")[0].equals( tab+tab+tab+"governorship" ) ) {
+                                } else if (qaaa.split("=")[0].equals(tab + tab + tab + "governorship")) {
                                     qaaa = scnr.nextLine();
-                                    String tempReg = qaaa.split("=")[1].substring(1,qaaa.split("=")[1].length()-1);
+                                    String tempReg = qaaa.split("=")[1].substring(1, qaaa.split("=")[1].length() - 1);
                                     qaaa = scnr.nextLine();
-                                    if (qaaa.split("=")[0].equals (tab+tab+tab+tab+"governor")) {
-                                        if (output[20].equals ("none") ) {
+                                    if (qaaa.split("=")[0].equals(tab + tab + tab + tab + "governor")) {
+                                        if (output[20].equals("none")) {
                                             output[20] = tempReg + "~" + qaaa.split("=")[1];
-                                        }
-                                        else {
-                                            output[20] =  output[20] + "," + tempReg + "~" + qaaa.split("=")[1];   
+                                        } else {
+                                            output[20] = output[20] + "," + tempReg + "~" + qaaa.split("=")[1];
                                         }
                                     }
 
-                                }
-
-                                else if (qaaa.split("=")[0].equals( tab+tab+tab+tab+"budget_dates" ) ) {
+                                } else if (qaaa.split("=")[0].equals(tab + tab + tab + tab + "budget_dates")) {
 
                                     if (output[21].equals("9999")) { //failsafe if somehow there is no historical tag
                                         output[21] = output[0];
@@ -385,26 +359,25 @@ public class Importer
                                 }
                             }
                         }
-                    }   
+                    }
 
                 }
             }
 
-        }catch (java.util.NoSuchElementException exception){
+        } catch (java.util.NoSuchElementException exception) {
             endOrNot = false;
 
-        }   
+        }
 
         return impTagInfo;
     }
 
-    public static ArrayList<String> importSubjects (String name) throws IOException
-    {
+    public static ArrayList<String> importSubjects(String name) throws IOException {
 
         //Primarily used for subjects/vassals in IR
 
-        FileInputStream fileIn= new FileInputStream(name);
-        Scanner scnr= new Scanner(fileIn);
+        FileInputStream fileIn = new FileInputStream(name);
+        Scanner scnr = new Scanner(fileIn);
 
         int flag = 0;
 
@@ -425,23 +398,23 @@ public class Importer
         output[2] = "9999"; //default for no subject relation
 
         try {
-            while (endOrNot = true){
+            while (endOrNot = true) {
 
                 qaaa = scnr.nextLine();
 
                 //overlord
-                if (qaaa.split("=")[0].equals( tab+tab+"first" ) ) {
+                if (qaaa.split("=")[0].equals(tab + tab + "first")) {
                     output[0] = qaaa.split("=")[1];
                 }
 
                 //subject
-                if (qaaa.split("=")[0].equals( tab+tab+"second" ) ) {
+                if (qaaa.split("=")[0].equals(tab + tab + "second")) {
                     output[1] = qaaa.split("=")[1];
                 }
                 //subject type
-                if (qaaa.split("=")[0].equals( tab+tab+"subject_type" ) ) {
+                if (qaaa.split("=")[0].equals(tab + tab + "subject_type")) {
                     output[2] = qaaa.split("=")[1];
-                    output[2] = output[2].substring(1,output[2].length()-1);
+                    output[2] = output[2].substring(1, output[2].length() - 1);
                     flag = 1; //end loop
                     String[] tmpOutput = new String[output.length];
                     int aq2 = 0;
@@ -450,7 +423,7 @@ public class Importer
                         aq2 = aq2 + 1;
                     }
 
-                    currentList.add(tmpOutput[0]+","+tmpOutput[1]+","+tmpOutput[2]);
+                    currentList.add(tmpOutput[0] + "," + tmpOutput[1] + "," + tmpOutput[2]);
 
                     output[0] = "9999";
                     output[1] = "9999";
@@ -460,7 +433,7 @@ public class Importer
                 flag = 0;
             }
 
-        }catch (java.util.NoSuchElementException exception){
+        } catch (java.util.NoSuchElementException exception) {
             endOrNot = false;
 
         }
@@ -475,11 +448,11 @@ public class Importer
 
     }
 
-    public static String[] importDir (String name) throws IOException //Imports directories from configuration.txt
+    public static String[] importDir(String name) throws IOException //Imports directories from configuration.txt
     {
 
-        FileInputStream fileIn= new FileInputStream(name);
-        Scanner scnr= new Scanner(fileIn);
+        FileInputStream fileIn = new FileInputStream(name);
+        Scanner scnr = new Scanner(fileIn);
 
         int flag = 0;
 
@@ -502,81 +475,71 @@ public class Importer
         output[10] = "bad"; //default for no dejure conversion
 
         try {
-            while (endOrNot = true){
+            while (endOrNot = true) {
 
                 qaaa = scnr.nextLine();
 
-                if (qaaa.split(" = ")[0].equals("CK2Directory")){
+                if (qaaa.split(" = ")[0].equals("CK2Directory")) {
                     output[0] = qaaa.split(" = ")[1];
-                    output[0] = output[0].substring(1,output[0].length()-1);
+                    output[0] = output[0].substring(1, output[0].length() - 1);
 
-                }
-                else if (qaaa.split(" = ")[0].equals("ImperatorDirectory")){
+                } else if (qaaa.split(" = ")[0].equals("ImperatorDirectory")) {
                     output[1] = qaaa.split(" = ")[1];
-                    output[1] = output[1].substring(1,output[1].length()-1);
+                    output[1] = output[1].substring(1, output[1].length() - 1);
 
-                }
-                else if (qaaa.split(" = ")[0].equals("ImperatorModPath")){
+                } else if (qaaa.split(" = ")[0].equals("ImperatorModPath")) {
                     output[2] = qaaa.split(" = ")[1];
-                    output[2] = output[2].substring(1,output[2].length()-1);
-                }
-                else if (qaaa.split(" = ")[0].equals("targetGameModPath")){
+                    output[2] = output[2].substring(1, output[2].length() - 1);
+                } else if (qaaa.split(" = ")[0].equals("targetGameModPath")) {
                     output[3] = qaaa.split(" = ")[1];
-                    output[3] = output[3].substring(1,output[3].length()-1);
+                    output[3] = output[3].substring(1, output[3].length() - 1);
 
-                }
-                else if (qaaa.split(" = ")[0].equals("SaveGame")){
+                } else if (qaaa.split(" = ")[0].equals("SaveGame")) {
                     output[4] = qaaa.split(" = ")[1];
-                    output[4] = output[4].substring(1,output[4].length()-1);
+                    output[4] = output[4].substring(1, output[4].length() - 1);
 
-                }
-                else if (qaaa.split(" = ")[0].equals("selectedMods")){
+                } else if (qaaa.split(" = ")[0].equals("selectedMods")) {
                     output[5] = qaaa.split(" = ")[1];
 
-                }
-                else if (qaaa.split(" = ")[0].equals("output_name")){
+                } else if (qaaa.split(" = ")[0].equals("output_name")) {
                     output[6] = qaaa.split(" = ")[1];
-                    output[6] = output[6].substring(1,output[6].length()-1);
+                    output[6] = output[6].substring(1, output[6].length() - 1);
 
-                }
-                else if (qaaa.split(" = ")[0].equals("year")){
+                } else if (qaaa.split(" = ")[0].equals("year")) {
                     output[7] = qaaa.split(" = ")[1];
-                    output[7] = output[7].substring(1,output[7].length()-1);
+                    output[7] = output[7].substring(1, output[7].length() - 1);
 
-                }
-                else if (qaaa.split(" = ")[0].equals("customYearDate")){
+                } else if (qaaa.split(" = ")[0].equals("customYearDate")) {
                     output[8] = qaaa.split(" = ")[1];
-                    output[8] = output[8].substring(1,output[8].length()-1);
+                    output[8] = output[8].substring(1, output[8].length() - 1);
 
-                }
-                else if (qaaa.split(" = ")[0].equals("dejure")){
+                } else if (qaaa.split(" = ")[0].equals("dejure")) {
                     output[9] = qaaa.split(" = ")[1];
-                    output[9] = output[9].substring(1,output[9].length()-1);
+                    output[9] = output[9].substring(1, output[9].length() - 1);
 
-                }
-                else if (qaaa.split(" = ")[0].equals("republic")){
+                } else if (qaaa.split(" = ")[0].equals("republic")) {
                     output[10] = qaaa.split(" = ")[1];
-                    output[10] = output[10].substring(1,output[10].length()-1);
+                    output[10] = output[10].substring(1, output[10].length() - 1);
 
                 }
 
             }
 
-        }catch (java.util.NoSuchElementException exception){
+        } catch (java.util.NoSuchElementException exception) {
             endOrNot = false;
 
-        }   
+        }
 
         return output;
 
     }
 
-    public static String[] importConvList (String name, int provIDnum) throws IOException //Checks old format first, then new format
+    public static String[] importConvList(String name, int provIDnum) throws IOException //Checks old format first, then new format
     {
 
         String provID = Integer.toString(provIDnum);
-        FileInputStream fileIn= new FileInputStream(name);
-        Scanner scnr= new Scanner(fileIn);
+        FileInputStream fileIn = new FileInputStream(name);
+        Scanner scnr = new Scanner(fileIn);
 
         int flag = 0;
 
@@ -590,11 +553,11 @@ public class Importer
         output[1] = "99999"; //default for no culture, uncolonized province with 0 pops
 
         try {
-            while (endOrNot = true){
+            while (endOrNot = true) {
 
                 qaaa = scnr.nextLine();
 
-                if (qaaa.split(",")[0].equals(provID)){
+                if (qaaa.split(",")[0].equals(provID)) {
                     endOrNot = false;
                     output[0] = qaaa.split(",")[0];
                     output[1] = qaaa.split(",")[1];
@@ -603,21 +566,21 @@ public class Importer
 
             }
 
-        }catch (java.util.NoSuchElementException exception){
+        } catch (java.util.NoSuchElementException exception) {
             endOrNot = false;
 
-        }   
+        }
 
         return output;
 
     }
 
-    public static String[] importConvListR (String name, int provIDnum) throws IOException //Reverse of importConvList
+    public static String[] importConvListR(String name, int provIDnum) throws IOException //Reverse of importConvList
     {
 
         String provID = Integer.toString(provIDnum);
-        FileInputStream fileIn= new FileInputStream(name);
-        Scanner scnr= new Scanner(fileIn);
+        FileInputStream fileIn = new FileInputStream(name);
+        Scanner scnr = new Scanner(fileIn);
 
         int flag = 0;
 
@@ -631,13 +594,13 @@ public class Importer
         output[1] = "99999"; //default for no culture, uncolonized province with 0 pops
 
         try {
-            while (endOrNot = true){
+            while (endOrNot = true) {
 
                 qaaa = scnr.nextLine();
 
                 try {
 
-                    if (qaaa.split(",")[1].equals(provID)){
+                    if (qaaa.split(",")[1].equals(provID)) {
                         endOrNot = false;
                         output[0] = qaaa.split(",")[0];
                         output[1] = qaaa.split(",")[1];
@@ -650,20 +613,19 @@ public class Importer
 
             }
 
-        }catch (java.util.NoSuchElementException exception){
+        } catch (java.util.NoSuchElementException exception) {
             endOrNot = false;
 
-        }   
+        }
 
         return output;
 
     }
 
-    public static String[] importCultList (String name, String provIDnum) throws IOException
-    {
+    public static String[] importCultList(String name, String provIDnum) throws IOException {
 
-        FileInputStream fileIn= new FileInputStream(name);
-        Scanner scnr= new Scanner(fileIn);
+        FileInputStream fileIn = new FileInputStream(name);
+        Scanner scnr = new Scanner(fileIn);
 
         int flag = 0;
 
@@ -677,11 +639,11 @@ public class Importer
         output[1] = "99999"; //default for no culture, uncolonized province with 0 pops
 
         try {
-            while (endOrNot = true){
+            while (endOrNot = true) {
 
                 qaaa = scnr.nextLine();
 
-                if (qaaa.split(",")[0].equals(provIDnum)){
+                if (qaaa.split(",")[0].equals(provIDnum)) {
                     endOrNot = false;
                     output[0] = qaaa.split(",")[0];
                     output[1] = qaaa.split(",")[1];
@@ -689,28 +651,27 @@ public class Importer
                 }
             }
 
-        }catch (java.util.NoSuchElementException exception){
+        } catch (java.util.NoSuchElementException exception) {
             endOrNot = false;
 
-        }   
+        }
 
         return output;
 
     }
 
-    public static String[] importLocalisation (ArrayList<String> locList, String tag, String dynasty) throws IOException
-    {
+    public static String[] importLocalisation(ArrayList<String> locList, String tag, String dynasty) throws IOException {
         char quote = '"';
         String[] output;
         output = new String[2];
         String revoltName = "no";
         int usesDynasty = 0;
 
-        try { 
+        try {
             if (tag.split("-")[0].equals("CIVILWAR")) { //For the opposing side of a country undergoing civil war
                 revoltName = tag.split("-")[1];
             }
-        }catch (java.lang.NullPointerException exception){
+        } catch (java.lang.NullPointerException exception) {
             revoltName = "no";
         }
 
@@ -722,31 +683,31 @@ public class Importer
             boolean name = false;
 
             try {
-                while (aqq < locList.size()){
+                while (aqq < locList.size()) {
 
                     String qaaa = locList.get(aqq);
 
-                    if (qaaa.split(":")[0].equals(" "+tag)){
+                    if (qaaa.split(":")[0].equals(" " + tag)) {
                         output[0] = qaaa.split(":")[1];
-                        output[0] = output[0].substring(3,output[0].length()-1);
+                        output[0] = output[0].substring(3, output[0].length() - 1);
                         name = true;
 
                     }
 
-                    String adjName = tag.replace("_FEUDATORY_NAME","_FEUDATORY_ADJECTIVE"); //for certain mission tags which have different formatting
-                    adjName = adjName.replace("_NAME","");
+                    String adjName = tag.replace("_FEUDATORY_NAME", "_FEUDATORY_ADJECTIVE"); //for certain mission tags which have different formatting
+                    adjName = adjName.replace("_NAME", "");
 
-                    if (qaaa.split(":")[0].equals(" "+tag+"_ADJ") || qaaa.split(":")[0].equals(" "+tag+"_ADJECTIVE")
-                    || qaaa.split(":")[0].equals(" "+adjName+"_ADJ") || qaaa.split(":")[0].equals(" "+adjName+"_ADJECTIVE")){
+                    if (qaaa.split(":")[0].equals(" " + tag + "_ADJ") || qaaa.split(":")[0].equals(" " + tag + "_ADJECTIVE")
+                            || qaaa.split(":")[0].equals(" " + adjName + "_ADJ") || qaaa.split(":")[0].equals(" " + adjName + "_ADJECTIVE")) {
                         if (name) {
-                          aqq = locList.size() + 1;  
+                            aqq = locList.size() + 1;
                         }
                         output[1] = qaaa.split(":")[1];
-                        output[1] = output[1].substring(3,output[1].length()-1);
+                        output[1] = output[1].substring(3, output[1].length() - 1);
 
                     } else {
-                        if (output[1].charAt(output[1].length()-1) == 'a') {
-                            output[1] = output[0] + "n";    
+                        if (output[1].charAt(output[1].length() - 1) == 'a') {
+                            output[1] = output[0] + "n";
                         } else {
                             output[1] = output[0];
                         }
@@ -755,23 +716,22 @@ public class Importer
                     aqq = aqq + 1;
                 }
 
-            }catch (java.util.NoSuchElementException exception){
+            } catch (java.util.NoSuchElementException exception) {
                 aqq = locList.size() + 1;
 
-            }   
+            }
 
-        }
-        else {
+        } else {
 
-            String[] revoltNames = importLocalisation (locList, revoltName, dynasty);
+            String[] revoltNames = importLocalisation(locList, revoltName, dynasty);
             output[0] = revoltNames[1] + " Revolt";
             output[1] = revoltNames[1] + " Revolter";
         }
 
         if (output[0].charAt(0) == '[') { //For countries which use a dynasty name for their country, like the Seleukid Empire
             output[1] = dynasty;
-            if (output[1].charAt(output[1].length()-1) == 'a') {
-                output[1] = output[1] + "n";    
+            if (output[1].charAt(output[1].length() - 1) == 'a') {
+                output[1] = output[1] + "n";
             }
             output[0] = output[1] + " Empire"; //may change out Empire for country rank
         }
@@ -780,15 +740,14 @@ public class Importer
 
     }
 
-    public static String[] importProvLocalisation (String directory, String tag) throws IOException
-    {
+    public static String[] importProvLocalisation(String directory, String tag) throws IOException {
 
         String VM = "\\";
         VM = VM.substring(0);
         char quote = '"';
         String name = directory + VM + "game" + VM + "localization" + VM + "english" + VM + "provincenames_l_english.yml";
-        FileInputStream fileIn= new FileInputStream(name);
-        Scanner scnr= new Scanner(fileIn);
+        FileInputStream fileIn = new FileInputStream(name);
+        Scanner scnr = new Scanner(fileIn);
 
         int flag = 0;
 
@@ -803,41 +762,40 @@ public class Importer
         String idNum;
 
         try {
-            while (endOrNot = true){
+            while (endOrNot = true) {
 
                 qaaa = scnr.nextLine();
 
-                if (qaaa.split(":")[0].equals(" "+tag)){
+                if (qaaa.split(":")[0].equals(" " + tag)) {
                     endOrNot = false;
                     output[0] = qaaa.split(":")[1];
-                    output[0] = output[0].substring(3,output[0].length()-1);
+                    output[0] = output[0].substring(3, output[0].length() - 1);
                     output[1] = output[0];
-                    if (output[1].charAt(output[1].length()-1) == 'a') {
-                        output[1] = output[1] + "n";    
+                    if (output[1].charAt(output[1].length() - 1) == 'a') {
+                        output[1] = output[1] + "n";
                     }
 
                 }
 
             }
 
-        }catch (java.util.NoSuchElementException exception){
+        } catch (java.util.NoSuchElementException exception) {
             endOrNot = false;
 
-        }   
+        }
 
         return output;
 
     }
 
-    public static String[] importAreaLocalisation (String directory, String tag) throws IOException
-    {
+    public static String[] importAreaLocalisation(String directory, String tag) throws IOException {
 
         String VM = "\\";
         VM = VM.substring(0);
         char quote = '"';
         String name = directory + VM + "game" + VM + "localization" + VM + "english" + VM + "regionnames_l_english.yml";
-        FileInputStream fileIn= new FileInputStream(name);
-        Scanner scnr= new Scanner(fileIn);
+        FileInputStream fileIn = new FileInputStream(name);
+        Scanner scnr = new Scanner(fileIn);
 
         int flag = 0;
 
@@ -852,41 +810,41 @@ public class Importer
         String idNum;
 
         try {
-            while (endOrNot = true){
+            while (endOrNot = true) {
 
                 qaaa = scnr.nextLine();
 
-                if (qaaa.split(":")[0].equals(" "+tag)){
+                if (qaaa.split(":")[0].equals(" " + tag)) {
                     endOrNot = false;
                     output[0] = qaaa.split(":")[1];
-                    output[0] = output[0].substring(3,output[0].length()-1);
+                    output[0] = output[0].substring(3, output[0].length() - 1);
                     output[1] = output[0];
-                    if (output[1].charAt(output[1].length()-1) == 'a') {
-                        output[1] = output[1] + "n";    
+                    if (output[1].charAt(output[1].length() - 1) == 'a') {
+                        output[1] = output[1] + "n";
                     }
 
                 }
 
             }
 
-        }catch (java.util.NoSuchElementException exception){
+        } catch (java.util.NoSuchElementException exception) {
             endOrNot = false;
 
-        }   
+        }
 
         return output;
 
     }
 
-    public static String[] importCustCountryLocalisation (String tag) throws IOException //Supported Loc for popular IR mods
+    public static String[] importCustCountryLocalisation(String tag) throws IOException //Supported Loc for popular IR mods
     {
 
         String VM = "\\";
         VM = VM.substring(0);
         char quote = '"';
         String name = "supportedModLoc.txt";
-        FileInputStream fileIn= new FileInputStream(name);
-        Scanner scnr= new Scanner(fileIn);
+        FileInputStream fileIn = new FileInputStream(name);
+        Scanner scnr = new Scanner(fileIn);
 
         int flag = 0;
 
@@ -901,41 +859,40 @@ public class Importer
         String idNum;
 
         try {
-            while (endOrNot = true){
+            while (endOrNot = true) {
 
                 qaaa = scnr.nextLine();
 
-                if (qaaa.split(":")[0].equals(" "+tag)){
+                if (qaaa.split(":")[0].equals(" " + tag)) {
                     endOrNot = false;
                     output[0] = qaaa.split(":")[1];
-                    output[0] = output[0].substring(3,output[0].length()-1);
+                    output[0] = output[0].substring(3, output[0].length() - 1);
                     output[1] = output[0];
-                    if (output[1].charAt(output[1].length()-1) == 'a') {
-                        output[1] = output[1] + "n";    
+                    if (output[1].charAt(output[1].length() - 1) == 'a') {
+                        output[1] = output[1] + "n";
                     }
 
                 }
 
             }
 
-        }catch (java.util.NoSuchElementException exception){
+        } catch (java.util.NoSuchElementException exception) {
             endOrNot = false;
 
-        }   
+        }
 
         return output;
 
     }
 
-    public static String[] importRegionLocalisation (String directory, String tag) throws IOException
-    {
+    public static String[] importRegionLocalisation(String directory, String tag) throws IOException {
 
         String VM = "\\";
         VM = VM.substring(0);
         char quote = '"';
         String name = directory + VM + "game" + VM + "localization" + VM + "english" + VM + "macroregions_l_english.yml";
-        FileInputStream fileIn= new FileInputStream(name);
-        Scanner scnr= new Scanner(fileIn);
+        FileInputStream fileIn = new FileInputStream(name);
+        Scanner scnr = new Scanner(fileIn);
 
         int flag = 0;
 
@@ -950,34 +907,33 @@ public class Importer
         String idNum;
 
         try {
-            while (endOrNot = true){
+            while (endOrNot = true) {
 
                 qaaa = scnr.nextLine();
 
-                if (qaaa.split(":")[0].equals(" "+tag)){
+                if (qaaa.split(":")[0].equals(" " + tag)) {
                     endOrNot = false;
                     output[0] = qaaa.split(":")[1];
-                    output[0] = output[0].substring(3,output[0].length()-1);
+                    output[0] = output[0].substring(3, output[0].length() - 1);
                     output[1] = output[0];
-                    if (output[1].charAt(output[1].length()-1) == 'a') {
-                        output[1] = output[1] + "n";    
+                    if (output[1].charAt(output[1].length() - 1) == 'a') {
+                        output[1] = output[1] + "n";
                     }
 
                 }
 
             }
 
-        }catch (java.util.NoSuchElementException exception){
+        } catch (java.util.NoSuchElementException exception) {
             endOrNot = false;
 
-        }   
+        }
 
         return output;
 
     }
 
-    public static String[] importFormableLocalisation (String directory, String tag) throws IOException
-    {
+    public static String[] importFormableLocalisation(String directory, String tag) throws IOException {
 
         String VM = "\\";
         VM = VM.substring(0);
@@ -988,8 +944,8 @@ public class Importer
 
         String name = directory + VM + "game" + VM + "localization" + VM + "english" + VM + "nation_formation_l_english.yml";
 
-        FileInputStream fileIn= new FileInputStream(name);
-        Scanner scnr= new Scanner(fileIn);
+        FileInputStream fileIn = new FileInputStream(name);
+        Scanner scnr = new Scanner(fileIn);
 
         int flag = 0;
 
@@ -999,10 +955,8 @@ public class Importer
         String tag2 = tag;
 
         try {
-            tag2 = tag.split("_NAM")[0];  
-        }
-
-        catch (java.lang.NullPointerException exception){
+            tag2 = tag.split("_NAM")[0];
+        } catch (java.lang.NullPointerException exception) {
 
         }
 
@@ -1010,36 +964,35 @@ public class Importer
         output[1] = tag; //default for no adjective, will just use tag ID
 
         try {
-            while (endOrNot = true){
+            while (endOrNot = true) {
 
                 qaaa = scnr.nextLine();
 
-                if (qaaa.split(":")[0].equals(" "+tag)){
-                    
+                if (qaaa.split(":")[0].equals(" " + tag)) {
+
                     output[0] = qaaa.split(":")[1];
-                    output[0] = output[0].substring(3,output[0].length()-1);
+                    output[0] = output[0].substring(3, output[0].length() - 1);
 
                 }
 
-                if (qaaa.split(":")[0].equals(" "+tag+"_ADJ") || qaaa.split(":")[0].equals(" "+tag+"_ADJECTIVE") || 
-                qaaa.split(":")[0].equals(" "+tag2+"_ADJ") || qaaa.split(":")[0].equals(" "+tag2+"_ADJECTIVE")){
+                if (qaaa.split(":")[0].equals(" " + tag + "_ADJ") || qaaa.split(":")[0].equals(" " + tag + "_ADJECTIVE") ||
+                        qaaa.split(":")[0].equals(" " + tag2 + "_ADJ") || qaaa.split(":")[0].equals(" " + tag2 + "_ADJECTIVE")) {
                     endOrNot = false;
                     output[1] = qaaa.split(":")[1];
-                    output[1] = output[1].substring(3,output[1].length()-1);
+                    output[1] = output[1].substring(3, output[1].length() - 1);
                 }
             }
 
-        }catch (java.util.NoSuchElementException exception){
+        } catch (java.util.NoSuchElementException exception) {
             endOrNot = false;
 
-        }   
+        }
 
         return output;
 
     }
 
-    public static ArrayList<String> importModLocalisation (String directory) throws IOException
-    {
+    public static ArrayList<String> importModLocalisation(String directory) throws IOException {
 
         String VM = "\\";
         VM = VM.substring(0);
@@ -1048,15 +1001,15 @@ public class Importer
 
         String name = directory + VM + "localisation" + VM + "converted_title_localisation.csv";
 
-        FileInputStream fileIn= new FileInputStream(name);
-        Scanner scnr= new Scanner(fileIn);
+        FileInputStream fileIn = new FileInputStream(name);
+        Scanner scnr = new Scanner(fileIn);
 
         int flag = 0;
         boolean endOrNot = true;
         String qaaa;
 
         try {
-            while (endOrNot = true){
+            while (endOrNot = true) {
 
                 qaaa = scnr.nextLine();
 
@@ -1064,32 +1017,31 @@ public class Importer
 
             }
 
-        }catch (java.util.NoSuchElementException exception){
+        } catch (java.util.NoSuchElementException exception) {
             endOrNot = false;
 
-        }   
+        }
 
         return oldFile;
 
     }
 
-    public static ArrayList<String> importBasicFile (String directory) throws IOException
-    {
+    public static ArrayList<String> importBasicFile(String directory) throws IOException {
 
         String VM = "\\";
         VM = VM.substring(0);
         ArrayList<String> oldFile = new ArrayList<String>();
         char quote = '"';
 
-        FileInputStream fileIn= new FileInputStream(directory);
-        Scanner scnr= new Scanner(fileIn);
+        FileInputStream fileIn = new FileInputStream(directory);
+        Scanner scnr = new Scanner(fileIn);
 
         int flag = 0;
         boolean endOrNot = true;
         String qaaa;
 
         try {
-            while (endOrNot = true){
+            while (endOrNot = true) {
 
                 qaaa = scnr.nextLine();
 
@@ -1097,20 +1049,19 @@ public class Importer
 
             }
 
-        }catch (java.util.NoSuchElementException exception){
+        } catch (java.util.NoSuchElementException exception) {
             endOrNot = false;
 
-        }   
+        }
 
         return oldFile;
 
     }
 
-    public static String[] importDejureList (String name, String provIDnum) throws IOException
-    {
+    public static String[] importDejureList(String name, String provIDnum) throws IOException {
 
-        FileInputStream fileIn= new FileInputStream(name);
-        Scanner scnr= new Scanner(fileIn);
+        FileInputStream fileIn = new FileInputStream(name);
+        Scanner scnr = new Scanner(fileIn);
 
         int flag = 0;
 
@@ -1125,11 +1076,11 @@ public class Importer
         output[2] = "nomap"; //default for no mapping
 
         try {
-            while (endOrNot = true){
+            while (endOrNot = true) {
 
                 qaaa = scnr.nextLine();
 
-                if (qaaa.split(",")[0].equals(provIDnum)){
+                if (qaaa.split(",")[0].equals(provIDnum)) {
                     endOrNot = false;
                     output[0] = qaaa.split(",")[0];
                     output[1] = qaaa.split(",")[1];
@@ -1138,34 +1089,34 @@ public class Importer
                 }
             }
 
-        }catch (java.util.NoSuchElementException exception){
+        } catch (java.util.NoSuchElementException exception) {
             endOrNot = false;
 
-        }   
+        }
 
         return output;
 
     }
 
-    public static ArrayList<String> importDuchyNameList (String ck2Dir) throws IOException //imports dejure duchies, along with the counties they go to
+    public static ArrayList<String> importDuchyNameList(String ck2Dir) throws IOException //imports dejure duchies, along with the counties they go to
     {
 
         String VM = "\\";
         VM = VM.substring(0);
         String tab = "	";
 
-        FileInputStream fileIn= new FileInputStream(ck2Dir+VM+"common"+VM+"landed_titles"+VM+"landed_titles.txt");
-        Scanner scnr= new Scanner(fileIn);
+        FileInputStream fileIn = new FileInputStream(ck2Dir + VM + "common" + VM + "landed_titles" + VM + "landed_titles.txt");
+        Scanner scnr = new Scanner(fileIn);
 
         String qaaa = scnr.nextLine();
-        String tab3 = tab+tab+tab;
+        String tab3 = tab + tab + tab;
 
-        String duchyWord = tab+tab+"d"; //Word used to identify duchies
+        String duchyWord = tab + tab + "d"; //Word used to identify duchies
         String duchyWord2 = "        d"; //Bohemia and Moravia use different formatting
-        String countyWord = tab3+"c";
-        String countyWord2 = "            "+tab+"c";//Bohemia and Moravia use different formatting
+        String countyWord = tab3 + "c";
+        String countyWord2 = "            " + tab + "c";//Bohemia and Moravia use different formatting
         String countyWord3 = "            c";
-        String countyWord4 = tab3+tab+"c";
+        String countyWord4 = tab3 + tab + "c";
 
         ArrayList<String> duchies = new ArrayList<String>();
 
@@ -1175,19 +1126,19 @@ public class Importer
         String duchyList = " ";
 
         try {
-            while (endOrNot == 0){
+            while (endOrNot == 0) {
 
                 if (qaaa.split("_")[0].equals(duchyWord) || qaaa.split("_")[0].equals(duchyWord2)) {
 
                     duchies.add(duchyList);
 
-                    duchyList = qaaa.split(" = ")[0].replace(tab,"");
+                    duchyList = qaaa.split(" = ")[0].replace(tab, "");
                     aqq = aqq + 1;
                 }
 
                 if (qaaa.split("_")[0].equals(countyWord) || qaaa.split("_")[0].equals(countyWord2) || qaaa.split("_")[0].equals(countyWord3) ||
-                qaaa.split("_")[0].equals(countyWord4)) {
-                    String county = qaaa.split(" = ")[0].replace(tab,"");
+                        qaaa.split("_")[0].equals(countyWord4)) {
+                    String county = qaaa.split(" = ")[0].replace(tab, "");
                     duchyList = duchyList + "," + county;
                     qaaa = scnr.nextLine();
                 }
@@ -1198,23 +1149,23 @@ public class Importer
 
             }
 
-        }catch (java.util.NoSuchElementException exception){
+        } catch (java.util.NoSuchElementException exception) {
             endOrNot = 1;
 
-        }   
+        }
         return duchies;
 
     }
 
-    public static int compressTest (String saveDir) throws IOException //Checks if the file is compressed or not
+    public static int compressTest(String saveDir) throws IOException //Checks if the file is compressed or not
     {
 
         String VM = "\\";
         VM = VM.substring(0);
         String tab = "	";
 
-        FileInputStream fileIn= new FileInputStream(saveDir);
-        Scanner scnr= new Scanner(fileIn);
+        FileInputStream fileIn = new FileInputStream(saveDir);
+        Scanner scnr = new Scanner(fileIn);
 
         String qaaa = scnr.nextLine();
 
@@ -1223,7 +1174,7 @@ public class Importer
         int aqq = 1;
 
         try {
-            while (aqq != 10){ //loop for the first 10 lines (potential futureproofing), if the key is there, decompressed. Else, compressed
+            while (aqq != 10) { //loop for the first 10 lines (potential futureproofing), if the key is there, decompressed. Else, compressed
 
                 if (qaaa.split("=")[0].equals("save_game_version")) {
 
@@ -1233,22 +1184,22 @@ public class Importer
                 qaaa = scnr.nextLine();
                 aqq = aqq + 1;
             }
-        }catch (java.util.NoSuchElementException exception){
+        } catch (java.util.NoSuchElementException exception) {
             aqq = 10;
 
-        }   
+        }
         return compressedOrNot;
 
     }
 
-    public static String[] importSaveInfo (String directory) throws IOException //imports basic save info, like version
+    public static String[] importSaveInfo(String directory) throws IOException //imports basic save info, like version
     {
 
         String VM = "\\";
         VM = VM.substring(0);
         char quote = '"';
-        FileInputStream fileIn= new FileInputStream(directory);
-        Scanner scnr= new Scanner(fileIn);
+        FileInputStream fileIn = new FileInputStream(directory);
+        Scanner scnr = new Scanner(fileIn);
 
         int flag = 0;
 
@@ -1263,45 +1214,44 @@ public class Importer
         String idNum;
 
         try {
-            while (endOrNot = true){
+            while (endOrNot = true) {
 
                 qaaa = scnr.nextLine();
 
-                if (qaaa.split("=")[0].equals("version")){
+                if (qaaa.split("=")[0].equals("version")) {
                     output[0] = qaaa.split("=")[1];
                 }
 
-                if (qaaa.split("=")[0].equals("date")){
+                if (qaaa.split("=")[0].equals("date")) {
                     output[1] = qaaa.split("=")[1];
                     endOrNot = false;
                 }
 
-                if (qaaa.split("=")[0].equals("variables")){ //end of save has been found without finding save date
+                if (qaaa.split("=")[0].equals("variables")) { //end of save has been found without finding save date
                     endOrNot = false;
                 }
 
             }
 
-        }catch (java.util.NoSuchElementException exception){
+        } catch (java.util.NoSuchElementException exception) {
             endOrNot = false;
 
-        }   
+        }
 
         return output;
 
     }
 
-    public static ArrayList<String[]> importFlag (String name) throws IOException
-    {
+    public static ArrayList<String[]> importFlag(String name) throws IOException {
 
-        FileInputStream fileIn= new FileInputStream(name);
-        Scanner scnr= new Scanner(fileIn);
+        FileInputStream fileIn = new FileInputStream(name);
+        Scanner scnr = new Scanner(fileIn);
 
-        ArrayList<String[]> impFlagList= new ArrayList<String[]>();
+        ArrayList<String[]> impFlagList = new ArrayList<String[]>();
 
         String tab = "	";
         char quote = '"';
-        String strQuote = quote+"_";
+        String strQuote = quote + "_";
         strQuote = strQuote.split("_")[0];
         int flag = 0;
 
@@ -1322,73 +1272,71 @@ public class Importer
 
             while (flag == 0) {
                 qaaa = scnr.nextLine();
-                qaaa = qaaa.replace(" = ","=");
-                qaaa = qaaa.replace("= ","=");
-                qaaa = qaaa.replace(" =","=");
-                qaaa = qaaa.replace("    ",tab); //Some flags have strange formatting
-                if (qaaa.contains( "=" ) && output[0].equals("unnamedFlag")) {
+                qaaa = qaaa.replace(" = ", "=");
+                qaaa = qaaa.replace("= ", "=");
+                qaaa = qaaa.replace(" =", "=");
+                qaaa = qaaa.replace("    ", tab); //Some flags have strange formatting
+                if (qaaa.contains("=") && output[0].equals("unnamedFlag")) {
                     output[0] = qaaa.split("=")[0];
                 }
-                if (qaaa.split("=")[0].equals(tab+"pattern") ) {
+                if (qaaa.split("=")[0].equals(tab + "pattern")) {
                     output[1] = qaaa.split("=")[1];
-                    output[1] = output[1].substring(1,output[1].length()-1);
+                    output[1] = output[1].substring(1, output[1].length() - 1);
                 }
                 if (qaaa.split("=").length != 2) { //if using unusual formatting
                     if (qaaa.contains("color1=")) {
-                        output[2] = qaaa.split(tab+"color1=")[1];
-                        output[2] = output[2].split(tab+"color2=")[0];
-                        output[2] = output[2].replace(tab,"");
-                        output[2] = output[2].replace("  "," ");
+                        output[2] = qaaa.split(tab + "color1=")[1];
+                        output[2] = output[2].split(tab + "color2=")[0];
+                        output[2] = output[2].replace(tab, "");
+                        output[2] = output[2].replace("  ", " ");
                     }
                     if (qaaa.contains("color2=")) {
                         output[3] = qaaa.split("color2=")[1];
-                        output[3] = output[3].split(tab+"color3=")[0];
-                        output[3] = output[3].split("   "+"color3=")[0];
-                        output[3] = output[3].replace(tab,"");
-                        output[3] = output[3].replace("  "," ");
+                        output[3] = output[3].split(tab + "color3=")[0];
+                        output[3] = output[3].split("   " + "color3=")[0];
+                        output[3] = output[3].replace(tab, "");
+                        output[3] = output[3].replace("  ", " ");
                     }
                 } else { //if using regular formatting
-                    if (qaaa.split("=")[0].equals(tab+"color1") ) {
+                    if (qaaa.split("=")[0].equals(tab + "color1")) {
                         output[2] = qaaa.split("=")[1];
-                        output[2] = output[2].replace("  "," ");
+                        output[2] = output[2].replace("  ", " ");
                         if (qaaa.contains("rgb ")) {
                             output[2] = output[2].split("rgb ")[1];
                             output[2] = output[2].split(tab)[0]; //Invictus formatting
-                            output[2] = "rgb," + output[2].substring(2,output[2].length()-2);
-                        }
-                        else if (qaaa.contains("hsv ")) {
+                            output[2] = "rgb," + output[2].substring(2, output[2].length() - 2);
+                        } else if (qaaa.contains("hsv ")) {
                             output[2] = output[2].split("hsv ")[1];
                             output[2] = output[2].split(tab)[0]; //Invictus formatting
-                            output[2] = "hsv," + output[2].substring(2,output[2].length()-2);
+                            output[2] = "hsv," + output[2].substring(2, output[2].length() - 2);
                         } else {
                             if (output[2].contains(strQuote)) {
-                                output[2] = output[2].substring(1,output[2].length()-1);
+                                output[2] = output[2].substring(1, output[2].length() - 1);
                             }
                         }
-                        output[2] = output[2].replace(tab,"");
+                        output[2] = output[2].replace(tab, "");
                     }
-                    if (qaaa.split("=")[0].equals(tab+"color2") ) {
+                    if (qaaa.split("=")[0].equals(tab + "color2")) {
                         output[3] = qaaa.split("=")[1];
-                        output[3] = output[3].replace("  "," ");
+                        output[3] = output[3].replace("  ", " ");
                         if (qaaa.contains("rgb ")) {
                             output[3] = output[3].split("rgb ")[1];
                             //output[3] = output[3].split(" }")[0];
                             //output[3] = "rgb," + output[3].substring(2,output[3].length()-1);
                             output[3] = output[3].split(tab)[0]; //Invictus formatting
-                            output[3] = "rgb," + output[3].substring(2,output[3].length()-2);
-                        }
-                        else if (qaaa.contains("hsv ")) {
+                            output[3] = "rgb," + output[3].substring(2, output[3].length() - 2);
+                        } else if (qaaa.contains("hsv ")) {
                             output[3] = output[3].split("hsv ")[1];
                             //output[3] = output[3].split(" }")[0];
                             //output[3] = "hsv," + output[3].substring(2,output[3].length()-1);
                             output[3] = output[3].split(tab)[0]; //Invictus formatting
-                            output[3] = "hsv," + output[3].substring(2,output[3].length()-2);
+                            output[3] = "hsv," + output[3].substring(2, output[3].length() - 2);
                         } else {
                             if (output[3].contains(strQuote)) {
-                                output[3] = output[3].substring(1,output[3].length()-1);
+                                output[3] = output[3].substring(1, output[3].length() - 1);
                             }
                         }
-                        output[3] = output[3].replace(tab,"");
+                        output[3] = output[3].replace(tab, "");
                     }
                 }
 
@@ -1402,95 +1350,89 @@ public class Importer
                     String embRot = "none";
                     int instanceYes = 0; //If emblem has no intances, use colored emblem as instance, 0 for no 1 for yes
                     String tmpOutput = "0";
-                    while (!qaaa.equals(tab+"}")) {
+                    while (!qaaa.equals(tab + "}")) {
                         qaaa = scnr.nextLine();
-                        qaaa = qaaa.replace(" = ","=");
-                        qaaa = qaaa.replace("= ","=");
-                        qaaa = qaaa.replace(" =","=");
-                        qaaa = qaaa.replace("    ",tab); // to fix Invictus Judea Countries file formatting
+                        qaaa = qaaa.replace(" = ", "=");
+                        qaaa = qaaa.replace("= ", "=");
+                        qaaa = qaaa.replace(" =", "=");
+                        qaaa = qaaa.replace("    ", tab); // to fix Invictus Judea Countries file formatting
                         if (qaaa.split("=").length != 2) { //if using unusual formatting
                             if (qaaa.contains("texture=")) {
                                 embTexture = qaaa.split("texture=")[1];
                                 embTexture = embTexture.split(" ")[0];
                                 embTexture = embTexture.split(tab)[0];
-                                embTexture = embTexture.substring(1,embTexture.length()-1);
+                                embTexture = embTexture.substring(1, embTexture.length() - 1);
                             }
                             if (qaaa.contains("color1=")) {
                                 embColor1 = qaaa.split("color1=")[1];
                                 embColor1 = embColor1.split(" ")[0];
                                 embColor1 = embColor1.split(tab)[0];
-                                embColor1 = embColor1.replace(tab,"");
-                                embColor1 = embColor1.replace("  "," ");
+                                embColor1 = embColor1.replace(tab, "");
+                                embColor1 = embColor1.replace("  ", " ");
                                 if (embColor1.contains("rgb ")) {
                                     embColor1 = embColor1.split("rgb ")[1];
                                     embColor1 = embColor1.split(tab)[0]; //Invictus formatting
-                                    embColor1 = "rgb," + embColor1.substring(2,embColor1.length()-2);
-                                }
-                                else if (qaaa.contains("hsv ")) {
+                                    embColor1 = "rgb," + embColor1.substring(2, embColor1.length() - 2);
+                                } else if (qaaa.contains("hsv ")) {
                                     embColor1 = embColor1.split("hsv ")[1];
                                     embColor1 = embColor1.split(tab)[0]; //Invictus formatting
-                                    embColor1 = "hsv," + output[2].substring(2,output[2].length()-2);
+                                    embColor1 = "hsv," + output[2].substring(2, output[2].length() - 2);
                                 }
                             }
                             if (qaaa.contains("color2=")) {
                                 embColor2 = qaaa.split("color2=")[1];
-                                embColor2 = embColor2.split(tab+"color3=")[0];
+                                embColor2 = embColor2.split(tab + "color3=")[0];
                                 embColor2 = embColor2.split(" ")[0];
                                 embColor2 = embColor2.split(tab)[0];
-                                embColor2 = embColor2.replace(tab,"");
-                                embColor2 = embColor2.replace("  "," ");
+                                embColor2 = embColor2.replace(tab, "");
+                                embColor2 = embColor2.replace("  ", " ");
                                 if (embColor2.contains("rgb ")) {
                                     embColor2 = embColor2.split("rgb ")[1];
                                     embColor2 = embColor2.split(tab)[0]; //Invictus formatting
-                                    embColor2 = "rgb," + embColor2.substring(2,embColor2.length()-2);
-                                }
-                                else if (qaaa.contains("hsv ")) {
+                                    embColor2 = "rgb," + embColor2.substring(2, embColor2.length() - 2);
+                                } else if (qaaa.contains("hsv ")) {
                                     embColor2 = embColor2.split("hsv ")[1];
                                     embColor2 = embColor2.split(tab)[0]; //Invictus formatting
-                                    embColor2 = "hsv," + embColor2.substring(2,embColor2.length()-2);
+                                    embColor2 = "hsv," + embColor2.substring(2, embColor2.length() - 2);
                                 }
                             }
                         } else { //regular formatting
 
-                            if (qaaa.contains( "texture=" ) || qaaa.contains( "texture =" ) ) {
+                            if (qaaa.contains("texture=") || qaaa.contains("texture =")) {
                                 embTexture = qaaa.split("=")[1];
                                 embTexture = embTexture.split(tab)[0];
-                                embTexture = embTexture.substring(1,embTexture.length()-1);
-                            }
-                            else if (qaaa.contains( "color1=" ) || qaaa.contains("color1 =") ) {
+                                embTexture = embTexture.substring(1, embTexture.length() - 1);
+                            } else if (qaaa.contains("color1=") || qaaa.contains("color1 =")) {
                                 embColor1 = qaaa.split("=")[1];
                                 if (embColor1.contains(strQuote)) {
-                                    embColor1 = embColor1.substring(1,embColor1.length()-1);
+                                    embColor1 = embColor1.substring(1, embColor1.length() - 1);
                                 }
-                                embColor1 = embColor1.replace(tab,"");
-                                embColor1 = embColor1.replace("  "," ");
+                                embColor1 = embColor1.replace(tab, "");
+                                embColor1 = embColor1.replace("  ", " ");
                                 if (embColor1.contains("rgb ")) {
                                     embColor1 = embColor1.split("rgb ")[1];
                                     embColor1 = embColor1.split(tab)[0]; //Invictus formatting
-                                    embColor1 = "rgb," + embColor1.substring(2,embColor1.length()-2);
-                                }
-                                else if (qaaa.contains("hsv ")) {
+                                    embColor1 = "rgb," + embColor1.substring(2, embColor1.length() - 2);
+                                } else if (qaaa.contains("hsv ")) {
                                     embColor1 = embColor1.split("hsv ")[1];
                                     embColor1 = embColor1.split(tab)[0]; //Invictus formatting
-                                    embColor1 = "hsv," + embColor1.substring(2,output[2].length()-2);
+                                    embColor1 = "hsv," + embColor1.substring(2, output[2].length() - 2);
                                 }
-                            }
-                            else if (qaaa.contains( "color2=" ) || qaaa.contains("color2 =") ) {
+                            } else if (qaaa.contains("color2=") || qaaa.contains("color2 =")) {
                                 embColor2 = qaaa.split("=")[1];
                                 if (embColor2.contains(strQuote)) {
-                                    embColor2 = embColor2.substring(1,embColor2.length()-1);
+                                    embColor2 = embColor2.substring(1, embColor2.length() - 1);
                                 }
-                                embColor2 = embColor2.replace(tab,"");
-                                embColor2 = embColor2.replace("  "," ");
+                                embColor2 = embColor2.replace(tab, "");
+                                embColor2 = embColor2.replace("  ", " ");
                                 if (embColor2.contains("rgb ")) {
                                     embColor2 = embColor2.split("rgb ")[1];
                                     embColor2 = embColor2.split(tab)[0]; //Invictus formatting
-                                    embColor2 = "rgb," + embColor2.substring(2,embColor2.length()-2);
-                                }
-                                else if (qaaa.contains("hsv ")) {
+                                    embColor2 = "rgb," + embColor2.substring(2, embColor2.length() - 2);
+                                } else if (qaaa.contains("hsv ")) {
                                     embColor2 = embColor2.split("hsv ")[1];
                                     embColor2 = embColor2.split(tab)[0]; //Invictus formatting
-                                    embColor2 = "hsv," + embColor2.substring(2,output[2].length()-2);
+                                    embColor2 = "hsv," + embColor2.substring(2, output[2].length() - 2);
                                 }
                             }
                         }
@@ -1499,16 +1441,16 @@ public class Importer
                             if (qaaa.split("=").length != 2) { //unusual formatting
                                 if (qaaa.contains("scale=")) {
                                     embScale = qaaa.split("scale=")[1];
-                                    embScale = embScale.replace("  "," ");
+                                    embScale = embScale.replace("  ", " ");
                                     embScale = embScale.split(" }")[0];
                                     embScale = embScale.split(tab)[0];
-                                    embScale = embScale.substring(2,embScale.length());
+                                    embScale = embScale.substring(2, embScale.length());
                                 }
                                 if (qaaa.contains("position=")) {
                                     embPos = qaaa.split("position=")[1];
                                     embPos = embPos.split(" }")[0];
                                     embPos = embPos.split(tab)[0];
-                                    embPos = embPos.substring(2,embPos.length());
+                                    embPos = embPos.substring(2, embPos.length());
                                 }
                                 if (qaaa.contains("rotation=")) {
                                     embRot = qaaa.split("rotation=")[1];
@@ -1516,49 +1458,48 @@ public class Importer
                                     embRot = embRot.split(tab)[0];
                                 }
                                 if (tmpOutput.equals("0")) { //build emblem
-                                    tmpOutput = embTexture+"~_~"+embColor1+"~_~"+embColor2+"~_~"+embScale+"~_~"+embPos+"~_~"+embRot;
+                                    tmpOutput = embTexture + "~_~" + embColor1 + "~_~" + embColor2 + "~_~" + embScale + "~_~" + embPos + "~_~" + embRot;
                                 } else {
-                                    tmpOutput = tmpOutput+"~~"+embTexture+"~_~"+embColor1+"~_~"+embColor2+"~_~"+embScale+"~_~"+embPos+"~_~"+embRot;
+                                    tmpOutput = tmpOutput + "~~" + embTexture + "~_~" + embColor1 + "~_~" + embColor2 + "~_~" + embScale + "~_~" + embPos + "~_~" + embRot;
                                 }
                                 embScale = "none";
                                 embPos = "none";
                                 embRot = "none";
-                            }
-                            else { //normal formatting
+                            } else { //normal formatting
 
-                                while (!qaaa.equals(tab+"}") ) {
+                                while (!qaaa.equals(tab + "}")) {
                                     qaaa = scnr.nextLine();
-                                    qaaa = qaaa.replace(" = ","=");
-                                    qaaa = qaaa.replace("= ","=");
-                                    qaaa = qaaa.replace(" =","=");
-                                    qaaa = qaaa.replace("    ",tab);
+                                    qaaa = qaaa.replace(" = ", "=");
+                                    qaaa = qaaa.replace("= ", "=");
+                                    qaaa = qaaa.replace(" =", "=");
+                                    qaaa = qaaa.replace("    ", tab);
                                     if (qaaa.contains("scale=")) {
                                         embScale = qaaa.split("=")[1];
                                         embScale = embScale.split(tab)[0];
-                                        embScale = embScale.substring(2,embScale.length()-2);
+                                        embScale = embScale.substring(2, embScale.length() - 2);
                                     }
                                     if (qaaa.contains("position=")) {
                                         embPos = qaaa.split("=")[1];
                                         embPos = embPos.split(tab)[0];
-                                        embPos = embPos.substring(2,embPos.length()-2);
+                                        embPos = embPos.substring(2, embPos.length() - 2);
                                     }
                                     if (qaaa.contains("rotation=")) {
                                         if (!qaaa.split("=")[0].contains("#")) {
                                             embRot = qaaa.split("=")[1];
                                             embRot = embRot.split(tab)[0];
-                                            embRot = embRot.replace(" ","");
+                                            embRot = embRot.replace(" ", "");
                                         }
                                     }
                                     if (qaaa.contains("texture=")) {
                                         embTexture = qaaa.split("=")[1];
                                         embTexture = embTexture.split(tab)[0];
-                                        embTexture = embRot.replace(" ","");
+                                        embTexture = embRot.replace(" ", "");
                                     }
-                                    if (qaaa.equals(tab+tab+"}")) {
+                                    if (qaaa.equals(tab + tab + "}")) {
                                         if (tmpOutput.equals("0")) {//build emblem
-                                            tmpOutput = embTexture+"~_~"+embColor1+"~_~"+embColor2+"~_~"+embScale+"~_~"+embPos+"~_~"+embRot;
+                                            tmpOutput = embTexture + "~_~" + embColor1 + "~_~" + embColor2 + "~_~" + embScale + "~_~" + embPos + "~_~" + embRot;
                                         } else {
-                                            tmpOutput = tmpOutput+"~~"+embTexture+"~_~"+embColor1+"~_~"+embColor2+"~_~"+embScale+"~_~"+embPos+"~_~"+embRot;
+                                            tmpOutput = tmpOutput + "~~" + embTexture + "~_~" + embColor1 + "~_~" + embColor2 + "~_~" + embScale + "~_~" + embPos + "~_~" + embRot;
                                         }
                                         embScale = "none";
                                         embPos = "none";
@@ -1580,23 +1521,23 @@ public class Importer
                     }
                     if (instanceYes == 0) { //if emblem has no instances specified, generate instance
                         if (output[4].equals("0")) {//build emblem
-                            output[4] = embTexture+"~_~"+embColor1+"~_~"+embColor2+"~_~"+embScale+"~_~"+embPos+"~_~"+embRot;
+                            output[4] = embTexture + "~_~" + embColor1 + "~_~" + embColor2 + "~_~" + embScale + "~_~" + embPos + "~_~" + embRot;
                         } else {
-                            output[4] = output[4]+"~~"+embTexture+"~_~"+embColor1+"~_~"+embColor2+"~_~"+embScale+"~_~"+embPos+"~_~"+embRot;
+                            output[4] = output[4] + "~~" + embTexture + "~_~" + embColor1 + "~_~" + embColor2 + "~_~" + embScale + "~_~" + embPos + "~_~" + embRot;
                         }
                     } else {
-                        tmpOutput = tmpOutput.replace("noColor1",embColor1);
-                        tmpOutput = tmpOutput.replace("noColor2",embColor2);
-                        tmpOutput = tmpOutput.replace("noTexture",embTexture);
+                        tmpOutput = tmpOutput.replace("noColor1", embColor1);
+                        tmpOutput = tmpOutput.replace("noColor2", embColor2);
+                        tmpOutput = tmpOutput.replace("noTexture", embTexture);
                         if (output[4].equals("0")) { //build emblem
                             output[4] = tmpOutput;
                         } else {
-                            output[4] = output[4]+"~~"+tmpOutput;
+                            output[4] = output[4] + "~~" + tmpOutput;
                         }
                     }
                 }
 
-                if (qaaa.equals( "}" ) ) { //ends here
+                if (qaaa.equals("}")) { //ends here
 
                     String[] tmpOutput = new String[output.length];
                     int aq2 = 0;
@@ -1617,29 +1558,28 @@ public class Importer
 
             }
 
-        }catch (java.util.NoSuchElementException exception){
+        } catch (java.util.NoSuchElementException exception) {
 
-        }   
+        }
 
         return impFlagList;
 
     }
 
-    public static ArrayList<String[]> importAllFlags (String name, ArrayList<String> modDirs) throws IOException
-    {
+    public static ArrayList<String[]> importAllFlags(String name, ArrayList<String> modDirs) throws IOException {
         ArrayList<String[]> allFlags = new ArrayList<String[]>();
-        ArrayList<String[]> vanillaFlags = importFlag(name+"/game/common/coat_of_arms/coat_of_arms/00_pre_scripted_countries.txt");
+        ArrayList<String[]> vanillaFlags = importFlag(name + "/game/common/coat_of_arms/coat_of_arms/00_pre_scripted_countries.txt");
         int aqq = 0;
         while (modDirs.size() > aqq) {
             if (!modDirs.get(aqq).equals("none")) {
-                String modDir = modDirs.get(aqq)+"/common/coat_of_arms/coat_of_arms";
-                File flagInfo = new File (modDir);
+                String modDir = modDirs.get(aqq) + "/common/coat_of_arms/coat_of_arms";
+                File flagInfo = new File(modDir);
                 String[] flagList = flagInfo.list();
 
                 if (flagList != null) {
                     int aq2 = 0;
                     while (aq2 < flagList.length) {
-                        ArrayList<String[]> modFlags = importFlag(modDir+"/"+flagList[aq2]);
+                        ArrayList<String[]> modFlags = importFlag(modDir + "/" + flagList[aq2]);
                         allFlags.addAll(modFlags);
                         aq2 = aq2 + 1;
                     }
@@ -1654,13 +1594,13 @@ public class Importer
         return allFlags;
     }
 
-    public static ArrayList<String[]> importColors (String name) throws IOException //named_colors for flags
+    public static ArrayList<String[]> importColors(String name) throws IOException //named_colors for flags
     {
 
-        FileInputStream fileIn= new FileInputStream(name);
-        Scanner scnr= new Scanner(fileIn);
+        FileInputStream fileIn = new FileInputStream(name);
+        Scanner scnr = new Scanner(fileIn);
 
-        ArrayList<String[]> impColorList= new ArrayList<String[]>();
+        ArrayList<String[]> impColorList = new ArrayList<String[]>();
 
         String tab = "	";
 
@@ -1677,30 +1617,28 @@ public class Importer
         impColorList.add(output); //default at ID 0
 
         try {
-            while (flag == 0){
+            while (flag == 0) {
                 qaaa = scnr.nextLine();
-                qaaa = qaaa.replace(" "+tab,"");
-                qaaa = qaaa.replace(tab,"");
-                qaaa = qaaa.replace("    ","");
-                qaaa = qaaa.replace(" = ","=");
-                qaaa = qaaa.replace("= ","=");
-                qaaa = qaaa.replace(" =","=");
-                if (!qaaa.equals( "colors={" ) && qaaa.contains("=") ) {
+                qaaa = qaaa.replace(" " + tab, "");
+                qaaa = qaaa.replace(tab, "");
+                qaaa = qaaa.replace("    ", "");
+                qaaa = qaaa.replace(" = ", "=");
+                qaaa = qaaa.replace("= ", "=");
+                qaaa = qaaa.replace(" =", "=");
+                if (!qaaa.equals("colors={") && qaaa.contains("=")) {
                     output[0] = qaaa.split("=")[0];
                     output[1] = qaaa.split("=")[1];
                     if (qaaa.contains("rgb ") || qaaa.contains("rgb ")) {
                         output[1] = output[1].split("rgb ")[1];
                         output[1] = output[1].split(" }")[0];
-                        output[1] = "rgb," + output[1].substring(2,output[1].length());
-                    }
-                    else if (qaaa.contains("hsv ")) {
+                        output[1] = "rgb," + output[1].substring(2, output[1].length());
+                    } else if (qaaa.contains("hsv ")) {
                         output[1] = output[1].split("hsv ")[1];
                         output[1] = output[1].split(" }")[0];
-                        output[1] = "hsv," + output[1].substring(2,output[1].length());
-                    }
-                    else if (qaaa.contains("={")) { //if colors do not specify rgb/hsv, default to rgb
+                        output[1] = "hsv," + output[1].substring(2, output[1].length());
+                    } else if (qaaa.contains("={")) { //if colors do not specify rgb/hsv, default to rgb
                         output[1] = output[1].split(" }")[0];
-                        output[1] = "rgb," + output[1].substring(2,output[1].length());
+                        output[1] = "rgb," + output[1].substring(2, output[1].length());
                     }
                     String[] tmpOutput = new String[output.length];
                     int aq2 = 0;
@@ -1716,29 +1654,28 @@ public class Importer
                 }
 
             }
-        }catch (java.util.NoSuchElementException exception){
+        } catch (java.util.NoSuchElementException exception) {
 
-        }   
+        }
 
         return impColorList;
 
     }
 
-    public static ArrayList<String[]> importAllColors (String name, ArrayList<String> modDirs) throws IOException
-    {
+    public static ArrayList<String[]> importAllColors(String name, ArrayList<String> modDirs) throws IOException {
         ArrayList<String[]> allColors = new ArrayList<String[]>();
-        ArrayList<String[]> vanillaColors = importColors(name+"/game/common/named_colors/default_colors.txt");
+        ArrayList<String[]> vanillaColors = importColors(name + "/game/common/named_colors/default_colors.txt");
         int aqq = 0;
         while (modDirs.size() > aqq) {
             if (!modDirs.get(aqq).equals("none")) {
-                String modDir = modDirs.get(aqq)+"/common/named_colors";
-                File colorInfo = new File (modDir);
+                String modDir = modDirs.get(aqq) + "/common/named_colors";
+                File colorInfo = new File(modDir);
                 String[] colorList = colorInfo.list();
 
                 if (colorList != null) {
                     int aq2 = 0;
                     while (aq2 < colorList.length) {
-                        ArrayList<String[]> modColors = importColors(modDir+"/"+colorList[aq2]);
+                        ArrayList<String[]> modColors = importColors(modDir + "/" + colorList[aq2]);
                         allColors.addAll(modColors);
                         aq2 = aq2 + 1;
                     }
@@ -1753,21 +1690,21 @@ public class Importer
         return allColors;
     }
 
-    public static ArrayList<String> importAllLoc (String name, ArrayList<String> modDirs) throws IOException //imports all localization files
+    public static ArrayList<String> importAllLoc(String name, ArrayList<String> modDirs) throws IOException //imports all localization files
     {
         ArrayList<String> allLoc = new ArrayList<String>();
         ArrayList<String> moddedLoc = new ArrayList<String>();
-        ArrayList<String> regionLoc = importBasicFile(name+"/game/localization/english/macroregions_l_english.yml");
-        ArrayList<String> formableLoc = importBasicFile(name+"/game/localization/english/nation_formation_l_english.yml");
-        ArrayList<String> countryLoc = importBasicFile(name+"/game/localization/english/countries_l_english.yml");
-        ArrayList<String> provLoc = importBasicFile(name+"/game/localization/english/provincenames_l_english.yml");
-        ArrayList<String> areaLoc = importBasicFile(name+"/game/localization/english/regionnames_l_english.yml");
+        ArrayList<String> regionLoc = importBasicFile(name + "/game/localization/english/macroregions_l_english.yml");
+        ArrayList<String> formableLoc = importBasicFile(name + "/game/localization/english/nation_formation_l_english.yml");
+        ArrayList<String> countryLoc = importBasicFile(name + "/game/localization/english/countries_l_english.yml");
+        ArrayList<String> provLoc = importBasicFile(name + "/game/localization/english/provincenames_l_english.yml");
+        ArrayList<String> areaLoc = importBasicFile(name + "/game/localization/english/regionnames_l_english.yml");
         ArrayList<String> supportedModLoc = importBasicFile("supportedModLoc.txt"); //default loc for some mods in case mod files are missing
         int aqq = 0;
         while (modDirs.size() > aqq) {
             if (!modDirs.get(aqq).equals("none")) {
-                String modDir = modDirs.get(aqq)+"/localization/english";
-                moddedLoc.addAll(importModLoc(modDir,modDirs,moddedLoc));
+                String modDir = modDirs.get(aqq) + "/localization/english";
+                moddedLoc.addAll(importModLoc(modDir, modDirs, moddedLoc));
             }
             aqq = aqq + 1;
         }
@@ -1783,41 +1720,40 @@ public class Importer
         return allLoc;
     }
 
-    public static ArrayList<String> importModLoc (String modDir, ArrayList<String> modDirs, ArrayList<String> allModLoc) throws IOException
+    public static ArrayList<String> importModLoc(String modDir, ArrayList<String> modDirs, ArrayList<String> allModLoc) throws IOException
     //imports all modded localization files
     {
         int aqq = 0;
-        File locInfo = new File (modDir);
+        File locInfo = new File(modDir);
         String[] locList = locInfo.list();
 
         try {
             if (locList != null) {
                 while (aqq < locList.length) {
-                    importModLoc(modDir+"/"+locList[aqq],modDirs,allModLoc);
+                    importModLoc(modDir + "/" + locList[aqq], modDirs, allModLoc);
                     aqq = aqq + 1;
                 }
 
-            }
-            else {
+            } else {
                 ArrayList<String> modLoc = importBasicFile(modDir);
                 allModLoc.addAll(modLoc);
             }
-        } catch (Exception e){ //if a non-existant file is accessed, cancel so that converter doesn't crash
-            
+        } catch (Exception e) { //if a non-existant file is accessed, cancel so that converter doesn't crash
+
         }
 
         return allModLoc;
     }
 
-    public static ArrayList<String> importModDirs (String name, String irModDir) throws IOException //imports all directories for mods used in save file
+    public static ArrayList<String> importModDirs(String name, String irModDir) throws IOException //imports all directories for mods used in save file
     {
 
-        FileInputStream fileIn= new FileInputStream(name);
-        Scanner scnr= new Scanner(fileIn);
+        FileInputStream fileIn = new FileInputStream(name);
+        Scanner scnr = new Scanner(fileIn);
 
-        ArrayList<String> impModList= new ArrayList<String>();
+        ArrayList<String> impModList = new ArrayList<String>();
 
-        irModDir = irModDir.substring(0,irModDir.length()-4);
+        irModDir = irModDir.substring(0, irModDir.length() - 4);
 
         String tab = "	";
 
@@ -1832,22 +1768,23 @@ public class Importer
         impModList.add(output); //default at ID 0
 
         try {
-            while (flag == 0){
+            while (flag == 0) {
                 qaaa = scnr.nextLine();
-                if (qaaa.contains( "enabled_mods" ) ) {
+                if (qaaa.contains("enabled_mods")) {
                     flag = 1;
                     qaaa = scnr.nextLine();
                     String tmpOutput;
                     while (!qaaa.contains("}") && !qaaa.contains("speed=")) {
-                        qaaa = qaaa.replace(tab,"");
+                        qaaa = qaaa.replace(tab, "");
                         String[] mods = qaaa.split(" ");
                         int aqq = 0;
                         while (aqq < mods.length) {
-                            mods[aqq] = mods[aqq].substring(1,mods[aqq].length()-1);
+                            mods[aqq] = mods[aqq].substring(1, mods[aqq].length() - 1);
                             try { //get real mod dir
-                                output = importModDirInfo(irModDir+"/"+mods[aqq]);
+                                output = importModDirInfo(irModDir + "/" + mods[aqq]);
                                 impModList.add(output);
-                            } catch (Exception e){ //if something goes wrong in finding the mod dir, ignore mod to prevent entire converter from crashing
+                            } catch (
+                                    Exception e) { //if something goes wrong in finding the mod dir, ignore mod to prevent entire converter from crashing
 
                             }
                             aqq = aqq + 1;
@@ -1857,19 +1794,19 @@ public class Importer
                 }
 
             }
-        }catch (java.util.NoSuchElementException exception){
+        } catch (java.util.NoSuchElementException exception) {
             return impModList;
-        }   
+        }
 
         return impModList;
 
     }
 
-    public static String importModDirInfo (String name) throws IOException //imports directory info for a specific mod from the .mod file
+    public static String importModDirInfo(String name) throws IOException //imports directory info for a specific mod from the .mod file
     {
 
-        FileInputStream fileIn= new FileInputStream(name);
-        Scanner scnr= new Scanner(fileIn);
+        FileInputStream fileIn = new FileInputStream(name);
+        Scanner scnr = new Scanner(fileIn);
 
         int flag = 0;
 
@@ -1877,31 +1814,31 @@ public class Importer
 
         try {
             //try
-            while (flag == 0){
+            while (flag == 0) {
                 String qaaa = scnr.nextLine();
-                if (qaaa.contains( "path=" ) ) {
+                if (qaaa.contains("path=")) {
                     flag = 1;
                     output = qaaa.split("=")[1];
-                    output = output.substring(1,output.length()-1);
+                    output = output.substring(1, output.length() - 1);
                 }
 
             }
-        }catch (Exception e){ //if anything goes wrong, return to avoid stopping converter
+        } catch (Exception e) { //if anything goes wrong, return to avoid stopping converter
             return output;
-        }   
+        }
 
         return output;
 
     }
 
-    public static ArrayList<String> importModFlagDirs (ArrayList<String> modDirs) throws IOException //imports modded flag gfx locations/names
+    public static ArrayList<String> importModFlagDirs(ArrayList<String> modDirs) throws IOException //imports modded flag gfx locations/names
     {
 
         String coloredEmblems = "/gfx/coat_of_arms/colored_emblems";
         String patterns = "/gfx/coat_of_arms/patterns";
         String texturedEmblems = "/gfx/coat_of_arms/textured_emblems";
 
-        ArrayList<String> gfxList= new ArrayList<String>();
+        ArrayList<String> gfxList = new ArrayList<String>();
 
         String tab = "	";
 
@@ -1915,39 +1852,39 @@ public class Importer
         gfxList.add(output); //default at ID 0
 
         try {
-            while (aqq < modDirs.size()){
-                if (!modDirs.get(aqq).equals ("none")) {
-                    File embDir = new File(modDirs.get(aqq)+coloredEmblems);
+            while (aqq < modDirs.size()) {
+                if (!modDirs.get(aqq).equals("none")) {
+                    File embDir = new File(modDirs.get(aqq) + coloredEmblems);
                     String[] emblemFiles = embDir.list();
                     if (emblemFiles != null) {
                         int aq2 = 0;
                         while (aq2 < emblemFiles.length) {
                             output = emblemFiles[aq2];
-                            output = modDirs.get(aqq)+coloredEmblems+"/"+output;
+                            output = modDirs.get(aqq) + coloredEmblems + "/" + output;
                             gfxList.add(output);
                             aq2 = aq2 + 1;
 
                         }
                     }
-                    File patDir = new File(modDirs.get(aqq)+patterns);
+                    File patDir = new File(modDirs.get(aqq) + patterns);
                     String[] patternFiles = patDir.list();
                     if (patternFiles != null) {
                         int aq3 = 0;
                         while (aq3 < patternFiles.length) {
                             output = patternFiles[aq3];
-                            output = modDirs.get(aqq)+patterns+"/"+output;
+                            output = modDirs.get(aqq) + patterns + "/" + output;
                             gfxList.add(output);
                             aq3 = aq3 + 1;
 
                         }
                     }
-                    File texDir = new File(modDirs.get(aqq)+texturedEmblems);
+                    File texDir = new File(modDirs.get(aqq) + texturedEmblems);
                     String[] textureFiles = texDir.list();
                     if (textureFiles != null) {
                         int aq4 = 0;
                         while (aq4 < textureFiles.length) {
                             output = textureFiles[aq4];
-                            output = modDirs.get(aqq)+texturedEmblems+"/"+output;
+                            output = modDirs.get(aqq) + texturedEmblems + "/" + output;
                             gfxList.add(output);
                             aq4 = aq4 + 1;
 
@@ -1957,9 +1894,9 @@ public class Importer
 
                 aqq = aqq + 1;
             }
-        }catch (java.util.NoSuchElementException exception){
+        } catch (java.util.NoSuchElementException exception) {
             flag = 1;
-        }   
+        }
 
         return gfxList;
 

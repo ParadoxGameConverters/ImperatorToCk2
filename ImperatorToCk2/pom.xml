@@ -1,225 +1,225 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.ParadoxGameConverters</groupId>
-  <artifactId>ImperatorToCK2</artifactId>
-  <version>0.1</version>
+    <groupId>com.ParadoxGameConverters</groupId>
+    <artifactId>ImperatorToCK2</artifactId>
+    <version>0.1</version>
 
-  <name>ImperatorToCK2</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+    <name>ImperatorToCK2</name>
+    <!-- FIXME change it to the project's website -->
+    <url>http://www.example.com</url>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>17</maven.compiler.source>
-    <maven.compiler.target>17</maven.compiler.target>
-  </properties>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
 
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.13.1</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
-  <build>
-	  <finalName>ImperatorToCK2</finalName>
-    <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
-    <testSourceDirectory>${basedir}/src/test/java</testSourceDirectory>
-    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
-      <plugins>
-        <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.8.0</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-clean-plugin</artifactId>
-          <version>3.1.0</version>
-        </plugin>
-        <!-- default lifecycle, jar packaging: see https://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
-        <plugin>
-          <artifactId>maven-resources-plugin</artifactId>
-          <version>3.0.2</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.8.0</version>
-        </plugin>
-        <plugin>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-surefire-plugin</artifactId>
-			<dependencies>
-				<dependency>
-					<groupId>org.ow2.asm</groupId>
-					<artifactId>asm</artifactId>
-					<version>9.1</version>
-				</dependency>
-			</dependencies>
-        </plugin>
-        <plugin>
-          <artifactId>maven-jar-plugin</artifactId>
-          <version>3.0.2</version>
-          <configuration>
-            <archive>
-              <manifest>
-                <mainClass>ImperatorToCK2.Main</mainClass>
-              </manifest>
-            </archive>
-          </configuration>
-        </plugin>
-        <plugin>
-          <artifactId>maven-install-plugin</artifactId>
-          <version>2.5.2</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-deploy-plugin</artifactId>
-          <version>2.8.2</version>
-        </plugin>
-        <!-- site lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#site_Lifecycle -->
-        <plugin>
-          <artifactId>maven-site-plugin</artifactId>
-          <version>3.7.1</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-project-info-reports-plugin</artifactId>
-          <version>3.0.0</version>
-        </plugin>
+    <build>
+        <finalName>ImperatorToCK2</finalName>
+        <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
+        <testSourceDirectory>${basedir}/src/test/java</testSourceDirectory>
+        <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+            <plugins>
+                <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.8.0</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-clean-plugin</artifactId>
+                    <version>3.1.0</version>
+                </plugin>
+                <!-- default lifecycle, jar packaging: see https://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
+                <plugin>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>3.0.2</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.8.0</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <dependencies>
+                        <dependency>
+                            <groupId>org.ow2.asm</groupId>
+                            <artifactId>asm</artifactId>
+                            <version>9.1</version>
+                        </dependency>
+                    </dependencies>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>3.0.2</version>
+                    <configuration>
+                        <archive>
+                            <manifest>
+                                <mainClass>ImperatorToCK2.Main</mainClass>
+                            </manifest>
+                        </archive>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-install-plugin</artifactId>
+                    <version>2.5.2</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-deploy-plugin</artifactId>
+                    <version>2.8.2</version>
+                </plugin>
+                <!-- site lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#site_Lifecycle -->
+                <plugin>
+                    <artifactId>maven-site-plugin</artifactId>
+                    <version>3.7.1</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-project-info-reports-plugin</artifactId>
+                    <version>3.0.0</version>
+                </plugin>
 
-        <plugin>
-            <groupId>com.github.akman</groupId>
-            <artifactId>jpackage-maven-plugin</artifactId>
-            <version>0.1.5</version>
-            <configuration>
-              <verbose>true</verbose>
+                <plugin>
+                    <groupId>com.github.akman</groupId>
+                    <artifactId>jpackage-maven-plugin</artifactId>
+                    <version>0.1.5</version>
+                    <configuration>
+                        <verbose>true</verbose>
 
-              <!--
-                Specifies the JDK home path which provides the tool needed.
-                If not specified the jpackage tool executable will be find in
-                the following order:
-              
-                  - user specified JDK home directory by toolchains-plugin
-                  - JDK home directory specified by system variable JAVA_HOME
-                  - system path specified by system variable PATH
-              <toolhome>$‍{env.JPACKAGE_HOME}</toolhome>
-              -->
-              
-              <!--
-                Specifies the location in which generated output files are placed.
-                Default value: $‍{project.build.directory}/jpackage
-              -->
-              <dest>${project.build.directory}/jpackage</dest>
-              
-              <!--
-                Specifies the name of subdirectory relative to the destination
-                directory in which files of generated application image are placed.
-              -->
-              <name>ImperatorToCK2</name>
-              
-              <!--
-                Specifies the type of package to
-                create: { PLATFORM | IMAGE | EXE | MSI }.
-                Default value: PLATFORM (a platform dependent default type)
-              -->
-              <type>IMAGE</type>
-              
-              <!--
-                Specifies the location of the predefined runtime
-                image (result of jlink) that will be copied into
-                the application image.
-                If not specified, jpackage will run jlink to create
-                the runtime image using options:
-                  - strip-debug
-                  - no-header-files
-                  - no-man-pages
-                  - strip-native-commands
-              <runtimeimage>$‍{project.build.directory}/jlink/runtime-image</runtimeimage>
-              -->
-              
-              <!--
-                Specifies the location of the icon of the application package.
-              
-              <icon>$‍{project.basedir}/config/jpackage/resources/appname.ico</icon>
-              -->
+                        <!--
+                          Specifies the JDK home path which provides the tool needed.
+                          If not specified the jpackage tool executable will be find in
+                          the following order:
 
-              <modulepath>
-                <dependencysets>
-                  <dependencyset>
-                    <includeoutput>true</includeoutput>
-                    <excludeautomatic>true</excludeautomatic>
-                  </dependencyset>
-                </dependencysets>
-              </modulepath>
-              
-              <!--
-                Specifies the main module (and optionally main class) of
-                the application. This module must be located on the module path.
-                When this option is specified, the main module will be linked
-                in the Java runtime image.
-                Either module or main-jar option can be specified
-                but not both.
-              -->
-              <module>ImperatorToCK2/ImperatorToCK2.Main</module>
-              
-              <!--
-                Specifies the command line arguments to pass to the main class
-                if no command line arguments are given to the launcher.
-              -->
-              <arguments>--opt</arguments>
-              
-              <!--
-                Specifies the options to pass to the Java runtime.
-              -->
-              <javaoptions>-Dfile.encoding=UTF-8 -Xms256m -Xmx512m</javaoptions>
-              
-              <winconsole>true</winconsole>
-              
-              <!--
-                Specifies options are added to, or used to overwrite,
-                the original command line options to build additional
-                alternative launchers.
-              <addlaunchers>
-                <addlauncher>
-                  <name>ImperatorToCK2-cli</name>
-                  <module>ImperatorToCK2/ImperatorToCK2.Main</module>
-                  <javaoptions>-Xms256m -Xmx512m</javaoptions>
-                </addlauncher>
-              </addlaunchers>
-              -->
-              
-              <!--
-                Specifies the location of a resources directory that override
-                jpackage resources. Icons, template files, and other resources
-                of jpackage can be overridden by adding replacement resources
-                to this directory.
-              <resourcedir>${project.basedir}/config/jpackage/resources</resourcedir>
-              -->
-            </configuration>
-          </plugin>
-        
-      </plugins>
-    </pluginManagement>
+                            - user specified JDK home directory by toolchains-plugin
+                            - JDK home directory specified by system variable JAVA_HOME
+                            - system path specified by system variable PATH
+                        <toolhome>$‍{env.JPACKAGE_HOME}</toolhome>
+                        -->
 
-    <plugins>
-      <plugin>
-        <groupId>com.github.akman</groupId>
-        <artifactId>jpackage-maven-plugin</artifactId>
-        <executions>
-          <execution>
-            <id>jpackage-image</id>
-            <phase>verify</phase>
-            <goals>
-              <goal>jpackage</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-    </plugins>
-  </build>
+                        <!--
+                          Specifies the location in which generated output files are placed.
+                          Default value: $‍{project.build.directory}/jpackage
+                        -->
+                        <dest>${project.build.directory}/jpackage</dest>
+
+                        <!--
+                          Specifies the name of subdirectory relative to the destination
+                          directory in which files of generated application image are placed.
+                        -->
+                        <name>ImperatorToCK2</name>
+
+                        <!--
+                          Specifies the type of package to
+                          create: { PLATFORM | IMAGE | EXE | MSI }.
+                          Default value: PLATFORM (a platform dependent default type)
+                        -->
+                        <type>IMAGE</type>
+
+                        <!--
+                          Specifies the location of the predefined runtime
+                          image (result of jlink) that will be copied into
+                          the application image.
+                          If not specified, jpackage will run jlink to create
+                          the runtime image using options:
+                            - strip-debug
+                            - no-header-files
+                            - no-man-pages
+                            - strip-native-commands
+                        <runtimeimage>$‍{project.build.directory}/jlink/runtime-image</runtimeimage>
+                        -->
+
+                        <!--
+                          Specifies the location of the icon of the application package.
+
+                        <icon>$‍{project.basedir}/config/jpackage/resources/appname.ico</icon>
+                        -->
+
+                        <modulepath>
+                            <dependencysets>
+                                <dependencyset>
+                                    <includeoutput>true</includeoutput>
+                                    <excludeautomatic>true</excludeautomatic>
+                                </dependencyset>
+                            </dependencysets>
+                        </modulepath>
+
+                        <!--
+                          Specifies the main module (and optionally main class) of
+                          the application. This module must be located on the module path.
+                          When this option is specified, the main module will be linked
+                          in the Java runtime image.
+                          Either module or main-jar option can be specified
+                          but not both.
+                        -->
+                        <module>ImperatorToCK2/ImperatorToCK2.Main</module>
+
+                        <!--
+                          Specifies the command line arguments to pass to the main class
+                          if no command line arguments are given to the launcher.
+                        -->
+                        <arguments>--opt</arguments>
+
+                        <!--
+                          Specifies the options to pass to the Java runtime.
+                        -->
+                        <javaoptions>-Dfile.encoding=UTF-8 -Xms256m -Xmx512m</javaoptions>
+
+                        <winconsole>true</winconsole>
+
+                        <!--
+                          Specifies options are added to, or used to overwrite,
+                          the original command line options to build additional
+                          alternative launchers.
+                        <addlaunchers>
+                          <addlauncher>
+                            <name>ImperatorToCK2-cli</name>
+                            <module>ImperatorToCK2/ImperatorToCK2.Main</module>
+                            <javaoptions>-Xms256m -Xmx512m</javaoptions>
+                          </addlauncher>
+                        </addlaunchers>
+                        -->
+
+                        <!--
+                          Specifies the location of a resources directory that override
+                          jpackage resources. Icons, template files, and other resources
+                          of jpackage can be overridden by adding replacement resources
+                          to this directory.
+                        <resourcedir>${project.basedir}/config/jpackage/resources</resourcedir>
+                        -->
+                    </configuration>
+                </plugin>
+
+            </plugins>
+        </pluginManagement>
+
+        <plugins>
+            <plugin>
+                <groupId>com.github.akman</groupId>
+                <artifactId>jpackage-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>jpackage-image</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>jpackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 </project>
