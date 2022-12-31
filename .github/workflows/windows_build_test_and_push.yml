@@ -37,7 +37,7 @@ jobs:
     - name: "Convert jar to executable"
       working-directory: ImperatorToCK2
       run: |
-       ../launch4j/launch4jc.exe launch4j_config.xml
+       launch4jc.exe launch4j_config.xml
 
     - name: "Copy backend executable to Release directory"
       run: |
