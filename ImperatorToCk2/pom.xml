@@ -164,11 +164,12 @@
               -->
               <javaoptions>-Dfile.encoding=UTF-8 -Xms256m -Xmx512m</javaoptions>
               
+              <winconsole>true</winconsole>
+              
               <!--
                 Specifies options are added to, or used to overwrite,
                 the original command line options to build additional
                 alternative launchers.
-              -->
               <addlaunchers>
                 <addlauncher>
                   <name>ImperatorToCK2-cli</name>
@@ -176,9 +177,9 @@
                   <arguments>--help</arguments>
                   <javaoptions>-Xms256m -Xmx512m</javaoptions>
                   <!--<icon>${project.basedir}/config/jpackage/resources/appname-cli.ico</icon>-->
-                  <winconsole>true</winconsole>
                 </addlauncher>
               </addlaunchers>
+              -->
               
               <!--
                 Specifies the location of a resources directory that override

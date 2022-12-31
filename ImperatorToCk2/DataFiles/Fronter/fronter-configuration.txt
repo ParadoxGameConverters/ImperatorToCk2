@@ -1,6 +1,6 @@
 name = ImperatorToCK2
 converterFolder = ImperatorToCK2
-backendExePath = ImperatorToCK2-cli
+backendExePath = ImperatorToCK2
 enableUpdateChecker = true
 checkForUpdatesOnStartup = true
 latestGitHubConverterReleaseUrl = "https://github.com/ParadoxGameConverters/ImperatorToCk2/releases/download/latest/ImperatorToCK2.zip"
