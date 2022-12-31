@@ -98,7 +98,7 @@
                 Specifies the location in which generated output files are placed.
                 Default value: $‍{project.build.directory}/jpackage
               -->
-              <dest>$‍{project.build.directory}/jpackage</dest>
+              <dest>${project.build.directory}/jpackage</dest>
               
               <!--
                 Specifies the name of subdirectory relative to the destination
