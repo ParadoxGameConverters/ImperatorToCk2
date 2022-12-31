@@ -83,6 +83,8 @@
             <artifactId>jpackage-maven-plugin</artifactId>
             <version>0.1.5</version>
             <configuration>
+              <verbose>true</verbose>
+
               <!--
                 Specifies the JDK home path which provides the tool needed.
                 If not specified the jpackage tool executable will be find in
