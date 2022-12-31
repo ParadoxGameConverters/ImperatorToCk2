@@ -29,15 +29,10 @@ jobs:
        cd "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\"
        .\MSBuild.exe -m -p:Configuration=Release $Env:GITHUB_WORKSPACE\ImperatorToCK2.sln -target:ImperatorToCK2
 
-    - name: "Build converter jar"
+    - name: "Build converter executable"
       run: |
        cd $Env:GITHUB_WORKSPACE\ImperatorToCk2
        mvn -e -X clean verify
-
-    - name: "Convert jar to executable"
-      working-directory: ImperatorToCK2
-      run: |
-       launch4jc.exe launch4j_config.xml
 
     - name: "Copy backend executable to Release directory"
       run: |

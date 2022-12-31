@@ -113,7 +113,7 @@
                 create: { PLATFORM | IMAGE | EXE | MSI }.
                 Default value: PLATFORM (a platform dependent default type)
               -->
-              <type>EXE</type>
+              <type>IMAGE</type>
               
               <!--
                 Specifies the location of the predefined runtime
