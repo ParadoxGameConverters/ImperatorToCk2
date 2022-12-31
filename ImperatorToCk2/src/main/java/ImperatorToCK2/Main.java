@@ -10,6 +10,7 @@ import java.io.StringWriter;
 import java.io.FileOutputStream;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import ImperatorToCK2.Output.Output;
 
 /**
  * Main
