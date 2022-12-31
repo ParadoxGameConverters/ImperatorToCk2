@@ -53,14 +53,15 @@ jobs:
         fronter_dir: 'Fronter.NET'
         release_dir: 'Release'
        
-    - name: "Prepare release"
+    - name: "Prepare release zip"
+      if: ${{ github.event_name == 'push' }}
       run: |
        cd "C:\Program Files\7-Zip\"
        .\7z.exe a $Env:GITHUB_WORKSPACE\ImperatorToCK2.zip $Env:GITHUB_WORKSPACE\Release\*
        
     - uses: actions/upload-artifact@v3
       with:
-         path: $Env:GITHUB_WORKSPACE\ImperatorToCK2.zip
+         path: Release/
     
     - name: "Upload binaries to release"
       if: ${{ github.event_name == 'push' }}
@@ -117,13 +118,8 @@ jobs:
       with:
         fronter_dir: 'Fronter.NET'
         release_dir: 'Release'
-
-    - name: "Prepare release"
-      run: |
-       cd "C:\Program Files\7-Zip\"
-       .\7z.exe a $Env:GITHUB_WORKSPACE\ImperatorToCK2.zip $Env:GITHUB_WORKSPACE\Release\*
        
     - uses: actions/upload-artifact@v3
       with:
-         path: $Env:GITHUB_WORKSPACE\ImperatorToCK2.zip
+         path: Release/
     
