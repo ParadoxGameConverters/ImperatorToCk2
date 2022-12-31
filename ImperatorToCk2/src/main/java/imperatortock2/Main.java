@@ -1,4 +1,4 @@
-package ImperatorToCK2;
+package imperatortock2;
 
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -11,7 +11,7 @@ import java.io.FileOutputStream;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import ImperatorToCK2.Output.Output;
+import imperatortock2.output.Output;
 
 /**
  * Main

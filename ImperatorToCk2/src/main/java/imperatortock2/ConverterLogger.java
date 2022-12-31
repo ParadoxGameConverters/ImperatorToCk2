@@ -1,4 +1,4 @@
-package ImperatorToCK2;
+package imperatortock2;
 
 import java.io.IOException;
 import java.util.logging.FileHandler;

@@ -1,4 +1,4 @@
-package ImperatorToCK2.CK2;
+package imperatortock2.ck2;
 
 public enum Government {
     REPUBLIC,

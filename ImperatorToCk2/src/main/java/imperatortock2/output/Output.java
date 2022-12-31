@@ -1,4 +1,4 @@
-package ImperatorToCK2.Output;
+package imperatortock2.output;
 
 import java.util.Scanner;
 import java.io.IOException;
@@ -10,13 +10,13 @@ import java.util.Random;
 import java.util.ArrayList;
 import java.io.File;
 
-import ImperatorToCK2.CK2.LandedTitle;
-import ImperatorToCK2.Characters;
-import ImperatorToCK2.Importer;
-import ImperatorToCK2.Processing;
-import ImperatorToCK2.CK2.Government;
-import ImperatorToCK2.CK2.Rank;
-import ImperatorToCK2.Output.Output;
+import imperatortock2.ck2.LandedTitle;
+import imperatortock2.Characters;
+import imperatortock2.Importer;
+import imperatortock2.Processing;
+import imperatortock2.ck2.Government;
+import imperatortock2.ck2.Rank;
+import imperatortock2.output.Output;
 
 /**
  * Information which is output

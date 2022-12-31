@@ -1,8 +1,8 @@
-package ImperatorToCK2.CK2;
+package imperatortock2.ck2;
 
 import java.util.Optional;
 
-import ImperatorToCK2.Importer;
+import imperatortock2.Importer;
 
 import java.io.IOException;
 
