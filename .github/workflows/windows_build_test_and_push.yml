@@ -61,10 +61,11 @@ jobs:
        cp $Env:GITHUB_WORKSPACE\ImperatorToCK2.zip $Env:GITHUB_WORKSPACE\ImperatorToCK2-latest.zip
        
     - uses: actions/upload-artifact@v3
+      if: ${{ github.event_name != 'push' }}
       with:
          path: Release/
     
-    - name: "Upload binaries to release"
+    - name: "Upload binary to current release"
       if: ${{ github.event_name == 'push' }}
       uses: ncipollo/release-action@v1
       with:
@@ -75,7 +76,7 @@ jobs:
         artifacts: ImperatorToCK2.zip
         token: ${{ secrets.API_TOKEN_GITHUB }}
 
-    - name: "Upload binaries to release"
+    - name: "Upload binary to latest release"
       if: ${{ github.event_name == 'push' }}
       uses: ncipollo/release-action@v1
       with:
@@ -132,6 +133,7 @@ jobs:
         release_dir: 'Release'
        
     - uses: actions/upload-artifact@v3
+      if: ${{ github.event_name != 'push' }}
       with:
          path: Release/
     
