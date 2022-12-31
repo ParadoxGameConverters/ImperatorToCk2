@@ -142,7 +142,7 @@
                 Either module or main-jar option can be specified
                 but not both.
               -->
-              <module>ImperatorToCK2</module>
+              <module>ImperatorToCK2/Main</module>
               
               <!--
                 Specifies the command line arguments to pass to the main class
@@ -163,10 +163,10 @@
               <addlaunchers>
                 <addlauncher>
                   <name>ImperatorToCK2</name>
-                  <module>ImperatorToCK2</module>
+                  <module>ImperatorToCK2/Main</module>
                   <arguments>--help</arguments>
                   <javaoptions>-Xms256m -Xmx512m</javaoptions>
-                  <icon>${project.basedir}/config/jpackage/resources/appname-cli.ico</icon>
+                  <!--<icon>${project.basedir}/config/jpackage/resources/appname-cli.ico</icon>-->
                   <winconsole>true</winconsole>
                 </addlauncher>
               </addlaunchers>
@@ -176,8 +176,8 @@
                 jpackage resources. Icons, template files, and other resources
                 of jpackage can be overridden by adding replacement resources
                 to this directory.
-              -->
               <resourcedir>${project.basedir}/config/jpackage/resources</resourcedir>
+              -->
             </configuration>
           </plugin>
         
