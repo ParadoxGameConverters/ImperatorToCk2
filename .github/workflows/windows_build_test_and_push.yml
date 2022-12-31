@@ -58,6 +58,7 @@ jobs:
       run: |
        cd "C:\Program Files\7-Zip\"
        .\7z.exe a $Env:GITHUB_WORKSPACE\ImperatorToCK2.zip $Env:GITHUB_WORKSPACE\Release\*
+       cp $Env:GITHUB_WORKSPACE\ImperatorToCK2.zip $Env:GITHUB_WORKSPACE\ImperatorToCK2-latest.zip
        
     - uses: actions/upload-artifact@v3
       with:
@@ -72,6 +73,17 @@ jobs:
         omitBodyDuringUpdate: true
         omitNameDuringUpdate: true
         artifacts: ImperatorToCK2.zip
+        token: ${{ secrets.API_TOKEN_GITHUB }}
+
+    - name: "Upload binaries to release"
+      if: ${{ github.event_name == 'push' }}
+      uses: ncipollo/release-action@v1
+      with:
+        tag: latest
+        allowUpdates: true
+        omitBodyDuringUpdate: true
+        omitNameDuringUpdate: true
+        artifacts: ImperatorToCK2-latest.zip
         token: ${{ secrets.API_TOKEN_GITHUB }}
 
     - name: "Cleanup"
