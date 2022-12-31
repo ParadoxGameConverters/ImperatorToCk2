@@ -1,0 +1,9 @@
+<launch4jConfig>
+    <headerType>console</headerType>
+    <jar>target/ImperatorToCK2.jar</jar>
+    <outfile>ImperatorToCK2.exe</outfile>
+    <chdir>.</chdir>
+    <jre>
+        <path>$jre_used_by_l4j</path>
+    </jre>
+</launch4jConfig>

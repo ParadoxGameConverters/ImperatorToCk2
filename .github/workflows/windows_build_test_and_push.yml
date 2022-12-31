@@ -33,7 +33,15 @@ jobs:
       run: |
        cd $Env:GITHUB_WORKSPACE\ImperatorToCk2
        mvn package
-       cp target/ImperatorToCK2.jar ../Release/ImperatorToCK2
+
+    - name: "Convert jar to executable"
+      working-directory: ImperatorToCK2
+      run: |
+       ../launch4j/launch4jc.exe launch4j_config.xml
+
+    - name: "Copy backend executable to Release directory"
+      run: |
+       cp ImperatorToCK2/ImperatorToCK2.exe Release/ImperatorToCK2
       
     - name: "Build frontend"
       uses: ./Fronter.NET/.github/actions/build_frontend
@@ -83,7 +91,25 @@ jobs:
       run: |
        cd $Env:GITHUB_WORKSPACE\ImperatorToCk2
        mvn package
-       cp target/ImperatorToCK2.jar ../Release/ImperatorToCK2
+
+    - name: "Install launch4j"
+      run: |
+       cd $Env:GITHUB_WORKSPACE\Release
+       curl -L -o launch4j.zip https://sourceforge.net/projects/launch4j/files/launch4j-3/3.14/launch4j-3.14-win32.zip/download
+       7z x launch4j.zip
+       rm launch4j.zip
+       mv launch4j-3.14-win32 launch4j
+       cd launch4j
+       .\launch4j.exe -help
+
+    - name: "Convert jar to executable"
+      working-directory: ImperatorToCK2
+      run: |
+       ../launch4j/launch4jc.exe launch4j_config.xml
+
+    - name: "Copy backend executable to Release directory"
+      run: |
+       cp ImperatorToCK2/ImperatorToCK2.exe Release/ImperatorToCK2
       
     - name: "Build frontend"
       uses: ./Fronter.NET/.github/actions/build_frontend
