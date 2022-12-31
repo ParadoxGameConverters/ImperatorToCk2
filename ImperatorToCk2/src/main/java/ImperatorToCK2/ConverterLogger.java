@@ -9,7 +9,6 @@ import java.util.logging.Logger;
 public class ConverterLogger {
     static private FileHandler file;
     static private ConsoleHandler console;
-    static private ConverterLogFormatter formatter;
 
     static public void setup() throws IOException {
 
@@ -22,10 +21,12 @@ public class ConverterLogger {
         console = new ConsoleHandler();
 
         // create a TXT formatter
-        formatter = new ConverterLogFormatter();
-        file.setFormatter(formatter);
-        console.setFormatter(formatter);
+        ConverterLogFormatter fileFormatter = new ConverterLogFormatter();
+        file.setFormatter(fileFormatter);
         logger.addHandler(file);
+
+        ConverterLogFormatter consoleFormatter = new ConverterLogFormatter();
+        console.setFormatter(consoleFormatter);
         logger.addHandler(console);
     }
 }
