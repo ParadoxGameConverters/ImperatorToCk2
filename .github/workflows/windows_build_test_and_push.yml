@@ -14,83 +14,83 @@ jobs:
     runs-on: [ self-hosted, windows ]
     
     steps:
-    - uses: actions/checkout@v3
-      with:
-        fetch-depth: 0
-        submodules: recursive
-        
-    - name: "Get previous tag"
-      if: ${{ github.event_name == 'push' }}
-      id: previoustag
-      uses: "WyriHaximus/github-action-get-previous-tag@v1"
-      
-    - name: "Build converter sln"
-      run: |
-       cd "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\"
-       .\MSBuild.exe -m -p:Configuration=Release $Env:GITHUB_WORKSPACE\ImperatorToCK2.sln -target:ImperatorToCK2
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          submodules: recursive
 
-    - name: "Build converter jar"
-      run: |
-       cd $Env:GITHUB_WORKSPACE\ImperatorToCk2
-       mvn package
+      - name: "Get previous tag"
+        if: ${{ github.event_name == 'push' }}
+        id: previoustag
+        uses: "WyriHaximus/github-action-get-previous-tag@v1"
 
-    - name: "Copy jar to Release directory"
-      run: |
-       cp ImperatorToCK2/target/ImperatorToCK2.jar Release/ImperatorToCK2
+      - name: "Build converter sln"
+        run: |
+          cd "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\"
+          .\MSBuild.exe -m -p:Configuration=Release $Env:GITHUB_WORKSPACE\ImperatorToCK2.sln -target:ImperatorToCK2
 
-    - name: "Build converter executable"
-      run: |
-       cd $Env:GITHUB_WORKSPACE\ImperatorToCk2
-       mvn -e -X clean verify
+      - name: "Build converter jar"
+        run: |
+          cd $Env:GITHUB_WORKSPACE\ImperatorToCk2
+          mvn package
 
-    - name: "Copy backend to Release directory"
-      run: |
-       xcopy /y /r /s ImperatorToCk2\target\jpackage\ImperatorToCK2  Release\ImperatorToCK2\
-      
-    - name: "Build frontend"
-      uses: ./Fronter.NET/.github/actions/build_frontend
-      with:
-        fronter_dir: 'Fronter.NET'
-        release_dir: 'Release'
-       
-    - name: "Prepare release zip"
-      if: ${{ github.event_name == 'push' }}
-      run: |
-       cd "C:\Program Files\7-Zip\"
-       .\7z.exe a $Env:GITHUB_WORKSPACE\ImperatorToCK2.zip $Env:GITHUB_WORKSPACE\Release\*
-       cp $Env:GITHUB_WORKSPACE\ImperatorToCK2.zip $Env:GITHUB_WORKSPACE\ImperatorToCK2-latest.zip
-       
-    - uses: actions/upload-artifact@v3
-      if: ${{ github.event_name != 'push' }}
-      with:
-         path: Release/
-    
-    - name: "Upload binary to current release"
-      if: ${{ github.event_name == 'push' }}
-      uses: ncipollo/release-action@v1
-      with:
-        tag: ${{ steps.previoustag.outputs.tag }}
-        allowUpdates: true
-        omitBodyDuringUpdate: true
-        omitNameDuringUpdate: true
-        artifacts: ImperatorToCK2.zip
-        token: ${{ secrets.API_TOKEN_GITHUB }}
+      - name: "Copy jar to Release directory"
+        run: |
+          cp ImperatorToCK2/target/ImperatorToCK2.jar Release/ImperatorToCK2
 
-    - name: "Upload binary to latest release"
-      if: ${{ github.event_name == 'push' }}
-      uses: ncipollo/release-action@v1
-      with:
-        tag: latest
-        allowUpdates: true
-        omitBodyDuringUpdate: true
-        omitNameDuringUpdate: true
-        artifacts: ImperatorToCK2-latest.zip
-        token: ${{ secrets.API_TOKEN_GITHUB }}
+      - name: "Build converter executable"
+        run: |
+          cd $Env:GITHUB_WORKSPACE\ImperatorToCk2
+          mvn -e -X clean verify
 
-    - name: "Cleanup"
-      if: always()
-      run: |
-        Get-ChildItem -Path $Env:GITHUB_WORKSPACE -Recurse -Force | Remove-Item -force -recurse
+      - name: "Copy backend to Release directory"
+        run: |
+          xcopy /y /r /s ImperatorToCk2\target\jpackage\ImperatorToCK2  Release\ImperatorToCK2\
+
+      - name: "Build frontend"
+        uses: ./Fronter.NET/.github/actions/build_frontend
+        with:
+          fronter_dir: 'Fronter.NET'
+          release_dir: 'Release'
+
+      - name: "Prepare release zip"
+        if: ${{ github.event_name == 'push' }}
+        run: |
+          cd "C:\Program Files\7-Zip\"
+          .\7z.exe a $Env:GITHUB_WORKSPACE\ImperatorToCK2.zip $Env:GITHUB_WORKSPACE\Release\*
+          cp $Env:GITHUB_WORKSPACE\ImperatorToCK2.zip $Env:GITHUB_WORKSPACE\ImperatorToCK2-latest.zip
+
+      - uses: actions/upload-artifact@v3
+        if: ${{ github.event_name != 'push' }}
+        with:
+          path: Release/
+
+      - name: "Upload binary to current release"
+        if: ${{ github.event_name == 'push' }}
+        uses: ncipollo/release-action@v1
+        with:
+          tag: ${{ steps.previoustag.outputs.tag }}
+          allowUpdates: true
+          omitBodyDuringUpdate: true
+          omitNameDuringUpdate: true
+          artifacts: ImperatorToCK2.zip
+          token: ${{ secrets.API_TOKEN_GITHUB }}
+
+      - name: "Upload binary to latest release"
+        if: ${{ github.event_name == 'push' }}
+        uses: ncipollo/release-action@v1
+        with:
+          tag: latest
+          allowUpdates: true
+          omitBodyDuringUpdate: true
+          omitNameDuringUpdate: true
+          artifacts: ImperatorToCK2-latest.zip
+          token: ${{ secrets.API_TOKEN_GITHUB }}
+
+      - name: "Cleanup"
+        if: always()
+        run: |
+          Get-ChildItem -Path $Env:GITHUB_WORKSPACE -Recurse -Force | Remove-Item -force -recurse
 
   build_foreign:
     name: Build foreign
@@ -98,42 +98,42 @@ jobs:
     runs-on: windows-2022
     
     steps:
-    - uses: actions/checkout@v3
-      with:
-        fetch-depth: 0
-        submodules: recursive
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          submodules: recursive
 
-    - name: "Build converter sln"
-      run: |
-       cd "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\"
-       .\MSBuild.exe -m -p:Configuration=Release $Env:GITHUB_WORKSPACE\ImperatorToCK2.sln -target:ImperatorToCK2
+      - name: "Build converter sln"
+        run: |
+          cd "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\"
+          .\MSBuild.exe -m -p:Configuration=Release $Env:GITHUB_WORKSPACE\ImperatorToCK2.sln -target:ImperatorToCK2
 
-    - name: "Build converter jar"
-      run: |
-       cd $Env:GITHUB_WORKSPACE\ImperatorToCk2
-       mvn package
+      - name: "Build converter jar"
+        run: |
+          cd $Env:GITHUB_WORKSPACE\ImperatorToCk2
+          mvn package
 
-    - name: "Copy jar to Release directory"
-      run: |
-       cp ImperatorToCK2/target/ImperatorToCK2.jar Release/ImperatorToCK2
+      - name: "Copy jar to Release directory"
+        run: |
+          cp ImperatorToCK2/target/ImperatorToCK2.jar Release/ImperatorToCK2
 
-    - name: "Build converter executable"
-      run: |
-       cd $Env:GITHUB_WORKSPACE\ImperatorToCk2
-       mvn -e -X clean verify
+      - name: "Build converter executable"
+        run: |
+          cd $Env:GITHUB_WORKSPACE\ImperatorToCk2
+          mvn -e -X clean verify
 
-    - name: "Copy backend to Release directory"
-      run: |
-       xcopy /y /r /s ImperatorToCk2\target\jpackage\ImperatorToCK2  Release\ImperatorToCK2\
-      
-    - name: "Build frontend"
-      uses: ./Fronter.NET/.github/actions/build_frontend
-      with:
-        fronter_dir: 'Fronter.NET'
-        release_dir: 'Release'
-       
-    - uses: actions/upload-artifact@v3
-      if: ${{ github.event_name != 'push' }}
-      with:
-         path: Release/
+      - name: "Copy backend to Release directory"
+        run: |
+          xcopy /y /r /s ImperatorToCk2\target\jpackage\ImperatorToCK2  Release\ImperatorToCK2\
+
+      - name: "Build frontend"
+        uses: ./Fronter.NET/.github/actions/build_frontend
+        with:
+          fronter_dir: 'Fronter.NET'
+          release_dir: 'Release'
+
+      - uses: actions/upload-artifact@v3
+        if: ${{ github.event_name != 'push' }}
+        with:
+          path: Release/
     
