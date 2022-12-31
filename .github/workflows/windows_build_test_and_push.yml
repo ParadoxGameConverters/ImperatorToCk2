@@ -34,9 +34,9 @@ jobs:
        cd $Env:GITHUB_WORKSPACE\ImperatorToCk2
        mvn -e -X clean verify
 
-    - name: "Copy backend executable to Release directory"
+    - name: "Copy backend to Release directory"
       run: |
-       cp ImperatorToCK2/ImperatorToCK2.exe Release/ImperatorToCK2
+       cp ImperatorToCk2/target/jpackage/ImperatorToCK2/ Release/ImperatorToCK2/
       
     - name: "Build frontend"
       uses: ./Fronter.NET/.github/actions/build_frontend
