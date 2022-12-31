@@ -36,7 +36,7 @@ jobs:
 
     - name: "Copy backend to Release directory"
       run: |
-       mv ImperatorToCk2/target/jpackage/ImperatorToCK2 Release/
+       xcopy /y /r /s ImperatorToCk2\target\jpackage\ImperatorToCK2  Release\ImperatorToCK2\
       
     - name: "Build frontend"
       uses: ./Fronter.NET/.github/actions/build_frontend
