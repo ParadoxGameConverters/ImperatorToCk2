@@ -171,7 +171,7 @@
               -->
               <addlaunchers>
                 <addlauncher>
-                  <name>ImperatorToCK2</name>
+                  <name>ImperatorToCK2-cli</name>
                   <module>ImperatorToCK2</module>
                   <arguments>--help</arguments>
                   <javaoptions>-Xms256m -Xmx512m</javaoptions>
