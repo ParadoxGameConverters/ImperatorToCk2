@@ -54,11 +54,14 @@ jobs:
         release_dir: 'Release'
        
     - name: "Prepare release"
-      if: ${{ github.event_name == 'push' }}
       run: |
        cd "C:\Program Files\7-Zip\"
-       .\7z.exe a $Env:GITHUB_WORKSPACE\ImperatorToCk2-testing.zip $Env:GITHUB_WORKSPACE\Release\*
+       .\7z.exe a $Env:GITHUB_WORKSPACE\ImperatorToCK2.zip $Env:GITHUB_WORKSPACE\Release\*
        
+    - uses: actions/upload-artifact@v3
+      with:
+         path: $Env:GITHUB_WORKSPACE\ImperatorToCK2.zip
+    
     - name: "Upload binaries to release"
       if: ${{ github.event_name == 'push' }}
       uses: ncipollo/release-action@v1
@@ -67,7 +70,7 @@ jobs:
         allowUpdates: true
         omitBodyDuringUpdate: true
         omitNameDuringUpdate: true
-        artifacts: ImperatorToCk2-testing.zip
+        artifacts: ImperatorToCK2.zip
         token: ${{ secrets.API_TOKEN_GITHUB }}
 
     - name: "Cleanup"
@@ -114,3 +117,13 @@ jobs:
       with:
         fronter_dir: 'Fronter.NET'
         release_dir: 'Release'
+
+    - name: "Prepare release"
+      run: |
+       cd "C:\Program Files\7-Zip\"
+       .\7z.exe a $Env:GITHUB_WORKSPACE\ImperatorToCK2.zip $Env:GITHUB_WORKSPACE\Release\*
+       
+    - uses: actions/upload-artifact@v3
+      with:
+         path: $Env:GITHUB_WORKSPACE\ImperatorToCK2.zip
+    
