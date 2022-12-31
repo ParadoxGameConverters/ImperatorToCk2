@@ -556,8 +556,10 @@ public class Main
             String[] govCharacter;
 
             impCharInfoList = Characters.importChar(saveCharacters,compressedOrNot);
+            LOGGER.finest("70%");
 
             impDynList = Characters.importDynasty(saveDynasty);
+            LOGGER.finest("71%");
 
             //Array
 
@@ -734,11 +736,14 @@ public class Main
                 flag = 1;
                 //LOGGER.config("ArrayIndexOutOfBoundsException and flag = 1" + "_" + aq4);
             }
+            LOGGER.finest("72%");
+
             aq4 = 0;
             aq7 = 0;
             LOGGER.config(ck2HasLand[343]);
 
             Output.dejureTitleCreation(impTagInfo,empireRank,ck2LandTot,dejureDuchies,impSubjectInfo,modDirectory);
+            LOGGER.finest("73%");
 
             long titleTime = System.nanoTime();
             long titleTimeTot = (((titleTime - startTime) / 1000000000)/60);
