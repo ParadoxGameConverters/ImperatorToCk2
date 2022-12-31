@@ -174,8 +174,8 @@
                 jpackage resources. Icons, template files, and other resources
                 of jpackage can be overridden by adding replacement resources
                 to this directory.
-              -->
               <resourcedir>$‍{project.basedir}/config/jpackage/resources</resourcedir>
+              -->
             </configuration>
           </plugin>
         
