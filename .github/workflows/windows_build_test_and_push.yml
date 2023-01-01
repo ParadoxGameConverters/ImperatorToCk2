@@ -57,8 +57,8 @@ jobs:
         if: ${{ github.event_name == 'push' }}
         run: |
           cd "C:\Program Files\7-Zip\"
-          .\7z.exe a $Env:GITHUB_WORKSPACE\ImperatorToCK2.zip $Env:GITHUB_WORKSPACE\Release\*
-          cp $Env:GITHUB_WORKSPACE\ImperatorToCK2.zip $Env:GITHUB_WORKSPACE\ImperatorToCK2-latest.zip
+          .\7z.exe a $Env:GITHUB_WORKSPACE\ImperatorToCK2-win-x64.zip $Env:GITHUB_WORKSPACE\Release\*
+          cp $Env:GITHUB_WORKSPACE\ImperatorToCK2-win-x64.zip $Env:GITHUB_WORKSPACE\ImperatorToCK2-latest.zip
 
       - uses: actions/upload-artifact@v3
         if: ${{ github.event_name != 'push' }}
@@ -73,7 +73,7 @@ jobs:
           allowUpdates: true
           omitBodyDuringUpdate: true
           omitNameDuringUpdate: true
-          artifacts: ImperatorToCK2.zip
+          artifacts: ImperatorToCK2-win-x64.zip
           token: ${{ secrets.API_TOKEN_GITHUB }}
 
       - name: "Upload binary to latest release"
