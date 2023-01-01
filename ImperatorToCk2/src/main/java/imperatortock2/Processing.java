@@ -1,9 +1,6 @@
-package imperatortock2;
+package ImperatorToCK2;  
 
 import java.util.Scanner;
-
-import imperatortock2.output.Output;
-
 import java.io.IOException;
 import java.io.FileInputStream;
 import java.io.PrintWriter;
@@ -11,22 +8,17 @@ import java.io.FileOutputStream;
 import java.util.Random;
 import java.util.ArrayList;
 import java.io.File;
-
-import imperatortock2.ck2.LandedTitle;
-import imperatortock2.ck2.Rank;
-import imperatortock2.output.OutputLandedTitle;
-
-import java.util.Optional;
-
 /**
  * Write a description of class Processing here.
  *
  * @author (your name)
  * @version (a version number or a date)
  */
-public class Processing {
+public class Processing
+{
 
-    public static String basicProvinceTotal(int totalCKProv, String[] ck2TagTotals, String[][] ck2ProvInfo, int typeToCollect, int aq2) {
+    public static String basicProvinceTotal(int totalCKProv, String[] ck2TagTotals, String[][] ck2ProvInfo, int typeToCollect,int aq2)
+    {
 
         int flag = 0;
         int flag2 = 0;
@@ -42,37 +34,39 @@ public class Processing {
         pastOwners[0] = "debug";
         int aq7 = 0;
 
-        irOwners = ck2TagTotals[aq2].split("~");
+        irOwners = ck2TagTotals[aq2].split("~"); 
 
         while (aq5 < irOwners.length) {
-            owners = irOwners[aq5].split(",");
+            owners = irOwners[aq5].split(","); 
 
             int[] ownerTot;
             ownerTot = new int[totalCKProv]; //should redefine each time
 
             while (aq7 <= totalCKProv) {
-                if (owners[0].equals(pastOwners[aq7])) {
-                    culRelID = aq7;
+                if (owners[0].equals (pastOwners[aq7])) {
+                    culRelID = aq7;    
                 }
 
-                if (pastOwners[aq7] == null) {
+                if (pastOwners[aq7] == null ) {
                     culRelID = aq7;
                     pastOwners[aq7] = owners[0];
                     aq7 = 9999;
-                } else {
-                    aq7 = aq7 + 1;
                 }
-            }
+                else {
+                    aq7 = aq7 + 1;    
+                }
+            }   
 
             if (owners[1].equals("null")) {
-                ownerTot[culRelID] = 0;
-            } else {
-                ownerTot[culRelID] = Integer.parseInt(owners[1]) + 1;
+                ownerTot[culRelID] = 0;    
+            }
+            else {
+                ownerTot[culRelID] = Integer.parseInt(owners[1])+1;
             }
 
             aq6 = 1;
             while (aq6 < totalCKProv) {
-                if (ownerTot[aq6] > ownerTot[aq6 - 1]) {
+                if (ownerTot[aq6] > ownerTot[aq6-1]){
                     ck2ProvInfo[typeToCollect][aq2] = owners[0];
 
                 }
@@ -90,13 +84,13 @@ public class Processing {
         return ck2ProvInfo[typeToCollect][aq2];
     }
 
-    public static String[] importNames(String name, int provIDnum, String ck2Dir) throws IOException //Imports CK II prov name
+    public static String[] importNames (String name, int provIDnum, String ck2Dir) throws IOException //Imports CK II prov name
     {
 
         String provID = Integer.toString(provIDnum);
 
-        FileInputStream fileIn = new FileInputStream("provinceNames.txt");
-        Scanner scnr = new Scanner(fileIn);
+        FileInputStream fileIn= new FileInputStream("provinceNames.txt");
+        Scanner scnr= new Scanner(fileIn);
 
         int flag = 0;
         String ckName = "debug";
@@ -111,40 +105,41 @@ public class Processing {
         output[1] = "plains"; //default for no culture, uncolonized province with 0 pops
 
         try {
-            while (endOrNot = true) {
+            while (endOrNot = true){
 
                 qaaa = scnr.nextLine();
-                if (qaaa.split(",")[0].equals(provID)) {
+                if (qaaa.split(",")[0].equals(provID)){
                     endOrNot = false;
                     ckName = qaaa.split(",")[4];
                     output[0] = ckName;
-                    output[1] = importCK2ProvFile(ck2Dir, provIDnum, ckName)[0];
+                    output[1] = importCK2ProvFile(ck2Dir,provIDnum,ckName)[0];
 
                 }
             }
 
-        } catch (java.util.NoSuchElementException exception) {
+        }catch (java.util.NoSuchElementException exception){
             endOrNot = false;
 
-        }
+        }   
         fileIn.close();
         return output;
 
     }
 
-    public static String[] importCK2ProvFile(String ck2Dir, int provIDnum, String ck2Prov) throws IOException {
+    public static String[] importCK2ProvFile (String ck2Dir, int provIDnum, String ck2Prov) throws IOException
+    {
 
         String VM = "\\";
         VM = VM.substring(0);
         String provID = Integer.toString(provIDnum);
-        String name = ck2Dir + VM + "history" + VM + "provinces" + VM + provID + " - " + ck2Prov + ".txt";
+        String name = ck2Dir+VM+"history"+VM+"provinces"+VM+provID+" - "+ck2Prov+".txt";
         String[] output;   // Owner Culture Religeon PopTotal Buildings
         output = new String[1];
 
         try {
 
-            FileInputStream fileIn = new FileInputStream(name);
-            Scanner scnr = new Scanner(fileIn);
+            FileInputStream fileIn= new FileInputStream(name);
+            Scanner scnr= new Scanner(fileIn);
 
             int flag = 0;
             String ckName = "debug";
@@ -156,10 +151,10 @@ public class Processing {
             output[0] = "plains"; //default terrain type
 
             try {
-                while (endOrNot = true) {
+                while (endOrNot = true){
 
                     qaaa = scnr.nextLine();
-                    if (qaaa.split("= ")[0].equals("terrain ")) {
+                    if (qaaa.split("= ")[0].equals("terrain ")){
                         endOrNot = false;
                         output[0] = qaaa.split(",")[0];
 
@@ -167,12 +162,14 @@ public class Processing {
 
                 }
 
-            } catch (java.util.NoSuchElementException exception) {
+            }catch (java.util.NoSuchElementException exception){
                 endOrNot = false;
 
-            }
+            }   
 
-        } catch (java.io.FileNotFoundException exception) {
+        }
+
+        catch(java.io.FileNotFoundException exception) {
 
             output[0] = "error";
 
@@ -182,7 +179,8 @@ public class Processing {
 
     }
 
-    public static String importBaronyName(String name, int provIDnum, String ck2Dir) throws IOException {
+    public static String importBaronyName (String name, int provIDnum, String ck2Dir) throws IOException
+    {
 
         int aqq = 0;
         String tab = "	";
@@ -198,8 +196,8 @@ public class Processing {
 
         String provID = Integer.toString(provIDnum);
 
-        FileInputStream fileIn = new FileInputStream(ck2Dir + VM + "common" + VM + "landed_titles" + VM + "landed_titles.txt");
-        Scanner scnr = new Scanner(fileIn);
+        FileInputStream fileIn= new FileInputStream(ck2Dir+VM+"common"+VM+"landed_titles"+VM+"landed_titles.txt");
+        Scanner scnr= new Scanner(fileIn);
 
         String ckName = "debug";
 
@@ -207,128 +205,164 @@ public class Processing {
         String qaaa = "debug";
         String output = qaaa;   // Owner Culture Religeon PopTotal Buildings
         String provName = "noProv";
-        String tab3 = tab + tab + tab;
-        String tab4 = tab + tab + tab + tab;
+        String tab3 = tab+tab+tab;
+        String tab4 = tab+tab+tab+tab;
 
-        provName = importNames(name, provIDnum, ck2Dir)[0];
+        provName = importNames(name,provIDnum,ck2Dir)[0];
 
         provName = provName.toLowerCase();
-        provName = provName.replace(" ", "_");
-        provName = provName.replace("-", "_");
+        provName = provName.replace(" ","_");
+        provName = provName.replace("-","_");
 
         if (provName.equals("padua")) {
 
             provName = "padova";
-        } else if (provName.equals("angseley")) {
+        }
+
+        else if (provName.equals("angseley")) {
 
             provName = "anglesey";
-        } else if (provName.equals("padua")) {
+        }
+
+        else if (provName.equals("padua")) {
 
             provName = "padova";
-        } else if (provName.equals("aurilliac")) {
+        }
+
+        else if (provName.equals("aurilliac")) {
 
             provName = "aurillac";
-        } else if (provName.equals("el_arish")) {
+        }
+
+        else if (provName.equals("el_arish")) {
 
             provName = "el-arish";
-        } else if (provName.equals("augstgau")) {
+        }
+
+        else if (provName.equals("augstgau")) {
 
             provName = "aargau";
-        } else if (provName.equals("franken")) {
+        }
+
+        else if (provName.equals("franken")) {
 
             provName = "wurzburg";
-        } else if (provName.equals("nidaros")) {
+        }
+
+        else if (provName.equals("nidaros")) {
 
             provName = "trondelag";
-        } else if (provName.equals("jarnbaraland")) {
+        }
+
+        else if (provName.equals("jarnbaraland")) {
 
             provName = "dalarna";
-        } else if (provName.equals("trans_portage")) {
+        } 
+
+        else if (provName.equals("trans_portage")) {
 
             provName = "trans-portage";
-        } else if (provName.equals("morava")) {
+        }  
+
+        else if (provName.equals("morava")) {
 
             provName = "znojmo";
-        } else if (provName.equals("sieradzko_leczyckie")) {
+        }
+
+        else if (provName.equals("sieradzko_leczyckie")) {
 
             provName = "sieradzko-leczyckie";
-        } else if (provName.equals("sieradzko_leczyckie")) {
+        }
+
+        else if (provName.equals("sieradzko_leczyckie")) {
 
             provName = "sieradzko-leczyckie";
-        } else if (provName.equals("desht_i_kipchak")) {
+        }
+
+        else if (provName.equals("desht_i_kipchak")) {
 
             provName = "desht-i-kipchak";
-        } else if (provName.equals("kara_kum")) {
+        }
+
+        else if (provName.equals("kara_kum")) {
 
             provName = "kara-kum";
-        } else if (provName.equals("petra") || provName.equals("al'_aqabah") || provName.equals("al_'aqabah")) {
+        }
+
+        else if (provName.equals("petra") || provName.equals("al'_aqabah")|| provName.equals("al_'aqabah")) {
 
             provName = "al_aqabah";
-        } else if (provName.equals("anti_atlas")) {
+        }
+
+        else if (provName.equals("anti_atlas")) {
 
             provName = "anti-atlas";
-        } else if (provName.equals("asaita")) {
+        }
+
+        else if (provName.equals("asaita")) {
 
             provName = "asayita";
-        } else if (provName.equals("al_qusair")) {
+        }
+
+        else if (provName.equals("al_qusair")) {
 
             provName = "alqusair";
-        } else if (provName.equals("kyzyl_su")) {
+        }
+
+        else if (provName.equals("kyzyl_su")) {
 
             provName = "kyzyl-su";
         }
 
-        if (provName.equals("error")) {
-            flag = 3;
+        if (provName.equals ("error")) {
+            flag = 3;  
         }
 
         try {
-            while (flag == 0) {
+            while (flag == 0){
 
                 qaaa = scnr.nextLine();
 
                 if (qaaa.split("=")[0].equals(tab3 + "c_" + provName + " ") || qaaa.split("=")[0].equals(tab3 + "c_" + provName)
-                        || qaaa.split("=")[0].equals("            " + tab + "c_" + provName + " ") || qaaa.split("=")[0].equals(tab4 + "c_" + provName + " ") ||
-                        qaaa.split("=")[0].equals("            " + "c_" + provName + " ") || qaaa.split("=")[0].equals("           " + tab + tab + "c_" + provName + " ") ||
-                        qaaa.split("=")[0].equals("           " + tab + "c_" + provName + " ")) {
+                || qaaa.split("=")[0].equals("            "+tab+ "c_" + provName+" ") || qaaa.split("=")[0].equals(tab4 + "c_" + provName + " ") ||
+                qaaa.split("=")[0].equals("            " + "c_" + provName + " ") || qaaa.split("=")[0].equals("           "+tab+tab+ "c_" + provName+" ") ||
+                qaaa.split("=")[0].equals("           " + tab + "c_" + provName + " ")){
                     flag = 1;
                     output = null;
-                    while (flag == 1) {
+                    while (flag == 1){
 
                         try {
-                            if (qaaa.split("_")[0].equals(tab4 + "b") || qaaa.split("_")[0].equals("                " + tab + "b") ||
-                                    qaaa.split("_")[0].equals(tab4 + tab + "b") || qaaa.split("_")[0].equals("                   " + tab + "b") ||
-                                    qaaa.split("_")[0].equals("                " + "b")) {
+                            if (qaaa.split("_")[0].equals(tab4+"b") || qaaa.split("_")[0].equals("                "+tab+"b") ||
+                            qaaa.split("_")[0].equals(tab4+tab+"b") || qaaa.split("_")[0].equals("                   "+tab+"b") || 
+                            qaaa.split("_")[0].equals("                "+"b")){
                                 qaaa = qaaa.split("b_")[1];
-                                qaaa = qaaa.replace(bracket1, "");
-                                qaaa = qaaa.replace(bracket2, "");
-                                qaaa = qaaa.replace("=", "");
-                                qaaa = qaaa.replace(" ", "");
+                                qaaa = qaaa.replace(bracket1,"");
+                                qaaa = qaaa.replace(bracket2,"");
+                                qaaa = qaaa.replace("=","");
+                                qaaa = qaaa.replace(" ","");
                                 if (output != null) {
                                     output = output + "," + qaaa.split(" =")[0];
-                                } else {
-                                    output = qaaa.split(" =")[0];
-                                }
+                                } else { output = qaaa.split(" =")[0]; }
 
                                 aqq = aqq + 1;
                             }
-                        } catch (java.util.NoSuchElementException exception) {
+                        }catch (java.util.NoSuchElementException exception){
                             qaaa = scnr.nextLine();
 
                         }
                         qaaa = scnr.nextLine();
                         if (aqq == 7) {
-                            flag = 2;
+                            flag = 2;    
                         }
                     }
 
                 }
             }
 
-        } catch (java.util.NoSuchElementException exception) {
+        }catch (java.util.NoSuchElementException exception){
             flag = 2;
 
-        }
+        }   
 
         fileIn.close();
 
@@ -336,7 +370,8 @@ public class Processing {
 
     }
 
-    public static String[] importBaronyNameList(String name, int provIDnum, String ck2Dir) throws IOException {
+    public static String[] importBaronyNameList (String name, int provIDnum, String ck2Dir) throws IOException
+    {
 
         String provID = Integer.toString(provIDnum);
 
@@ -351,8 +386,8 @@ public class Processing {
         output[0] = "noName"; //default for no owner, uncolonized province
 
         try {
-            while (endOrNot = true) {
-                output[aqq] = importBaronyName(ck2Dir, aqq, ck2Dir);
+            while (endOrNot = true){
+                output[aqq]=importBaronyName(ck2Dir,aqq,ck2Dir);
                 if (output[aqq].equals("debug")) {
                     //Output.logPrint(aqq+"is for"+output[aqq]);
 
@@ -361,21 +396,22 @@ public class Processing {
 
             }
 
-        } catch (java.lang.ArrayIndexOutOfBoundsException exception) {
+        }catch (java.lang.ArrayIndexOutOfBoundsException exception){
             endOrNot = false;
 
-        }
+        }   
         return output;
 
     }
 
-    public static String[] importRegionList(int totProv, String impDir) throws IOException {
+    public static String[] importRegionList (int totProv, String impDir) throws IOException
+    {
 
         String VM = "\\";
         VM = VM.substring(0);
 
-        FileInputStream fileIn = new FileInputStream("regionConverter.txt");
-        Scanner scnr = new Scanner(fileIn);
+        FileInputStream fileIn= new FileInputStream("regionConverter.txt");
+        Scanner scnr= new Scanner(fileIn);
 
         int flag = 0;
         String ckName = "debug";
@@ -389,25 +425,26 @@ public class Processing {
         qaaa = scnr.nextLine();
 
         try {
-            while (endOrNot = true) {
+            while (endOrNot = true){
                 qaaa = scnr.nextLine();
-                provList = importRegion(provList, (impDir + VM + "game" + VM + "setup" + VM + "provinces" + VM + "00_" + qaaa + ".txt"), qaaa);
+                provList = importRegion (provList,(impDir+VM+"game"+VM+"setup"+VM+"provinces"+VM+"00_"+qaaa+".txt"),qaaa);
                 aqq = aqq + 1;
 
             }
 
-        } catch (java.util.NoSuchElementException exception) {
+        }catch (java.util.NoSuchElementException exception){
             endOrNot = false;
 
-        }
+        }   
         return provList;
 
     }
 
-    public static String[] importRegion(String[] provList, String dir, String region) throws IOException {
+    public static String[] importRegion (String[] provList, String dir, String region) throws IOException
+    {
 
-        FileInputStream fileIn = new FileInputStream(dir);
-        Scanner scnr = new Scanner(fileIn);
+        FileInputStream fileIn= new FileInputStream(dir);
+        Scanner scnr= new Scanner(fileIn);
 
         int flag = 0;
         String ckName = "debug";
@@ -418,34 +455,35 @@ public class Processing {
         int number = 0;
 
         try {
-            while (endOrNot = true) {
+            while (endOrNot = true){
                 qaaa = scnr.nextLine();
 
                 if (aqq == 0) {
-                    qaaa = qaaa.substring(1);
+                    qaaa = qaaa.substring(1);    
                 }
 
                 try {
 
                     qaaa = qaaa.split("=")[0];
-                    number = Integer.parseInt(qaaa);
+                    number = Integer.parseInt(qaaa);    
 
-                    provList[number] = region;
+                    provList[number] = region;   
 
-                } catch (java.lang.NumberFormatException exception) {
+                }catch (java.lang.NumberFormatException exception) {
                 }
-                aqq = aqq + 1;
+                aqq = aqq + 1;    
             }
-        } catch (java.util.NoSuchElementException exception) {
+        }catch (java.util.NoSuchElementException exception){
             endOrNot = false;
 
-        }
+        }   
 
         return provList;
 
     }
 
-    public static String randomizeColor() {
+    public static String randomizeColor ()
+    {
 
         int flag = 0;
         int aqq = 0;
@@ -453,38 +491,40 @@ public class Processing {
         int Rng1 = (int) (Math.random() * 255);
         int Rng2 = (int) (Math.random() * 255);
         int Rng3 = (int) (Math.random() * 255);
-        String color = Integer.toString(Rng1) + " " + Integer.toString(Rng2) + " " + Integer.toString(Rng3);
+        String color = Integer.toString(Rng1) + " " + Integer.toString(Rng2) + " " + Integer.toString(Rng3); 
 
         return color;
 
     }
 
-    public static String randomizeColorGrey() {
+    public static String randomizeColorGrey ()
+    {
 
         int flag = 0;
         int aqq = 0;
         String qaaa = "aa";
         int Rng = (int) (Math.random() * 70);
-        String color = Integer.toString(Rng) + " " + Integer.toString(Rng) + " " + Integer.toString(Rng);
+        String color = Integer.toString(Rng) + " " + Integer.toString(Rng) + " " + Integer.toString(Rng); 
 
         return color;
 
     }
 
-    public static String randomizeAge() {
+    public static String randomizeAge ()
+    {
 
         int flag = 0;
         int aqq = 0;
         String qaaa = "aa";
         int Rng = (int) (Math.random() * 34);
         Rng = Rng + 16;
-        String age = Integer.toString(Rng);
+        String age = Integer.toString(Rng); 
 
         return age;
 
     }
 
-    public static String capitalColor(String overlordColor) //Generates color for kingdom tier capital region, as to be different from main country
+    public static String capitalColor (String overlordColor) //Generates color for kingdom tier capital region, as to be different from main country
     {
 
         String[] overlordColorSplit = overlordColor.split(" ");
@@ -512,21 +552,21 @@ public class Processing {
         if (c3 > 255) {
             c3 = 255;
         }
-        String color = Integer.toString(c1) + " " + Integer.toString(c2) + " " + Integer.toString(c3);
+        String color = Integer.toString(c1) + " " + Integer.toString(c2) + " " + Integer.toString(c3); 
 
         return color;
 
     }
 
-    public static String[] convertProvConvList(String name, String outputDest) throws IOException //Converts standard mapper tool format into regular format
+    public static String[] convertProvConvList (String name, String outputDest) throws IOException //Converts standard mapper tool format into regular format
     {
 
         String tab = "	";
 
-        FileInputStream fileIn = new FileInputStream(name);
-        Scanner scnr = new Scanner(fileIn);
+        FileInputStream fileIn= new FileInputStream(name);
+        Scanner scnr= new Scanner(fileIn);
 
-        FileOutputStream fileOut = new FileOutputStream(outputDest);
+        FileOutputStream fileOut= new FileOutputStream(outputDest);
         PrintWriter out = new PrintWriter(fileOut);
 
         int flag = 0;
@@ -541,27 +581,26 @@ public class Processing {
         char bracket1 = 123;
         char bracket2 = 125;
 
-        String bracket1Str = bracket1 + " ";
+        String bracket1Str = bracket1+" ";
 
-        bracket1Str = bracket1Str.replace(" ", "");
+        bracket1Str = bracket1Str.replace(" ","");
 
-        String bracket2Str = bracket2 + " ";
+        String bracket2Str = bracket2+" ";
 
-        bracket2Str = bracket2Str.replace(" ", "");
+        bracket2Str = bracket2Str.replace(" ","");
 
         int aq2 = 0;
 
         try {
-            while (endOrNot = true) {
+            while (endOrNot = true){
 
                 qaaa = scnr.nextLine();
 
-                if (qaaa.split("ink = ")[0].equals(tab + "l")) {
+                if (qaaa.split("ink = ")[0].equals(tab+"l")){
                     qaaa = qaaa.split("ink = ")[1];
                     qaaa = qaaa.split(tab)[0];
-                    qaaa = qaaa.substring(2, qaaa.length() - 2);
-                    ;
-                    qaaa = qaaa.replace(" = ", ",");
+                    qaaa = qaaa.substring(2,qaaa.length()-2);;
+                    qaaa = qaaa.replace(" = ",",");
 
                     String[] provinceMappings = qaaa.split(" ");
 
@@ -571,20 +610,19 @@ public class Processing {
 
                     while (aqq < provinceMappings.length) {
 
-                        if (provinceMappings[aqq].split(",")[0].equals("ck2")) {
+                        if (provinceMappings[aqq].split(",")[0].equals("ck2")){
                             impProv = provinceMappings[aqq].split(",")[1];
                             aqq = 99999;
 
-                        } else {
-                            aqq = aqq + 1;
                         }
+                        else {aqq = aqq + 1;}  
 
                     }
-                    aqq = 0;
+                    aqq = 0;   
                     if (impProv != "a") {
                         while (aqq < provinceMappings.length) {
-                            if (provinceMappings[aqq].split(",")[0].equals("imperator")) {
-                                output[aq2] = (provinceMappings[aqq].split(",")[1] + "," + impProv);
+                            if (provinceMappings[aqq].split(",")[0].equals("imperator")){
+                                output[aq2] = (provinceMappings[aqq].split(",")[1]+","+impProv);
 
                             }
                             aqq = aqq + 1;
@@ -597,10 +635,10 @@ public class Processing {
 
             }
 
-        } catch (java.util.NoSuchElementException exception) {
+        }catch (java.util.NoSuchElementException exception){
             endOrNot = false;
 
-        }
+        }   
 
         out.flush();
         fileOut.close();
@@ -613,14 +651,14 @@ public class Processing {
     public static int combineProvConvList(String source, String destination) throws IOException //combines the two province mapping files into one
     {
 
-        String[] toAdd = convertProvConvList("provinceConversion2.txt", "provinceConversion2Formatted.txt");
-        String VM = "\\";
+        String[] toAdd = convertProvConvList("provinceConversion2.txt","provinceConversion2Formatted.txt");
+        String VM = "\\"; 
         VM = VM.substring(0);
 
-        FileInputStream fileIn = new FileInputStream(source);
-        Scanner scnr = new Scanner(fileIn);
+        FileInputStream fileIn= new FileInputStream(source);
+        Scanner scnr= new Scanner(fileIn);
 
-        FileOutputStream fileOut = new FileOutputStream(destination);
+        FileOutputStream fileOut= new FileOutputStream(destination);
         PrintWriter out = new PrintWriter(fileOut);
 
         String qaaa = scnr.nextLine();
@@ -629,9 +667,9 @@ public class Processing {
 
         while (aqq < toAdd.length) {
             if (toAdd[aqq] != null) {
-                out.println(toAdd[aqq]);
+                out.println(toAdd[aqq]); 
             }
-            aqq = aqq + 1;
+            aqq = aqq + 1; 
         }
 
         int flag = 0;
@@ -642,8 +680,8 @@ public class Processing {
 
             }
 
-        } catch (java.util.NoSuchElementException exception) {
-            flag = 1;
+        }catch (java.util.NoSuchElementException exception){
+            flag = 1; 
             out.flush();
             fileOut.close();
         }
@@ -651,7 +689,8 @@ public class Processing {
         return 0;
     }
 
-    public static ArrayList<String> generateSubjectList(int tot, String source) throws IOException {
+    public static ArrayList<String> generateSubjectList(int tot, String source) throws IOException
+    {
 
         ArrayList<String> subjects = new ArrayList<String>();
 
@@ -667,13 +706,14 @@ public class Processing {
             //subjects.add(relation[0]+","+relation[1]+","+relation[2]);
 
             //}
-            aqq = aqq + 1;
+            aqq = aqq + 1; 
         }
 
         return subjects;
     }
 
-    public static int checkSubjectList(int country, ArrayList<String> subjects) throws IOException {
+    public static int checkSubjectList(int country, ArrayList<String> subjects) throws IOException
+    {
 
         String countryStr = Integer.toString(country);
         int aqq = 0;
@@ -688,7 +728,7 @@ public class Processing {
                 output = aqq;
                 aqq = subjects.size() + 1000; //end loop
             }
-            aqq = aqq + 1;
+            aqq = aqq + 1; 
         }
 
         return output;
@@ -697,13 +737,13 @@ public class Processing {
     public static int checkMonumentList(String name) throws IOException //Checks if save is from 2.0+ or before
     {
 
-        FileInputStream fileIn = new FileInputStream(name);
-        Scanner scnr = new Scanner(fileIn);
+        FileInputStream fileIn= new FileInputStream(name);
+        Scanner scnr= new Scanner(fileIn);
         int flag = 0;
         try {
             String qaaa = scnr.nextLine();
 
-            if (qaaa.equals("great_work_manager={")) {
+            if (qaaa.equals ("great_work_manager={")) {
                 flag = 1;
 
             }
@@ -714,54 +754,56 @@ public class Processing {
     }
 
     public static String formatSaveName(String name) {// replaces /:*?"<>|- and space with _, while removing tabs and .rome
-        String quote = '"' + ""; // " character, Java doesn't like isoated " characters
+        String quote = '"'+""; // " character, Java doesn't like isoated " characters
         String tab = "	";
 
-        name = name.replace("/", "_");
-        name = name.replace(":", "_");
-        name = name.replace("*", "_");
-        name = name.replace("?", "_");
-        name = name.replace(quote, "_");
-        name = name.replace("<", "_");
-        name = name.replace(">", "_");
-        name = name.replace("|", "_");
-        name = name.replace("-", "_");
-        name = name.replace(" ", "_");
-        name = name.replace(tab, "");
+        name = name.replace("/","_");
+        name = name.replace(":","_");
+        name = name.replace("*","_");
+        name = name.replace("?","_");
+        name = name.replace(quote,"_");
+        name = name.replace("<","_");
+        name = name.replace(">","_");
+        name = name.replace("|","_");
+        name = name.replace("-","_");
+        name = name.replace(" ","_");
+        name = name.replace(tab,"");
 
-        name = name.replace(".", "~~~"); //Java's .split() method does not like period characters, temporarily switches "." to "~~~"
+        name = name.replace(".","~~~"); //Java's .split() method does not like period characters, temporarily switches "." to "~~~"
 
         String[] extensionSplit = name.split("~~~");
 
-        if (extensionSplit[extensionSplit.length - 1] != name) { //removes .rome or any other extension. If no extension at all, is left untouched
+        if (extensionSplit[extensionSplit.length-1] != name) { //removes .rome or any other extension. If no extension at all, is left untouched
 
-            name = name.replace(extensionSplit[extensionSplit.length - 1], "");
+            name = name.replace(extensionSplit[extensionSplit.length-1],"");
 
-            name = name.substring(0, name.length() - 3);
+            name = name.substring(0,name.length()-3);
 
         }
 
-        name = name.replace("~~~", ".");
+        name = name.replace("~~~",".");
 
         //Output.logPrint(name+"Q");
 
         return name;
     }
 
-    public static String convertTitle(String name, String rankString, String title, String defaultTitle) throws IOException {// Converts dynamically generated title to vanilla counterpart
-        String tmpTitle = Importer.importCultList(name, rankString + "_" + title)[1];//converts title
+    public static String convertTitle(String name, String rank, String title, String defaultTitle) throws IOException
+    {// Converts dynamically generated title to vanilla counterpart
+        String tmpTitle = Importer.importCultList(name,rank+"_"+title)[1];//converts title
 
         if (tmpTitle.equals("99999") || tmpTitle.equals("peq")) {//if there is no vanilla match
             return defaultTitle;
         } else {
-            tmpTitle = tmpTitle.substring(2, tmpTitle.length());
+            tmpTitle = tmpTitle.substring(2,tmpTitle.length());
             title = tmpTitle;
         }
 
         return title;
     }
 
-    public static ArrayList<String> calculateDuchyNameList(String ck2Dir, String[][] ck2ProvInfo) throws IOException {
+    public static ArrayList<String> calculateDuchyNameList (String ck2Dir, String[][] ck2ProvInfo) throws IOException
+    {
 
         ArrayList<String> output = new ArrayList<String>(); //owner,culture,duchy
 
@@ -775,12 +817,12 @@ public class Processing {
 
         while (aqq < 3000) {
 
-            String provName = importNames("a", aqq, ck2Dir)[0];
+            String provName = importNames("a",aqq,ck2Dir)[0];
 
             provName = formatProvName(provName);
 
             if (aqq == 103) { //Leon in Brittany and Spain have the same name in definition.csv
-                provName = "french_leon";
+                provName = "french_leon";  
             }
 
             provNameList.add(provName);
@@ -815,11 +857,11 @@ public class Processing {
                         if (countyList[aq3].split("c_")[1].equals(ckProvName)) {
 
                             provCultTotal = provCultTotal + "," + Output.cultureOutput(ck2ProvInfo[1][aq4]);
-                            provCultTotal = provCultTotal.replace("QQQ,", "");
+                            provCultTotal = provCultTotal.replace("QQQ,","");
                             provTagTotal = provTagTotal + "," + ck2ProvInfo[0][aq4];
-                            provTagTotal = provTagTotal.replace("QQQ,", "");
+                            provTagTotal = provTagTotal.replace("QQQ,","");
                             provRegTotal = provRegTotal + "," + ck2ProvInfo[4][aq4];
-                            provRegTotal = provRegTotal.replace("QQQ,", "");
+                            provRegTotal = provRegTotal.replace("QQQ,","");
 
                         }
                         aq3 = aq3 + 1;
@@ -833,7 +875,7 @@ public class Processing {
                 String tag = calcDuchyMajority(provTagTotal);
                 String region = calcDuchyMajority(provRegTotal);
 
-                output.add(tag + "," + culture + "," + duchy + "," + region);
+                output.add(tag+","+culture+","+duchy+","+region);
 
             }
 
@@ -844,7 +886,7 @@ public class Processing {
         return output;
     }
 
-    public static String calcDuchyMajority(String duchy) throws IOException //calculates majority dejure ownership of duchy
+    public static String calcDuchyMajority (String duchy) throws IOException //calculates majority dejure ownership of duchy
     {
 
         String[] counties = duchy.split(",");
@@ -860,7 +902,7 @@ public class Processing {
             int aq2 = 0;
             while (aq2 < count.size()) {
                 if (counties[aqq] == count.get(aq2)) {
-                    count.set(aq2, count.get(aq2) + "," + counties[aqq]);
+                    count.set(aq2,count.get(aq2)+","+counties[aqq]);
                 } else if (counties[aqq] != "null" && counties[aqq] != "99999") {
                     count.add(counties[aqq]);
                 }
@@ -892,71 +934,109 @@ public class Processing {
         return duchy;
     }
 
-    public static String formatProvName(String provName) throws IOException //formats province name to internal format
+    public static String formatProvName (String provName) throws IOException //formats province name to internal format
     {
 
         provName = provName.toLowerCase();
-        provName = provName.replace(" ", "_");
-        provName = provName.replace("-", "_");
+        provName = provName.replace(" ","_");
+        provName = provName.replace("-","_");
 
         if (provName.equals("padua")) {
 
             provName = "padova";
-        } else if (provName.equals("angseley")) {
+        }
+
+        else if (provName.equals("angseley")) {
 
             provName = "anglesey";
-        } else if (provName.equals("padua")) {
+        }
+
+        else if (provName.equals("padua")) {
 
             provName = "padova";
-        } else if (provName.equals("aurilliac")) {
+        }
+
+        else if (provName.equals("aurilliac")) {
 
             provName = "aurillac";
-        } else if (provName.equals("el_arish")) {
+        }
+
+        else if (provName.equals("el_arish")) {
 
             provName = "el-arish";
-        } else if (provName.equals("augstgau")) {
+        }
+
+        else if (provName.equals("augstgau")) {
 
             provName = "aargau";
-        } else if (provName.equals("franken")) {
+        }
+
+        else if (provName.equals("franken")) {
 
             provName = "wurzburg";
-        } else if (provName.equals("nidaros")) {
+        }
+
+        else if (provName.equals("nidaros")) {
 
             provName = "trondelag";
-        } else if (provName.equals("jarnbaraland")) {
+        }
+
+        else if (provName.equals("jarnbaraland")) {
 
             provName = "dalarna";
-        } else if (provName.equals("trans_portage")) {
+        } 
+
+        else if (provName.equals("trans_portage")) {
 
             provName = "trans-portage";
-        } else if (provName.equals("morava")) {
+        }  
+
+        else if (provName.equals("morava")) {
 
             provName = "znojmo";
-        } else if (provName.equals("sieradzko_leczyckie")) {
+        }
+
+        else if (provName.equals("sieradzko_leczyckie")) {
 
             provName = "sieradzko-leczyckie";
-        } else if (provName.equals("sieradzko_leczyckie")) {
+        }
+
+        else if (provName.equals("sieradzko_leczyckie")) {
 
             provName = "sieradzko-leczyckie";
-        } else if (provName.equals("desht_i_kipchak")) {
+        }
+
+        else if (provName.equals("desht_i_kipchak")) {
 
             provName = "desht-i-kipchak";
-        } else if (provName.equals("kara_kum")) {
+        }
+
+        else if (provName.equals("kara_kum")) {
 
             provName = "kara-kum";
-        } else if (provName.equals("petra") || provName.equals("al'_aqabah") || provName.equals("al_'aqabah")) {
+        }
+
+        else if (provName.equals("petra") || provName.equals("al'_aqabah")|| provName.equals("al_'aqabah")) {
 
             provName = "al_aqabah";
-        } else if (provName.equals("anti_atlas")) {
+        }
+
+        else if (provName.equals("anti_atlas")) {
 
             provName = "anti-atlas";
-        } else if (provName.equals("asaita")) {
+        }
+
+        else if (provName.equals("asaita")) {
 
             provName = "asayita";
-        } else if (provName.equals("al_qusair")) {
+        }
+
+        else if (provName.equals("al_qusair")) {
 
             provName = "alqusair";
-        } else if (provName.equals("kyzyl_su")) {
+        }
+
+        else if (provName.equals("kyzyl_su")) {
 
             provName = "kyzyl-su";
         }
@@ -965,16 +1045,17 @@ public class Processing {
 
     }
 
-    public static String[] defaultDejureConversion(String cult) throws IOException {
+    public static String[] defaultDejureConversion(String cult) throws IOException
+    {
 
         Importer importer = new Importer();
 
-        String[] dejureTitles = importer.importDejureList("dejureConversion.txt", cult);
+        String[] dejureTitles = importer.importDejureList("dejureConversion.txt",cult);
 
         return dejureTitles;
     }
 
-    public static String[] calculateUsedTitles(String[] cultureTitles, ArrayList<String[]> impTagInfo, int empireRank, int[] ck2LandTot) throws IOException
+    public static String[] calculateUsedTitles(String[] cultureTitles, ArrayList<String[]> impTagInfo,int empireRank,int[] ck2LandTot) throws IOException
     //calculates if titles exist
     {
 
@@ -985,13 +1066,13 @@ public class Processing {
         int flag2 = 0; //Defeated civil war tags will still exist in save, causing calc to set non-existant civil war faction as cultureTitle without flags
 
         while (aqq < impTagInfo.size()) {
-            if (("e_" + impTagInfo.get(aqq)[21]).equals(cultureTitles[1]) && flag == 0 && ck2LandTot[aqq] >= empireRank) {
-                cultureTitles[1] = "e_" + impTagInfo.get(aqq)[0];
+            if (("e_"+impTagInfo.get(aqq)[21]).equals(cultureTitles[1]) && flag == 0 && ck2LandTot[aqq] >= empireRank) {
+                cultureTitles[1] = "e_"+impTagInfo.get(aqq)[0];
                 flag = 1;
             }
 
-            if (("k_" + impTagInfo.get(aqq)[21]).equals(cultureTitles[2]) && flag2 == 0) {
-                cultureTitles[2] = "k_" + impTagInfo.get(aqq)[0];
+            if (("k_"+impTagInfo.get(aqq)[21]).equals(cultureTitles[2]) && flag2 == 0) {
+                cultureTitles[2] = "k_"+impTagInfo.get(aqq)[0];
                 flag2 = 1;
             }
             aqq = aqq + 1;
@@ -1006,9 +1087,9 @@ public class Processing {
 
         try {
 
-            FileInputStream fileIn = new FileInputStream(file);
+            FileInputStream fileIn= new FileInputStream(file);
 
-        } catch (java.io.FileNotFoundException exception) {
+        }catch (java.io.FileNotFoundException exception){
             return false;
 
         }
@@ -1031,7 +1112,7 @@ public class Processing {
     public static String customDate(String date, String oldDirectory, String newDirectory) throws IOException //needed to allow TAGs imperial laws
     {
 
-        String VM = "\\";
+        String VM = "\\"; 
         VM = VM.substring(0);
         char VMq = '"';
         String tab = "	";
@@ -1040,10 +1121,10 @@ public class Processing {
 
         oldFile = Importer.importBasicFile(oldDirectory);
 
-        FileOutputStream fileOut = new FileOutputStream(newDirectory);
+        FileOutputStream fileOut= new FileOutputStream(newDirectory);
         PrintWriter out = new PrintWriter(fileOut);
 
-        String tmpDate = date.replace(".", ",");
+        String tmpDate = date.replace(".",",");
 
         int year = Integer.parseInt(tmpDate.split(",")[0]);
         int month = Integer.parseInt(tmpDate.split(",")[1]);
@@ -1093,22 +1174,30 @@ public class Processing {
 
         while (aqq < oldFile.size()) {
             if (oldFile.get(aqq).contains("converted = ")) {
-                String newTitle = oldFile.get(aqq).replace("converted = ", bookmark);
-                out.println(newTitle);
-            } else if (oldFile.get(aqq).contains("converted_bookmark_name")) {
-                String newName = oldFile.get(aqq).replace("converted_bookmark_name", bookmarkName);
-                out.println(newName);
-            } else if (oldFile.get(aqq).contains("converted_bookmark_info")) {
-                String newInfo = oldFile.get(aqq).replace("converted_bookmark_info", bookmarkDesc);
-                out.println(newInfo);
-            } else if (oldFile.get(aqq).contains("100.1.1")) {
-                String newDate = oldFile.get(aqq).replace("100.1.1", date);
-                out.println(newDate);
-            } else if (oldFile.get(aqq).contains("GFX_pick_era_image_4")) {
-                String newDate = oldFile.get(aqq).replace("GFX_pick_era_image_4", image);
-                out.println(newDate);
+                String newTitle = oldFile.get(aqq).replace("converted = ",bookmark);
+                out.println (newTitle);
+            }
+
+            else if (oldFile.get(aqq).contains("converted_bookmark_name")) {
+                String newName = oldFile.get(aqq).replace("converted_bookmark_name",bookmarkName);
+                out.println (newName);
+            }
+
+            else if (oldFile.get(aqq).contains("converted_bookmark_info")) {
+                String newInfo = oldFile.get(aqq).replace("converted_bookmark_info",bookmarkDesc);
+                out.println (newInfo);
+            }
+
+            else if (oldFile.get(aqq).contains("100.1.1")) {
+                String newDate = oldFile.get(aqq).replace("100.1.1",date);
+                out.println (newDate);
+            } 
+
+            else if (oldFile.get(aqq).contains("GFX_pick_era_image_4")) {
+                String newDate = oldFile.get(aqq).replace("GFX_pick_era_image_4",image);
+                out.println (newDate);
             } else {
-                out.println(oldFile.get(aqq));
+                out.println (oldFile.get(aqq));
             }
 
             aqq = aqq + 1;
@@ -1121,7 +1210,7 @@ public class Processing {
         return "a";
     }
 
-    public static String checkGovList(String gov, ArrayList<String> govMap) throws IOException //Imports government mappings
+    public static String checkGovList (String gov, ArrayList<String> govMap) throws IOException //Imports government mappings
     {
 
         int flag = 0;
@@ -1133,19 +1222,19 @@ public class Processing {
         String qaaa;
         String output = gov; //backup in case there is no mapping
 
-        String rankString = "k"; //may be implemented in the future
+        String rank = "k"; //may be implemented in the future
 
         try {
-            while (endOrNot = true) {
+            while (endOrNot = true){
 
                 qaaa = govMap.get(aqq);
 
-                if (qaaa.split(",")[0].equals(gov)) {
+                if (qaaa.split(",")[0].equals(gov)){
                     if (qaaa.split(",").length == 2) { //if no rank requirement, convert
                         endOrNot = false;
                         output = qaaa.split(",")[1];
                     } else if (qaaa.split(",").length == 3) {
-                        if (qaaa.split(",")[2].equals(rankString)) { //if rankStrings match, convert
+                        if (qaaa.split(",")[2].equals(rank)) { //if ranks match, convert
                             endOrNot = false;
                             output = qaaa.split(",")[1];
                         }
@@ -1156,20 +1245,20 @@ public class Processing {
 
             }
 
-        } catch (java.lang.IndexOutOfBoundsException exception) {
+        }catch (java.lang.IndexOutOfBoundsException exception){
             endOrNot = false;
 
-        }
+        }   
 
         return output;
 
     }
 
-    public static String calcDynID(String id) //gives all IR character dynasties + 700000000 to prevent conflict
+    public static String calcDynID (String id) //gives all IR character dynasties + 700000000 to prevent conflict
     {
         if (!id.equals("noDynasty")) {
             if (id.length() >= 10) {
-                id = id.substring(0, 9);
+                id = id.substring(0,9);
             }
             id = Integer.toString(Integer.parseInt(id) + 700000000);
         }
@@ -1177,7 +1266,7 @@ public class Processing {
         return id;
     }
 
-    public static String calcCharID(String id) //gives all IR character dynasties + 700000000 to prevent conflict
+    public static String calcCharID (String id) //gives all IR character dynasties + 700000000 to prevent conflict
     {
         id = Integer.toString(1000000 + Integer.parseInt(id));
 
@@ -1185,7 +1274,7 @@ public class Processing {
 
     }
 
-    public static String calcHead(ArrayList<String[]> impCharInfoList, String dynasty) //calculates which character is the head of a dynasty
+    public static String calcHead (ArrayList<String[]> impCharInfoList, String dynasty) //calculates which character is the head of a dynasty
     {
         int aqq = 1;
         String[] dynastyList = dynasty.split("~");
@@ -1209,7 +1298,7 @@ public class Processing {
 
     }
 
-    public static String deriveRgbFromHsv(String color) //Converts HSV to RGB, adapted from commonItems
+    public static String deriveRgbFromHsv (String color) //Converts HSV to RGB, adapted from commonItems
     {
 
         {
@@ -1223,64 +1312,67 @@ public class Processing {
             if (s == 0.0f) // achromatic (grey)
             {
                 r = g = b = v;
-            } else {
+            }
+            else
+            {
                 if (h >= 1.0f)
                     h = 0.0f;
-                int sector = (int) ((h * 6.0f));
-                float fraction = h * 6.0f - (float) (sector);
+                int sector = (int)((h * 6.0f));
+                float fraction = h * 6.0f - (float)(sector);
                 float p = v * (1 - s);
                 float q = v * (1 - s * fraction);
                 float t = v * (1 - s * (1 - fraction));
-                switch (sector) {
+                switch (sector)
+                {
                     case 0:
-                        r = v;
-                        g = t;
-                        b = p;
-                        break;
+                    r = v;
+                    g = t;
+                    b = p;
+                    break;
                     case 1:
-                        r = q;
-                        g = v;
-                        b = p;
-                        break;
+                    r = q;
+                    g = v;
+                    b = p;
+                    break;
                     case 2:
-                        r = p;
-                        g = v;
-                        b = t;
-                        break;
+                    r = p;
+                    g = v;
+                    b = t;
+                    break;
                     case 3:
-                        r = p;
-                        g = q;
-                        b = v;
-                        break;
+                    r = p;
+                    g = q;
+                    b = v;
+                    break;
                     case 4:
-                        r = t;
-                        g = p;
-                        b = v;
-                        break;
+                    r = t;
+                    g = p;
+                    b = v;
+                    break;
                     case 5:
-                        r = v;
-                        g = p;
-                        b = q;
-                        break;
+                    r = v;
+                    g = p;
+                    b = q;
+                    break;
                     default:
                 }
             }
             r *= 255;
             g *= 255;
             b *= 255;
-            color = r + " " + g + " " + b;
+            color = r+" "+g+" "+b;
         }
 
         return color;
 
     }
 
-    public static String fixWhite(String color) //prevents colors from being 255 255 255
+    public static String fixWhite (String color) //prevents colors from being 255 255 255
     {
         if (color.split(" ")[0].contains("255") || color.split(" ")[0].contains("254")) {
             if (color.split(" ")[1].contains("255") || color.split(" ")[1].contains("254")) {
                 if (color.split(" ")[2].contains("255") || color.split(" ")[2].contains("254")) {
-                    color = color.replace("255", "254");
+                    color = color.replace("255","254");
                 }
             }
         }
@@ -1288,19 +1380,22 @@ public class Processing {
 
     }
 
-    public static String[] eastWestNames(String eastWest, String[] loc) throws IOException {
+    public static String[] eastWestNames (String eastWest, String[] loc) throws IOException
+    {
         String[] empire = new String[2];
 
-        empire[0] = eastWest + " " + loc[0];
-        empire[1] = eastWest + " " + loc[1];
+        empire[0] = eastWest+" "+loc[0];
+        empire[1] = eastWest+" "+loc[1];
         if (empire[0].contains("Republic")) {
-            empire[0] = empire[0].replace("Republic", "Empire");
-            empire[1] = empire[0].replace("Republic", "Empire");
-        } else if (empire[0].contains("Kingdom")) {
-            empire[0] = empire[0].replace("Kingdom", "Empire");
-            empire[1] = empire[0].replace("Kingdom", "Empire");
-        } else if (!empire[0].contains("Empire")) {
-            empire[0] = eastWest + " " + loc[1];
+            empire[0] = empire[0].replace("Republic","Empire");
+            empire[1] = empire[0].replace("Republic","Empire");
+        }
+        else if (empire[0].contains("Kingdom")) {
+            empire[0] = empire[0].replace("Kingdom","Empire");
+            empire[1] = empire[0].replace("Kingdom","Empire");
+        }
+        else if (!empire[0].contains("Empire")) {
+            empire[0] = eastWest+" "+loc[1];
             empire[0] = empire[0] + " Empire";
         }
 
@@ -1308,119 +1403,108 @@ public class Processing {
 
     }
 
-    public static void dynamicSplit(String title, String rankString, String color, String[] loc, String irFlag, String impGameDir, String capital,
-                                    ArrayList<String[]> flagList, ArrayList<String[]> colorList, ArrayList<String> modFlagGFX, String government, String tagCulture,
-                                    String ck2Dir, String modDirectory) throws IOException {
-        String country = rankString + "_" + title;
-        String[] easternEmpire = eastWestNames("Eastern", loc);
-        String[] westernEmpire = eastWestNames("Western", loc);
+    public static void dynamicSplit (String title,String rank,String color,String[] loc,String irFlag,String impGameDir,String capital,
+    ArrayList<String[]> flagList,ArrayList<String[]> colorList,ArrayList<String> modFlagGFX,String government,String tagCulture,
+    String ck2Dir, String modDirectory) throws IOException
+    {
+        String country = rank+"_"+title;
+        String[] easternEmpire = eastWestNames("Eastern",loc);
+        String[] westernEmpire = eastWestNames("Western",loc);
         String eastColor = eastColor(color);
         String westColor = westColor(color);
-        String eastTitle = title + "_east";
+        String eastTitle = title+"_east";
         if (title.equals("roman_empire")) { //for Eastern Roman Empire, convert to Byzantium
             eastTitle = "byzantium";
         }
-        String westTitle = title + "_west";
-        String ck2Capital = Importer.importConvList("provinceConversion.txt", Integer.parseInt(capital))[1];
+        String westTitle = title+"_west";
+        String ck2Capital = Importer.importConvList("provinceConversion.txt",Integer.parseInt(capital))[1];
         tagCulture = Output.cultureOutput(tagCulture);
         //events
-        String eventDir = modDirectory + "/events/dynamic_empire_split_" + country + ".txt";
+        String eventDir = modDirectory+"/events/dynamic_empire_split_"+country+".txt";
         String eventTemplateDirectory = "defaultOutput/templates/events/dynamic_empire_split.txt";
-        Output.dynamicSplitTemplateFill(country, loc, easternEmpire, westernEmpire, eastTitle, westTitle, ck2Capital, tagCulture, eventDir, eventTemplateDirectory);
+        Output.dynamicSplitTemplateFill(country,loc,easternEmpire,westernEmpire,eastTitle,westTitle,ck2Capital,tagCulture,eventDir,eventTemplateDirectory);
 
-        String eventRestorationDir = modDirectory + "/events/dynamic_empire_reunification_" + country + ".txt";
+        String eventRestorationDir = modDirectory+"/events/dynamic_empire_reunification_"+country+".txt";
         String eventRestorationTemplateDirectory = "defaultOutput/templates/events/dynamic_empire_reunification.txt";
-        Output.dynamicSplitTemplateFill(country, loc, easternEmpire, westernEmpire, eastTitle, westTitle, ck2Capital, tagCulture, eventRestorationDir,
-                eventRestorationTemplateDirectory);
+        Output.dynamicSplitTemplateFill(country,loc,easternEmpire,westernEmpire,eastTitle,westTitle,ck2Capital,tagCulture,eventRestorationDir,
+            eventRestorationTemplateDirectory);
 
         //decisions
-        String decisionDir = modDirectory + "/decisions/dynamic_empire_split_decision_" + country + ".txt";
+        String decisionDir = modDirectory+"/decisions/dynamic_empire_split_decision_"+country+".txt";
         String decisionTemplateDirectory = "defaultOutput/templates/decisions/dynamic_empire_split_decision.txt";
-        Output.dynamicSplitTemplateFill(country, loc, easternEmpire, westernEmpire, eastTitle, westTitle, ck2Capital, tagCulture,
-                decisionDir, decisionTemplateDirectory);
+        Output.dynamicSplitTemplateFill(country,loc,easternEmpire,westernEmpire,eastTitle,westTitle,ck2Capital,tagCulture,
+            decisionDir,decisionTemplateDirectory);
 
-        String decisionRestorationDir = modDirectory + "/decisions/dynamic_empire_restoration_decision_" + country + ".txt";
+        String decisionRestorationDir = modDirectory+"/decisions/dynamic_empire_restoration_decision_"+country+".txt";
         String decisionRestorationTemplateDirectory = "defaultOutput/templates/decisions/dynamic_empire_restoration_decision.txt";
-        Output.dynamicSplitTemplateFill(country, loc, easternEmpire, westernEmpire, eastTitle, westTitle, ck2Capital, tagCulture, decisionRestorationDir,
-                decisionRestorationTemplateDirectory);
+        Output.dynamicSplitTemplateFill(country,loc,easternEmpire,westernEmpire,eastTitle,westTitle,ck2Capital,tagCulture,decisionRestorationDir,
+            decisionRestorationTemplateDirectory);
 
-        String decisionGFXDir = modDirectory + "/interface/irck2_empire_split_decision_icons_" + country + ".gfx";
+        String decisionGFXDir = modDirectory+"/interface/irck2_empire_split_decision_icons_"+country+".gfx";
         String decisionGFXTemplateDirectory = "defaultOutput/templates/interface/irck2_empire_split_decision_icons_e_TAG.gfx";
-        Output.dynamicSplitTemplateFill(country, loc, easternEmpire, westernEmpire, eastTitle, westTitle, ck2Capital, tagCulture,
-                decisionGFXDir, decisionGFXTemplateDirectory);
+        Output.dynamicSplitTemplateFill(country,loc,easternEmpire,westernEmpire,eastTitle,westTitle,ck2Capital,tagCulture,
+            decisionGFXDir,decisionGFXTemplateDirectory);
 
         //bloodlines 
-        String bloodlineDir = modDirectory + "/common/bloodlines/50_empireSplitBloodline_" + country + ".txt";
+        String bloodlineDir = modDirectory+"/common/bloodlines/50_empireSplitBloodline_"+country+".txt";
         String bloodlineTemplateDirectory = "defaultOutput/templates/common/bloodlines/50_empireSplitBloodline.txt";
-        Output.dynamicSplitTemplateFill(country, loc, easternEmpire, westernEmpire, eastTitle, westTitle, ck2Capital, tagCulture, bloodlineDir,
-                bloodlineTemplateDirectory);
+        Output.dynamicSplitTemplateFill(country,loc,easternEmpire,westernEmpire,eastTitle,westTitle,ck2Capital,tagCulture,bloodlineDir,
+            bloodlineTemplateDirectory);
 
-        String bloodlineGFXDir = modDirectory + "/interface/irck2_bloodlines_" + country + ".gfx";
+        String bloodlineGFXDir = modDirectory+"/interface/irck2_bloodlines_"+country+".gfx";
         String bloodlineGFXTemplateDirectory = "defaultOutput/templates/interface/irck2_bloodlines_e_TAG.gfx";
-        Output.dynamicSplitTemplateFill(country, loc, easternEmpire, westernEmpire, eastTitle, westTitle, ck2Capital, tagCulture, bloodlineGFXDir,
-                bloodlineGFXTemplateDirectory);
+        Output.dynamicSplitTemplateFill(country,loc,easternEmpire,westernEmpire,eastTitle,westTitle,ck2Capital,tagCulture,bloodlineGFXDir,
+            bloodlineGFXTemplateDirectory);
 
         //loc
-        String locDir = modDirectory + "/localisation/dynamic_empire_split_loc_" + country + ".csv";
+        String locDir = modDirectory+"/localisation/dynamic_empire_split_loc_"+country+".csv";
         String locTemplateDirectory = "defaultOutput/templates/localisation/dynamic_empire_split_loc.csv";
-        Output.dynamicSplitTemplateFill(country, loc, easternEmpire, westernEmpire, eastTitle, westTitle, ck2Capital, tagCulture,
-                locDir, locTemplateDirectory);
+        Output.dynamicSplitTemplateFill(country,loc,easternEmpire,westernEmpire,eastTitle,westTitle,ck2Capital,tagCulture,
+            locDir,locTemplateDirectory);
 
-        String bloodDescDir = modDirectory + "/localisation/dynamic_empire_split_bloodline_loc_" + country + ".csv";
+        String bloodDescDir = modDirectory+"/localisation/dynamic_empire_split_bloodline_loc_"+country+".csv";
         String bloodDescTemplateDirectory = "defaultOutput/templates/localisation/dynamic_empire_split_bloodline_loc.csv";
-        Output.dynamicSplitTemplateFill(country, loc, easternEmpire, westernEmpire, eastTitle, westTitle, ck2Capital, tagCulture, bloodDescDir,
-                bloodDescTemplateDirectory);
+        Output.dynamicSplitTemplateFill(country,loc,easternEmpire,westernEmpire,eastTitle,westTitle,ck2Capital,tagCulture,bloodDescDir,
+            bloodDescTemplateDirectory);
 
-        Output.localizationCreation(easternEmpire, eastTitle, rankString, modDirectory);
-        Output.localizationCreation(westernEmpire, westTitle, rankString, modDirectory);
+        Output.localizationCreation(easternEmpire,eastTitle,rank,modDirectory);
+        Output.localizationCreation(westernEmpire,westTitle,rank,modDirectory);
 
         //cbs
-        String cbDir = modDirectory + "/common/cb_types/50_irck2_cb_types_" + country + ".txt";
+        String cbDir = modDirectory+"/common/cb_types/50_irck2_cb_types_"+country+".txt";
         String cbTemplateDirectory = "defaultOutput/templates/common/cb_types/50_irck2_cb_types_e_TAG.txt";
-        Output.dynamicSplitTemplateFill(country, loc, easternEmpire, westernEmpire, eastTitle, westTitle, ck2Capital, tagCulture,
-                cbDir, cbTemplateDirectory);
+        Output.dynamicSplitTemplateFill(country,loc,easternEmpire,westernEmpire,eastTitle,westTitle,ck2Capital,tagCulture,
+            cbDir,cbTemplateDirectory);
 
         //gfx
-        String eastFlagDir = modDirectory + "/gfx/flags/" + rankString + "_" + eastTitle + ".tga";
-        String westFlagDir = modDirectory + "/gfx/flags/" + rankString + "_" + westTitle + ".tga";
-        File eastFlag = new File(eastFlagDir);
-        File westFlag = new File(westFlagDir);
+        String eastFlagDir = modDirectory+"/gfx/flags/"+rank+"_"+eastTitle+".tga";
+        String westFlagDir = modDirectory+"/gfx/flags/"+rank+"_"+westTitle+".tga";
+        File eastFlag = new File (eastFlagDir);
+        File westFlag = new File (westFlagDir);
 
         String irFlagSource = "none";
 
         if (!eastTitle.equals("byzantium")) { //For Byzantium, use vanilla flag
             if (!eastFlag.exists()) { //For custom-made flags, don't generate new one
-                Output.eastWestFlagGen(irFlag, title, color, eastColor, eastTitle, flagList, colorList, rankString, capital, modFlagGFX, "no", ck2Dir, impGameDir, modDirectory);
+                Output.eastWestFlagGen(irFlag,title,color,eastColor,eastTitle,flagList,colorList,rank,capital,modFlagGFX,"no",ck2Dir,impGameDir,modDirectory);
             }
-            Optional<Rank> rankStringEnum = Rank.get(rankString);
-            Optional<String> possibleColor = Optional.of(eastColor);
-            Optional<Integer> capitalNumber = Optional.of(Integer.valueOf(capital));
-            if (rankStringEnum.isPresent()) {
-                LandedTitle landed_title = new LandedTitle(eastTitle, possibleColor, government, capitalNumber, rankStringEnum.get());
-                OutputLandedTitle.outputLandedTitle(landed_title, modDirectory);
-            }
+            Output.titleCreationCommon(eastTitle,eastColor,government,capital,rank,modDirectory);
         }
         if (!westFlag.exists()) { //For custom-made flags, don't generate new one
-            Output.eastWestFlagGen(irFlag, title, color, color, westTitle, flagList, colorList, rankString, capital, modFlagGFX, "no", ck2Dir, impGameDir, modDirectory);
+            Output.eastWestFlagGen(irFlag,title,color,color,westTitle,flagList,colorList,rank,capital,modFlagGFX,"no",ck2Dir,impGameDir,modDirectory);
         }
-        Optional<Rank> rankStringEnum = Rank.get(rankString);
-        Optional<String> possibleColor = Optional.of(westColor);
-        Optional<Integer> capitalNumber = Optional.of(Integer.valueOf(capital));
-        if (rankStringEnum.isPresent()) {
-            LandedTitle landed_title = new LandedTitle(westTitle, possibleColor, government, capitalNumber, rankStringEnum.get());
-            OutputLandedTitle.outputLandedTitle(landed_title, modDirectory);
-        }
+        Output.titleCreationCommon(westTitle,westColor,government,capital,rank,modDirectory);
 
-        Output.splitBloodlineEmbGen(ck2Dir, impGameDir, rankString, flagList, title, irFlag, colorList, modFlagGFX, modDirectory);
-        Output.eastWestDecisionIcon(country, modDirectory);
-        Output.eastWestRestorationIcon(country, irFlag, flagList, ck2Dir, modDirectory);
+        Output.splitBloodlineEmbGen(ck2Dir,impGameDir,rank,flagList,title,irFlag,colorList,modFlagGFX,modDirectory);
+        Output.eastWestDecisionIcon(country,modDirectory);
+        Output.eastWestRestorationIcon(country,irFlag,flagList,ck2Dir,modDirectory);
 
-        Output.eastWestTitle(eastTitle, government, capital, rankString, "100.1.1", modDirectory);
-        Output.eastWestTitle(westTitle, government, capital, rankString, "100.1.1", modDirectory);
+        Output.eastWestTitle(eastTitle,government,capital,rank,"100.1.1",modDirectory);
+        Output.eastWestTitle(westTitle,government,capital,rank,"100.1.1",modDirectory);
 
     }
 
-    public static String eastColor(String overlordColor) //Generates color for easternEmpire
+    public static String eastColor (String overlordColor) //Generates color for easternEmpire
     {
 
         String[] overlordColorSplit = overlordColor.split(" ");
@@ -1433,7 +1517,7 @@ public class Processing {
         double bPercent = (c3 / cTot) * 100;
 
         c2 = c2 - 50;
-        if (rPercent <= 25 && bPercent >= 50) { //if base country is blue, make purple rather then dark blue
+        if (rPercent <= 25 && bPercent >= 50){ //if base country is blue, make purple rather then dark blue
             c1 = c1 + 50;
             c3 = c3 - 50;
         } else {
@@ -1458,13 +1542,13 @@ public class Processing {
         if (c3 > 255) {
             c3 = 255;
         }
-        String color = Integer.toString(c1) + " " + Integer.toString(c2) + " " + Integer.toString(c3);
+        String color = Integer.toString(c1) + " " + Integer.toString(c2) + " " + Integer.toString(c3); 
 
         return color;
 
     }
 
-    public static String westColor(String overlordColor) //Generates color for westernEmpire
+    public static String westColor (String overlordColor) //Generates color for westernEmpire
     {
 
         String[] overlordColorSplit = overlordColor.split(" ");
@@ -1489,13 +1573,13 @@ public class Processing {
         if (c3 > 255) {
             c3 = 255;
         }
-        String color = Integer.toString(c1) + " " + Integer.toString(c2) + " " + Integer.toString(c3);
+        String color = Integer.toString(c1) + " " + Integer.toString(c2) + " " + Integer.toString(c3); 
 
         return color;
 
     }
 
-    public static boolean isWithinColorRange(String color1, String color2, int range) //Checks if RGB color falls within the specified range
+    public static boolean isWithinColorRange (String color1, String color2, int range) //Checks if RGB color falls within the specified range
     {
 
         boolean yn = false;
@@ -1503,12 +1587,12 @@ public class Processing {
             if (color1.equals("none") || color2.equals("none")) {
                 return yn;
             }
-            color1 = color1.replace(" ", ",");
-            color2 = color2.replace(" ", ",");
-            color1 = color1.replace("rgb(", "");
-            color2 = color2.replace("rgb(", "");
-            color1 = color1.replace(")", "");
-            color2 = color2.replace(")", "");
+            color1 = color1.replace(" ",",");
+            color2 = color2.replace(" ",",");
+            color1 = color1.replace("rgb(","");
+            color2 = color2.replace("rgb(","");
+            color1 = color1.replace(")","");
+            color2 = color2.replace(")","");
             String[] color1Split = color1.split(",");
             double c1a = (double) (Double.parseDouble(color1Split[0]));
             double c2a = (double) (Double.parseDouble(color1Split[1]));
@@ -1535,7 +1619,7 @@ public class Processing {
             if (range1 <= range && range2 <= range && range3 <= range) {
                 yn = true;
             }
-        } catch (Exception e) {
+        } catch(Exception e) {
 
         }
 
@@ -1543,7 +1627,7 @@ public class Processing {
 
     }
 
-    public static boolean isWithinColorRatio(String color1, String color2, int range) //Checks if RGB color falls within the specified ratio
+    public static boolean isWithinColorRatio (String color1, String color2, int range) //Checks if RGB color falls within the specified ratio
     {
 
         boolean yn = false;
@@ -1551,12 +1635,12 @@ public class Processing {
             if (color1.equals("none") || color2.equals("none")) {
                 return yn;
             }
-            color1 = color1.replace(" ", ",");
-            color2 = color2.replace(" ", ",");
-            color1 = color1.replace("rgb(", "");
-            color2 = color2.replace("rgb(", "");
-            color1 = color1.replace(")", "");
-            color2 = color2.replace(")", "");
+            color1 = color1.replace(" ",",");
+            color2 = color2.replace(" ",",");
+            color1 = color1.replace("rgb(","");
+            color2 = color2.replace("rgb(","");
+            color1 = color1.replace(")","");
+            color2 = color2.replace(")","");
 
             String[] color1Split = color1.split(",");
             double c1a = (double) (Double.parseDouble(color1Split[0]));
@@ -1596,7 +1680,7 @@ public class Processing {
             if (range1 <= range && range2 <= range && range3 <= range) {
                 yn = true;
             }
-        } catch (Exception e) {
+        } catch(Exception e) {
 
         }
 
@@ -1604,16 +1688,16 @@ public class Processing {
 
     }
 
-    public static boolean isBright(String color1, int range) //Checks if RGB color is at least x bright
+    public static boolean isBright (String color1, int range) //Checks if RGB color is at least x bright
     {
 
         boolean yn = false;
         if (color1.equals("none")) {
             return yn;
         }
-        color1 = color1.replace(" ", ",");
-        color1 = color1.replace("rgb(", "");
-        color1 = color1.replace(")", "");
+        color1 = color1.replace(" ",",");
+        color1 = color1.replace("rgb(","");
+        color1 = color1.replace(")","");
         String[] color1Split = color1.split(",");
         double c1 = (double) (Double.parseDouble(color1Split[0]));
         double c2 = (double) (Double.parseDouble(color1Split[1]));
@@ -1621,9 +1705,11 @@ public class Processing {
 
         if (c1 >= range) {
             yn = true;
-        } else if (c2 >= range) {
+        }
+        else if (c2 >= range) {
             yn = true;
-        } else if (c3 >= range) {
+        }
+        else if (c3 >= range) {
             yn = true;
         }
 
