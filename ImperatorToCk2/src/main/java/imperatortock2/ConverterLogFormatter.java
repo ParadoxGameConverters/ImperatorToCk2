@@ -1,4 +1,4 @@
-package imperatortock2;
+package ImperatorToCK2;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
