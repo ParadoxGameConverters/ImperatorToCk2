@@ -4,11 +4,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.ParadoxGameConverters</groupId>
+    <groupId>com.paradoxgameconverters</groupId>
     <artifactId>irtockii</artifactId>
     <version>0.2</version>
 
-    <name>irtockii</name>
+    <name>ImperatorToCk2</name>
     <url>https://github.com/ParadoxGameConverters/ImperatorToCk2</url>
 
     <properties>
@@ -27,7 +27,7 @@
     </dependencies>
 
     <build>
-        <finalName>irtockii</finalName>
+        <finalName>ImperatorToCk2</finalName>
         <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
         <testSourceDirectory>${basedir}/src/test/java</testSourceDirectory>
         <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
@@ -160,7 +160,7 @@
                           Either module or main-jar option can be specified
                           but not both.
                         -->
-                        <module>irtockii/irtockii.Main</module>
+                        <module>com.paradoxgameconverters.irtockii/irtockii.Main</module>
 
                         <!--
                           Specifies the command line arguments to pass to the main class
@@ -182,7 +182,7 @@
                         <addlaunchers>
                           <addlauncher>
                             <name>ImperatorToCK2-cli</name>
-                            <module>irtockii/irtockii.Main</module>
+                            <module>com.paradoxgameconverters.irtockii/irtockii.Main</module>
                             <javaoptions>-Xms256m -Xmx512m</javaoptions>
                           </addlauncher>
                         </addlaunchers>

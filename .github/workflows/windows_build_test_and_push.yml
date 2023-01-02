@@ -36,7 +36,7 @@ jobs:
 
       - name: "Copy jar to Release directory"
         run: |
-          cp ImperatorToCK2/target/irtockii.jar Release/ImperatorToCK2
+          cp ImperatorToCK2/target/ImperatorToCK2.jar Release/ImperatorToCK2
 
       - name: "Build converter executable"
         run: |
