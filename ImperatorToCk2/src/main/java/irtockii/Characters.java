@@ -1,4 +1,4 @@
-package irtockii;
+package com.paradoxgameconverters.irtockii;
 
 
 import java.util.Scanner;
