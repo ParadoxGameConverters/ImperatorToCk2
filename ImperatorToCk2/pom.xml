@@ -5,10 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.ParadoxGameConverters</groupId>
-    <artifactId>ImperatorToCK2</artifactId>
+    <artifactId>irtockii</artifactId>
     <version>0.2</version>
 
-    <name>ImperatorToCK2</name>
+    <name>irtockii</name>
     <url>https://github.com/ParadoxGameConverters/ImperatorToCk2</url>
 
     <properties>
@@ -27,7 +27,7 @@
     </dependencies>
 
     <build>
-        <finalName>ImperatorToCK2</finalName>
+        <finalName>irtockii</finalName>
         <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
         <testSourceDirectory>${basedir}/src/test/java</testSourceDirectory>
         <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
