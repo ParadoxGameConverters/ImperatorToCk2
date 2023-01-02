@@ -8,7 +8,7 @@
     <artifactId>irtockii</artifactId>
     <version>0.2</version>
 
-    <name>ImperatorToCk2</name>
+    <name>ImperatorToCK2</name>
     <url>https://github.com/ParadoxGameConverters/ImperatorToCk2</url>
 
     <properties>
@@ -27,7 +27,7 @@
     </dependencies>
 
     <build>
-        <finalName>ImperatorToCk2</finalName>
+        <finalName>ImperatorToCK2</finalName>
         <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
         <testSourceDirectory>${basedir}/src/test/java</testSourceDirectory>
         <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
