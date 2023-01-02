@@ -1,4 +1,4 @@
-package ImperatorToCK2;       
+package irtockii;
 
 import java.util.Scanner;
 import java.util.ArrayList;

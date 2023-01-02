@@ -1,3 +1,3 @@
-module ImperatorToCK2 {
+module com.paradoxgameconverters.irtockii {
     requires java.logging;
 }
