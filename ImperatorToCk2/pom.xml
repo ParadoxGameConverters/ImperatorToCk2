@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.ParadoxGameConverters</groupId>
-    <artifactId>ImperatorToCK2</artifactId>
+    <groupId>com.paradoxgameconverters</groupId>
+    <artifactId>irtockii</artifactId>
     <version>0.2</version>
 
     <name>ImperatorToCK2</name>
@@ -64,7 +64,7 @@
                     <configuration>
                         <archive>
                             <manifest>
-                                <mainClass>imperatortock2.Main</mainClass>
+                                <mainClass>irtockii.Main</mainClass>
                             </manifest>
                         </archive>
                     </configuration>
@@ -115,7 +115,7 @@
                           Specifies the name of subdirectory relative to the destination
                           directory in which files of generated application image are placed.
                         -->
-                        <name>imperatortock2</name>
+                        <name>irtockii</name>
 
                         <!--
                           Specifies the type of package to
@@ -160,7 +160,7 @@
                           Either module or main-jar option can be specified
                           but not both.
                         -->
-                        <module>ImperatorToCK2/imperatortock2.Main</module>
+                        <module>com.paradoxgameconverters.irtockii/irtockii.Main</module>
 
                         <!--
                           Specifies the command line arguments to pass to the main class
@@ -182,7 +182,7 @@
                         <addlaunchers>
                           <addlauncher>
                             <name>ImperatorToCK2-cli</name>
-                            <module>ImperatorToCK2/imperatortock2.Main</module>
+                            <module>com.paradoxgameconverters.irtockii/irtockii.Main</module>
                             <javaoptions>-Xms256m -Xmx512m</javaoptions>
                           </addlauncher>
                         </addlaunchers>

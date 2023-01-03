@@ -1,4 +1,4 @@
-package ImperatorToCK2;       
+package com.paradoxgameconverters.irtockii;
 
 import java.util.Scanner;
 import java.util.ArrayList;
