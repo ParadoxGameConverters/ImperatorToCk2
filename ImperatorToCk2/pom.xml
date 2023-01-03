@@ -64,7 +64,7 @@
                     <configuration>
                         <archive>
                             <manifest>
-                                <mainClass>irtockii.Main</mainClass>
+                                <mainClass>com.paradoxgameconverters.irtockii.Main</mainClass>
                             </manifest>
                         </archive>
                     </configuration>
