@@ -64,7 +64,7 @@
                     <configuration>
                         <archive>
                             <manifest>
-                                <mainClass>irtockii.Main</mainClass>
+                                <mainClass>com.paradoxgameconverters.irtockii.Main</mainClass>
                             </manifest>
                         </archive>
                     </configuration>
@@ -115,7 +115,7 @@
                           Specifies the name of subdirectory relative to the destination
                           directory in which files of generated application image are placed.
                         -->
-                        <name>irtockii</name>
+                        <name>ImperatorToCK2</name>
 
                         <!--
                           Specifies the type of package to
@@ -160,7 +160,7 @@
                           Either module or main-jar option can be specified
                           but not both.
                         -->
-                        <module>com.paradoxgameconverters.irtockii/irtockii.Main</module>
+                        <module>com.paradoxgameconverters.irtockii/com.paradoxgameconverters.irtockii.Main</module>
 
                         <!--
                           Specifies the command line arguments to pass to the main class
@@ -182,7 +182,7 @@
                         <addlaunchers>
                           <addlauncher>
                             <name>ImperatorToCK2-cli</name>
-                            <module>com.paradoxgameconverters.irtockii/irtockii.Main</module>
+                            <module>com.paradoxgameconverters.irtockii</module>
                             <javaoptions>-Xms256m -Xmx512m</javaoptions>
                           </addlauncher>
                         </addlaunchers>
