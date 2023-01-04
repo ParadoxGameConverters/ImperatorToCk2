@@ -115,7 +115,7 @@
                           Specifies the name of subdirectory relative to the destination
                           directory in which files of generated application image are placed.
                         -->
-                        <name>com.paradoxgameconverters.irtockii</name>
+                        <name>ImperatorToCK2</name>
 
                         <!--
                           Specifies the type of package to
