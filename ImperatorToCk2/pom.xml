@@ -160,7 +160,7 @@
                           Either module or main-jar option can be specified
                           but not both.
                         -->
-                        <module>com.paradoxgameconverters.irtockii</module>
+                        <module>com.paradoxgameconverters.irtockii/com.paradoxgameconverters.irtockii.Main</module>
 
                         <!--
                           Specifies the command line arguments to pass to the main class
