@@ -160,7 +160,7 @@
                           Either module or main-jar option can be specified
                           but not both.
                         -->
-                        <module>com.paradoxgameconverters/com.paradoxgameconverters.irtockii.Main</module>
+                        <module>com.paradoxgameconverters.irtockii</module>
 
                         <!--
                           Specifies the command line arguments to pass to the main class
@@ -182,7 +182,7 @@
                         <addlaunchers>
                           <addlauncher>
                             <name>ImperatorToCK2-cli</name>
-                            <module>com.paradoxgameconverters/com.paradoxgameconverters.irtockii.Main</module>
+                            <module>com.paradoxgameconverters.irtockii</module>
                             <javaoptions>-Xms256m -Xmx512m</javaoptions>
                           </addlauncher>
                         </addlaunchers>
