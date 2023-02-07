@@ -11,7 +11,7 @@ jobs:
   build_local:
     name: Build and publish local
     if: github.repository_owner == 'ParadoxGameConverters'
-    runs-on: [ self-hosted, windows ]
+    runs-on: [ self-hosted, windows, noramdisk ]
     
     steps:
       - uses: actions/checkout@v3
@@ -87,10 +87,10 @@ jobs:
           artifacts: ImperatorToCK2-latest.zip
           token: ${{ secrets.API_TOKEN_GITHUB }}
 
-#      - name: "Cleanup"
-#        if: always()
-#        run: |
-#          Get-ChildItem -Path $Env:GITHUB_WORKSPACE -Recurse -Force | Remove-Item -force -recurse
+      - name: "Cleanup"
+        if: always()
+        run: |
+          Get-ChildItem -Path $Env:GITHUB_WORKSPACE -Recurse -Force | Remove-Item -force -recurse
 
   build_foreign:
     name: Build foreign
