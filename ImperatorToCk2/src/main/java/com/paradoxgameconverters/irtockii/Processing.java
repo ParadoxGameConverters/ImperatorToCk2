@@ -724,7 +724,7 @@ public class Processing
 
             String subCountry = subjects.get(aqq).split(",")[1];
 
-            if (countryStr.equals(subCountry)) {
+            if (countryStr.equals(subCountry)) { //if match, return id of overlord
                 output = aqq;
                 aqq = subjects.size() + 1000; //end loop
             }
@@ -1071,7 +1071,7 @@ public class Processing
                 flag = 1;
             }
 
-            if (("k_"+impTagInfo.get(aqq)[21]).equals(cultureTitles[2]) && flag2 == 0) {
+            if (("k_"+impTagInfo.get(aqq)[21]).equals(cultureTitles[2]) && flag2 == 0 && ck2LandTot[aqq] > 0) {
                 cultureTitles[2] = "k_"+impTagInfo.get(aqq)[0];
                 flag2 = 1;
             }
@@ -1715,6 +1715,58 @@ public class Processing
 
         return yn;
 
+    }
+
+    public static int[] addSubjectsToSize (ArrayList<String> impSubjectInfo, int[] ck2LandTot) throws IOException 
+    //Recalculates sizes of all tags to accomodate for owned subjects
+    {
+
+        int count = 1;
+
+        while (count<impSubjectInfo.size()) {
+            int overlord = Integer.parseInt(impSubjectInfo.get(count).split(",")[0]);
+            int subject = Integer.parseInt(impSubjectInfo.get(count).split(",")[1]);
+            String overlordGov = impSubjectInfo.get(count).split(",")[2];
+            if (overlordGov.equals ("feudatory") || overlordGov.equals ("satrapy") || overlordGov.equals ("client_state")) {
+                if (overlord != 9999) { //if there's an overlord, add subject's size to overlord's size
+                    ck2LandTot[overlord] = ck2LandTot[overlord]+ck2LandTot[subject];
+                }
+            }
+            count = count + 1;
+        }
+
+        return ck2LandTot;
+
+    }
+
+    public static String[][] annexSubjects(int country,int totCountries,String[][] ck2ProvInfo,ArrayList<String> impSubjectInfo) throws IOException
+    //Annexes all subjects into the overlord
+    {
+        int count = 1;
+
+        while (count<impSubjectInfo.size()) {
+
+            String overlord = impSubjectInfo.get(count).split(",")[0];
+            int overlordID = Integer.parseInt(overlord);
+            System.out.println("Overlord " + overlordID + " and Subject " + impSubjectInfo.get(count).split(",")[1] + " looking for " + country);
+            if (overlordID == country) {
+                String subject = impSubjectInfo.get(count).split(",")[1];
+                int provCount = 1;
+                while (provCount < ck2ProvInfo[0].length) {
+                    if (ck2ProvInfo[0][provCount] != null) {
+
+                        if (ck2ProvInfo[0][provCount].equals(subject)) {
+                            System.out.println(ck2ProvInfo[0][provCount] + " set to " + overlord);
+                            ck2ProvInfo[0][provCount] = overlord;
+                        }
+                    }
+                    provCount = provCount + 1;
+                }
+            }
+            count = count + 1; 
+        }
+
+        return ck2ProvInfo;
     }
 
 }

@@ -13,8 +13,8 @@ polytheistic = {
 	canaanite_reformed = {
 		graphical_culture = jewishgfx
 
-		icon = 5
-		heresy_icon = 6
+		icon = 74
+		heresy_icon = 87
 
 		color = { 0.5 0.1 0.8 }
 
@@ -51,8 +51,8 @@ polytheistic = {
 	canaanite = {
 		graphical_culture = jewishgfx
 
-		icon = 5
-		heresy_icon = 6
+		icon = 60
+		heresy_icon = 87
 
 		color = { 0.4 0.0 0.75 }
 
@@ -93,8 +93,8 @@ polytheistic = {
 	druidic_reformed = {
 		graphical_culture = pagangfx
 
-		icon = 5
-		heresy_icon = 6
+		icon = 84
+		heresy_icon = 98
 
 		color = { 0.4 0.8 0.5 }
 
@@ -132,8 +132,8 @@ polytheistic = {
 	druidic = {
 		graphical_culture = pagangfx
 
-		icon = 5
-		heresy_icon = 6
+		icon = 71
+		heresy_icon = 98
 
 		color = { 0.3 0.7 0.4 }
 
@@ -175,8 +175,8 @@ polytheistic = {
 	iberian_reformed = {
 		graphical_culture = pagangfx
 
-		icon = 5
-		heresy_icon = 6
+		icon = 82
+		heresy_icon = 96
 
 		color = { 1.0 0.5 0.1 }
 
@@ -214,8 +214,8 @@ polytheistic = {
 	iberian = {
 		graphical_culture = pagangfx
 
-		icon = 5
-		heresy_icon = 6
+		icon = 69
+		heresy_icon = 96
 
 		color = { 1.0 0.4 0.0 }
 
@@ -253,8 +253,8 @@ polytheistic = {
 	zalmoxian_reformed = {
 		graphical_culture = pagangfx
 
-		icon = 5
-		heresy_icon = 6
+		icon = 77
+		heresy_icon = 91
 
 		color = { 1.0 0.6 0.6 }
 
@@ -292,8 +292,8 @@ polytheistic = {
 	zalmoxian = {
 		graphical_culture = pagangfx
 
-		icon = 5
-		heresy_icon = 6
+		icon = 64
+		heresy_icon = 91
 
 		color = { 1.0 0.5 0.5 }
 
@@ -331,8 +331,8 @@ polytheistic = {
 	egyptian = {
 		graphical_culture = hellenicgfx
 
-		icon = 5
-		heresy_icon = 6
+		icon = 61
+		heresy_icon = 103
 
 		color = { 0.7 0.63 0.0 }
 
@@ -376,8 +376,8 @@ polytheistic = {
 	megalithic_reformed = {
 		graphical_culture = pagangfx
 
-		icon = 5
-		heresy_icon = 6
+		icon = 85
+		heresy_icon = 99
 
 		color = { 0.5 0.36 0.3 }
 
@@ -415,8 +415,8 @@ polytheistic = {
 	megalithic = {
 		graphical_culture = pagangfx
 
-		icon = 5
-		heresy_icon = 6
+		icon = 72
+		heresy_icon = 99
 
 		color = { 0.4 0.26 0.2 }
 
@@ -455,8 +455,8 @@ polytheistic = {
 	cybelene_reformed = {
 		graphical_culture = persiangfx
 
-		icon = 5
-		heresy_icon = 6
+		icon = 76
+		heresy_icon = 90
 
 		color = { 0.23 0.3 0.22 }
 
@@ -494,8 +494,8 @@ polytheistic = {
 	cybelene = {
 		graphical_culture = persiangfx
 
-		icon = 5
-		heresy_icon = 6
+		icon = 63
+		heresy_icon = 90
 
 		color = { 0.13 0.2 0.12 }
 
@@ -533,8 +533,8 @@ polytheistic = {
 	scythian_reformed = {
 		graphical_culture = mongolgfx
 
-		icon = 5
-		heresy_icon = 6
+		icon = 83
+		heresy_icon = 97
 
 		color = { 0.71 0.8 0.4 }
 
@@ -572,7 +572,7 @@ polytheistic = {
 	scythian = {
 		graphical_culture = mongolgfx
 
-		icon = 5
+		icon = 70
 		heresy_icon = 6
 
 		color = { 0.71 0.8 0.4 }
@@ -614,8 +614,8 @@ polytheistic = {
 	khaldic_reformed = {
 		graphical_culture = persiangfx
 
-		icon = 5
-		heresy_icon = 6
+		icon = 80
+		heresy_icon = 94
 
 		color = { 0.4 0.2 0.3 }
 
@@ -653,8 +653,8 @@ polytheistic = {
 	khaldic = {
 		graphical_culture = persiangfx
 
-		icon = 5
-		heresy_icon = 6
+		icon = 67
+		heresy_icon = 94
 
 		color = { 0.3 0.1 0.2 }
 
@@ -698,8 +698,8 @@ polytheistic = {
 	armazic_reformed = {
 		graphical_culture = persiangfx
 
-		icon = 5
-		heresy_icon = 6
+		icon = 81
+		heresy_icon = 95
 
 		color = { 0.4 0.2 0.5 }
 
@@ -737,8 +737,8 @@ polytheistic = {
 	armazic = {
 		graphical_culture = persiangfx
 
-		icon = 5
-		heresy_icon = 6
+		icon = 68
+		heresy_icon = 95
 
 		color = { 0.3 0.1 0.4 }
 
@@ -776,8 +776,8 @@ polytheistic = {
 	arabic_reformed = {
 		graphical_culture = persiangfx
 
-		icon = 5
-		heresy_icon = 6
+		icon = 79
+		heresy_icon = 93
 
 		color = { 0.36 0.7 0.28 }
 
@@ -818,8 +818,8 @@ polytheistic = {
 	arabic = {
 		graphical_culture = persiangfx
 
-		icon = 5
-		heresy_icon = 6
+		icon = 66
+		heresy_icon = 93
 
 		color = { 0.26 0.6 0.18 }
 
@@ -860,8 +860,8 @@ polytheistic = {
 	ritualistic_reformed = {
 		graphical_culture = persiangfx
 
-		icon = 5
-		heresy_icon = 6
+		icon = 86
+		heresy_icon = 88
 
 		color = { 0.87 0.38 0.28 }
 
@@ -900,8 +900,8 @@ polytheistic = {
 	ritualistic = {
 		graphical_culture = persiangfx
 
-		icon = 5
-		heresy_icon = 6
+		icon = 73
+		heresy_icon = 88
 
 		color = { 0.77 0.28 0.18 }
 
@@ -942,8 +942,8 @@ polytheistic = {
 	sumerian_reformed = {
 		graphical_culture = persiangfx
 
-		icon = 5
-		heresy_icon = 6
+		icon = 75
+		heresy_icon = 89
 
 		color = { 0.6 0.25 0.1 }
 
@@ -981,8 +981,8 @@ polytheistic = {
 	sumerian = {
 		graphical_culture = persiangfx
 
-		icon = 5
-		heresy_icon = 6
+		icon = 62
+		heresy_icon = 89
 
 		color = { 0.5 0.15 0.0 }
 
@@ -1026,8 +1026,8 @@ polytheistic = {
 
 		secondary_event_pictures = mesoamerican
 
-		icon = 17
-		heresy_icon = 18
+		icon = 102
+		heresy_icon = 101
 
 		ai_convert_other_group = 2 # always try to convert
 
@@ -1067,8 +1067,8 @@ polytheistic = {
 
 	mayan_pagan = {
 		graphical_culture = mesoamericangfx
-		icon = 15
-		heresy_icon = 16
+		icon = 100
+		heresy_icon = 101
 		color = { 0.70 0.07 0.80 }
 		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } has_dlc = "Sunset Invasion" }
 
