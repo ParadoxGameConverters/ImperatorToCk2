@@ -1121,8 +1121,8 @@ public class Importer
         output = new String[3];
 
         output[0] = "nomap"; //default for no mapping
-        output[1] = "nomap"; //default for no mapping
-        output[2] = "nomap"; //default for no mapping
+        output[1] = "e_nomap"; //default for no mapping
+        output[2] = "k_nomap"; //default for no mapping
 
         try {
             while (endOrNot = true){
@@ -1326,11 +1326,13 @@ public class Importer
                 qaaa = qaaa.replace("= ","=");
                 qaaa = qaaa.replace(" =","=");
                 qaaa = qaaa.replace("    ",tab); //Some flags have strange formatting
+                qaaa = qaaa.replace(" color2=",tab+"color2="); //Some flags have strange formatting
                 if (qaaa.contains( "=" ) && output[0].equals("unnamedFlag")) {
                     output[0] = qaaa.split("=")[0];
                 }
                 if (qaaa.split("=")[0].equals(tab+"pattern") ) {
                     output[1] = qaaa.split("=")[1];
+                    output[1] = output[1].replace(" ","");
                     output[1] = output[1].substring(1,output[1].length()-1);
                 }
                 if (qaaa.split("=").length != 2) { //if using unusual formatting
@@ -1402,12 +1404,16 @@ public class Importer
                     String embRot = "none";
                     int instanceYes = 0; //If emblem has no intances, use colored emblem as instance, 0 for no 1 for yes
                     String tmpOutput = "0";
-                    while (!qaaa.equals(tab+"}")) {
+                    int endLoop = 0;
+                    while (!qaaa.equals(tab+"}") && endLoop == 0) {
                         qaaa = scnr.nextLine();
                         qaaa = qaaa.replace(" = ","=");
                         qaaa = qaaa.replace("= ","=");
                         qaaa = qaaa.replace(" =","=");
                         qaaa = qaaa.replace("    ",tab); // to fix Invictus Judea Countries file formatting
+                        
+                        qaaa = qaaa.replace(" color2=",tab+"color2="); // to fix Invictus Barbaricum Countries file formatting
+                        qaaa = qaaa.replace(" texture=",tab+"texture="); // to fix Invictus Barbaricum Countries file formatting
                         if (qaaa.split("=").length != 2) { //if using unusual formatting
                             if (qaaa.contains("texture=")) {
                                 embTexture = qaaa.split("texture=")[1];
@@ -1494,8 +1500,11 @@ public class Importer
                                 }
                             }
                         }
-                        if (qaaa.contains("instance=") || qaaa.contains("instance =")) { //get instances
+                        if (qaaa.contains("instance=") || qaaa.contains("instance =") || qaaa.equals("}")) { //get instances
                             instanceYes = 1;
+                            if (qaaa.equals("}")) {
+                                endLoop = 1;
+                            }
                             if (qaaa.split("=").length != 2) { //unusual formatting
                                 if (qaaa.contains("scale=")) {
                                     embScale = qaaa.split("scale=")[1];

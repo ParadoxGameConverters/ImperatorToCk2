@@ -1,7 +1,7 @@
 #These are used to generate dejure kingdoms and empires in places that they don't exist in
 #culture,empire,kingdom
 #Empires should only be generated outside of I:R empires
-#Kingdoms should only be generated in duchies where the majority is uncolonized
+#Kingdoms should only be generated in duchies
 
 ancient_egyptian,e_EGT,k_EGT
 babylonian,e_persia,k_iraq
@@ -12,19 +12,19 @@ celtiberian,e_HBR,k_CBR
 celtic_pannonian,e_GAU,k_NRM
 cilician,e_HLA,k_anatolia
 dacian,e_DAC,k_DAC
-etruscan,e_roman_empire,k_ROM
+etruscan,e_roman_empire,k_ETR
 gallic,e_GAU,k_GAU
 gothic,e_germany,k_pomerania
 hebrew,e_persia,k_jerusalem
 hellenistic,e_ALX,k_ALX
-iberic,e_HBR,k_navarra
+iberic,e_HBR,k_TUR
 isaurian,e_HLA,k_anatolia
 lepontic,e_GAU,k_BOI
 lusitanian,e_HBR,k_LST
 lycian,e_HLA,k_anatolia
 nabatean,e_arabia,k_arabia
 nuragic,e_HBR,k_SAR
-old_ligurian,e_roman_empire,k_ROM
+old_ligurian,e_roman_empire,k_ETR
 paphlagonian,e_HLA,k_PAP
 phoenician,e_persia,k_PPN
 phrygian,e_HLA,k_anatolia
@@ -32,13 +32,14 @@ rhaetian,e_roman_empire,k_RAE
 sabellian,e_roman_empire,k_ROM
 siculian,e_roman_empire,k_ROM
 thracian,e_DAC,k_thrace
-turdetanian,e_HBR,k_navarra
+turdetanian,e_HBR,k_TUR
 vandal,e_germany,k_pomerania
 venetic,e_roman_empire,k_VNT
 aestian,e_wendish_empire,k_lithuania
 magnagreek,e_HLA,k_SYR
 cyrenaican,e_HLA,k_CYR
 indogreek,e_HLA,k_BAC
+massalian,e_HLA,k_MAS
 
 persian,e_persia,k_persia
 greek,e_HLA,k_byzantium
@@ -47,7 +48,7 @@ basque,e_HBR,k_navarra
 irish,e_britannia,k_ireland
 manx,e_britannia,k_ireland
 welsh,e_britannia,k_wales
-pictish,e_britannia,k_CCC
+pictish,e_britannia,k_scotland
 breton,e_britannia,k_wales
 suebi,e_germany,k_germany
 old_saxon,e_germany,k_saxony
@@ -55,7 +56,7 @@ frisian,e_germany,k_frisia
 norse,e_scandinavia,k_norway
 old_frankish,e_germany,k_france
 maghreb_arabic,e_maghreb,k_mauretania
-arberian,e_HLA,k_byzantium
+arberian,e_HLA,k_ILL
 saka,e_pontic_steppe,k_SCY
 bedouin_arabic,e_arabia,k_arabia
 georgian,e_HLA,k_georgia

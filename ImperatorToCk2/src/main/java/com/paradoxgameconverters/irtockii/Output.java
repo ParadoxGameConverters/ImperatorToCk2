@@ -357,7 +357,7 @@ public class Output
         return ckProv;
     }
 
-    public static String ctitleCreation(String name, String irKING, String Directory, int id,String date1) throws IOException
+    public static String ctitleCreation(String name, String irKING, String Directory, int id,String date1,String overlord) throws IOException
     {
 
         btitleCreation(name,Directory,id);
@@ -411,6 +411,9 @@ public class Output
         String date2 = "1066.9.15";
 
         out.println (date1+"={");
+        if (!overlord.equals("none")) {
+            out.println ("    liege="+overlord);
+        }
         out.println ("    holder="+irKING100);
         out.println ("}");
         out.println ();
@@ -873,7 +876,7 @@ public class Output
 
     }
 
-    public static void dejureTitleCreation(ArrayList<String[]> impTagInfo, int empireRank, int[] ck2LandTot, ArrayList<String> dejureDuchies,
+    public static void dejureTitleCreation(ArrayList<String[]> impTagInfo, int empireRank,int duchyRank, int[] ck2LandTot, ArrayList<String> dejureDuchies,
     ArrayList<String> impSubjectInfo, String Directory) throws IOException
     {
 
@@ -957,30 +960,57 @@ public class Output
                 else {
                     int subjectOrNot = Processing.checkSubjectList(tagID,impSubjectInfo);
                     int flag2 = 0;
+                    int hasDejureEmpire = 0;
 
                     if (subjectOrNot != 9999) { //if tag is not free
                         String[] subjectInfo = impSubjectInfo.get(subjectOrNot).split(",");
                         tagID = Integer.parseInt(subjectInfo[0]);
 
                         if (ck2LandTot[tagID] >= empireRank) { //if overlord is e tier, give subject dejure land with overlord as liege
-                            out.println (tagID+" = {");
+                            out.println ("e_"+impTagInfo.get(tagID)[0]+" = {");//+"#3_"+tagID
                             tagID = Integer.parseInt(tag);
                             flag2 = 1;
+                            hasDejureEmpire = 1;
+                        } else { //if overlord is k tier, calculate liege
+                            String[] cultureTitles = Processing.defaultDejureConversion(cultureOutput(impTagInfo.get(tagID)[6]));
+                            cultureTitles = Processing.calculateUsedTitles(cultureTitles,impTagInfo,empireRank,ck2LandTot); //determines if tag exists in I:R
+                            //print e_liege
+                            out.println (cultureTitles[1]+" = {");
+                            hasDejureEmpire = 1;
                         }
-                    } else { //if tag is independent k tier, assign appropriate dejure culture empire liege
+                    } else if (ck2LandTot[tagID] > duchyRank) { //if tag is independent k tier, assign appropriate dejure culture empire liege
                         String[] cultureTitles = Processing.defaultDejureConversion(cultureOutput(impTagInfo.get(tagID)[6]));
                         cultureTitles = Processing.calculateUsedTitles(cultureTitles,impTagInfo,empireRank,ck2LandTot); //determines if tag exists in I:R
-                        out.println (cultureTitles[1]+" = {");
+                        //print e_liege
+                        out.println (cultureTitles[1]+" = {#q1");
+                        flag2 = 1;
+                        hasDejureEmpire = 1;
                     }
-
-                    out.println (tab+rank+"_"+impTagInfo.get(tagID)[0]+" = {");
+                    
+                    if (ck2LandTot[tagID] <= duchyRank) { //if duchy, set rank, set kindom liege, and set dejure liege
+                            String[] cultureTitles = Processing.defaultDejureConversion(cultureOutput(impTagInfo.get(tagID)[6]));
+                            cultureTitles = Processing.calculateUsedTitles(cultureTitles,impTagInfo,empireRank,ck2LandTot); //determines if tag exists in I:R
+                            if (flag2 != 1) {
+                                if (hasDejureEmpire == 0) {
+                                    out.println (cultureTitles[1]+" = {");//emperor
+                                    hasDejureEmpire = 1;
+                                }
+                                rank = "d";
+                                out.println (tab+cultureTitles[2]+" = {"); //king
+                                out.println (tab+tab+rank+"_"+impTagInfo.get(tagID)[0]+" = {");
+                                out.println (tab+tab+"}");
+                            } else {
+                                out.println (tab+rank+"_"+impTagInfo.get(tagID)[0]+" = {");
+                            }
+                            flag2 = 1;
+                        }
+                    else {
+                        out.println (tab+rank+"_"+impTagInfo.get(tagID)[0]+" = {");
+                    }
                     out.println (tab+tab+duchy+" = {");
                     out.println (tab+tab+"}");
                     out.println (tab+"}");
-
-                    if (subjectOrNot == 9999 || flag2 == 1) {
-                        out.println ("}");
-                    }
+                    out.println ("}");
                 }
             }
 
@@ -1557,6 +1587,7 @@ public class Output
             }
             aqq = aqq + 1;
         }
+        //colorName = "252 99 225"; //default in case there is no color
         return colorName;
 
     }

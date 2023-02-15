@@ -30,6 +30,7 @@ k_ASR,k_mesopotamia
 k_KHT,k_khotan
 k_KRP,k_kamarupa
 k_KAL,k_orissa
+k_CCC,k_scotland
 
 #Molon Labe mod formables
 e_ARB,e_arabia
@@ -64,6 +65,7 @@ k_BAS,k_navarra
 
 #Invictus
 e_SLA,e_lechczechrus
+e_TIB,e_tibet
 
 #Timeline Extender
 e_WRE,e_roman_empire_west
