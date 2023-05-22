@@ -1,0 +1,591 @@
+decisions = {
+
+
+#####################################
+#Kingdoms
+#####################################
+
+	
+	irck2_create_k_poland = {
+		is_high_prio = yes
+		only_independent = yes
+		ai_check_interval = 60
+
+		potential = {
+			OR = {
+				culture = polish
+			}
+			k_poland = {
+				has_holder = no
+			}
+			k_poland = {
+				is_titular = yes
+			}
+			NOR = {
+				has_alternate_start_setting = {
+					setting = dejure
+					value = random
+				}
+				has_alternate_start_setting = {
+					setting = title_names
+					value = random
+				}
+				has_alternate_start_setting = {
+					setting = title_names
+					value = random_including_duchies
+				}
+				any_demesne_title = {
+					tier = EMPEROR
+				}
+			}
+		}
+
+		allow = {
+			is_adult = yes
+			war = no
+			independent = yes
+			OR = {
+				AND = {
+					completely_controls = d_greater_poland
+					completely_controls = d_kuyavia
+					completely_controls = d_mazovia
+					completely_controls = d_lesser_poland
+					completely_controls = d_silesia
+					#realm_size = 100
+					#num_of_count_titles_in_realm >= 20
+					#num_of_duke_titles_in_realm >= 3
+				}
+				AND = {
+					num_of_count_titles_in_realm >= 20
+					num_of_king_titles_in_realm >= 1
+				}
+			}
+		}
+		effect = {
+
+			prestige = 100
+			grant_title = k_poland
+			hidden_tooltip = {
+				primary_title = {
+					k_poland = {
+						copy_title_laws = PREV
+						copy_title_history = PREV
+					}
+					#grant_title = k_poland
+					if = { #If king tier, replace primary title
+						limit = {
+							tier = KING
+							NOT = {
+								title = k_poland
+							}
+						}
+						any_direct_de_jure_vassal_title = {
+							de_jure_liege = k_poland
+						}
+						destroy_landed_title = THIS
+					}
+					else = {
+						d_greater_poland = { de_jure_liege = k_poland }
+						d_kuyavia = { de_jure_liege = k_poland }
+						d_mazovia = { de_jure_liege = k_poland }
+						d_lesser_poland = { de_jure_liege = k_poland }
+						d_silesia = { de_jure_liege = k_poland }
+					}
+				}
+			}
+			#grant_title = k_poland
+			k_poland = {
+				make_primary_title = yes
+			}
+			any_demesne_title = {
+				limit = {
+					tier = KING
+				}
+				de_jure_liege = e_wendish_empire
+			}
+			set_global_flag = irck2_k_poland_formed
+		}
+	}
+
+	irck2_create_k_pomerania = {
+		is_high_prio = yes
+		only_independent = yes
+		ai_check_interval = 60
+
+		potential = {
+			OR = {
+				culture = pommeranian
+			}
+			k_pomerania = {
+				has_holder = no
+			}
+			k_pomerania = {
+				is_titular = yes
+			}
+			NOR = {
+				has_alternate_start_setting = {
+					setting = dejure
+					value = random
+				}
+				has_alternate_start_setting = {
+					setting = title_names
+					value = random
+				}
+				has_alternate_start_setting = {
+					setting = title_names
+					value = random_including_duchies
+				}
+			}
+		}
+
+		allow = {
+			is_adult = yes
+			war = no
+			independent = yes
+			OR = {
+				AND = {
+					completely_controls = d_mecklemburg
+					completely_controls = d_rugen
+					completely_controls = d_pommerania
+					completely_controls = d_brandenburg
+					#realm_size = 100
+					#num_of_count_titles_in_realm >= 20
+					#num_of_duke_titles_in_realm >= 3
+				}
+				AND = {
+					num_of_count_titles_in_realm >= 20
+					num_of_king_titles_in_realm >= 1
+				}
+			}
+		}
+		effect = {
+
+			prestige = 100
+			grant_title = k_pomerania
+			hidden_tooltip = {
+				primary_title = {
+					k_pomerania = {
+						copy_title_laws = PREV
+						copy_title_history = PREV
+					}
+					if = { #If king tier, replace primary title
+						limit = {
+							tier = KING
+							NOT = {
+								title = k_pomerania
+							}
+						}
+						any_direct_de_jure_vassal_title = {
+							de_jure_liege = k_pomerania
+						}
+						destroy_landed_title = THIS
+					}
+					else = {
+						d_mecklemburg = { de_jure_liege = k_pomerania }
+						d_rugen = { de_jure_liege = k_pomerania }
+						d_pommerania = { de_jure_liege = k_pomerania }
+						d_brandenburg = { de_jure_liege = k_pomerania }
+					}
+				}
+			}
+			#grant_title = k_pomerania
+			k_pomerania = {
+				make_primary_title = yes
+			}
+			any_demesne_title = {
+				limit = {
+					tier = KING
+				}
+				de_jure_liege = e_wendish_empire
+			}
+			set_global_flag = irck2_k_pomerania_formed
+		}
+	}
+
+	irck2_create_k_bohemia = {
+		is_high_prio = yes
+		only_independent = yes
+		ai_check_interval = 60
+
+		potential = {
+			OR = {
+				culture = bohemian
+			}
+			k_bohemia = {
+				has_holder = no
+			}
+			k_bohemia = {
+				is_titular = yes
+			}
+			NOR = {
+				has_alternate_start_setting = {
+					setting = dejure
+					value = random
+				}
+				has_alternate_start_setting = {
+					setting = title_names
+					value = random
+				}
+				has_alternate_start_setting = {
+					setting = title_names
+					value = random_including_duchies
+				}
+			}
+		}
+
+		allow = {
+			is_adult = yes
+			war = no
+			independent = yes
+			OR = {
+				AND = {
+					completely_controls = d_bohemia
+					completely_controls = d_moravia
+				}
+				AND = {
+					num_of_count_titles_in_realm >= 20
+					num_of_king_titles_in_realm >= 1
+				}
+			}
+		}
+		effect = {
+
+			prestige = 100
+			grant_title = k_bohemia
+			hidden_tooltip = {
+				primary_title = {
+					k_bohemia = {
+						copy_title_laws = PREV
+						copy_title_history = PREV
+					}
+					if = { #If king tier, replace primary title
+						limit = {
+							tier = KING
+							NOT = {
+								title = k_bohemia
+							}
+						}
+						any_direct_de_jure_vassal_title = {
+							de_jure_liege = k_bohemia
+						}
+						destroy_landed_title = THIS
+					}
+					else = {
+						d_bohemia = { de_jure_liege = k_bohemia }
+						d_moravia = { de_jure_liege = k_bohemia }
+					}
+				}
+			}
+			#grant_title = k_bohemia
+			k_bohemia = {
+				make_primary_title = yes
+			}
+			any_demesne_title = {
+				limit = {
+					tier = KING
+				}
+				de_jure_liege = e_wendish_empire
+			}
+			set_global_flag = irck2_k_bohemia_formed
+		}
+	}
+
+	irck2_create_k_croatia = {
+		is_high_prio = yes
+		only_independent = yes
+		ai_check_interval = 60
+
+		potential = {
+			OR = {
+				culture = croatian
+				culture = bosnian
+			}
+			k_croatia = {
+				has_holder = no
+			}
+			k_croatia = {
+				is_titular = yes
+			}
+			NOR = {
+				has_alternate_start_setting = {
+					setting = dejure
+					value = random
+				}
+				has_alternate_start_setting = {
+					setting = title_names
+					value = random
+				}
+				has_alternate_start_setting = {
+					setting = title_names
+					value = random_including_duchies
+				}
+			}
+		}
+
+		allow = {
+			is_adult = yes
+			war = no
+			independent = yes
+			OR = {
+				AND = {
+					completely_controls = d_croatia
+					completely_controls = d_slavonia
+					completely_controls = d_syrmia
+					completely_controls = d_dalmatia
+					completely_controls = d_bosnia
+				}
+				AND = {
+					num_of_count_titles_in_realm >= 20
+					num_of_king_titles_in_realm >= 1
+				}
+			}
+		}
+		effect = {
+
+			prestige = 100
+			grant_title = k_croatia
+			hidden_tooltip = {
+				primary_title = {
+					k_croatia = {
+						copy_title_laws = PREV
+						copy_title_history = PREV
+					}
+					if = { #If king tier, replace primary title
+						limit = {
+							tier = KING
+							NOT = {
+								title = k_croatia
+							}
+						}
+						any_direct_de_jure_vassal_title = {
+							de_jure_liege = k_croatia
+						}
+						destroy_landed_title = THIS
+					}
+					else = {
+						d_croatia = { de_jure_liege = k_croatia }
+						d_slavonia = { de_jure_liege = k_croatia }
+						d_syrmia = { de_jure_liege = k_croatia }
+						d_dalmatia = { de_jure_liege = k_croatia }
+						d_bosnia = { de_jure_liege = k_croatia }
+					}
+				}
+			}
+			#grant_title = k_croatia
+			k_croatia = {
+				make_primary_title = yes
+			}
+			any_demesne_title = {
+				limit = {
+					tier = KING
+				}
+				de_jure_liege = e_carpathia
+			}
+			set_global_flag = irck2_k_croatia_formed
+		}
+	}
+
+	irck2_create_k_serbia = {
+		is_high_prio = yes
+		only_independent = yes
+		ai_check_interval = 60
+
+		potential = {
+			OR = {
+				culture = serbian
+				#culture = bosnian
+			}
+			k_serbia = {
+				has_holder = no
+			}
+			k_serbia = {
+				is_titular = yes
+			}
+			NOR = {
+				has_alternate_start_setting = {
+					setting = dejure
+					value = random
+				}
+				has_alternate_start_setting = {
+					setting = title_names
+					value = random
+				}
+				has_alternate_start_setting = {
+					setting = title_names
+					value = random_including_duchies
+				}
+			}
+		}
+
+		allow = {
+			is_adult = yes
+			war = no
+			independent = yes
+			OR = {
+				AND = {
+					completely_controls = d_dioclea
+					completely_controls = d_rashka
+				}
+				AND = {
+					num_of_count_titles_in_realm >= 20
+					num_of_king_titles_in_realm >= 1
+				}
+			}
+		}
+		effect = {
+
+			prestige = 100
+			grant_title = k_serbia
+			hidden_tooltip = {
+				primary_title = {
+					k_serbia = {
+						copy_title_laws = PREV
+						copy_title_history = PREV
+					}
+					if = { #If king tier, replace primary title
+						limit = {
+							tier = KING
+							NOT = {
+								title = k_serbia
+							}
+						}
+						any_direct_de_jure_vassal_title = {
+							de_jure_liege = k_serbia
+						}
+						destroy_landed_title = THIS
+					}
+					else = {
+						d_dioclea = { de_jure_liege = k_serbia }
+						d_rashka = { de_jure_liege = k_serbia }
+					}
+				}
+			}
+			#grant_title = k_serbia
+			k_serbia = {
+				make_primary_title = yes
+			}
+			#c_byzantion = {
+			#d_thrace = {
+			#	any_dejure_liege = {
+			#		limit = {
+			#			tier = EMPEROR
+			#		}
+			#		set_title_flag = e_TAG_reconquest
+			#		FROM = {
+			#		any_demesne_title = {
+			#			limit = {
+			#				tier = KING
+			#			}
+			#			de_jure_liege = ROOT
+			#		}
+			#		}
+			#	}
+			#}
+			any_demesne_title = {
+				limit = {
+					tier = KING
+				}
+				de_jure_liege = e_carpathia
+			}
+			set_global_flag = irck2_k_serbia_formed
+		}
+	}
+
+
+	irck2_create_k_moravia = {
+		is_high_prio = yes
+		only_independent = yes
+		ai_check_interval = 60
+
+		potential = {
+			OR = {
+				culture = slovieni
+			}
+			k_moravia = {
+				has_holder = no
+			}
+			k_moravia = {
+				is_titular = yes
+			}
+			NOR = {
+				has_alternate_start_setting = {
+					setting = dejure
+					value = random
+				}
+				has_alternate_start_setting = {
+					setting = title_names
+					value = random
+				}
+				has_alternate_start_setting = {
+					setting = title_names
+					value = random_including_duchies
+				}
+			}
+		}
+
+		allow = {
+			is_adult = yes
+			war = no
+			independent = yes
+			OR = {
+				AND = {
+					completely_controls = d_nyitra
+					completely_controls = d_moravia
+					completely_controls = d_esztergom
+				}
+				AND = {
+					num_of_count_titles_in_realm >= 20
+					num_of_king_titles_in_realm >= 1
+				}
+			}
+		}
+		effect = {
+
+			prestige = 100
+			grant_title = k_moravia
+			hidden_tooltip = {
+				primary_title = {
+					k_moravia = {
+						copy_title_laws = PREV
+						copy_title_history = PREV
+					}
+					if = { #If king tier, replace primary title
+						limit = {
+							tier = KING
+							NOT = {
+								title = k_moravia
+							}
+						}
+						any_direct_de_jure_vassal_title = {
+							de_jure_liege = k_moravia
+						}
+						destroy_landed_title = THIS
+					}
+					else = {
+						d_nyitra = { de_jure_liege = k_moravia }
+						d_moravia = { de_jure_liege = k_moravia }
+						d_esztergom = { de_jure_liege = k_moravia }
+					}
+				}
+			}
+			#grant_title = k_moravia
+			k_moravia = {
+				make_primary_title = yes
+			}
+			any_demesne_title = {
+				limit = {
+					tier = KING
+				}
+				de_jure_liege = e_wendish_empire
+			}
+			set_global_flag = irck2_k_moravia_formed
+		}
+	}
+
+
+
+#####################################
+#End Bracket
+#####################################
+	
+}

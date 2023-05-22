@@ -1,0 +1,159 @@
+5360008=
+{
+	name="Chawda"
+	culture="neo_mitanni"
+}
+5360009=
+{
+	name="Bhil"
+	culture="neo_mitanni"
+	#religion="catholic"
+}
+5360010=
+{
+	name="Kathi"
+	culture="neo_mitanni"
+	#religion="catholic"
+}
+5360011=
+{
+	name="Maitraka"
+	culture="neo_mitanni"
+	#religion="catholic"
+}
+5360012=
+{
+	name="Varahas"
+	culture="neo_mitanni"
+	#religion="catholic"
+}
+5360013=
+{
+	name="Calukya"
+	culture="neo_mitanni"
+	#religion="catholic"
+}
+5360014 = {
+   name="Solanki"
+   culture="neo_mitanni"
+   #religion="catholic"
+}
+5360015 = {
+   name="Sankhyavat"
+   culture="neo_mitanni"
+   #religion="catholic"
+}
+
+5360016 = {
+   name="Jhuti"
+   culture="neo_mitanni"
+   #religion="catholic"
+}
+
+5360017 ={
+   name="Kahlon"
+   culture="neo_mitanni"
+   #religion="catholic"
+}
+5360018 ={
+   name="Nagra"
+   culture="neo_mitanni"
+   #religion="catholic"
+}
+5360019 ={
+   name="Utpala"
+   culture="neo_mitanni"
+   #religion="catholic"
+}
+5360020 ={
+   name="Karkota"
+   culture="neo_mitanni"
+   #religion="catholic"
+}
+5360021 ={
+   name="Jewlia"
+   culture="neo_mitanni"
+   #religion="catholic"
+}
+5360022 ={
+   name="Kacchapaghata"
+   culture="neo_mitanni"
+   #religion="catholic"
+}
+5360023 = {
+	name = "Vagada"
+	culture = neo_mitanni
+}
+5360024 = {
+	name = "Gujar"
+	culture = neo_mitanni
+}
+#
+5360025 = {
+	name = "Burdak"
+	culture = neo_mitanni
+}
+5360026 = {
+	name = "Chhinda"
+	culture = neo_mitanni
+}
+5360027 = {
+	name = "Panwar"
+	culture = neo_mitanni
+}
+5360028 = {
+	name = "Bargujar"
+	culture = neo_mitanni
+}
+5360029 = {
+	name = "Guhilot"
+	culture = neo_mitanni
+}
+5360030 = {
+	name = "Dahiya"
+	culture = neo_mitanni
+}
+5360031 = {
+	name = "Ghanshani"
+	culture = neo_mitanni
+}
+5360032 = {
+	name = "Lohi"
+	culture = neo_mitanni
+}
+5360033 = {
+	name = "Notanni"
+	culture = neo_mitanni
+}
+5360034 = {
+	name = "Washukanni Kadamba"
+	culture = neo_mitanni
+}
+5360035 = {
+	name="Gaitonde"
+	culture="neo_mitanni"
+}
+5360036 = {
+	name="Ruddha"
+	culture="neo_mitanni"
+}
+5360037 = {
+	name="Sinda"
+	culture="neo_mitanni"
+}
+5360038 = {
+	name="Nandelid"
+	culture="neo_mitanni"
+}
+5360039 = {
+	name="Satadhanva"
+	culture="neo_mitanni"
+}
+5360040 = {
+	name="Katyuri"
+	culture="neo_mitanni"
+}
+5360041 = {
+	name="Kangra"
+	culture="neo_mitanni"
+}

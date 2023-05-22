@@ -1,0 +1,199 @@
+###################################
+#
+# Imperator:Rome to Crusader Kings II
+# - Noric Culture Conversion Events by Diskianterezh
+#
+###################################
+
+namespace = IR_NOR
+
+province_event = {
+	id = IR_NOR.2001
+	desc = EVTDESC_IR_NOR_2001
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = noric
+		OR = {
+			region = custom_irck2_france
+			region = custom_irck2_occitania
+		}
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = noric
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_NOR_2001
+		culture = cenabian
+	}
+}
+
+province_event = {
+	id = IR_NOR.2002
+	desc = EVTDESC_IR_NOR_2002
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = noric
+		region = custom_irck2_norse_scandinavia
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = noric
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_NOR_2002
+		culture = vinetan
+	}
+}
+
+province_event = {
+	id = IR_NOR.2003
+	desc = EVTDESC_IR_NOR_2003
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = noric
+		region = custom_irck2_poland
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = noric
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_NOR_2003
+		culture = betwani
+	}
+}
+
+province_event = {
+	id = IR_NOR.2004
+	desc = EVTDESC_IR_NOR_2004
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = noric
+		region = custom_irck2_noric_scythia
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = noric
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_NOR_2004
+		culture = ghasettian
+	}
+}

@@ -404,14 +404,8 @@ public class Processing
 
     }
 
-    public static String[] importRegionList (int totProv, String impDir) throws IOException
+    public static String[] importRegionList (int totProv, String regionDir) throws IOException
     {
-
-        String VM = "\\";
-        VM = VM.substring(0);
-
-        FileInputStream fileIn= new FileInputStream("regionConverter.txt");
-        Scanner scnr= new Scanner(fileIn);
 
         int flag = 0;
         String ckName = "debug";
@@ -419,20 +413,41 @@ public class Processing
         int aqq = 1;
         boolean endOrNot = true;
         String qaaa = "debug";
-        String[] provList;   // Owner Culture Religeon PopTotal Buildings
+        String[] provList;
         provList = new String[totProv];
+        
+        ArrayList<String> regions = Importer.importRegions(regionDir+"map_data/regions.txt");
+        
+        String[] provAreas = importAreas(regionDir+"map_data/areas.txt",totProv);
 
-        qaaa = scnr.nextLine();
+        
 
         try {
-            while (endOrNot = true){
-                qaaa = scnr.nextLine();
-                provList = importRegion (provList,(impDir+VM+"game"+VM+"setup"+VM+"provinces"+VM+"00_"+qaaa+".txt"),qaaa);
+            while (endOrNot = true){ //Goes through and get's each province for each region
+                int regionID = 1;
+                while (regionID < regions.size()) {
+                qaaa = regions.get(regionID);
+                String[] regionList = qaaa.split(",");
+                String provArea = provAreas[aqq];
+                int regionCount = 1;
+                while (regionCount < regionList.length){
+                    String selectedArea = regionList[regionCount];
+                    if (selectedArea.equals(provArea)) {
+                        System.out.println(regionList[0]+"_QA");
+                        provList[aqq] = regionList[0];
+                        //System.out.println(provList[aqq]);
+                        regionCount = 1 + regionList.length;
+                    }
+                    regionCount = regionCount + 1;
+                }
+                
+                regionID = regionID + 1;
+                }
                 aqq = aqq + 1;
 
             }
 
-        }catch (java.util.NoSuchElementException exception){
+        }catch (java.lang.IndexOutOfBoundsException exception){
             endOrNot = false;
 
         }   
@@ -471,6 +486,71 @@ public class Processing
 
                 }catch (java.lang.NumberFormatException exception) {
                 }
+                aqq = aqq + 1;    
+            }
+        }catch (java.util.NoSuchElementException exception){
+            endOrNot = false;
+
+        }   
+
+        return provList;
+
+    }
+    
+    public static String[] importAreas (String dir,int num) throws IOException
+    {
+
+        FileInputStream fileIn= new FileInputStream(dir);
+        Scanner scnr= new Scanner(fileIn);
+
+        int flag = 0;
+        String ckName = "debug";
+        int aqq = 0;
+        String qaaa = "aa";
+        boolean endOrNot = true;
+
+        int number = 0;
+        
+        String tab = "	";
+        String endBracket = " }".replace(" ","");
+        
+        String[] provList = new String [num];
+
+        try {
+            while (endOrNot = true){
+                qaaa = scnr.nextLine();
+
+                if (qaaa.contains(" = {") && !qaaa.contains("provinces")) {
+                    String provinceName = qaaa.split(" = ")[0];
+                    while (!qaaa.equals(endBracket)) {
+                        qaaa = scnr.nextLine();
+                        qaaa = qaaa.replace(tab,"");
+                        qaaa = qaaa.replace("   ","");
+                        qaaa = qaaa.replace("  ","");
+                        qaaa = qaaa.replace("	","");
+                        qaaa = qaaa.replace("provinces = { ","");
+                        
+                        if (!qaaa.equals(endBracket)){
+                            String[] numList = qaaa.split(" ");
+                            int numCount = 0;
+                            while (numCount < numList.length){
+                                try {
+                                    int provID = Integer.parseInt(numList[numCount]);
+                                    provList[provID] = provinceName;
+                                }
+                                
+                                catch (Exception e) {
+                                    
+                                }
+                                numCount = numCount + 1;
+                            }
+                        }
+
+                    }
+                    
+                    qaaa = qaaa.substring(1);    
+                }
+
                 aqq = aqq + 1;    
             }
         }catch (java.util.NoSuchElementException exception){
@@ -573,7 +653,7 @@ public class Processing
         boolean endOrNot = true;
         String qaaa;
         String[] output;   // Owner Culture Religeon PopTotal Buildings
-        output = new String[15000];
+        output = new String[25000];
 
         output[0] = "peq"; //default for no owner, uncolonized province
         output[1] = "99999"; //default for no culture, uncolonized province with 0 pops
@@ -647,11 +727,96 @@ public class Processing
         return output;
 
     }
-
-    public static int combineProvConvList(String source, String destination) throws IOException //combines the two province mapping files into one
+    
+    public static String[] convertProvConvListR (String name, String outputDest) throws IOException //Converts regular format into mapper tool format
     {
 
-        String[] toAdd = convertProvConvList("provinceConversion2.txt","provinceConversion2Formatted.txt");
+        String tab = "	";
+
+        FileInputStream fileIn= new FileInputStream(name);
+        Scanner scnr= new Scanner(fileIn);
+
+        FileOutputStream fileOut= new FileOutputStream(outputDest);
+        PrintWriter out = new PrintWriter(fileOut);
+
+        int flag = 0;
+        boolean endOrNot = true;
+        String qaaa;
+        String[] output;   // Owner Culture Religeon PopTotal Buildings
+        output = new String[15000];
+
+        output[0] = "peq"; //default for no owner, uncolonized province
+        output[1] = "99999"; //default for no culture, uncolonized province with 0 pops
+
+        char bracket1 = 123;
+        char bracket2 = 125;
+
+        String bracket1Str = bracket1+" ";
+
+        bracket1Str = bracket1Str.replace(" ","");
+
+        String bracket2Str = bracket2+" ";
+
+        bracket2Str = bracket2Str.replace(" ","");
+
+        int aq2 = 0;
+        
+        ArrayList<String> oldMappingList = Importer.importBasicFile(name);
+        
+        //ArrayList<String> newMappingList;
+        
+        int ck2Prov = 0;
+
+        try {
+            while (ck2Prov < 3000){
+                int line = 0;
+                //ArrayList<String> newMappingList;
+                //System.out.println(oldMappingList.get(line) + "|"+line);
+                System.out.println(ck2Prov);
+                String newMap = "link = {";
+                while (line < oldMappingList.size()){
+                    qaaa = oldMappingList.get(line);
+                    //System.out.println(qaaa);
+                    if (!qaaa.contains("#") && !qaaa.equals("")) {
+                        if (qaaa.split(",")[1].equals(Integer.toString(ck2Prov))) {
+                            newMap = newMap + " imperator = "+qaaa.split(",")[0];
+                        }
+                    }
+                    
+                    line = line + 1;
+                    
+                }
+                if (!newMap.equals("link = {")) {
+                    newMap = newMap + " ck2 = " + ck2Prov + " }";
+                    System.out.println(newMap);
+                    out.println(newMap);
+                }
+                ck2Prov = ck2Prov + 1;
+
+                
+
+            }
+
+        }catch (java.util.NoSuchElementException exception){
+            endOrNot = false;
+
+        }   
+
+        out.flush();
+        fileOut.close();
+
+        fileIn.close();
+        return output;
+
+    }
+
+    public static int combineProvConvList(String source, String source2, String destination) throws IOException
+    //combines the two province mapping files into one
+    //original functionality for the most part depreciated, primarily used to convert source2 into usable format stored at destination
+    {
+
+        //String[] toAdd = convertProvConvList("provinceConversion2.txt","provinceConversion2Formatted.txt");
+        String[] toAdd = convertProvConvList(source2,"provinceConversion2Formatted.txt");
         String VM = "\\"; 
         VM = VM.substring(0);
 
@@ -1767,6 +1932,45 @@ public class Processing
         }
 
         return ck2ProvInfo;
+    }
+    
+    public static boolean checkForInvictus(ArrayList<String> modDirs) throws IOException
+    //Checks whether or not user is using Imperator Invictus
+    {
+        int count = 0;
+        while (count < modDirs.size()) {
+            String currentModDir = modDirs.get(count);
+            String currentModDescDir = currentModDir+"/descriptor.mod";
+            if (currentModDir.contains("2532715348")) { //check for Invictus Steam ID
+                return true;
+            } else { //Check for manual Invictus installations
+                File currentModDescFile = new File(currentModDescDir);
+                if (currentModDescFile.exists()) {
+                    FileInputStream fileIn= new FileInputStream(currentModDescDir);
+                    Scanner scnr= new Scanner(fileIn);
+                    String line = scnr.nextLine();
+                    boolean endOrNot = true;
+                    try {
+                        while (endOrNot = true) {
+                            if (line.contains("2532715348")) {
+                                return true;
+                            }
+                            else {
+                               line = scnr.nextLine(); 
+                            }
+                        }
+                    }
+                    catch (Exception e) {
+                        endOrNot = false;
+                    }
+                
+                }
+                
+            }
+            count = count + 1;
+        }
+
+        return false;
     }
 
 }

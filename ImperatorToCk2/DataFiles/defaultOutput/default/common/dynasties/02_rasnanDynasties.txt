@@ -1,0 +1,575 @@
+5375000=
+{
+	name="Uclina"
+	culture="rasnan"
+}
+5375001=
+{
+	name="Ucli"
+	culture="rasnan"
+}
+5375002=
+{
+	name="Acnatru"
+	culture="rasnan"
+}
+5375003=
+{
+	name="Acvilnas"
+	culture="rasnan"
+}
+5375004=
+{
+	name="Afunei"
+	culture="rasnan"
+}
+5375005=
+{
+	name="Aisina"
+	culture="rasnan"
+}
+5375006=
+{
+	name="Alethnei"
+	culture="rasnan"
+}
+5375007=
+{
+	name="Alfi"
+	culture="rasnan"
+}
+5375008=
+{
+	name="Amuni"
+	culture="rasnan"
+}
+5375009=
+{
+	name="Anani"
+	culture="rasnan"
+}
+5375010=
+{
+	name="Anes"
+	culture="rasnan"
+}
+5375011=
+{
+	name="Alethnas"
+	culture="rasnan"
+}
+5375012=
+{
+	name="Apatru"
+	culture="rasnan"
+}
+5375013=
+{
+	name="Cafati"
+	culture="rasnan"
+}
+5375014=
+{
+	name="Ceie"
+	culture="rasnan"
+}
+5375015=
+{
+	name="Calitahi"
+	culture="rasnan"
+}
+5375016=
+{
+	name="Camitlnas"
+	culture="rasnan"
+}
+5375017=
+{
+	name="Campanian"
+	culture="rasnan"
+}
+5375018=
+{
+	name="Canatnei"
+	culture="rasnan"
+}
+5375019=
+{
+	name="Cheiras"
+	culture="rasnan"
+}
+5375020=
+{
+	name="Churinian"
+	culture="rasnan"
+}
+5375021=
+{
+	name="Cicunias"
+	culture="rasnan"
+}
+5375022=
+{
+	name="Creicesian"
+	culture="rasnan"
+}
+5375023=
+{
+	name="Ecnati"
+	culture="rasnan"
+}
+5375024=
+{
+	name="Einanian"
+	culture="rasnan"
+}
+5375025=
+{
+	name="Eucli"
+	culture="rasnan"
+}
+5375026=
+{
+	name="Ezpus"
+	culture="rasnan"
+}
+5375027=
+{
+	name="Ezpusian"
+	culture="rasnan"
+}
+5375028=
+{
+	name="Fapi"
+	culture="rasnan"
+}
+5375029=
+{
+	name="Fapian"
+	culture="rasnan"
+}
+5375030=
+{
+	name="Felces"
+	culture="rasnan"
+}
+5375031=
+{
+	name="Feluscian"
+	culture="rasnan"
+}
+5375032=
+{
+	name="Felusci"
+	culture="rasnan"
+}
+5375033=
+{
+	name="Fulvena"
+	culture="rasnan"
+}
+5375034=
+{
+	name="Hanu"
+	culture="rasnan"
+}
+5375035=
+{
+	name="Hapisna"
+	culture="rasnan"
+}
+5375036=
+{
+	name="Hapri"
+	culture="rasnan"
+}
+5375037=
+{
+	name="Hapre"
+	culture="rasnan"
+}
+5375038=
+{
+	name="Havrinian"
+	culture="rasnan"
+}
+5375039=
+{
+	name="Lapicani"
+	culture="rasnan"
+}
+5375040=
+{
+	name="Divicus"
+	culture="rasnan"
+}
+5375041=
+{
+	name="Larani"
+	culture="rasnan"
+}
+5375042=
+{
+	name="Larecena"
+	culture="rasnan"
+}
+5375043=
+{
+	name="Lucina"
+	culture="rasnan"
+}
+5375044=
+{
+	name="Lucinei"
+	culture="rasnan"
+}
+5375045=
+{
+	name="Lucinian"
+	culture="rasnan"
+}
+5375046=
+{
+	name="Lartli"
+	culture="rasnan"
+}
+5375047=
+{
+	name="Latnian"
+	culture="rasnan"
+}
+5375048=
+{
+	name="Marcnei"
+	culture="rasnan"
+}
+5375049=
+{
+	name="Malamena"
+	culture="rasnan"
+}
+5375050=
+{
+	name="Marcnithur"
+	culture="rasnan"
+}
+5375051=
+{
+	name="Mutunid"
+	culture="rasnan"
+}
+5375052=
+{
+	name="Nerinei"
+	culture="rasnan"
+}
+5375053=
+{
+	name="Ninie"
+	culture="rasnan"
+}
+5375054=
+{
+	name="Nuiclnas"
+	culture="rasnan"
+}
+5375055=
+{
+	name="Nufre"
+	culture="rasnan"
+}
+5375056=
+{
+	name="Pachie"
+	culture="rasnan"
+}
+5375057=
+{
+	name="Peithunas"
+	culture="rasnan"
+}
+5375058=
+{
+	name="Palazus"
+	culture="rasnan"
+}
+5375059=
+{
+	name="Palazusian"
+	culture="rasnan"
+}
+5375060=
+{
+	name="Papni"
+	culture="rasnan"
+}
+5375061=
+{
+	name="Phersnalei"
+	culture="rasnan"
+}
+5375062=
+{
+	name="Pinies"
+	culture="rasnan"
+}
+5375063=
+{
+	name="Platia"
+	culture="rasnan"
+}
+5375064=
+{
+	name="Plutian"
+	culture="rasnan"
+}
+5375065=
+{
+	name="Precuthur"
+	culture="rasnan"
+}
+5375066=
+{
+	name="Puinci"
+	culture="rasnan"
+}
+5375067=
+{
+	name="Purzena"
+	culture="rasnan"
+}
+5375068=
+{
+	name="Pustmina"
+	culture="rasnan"
+}
+5375069=
+{
+	name="Rufi"
+	culture="rasnan"
+}
+5375070=
+{
+	name="Ranazu"
+	culture="rasnan"
+}
+5375071=
+{
+	name="Salini"
+	culture="rasnan"
+}
+5375072=
+{
+	name="Scevei"
+	culture="rasnan"
+}
+5375073=
+{
+	name="Scurfiu"
+	culture="rasnan"
+}
+5375074=
+{
+	name="Sepu"
+	culture="rasnan"
+}
+5375075=
+{
+	name="Sethre"
+	culture="rasnan"
+}
+5375076=
+{
+	name="Silgatana"
+	culture="rasnan"
+}
+5375077=
+{
+	name="Sinu"
+	culture="rasnan"
+}
+5375078=
+{
+	name="Slanzu"
+	culture="rasnan"
+}
+5375079=
+{
+	name="Spantu"
+	culture="rasnan"
+}
+5375080=
+{
+	name="Spite"
+	culture="rasnan"
+}
+5375081=
+{
+	name="Spurinas"
+	culture="rasnan"
+}
+5375082=
+{
+	name="Srutzna"
+	culture="rasnan"
+}
+5375083=
+{
+	name="Statlanian"
+	culture="rasnan"
+}
+5375084=
+{
+	name="Tarchunies"
+	culture="rasnan"
+}
+5375085=
+{
+	name="Tarcnid"
+	culture="rasnan"
+}
+5375086=
+{
+	name="Teithurna"
+	culture="rasnan"
+}
+5375087=
+{
+	name="Teitur"
+	culture="rasnan"
+}
+5375088=
+{
+	name="Tetnies"
+	culture="rasnan"
+}
+5375089=
+{
+	name="Thusatur"
+	culture="rasnan"
+}
+5375090=
+{
+	name="Trepe"
+	culture="rasnan"
+}
+5375091=
+{
+	name="Tutna"
+	culture="rasnan"
+}
+5375092=
+{
+	name="Tutes"
+	culture="rasnan"
+}
+5375093=
+{
+	name="Ucrini"
+	culture="rasnan"
+}
+5375094=
+{
+	name="Ucrinian"
+	culture="rasnan"
+}
+5375095=
+{
+	name="Uftave"
+	culture="rasnan"
+}
+5375096=
+{
+	name="Ultimnid"
+	culture="rasnan"
+}
+5375097=
+{
+	name="Ulzna"
+	culture="rasnan"
+}
+5375098=
+{
+	name="Vania"
+	culture="rasnan"
+}
+5375099=
+{
+	name="Velarian"
+	culture="rasnan"
+}
+5375100=
+{
+	name="Velcii"
+	culture="rasnan"
+}
+5375101=
+{
+	name="Velcian"
+	culture="rasnan"
+}
+5375102=
+{
+	name="Vlesi"
+	culture="rasnan"
+}
+5375103=
+{
+	name="Velia"
+	culture="rasnan"
+}
+5375104=
+{
+	name="Velethnei"
+	culture="rasnan"
+}
+5375105=
+{
+	name="Velthinathur"
+	culture="rasnan"
+}
+5375106=
+{
+	name="Venetian"
+	culture="rasnan"
+}
+5375107=
+{
+	name="Vete"
+	culture="rasnan"
+}
+5375108=
+{
+	name="Zalthu"
+	culture="rasnan"
+}
+5375109=
+{
+	name="Zane"
+	culture="rasnan"
+}
+5375110=
+{
+	name="Zertnei"
+	culture="rasnan"
+}
+5375111=
+{
+	name="Zili"
+	culture="rasnan"
+}
+5375112=
+{
+	name="Olbianei"
+	culture="rasnan"
+}
+5375113=
+{
+	name="Rasnanei"
+	culture="rasnan"
+}
+5375114=
+{
+	name="Hathrthi"
+	culture="rasnan"
+}

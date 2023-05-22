@@ -1,0 +1,560 @@
+5376000=
+{
+	name="Uclina"
+	culture="sazlei"
+}
+5376001=
+{
+	name="Ucli"
+	culture="sazlei"
+}
+5376002=
+{
+	name="Acnatru"
+	culture="sazlei"
+}
+5376003=
+{
+	name="Acvilnas"
+	culture="sazlei"
+}
+5376004=
+{
+	name="Afunei"
+	culture="sazlei"
+}
+5376005=
+{
+	name="Aisina"
+	culture="sazlei"
+}
+5376006=
+{
+	name="Alethnei"
+	culture="sazlei"
+}
+5376007=
+{
+	name="Alfi"
+	culture="sazlei"
+}
+5376008=
+{
+	name="Amuni"
+	culture="sazlei"
+}
+5376009=
+{
+	name="Anani"
+	culture="sazlei"
+}
+5376010=
+{
+	name="Anes"
+	culture="sazlei"
+}
+5376011=
+{
+	name="Alethnas"
+	culture="sazlei"
+}
+5376012=
+{
+	name="Apatru"
+	culture="sazlei"
+}
+5376013=
+{
+	name="Cafati"
+	culture="sazlei"
+}
+5376014=
+{
+	name="Ceie"
+	culture="sazlei"
+}
+5376015=
+{
+	name="Calitahi"
+	culture="sazlei"
+}
+5376016=
+{
+	name="Camitlnas"
+	culture="sazlei"
+}
+5376017=
+{
+	name="Campanian"
+	culture="sazlei"
+}
+5376018=
+{
+	name="Canatnei"
+	culture="sazlei"
+}
+5376019=
+{
+	name="Cheiras"
+	culture="sazlei"
+}
+5376020=
+{
+	name="Churinian"
+	culture="sazlei"
+}
+5376021=
+{
+	name="Cicunias"
+	culture="sazlei"
+}
+5376022=
+{
+	name="Creicesian"
+	culture="sazlei"
+}
+5376023=
+{
+	name="Ecnati"
+	culture="sazlei"
+}
+5376024=
+{
+	name="Einanian"
+	culture="sazlei"
+}
+5376025=
+{
+	name="Eucli"
+	culture="sazlei"
+}
+5376026=
+{
+	name="Ezpus"
+	culture="sazlei"
+}
+5376027=
+{
+	name="Ezpusian"
+	culture="sazlei"
+}
+5376028=
+{
+	name="Fapi"
+	culture="sazlei"
+}
+5376029=
+{
+	name="Fapian"
+	culture="sazlei"
+}
+5376030=
+{
+	name="Felces"
+	culture="sazlei"
+}
+5376031=
+{
+	name="Feluscian"
+	culture="sazlei"
+}
+5376032=
+{
+	name="Felusci"
+	culture="sazlei"
+}
+5376033=
+{
+	name="Fulvena"
+	culture="sazlei"
+}
+5376034=
+{
+	name="Hanu"
+	culture="sazlei"
+}
+5376035=
+{
+	name="Hapisna"
+	culture="sazlei"
+}
+5376036=
+{
+	name="Hapri"
+	culture="sazlei"
+}
+5376037=
+{
+	name="Hapre"
+	culture="sazlei"
+}
+5376038=
+{
+	name="Havrinian"
+	culture="sazlei"
+}
+5376039=
+{
+	name="Lapicani"
+	culture="sazlei"
+}
+5376040=
+{
+	name="Divicus"
+	culture="sazlei"
+}
+5376041=
+{
+	name="Larani"
+	culture="sazlei"
+}
+5376042=
+{
+	name="Larecena"
+	culture="sazlei"
+}
+5376043=
+{
+	name="Lucina"
+	culture="sazlei"
+}
+5376044=
+{
+	name="Lucinei"
+	culture="sazlei"
+}
+5376045=
+{
+	name="Lucinian"
+	culture="sazlei"
+}
+5376046=
+{
+	name="Lartli"
+	culture="sazlei"
+}
+5376047=
+{
+	name="Latnian"
+	culture="sazlei"
+}
+5376048=
+{
+	name="Marcnei"
+	culture="sazlei"
+}
+5376049=
+{
+	name="Malamena"
+	culture="sazlei"
+}
+5376050=
+{
+	name="Marcnithur"
+	culture="sazlei"
+}
+5376051=
+{
+	name="Mutunid"
+	culture="sazlei"
+}
+5376052=
+{
+	name="Nerinei"
+	culture="sazlei"
+}
+5376053=
+{
+	name="Ninie"
+	culture="sazlei"
+}
+5376054=
+{
+	name="Nuiclnas"
+	culture="sazlei"
+}
+5376055=
+{
+	name="Nufre"
+	culture="sazlei"
+}
+5376056=
+{
+	name="Pachie"
+	culture="sazlei"
+}
+5376057=
+{
+	name="Peithunas"
+	culture="sazlei"
+}
+5376058=
+{
+	name="Palazus"
+	culture="sazlei"
+}
+5376059=
+{
+	name="Palazusian"
+	culture="sazlei"
+}
+5376060=
+{
+	name="Papni"
+	culture="sazlei"
+}
+5376061=
+{
+	name="Phersnalei"
+	culture="sazlei"
+}
+5376062=
+{
+	name="Pinies"
+	culture="sazlei"
+}
+5376063=
+{
+	name="Platia"
+	culture="sazlei"
+}
+5376064=
+{
+	name="Plutian"
+	culture="sazlei"
+}
+5376065=
+{
+	name="Precuthur"
+	culture="sazlei"
+}
+5376066=
+{
+	name="Puinci"
+	culture="sazlei"
+}
+5376067=
+{
+	name="Purzena"
+	culture="sazlei"
+}
+5376068=
+{
+	name="Pustmina"
+	culture="sazlei"
+}
+5376069=
+{
+	name="Rufi"
+	culture="sazlei"
+}
+5376070=
+{
+	name="Ranazu"
+	culture="sazlei"
+}
+5376071=
+{
+	name="Salini"
+	culture="sazlei"
+}
+5376072=
+{
+	name="Scevei"
+	culture="sazlei"
+}
+5376073=
+{
+	name="Scurfiu"
+	culture="sazlei"
+}
+5376074=
+{
+	name="Sepu"
+	culture="sazlei"
+}
+5376075=
+{
+	name="Sethre"
+	culture="sazlei"
+}
+5376076=
+{
+	name="Silgatana"
+	culture="sazlei"
+}
+5376077=
+{
+	name="Sinu"
+	culture="sazlei"
+}
+5376078=
+{
+	name="Slanzu"
+	culture="sazlei"
+}
+5376079=
+{
+	name="Spantu"
+	culture="sazlei"
+}
+5376080=
+{
+	name="Spite"
+	culture="sazlei"
+}
+5376081=
+{
+	name="Spurinas"
+	culture="sazlei"
+}
+5376082=
+{
+	name="Srutzna"
+	culture="sazlei"
+}
+5376083=
+{
+	name="Statlanian"
+	culture="sazlei"
+}
+5376084=
+{
+	name="Tarchunies"
+	culture="sazlei"
+}
+5376085=
+{
+	name="Tarcnid"
+	culture="sazlei"
+}
+5376086=
+{
+	name="Teithurna"
+	culture="sazlei"
+}
+5376087=
+{
+	name="Teitur"
+	culture="sazlei"
+}
+5376088=
+{
+	name="Tetnies"
+	culture="sazlei"
+}
+5376089=
+{
+	name="Thusatur"
+	culture="sazlei"
+}
+5376090=
+{
+	name="Trepe"
+	culture="sazlei"
+}
+5376091=
+{
+	name="Tutna"
+	culture="sazlei"
+}
+5376092=
+{
+	name="Tutes"
+	culture="sazlei"
+}
+5376093=
+{
+	name="Ucrini"
+	culture="sazlei"
+}
+5376094=
+{
+	name="Ucrinian"
+	culture="sazlei"
+}
+5376095=
+{
+	name="Uftave"
+	culture="sazlei"
+}
+5376096=
+{
+	name="Ultimnid"
+	culture="sazlei"
+}
+5376097=
+{
+	name="Ulzna"
+	culture="sazlei"
+}
+5376098=
+{
+	name="Vania"
+	culture="sazlei"
+}
+5376099=
+{
+	name="Velarian"
+	culture="sazlei"
+}
+5376100=
+{
+	name="Velcii"
+	culture="sazlei"
+}
+5376101=
+{
+	name="Velcian"
+	culture="sazlei"
+}
+5376102=
+{
+	name="Vlesi"
+	culture="sazlei"
+}
+5376103=
+{
+	name="Velia"
+	culture="sazlei"
+}
+5376104=
+{
+	name="Velethnei"
+	culture="sazlei"
+}
+5376105=
+{
+	name="Velthinathur"
+	culture="sazlei"
+}
+5376106=
+{
+	name="Venetian"
+	culture="sazlei"
+}
+5376107=
+{
+	name="Vete"
+	culture="sazlei"
+}
+5376108=
+{
+	name="Zalthu"
+	culture="sazlei"
+}
+5376109=
+{
+	name="Zane"
+	culture="sazlei"
+}
+5376110=
+{
+	name="Zertnei"
+	culture="sazlei"
+}
+5376111=
+{
+	name="Zili"
+	culture="sazlei"
+}

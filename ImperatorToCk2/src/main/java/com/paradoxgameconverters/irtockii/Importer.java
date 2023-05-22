@@ -1670,6 +1670,8 @@ public class Importer
         Scanner scnr= new Scanner(fileIn);
 
         ArrayList<String[]> impColorList= new ArrayList<String[]>();
+        
+        System.out.println(name);
 
         String tab = "	";
 
@@ -1760,6 +1762,68 @@ public class Importer
         allColors.addAll(vanillaColors);
 
         return allColors;
+    }
+    
+    public static ArrayList<String> importRegions (String name) throws IOException //list of all regions
+    {
+        System.out.println(name);
+
+        FileInputStream fileIn= new FileInputStream(name);
+        Scanner scnr= new Scanner(fileIn);
+
+        ArrayList<String> impRegionList= new ArrayList<String>();
+
+        String tab = "	";
+
+        int flag = 0;
+
+        String qaaa = "";
+        String output = "none";
+        String endBracket = " }".replace(" ","");
+
+        impRegionList.add(output); //default at ID 0
+
+        try {
+            while (flag == 0){
+                qaaa = scnr.nextLine();
+                if (qaaa.contains( "_region = {" ) ) {
+                    output = qaaa.split(" =")[0];
+                    while (!qaaa.equals(endBracket)){
+                        qaaa = scnr.nextLine();
+                        if (qaaa.contains(tab+tab) && !qaaa.equals(tab+tab)) {
+                            String area = qaaa.split(tab+tab)[1];
+                            output = output + "," + area;
+                        }
+                    }
+
+                    String tmpOutput = output;
+
+                    impRegionList.add(tmpOutput);
+
+                    output = "none"; //default for no name
+                }
+
+            }
+        }catch (java.util.NoSuchElementException exception){
+
+        }   
+
+        return impRegionList;
+
+    }
+    
+    public static String getRegionDir (String name, ArrayList<String> regionList, ArrayList<String> modDirs) throws IOException
+    {
+        String regionDir = name+"//game//";
+        int aqq = 0;
+        while (regionList.size() > aqq) {
+            if (!regionList.get(aqq).equals("none")) {
+                regionDir = modDirs.get(aqq)+"//";
+            }
+            aqq = aqq + 1;
+        }
+
+        return regionDir;
     }
 
     public static ArrayList<String> importAllLoc (String name, ArrayList<String> modDirs) throws IOException //imports all localization files
@@ -1959,6 +2023,53 @@ public class Importer
                             output = modDirs.get(aqq)+texturedEmblems+"/"+output;
                             gfxList.add(output);
                             aq4 = aq4 + 1;
+
+                        }
+                    }
+                }
+
+                aqq = aqq + 1;
+            }
+        }catch (java.util.NoSuchElementException exception){
+            flag = 1;
+        }   
+
+        return gfxList;
+
+    }
+    
+    public static ArrayList<String> importModRegionDirs (ArrayList<String> modDirs) throws IOException //imports modded region ID's
+    {
+
+        String regionFile = "/map_data";
+
+        ArrayList<String> gfxList= new ArrayList<String>();
+
+        String tab = "	";
+
+        int flag = 0;
+        int aqq = 0;
+        String qaaa = "";
+        String output;
+
+        output = "none"; //default for no name
+
+        gfxList.add(output); //default at ID 0
+
+        try {
+            while (aqq < modDirs.size()){
+                if (!modDirs.get(aqq).equals ("none")) {
+                    File regionDir = new File(modDirs.get(aqq)+regionFile);
+                    String[] emblemFiles = regionDir.list();
+                    if (emblemFiles != null) {
+                        int aq2 = 0;
+                        while (aq2 < emblemFiles.length) {
+                            output = emblemFiles[aq2];
+                            if (output.equals("regions.txt")) {
+                                output = modDirs.get(aqq)+regionFile+"/"+output;
+                                gfxList.add(output);
+                            }
+                            aq2 = aq2 + 1;
 
                         }
                     }

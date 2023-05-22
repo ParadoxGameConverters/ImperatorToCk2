@@ -1,0 +1,565 @@
+5368000=
+{
+	name="Uclina"
+	culture="qutumi"
+}
+5368001=
+{
+	name="Ucli"
+	culture="qutumi"
+}
+5368002=
+{
+	name="Acnatru"
+	culture="qutumi"
+}
+5368003=
+{
+	name="Acvilnas"
+	culture="qutumi"
+}
+5368004=
+{
+	name="Afunei"
+	culture="qutumi"
+}
+5368005=
+{
+	name="Aisina"
+	culture="qutumi"
+}
+5368006=
+{
+	name="Alethnei"
+	culture="qutumi"
+}
+5368007=
+{
+	name="Alfi"
+	culture="qutumi"
+}
+5368008=
+{
+	name="Amuni"
+	culture="qutumi"
+}
+5368009=
+{
+	name="Anani"
+	culture="qutumi"
+}
+5368010=
+{
+	name="Anes"
+	culture="qutumi"
+}
+5368011=
+{
+	name="Alethnas"
+	culture="qutumi"
+}
+5368012=
+{
+	name="Apatru"
+	culture="qutumi"
+}
+5368013=
+{
+	name="Cafati"
+	culture="qutumi"
+}
+5368014=
+{
+	name="Ceie"
+	culture="qutumi"
+}
+5368015=
+{
+	name="Calitahi"
+	culture="qutumi"
+}
+5368016=
+{
+	name="Camitlnas"
+	culture="qutumi"
+}
+5368017=
+{
+	name="Campanian"
+	culture="qutumi"
+}
+5368018=
+{
+	name="Canatnei"
+	culture="qutumi"
+}
+5368019=
+{
+	name="Cheiras"
+	culture="qutumi"
+}
+5368020=
+{
+	name="Churinian"
+	culture="qutumi"
+}
+5368021=
+{
+	name="Cicunias"
+	culture="qutumi"
+}
+5368022=
+{
+	name="Creicesian"
+	culture="qutumi"
+}
+5368023=
+{
+	name="Ecnati"
+	culture="qutumi"
+}
+5368024=
+{
+	name="Einanian"
+	culture="qutumi"
+}
+5368025=
+{
+	name="Eucli"
+	culture="qutumi"
+}
+5368026=
+{
+	name="Ezpus"
+	culture="qutumi"
+}
+5368027=
+{
+	name="Ezpusian"
+	culture="qutumi"
+}
+5368028=
+{
+	name="Fapi"
+	culture="qutumi"
+}
+5368029=
+{
+	name="Fapian"
+	culture="qutumi"
+}
+5368030=
+{
+	name="Felces"
+	culture="qutumi"
+}
+5368031=
+{
+	name="Feluscian"
+	culture="qutumi"
+}
+5368032=
+{
+	name="Felusci"
+	culture="qutumi"
+}
+5368033=
+{
+	name="Fulvena"
+	culture="qutumi"
+}
+5368034=
+{
+	name="Hanu"
+	culture="qutumi"
+}
+5368035=
+{
+	name="Hapisna"
+	culture="qutumi"
+}
+5368036=
+{
+	name="Hapri"
+	culture="qutumi"
+}
+5368037=
+{
+	name="Hapre"
+	culture="qutumi"
+}
+5368038=
+{
+	name="Havrinian"
+	culture="qutumi"
+}
+5368039=
+{
+	name="Lapicani"
+	culture="qutumi"
+}
+5368040=
+{
+	name="Divicus"
+	culture="qutumi"
+}
+5368041=
+{
+	name="Larani"
+	culture="qutumi"
+}
+5368042=
+{
+	name="Larecena"
+	culture="qutumi"
+}
+5368043=
+{
+	name="Lucina"
+	culture="qutumi"
+}
+5368044=
+{
+	name="Lucinei"
+	culture="qutumi"
+}
+5368045=
+{
+	name="Lucinian"
+	culture="qutumi"
+}
+5368046=
+{
+	name="Lartli"
+	culture="qutumi"
+}
+5368047=
+{
+	name="Latnian"
+	culture="qutumi"
+}
+5368048=
+{
+	name="Marcnei"
+	culture="qutumi"
+}
+5368049=
+{
+	name="Malamena"
+	culture="qutumi"
+}
+5368050=
+{
+	name="Marcnithur"
+	culture="qutumi"
+}
+5368051=
+{
+	name="Mutunid"
+	culture="qutumi"
+}
+5368052=
+{
+	name="Nerinei"
+	culture="qutumi"
+}
+5368053=
+{
+	name="Ninie"
+	culture="qutumi"
+}
+5368054=
+{
+	name="Nuiclnas"
+	culture="qutumi"
+}
+5368055=
+{
+	name="Nufre"
+	culture="qutumi"
+}
+5368056=
+{
+	name="Pachie"
+	culture="qutumi"
+}
+5368057=
+{
+	name="Peithunas"
+	culture="qutumi"
+}
+5368058=
+{
+	name="Palazus"
+	culture="qutumi"
+}
+5368059=
+{
+	name="Palazusian"
+	culture="qutumi"
+}
+5368060=
+{
+	name="Papni"
+	culture="qutumi"
+}
+5368061=
+{
+	name="Phersnalei"
+	culture="qutumi"
+}
+5368062=
+{
+	name="Pinies"
+	culture="qutumi"
+}
+5368063=
+{
+	name="Platia"
+	culture="qutumi"
+}
+5368064=
+{
+	name="Plutian"
+	culture="qutumi"
+}
+5368065=
+{
+	name="Precuthur"
+	culture="qutumi"
+}
+5368066=
+{
+	name="Puinci"
+	culture="qutumi"
+}
+5368067=
+{
+	name="Purzena"
+	culture="qutumi"
+}
+5368068=
+{
+	name="Pustmina"
+	culture="qutumi"
+}
+5368069=
+{
+	name="Rufi"
+	culture="qutumi"
+}
+5368070=
+{
+	name="Ranazu"
+	culture="qutumi"
+}
+5368071=
+{
+	name="Salini"
+	culture="qutumi"
+}
+5368072=
+{
+	name="Scevei"
+	culture="qutumi"
+}
+5368073=
+{
+	name="Scurfiu"
+	culture="qutumi"
+}
+5368074=
+{
+	name="Sepu"
+	culture="qutumi"
+}
+5368075=
+{
+	name="Sethre"
+	culture="qutumi"
+}
+5368076=
+{
+	name="Silgatana"
+	culture="qutumi"
+}
+5368077=
+{
+	name="Sinu"
+	culture="qutumi"
+}
+5368078=
+{
+	name="Slanzu"
+	culture="qutumi"
+}
+5368079=
+{
+	name="Spantu"
+	culture="qutumi"
+}
+5368080=
+{
+	name="Spite"
+	culture="qutumi"
+}
+5368081=
+{
+	name="Spurinas"
+	culture="qutumi"
+}
+5368082=
+{
+	name="Srutzna"
+	culture="qutumi"
+}
+5368083=
+{
+	name="Statlanian"
+	culture="qutumi"
+}
+5368084=
+{
+	name="Tarchunies"
+	culture="qutumi"
+}
+5368085=
+{
+	name="Tarcnid"
+	culture="qutumi"
+}
+5368086=
+{
+	name="Teithurna"
+	culture="qutumi"
+}
+5368087=
+{
+	name="Teitur"
+	culture="qutumi"
+}
+5368088=
+{
+	name="Tetnies"
+	culture="qutumi"
+}
+5368089=
+{
+	name="Thusatur"
+	culture="qutumi"
+}
+5368090=
+{
+	name="Trepe"
+	culture="qutumi"
+}
+5368091=
+{
+	name="Tutna"
+	culture="qutumi"
+}
+5368092=
+{
+	name="Tutes"
+	culture="qutumi"
+}
+5368093=
+{
+	name="Ucrini"
+	culture="qutumi"
+}
+5368094=
+{
+	name="Ucrinian"
+	culture="qutumi"
+}
+5368095=
+{
+	name="Uftave"
+	culture="qutumi"
+}
+5368096=
+{
+	name="Ultimnid"
+	culture="qutumi"
+}
+5368097=
+{
+	name="Ulzna"
+	culture="qutumi"
+}
+5368098=
+{
+	name="Vania"
+	culture="qutumi"
+}
+5368099=
+{
+	name="Velarian"
+	culture="qutumi"
+}
+5368100=
+{
+	name="Velcii"
+	culture="qutumi"
+}
+5368101=
+{
+	name="Velcian"
+	culture="qutumi"
+}
+5368102=
+{
+	name="Vlesi"
+	culture="qutumi"
+}
+5368103=
+{
+	name="Velia"
+	culture="qutumi"
+}
+5368104=
+{
+	name="Velethnei"
+	culture="qutumi"
+}
+5368105=
+{
+	name="Velthinathur"
+	culture="qutumi"
+}
+5368106=
+{
+	name="Venetian"
+	culture="qutumi"
+}
+5368107=
+{
+	name="Vete"
+	culture="qutumi"
+}
+5368108=
+{
+	name="Zalthu"
+	culture="qutumi"
+}
+5368109=
+{
+	name="Zane"
+	culture="qutumi"
+}
+5368110=
+{
+	name="Zertnei"
+	culture="qutumi"
+}
+5368111=
+{
+	name="Zili"
+	culture="qutumi"
+}
+5368112=
+{
+	name="Truials"
+	culture="qutumi"
+}

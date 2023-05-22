@@ -1,0 +1,723 @@
+###################################
+#
+# Imperator:Rome to Crusader Kings II
+# - Slavic Culture Conversion Events
+#
+###################################
+
+namespace = IR_SLA
+
+# Province culture changes from Old Slavic to Carantanian
+province_event = {
+	id = IR_SLA.2000
+	desc = EVTDESC_IR_SLA_2000
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 650
+		culture = protoslavic
+		region = custom_irck2_italy_slavic
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = protoslavic
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_SLA_2000
+		culture = carantanian
+	}
+}
+
+#################################################
+
+province_event = {
+	id = IR_SLA.2001
+	desc = EVTDESC_IR_SLA_2001
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 650
+		culture = protoslavic
+		region = custom_irck2_bulgaria
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = protoslavic
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_SLA_2001
+		culture = bulgarian
+	}
+}
+
+province_event = {
+	id = IR_SLA.2003
+	desc = EVTDESC_IR_SLA_2003
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 650
+		culture = protoslavic
+		OR = {
+			region = custom_irck2_france
+			region = custom_irck2_occitania
+		}
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = protoslavic
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_SLA_2003
+		culture = vinolan
+	}
+}
+
+province_event = {
+	id = IR_SLA.2007
+	desc = EVTDESC_IR_SLA_2007
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 650
+		culture = protoslavic
+		region = custom_irck2_serbia
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = protoslavic
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_SLA_2007
+		culture = serbian
+	}
+}
+
+province_event = {
+	id = IR_SLA.2008
+	desc = EVTDESC_IR_SLA_2008
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 650
+		culture = protoslavic
+		region = custom_irck2_bosnia
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = protoslavic
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_SLA_2008
+		culture = bosnian
+	}
+}
+
+province_event = {
+	id = IR_SLA.2009
+	desc = EVTDESC_IR_SLA_2009
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 650
+		culture = protoslavic
+		region = custom_irck2_croatia
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = protoslavic
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_SLA_2009
+		culture = croatian
+	}
+}
+
+province_event = {
+	id = IR_SLA.2010
+	desc = EVTDESC_IR_SLA_2010
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 650
+		culture = protoslavic
+		region = custom_irck2_britannia
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = protoslavic
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_SLA_2010
+		culture = olovian
+	}
+}
+
+province_event = {
+	id = IR_SLA.2011
+	desc = EVTDESC_IR_SLA_2011
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 650
+		culture = protoslavic
+		region = custom_irck2_slovakia
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = protoslavic
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_SLA_2011
+		culture = slovieni
+	}
+}
+
+province_event = {
+	id = IR_SLA.2013
+	desc = EVTDESC_IR_SLA_2013
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 650
+		culture = protoslavic
+		OR = {
+			region = custom_irck2_sorbia
+		}
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = protoslavic
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_SLA_2013
+		culture = pommeranian
+	}
+}
+
+province_event = {
+	id = IR_SLA.2014
+	desc = EVTDESC_IR_SLA_2014
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 650
+		culture = protoslavic
+		region = custom_irck2_poland_slavic
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = protoslavic
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_SLA_2014
+		culture = polish
+	}
+}
+
+province_event = {
+	id = IR_SLA.2015
+	desc = EVTDESC_IR_SLA_2015
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 650
+		culture = protoslavic
+		region = custom_irck2_levant
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = protoslavic
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_SLA_2015
+		culture = berzanian
+	}
+}
+
+province_event = {
+	id = IR_SLA.2016
+	desc = EVTDESC_IR_SLA_2016
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 650
+		culture = protoslavic
+		region = custom_irck2_bohemia
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = protoslavic
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_SLA_2016
+		culture = bohemian
+	}
+}
+
+province_event = {
+	id = IR_SLA.2017
+	desc = EVTDESC_IR_SLA_2017
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 650
+		culture = protoslavic
+		region = custom_irck2_anatolia_and_georgia
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = protoslavic
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_SLA_2017
+		culture = vapian
+	}
+}
+
+province_event = {
+	id = IR_SLA.2018
+	desc = EVTDESC_IR_SLA_2018
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 650
+		culture = protoslavic
+		region = custom_irck2_rus
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = protoslavic
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_SLA_2018
+		culture = russian
+	}
+}
+
+province_event = {
+	id = IR_SLA.2019
+	desc = EVTDESC_IR_SLA_2018
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 650
+		culture = protoslavic
+		region = custom_irck2_norse_scandinavia
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = protoslavic
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_SLA_2019
+		culture = strombian
+	}
+}
+
+

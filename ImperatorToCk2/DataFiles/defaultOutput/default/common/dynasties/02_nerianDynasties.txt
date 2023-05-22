@@ -1,0 +1,560 @@
+5372000=
+{
+	name="Uclina"
+	culture="nerian"
+}
+5372001=
+{
+	name="Ucli"
+	culture="nerian"
+}
+5372002=
+{
+	name="Acnatru"
+	culture="nerian"
+}
+5372003=
+{
+	name="Acvilnas"
+	culture="nerian"
+}
+5372004=
+{
+	name="Afunei"
+	culture="nerian"
+}
+5372005=
+{
+	name="Aisina"
+	culture="nerian"
+}
+5372006=
+{
+	name="Alethnei"
+	culture="nerian"
+}
+5372007=
+{
+	name="Alfi"
+	culture="nerian"
+}
+5372008=
+{
+	name="Amuni"
+	culture="nerian"
+}
+5372009=
+{
+	name="Anani"
+	culture="nerian"
+}
+5372010=
+{
+	name="Anes"
+	culture="nerian"
+}
+5372011=
+{
+	name="Alethnas"
+	culture="nerian"
+}
+5372012=
+{
+	name="Apatru"
+	culture="nerian"
+}
+5372013=
+{
+	name="Cafati"
+	culture="nerian"
+}
+5372014=
+{
+	name="Ceie"
+	culture="nerian"
+}
+5372015=
+{
+	name="Calitahi"
+	culture="nerian"
+}
+5372016=
+{
+	name="Camitlnas"
+	culture="nerian"
+}
+5372017=
+{
+	name="Campanian"
+	culture="nerian"
+}
+5372018=
+{
+	name="Canatnei"
+	culture="nerian"
+}
+5372019=
+{
+	name="Cheiras"
+	culture="nerian"
+}
+5372020=
+{
+	name="Churinian"
+	culture="nerian"
+}
+5372021=
+{
+	name="Cicunias"
+	culture="nerian"
+}
+5372022=
+{
+	name="Creicesian"
+	culture="nerian"
+}
+5372023=
+{
+	name="Ecnati"
+	culture="nerian"
+}
+5372024=
+{
+	name="Einanian"
+	culture="nerian"
+}
+5372025=
+{
+	name="Eucli"
+	culture="nerian"
+}
+5372026=
+{
+	name="Ezpus"
+	culture="nerian"
+}
+5372027=
+{
+	name="Ezpusian"
+	culture="nerian"
+}
+5372028=
+{
+	name="Fapi"
+	culture="nerian"
+}
+5372029=
+{
+	name="Fapian"
+	culture="nerian"
+}
+5372030=
+{
+	name="Felces"
+	culture="nerian"
+}
+5372031=
+{
+	name="Feluscian"
+	culture="nerian"
+}
+5372032=
+{
+	name="Felusci"
+	culture="nerian"
+}
+5372033=
+{
+	name="Fulvena"
+	culture="nerian"
+}
+5372034=
+{
+	name="Hanu"
+	culture="nerian"
+}
+5372035=
+{
+	name="Hapisna"
+	culture="nerian"
+}
+5372036=
+{
+	name="Hapri"
+	culture="nerian"
+}
+5372037=
+{
+	name="Hapre"
+	culture="nerian"
+}
+5372038=
+{
+	name="Havrinian"
+	culture="nerian"
+}
+5372039=
+{
+	name="Lapicani"
+	culture="nerian"
+}
+5372040=
+{
+	name="Divicus"
+	culture="nerian"
+}
+5372041=
+{
+	name="Larani"
+	culture="nerian"
+}
+5372042=
+{
+	name="Larecena"
+	culture="nerian"
+}
+5372043=
+{
+	name="Lucina"
+	culture="nerian"
+}
+5372044=
+{
+	name="Lucinei"
+	culture="nerian"
+}
+5372045=
+{
+	name="Lucinian"
+	culture="nerian"
+}
+5372046=
+{
+	name="Lartli"
+	culture="nerian"
+}
+5372047=
+{
+	name="Latnian"
+	culture="nerian"
+}
+5372048=
+{
+	name="Marcnei"
+	culture="nerian"
+}
+5372049=
+{
+	name="Malamena"
+	culture="nerian"
+}
+5372050=
+{
+	name="Marcnithur"
+	culture="nerian"
+}
+5372051=
+{
+	name="Mutunid"
+	culture="nerian"
+}
+5372052=
+{
+	name="Nerinei"
+	culture="nerian"
+}
+5372053=
+{
+	name="Ninie"
+	culture="nerian"
+}
+5372054=
+{
+	name="Nuiclnas"
+	culture="nerian"
+}
+5372055=
+{
+	name="Nufre"
+	culture="nerian"
+}
+5372056=
+{
+	name="Pachie"
+	culture="nerian"
+}
+5372057=
+{
+	name="Peithunas"
+	culture="nerian"
+}
+5372058=
+{
+	name="Palazus"
+	culture="nerian"
+}
+5372059=
+{
+	name="Palazusian"
+	culture="nerian"
+}
+5372060=
+{
+	name="Papni"
+	culture="nerian"
+}
+5372061=
+{
+	name="Phersnalei"
+	culture="nerian"
+}
+5372062=
+{
+	name="Pinies"
+	culture="nerian"
+}
+5372063=
+{
+	name="Platia"
+	culture="nerian"
+}
+5372064=
+{
+	name="Plutian"
+	culture="nerian"
+}
+5372065=
+{
+	name="Precuthur"
+	culture="nerian"
+}
+5372066=
+{
+	name="Puinci"
+	culture="nerian"
+}
+5372067=
+{
+	name="Purzena"
+	culture="nerian"
+}
+5372068=
+{
+	name="Pustmina"
+	culture="nerian"
+}
+5372069=
+{
+	name="Rufi"
+	culture="nerian"
+}
+5372070=
+{
+	name="Ranazu"
+	culture="nerian"
+}
+5372071=
+{
+	name="Salini"
+	culture="nerian"
+}
+5372072=
+{
+	name="Scevei"
+	culture="nerian"
+}
+5372073=
+{
+	name="Scurfiu"
+	culture="nerian"
+}
+5372074=
+{
+	name="Sepu"
+	culture="nerian"
+}
+5372075=
+{
+	name="Sethre"
+	culture="nerian"
+}
+5372076=
+{
+	name="Silgatana"
+	culture="nerian"
+}
+5372077=
+{
+	name="Sinu"
+	culture="nerian"
+}
+5372078=
+{
+	name="Slanzu"
+	culture="nerian"
+}
+5372079=
+{
+	name="Spantu"
+	culture="nerian"
+}
+5372080=
+{
+	name="Spite"
+	culture="nerian"
+}
+5372081=
+{
+	name="Spurinas"
+	culture="nerian"
+}
+5372082=
+{
+	name="Srutzna"
+	culture="nerian"
+}
+5372083=
+{
+	name="Statlanian"
+	culture="nerian"
+}
+5372084=
+{
+	name="Tarchunies"
+	culture="nerian"
+}
+5372085=
+{
+	name="Tarcnid"
+	culture="nerian"
+}
+5372086=
+{
+	name="Teithurna"
+	culture="nerian"
+}
+5372087=
+{
+	name="Teitur"
+	culture="nerian"
+}
+5372088=
+{
+	name="Tetnies"
+	culture="nerian"
+}
+5372089=
+{
+	name="Thusatur"
+	culture="nerian"
+}
+5372090=
+{
+	name="Trepe"
+	culture="nerian"
+}
+5372091=
+{
+	name="Tutna"
+	culture="nerian"
+}
+5372092=
+{
+	name="Tutes"
+	culture="nerian"
+}
+5372093=
+{
+	name="Ucrini"
+	culture="nerian"
+}
+5372094=
+{
+	name="Ucrinian"
+	culture="nerian"
+}
+5372095=
+{
+	name="Uftave"
+	culture="nerian"
+}
+5372096=
+{
+	name="Ultimnid"
+	culture="nerian"
+}
+5372097=
+{
+	name="Ulzna"
+	culture="nerian"
+}
+5372098=
+{
+	name="Vania"
+	culture="nerian"
+}
+5372099=
+{
+	name="Velarian"
+	culture="nerian"
+}
+5372100=
+{
+	name="Velcii"
+	culture="nerian"
+}
+5372101=
+{
+	name="Velcian"
+	culture="nerian"
+}
+5372102=
+{
+	name="Vlesi"
+	culture="nerian"
+}
+5372103=
+{
+	name="Velia"
+	culture="nerian"
+}
+5372104=
+{
+	name="Velethnei"
+	culture="nerian"
+}
+5372105=
+{
+	name="Velthinathur"
+	culture="nerian"
+}
+5372106=
+{
+	name="Venetian"
+	culture="nerian"
+}
+5372107=
+{
+	name="Vete"
+	culture="nerian"
+}
+5372108=
+{
+	name="Zalthu"
+	culture="nerian"
+}
+5372109=
+{
+	name="Zane"
+	culture="nerian"
+}
+5372110=
+{
+	name="Zertnei"
+	culture="nerian"
+}
+5372111=
+{
+	name="Zili"
+	culture="nerian"
+}

@@ -122,6 +122,71 @@ irck2_convert_to_tylosi_desc;You and your unlanded Greek relatives convert to Ty
 irck2_convert_to_galatian;Embrace Galatian Culture;Embrace Galatian Culture;Embrace Galatian Culture;;Embrace Galatian Culture;;;;;;;;;x
 irck2_convert_to_galatian_desc;You and your unlanded Gallic, Belgae, Lepontic, and Noric relatives convert to Galatian Culture;You and your unlanded Gallic, Belgae, Lepontic, and Noric relatives convert to Galatian Culture;You and your unlanded Gallic, Belgae, Lepontic, and Noric relatives convert to Galatian Culture;;You and your unlanded Gallic, Belgae, Lepontic, and Noric relatives convert to Galatian Culture;;;;;;;;;x
 
+#Noric split by Diskianterezh
+irck2_convert_to_ghasettian;Embrace Ghasettian Culture;Embrace Ghasettian Culture;Embrace Ghasettian Culture;;Embrace Ghasettian Culture;;;;;;;;;x
+irck2_convert_to_betwani;Embrace Betwani Culture;Embrace Betwani Culture;Embrace Betwani Culture;;Embrace Betwani Culture;;;;;;;;;x
+irck2_convert_to_vinetan;Embrace Vinetan Culture;Embrace Vinetan Culture;Embrace Vinetan Culture;;Embrace Vinetan Culture;;;;;;;;;x
+irck2_convert_to_cenabian;Embrace Cenabian Culture;Embrace Cenabian Culture;Embrace Cenabian Culture;;Embrace Cenabian Culture;;;;;;;;;x
+irck2_convert_to_ghasettian_desc;You and your unlanded Noric relatives convert to Ghasettian Culture;You and your unlanded Noric relatives convert to Ghasettian Culture;You and your unlanded Noric relatives convert to Ghasettian Culture;;You and your unlanded Noric relatives convert to Ghasettian Culture;;;;;;;;;x
+irck2_convert_to_betwani_desc;You and your unlanded Noric relatives convert to Betwani Culture;You and your unlanded Noric relatives convert to Betwani Culture;You and your unlanded Noric relatives convert to Betwani Culture;;You and your unlanded Noric relatives convert to Betwani Culture;;;;;;;;;x
+irck2_convert_to_vinetan_desc;You and your unlanded Noric relatives convert to Vinetan Culture;You and your unlanded Noric relatives convert to Vinetan Culture;You and your unlanded Noric relatives convert to Vinetan Culture;;You and your unlanded Noric relatives convert to Vinetan Culture;;;;;;;;;x
+irck2_convert_to_cenabian_desc;You and your unlanded Noric relatives convert to Cenabian Culture;You and your unlanded Noric relatives convert to Cenabian Culture;You and your unlanded Noric relatives convert to Cenabian Culture;;You and your unlanded Noric relatives convert to Cenabian Culture;;;;;;;;;x
+
+#Slavic split
+irck2_convert_to_carantanian;Embrace Carantanian Culture;Embrace Carantanian Culture;Embrace Carantanian Culture;;Embrace Carantanian Culture;;;;;;;;;x
+irck2_convert_to_carantanian_desc;You and your unlanded Old Slavic relatives convert to Carantanian Culture;You and your unlanded Old Slavic relatives convert to Carantanian Culture;You and your unlanded Old Slavic relatives convert to Carantanian Culture;;You and your unlanded Old Slavic relatives convert to Carantanian Culture;;;;;;;;;x
+irck2_convert_to_bulgarian;Embrace Bulgarian Culture;Embrace Bulgarian Culture;Embrace Bulgarian Culture;;Embrace Bulgarian Culture;;;;;;;;;x
+irck2_convert_to_bulgarian_desc;You and your unlanded Old Slavic relatives convert to Bulgarian Culture;You and your unlanded Old Slavic relatives convert to Bulgarian Culture;You and your unlanded Old Slavic relatives convert to Bulgarian Culture;;You and your unlanded Old Slavic relatives convert to Bulgarian Culture;;;;;;;;;x
+irck2_convert_to_vinolan;Embrace Vinolan Culture;Embrace Vinolan Culture;Embrace Vinolan Culture;;Embrace Vinolan Culture;;;;;;;;;x
+irck2_convert_to_vinolan_desc;You and your unlanded Old Slavic relatives convert to Vinolan Culture;You and your unlanded Old Slavic relatives convert to Vinolan Culture;You and your unlanded Old Slavic relatives convert to Vinolan Culture;;You and your unlanded Old Slavic relatives convert to Vinolan Culture;;;;;;;;;x
+irck2_convert_to_serbian;Embrace Serbian Culture;Embrace Serbian Culture;Embrace Serbian Culture;;Embrace Serbian Culture;;;;;;;;;x
+irck2_convert_to_serbian_desc;You and your unlanded Old Slavic relatives convert to Serbian Culture;You and your unlanded Old Slavic relatives convert to Serbian Culture;You and your unlanded Old Slavic relatives convert to Serbian Culture;;You and your unlanded Old Slavic relatives convert to Serbian Culture;;;;;;;;;x
+irck2_convert_to_bosnian;Embrace Bosnian Culture;Embrace Bosnian Culture;Embrace Bosnian Culture;;Embrace Bosnian Culture;;;;;;;;;x
+irck2_convert_to_bosnian_desc;You and your unlanded Old Slavic relatives convert to Bosnian Culture;You and your unlanded Old Slavic relatives convert to Bosnian Culture;You and your unlanded Old Slavic relatives convert to Bosnian Culture;;You and your unlanded Old Slavic relatives convert to Bosnian Culture;;;;;;;;;x
+irck2_convert_to_croatian;Embrace Croatian Culture;Embrace Croatian Culture;Embrace Croatian Culture;;Embrace Croatian Culture;;;;;;;;;x
+irck2_convert_to_croatian_desc;You and your unlanded Old Slavic relatives convert to Croatian Culture;You and your unlanded Old Slavic relatives convert to Croatian Culture;You and your unlanded Old Slavic relatives convert to Croatian Culture;;You and your unlanded Old Slavic relatives convert to Croatian Culture;;;;;;;;;x
+irck2_convert_to_olovian;Embrace Olovian Culture;Embrace Olovian Culture;Embrace Olovian Culture;;Embrace Olovian Culture;;;;;;;;;x
+irck2_convert_to_olovian_desc;You and your unlanded Old Slavic relatives convert to Olovian Culture;You and your unlanded Old Slavic relatives convert to Olovian Culture;You and your unlanded Old Slavic relatives convert to Olovian Culture;;You and your unlanded Old Slavic relatives convert to Olovian Culture;;;;;;;;;x
+irck2_convert_to_slovieni;Embrace Slovien Culture;Embrace Slovien Culture;Embrace Slovien Culture;;Embrace Slovien Culture;;;;;;;;;x
+irck2_convert_to_slovieni_desc;You and your unlanded Old Slavic relatives convert to Slovien Culture;You and your unlanded Old Slavic relatives convert to Slovien Culture;You and your unlanded Old Slavic relatives convert to Slovien Culture;;You and your unlanded Old Slavic relatives convert to Slovien Culture;;;;;;;;;x
+irck2_convert_to_pommeranian;Embrace Pomeranian Culture;Embrace Pomeranian Culture;Embrace Pomeranian Culture;;Embrace Pomeranian Culture;;;;;;;;;x
+irck2_convert_to_pommeranian_desc;You and your unlanded Old Slavic relatives convert to Pomeranian Culture;You and your unlanded Old Slavic relatives convert to Pomeranian Culture;You and your unlanded Old Slavic relatives convert to Pomeranian Culture;;You and your unlanded Old Slavic relatives convert to Pomeranian Culture;;;;;;;;;x
+irck2_convert_to_polish;Embrace Polish Culture;Embrace Polish Culture;Embrace Polish Culture;;Embrace Polish Culture;;;;;;;;;x
+irck2_convert_to_polish_desc;You and your unlanded Old Slavic relatives convert to Polish Culture;You and your unlanded Old Slavic relatives convert to Polish Culture;You and your unlanded Old Slavic relatives convert to Polish Culture;;You and your unlanded Old Slavic relatives convert to Polish Culture;;;;;;;;;x
+irck2_convert_to_berzanian;Embrace Berzanian Culture;Embrace Berzanian Culture;Embrace Berzanian Culture;;Embrace Berzanian Culture;;;;;;;;;x
+irck2_convert_to_berzanian_desc;You and your unlanded Old Slavic relatives convert to Berzanian Culture;You and your unlanded Old Slavic relatives convert to Berzanian Culture;You and your unlanded Old Slavic relatives convert to Berzanian Culture;;You and your unlanded Old Slavic relatives convert to Berzanian Culture;;;;;;;;;x
+irck2_convert_to_bohemian;Embrace Bohemian Culture;Embrace Bohemian Culture;Embrace Bohemian Culture;;Embrace Bohemian Culture;;;;;;;;;x
+irck2_convert_to_bohemian_desc;You and your unlanded Old Slavic relatives convert to Bohemian Culture;You and your unlanded Old Slavic relatives convert to Bohemian Culture;You and your unlanded Old Slavic relatives convert to Bohemian Culture;;You and your unlanded Old Slavic relatives convert to Bohemian Culture;;;;;;;;;x
+irck2_convert_to_vapian;Embrace Vapian Culture;Embrace Vapian Culture;Embrace Vapian Culture;;Embrace Vapian Culture;;;;;;;;;x
+irck2_convert_to_vapian_desc;You and your unlanded Old Slavic relatives convert to Vapian Culture;You and your unlanded Old Slavic relatives convert to Vapian Culture;You and your unlanded Old Slavic relatives convert to Vapian Culture;;You and your unlanded Old Slavic relatives convert to Vapian Culture;;;;;;;;;x
+irck2_convert_to_russian;Embrace Russian Culture;Embrace Russian Culture;Embrace Russian Culture;;Embrace Russian Culture;;;;;;;;;x
+irck2_convert_to_russian_desc;You and your unlanded Old Slavic relatives convert to Russian Culture;You and your unlanded Old Slavic relatives convert to Russian Culture;You and your unlanded Old Slavic relatives convert to Russian Culture;;You and your unlanded Old Slavic relatives convert to Russian Culture;;;;;;;;;x
+irck2_convert_to_strombian;Embrace Strombian Culture;Embrace Strombian Culture;Embrace Strombian Culture;;Embrace Strombian Culture;;;;;;;;;x
+irck2_convert_to_strombian_desc;You and your unlanded Old Slavic relatives convert to Strombian Culture;You and your unlanded Old Slavic relatives convert to Strombian Culture;You and your unlanded Old Slavic relatives convert to Strombian Culture;;You and your unlanded Old Slavic relatives convert to Strombian Culture;;;;;;;;;x
+
+#Etruscan Split
+irck2_convert_to_lemnian;Embrace Lemnian Culture;Embrace Lemnian Culture;Embrace Lemnian Culture;;Embrace Lemnian Culture;;;;;;;;;x
+irck2_convert_to_qutumi;Embrace Qutumi Culture;Embrace Qutumi Culture;Embrace Qutumi Culture;;Embrace Qutumi Culture;;;;;;;;;x
+irck2_convert_to_tulari;Embrace Tulari Culture;Embrace Tulari Culture;Embrace Tulari Culture;;Embrace Tulari Culture;;;;;;;;;x
+irck2_convert_to_karthazian;Embrace Karthazian Culture;Embrace Karthazian Culture;Embrace Karthazian Culture;;Embrace Karthazian Culture;;;;;;;;;x
+irck2_convert_to_mutnian;Embrace Mutnian Culture;Embrace Mutnian Culture;Embrace Mutnian Culture;;Embrace Mutnian Culture;;;;;;;;;x
+irck2_convert_to_nerian;Embrace Nerian Culture;Embrace Nerian Culture;Embrace Nerian Culture;;Embrace Nerian Culture;;;;;;;;;x
+irck2_convert_to_lanistian;Embrace Lanistian Culture;Embrace Lanistian Culture;Embrace Lanistian Culture;;Embrace Lanistian Culture;;;;;;;;;x
+irck2_convert_to_fasenian;Embrace Fasenian Culture;Embrace Fasenian Culture;Embrace Fasenian Culture;;Embrace Fasenian Culture;;;;;;;;;x
+irck2_convert_to_rasnan;Embrace Rasnan Culture;Embrace Rasnan Culture;Embrace Rasnan Culture;;Embrace Rasnan Culture;;;;;;;;;x
+irck2_convert_to_sazlei;Embrace Sazlei Culture;Embrace Sazlei Culture;Embrace Sazlei Culture;;Embrace Sazlei Culture;;;;;;;;;x
+irck2_convert_to_falan;Embrace Falan Culture;Embrace Falan Culture;Embrace Falan Culture;;Embrace Falan Culture;;;;;;;;;x
+irck2_convert_to_lemnian_desc;You and your unlanded Etruscan relatives convert to Lemnian Culture;You and your unlanded Etruscan relatives convert to Lemnian Culture;You and your unlanded Etruscan relatives convert to Lemnian Culture;;You and your unlanded Etruscan relatives convert to Lemnian Culture;;;;;;;;;x
+irck2_convert_to_qutumi_desc;You and your unlanded Etruscan relatives convert to Qutumi Culture;You and your unlanded Etruscan relatives convert to Qutumi Culture;You and your unlanded Etruscan relatives convert to Qutumi Culture;;You and your unlanded Etruscan relatives convert to Qutumi Culture;;;;;;;;;x
+irck2_convert_to_tulari_desc;You and your unlanded Etruscan relatives convert to Tulari Culture;You and your unlanded Etruscan relatives convert to Tulari Culture;You and your unlanded Etruscan relatives convert to Tulari Culture;;You and your unlanded Etruscan relatives convert to Tulari Culture;;;;;;;;;x
+irck2_convert_to_karthazian_desc;You and your unlanded Etruscan relatives convert to Karthazian Culture;You and your unlanded Etruscan relatives convert to Karthazian Culture;You and your unlanded Etruscan relatives convert to Karthazian Culture;;You and your unlanded Etruscan relatives convert to Karthazian Culture;;;;;;;;;x
+irck2_convert_to_mutnian_desc;You and your unlanded Etruscan relatives convert to Mutnian Culture;You and your unlanded Etruscan relatives convert to Mutnian Culture;You and your unlanded Etruscan relatives convert to Mutnian Culture;;You and your unlanded Etruscan relatives convert to Mutnian Culture;;;;;;;;;x
+irck2_convert_to_nerian_desc;You and your unlanded Etruscan relatives convert to Nerian Culture;You and your unlanded Etruscan relatives convert to Nerian Culture;You and your unlanded Etruscan relatives convert to Nerian Culture;;You and your unlanded Etruscan relatives convert to Nerian Culture;;;;;;;;;x
+irck2_convert_to_fasenian_desc;You and your unlanded Etruscan relatives convert to Fasenian Culture;You and your unlanded Etruscan relatives convert to Fasenian Culture;You and your unlanded Etruscan relatives convert to Fasenian Culture;;You and your unlanded Etruscan relatives convert to Fasenian Culture;;;;;;;;;x
+irck2_convert_to_rasnan_desc;You and your unlanded Etruscan relatives convert to Rasnan Culture;You and your unlanded Etruscan relatives convert to Rasnan Culture;You and your unlanded Etruscan relatives convert to Rasnan Culture;;You and your unlanded Etruscan relatives convert to Rasnan Culture;;;;;;;;;x
+irck2_convert_to_sazlei_desc;You and your unlanded Etruscan relatives convert to Sazlei Culture;You and your unlanded Etruscan relatives convert to Sazlei Culture;You and your unlanded Etruscan relatives convert to Sazlei Culture;;You and your unlanded Etruscan relatives convert to Sazlei Culture;;;;;;;;;x
+irck2_convert_to_falan_desc;You and your unlanded Etruscan relatives convert to Falan Culture;You and your unlanded Etruscan relatives convert to Falan Culture;You and your unlanded Etruscan relatives convert to Falan Culture;;You and your unlanded Etruscan relatives convert to Falan Culture;;;;;;;;;x
+
 #Empires
 irck2_create_e_italy;Create Italia;Create Italia;Machen Italien;;Create Italia;;;;;;;;;x
 irck2_create_e_italy_desc;Create Italia;Create Italia;Machen Italien;;Create Italia;;;;;;;;;x
@@ -137,7 +202,17 @@ irck2_create_e_indo_roman_empire_tooltip;You will acquire the Indo-Roman Imperia
 irck2_create_k_dacia;Create Wallachia;Create Wallachia;Machen Wallachien;;Create Wallachia;;;;;;;;;x
 irck2_create_k_dacia_desc;Create Wallachia;Create Wallachia;Machen Wallachien;;Create Wallachia;;;;;;;;;x
 
-
-
+irck2_create_k_poland;Create Poland;Create Poland;Machen Polen;;Create Poland;;;;;;;;;x
+irck2_create_k_poland_desc;Create Poland;Create Poland;Machen Polen;;Create Poland;;;;;;;;;x
+irck2_create_k_pomerania;Create Pomerania;Create Pomerania;Machen Pommeranien;;Create Pomerania;;;;;;;;;x
+irck2_create_k_pomerania_desc;Create Pomerania;Create Pomerania;Machen Pommeranien;;Create Pomerania;;;;;;;;;x
+irck2_create_k_bohemia;Create Bohemia;Create Bohemia;Machen Bohemien;;Create Bohemia;;;;;;;;;x
+irck2_create_k_bohemia_desc;Create Bohemia;Create Bohemia;Machen Bohemien;;Create Bohemia;;;;;;;;;x
+irck2_create_k_croatia;Create Croatia;Create Croatia;Machen Kroatien;;Create Croatia;;;;;;;;;x
+irck2_create_k_croatia_desc;Create Croatia;Create Croatia;Machen Kroatien;;Create Croatia;;;;;;;;;x
+irck2_create_k_serbia;Create Serbia;Create Serbia;Machen Serbien;;Create Serbia;;;;;;;;;x
+irck2_create_k_serbia_desc;Create Serbia;Create Serbia;Machen Serbien;;Create Serbia;;;;;;;;;x
+irck2_create_k_moravia;Create Moravia;Create Moravia;Machen Moravien;;Create Moravia;;;;;;;;;x
+irck2_create_k_moravia_desc;Create Moravia;Create Moravia;Machen Moravien;;Create Moravia;;;;;;;;;x
 
 ÿ

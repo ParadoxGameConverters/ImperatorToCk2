@@ -5479,6 +5479,51 @@ indian_group = {
 		intermarry = bon
 		intermarry = bon_reformed
 	}
+	ajivika = {
+		graphical_culture = jaingfx
+		secondary_event_pictures = sunni
+
+		#pacifist = yes # Makes the AI less likely to start wars, plots and factions
+
+		icon = 42
+		heresy_icon = 43
+
+		color = { 0.1 0.6 0.0 }
+
+		high_god_name = GOD_THE_TIRTHANKARAS
+
+		god_names = {
+			GOD_THE_TIRTHANKARAS GOD_RISHABH GOD_AJINATH GOD_SAMBHAVANATH  # Add more Tirthankaras
+		}
+
+		evil_god_names = {
+			THE_PUNISHERS
+		}
+
+		has_heir_designation = yes
+		can_grant_divorce = yes
+		priests_can_inherit = no
+		peace_piety_gain = 1.0 # Gains 1 piety each month while at peace
+		max_consorts = 3
+		castes = yes
+
+		short_reign_opinion_year_mult = 0 # No short reign penalty
+
+		religious_clothing_head = 9
+		religious_clothing_priest = 9
+
+		scripture_name = THE_ANGAS_SUTRAS
+		priest_title = NIRGRANTHA
+		piety_name = PURITY
+
+		intermarry = buddhist
+		intermarry = hindu
+		intermarry = jain
+		intermarry = zun_pagan
+		intermarry = zun_pagan_reformed
+		intermarry = bon
+		intermarry = bon_reformed
+	}
 	taoist = {
 		graphical_culture = chinesegfx
 		secondary_event_pictures = sunni

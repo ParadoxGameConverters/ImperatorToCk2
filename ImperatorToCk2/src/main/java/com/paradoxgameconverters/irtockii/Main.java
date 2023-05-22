@@ -1,4 +1,4 @@
-package com.paradoxgameconverters.irtockii;
+package com.paradoxgameconverters.irtockii;   
 
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -77,6 +77,8 @@ public class Main
             }
             
             String date = "100.1.1"; //default date in case something goes wrong
+            
+            int irProvTot = 9500;
 
             String impGameDir = configDirectories[1];
 
@@ -101,11 +103,11 @@ public class Main
             ArrayList<String[]> impProvInfoList = new ArrayList<String[]>();
 
             String[][] ck2ProvInfo;   // Array list of array lists...
-            ck2ProvInfo = new String[5][8500];
+            ck2ProvInfo = new String[5][irProvTot];
 
             //[0] is owner, [1] is culture, [2] is religion, [3] is calculated from pop
             int totalPop = 0;//pop total
-            int totalCKProv = 2050;
+            int totalCKProv = 2550;
 
             String[] ck2PopTotals;   // Owner Culture Religeon PopTotal Buildings
             ck2PopTotals = new String[totalCKProv];
@@ -148,8 +150,6 @@ public class Main
             ArrayList<String> flaggedGovernorships = new ArrayList<String>(); //governorships which have been given flags (GFX)
             
             flaggedGovernorships.add("Glorious__Bingo_region"); //debug so that list starts with 1 item
-
-            String[] impProvRegions = Processing.importRegionList(8500,impGameDir);
 
             int aqtest = 0;
             while (aqtest < 5000) { //sets the default for all tags as landless in CKII
@@ -201,6 +201,8 @@ public class Main
             int duchyRank = 30; //Ammount of holdings to be duchy
             
             int splitSize = empireRank+800;
+            
+            String provinceMappingSource = "provinceConversion2.txt";
             
             if (compressedOrNot == 0) { //compressed save! Initiating Rakaly decompressor
                 LOGGER.info("Compressed save detected! Implementing Rakaly Decompressor...");
@@ -266,6 +268,12 @@ public class Main
   
             ArrayList<String> modDirs = Importer.importModDirs(impDirSave,irModDir);
             ArrayList<String> modFlagGFX = Importer.importModFlagDirs(modDirs); //flag gfx files
+            ArrayList<String> modRegion = Importer.importModRegionDirs(modDirs); //flag gfx files
+            boolean hasInvictus = Processing.checkForInvictus(modDirs);
+            if (hasInvictus) { //switch to Invictus mappings
+                LOGGER.info("Imperator:Invictus detected in save file! Switching to Invictus mappings");
+                provinceMappingSource = "provinceConversionInvictus.txt";
+            }
 
             LOGGER.info("Importing flag information...");
             
@@ -277,6 +285,12 @@ public class Main
             LOGGER.info("Importing localization information...");
             
             ArrayList<String> locList = Importer.importAllLoc(impGameDir,modDirs);
+            
+            ArrayList<String> regionDirList = Importer.importModRegionDirs(modDirs);
+            
+            String regionDir = Importer.getRegionDir(impGameDir,regionDirList,modDirs);
+            
+            String[] impProvRegions = Processing.importRegionList(9500,regionDir);
 
             LOGGER.info("Creating temp files...");
 
@@ -313,12 +327,14 @@ public class Main
 
             LOGGER.info("Importing territory data..."); 
 
-            Processing.combineProvConvList("provinceConversionCore.txt","provinceConversion.txt"); //combines old style mappings and new style mappings
+            //Processing.combineProvConvList("provinceConversionCore.txt","provinceConversion.txt"); //combines old style mappings and new style mappings
+            Processing.combineProvConvList("provinceConversionCore.txt",provinceMappingSource,"provinceConversion.txt");
 
             //processing information
 
             impProvInfoList = importer.importProv(saveProvinces);
             totalPop = 0;
+            try {
             while (flag == 0) {
                 impProvtoCK = importer.importConvList("provinceConversion.txt",aqq); 
 
@@ -391,11 +407,14 @@ public class Main
 
                 }
 
-                if (aqq == 7843) {
+                if (aqq == 9843) {
                     flag = 1;   
                 }
 
                 aqq = aqq + 1;
+            }
+            } catch (java.lang.IndexOutOfBoundsException exception){
+                flag = 1;
             }
 
             //Culture, rel, tag Info, and pop total returned
@@ -534,7 +553,7 @@ public class Main
             LOGGER.info("Subject data imported after "+subjectTimeTot+" minutes");
             LOGGER.finest("65%");
 
-            LOGGER.info("Copying default output...");
+            LOGGER.info("Copying default output... (This will take 5-6 minutes)");
 
             //Default output, will be included in every conversion regardless of what occured in the save file
             //Output.copyRaw("defaultOutput"+VM+"cultures"+VM+"00_cultures.txt",modDirectory+VM+"common"+VM+"cultures"+VM+"00_cultures.txt");
@@ -687,7 +706,8 @@ public class Main
 
                                     
                                     String capitalName = "PROV"+impTagInfo.get(aq4)[5]; //use name of capital for generated kingdom
-                                    String[] capitalLoc = Importer.importProvLocalisation(impGameDir,capitalName);
+                                    String[] capitalLoc = importer.importLocalisation(locList,capitalName,rulerDynasty);
+                                    //String[] capitalLoc = Importer.importProvLocalisation(impGameDir,capitalName);
                                     if (capitalLoc[0].equals(capitalName)) { //In the event I:R prov has no name, use CK2 prov name
                                         capitalName = Importer.importConvList("provinceConversion.txt",Integer.parseInt(impTagInfo.get(aq4)[5]))[1];
                                         capitalName = Processing.importNames("a",Integer.parseInt(capitalName),ck2Dir)[0];
@@ -847,7 +867,14 @@ public class Main
                                         LOGGER.info("Warning, I:R province "+impTagInfo.get(tempNum2b)[5]+" is unmapped!");
                                         overlordCapital = "69";
                                     }
-                                    String capitalOwner = ck2ProvInfo[0][Integer.parseInt(overlordCapital)].split("__")[0];
+                                    String capitalOwner;
+                                    try {
+                                        capitalOwner = ck2ProvInfo[0][Integer.parseInt(overlordCapital)].split("__")[0];
+                                    } catch (Exception e){
+                                        System.out.println("Error");
+                                        System.out.println("overlordCapital: "+overlordCapital);
+                                        capitalOwner = "9999";
+                                    }
                                     int capitalOwnerID = Integer.parseInt(capitalOwner);
                                     if (capitalOwnerID == 9999) { //if capital province is somehow uncolonized, give it to TAG
                                         capitalOwnerID = tempNum2b;
@@ -895,7 +922,8 @@ public class Main
                                                 
                                                 String govLoc = Importer.importConvListR("provinceConversion.txt",aq4)[0];
                                                 govLoc = "PROV"+govLoc;
-                                                String[] govLocName = Importer.importProvLocalisation(impGameDir,govLoc);
+                                                //String[] govLocName = Importer.importProvLocalisation(impGameDir,govLoc);
+                                                String[] govLocName = importer.importLocalisation(locList,govLoc,"none");
                                                 output.localizationCreation(govLocName,impTagInfo.get(tempNum2b)[0]+"__"+govReg,rank,modDirectory);
                                                 
                                                 

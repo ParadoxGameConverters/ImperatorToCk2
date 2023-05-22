@@ -331,7 +331,11 @@ province_event = {
 	trigger = {
 		should_evolve_cultures_trigger = yes
 		culture_group = east_slavic
-		NOT = { culture = russian }
+		OR = {
+			culture = ilmenian
+			culture = severian
+			culture = volhynian
+		}
 		owner = {
 			OR = {
 				culture = russian

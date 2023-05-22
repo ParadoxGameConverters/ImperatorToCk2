@@ -1,0 +1,580 @@
+5366000=
+{
+	name="Ambonus"
+	culture="cenabian"
+}
+5366001=
+{
+	name="Ambona"
+	culture="cenabian"
+}
+5366002=
+{
+	name="Ambonii"
+	culture="cenabian"
+}
+5366003=
+{
+	name="Ambonid"
+	culture="cenabian"
+}
+5366004=
+{
+	name="Auaroses"
+	culture="cenabian"
+}
+5366005=
+{
+	name="Auarosa"
+	culture="cenabian"
+}
+5366006=
+{
+	name="Auarosii"
+	culture="cenabian"
+}
+5366007=
+{
+	name="Auarosian"
+	culture="cenabian"
+}
+5366008=
+{
+	name="Audaxus"
+	culture="cenabian"
+}
+5366009=
+{
+	name="Audaxa"
+	culture="cenabian"
+}
+5366010=
+{
+	name="Audaxii"
+	culture="cenabian"
+}
+5366011=
+{
+	name="Audaxian"
+	culture="cenabian"
+}
+5366012=
+{
+	name="Carosus"
+	culture="cenabian"
+}
+5366013=
+{
+	name="Carosa"
+	culture="cenabian"
+}
+5366014=
+{
+	name="Carosii"
+	culture="cenabian"
+}
+5366015=
+{
+	name="Carosian"
+	culture="cenabian"
+}
+5366016=
+{
+	name="Culchus"
+	culture="cenabian"
+}
+5366017=
+{
+	name="Culcha"
+	culture="cenabian"
+}
+5366018=
+{
+	name="Culchi"
+	culture="cenabian"
+}
+5366019=
+{
+	name="Culchian"
+	culture="cenabian"
+}
+5366020=
+{
+	name="Leukus"
+	culture="cenabian"
+}
+5366021=
+{
+	name="Leuka"
+	culture="cenabian"
+}
+5366022=
+{
+	name="Leuki"
+	culture="cenabian"
+}
+5366023=
+{
+	name="Leukian"
+	culture="cenabian"
+}
+5366024=
+{
+	name="Mandonus"
+	culture="cenabian"
+}
+5366025=
+{
+	name="Mandonia"
+	culture="cenabian"
+}
+5366026=
+{
+	name="Mandonii"
+	culture="cenabian"
+}
+5366027=
+{
+	name="Mandonian"
+	culture="cenabian"
+}
+5366028=
+{
+	name="Punicus"
+	culture="cenabian"
+}
+5366029=
+{
+	name="Punica"
+	culture="cenabian"
+}
+5366030=
+{
+	name="Punici"
+	culture="cenabian"
+}
+5366031=
+{
+	name="Punician"
+	culture="cenabian"
+}
+5366032=
+{
+	name="Tautalus"
+	culture="cenabian"
+}
+5366033=
+{
+	name="Tautala"
+	culture="cenabian"
+}
+5366034=
+{
+	name="Tautalii"
+	culture="cenabian"
+}
+5366035=
+{
+	name="Tautalid"
+	culture="cenabian"
+}
+5366036=
+{
+	name="Correius"
+	culture="cenabian"
+}
+5366037=
+{
+	name="Correia"
+	culture="cenabian"
+}
+5366038=
+{
+	name="Correid"
+	culture="cenabian"
+}
+5366039=
+{
+	name="Correian"
+	culture="cenabian"
+}
+5366040=
+{
+	name="Divicus"
+	culture="cenabian"
+}
+5366041=
+{
+	name="Divica"
+	culture="cenabian"
+}
+5366042=
+{
+	name="Divici"
+	culture="cenabian"
+}
+5366043=
+{
+	name="Divicid"
+	culture="cenabian"
+}
+5366044=
+{
+	name="Duratus"
+	culture="cenabian"
+}
+5366045=
+{
+	name="Durata"
+	culture="cenabian"
+}
+5366046=
+{
+	name="Duratii"
+	culture="cenabian"
+}
+5366047=
+{
+	name="Duratian"
+	culture="cenabian"
+}
+5366048=
+{
+	name="Elitovus"
+	culture="cenabian"
+}
+5366049=
+{
+	name="Elitova"
+	culture="cenabian"
+}
+5366050=
+{
+	name="Elitovii"
+	culture="cenabian"
+}
+5366051=
+{
+	name="Elitovian"
+	culture="cenabian"
+}
+5366052=
+{
+	name="Galbus"
+	culture="cenabian"
+}
+5366053=
+{
+	name="Galba"
+	culture="cenabian"
+}
+5366054=
+{
+	name="Galbi"
+	culture="cenabian"
+}
+5366055=
+{
+	name="Galbid"
+	culture="cenabian"
+}
+5366056=
+{
+	name="Iacus"
+	culture="cenabian"
+}
+5366057=
+{
+	name="Iaca"
+	culture="cenabian"
+}
+5366058=
+{
+	name="Iaci"
+	culture="cenabian"
+}
+5366059=
+{
+	name="Iacid"
+	culture="cenabian"
+}
+5366060=
+{
+	name="Marganus"
+	culture="cenabian"
+}
+5366061=
+{
+	name="Margana"
+	culture="cenabian"
+}
+5366062=
+{
+	name="Marganii"
+	culture="cenabian"
+}
+5366063=
+{
+	name="Marganid"
+	culture="cenabian"
+}
+5366064=
+{
+	name="Sinatus"
+	culture="cenabian"
+}
+5366065=
+{
+	name="Sinata"
+	culture="cenabian"
+}
+5366066=
+{
+	name="Sinatii"
+	culture="cenabian"
+}
+5366067=
+{
+	name="Sinatid"
+	culture="cenabian"
+}
+5366068=
+{
+	name="Vodenosus"
+	culture="cenabian"
+}
+5366069=
+{
+	name="Vodenosa"
+	culture="cenabian"
+}
+5366070=
+{
+	name="Vodenosii"
+	culture="cenabian"
+}
+5366071=
+{
+	name="Vodenosian"
+	culture="cenabian"
+}
+5366072=
+{
+	name="Indutius"
+	culture="cenabian"
+}
+5366073=
+{
+	name="Indutia"
+	culture="cenabian"
+}
+5366074=
+{
+	name="Indutii"
+	culture="cenabian"
+}
+5366075=
+{
+	name="Indutian"
+	culture="cenabian"
+}
+5366076=
+{
+	name="Dumnus"
+	culture="cenabian"
+}
+5366077=
+{
+	name="Dumna"
+	culture="cenabian"
+}
+5366078=
+{
+	name="Dumnii"
+	culture="cenabian"
+}
+5366079=
+{
+	name="Dumnid"
+	culture="cenabian"
+}
+5366080=
+{
+	name="Epatticus"
+	culture="cenabian"
+}
+5366081=
+{
+	name="Epattica"
+	culture="cenabian"
+}
+5366082=
+{
+	name="Epatticii"
+	culture="cenabian"
+}
+5366083=
+{
+	name="Epatticid"
+	culture="cenabian"
+}
+5366084=
+{
+	name="Teutomalus"
+	culture="cenabian"
+}
+5366085=
+{
+	name="Teutomala"
+	culture="cenabian"
+}
+5366086=
+{
+	name="Teutomalii"
+	culture="cenabian"
+}
+5366087=
+{
+	name="Teutomalian"
+	culture="cenabian"
+}
+5366088=
+{
+	name="Viridorrius"
+	culture="cenabian"
+}
+5366089=
+{
+	name="Viridorria"
+	culture="cenabian"
+}
+5366090=
+{
+	name="Viridorrii"
+	culture="cenabian"
+}
+5366091=
+{
+	name="Viridorrian"
+	culture="cenabian"
+}
+5366092=
+{
+	name="Magunnus"
+	culture="cenabian"
+}
+5366093=
+{
+	name="Magunna"
+	culture="cenabian"
+}
+5366094=
+{
+	name="Magunnii"
+	culture="cenabian"
+}
+5366095=
+{
+	name="Magunnid"
+	culture="cenabian"
+}
+5366096=
+{
+	name="Brennus"
+	culture="cenabian"
+}
+5366097=
+{
+	name="Brenna"
+	culture="cenabian"
+}
+5366098=
+{
+	name="Brennii"
+	culture="cenabian"
+}
+5366099=
+{
+	name="Brennid"
+	culture="cenabian"
+}
+5366100=
+{
+	name="Boius"
+	culture="cenabian"
+}
+5366101=
+{
+	name="Boia"
+	culture="cenabian"
+}
+5366102=
+{
+	name="Boii"
+	culture="cenabian"
+}
+5366103=
+{
+	name="Boian"
+	culture="cenabian"
+}
+5366104=
+{
+	name="Tannus"
+	culture="cenabian"
+}
+5366105=
+{
+	name="Tanna"
+	culture="cenabian"
+}
+5366106=
+{
+	name="Tanni"
+	culture="cenabian"
+}
+5366107=
+{
+	name="Tannid"
+	culture="cenabian"
+}
+5366108=
+{
+	name="Iccuius"
+	culture="cenabian"
+}
+5366109=
+{
+	name="Iccuia"
+	culture="cenabian"
+}
+5366110=
+{
+	name="Iccui"
+	culture="cenabian"
+}
+5366111=
+{
+	name="Iccian"
+	culture="cenabian"
+}
+5366112=
+{
+	name="Galanus"
+	culture="cenabian"
+}
+5366113=
+{
+	name="Galana"
+	culture="cenabian"
+}
+5366114=
+{
+	name="Galanii"
+	culture="cenabian"
+}
+5366115=
+{
+	name="Galanid"
+	culture="cenabian"
+}

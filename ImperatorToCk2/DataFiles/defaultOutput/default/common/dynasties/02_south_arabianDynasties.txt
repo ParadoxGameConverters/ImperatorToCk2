@@ -1,0 +1,159 @@
+5361008=
+{
+	name="Ahmadid"
+	culture="south_arabian"
+}
+5361009=
+{
+	name="Umarid"
+	culture="south_arabian"
+	#religion="catholic"
+}
+5361010=
+{
+	name="Nasrid"
+	culture="south_arabian"
+	#religion="catholic"
+}
+5361011=
+{
+	name="Isavid"
+	culture="south_arabian"
+	#religion="catholic"
+}
+5361012=
+{
+	name="Khamisis"
+	culture="south_arabian"
+	#religion="catholic"
+}
+5361013=
+{
+	name="Dinnid"
+	culture="south_arabian"
+	#religion="catholic"
+}
+5361014 = {
+   name="Qutalmish"
+   culture="south_arabian"
+   #religion="catholic"
+}
+5361015 = {
+   name="Qadir"
+   culture="south_arabian"
+   #religion="catholic"
+}
+
+5361016 = {
+   name="Toghan"
+   culture="south_arabian"
+   #religion="catholic"
+}
+
+5361017 ={
+   name="Uyunid"
+   culture="south_arabian"
+   #religion="catholic"
+}
+5361018 ={
+   name="Dulafid"
+   culture="south_arabian"
+   #religion="catholic"
+}
+5361019 ={
+   name="Ukhaidhirid"
+   culture="south_arabian"
+   #religion="catholic"
+}
+5361020 ={
+   name="Hashimid"
+   culture="south_arabian"
+   #religion="catholic"
+}
+5361021 ={
+   name="Hamdan"
+   culture="south_arabian"
+   #religion="catholic"
+}
+5361022 ={
+   name="Tatikid"
+   culture="south_arabian"
+   #religion="catholic"
+}
+5361023 = {
+	name = "Halwasid"
+	culture = south_arabian
+}
+5361024 = {
+	name = "Razinid"
+	culture = south_arabian
+}
+#
+5361025 = {
+	name = "Numayrid"
+	culture = south_arabian
+}
+5361026 = {
+	name = "Kaabid"
+	culture = south_arabian
+}
+5361027 = {
+	name = "Jabrid"
+	culture = south_arabian
+}
+5361028 = {
+	name = "Tanukh"
+	culture = south_arabian
+}
+5361029 = {
+	name = "Yarawh"
+	culture = south_arabian
+}
+5361030 = {
+	name = "A'idid"
+	culture = south_arabian
+}
+5361031 = {
+	name = "Sajrid"
+	culture = south_arabian
+}
+5361032 = {
+	name = "Nayihid"
+	culture = south_arabian
+}
+5361033 = {
+	name = "Chrusarkha"
+	culture = south_arabian
+}
+5361034 = {
+	name = "Diskarkha"
+	culture = south_arabian
+}
+5361035 = {
+	name="Yahballaha"
+	culture="south_arabian"
+}
+5361036 = {
+	name="Makhzumi"
+	culture="south_arabian"
+}
+5361037 = {
+	name="Nadirid"
+	culture="south_arabian"
+}
+5361038 = {
+	name="Suleymanid"
+	culture="south_arabian"
+}
+5361039 = {
+	name="Arabid"
+	culture="south_arabian"
+}
+5361040 = {
+	name="Ruaynid"
+	culture="south_arabian"
+}
+5361041 = {
+	name="Banu Tamim"
+	culture="south_arabian"
+}

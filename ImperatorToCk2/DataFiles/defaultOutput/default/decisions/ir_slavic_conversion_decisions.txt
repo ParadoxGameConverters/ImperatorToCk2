@@ -1,0 +1,1877 @@
+targetted_decisions = {
+
+
+	# Old Slavic character may convert to Carantanian
+	irck2_convert_to_carantanian = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = protoslavic
+			capital_scope = {
+				region = custom_irck2_italy_slavic
+			}
+			any_realm_province = {
+				culture = carantanian
+			}
+			OR = {
+				year = 675
+				top_liege = {
+					NOT = { culture = protoslavic }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = protoslavic
+			capital_scope = {
+				region = custom_irck2_italy_slavic
+			}
+			any_realm_province = {
+				culture = carantanian
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = carantanian
+			}
+			culture = carantanian
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Old Slavic ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = protoslavic
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = protoslavic }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = carantanian }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = carantanian }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = carantanian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = carantanian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = carantanian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = carantanian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = carantanian
+				}
+			}
+		}
+	}
+
+
+	# Old Slavic character may convert to Bulgarian
+	irck2_convert_to_bulgarian = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = protoslavic
+			capital_scope = {
+				region = custom_irck2_bulgaria
+			}
+			any_realm_province = {
+				culture = bulgarian
+			}
+			OR = {
+				year = 675
+				top_liege = {
+					NOT = { culture = protoslavic }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = protoslavic
+			capital_scope = {
+				region = custom_irck2_bulgaria
+			}
+			any_realm_province = {
+				culture = bulgarian
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = bulgarian
+			}
+			culture = bulgarian
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Old Slavic ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = protoslavic
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = protoslavic }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = bulgarian }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = bulgarian }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = bulgarian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = bulgarian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = bulgarian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = bulgarian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = bulgarian
+				}
+			}
+		}
+	}
+
+
+	# Old Slavic character may convert to vinolan
+	irck2_convert_to_vinolan = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = protoslavic
+			capital_scope = {
+				OR = {
+					region = custom_irck2_france
+					region = custom_irck2_occitania
+				}
+			}
+			any_realm_province = {
+				culture = vinolan
+			}
+			OR = {
+				year = 675
+				top_liege = {
+					NOT = { culture = protoslavic }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = protoslavic
+			capital_scope = {
+				OR = {
+					region = custom_irck2_france
+					region = custom_irck2_occitania
+				}
+			}
+			any_realm_province = {
+				culture = vinolan
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = vinolan
+			}
+			culture = vinolan
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Old Slavic ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = protoslavic
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = protoslavic }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = vinolan }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = vinolan }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = vinolan
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = vinolan
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = vinolan
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = vinolan
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = vinolan
+				}
+			}
+		}
+	}
+
+	# Old Slavic character may convert to serbian
+	irck2_convert_to_serbian = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = protoslavic
+			capital_scope = {
+				region = custom_irck2_serbia
+			}
+			any_realm_province = {
+				culture = serbian
+			}
+			OR = {
+				year = 675
+				top_liege = {
+					NOT = { culture = protoslavic }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = protoslavic
+			capital_scope = {
+				region = custom_irck2_serbia
+			}
+			any_realm_province = {
+				culture = serbian
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = serbian
+			}
+			culture = serbian
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Old Slavic ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = protoslavic
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = protoslavic }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = serbian }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = serbian }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = serbian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = serbian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = serbian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = serbian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = serbian
+				}
+			}
+		}
+	}
+
+	# Old Slavic character may convert to bosnian
+	irck2_convert_to_bosnian = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = protoslavic
+			capital_scope = {
+				region = custom_irck2_bosnia
+			}
+			any_realm_province = {
+				culture = bosnian
+			}
+			OR = {
+				year = 675
+				top_liege = {
+					NOT = { culture = protoslavic }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = protoslavic
+			capital_scope = {
+				region = custom_irck2_bosnia
+			}
+			any_realm_province = {
+				culture = bosnian
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = bosnian
+			}
+			culture = bosnian
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Old Slavic ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = protoslavic
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = protoslavic }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = bosnian }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = bosnian }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = bosnian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = bosnian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = bosnian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = bosnian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = bosnian
+				}
+			}
+		}
+	}
+
+	# Old Slavic character may convert to croatian
+	irck2_convert_to_croatian = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = protoslavic
+			capital_scope = {
+				region = custom_irck2_croatia
+			}
+			any_realm_province = {
+				culture = croatian
+			}
+			OR = {
+				year = 675
+				top_liege = {
+					NOT = { culture = protoslavic }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = protoslavic
+			capital_scope = {
+				region = custom_irck2_croatia
+			}
+			any_realm_province = {
+				culture = croatian
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = croatian
+			}
+			culture = croatian
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Old Slavic ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = protoslavic
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = protoslavic }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = croatian }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = croatian }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = croatian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = croatian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = croatian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = croatian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = croatian
+				}
+			}
+		}
+	}
+
+	# Old Slavic character may convert to olovian
+	irck2_convert_to_olovian = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = protoslavic
+			capital_scope = {
+				region = custom_irck2_britannia
+			}
+			any_realm_province = {
+				culture = olovian
+			}
+			OR = {
+				year = 675
+				top_liege = {
+					NOT = { culture = protoslavic }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = protoslavic
+			capital_scope = {
+				region = custom_irck2_britannia
+			}
+			any_realm_province = {
+				culture = olovian
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = olovian
+			}
+			culture = olovian
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Old Slavic ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = protoslavic
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = protoslavic }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = olovian }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = olovian }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = olovian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = olovian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = olovian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = olovian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = olovian
+				}
+			}
+		}
+	}
+
+	# Old Slavic character may convert to slovieni
+	irck2_convert_to_slovieni = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = protoslavic
+			capital_scope = {
+				region = custom_irck2_slovakia
+			}
+			any_realm_province = {
+				culture = slovieni
+			}
+			OR = {
+				year = 675
+				top_liege = {
+					NOT = { culture = protoslavic }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = protoslavic
+			capital_scope = {
+				region = custom_irck2_slovakia
+			}
+			any_realm_province = {
+				culture = slovieni
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = slovieni
+			}
+			culture = slovieni
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Old Slavic ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = protoslavic
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = protoslavic }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = slovieni }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = slovieni }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = slovieni
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = slovieni
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = slovieni
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = slovieni
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = slovieni
+				}
+			}
+		}
+	}
+	
+	# Old Slavic character may convert to pommeranian
+	irck2_convert_to_pommeranian = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = protoslavic
+			capital_scope = {
+				region = custom_irck2_sorbia
+			}
+			any_realm_province = {
+				culture = pommeranian
+			}
+			OR = {
+				year = 675
+				top_liege = {
+					NOT = { culture = protoslavic }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = protoslavic
+			capital_scope = {
+				region = custom_irck2_sorbia
+			}
+			any_realm_province = {
+				culture = pommeranian
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = pommeranian
+			}
+			culture = pommeranian
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Old Slavic ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = protoslavic
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = protoslavic }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = pommeranian }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = pommeranian }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = pommeranian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = pommeranian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = pommeranian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = pommeranian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = pommeranian
+				}
+			}
+		}
+	}
+	
+# Old Slavic character may convert to polish
+	irck2_convert_to_polish = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = protoslavic
+			capital_scope = {
+				region = custom_irck2_poland_slavic
+			}
+			any_realm_province = {
+				culture = polish
+			}
+			OR = {
+				year = 675
+				top_liege = {
+					NOT = { culture = protoslavic }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = protoslavic
+			capital_scope = {
+				region = custom_irck2_poland_slavic
+			}
+			any_realm_province = {
+				culture = polish
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = polish
+			}
+			culture = polish
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Old Slavic ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = protoslavic
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = protoslavic }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = polish }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = polish }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = polish
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = polish
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = polish
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = polish
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = polish
+				}
+			}
+		}
+	}
+
+	# Old Slavic character may convert to berzanian
+	irck2_convert_to_berzanian = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = protoslavic
+			capital_scope = {
+				region = custom_irck2_levant
+			}
+			any_realm_province = {
+				culture = berzanian
+			}
+			OR = {
+				year = 675
+				top_liege = {
+					NOT = { culture = protoslavic }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = protoslavic
+			capital_scope = {
+				region = custom_irck2_levant
+			}
+			any_realm_province = {
+				culture = berzanian
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = berzanian
+			}
+			culture = berzanian
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Old Slavic ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = protoslavic
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = protoslavic }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = berzanian }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = berzanian }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = berzanian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = berzanian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = berzanian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = berzanian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = berzanian
+				}
+			}
+		}
+	}
+
+	# Old Slavic character may convert to bohemian
+	irck2_convert_to_bohemian = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = protoslavic
+			capital_scope = {
+				region = custom_irck2_bohemia
+			}
+			any_realm_province = {
+				culture = bohemian
+			}
+			OR = {
+				year = 675
+				top_liege = {
+					NOT = { culture = protoslavic }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = protoslavic
+			capital_scope = {
+				region = custom_irck2_bohemia
+			}
+			any_realm_province = {
+				culture = bohemian
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = bohemian
+			}
+			culture = bohemian
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Old Slavic ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = protoslavic
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = protoslavic }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = bohemian }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = bohemian }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = bohemian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = bohemian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = bohemian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = bohemian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = bohemian
+				}
+			}
+		}
+	}
+
+	# Old Slavic character may convert to vapian
+	irck2_convert_to_vapian = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = protoslavic
+			capital_scope = {
+				region = custom_irck2_anatolia_and_georgia
+			}
+			any_realm_province = {
+				culture = vapian
+			}
+			OR = {
+				year = 675
+				top_liege = {
+					NOT = { culture = protoslavic }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = protoslavic
+			capital_scope = {
+				region = custom_irck2_anatolia_and_georgia
+			}
+			any_realm_province = {
+				culture = vapian
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = vapian
+			}
+			culture = vapian
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Old Slavic ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = protoslavic
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = protoslavic }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = vapian }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = vapian }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = vapian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = vapian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = vapian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = vapian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = vapian
+				}
+			}
+		}
+	}
+
+	# Old Slavic character may convert to russian
+	irck2_convert_to_russian = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = protoslavic
+			capital_scope = {
+				region = custom_irck2_rus
+			}
+			any_realm_province = {
+				culture = russian
+			}
+			OR = {
+				year = 675
+				top_liege = {
+					NOT = { culture = protoslavic }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = protoslavic
+			capital_scope = {
+				region = custom_irck2_rus
+			}
+			any_realm_province = {
+				culture = russian
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = russian
+			}
+			culture = russian
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Old Slavic ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = protoslavic
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = protoslavic }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = russian }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = russian }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = russian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = russian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = russian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = russian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = russian
+				}
+			}
+		}
+	}
+
+	# Old Slavic character may convert to strombian
+	irck2_convert_to_strombian = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = protoslavic
+			capital_scope = {
+				region = custom_irck2_norse_scandinavia
+			}
+			any_realm_province = {
+				culture = strombian
+			}
+			OR = {
+				year = 675
+				top_liege = {
+					NOT = { culture = protoslavic }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = protoslavic
+			capital_scope = {
+				region = custom_irck2_norse_scandinavia
+			}
+			any_realm_province = {
+				culture = strombian
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = strombian
+			}
+			culture = strombian
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Old Slavic ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = protoslavic
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = protoslavic }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = strombian }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = strombian }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = strombian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = strombian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = strombian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = strombian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = strombian
+				}
+			}
+		}
+	}
+
+
+#####################################################################
+#End Bracket
+#####################################################################
+
+}

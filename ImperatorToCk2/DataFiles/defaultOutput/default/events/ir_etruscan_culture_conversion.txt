@@ -1,0 +1,538 @@
+###################################
+#
+# Imperator:Rome to Crusader Kings II
+# - Etruscan Culture Conversion Events
+#
+###################################
+
+namespace = IR_ETR
+
+province_event = {
+	id = IR_ETR.2001
+	desc = EVTDESC_IR_ETR_2001
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = etruscan
+		OR = {
+			region = custom_irck2_dalmatia
+			region = custom_irck2_etruscania
+		}
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = etruscan
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_ETR_2001
+		culture = lanistian
+	}
+}
+
+province_event = {
+	id = IR_ETR.2003
+	desc = EVTDESC_IR_ETR_2003
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = etruscan
+		OR = {
+			region = custom_irck2_france
+			region = custom_irck2_occitania
+		}
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = etruscan
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_ETR_2003
+		culture = qutumi
+	}
+}
+
+province_event = {
+	id = IR_ETR.2005
+	desc = EVTDESC_IR_ETR_2005
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = etruscan
+		OR = {
+			region = custom_irck2_catalonia
+			region = custom_irck2_spain
+			region = custom_irck2_portugal
+		}
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = etruscan
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_ETR_2005
+		culture = tulari
+	}
+}
+
+province_event = {
+	id = IR_ETR.2008
+	desc = EVTDESC_IR_ETR_2008
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = etruscan
+		region = custom_irck2_sardinia
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = etruscan
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_ETR_2008
+		culture = rasnan
+	}
+}
+
+province_event = {
+	id = IR_ETR.2009
+	desc = EVTDESC_IR_ETR_2009
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = etruscan
+		region = custom_irck2_greece
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = etruscan
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_ETR_2009
+		culture = lemnian
+	}
+}
+
+province_event = {
+	id = IR_ETR.2010
+	desc = EVTDESC_IR_ETR_2010
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = etruscan
+		region = custom_irck2_britannia
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = etruscan
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_ETR_2010
+		culture = nerian
+	}
+}
+
+province_event = {
+	id = IR_ETR.2011
+	desc = EVTDESC_IR_ETR_2011
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = etruscan
+		region = custom_irck2_north_africa
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = etruscan
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_ETR_2011
+		culture = karthazian
+	}
+}
+
+province_event = {
+	id = IR_ETR.2012
+	desc = EVTDESC_IR_ETR_2012
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = etruscan
+		region = custom_irck2_levant
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = etruscan
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_ETR_2012
+		culture = fasenian
+	}
+}
+
+province_event = {
+	id = IR_ETR.2013
+	desc = EVTDESC_IR_ETR_2013
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = etruscan
+		OR = {
+			region = custom_irck2_germania
+			region = world_europe_north
+		}
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = etruscan
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_ETR_2013
+		culture = falan
+	}
+}
+
+province_event = {
+	id = IR_ETR.2014
+	desc = EVTDESC_IR_ETR_2014
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = etruscan
+		region = custom_irck2_poland
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = etruscan
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_ETR_2014
+		culture = sazlei
+	}
+}
+
+province_event = {
+	id = IR_ETR.2015
+	desc = EVTDESC_IR_ETR_2015
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		culture = etruscan
+		region = custom_irck2_egypt
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = etruscan
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_ETR_2015
+		culture = mutnian
+	}
+}

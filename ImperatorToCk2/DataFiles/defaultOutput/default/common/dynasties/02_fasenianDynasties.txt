@@ -1,0 +1,560 @@
+5374000=
+{
+	name="Uclina"
+	culture="fasenian"
+}
+5374001=
+{
+	name="Ucli"
+	culture="fasenian"
+}
+5374002=
+{
+	name="Acnatru"
+	culture="fasenian"
+}
+5374003=
+{
+	name="Acvilnas"
+	culture="fasenian"
+}
+5374004=
+{
+	name="Afunei"
+	culture="fasenian"
+}
+5374005=
+{
+	name="Aisina"
+	culture="fasenian"
+}
+5374006=
+{
+	name="Alethnei"
+	culture="fasenian"
+}
+5374007=
+{
+	name="Alfi"
+	culture="fasenian"
+}
+5374008=
+{
+	name="Amuni"
+	culture="fasenian"
+}
+5374009=
+{
+	name="Anani"
+	culture="fasenian"
+}
+5374010=
+{
+	name="Anes"
+	culture="fasenian"
+}
+5374011=
+{
+	name="Alethnas"
+	culture="fasenian"
+}
+5374012=
+{
+	name="Apatru"
+	culture="fasenian"
+}
+5374013=
+{
+	name="Cafati"
+	culture="fasenian"
+}
+5374014=
+{
+	name="Ceie"
+	culture="fasenian"
+}
+5374015=
+{
+	name="Calitahi"
+	culture="fasenian"
+}
+5374016=
+{
+	name="Camitlnas"
+	culture="fasenian"
+}
+5374017=
+{
+	name="Campanian"
+	culture="fasenian"
+}
+5374018=
+{
+	name="Canatnei"
+	culture="fasenian"
+}
+5374019=
+{
+	name="Cheiras"
+	culture="fasenian"
+}
+5374020=
+{
+	name="Churinian"
+	culture="fasenian"
+}
+5374021=
+{
+	name="Cicunias"
+	culture="fasenian"
+}
+5374022=
+{
+	name="Creicesian"
+	culture="fasenian"
+}
+5374023=
+{
+	name="Ecnati"
+	culture="fasenian"
+}
+5374024=
+{
+	name="Einanian"
+	culture="fasenian"
+}
+5374025=
+{
+	name="Eucli"
+	culture="fasenian"
+}
+5374026=
+{
+	name="Ezpus"
+	culture="fasenian"
+}
+5374027=
+{
+	name="Ezpusian"
+	culture="fasenian"
+}
+5374028=
+{
+	name="Fapi"
+	culture="fasenian"
+}
+5374029=
+{
+	name="Fapian"
+	culture="fasenian"
+}
+5374030=
+{
+	name="Felces"
+	culture="fasenian"
+}
+5374031=
+{
+	name="Feluscian"
+	culture="fasenian"
+}
+5374032=
+{
+	name="Felusci"
+	culture="fasenian"
+}
+5374033=
+{
+	name="Fulvena"
+	culture="fasenian"
+}
+5374034=
+{
+	name="Hanu"
+	culture="fasenian"
+}
+5374035=
+{
+	name="Hapisna"
+	culture="fasenian"
+}
+5374036=
+{
+	name="Hapri"
+	culture="fasenian"
+}
+5374037=
+{
+	name="Hapre"
+	culture="fasenian"
+}
+5374038=
+{
+	name="Havrinian"
+	culture="fasenian"
+}
+5374039=
+{
+	name="Lapicani"
+	culture="fasenian"
+}
+5374040=
+{
+	name="Divicus"
+	culture="fasenian"
+}
+5374041=
+{
+	name="Larani"
+	culture="fasenian"
+}
+5374042=
+{
+	name="Larecena"
+	culture="fasenian"
+}
+5374043=
+{
+	name="Lucina"
+	culture="fasenian"
+}
+5374044=
+{
+	name="Lucinei"
+	culture="fasenian"
+}
+5374045=
+{
+	name="Lucinian"
+	culture="fasenian"
+}
+5374046=
+{
+	name="Lartli"
+	culture="fasenian"
+}
+5374047=
+{
+	name="Latnian"
+	culture="fasenian"
+}
+5374048=
+{
+	name="Marcnei"
+	culture="fasenian"
+}
+5374049=
+{
+	name="Malamena"
+	culture="fasenian"
+}
+5374050=
+{
+	name="Marcnithur"
+	culture="fasenian"
+}
+5374051=
+{
+	name="Mutunid"
+	culture="fasenian"
+}
+5374052=
+{
+	name="Nerinei"
+	culture="fasenian"
+}
+5374053=
+{
+	name="Ninie"
+	culture="fasenian"
+}
+5374054=
+{
+	name="Nuiclnas"
+	culture="fasenian"
+}
+5374055=
+{
+	name="Nufre"
+	culture="fasenian"
+}
+5374056=
+{
+	name="Pachie"
+	culture="fasenian"
+}
+5374057=
+{
+	name="Peithunas"
+	culture="fasenian"
+}
+5374058=
+{
+	name="Palazus"
+	culture="fasenian"
+}
+5374059=
+{
+	name="Palazusian"
+	culture="fasenian"
+}
+5374060=
+{
+	name="Papni"
+	culture="fasenian"
+}
+5374061=
+{
+	name="Phersnalei"
+	culture="fasenian"
+}
+5374062=
+{
+	name="Pinies"
+	culture="fasenian"
+}
+5374063=
+{
+	name="Platia"
+	culture="fasenian"
+}
+5374064=
+{
+	name="Plutian"
+	culture="fasenian"
+}
+5374065=
+{
+	name="Precuthur"
+	culture="fasenian"
+}
+5374066=
+{
+	name="Puinci"
+	culture="fasenian"
+}
+5374067=
+{
+	name="Purzena"
+	culture="fasenian"
+}
+5374068=
+{
+	name="Pustmina"
+	culture="fasenian"
+}
+5374069=
+{
+	name="Rufi"
+	culture="fasenian"
+}
+5374070=
+{
+	name="Ranazu"
+	culture="fasenian"
+}
+5374071=
+{
+	name="Salini"
+	culture="fasenian"
+}
+5374072=
+{
+	name="Scevei"
+	culture="fasenian"
+}
+5374073=
+{
+	name="Scurfiu"
+	culture="fasenian"
+}
+5374074=
+{
+	name="Sepu"
+	culture="fasenian"
+}
+5374075=
+{
+	name="Sethre"
+	culture="fasenian"
+}
+5374076=
+{
+	name="Silgatana"
+	culture="fasenian"
+}
+5374077=
+{
+	name="Sinu"
+	culture="fasenian"
+}
+5374078=
+{
+	name="Slanzu"
+	culture="fasenian"
+}
+5374079=
+{
+	name="Spantu"
+	culture="fasenian"
+}
+5374080=
+{
+	name="Spite"
+	culture="fasenian"
+}
+5374081=
+{
+	name="Spurinas"
+	culture="fasenian"
+}
+5374082=
+{
+	name="Srutzna"
+	culture="fasenian"
+}
+5374083=
+{
+	name="Statlanian"
+	culture="fasenian"
+}
+5374084=
+{
+	name="Tarchunies"
+	culture="fasenian"
+}
+5374085=
+{
+	name="Tarcnid"
+	culture="fasenian"
+}
+5374086=
+{
+	name="Teithurna"
+	culture="fasenian"
+}
+5374087=
+{
+	name="Teitur"
+	culture="fasenian"
+}
+5374088=
+{
+	name="Tetnies"
+	culture="fasenian"
+}
+5374089=
+{
+	name="Thusatur"
+	culture="fasenian"
+}
+5374090=
+{
+	name="Trepe"
+	culture="fasenian"
+}
+5374091=
+{
+	name="Tutna"
+	culture="fasenian"
+}
+5374092=
+{
+	name="Tutes"
+	culture="fasenian"
+}
+5374093=
+{
+	name="Ucrini"
+	culture="fasenian"
+}
+5374094=
+{
+	name="Ucrinian"
+	culture="fasenian"
+}
+5374095=
+{
+	name="Uftave"
+	culture="fasenian"
+}
+5374096=
+{
+	name="Ultimnid"
+	culture="fasenian"
+}
+5374097=
+{
+	name="Ulzna"
+	culture="fasenian"
+}
+5374098=
+{
+	name="Vania"
+	culture="fasenian"
+}
+5374099=
+{
+	name="Velarian"
+	culture="fasenian"
+}
+5374100=
+{
+	name="Velcii"
+	culture="fasenian"
+}
+5374101=
+{
+	name="Velcian"
+	culture="fasenian"
+}
+5374102=
+{
+	name="Vlesi"
+	culture="fasenian"
+}
+5374103=
+{
+	name="Velia"
+	culture="fasenian"
+}
+5374104=
+{
+	name="Velethnei"
+	culture="fasenian"
+}
+5374105=
+{
+	name="Velthinathur"
+	culture="fasenian"
+}
+5374106=
+{
+	name="Venetian"
+	culture="fasenian"
+}
+5374107=
+{
+	name="Vete"
+	culture="fasenian"
+}
+5374108=
+{
+	name="Zalthu"
+	culture="fasenian"
+}
+5374109=
+{
+	name="Zane"
+	culture="fasenian"
+}
+5374110=
+{
+	name="Zertnei"
+	culture="fasenian"
+}
+5374111=
+{
+	name="Zili"
+	culture="fasenian"
+}

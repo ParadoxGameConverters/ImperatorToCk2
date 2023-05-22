@@ -1,0 +1,565 @@
+5367000=
+{
+	name="Uclina"
+	culture="lemnian"
+}
+5367001=
+{
+	name="Ucli"
+	culture="lemnian"
+}
+5367002=
+{
+	name="Acnatru"
+	culture="lemnian"
+}
+5367003=
+{
+	name="Acvilnas"
+	culture="lemnian"
+}
+5367004=
+{
+	name="Afunei"
+	culture="lemnian"
+}
+5367005=
+{
+	name="Aisina"
+	culture="lemnian"
+}
+5367006=
+{
+	name="Alethnei"
+	culture="lemnian"
+}
+5367007=
+{
+	name="Alfi"
+	culture="lemnian"
+}
+5367008=
+{
+	name="Amuni"
+	culture="lemnian"
+}
+5367009=
+{
+	name="Anani"
+	culture="lemnian"
+}
+5367010=
+{
+	name="Anes"
+	culture="lemnian"
+}
+5367011=
+{
+	name="Alethnas"
+	culture="lemnian"
+}
+5367012=
+{
+	name="Apatru"
+	culture="lemnian"
+}
+5367013=
+{
+	name="Cafati"
+	culture="lemnian"
+}
+5367014=
+{
+	name="Ceie"
+	culture="lemnian"
+}
+5367015=
+{
+	name="Calitahi"
+	culture="lemnian"
+}
+5367016=
+{
+	name="Camitlnas"
+	culture="lemnian"
+}
+5367017=
+{
+	name="Campanian"
+	culture="lemnian"
+}
+5367018=
+{
+	name="Canatnei"
+	culture="lemnian"
+}
+5367019=
+{
+	name="Cheiras"
+	culture="lemnian"
+}
+5367020=
+{
+	name="Churinian"
+	culture="lemnian"
+}
+5367021=
+{
+	name="Cicunias"
+	culture="lemnian"
+}
+5367022=
+{
+	name="Creicesian"
+	culture="lemnian"
+}
+5367023=
+{
+	name="Ecnati"
+	culture="lemnian"
+}
+5367024=
+{
+	name="Einanian"
+	culture="lemnian"
+}
+5367025=
+{
+	name="Eucli"
+	culture="lemnian"
+}
+5367026=
+{
+	name="Ezpus"
+	culture="lemnian"
+}
+5367027=
+{
+	name="Ezpusian"
+	culture="lemnian"
+}
+5367028=
+{
+	name="Fapi"
+	culture="lemnian"
+}
+5367029=
+{
+	name="Fapian"
+	culture="lemnian"
+}
+5367030=
+{
+	name="Felces"
+	culture="lemnian"
+}
+5367031=
+{
+	name="Feluscian"
+	culture="lemnian"
+}
+5367032=
+{
+	name="Felusci"
+	culture="lemnian"
+}
+5367033=
+{
+	name="Fulvena"
+	culture="lemnian"
+}
+5367034=
+{
+	name="Hanu"
+	culture="lemnian"
+}
+5367035=
+{
+	name="Hapisna"
+	culture="lemnian"
+}
+5367036=
+{
+	name="Hapri"
+	culture="lemnian"
+}
+5367037=
+{
+	name="Hapre"
+	culture="lemnian"
+}
+5367038=
+{
+	name="Havrinian"
+	culture="lemnian"
+}
+5367039=
+{
+	name="Lapicani"
+	culture="lemnian"
+}
+5367040=
+{
+	name="Divicus"
+	culture="lemnian"
+}
+5367041=
+{
+	name="Larani"
+	culture="lemnian"
+}
+5367042=
+{
+	name="Larecena"
+	culture="lemnian"
+}
+5367043=
+{
+	name="Lucina"
+	culture="lemnian"
+}
+5367044=
+{
+	name="Lucinei"
+	culture="lemnian"
+}
+5367045=
+{
+	name="Lucinian"
+	culture="lemnian"
+}
+5367046=
+{
+	name="Lartli"
+	culture="lemnian"
+}
+5367047=
+{
+	name="Latnian"
+	culture="lemnian"
+}
+5367048=
+{
+	name="Marcnei"
+	culture="lemnian"
+}
+5367049=
+{
+	name="Malamena"
+	culture="lemnian"
+}
+5367050=
+{
+	name="Marcnithur"
+	culture="lemnian"
+}
+5367051=
+{
+	name="Mutunid"
+	culture="lemnian"
+}
+5367052=
+{
+	name="Nerinei"
+	culture="lemnian"
+}
+5367053=
+{
+	name="Ninie"
+	culture="lemnian"
+}
+5367054=
+{
+	name="Nuiclnas"
+	culture="lemnian"
+}
+5367055=
+{
+	name="Nufre"
+	culture="lemnian"
+}
+5367056=
+{
+	name="Pachie"
+	culture="lemnian"
+}
+5367057=
+{
+	name="Peithunas"
+	culture="lemnian"
+}
+5367058=
+{
+	name="Palazus"
+	culture="lemnian"
+}
+5367059=
+{
+	name="Palazusian"
+	culture="lemnian"
+}
+5367060=
+{
+	name="Papni"
+	culture="lemnian"
+}
+5367061=
+{
+	name="Phersnalei"
+	culture="lemnian"
+}
+5367062=
+{
+	name="Pinies"
+	culture="lemnian"
+}
+5367063=
+{
+	name="Platia"
+	culture="lemnian"
+}
+5367064=
+{
+	name="Plutian"
+	culture="lemnian"
+}
+5367065=
+{
+	name="Precuthur"
+	culture="lemnian"
+}
+5367066=
+{
+	name="Puinci"
+	culture="lemnian"
+}
+5367067=
+{
+	name="Purzena"
+	culture="lemnian"
+}
+5367068=
+{
+	name="Pustmina"
+	culture="lemnian"
+}
+5367069=
+{
+	name="Rufi"
+	culture="lemnian"
+}
+5367070=
+{
+	name="Ranazu"
+	culture="lemnian"
+}
+5367071=
+{
+	name="Salini"
+	culture="lemnian"
+}
+5367072=
+{
+	name="Scevei"
+	culture="lemnian"
+}
+5367073=
+{
+	name="Scurfiu"
+	culture="lemnian"
+}
+5367074=
+{
+	name="Sepu"
+	culture="lemnian"
+}
+5367075=
+{
+	name="Sethre"
+	culture="lemnian"
+}
+5367076=
+{
+	name="Silgatana"
+	culture="lemnian"
+}
+5367077=
+{
+	name="Sinu"
+	culture="lemnian"
+}
+5367078=
+{
+	name="Slanzu"
+	culture="lemnian"
+}
+5367079=
+{
+	name="Spantu"
+	culture="lemnian"
+}
+5367080=
+{
+	name="Spite"
+	culture="lemnian"
+}
+5367081=
+{
+	name="Spurinas"
+	culture="lemnian"
+}
+5367082=
+{
+	name="Srutzna"
+	culture="lemnian"
+}
+5367083=
+{
+	name="Statlanian"
+	culture="lemnian"
+}
+5367084=
+{
+	name="Tarchunies"
+	culture="lemnian"
+}
+5367085=
+{
+	name="Tarcnid"
+	culture="lemnian"
+}
+5367086=
+{
+	name="Teithurna"
+	culture="lemnian"
+}
+5367087=
+{
+	name="Teitur"
+	culture="lemnian"
+}
+5367088=
+{
+	name="Tetnies"
+	culture="lemnian"
+}
+5367089=
+{
+	name="Thusatur"
+	culture="lemnian"
+}
+5367090=
+{
+	name="Trepe"
+	culture="lemnian"
+}
+5367091=
+{
+	name="Tutna"
+	culture="lemnian"
+}
+5367092=
+{
+	name="Tutes"
+	culture="lemnian"
+}
+5367093=
+{
+	name="Ucrini"
+	culture="lemnian"
+}
+5367094=
+{
+	name="Ucrinian"
+	culture="lemnian"
+}
+5367095=
+{
+	name="Uftave"
+	culture="lemnian"
+}
+5367096=
+{
+	name="Ultimnid"
+	culture="lemnian"
+}
+5367097=
+{
+	name="Ulzna"
+	culture="lemnian"
+}
+5367098=
+{
+	name="Vania"
+	culture="lemnian"
+}
+5367099=
+{
+	name="Velarian"
+	culture="lemnian"
+}
+5367100=
+{
+	name="Velcii"
+	culture="lemnian"
+}
+5367101=
+{
+	name="Velcian"
+	culture="lemnian"
+}
+5367102=
+{
+	name="Vlesi"
+	culture="lemnian"
+}
+5367103=
+{
+	name="Velia"
+	culture="lemnian"
+}
+5367104=
+{
+	name="Velethnei"
+	culture="lemnian"
+}
+5367105=
+{
+	name="Velthinathur"
+	culture="lemnian"
+}
+5367106=
+{
+	name="Venetian"
+	culture="lemnian"
+}
+5367107=
+{
+	name="Vete"
+	culture="lemnian"
+}
+5367108=
+{
+	name="Zalthu"
+	culture="lemnian"
+}
+5367109=
+{
+	name="Zane"
+	culture="lemnian"
+}
+5367110=
+{
+	name="Zertnei"
+	culture="lemnian"
+}
+5367111=
+{
+	name="Zili"
+	culture="lemnian"
+}
+5367112=
+{
+	name="Truials"
+	culture="lemnian"
+}

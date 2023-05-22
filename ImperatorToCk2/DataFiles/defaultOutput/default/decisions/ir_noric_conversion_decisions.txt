@@ -1,0 +1,518 @@
+targetted_decisions = {
+# - Noric Culture Conversion decisions by Diskianterezh
+
+	# Noric character may convert to Ghasettian
+	irck2_convert_to_ghasettian = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = celtic_pannonian
+			capital_scope = {
+				region = custom_irck2_noric_scythia
+			}
+			any_realm_province = {
+				culture = ghasettian
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = celtic_pannonian }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = celtic_pannonian
+			capital_scope = {
+				region = custom_irck2_noric_scythia
+			}
+			any_realm_province = {
+				culture = ghasettian
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = ghasettian
+			}
+			culture = ghasettian
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Greek ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = celtic_pannonian
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = celtic_pannonian }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = ghasettian }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = ghasettian }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = ghasettian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = ghasettian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = ghasettian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = ghasettian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = ghasettian
+				}
+			}
+		}
+	}
+
+
+	# Noric character may convert to betwani
+	irck2_convert_to_betwani = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = celtic_pannonian
+			capital_scope = {
+				region = custom_irck2_poland
+			}
+			any_realm_province = {
+				culture = betwani
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = celtic_pannonian }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = celtic_pannonian
+			capital_scope = {
+				region = custom_irck2_poland
+			}
+			any_realm_province = {
+				culture = betwani
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = betwani
+			}
+			culture = betwani
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Greek ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = celtic_pannonian
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = celtic_pannonian }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = betwani }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = betwani }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = betwani
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = betwani
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = betwani
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = betwani
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = betwani
+				}
+			}
+		}
+	}
+
+	# Noric character may convert to vinetan
+	irck2_convert_to_vinetan = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = celtic_pannonian
+			capital_scope = {
+				region = custom_irck2_norse_scandinavia
+			}
+			any_realm_province = {
+				culture = vinetan
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = celtic_pannonian }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = celtic_pannonian
+			capital_scope = {
+				region = custom_irck2_norse_scandinavia
+			}
+			any_realm_province = {
+				culture = vinetan
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = vinetan
+			}
+			culture = vinetan
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Greek ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = celtic_pannonian
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = celtic_pannonian }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = vinetan }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = vinetan }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = vinetan
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = vinetan
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = vinetan
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = vinetan
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = vinetan
+				}
+			}
+		}
+	}
+
+	# Noric character may convert to Cenabian
+	irck2_convert_to_cenabian = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = celtic_pannonian
+			capital_scope = {
+				OR = {
+					region = custom_irck2_france
+					region = custom_irck2_occitania
+				}
+			}
+			any_realm_province = {
+				culture = cenabian
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = celtic_pannonian }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = celtic_pannonian
+			capital_scope = {
+				OR = {
+					region = custom_irck2_france
+					region = custom_irck2_occitania
+				}
+			}
+			any_realm_province = {
+				culture = cenabian
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = cenabian
+			}
+			culture = cenabian
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Roman ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = celtic_pannonian
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = celtic_pannonian }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = cenabian }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = cenabian }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = cenabian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = cenabian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = cenabian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = cenabian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = cenabian
+				}
+			}
+		}
+	}
+
+	
+
+
+
+
+
+
+#####################################################################
+#End Bracket
+#####################################################################
+
+}

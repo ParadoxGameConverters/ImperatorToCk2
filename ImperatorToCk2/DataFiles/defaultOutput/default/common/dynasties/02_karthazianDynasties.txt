@@ -1,0 +1,565 @@
+5370000=
+{
+	name="Uclina"
+	culture="karthazian"
+}
+5370001=
+{
+	name="Ucli"
+	culture="karthazian"
+}
+5370002=
+{
+	name="Acnatru"
+	culture="karthazian"
+}
+5370003=
+{
+	name="Acvilnas"
+	culture="karthazian"
+}
+5370004=
+{
+	name="Afunei"
+	culture="karthazian"
+}
+5370005=
+{
+	name="Aisina"
+	culture="karthazian"
+}
+5370006=
+{
+	name="Alethnei"
+	culture="karthazian"
+}
+5370007=
+{
+	name="Alfi"
+	culture="karthazian"
+}
+5370008=
+{
+	name="Amuni"
+	culture="karthazian"
+}
+5370009=
+{
+	name="Anani"
+	culture="karthazian"
+}
+5370010=
+{
+	name="Anes"
+	culture="karthazian"
+}
+5370011=
+{
+	name="Alethnas"
+	culture="karthazian"
+}
+5370012=
+{
+	name="Apatru"
+	culture="karthazian"
+}
+5370013=
+{
+	name="Cafati"
+	culture="karthazian"
+}
+5370014=
+{
+	name="Ceie"
+	culture="karthazian"
+}
+5370015=
+{
+	name="Calitahi"
+	culture="karthazian"
+}
+5370016=
+{
+	name="Camitlnas"
+	culture="karthazian"
+}
+5370017=
+{
+	name="Campanian"
+	culture="karthazian"
+}
+5370018=
+{
+	name="Canatnei"
+	culture="karthazian"
+}
+5370019=
+{
+	name="Cheiras"
+	culture="karthazian"
+}
+5370020=
+{
+	name="Churinian"
+	culture="karthazian"
+}
+5370021=
+{
+	name="Cicunias"
+	culture="karthazian"
+}
+5370022=
+{
+	name="Creicesian"
+	culture="karthazian"
+}
+5370023=
+{
+	name="Ecnati"
+	culture="karthazian"
+}
+5370024=
+{
+	name="Einanian"
+	culture="karthazian"
+}
+5370025=
+{
+	name="Eucli"
+	culture="karthazian"
+}
+5370026=
+{
+	name="Ezpus"
+	culture="karthazian"
+}
+5370027=
+{
+	name="Ezpusian"
+	culture="karthazian"
+}
+5370028=
+{
+	name="Fapi"
+	culture="karthazian"
+}
+5370029=
+{
+	name="Fapian"
+	culture="karthazian"
+}
+5370030=
+{
+	name="Felces"
+	culture="karthazian"
+}
+5370031=
+{
+	name="Feluscian"
+	culture="karthazian"
+}
+5370032=
+{
+	name="Felusci"
+	culture="karthazian"
+}
+5370033=
+{
+	name="Fulvena"
+	culture="karthazian"
+}
+5370034=
+{
+	name="Hanu"
+	culture="karthazian"
+}
+5370035=
+{
+	name="Hapisna"
+	culture="karthazian"
+}
+5370036=
+{
+	name="Hapri"
+	culture="karthazian"
+}
+5370037=
+{
+	name="Hapre"
+	culture="karthazian"
+}
+5370038=
+{
+	name="Havrinian"
+	culture="karthazian"
+}
+5370039=
+{
+	name="Lapicani"
+	culture="karthazian"
+}
+5370040=
+{
+	name="Divicus"
+	culture="karthazian"
+}
+5370041=
+{
+	name="Larani"
+	culture="karthazian"
+}
+5370042=
+{
+	name="Larecena"
+	culture="karthazian"
+}
+5370043=
+{
+	name="Lucina"
+	culture="karthazian"
+}
+5370044=
+{
+	name="Lucinei"
+	culture="karthazian"
+}
+5370045=
+{
+	name="Lucinian"
+	culture="karthazian"
+}
+5370046=
+{
+	name="Lartli"
+	culture="karthazian"
+}
+5370047=
+{
+	name="Latnian"
+	culture="karthazian"
+}
+5370048=
+{
+	name="Marcnei"
+	culture="karthazian"
+}
+5370049=
+{
+	name="Malamena"
+	culture="karthazian"
+}
+5370050=
+{
+	name="Marcnithur"
+	culture="karthazian"
+}
+5370051=
+{
+	name="Mutunid"
+	culture="karthazian"
+}
+5370052=
+{
+	name="Nerinei"
+	culture="karthazian"
+}
+5370053=
+{
+	name="Ninie"
+	culture="karthazian"
+}
+5370054=
+{
+	name="Nuiclnas"
+	culture="karthazian"
+}
+5370055=
+{
+	name="Nufre"
+	culture="karthazian"
+}
+5370056=
+{
+	name="Pachie"
+	culture="karthazian"
+}
+5370057=
+{
+	name="Peithunas"
+	culture="karthazian"
+}
+5370058=
+{
+	name="Palazus"
+	culture="karthazian"
+}
+5370059=
+{
+	name="Palazusian"
+	culture="karthazian"
+}
+5370060=
+{
+	name="Papni"
+	culture="karthazian"
+}
+5370061=
+{
+	name="Phersnalei"
+	culture="karthazian"
+}
+5370062=
+{
+	name="Pinies"
+	culture="karthazian"
+}
+5370063=
+{
+	name="Platia"
+	culture="karthazian"
+}
+5370064=
+{
+	name="Plutian"
+	culture="karthazian"
+}
+5370065=
+{
+	name="Precuthur"
+	culture="karthazian"
+}
+5370066=
+{
+	name="Puinci"
+	culture="karthazian"
+}
+5370067=
+{
+	name="Purzena"
+	culture="karthazian"
+}
+5370068=
+{
+	name="Pustmina"
+	culture="karthazian"
+}
+5370069=
+{
+	name="Rufi"
+	culture="karthazian"
+}
+5370070=
+{
+	name="Ranazu"
+	culture="karthazian"
+}
+5370071=
+{
+	name="Salini"
+	culture="karthazian"
+}
+5370072=
+{
+	name="Scevei"
+	culture="karthazian"
+}
+5370073=
+{
+	name="Scurfiu"
+	culture="karthazian"
+}
+5370074=
+{
+	name="Sepu"
+	culture="karthazian"
+}
+5370075=
+{
+	name="Sethre"
+	culture="karthazian"
+}
+5370076=
+{
+	name="Silgatana"
+	culture="karthazian"
+}
+5370077=
+{
+	name="Sinu"
+	culture="karthazian"
+}
+5370078=
+{
+	name="Slanzu"
+	culture="karthazian"
+}
+5370079=
+{
+	name="Spantu"
+	culture="karthazian"
+}
+5370080=
+{
+	name="Spite"
+	culture="karthazian"
+}
+5370081=
+{
+	name="Spurinas"
+	culture="karthazian"
+}
+5370082=
+{
+	name="Srutzna"
+	culture="karthazian"
+}
+5370083=
+{
+	name="Statlanian"
+	culture="karthazian"
+}
+5370084=
+{
+	name="Tarchunies"
+	culture="karthazian"
+}
+5370085=
+{
+	name="Tarcnid"
+	culture="karthazian"
+}
+5370086=
+{
+	name="Teithurna"
+	culture="karthazian"
+}
+5370087=
+{
+	name="Teitur"
+	culture="karthazian"
+}
+5370088=
+{
+	name="Tetnies"
+	culture="karthazian"
+}
+5370089=
+{
+	name="Thusatur"
+	culture="karthazian"
+}
+5370090=
+{
+	name="Trepe"
+	culture="karthazian"
+}
+5370091=
+{
+	name="Tutna"
+	culture="karthazian"
+}
+5370092=
+{
+	name="Tutes"
+	culture="karthazian"
+}
+5370093=
+{
+	name="Ucrini"
+	culture="karthazian"
+}
+5370094=
+{
+	name="Ucrinian"
+	culture="karthazian"
+}
+5370095=
+{
+	name="Uftave"
+	culture="karthazian"
+}
+5370096=
+{
+	name="Ultimnid"
+	culture="karthazian"
+}
+5370097=
+{
+	name="Ulzna"
+	culture="karthazian"
+}
+5370098=
+{
+	name="Vania"
+	culture="karthazian"
+}
+5370099=
+{
+	name="Velarian"
+	culture="karthazian"
+}
+5370100=
+{
+	name="Velcii"
+	culture="karthazian"
+}
+5370101=
+{
+	name="Velcian"
+	culture="karthazian"
+}
+5370102=
+{
+	name="Vlesi"
+	culture="karthazian"
+}
+5370103=
+{
+	name="Velia"
+	culture="karthazian"
+}
+5370104=
+{
+	name="Velethnei"
+	culture="karthazian"
+}
+5370105=
+{
+	name="Velthinathur"
+	culture="karthazian"
+}
+5370106=
+{
+	name="Venetian"
+	culture="karthazian"
+}
+5370107=
+{
+	name="Vete"
+	culture="karthazian"
+}
+5370108=
+{
+	name="Zalthu"
+	culture="karthazian"
+}
+5370109=
+{
+	name="Zane"
+	culture="karthazian"
+}
+5370110=
+{
+	name="Zertnei"
+	culture="karthazian"
+}
+5370111=
+{
+	name="Zili"
+	culture="karthazian"
+}
+5370112=
+{
+	name="Karthazie"
+	culture="karthazian"
+}

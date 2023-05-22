@@ -1,0 +1,580 @@
+5365000=
+{
+	name="Ambonus"
+	culture="vinetan"
+}
+5365001=
+{
+	name="Ambona"
+	culture="vinetan"
+}
+5365002=
+{
+	name="Ambonii"
+	culture="vinetan"
+}
+5365003=
+{
+	name="Ambonid"
+	culture="vinetan"
+}
+5365004=
+{
+	name="Auaroses"
+	culture="vinetan"
+}
+5365005=
+{
+	name="Auarosa"
+	culture="vinetan"
+}
+5365006=
+{
+	name="Auarosii"
+	culture="vinetan"
+}
+5365007=
+{
+	name="Auarosian"
+	culture="vinetan"
+}
+5365008=
+{
+	name="Audaxus"
+	culture="vinetan"
+}
+5365009=
+{
+	name="Audaxa"
+	culture="vinetan"
+}
+5365010=
+{
+	name="Audaxii"
+	culture="vinetan"
+}
+5365011=
+{
+	name="Audaxian"
+	culture="vinetan"
+}
+5365012=
+{
+	name="Carosus"
+	culture="vinetan"
+}
+5365013=
+{
+	name="Carosa"
+	culture="vinetan"
+}
+5365014=
+{
+	name="Carosii"
+	culture="vinetan"
+}
+5365015=
+{
+	name="Carosian"
+	culture="vinetan"
+}
+5365016=
+{
+	name="Culchus"
+	culture="vinetan"
+}
+5365017=
+{
+	name="Culcha"
+	culture="vinetan"
+}
+5365018=
+{
+	name="Culchi"
+	culture="vinetan"
+}
+5365019=
+{
+	name="Culchian"
+	culture="vinetan"
+}
+5365020=
+{
+	name="Leukus"
+	culture="vinetan"
+}
+5365021=
+{
+	name="Leuka"
+	culture="vinetan"
+}
+5365022=
+{
+	name="Leuki"
+	culture="vinetan"
+}
+5365023=
+{
+	name="Leukian"
+	culture="vinetan"
+}
+5365024=
+{
+	name="Mandonus"
+	culture="vinetan"
+}
+5365025=
+{
+	name="Mandonia"
+	culture="vinetan"
+}
+5365026=
+{
+	name="Mandonii"
+	culture="vinetan"
+}
+5365027=
+{
+	name="Mandonian"
+	culture="vinetan"
+}
+5365028=
+{
+	name="Punicus"
+	culture="vinetan"
+}
+5365029=
+{
+	name="Punica"
+	culture="vinetan"
+}
+5365030=
+{
+	name="Punici"
+	culture="vinetan"
+}
+5365031=
+{
+	name="Punician"
+	culture="vinetan"
+}
+5365032=
+{
+	name="Tautalus"
+	culture="vinetan"
+}
+5365033=
+{
+	name="Tautala"
+	culture="vinetan"
+}
+5365034=
+{
+	name="Tautalii"
+	culture="vinetan"
+}
+5365035=
+{
+	name="Tautalid"
+	culture="vinetan"
+}
+5365036=
+{
+	name="Correius"
+	culture="vinetan"
+}
+5365037=
+{
+	name="Correia"
+	culture="vinetan"
+}
+5365038=
+{
+	name="Correid"
+	culture="vinetan"
+}
+5365039=
+{
+	name="Correian"
+	culture="vinetan"
+}
+5365040=
+{
+	name="Divicus"
+	culture="vinetan"
+}
+5365041=
+{
+	name="Divica"
+	culture="vinetan"
+}
+5365042=
+{
+	name="Divici"
+	culture="vinetan"
+}
+5365043=
+{
+	name="Divicid"
+	culture="vinetan"
+}
+5365044=
+{
+	name="Duratus"
+	culture="vinetan"
+}
+5365045=
+{
+	name="Durata"
+	culture="vinetan"
+}
+5365046=
+{
+	name="Duratii"
+	culture="vinetan"
+}
+5365047=
+{
+	name="Duratian"
+	culture="vinetan"
+}
+5365048=
+{
+	name="Elitovus"
+	culture="vinetan"
+}
+5365049=
+{
+	name="Elitova"
+	culture="vinetan"
+}
+5365050=
+{
+	name="Elitovii"
+	culture="vinetan"
+}
+5365051=
+{
+	name="Elitovian"
+	culture="vinetan"
+}
+5365052=
+{
+	name="Galbus"
+	culture="vinetan"
+}
+5365053=
+{
+	name="Galba"
+	culture="vinetan"
+}
+5365054=
+{
+	name="Galbi"
+	culture="vinetan"
+}
+5365055=
+{
+	name="Galbid"
+	culture="vinetan"
+}
+5365056=
+{
+	name="Iacus"
+	culture="vinetan"
+}
+5365057=
+{
+	name="Iaca"
+	culture="vinetan"
+}
+5365058=
+{
+	name="Iaci"
+	culture="vinetan"
+}
+5365059=
+{
+	name="Iacid"
+	culture="vinetan"
+}
+5365060=
+{
+	name="Marganus"
+	culture="vinetan"
+}
+5365061=
+{
+	name="Margana"
+	culture="vinetan"
+}
+5365062=
+{
+	name="Marganii"
+	culture="vinetan"
+}
+5365063=
+{
+	name="Marganid"
+	culture="vinetan"
+}
+5365064=
+{
+	name="Sinatus"
+	culture="vinetan"
+}
+5365065=
+{
+	name="Sinata"
+	culture="vinetan"
+}
+5365066=
+{
+	name="Sinatii"
+	culture="vinetan"
+}
+5365067=
+{
+	name="Sinatid"
+	culture="vinetan"
+}
+5365068=
+{
+	name="Vodenosus"
+	culture="vinetan"
+}
+5365069=
+{
+	name="Vodenosa"
+	culture="vinetan"
+}
+5365070=
+{
+	name="Vodenosii"
+	culture="vinetan"
+}
+5365071=
+{
+	name="Vodenosian"
+	culture="vinetan"
+}
+5365072=
+{
+	name="Indutius"
+	culture="vinetan"
+}
+5365073=
+{
+	name="Indutia"
+	culture="vinetan"
+}
+5365074=
+{
+	name="Indutii"
+	culture="vinetan"
+}
+5365075=
+{
+	name="Indutian"
+	culture="vinetan"
+}
+5365076=
+{
+	name="Dumnus"
+	culture="vinetan"
+}
+5365077=
+{
+	name="Dumna"
+	culture="vinetan"
+}
+5365078=
+{
+	name="Dumnii"
+	culture="vinetan"
+}
+5365079=
+{
+	name="Dumnid"
+	culture="vinetan"
+}
+5365080=
+{
+	name="Epatticus"
+	culture="vinetan"
+}
+5365081=
+{
+	name="Epattica"
+	culture="vinetan"
+}
+5365082=
+{
+	name="Epatticii"
+	culture="vinetan"
+}
+5365083=
+{
+	name="Epatticid"
+	culture="vinetan"
+}
+5365084=
+{
+	name="Teutomalus"
+	culture="vinetan"
+}
+5365085=
+{
+	name="Teutomala"
+	culture="vinetan"
+}
+5365086=
+{
+	name="Teutomalii"
+	culture="vinetan"
+}
+5365087=
+{
+	name="Teutomalian"
+	culture="vinetan"
+}
+5365088=
+{
+	name="Viridorrius"
+	culture="vinetan"
+}
+5365089=
+{
+	name="Viridorria"
+	culture="vinetan"
+}
+5365090=
+{
+	name="Viridorrii"
+	culture="vinetan"
+}
+5365091=
+{
+	name="Viridorrian"
+	culture="vinetan"
+}
+5365092=
+{
+	name="Magunnus"
+	culture="vinetan"
+}
+5365093=
+{
+	name="Magunna"
+	culture="vinetan"
+}
+5365094=
+{
+	name="Magunnii"
+	culture="vinetan"
+}
+5365095=
+{
+	name="Magunnid"
+	culture="vinetan"
+}
+5365096=
+{
+	name="Brennus"
+	culture="vinetan"
+}
+5365097=
+{
+	name="Brenna"
+	culture="vinetan"
+}
+5365098=
+{
+	name="Brennii"
+	culture="vinetan"
+}
+5365099=
+{
+	name="Brennid"
+	culture="vinetan"
+}
+5365100=
+{
+	name="Boius"
+	culture="vinetan"
+}
+5365101=
+{
+	name="Boia"
+	culture="vinetan"
+}
+5365102=
+{
+	name="Boii"
+	culture="vinetan"
+}
+5365103=
+{
+	name="Boian"
+	culture="vinetan"
+}
+5365104=
+{
+	name="Tannus"
+	culture="vinetan"
+}
+5365105=
+{
+	name="Tanna"
+	culture="vinetan"
+}
+5365106=
+{
+	name="Tanni"
+	culture="vinetan"
+}
+5365107=
+{
+	name="Tannid"
+	culture="vinetan"
+}
+5365108=
+{
+	name="Iccuius"
+	culture="vinetan"
+}
+5365109=
+{
+	name="Iccuia"
+	culture="vinetan"
+}
+5365110=
+{
+	name="Iccui"
+	culture="vinetan"
+}
+5365111=
+{
+	name="Iccian"
+	culture="vinetan"
+}
+5365112=
+{
+	name="Galanus"
+	culture="vinetan"
+}
+5365113=
+{
+	name="Galana"
+	culture="vinetan"
+}
+5365114=
+{
+	name="Galanii"
+	culture="vinetan"
+}
+5365115=
+{
+	name="Galanid"
+	culture="vinetan"
+}

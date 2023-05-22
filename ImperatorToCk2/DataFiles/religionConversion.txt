@@ -22,7 +22,7 @@ armenian_religion,khaldic
 caucasian_religion,armazic
 indo_iranian_religion,scythian
 eastern_animism,ritualistic
-pre_indo_european_religion,iberian
+pre_indo_european_religion,marite
 nuragic_pantheon,iberian
 manichaeism,manichean
 miaphysite,miaphysite
@@ -30,3 +30,9 @@ islam,islam
 slavic,slavic_pagan
 tengri,tengri_pagan
 mesoamerican_religion,mayan_pagan
+new_armenian_religion,khaldic
+ajivika,ajivika
+agama,hindu
+puntic_religion,waaqi
+illyrian_pantheon,illyric
+burmese_religion,bamar_pagan

@@ -1,0 +1,565 @@
+5373000=
+{
+	name="Uclina"
+	culture="lanistian"
+}
+5373001=
+{
+	name="Ucli"
+	culture="lanistian"
+}
+5373002=
+{
+	name="Acnatru"
+	culture="lanistian"
+}
+5373003=
+{
+	name="Acvilnas"
+	culture="lanistian"
+}
+5373004=
+{
+	name="Afunei"
+	culture="lanistian"
+}
+5373005=
+{
+	name="Aisina"
+	culture="lanistian"
+}
+5373006=
+{
+	name="Alethnei"
+	culture="lanistian"
+}
+5373007=
+{
+	name="Alfi"
+	culture="lanistian"
+}
+5373008=
+{
+	name="Amuni"
+	culture="lanistian"
+}
+5373009=
+{
+	name="Anani"
+	culture="lanistian"
+}
+5373010=
+{
+	name="Anes"
+	culture="lanistian"
+}
+5373011=
+{
+	name="Alethnas"
+	culture="lanistian"
+}
+5373012=
+{
+	name="Apatru"
+	culture="lanistian"
+}
+5373013=
+{
+	name="Cafati"
+	culture="lanistian"
+}
+5373014=
+{
+	name="Ceie"
+	culture="lanistian"
+}
+5373015=
+{
+	name="Calitahi"
+	culture="lanistian"
+}
+5373016=
+{
+	name="Camitlnas"
+	culture="lanistian"
+}
+5373017=
+{
+	name="Campanian"
+	culture="lanistian"
+}
+5373018=
+{
+	name="Canatnei"
+	culture="lanistian"
+}
+5373019=
+{
+	name="Cheiras"
+	culture="lanistian"
+}
+5373020=
+{
+	name="Churinian"
+	culture="lanistian"
+}
+5373021=
+{
+	name="Cicunias"
+	culture="lanistian"
+}
+5373022=
+{
+	name="Creicesian"
+	culture="lanistian"
+}
+5373023=
+{
+	name="Ecnati"
+	culture="lanistian"
+}
+5373024=
+{
+	name="Einanian"
+	culture="lanistian"
+}
+5373025=
+{
+	name="Eucli"
+	culture="lanistian"
+}
+5373026=
+{
+	name="Ezpus"
+	culture="lanistian"
+}
+5373027=
+{
+	name="Ezpusian"
+	culture="lanistian"
+}
+5373028=
+{
+	name="Fapi"
+	culture="lanistian"
+}
+5373029=
+{
+	name="Fapian"
+	culture="lanistian"
+}
+5373030=
+{
+	name="Felces"
+	culture="lanistian"
+}
+5373031=
+{
+	name="Feluscian"
+	culture="lanistian"
+}
+5373032=
+{
+	name="Felusci"
+	culture="lanistian"
+}
+5373033=
+{
+	name="Fulvena"
+	culture="lanistian"
+}
+5373034=
+{
+	name="Hanu"
+	culture="lanistian"
+}
+5373035=
+{
+	name="Hapisna"
+	culture="lanistian"
+}
+5373036=
+{
+	name="Hapri"
+	culture="lanistian"
+}
+5373037=
+{
+	name="Hapre"
+	culture="lanistian"
+}
+5373038=
+{
+	name="Havrinian"
+	culture="lanistian"
+}
+5373039=
+{
+	name="Lapicani"
+	culture="lanistian"
+}
+5373040=
+{
+	name="Divicus"
+	culture="lanistian"
+}
+5373041=
+{
+	name="Larani"
+	culture="lanistian"
+}
+5373042=
+{
+	name="Larecena"
+	culture="lanistian"
+}
+5373043=
+{
+	name="Lucina"
+	culture="lanistian"
+}
+5373044=
+{
+	name="Lucinei"
+	culture="lanistian"
+}
+5373045=
+{
+	name="Lucinian"
+	culture="lanistian"
+}
+5373046=
+{
+	name="Lartli"
+	culture="lanistian"
+}
+5373047=
+{
+	name="Latnian"
+	culture="lanistian"
+}
+5373048=
+{
+	name="Marcnei"
+	culture="lanistian"
+}
+5373049=
+{
+	name="Malamena"
+	culture="lanistian"
+}
+5373050=
+{
+	name="Marcnithur"
+	culture="lanistian"
+}
+5373051=
+{
+	name="Mutunid"
+	culture="lanistian"
+}
+5373052=
+{
+	name="Nerinei"
+	culture="lanistian"
+}
+5373053=
+{
+	name="Ninie"
+	culture="lanistian"
+}
+5373054=
+{
+	name="Nuiclnas"
+	culture="lanistian"
+}
+5373055=
+{
+	name="Nufre"
+	culture="lanistian"
+}
+5373056=
+{
+	name="Pachie"
+	culture="lanistian"
+}
+5373057=
+{
+	name="Peithunas"
+	culture="lanistian"
+}
+5373058=
+{
+	name="Palazus"
+	culture="lanistian"
+}
+5373059=
+{
+	name="Palazusian"
+	culture="lanistian"
+}
+5373060=
+{
+	name="Papni"
+	culture="lanistian"
+}
+5373061=
+{
+	name="Phersnalei"
+	culture="lanistian"
+}
+5373062=
+{
+	name="Pinies"
+	culture="lanistian"
+}
+5373063=
+{
+	name="Platia"
+	culture="lanistian"
+}
+5373064=
+{
+	name="Plutian"
+	culture="lanistian"
+}
+5373065=
+{
+	name="Precuthur"
+	culture="lanistian"
+}
+5373066=
+{
+	name="Puinci"
+	culture="lanistian"
+}
+5373067=
+{
+	name="Purzena"
+	culture="lanistian"
+}
+5373068=
+{
+	name="Pustmina"
+	culture="lanistian"
+}
+5373069=
+{
+	name="Rufi"
+	culture="lanistian"
+}
+5373070=
+{
+	name="Ranazu"
+	culture="lanistian"
+}
+5373071=
+{
+	name="Salini"
+	culture="lanistian"
+}
+5373072=
+{
+	name="Scevei"
+	culture="lanistian"
+}
+5373073=
+{
+	name="Scurfiu"
+	culture="lanistian"
+}
+5373074=
+{
+	name="Sepu"
+	culture="lanistian"
+}
+5373075=
+{
+	name="Sethre"
+	culture="lanistian"
+}
+5373076=
+{
+	name="Silgatana"
+	culture="lanistian"
+}
+5373077=
+{
+	name="Sinu"
+	culture="lanistian"
+}
+5373078=
+{
+	name="Slanzu"
+	culture="lanistian"
+}
+5373079=
+{
+	name="Spantu"
+	culture="lanistian"
+}
+5373080=
+{
+	name="Spite"
+	culture="lanistian"
+}
+5373081=
+{
+	name="Spurinas"
+	culture="lanistian"
+}
+5373082=
+{
+	name="Srutzna"
+	culture="lanistian"
+}
+5373083=
+{
+	name="Statlanian"
+	culture="lanistian"
+}
+5373084=
+{
+	name="Tarchunies"
+	culture="lanistian"
+}
+5373085=
+{
+	name="Tarcnid"
+	culture="lanistian"
+}
+5373086=
+{
+	name="Teithurna"
+	culture="lanistian"
+}
+5373087=
+{
+	name="Teitur"
+	culture="lanistian"
+}
+5373088=
+{
+	name="Tetnies"
+	culture="lanistian"
+}
+5373089=
+{
+	name="Thusatur"
+	culture="lanistian"
+}
+5373090=
+{
+	name="Trepe"
+	culture="lanistian"
+}
+5373091=
+{
+	name="Tutna"
+	culture="lanistian"
+}
+5373092=
+{
+	name="Tutes"
+	culture="lanistian"
+}
+5373093=
+{
+	name="Ucrini"
+	culture="lanistian"
+}
+5373094=
+{
+	name="Ucrinian"
+	culture="lanistian"
+}
+5373095=
+{
+	name="Uftave"
+	culture="lanistian"
+}
+5373096=
+{
+	name="Ultimnid"
+	culture="lanistian"
+}
+5373097=
+{
+	name="Ulzna"
+	culture="lanistian"
+}
+5373098=
+{
+	name="Vania"
+	culture="lanistian"
+}
+5373099=
+{
+	name="Velarian"
+	culture="lanistian"
+}
+5373100=
+{
+	name="Velcii"
+	culture="lanistian"
+}
+5373101=
+{
+	name="Velcian"
+	culture="lanistian"
+}
+5373102=
+{
+	name="Vlesi"
+	culture="lanistian"
+}
+5373103=
+{
+	name="Velia"
+	culture="lanistian"
+}
+5373104=
+{
+	name="Velethnei"
+	culture="lanistian"
+}
+5373105=
+{
+	name="Velthinathur"
+	culture="lanistian"
+}
+5373106=
+{
+	name="Venetian"
+	culture="lanistian"
+}
+5373107=
+{
+	name="Vete"
+	culture="lanistian"
+}
+5373108=
+{
+	name="Zalthu"
+	culture="lanistian"
+}
+5373109=
+{
+	name="Zane"
+	culture="lanistian"
+}
+5373110=
+{
+	name="Zertnei"
+	culture="lanistian"
+}
+5373111=
+{
+	name="Zili"
+	culture="lanistian"
+}
+5373112=
+{
+	name="Sparticas"
+	culture="lanistian"
+}

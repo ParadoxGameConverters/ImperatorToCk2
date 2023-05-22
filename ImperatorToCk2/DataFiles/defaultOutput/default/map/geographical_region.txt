@@ -682,4 +682,143 @@ custom_irck2_montana = {
 	}
 }
 
+custom_irck2_sorbia = {
+	duchies = {
+		d_meissen d_thuringia d_hesse d_gelre d_holland  d_munster_germany d_angria d_bremen d_holstein d_mecklemburg d_rugen d_brandenburg d_lausitz d_pommerania d_pomeralia d_saxony
+	}
+	counties = {
+		c_berg c_kleve
+	}
+}
+
+custom_irck2_poland_slavic = {
+	duchies = {
+		#Vanilla CK2 Poland
+		d_lesser_poland d_mazovia d_silesia d_kuyavia d_greater_poland
+		#Baltic
+		d_samogitia d_lithuanians d_yatviags d_prussia
+		#Latvia and Estonia
+		d_sakala d_courland d_livonia d_latgale d_sakala d_esthonia
+	}
+}
+
+custom_irck2_bohemia = {
+	duchies = {
+		d_bohemia d_franconia d_swabia d_osterreich d_bavaria d_nordgau d_osterreich d_thurgau d_baden
+		#Moravia
+		d_moravia
+	}
+	counties = {
+		c_salzburg
+	}
+}
+
+custom_irck2_bulgaria = {
+	duchies = {
+		#Vanilla CK2
+		d_turnovo d_karvuna d_strymon d_vidin
+		#Greece
+		d_adrianopolis d_thrace d_thessalonika d_athens d_aegean_islands d_achaia d_cephalonia d_epirus d_krete d_ohrid
+		#Romania
+		d_wallachia d_oltenia d_bessarabia
+	}
+}
+
+custom_irck2_bosnia = {
+	duchies = {
+		d_bosnia
+	}
+}
+
+custom_irck2_croatia = {
+	duchies = {
+		#Vanilla CK2
+		d_croatia d_slavonia d_syrmia d_dalmatia d_ragusa
+	}
+	counties = {
+		c_istria
+	}
+}
+
+custom_irck2_serbia = {
+	duchies = {
+		#Vanilla CK2
+		d_dioclea d_rashka
+		#Expanded
+		d_temes d_dyrrachion
+	}
+}
+
+custom_irck2_slovakia = {
+	duchies = {
+		d_transylvania d_ungvar d_pest d_nyitra d_esztergom d_pecs
+	}
+}
+
+custom_irck2_italy_slavic = {
+	duchies = {
+		d_carinthia d_friuli
+		#Italia
+		d_verona d_susa d_lombardia d_genoa d_modena d_ferrara d_toscana d_pisa d_ancona d_spoleto d_latium d_venice d_savoie
+		#Sicily
+		d_benevento d_capua d_apulia d_salerno d_calabria d_sicily d_abruzzo d_amalfi
+		#Alps
+		d_raetia d_tyrol d_styria
+	}
+	counties = {
+		c_pongau c_nice c_krain c_pettau
+	}
+}
+
+custom_irck2_northern_baltic = {
+	duchies = {
+		#Latvia and Estonia
+		d_sakala d_courland d_livonia d_latgale d_sakala d_esthonia
+	}
+}
+
+
+custom_irck2_anatolia_and_georgia = {
+	duchies = {
+		d_nikaea d_samos d_cibyrrhaeot d_anatolia d_charsianon d_armeniacon d_paphlagonia d_trebizond d_armenia_minor d_armenia d_mesopotamia d_edessa d_coloneia d_kartli d_abkhazia  d_thracesia d_abydos d_kakheti d_tao d_optimatoi d_bucellarian d_cappadocia d_cyprus
+	}
+}
+
+custom_irck2_rus = {
+	duchies = {
+		#Southern Russia
+		d_minsk d_turov d_polotsk d_smolensk d_wild_fields d_kiev d_crimea d_cherson d_azov d_sarkel d_alania d_derbent d_caspian_steppe d_itil d_atyrau d_emba d_aqtobe d_sakmara d_bulgar d_bashkirs d_mordvins d_bandja d_pereyaslavl d_chernigov d_novgorod-seversk d_karachev d_novosil d_ryazan d_moskva d_murom d_volhynia
+		#Northern Russia
+		d_pskov d_novgorod d_beloozero 	d_vladimir d_yaroslavl d_rostov d_maris d_kazan d_perm d_ural d_votyaki d_komi d_zyriane d_pechora d_zavarot d_samoyed d_bjarmia d_kargopol d_hlynov d_ustug
+		#Poland
+		d_cherven_cities d_galich d_moldau
+	}
+	counties = {
+		c_zoubtsov c_mozhaysk c_tver c_mountain_cheremisa c_chuvash
+		c_rzheva c_kashin c_grassland_cheremisa
+	}
+}
+
+custom_irck2_norse_scandinavia = {
+	duchies = {
+		#Sweden
+		d_uppland d_ostergotland d_gotland d_vastergotland d_norrland d_bergslagen d_smaland d_tioharad
+		#Norway
+		d_iceland d_orkney d_vestlandet d_ostlandet d_trondelag d_jamtland d_oppland d_agder
+		#Denmark
+		d_skane d_sjaelland d_slesvig
+	}
+}
+
+custom_irck2_noric_scythia = {
+	duchies = {
+		#Romania
+		d_moldau d_bessarabia
+		#Ukraine
+		d_galich d_wild_fields d_crimea d_cherson d_azov d_sarkel d_pereyaslavl
+	}
+	counties = {
+		c_kiev c_medjybij
+	}
+}
 

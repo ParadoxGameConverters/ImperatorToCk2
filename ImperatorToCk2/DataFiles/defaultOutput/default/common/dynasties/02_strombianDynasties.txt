@@ -1,0 +1,159 @@
+5357008=
+{
+	name="Obroditen"
+	culture="strombian"
+}
+5357009=
+{
+	name="z Liubic"
+	culture="strombian"
+	#religion="catholic"
+}
+5357010=
+{
+	name="Grzymala"
+	culture="strombian"
+	#religion="catholic"
+}
+5357011=
+{
+	name="Jastrzebiec"
+	culture="strombian"
+	#religion="catholic"
+}
+5357012=
+{
+	name="Lodzia"
+	culture="strombian"
+	#religion="catholic"
+}
+5357013=
+{
+	name="Lubicz"
+	culture="strombian"
+	#religion="catholic"
+}
+5357014 = {
+   name="Nalecz"
+   culture="strombian"
+   #religion="catholic"
+}
+5357015 = {
+   name="Gniewosz"
+   culture="strombian"
+   #religion="catholic"
+}
+
+5357016 = {
+   name="z Roztoki"
+   culture="strombian"
+   #religion="catholic"
+}
+
+5357017 ={
+   name="ze Slupska"
+   culture="strombian"
+   #religion="catholic"
+}
+5357018 ={
+   name="z Wagrow"
+   culture="strombian"
+   #religion="catholic"
+}
+5357019 ={
+   name="Zirzipani"
+   culture="strombian"
+   #religion="catholic"
+}
+5357020 ={
+   name="Doleczanie"
+   culture="strombian"
+   #religion="catholic"
+}
+5357021 ={
+   name="Gryfita"
+   culture="strombian"
+   #religion="catholic"
+}
+5357022 ={
+   name="Wend"
+   culture="strombian"
+   #religion="catholic"
+}
+5357023 = {
+	name = "Swienca"
+	culture = strombian
+}
+5357024 = {
+	name = "Slaweka"
+	culture = strombian
+}
+#
+5357025 = {
+	name = "Zeverran"
+	culture = strombian
+}
+5357026 = {
+	name = "Bojovik"
+	culture = strombian
+}
+5357027 = {
+	name = "Fisk"
+	culture = strombian
+}
+5357028 = {
+	name = "Sundmek"
+	culture = strombian
+}
+5357029 = {
+	name = "Bátadák"
+	culture = strombian
+}
+5357030 = {
+	name = "Arásarwiec"
+	culture = strombian
+}
+5357031 = {
+	name = "Swefnklad"
+	culture = strombian
+}
+5357032 = {
+	name = "Gläpinec"
+	culture = strombian
+}
+5357033 = {
+	name = "Lögdawca"
+	culture = strombian
+}
+5357034 = {
+	name = "Skördawca"
+	culture = strombian
+}
+5357035 = {
+	name="Osýrdawca"
+	culture="strombian"
+}
+5357036 = {
+	name="Bienkostí"
+	culture="strombian"
+}
+5357037 = {
+	name="Výchödingurwca"
+	culture="strombian"
+}
+5357038 = {
+	name="Fyallezec"
+	culture="strombian"
+}
+5357039 = {
+	name="Uppblámavý"
+	culture="strombian"
+}
+5357040 = {
+	name="Wikzec"
+	culture="strombian"
+}
+5357041 = {
+	name="Ścinacztryá"
+	culture="strombian"
+}

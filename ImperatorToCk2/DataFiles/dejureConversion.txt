@@ -40,6 +40,10 @@ magnagreek,e_HLA,k_SYR
 cyrenaican,e_HLA,k_CYR
 indogreek,e_HLA,k_BAC
 massalian,e_HLA,k_MAS
+elamite,e_persia,k_persia
+south_arabian,e_arabia,k_yemen
+neo_mitanni,e_persia,k_NMT
+cimmerian,e_pontic_steppe,k_SCY
 
 persian,e_persia,k_persia
 greek,e_HLA,k_byzantium
@@ -106,3 +110,7 @@ galatian,e_GAU,k_GLT
 mayan,e_MHQ,k_MHQ
 olmec,e_MHQ,k_MHQ
 tol,e_MHQ,k_MHQ
+
+shan,e_bengal,k_bengal
+pyu,e_bengal,k_bengal
+mon,e_bengal,k_bengal

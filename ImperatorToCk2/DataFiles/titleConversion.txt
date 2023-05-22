@@ -66,6 +66,8 @@ k_BAS,k_navarra
 #Invictus
 e_SLA,e_lechczechrus
 e_TIB,e_tibet
+e_GEE,e_germany
+k_ALA,k_alania
 
 #Timeline Extender
 e_WRE,e_roman_empire_west

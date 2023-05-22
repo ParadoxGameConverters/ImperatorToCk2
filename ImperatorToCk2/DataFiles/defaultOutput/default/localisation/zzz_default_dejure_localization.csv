@@ -63,4 +63,14 @@ k_BAC;Bactria;Bactria;Baktria;;Bactria;;;;;;;;;x
 k_BAC_adj;Bactrian;Bactrian;Baktrianische;;Bactrian;;;;;;;;;x
 k_GLT;Galatia;Galatia;Galatia;;Galatia;;;;;;;;;x
 k_GLT_adj;Galatian;Galatian;Galatische;;Galatian;;;;;;;;;x
+k_ILL;Illyria;Illyrie;Illyrien;;Iliria;;;;;;;;;x
+k_ILL_adj;Illyrian;Illyrien;Illyrische;;Iliria;;;;;;;;;x
+k_ETR;Etruria;Étrurie;Etrurien;;Etruria;;;;;;;;;x
+k_ETR_adj;Etruscan;étrusque;Etrusker;;Etrusca;;;;;;;;;x
+k_MAS;Massilia;Massilia;Massilia;;Masilia;;;;;;;;;x
+k_MAS_adj;Massiliot;Massiliot;Massiliot;;Massiliot;;;;;;;;;x
+k_TUR;Turdetania;Turdétanie;Turdetanien;;turdetana;;;;;;;;;x
+k_TUR_adj;Turdetanian;Turdétanien;Turdetanische;;turdetano;;;;;;;;;x
+k_NMT;Neo-Mitanni Kingdom;Neo-Mitanni Kingdom;Neumitanni Königsreich;;Neo-Mitanni Kingdom;;;;;;;;;x
+k_NMT_adj;Neo-Mitanni;Neo-Mitanni;Neumitanni;;Neo-Mitanni;;;;;;;;;x
 
