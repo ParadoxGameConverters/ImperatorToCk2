@@ -45,20 +45,32 @@ CREDITS
 
 An list of those who contributed effort to this mammoth undertaking
 
-Idhrendur                             - Sanity Checks, Review, and Fronter integration
-Shinymewtwo99 (aka Dr. Dudelsack)     - Lead Developer, Programmer, Events, and Data Files
-Thinking_waffle                       - Testing, Ideas, and Translation
-Vladimir Ilyich Lenin                 - Testing, Events
-Siawosh                               - Testing
-Canadian Lemur                        - Events, Data Files
-កាបូន២៦                              - Testing
-OurLordMonty                          - Data Files
-comagoosie                            - librakaly save melter
+Dr. Dudelsack - Lead, programming, data files, testing
+Idhrendur - Setting up the project, sanity checks and review, and integration of new Fronter
+Zemurin - Review, advice, integration of new Fronter
+IhateTrains - Integration of new Fronter
+Vladimir Ilyich Lenin - Testing, events
+Canadian Lemur - Events, data files
+comagoosie - librakaly save melter
+Thinking_waffle - Testing, Ideas, and Translation
+Siawosh - Testing
+កាបូន២៦ - Testing, advice
+Diskianterezh - Noric Divergence cultures
+
 The When The World Stopped Making Sense (WtWSMS) mod team for allowing the converter to use their content, their mod can be found either on Steam or their forum thread.
 WtWSMS mod Steam link: https://steamcommunity.com/sharedfiles/filedetails/?id=1247380029
 WtWSMS mod Forum link: https://forum.paradoxplaza.com/forum/forums/when-the-world-stopped-making-sense-mod.876/
+
 An Indo-Rome Mod: Renovatio Imperii by Fritz™ XII for allowing the converter to use many of its events, decisions, GFX, and flavor for the Indo-Roman culture. The mod can be found on Steam.
 An Indo-Rome Mod: Renovatio Imperii Steam link: https://steamcommunity.com/sharedfiles/filedetails/?id=2843200203
+
+The Timeline Extender mod for its Western Roman Empire flag. It can be found either on Steam or on the forum thread.
+Timeline Extender mod Steam link: https://steamcommunity.com/sharedfiles/filedetails/?id=2729500336/
+Timeline Extender mod Forum link: https://forum.paradoxplaza.com/forum/threads/mod-simple-i-r-timeline-extender.1175609
+
+The Imperator:Invictus mod for allowing the converter to use its descriptions for converted Invictus religions. It can be found either on Steam or on the Paradox Mods Website.
+Imperator:Invictus mod Steam link: https://steamcommunity.com/sharedfiles/filedetails/?id=2532715348
+Imperator:Invictus mod Paradox Mods Website link: https://mods.paradoxplaza.com/mods/27170/Any
 
  - AND ALL THE OTHERS WHO GAVE THEIR INPUT ON THE FORUM AND DISCORD -
  
@@ -80,5 +92,6 @@ An Indo-Rome Mod: Renovatio Imperii Steam link: https://steamcommunity.com/share
    License for the specific language governing permissions and limitations
    under the License.  
 
-The name "Ziqanmak'om" was devised thanks to contributions by Ivan Štambuk on en.Wiktionary.org, under the GNU Free Documentation License, which can be found here:
+Names for the Etruscan and Slavic divergence cultures were devised thanks to word lists found on Wiktionary (en.Wiktionary.org), and
+the name "Ziqanmak'om" was devised thanks to contributions by Ivan Štambuk on Wiktionary (en.Wiktionary.org), both under the GNU Free Documentation License, which can be found here:
 https://en.wiktionary.org/wiki/Wiktionary:GNU_Free_Documentation_License
