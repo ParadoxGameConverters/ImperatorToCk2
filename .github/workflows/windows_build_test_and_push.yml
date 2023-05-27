@@ -47,6 +47,11 @@ jobs:
         run: |
           xcopy /y /r /s ImperatorToCk2\target\jpackage\ImperatorToCK2  Release\ImperatorToCK2\
 
+      - name: "Replace frontend background image"
+        run: |
+          rm Fronter.NET/Fronter.NET/Assets/Images/background.png
+          cp Resources/images/SteamMainImage.png Fronter.NET/Fronter.NET/Assets/Images/background.png
+
       - name: "Build frontend"
         uses: ./Fronter.NET/.github/actions/build_frontend
         with:
@@ -125,6 +130,11 @@ jobs:
       - name: "Copy backend to Release directory"
         run: |
           xcopy /y /r /s ImperatorToCk2\target\jpackage\ImperatorToCK2  Release\ImperatorToCK2\
+
+      - name: "Replace frontend background image"
+        run: |
+          rm Fronter.NET/Fronter.NET/Assets/Images/background.png
+          cp Resources/images/SteamMainImage.png Fronter.NET/Fronter.NET/Assets/Images/background.png
 
       - name: "Build frontend"
         uses: ./Fronter.NET/.github/actions/build_frontend
