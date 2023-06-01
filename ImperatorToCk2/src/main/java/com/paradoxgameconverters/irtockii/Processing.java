@@ -433,7 +433,7 @@ public class Processing
                 while (regionCount < regionList.length){
                     String selectedArea = regionList[regionCount];
                     if (selectedArea.equals(provArea)) {
-                        System.out.println(regionList[0]+"_QA");
+                        //System.out.println(regionList[0]+"_QA " + "Area: "+selectedArea);
                         provList[aqq] = regionList[0];
                         //System.out.println(provList[aqq]);
                         regionCount = 1 + regionList.length;
@@ -513,6 +513,7 @@ public class Processing
         
         String tab = "	";
         String endBracket = " }".replace(" ","");
+        String endBracket2 = endBracket + " ";
         
         String[] provList = new String [num];
 
@@ -522,15 +523,21 @@ public class Processing
 
                 if (qaaa.contains(" = {") && !qaaa.contains("provinces")) {
                     String provinceName = qaaa.split(" = ")[0];
-                    while (!qaaa.equals(endBracket)) {
+                    while (!qaaa.equals(endBracket) && !qaaa.equals(endBracket2)) {
                         qaaa = scnr.nextLine();
+                        qaaa = qaaa.replace("  }"," }");
                         qaaa = qaaa.replace(tab,"");
+                        if (qaaa.contains("provinces = { ")) {
+                            qaaa = qaaa.split(" = ")[1];
+                            qaaa = qaaa.replace("  "," ");
+                            qaaa = qaaa.replace("{","");
+                        }
                         qaaa = qaaa.replace("   ","");
                         qaaa = qaaa.replace("  ","");
                         qaaa = qaaa.replace("	","");
                         qaaa = qaaa.replace("provinces = { ","");
                         
-                        if (!qaaa.equals(endBracket)){
+                        if (!qaaa.equals(endBracket) && !qaaa.contains("color") && !qaaa.equals(endBracket2)){
                             String[] numList = qaaa.split(" ");
                             int numCount = 0;
                             while (numCount < numList.length){
@@ -770,9 +777,6 @@ public class Processing
         try {
             while (ck2Prov < 3000){
                 int line = 0;
-                //ArrayList<String> newMappingList;
-                //System.out.println(oldMappingList.get(line) + "|"+line);
-                System.out.println(ck2Prov);
                 String newMap = "link = {";
                 while (line < oldMappingList.size()){
                     qaaa = oldMappingList.get(line);
@@ -788,7 +792,6 @@ public class Processing
                 }
                 if (!newMap.equals("link = {")) {
                     newMap = newMap + " ck2 = " + ck2Prov + " }";
-                    System.out.println(newMap);
                     out.println(newMap);
                 }
                 ck2Prov = ck2Prov + 1;
@@ -1913,7 +1916,7 @@ public class Processing
 
             String overlord = impSubjectInfo.get(count).split(",")[0];
             int overlordID = Integer.parseInt(overlord);
-            System.out.println("Overlord " + overlordID + " and Subject " + impSubjectInfo.get(count).split(",")[1] + " looking for " + country);
+            //System.out.println("Overlord " + overlordID + " and Subject " + impSubjectInfo.get(count).split(",")[1] + " looking for " + country);
             if (overlordID == country) {
                 String subject = impSubjectInfo.get(count).split(",")[1];
                 int provCount = 1;
@@ -1921,7 +1924,7 @@ public class Processing
                     if (ck2ProvInfo[0][provCount] != null) {
 
                         if (ck2ProvInfo[0][provCount].equals(subject)) {
-                            System.out.println(ck2ProvInfo[0][provCount] + " set to " + overlord);
+                            //System.out.println(ck2ProvInfo[0][provCount] + " set to " + overlord);
                             ck2ProvInfo[0][provCount] = overlord;
                         }
                     }
@@ -1941,7 +1944,9 @@ public class Processing
         while (count < modDirs.size()) {
             String currentModDir = modDirs.get(count);
             String currentModDescDir = currentModDir+"/descriptor.mod";
-            if (currentModDir.contains("2532715348")) { //check for Invictus Steam ID
+            //System.out.println(currentModDir);
+            //System.out.println(checkForInvictusID(currentModDir));
+            if (checkForInvictusID(currentModDir)) { //check for Invictus or HMOv2 Steam ID
                 return true;
             } else { //Check for manual Invictus installations
                 File currentModDescFile = new File(currentModDescDir);
@@ -1952,7 +1957,7 @@ public class Processing
                     boolean endOrNot = true;
                     try {
                         while (endOrNot = true) {
-                            if (line.contains("2532715348")) {
+                            if (checkForInvictusID(line)) {
                                 return true;
                             }
                             else {
@@ -1969,6 +1974,25 @@ public class Processing
             }
             count = count + 1;
         }
+
+        return false;
+    }
+    
+    public static boolean checkForInvictusID(String modID) throws IOException
+    //List of all known Invictus-based mod ID's
+    {
+        ArrayList<String> invModIDList = new ArrayList();
+        invModIDList.add("2532715348");
+        invModIDList.add("2723164890");
+        invModIDList.add("2971810224");
+        invModIDList.add("2651142140");
+        invModIDList.add("2765744228");
+        invModIDList.add("2856497654");
+        
+        if (invModIDList.contains(modID)) {
+            return true;
+        }
+        
 
         return false;
     }

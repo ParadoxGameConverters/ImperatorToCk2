@@ -1671,7 +1671,7 @@ public class Importer
 
         ArrayList<String[]> impColorList= new ArrayList<String[]>();
         
-        System.out.println(name);
+        //System.out.println(name);
 
         String tab = "	";
 
@@ -1766,7 +1766,7 @@ public class Importer
     
     public static ArrayList<String> importRegions (String name) throws IOException //list of all regions
     {
-        System.out.println(name);
+        //System.out.println(name);
 
         FileInputStream fileIn= new FileInputStream(name);
         Scanner scnr= new Scanner(fileIn);
@@ -1786,17 +1786,23 @@ public class Importer
         try {
             while (flag == 0){
                 qaaa = scnr.nextLine();
-                if (qaaa.contains( "_region = {" ) ) {
+                qaaa = qaaa.replace ("_region {","_region = {"); //special edge case for vanilla madhyadesa_region
+                if (qaaa.contains( "_region = {" ) || qaaa.contains("_area = {") ) { //_area is special edge case for vanilla bohemia_area region
                     output = qaaa.split(" =")[0];
                     while (!qaaa.equals(endBracket)){
                         qaaa = scnr.nextLine();
                         if (qaaa.contains(tab+tab) && !qaaa.equals(tab+tab)) {
                             String area = qaaa.split(tab+tab)[1];
+                            area = area.split(tab)[0]; //formatting cleanup
+                            area = area.split(" ")[0];
+                            area = area.split("#")[0];
                             output = output + "," + area;
                         }
                     }
 
                     String tmpOutput = output;
+                    
+                    //System.out.println(tmpOutput);
 
                     impRegionList.add(tmpOutput);
 
