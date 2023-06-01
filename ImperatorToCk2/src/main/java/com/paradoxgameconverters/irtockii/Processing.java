@@ -1978,10 +1978,11 @@ public class Processing
         return false;
     }
     
-    public static boolean checkForInvictusID(String modID) throws IOException
-    //List of all known Invictus-based mod ID's
+    public static boolean checkForInvictusID(String modDir) throws IOException
+    //Check given directory to see whether or not it has an Invictus-based mod ID in it.
+    //Will create false positive if a user has a file with invModID in name, but shouldn't be an issue due to how long invModID is.
     {
-        ArrayList<String> invModIDList = new ArrayList();
+        ArrayList<String> invModIDList = new ArrayList(); //List of all known Invictus-based mod ID's
         invModIDList.add("2532715348");
         invModIDList.add("2723164890");
         invModIDList.add("2971810224");
@@ -1989,10 +1990,13 @@ public class Processing
         invModIDList.add("2765744228");
         invModIDList.add("2856497654");
         
-        if (invModIDList.contains(modID)) {
-            return true;
+        int count = 0;
+        while (count < invModIDList.size()) {
+            if (modDir.contains(invModIDList.get(count))) {
+               return true;
+            }
+            count = count + 1;
         }
-        
 
         return false;
     }
