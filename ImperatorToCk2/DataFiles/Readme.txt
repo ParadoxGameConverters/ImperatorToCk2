@@ -56,6 +56,7 @@ Thinking_waffle - Testing, Ideas, and Translation
 Siawosh - Testing
 កាបូន២៦ - Testing, advice
 Diskianterezh - Noric Divergence cultures
+Nick Robertson - data files (Scythian rework, Parthian culture, and 150BC mappings)
 
 The When The World Stopped Making Sense (WtWSMS) mod team for allowing the converter to use their content, their mod can be found either on Steam or their forum thread.
 WtWSMS mod Steam link: https://steamcommunity.com/sharedfiles/filedetails/?id=1247380029

@@ -125,6 +125,9 @@ province_event = {
 			region = custom_irck2_latvia
 		}
 		NOT = {
+			region = custom_irck2_britannia
+		}
+		NOT = {
 			owner = {
 				top_liege = {
 					culture = aestian
@@ -161,6 +164,54 @@ province_event = {
 }
 
 #################################################
+
+# Province culture changes from Aestian to Zvejian
+province_event = {
+	id = IR_BAL.2003
+	desc = EVTDESC_IR_BAL_2003
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 450
+		culture = aestian
+		region = custom_irck2_britannia
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = aestian
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_BAL_2003
+		culture = zvejian
+	}
+}
 
 
 

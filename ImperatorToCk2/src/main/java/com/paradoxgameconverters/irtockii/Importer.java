@@ -725,6 +725,13 @@ public class Importer
                 while (aqq < locList.size()){
 
                     String qaaa = locList.get(aqq);
+                    try {
+                        if (qaaa.charAt(0) != ' ') {//If loc lacks leading space, add a space
+                            qaaa = " " + qaaa;
+                        }
+                    } catch (java.lang.StringIndexOutOfBoundsException exception) {
+                        
+                    }
 
                     if (qaaa.split(":")[0].equals(" "+tag)){
                         output[0] = qaaa.split(":")[1];
@@ -1823,8 +1830,11 @@ public class Importer
         String regionDir = name+"//game//";
         int aqq = 0;
         while (regionList.size() > aqq) {
+            //if (!regionList.get(aqq).equals("none")) {
             if (!regionList.get(aqq).equals("none")) {
-                regionDir = modDirs.get(aqq)+"//";
+                //regionDir = modDirs.get(aqq)+"//";
+                //regionDir = modDirs.get(aqq)+"//";
+                regionDir = regionList.get(aqq).split("map_data")[0];
             }
             aqq = aqq + 1;
         }
@@ -1846,7 +1856,14 @@ public class Importer
         while (modDirs.size() > aqq) {
             if (!modDirs.get(aqq).equals("none")) {
                 String modDir = modDirs.get(aqq)+"/localization/english";
-                moddedLoc.addAll(importModLoc(modDir,modDirs,moddedLoc));
+                try {
+                    importModLoc(modDir,modDirs,moddedLoc);
+                    //System.out.println("Dir: "+modDirs.get(aqq));
+                    //System.out.println("Loc total: "+test.size());
+                    //moddedLoc.addAll(importModLoc(modDir,modDirs,moddedLoc));
+                } catch (java.lang.OutOfMemoryError exception) { //User has many mods with too many lines of localization to handle in memory
+                    aqq = 1 + modDirs.size(); 
+                }
             }
             aqq = aqq + 1;
         }

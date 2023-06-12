@@ -917,8 +917,10 @@ public class Output
                 int tagID = Integer.parseInt(tag);
 
                 String rank = "k";
+                
+                int subjectOrNot = Processing.checkSubjectList(tagID,impSubjectInfo);
 
-                if (ck2LandTot[tagID] >= empireRank || impTagInfo.get(tagID)[17].equals("imperium")) {
+                if ((ck2LandTot[tagID] >= empireRank && subjectOrNot == 9999) || (impTagInfo.get(tagID)[17].equals("imperium") && subjectOrNot == 9999)) {
                     rank = "e";
 
                     int aq2 = 0;
@@ -958,7 +960,7 @@ public class Output
 
                 }
                 else {
-                    int subjectOrNot = Processing.checkSubjectList(tagID,impSubjectInfo);
+                    //int subjectOrNot = Processing.checkSubjectList(tagID,impSubjectInfo);
                     int flag2 = 0;
                     int hasDejureEmpire = 0;
 

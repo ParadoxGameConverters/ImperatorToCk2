@@ -21,7 +21,7 @@ ancient_egyptian;Ancient Egyptian;Ancien Égyptienne;Altägyptische;;Antiguo Egipc
 nabatean;Nabatean;Nabatéen;Nabatische;;Nabateo;;;;;;;;;x
 hebrew;Hebrew;Hébreu;Hebrewische;;Hebreo;;;;;;;;;x
 dacian;Dacian;Dace;Dacische;;Dacio;;;;;;;;;x
-caucasian_albanian;Caucasian Albanian;Caucaso-Albanienne;Kaucasischalbanische;;Cáucasoalbanés;;;;;;;;;x
+caucasian_albanian;Lezgin;Lezgin;Lezginische;;Lezgin;;;;;;;;;x
 iberic;Iberic;Ibérique;Iberische;;Ibérico;;;;;;;;;x
 turdetanian;Turdetanian;Turdétane;Turdetanische;;Turdetanio;;;;;;;;;x
 celtiberian;Celtiberian;Celtibérique;Keltiberische;;Celtibérico;;;;;;;;;x
@@ -101,6 +101,15 @@ ghasettian;Ghasettian;Ghasettian;Ghasettian;;Ghasettian;;;;;;;;;x
 betwani;Betwani;Betwani;Betwani;;Betwani;;;;;;;;;x
 vinetan;Vinetan;Vinetan;Vinetan;;Vinetan;;;;;;;;;x
 cenabian;Cenabian;Cenabian;Cenabian;;Cenabian;;;;;;;;;x
+zvejian;Zvejian;Zvejian;Zvejische;;Zvejian;;;;;;;;;x
+circassian;Circassian;Circassian;Circassian;;Circassian;;;;;;;;;x
+sarmatian;Sarmatian;Sarmatian;Sarmatian;;Sarmiento;;;;;;;;;x
+iazyges;Iazyges;Iazyges;Iazyges;;Iazyges;;;;;;;;;x
+royal_scythian;Scythian;Skolotoi;Skythen;;Escita;;;;;;;;;x
+parthian_culture;Parthian;Parthian;Parthische;;Parthian;;;;;;;;;x
+indo_parthian;Indo-Parthian;Indo-Parthian;Indoparthische;;Indo-Parthian;;;;;;;;;x
+indo_scythian;Indo-Scythian;Indo-Scythian;IndoSkythen;;Indo-Scythian;;;;;;;;;x
+
 
 #Culture groups
 
@@ -113,3 +122,4 @@ northern_romance;Northern Romance;Northern Romance;Nordromanische;;Northern Roma
 afro_romance_group;Afro-Romance;Afro-Romance;Afrikanromanische;;Afro-Romance;;;;;;;;;x
 oriental_romance;Oriental Romance;Oriental Romance;Ostromanische;;Oriental Romance;;;;;;;;;x
 atlanto_slavic;Atlanto-Slavic;Atlanto-Slavic;Atlantischslavische;;Atlanto-Slavic;;;;;;;;;x
+scythian_group;Scythian;Scythe;Skythe;;Escita;;;;;;;;;x

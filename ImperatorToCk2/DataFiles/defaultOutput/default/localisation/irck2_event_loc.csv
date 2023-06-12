@@ -68,6 +68,8 @@ EVTDESC_IR_BAL_2001;As the migration era begins to come to a close, much has cha
 EVTOPTA_IR_BAL_2001;Interesting;Interesting;Interessant;;Interesting;;;;;;;;;x
 EVTDESC_IR_BAL_2002;As the migration era begins to come to a close, much has changed in the world: allegiances have shifted, settlements have been abandoned, people have been uprooted, and connection to the old ways has been severed. This has become particularly appearent in [Root.Location.GetName], where the old Aestian identity is all but extinguished: They are now Prussian.;Roman Split;Roman Split;;Roman Split;;;;;;;;;x
 EVTOPTA_IR_BAL_2002;Interesting;Interesting;Interessant;;Interesting;;;;;;;;;x
+EVTDESC_IR_BAL_2003;As the migration era begins to come to a close, much has changed in the world: allegiances have shifted, settlements have been abandoned, people have been uprooted, and connection to the old ways has been severed. This has become particularly appearent in [Root.Location.GetName], where the old Aestian identity is all but extinguished: They are now Zvejian.;Roman Split;Roman Split;;Roman Split;;;;;;;;;x
+EVTOPTA_IR_BAL_2003;Interesting;Interesting;Interessant;;Interesting;;;;;;;;;x
 
 #Punic Split
 EVTDESC_IR_CAR_2000;With the end of imperial rule in our realm, our connection with the rest of the Punic world has been severed, causing localities to establish their own local rites and customs. The local population in [Root.Location.GetName] has diverged so far from the traditional Carthaginian way of life that they can neither command the Punic tongue nor be considered Carthaginian: They are now Taliaite.;Carthaginian Split;Carthaginian Split;;Carthaginian Split;;;;;;;;;x
@@ -188,3 +190,11 @@ EVTDESC_IR_ETR_2014;With the end of imperial rule in our realm, our connection w
 EVTOPTA_IR_ETR_2014;Interesting;Interesting;Interessant;;Interesting;;;;;;;;;x
 EVTDESC_IR_ETR_2015;With the end of imperial rule in our realm, our connection with the rest of the Etruscan world has been severed, causing localities to establish their own local rites and customs. The local population in [Root.Location.GetName] has diverged so far from the traditional Etruscan way of life that they can neither command the Etruscan tongue nor be considered Etruscan: They are now Mutnian.;Etruscan Split;Etruscan Split;;Etruscan Split;;;;;;;;;x
 EVTOPTA_IR_ETR_2015;Interesting;Interesting;Interessant;;Interesting;;;;;;;;;x
+
+#Persian Split
+EVTDESC_IR_PER_2000;With the end of imperial rule in our realm, our connection with the rest of the Parthian world has been severed, causing localities to establish their own local rites and customs. The local population in [Root.Location.GetName] has diverged so far from the traditional Parthian way of life that they can neither command the Parthian tongue nor be considered Parthian: They are now Indo-Parthian.;Parthian Split;Parthian Split;;Parthian Split;;;;;;;;;x
+EVTOPTA_IR_PER_2000;Interesting;Interesting;Interessant;;Interesting;;;;;;;;;x
+
+#Scythian Split
+EVTDESC_IR_SCY_2000;With the end of imperial rule in our realm, our connection with the rest of the Sakan world has been severed, causing localities to establish their own local rites and customs. The local population in [Root.Location.GetName] has diverged so far from the traditional Sakan way of life that they can neither command the Sakan tongue nor be considered Sakan: They are now Indo-Scythian.;Scythian Split;Scythian Split;;Scythian Split;;;;;;;;;x
+EVTOPTA_IR_SCY_2000;Interesting;Interesting;Interessant;;Interesting;;;;;;;;;x

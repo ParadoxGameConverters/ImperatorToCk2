@@ -65,9 +65,11 @@ irck2_convert_to_lombard_desc;You and your unlanded Suebi relatives convert to L
 irck2_convert_to_lithuanian;Embrace Lithuanian Culture;Embrace Lithuanian Culture;Embrace Lithuanian Culture;;Embrace Lithuanian Culture;;;;;;;;;x
 irck2_convert_to_lettigallish;Embrace Lettigallian Culture;Embrace Lettigallian Culture;Embrace Lettigallian Culture;;Embrace Lettigallian Culture;;;;;;;;;x
 irck2_convert_to_prussian;Embrace Prussian Culture;Embrace Prussian Culture;Embrace Prussian Culture;;Embrace Prussian Culture;;;;;;;;;x
+irck2_convert_to_zvejian;Embrace Zvejian Culture;Embrace Zvejian Culture;Embrace Zvejian Culture;;Embrace Zvejian Culture;;;;;;;;;x
 irck2_convert_to_lithuanian_desc;You and your unlanded Aestian relatives convert to Lithuanian Culture;You and your unlanded Aestian relatives convert to Lithuanian Culture;You and your unlanded Aestian relatives convert to Lithuanian Culture;;You and your unlanded Aestian relatives convert to Lithuanian Culture;;;;;;;;;x
 irck2_convert_to_lettigallish_desc;You and your unlanded Aestian relatives convert to Lettigallian Culture;You and your unlanded Aestian relatives convert to Lettigallian Culture;You and your unlanded Aestian relatives convert to Lettigallian Culture;;You and your unlanded Aestian relatives convert to Lettigallian Culture;;;;;;;;;x
 irck2_convert_to_prussian_desc;You and your unlanded Aestian relatives convert to Prussian Culture;You and your unlanded Aestian relatives convert to Prussian Culture;You and your unlanded Aestian relatives convert to Prussian Culture;;You and your unlanded Aestian relatives convert to Prussian Culture;;;;;;;;;x
+irck2_convert_to_zvejian_desc;You and your unlanded Aestian relatives convert to Zvejian Culture;You and your unlanded Aestian relatives convert to Zvejian Culture;You and your unlanded Aestian relatives convert to Zvejian Culture;;You and your unlanded Aestian relatives convert to Zvejian Culture;;;;;;;;;x
 
 #Punic split
 irck2_convert_to_taliaite;Embrace Taliaite Culture;Embrace Taliaite Culture;Embrace Taliaite Culture;;Embrace Taliaite Culture;;;;;;;;;x
@@ -186,6 +188,12 @@ irck2_convert_to_fasenian_desc;You and your unlanded Etruscan relatives convert 
 irck2_convert_to_rasnan_desc;You and your unlanded Etruscan relatives convert to Rasnan Culture;You and your unlanded Etruscan relatives convert to Rasnan Culture;You and your unlanded Etruscan relatives convert to Rasnan Culture;;You and your unlanded Etruscan relatives convert to Rasnan Culture;;;;;;;;;x
 irck2_convert_to_sazlei_desc;You and your unlanded Etruscan relatives convert to Sazlei Culture;You and your unlanded Etruscan relatives convert to Sazlei Culture;You and your unlanded Etruscan relatives convert to Sazlei Culture;;You and your unlanded Etruscan relatives convert to Sazlei Culture;;;;;;;;;x
 irck2_convert_to_falan_desc;You and your unlanded Etruscan relatives convert to Falan Culture;You and your unlanded Etruscan relatives convert to Falan Culture;You and your unlanded Etruscan relatives convert to Falan Culture;;You and your unlanded Etruscan relatives convert to Falan Culture;;;;;;;;;x
+
+#Parthian Split
+irck2_convert_to_indo_parthian;Embrace Indo-Parthian Culture;Embrace Indo-Parthian Culture;Embrace Indo-Parthian Culture;;Embrace Indo-Parthian Culture;;;;;;;;;x
+
+#Scythian Split
+irck2_convert_to_indo_scythian;Embrace Indo-Scythian Culture;Embrace Indo-Scythian Culture;Embrace Indo-Scythian Culture;;Embrace Indo-Scythian Culture;;;;;;;;;x
 
 #Empires
 irck2_create_e_italy;Create Italia;Create Italia;Machen Italien;;Create Italia;;;;;;;;;x

@@ -2560,6 +2560,29 @@ byzantine = {
 
 		disinherit_from_blinding = yes
 	}
+	
+	circassian = {
+		graphical_cultures = { byzantinegfx }
+
+		color = { 0.31 0.10 0.58 }
+
+		male_names = {
+			Smbat Khachik Ashot Arsham Zariadres Hamazasp Vardan Artawazd Mzez Eruand Orontes Mithranes Kherkhes Khozrid Sames Arshames Trdat Tigran Zareh Artashes Arshak Vagharsh Khosrow Varazdat Vasak Ashusha Varazvaghan Hmayeak Vahan Sahak Zarmihr Nikhor
+		}
+		female_names = {
+			Tigranuhi Vanuhi Mihrana Asatera Ariazate Aka Ghadana Erato Zarmandukht Pharantzem Mahbanu Zenobia Satenik
+		}
+
+		from_dynasty_prefix = "ve "
+
+		#male_patronym = "s dze"
+		#female_patronym = "shvili"
+		prefix = no
+
+		disinherit_from_blinding = yes
+
+		modifier = default_culture_modifier
+	}
 }
 
 celtic = {
@@ -3156,6 +3179,25 @@ baltic = {
 		}
 		female_names = {
 			Audra Austra Daina Dolja Gubja Laima Migla Rasa Saule Ugne
+		}
+
+		from_dynasty_prefix = "iš "
+
+		modifier = default_culture_modifier
+	}
+	
+	zvejian = {
+	
+		graphical_cultures = { ugricgfx }
+
+		color = { 0.37 0.35 0.22 }
+
+		male_names = {
+			Alvydas Arelis Auctune Bajoras Beidras Budo Dagonis Ekkelis Galindas_Galindo Gauronas Gerdautas Glande Golding Jauguttis Karatas Klukis Kugis
+			Milzas Nomedas Prusas Sergonis Ulinniks Ulitis
+		}
+		female_names = {
+			Betten Dagas Gelennis Gerkus Grasus Gulbis Mila Milyuns Weslikan Ziedas
 		}
 
 		from_dynasty_prefix = "iš "
@@ -4875,6 +4917,108 @@ iranian = {
 		male_patronym = "zade"
 		female_patronym = "dokht"
 		prefix = no
+
+		modifier = default_culture_modifier
+	}
+	
+	parthian_culture = {
+		graphical_cultures = { persiangfx }
+		secondary_event_pictures = bedouin_arabic
+		alternate_start = {
+			OR = {
+				year < 1000 
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+  
+		color = { 0.7 0.1 0.2 }
+  
+		male_names = {
+			Ardumanish_Ardumanish Ariyabrdhna_Ariyabrdhna Ariyamna_Ariyamna Arshaka_Arshaka Arshama_Arshama Artavardiya_Artavardiya Artaxshasa_Artaxshasa 
+			Arxa_Arkha Aryawratha_Aryawratha Asina_Asina Aspacanah_Aspacanah Atamaita_Atamaita Athiyabaushna_Athiyabaushna Aturpat_Aturpat Bagabigna_Bagabigna 
+			Bagabuxsha_Bagabuxsha Bardiya_Bardiya Cincixri_Cincixri Cinnamus Cisantaxma_Cisantaxma Cishpi_Cishpi Dadarshi_Dadarshi Darayavahu_Darayavahu 
+			Datuvahya_Datuvahya Frada_Frada Fravarti_Fravarti Gaubaruva_Gaubaruva Gotarzes_Gotarzes Haldita_Haldita Haxamanish_Haxamanish Imanish_Imanish 
+			Kambuyija_Kambuyija Kuru_Kuru Marduniya_Marduniya Martiya_Martiya Mithradatha_Mithridates Orodes_Orodes Osroes_Osroes Pacorus_Pacorus 
+			Parthamaspates Phraates_Phraates Phrataphernes_Phrataphernes Phriapatius Sanatruk_Sanatruk Taxmaspada_Taxmaspada Thuxra_Thuxra Turdat_Turdat Upadarma_Upadarma 
+			Utana_Utana Uvaxshtra_Uvaxshtra Vahauka_Vahauka Vahumisa_Vahumisa Vahyavishdapaya_Vahyavishdapaya Vahyazdata_Vahyazdata Valakhsh Vardanes_Vardanes 
+			Vayaspara_Vayaspara Vindafarnah_Vindafarnah Vindarna_Vindarna Vishtaspa_Vishtaspa Vonones_Vonones Xshathrita_Xshathrita Xshayarshan_Xshayarshan		
+		}
+		female_names = {
+			Asabana_Asabana Barsine_Barsine Dughdho-Va_Dughdho-Va Eredat-Fedhri_Eredat-Fedhri Franghad_Franghad Frenay_Frenay Huchithra_Huchithra Humaya_Humaya 
+			Hutaosa_Hutaosa Hvaredhay_Hvaredhay Hvovi_Hvovi Jagkrut_Jagkrut Kanuka_Kanuka Paesanghanu_Paesanghanu Pouruchista_Pouruchista Srutat-Fedhri_Srutat-Fedhri 
+			Thriti_Thriti Tushnamatay_Tushnamatay Urudhayant_Urudhayant Ushtavaiti_Ushtavaiti Uxshenti_Uxshenti Vadhut_Vadhut Vanghu-Fedhri_Vanghu-Fedhri Vispa-Thaurvo-Ashtray_Vispa-Thaurvo-Ashtray 
+			Zairichi_Zairichi		
+		}
+  
+		dynasty_title_names = yes
+		male_patronym = "zade"
+		female_patronym = "dokht"
+		prefix = no
+  
+		modifier = default_culture_modifier
+	}
+	
+	indo_parthian = {
+		graphical_cultures = { indiangfx }
+		secondary_event_pictures = bedouin_arabic
+		alternate_start = {
+			OR = {
+				year < 1000 
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+  
+		color = { 0.8 0.1 0.3 }
+  
+		male_names = {
+			Ardumanish_Ardumanish Ariyabrdhna_Ariyabrdhna Ariyamna_Ariyamna Arshaka_Arshaka Arshama_Arshama Artavardiya_Artavardiya Artaxshasa_Artaxshasa 
+			Arxa_Arkha Aryawratha_Aryawratha Asina_Asina Aspacanah_Aspacanah Atamaita_Atamaita Athiyabaushna_Athiyabaushna Aturpat_Aturpat Bagabigna_Bagabigna 
+			Bagabuxsha_Bagabuxsha Bardiya_Bardiya Cincixri_Cincixri Cinnamus Cisantaxma_Cisantaxma Cishpi_Cishpi Dadarshi_Dadarshi Darayavahu_Darayavahu 
+			Datuvahya_Datuvahya Frada_Frada Fravarti_Fravarti Gaubaruva_Gaubaruva Gotarzes_Gotarzes Haldita_Haldita Haxamanish_Haxamanish Imanish_Imanish 
+			Kambuyija_Kambuyija Kuru_Kuru Marduniya_Marduniya Martiya_Martiya Mithradatha_Mithridates Orodes_Orodes Osroes_Osroes Pacorus_Pacorus 
+			Parthamaspates Phraates_Phraates Phrataphernes_Phrataphernes Phriapatius Sanatruk_Sanatruk Taxmaspada_Taxmaspada Thuxra_Thuxra Turdat_Turdat Upadarma_Upadarma 
+			Utana_Utana Uvaxshtra_Uvaxshtra Vahauka_Vahauka Vahumisa_Vahumisa Vahyavishdapaya_Vahyavishdapaya Vahyazdata_Vahyazdata Valakhsh Vardanes_Vardanes 
+			Vayaspara_Vayaspara Vindafarnah_Vindafarnah Vindarna_Vindarna Vishtaspa_Vishtaspa Vonones_Vonones Xshathrita_Xshathrita Xshayarshan_Xshayarshan		
+		}
+		female_names = {
+			Asabana_Asabana Barsine_Barsine Dughdho-Va_Dughdho-Va Eredat-Fedhri_Eredat-Fedhri Franghad_Franghad Frenay_Frenay Huchithra_Huchithra Humaya_Humaya 
+			Hutaosa_Hutaosa Hvaredhay_Hvaredhay Hvovi_Hvovi Jagkrut_Jagkrut Kanuka_Kanuka Paesanghanu_Paesanghanu Pouruchista_Pouruchista Srutat-Fedhri_Srutat-Fedhri 
+			Thriti_Thriti Tushnamatay_Tushnamatay Urudhayant_Urudhayant Ushtavaiti_Ushtavaiti Uxshenti_Uxshenti Vadhut_Vadhut Vanghu-Fedhri_Vanghu-Fedhri Vispa-Thaurvo-Ashtray_Vispa-Thaurvo-Ashtray 
+			Zairichi_Zairichi		
+		}
+  
+		male_patronym = "zade"
+		female_patronym = "dokht"
+		prefix = no
+		
+		founder_named_dynasties = yes
+  
+		modifier = default_culture_modifier
+	}
+	
+	indo_scythian = {
+        graphical_cultures = { persiangfx } #arabicgfx
+		secondary_event_pictures = bedouin_arabic
+
+        color = { 0.61 0.24 0.40 }
+
+        male_names = {
+            Alysanna Arsa Aryamgula Asi Baga Bahudhiva Bamdaka Bhadra Bradaysaa Brika Capastaka Ceguti Chika Daisai Dharma Dum Dzatsi Gostana Gulai Harka
+			Haskadatta Huyi Hvam Hvarda Hvardamaya Hvimdu Ikam Irasamga Jabgu Jajahasa Kamnai Kayam Kharusa Khina Khuradatta Khvarnarse Kimashana Kimashani
+			Kimatcuna Kirtti Kriti Kunala Kushtana Mamatti Manohara Murlimin Naganpaka Nipandaka Padatcaina Pakyau Phimduka Presamdha Punarrjam Punekula
+			Purgula Raghu Samgai Samgaka Samgalaka Sangrama Sayausa Sham Shambhava Shikshananda Shinganca Shiresala Shirvamdai Shribhadra Shtrugize Shudamgula
+			Shura Sidaka Sihya Siladharma Simhyi Skunkha Sthavira Sudarrjam Sudhana Sumauna Sumtharaka Tayasham Tcusyau Vadhaga Vagiti Vaham Vahana
+			Vardhana Varman Vasudeva Vidakai Vidaram Vijita Vijitasimha Vikrama Virsha Visaram Vishirapumna Visma Ysambasta Zambasta
+        }
+        female_names = {
+            Alsamgya Alyonj Armaiti Dharmadasi Khivyaina Maya Nanda Nirmala Praniyata Safali Shandramata Shri Tisyarakshita Vimala Vimalaprabha Yavalac
+        }
+
+		dukes_called_kings = yes
+
+        from_dynasty_prefix = "nava "
+        male_patronym = "puri "
+        female_patronym = "duda "
 
 		modifier = default_culture_modifier
 	}

@@ -235,21 +235,21 @@ pannonian,arberian
 iapodian,arberian
 
 #Scythian
-scythian,saka
-sarmatian,saka
-roxolanian,saka
+scythian,royal_scythian
+agathyrsian,royal_scythian
+sarmatian,sarmatian
+siraci,sarmatian
+roxolanian,iazyges
 kharesmian,saka
 derbiccan,saka
-sindi,saka
-siraci,saka
-maeotian,saka
 saka,saka
 sakan,saka
-thyssagetaen,saka
-agathyrsian,saka
-gelonian,saka
+sindi,circassian
+maeotian,circassian
+thyssagetaen,sarmatian
+gelonian,royal_scythian
 alani,alan
-jurcan,saka
+jurcan,sarmatian
 massagetaean,saka
 cimmerian,cimmerian
 
@@ -399,12 +399,12 @@ uxian,persian
 amardian,persian
 cossian,persian
 cadusian,persian
-parthian,persian
 median,persian
 hyrcanian,persian
 sattagydian,persian
 sarangian,persian
 carmanian,persian
+parthian,parthian_culture
 pactyan,afghan
 gedrosian,baloch
 parecanian,baloch
@@ -509,3 +509,21 @@ rhakine,mon
 mon,mon
 pubu,wa
 
+#150BC start date mod
+aorsi,sarmatian
+tauri,dahi_scythian
+pundra,bengali
+#savara,bengali
+pulinda,bengali
+vrji,bengali
+greco_persian,seleucian
+karduchoi,parthian_culture
+mazices,maghreb_arabic
+machlyes,maghreb_arabic
+andhra,telugu
+asmaka,telugu
+kuntala,telugu
+chola,tamil
+pandya,tamil
+kerala,tamil
+greco_bactrian,bactrian

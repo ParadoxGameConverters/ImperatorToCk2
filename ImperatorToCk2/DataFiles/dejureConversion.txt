@@ -44,6 +44,11 @@ elamite,e_persia,k_persia
 south_arabian,e_arabia,k_yemen
 neo_mitanni,e_persia,k_NMT
 cimmerian,e_pontic_steppe,k_SCY
+parthian_culture,e_persia,k_persia
+royal_scythian,e_pontic_steppe,k_SCY
+iazyges,e_pontic_steppe,k_SCY
+sarmatian,e_pontic_steppe,k_SCY
+circassian,e_pontic_steppe,k_SCY
 
 persian,e_persia,k_persia
 greek,e_HLA,k_byzantium

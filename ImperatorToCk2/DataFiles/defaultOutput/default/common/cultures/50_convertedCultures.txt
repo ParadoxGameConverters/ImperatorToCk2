@@ -1769,7 +1769,7 @@ gallic_group = {
 	ghasettian = {
 		graphical_cultures = { celticgfx }
 
-		color = { 0.12 0.27 0.06 }
+		color = { 0.22 0.34 0.18 }
 
 		# Þ 222 þ 254 Ð 208 ð 240 æ
 
@@ -1816,7 +1816,7 @@ gallic_group = {
 	betwani = {
 		graphical_cultures = { celticgfx }
 
-		color = { 0.14 0.27 0.04 }
+		color = { 0.05 0.27 0.13 }
 
 		# Þ 222 þ 254 Ð 208 ð 240 æ
 
@@ -1862,7 +1862,7 @@ gallic_group = {
 	vinetan = {
 		graphical_cultures = { celticgfx }
 
-		color = { 0.10 0.26 0.05 }
+		color = { 0.30 0.40 0.04 }
 
 		# Þ 222 þ 254 Ð 208 ð 240 æ
 
@@ -1911,7 +1911,7 @@ gallic_group = {
 	cenabian = {
 		graphical_cultures = { celticgfx }
 
-		color = { 0.13 0.30 0.05 }
+		color = { 0.22 0.41 0.09 }
 
 		# Þ 222 þ 254 Ð 208 ð 240 æ
 
@@ -2846,6 +2846,103 @@ atlanto_slavic = {
 		}
 
 		from_dynasty_prefix = "of "
+
+		modifier = default_culture_modifier
+	}
+}
+scythian_group = {
+	royal_scythian = { 
+		graphical_cultures = { persiangfx }
+		secondary_event_pictures = bedouin_arabic
+		alternate_start = {
+			OR = {
+				year < 1000 
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+
+		color = { 0.45 0.25 0.5  }
+
+		male_names = {
+			Alysanna Arsa Aryamgula Asi Baga Bahudhiva Bamdaka Bhadra Bradaysaa Brika Capastaka Ceguti Chika Daisai Dharma Dum Dzatsi Gostana Gulai Harka
+			Haskadatta Huyi Hvam Hvarda Hvardamaya Hvimdu Ikam Irasamga Jabgu Jajahasa Kamnai Kayam Kharusa Khina Khuradatta Khvarnarse Kimashana Kimashani
+			Kimatcuna Kirtti Kriti Kunala Kushtana Mamatti Manohara Murlimin Naganpaka Nipandaka Padatcaina Pakyau Phimduka Presamdha Punarrjam Punekula
+			Purgula Raghu Samgai Samgaka Samgalaka Sangrama Sayausa Sham Shambhava Shikshananda Shinganca Shiresala Shirvamdai Shribhadra Shtrugize Shudamgula
+			Shura Sidaka Sihya Siladharma Simhyi Skunkha Sthavira Sudarrjam Sudhana Sumauna Sumtharaka Tayasham Tcusyau Vadhaga Vagiti Vaham Vahana
+			Vardhana Varman Vasudeva Vidakai Vidaram Vijita Vijitasimha Vikrama Virsha Visaram Vishirapumna Visma Ysambasta Zambasta
+		}
+		female_names = {
+			Alsamgya Alyonj Armaiti Dharmadasi Khivyaina Maya Nanda Nirmala Praniyata Safali Shandramata Shri Tisyarakshita Vimala Vimalaprabha Yavalac	
+		}
+
+		dukes_called_kings = yes
+
+        from_dynasty_prefix = "nava "
+        male_patronym = "puri "
+        female_patronym = "duda "
+
+		modifier = default_culture_modifier
+	}
+	
+	sarmatian = {
+		graphical_cultures = { persiangfx }
+		alternate_start = {
+			OR = {
+				year < 1000 
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+
+		color = { 0.5 0.55 0.3  }
+
+		male_names = {
+			Alysanna Arsa Aryamgula Asi Baga Bahudhiva Bamdaka Bhadra Bradaysaa Brika Capastaka Ceguti Chika Daisai Dharma Dum Dzatsi Gostana Gulai Harka
+			Haskadatta Huyi Hvam Hvarda Hvardamaya Hvimdu Ikam Irasamga Jabgu Jajahasa Kamnai Kayam Kharusa Khina Khuradatta Khvarnarse Kimashana Kimashani
+			Kimatcuna Kirtti Kriti Kunala Kushtana Mamatti Manohara Murlimin Naganpaka Nipandaka Padatcaina Pakyau Phimduka Presamdha Punarrjam Punekula
+			Purgula Raghu Samgai Samgaka Samgalaka Sangrama Sayausa Sham Shambhava Shikshananda Shinganca Shiresala Shirvamdai Shribhadra Shtrugize Shudamgula
+			Shura Sidaka Sihya Siladharma Simhyi Skunkha Sthavira Sudarrjam Sudhana Sumauna Sumtharaka Tayasham Tcusyau Vadhaga Vagiti Vaham Vahana
+			Vardhana Varman Vasudeva Vidakai Vidaram Vijita Vijitasimha Vikrama Virsha Visaram Vishirapumna Visma Ysambasta Zambasta
+		}
+		female_names = {
+			Alsamgya Alyonj Armaiti Dharmadasi Khivyaina Maya Nanda Nirmala Praniyata Safali Shandramata Shri Tisyarakshita Vimala Vimalaprabha Yavalac	
+		}
+
+		dukes_called_kings = yes
+
+        from_dynasty_prefix = "nava "
+        male_patronym = "puri "
+        female_patronym = "duda "
+
+		modifier = default_culture_modifier
+	}
+	iazyges = {
+		graphical_cultures = { persiangfx }
+		alternate_start = {
+			OR = {
+				year < 1000 
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+
+		color = { 0.6 0.4 0.3 }
+
+		male_names = {
+			Alysanna Arsa Aryamgula Asi Baga Bahudhiva Bamdaka Bhadra Bradaysaa Brika Capastaka Ceguti Chika Daisai Dharma Dum Dzatsi Gostana Gulai Harka
+			Haskadatta Huyi Hvam Hvarda Hvardamaya Hvimdu Ikam Irasamga Jabgu Jajahasa Kamnai Kayam Kharusa Khina Khuradatta Khvarnarse Kimashana Kimashani
+			Kimatcuna Kirtti Kriti Kunala Kushtana Mamatti Manohara Murlimin Naganpaka Nipandaka Padatcaina Pakyau Phimduka Presamdha Punarrjam Punekula
+			Purgula Raghu Samgai Samgaka Samgalaka Sangrama Sayausa Sham Shambhava Shikshananda Shinganca Shiresala Shirvamdai Shribhadra Shtrugize Shudamgula
+			Shura Sidaka Sihya Siladharma Simhyi Skunkha Sthavira Sudarrjam Sudhana Sumauna Sumtharaka Tayasham Tcusyau Vadhaga Vagiti Vaham Vahana
+			Vardhana Varman Vasudeva Vidakai Vidaram Vijita Vijitasimha Vikrama Virsha Visaram Vishirapumna Visma Ysambasta Zambasta
+		}
+		female_names = {
+			Alsamgya Alyonj Armaiti Dharmadasi Khivyaina Maya Nanda Nirmala Praniyata Safali Shandramata Shri Tisyarakshita Vimala Vimalaprabha Yavalac	
+		}
+
+		dukes_called_kings = yes
+
+        from_dynasty_prefix = "nava "
+        male_patronym = "puri "
+        female_patronym = "duda "
 
 		modifier = default_culture_modifier
 	}

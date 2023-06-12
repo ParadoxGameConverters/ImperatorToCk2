@@ -1,0 +1,61 @@
+###################################
+#
+# Imperator:Rome to Crusader Kings II
+# - Persian Culture Conversion Events
+#
+###################################
+
+namespace = IR_PER
+
+# Province culture changes from Parthian to Indo-Parthian
+province_event = {
+	id = IR_PER.2000
+	desc = EVTDESC_IR_PER_2000
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 100
+		culture = parthian_culture
+		region = world_india
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = parthian_culture
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_PER_2000
+		culture = indo_parthian
+	}
+}
+
+#################################################
+
+
+

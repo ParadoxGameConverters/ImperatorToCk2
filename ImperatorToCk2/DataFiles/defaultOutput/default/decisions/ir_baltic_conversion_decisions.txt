@@ -272,6 +272,11 @@ targetted_decisions = {
 					region = custom_irck2_latvia
 				}
 			}
+			NOT = { 
+				capital_scope = {
+					region = custom_irck2_britannia
+				}
+			}
 			any_realm_province = {
 				culture = prussian
 			}
@@ -296,6 +301,11 @@ targetted_decisions = {
 			NOT = {
 				capital_scope = {
 					region = custom_irck2_latvia
+				}
+			}
+			NOT = {
+				capital_scope = {
+					region = custom_irck2_britannia
 				}
 			}
 			any_realm_province = {
@@ -384,6 +394,130 @@ targetted_decisions = {
 				num_culture_realm_provs = {
 					value = 10
 					culture = prussian
+				}
+			}
+		}
+	}
+
+	# Aestian character may convert to Zvejian
+	irck2_convert_to_zvejian = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = aestian
+			capital_scope = {
+				region = custom_irck2_britannia
+			}
+			any_realm_province = {
+				culture = zvejian
+			}
+			OR = {
+				year = 475
+				top_liege = {
+					NOT = { culture = aestian }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = aestian
+			capital_scope = {
+				region = custom_irck2_britannia
+			}
+			any_realm_province = {
+				culture = zvejian
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = zvejian
+			}
+			culture = zvejian
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Punic ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = aestian
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = aestian }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = zvejian }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = zvejian }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = zvejian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = zvejian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = zvejian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = zvejian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = zvejian
 				}
 			}
 		}
