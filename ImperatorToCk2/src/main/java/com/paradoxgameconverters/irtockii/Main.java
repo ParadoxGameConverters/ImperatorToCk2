@@ -556,11 +556,9 @@ public class Main
             LOGGER.info("Copying default output... (This will take 5-6 minutes)");
 
             //Default output, will be included in every conversion regardless of what occured in the save file
-            //Output.copyRaw("defaultOutput"+VM+"cultures"+VM+"00_cultures.txt",modDirectory+VM+"common"+VM+"cultures"+VM+"00_cultures.txt");
-            //Processing.customDate(date,"defaultOutput/default/bookmarks/50_customBookmark.txt",modDirectory+VM+"common/bookmarks/50_customBookmark.txt");
             Output.copyDefaultOutput("defaultOutput/default",modDirectory);
             Processing.customDate(date,modDirectory+"/common/bookmarks/50_customBookmark.txt",modDirectory+"/common/bookmarks/50_customBookmark.txt");
-            Processing.setTechYear(date,modDirectory);
+            //Processing.setTechYear(date,modDirectory); Will be used once custom technology is implemented
             
 
             long outputTime = System.nanoTime();
