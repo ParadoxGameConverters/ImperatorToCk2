@@ -108,7 +108,18 @@ iazyges;Iazyges;Iazyges;Iazyges;;Iazyges;;;;;;;;;x
 royal_scythian;Scythian;Skolotoi;Skythen;;Escita;;;;;;;;;x
 parthian_culture;Parthian;Parthian;Parthische;;Parthian;;;;;;;;;x
 indo_parthian;Indo-Parthian;Indo-Parthian;Indoparthische;;Indo-Parthian;;;;;;;;;x
-indo_scythian;Indo-Scythian;Indo-Scythian;IndoSkythen;;Indo-Scythian;;;;;;;;;x
+indo_scythian;Indo-Scythian;Indo-Scythian;Indoskythen;;Indo-Scythian;;;;;;;;;x
+plashurii;Plashurii;Plashurii;Plashurische;;Plashurii;;;;;;;;;x
+wigazan;Wigazan;Wigazan;Wigazische;;Wigazan;;;;;;;;;x
+nemedian;Nemedian;Nemedian;Nemedische;;Nemedian;;;;;;;;;x
+anglo_suebi;Anglo-Suebi;Anglo-Suebi;Anglosuebische;;Anglo-Suebi;;;;;;;;;x
+atrebatian;Atrebatian;Atrebatian;Atrebatische;;Atrebatian;;;;;;;;;x
+indo_germanic;Indo-Germanic;Indo-Germanic;Indiengermanische;;Indo-Germanic;;;;;;;;;x
+#From Tianxia
+pyu;Pyu;Pyu;Pyuische;;Pyu;;;;;;;;;x
+shan;Shan;shan;Shan;;Shan;;;;;;;;;x
+wa;Wa;Wa;Waische;;Wa;;;;;;;;;x
+mon;Mon;Mon;Mon;;Mon;;;;;;;;;x
 
 
 #Culture groups
@@ -123,3 +134,9 @@ afro_romance_group;Afro-Romance;Afro-Romance;Afrikanromanische;;Afro-Romance;;;;
 oriental_romance;Oriental Romance;Oriental Romance;Ostromanische;;Oriental Romance;;;;;;;;;x
 atlanto_slavic;Atlanto-Slavic;Atlanto-Slavic;Atlantischslavische;;Atlanto-Slavic;;;;;;;;;x
 scythian_group;Scythian;Scythe;Skythe;;Escita;;;;;;;;;x
+semitic_group;Chaldean;Chaldéen;Chaldäisch;;Caldaico;;;;;;;;;x
+#From Tianxia
+burmese_group;Burmic;Burmic;Burmisch;;Burmic;;;;;;;;;x
+tai_kadai_group;Tai-Kadai;Tai-Kadai;Taikadaisch;;Tai-Kadai;;;;;;;;;x
+mon_khmer_group;Mon-Khmer;Mon-Khmer;Monkhmerisch;;Mon-Khmer;;;;;;;;;x
+mekong_group;Mekong;Mekong;Mekongisch;;Mekong;;;;;;;;;x

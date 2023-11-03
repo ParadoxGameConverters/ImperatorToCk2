@@ -1,0 +1,162 @@
+5378008=
+{
+	name="Algelgeitis"
+	culture="zvejian"
+}
+5378009=
+{
+	name="Algibarteitis"
+	culture="zvejian"
+	
+}
+5378010=
+{
+	name="Algimanteitis"
+	culture="zvejian"
+	
+}
+5378011=
+{
+	name="Alginoreitis"
+	culture="zvejian"
+	
+}
+5378012=
+{
+	name="Daumanteitis"
+	culture="zvejian"
+	
+}
+5378013=
+{
+	name="Dautawteitis"
+	culture="zvejian"
+	
+}
+5378014 = {
+   name="Dauwaldeitis"
+   culture="zvejian"
+   
+}
+5378015 = {
+   name="Dauwilteitis"
+   culture="zvejian"
+   
+}
+
+5378016 = {
+   name="Genbuteitis"
+   culture="zvejian"
+   
+}
+
+5378017 ={
+   name="Genmanteitis"
+   culture="zvejian"
+   
+}
+5378018 ={
+   name="Genwilteitis"
+   culture="zvejian"
+   
+}
+5378019 ={
+   name="Girdelgeitis"
+   culture="zvejian"
+   
+}
+5378020 ={
+   name="Girdwilteitis"
+   culture="zvejian"
+   
+}
+5378021 ={
+   name="Girtawteitis"
+   culture="zvejian"
+   
+}
+5378022 ={
+   name="Giwenbuteitis"
+   culture="zvejian"
+   
+}
+5378023 = {
+	name = "Ljaubarteitis"
+	culture = zvejian
+}
+5378024 = {
+	name = "Ljauelgeitis"
+	culture = zvejian
+}
+5378025 = {
+	name = "Ljaugaileitis"
+	culture = zvejian
+}
+5378026 = {
+	name = "Ljaugirdeitis"
+	culture = zvejian
+}
+5378027 = {
+	name = "Ljautawteitis"
+	culture = zvejian
+}
+5378028 = {
+	name = "Mantawteitis"
+	culture = zvejian
+}
+5378029 = {
+	name = "Mantwilteitis"
+	culture = zvejian
+}
+5378030 = {
+	name = "Minbarteitis"
+	culture = zvejian
+}
+5378031 = {
+	name = "Minbuteitis"
+	culture = zvejian
+}
+5378032 = {
+	name = "Minelgeitis"
+	culture = zvejian
+}
+5378033 = {
+	name = "Mingaileitis"
+	culture = zvejian
+}
+5378034 = {
+	name = "Minoreitis"
+	culture = zvejian
+}
+5378035 = {
+	name = "Skirbuteitis"
+	culture = zvejian
+}
+5378036 = {
+	name = "Skirmanteitis"
+	culture = zvejian
+}
+5378037 = {
+	name = "Skirwilteitis"
+	culture = zvejian
+}
+5378038 = {
+	name = "Skirwaldeitis"
+	culture = zvejian
+}
+5378039 = {
+	name = "Trijwaldeitis"
+	culture = zvejian
+}
+5378040 = {
+	name = "Waisbarteitis"
+	culture = zvejian
+}
+5378041 = {
+	name = "Waiswaldeitis"
+	culture = zvejian
+}
+5378042 = {
+	name = "Waiswilteitis"
+	culture = zvejian
+}

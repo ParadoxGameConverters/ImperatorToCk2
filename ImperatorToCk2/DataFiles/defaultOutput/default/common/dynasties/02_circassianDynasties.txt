@@ -1,0 +1,90 @@
+5379008=
+{
+	name="Guaye"
+	culture="circassian"
+}
+5379009=
+{
+	name="Adamiy"
+	culture="circassian"
+	
+}
+5379010=
+{
+	name="Abzakh"
+	culture="circassian"
+	
+}
+5379011=
+{
+	name="Zhaney"
+	culture="circassian"
+	
+}
+5379012=
+{
+	name="Mamkhegh"
+	culture="circassian"
+	
+}
+5379013=
+{
+	name="Mokhosh"
+	culture="circassian"
+	
+}
+5379014 = {
+   name="Natukhai"
+   culture="circassian"
+   
+}
+5379015 = {
+   name="Temirgoy"
+   culture="circassian"
+   
+}
+
+5379016 = {
+   name="Hatuqwai"
+   culture="circassian"
+   
+}
+
+5379017 ={
+   name="Khegaik"
+   culture="circassian"
+   
+}
+5379018 ={
+   name="Khetuk"
+   culture="circassian"
+   
+}
+5379019 ={
+   name="Cöbein"
+   culture="circassian"
+   
+}
+5379020 ={
+   name="Shapsug"
+   culture="circassian"
+   
+}
+5379021 ={
+   name="Beslenei"
+   culture="circassian"
+   
+}
+5379022 ={
+   name="Ubykh"
+   culture="circassian"
+   
+}
+5379023 = {
+	name = "Tazryt"
+	culture = circassian
+}
+5379024 = {
+	name = "Okhlov"
+	culture = circassian
+}

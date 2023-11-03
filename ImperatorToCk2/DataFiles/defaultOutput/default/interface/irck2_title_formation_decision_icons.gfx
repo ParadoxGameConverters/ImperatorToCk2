@@ -1,0 +1,37 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_irck2_create_k_poland"
+		texturefile = "gfx\\interface\\decision_icon_irck2_create_k_poland.tga"
+	}
+
+	spriteType = {
+		name = "GFX_irck2_create_k_pomerania"
+		texturefile = "gfx\\interface\\decision_icon_irck2_create_k_pomerania.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_irck2_create_k_bohemia"
+		texturefile = "gfx\\interface\\decision_icon_irck2_create_k_bohemia.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_irck2_create_k_croatia"
+		texturefile = "gfx\\interface\\decision_icon_irck2_create_k_croatia.tga"
+	}
+
+	spriteType = {
+		name = "GFX_irck2_create_k_serbia"
+		texturefile = "gfx\\interface\\decision_icon_irck2_create_k_serbia.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_irck2_create_k_moravia"
+		texturefile = "gfx\\interface\\decision_icon_irck2_create_k_moravia.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_irck2_create_k_bulgaria"
+		texturefile = "gfx\\interface\\decision_icon_empire_of_bulgaria_decision.tga"
+	}
+}

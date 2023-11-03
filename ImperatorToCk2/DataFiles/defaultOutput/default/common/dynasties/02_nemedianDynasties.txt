@@ -1,0 +1,158 @@
+5388008=
+{
+	name="Burtasid"
+	culture="nemedian"
+}
+5388009=
+{
+	name="Alauni"
+	culture="nemedian"
+	
+}
+5388010=
+{
+	name="Halani"
+	culture="nemedian"
+	
+}
+5388011=
+{
+	name="Shoana"
+	culture="nemedian"
+	
+}
+5388012=
+{
+	name="Senty"
+	culture="nemedian"
+	
+}
+5388013=
+{
+	name="Ovseti"
+	culture="nemedian"
+	
+}
+5388014 = {
+   name="Tsærasantæ"
+   culture="nemedian"
+   
+}
+5388015 = {
+   name="Ælbegatæ"
+   culture="nemedian"
+   
+}
+
+5388016 = {
+   name="Ardasentæ"
+   culture="nemedian"
+   
+}
+
+5388017 ={
+   name="Bekkuyzartæ"
+   culture="nemedian"
+   
+}
+5388018 ={
+   name="Gæbæratæ"
+   culture="nemedian"
+   
+}
+5388019 ={
+   name="Dzæræhohtæ"
+   culture="nemedian"
+   
+}
+5388020 ={
+   name="Dzebysatæ"
+   culture="nemedian"
+   
+}
+5388021 ={
+   name="Djerdjitæ"
+   culture="nemedian"
+   
+}
+5388022 ={
+   name="Guyrdzybetæ"
+   culture="nemedian"
+   
+}
+5388023 = {
+	name = "Zændjiatæ"
+	culture = nemedian
+}
+5388024 = {
+	name = "Kærkuystæ"
+	culture = nemedian
+}
+5388025 = {
+	name = "Djykkajtæ"
+	culture = nemedian
+}
+5388026 = {
+	name = "Godjysatæ"
+	culture = nemedian
+}
+5388027 = {
+	name = "Magkætæ"
+	culture = nemedian
+}
+5388028 = {
+	name = "Pærræstatæ"
+	culture = nemedian
+}
+5388029 = {
+	name = "Hetægkatæ"
+	culture = nemedian
+}
+5388030 = {
+	name = "Hædarcatæ"
+	culture = nemedian
+}
+5388031 = {
+	name = "Tuallægtæ"
+	culture = nemedian
+}
+5388032 = {
+	name = "Færniatæ"
+	culture = nemedian
+}
+5388033 = {
+	name = "Ephraimid"
+	culture = nemedian
+}
+5388034 = {
+	name = "Tandelatæ"
+	culture = nemedian
+}
+5388035 = {
+	name = "Tsæykostæ"
+	culture = nemedian
+}
+5388036 = {
+	name = "Sozanatæ"
+	culture = nemedian
+}
+5388037 = {
+	name = "Skirwilteitis"
+	culture = nemedian
+}
+5388038 = {
+	name = "Mærzojtæ"
+	culture = nemedian
+}
+5388039 = {
+	name = "Zmbalani"
+	culture = nemedian
+}
+5388040 = {
+	name = "Sathisi"
+	culture = nemedian
+}
+5388041 = {
+	name = "Totrazi"
+	culture = nemedian
+}

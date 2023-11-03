@@ -2000,5 +2000,29 @@ public class Processing
 
         return false;
     }
+    
+    public static void setTechYear(String startDate, String directory) throws IOException
+    //Sets the start year of all technology to align with startDate
+    {
+        String textToReplace = "[startdate]";
+        String techDir = directory+"/history/technology/";
+        String techDir2 = directory+"/common/defines/tech_defines.lua";
+        startDate = startDate.replace(".",",");
+        String startYear = startDate.split(",")[0];
+        File techFileInfo = new File (techDir);
+        String[] techFileList = techFileInfo.list();
+                if (techFileList != null) {
+                    int aq2 = 0;
+                    while (aq2 < techFileList.length) {
+                        String techFile = techFileList[aq2];
+                        Output.replaceInFile(textToReplace,startYear,techDir+techFile);
+                        System.out.println("Replaced "+textToReplace+" with "+startYear+" in "+techDir+techFile);
+                        aq2 = aq2 + 1;
+                    }
+
+                }
+        Output.replaceInFile(textToReplace,startYear,techDir2);
+
+    }
 
 }

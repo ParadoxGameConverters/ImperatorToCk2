@@ -1229,6 +1229,7 @@ public class Output
                     aq2 = aq2+1;
                 }
                 irFlagScaleExact(devFlagName,flagName,"128","128"); //create final .tga flag, scale to CK2 128x128
+                File flagCheck = new File (flagName);//Check if flag exists
                 flagCreated = 1; //Flag has been created
             }
 
@@ -2032,6 +2033,38 @@ public class Output
         irFlagScaleExact(devFlagName,iconDevName,"24","20");
         irFlagCombine(iconTemplateName,iconDevName,iconName);
         
+    }
+    
+    public static void replaceInFile(String textToReplace, String testToReplaceWith, String Directory) throws IOException // Replace A with B
+    {
+
+        String tab = "	";
+
+        ArrayList<String> oldFile = new ArrayList<String>();
+
+        oldFile = Importer.importBasicFile(Directory);
+
+        FileOutputStream fileOut= new FileOutputStream(Directory);
+        PrintWriter out = new PrintWriter(fileOut);
+
+        int aqq = 0;
+
+        while (aqq < oldFile.size()) {
+            //out.println (oldFile.get(aqq));
+            if (oldFile.get(aqq).contains(textToReplace)) {
+                String replacedLine = oldFile.get(aqq).replace(textToReplace,testToReplaceWith);
+                replacedLine = replacedLine.replace("#","");
+                out.println (replacedLine);
+            } else {
+                out.println (oldFile.get(aqq));
+            }
+
+            aqq = aqq + 1;
+
+        }
+
+        out.flush();
+        fileOut.close();
     }
 
 }

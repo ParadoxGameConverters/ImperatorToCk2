@@ -96,6 +96,7 @@ kannada,e_deccan,k_karnata
 tamil,e_deccan,k_tamilakam
 telugu,e_deccan,k_telingana
 prussian,e_wendish_empire,k_lithuania
+ugricbaltic,e_scandinavia,k_estonia
 
 saxon,e_britannia,k_england
 lombard,e_germany,k_lombardy

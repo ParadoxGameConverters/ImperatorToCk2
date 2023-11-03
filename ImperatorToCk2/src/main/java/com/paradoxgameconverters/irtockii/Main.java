@@ -560,6 +560,7 @@ public class Main
             //Processing.customDate(date,"defaultOutput/default/bookmarks/50_customBookmark.txt",modDirectory+VM+"common/bookmarks/50_customBookmark.txt");
             Output.copyDefaultOutput("defaultOutput/default",modDirectory);
             Processing.customDate(date,modDirectory+"/common/bookmarks/50_customBookmark.txt",modDirectory+"/common/bookmarks/50_customBookmark.txt");
+            Processing.setTechYear(date,modDirectory);
             
 
             long outputTime = System.nanoTime();
@@ -678,6 +679,7 @@ public class Main
                                     try {
                                         genFlag = Output.generateFlag(ck2Dir,impGameDir,rank,flagList,impTagInfo.get(aq4)[0],impTagInfo.get(aq4)[23],
                                         colorList,modFlagGFX,modDirectory);
+                                        //File test = new File (modDirectory+"/gfx/flags/"+ck2Tag+".tga");
                                     } catch(Exception e) { //if something goes wrong, don't crash entire converter
                                         LOGGER.warning("Exception created while generating flag "+impTagInfo.get(aq4)[23]+" for "+impTagInfo.get(aq4)[0]+
                                         ", aborting flag generation");

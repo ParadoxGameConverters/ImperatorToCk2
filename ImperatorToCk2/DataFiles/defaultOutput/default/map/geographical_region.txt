@@ -514,7 +514,7 @@ custom_irck2_romania = {
 
 custom_irck2_dalmatia = {
 	duchies = {
-		d_croatia d_dalmatia d_dioclea d_rashka d_slavonia d_bosnia d_symia
+		d_croatia d_dalmatia d_dioclea d_rashka d_slavonia d_bosnia d_syrmia
 	}
 }
 
@@ -819,6 +819,13 @@ custom_irck2_noric_scythia = {
 	}
 	counties = {
 		c_kiev c_medjybij
+	}
+}
+
+custom_irck2_pannonia = {
+	duchies = {
+		#Pannonia
+		d_transylvania d_ungvar d_pest d_nyitra d_esztergom d_pecs d_temes
 	}
 }
 

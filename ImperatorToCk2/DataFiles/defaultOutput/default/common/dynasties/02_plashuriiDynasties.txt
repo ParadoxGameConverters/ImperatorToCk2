@@ -1,0 +1,580 @@
+5386000=
+{
+	name="Ambonus"
+	culture="plashurii"
+}
+5386001=
+{
+	name="Ambona"
+	culture="plashurii"
+}
+5386002=
+{
+	name="Ambonii"
+	culture="plashurii"
+}
+5386003=
+{
+	name="Ambonid"
+	culture="plashurii"
+}
+5386004=
+{
+	name="Auaroses"
+	culture="plashurii"
+}
+5386005=
+{
+	name="Auarosa"
+	culture="plashurii"
+}
+5386006=
+{
+	name="Auarosii"
+	culture="plashurii"
+}
+5386007=
+{
+	name="Auarosian"
+	culture="plashurii"
+}
+5386008=
+{
+	name="Audaxus"
+	culture="plashurii"
+}
+5386009=
+{
+	name="Audaxa"
+	culture="plashurii"
+}
+5386010=
+{
+	name="Audaxii"
+	culture="plashurii"
+}
+5386011=
+{
+	name="Audaxian"
+	culture="plashurii"
+}
+5386012=
+{
+	name="Carosus"
+	culture="plashurii"
+}
+5386013=
+{
+	name="Carosa"
+	culture="plashurii"
+}
+5386014=
+{
+	name="Carosii"
+	culture="plashurii"
+}
+5386015=
+{
+	name="Carosian"
+	culture="plashurii"
+}
+5386016=
+{
+	name="Culchus"
+	culture="plashurii"
+}
+5386017=
+{
+	name="Culcha"
+	culture="plashurii"
+}
+5386018=
+{
+	name="Culchi"
+	culture="plashurii"
+}
+5386019=
+{
+	name="Culchian"
+	culture="plashurii"
+}
+5386020=
+{
+	name="Leukus"
+	culture="plashurii"
+}
+5386021=
+{
+	name="Leuka"
+	culture="plashurii"
+}
+5386022=
+{
+	name="Leuki"
+	culture="plashurii"
+}
+5386023=
+{
+	name="Leukian"
+	culture="plashurii"
+}
+5386024=
+{
+	name="Mandonus"
+	culture="plashurii"
+}
+5386025=
+{
+	name="Mandonia"
+	culture="plashurii"
+}
+5386026=
+{
+	name="Mandonii"
+	culture="plashurii"
+}
+5386027=
+{
+	name="Mandonian"
+	culture="plashurii"
+}
+5386028=
+{
+	name="Punicus"
+	culture="plashurii"
+}
+5386029=
+{
+	name="Punica"
+	culture="plashurii"
+}
+5386030=
+{
+	name="Punici"
+	culture="plashurii"
+}
+5386031=
+{
+	name="Punician"
+	culture="plashurii"
+}
+5386032=
+{
+	name="Tautalus"
+	culture="plashurii"
+}
+5386033=
+{
+	name="Tautala"
+	culture="plashurii"
+}
+5386034=
+{
+	name="Tautalii"
+	culture="plashurii"
+}
+5386035=
+{
+	name="Tautalid"
+	culture="plashurii"
+}
+5386036=
+{
+	name="Correius"
+	culture="plashurii"
+}
+5386037=
+{
+	name="Correia"
+	culture="plashurii"
+}
+5386038=
+{
+	name="Correid"
+	culture="plashurii"
+}
+5386039=
+{
+	name="Correian"
+	culture="plashurii"
+}
+5386040=
+{
+	name="Divicus"
+	culture="plashurii"
+}
+5386041=
+{
+	name="Divica"
+	culture="plashurii"
+}
+5386042=
+{
+	name="Divici"
+	culture="plashurii"
+}
+5386043=
+{
+	name="Divicid"
+	culture="plashurii"
+}
+5386044=
+{
+	name="Duratus"
+	culture="plashurii"
+}
+5386045=
+{
+	name="Durata"
+	culture="plashurii"
+}
+5386046=
+{
+	name="Duratii"
+	culture="plashurii"
+}
+5386047=
+{
+	name="Duratian"
+	culture="plashurii"
+}
+5386048=
+{
+	name="Elitovus"
+	culture="plashurii"
+}
+5386049=
+{
+	name="Elitova"
+	culture="plashurii"
+}
+5386050=
+{
+	name="Elitovii"
+	culture="plashurii"
+}
+5386051=
+{
+	name="Elitovian"
+	culture="plashurii"
+}
+5386052=
+{
+	name="Galbus"
+	culture="plashurii"
+}
+5386053=
+{
+	name="Galba"
+	culture="plashurii"
+}
+5386054=
+{
+	name="Galbi"
+	culture="plashurii"
+}
+5386055=
+{
+	name="Galbid"
+	culture="plashurii"
+}
+5386056=
+{
+	name="Iacus"
+	culture="plashurii"
+}
+5386057=
+{
+	name="Iaca"
+	culture="plashurii"
+}
+5386058=
+{
+	name="Iaci"
+	culture="plashurii"
+}
+5386059=
+{
+	name="Iacid"
+	culture="plashurii"
+}
+5386060=
+{
+	name="Marganus"
+	culture="plashurii"
+}
+5386061=
+{
+	name="Margana"
+	culture="plashurii"
+}
+5386062=
+{
+	name="Marganii"
+	culture="plashurii"
+}
+5386063=
+{
+	name="Marganid"
+	culture="plashurii"
+}
+5386064=
+{
+	name="Sinatus"
+	culture="plashurii"
+}
+5386065=
+{
+	name="Sinata"
+	culture="plashurii"
+}
+5386066=
+{
+	name="Sinatii"
+	culture="plashurii"
+}
+5386067=
+{
+	name="Sinatid"
+	culture="plashurii"
+}
+5386068=
+{
+	name="Vodenosus"
+	culture="plashurii"
+}
+5386069=
+{
+	name="Vodenosa"
+	culture="plashurii"
+}
+5386070=
+{
+	name="Vodenosii"
+	culture="plashurii"
+}
+5386071=
+{
+	name="Vodenosian"
+	culture="plashurii"
+}
+5386072=
+{
+	name="Indutius"
+	culture="plashurii"
+}
+5386073=
+{
+	name="Indutia"
+	culture="plashurii"
+}
+5386074=
+{
+	name="Indutii"
+	culture="plashurii"
+}
+5386075=
+{
+	name="Indutian"
+	culture="plashurii"
+}
+5386076=
+{
+	name="Dumnus"
+	culture="plashurii"
+}
+5386077=
+{
+	name="Dumna"
+	culture="plashurii"
+}
+5386078=
+{
+	name="Dumnii"
+	culture="plashurii"
+}
+5386079=
+{
+	name="Dumnid"
+	culture="plashurii"
+}
+5386080=
+{
+	name="Epatticus"
+	culture="plashurii"
+}
+5386081=
+{
+	name="Epattica"
+	culture="plashurii"
+}
+5386082=
+{
+	name="Epatticii"
+	culture="plashurii"
+}
+5386083=
+{
+	name="Epatticid"
+	culture="plashurii"
+}
+5386084=
+{
+	name="Teutomalus"
+	culture="plashurii"
+}
+5386085=
+{
+	name="Teutomala"
+	culture="plashurii"
+}
+5386086=
+{
+	name="Teutomalii"
+	culture="plashurii"
+}
+5386087=
+{
+	name="Teutomalian"
+	culture="plashurii"
+}
+5386088=
+{
+	name="Viridorrius"
+	culture="plashurii"
+}
+5386089=
+{
+	name="Viridorria"
+	culture="plashurii"
+}
+5386090=
+{
+	name="Viridorrii"
+	culture="plashurii"
+}
+5386091=
+{
+	name="Viridorrian"
+	culture="plashurii"
+}
+5386092=
+{
+	name="Magunnus"
+	culture="plashurii"
+}
+5386093=
+{
+	name="Magunna"
+	culture="plashurii"
+}
+5386094=
+{
+	name="Magunnii"
+	culture="plashurii"
+}
+5386095=
+{
+	name="Magunnid"
+	culture="plashurii"
+}
+5386096=
+{
+	name="Brennus"
+	culture="plashurii"
+}
+5386097=
+{
+	name="Brenna"
+	culture="plashurii"
+}
+5386098=
+{
+	name="Brennii"
+	culture="plashurii"
+}
+5386099=
+{
+	name="Brennid"
+	culture="plashurii"
+}
+5386100=
+{
+	name="Boius"
+	culture="plashurii"
+}
+5386101=
+{
+	name="Boia"
+	culture="plashurii"
+}
+5386102=
+{
+	name="Boii"
+	culture="plashurii"
+}
+5386103=
+{
+	name="Boian"
+	culture="plashurii"
+}
+5386104=
+{
+	name="Tannus"
+	culture="plashurii"
+}
+5386105=
+{
+	name="Tanna"
+	culture="plashurii"
+}
+5386106=
+{
+	name="Tanni"
+	culture="plashurii"
+}
+5386107=
+{
+	name="Tannid"
+	culture="plashurii"
+}
+5386108=
+{
+	name="Iccuius"
+	culture="plashurii"
+}
+5386109=
+{
+	name="Iccuia"
+	culture="plashurii"
+}
+5386110=
+{
+	name="Iccui"
+	culture="plashurii"
+}
+5386111=
+{
+	name="Iccian"
+	culture="plashurii"
+}
+5386112=
+{
+	name="Galanus"
+	culture="plashurii"
+}
+5386113=
+{
+	name="Galana"
+	culture="plashurii"
+}
+5386114=
+{
+	name="Galanii"
+	culture="plashurii"
+}
+5386115=
+{
+	name="Galanid"
+	culture="plashurii"
+}

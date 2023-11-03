@@ -1,0 +1,158 @@
+5380008=
+{
+	name="Burtasid"
+	culture="sarmatian"
+}
+5380009=
+{
+	name="Alauni"
+	culture="sarmatian"
+	
+}
+5380010=
+{
+	name="Halani"
+	culture="sarmatian"
+	
+}
+5380011=
+{
+	name="Shoana"
+	culture="sarmatian"
+	
+}
+5380012=
+{
+	name="Senty"
+	culture="sarmatian"
+	
+}
+5380013=
+{
+	name="Ovseti"
+	culture="sarmatian"
+	
+}
+5380014 = {
+   name="Tsærasantæ"
+   culture="sarmatian"
+   
+}
+5380015 = {
+   name="Ælbegatæ"
+   culture="sarmatian"
+   
+}
+
+5380016 = {
+   name="Ardasentæ"
+   culture="sarmatian"
+   
+}
+
+5380017 ={
+   name="Bekkuyzartæ"
+   culture="sarmatian"
+   
+}
+5380018 ={
+   name="Gæbæratæ"
+   culture="sarmatian"
+   
+}
+5380019 ={
+   name="Dzæræhohtæ"
+   culture="sarmatian"
+   
+}
+5380020 ={
+   name="Dzebysatæ"
+   culture="sarmatian"
+   
+}
+5380021 ={
+   name="Djerdjitæ"
+   culture="sarmatian"
+   
+}
+5380022 ={
+   name="Guyrdzybetæ"
+   culture="sarmatian"
+   
+}
+5380023 = {
+	name = "Zændjiatæ"
+	culture = sarmatian
+}
+5380024 = {
+	name = "Kærkuystæ"
+	culture = sarmatian
+}
+5380025 = {
+	name = "Djykkajtæ"
+	culture = sarmatian
+}
+5380026 = {
+	name = "Godjysatæ"
+	culture = sarmatian
+}
+5380027 = {
+	name = "Magkætæ"
+	culture = sarmatian
+}
+5380028 = {
+	name = "Pærræstatæ"
+	culture = sarmatian
+}
+5380029 = {
+	name = "Hetægkatæ"
+	culture = sarmatian
+}
+5380030 = {
+	name = "Hædarcatæ"
+	culture = sarmatian
+}
+5380031 = {
+	name = "Tuallægtæ"
+	culture = sarmatian
+}
+5380032 = {
+	name = "Færniatæ"
+	culture = sarmatian
+}
+5380033 = {
+	name = "Ephraimid"
+	culture = sarmatian
+}
+5380034 = {
+	name = "Tandelatæ"
+	culture = sarmatian
+}
+5380035 = {
+	name = "Tsæykostæ"
+	culture = sarmatian
+}
+5380036 = {
+	name = "Sozanatæ"
+	culture = sarmatian
+}
+5380037 = {
+	name = "Skirwilteitis"
+	culture = sarmatian
+}
+5380038 = {
+	name = "Mærzojtæ"
+	culture = sarmatian
+}
+5380039 = {
+	name = "Zmbalani"
+	culture = sarmatian
+}
+5380040 = {
+	name = "Sathisi"
+	culture = sarmatian
+}
+5380041 = {
+	name = "Totrazi"
+	culture = sarmatian
+}

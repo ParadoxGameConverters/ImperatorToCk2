@@ -22,6 +22,15 @@ province_event = {
 			region = custom_irck2_italy
 		}
 		NOT = {
+			region = custom_irck2_anatolia_and_georgia
+		}
+		NOT = {
+			region = custom_irck2_britannia
+		}
+		NOT = {
+			region = world_india
+		}
+		NOT = {
 			owner = {
 				top_liege = {
 					culture = suebi
@@ -260,5 +269,163 @@ province_event = {
 }
 
 #################################################
+
+# Province culture changes from Suebi to Wigazan
+province_event = {
+	id = IR_GER.2005
+	desc = EVTDESC_IR_GER_2005
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 550
+		culture = suebi
+		region = custom_irck2_anatolia_and_georgia
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = suebi
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_GER_2005
+		culture = wigazan
+	}
+}
+
+#################################################
+
+# Province culture changes from Suebi to Anglo-Suebi
+province_event = {
+	id = IR_GER.2006
+	desc = EVTDESC_IR_GER_2006
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		#year = 425
+		culture = suebi
+		region = custom_irck2_britannia
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = suebi
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_GER_2006
+		culture = anglo_suebi
+	}
+}
+
+# Province culture changes from any West/Central/East Germanic to Indo-Germanic
+province_event = {
+	id = IR_GER.2007
+	desc = EVTDESC_IR_GER_2007
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		OR = {
+			culture = suebi
+			culture = old_saxon
+			culture = old_frankish
+			culture = gothic
+			culture = vandal
+		}
+		region = world_india
+		NOT = {
+			owner = {
+				top_liege = {
+					OR = {
+						culture = suebi
+						culture = old_saxon
+						culture = old_frankish
+						culture = gothic
+						culture = vandal
+		}
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_GER_2007
+		culture = indo_germanic
+	}
+}
 
 

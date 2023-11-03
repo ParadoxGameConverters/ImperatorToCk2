@@ -36,3 +36,17 @@ agama,hindu
 puntic_religion,waaqi
 illyrian_pantheon,illyric
 burmese_religion,bamar_pagan
+mithra_religion,mithraic
+vaksh_religion,khurmazta
+nilotic_pantheon,west_african_pagan
+nuragic_pantheon,nuragic
+
+#Realm Divide mod
+arian_christian,arian
+tengri_religion,tengri_pagan
+slavic_religion,slavic_pagan
+roman_pagan,hellenic_pagan
+manichaeism_religion,manichean
+donatist_christian,donatism
+priscillian_christian,priscillianism
+monophysite_christian,monophysite

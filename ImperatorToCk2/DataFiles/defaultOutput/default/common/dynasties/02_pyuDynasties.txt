@@ -1,0 +1,90 @@
+#From Tianxia
+5392010 = {
+	name = "Tagaung"
+	culture = pyu
+}
+
+5392011 = {
+	name = "Halin"
+	culture = pyu
+}
+
+5392012 = {
+	name = "Maingmaw"
+	culture = pyu
+}
+
+5392013 = {
+	name = "Binnaka"
+	culture = pyu
+}
+
+5392014 = {
+	name = "Beikthano"
+	culture = pyu
+}
+
+5392015 = {
+	name = "Sri Ksetra"
+	culture = pyu
+}
+
+5392016 = {
+	name = "Tagaung"
+	culture = pyu
+}
+
+5392017 = {
+	name = "Halin"
+	culture = pyu
+}
+
+5392018 = {
+	name = "Maingmaw"
+	culture = pyu
+}
+
+5392019 = {
+	name = "Binnaka"
+	culture = pyu
+}
+
+5392020 = {
+	name = "Beikthano"
+	culture = pyu
+}
+
+5392021 = {
+	name = "Sri Ksetra"
+	culture = pyu
+}
+
+5392022 = {
+	name = "Tagaung"
+	culture = pyu
+}
+
+5392023 = {
+	name = "Halin"
+	culture = pyu
+}
+
+5392024 = {
+	name = "Maingmaw"
+	culture = pyu
+}
+
+5392025 = {
+	name = "Binnaka"
+	culture = pyu
+}
+
+5392026 = {
+	name = "Beikthano"
+	culture = pyu
+}
+
+5392027 = {
+	name = "Sri Ksetra"
+	culture = pyu
+}

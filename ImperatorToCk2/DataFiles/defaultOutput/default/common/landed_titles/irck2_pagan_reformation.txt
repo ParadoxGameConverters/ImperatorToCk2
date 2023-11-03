@@ -1,0 +1,451 @@
+#Druidic
+
+d_druidic_reformed = {
+	color={ 0.4 0.8 0.5 }
+	color2={ 0.4 0.8 0.5 }
+	
+	capital = 1183 #	Bost
+	
+	title = "HEAD_DRUID_PRIEST"
+	title_female = "HEAD_DRUID_PRIESTESS"
+	foa = "HEAD_PRIEST_FOA"
+	
+	short_name = yes
+	
+	# Always exists
+	landless = yes	
+	
+	# Controls a religion
+	controls_religion = druidic_reformed
+	
+	religion = druidic_reformed
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+
+#Marite
+
+d_marite_reformed = {
+	color={ 0.62 0.80 0.80 }
+	color2={ 0.62 0.80 0.80 }
+	
+	capital = 1183 #	Bost
+	
+	title = "HEAD_MARITE_PRIEST"
+	title_female = "HEAD_MARITE_PRIESTESS"
+	foa = "HEAD_PRIEST_FOA"
+	
+	short_name = yes
+	
+	# Always exists
+	landless = yes	
+	
+	# Controls a religion
+	controls_religion = marite_reformed
+	
+	religion = marite_reformed
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+
+#Illyric
+
+d_illyric_reformed = {
+	color={ 0.62 0.80 0.80 }
+	color2={ 0.62 0.80 0.80 }
+	
+	capital = 1183 #	Bost
+	
+	title = "HEAD_ILLYRIC_PRIEST"
+	title_female = "HEAD_ILLYRIC_PRIESTESS"
+	foa = "HEAD_PRIEST_FOA"
+	
+	short_name = yes
+	
+	# Always exists
+	landless = yes	
+	
+	# Controls a religion
+	controls_religion = illyric_reformed
+	
+	religion = illyric_reformed
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+
+#Nuragic
+
+d_nuragic_reformed = {
+	color={ 0.57 0.60 0.47 }
+	color2={ 0.57 0.60 0.47 }
+	
+	capital = 1183 #	Bost
+	
+	title = "HEAD_NURAGIC_PRIEST"
+	title_female = "HEAD_NURAGIC_PRIESTESS"
+	foa = "HEAD_PRIEST_FOA"
+	
+	short_name = yes
+	
+	# Always exists
+	landless = yes	
+	
+	# Controls a religion
+	controls_religion = nuragic_reformed
+	
+	religion = nuragic_reformed
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+
+#Waaqi
+
+d_waaqi_reformed = {
+	color={ 0.95 0.10 0.35 }
+	color2={ 0.95 0.10 0.35 }
+	
+	capital = 1183 #	Bost
+	
+	title = "HEAD_WAAQI_PRIEST"
+	title_female = "HEAD_WAAQI_PRIESTESS"
+	foa = "HEAD_PRIEST_FOA"
+	
+	short_name = yes
+	
+	# Always exists
+	landless = yes	
+	
+	# Controls a religion
+	controls_religion = waaqi_reformed
+	
+	religion = waaqi_reformed
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+
+d_arabic_reformed = {
+	color={ 0.36 0.7 0.28 }
+	color2={ 0.36 0.7 0.28 }
+	
+	capital = 1183 #	Bost
+	
+	title = "HEAD_ARABIC_PRIEST"
+	title_female = "HEAD_ARABIC_PRIESTESS"
+	foa = "HEAD_PRIEST_FOA"
+	
+	short_name = yes
+	
+	# Always exists
+	landless = yes	
+	
+	# Controls a religion
+	controls_religion = arabic_reformed
+	
+	religion = arabic_reformed
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+
+d_sumerian_reformed = {
+	color={ 0.6 0.25 0.1 }
+	color2={ 0.6 0.25 0.1 }
+	
+	capital = 1183 #	Bost
+	
+	title = "HEAD_SUMERIAN_PRIEST"
+	title_female = "HEAD_SUMERIAN_PRIESTESS"
+	foa = "HEAD_PRIEST_FOA"
+	
+	short_name = yes
+	
+	# Always exists
+	landless = yes	
+	
+	# Controls a religion
+	controls_religion = sumerian_reformed
+	
+	religion = sumerian_reformed
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+
+d_ritualistic_reformed = {
+	color={ 0.87 0.38 0.28 }
+	color2={ 0.87 0.38 0.28 }
+	
+	capital = 1183 #	Bost
+	
+	title = "HEAD_RITUALISTIC_PRIEST"
+	title_female = "HEAD_RITUALISTIC_PRIESTESS"
+	foa = "HEAD_PRIEST_FOA"
+	
+	short_name = yes
+	
+	# Always exists
+	landless = yes	
+	
+	# Controls a religion
+	controls_religion = ritualistic_reformed
+	
+	religion = ritualistic_reformed
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+
+d_armazic_reformed = {
+	color={ 0.4 0.2 0.5 }
+	color2={ 0.4 0.2 0.5 }
+	
+	capital = 1183 #	Bost
+	
+	title = "HEAD_ARMAZIC_PRIEST"
+	title_female = "HEAD_ARMAZIC_PRIESTESS"
+	foa = "HEAD_PRIEST_FOA"
+	
+	short_name = yes
+	
+	# Always exists
+	landless = yes	
+	
+	# Controls a religion
+	controls_religion = armazic_reformed
+	
+	religion = armazic_reformed
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+
+d_khaldic_reformed = {
+	color={ 0.4 0.2 0.3 }
+	color2={ 0.4 0.2 0.3 }
+	
+	capital = 1183 #	Bost
+	
+	title = "HEAD_KHALDIC_PRIEST"
+	title_female = "HEAD_KHALDIC_PRIESTESS"
+	foa = "HEAD_PRIEST_FOA"
+	
+	short_name = yes
+	
+	# Always exists
+	landless = yes	
+	
+	# Controls a religion
+	controls_religion = khaldic_reformed
+	
+	religion = khaldic_reformed
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+
+d_scythian_reformed = {
+	color={ 0.71 0.8 0.4 }
+	color2={ 0.71 0.8 0.4 }
+	
+	capital = 1183 #	Bost
+	
+	title = "HEAD_SCYTHIAN_PRIEST"
+	title_female = "HEAD_SCYTHIAN_PRIESTESS"
+	foa = "HEAD_PRIEST_FOA"
+	
+	short_name = yes
+	
+	# Always exists
+	landless = yes	
+	
+	# Controls a religion
+	controls_religion = scythian_reformed
+	
+	religion = scythian_reformed
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+
+d_cybelene_reformed = {
+	color={ 0.23 0.3 0.22 }
+	color2={ 0.23 0.3 0.22 }
+	
+	capital = 1183 #	Bost
+	
+	title = "HEAD_CYBELENE_PRIEST"
+	title_female = "HEAD_CYBELENE_PRIESTESS"
+	foa = "HEAD_PRIEST_FOA"
+	
+	short_name = yes
+	
+	# Always exists
+	landless = yes	
+	
+	# Controls a religion
+	controls_religion = cybelene_reformed
+	
+	religion = cybelene_reformed
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+
+d_megalithic_reformed = {
+	color={ 0.5 0.36 0.3 }
+	color2={ 0.5 0.36 0.3 }
+	
+	capital = 1183 #	Bost
+	
+	title = "HEAD_MEGALITHIC_PRIEST"
+	title_female = "HEAD_MEGALITHIC_PRIESTESS"
+	foa = "HEAD_PRIEST_FOA"
+	
+	short_name = yes
+	
+	# Always exists
+	landless = yes	
+	
+	# Controls a religion
+	controls_religion = megalithic_reformed
+	
+	religion = megalithic_reformed
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+
+d_zalmoxian_reformed = {
+	color={ 1.0 0.6 0.6 }
+	color2={ 1.0 0.6 0.6 }
+	
+	capital = 1183 #	Bost
+	
+	title = "HEAD_ZALMOXIAN_PRIEST"
+	title_female = "HEAD_ZALMOXIAN_PRIESTESS"
+	foa = "HEAD_PRIEST_FOA"
+	
+	short_name = yes
+	
+	# Always exists
+	landless = yes	
+	
+	# Controls a religion
+	controls_religion = zalmoxian_reformed
+	
+	religion = zalmoxian_reformed
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+
+d_iberian_reformed = {
+	color={ 1.0 0.5 0.1 }
+	color2={ 1.0 0.5 0.1 }
+	
+	capital = 1183 #	Bost
+	
+	title = "HEAD_IBERIAN_PRIEST"
+	title_female = "HEAD_IBERIAN_PRIESTESS"
+	foa = "HEAD_PRIEST_FOA"
+	
+	short_name = yes
+	
+	# Always exists
+	landless = yes	
+	
+	# Controls a religion
+	controls_religion = iberian_reformed
+	
+	religion = iberian_reformed
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+
+d_canaanite_reformed = {
+	color={ 0.5 0.1 0.8 }
+	color2={ 0.5 0.1 0.8 }
+	
+	capital = 1183 #	Bost
+	
+	title = "HEAD_CANAANITE_PRIEST"
+	title_female = "HEAD_CANAANITE_PRIESTESS"
+	foa = "HEAD_PRIEST_FOA"
+	
+	short_name = yes
+	
+	# Always exists
+	landless = yes	
+	
+	# Controls a religion
+	controls_religion = canaanite_reformed
+	
+	religion = canaanite_reformed
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+
+d_bamar_pagan_reformed = {
+	color={ 0.95 0.10 0.35 }
+	color2={ 0.95 0.10 0.35 }
+	
+	capital = 1183 #	Bost
+	
+	title = "HEAD_BAMAR_PRIEST"
+	title_female = "HEAD_BAMAR_PRIESTESS"
+	foa = "HEAD_PRIEST_FOA"
+	
+	short_name = yes
+	
+	# Always exists
+	landless = yes	
+	
+	# Controls a religion
+	controls_religion = bamar_pagan_reformed
+	
+	religion = bamar_pagan_reformed
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}

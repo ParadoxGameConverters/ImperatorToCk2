@@ -50,13 +50,13 @@ Idhrendur - Setting up the project, sanity checks and review, and integration of
 Zemurin - Review, advice, integration of new Fronter
 IhateTrains - Integration of new Fronter
 Vladimir Ilyich Lenin - Testing, events
-Canadian Lemur - Events, data files
+Canadian Lemur - Christianity Events, data files
 comagoosie - librakaly save melter
-Thinking_waffle - Testing, Ideas, and Translation
+Thinking_waffle - Testing, Ideas, God Names and Translation
 Siawosh - Testing
-កាបូន២៦ - Testing, advice
+កាបូន២៦ - Testing, Advice, Natic Religion Icon
 Diskianterezh - Noric Divergence cultures
-Nick Robertson - data files (Scythian rework, Parthian culture, and 150BC mappings)
+Nick Robertson - data files (Scythian Rework, Parthian Cultures, Buildings, Retinues, and 150BC mappings)
 
 The When The World Stopped Making Sense (WtWSMS) mod team for allowing the converter to use their content, their mod can be found either on Steam or their forum thread.
 WtWSMS mod Steam link: https://steamcommunity.com/sharedfiles/filedetails/?id=1247380029
@@ -64,6 +64,10 @@ WtWSMS mod Forum link: https://forum.paradoxplaza.com/forum/forums/when-the-worl
 
 An Indo-Rome Mod: Renovatio Imperii by Fritz™ XII for allowing the converter to use many of its events, decisions, GFX, and flavor for the Indo-Roman culture. The mod can be found on Steam.
 An Indo-Rome Mod: Renovatio Imperii Steam link: https://steamcommunity.com/sharedfiles/filedetails/?id=2843200203
+
+The Tianxia: Silk Road Expansion mod team for allowing the converter to use its Burmese cultures, religion, and namelists. It can be found on the Paradox Forums.
+Tianxia: Silk Road Expansion mod Forum link: https://forum.paradoxplaza.com/forum/threads/mod-tianxia-silk-road-expansion.816899/
+
 
 The Timeline Extender mod for its Western Roman Empire flag. It can be found either on Steam or on the forum thread.
 Timeline Extender mod Steam link: https://steamcommunity.com/sharedfiles/filedetails/?id=2729500336/

@@ -55,11 +55,17 @@ irck2_convert_to_saxon;Embrace Anglo-Saxon Culture;Embrace Anglo-Saxon Culture;E
 irck2_convert_to_frisian;Embrace Frisian Culture;Embrace Frisian Culture;Embrace Frisian Culture;;Embrace Frisian Culture;;;;;;;;;x
 irck2_convert_to_dutch;Embrace Dutch Culture;Embrace Dutch Culture;Embrace Dutch Culture;;Embrace Dutch Culture;;;;;;;;;x
 irck2_convert_to_lombard;Embrace Lombard Culture;Embrace Lombard Culture;Embrace Lombard Culture;;Embrace Lombard Culture;;;;;;;;;x
+irck2_convert_to_wigazan;Embrace Wigazan Culture;Embrace Wigazan Culture;Embrace Wigazan Culture;;Embrace Wigazan Culture;;;;;;;;;x
+irck2_convert_to_anglo_suebi;Embrace Anglo-Suebi Culture;Embrace Anglo-Suebi Culture;Embrace Anglo-Suebi Culture;;Embrace Anglo-Suebi Culture;;;;;;;;;x
+irck2_convert_to_indo_germanic;Embrace Indo-Germanic Culture;Embrace Indo-Germanic Culture;Embrace Indo-Germanic Culture;;Embrace Indo-Germanic Culture;;;;;;;;;x
 irck2_convert_to_german_desc;You and your unlanded Suebi relatives convert to German Culture;You and your unlanded Roman relatives convert to German Culture;You and your unlanded Suebi relatives convert to German Culture;;You and your unlanded Suebi relatives convert to German Culture;;;;;;;;;x
 irck2_convert_to_saxon_desc;You and your unlanded Saxon relatives convert to Anglo-Saxon Culture;You and your unlanded Saxon relatives convert to Anglo-Saxon Culture;You and your unlanded Saxon relatives convert to Anglo-Saxon Culture;;You and your unlanded Saxon relatives convert to Anglo-Saxon Culture;;;;;;;;;x
 irck2_convert_to_frisian_desc;You and your unlanded Saxon relatives convert to Frisian Culture;You and your unlanded Saxon relatives convert to Frisian Culture;You and your unlanded Saxon relatives convert to Frisian Culture;;You and your unlanded Saxon relatives convert to Frisian Culture;;;;;;;;;x
 irck2_convert_to_dutch_desc;You and your unlanded Frankish relatives convert to Dutch Culture;You and your unlanded Frankish relatives convert to Dutch Culture;You and your unlanded Frankish relatives convert to Dutch Culture;;You and your unlanded Frankish relatives convert to Dutch Culture;;;;;;;;;x
 irck2_convert_to_lombard_desc;You and your unlanded Suebi relatives convert to Lombard Culture;You and your unlanded Suebi relatives convert to Lombard Culture;You and your unlanded Suebi relatives convert to Lombard Culture;;You and your unlanded Suebi relatives convert to Lombard Culture;;;;;;;;;x
+irck2_convert_to_wigazan_desc;You and your unlanded Suebi relatives convert to Wigazan Culture;You and your unlanded Suebi relatives convert to Wigazan Culture;You and your unlanded Suebi relatives convert to Wigazan Culture;;You and your unlanded Suebi relatives convert to Wigazan Culture;;;;;;;;;x
+irck2_convert_to_anglo_suebi_desc;You and your unlanded Suebi relatives convert to Anglo-Suebi Culture;You and your unlanded Suebi relatives convert to Anglo-Suebi Culture;You and your unlanded Suebi relatives convert to Anglo-Suebi Culture;;You and your unlanded Suebi relatives convert to Anglo-Suebi Culture;;;;;;;;;x
+irck2_convert_to_indo_germanic_desc;You and your unlanded Suebi, Saxon, Frankish, Gothic, and Vandal relatives convert to Indo-Germanic Culture;You and your unlanded Suebi, Saxon, Frankish, Gothic, and Vandal relatives convert to Indo-Germanic Culture;You and your unlanded Suebi, Saxon, Frankish, Gothic, and Vandal relatives convert to Indo-Germanic Culture;;You and your unlanded Suebi, Saxon, Frankish, Gothic, and Vandal relatives convert to Indo-Germanic Culture;;;;;;;;;x
 
 #Baltic split
 irck2_convert_to_lithuanian;Embrace Lithuanian Culture;Embrace Lithuanian Culture;Embrace Lithuanian Culture;;Embrace Lithuanian Culture;;;;;;;;;x
@@ -123,6 +129,10 @@ irck2_convert_to_tylosi_desc;You and your unlanded Greek relatives convert to Ty
 #Celtic Split
 irck2_convert_to_galatian;Embrace Galatian Culture;Embrace Galatian Culture;Embrace Galatian Culture;;Embrace Galatian Culture;;;;;;;;;x
 irck2_convert_to_galatian_desc;You and your unlanded Gallic, Belgae, Lepontic, and Noric relatives convert to Galatian Culture;You and your unlanded Gallic, Belgae, Lepontic, and Noric relatives convert to Galatian Culture;You and your unlanded Gallic, Belgae, Lepontic, and Noric relatives convert to Galatian Culture;;You and your unlanded Gallic, Belgae, Lepontic, and Noric relatives convert to Galatian Culture;;;;;;;;;x
+irck2_convert_to_plashurii;Embrace Plashurii Culture;Embrace Plashurii Culture;Embrace Plashurii Culture;;Embrace Plashurii Culture;;;;;;;;;x
+irck2_convert_to_plashurii_desc;You and your unlanded Gallic, Belgae, Lepontic, Noric, and Galatian relatives convert to Plashurii Culture;You and your unlanded Gallic, Belgae, Lepontic, Noric, and Galatian relatives convert to Plashurii Culture;You and your unlanded Gallic, Belgae, Lepontic, Noric, and Galatian relatives convert to Plashurii Culture;;You and your unlanded Gallic, Belgae, Lepontic, Noric, and Galatian relatives convert to Plashurii Culture;;;;;;;;;x
+irck2_convert_to_atrebatian;Embrace Atrebatian Culture;Embrace Atrebatian Culture;Embrace Atrebatian Culture;;Embrace Atrebatian Culture;;;;;;;;;x
+irck2_convert_to_atrebatian_desc;You and your unlanded Belgae relatives convert to Atrebatian Culture;You and your unlanded Belgae relatives convert to Atrebatian Culture;You and your unlanded Belgae relatives convert to Atrebatian Culture;;You and your unlanded Belgae relatives convert to Atrebatian Culture;;;;;;;;;x
 
 #Noric split by Diskianterezh
 irck2_convert_to_ghasettian;Embrace Ghasettian Culture;Embrace Ghasettian Culture;Embrace Ghasettian Culture;;Embrace Ghasettian Culture;;;;;;;;;x
@@ -191,9 +201,15 @@ irck2_convert_to_falan_desc;You and your unlanded Etruscan relatives convert to 
 
 #Parthian Split
 irck2_convert_to_indo_parthian;Embrace Indo-Parthian Culture;Embrace Indo-Parthian Culture;Embrace Indo-Parthian Culture;;Embrace Indo-Parthian Culture;;;;;;;;;x
+irck2_convert_to_indo_parthian_desc;You and your unlanded Parthian relatives convert to Indo-Parthian Culture;You and your unlanded Parthian relatives convert to Indo-Parthian Culture;You and your unlanded Parthian relatives convert to Indo-Parthian Culture;;You and your unlanded Parthian relatives convert to Indo-Parthian Culture;;;;;;;;;x
 
 #Scythian Split
 irck2_convert_to_indo_scythian;Embrace Indo-Scythian Culture;Embrace Indo-Scythian Culture;Embrace Indo-Scythian Culture;;Embrace Indo-Scythian Culture;;;;;;;;;x
+irck2_convert_to_indo_scythian_desc;You and your unlanded Saka relatives convert to Indo-Scythian Culture;You and your unlanded Saka relatives convert to Indo-Scythian Culture;You and your unlanded Saka relatives convert to Indo-Scythian Culture;;You and your unlanded Saka relatives convert to Indo-Scythian Culture;;;;;;;;;x
+irck2_convert_to_iazyges;Embrace Iazyges Culture;Embrace Iazyges Culture;Embrace Iazyges Culture;;Embrace Iazyges Culture;;;;;;;;;x
+irck2_convert_to_iazyges_desc;You and your unlanded Scythian and Sarmatian relatives convert to Iazyges Culture;You and your unlanded Scythian and Sarmatian relatives convert to Iazyges Culture;You and your unlanded Scythian and Sarmatian relatives convert to Iazyges Culture;;You and your unlanded Scythian and Sarmatian relatives convert to Iazyges Culture;;;;;;;;;x
+irck2_convert_to_nemedian;Embrace Nemedian Culture;Embrace Nemedian Culture;Embrace Nemedian Culture;;Embrace Nemedian Culture;;;;;;;;;x
+irck2_convert_to_nemedian_desc;You and your unlanded Scythian and Sarmatian relatives convert to Nemedian Culture;You and your unlanded Scythian and Sarmatian relatives convert to Nemedian Culture;You and your unlanded Scythian and Sarmatian relatives convert to Nemedian Culture;;You and your unlanded Scythian and Sarmatian relatives convert to Nemedian Culture;;;;;;;;;x
 
 #Empires
 irck2_create_e_italy;Create Italia;Create Italia;Machen Italien;;Create Italia;;;;;;;;;x

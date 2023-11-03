@@ -1,0 +1,111 @@
+#From Tianxia
+
+5394617 = {
+	name = "Myinsaing"
+	culture = shan
+}
+
+5394618 = {
+	name = "Sagaing"
+	culture = shan
+}
+
+5394619 = {
+	name = "Minbyauk"
+	culture = shan
+}
+
+5394636 = {
+	name = "Mogaung"
+	culture = shan
+}
+
+5394637 = {
+	name = "Kengtung"
+	culture = shan
+}
+
+5394685 = {
+	name = "Mookjai"
+	culture = shan
+}
+
+5394368 = {
+	name = "Ahom"
+	culture = shan
+}
+
+5394000 = {
+	name = "Än"
+	culture = shan # Placeholder for Zhuhui
+}
+
+5394001 = {
+	name = "Jïn"
+	culture = shan # Placeholder for Zhuhui
+}
+
+5394002 = {
+	name = "Shí"
+	culture = shan # Placeholder for Zhuhui
+}
+
+5394003 = {
+	name = "Lî"
+	culture = shan # Placeholder for Zhuhui
+}
+
+5394004 = {
+    name = "Zhào"
+    culture = shan # Placeholder for Zhuhui
+}
+
+5394005 = {
+	name = "Zhäng"
+	culture = shan # Placeholder for Zhuhui
+}
+
+5394006 = {
+	name = "Ài"
+	culture = shan # Placeholder for Zhuhui
+}
+
+5394007 = {
+	name = "Gäo"
+	culture = shan # Placeholder for Zhuhui
+}
+
+5394008 = {
+	name = "Nungz"
+	culture = shan # Placeholder for Zhuang
+}
+
+5394009 = {
+	name = "Veiz"
+	culture = shan # Placeholder for Zhuang
+}
+
+5394010 = {
+	name = "Bya"
+	culture = shan # Placeholder for Zhuang
+}
+
+5394011 = {
+	name = "Luz"
+	culture = shan # Placeholder for Zhuang
+}
+
+5394012 = {
+	name = "Leix"
+	culture = shan # Placeholder for Zhuang
+}
+
+5394013 = {
+	name = "Vangz"
+	culture = shan # Placeholder for Zhuang
+}
+
+5394014 = {
+	name = "Maj"
+	culture = shan # Placeholder for Zhuang
+}

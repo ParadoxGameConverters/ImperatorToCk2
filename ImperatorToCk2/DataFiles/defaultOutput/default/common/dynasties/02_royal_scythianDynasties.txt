@@ -1,0 +1,158 @@
+5382008=
+{
+	name="Burtasid"
+	culture="royal_scythian"
+}
+5382009=
+{
+	name="Alauni"
+	culture="royal_scythian"
+	
+}
+5382010=
+{
+	name="Halani"
+	culture="royal_scythian"
+	
+}
+5382011=
+{
+	name="Shoana"
+	culture="royal_scythian"
+	
+}
+5382012=
+{
+	name="Senty"
+	culture="royal_scythian"
+	
+}
+5382013=
+{
+	name="Ovseti"
+	culture="royal_scythian"
+	
+}
+5382014 = {
+   name="Tsærasantæ"
+   culture="royal_scythian"
+   
+}
+5382015 = {
+   name="Ælbegatæ"
+   culture="royal_scythian"
+   
+}
+
+5382016 = {
+   name="Ardasentæ"
+   culture="royal_scythian"
+   
+}
+
+5382017 ={
+   name="Bekkuyzartæ"
+   culture="royal_scythian"
+   
+}
+5382018 ={
+   name="Gæbæratæ"
+   culture="royal_scythian"
+   
+}
+5382019 ={
+   name="Dzæræhohtæ"
+   culture="royal_scythian"
+   
+}
+5382020 ={
+   name="Dzebysatæ"
+   culture="royal_scythian"
+   
+}
+5382021 ={
+   name="Djerdjitæ"
+   culture="royal_scythian"
+   
+}
+5382022 ={
+   name="Guyrdzybetæ"
+   culture="royal_scythian"
+   
+}
+5382023 = {
+	name = "Zændjiatæ"
+	culture = royal_scythian
+}
+5382024 = {
+	name = "Kærkuystæ"
+	culture = royal_scythian
+}
+5382025 = {
+	name = "Djykkajtæ"
+	culture = royal_scythian
+}
+5382026 = {
+	name = "Godjysatæ"
+	culture = royal_scythian
+}
+5382027 = {
+	name = "Magkætæ"
+	culture = royal_scythian
+}
+5382028 = {
+	name = "Pærræstatæ"
+	culture = royal_scythian
+}
+5382029 = {
+	name = "Hetægkatæ"
+	culture = royal_scythian
+}
+5382030 = {
+	name = "Hædarcatæ"
+	culture = royal_scythian
+}
+5382031 = {
+	name = "Tuallægtæ"
+	culture = royal_scythian
+}
+5382032 = {
+	name = "Færniatæ"
+	culture = royal_scythian
+}
+5382033 = {
+	name = "Ephraimid"
+	culture = royal_scythian
+}
+5382034 = {
+	name = "Tandelatæ"
+	culture = royal_scythian
+}
+5382035 = {
+	name = "Tsæykostæ"
+	culture = royal_scythian
+}
+5382036 = {
+	name = "Sozanatæ"
+	culture = royal_scythian
+}
+5382037 = {
+	name = "Skirwilteitis"
+	culture = royal_scythian
+}
+5382038 = {
+	name = "Mærzojtæ"
+	culture = royal_scythian
+}
+5382039 = {
+	name = "Zmbalani"
+	culture = royal_scythian
+}
+5382040 = {
+	name = "Sathisi"
+	culture = royal_scythian
+}
+5382041 = {
+	name = "Totrazi"
+	culture = royal_scythian
+}

@@ -609,6 +609,8 @@ polytheistic = {
 
 		intermarry = canaanite
 		intermarry = hellenic_pagan
+		intermarry = voxite
+		intermarry = voxite_reformed
 	}
 
 	khaldic_reformed = {
@@ -693,6 +695,7 @@ polytheistic = {
 		intermarry = hellenic_pagan
 		intermarry = sumerian
 		intermarry = canaanite
+		intermarry = mithraic
 	}
 
 	armazic_reformed = {
@@ -937,6 +940,7 @@ polytheistic = {
 
 		intermarry = sumerian
 		intermarry = zoroastrian
+		intermarry = mithraic
 	}
 
 	sumerian_reformed = {
@@ -1112,21 +1116,21 @@ polytheistic = {
 	illyric_reformed = {
 		graphical_culture = pagangfx
 
-		icon = 77
-		heresy_icon = 91
+		icon = 105
+		heresy_icon = 106
 
 		color = { 0.15 0.46 0.6 }
 
 		crusade_name = GREAT_HOLY_WAR
 		use_new_crusade = yes
 		crusade_cb = new_crusade
-		scripture_name = zalmoxian_scripture
+		scripture_name = illyric_scripture
 		priest_title = PRIEST
 
 		high_god_name = gabeleisos
 
 		god_names = {
-			zalmoxis pleistoros sabazios zibelthiurdos bassareus derzelas semele bendis
+			Bindus Enji Tadenus Deipatros Sentona Nebres Taotor Thana Anzotica "Dracon dhe Dracaena" Ica Damatir Latra Vidasus
 		}
 
 		evil_god_names = { #made up something
@@ -1151,21 +1155,21 @@ polytheistic = {
 	illyric = {
 		graphical_culture = pagangfx
 
-		icon = 64
-		heresy_icon = 91
+		icon = 104
+		heresy_icon = 106
 
 		color = { 0.05 0.36 0.5 }
 
 		crusade_name = GREAT_HOLY_WAR
 		use_new_crusade = yes
 		crusade_cb = new_crusade
-		scripture_name = zalmoxian_scripture
+		scripture_name = illyric_scripture
 		priest_title = PRIEST
 
 		high_god_name = gabeleisos
 
 		god_names = {
-			zalmoxis pleistoros sabazios zibelthiurdos bassareus derzelas semele bendis
+			Bindus Enji Tadenus Deipatros Sentona Nebres Taotor Thana Anzotica "Dracon dhe Dracaena" Ica Damatir Latra Vidasus
 		}
 
 		evil_god_names = { #made up something
@@ -1194,8 +1198,8 @@ polytheistic = {
 
 		secondary_event_pictures = west_african_pagan
 
-		icon = 35
-		heresy_icon = 36
+		icon = 119
+		heresy_icon = 120
 
 		ai_convert_other_group = 2 # always try to convert
 
@@ -1243,8 +1247,8 @@ polytheistic = {
 			}
 		}
 
-		icon = 34
-		heresy_icon = 35
+		icon = 118
+		heresy_icon = 120
 
 		color = { 0.85 0.0 0.25 }
 		crusade_name = GREAT_HOLY_WAR
@@ -1308,10 +1312,10 @@ polytheistic = {
 	marite_reformed = {
 		graphical_culture = pagangfx
 
-		icon = 77
-		heresy_icon = 91
+		icon = 108
+		heresy_icon = 109
 
-		color = { 0.57 0.60 0.47 }
+		color = { 0.62 0.80 0.80 }
 
 		crusade_name = GREAT_HOLY_WAR
 		use_new_crusade = yes
@@ -1348,10 +1352,10 @@ polytheistic = {
 	marite = {
 		graphical_culture = pagangfx
 
-		icon = 64
-		heresy_icon = 91
+		icon = 107
+		heresy_icon = 109
 
-		color = { 0.47 0.50 0.37 }
+		color = { 0.52 0.70 0.70 }
 
 		crusade_name = GREAT_HOLY_WAR
 		use_new_crusade = yes
@@ -1385,6 +1389,186 @@ polytheistic = {
 		intermarry = druidic
 		intermarry = iberian
 		intermarry = marite_reformed
+	}
+	
+	nuragic_reformed = {
+		graphical_culture = pagangfx
+
+		icon = 111
+		heresy_icon = 112
+
+		color = { 0.57 0.60 0.47 }
+
+		crusade_name = GREAT_HOLY_WAR
+		use_new_crusade = yes
+		crusade_cb = new_crusade
+		scripture_name = zalmoxian_scripture
+		priest_title = PRIEST
+
+		high_god_name = Sardo
+
+		god_names = {
+			zalmoxis pleistoros sabazios zibelthiurdos bassareus derzelas semele bendis
+		}
+
+		evil_god_names = { #made up something
+			zalmoxian_dark_god
+		}
+
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+		priests_can_marry = yes
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+		dislike_tribal_organization = yes
+		can_demand_religious_conversion = no
+		allow_looting = yes
+		female_temple_holders = yes
+		max_consorts = 3
+
+		allow_in_ruler_designer = no
+
+		intermarry = nuragic
+	}
+
+	nuragic = {
+		graphical_culture = pagangfx
+
+		icon = 110
+		heresy_icon = 112
+
+		color = { 0.47 0.50 0.37 }
+
+		crusade_name = GREAT_HOLY_WAR
+		use_new_crusade = yes
+		crusade_cb = new_crusade
+		scripture_name = zalmoxian_scripture
+		priest_title = PRIEST
+
+		high_god_name = Sardo
+
+		god_names = {
+			zalmoxis pleistoros sabazios zibelthiurdos bassareus derzelas semele bendis
+		}
+
+		evil_god_names = { #made up something
+			zalmoxian_dark_god
+		}
+
+		reformed = nuragic_reformed
+
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+		priests_can_marry = yes
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+		dislike_tribal_organization = yes
+		can_demand_religious_conversion = no
+		allow_looting = yes
+		female_temple_holders = yes
+		max_consorts = 3
+
+		intermarry = canaanite
+		intermarry = iberian
+		intermarry = nuragic_reformed
+	}
+	
+	voxite_reformed = {
+		graphical_culture = pagangfx
+		secondary_event_pictures = sunni
+
+		icon = 77
+		heresy_icon = 91
+
+		color = { 0.84 0.63 0.11 }
+
+		crusade_name = GREAT_HOLY_WAR
+		use_new_crusade = yes
+		crusade_cb = new_crusade
+		scripture_name = zalmoxian_scripture
+		priest_title = PRIEST
+
+		high_god_name = gabeleisos
+
+		god_names = {
+			zalmoxis pleistoros sabazios zibelthiurdos bassareus derzelas semele bendis
+		}
+
+		evil_god_names = { #made up something
+			zalmoxian_dark_god
+		}
+
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+		priests_can_marry = yes
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+		dislike_tribal_organization = yes
+		can_demand_religious_conversion = no
+		allow_looting = yes
+		female_temple_holders = yes
+		max_consorts = 3
+
+		allow_in_ruler_designer = no
+
+		intermarry = voxite
+	}
+
+	voxite = {
+		graphical_culture = pagangfx
+		secondary_event_pictures = sunni
+
+		icon = 64
+		heresy_icon = 91
+
+		color = { 0.74 0.53 0.01 }
+
+		crusade_name = GREAT_HOLY_WAR
+		use_new_crusade = yes
+		crusade_cb = new_crusade
+		scripture_name = zalmoxian_scripture
+		priest_title = PRIEST
+
+		high_god_name = gabeleisos
+
+		god_names = {
+			zalmoxis pleistoros sabazios zibelthiurdos bassareus derzelas semele bendis
+		}
+
+		evil_god_names = { #made up something
+			zalmoxian_dark_god
+		}
+
+		reformed = voxite_reformed
+
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+		priests_can_marry = yes
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+		dislike_tribal_organization = yes
+		can_demand_religious_conversion = no
+		allow_looting = yes
+		female_temple_holders = yes
+		max_consorts = 3
+
+		intermarry = zoroastrian
+		intermarry = mazdaki
+		intermarry = manichean
+		intermarry = khurmazta
+		intermarry = mithraic
+
+		intermarry = zun_pagan
+		intermarry = zun_pagan_reformed
+		intermarry = bon
+		intermarry = bon_reformed
+		intermarry = nestorian
+		intermarry = buddhist
+		intermarry = tengri_pagan
+		intermarry = tengri_pagan_reformed
+		intermarry = scythian
+		intermarry = scythian_reformed
+		intermarry = voxite_reformed
 	}
 
 
