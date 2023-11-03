@@ -27,8 +27,9 @@ requiredFolder = {
 	displayName = IMPERATORFOLDER
 	tooltip = IMPERATORFOLDERTIP
 	mandatory = true
-	searchPathType = steamFolder
-	searchPathID = 859580
+	searchPathType = storeFolder
+	steamGameID = 859580
+	gogGameID = 2131232214
 }
 
 requiredFolder = {
@@ -45,8 +46,8 @@ requiredFolder = {
 	displayName = CK2FOLDER
 	tooltip = CK2FOLDERTIP
 	mandatory = true
-	searchPathType = steamFolder
-	searchPathID = 203770
+	searchPathType = storeFolder
+	steamGameID = 203770
 }
 
 requiredFolder = {
