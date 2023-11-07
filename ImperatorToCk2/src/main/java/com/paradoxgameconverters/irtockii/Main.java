@@ -678,9 +678,11 @@ public class Main
                                         genFlag = Output.generateFlag(ck2Dir,impGameDir,rank,flagList,impTagInfo.get(aq4)[0],impTagInfo.get(aq4)[23],
                                         colorList,modFlagGFX,modDirectory);
                                         //File test = new File (modDirectory+"/gfx/flags/"+ck2Tag+".tga");
+                                        File flagTest = new File (modDirectory+"/gfx/flags/"+impTagInfo.get(aq4)[0]+".tga");
                                     } catch(Exception e) { //if something goes wrong, don't crash entire converter
                                         LOGGER.warning("Exception created while generating flag "+impTagInfo.get(aq4)[23]+" for "+impTagInfo.get(aq4)[0]+
                                         ", aborting flag generation");
+                                        genFlag = 0; //signal that flag was not generated
                                     }
                                     
                                     if (genFlag == 0) {

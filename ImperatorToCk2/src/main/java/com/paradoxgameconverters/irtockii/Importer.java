@@ -1231,8 +1231,8 @@ public class Importer
 
         try {
             while (aqq != 10){ //loop for the first 10 lines (potential futureproofing), if the key is there, decompressed. Else, compressed
-
-                if (qaaa.split("=")[0].equals("save_game_version")) {
+                String testParameter = qaaa.split("=")[0];
+                if (testParameter.equals("save_game_version") || testParameter.equals("version")) {
 
                     compressedOrNot = 1;
                 }

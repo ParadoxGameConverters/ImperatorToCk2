@@ -244,6 +244,7 @@ kharesmian,saka
 derbiccan,saka
 saka,saka
 sakan,saka
+khotanese,saka
 sindi,circassian
 maeotian,circassian
 thyssagetaen,sarmatian
