@@ -677,17 +677,19 @@ public class Main
                                     try {
                                         genFlag = Output.generateFlag(ck2Dir,impGameDir,rank,flagList,impTagInfo.get(aq4)[0],impTagInfo.get(aq4)[23],
                                         colorList,modFlagGFX,modDirectory);
-                                        boolean backupFlagCheck = Processing.checkFile(modDirectory+"/gfx/flags/"+impTagInfo.get(aq4)[0]+".tga");
-                                        if (backupFlagCheck == false) {
-                                            //Image Magick will not cause exceptions if it crashes. Emergency check to see if flag has actually generated
-                                            genFlag = 0; //signal that flag was not generated
-                                            LOGGER.warning("Flag "+impTagInfo.get(aq4)[23]+" for "+impTagInfo.get(aq4)[0]+
-                                            " failed to generate, aborting flag generation");
-                                        }
+                                        
                                     } catch(Exception e) { //if something goes wrong, don't crash entire converter
                                         LOGGER.warning("Exception created while generating flag "+impTagInfo.get(aq4)[23]+" for "+impTagInfo.get(aq4)[0]+
                                         ", aborting flag generation");
                                         genFlag = 0; //signal that flag was not generated
+                                    }
+                                    
+                                    boolean backupFlagCheck = Processing.checkFile(modDirectory+"/gfx/flags/"+rank+"_"+impTagInfo.get(aq4)[0]+".tga");
+                                    if (genFlag == 1 && backupFlagCheck == false) {
+                                        //Image Magick will not cause exceptions if it crashes. Emergency check to see if flag has actually generated
+                                        genFlag = 0; //signal that flag was not generated
+                                        LOGGER.warning("Flag "+impTagInfo.get(aq4)[23]+" for "+impTagInfo.get(aq4)[0]+
+                                        " failed to generate, aborting flag generation");
                                     }
                                     
                                     if (genFlag == 0) {
