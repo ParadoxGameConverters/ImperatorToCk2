@@ -35,7 +35,6 @@ public class Main
         }
 
         LOGGER.info("Converter version 0.2A \"Belgae\" - compatible with Imperator: Rome 1.3-2.0 and Crusader Kings II 3.3");
-        System.out.println("Test");
         LOGGER.finest("0%");
         System.out.println("5%");
 
@@ -444,8 +443,8 @@ public class Main
 
                         //LOGGER.info(irOwners[aq5]+"_irOwners_"+aq2);  
 
-                        int[] ownerTot;
-                        ownerTot = new int[totalCKProv]; //should redefine each time
+                        ArrayList<String> ownershipTotals = Processing.condenseArrayStr(irOwners);
+                        //Each tag (owner) is an element in an array
 
                         int ownNum = Integer.parseInt(owners[0]);
 
@@ -454,19 +453,15 @@ public class Main
 
                             //LOGGER.info(aq5);
                         }
-
-                        if (owners[1].equals ("null")) {
-                            owners[1] = "0";
-
-                            //LOGGER.info(aq5);
-                        }
-
-                        ownerTot[ownNum] = Integer.parseInt(owners[1]);
-                        //LOGGER.info(owners[0]+owners[1]+"b_owners");    
+  
                         ck2ProvInfo[0][aq2] = owners[0];
                         aq6 = 1;
-                        while (aq6 < totalCKProv) {
-                            if (ownerTot[aq6] > ownerTot[aq6-1]){
+                        while (aq6 < ownershipTotals.size()) {
+                            String[] owner1 = ownershipTotals.get(aq6).split(",");
+                            String[] owner2 = ownershipTotals.get(aq6-1).split(",");
+                            int owner1Num = Integer.parseInt(owner1[1]);
+                            int owner2Num = Integer.parseInt(owner2[1]);
+                            if (owner1Num > owner2Num){
                                 ck2ProvInfo[0][aq2] = owners[0];
                                 //LOGGER.info((ck2ProvInfo[0][aq2])+"_"+aq2+"cq");
                             }
@@ -621,21 +616,27 @@ public class Main
                                     //LOGGER.info("Free Nation at " + aq4);
                                 } else { //if tag is subject
                                     String[] subjectInfo = impSubjectInfo.get(subjectOrNot).split(",");
-                                    String overlord = impTagInfo.get(Integer.parseInt(subjectInfo[0]))[0];
+                                    int overlordID = Integer.parseInt(subjectInfo[0]);
+                                    String overlord = impTagInfo.get(overlordID)[0];
                                     String overlordGov = Processing.checkGovList(impTagInfo.get(Integer.parseInt(subjectInfo[0]))[17],govMap);
+                                    String overlordRank = "k";
 
                                     if (ck2LandTot[Integer.parseInt(subjectInfo[0])] >= empireRank || 
                                         impTagInfo.get(Integer.parseInt(subjectInfo[0]))[17].equals("imperium")) {
                                         //if overlord is empire, make subject kingdom, else make duchy
                                         rank = "k";
+                                        overlordRank = "e";
                                     } else if (ck2LandTot[Integer.parseInt(subjectInfo[0])] <= duchyRank) {
                                         //if overlord is duchy, make county
                                         rank = "c";
+                                        overlordRank = "d";
                                     } else {
                                         rank = "d";
                                     }
 
                                     impTagInfo.get(aq4)[0] = Processing.convertTitle("titleConversion.txt",rank,impTagInfo.get(aq4)[21],impTagInfo.get(aq4)[0]);
+                                    overlord = Processing.convertTitle("titleConversion.txt",overlordRank,impTagInfo.get(overlordID)[21],impTagInfo.get(overlordID)[0]);
+                                    //overlord = overlord.substring(2,overlord.length());
 
                                     if (subjectInfo[2].equals ("feudatory") || subjectInfo[2].equals ("satrapy") || subjectInfo[2].equals ("client_state")) { 
                                         //convert as vassal

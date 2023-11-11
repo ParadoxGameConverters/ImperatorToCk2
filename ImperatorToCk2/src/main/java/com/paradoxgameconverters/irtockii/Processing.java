@@ -2026,5 +2026,57 @@ public class Processing
         Output.replaceInFile(textToReplace,startYear,techDir2);
 
     }
+    
+    public static ArrayList<String> condenseArrayStr(String[] longArray)
+    //Condenses a tag,number array into an ArrayList such that there are no repeat tags
+    {
+        //longArray;
+        int count = 0;
+        ArrayList<Integer> checkedCount = new ArrayList<Integer>();
+        ArrayList<String> shortArray = new ArrayList<String>();
+        //System.out.println("__________ Start __________");
+        while (count < longArray.length) {
+            String element = longArray[count];
+            String identifier = element.split(",")[0];
+            String numStr = element.split(",")[1];
+            if (numStr.equals("null")) {
+                numStr = "0";
+            }
+            int elementNum = Integer.parseInt(numStr);
+            //System.out.println("Checking ID "+identifier+" with "+elementNum+" elements");
+            
+            int count2 = count+1;
+            while (count2 < longArray.length) {
+                String element2 = longArray[count2];
+                String identifier2 = element2.split(",")[0];
+                //System.out.println("Checking ID "+identifier2+" with "+element2.split(",")[1]+" elements");
+                if (identifier.equals(identifier2)) {
+                    String numStr2 = element2.split(",")[1];
+                    if (numStr2.equals("null")) {
+                        numStr2 = "0";
+                    }
+                    int elementNum2 = Integer.parseInt(numStr2);
+                    elementNum = elementNum + elementNum2;
+                    checkedCount.add(count2);
+                    //System.out.println(identifier+" and "+identifier2+" match, adding "+element+" and "+element2);
+                }
+                count2 = count2 + 1;
+            }
+            checkedCount.add(count);
+            String shortArrayItem = identifier+","+Integer.toString(elementNum);
+            shortArray.add(shortArrayItem);
+            count = count + 1;
+            if (checkedCount.contains(count)) {
+                while (checkedCount.contains(count)) {
+                    count = count + 1;
+                }
+            }
+            //System.out.println("__________ NewLine __________");
+        }
+        
+        return shortArray;
+
+    }
 
 }
+
