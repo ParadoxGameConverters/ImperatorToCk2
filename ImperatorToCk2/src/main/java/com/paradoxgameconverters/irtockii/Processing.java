@@ -956,9 +956,9 @@ public class Processing
         return name;
     }
 
-    public static String convertTitle(String name, String rank, String title, String defaultTitle) throws IOException
+    public static String convertTitle(ArrayList<String> mappings, String rank, String title, String defaultTitle) throws IOException
     {// Converts dynamically generated title to vanilla counterpart
-        String tmpTitle = Importer.importCultList(name,rank+"_"+title)[1];//converts title
+        String tmpTitle = Importer.importMappingFromArray(mappings,rank+"_"+title)[1]; //converts title
 
         if (tmpTitle.equals("99999") || tmpTitle.equals("peq")) {//if there is no vanilla match
             return defaultTitle;
@@ -2079,4 +2079,3 @@ public class Processing
     }
 
 }
-

@@ -2107,6 +2107,40 @@ public class Importer
         return gfxList;
 
     }
+    
+    public static String[] importMappingFromArray (ArrayList<String> source, String provIDnum) throws IOException
+    {
+        String qaaa;
+        String[] output;   // Owner Culture Religeon PopTotal Buildings
+        output = new String[2];
+
+        output[0] = "peq"; //default for no owner, uncolonized province
+        output[1] = "99999"; //default for no culture, uncolonized province with 0 pops
+        
+        int count = 0;
+
+        try {
+            while (count < source.size()){
+
+                qaaa = source.get(count);
+
+                if (qaaa.split(",")[0].equals(provIDnum)){
+                    count = 1 + source.size();
+                    output[0] = qaaa.split(",")[0];
+                    output[1] = qaaa.split(",")[1];
+
+                }
+                count = count + 1;
+            }
+
+        }catch (java.util.NoSuchElementException exception){
+            count = 1 + source.size();
+
+        }   
+
+        return output;
+
+    }
 
     //developed originally by Shinymewtwo99
 }

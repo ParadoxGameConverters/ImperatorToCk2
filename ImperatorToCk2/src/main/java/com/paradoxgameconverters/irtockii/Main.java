@@ -328,6 +328,7 @@ public class Main
 
             //Processing.combineProvConvList("provinceConversionCore.txt","provinceConversion.txt"); //combines old style mappings and new style mappings
             Processing.combineProvConvList("provinceConversionCore.txt",provinceMappingSource,"provinceConversion.txt");
+            ArrayList<String> titleMappings = Importer.importBasicFile("titleConversion.txt");
 
             //processing information
 
@@ -609,7 +610,7 @@ public class Main
                                     else if (ck2LandTot[aq4] <= duchyRank) {
                                         rank = "d";
                                     }
-                                    impTagInfo.get(aq4)[0] = Processing.convertTitle("titleConversion.txt",rank,impTagInfo.get(aq4)[21],impTagInfo.get(aq4)[0]);
+                                    impTagInfo.get(aq4)[0] = Processing.convertTitle(titleMappings,rank,impTagInfo.get(aq4)[21],impTagInfo.get(aq4)[0]);
                                     convertedCharacters = Output.titleCreation(impTagInfo.get(aq4)[0],tempNum2,impTagInfo.get(aq4)[3],impTagInfo.get(aq4)[17],
                                     impTagInfo.get(aq4)[5],rank,"no_liege",date,republicOption,Character[7],impDynList,impCharInfoList,convertedCharacters,aq4,
                                     impTagInfo.get(aq4)[17],modDirectory);
@@ -634,8 +635,8 @@ public class Main
                                         rank = "d";
                                     }
 
-                                    impTagInfo.get(aq4)[0] = Processing.convertTitle("titleConversion.txt",rank,impTagInfo.get(aq4)[21],impTagInfo.get(aq4)[0]);
-                                    overlord = Processing.convertTitle("titleConversion.txt",overlordRank,impTagInfo.get(overlordID)[21],impTagInfo.get(overlordID)[0]);
+                                    impTagInfo.get(aq4)[0] = Processing.convertTitle(titleMappings,rank,impTagInfo.get(aq4)[21],impTagInfo.get(aq4)[0]);
+                                    overlord = Processing.convertTitle(titleMappings,overlordRank,impTagInfo.get(overlordID)[21],impTagInfo.get(overlordID)[0]);
                                     //overlord = overlord.substring(2,overlord.length());
 
                                     if (subjectInfo[2].equals ("feudatory") || subjectInfo[2].equals ("satrapy") || subjectInfo[2].equals ("client_state")) { 
