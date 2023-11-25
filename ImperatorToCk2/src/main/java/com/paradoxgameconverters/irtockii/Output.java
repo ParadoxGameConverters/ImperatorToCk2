@@ -48,7 +48,7 @@ public class Output
         return 0;
     }
 
-    public static String cultureOutput(String irCulture) throws IOException
+    public static String cultureOutput(ArrayList<String> mappings,String irCulture) throws IOException
     {
 
         String VM = "\\"; 
@@ -58,24 +58,85 @@ public class Output
 
         Importer importer = new Importer();
 
-        ck2CultureInfo = importer.importCultList("cultureConversion.txt",irCulture)[1];
+        //ck2CultureInfo = importer.importCultList("cultureConversion.txt",irCulture)[1];
+        ck2CultureInfo = Importer.importMappingFromArray(mappings,irCulture)[1];
 
         return ck2CultureInfo;
     }
 
-    public static String religionOutput(String irRel) throws IOException
+    public static String religionOutput(ArrayList<String> mappings,String ck2Culture,String tagCulture,String date,String irRel) throws IOException
     {
 
         String VM = "\\"; 
         VM = VM.substring(0);
+        int count = 0;
 
-        String ck2CultureInfo;   // Owner Culture Religeon PopTotal Buildings
+        String[] ck2ReligionInfo;
+        String ck2Religion = "unknown";
 
         Importer importer = new Importer();
 
-        ck2CultureInfo = importer.importCultList("religionConversion.txt",irRel)[1];
-
-        return ck2CultureInfo;
+        ArrayList<String[]> validMappings = Importer.importMappingFromArrayArgs(mappings,irRel);
+        
+        while (count < validMappings.size()) {
+            ck2ReligionInfo = validMappings.get(count);
+            
+            if (ck2ReligionInfo.length == 2) {
+                //System.out.println(ck2ReligionInfo[0]+" "+ck2ReligionInfo[1]);
+                ck2Religion = ck2ReligionInfo[1];
+                return ck2Religion;
+            }
+            else {
+                int numArgs = ck2ReligionInfo.length-2;
+                int count2 = 0;
+                boolean passedCheck = true;
+                while (count2 < numArgs) { //check all arguments, if all are true, return culture
+                    System.out.println(numArgs);
+                    int argBeingChecked = count2+2;
+                    String[] relArgument = ck2ReligionInfo[argBeingChecked].split("=");
+                    if (relArgument[0].equals("culture")) {
+                        //System.out.println(relArgument[1]+" "+ck2Culture);
+                        if (!ck2Culture.equals(relArgument[1])) {
+                            count2 = count2 + numArgs;
+                            passedCheck = false;
+                        }
+                    }
+                    else if (relArgument[0].equals("tagCulture")) {
+                        //System.out.println(relArgument[1]+" "+tagCulture);
+                        if (!tagCulture.equals(relArgument[1])) {
+                            count2 = count2 + numArgs;
+                            passedCheck = false;
+                        }
+                    }
+                    else if (relArgument[0].equals("year")) {
+                        //System.out.println(relArgument[1]+" "+date);
+                        String tmpDate = date.replace(".",",");
+                        int saveYearInt = Integer.parseInt(tmpDate.split(",")[0]);
+                        int argumentYear = Integer.parseInt(relArgument[1]);
+                        if (saveYearInt < argumentYear) {
+                            count2 = count2 + numArgs;
+                            passedCheck = false;
+                        }
+                    }
+                    else { //if argument is invalid, nullify whole mapping
+                       count2 = count2 + numArgs;
+                       passedCheck = false; 
+                    }
+                    
+                    count2 = count2+1;
+                }
+                if (passedCheck == true) {
+                    ck2Religion = ck2ReligionInfo[1];
+                    return ck2Religion;
+                }
+                
+            }
+            count = count + 1;
+            
+        }
+        
+        System.out.println("Something went wrong, "+irRel+" will convert as noculture");
+        return ck2Religion;
     }
 
     public static String titleCreationCommon(String irTAG, String irColor, String government,String capital,String rank, String Directory) throws IOException
@@ -117,7 +178,8 @@ public class Output
 
     public static ArrayList<String> titleCreation(String irTAG, String irKING, String irCOLOR, String government, String capital,String rank,String liege,
     String date1,String republicOption,String irDynasty,ArrayList<String> dynList,ArrayList<String[]> impCharInfoList,ArrayList<String> convertedCharacters,
-    int tagIDNum,String liegeGov,String Directory) throws IOException
+    int tagIDNum,String liegeGov,ArrayList<String> cultureMappings,ArrayList<String> religionMappings,ArrayList<String[]> impTagInfo,
+    String Directory) throws IOException
     {
 
         String VM = "\\"; 
@@ -182,9 +244,9 @@ public class Output
             String palace = irDynasty+"_"+irTAG;
             titleCreationCommon(palace,"none","none","none","b",oldDirectory); //creates merchant palace for ruler's family
             convertedCharacters = titleCreation(palace,irKING,irCOLOR,"palace",capital,"b",rank+","+irTAG,date1,republicOption,irDynasty,
-                dynList,impCharInfoList,convertedCharacters,tagIDNum,liegeGov,oldDirectory);
+                dynList,impCharInfoList,convertedCharacters,tagIDNum,liegeGov,cultureMappings,religionMappings,impTagInfo,oldDirectory);
             convertedCharacters = createFamilies(dynList,irTAG,oldDynasty,rank,impCharInfoList,convertedCharacters,date1,republicOption,tagIDNum,
-                liegeGov,oldDirectory);
+                liegeGov,cultureMappings,religionMappings,impTagInfo,oldDirectory);
 
             govCreation(irTAG,rank,"m",oldDirectory);
         }
@@ -430,7 +492,9 @@ public class Output
 
     public static ArrayList<String> characterCreation(String irKING, String cult, String rel, String age, String name, String dynasty,
     String sex, String traits, String martial, String zeal, String charisma, String finesse, String spouse, String children,String government,String father,
-    String mother,ArrayList<String> convertedList,ArrayList<String[]> charList,String date1,String Directory) throws IOException
+    String mother,ArrayList<String> convertedList,ArrayList<String[]> charList,String date1,ArrayList<String> cultureMappings,
+    ArrayList<String> religionMappings,ArrayList<String[]> impTagInfo,String Directory)
+    throws IOException
     {
 
         int characterCount = 0;
@@ -484,9 +548,14 @@ public class Output
         if (spouse != "0") {//Recursively calls to get rest of family
             int spouseID = Integer.parseInt(spouse);
             spouseInfo = charList.get(spouseID);
+            String spouseCulture = cultureOutput(cultureMappings,spouseInfo[1]);
+            int spouseCountry = Integer.parseInt(spouseInfo[17]);
+            String spouseCountryCulture = impTagInfo.get(spouseCountry)[6];
+            String spouseReligion = religionOutput(religionMappings,spouseCulture,spouseCountryCulture,date1,spouseInfo[2]);
 
-            characterCreation( spouse1066,  cultureOutput(spouseInfo[1]),  religionOutput(spouseInfo[2]),  spouseInfo[3],  spouseInfo[0],  spouseInfo[7],
-                spouseInfo[4],  spouseInfo[8],  martial,  zeal,  charisma,  finesse,  "0",  "0", "no","q",  "q",convertedList,charList,date1, Directory);
+            characterCreation( spouse1066,spouseCulture,  spouseReligion,  spouseInfo[3],  spouseInfo[0],
+            spouseInfo[7],spouseInfo[4],  spouseInfo[8],  martial,  zeal,  charisma,  finesse,  "0",  "0", "no","q",  "q",convertedList,charList,date1,
+            cultureMappings,religionMappings,impTagInfo,Directory);
         }
 
         if (children != "0") {
@@ -509,10 +578,14 @@ public class Output
 
                 childInfo = charList.get(childID);
                 child1066 = Integer.toString( 1000000 + Integer.parseInt(children.split(" ")[aq4]) );
+                String childCulture = cultureOutput(cultureMappings,childInfo[1]);
+                int childCountry = Integer.parseInt(childInfo[17]);
+                String childCountryCulture = impTagInfo.get(childCountry)[6];
+                String childReligion = religionOutput(religionMappings,childCulture,childCountryCulture,date1,childInfo[2]);
 
-                characterCreation( child1066,  cultureOutput(childInfo[1]),  religionOutput(childInfo[2]),  childInfo[3],  childInfo[0],  childInfo[7],
+                characterCreation( child1066, childCulture, childReligion,  childInfo[3],  childInfo[0],  childInfo[7],
                     childInfo[4],  childInfo[8],  martial,  zeal,  charisma,  finesse,  childInfo[14],  childInfo[15], isPurple,irKING,spouse1066,
-                    convertedList,charList,date1,Directory);
+                    convertedList,charList,date1,cultureMappings,religionMappings,impTagInfo,Directory);
 
                 aq4 = aq4 + 1;
             }
@@ -877,7 +950,7 @@ public class Output
     }
 
     public static void dejureTitleCreation(ArrayList<String[]> impTagInfo, int empireRank,int duchyRank, int[] ck2LandTot, ArrayList<String> dejureDuchies,
-    ArrayList<String> impSubjectInfo, String Directory) throws IOException
+    ArrayList<String> impSubjectInfo,ArrayList<String> cultureMappings, String Directory) throws IOException
     {
 
         String tab = "	";
@@ -974,14 +1047,16 @@ public class Output
                             flag2 = 1;
                             hasDejureEmpire = 1;
                         } else { //if overlord is k tier, calculate liege
-                            String[] cultureTitles = Processing.defaultDejureConversion(cultureOutput(impTagInfo.get(tagID)[6]));
+                            //String[] cultureTitles = Processing.defaultDejureConversion(cultureOutput(cultureMappings,impTagInfo.get(tagID)[6]));
+                            String[] cultureTitles = Processing.defaultDejureConversion(impTagInfo.get(tagID)[6]);
                             cultureTitles = Processing.calculateUsedTitles(cultureTitles,impTagInfo,empireRank,ck2LandTot); //determines if tag exists in I:R
                             //print e_liege
                             out.println (cultureTitles[1]+" = {");
                             hasDejureEmpire = 1;
                         }
                     } else if (ck2LandTot[tagID] > duchyRank) { //if tag is independent k tier, assign appropriate dejure culture empire liege
-                        String[] cultureTitles = Processing.defaultDejureConversion(cultureOutput(impTagInfo.get(tagID)[6]));
+                        //String[] cultureTitles = Processing.defaultDejureConversion(cultureOutput(cultureMappings,impTagInfo.get(tagID)[6]));
+                        String[] cultureTitles = Processing.defaultDejureConversion(impTagInfo.get(tagID)[6]);
                         cultureTitles = Processing.calculateUsedTitles(cultureTitles,impTagInfo,empireRank,ck2LandTot); //determines if tag exists in I:R
                         //print e_liege
                         out.println (cultureTitles[1]+" = {#q1");
@@ -990,7 +1065,8 @@ public class Output
                     }
                     
                     if (ck2LandTot[tagID] <= duchyRank) { //if duchy, set rank, set kindom liege, and set dejure liege
-                            String[] cultureTitles = Processing.defaultDejureConversion(cultureOutput(impTagInfo.get(tagID)[6]));
+                            //String[] cultureTitles = Processing.defaultDejureConversion(cultureOutput(cultureMappings,impTagInfo.get(tagID)[6]));
+                            String[] cultureTitles = Processing.defaultDejureConversion(impTagInfo.get(tagID)[6]);
                             cultureTitles = Processing.calculateUsedTitles(cultureTitles,impTagInfo,empireRank,ck2LandTot); //determines if tag exists in I:R
                             if (flag2 != 1) {
                                 if (hasDejureEmpire == 0) {
@@ -1242,7 +1318,8 @@ public class Output
 
     public static ArrayList<String> createFamilies (ArrayList<String> dynList, String tag, String rulerFamily, String rank,
     ArrayList<String[]> impCharInfoList,ArrayList<String> convertedCharacters,String date,String republicOption, int tagIDNum, 
-    String liegeGov,String directory) throws IOException
+    String liegeGov,ArrayList<String> cultureMappings,ArrayList<String> religionMappings,ArrayList<String[]> impTagInfo,
+    String directory) throws IOException
     //creates families for Merchant Republics
     {
         int aqq = 1;
@@ -1264,17 +1341,22 @@ public class Output
                     String head = Processing.calcHead(impCharInfoList,dynasty[4]);
                     String headNum = Processing.calcCharID(head);
                     String[] headCharacter = impCharInfoList.get(Integer.parseInt(head));
+                    String headCulture = cultureOutput(cultureMappings,headCharacter[1]);
+                    //ArrayList<String[]> impTagInfo
+                    int headCountry = Integer.parseInt(headCharacter[17]);
+                    String headCountryCulture = impTagInfo.get(headCountry)[6];
+                    String headReligion = religionOutput(religionMappings,headCulture,headCountryCulture,date,headCharacter[2]);
 
-                    convertedCharacters = characterCreation(headNum, cultureOutput(headCharacter[1]),Output.religionOutput(headCharacter[2]),
+                    convertedCharacters = characterCreation(headNum, headCulture,headReligion,
                         headCharacter[3],headCharacter[0],headCharacter[7],headCharacter[4],headCharacter[8],headCharacter[10],headCharacter[11],
                         headCharacter[12],headCharacter[13],headCharacter[14],
-                        headCharacter[15],"palace","q","q",convertedCharacters,impCharInfoList,date,directory);
+                        headCharacter[15],"palace","q","q",convertedCharacters,impCharInfoList,date,cultureMappings,religionMappings,impTagInfo,directory);
 
                     dynastyCreation(dynasty[0],headCharacter[7],headCharacter[16],directory);
 
                     titleCreationCommon(palace,"none","none","none","b",directory); //creates merchant palace for ruler's family
                     convertedCharacters = titleCreation(palace,headNum,"none","palace","none","b",rank+","+tag,date,republicOption,newDynasty,dynList,
-                        impCharInfoList,convertedCharacters,tagIDNum,liegeGov,directory);
+                        impCharInfoList,convertedCharacters,tagIDNum,liegeGov,cultureMappings,religionMappings,impTagInfo,directory);
 
                 }
             }

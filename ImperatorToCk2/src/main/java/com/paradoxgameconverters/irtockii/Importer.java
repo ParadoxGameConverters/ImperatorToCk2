@@ -2109,6 +2109,7 @@ public class Importer
     }
     
     public static String[] importMappingFromArray (ArrayList<String> source, String provIDnum) throws IOException
+    //Simpler mapper that doesn't check for arguments and is faster, returning as soon as it finds a valid match
     {
         String qaaa;
         String[] output;   // Owner Culture Religeon PopTotal Buildings
@@ -2139,6 +2140,48 @@ public class Importer
         }   
 
         return output;
+
+    }
+    
+    public static ArrayList<String[]> importMappingFromArrayArgs (ArrayList<String> source, String provIDnum) throws IOException
+    //Should only be used on mapping files that support arguments
+    {
+        String line;
+        ArrayList<String[]> allMatches = new ArrayList<String[]>();
+        String[] match;
+        match = new String[2];
+
+        match[0] = "peq"; //default for no ir input
+        match[1] = "99999"; //default for no ck2 output
+        
+        int count = 0;
+
+        try {
+            while (count < source.size()){
+
+                line = source.get(count);
+
+                if (line.split(",")[0].equals(provIDnum) && !line.contains("#")){
+                    //count = 1 + source.size();
+                    if (line.split(",").length >= 3) {
+                        //return qaaa.split(","); //if mapping file has arguments, return those as well
+                        allMatches.add(line.split(","));
+                    } else {
+                        match[0] = line.split(",")[0];
+                        match[1] = line.split(",")[1];
+                        allMatches.add(match);
+                    }
+
+                }
+                count = count + 1;
+            }
+
+        }catch (java.util.NoSuchElementException exception){
+            count = 1 + source.size();
+
+        }   
+
+        return allMatches;
 
     }
 

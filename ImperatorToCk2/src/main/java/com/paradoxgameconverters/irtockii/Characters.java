@@ -39,7 +39,7 @@ public class Characters
         String vmm = scnr.nextLine();
         String qaaa = vmm;
         String[] output;   // Owner Culture Religeon PopTotal Buildings
-        output = new String[17];
+        output = new String[18];
 
         output[0] = "noName"; //default for no owner, uncolonized province
         output[1] = "noCulture"; //default for no culture, uncolonized province with 0 pops
@@ -55,6 +55,7 @@ public class Characters
         output[14] = "0"; //default for unmarried character
         output[15] = "0"; //default for character with no children
         output[16] = "0"; //default for minor character with no family name
+        output[17] = "0"; //default for country that character belongs to
 
         try {
             while (endOrNot = true){
@@ -72,6 +73,9 @@ public class Characters
                         output[0] = qaaa.split("=")[1];
                         output[0] = output[0].substring(1,output[0].length()-1);
                         output[0] = output[0].replace("_","'");
+                    }
+                    else if (qaaa.split("=")[0].equals( tab+"country" ) ) {
+                        output[17] = qaaa.split("=")[1];
                     }
                     else if (qaaa.split("=")[0].equals( tab+"family_name" ) ) {
                         output[16] = qaaa.split("=")[1];
@@ -199,6 +203,7 @@ public class Characters
                         output[14] = "0"; //default for unmarried character
                         output[15] = "0"; //default for character with no children
                         output[16] = "0"; //default for minor character with no family name
+                        output[17] = "0"; //default for country that character belongs to
                     }
 
                 }

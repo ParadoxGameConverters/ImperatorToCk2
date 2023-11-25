@@ -970,7 +970,7 @@ public class Processing
         return title;
     }
 
-    public static ArrayList<String> calculateDuchyNameList (String ck2Dir, String[][] ck2ProvInfo) throws IOException
+    public static ArrayList<String> calculateDuchyNameList (String ck2Dir, String[][] ck2ProvInfo,ArrayList<String> cultureMappings) throws IOException
     {
 
         ArrayList<String> output = new ArrayList<String>(); //owner,culture,duchy
@@ -1024,7 +1024,7 @@ public class Processing
                     while (aq3 < countyList.length) {
                         if (countyList[aq3].split("c_")[1].equals(ckProvName)) {
 
-                            provCultTotal = provCultTotal + "," + Output.cultureOutput(ck2ProvInfo[1][aq4]);
+                            provCultTotal = provCultTotal + "," + Output.cultureOutput(cultureMappings,ck2ProvInfo[1][aq4]);
                             provCultTotal = provCultTotal.replace("QQQ,","");
                             provTagTotal = provTagTotal + "," + ck2ProvInfo[0][aq4];
                             provTagTotal = provTagTotal.replace("QQQ,","");
@@ -1573,7 +1573,7 @@ public class Processing
 
     public static void dynamicSplit (String title,String rank,String color,String[] loc,String irFlag,String impGameDir,String capital,
     ArrayList<String[]> flagList,ArrayList<String[]> colorList,ArrayList<String> modFlagGFX,String government,String tagCulture,
-    String ck2Dir, String modDirectory) throws IOException
+    String ck2Dir, ArrayList<String> cultureMappings,String modDirectory) throws IOException
     {
         String country = rank+"_"+title;
         String[] easternEmpire = eastWestNames("Eastern",loc);
@@ -1586,7 +1586,6 @@ public class Processing
         }
         String westTitle = title+"_west";
         String ck2Capital = Importer.importConvList("provinceConversion.txt",Integer.parseInt(capital))[1];
-        tagCulture = Output.cultureOutput(tagCulture);
         //events
         String eventDir = modDirectory+"/events/dynamic_empire_split_"+country+".txt";
         String eventTemplateDirectory = "defaultOutput/templates/events/dynamic_empire_split.txt";
