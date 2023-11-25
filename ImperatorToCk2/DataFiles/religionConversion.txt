@@ -22,14 +22,12 @@ berber_religion,megalithic
 animism,iberian
 mesopotamian_religion,sumerian
 arabian_pantheon,arabic
-#eastern_animism,ritualism
 anatolian_religion,cybelene
 armenian_religion,khaldic
 caucasian_religion,armazic
 indo_iranian_religion,scythian
 eastern_animism,ritualistic
 pre_indo_european_religion,marite
-nuragic_pantheon,iberian
 manichaeism,manichean
 miaphysite,miaphysite
 islam,islam

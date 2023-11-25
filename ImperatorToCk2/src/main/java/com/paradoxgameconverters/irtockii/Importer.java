@@ -1916,6 +1916,8 @@ public class Importer
         irModDir = irModDir.substring(0,irModDir.length()-4);
 
         String tab = "	";
+        
+        char quoteMark = '"';
 
         int flag = 0;
 
@@ -1936,10 +1938,14 @@ public class Importer
                     String tmpOutput;
                     while (!qaaa.contains("}") && !qaaa.contains("speed=")) {
                         qaaa = qaaa.replace(tab,"");
-                        String[] mods = qaaa.split(" ");
+                        String[] mods = qaaa.split(".mod"+quoteMark);
                         int aqq = 0;
                         while (aqq < mods.length) {
-                            mods[aqq] = mods[aqq].substring(1,mods[aqq].length()-1);
+                            //System.out.println("Mod="+mods[aqq]);
+                            mods[aqq] = mods[aqq]+".mod";
+                            mods[aqq] = mods[aqq].replace(" "+quoteMark,"Q");
+                            mods[aqq] = mods[aqq].substring(1,mods[aqq].length());
+                            //System.out.println("Qhd="+mods[aqq]);
                             try { //get real mod dir
                                 output = importModDirInfo(irModDir+"/"+mods[aqq]);
                                 impModList.add(output);
