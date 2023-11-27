@@ -51,12 +51,13 @@ Zemurin - Review, advice, integration of new Fronter
 IhateTrains - Integration of new Fronter
 Vladimir Ilyich Lenin - Testing, events
 Canadian Lemur - Christianity Events, data files
+OurLordMonty - Data Files (Character Trait Mappings)
 comagoosie - librakaly save melter
 Thinking_waffle - Testing, Ideas, God Names and Translation
 Siawosh - Testing
 កាបូន២៦ - Testing, Advice, Natic Religion Icon
 Diskianterezh - Noric Divergence cultures
-Nick Robertson - data files (Scythian Rework, Parthian Cultures, Buildings, Retinues, and 150BC mappings)
+Yuiiut - data files (Scythian Rework, Parthian Cultures, Buildings, Retinues, and 150BC mappings)
 
 The When The World Stopped Making Sense (WtWSMS) mod team for allowing the converter to use their content, their mod can be found either on Steam or their forum thread.
 WtWSMS mod Steam link: https://steamcommunity.com/sharedfiles/filedetails/?id=1247380029
