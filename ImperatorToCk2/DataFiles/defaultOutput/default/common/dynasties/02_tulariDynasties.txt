@@ -1,0 +1,565 @@
+5369000=
+{
+	name="Uclina"
+	culture="tulari"
+}
+5369001=
+{
+	name="Ucli"
+	culture="tulari"
+}
+5369002=
+{
+	name="Acnatru"
+	culture="tulari"
+}
+5369003=
+{
+	name="Acvilnas"
+	culture="tulari"
+}
+5369004=
+{
+	name="Afunei"
+	culture="tulari"
+}
+5369005=
+{
+	name="Aisina"
+	culture="tulari"
+}
+5369006=
+{
+	name="Alethnei"
+	culture="tulari"
+}
+5369007=
+{
+	name="Alfi"
+	culture="tulari"
+}
+5369008=
+{
+	name="Amuni"
+	culture="tulari"
+}
+5369009=
+{
+	name="Anani"
+	culture="tulari"
+}
+5369010=
+{
+	name="Anes"
+	culture="tulari"
+}
+5369011=
+{
+	name="Alethnas"
+	culture="tulari"
+}
+5369012=
+{
+	name="Apatru"
+	culture="tulari"
+}
+5369013=
+{
+	name="Cafati"
+	culture="tulari"
+}
+5369014=
+{
+	name="Ceie"
+	culture="tulari"
+}
+5369015=
+{
+	name="Calitahi"
+	culture="tulari"
+}
+5369016=
+{
+	name="Camitlnas"
+	culture="tulari"
+}
+5369017=
+{
+	name="Campanian"
+	culture="tulari"
+}
+5369018=
+{
+	name="Canatnei"
+	culture="tulari"
+}
+5369019=
+{
+	name="Cheiras"
+	culture="tulari"
+}
+5369020=
+{
+	name="Churinian"
+	culture="tulari"
+}
+5369021=
+{
+	name="Cicunias"
+	culture="tulari"
+}
+5369022=
+{
+	name="Creicesian"
+	culture="tulari"
+}
+5369023=
+{
+	name="Ecnati"
+	culture="tulari"
+}
+5369024=
+{
+	name="Einanian"
+	culture="tulari"
+}
+5369025=
+{
+	name="Eucli"
+	culture="tulari"
+}
+5369026=
+{
+	name="Ezpus"
+	culture="tulari"
+}
+5369027=
+{
+	name="Ezpusian"
+	culture="tulari"
+}
+5369028=
+{
+	name="Fapi"
+	culture="tulari"
+}
+5369029=
+{
+	name="Fapian"
+	culture="tulari"
+}
+5369030=
+{
+	name="Felces"
+	culture="tulari"
+}
+5369031=
+{
+	name="Feluscian"
+	culture="tulari"
+}
+5369032=
+{
+	name="Felusci"
+	culture="tulari"
+}
+5369033=
+{
+	name="Fulvena"
+	culture="tulari"
+}
+5369034=
+{
+	name="Hanu"
+	culture="tulari"
+}
+5369035=
+{
+	name="Hapisna"
+	culture="tulari"
+}
+5369036=
+{
+	name="Hapri"
+	culture="tulari"
+}
+5369037=
+{
+	name="Hapre"
+	culture="tulari"
+}
+5369038=
+{
+	name="Havrinian"
+	culture="tulari"
+}
+5369039=
+{
+	name="Lapicani"
+	culture="tulari"
+}
+5369040=
+{
+	name="Divicus"
+	culture="tulari"
+}
+5369041=
+{
+	name="Larani"
+	culture="tulari"
+}
+5369042=
+{
+	name="Larecena"
+	culture="tulari"
+}
+5369043=
+{
+	name="Lucina"
+	culture="tulari"
+}
+5369044=
+{
+	name="Lucinei"
+	culture="tulari"
+}
+5369045=
+{
+	name="Lucinian"
+	culture="tulari"
+}
+5369046=
+{
+	name="Lartli"
+	culture="tulari"
+}
+5369047=
+{
+	name="Latnian"
+	culture="tulari"
+}
+5369048=
+{
+	name="Marcnei"
+	culture="tulari"
+}
+5369049=
+{
+	name="Malamena"
+	culture="tulari"
+}
+5369050=
+{
+	name="Marcnithur"
+	culture="tulari"
+}
+5369051=
+{
+	name="Mutunid"
+	culture="tulari"
+}
+5369052=
+{
+	name="Nerinei"
+	culture="tulari"
+}
+5369053=
+{
+	name="Ninie"
+	culture="tulari"
+}
+5369054=
+{
+	name="Nuiclnas"
+	culture="tulari"
+}
+5369055=
+{
+	name="Nufre"
+	culture="tulari"
+}
+5369056=
+{
+	name="Pachie"
+	culture="tulari"
+}
+5369057=
+{
+	name="Peithunas"
+	culture="tulari"
+}
+5369058=
+{
+	name="Palazus"
+	culture="tulari"
+}
+5369059=
+{
+	name="Palazusian"
+	culture="tulari"
+}
+5369060=
+{
+	name="Papni"
+	culture="tulari"
+}
+5369061=
+{
+	name="Phersnalei"
+	culture="tulari"
+}
+5369062=
+{
+	name="Pinies"
+	culture="tulari"
+}
+5369063=
+{
+	name="Platia"
+	culture="tulari"
+}
+5369064=
+{
+	name="Plutian"
+	culture="tulari"
+}
+5369065=
+{
+	name="Precuthur"
+	culture="tulari"
+}
+5369066=
+{
+	name="Puinci"
+	culture="tulari"
+}
+5369067=
+{
+	name="Purzena"
+	culture="tulari"
+}
+5369068=
+{
+	name="Pustmina"
+	culture="tulari"
+}
+5369069=
+{
+	name="Rufi"
+	culture="tulari"
+}
+5369070=
+{
+	name="Ranazu"
+	culture="tulari"
+}
+5369071=
+{
+	name="Salini"
+	culture="tulari"
+}
+5369072=
+{
+	name="Scevei"
+	culture="tulari"
+}
+5369073=
+{
+	name="Scurfiu"
+	culture="tulari"
+}
+5369074=
+{
+	name="Sepu"
+	culture="tulari"
+}
+5369075=
+{
+	name="Sethre"
+	culture="tulari"
+}
+5369076=
+{
+	name="Silgatana"
+	culture="tulari"
+}
+5369077=
+{
+	name="Sinu"
+	culture="tulari"
+}
+5369078=
+{
+	name="Slanzu"
+	culture="tulari"
+}
+5369079=
+{
+	name="Spantu"
+	culture="tulari"
+}
+5369080=
+{
+	name="Spite"
+	culture="tulari"
+}
+5369081=
+{
+	name="Spurinas"
+	culture="tulari"
+}
+5369082=
+{
+	name="Srutzna"
+	culture="tulari"
+}
+5369083=
+{
+	name="Statlanian"
+	culture="tulari"
+}
+5369084=
+{
+	name="Tarchunies"
+	culture="tulari"
+}
+5369085=
+{
+	name="Tarcnid"
+	culture="tulari"
+}
+5369086=
+{
+	name="Teithurna"
+	culture="tulari"
+}
+5369087=
+{
+	name="Teitur"
+	culture="tulari"
+}
+5369088=
+{
+	name="Tetnies"
+	culture="tulari"
+}
+5369089=
+{
+	name="Thusatur"
+	culture="tulari"
+}
+5369090=
+{
+	name="Trepe"
+	culture="tulari"
+}
+5369091=
+{
+	name="Tutna"
+	culture="tulari"
+}
+5369092=
+{
+	name="Tutes"
+	culture="tulari"
+}
+5369093=
+{
+	name="Ucrini"
+	culture="tulari"
+}
+5369094=
+{
+	name="Ucrinian"
+	culture="tulari"
+}
+5369095=
+{
+	name="Uftave"
+	culture="tulari"
+}
+5369096=
+{
+	name="Ultimnid"
+	culture="tulari"
+}
+5369097=
+{
+	name="Ulzna"
+	culture="tulari"
+}
+5369098=
+{
+	name="Vania"
+	culture="tulari"
+}
+5369099=
+{
+	name="Velarian"
+	culture="tulari"
+}
+5369100=
+{
+	name="Velcii"
+	culture="tulari"
+}
+5369101=
+{
+	name="Velcian"
+	culture="tulari"
+}
+5369102=
+{
+	name="Vlesi"
+	culture="tulari"
+}
+5369103=
+{
+	name="Velia"
+	culture="tulari"
+}
+5369104=
+{
+	name="Velethnei"
+	culture="tulari"
+}
+5369105=
+{
+	name="Velthinathur"
+	culture="tulari"
+}
+5369106=
+{
+	name="Venetian"
+	culture="tulari"
+}
+5369107=
+{
+	name="Vete"
+	culture="tulari"
+}
+5369108=
+{
+	name="Zalthu"
+	culture="tulari"
+}
+5369109=
+{
+	name="Zane"
+	culture="tulari"
+}
+5369110=
+{
+	name="Zertnei"
+	culture="tulari"
+}
+5369111=
+{
+	name="Zili"
+	culture="tulari"
+}
+5369112=
+{
+	name="Hercle"
+	culture="tulari"
+}

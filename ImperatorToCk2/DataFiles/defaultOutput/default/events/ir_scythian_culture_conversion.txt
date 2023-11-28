@@ -1,0 +1,178 @@
+###################################
+#
+# Imperator:Rome to Crusader Kings II
+# - Scythian Culture Conversion Events
+#
+###################################
+
+namespace = IR_SCY
+
+# Province culture changes from Parthian to Indo-Parthian
+province_event = {
+	id = IR_SCY.2000
+	desc = EVTDESC_IR_SCY_2000
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 100
+		culture = saka
+		region = world_india
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = saka
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_SCY_2000
+		culture = indo_scythian
+	}
+}
+
+#################################################
+
+# Province culture changes from Sarmatian or Scythian to Iazyges
+province_event = {
+	id = IR_SCY.2001
+	desc = EVTDESC_IR_SCY_2001
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 100
+		OR = {
+			culture = sarmatian
+			culture = royal_scythian
+		}
+		OR = {
+			region = custom_irck2_pannonia
+			region = custom_irck2_dalmatia
+		}
+		NOT = {
+			owner = {
+				top_liege = {
+					OR = {
+						culture = sarmatian
+						culture = royal_scythian
+					}
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_SCY_2001
+		culture = iazyges
+	}
+}
+
+#################################################
+
+# Province culture changes from Sarmatian or Scythian to Nemedian
+province_event = {
+	id = IR_SCY.2003
+	desc = EVTDESC_IR_SCY_2003
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 100
+		OR = {
+			culture = sarmatian
+			culture = royal_scythian
+		}
+		region = custom_irck2_britannia
+		NOT = {
+			owner = {
+				top_liege = {
+					OR = {
+						culture = sarmatian
+						culture = royal_scythian
+					}
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_SCY_2003
+		culture = nemedian
+	}
+}
+
+
+#################################################
+
+
+
+

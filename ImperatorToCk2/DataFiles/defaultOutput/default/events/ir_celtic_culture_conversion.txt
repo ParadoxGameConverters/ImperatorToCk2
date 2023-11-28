@@ -23,15 +23,20 @@ province_event = {
 			culture = celtic_pannonian
 		}
 		OR = {
-			region = custom_irck2_persia
+			#region = custom_irck2_persia
 			region = world_asia_minor
-			region = world_middle_east
-			region = custom_irck2_egypt
+			#region = custom_irck2_egypt
 		}
 		NOT = {
 			owner = {
 				top_liege = {
-					culture = roman
+					#culture = roman
+					OR = {
+						culture = gallic
+						culture = lepontic
+						culture = belgae
+						culture = celtic_pannonian
+					}
 					OR = {
 						tier = emperor
 						#num_of_king_titles = 2
@@ -61,6 +66,115 @@ province_event = {
 	option = {
 		name = EVTOPTA_IR_CEL_2017
 		culture = galatian
+	}
+}
+
+province_event = {
+	id = IR_CEL.2018
+	desc = EVTDESC_IR_CEL_2018
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		year = 475
+		OR = {
+			culture = gallic
+			culture = lepontic
+			culture = belgae
+			culture = celtic_pannonian
+			culture = galatian
+		}
+		region = world_middle_east
+
+		NOT = {
+			owner = {
+				top_liege = {
+					#culture = roman
+					OR = {
+						culture = gallic
+						culture = lepontic
+						culture = belgae
+						culture = celtic_pannonian
+						culture = galatian
+					}
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_CEL_2018
+		culture = plashurii
+	}
+}
+
+# Province culture changes from Belgae to Atrebatian
+province_event = {
+	id = IR_CEL.2019
+	desc = EVTDESC_IR_CEL_2019
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+
+	trigger = {
+		should_evolve_cultures_trigger = yes
+		#year = 425
+		culture = belgae
+		region = custom_irck2_britannia
+		NOT = {
+			owner = {
+				top_liege = {
+					culture = belgae
+					OR = {
+						tier = emperor
+						#num_of_king_titles = 2
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.3
+			OR = {
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots
+				}
+				has_game_rule = {
+					name = culture_conversion
+					value = faster_melting_pots_and_slower_normal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTA_IR_CEL_2019
+		culture = atrebatian
 	}
 }
 

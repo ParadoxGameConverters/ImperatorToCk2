@@ -1,3 +1,10 @@
+#IR Religion,CK2 Religion,argument=x(optional),argument2=x(optional),ect.
+#Arguments can be culture=culture_name,tagCulture=culture_name,year=x
+#culture checks the specific character/province, tagCulture checks the tag that owns the character/province, and year checks if x <= converted year
+#All arguments in mapping must be true for mapping to be used
+#Comments must be placed on their own line separate from the mapping, and any invalid mapping will be ignored by the converter
+#The first valid mapping will always take priority
+
 roman_pantheon,hellenic_pagan
 carthaginian_pantheon,canaanite
 druidism,druidic
@@ -9,24 +16,48 @@ buddhism,buddhist
 hindu,hindu
 bon_religion,bon
 jainism,jain
-matrist_religion,baltic_pagan
 egyptian_pantheon,egyptian
 shamanism,zalmoxian
 berber_religion,megalithic
 animism,iberian
 mesopotamian_religion,sumerian
 arabian_pantheon,arabic
-#eastern_animism,ritualism
 anatolian_religion,cybelene
 armenian_religion,khaldic
 caucasian_religion,armazic
 indo_iranian_religion,scythian
 eastern_animism,ritualistic
-pre_indo_european_religion,iberian
-nuragic_pantheon,iberian
+pre_indo_european_religion,marite
 manichaeism,manichean
 miaphysite,miaphysite
 islam,islam
 slavic,slavic_pagan
 tengri,tengri_pagan
 mesoamerican_religion,mayan_pagan
+new_armenian_religion,khaldic
+ajivika,ajivika
+agama,hindu
+puntic_religion,waaqi
+illyrian_pantheon,illyric
+burmese_religion,bamar_pagan
+mithra_religion,mithraic
+vaksh_religion,khurmazta
+nilotic_pantheon,west_african_pagan
+nuragic_pantheon,nuragic
+
+#Matrist/We'Ra Split
+matrist_religion,slavic_pagan,tagCulture=protoslavic
+matrist_religion,baltic_pagan,tagCulture=aestian
+matrist_religion,slavic_pagan,culture=protoslavic
+#Fallback
+matrist_religion,baltic_pagan
+
+#Realm Divide mod
+arian_christian,arian
+tengri_religion,tengri_pagan
+slavic_religion,slavic_pagan
+roman_pagan,hellenic_pagan
+manichaeism_religion,manichean
+donatist_christian,donatism
+priscillian_christian,priscillianism
+monophysite_christian,monophysite

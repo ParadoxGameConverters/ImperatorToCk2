@@ -1,0 +1,158 @@
+5355008=
+{
+	name="Mikhailovich"
+	culture="berzanian"
+}
+5355009=
+{
+	name="Lukinich"
+	culture="berzanian"
+	#religion="catholic"
+}
+5355010=
+{
+	name="Andreievich"
+	culture="berzanian"
+	#religion="catholic"
+}
+5355011=
+{
+	name="Dobrynich"
+	culture="berzanian"
+	#religion="catholic"
+}
+5355012=
+{
+	name="Petrilov"
+	culture="berzanian"
+	#religion="catholic"
+}
+5355013=
+{
+	name="Borisov"
+	culture="berzanian"
+	#religion="catholic"
+}
+5355014 = {
+   name="Ryhaskiy"
+   culture="berzanian"
+   #religion="catholic"
+}
+5355015 = {
+   name="Kholmsky"
+   culture="berzanian"
+   #religion="catholic"
+}
+
+5355016 = {
+   name="Izyaslavich"
+   culture="berzanian"
+   #religion="catholic"
+}
+
+5355017 ={
+   name="Konstantinov"
+   culture="berzanian"
+   #religion="catholic"
+}
+5355018 ={
+   name="Gurielov"
+   culture="berzanian"
+   #religion="catholic"
+}
+5355019 ={
+   name="Khitrov"
+   culture="berzanian"
+   #religion="catholic"
+}
+5355020 ={
+   name="Kobylin"
+   culture="berzanian"
+   #religion="catholic"
+}
+5355021 ={
+   name="Lopukhin"
+   culture="berzanian"
+   #religion="catholic"
+}
+5355022 ={
+   name="Rumyantsev"
+   culture="berzanian"
+   #religion="catholic"
+}
+5355023 = {
+	name = "Matveyev"
+	culture = berzanian
+}
+5355024 = {
+	name = "Naryshkin"
+	culture = berzanian
+}
+5355025 = {
+	name = "Poluektovich"
+	culture = berzanian
+}
+5355026 = {
+	name = "Pankeyev"
+	culture = berzanian
+}
+5355027 = {
+	name = "Pushkin"
+	culture = berzanian
+}
+5355028 = {
+	name = "Rtishchev"
+	culture = berzanian
+}
+5355029 = {
+	name = "Shchenya"
+	culture = berzanian
+}
+5355030 = {
+	name = "Shein"
+	culture = berzanian
+}
+5355031 = {
+	name = "Shemyaka"
+	culture = berzanian
+}
+5355032 = {
+	name = "Sheremetev"
+	culture = berzanian
+}
+5355033 = {
+	name = "Andreievich"
+	culture = berzanian
+}
+5355034 = {
+	name = "Bryachislavich"
+	culture = berzanian
+}
+5355035 = {
+	name="Igorevich"
+	culture="berzanian"
+}
+5355036 = {
+	name="Ivanovich"
+	culture="berzanian"
+}
+5355037 = {
+	name="Iziaslavich"
+	culture="berzanian"
+}
+5355038 = {
+	name="Nikitich"
+	culture="berzanian"
+}
+5355039 = {
+	name="Rostislavich"
+	culture="berzanian"
+}
+5355040 = {
+	name="Sviatoslavich"
+	culture="berzanian"
+}
+5355041 = {
+	name="Vasilievich"
+	culture="berzanian"
+}

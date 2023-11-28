@@ -1,0 +1,82 @@
+5385008=
+{
+	name="Hunas"
+	culture="indo_scythian"
+}
+5385009=
+{
+	name="Visha"
+	culture="indo_scythian"
+	
+}
+5385010=
+{
+	name="Hinaza"
+	culture="indo_scythian"
+	
+}
+5385011=
+{
+	name="Kustana"
+	culture="indo_scythian"
+	
+}
+5385012=
+{
+	name="Hvamna"
+	culture="indo_scythian"
+	
+}
+5385013=
+{
+	name="Gaysata"
+	culture="indo_scythian"
+	
+}
+5385014 = {
+   name="Ustaka"
+   culture="indo_scythian"
+   
+}
+5385015 = {
+   name="Birgamdara"
+   culture="indo_scythian"
+   
+}
+
+5385016 = {
+   name="Phamnaa"
+   culture="indo_scythian"
+   
+}
+
+5385017 ={
+   name="Ca"
+   culture="indo_scythian"
+   
+}
+5385018 ={
+   name="Yuttina"
+   culture="indo_scythian"
+   
+}
+5385019 ={
+   name="Kshaharata"
+   culture="indo_scythian"
+   
+}
+5385020 ={
+   name="Chaharada"
+   culture="indo_scythian"
+   
+}
+5385021 ={
+   name="Khaharata"
+   culture="indo_scythian"
+   
+}
+5385022 ={
+   name="Khakharata"
+   culture="indo_scythian"
+   
+}

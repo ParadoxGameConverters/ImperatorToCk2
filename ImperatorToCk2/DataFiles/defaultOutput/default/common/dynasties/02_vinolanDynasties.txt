@@ -1,0 +1,159 @@
+5358008=
+{
+	name="Obroditen"
+	culture="vinolan"
+}
+5358009=
+{
+	name="z Liubic"
+	culture="vinolan"
+	#religion="catholic"
+}
+5358010=
+{
+	name="Grzymala"
+	culture="vinolan"
+	#religion="catholic"
+}
+5358011=
+{
+	name="Jastrzebiec"
+	culture="vinolan"
+	#religion="catholic"
+}
+5358012=
+{
+	name="Lodzia"
+	culture="vinolan"
+	#religion="catholic"
+}
+5358013=
+{
+	name="Lubicz"
+	culture="vinolan"
+	#religion="catholic"
+}
+5358014 = {
+   name="Nalecz"
+   culture="vinolan"
+   #religion="catholic"
+}
+5358015 = {
+   name="Gniewosz"
+   culture="vinolan"
+   #religion="catholic"
+}
+
+5358016 = {
+   name="z Roztoki"
+   culture="vinolan"
+   #religion="catholic"
+}
+
+5358017 ={
+   name="ze Slupska"
+   culture="vinolan"
+   #religion="catholic"
+}
+5358018 ={
+   name="z Wagrow"
+   culture="vinolan"
+   #religion="catholic"
+}
+5358019 ={
+   name="Zirzipani"
+   culture="vinolan"
+   #religion="catholic"
+}
+5358020 ={
+   name="Doleczanie"
+   culture="vinolan"
+   #religion="catholic"
+}
+5358021 ={
+   name="Gryfita"
+   culture="vinolan"
+   #religion="catholic"
+}
+5358022 ={
+   name="Wend"
+   culture="vinolan"
+   #religion="catholic"
+}
+5358023 = {
+	name = "Swienca"
+	culture = vinolan
+}
+5358024 = {
+	name = "Slaweka"
+	culture = vinolan
+}
+#
+5358025 = {
+	name = "Swidnicki"
+	culture = vinolan
+}
+5358026 = {
+	name = "Branicki"
+	culture = vinolan
+}
+5358027 = {
+	name = "Glogowski"
+	culture = vinolan
+}
+5358028 = {
+	name = "Bogorski"
+	culture = vinolan
+}
+5358029 = {
+	name = "Lisy"
+	culture = vinolan
+}
+5358030 = {
+	name = "Wielkovinolski"
+	culture = vinolan
+}
+5358031 = {
+	name = "Czartoryski"
+	culture = vinolan
+}
+5358032 = {
+	name = "Hroznatid"
+	culture = vinolan
+}
+5358033 = {
+	name = "Hrabišid"
+	culture = vinolan
+}
+5358034 = {
+	name = "Markvartid"
+	culture = vinolan
+}
+5358035 = {
+	name="Vršovic"
+	culture="vinolan"
+}
+5358036 = {
+	name="Bavorid"
+	culture="vinolan"
+}
+5358037 = {
+	name="Vinolnínid"
+	culture="vinolan"
+}
+5358038 = {
+	name="Gamrat"
+	culture="vinolan"
+}
+5358039 = {
+	name="Kolanka"
+	culture="vinolan"
+}
+5358040 = {
+	name="Giese"
+	culture="vinolan"
+}
+5358041 = {
+	name="Tarnowski"
+	culture="vinolan"
+}

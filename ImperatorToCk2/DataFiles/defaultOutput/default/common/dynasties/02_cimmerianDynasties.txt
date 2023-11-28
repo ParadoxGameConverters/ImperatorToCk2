@@ -1,0 +1,63 @@
+5362008=
+{
+	name="Hvamna"
+	culture="cimmerian"
+}
+5362009=
+{
+	name="Gaysata"
+	culture="cimmerian"
+	#religion="catholic"
+}
+5362010=
+{
+	name="Ustaka"
+	culture="cimmerian"
+	#religion="catholic"
+}
+5362011=
+{
+	name="Birgamdara"
+	culture="cimmerian"
+	#religion="catholic"
+}
+5362012=
+{
+	name="Phamnaa"
+	culture="cimmerian"
+	#religion="catholic"
+}
+5362013=
+{
+	name="Ca"
+	culture="cimmerian"
+	#religion="catholic"
+}
+5362014 = {
+   name="Yuttina"
+   culture="cimmerian"
+   #religion="catholic"
+}
+5362015 = {
+   name="Hunas"
+   culture="cimmerian"
+   #religion="catholic"
+}
+
+5362016 = {
+   name="Visha"
+   culture="cimmerian"
+   #religion="catholic"
+}
+
+5362017 ={
+   name="Hinaza"
+   culture="cimmerian"
+   #religion="catholic"
+}
+5362018 ={
+   name="Kustana"
+   culture="cimmerian"
+   #religion="catholic"
+}
+

@@ -1,0 +1,358 @@
+#By Nick Robertson
+
+RETTYPE_CUL_PLASHURII = 
+{
+	first_type = 6
+	first_amount = 250
+	
+	special_troops = camel_cavalry
+	
+	potential = {
+		is_nomadic = no
+		culture = plashurii
+	}
+	
+	modifier = {
+		camel_cavalry_offensive = 0.2
+		camel_cavalry_defensive = 0.2
+		camel_cavalry_morale = 0.2
+	}
+}
+
+RETTYPE_CUL_CHALDEAN = 
+{
+	first_type = 1
+	first_amount = 200
+	second_type = 5
+	second_amount = 200
+	
+	potential = {
+		is_nomadic = no
+		culture_group = semitic_group
+	}
+	
+	modifier = {
+		archers_defensive = 0.2
+		heavy_infantry_defensive = 0.2
+		archers_offensive = 0.2
+		archers_morale = 0.4
+	}
+}
+
+RETTYPE_CAT_PUNIC_ELEPHANT = 
+{
+	first_type = 6
+	first_amount = 100
+	
+	special_troops = war_elephants
+	
+	potential = {
+		is_nomadic = no
+		culture_group = punic #mismatch with cultural building is intentional, any punic char can import elephants
+	}
+	
+	modifier = {
+		war_elephants_offensive = 0.25
+		war_elephants_defensive = 0.45
+	}
+}
+
+RETTYPE_CUL_PUNIC_MARINES = 
+{
+	first_type = 2
+	first_amount = 200
+	second_type = 5
+	second_amount = 200
+	
+	potential = {
+		is_nomadic = no
+		culture_group = punic
+	}
+	
+	modifier = {
+		archers_defensive = 0.2
+		pikemen_defensive = 0.2
+		pikemen_offensive = 0.2
+		pikemen_morale = 0.4
+	}
+}
+
+RETTYPE_CUL_ETRUSCAN = 
+{
+	first_type = 1
+	first_amount = 250
+	
+	potential = {
+		is_nomadic = no
+		culture = etruscan
+	}
+	
+	modifier = {
+		heavy_infantry_offensive = 0.1
+		heavy_infantry_defensive = 0.5
+		heavy_infantry_morale = 0.2
+	}
+}
+
+RETTYPE_CUL_PIE = 
+{
+	first_type = 5
+	first_amount = 300
+
+	potential = {
+		is_nomadic = no
+		culture_group = pre_indo_european #basque and etruscans can get slingers if they want I guess
+	}
+	
+	modifier = {
+		archers_offensive = 0.2
+		archers_defensive = 0.2
+	}
+}
+
+RETTYPE_CUL_GALLIC = 
+{
+	first_type = 4
+	first_amount = 150
+	
+	second_type = 3
+	second_amount = 100
+	
+	potential = {
+		is_nomadic = no
+		culture_group = gallic_group
+	}
+	
+	modifier = {
+		knights_offensive = 0.1
+		knights_defensive = 0.1
+		knights_morale = 0.2
+	}
+}
+
+RETTYPE_CUL_GALATIAN = 
+{
+	first_type = 1
+	first_amount = 200
+	
+	potential = {
+		is_nomadic = no
+		OR = {
+			culture = galatian
+			culture = plashurii
+			}
+	}
+	
+	modifier = {
+		heavy_infantry_offensive = 0.4
+		heavy_infantry_morale = 0.2
+	}
+}
+
+RETTYPE_CUL_DACIAN = 
+{
+	first_type = 1
+	first_amount = 300
+	
+	potential = {
+		is_nomadic = no
+		OR = {
+					culture = dacian
+					culture = thracian
+					culture = celtic_pannonian
+				}
+	}
+	
+	modifier = {
+		heavy_infantry_morale = 0.4
+	}
+}
+
+RETTYPE_CUL_ISTROGOTHIC = 
+{
+	first_type = 3
+	first_amount = 400
+	
+	potential = {
+		is_nomadic = no
+		culture = istrogothic
+	}
+	
+	modifier = {
+		light_cavalry_offensive = 0.2
+		light_cavalry_morale = 0.2
+	}
+}
+
+RETTYPE_CUL_VANDAL = 
+{
+	first_type = 0
+	first_amount = 400
+	
+	potential = {
+		is_nomadic = no
+		OR = {
+				culture = vandal
+				culture = gothic
+				}
+	}
+	
+	modifier = {
+		light_infantry_offensive = 0.4
+		light_infantry_defensive = 0.4
+	}
+}
+
+RETTYPE_CUL_ICENIAN = 
+{
+	first_type = 4
+	first_amount = 100
+	
+	second_type = 3
+	second_amount = 150
+	
+	potential = {
+		is_nomadic = no
+		culture = icenian
+	}
+	
+	modifier = {
+		knights_defensive = 0.1
+		knights_morale = 0.1
+		light_cavalry_defensive = 0.2
+		light_cavalry_offensive = 0.2
+	}
+}
+
+RETTYPE_CUL_WUSUN = 
+{
+	first_type = 3
+	first_amount = 300
+	
+	potential = {
+		is_nomadic = no
+		culture = wusun
+	}
+	
+	modifier = {
+		light_cavalry_defensive = 0.6
+		light_cavalry_morale = 0.2
+	}
+}
+
+RETTYPE_CUL_BACTRIAN = 
+{
+	first_type = 6
+	first_amount = 200
+	special_troops = horse_archers
+	second_type = 2
+	second_amount = 200
+	
+	potential = {
+		is_nomadic = no
+		culture_group = bactrian_group
+	}
+	
+	modifier = {
+		horse_archers_offensive = 0.3
+		horse_archers_defensive = 0.1
+		horse_archers_morale = 0.1
+		pikemen_offensive = 0.1
+		pikemen_defensive = 0.3
+		pikemen_morale = 0.1
+	}
+}
+
+RETTYPE_CUL_CAUCASIAN = {
+	first_type = 0
+	first_amount = 200
+	
+	second_type = 5
+	second_amount = 100
+	
+	potential = {
+		is_nomadic = no
+		culture_group = caucasian_group
+	}
+
+	
+	modifier = {
+		light_infantry_defensive = 0.6
+		light_infantry_morale = 0.4
+		archers_defensive = 0.4
+		archers_morale = 0.2
+	}
+}
+
+RETTYPE_CUL_ANCIENT_EGYPTIAN = 
+{
+	first_type = 5
+	first_amount = 250
+	
+	potential = {
+		is_nomadic = no
+		culture = ancient_egyptian
+	}
+	
+	modifier = {
+		archers_offensive = 0.4 #My source is Rome: Total War
+	}
+}
+
+RETTYPE_CUL_INDOGREEK = 
+{
+	first_type = 6
+	first_amount = 50
+	first_type = 2
+	first_amount = 100
+	special_troops = war_elephants
+	
+	potential = {
+		is_nomadic = no
+		culture = indogreek
+	}
+	
+	modifier = {
+		war_elephants_defensive = 0.4
+		pikemen_defensive = 0.4
+	}
+}
+
+
+RETTYPE_CUL_SCYTHIAN_OUTRIDERS = 
+{
+	first_type = 3
+	first_amount = 400
+	
+	potential = {
+		is_nomadic = no
+		culture_group = scythian_group
+	}
+	
+	modifier = {
+		light_cavalry_offensive = 0.2
+		light_cavalry_morale = 0.2
+	}
+}
+
+RETTYPE_CUL_SCYTHIAN_NOBLES = 
+{
+	first_type = 4
+	first_amount = 150
+	
+	second_type = 6
+	second_amount = 100
+
+	special_troops = horse_archers
+	
+	potential = {
+		is_nomadic = no
+		culture_group = scythian_group
+	}
+	
+	modifier = {
+		knights_offensive = 0.1
+		knights_defensive = 0.1
+		knights_morale = 0.2
+	}
+}

@@ -1,0 +1,158 @@
+5381008=
+{
+	name="Burtasid"
+	culture="iazyges"
+}
+5381009=
+{
+	name="Alauni"
+	culture="iazyges"
+	
+}
+5381010=
+{
+	name="Halani"
+	culture="iazyges"
+	
+}
+5381011=
+{
+	name="Shoana"
+	culture="iazyges"
+	
+}
+5381012=
+{
+	name="Senty"
+	culture="iazyges"
+	
+}
+5381013=
+{
+	name="Ovseti"
+	culture="iazyges"
+	
+}
+5381014 = {
+   name="Tsærasantæ"
+   culture="iazyges"
+   
+}
+5381015 = {
+   name="Ælbegatæ"
+   culture="iazyges"
+   
+}
+
+5381016 = {
+   name="Ardasentæ"
+   culture="iazyges"
+   
+}
+
+5381017 ={
+   name="Bekkuyzartæ"
+   culture="iazyges"
+   
+}
+5381018 ={
+   name="Gæbæratæ"
+   culture="iazyges"
+   
+}
+5381019 ={
+   name="Dzæræhohtæ"
+   culture="iazyges"
+   
+}
+5381020 ={
+   name="Dzebysatæ"
+   culture="iazyges"
+   
+}
+5381021 ={
+   name="Djerdjitæ"
+   culture="iazyges"
+   
+}
+5381022 ={
+   name="Guyrdzybetæ"
+   culture="iazyges"
+   
+}
+5381023 = {
+	name = "Zændjiatæ"
+	culture = iazyges
+}
+5381024 = {
+	name = "Kærkuystæ"
+	culture = iazyges
+}
+5381025 = {
+	name = "Djykkajtæ"
+	culture = iazyges
+}
+5381026 = {
+	name = "Godjysatæ"
+	culture = iazyges
+}
+5381027 = {
+	name = "Magkætæ"
+	culture = iazyges
+}
+5381028 = {
+	name = "Pærræstatæ"
+	culture = iazyges
+}
+5381029 = {
+	name = "Hetægkatæ"
+	culture = iazyges
+}
+5381030 = {
+	name = "Hædarcatæ"
+	culture = iazyges
+}
+5381031 = {
+	name = "Tuallægtæ"
+	culture = iazyges
+}
+5381032 = {
+	name = "Færniatæ"
+	culture = iazyges
+}
+5381033 = {
+	name = "Ephraimid"
+	culture = iazyges
+}
+5381034 = {
+	name = "Tandelatæ"
+	culture = iazyges
+}
+5381035 = {
+	name = "Tsæykostæ"
+	culture = iazyges
+}
+5381036 = {
+	name = "Sozanatæ"
+	culture = iazyges
+}
+5381037 = {
+	name = "Skirwilteitis"
+	culture = iazyges
+}
+5381038 = {
+	name = "Mærzojtæ"
+	culture = iazyges
+}
+5381039 = {
+	name = "Zmbalani"
+	culture = iazyges
+}
+5381040 = {
+	name = "Sathisi"
+	culture = iazyges
+}
+5381041 = {
+	name = "Totrazi"
+	culture = iazyges
+}

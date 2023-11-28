@@ -1,0 +1,480 @@
+5391000=
+{
+	name="Tuome"
+	culture="anglo_suebi"
+}
+5391001=
+{
+	name="Tuoma"
+	culture="anglo_suebi"
+}
+5391002=
+{
+	name="Tuomes"
+	culture="anglo_suebi"
+}
+5391003=
+{
+	name="Tuomid"
+	culture="anglo_suebi"
+}
+5391004=
+{
+	name="Andicus"
+	culture="anglo_suebi"
+}
+5391005=
+{
+	name="Andica"
+	culture="anglo_suebi"
+}
+5391006=
+{
+	name="Andices"
+	culture="anglo_suebi"
+}
+5391007=
+{
+	name="Andicid"
+	culture="anglo_suebi"
+}
+5391008=
+{
+	name="Dagaricus"
+	culture="anglo_suebi"
+}
+5391009=
+{
+	name="Dagarica"
+	culture="anglo_suebi"
+}
+5391010=
+{
+	name="Dagarices"
+	culture="anglo_suebi"
+}
+5391011=
+{
+	name="Dagaricid"
+	culture="anglo_suebi"
+}
+5391012=
+{
+	name="Gelimerus"
+	culture="anglo_suebi"
+}
+5391013=
+{
+	name="Gelimera"
+	culture="anglo_suebi"
+}
+5391014=
+{
+	name="Gelimeres"
+	culture="anglo_suebi"
+}
+5391015=
+{
+	name="Gelimerian"
+	culture="anglo_suebi"
+}
+5391016=
+{
+	name="Geroldus"
+	culture="anglo_suebi"
+}
+5391017=
+{
+	name="Gerolda"
+	culture="anglo_suebi"
+}
+5391018=
+{
+	name="Geroldes"
+	culture="anglo_suebi"
+}
+5391019=
+{
+	name="Geroldian"
+	culture="anglo_suebi"
+}
+5391020=
+{
+	name="Malaricus"
+	culture="anglo_suebi"
+}
+5391021=
+{
+	name="Malarica"
+	culture="anglo_suebi"
+}
+5391022=
+{
+	name="Malarici"
+	culture="anglo_suebi"
+}
+5391023=
+{
+	name="Malaricid"
+	culture="anglo_suebi"
+}
+5391024=
+{
+	name="Marbodus"
+	culture="anglo_suebi"
+}
+5391025=
+{
+	name="Marboda"
+	culture="anglo_suebi"
+}
+5391026=
+{
+	name="Marbodes"
+	culture="anglo_suebi"
+}
+5391027=
+{
+	name="Marbodian"
+	culture="anglo_suebi"
+}
+5391028=
+{
+	name="Theodus"
+	culture="anglo_suebi"
+}
+5391029=
+{
+	name="Theoda"
+	culture="anglo_suebi"
+}
+5391030=
+{
+	name="Theodes"
+	culture="anglo_suebi"
+}
+5391031=
+{
+	name="Theodian"
+	culture="anglo_suebi"
+}
+5391032=
+{
+	name="Marcolus"
+	culture="anglo_suebi"
+}
+5391033=
+{
+	name="Marcola"
+	culture="anglo_suebi"
+}
+5391034=
+{
+	name="Marcoles"
+	culture="anglo_suebi"
+}
+5391035=
+{
+	name="Marcolian"
+	culture="anglo_suebi"
+}
+5391036=
+{
+	name="Sigid"
+	culture="anglo_suebi"
+}
+5391037=
+{
+	name="Sigida"
+	culture="anglo_suebi"
+}
+5391038=
+{
+	name="Sigi"
+	culture="anglo_suebi"
+}
+5391039=
+{
+	name="Sigid"
+	culture="anglo_suebi"
+}
+5391040=
+{
+	name="Rigleikus"
+	culture="anglo_suebi"
+}
+5391041=
+{
+	name="Rigleika"
+	culture="anglo_suebi"
+}
+5391042=
+{
+	name="Rigleikes"
+	culture="anglo_suebi"
+}
+5391043=
+{
+	name="Rigleikid"
+	culture="anglo_suebi"
+}
+5391044=
+{
+	name="Tancreid"
+	culture="anglo_suebi"
+}
+5391045=
+{
+	name="Tancra"
+	culture="anglo_suebi"
+}
+5391046=
+{
+	name="Tancri"
+	culture="anglo_suebi"
+}
+5391047=
+{
+	name="Tancrid"
+	culture="anglo_suebi"
+}
+5391048=
+{
+	name="Malogrus"
+	culture="anglo_suebi"
+}
+5391049=
+{
+	name="Malogra"
+	culture="anglo_suebi"
+}
+5391050=
+{
+	name="Malogri"
+	culture="anglo_suebi"
+}
+5391051=
+{
+	name="Malogrian"
+	culture="anglo_suebi"
+}
+5391052=
+{
+	name="Gundrud"
+	culture="anglo_suebi"
+}
+5391053=
+{
+	name="Gundruda"
+	culture="anglo_suebi"
+}
+5391054=
+{
+	name="Gundrudii"
+	culture="anglo_suebi"
+}
+5391055=
+{
+	name="Gundrid"
+	culture="anglo_suebi"
+}
+5391056=
+{
+	name="Segimandrus"
+	culture="anglo_suebi"
+}
+5391057=
+{
+	name="Segimandra"
+	culture="anglo_suebi"
+}
+5391058=
+{
+	name="Segimandri"
+	culture="anglo_suebi"
+}
+5391059=
+{
+	name="Segimandrid"
+	culture="anglo_suebi"
+}
+5391060=
+{
+	name="Dwaldus"
+	culture="anglo_suebi"
+}
+5391061=
+{
+	name="Dwalda"
+	culture="anglo_suebi"
+}
+5391062=
+{
+	name="Dwaldes"
+	culture="anglo_suebi"
+}
+5391063=
+{
+	name="Dwaldid"
+	culture="anglo_suebi"
+}
+5391064=
+{
+	name="Merobaudes"
+	culture="anglo_suebi"
+}
+5391065=
+{
+	name="Merobauda"
+	culture="anglo_suebi"
+}
+5391066=
+{
+	name="Merobaudes"
+	culture="anglo_suebi"
+}
+5391067=
+{
+	name="Merobaudian"
+	culture="anglo_suebi"
+}
+5391068=
+{
+	name="Eidgid"
+	culture="anglo_suebi"
+}
+5391069=
+{
+	name="Eidgida"
+	culture="anglo_suebi"
+}
+5391070=
+{
+	name="Eidiges"
+	culture="anglo_suebi"
+}
+5391071=
+{
+	name="Eidigian"
+	culture="anglo_suebi"
+}
+5391072=
+{
+	name="Gerhaucres"
+	culture="anglo_suebi"
+}
+5391073=
+{
+	name="Gerhaucra"
+	culture="anglo_suebi"
+}
+5391074=
+{
+	name="Gerhaucres"
+	culture="anglo_suebi"
+}
+5391075=
+{
+	name="Gerhaucrian"
+	culture="anglo_suebi"
+}
+5391076=
+{
+	name="Hildganes"
+	culture="anglo_suebi"
+}
+5391077=
+{
+	name="Hildgana"
+	culture="anglo_suebi"
+}
+5391078=
+{
+	name="Hildganes"
+	culture="anglo_suebi"
+}
+5391079=
+{
+	name="Hildganid"
+	culture="anglo_suebi"
+}
+5391080=
+{
+	name="Hramdrid"
+	culture="anglo_suebi"
+}
+5391081=
+{
+	name="Hramdra"
+	culture="anglo_suebi"
+}
+5391082=
+{
+	name="Hramdri"
+	culture="anglo_suebi"
+}
+5391083=
+{
+	name="Hramrid"
+	culture="anglo_suebi"
+}
+5391084=
+{
+	name="Ingohdres"
+	culture="anglo_suebi"
+}
+5391085=
+{
+	name="Ingohdra"
+	culture="anglo_suebi"
+}
+5391086=
+{
+	name="Ingohdres"
+	culture="anglo_suebi"
+}
+5391087=
+{
+	name="Ingohdrid"
+	culture="anglo_suebi"
+}
+5391088=
+{
+	name="Ingrammus"
+	culture="anglo_suebi"
+}
+5391089=
+{
+	name="Ingramma"
+	culture="anglo_suebi"
+}
+5391090=
+{
+	name="Ingrammii"
+	culture="anglo_suebi"
+}
+5391091=
+{
+	name="Ingrammid"
+	culture="anglo_suebi"
+}
+5391092=
+{
+	name="Malactus"
+	culture="anglo_suebi"
+}
+5391093=
+{
+	name="Malacta"
+	culture="anglo_suebi"
+}
+5391094=
+{
+	name="Malactii"
+	culture="anglo_suebi"
+}
+5391095=
+{
+	name="Malactian"
+	culture="anglo_suebi"
+}

@@ -1,0 +1,560 @@
+5371000=
+{
+	name="Uclina"
+	culture="mutnian"
+}
+5371001=
+{
+	name="Ucli"
+	culture="mutnian"
+}
+5371002=
+{
+	name="Acnatru"
+	culture="mutnian"
+}
+5371003=
+{
+	name="Acvilnas"
+	culture="mutnian"
+}
+5371004=
+{
+	name="Afunei"
+	culture="mutnian"
+}
+5371005=
+{
+	name="Aisina"
+	culture="mutnian"
+}
+5371006=
+{
+	name="Alethnei"
+	culture="mutnian"
+}
+5371007=
+{
+	name="Alfi"
+	culture="mutnian"
+}
+5371008=
+{
+	name="Amuni"
+	culture="mutnian"
+}
+5371009=
+{
+	name="Anani"
+	culture="mutnian"
+}
+5371010=
+{
+	name="Anes"
+	culture="mutnian"
+}
+5371011=
+{
+	name="Alethnas"
+	culture="mutnian"
+}
+5371012=
+{
+	name="Apatru"
+	culture="mutnian"
+}
+5371013=
+{
+	name="Cafati"
+	culture="mutnian"
+}
+5371014=
+{
+	name="Ceie"
+	culture="mutnian"
+}
+5371015=
+{
+	name="Calitahi"
+	culture="mutnian"
+}
+5371016=
+{
+	name="Camitlnas"
+	culture="mutnian"
+}
+5371017=
+{
+	name="Campanian"
+	culture="mutnian"
+}
+5371018=
+{
+	name="Canatnei"
+	culture="mutnian"
+}
+5371019=
+{
+	name="Cheiras"
+	culture="mutnian"
+}
+5371020=
+{
+	name="Churinian"
+	culture="mutnian"
+}
+5371021=
+{
+	name="Cicunias"
+	culture="mutnian"
+}
+5371022=
+{
+	name="Creicesian"
+	culture="mutnian"
+}
+5371023=
+{
+	name="Ecnati"
+	culture="mutnian"
+}
+5371024=
+{
+	name="Einanian"
+	culture="mutnian"
+}
+5371025=
+{
+	name="Eucli"
+	culture="mutnian"
+}
+5371026=
+{
+	name="Ezpus"
+	culture="mutnian"
+}
+5371027=
+{
+	name="Ezpusian"
+	culture="mutnian"
+}
+5371028=
+{
+	name="Fapi"
+	culture="mutnian"
+}
+5371029=
+{
+	name="Fapian"
+	culture="mutnian"
+}
+5371030=
+{
+	name="Felces"
+	culture="mutnian"
+}
+5371031=
+{
+	name="Feluscian"
+	culture="mutnian"
+}
+5371032=
+{
+	name="Felusci"
+	culture="mutnian"
+}
+5371033=
+{
+	name="Fulvena"
+	culture="mutnian"
+}
+5371034=
+{
+	name="Hanu"
+	culture="mutnian"
+}
+5371035=
+{
+	name="Hapisna"
+	culture="mutnian"
+}
+5371036=
+{
+	name="Hapri"
+	culture="mutnian"
+}
+5371037=
+{
+	name="Hapre"
+	culture="mutnian"
+}
+5371038=
+{
+	name="Havrinian"
+	culture="mutnian"
+}
+5371039=
+{
+	name="Lapicani"
+	culture="mutnian"
+}
+5371040=
+{
+	name="Divicus"
+	culture="mutnian"
+}
+5371041=
+{
+	name="Larani"
+	culture="mutnian"
+}
+5371042=
+{
+	name="Larecena"
+	culture="mutnian"
+}
+5371043=
+{
+	name="Lucina"
+	culture="mutnian"
+}
+5371044=
+{
+	name="Lucinei"
+	culture="mutnian"
+}
+5371045=
+{
+	name="Lucinian"
+	culture="mutnian"
+}
+5371046=
+{
+	name="Lartli"
+	culture="mutnian"
+}
+5371047=
+{
+	name="Latnian"
+	culture="mutnian"
+}
+5371048=
+{
+	name="Marcnei"
+	culture="mutnian"
+}
+5371049=
+{
+	name="Malamena"
+	culture="mutnian"
+}
+5371050=
+{
+	name="Marcnithur"
+	culture="mutnian"
+}
+5371051=
+{
+	name="Mutunid"
+	culture="mutnian"
+}
+5371052=
+{
+	name="Nerinei"
+	culture="mutnian"
+}
+5371053=
+{
+	name="Ninie"
+	culture="mutnian"
+}
+5371054=
+{
+	name="Nuiclnas"
+	culture="mutnian"
+}
+5371055=
+{
+	name="Nufre"
+	culture="mutnian"
+}
+5371056=
+{
+	name="Pachie"
+	culture="mutnian"
+}
+5371057=
+{
+	name="Peithunas"
+	culture="mutnian"
+}
+5371058=
+{
+	name="Palazus"
+	culture="mutnian"
+}
+5371059=
+{
+	name="Palazusian"
+	culture="mutnian"
+}
+5371060=
+{
+	name="Papni"
+	culture="mutnian"
+}
+5371061=
+{
+	name="Phersnalei"
+	culture="mutnian"
+}
+5371062=
+{
+	name="Pinies"
+	culture="mutnian"
+}
+5371063=
+{
+	name="Platia"
+	culture="mutnian"
+}
+5371064=
+{
+	name="Plutian"
+	culture="mutnian"
+}
+5371065=
+{
+	name="Precuthur"
+	culture="mutnian"
+}
+5371066=
+{
+	name="Puinci"
+	culture="mutnian"
+}
+5371067=
+{
+	name="Purzena"
+	culture="mutnian"
+}
+5371068=
+{
+	name="Pustmina"
+	culture="mutnian"
+}
+5371069=
+{
+	name="Rufi"
+	culture="mutnian"
+}
+5371070=
+{
+	name="Ranazu"
+	culture="mutnian"
+}
+5371071=
+{
+	name="Salini"
+	culture="mutnian"
+}
+5371072=
+{
+	name="Scevei"
+	culture="mutnian"
+}
+5371073=
+{
+	name="Scurfiu"
+	culture="mutnian"
+}
+5371074=
+{
+	name="Sepu"
+	culture="mutnian"
+}
+5371075=
+{
+	name="Sethre"
+	culture="mutnian"
+}
+5371076=
+{
+	name="Silgatana"
+	culture="mutnian"
+}
+5371077=
+{
+	name="Sinu"
+	culture="mutnian"
+}
+5371078=
+{
+	name="Slanzu"
+	culture="mutnian"
+}
+5371079=
+{
+	name="Spantu"
+	culture="mutnian"
+}
+5371080=
+{
+	name="Spite"
+	culture="mutnian"
+}
+5371081=
+{
+	name="Spurinas"
+	culture="mutnian"
+}
+5371082=
+{
+	name="Srutzna"
+	culture="mutnian"
+}
+5371083=
+{
+	name="Statlanian"
+	culture="mutnian"
+}
+5371084=
+{
+	name="Tarchunies"
+	culture="mutnian"
+}
+5371085=
+{
+	name="Tarcnid"
+	culture="mutnian"
+}
+5371086=
+{
+	name="Teithurna"
+	culture="mutnian"
+}
+5371087=
+{
+	name="Teitur"
+	culture="mutnian"
+}
+5371088=
+{
+	name="Tetnies"
+	culture="mutnian"
+}
+5371089=
+{
+	name="Thusatur"
+	culture="mutnian"
+}
+5371090=
+{
+	name="Trepe"
+	culture="mutnian"
+}
+5371091=
+{
+	name="Tutna"
+	culture="mutnian"
+}
+5371092=
+{
+	name="Tutes"
+	culture="mutnian"
+}
+5371093=
+{
+	name="Ucrini"
+	culture="mutnian"
+}
+5371094=
+{
+	name="Ucrinian"
+	culture="mutnian"
+}
+5371095=
+{
+	name="Uftave"
+	culture="mutnian"
+}
+5371096=
+{
+	name="Ultimnid"
+	culture="mutnian"
+}
+5371097=
+{
+	name="Ulzna"
+	culture="mutnian"
+}
+5371098=
+{
+	name="Vania"
+	culture="mutnian"
+}
+5371099=
+{
+	name="Velarian"
+	culture="mutnian"
+}
+5371100=
+{
+	name="Velcii"
+	culture="mutnian"
+}
+5371101=
+{
+	name="Velcian"
+	culture="mutnian"
+}
+5371102=
+{
+	name="Vlesi"
+	culture="mutnian"
+}
+5371103=
+{
+	name="Velia"
+	culture="mutnian"
+}
+5371104=
+{
+	name="Velethnei"
+	culture="mutnian"
+}
+5371105=
+{
+	name="Velthinathur"
+	culture="mutnian"
+}
+5371106=
+{
+	name="Venetian"
+	culture="mutnian"
+}
+5371107=
+{
+	name="Vete"
+	culture="mutnian"
+}
+5371108=
+{
+	name="Zalthu"
+	culture="mutnian"
+}
+5371109=
+{
+	name="Zane"
+	culture="mutnian"
+}
+5371110=
+{
+	name="Zertnei"
+	culture="mutnian"
+}
+5371111=
+{
+	name="Zili"
+	culture="mutnian"
+}

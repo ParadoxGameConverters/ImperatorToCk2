@@ -1,0 +1,136 @@
+targetted_decisions = {
+
+
+	# Parthian character may convert to Indo-Parthian
+	irck2_convert_to_indo_parthian = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = parthian_culture
+			capital_scope = {
+				region = world_india
+			}
+			any_realm_province = {
+				culture = indo_parthian
+			}
+			OR = {
+				year = 125
+				top_liege = {
+					NOT = { culture = parthian_culture }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = parthian_culture
+			capital_scope = {
+				region = world_india
+			}
+			any_realm_province = {
+				culture = indo_parthian
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = indo_parthian
+			}
+			culture = indo_parthian
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Roman ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = parthian_culture
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = parthian_culture }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = indo_parthian }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = indo_parthian }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = indo_parthian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = indo_parthian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = indo_parthian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = indo_parthian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = indo_parthian
+				}
+			}
+		}
+	}
+
+
+
+
+
+#####################################################################
+#End Bracket
+#####################################################################
+
+}

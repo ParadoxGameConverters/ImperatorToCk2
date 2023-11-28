@@ -55,8 +55,8 @@ k_CBR = {
 }
 
 k_NRM = {
-	color={ 122 116 116 }
-	color2={ 122 116 116 }
+	color={ 66 134 66 }
+	color2={ 66 134 66 }
 }
 
 e_HLA = {
@@ -157,5 +157,25 @@ k_BAC = {
 k_GLT = {
 	color={ 23 232 204 }
 	color2={ 23 232 204 }
+}
+
+k_ILL = {
+	color={ 225 226 224 }
+	color2={ 225 226 224 }
+}
+
+k_MAS = {
+	color={ 110 180 150 }
+	color2={ 110 180 150 }
+}
+
+k_TUR = {
+	color={ 74 5 79 }
+	color2={ 74 5 79 }
+}
+
+k_NMT = {
+	color={ 56 39 14 }
+	color2={ 56 39 14 }
 }
 

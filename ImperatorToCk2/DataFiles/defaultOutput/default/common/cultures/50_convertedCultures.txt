@@ -865,6 +865,526 @@ pre_indo_european = {
 
 		modifier = default_culture_modifier
 	}
+	
+	lemnian = { #Etruscan-split Greece
+		graphical_cultures = { romangfx southerngfx trueoccitangfx occitangfx }
+		alternate_start = {
+			OR = {
+				year < 1000
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		#265.6 0.8971 0.8
+		color = { 0.22  0.08  0.87 }
+
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+
+		male_names = {
+			Amtnie Amuni Anche Anthai Aninas Arunth Araz Arzni Arnth Autu Aule Cei Ceile Ceisi
+			Cire Cnaive Clate Cruthni Cuinte Cursni Fapi Felce Felsnas Fulu Hapre Hirumina Husi
+			Carcuna Carthasie Ceisie Cavie Larce Laris Larth Larthuza Laucie Lauche Lethei
+			Licine Lucer Mamurce Marce Murila Numna Pesna Petru Plikasnas Plute Presnte
+			Pumpu Puplie Cupe Ranazu Rasce Ruvfe Ruifre Sanchuna Scarpe Sethre Spitus Spurie Squrie
+			Tarchi Teitur Thefri Thucer Ticusna Tite Tlesna Tursikina Tusnute Uchsie Uchulni Usele
+			Vel Velchaie Velthur Venel Vetus Vipie
+		}
+		female_names = {
+			Anina Aprthni Apunei Arunthia Arzna Arntha Ati Aula Ceia Culni Cursi Cusua Fasthi
+			Hasthi Hercnei Kanuta Larthi Lethi Luci Matun Metli Numni Pulia Racu Ramtha Ranthu
+			Ravnthu Satlnei Sela Semni Sethri Squria Squlina Tanchuil Tarcha Teituri Thanchvil
+			Thana Thefrina Thestia Thuceru Ticusnei Titi Veli Velchina Venela Vesi Vipi
+		}
+
+		from_dynasty_prefix = "of "
+
+		prefix = no # The patronym is added as a suffix
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 50
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 50
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+		
+		disinherit_from_blinding = yes
+
+		modifier = default_culture_modifier
+
+	}
+	qutumi = { #Etruscan-split France
+		graphical_cultures = { romangfx southerngfx trueoccitangfx occitangfx }
+		alternate_start = {
+			OR = {
+				year < 1000
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		#265.6 0.8971 0.8
+		color = { 0.2  0.49  0.83 }
+
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+
+		male_names = {
+			Amtnie Amuni Anche Anthai Aninas Arunth Araz Arzni Arnth Autu Aule Cei Ceile Ceisi
+			Cire Cnaive Clate Cruthni Cuinte Cursni Fapi Felce Felsnas Fulu Hapre Hirumina Husi
+			Carcuna Carthasie Ceisie Cavie Larce Laris Larth Larthuza Laucie Lauche Lethei
+			Licine Lucer Mamurce Marce Murila Numna Pesna Petru Plikasnas Plute Presnte
+			Pumpu Puplie Cupe Ranazu Rasce Ruvfe Ruifre Sanchuna Scarpe Sethre Spitus Spurie Squrie
+			Tarchi Teitur Thefri Thucer Ticusna Tite Tlesna Tursikina Tusnute Uchsie Uchulni Usele
+			Vel Velchaie Velthur Venel Vetus Vipie
+		}
+		female_names = {
+			Anina Aprthni Apunei Arunthia Arzna Arntha Ati Aula Ceia Culni Cursi Cusua Fasthi
+			Hasthi Hercnei Kanuta Larthi Lethi Luci Matun Metli Numni Pulia Racu Ramtha Ranthu
+			Ravnthu Satlnei Sela Semni Sethri Squria Squlina Tanchuil Tarcha Teituri Thanchvil
+			Thana Thefrina Thestia Thuceru Ticusnei Titi Veli Velchina Venela Vesi Vipi
+		}
+
+		from_dynasty_prefix = "of "
+
+		prefix = no # The patronym is added as a suffix
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 50
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 50
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+
+	}
+	
+	tulari = { #Etruscan-split Iberia
+		graphical_cultures = { romangfx southerngfx trueoccitangfx occitangfx }
+		alternate_start = {
+			OR = {
+				year < 1000
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		#265.6 0.8971 0.8
+		color = { 0.51  0.58  0.89 }
+
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+
+		male_names = {
+			Amtnie Amuni Anche Anthai Aninas Arunth Araz Arzni Arnth Autu Aule Cei Ceile Ceisi
+			Cire Cnaive Clate Cruthni Cuinte Cursni Fapi Felce Felsnas Fulu Hapre Hirumina Husi
+			Carcuna Carthasie Ceisie Cavie Larce Laris Larth Larthuza Laucie Lauche Lethei
+			Licine Lucer Mamurce Marce Murila Numna Pesna Petru Plikasnas Plute Presnte
+			Pumpu Puplie Cupe Ranazu Rasce Ruvfe Ruifre Sanchuna Scarpe Sethre Spitus Spurie Squrie
+			Tarchi Teitur Thefri Thucer Ticusna Tite Tlesna Tursikina Tusnute Uchsie Uchulni Usele
+			Vel Velchaie Velthur Venel Vetus Vipie
+		}
+		female_names = {
+			Anina Aprthni Apunei Arunthia Arzna Arntha Ati Aula Ceia Culni Cursi Cusua Fasthi
+			Hasthi Hercnei Kanuta Larthi Lethi Luci Matun Metli Numni Pulia Racu Ramtha Ranthu
+			Ravnthu Satlnei Sela Semni Sethri Squria Squlina Tanchuil Tarcha Teituri Thanchvil
+			Thana Thefrina Thestia Thuceru Ticusnei Titi Veli Velchina Venela Vesi Vipi
+		}
+
+		from_dynasty_prefix = "of "
+
+		prefix = no # The patronym is added as a suffix
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 50
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 50
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+
+	}
+	
+	karthazian = { #Etruscan-split North Africa
+		graphical_cultures = { romangfx southerngfx trueoccitangfx occitangfx }
+		alternate_start = {
+			OR = {
+				year < 1000
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		#265.6 0.8971 0.8
+		color = { 0.06  0.39  0.40 }
+
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+
+		male_names = {
+			Amtnie Amuni Anche Anthai Aninas Arunth Araz Arzni Arnth Autu Aule Cei Ceile Ceisi
+			Cire Cnaive Clate Cruthni Cuinte Cursni Fapi Felce Felsnas Fulu Hapre Hirumina Husi
+			Carcuna Carthasie Ceisie Cavie Larce Laris Larth Larthuza Laucie Lauche Lethei
+			Licine Lucer Mamurce Marce Murila Numna Pesna Petru Plikasnas Plute Presnte
+			Pumpu Puplie Cupe Ranazu Rasce Ruvfe Ruifre Sanchuna Scarpe Sethre Spitus Spurie Squrie
+			Tarchi Teitur Thefri Thucer Ticusna Tite Tlesna Tursikina Tusnute Uchsie Uchulni Usele
+			Vel Velchaie Velthur Venel Vetus Vipie
+		}
+		female_names = {
+			Anina Aprthni Apunei Arunthia Arzna Arntha Ati Aula Ceia Culni Cursi Cusua Fasthi
+			Hasthi Hercnei Kanuta Larthi Lethi Luci Matun Metli Numni Pulia Racu Ramtha Ranthu
+			Ravnthu Satlnei Sela Semni Sethri Squria Squlina Tanchuil Tarcha Teituri Thanchvil
+			Thana Thefrina Thestia Thuceru Ticusnei Titi Veli Velchina Venela Vesi Vipi
+		}
+
+		from_dynasty_prefix = "of "
+
+		prefix = no # The patronym is added as a suffix
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 50
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 50
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+		
+		seafarer = yes
+
+		modifier = default_culture_modifier
+
+	}
+	
+	mutnian = { #Etruscan-split Egypt
+		graphical_cultures = { romangfx southerngfx trueoccitangfx occitangfx }
+		alternate_start = {
+			OR = {
+				year < 1000
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		#265.6 0.8971 0.8
+		color = { 0.18  0.37  0.52 }
+
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+
+		male_names = {
+			Amtnie Amuni Anche Anthai Aninas Arunth Araz Arzni Arnth Autu Aule Cei Ceile Ceisi
+			Cire Cnaive Clate Cruthni Cuinte Cursni Fapi Felce Felsnas Fulu Hapre Hirumina Husi
+			Carcuna Carthasie Ceisie Cavie Larce Laris Larth Larthuza Laucie Lauche Lethei
+			Licine Lucer Mamurce Marce Murila Numna Pesna Petru Plikasnas Plute Presnte
+			Pumpu Puplie Cupe Ranazu Rasce Ruvfe Ruifre Sanchuna Scarpe Sethre Spitus Spurie Squrie
+			Tarchi Teitur Thefri Thucer Ticusna Tite Tlesna Tursikina Tusnute Uchsie Uchulni Usele
+			Vel Velchaie Velthur Venel Vetus Vipie
+		}
+		female_names = {
+			Anina Aprthni Apunei Arunthia Arzna Arntha Ati Aula Ceia Culni Cursi Cusua Fasthi
+			Hasthi Hercnei Kanuta Larthi Lethi Luci Matun Metli Numni Pulia Racu Ramtha Ranthu
+			Ravnthu Satlnei Sela Semni Sethri Squria Squlina Tanchuil Tarcha Teituri Thanchvil
+			Thana Thefrina Thestia Thuceru Ticusnei Titi Veli Velchina Venela Vesi Vipi
+		}
+
+		from_dynasty_prefix = "of "
+
+		prefix = no # The patronym is added as a suffix
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 50
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 50
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+
+	}
+	
+	nerian = { #Etruscan-split Britain
+		graphical_cultures = { romangfx southerngfx trueoccitangfx occitangfx }
+		alternate_start = {
+			OR = {
+				year < 1000
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		#265.6 0.8971 0.8
+		color = { 0.44  0.08  0.73 }
+
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+
+		male_names = {
+			Amtnie Amuni Anche Anthai Aninas Arunth Araz Arzni Arnth Autu Aule Cei Ceile Ceisi
+			Cire Cnaive Clate Cruthni Cuinte Cursni Fapi Felce Felsnas Fulu Hapre Hirumina Husi
+			Carcuna Carthasie Ceisie Cavie Larce Laris Larth Larthuza Laucie Lauche Lethei
+			Licine Lucer Mamurce Marce Murila Numna Pesna Petru Plikasnas Plute Presnte
+			Pumpu Puplie Cupe Ranazu Rasce Ruvfe Ruifre Sanchuna Scarpe Sethre Spitus Spurie Squrie
+			Tarchi Teitur Thefri Thucer Ticusna Tite Tlesna Tursikina Tusnute Uchsie Uchulni Usele
+			Vel Velchaie Velthur Venel Vetus Vipie
+		}
+		female_names = {
+			Anina Aprthni Apunei Arunthia Arzna Arntha Ati Aula Ceia Culni Cursi Cusua Fasthi
+			Hasthi Hercnei Kanuta Larthi Lethi Luci Matun Metli Numni Pulia Racu Ramtha Ranthu
+			Ravnthu Satlnei Sela Semni Sethri Squria Squlina Tanchuil Tarcha Teituri Thanchvil
+			Thana Thefrina Thestia Thuceru Ticusnei Titi Veli Velchina Venela Vesi Vipi
+		}
+
+		from_dynasty_prefix = "of "
+
+		prefix = no # The patronym is added as a suffix
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 50
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 50
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+
+	}
+	
+	lanistian = { #Etruscan-split Illyria/Pannonia, Etruscan word for gladiator in reference to Sparticus
+		graphical_cultures = { romangfx southerngfx trueoccitangfx occitangfx }
+		alternate_start = {
+			OR = {
+				year < 1000
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		#265.6 0.8971 0.8
+		color = { 0.18  0.37  0.52 }
+
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+
+		male_names = {
+			Amtnie Amuni Anche Anthai Aninas Arunth Araz Arzni Arnth Autu Aule Cei Ceile Ceisi
+			Cire Cnaive Clate Cruthni Cuinte Cursni Fapi Felce Felsnas Fulu Hapre Hirumina Husi
+			Carcuna Carthasie Ceisie Cavie Larce Laris Larth Larthuza Laucie Lauche Lethei
+			Licine Lucer Mamurce Marce Murila Numna Pesna Petru Plikasnas Plute Presnte
+			Pumpu Puplie Cupe Ranazu Rasce Ruvfe Ruifre Sanchuna Scarpe Sethre Spitus Spurie Squrie
+			Tarchi Teitur Thefri Thucer Ticusna Tite Tlesna Tursikina Tusnute Uchsie Uchulni Usele
+			Vel Velchaie Velthur Venel Vetus Vipie
+		}
+		female_names = {
+			Anina Aprthni Apunei Arunthia Arzna Arntha Ati Aula Ceia Culni Cursi Cusua Fasthi
+			Hasthi Hercnei Kanuta Larthi Lethi Luci Matun Metli Numni Pulia Racu Ramtha Ranthu
+			Ravnthu Satlnei Sela Semni Sethri Squria Squlina Tanchuil Tarcha Teituri Thanchvil
+			Thana Thefrina Thestia Thuceru Ticusnei Titi Veli Velchina Venela Vesi Vipi
+		}
+
+		from_dynasty_prefix = "of "
+
+		prefix = no # The patronym is added as a suffix
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 50
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 50
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+
+	}
+	
+	fasenian = { #Etruscan-split Levant/Mesopotamia, word for sandy in Etruscan
+		graphical_cultures = { romangfx southerngfx trueoccitangfx occitangfx }
+		alternate_start = {
+			OR = {
+				year < 1000
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		#265.6 0.8971 0.8
+		color = { 0.25  0.79  0.86 }
+
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+
+		male_names = {
+			Amtnie Amuni Anche Anthai Aninas Arunth Araz Arzni Arnth Autu Aule Cei Ceile Ceisi
+			Cire Cnaive Clate Cruthni Cuinte Cursni Fapi Felce Felsnas Fulu Hapre Hirumina Husi
+			Carcuna Carthasie Ceisie Cavie Larce Laris Larth Larthuza Laucie Lauche Lethei
+			Licine Lucer Mamurce Marce Murila Numna Pesna Petru Plikasnas Plute Presnte
+			Pumpu Puplie Cupe Ranazu Rasce Ruvfe Ruifre Sanchuna Scarpe Sethre Spitus Spurie Squrie
+			Tarchi Teitur Thefri Thucer Ticusna Tite Tlesna Tursikina Tusnute Uchsie Uchulni Usele
+			Vel Velchaie Velthur Venel Vetus Vipie
+		}
+		female_names = {
+			Anina Aprthni Apunei Arunthia Arzna Arntha Ati Aula Ceia Culni Cursi Cusua Fasthi
+			Hasthi Hercnei Kanuta Larthi Lethi Luci Matun Metli Numni Pulia Racu Ramtha Ranthu
+			Ravnthu Satlnei Sela Semni Sethri Squria Squlina Tanchuil Tarcha Teituri Thanchvil
+			Thana Thefrina Thestia Thuceru Ticusnei Titi Veli Velchina Venela Vesi Vipi
+		}
+
+		from_dynasty_prefix = "of "
+
+		prefix = no # The patronym is added as a suffix
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 50
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 50
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+
+	}
+	
+	rasnan = { #Etruscan-split Sardinia
+		graphical_cultures = { romangfx southerngfx trueoccitangfx occitangfx }
+		alternate_start = {
+			OR = {
+				year < 1000
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		#265.6 0.8971 0.8
+		color = { 0.27  0.27  0.77 }
+
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+
+		male_names = {
+			Amtnie Amuni Anche Anthai Aninas Arunth Araz Arzni Arnth Autu Aule Cei Ceile Ceisi
+			Cire Cnaive Clate Cruthni Cuinte Cursni Fapi Felce Felsnas Fulu Hapre Hirumina Husi
+			Carcuna Carthasie Ceisie Cavie Larce Laris Larth Larthuza Laucie Lauche Lethei
+			Licine Lucer Mamurce Marce Murila Numna Pesna Petru Plikasnas Plute Presnte
+			Pumpu Puplie Cupe Ranazu Rasce Ruvfe Ruifre Sanchuna Scarpe Sethre Spitus Spurie Squrie
+			Tarchi Teitur Thefri Thucer Ticusna Tite Tlesna Tursikina Tusnute Uchsie Uchulni Usele
+			Vel Velchaie Velthur Venel Vetus Vipie
+		}
+		female_names = {
+			Anina Aprthni Apunei Arunthia Arzna Arntha Ati Aula Ceia Culni Cursi Cusua Fasthi
+			Hasthi Hercnei Kanuta Larthi Lethi Luci Matun Metli Numni Pulia Racu Ramtha Ranthu
+			Ravnthu Satlnei Sela Semni Sethri Squria Squlina Tanchuil Tarcha Teituri Thanchvil
+			Thana Thefrina Thestia Thuceru Ticusnei Titi Veli Velchina Venela Vesi Vipi
+		}
+
+		from_dynasty_prefix = "of "
+
+		prefix = no # The patronym is added as a suffix
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 50
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 50
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+
+	}
+	
+	sazlei = { #Etruscan-split Poland
+		graphical_cultures = { romangfx southerngfx trueoccitangfx occitangfx }
+		alternate_start = {
+			OR = {
+				year < 1000
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		#265.6 0.8971 0.8
+		color = { 0.31  0.23  0.75 }
+
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+
+		male_names = {
+			Amtnie Amuni Anche Anthai Aninas Arunth Araz Arzni Arnth Autu Aule Cei Ceile Ceisi
+			Cire Cnaive Clate Cruthni Cuinte Cursni Fapi Felce Felsnas Fulu Hapre Hirumina Husi
+			Carcuna Carthasie Ceisie Cavie Larce Laris Larth Larthuza Laucie Lauche Lethei
+			Licine Lucer Mamurce Marce Murila Numna Pesna Petru Plikasnas Plute Presnte
+			Pumpu Puplie Cupe Ranazu Rasce Ruvfe Ruifre Sanchuna Scarpe Sethre Spitus Spurie Squrie
+			Tarchi Teitur Thefri Thucer Ticusna Tite Tlesna Tursikina Tusnute Uchsie Uchulni Usele
+			Vel Velchaie Velthur Venel Vetus Vipie
+		}
+		female_names = {
+			Anina Aprthni Apunei Arunthia Arzna Arntha Ati Aula Ceia Culni Cursi Cusua Fasthi
+			Hasthi Hercnei Kanuta Larthi Lethi Luci Matun Metli Numni Pulia Racu Ramtha Ranthu
+			Ravnthu Satlnei Sela Semni Sethri Squria Squlina Tanchuil Tarcha Teituri Thanchvil
+			Thana Thefrina Thestia Thuceru Ticusnei Titi Veli Velchina Venela Vesi Vipi
+		}
+
+		from_dynasty_prefix = "of "
+
+		prefix = no # The patronym is added as a suffix
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 50
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 50
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+
+	}
+	
+	falan = { #Etruscan-split Germania
+		graphical_cultures = { romangfx southerngfx trueoccitangfx occitangfx }
+		alternate_start = {
+			OR = {
+				year < 1000
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		#265.6 0.8971 0.8
+		color = { 0.13  0.15  0.32 }
+
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+
+		male_names = {
+			Amtnie Amuni Anche Anthai Aninas Arunth Araz Arzni Arnth Autu Aule Cei Ceile Ceisi
+			Cire Cnaive Clate Cruthni Cuinte Cursni Fapi Felce Felsnas Fulu Hapre Hirumina Husi
+			Carcuna Carthasie Ceisie Cavie Larce Laris Larth Larthuza Laucie Lauche Lethei
+			Licine Lucer Mamurce Marce Murila Numna Pesna Petru Plikasnas Plute Presnte
+			Pumpu Puplie Cupe Ranazu Rasce Ruvfe Ruifre Sanchuna Scarpe Sethre Spitus Spurie Squrie
+			Tarchi Teitur Thefri Thucer Ticusna Tite Tlesna Tursikina Tusnute Uchsie Uchulni Usele
+			Vel Velchaie Velthur Venel Vetus Vipie
+		}
+		female_names = {
+			Anina Aprthni Apunei Arunthia Arzna Arntha Ati Aula Ceia Culni Cursi Cusua Fasthi
+			Hasthi Hercnei Kanuta Larthi Lethi Luci Matun Metli Numni Pulia Racu Ramtha Ranthu
+			Ravnthu Satlnei Sela Semni Sethri Squria Squlina Tanchuil Tarcha Teituri Thanchvil
+			Thana Thefrina Thestia Thuceru Ticusnei Titi Veli Velchina Venela Vesi Vipi
+		}
+
+		from_dynasty_prefix = "of "
+
+		prefix = no # The patronym is added as a suffix
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 50
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 50
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+
+	}
 
 }
 
@@ -1031,6 +1551,59 @@ gallic_group = {
 		modifier = default_culture_modifier
 
 	}
+	
+	atrebatian = {
+		graphical_cultures = { celticgfx }
+		alternate_start = {
+			OR = {
+				year < 1000
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+
+		color = { 0.12 0.34 0.38 }
+
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+
+		male_names = {
+			Acco Addedomarus Adiatuanus Adminius Aiorix Ambicatos Andecombogius Aneroestes Ariovistus Arverus Arvirargus Atis Avitus
+			Bellicianus Bellovesus Boduognatus Boio Boiorix Bolgios Brennus Bricussa Britomaris Brucetius Buite Cailtram Caractacus
+			Carvilius Cassivellaunus Cattulanus Cartorites Catugnatus Cavarinus Cavarus Celatus Cingetorix Coilus Commios Comux Concolitanus Correus Cottius Crixus
+			Cunobelinus Diviciacus Divico Donnus Drappes Dubnovellaunus Dumnacus Ducarius Duratios Dumnocoveros Dumnorix Elitovius Etitovius Epatticus
+			Galan Galba Guiderius Iacus Iccius Immanuentius Inamarcus Inammicus Indutiomarus Kimarcus Lucterius Lugotorix Lutarius Mallaius Mandubracius Marganus Mascelio
+			Orgetorix Prasutagus Segovax Sinatus Sinorix Sisillius Talorc Tasciovanus Tasgetius Taximagulus Teutomalius Tincomarus Togodumnus Vertiscus
+			Venutius Viridorix Vosenius Vodenos
+		}
+		female_names = {
+			Aife Airmed Ancasta Banna Billica Boudica Bricta Cata Cartimandua Chiomara Damona Diseta Gwendolen Litavis Iamcilla Maeve Verica
+			Cingetessa Conna Catia Carssouna Cunovinna Illica Lovernisca Magunna Lucilia Oconea Ria Rosula Senica Sentica Sulicena
+			Vassura Vinoma Vorvena Urca Veloriga Velibia Totia Titocuna Velbutena Seniciana Senila Vrocata Exuperata Deiana Cunolava Cunsa Aucissa
+			Allauna Alatucca Aessicunia Bodicacia Britivenda Catissena Cantisena
+		}
+
+		dukes_called_kings = yes
+
+		from_dynasty_prefix = "de "
+
+		male_patronym = "mab "
+		female_patronym = "verch "
+		prefix = yes
+
+		modifier = default_culture_modifier
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 80
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+
+	}
 
 	celtic_pannonian = {
 		graphical_cultures = { celticgfx }
@@ -1095,6 +1668,59 @@ gallic_group = {
 		}
 
 		color = { 0.07 0.70 0.55 }
+
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+
+		male_names = {
+			Acco Addedomarus Adiatuanus Adminius Aiorix Ambicatos Andecombogius Aneroestes Ariovistus Arverus Arvirargus Atis Avitus
+			Bellicianus Bellovesus Boduognatus Boio Boiorix Bolgios Brennus Bricussa Britomaris Brucetius Buite Cailtram Caractacus
+			Carvilius Cassivellaunus Cattulanus Cartorites Catugnatus Cavarinus Cavarus Celatus Cingetorix Coilus Commios Comux Concolitanus Correus Cottius Crixus
+			Cunobelinus Diviciacus Divico Donnus Drappes Dubnovellaunus Dumnacus Ducarius Duratios Dumnocoveros Dumnorix Elitovius Etitovius Epatticus
+			Galan Galba Guiderius Iacus Iccius Immanuentius Inamarcus Inammicus Indutiomarus Kimarcus Lucterius Lugotorix Lutarius Mallaius Mandubracius Marganus Mascelio
+			Orgetorix Prasutagus Segovax Sinatus Sinorix Sisillius Talorc Tasciovanus Tasgetius Taximagulus Teutomalius Tincomarus Togodumnus Vertiscus
+			Venutius Viridorix Vosenius Vodenos
+		}
+		female_names = {
+			Aife Airmed Ancasta Banna Billica Boudica Bricta Cata Cartimandua Chiomara Damona Diseta Gwendolen Litavis Iamcilla Maeve Verica
+			Cingetessa Conna Catia Carssouna Cunovinna Illica Lovernisca Magunna Lucilia Oconea Ria Rosula Senica Sentica Sulicena
+			Vassura Vinoma Vorvena Urca Veloriga Velibia Totia Titocuna Velbutena Seniciana Senila Vrocata Exuperata Deiana Cunolava Cunsa Aucissa
+			Allauna Alatucca Aessicunia Bodicacia Britivenda Catissena Cantisena
+		}
+
+		dukes_called_kings = yes
+
+		from_dynasty_prefix = "de "
+
+		male_patronym = "mab "
+		female_patronym = "verch "
+		prefix = yes
+
+		modifier = default_culture_modifier
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 80
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+
+	}
+	
+	plashurii = {
+		graphical_cultures = { celticgfx }
+		alternate_start = {
+			OR = {
+				year < 1000
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+
+		color = { 0.14 0.60 0.60 }
 
 		# Þ 222 þ 254 Ð 208 ð 240 æ
 
@@ -1243,6 +1869,198 @@ gallic_group = {
 		modifier = default_culture_modifier
 
 	}
+	
+	#Noric divergence cultures by Diskianterezh
+	
+	ghasettian = {
+		graphical_cultures = { celticgfx }
+
+		color = { 0.22 0.34 0.18 }
+
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+
+		male_names = {
+			Acco Addedomarus Adiatuanus Adminius Aiorix Ambicatos Andecombogius Aneroestes Ariovistus Arverus Arvirargus Atis Avitus
+			Bellicianus Bellovesus Boduognatus Boio Boiorix Bolgios Brennus Bricussa Britomaris Brucetius Buite Cailtram Caractacus
+			Carvilius Cassivellaunus Cattulanus Cartorites Catugnatus Cavarinus Cavarus Celatus Cingetorix Coilus Commios Comux Concolitanus Correus Cottius Crixus
+			Cunobelinus Diviciacus Divico Donnus Drappes Dubnovellaunus Dumnacus Ducarius Duratios Dumnocoveros Dumnorix Elitovius Etitovius Epatticus
+			Galan Galba Guiderius Iacus Iccius Immanuentius Inamarcus Inammicus Indutiomarus Kimarcus Lucterius Lugotorix Lutarius Mallaius Mandubracius Marganus Mascelio
+			Orgetorix Prasutagus Segovax Sinatus Sinorix Sisillius Talorc Tasciovanus Tasgetius Taximagulus Teutomalius Tincomarus Togodumnus Vertiscus
+			Venutius Viridorix Vosenius Vodenos
+		}
+		female_names = {
+			Aife Airmed Ancasta Banna Billica Boudica Bricta Cata Cartimandua Chiomara Damona Diseta Gwendolen Litavis Iamcilla Maeve Verica
+			Cingetessa Conna Catia Carssouna Cunovinna Illica Lovernisca Magunna Lucilia Oconea Ria Rosula Senica Sentica Sulicena
+			Vassura Vinoma Vorvena Urca Veloriga Velibia Totia Titocuna Velbutena Seniciana Senila Vrocata Exuperata Deiana Cunolava Cunsa Aucissa
+			Allauna Alatucca Aessicunia Bodicacia Britivenda Catissena Cantisena
+		}
+
+		dukes_called_kings = yes
+
+		from_dynasty_prefix = "de "
+
+		male_patronym = "mab "
+		female_patronym = "verch "
+		prefix = yes
+
+		modifier = default_culture_modifier
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 70
+		mat_grf_name_chance = 20
+		father_name_chance = 0
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+		allow_looting = yes
+
+		modifier = default_culture_modifier
+
+	}
+	betwani = {
+		graphical_cultures = { celticgfx }
+
+		color = { 0.05 0.27 0.13 }
+
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+
+		male_names = {
+			Acco Addedomarus Adiatuanus Adminius Aiorix Ambicatos Andecombogius Aneroestes Ariovistus Arverus Arvirargus Atis Avitus
+			Bellicianus Bellovesus Boduognatus Boio Boiorix Bolgios Brennus Bricussa Britomaris Brucetius Buite Cailtram Caractacus
+			Carvilius Cassivellaunus Cattulanus Cartorites Catugnatus Cavarinus Cavarus Celatus Cingetorix Coilus Commios Comux Concolitanus Correus Cottius Crixus
+			Cunobelinus Diviciacus Divico Donnus Drappes Dubnovellaunus Dumnacus Ducarius Duratios Dumnocoveros Dumnorix Elitovius Etitovius Epatticus
+			Galan Galba Guiderius Iacus Iccius Immanuentius Inamarcus Inammicus Indutiomarus Kimarcus Lucterius Lugotorix Lutarius Mallaius Mandubracius Marganus Mascelio
+			Orgetorix Prasutagus Segovax Sinatus Sinorix Sisillius Talorc Tasciovanus Tasgetius Taximagulus Teutomalius Tincomarus Togodumnus Vertiscus
+			Venutius Viridorix Vosenius Vodenos
+		}
+		female_names = {
+			Aife Airmed Ancasta Banna Billica Boudica Bricta Cata Cartimandua Chiomara Damona Diseta Gwendolen Litavis Iamcilla Maeve Verica
+			Cingetessa Conna Catia Carssouna Cunovinna Illica Lovernisca Magunna Lucilia Oconea Ria Rosula Senica Sentica Sulicena
+			Vassura Vinoma Vorvena Urca Veloriga Velibia Totia Titocuna Velbutena Seniciana Senila Vrocata Exuperata Deiana Cunolava Cunsa Aucissa
+			Allauna Alatucca Aessicunia Bodicacia Britivenda Catissena Cantisena
+		}
+
+		dukes_called_kings = yes
+
+		from_dynasty_prefix = "de "
+
+		male_patronym = "mab "
+		female_patronym = "verch "
+		prefix = yes
+
+		modifier = default_culture_modifier
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 70
+		mat_grf_name_chance = 20
+		father_name_chance = 0
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+
+	}
+	vinetan = {
+		graphical_cultures = { celticgfx }
+
+		color = { 0.30 0.40 0.04 }
+
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+
+		male_names = {
+			Acco Addedomarus Adiatuanus Adminius Aiorix Ambicatos Andecombogius Aneroestes Ariovistus Arverus Arvirargus Atis Avitus
+			Bellicianus Bellovesus Boduognatus Boio Boiorix Bolgios Brennus Bricussa Britomaris Brucetius Buite Cailtram Caractacus
+			Carvilius Cassivellaunus Cattulanus Cartorites Catugnatus Cavarinus Cavarus Celatus Cingetorix Coilus Commios Comux Concolitanus Correus Cottius Crixus
+			Cunobelinus Diviciacus Divico Donnus Drappes Dubnovellaunus Dumnacus Ducarius Duratios Dumnocoveros Dumnorix Elitovius Etitovius Epatticus
+			Galan Galba Guiderius Iacus Iccius Immanuentius Inamarcus Inammicus Indutiomarus Kimarcus Lucterius Lugotorix Lutarius Mallaius Mandubracius Marganus Mascelio
+			Orgetorix Prasutagus Segovax Sinatus Sinorix Sisillius Talorc Tasciovanus Tasgetius Taximagulus Teutomalius Tincomarus Togodumnus Vertiscus
+			Venutius Viridorix Vosenius Vodenos
+		}
+		female_names = {
+			Aife Airmed Ancasta Banna Billica Boudica Bricta Cata Cartimandua Chiomara Damona Diseta Gwendolen Litavis Iamcilla Maeve Verica
+			Cingetessa Conna Catia Carssouna Cunovinna Illica Lovernisca Magunna Lucilia Oconea Ria Rosula Senica Sentica Sulicena
+			Vassura Vinoma Vorvena Urca Veloriga Velibia Totia Titocuna Velbutena Seniciana Senila Vrocata Exuperata Deiana Cunolava Cunsa Aucissa
+			Allauna Alatucca Aessicunia Bodicacia Britivenda Catissena Cantisena
+		}
+
+		dukes_called_kings = yes
+
+		from_dynasty_prefix = "de "
+
+		male_patronym = "mab "
+		female_patronym = "verch "
+		prefix = yes
+
+		modifier = default_culture_modifier
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 70
+		mat_grf_name_chance = 20
+		father_name_chance = 0
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		allow_looting = yes
+		seafarer = yes
+
+		modifier = default_culture_modifier
+
+	}
+	cenabian = {
+		graphical_cultures = { celticgfx }
+
+		color = { 0.22 0.41 0.09 }
+
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+
+		male_names = {
+			Acco Addedomarus Adiatuanus Adminius Aiorix Ambicatos Andecombogius Aneroestes Ariovistus Arverus Arvirargus Atis Avitus
+			Bellicianus Bellovesus Boduognatus Boio Boiorix Bolgios Brennus Bricussa Britomaris Brucetius Buite Cailtram Caractacus
+			Carvilius Cassivellaunus Cattulanus Cartorites Catugnatus Cavarinus Cavarus Celatus Cingetorix Coilus Commios Comux Concolitanus Correus Cottius Crixus
+			Cunobelinus Diviciacus Divico Donnus Drappes Dubnovellaunus Dumnacus Ducarius Duratios Dumnocoveros Dumnorix Elitovius Etitovius Epatticus
+			Galan Galba Guiderius Iacus Iccius Immanuentius Inamarcus Inammicus Indutiomarus Kimarcus Lucterius Lugotorix Lutarius Mallaius Mandubracius Marganus Mascelio
+			Orgetorix Prasutagus Segovax Sinatus Sinorix Sisillius Talorc Tasciovanus Tasgetius Taximagulus Teutomalius Tincomarus Togodumnus Vertiscus
+			Venutius Viridorix Vosenius Vodenos
+		}
+		female_names = {
+			Aife Airmed Ancasta Banna Billica Boudica Bricta Cata Cartimandua Chiomara Damona Diseta Gwendolen Litavis Iamcilla Maeve Verica
+			Cingetessa Conna Catia Carssouna Cunovinna Illica Lovernisca Magunna Lucilia Oconea Ria Rosula Senica Sentica Sulicena
+			Vassura Vinoma Vorvena Urca Veloriga Velibia Totia Titocuna Velbutena Seniciana Senila Vrocata Exuperata Deiana Cunolava Cunsa Aucissa
+			Allauna Alatucca Aessicunia Bodicacia Britivenda Catissena Cantisena
+		}
+
+		dukes_called_kings = yes
+
+		from_dynasty_prefix = "de "
+
+		male_patronym = "mab "
+		female_patronym = "verch "
+		prefix = yes
+
+		modifier = default_culture_modifier
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 70
+		mat_grf_name_chance = 20
+		father_name_chance = 0
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+
+	}
+	
 
 }
 
@@ -2080,6 +2898,307 @@ oriental_romance = {
 		mat_grm_name_chance = 40
 		mother_name_chance = 5
 	}
+}
+atlanto_slavic = {
+
+	alternate_start = { NOT = { has_alternate_start_parameter = { key = special_culture value = animal_world } } }
+	graphical_cultures = { easterngfx }
+
+	vinolan = { #French Slavic
+		graphical_cultures = { westernslavicgfx }
+
+		color = { 0.38 0.47 0.62 }
+
+		male_names = {
+			Aleksander_Alexander Andrzej_Andrew Antoni_Antonius Aron_Aaron Barnim Bartosz_Bartolomeus Bedrich_Frederick Bezprzym Blazej_Blaise Bogislaw_Boguslaw Bohdan_Bogdan Bohumir Boleslaw_Boleslav Boriwoj_Borijov Bozydar_Theodat Branimir Branislav
+			Bretislav_Bretislaus Casimir_Casimir Ctibor_Ctibor Dobieslaw Dobromil Drosuk Dytryk_Thierry Frantisek_Francis Gawel_Gallus Grzegorz_Gregory Havel_Gallus Jacenty_Hyacinth Jakub_Jacob Jakusz_Jacob Janusz_John Jaromar_Jaromir
+			Jaromil Jaromir_Jaromir Jaroslav_Jaroslav Jedrzej_Andrew Jindrich_Henry Jirí_George Jozef_Joseph Juliusz_Julius Kajetan Kamil_Camillus Karel_Charles Kasper Kazimierz_Casimir Kliment_Clement Kolman_Koloman Kornel_Cornelius Kresimir Krzeslaw
+			Krzysztof_Christopher Lech Leszek Lubomir Lucjan_Lucius Ludvik_Louis Marek_Marcus Marian_Marius Martin_Martin Mateusz_Matthew Mieszko Mikolás_Nicholas Miloslaw Milosz_Milosz Miroslaw_Miroslav Mscislaw_Mstislav Msciwoj
+			Oldrich_Ulrich Ondrej_Andrew Otokar_Otakar Patryk_Patrick Pawel_Paul Piotr_Peter Prendota Przemysl_Premysl Przybyslaw Radomil Radomir Radoslav Rostislav Ryszard_Richard Sambor Sobieslav_Sobeslaus Stanislaw_Stanislav
+			Strasz Swietopelk_Svatopluk Swietoslaw_Sviatoslav Szczepan_Stephen Szczesny Szymon Tadeusz_Theodore Tomasz_Thomas Udalrich Urjasz Vojtech_Vojtech Waclaw_Vaclav Walenty_Valentin Wratislaw_Vratislav Wawrzyniec_Laurence Wenceslaw_Vaclav
+			Wincenty_Vincent Wizlaw Wladyslaw_Vladislav Wlodek Wlodzimierz Wlodzislaw_Vladislav Wratislaw_Vratislav Zbigniew_Zbynek Zdenek Zdislav Zygmunt_Sigmund
+		}
+		female_names = {
+			Agnieszka_Agnes Alzbeta Andela Anna_Anna Berta_Bertha Bohuslava Bozena Branislava Dagmar Danuta Dobravy Dobroniega Dorota_Dorothy Dragomira Edyta_Edith Ewa Geira Gertruda_Gertrude
+			Gracja_Grace Grazyna Halina Hanna Irena_Irene Izabela_Elizabeth Jadwiga_Hedwig Jarka Jarmila Jolanta_Yolanda Judyta_Judith Kamila_Camilla Katarina_Catherine Kenna Kornelia_Cornelia Krystyna_Christina Ksenia Lidia
+			Ludmila_Liudmila Magda_Magdalena Magdalena_Magdalena Malgorzata Marcelina Maria_Maria Markéta Martyna_Martina Mateja Matylda_Matilda Milena Miroslava Pechna Róza_Rosa Radomila Radomira Radoslava
+			Raina_Raina Regelinda Rycheza_Richeza Salomea Smiechna Stanislava Stefana_Stephania Svetlana Urszula_Ursula Václava Vladislava Wera Wojslawa Zdenka Zofia_Sophia Zwinislawa
+		}
+
+		from_dynasty_prefix = "of "
+
+		modifier = default_culture_modifier
+	}
+	
+	olovian = { #British Slavic
+		graphical_cultures = { westernslavicgfx }
+
+		color = { 0.51 0.38 0.62 }
+
+		male_names = {
+			Aleksander_Alexander Andrzej_Andrew Antoni_Antonius Aron_Aaron Barnim Bartosz_Bartolomeus Bedrich_Frederick Bezprzym Blazej_Blaise Bogislaw_Boguslaw Bohdan_Bogdan Bohumir Boleslaw_Boleslav Boriwoj_Borijov Bozydar_Theodat Branimir Branislav
+			Bretislav_Bretislaus Casimir_Casimir Ctibor_Ctibor Dobieslaw Dobromil Drosuk Dytryk_Thierry Frantisek_Francis Gawel_Gallus Grzegorz_Gregory Havel_Gallus Jacenty_Hyacinth Jakub_Jacob Jakusz_Jacob Janusz_John Jaromar_Jaromir
+			Jaromil Jaromir_Jaromir Jaroslav_Jaroslav Jedrzej_Andrew Jindrich_Henry Jirí_George Jozef_Joseph Juliusz_Julius Kajetan Kamil_Camillus Karel_Charles Kasper Kazimierz_Casimir Kliment_Clement Kolman_Koloman Kornel_Cornelius Kresimir Krzeslaw
+			Krzysztof_Christopher Lech Leszek Lubomir Lucjan_Lucius Ludvik_Louis Marek_Marcus Marian_Marius Martin_Martin Mateusz_Matthew Mieszko Mikolás_Nicholas Miloslaw Milosz_Milosz Miroslaw_Miroslav Mscislaw_Mstislav Msciwoj
+			Oldrich_Ulrich Ondrej_Andrew Otokar_Otakar Patryk_Patrick Pawel_Paul Piotr_Peter Prendota Przemysl_Premysl Przybyslaw Radomil Radomir Radoslav Rostislav Ryszard_Richard Sambor Sobieslav_Sobeslaus Stanislaw_Stanislav
+			Strasz Swietopelk_Svatopluk Swietoslaw_Sviatoslav Szczepan_Stephen Szczesny Szymon Tadeusz_Theodore Tomasz_Thomas Udalrich Urjasz Vojtech_Vojtech Waclaw_Vaclav Walenty_Valentin Wratislaw_Vratislav Wawrzyniec_Laurence Wenceslaw_Vaclav
+			Wincenty_Vincent Wizlaw Wladyslaw_Vladislav Wlodek Wlodzimierz Wlodzislaw_Vladislav Wratislaw_Vratislav Zbigniew_Zbynek Zdenek Zdislav Zygmunt_Sigmund
+		}
+		female_names = {
+			Agnieszka_Agnes Alzbeta Andela Anna_Anna Berta_Bertha Bohuslava Bozena Branislava Dagmar Danuta Dobravy Dobroniega Dorota_Dorothy Dragomira Edyta_Edith Ewa Geira Gertruda_Gertrude
+			Gracja_Grace Grazyna Halina Hanna Irena_Irene Izabela_Elizabeth Jadwiga_Hedwig Jarka Jarmila Jolanta_Yolanda Judyta_Judith Kamila_Camilla Katarina_Catherine Kenna Kornelia_Cornelia Krystyna_Christina Ksenia Lidia
+			Ludmila_Liudmila Magda_Magdalena Magdalena_Magdalena Malgorzata Marcelina Maria_Maria Markéta Martyna_Martina Mateja Matylda_Matilda Milena Miroslava Pechna Róza_Rosa Radomila Radomira Radoslava
+			Raina_Raina Regelinda Rycheza_Richeza Salomea Smiechna Stanislava Stefana_Stephania Svetlana Urszula_Ursula Václava Vladislava Wera Wojslawa Zdenka Zofia_Sophia Zwinislawa
+		}
+
+		from_dynasty_prefix = "of "
+
+		modifier = default_culture_modifier
+	}
+}
+scythian_group = {
+	royal_scythian = { 
+		graphical_cultures = { persiangfx }
+		secondary_event_pictures = bedouin_arabic
+		alternate_start = {
+			OR = {
+				year < 1000 
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+
+		color = { 0.45 0.25 0.5  }
+
+		male_names = {
+			Alysanna Arsa Aryamgula Asi Baga Bahudhiva Bamdaka Bhadra Bradaysaa Brika Capastaka Ceguti Chika Daisai Dharma Dum Dzatsi Gostana Gulai Harka
+			Haskadatta Huyi Hvam Hvarda Hvardamaya Hvimdu Ikam Irasamga Jabgu Jajahasa Kamnai Kayam Kharusa Khina Khuradatta Khvarnarse Kimashana Kimashani
+			Kimatcuna Kirtti Kriti Kunala Kushtana Mamatti Manohara Murlimin Naganpaka Nipandaka Padatcaina Pakyau Phimduka Presamdha Punarrjam Punekula
+			Purgula Raghu Samgai Samgaka Samgalaka Sangrama Sayausa Sham Shambhava Shikshananda Shinganca Shiresala Shirvamdai Shribhadra Shtrugize Shudamgula
+			Shura Sidaka Sihya Siladharma Simhyi Skunkha Sthavira Sudarrjam Sudhana Sumauna Sumtharaka Tayasham Tcusyau Vadhaga Vagiti Vaham Vahana
+			Vardhana Varman Vasudeva Vidakai Vidaram Vijita Vijitasimha Vikrama Virsha Visaram Vishirapumna Visma Ysambasta Zambasta
+		}
+		female_names = {
+			Alsamgya Alyonj Armaiti Dharmadasi Khivyaina Maya Nanda Nirmala Praniyata Safali Shandramata Shri Tisyarakshita Vimala Vimalaprabha Yavalac	
+		}
+
+		dukes_called_kings = yes
+
+        from_dynasty_prefix = "nava "
+        male_patronym = "puri "
+        female_patronym = "duda "
+
+		modifier = default_culture_modifier
+	}
+	
+	sarmatian = {
+		graphical_cultures = { persiangfx }
+		alternate_start = {
+			OR = {
+				year < 1000 
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+
+		color = { 0.5 0.55 0.3  }
+
+		male_names = {
+			Alysanna Arsa Aryamgula Asi Baga Bahudhiva Bamdaka Bhadra Bradaysaa Brika Capastaka Ceguti Chika Daisai Dharma Dum Dzatsi Gostana Gulai Harka
+			Haskadatta Huyi Hvam Hvarda Hvardamaya Hvimdu Ikam Irasamga Jabgu Jajahasa Kamnai Kayam Kharusa Khina Khuradatta Khvarnarse Kimashana Kimashani
+			Kimatcuna Kirtti Kriti Kunala Kushtana Mamatti Manohara Murlimin Naganpaka Nipandaka Padatcaina Pakyau Phimduka Presamdha Punarrjam Punekula
+			Purgula Raghu Samgai Samgaka Samgalaka Sangrama Sayausa Sham Shambhava Shikshananda Shinganca Shiresala Shirvamdai Shribhadra Shtrugize Shudamgula
+			Shura Sidaka Sihya Siladharma Simhyi Skunkha Sthavira Sudarrjam Sudhana Sumauna Sumtharaka Tayasham Tcusyau Vadhaga Vagiti Vaham Vahana
+			Vardhana Varman Vasudeva Vidakai Vidaram Vijita Vijitasimha Vikrama Virsha Visaram Vishirapumna Visma Ysambasta Zambasta
+		}
+		female_names = {
+			Alsamgya Alyonj Armaiti Dharmadasi Khivyaina Maya Nanda Nirmala Praniyata Safali Shandramata Shri Tisyarakshita Vimala Vimalaprabha Yavalac	
+		}
+
+		dukes_called_kings = yes
+
+        from_dynasty_prefix = "nava "
+        male_patronym = "puri "
+        female_patronym = "duda "
+
+		modifier = default_culture_modifier
+	}
+	iazyges = {
+		graphical_cultures = { persiangfx }
+		alternate_start = {
+			OR = {
+				year < 1000 
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+
+		color = { 0.6 0.4 0.3 }
+
+		male_names = {
+			Alysanna Arsa Aryamgula Asi Baga Bahudhiva Bamdaka Bhadra Bradaysaa Brika Capastaka Ceguti Chika Daisai Dharma Dum Dzatsi Gostana Gulai Harka
+			Haskadatta Huyi Hvam Hvarda Hvardamaya Hvimdu Ikam Irasamga Jabgu Jajahasa Kamnai Kayam Kharusa Khina Khuradatta Khvarnarse Kimashana Kimashani
+			Kimatcuna Kirtti Kriti Kunala Kushtana Mamatti Manohara Murlimin Naganpaka Nipandaka Padatcaina Pakyau Phimduka Presamdha Punarrjam Punekula
+			Purgula Raghu Samgai Samgaka Samgalaka Sangrama Sayausa Sham Shambhava Shikshananda Shinganca Shiresala Shirvamdai Shribhadra Shtrugize Shudamgula
+			Shura Sidaka Sihya Siladharma Simhyi Skunkha Sthavira Sudarrjam Sudhana Sumauna Sumtharaka Tayasham Tcusyau Vadhaga Vagiti Vaham Vahana
+			Vardhana Varman Vasudeva Vidakai Vidaram Vijita Vijitasimha Vikrama Virsha Visaram Vishirapumna Visma Ysambasta Zambasta
+		}
+		female_names = {
+			Alsamgya Alyonj Armaiti Dharmadasi Khivyaina Maya Nanda Nirmala Praniyata Safali Shandramata Shri Tisyarakshita Vimala Vimalaprabha Yavalac	
+		}
+
+		dukes_called_kings = yes
+
+        from_dynasty_prefix = "nava "
+        male_patronym = "puri "
+        female_patronym = "duda "
+
+		modifier = default_culture_modifier
+	}
+	alan = { #Moved from Byzantine group
+		graphical_cultures = { easternslavicgfx }
+
+		color = { 0.7 0.5 0.7 }
+
+		male_names = {
+			Ælbeg Æmbalan Aghsartan Alatey Akhsar Anbal Anbazuk Aravat Arsen Askhkadar Ashot_Ashot Aslan Aspar Athom Balambar Balsag Barlah Bæqætar Basil_Basil Bazuk Beler Ber Biræg Boz-Uruz Buürgur Buriberdi
+			Burikhan Candak Chelakhsartag Davit_David Djadaron Durgulel Dzæræs Gætæg Georgy_George Girgon Gokhar Gubaz Guram_Guaram Hasqar Huddan Istor Itaz Iveri Kandak Kandz Kavtia Kaur
+			Khankhusy Khætag Konstantin_Constantine Kubal Kuddana Kul Kuluk Lak Levan_Leo Pulad Respendial Rosmag Safrak Sakhir Sangipan Saros Sathis Savkudz Soslan Suarn Syrdon Taymuraz_Teimuraz Taus Totraz Urdure Uruzma Uturku Yasynya Zaur
+		}
+		female_names = {
+			Adadza Alda Altun Ana_Anna Atsyrukhs Baia Bedisa Borena Btsenon Burudukan Duda Elene_Helen Eliso Gergana Gulchara Guranduht_Gorandukht Kera Keratsa Ketevan_Catherine Koser
+			Lamara Lashin Lela Mariami_Maria Natia Nino Rusudan Sanatha Satinik_Satinik Shatana Shorena Shukhia Tamari_Tamar Tinatini Tsiala Vardo Vedokha Yeran
+		}
+
+		from_dynasty_prefix = "ve "
+
+		male_patronym = "y fyrt"
+		female_patronym = "y chyzg"
+		prefix = no
+
+		disinherit_from_blinding = yes
+
+		modifier = default_culture_modifier
+	}
+	nemedian = {
+		graphical_cultures = { persiangfx celticgfx }
+		alternate_start = {
+			OR = {
+				year < 1000 
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+
+		color = { 0.78 0.85 0.22 }
+
+		male_names = {
+			Alysanna Arsa Aryamgula Asi Baga Bahudhiva Bamdaka Bhadra Bradaysaa Brika Capastaka Ceguti Chika Daisai Dharma Dum Dzatsi Gostana Gulai Harka
+			Haskadatta Huyi Hvam Hvarda Hvardamaya Hvimdu Ikam Irasamga Jabgu Jajahasa Kamnai Kayam Kharusa Khina Khuradatta Khvarnarse Kimashana Kimashani
+			Kimatcuna Kirtti Kriti Kunala Kushtana Mamatti Manohara Murlimin Naganpaka Nipandaka Padatcaina Pakyau Phimduka Presamdha Punarrjam Punekula
+			Purgula Raghu Samgai Samgaka Samgalaka Sangrama Sayausa Sham Shambhava Shikshananda Shinganca Shiresala Shirvamdai Shribhadra Shtrugize Shudamgula
+			Shura Sidaka Sihya Siladharma Simhyi Skunkha Sthavira Sudarrjam Sudhana Sumauna Sumtharaka Tayasham Tcusyau Vadhaga Vagiti Vaham Vahana
+			Vardhana Varman Vasudeva Vidakai Vidaram Vijita Vijitasimha Vikrama Virsha Visaram Vishirapumna Visma Ysambasta Zambasta Nemed
+		}
+		female_names = {
+			Alsamgya Alyonj Armaiti Dharmadasi Khivyaina Maya Nanda Nirmala Praniyata Safali Shandramata Shri Tisyarakshita Vimala Vimalaprabha Yavalac	
+		}
+
+		dukes_called_kings = yes
+
+        from_dynasty_prefix = "nava "
+        male_patronym = "y fwrht"
+        female_patronym = "y chwzch"
+
+		modifier = default_culture_modifier
+	}
+}
+
+semitic_group = {
+	graphical_cultures = { westerngfx }
+	alternate_start = { NOT = { has_alternate_start_parameter = { key = special_culture value = animal_world } } }
+	
+	assyrian = { #Moved from Byzantine group
+		graphical_cultures = { persiangfx }
+		secondary_event_pictures = bedouin_arabic
+
+		color = { 0.4 0.3 0.6 }
+
+		male_names = {
+			Aba_Abba Abahu_Abahu Abaya_Abaya Abaye_Abaya Abayi_Abaya Abba_Abba Abdima 'Abdisho' Abgar Abimalek Abraham_Abraham Abris Abrisius_Abrisius Acacius_Acacius Achan Achina Addai_Thaddeus Adlai Aggai Ahai_Ahha Ahadabui Ahha_Ahha "Akha d'abuh'" Akh-es-Samain Aqib-Alaha Asa_Asa Ashur_Asher Avahu Avda_Abahu Avdima_Avdima Avdimi_Avdima Avina Avira Azai
+			Babaeus_Babaeus Babai_Babaeus Babowai_Babaeus Babwahi_Babaeus Bar Bar-Abba Barba'shimin Bar-Nabha Bar-Talmai Bar-Timai Bar-Tolmai Bustan_Bustan Caiaphas Cephas_Peter Cephus_Peter Chadlai Chama Chanin_Chanin Chanina_Chanin Chaninai_Chanin Chinena_Chanin
+			Chozai_Chozai Chuma Chunya_Chunya Clopas Dadisho' Denha Dikla_Dikla Diklah_Dikla Dimi Dinkha Dunanu Elisha'_Elisha Eliya Emmanuel_Emmanuel Enosh Ezekiel_Ezekiel Farbokht_Farbokht Foma Giwargis_George Grwgari_Gregory Hanina_Chanin Hnanisho' Hozai_Chozai Idan Idra Ila Isaac_Isaac Isho' Isho'yahb Israel_Israel Kaiapha Karna Katsiu Kelaya Laszio_Lazarus Lazar_Lazarus
+			Lazare_Lazarus Lazaro_Lazarus Lazaros_Lazarus Lazarus_Lazarus Lazarz_Lazarus Lazer_Lazarus Lebbaeus Maadai Macabee_Macabee Maccabee_Macabee Magna_Ma'na Makkikha Maluch Ma'na_Ma'na Marabokht_Farbokht Maremmeh Mari Mikha'il_Michael Moqli Muna Nahir_Nahir Nahor_Nahir Nahur_Nahir Narsai Nazuk Nechunya_Chunya
+			Nehor_Nahir Nehorai Niv Nun Nur Oran_Nahir Pappa Paul_Paul Pethion Petros_Peter Petuel Qaligh Qayyoma Raca_Raka Rachim_Chanin Rahim_Chanin Raka_Raka Raz Raziel_Raphael Rubil Saad Saba_Saba Sabah_Saba Sabba'e_Saba Sabrisho'_Sabrisho' Sabr-Ishu_Sabrisho' Salu Samal Sami_Sami Samiy_Sami Sagi_Sagi Sargis Sava_Saba Sawma
+			Shafer Shahdost Shahlufa Shai Shalmai Shama Shamir Shammai Shemaiah Shem'on_Simon Sheraga_Sheraga Shila Shovai Shraga_Sheraga Sima Sliba-zkha Surin Tabbai Taddai_Thaddeus Talia_Talia Taliah_Talia Talmai_Bartholomew Talya_Talia Tam_Thomas
+			Tam'as_Thomas Ta'mhas_Thomas Targhal Tauma Tavi_Tavi Tavish_Tavi Tevis_Tavis Th'amhais_Thomas Thoma_Thomas Timai_Timothy Tiv Toba Todos Tolmai_Bartholomew Tomarsa_Tomarsa Tamuza_Tomarsa Tulmay_Bartholomew Ukba Yahballaha Yanai Ya'qob_Jacob Yeshua_Joshua Yohannan_John Yosip_Joseph Yousef_Joseph Yunanis_John Zerika
+		}
+		female_names = {
+			Adva Alya Anena Anina Bustan_Bustan Chanina Chasina Chayuta_Chayuta China_Hina Chiyuta_Chayuta Dikla_Dikla Diklah_Dikla Diklit_Dikla Duvsha Hanina_Chanin Hasna Hayuta_Chayuta Hina_Hina Ketina Kitra
+			Magdala Mahalia_Mahalia Mahalie_Mahalia Marfa_Martha Mariam_Maria Marta_Martha Marte_Martha Martha_Martha Marthe_Martha Marti_Martha Martita_Martha Mehalia_Mahalia Meiriona_Meirona Meirona_Meirona Morta_Martha
+			Nahara_Nura Nura_Nura Raz Reuma Saba_Saba Sabah_Saba Samantha Sameah_Sami Samee_Sami Sameea_Sami Samiya_Sami Samiyah_Sami Samiyya_Sami Samya_Sami Sava_Saba Shapira Sima Tabatha_Tabitha Tabby_Tabitha Tabetha_Tabitha
+			Tabitha_Tabitha Tadea_Thaddea Talia_Talia Taliah_Talia Talya_Talia Talitha Tam_Thomasa Tamasin_Thomasa Tami_Thomasa Tammy_Thomasa Tamsin_Thomasa Tamsyn_Thomasa Tamzin_Thomasa Thaddea_Thaddea Thomasa_Thomasa Zeita_Zeta Zeta_Zeta
+		}
+
+		from_dynasty_prefix = "of "
+
+		male_patronym = "Bar "
+		female_patronym = "Barta "
+		prefix = yes
+
+		modifier = default_culture_modifier
+	}
+	
+	
+	babylonian = {
+		graphical_cultures = { persiangfx }
+		secondary_event_pictures = bedouin_arabic
+
+		color = { 0.5 0.15 0.0 }
+
+		male_names = {
+			Marduk-beli Marduk-belshunu Marduk-eriba Marduk-etir Marduk-ibni
+			Marduk-iddin Marduk-uballit Kidin-Marduk Lusthammar-Marduk Nidinti-Marduk
+			Rihat-Marduk Shamshi-Marduk Shipqat-Marduk Tanittu-Marduk Tukulti-Marduk
+			Bel-beli Bel-belshunu Bel-eriba Bel-etir Bel-ibni Bel-iddin Bel-uballit
+			Kidin-Bel Lusthammar-Bel Nidinti-Bel Rihat-Bel Shamshi-Bel Shipqat-Bel
+			Tanittu-Bel Tukulti-Bel Shamash-beli Shamash-belshunu Shamash-eriba
+			Shamash-etir Shamash-ibni Shamash-iddin Shamash-uballit Kidin-Shamash
+			Lusthammar-Shamash Nidinti-Shamash Rihat-Shamash Shamshi-Shamash
+			Shipqat-Shamash Tanittu-Shamash Tukulti-Shamash Ashshur-beli
+			Ashshur-belshunu Ashshur-eriba Ashshur-etir Ashshur-ibni Ashshur-iddin
+			Ashshur-uballit Kidin-Ashshur Lusthammar-Ashshur Nidinti-Ashshur
+			Rihat-Ashshur Shamshi-Ashshur Shipqat-Ashshur Tanittu-Ashshur
+			Tukulti-Ashshur Ishtar-beli Ishtar-belshunu Ishtar-eriba Ishtar-etir
+			Ishtar-ibni Ishtar-iddin Ishtar-uballit Kidin-Ishtar Lusthammar-Ishtar
+			Nidinti-Ishtar Rihat-Ishtar Shamshi-Ishtar Shipqat-Ishtar Tanittu-Ishtar
+			Tukulti-Ishtar Adad-beli Adad-belshunu Adad-eriba Adad-etir Adad-ibni
+			Adad-iddin Adad-uballit Kidin-Adad Lusthammar-Adad Nidinti-Adad Rihat-Adad
+			Shamshi-Adad Shipqat-Adad Tanittu-Adad Tukulti-Adad Nergal-beli
+			Nergal-belshunu Nergal-eriba Nergal-etir Nergal-ibni Nergal-iddin
+			Nergal-uballit Kidin-Nergal Lusthammar-Nergal Nidinti-Nergal Rihat-Nergal
+			Shamshi-Nergal Shipqat-Nergal Tanittu-Nergal Tukulti-Nergal Sin-beli
+			Sin-belshunu Sin-eriba Sin-etir Sin-ibni Sin-iddin Sin-uballit Kidin-Sin
+			Lusthammar-Sin Nidinti-Sin Rihat-Sin Shamshi-Sin Shipqat-Sin Tanittu-Sin
+			Tukulti-Sin Enlil-beli Enlil-belshunu Enlil-eriba Enlil-etir Enlil-ibni
+			Enlil-iddin Enlil-uballit Kidin-Enlil Lusthammar-Enlil Nidinti-Enlil
+			Rihat-Enlil Shamshi-Enlil Shipqat-Enlil Tanittu-Enlil Tukulti-Enlil
+			Ninurta-beli Ninurta-belshunu Ninurta-eriba Ninurta-etir Ninurta-ibni
+			Ninurta-iddin Ninurta-uballit Kidin-Ninurta Lusthammar-Ninurta
+			Nidinti-Ninurta Rihat-Ninurta Shamshi-Ninurta Shipqat-Ninurta
+			Tanittu-Ninurta Tukulti-Ninurta
+		}
+		female_names = {
+			Wardat-Marduk Wardat-Bel Wardat-Shamash Wardat-Ashshur
+			Wardat-Ishtar Wardat-Adad Wardat-Nergal Wardat-Sin Wardat-Enlil
+			Wardat-Ninurta
+		}
+
+		from_dynasty_prefix = "of "
+
+		male_patronym = "Bar "
+		female_patronym = "Barta "
+		prefix = yes
+
+		modifier = default_culture_modifier
+	}
+	
 }
 
 

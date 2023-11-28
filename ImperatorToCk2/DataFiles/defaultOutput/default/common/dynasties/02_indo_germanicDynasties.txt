@@ -1,0 +1,480 @@
+5390000=
+{
+	name="Tuome"
+	culture="indo_germanic"
+}
+5390001=
+{
+	name="Tuoma"
+	culture="indo_germanic"
+}
+5390002=
+{
+	name="Tuomes"
+	culture="indo_germanic"
+}
+5390003=
+{
+	name="Tuomid"
+	culture="indo_germanic"
+}
+5390004=
+{
+	name="Andicus"
+	culture="indo_germanic"
+}
+5390005=
+{
+	name="Andica"
+	culture="indo_germanic"
+}
+5390006=
+{
+	name="Andices"
+	culture="indo_germanic"
+}
+5390007=
+{
+	name="Andicid"
+	culture="indo_germanic"
+}
+5390008=
+{
+	name="Dagaricus"
+	culture="indo_germanic"
+}
+5390009=
+{
+	name="Dagarica"
+	culture="indo_germanic"
+}
+5390010=
+{
+	name="Dagarices"
+	culture="indo_germanic"
+}
+5390011=
+{
+	name="Dagaricid"
+	culture="indo_germanic"
+}
+5390012=
+{
+	name="Gelimerus"
+	culture="indo_germanic"
+}
+5390013=
+{
+	name="Gelimera"
+	culture="indo_germanic"
+}
+5390014=
+{
+	name="Gelimeres"
+	culture="indo_germanic"
+}
+5390015=
+{
+	name="Gelimerian"
+	culture="indo_germanic"
+}
+5390016=
+{
+	name="Geroldus"
+	culture="indo_germanic"
+}
+5390017=
+{
+	name="Gerolda"
+	culture="indo_germanic"
+}
+5390018=
+{
+	name="Geroldes"
+	culture="indo_germanic"
+}
+5390019=
+{
+	name="Geroldian"
+	culture="indo_germanic"
+}
+5390020=
+{
+	name="Malaricus"
+	culture="indo_germanic"
+}
+5390021=
+{
+	name="Malarica"
+	culture="indo_germanic"
+}
+5390022=
+{
+	name="Malarici"
+	culture="indo_germanic"
+}
+5390023=
+{
+	name="Malaricid"
+	culture="indo_germanic"
+}
+5390024=
+{
+	name="Marbodus"
+	culture="indo_germanic"
+}
+5390025=
+{
+	name="Marboda"
+	culture="indo_germanic"
+}
+5390026=
+{
+	name="Marbodes"
+	culture="indo_germanic"
+}
+5390027=
+{
+	name="Marbodian"
+	culture="indo_germanic"
+}
+5390028=
+{
+	name="Theodus"
+	culture="indo_germanic"
+}
+5390029=
+{
+	name="Theoda"
+	culture="indo_germanic"
+}
+5390030=
+{
+	name="Theodes"
+	culture="indo_germanic"
+}
+5390031=
+{
+	name="Theodian"
+	culture="indo_germanic"
+}
+5390032=
+{
+	name="Marcolus"
+	culture="indo_germanic"
+}
+5390033=
+{
+	name="Marcola"
+	culture="indo_germanic"
+}
+5390034=
+{
+	name="Marcoles"
+	culture="indo_germanic"
+}
+5390035=
+{
+	name="Marcolian"
+	culture="indo_germanic"
+}
+5390036=
+{
+	name="Sigid"
+	culture="indo_germanic"
+}
+5390037=
+{
+	name="Sigida"
+	culture="indo_germanic"
+}
+5390038=
+{
+	name="Sigi"
+	culture="indo_germanic"
+}
+5390039=
+{
+	name="Sigid"
+	culture="indo_germanic"
+}
+5390040=
+{
+	name="Rigleikus"
+	culture="indo_germanic"
+}
+5390041=
+{
+	name="Rigleika"
+	culture="indo_germanic"
+}
+5390042=
+{
+	name="Rigleikes"
+	culture="indo_germanic"
+}
+5390043=
+{
+	name="Rigleikid"
+	culture="indo_germanic"
+}
+5390044=
+{
+	name="Tancreid"
+	culture="indo_germanic"
+}
+5390045=
+{
+	name="Tancra"
+	culture="indo_germanic"
+}
+5390046=
+{
+	name="Tancri"
+	culture="indo_germanic"
+}
+5390047=
+{
+	name="Tancrid"
+	culture="indo_germanic"
+}
+5390048=
+{
+	name="Malogrus"
+	culture="indo_germanic"
+}
+5390049=
+{
+	name="Malogra"
+	culture="indo_germanic"
+}
+5390050=
+{
+	name="Malogri"
+	culture="indo_germanic"
+}
+5390051=
+{
+	name="Malogrian"
+	culture="indo_germanic"
+}
+5390052=
+{
+	name="Gundrud"
+	culture="indo_germanic"
+}
+5390053=
+{
+	name="Gundruda"
+	culture="indo_germanic"
+}
+5390054=
+{
+	name="Gundrudii"
+	culture="indo_germanic"
+}
+5390055=
+{
+	name="Gundrid"
+	culture="indo_germanic"
+}
+5390056=
+{
+	name="Segimandrus"
+	culture="indo_germanic"
+}
+5390057=
+{
+	name="Segimandra"
+	culture="indo_germanic"
+}
+5390058=
+{
+	name="Segimandri"
+	culture="indo_germanic"
+}
+5390059=
+{
+	name="Segimandrid"
+	culture="indo_germanic"
+}
+5390060=
+{
+	name="Dwaldus"
+	culture="indo_germanic"
+}
+5390061=
+{
+	name="Dwalda"
+	culture="indo_germanic"
+}
+5390062=
+{
+	name="Dwaldes"
+	culture="indo_germanic"
+}
+5390063=
+{
+	name="Dwaldid"
+	culture="indo_germanic"
+}
+5390064=
+{
+	name="Merobaudes"
+	culture="indo_germanic"
+}
+5390065=
+{
+	name="Merobauda"
+	culture="indo_germanic"
+}
+5390066=
+{
+	name="Merobaudes"
+	culture="indo_germanic"
+}
+5390067=
+{
+	name="Merobaudian"
+	culture="indo_germanic"
+}
+5390068=
+{
+	name="Eidgid"
+	culture="indo_germanic"
+}
+5390069=
+{
+	name="Eidgida"
+	culture="indo_germanic"
+}
+5390070=
+{
+	name="Eidiges"
+	culture="indo_germanic"
+}
+5390071=
+{
+	name="Eidigian"
+	culture="indo_germanic"
+}
+5390072=
+{
+	name="Gerhaucres"
+	culture="indo_germanic"
+}
+5390073=
+{
+	name="Gerhaucra"
+	culture="indo_germanic"
+}
+5390074=
+{
+	name="Gerhaucres"
+	culture="indo_germanic"
+}
+5390075=
+{
+	name="Gerhaucrian"
+	culture="indo_germanic"
+}
+5390076=
+{
+	name="Hildganes"
+	culture="indo_germanic"
+}
+5390077=
+{
+	name="Hildgana"
+	culture="indo_germanic"
+}
+5390078=
+{
+	name="Hildganes"
+	culture="indo_germanic"
+}
+5390079=
+{
+	name="Hildganid"
+	culture="indo_germanic"
+}
+5390080=
+{
+	name="Hramdrid"
+	culture="indo_germanic"
+}
+5390081=
+{
+	name="Hramdra"
+	culture="indo_germanic"
+}
+5390082=
+{
+	name="Hramdri"
+	culture="indo_germanic"
+}
+5390083=
+{
+	name="Hramrid"
+	culture="indo_germanic"
+}
+5390084=
+{
+	name="Ingohdres"
+	culture="indo_germanic"
+}
+5390085=
+{
+	name="Ingohdra"
+	culture="indo_germanic"
+}
+5390086=
+{
+	name="Ingohdres"
+	culture="indo_germanic"
+}
+5390087=
+{
+	name="Ingohdrid"
+	culture="indo_germanic"
+}
+5390088=
+{
+	name="Ingrammus"
+	culture="indo_germanic"
+}
+5390089=
+{
+	name="Ingramma"
+	culture="indo_germanic"
+}
+5390090=
+{
+	name="Ingrammii"
+	culture="indo_germanic"
+}
+5390091=
+{
+	name="Ingrammid"
+	culture="indo_germanic"
+}
+5390092=
+{
+	name="Malactus"
+	culture="indo_germanic"
+}
+5390093=
+{
+	name="Malacta"
+	culture="indo_germanic"
+}
+5390094=
+{
+	name="Malactii"
+	culture="indo_germanic"
+}
+5390095=
+{
+	name="Malactian"
+	culture="indo_germanic"
+}

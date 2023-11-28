@@ -1,0 +1,158 @@
+5383008=
+{
+	name="Kârawân"
+	culture="parthian_culture"
+}
+5383009=
+{
+	name="Jorjani"
+	culture="parthian_culture"
+	
+}
+5383010=
+{
+	name="Ghurid"
+	culture="parthian_culture"
+	
+}
+5383011=
+{
+	name="Samanid"
+	culture="parthian_culture"
+	
+}
+5383012=
+{
+	name="Saffarid"
+	culture="parthian_culture"
+	
+}
+5383013=
+{
+	name="Bamid"
+	culture="parthian_culture"
+	
+}
+5383014 = {
+   name="Sirjani"
+   culture="parthian_culture"
+   
+}
+5383015 = {
+   name="Furgid"
+   culture="parthian_culture"
+   
+}
+
+5383016 = {
+   name="Burhanid"
+   culture="parthian_culture"
+   
+}
+
+5383017 ={
+   name="Kartid"
+   culture="parthian_culture"
+   
+}
+5383018 ={
+   name="Bavandid"
+   culture="parthian_culture"
+   
+}
+5383019 ={
+   name="Baduspanid"
+   culture="parthian_culture"
+   
+}
+5383020 ={
+   name="Mihrabanid"
+   culture="parthian_culture"
+   
+}
+5383021 ={
+   name="Safavid"
+   culture="parthian_culture"
+   
+}
+5383022 ={
+   name="Gilani"
+   culture="parthian_culture"
+   
+}
+5383023 = {
+	name = "Sarbadar"
+	culture = parthian_culture
+}
+5383024 = {
+	name = "Faravid"
+	culture = parthian_culture
+}
+5383025 = {
+	name = "Karen"
+	culture = parthian_culture
+}
+5383026 = {
+	name = "Ashkayada"
+	culture = parthian_culture
+}
+5383027 = {
+	name = "Yoishta"
+	culture = parthian_culture
+}
+5383028 = {
+	name = "Kazeruni"
+	culture = parthian_culture
+}
+5383029 = {
+	name = "Tahirids"
+	culture = parthian_culture
+}
+5383030 = {
+	name = "Muqannid"
+	culture = parthian_culture
+}
+5383031 = {
+	name = "Khurramites"
+	culture = parthian_culture
+}
+5383032 = {
+	name = "Færniatæ"
+	culture = parthian_culture
+}
+5383033 = {
+	name = "Khorramdin"
+	culture = parthian_culture
+}
+5383034 = {
+	name = "Maziar"
+	culture = parthian_culture
+}
+5383035 = {
+	name = "Mardavij"
+	culture = parthian_culture
+}
+5383036 = {
+	name = "Ustadh"
+	culture = parthian_culture
+}
+5383037 = {
+	name = "Saffari"
+	culture = parthian_culture
+}
+5383038 = {
+	name = "Laith"
+	culture = parthian_culture
+}
+5383039 = {
+	name = "Ferdowsi"
+	culture = parthian_culture
+}
+5383040 = {
+	name = "Tamerlane"
+	culture = parthian_culture
+}
+5383041 = {
+	name = "Hulagu"
+	culture = parthian_culture
+}

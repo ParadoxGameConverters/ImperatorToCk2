@@ -725,6 +725,13 @@ public class Importer
                 while (aqq < locList.size()){
 
                     String qaaa = locList.get(aqq);
+                    try {
+                        if (qaaa.charAt(0) != ' ') {//If loc lacks leading space, add a space
+                            qaaa = " " + qaaa;
+                        }
+                    } catch (java.lang.StringIndexOutOfBoundsException exception) {
+                        
+                    }
 
                     if (qaaa.split(":")[0].equals(" "+tag)){
                         output[0] = qaaa.split(":")[1];
@@ -1224,8 +1231,8 @@ public class Importer
 
         try {
             while (aqq != 10){ //loop for the first 10 lines (potential futureproofing), if the key is there, decompressed. Else, compressed
-
-                if (qaaa.split("=")[0].equals("save_game_version")) {
+                String testParameter = qaaa.split("=")[0];
+                if (testParameter.equals("save_game_version") || testParameter.equals("version")) {
 
                     compressedOrNot = 1;
                 }
@@ -1670,6 +1677,8 @@ public class Importer
         Scanner scnr= new Scanner(fileIn);
 
         ArrayList<String[]> impColorList= new ArrayList<String[]>();
+        
+        //System.out.println(name);
 
         String tab = "	";
 
@@ -1761,6 +1770,77 @@ public class Importer
 
         return allColors;
     }
+    
+    public static ArrayList<String> importRegions (String name) throws IOException //list of all regions
+    {
+        //System.out.println(name);
+
+        FileInputStream fileIn= new FileInputStream(name);
+        Scanner scnr= new Scanner(fileIn);
+
+        ArrayList<String> impRegionList= new ArrayList<String>();
+
+        String tab = "	";
+
+        int flag = 0;
+
+        String qaaa = "";
+        String output = "none";
+        String endBracket = " }".replace(" ","");
+
+        impRegionList.add(output); //default at ID 0
+
+        try {
+            while (flag == 0){
+                qaaa = scnr.nextLine();
+                qaaa = qaaa.replace ("_region {","_region = {"); //special edge case for vanilla madhyadesa_region
+                if (qaaa.contains( "_region = {" ) || qaaa.contains("_area = {") ) { //_area is special edge case for vanilla bohemia_area region
+                    output = qaaa.split(" =")[0];
+                    while (!qaaa.equals(endBracket)){
+                        qaaa = scnr.nextLine();
+                        if (qaaa.contains(tab+tab) && !qaaa.equals(tab+tab)) {
+                            String area = qaaa.split(tab+tab)[1];
+                            area = area.split(tab)[0]; //formatting cleanup
+                            area = area.split(" ")[0];
+                            area = area.split("#")[0];
+                            output = output + "," + area;
+                        }
+                    }
+
+                    String tmpOutput = output;
+                    
+                    //System.out.println(tmpOutput);
+
+                    impRegionList.add(tmpOutput);
+
+                    output = "none"; //default for no name
+                }
+
+            }
+        }catch (java.util.NoSuchElementException exception){
+
+        }   
+
+        return impRegionList;
+
+    }
+    
+    public static String getRegionDir (String name, ArrayList<String> regionList, ArrayList<String> modDirs) throws IOException
+    {
+        String regionDir = name+"//game//";
+        int aqq = 0;
+        while (regionList.size() > aqq) {
+            //if (!regionList.get(aqq).equals("none")) {
+            if (!regionList.get(aqq).equals("none")) {
+                //regionDir = modDirs.get(aqq)+"//";
+                //regionDir = modDirs.get(aqq)+"//";
+                regionDir = regionList.get(aqq).split("map_data")[0];
+            }
+            aqq = aqq + 1;
+        }
+
+        return regionDir;
+    }
 
     public static ArrayList<String> importAllLoc (String name, ArrayList<String> modDirs) throws IOException //imports all localization files
     {
@@ -1776,7 +1856,14 @@ public class Importer
         while (modDirs.size() > aqq) {
             if (!modDirs.get(aqq).equals("none")) {
                 String modDir = modDirs.get(aqq)+"/localization/english";
-                moddedLoc.addAll(importModLoc(modDir,modDirs,moddedLoc));
+                try {
+                    importModLoc(modDir,modDirs,moddedLoc);
+                    //System.out.println("Dir: "+modDirs.get(aqq));
+                    //System.out.println("Loc total: "+test.size());
+                    //moddedLoc.addAll(importModLoc(modDir,modDirs,moddedLoc));
+                } catch (java.lang.OutOfMemoryError exception) { //User has many mods with too many lines of localization to handle in memory
+                    aqq = 1 + modDirs.size(); 
+                }
             }
             aqq = aqq + 1;
         }
@@ -1829,6 +1916,8 @@ public class Importer
         irModDir = irModDir.substring(0,irModDir.length()-4);
 
         String tab = "	";
+        
+        char quoteMark = '"';
 
         int flag = 0;
 
@@ -1849,10 +1938,14 @@ public class Importer
                     String tmpOutput;
                     while (!qaaa.contains("}") && !qaaa.contains("speed=")) {
                         qaaa = qaaa.replace(tab,"");
-                        String[] mods = qaaa.split(" ");
+                        String[] mods = qaaa.split(".mod"+quoteMark);
                         int aqq = 0;
                         while (aqq < mods.length) {
-                            mods[aqq] = mods[aqq].substring(1,mods[aqq].length()-1);
+                            //System.out.println("Mod="+mods[aqq]);
+                            mods[aqq] = mods[aqq]+".mod";
+                            mods[aqq] = mods[aqq].replace(" "+quoteMark,"Q");
+                            mods[aqq] = mods[aqq].substring(1,mods[aqq].length());
+                            //System.out.println("Qhd="+mods[aqq]);
                             try { //get real mod dir
                                 output = importModDirInfo(irModDir+"/"+mods[aqq]);
                                 impModList.add(output);
@@ -1971,6 +2064,130 @@ public class Importer
         }   
 
         return gfxList;
+
+    }
+    
+    public static ArrayList<String> importModRegionDirs (ArrayList<String> modDirs) throws IOException //imports modded region ID's
+    {
+
+        String regionFile = "/map_data";
+
+        ArrayList<String> gfxList= new ArrayList<String>();
+
+        String tab = "	";
+
+        int flag = 0;
+        int aqq = 0;
+        String qaaa = "";
+        String output;
+
+        output = "none"; //default for no name
+
+        gfxList.add(output); //default at ID 0
+
+        try {
+            while (aqq < modDirs.size()){
+                if (!modDirs.get(aqq).equals ("none")) {
+                    File regionDir = new File(modDirs.get(aqq)+regionFile);
+                    String[] emblemFiles = regionDir.list();
+                    if (emblemFiles != null) {
+                        int aq2 = 0;
+                        while (aq2 < emblemFiles.length) {
+                            output = emblemFiles[aq2];
+                            if (output.equals("regions.txt")) {
+                                output = modDirs.get(aqq)+regionFile+"/"+output;
+                                gfxList.add(output);
+                            }
+                            aq2 = aq2 + 1;
+
+                        }
+                    }
+                }
+
+                aqq = aqq + 1;
+            }
+        }catch (java.util.NoSuchElementException exception){
+            flag = 1;
+        }   
+
+        return gfxList;
+
+    }
+    
+    public static String[] importMappingFromArray (ArrayList<String> source, String provIDnum) throws IOException
+    //Simpler mapper that doesn't check for arguments and is faster, returning as soon as it finds a valid match
+    {
+        String qaaa;
+        String[] output;   // Owner Culture Religeon PopTotal Buildings
+        output = new String[2];
+
+        output[0] = "peq"; //default for no owner, uncolonized province
+        output[1] = "99999"; //default for no culture, uncolonized province with 0 pops
+        
+        int count = 0;
+
+        try {
+            while (count < source.size()){
+
+                qaaa = source.get(count);
+
+                if (qaaa.split(",")[0].equals(provIDnum)){
+                    count = 1 + source.size();
+                    output[0] = qaaa.split(",")[0];
+                    output[1] = qaaa.split(",")[1];
+
+                }
+                count = count + 1;
+            }
+
+        }catch (java.util.NoSuchElementException exception){
+            count = 1 + source.size();
+
+        }   
+
+        return output;
+
+    }
+    
+    public static ArrayList<String[]> importMappingFromArrayArgs (ArrayList<String> source, String provIDnum) throws IOException
+    //Should only be used on mapping files that support arguments
+    {
+        String line;
+        ArrayList<String[]> allMatches = new ArrayList<String[]>();
+        String[] match;
+        match = new String[2];
+
+        match[0] = "peq"; //default for no ir input
+        match[1] = "99999"; //default for no ck2 output
+        
+        int count = 0;
+
+        try {
+            while (count < source.size()){
+
+                line = source.get(count);
+
+                if (line.split(",")[0].equals(provIDnum) && !line.contains("#")){
+                    //count = 1 + source.size();
+                    if (line.split(",").length >= 3) {
+                        //return qaaa.split(","); //if mapping file has arguments, return those as well
+                        allMatches.add(line.split(","));
+                    } else {
+                        match[0] = line.split(",")[0];
+                        match[1] = line.split(",")[1];
+                        allMatches.add(match);
+                    }
+
+                }
+                count = count + 1;
+            }
+
+        }catch (java.util.NoSuchElementException exception){
+            count = 1 + source.size();
+
+        }   
+
+        return allMatches;
 
     }
 

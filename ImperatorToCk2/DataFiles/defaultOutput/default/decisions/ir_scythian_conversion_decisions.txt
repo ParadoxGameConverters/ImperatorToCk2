@@ -1,0 +1,370 @@
+targetted_decisions = {
+
+
+	# Saka character may convert to Indo-Scythian
+	irck2_convert_to_indo_scythian = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = saka
+			capital_scope = {
+				region = world_india
+			}
+			any_realm_province = {
+				culture = indo_scythian
+			}
+			OR = {
+				year = 125
+				top_liege = {
+					NOT = { culture = saka }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = saka
+			capital_scope = {
+				region = world_india
+			}
+			any_realm_province = {
+				culture = indo_scythian
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = indo_scythian
+			}
+			culture = indo_scythian
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Roman ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = saka
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = saka }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = indo_scythian }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = indo_scythian }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = indo_scythian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = indo_scythian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = indo_scythian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = indo_scythian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = indo_scythian
+				}
+			}
+		}
+	}
+
+# Sarmatian or Scythian character may convert to Iazyges
+	irck2_convert_to_iazyges = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			OR = { culture = sarmatian culture = royal_scythian }
+			capital_scope = {
+				OR = { region = custom_irck2_pannonia region = custom_irck2_dalmatia }
+			}
+			any_realm_province = {
+				culture = iazyges
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			OR = { culture = sarmatian culture = royal_scythian }
+			capital_scope = {
+				OR = { region = custom_irck2_pannonia region = custom_irck2_dalmatia }
+			}
+			any_realm_province = {
+				culture = iazyges
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = iazyges
+			}
+			culture = iazyges
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Punic ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						OR = { culture = sarmatian culture = royal_scythian }
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { OR = { culture = sarmatian culture = royal_scythian } }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = iazyges }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = iazyges }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = iazyges
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = iazyges
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = iazyges
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = iazyges
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = iazyges
+				}
+			}
+		}
+	}
+
+
+# Sarmatian or Scythian character may convert to Nemedian
+	irck2_convert_to_nemedian = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			OR = { culture = sarmatian culture = royal_scythian }
+			capital_scope = {
+				region = custom_irck2_britannia
+			}
+			any_realm_province = {
+				culture = nemedian
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			OR = { culture = sarmatian culture = royal_scythian }
+			capital_scope = {
+				region = custom_irck2_britannia
+			}
+			any_realm_province = {
+				culture = nemedian
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = nemedian
+			}
+			culture = nemedian
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Punic ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						OR = { culture = sarmatian culture = royal_scythian }
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { OR = { culture = sarmatian culture = royal_scythian } }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = nemedian }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = nemedian }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = nemedian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = nemedian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = nemedian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = nemedian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = nemedian
+				}
+			}
+		}
+	}
+
+
+#####################################################################
+#End Bracket
+#####################################################################
+
+}

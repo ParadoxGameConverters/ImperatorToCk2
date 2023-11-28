@@ -1,0 +1,580 @@
+5363000=
+{
+	name="Ambonus"
+	culture="ghasettian"
+}
+5363001=
+{
+	name="Ambona"
+	culture="ghasettian"
+}
+5363002=
+{
+	name="Ambonii"
+	culture="ghasettian"
+}
+5363003=
+{
+	name="Ambonid"
+	culture="ghasettian"
+}
+5363004=
+{
+	name="Auaroses"
+	culture="ghasettian"
+}
+5363005=
+{
+	name="Auarosa"
+	culture="ghasettian"
+}
+5363006=
+{
+	name="Auarosii"
+	culture="ghasettian"
+}
+5363007=
+{
+	name="Auarosian"
+	culture="ghasettian"
+}
+5363008=
+{
+	name="Audaxus"
+	culture="ghasettian"
+}
+5363009=
+{
+	name="Audaxa"
+	culture="ghasettian"
+}
+5363010=
+{
+	name="Audaxii"
+	culture="ghasettian"
+}
+5363011=
+{
+	name="Audaxian"
+	culture="ghasettian"
+}
+5363012=
+{
+	name="Carosus"
+	culture="ghasettian"
+}
+5363013=
+{
+	name="Carosa"
+	culture="ghasettian"
+}
+5363014=
+{
+	name="Carosii"
+	culture="ghasettian"
+}
+5363015=
+{
+	name="Carosian"
+	culture="ghasettian"
+}
+5363016=
+{
+	name="Culchus"
+	culture="ghasettian"
+}
+5363017=
+{
+	name="Culcha"
+	culture="ghasettian"
+}
+5363018=
+{
+	name="Culchi"
+	culture="ghasettian"
+}
+5363019=
+{
+	name="Culchian"
+	culture="ghasettian"
+}
+5363020=
+{
+	name="Leukus"
+	culture="ghasettian"
+}
+5363021=
+{
+	name="Leuka"
+	culture="ghasettian"
+}
+5363022=
+{
+	name="Leuki"
+	culture="ghasettian"
+}
+5363023=
+{
+	name="Leukian"
+	culture="ghasettian"
+}
+5363024=
+{
+	name="Mandonus"
+	culture="ghasettian"
+}
+5363025=
+{
+	name="Mandonia"
+	culture="ghasettian"
+}
+5363026=
+{
+	name="Mandonii"
+	culture="ghasettian"
+}
+5363027=
+{
+	name="Mandonian"
+	culture="ghasettian"
+}
+5363028=
+{
+	name="Punicus"
+	culture="ghasettian"
+}
+5363029=
+{
+	name="Punica"
+	culture="ghasettian"
+}
+5363030=
+{
+	name="Punici"
+	culture="ghasettian"
+}
+5363031=
+{
+	name="Punician"
+	culture="ghasettian"
+}
+5363032=
+{
+	name="Tautalus"
+	culture="ghasettian"
+}
+5363033=
+{
+	name="Tautala"
+	culture="ghasettian"
+}
+5363034=
+{
+	name="Tautalii"
+	culture="ghasettian"
+}
+5363035=
+{
+	name="Tautalid"
+	culture="ghasettian"
+}
+5363036=
+{
+	name="Correius"
+	culture="ghasettian"
+}
+5363037=
+{
+	name="Correia"
+	culture="ghasettian"
+}
+5363038=
+{
+	name="Correid"
+	culture="ghasettian"
+}
+5363039=
+{
+	name="Correian"
+	culture="ghasettian"
+}
+5363040=
+{
+	name="Divicus"
+	culture="ghasettian"
+}
+5363041=
+{
+	name="Divica"
+	culture="ghasettian"
+}
+5363042=
+{
+	name="Divici"
+	culture="ghasettian"
+}
+5363043=
+{
+	name="Divicid"
+	culture="ghasettian"
+}
+5363044=
+{
+	name="Duratus"
+	culture="ghasettian"
+}
+5363045=
+{
+	name="Durata"
+	culture="ghasettian"
+}
+5363046=
+{
+	name="Duratii"
+	culture="ghasettian"
+}
+5363047=
+{
+	name="Duratian"
+	culture="ghasettian"
+}
+5363048=
+{
+	name="Elitovus"
+	culture="ghasettian"
+}
+5363049=
+{
+	name="Elitova"
+	culture="ghasettian"
+}
+5363050=
+{
+	name="Elitovii"
+	culture="ghasettian"
+}
+5363051=
+{
+	name="Elitovian"
+	culture="ghasettian"
+}
+5363052=
+{
+	name="Galbus"
+	culture="ghasettian"
+}
+5363053=
+{
+	name="Galba"
+	culture="ghasettian"
+}
+5363054=
+{
+	name="Galbi"
+	culture="ghasettian"
+}
+5363055=
+{
+	name="Galbid"
+	culture="ghasettian"
+}
+5363056=
+{
+	name="Iacus"
+	culture="ghasettian"
+}
+5363057=
+{
+	name="Iaca"
+	culture="ghasettian"
+}
+5363058=
+{
+	name="Iaci"
+	culture="ghasettian"
+}
+5363059=
+{
+	name="Iacid"
+	culture="ghasettian"
+}
+5363060=
+{
+	name="Marganus"
+	culture="ghasettian"
+}
+5363061=
+{
+	name="Margana"
+	culture="ghasettian"
+}
+5363062=
+{
+	name="Marganii"
+	culture="ghasettian"
+}
+5363063=
+{
+	name="Marganid"
+	culture="ghasettian"
+}
+5363064=
+{
+	name="Sinatus"
+	culture="ghasettian"
+}
+5363065=
+{
+	name="Sinata"
+	culture="ghasettian"
+}
+5363066=
+{
+	name="Sinatii"
+	culture="ghasettian"
+}
+5363067=
+{
+	name="Sinatid"
+	culture="ghasettian"
+}
+5363068=
+{
+	name="Vodenosus"
+	culture="ghasettian"
+}
+5363069=
+{
+	name="Vodenosa"
+	culture="ghasettian"
+}
+5363070=
+{
+	name="Vodenosii"
+	culture="ghasettian"
+}
+5363071=
+{
+	name="Vodenosian"
+	culture="ghasettian"
+}
+5363072=
+{
+	name="Indutius"
+	culture="ghasettian"
+}
+5363073=
+{
+	name="Indutia"
+	culture="ghasettian"
+}
+5363074=
+{
+	name="Indutii"
+	culture="ghasettian"
+}
+5363075=
+{
+	name="Indutian"
+	culture="ghasettian"
+}
+5363076=
+{
+	name="Dumnus"
+	culture="ghasettian"
+}
+5363077=
+{
+	name="Dumna"
+	culture="ghasettian"
+}
+5363078=
+{
+	name="Dumnii"
+	culture="ghasettian"
+}
+5363079=
+{
+	name="Dumnid"
+	culture="ghasettian"
+}
+5363080=
+{
+	name="Epatticus"
+	culture="ghasettian"
+}
+5363081=
+{
+	name="Epattica"
+	culture="ghasettian"
+}
+5363082=
+{
+	name="Epatticii"
+	culture="ghasettian"
+}
+5363083=
+{
+	name="Epatticid"
+	culture="ghasettian"
+}
+5363084=
+{
+	name="Teutomalus"
+	culture="ghasettian"
+}
+5363085=
+{
+	name="Teutomala"
+	culture="ghasettian"
+}
+5363086=
+{
+	name="Teutomalii"
+	culture="ghasettian"
+}
+5363087=
+{
+	name="Teutomalian"
+	culture="ghasettian"
+}
+5363088=
+{
+	name="Viridorrius"
+	culture="ghasettian"
+}
+5363089=
+{
+	name="Viridorria"
+	culture="ghasettian"
+}
+5363090=
+{
+	name="Viridorrii"
+	culture="ghasettian"
+}
+5363091=
+{
+	name="Viridorrian"
+	culture="ghasettian"
+}
+5363092=
+{
+	name="Magunnus"
+	culture="ghasettian"
+}
+5363093=
+{
+	name="Magunna"
+	culture="ghasettian"
+}
+5363094=
+{
+	name="Magunnii"
+	culture="ghasettian"
+}
+5363095=
+{
+	name="Magunnid"
+	culture="ghasettian"
+}
+5363096=
+{
+	name="Brennus"
+	culture="ghasettian"
+}
+5363097=
+{
+	name="Brenna"
+	culture="ghasettian"
+}
+5363098=
+{
+	name="Brennii"
+	culture="ghasettian"
+}
+5363099=
+{
+	name="Brennid"
+	culture="ghasettian"
+}
+5363100=
+{
+	name="Boius"
+	culture="ghasettian"
+}
+5363101=
+{
+	name="Boia"
+	culture="ghasettian"
+}
+5363102=
+{
+	name="Boii"
+	culture="ghasettian"
+}
+5363103=
+{
+	name="Boian"
+	culture="ghasettian"
+}
+5363104=
+{
+	name="Tannus"
+	culture="ghasettian"
+}
+5363105=
+{
+	name="Tanna"
+	culture="ghasettian"
+}
+5363106=
+{
+	name="Tanni"
+	culture="ghasettian"
+}
+5363107=
+{
+	name="Tannid"
+	culture="ghasettian"
+}
+5363108=
+{
+	name="Iccuius"
+	culture="ghasettian"
+}
+5363109=
+{
+	name="Iccuia"
+	culture="ghasettian"
+}
+5363110=
+{
+	name="Iccui"
+	culture="ghasettian"
+}
+5363111=
+{
+	name="Iccian"
+	culture="ghasettian"
+}
+5363112=
+{
+	name="Galanus"
+	culture="ghasettian"
+}
+5363113=
+{
+	name="Galana"
+	culture="ghasettian"
+}
+5363114=
+{
+	name="Galanii"
+	culture="ghasettian"
+}
+5363115=
+{
+	name="Galanid"
+	culture="ghasettian"
+}

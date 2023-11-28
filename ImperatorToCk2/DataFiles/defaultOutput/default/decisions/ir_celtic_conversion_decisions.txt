@@ -13,7 +13,7 @@ targetted_decisions = {
 			is_playable = yes
 			OR = { culture = gallic culture = lepontic culture = belgae culture = celtic_pannonian }
 			capital_scope = {
-				OR = { OR = { region = custom_irck2_persia region = world_asia_minor region = world_middle_east region = custom_irck2_egypt } region = world_asia_minor region = world_middle_east region = custom_irck2_egypt }
+				OR = { region = world_asia_minor }
 			}
 			any_realm_province = {
 				culture = galatian
@@ -26,7 +26,7 @@ targetted_decisions = {
 		allow = {
 			OR = { culture = gallic culture = lepontic culture = belgae culture = celtic_pannonian }
 			capital_scope = {
-				OR = { region = custom_irck2_persia region = world_asia_minor region = world_middle_east region = custom_irck2_egypt }
+				OR = { region = world_asia_minor }
 			}
 			any_realm_province = {
 				culture = galatian
@@ -114,6 +114,248 @@ targetted_decisions = {
 				num_culture_realm_provs = {
 					value = 10
 					culture = galatian
+				}
+			}
+		}
+	}
+
+# Gallic, Belgae, Lepontic, Noric, or Galatian character may convert to Plashurii
+	irck2_convert_to_plashurii = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			OR = { culture = gallic culture = lepontic culture = belgae culture = celtic_pannonian culture = galatian }
+			capital_scope = {
+				region = world_middle_east
+			}
+			any_realm_province = {
+				culture = plashurii
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			OR = { culture = gallic culture = lepontic culture = belgae culture = celtic_pannonian culture = galatian }
+			capital_scope = {
+				region = world_middle_east
+			}
+			any_realm_province = {
+				culture = plashurii
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = plashurii
+			}
+			culture = plashurii
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Punic ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						OR = { culture = gallic culture = lepontic culture = belgae culture = celtic_pannonian culture = galatian }
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { OR = { culture = gallic culture = lepontic culture = belgae culture = celtic_pannonian culture = galatian } }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = plashurii }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = plashurii }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = plashurii
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = plashurii
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = plashurii
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = plashurii
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = plashurii
+				}
+			}
+		}
+	}
+	
+	# Belgae character may convert to Atrebatian
+	irck2_convert_to_atrebatian = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = belgae
+			capital_scope = {
+				region = custom_irck2_britannia
+			}
+			any_realm_province = {
+				culture = atrebatian
+			}
+			#OR = {
+				#year = 425
+			#	top_liege = {
+			#		NOT = { culture = belgae }
+			#	}
+			#}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = belgae
+			capital_scope = {
+				region = custom_irck2_britannia
+			}
+			any_realm_province = {
+				culture = atrebatian
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = atrebatian
+			}
+			culture = atrebatian
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Roman ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = belgae
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = belgae }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = atrebatian }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = atrebatian }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = atrebatian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = atrebatian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = atrebatian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = atrebatian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = atrebatian
 				}
 			}
 		}

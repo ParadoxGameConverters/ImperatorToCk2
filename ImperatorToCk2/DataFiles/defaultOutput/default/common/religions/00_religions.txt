@@ -4981,6 +4981,149 @@ pagan_group = {
 		dislike_tribal_organization = yes
 		can_demand_religious_conversion = no
 	}
+	
+	bamar_pagan_reformed = {
+		graphical_culture = mongolgfx
+		secondary_event_pictures = tengri_pagan
+		interface_skin = { bon_interface taoist_interface indian_interface muslim_interface }
+
+		icon = 116
+		heresy_icon = 117
+
+		color = { 0.57 0.26 0.33 }
+		alternate_start = { always = no }
+
+		scripture_name = MDODUS
+		priest_title = LAMA
+		piety_name = KARMA
+		crusade_name = GREAT_HOLY_WAR
+
+		high_god_name = GOD_SANGPO_BUMTRI
+
+		god_names = {
+			GOD_SHENLA_OKAR GOD_YESHE_WALMO GOD_ZHANG_ZHUNG_MERI GOD_DRALHA_YESI GOD_SHINJE GOD_AMNYE_MACHEN GOD_ADI GOD_SHERAB_CHAMMA
+		}
+
+		evil_god_names = {
+			GOD_THE_EVIL_ONES
+		}
+
+		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
+
+		#unit_modifier = {
+		#	garrison_size = 0.4
+		#
+		#	key = "DEF_RELIGION"
+		#}
+		#unit_home_modifier = {
+		#	land_morale = 0.8
+		#	light_infantry_defensive = 0.8
+		#	heavy_infantry_defensive = 0.8
+		#	pikemen_defensive = 0.8
+		#	light_cavalry_defensive = 0.8
+		#	knights_defensive = 0.8
+		#	archers_defensive = 0.8
+		#	horse_archers_defensive = 0.8
+		#	camel_cavalry_defensive = 0.8
+		#	war_elephants_defensive = 0.8
+		#
+		#	garrison_size = 0.4
+		#
+		#	key = "DEF_RELIGION_HOME_TERRITORY"
+		#}
+
+		#has_heir_designation = yes
+		priests_can_inherit = no
+		defensive_attrition = yes
+		#feminist = yes # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
+		female_temple_holders = yes
+		max_consorts = 3
+		women_can_take_consorts = yes
+		allow_looting = yes
+
+		hard_to_convert = yes
+
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+
+		intermarry = indian_group
+		intermarry = zoroastrian_group
+		intermarry = nestorian
+
+		dislike_tribal_organization = yes
+		allow_in_ruler_designer = no
+	}
+
+	bamar_pagan = { #Natic
+		graphical_culture = mongolgfx
+		secondary_event_pictures = tengri_pagan
+		interface_skin = { bon_interface taoist_interface indian_interface muslim_interface }
+
+		icon = 115
+		heresy_icon = 117
+
+		color = { 0.47 0.16 0.23 }
+
+		scripture_name = MDODUS
+		priest_title = LAMA
+		piety_name = KARMA
+
+		high_god_name = GOD_SANGPO_BUMTRI
+
+		god_names = {
+			GOD_SHENLA_OKAR GOD_YESHE_WALMO GOD_ZHANG_ZHUNG_MERI GOD_DRALHA_YESI GOD_SHINJE GOD_AMNYE_MACHEN GOD_ADI GOD_SHERAB_CHAMMA
+		}
+
+		evil_god_names = {
+			GOD_THE_EVIL_ONES
+		}
+
+		unit_modifier = {
+			garrison_size = 0.4
+
+			key = "DEF_RELIGION"
+		}
+		unit_home_modifier = {
+			land_morale = 0.8
+			light_infantry_defensive = 0.8
+			heavy_infantry_defensive = 0.8
+			pikemen_defensive = 0.8
+			light_cavalry_defensive = 0.8
+			knights_defensive = 0.8
+			archers_defensive = 0.8
+			horse_archers_defensive = 0.8
+			camel_cavalry_defensive = 0.8
+			war_elephants_defensive = 0.8
+
+			garrison_size = 0.4
+
+			key = "DEF_RELIGION_HOME_TERRITORY"
+		}
+
+		#has_heir_designation = yes
+		priests_can_inherit = no
+		defensive_attrition = yes
+		#feminist = yes # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
+		female_temple_holders = yes
+		max_consorts = 3
+		women_can_take_consorts = yes
+		allow_looting = yes
+
+		hard_to_convert = yes
+
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+
+		intermarry = indian_group
+		intermarry = zoroastrian_group
+		intermarry = nestorian
+
+		reformed = bamar_pagan_reformed
+
+		dislike_tribal_organization = yes
+		can_demand_religious_conversion = no
+	}
 }
 
 zoroastrian_group = {
@@ -5039,6 +5182,7 @@ zoroastrian_group = {
 		intermarry = mazdaki
 		intermarry = manichean
 		intermarry = khurmazta
+		intermarry = mithraic
 
 		intermarry = zun_pagan
 		intermarry = zun_pagan_reformed
@@ -5048,6 +5192,8 @@ zoroastrian_group = {
 		intermarry = buddhist
 		intermarry = tengri_pagan
 		intermarry = tengri_pagan_reformed
+		intermarry = voxite
+		intermarry = voxite_reformed
 	}
 
 	mazdaki = {
@@ -5085,6 +5231,7 @@ zoroastrian_group = {
 		intermarry = zoroastrian
 		intermarry = manichean
 		intermarry = khurmazta
+		intermarry = mithraic
 
 		intermarry = zun_pagan
 		intermarry = zun_pagan_reformed
@@ -5094,6 +5241,8 @@ zoroastrian_group = {
 		intermarry = buddhist
 		intermarry = tengri_pagan
 		intermarry = tengri_pagan_reformed
+		intermarry = voxite
+		intermarry = voxite_reformed
 	}
 
 	manichean = {
@@ -5138,6 +5287,7 @@ zoroastrian_group = {
 		intermarry = zoroastrian
 		intermarry = mazdaki
 		intermarry = khurmazta
+		intermarry = mithraic
 
 
 		intermarry = zun_pagan
@@ -5149,6 +5299,8 @@ zoroastrian_group = {
 		intermarry = buddhist
 		intermarry = tengri_pagan
 		intermarry = tengri_pagan_reformed
+		intermarry = voxite
+		intermarry = voxite_reformed
 	}
 
 	khurmazta = {
@@ -5187,6 +5339,7 @@ zoroastrian_group = {
 		intermarry = zoroastrian
 		intermarry = mazdaki
 		intermarry = manichean
+		intermarry = mithraic
 
 
 		intermarry = zun_pagan
@@ -5197,6 +5350,62 @@ zoroastrian_group = {
 		intermarry = buddhist
 		intermarry = tengri_pagan
 		intermarry = tengri_pagan_reformed
+		intermarry = voxite
+		intermarry = voxite_reformed
+	}
+	
+	mithraic = {
+		graphical_culture = persiangfx
+		secondary_event_pictures = sunni
+
+		icon = 10
+		heresy_icon = 12
+
+		color = { 0.68 0.87 0.18 }
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_GATHAS
+		priest_title = HERBAD
+
+		high_god_name = GOD_MITHRAS
+
+		god_names = {
+			GOD_AHURA_MAZDA GOD_ZURVAN GOD_OHRMAZD GOD_MANAH PROPHET_ZOROASTER
+		}
+		evil_god_names = {
+			AHRIMAN ANGRA_MAINYU
+		}
+		
+		parent = zoroastrian
+
+		can_grant_divorce = yes
+		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
+		can_grant_invasion_cb = invasion
+
+		max_consorts = 3 # Can take concubines
+
+		divine_blood = yes # Sacred Xwedodah close-kin marriage mechanics
+		pc_marriage = yes # Parent/child marriage allowed
+		bs_marriage = yes # Brother/sister marriage allowed
+
+		religious_clothing_head = 5
+		religious_clothing_priest = 5
+
+		intermarry = zoroastrian
+		intermarry = mazdaki
+		intermarry = manichean
+		intermarry = khurmazta
+
+		intermarry = zun_pagan
+		intermarry = zun_pagan_reformed
+		intermarry = bon
+		intermarry = bon_reformed
+		intermarry = nestorian
+		intermarry = buddhist
+		intermarry = tengri_pagan
+		intermarry = tengri_pagan_reformed
+		intermarry = voxite
+		intermarry = voxite_reformed
 	}
 }
 
@@ -5474,6 +5683,51 @@ indian_group = {
 
 		intermarry = buddhist
 		intermarry = hindu
+		intermarry = zun_pagan
+		intermarry = zun_pagan_reformed
+		intermarry = bon
+		intermarry = bon_reformed
+	}
+	ajivika = {
+		graphical_culture = jaingfx
+		secondary_event_pictures = sunni
+
+		#pacifist = yes # Makes the AI less likely to start wars, plots and factions
+
+		icon = 113
+		heresy_icon = 114
+
+		color = { 0.1 0.6 0.0 }
+
+		high_god_name = GOD_THE_TIRTHANKARAS
+
+		god_names = {
+			GOD_THE_TIRTHANKARAS GOD_RISHABH GOD_AJINATH GOD_SAMBHAVANATH  # Add more Tirthankaras
+		}
+
+		evil_god_names = {
+			THE_PUNISHERS
+		}
+
+		has_heir_designation = yes
+		can_grant_divorce = yes
+		priests_can_inherit = no
+		peace_piety_gain = 1.0 # Gains 1 piety each month while at peace
+		max_consorts = 3
+		castes = yes
+
+		short_reign_opinion_year_mult = 0 # No short reign penalty
+
+		religious_clothing_head = 9
+		religious_clothing_priest = 9
+
+		scripture_name = THE_ANGAS_SUTRAS
+		priest_title = NIRGRANTHA
+		piety_name = PURITY
+
+		intermarry = buddhist
+		intermarry = hindu
+		intermarry = jain
 		intermarry = zun_pagan
 		intermarry = zun_pagan_reformed
 		intermarry = bon

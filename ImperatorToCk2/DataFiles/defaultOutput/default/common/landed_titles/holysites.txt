@@ -332,3 +332,137 @@ c_dublin ={ #In reference to the original Mayan mod that placed the Mayans in Ir
 	holy_site = mayan_pagan
 	holy_site = mayan_reformed
 }
+
+#Ajivika
+
+c_nanded ={
+	holy_site = ajivika
+}
+c_jaunpur ={
+	holy_site = ajivika
+}
+c_candhoba ={
+	holy_site = ajivika
+}
+c_nandagiri ={
+	holy_site = ajivika
+}
+c_naimisa ={
+	holy_site = ajivika
+}
+
+#Illyric
+
+c_istria ={
+	holy_site = illyric
+	holy_site = illyric_reformed
+}
+c_zachlumia ={
+	holy_site = illyric
+	holy_site = illyric_reformed
+}
+c_astibus ={
+	holy_site = illyric
+	holy_site = illyric_reformed
+}
+c_fejer ={
+	holy_site = illyric
+	holy_site = illyric_reformed
+}
+c_lecce ={ #Messapian homeland
+	holy_site = illyric
+	holy_site = illyric_reformed
+}
+
+#Marite
+
+c_navarra={
+	holy_site = marite
+	holy_site = marite_reformed
+}
+c_urgell={
+	holy_site = marite
+	holy_site = marite_reformed
+}
+c_castellon={
+	holy_site = marite
+	holy_site = marite_reformed
+}
+c_granada={
+	holy_site = marite
+	holy_site = marite_reformed
+}
+c_bordeaux={
+	holy_site = marite
+	holy_site = marite_reformed
+}
+
+#Waaqi
+
+c_socotra={
+	holy_site = waaqi
+	holy_site = waaqi_reformed
+}
+c_berbera={
+	holy_site = waaqi
+	holy_site = waaqi_reformed
+}
+c_tadjoura={
+	holy_site = waaqi
+	holy_site = waaqi_reformed
+}
+c_gezira={ #No historical basis
+	holy_site = waaqi
+	holy_site = waaqi_reformed
+}
+c_aydhab={ #Blemmyians
+	holy_site = waaqi
+	holy_site = waaqi_reformed
+}
+
+#Nuragic
+
+c_cagliari={
+	holy_site = nuragic
+	holy_site = nuragic_reformed
+}
+c_gallura={ #Holy site of Sardo
+	holy_site = nuragic
+	holy_site = nuragic_reformed
+}
+c_mallorca={ #Canaanite holy site in Balearic islands
+	holy_site = nuragic
+	holy_site = nuragic_reformed
+}
+c_tunis={ #No historical basis
+	holy_site = nuragic
+	holy_site = nuragic_reformed
+}
+c_siracusa={ #No historical basis
+	holy_site = nuragic
+	holy_site = nuragic_reformed
+}
+
+#Natic
+
+c_samatata={ #Closest to Burma
+	holy_site = bamar_pagan
+	holy_site = bamar_pagan_reformed
+}
+c_kundina={ #Closest to Burma
+	holy_site = bamar_pagan
+	holy_site = bamar_pagan_reformed
+}
+c_varanasi={ #No historical basis
+	holy_site = bamar_pagan
+	holy_site = bamar_pagan_reformed
+}
+c_rajrappa={ #No historical basis
+	holy_site = bamar_pagan
+	holy_site = bamar_pagan_reformed
+}
+c_lhasa={ #No historical basis
+	holy_site = bamar_pagan
+	holy_site = bamar_pagan_reformed
+}
+

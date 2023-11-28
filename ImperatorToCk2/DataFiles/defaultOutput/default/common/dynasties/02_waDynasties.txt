@@ -1,0 +1,36 @@
+#From Tianxia
+
+5395098 = {
+	name = "Palaung"
+	culture = wa
+}
+
+5395099 = {
+	name = "Riang"
+	culture = wa
+}
+
+5395100 = {
+	name = "Angku"
+	culture = wa
+}
+
+5395101 = {
+	name = "Lamet"
+	culture = wa
+}
+
+5395102 = {
+	name = "Blang"
+	culture = wa
+}
+
+5395103 = {
+	name = "Lawa"
+	culture = wa
+}
+
+5395104 = {
+	name = "Wa"
+	culture = wa
+}

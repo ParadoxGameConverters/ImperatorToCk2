@@ -1,0 +1,480 @@
+5387000=
+{
+	name="Tuome"
+	culture="wigazan"
+}
+5387001=
+{
+	name="Tuoma"
+	culture="wigazan"
+}
+5387002=
+{
+	name="Tuomes"
+	culture="wigazan"
+}
+5387003=
+{
+	name="Tuomid"
+	culture="wigazan"
+}
+5387004=
+{
+	name="Andicus"
+	culture="wigazan"
+}
+5387005=
+{
+	name="Andica"
+	culture="wigazan"
+}
+5387006=
+{
+	name="Andices"
+	culture="wigazan"
+}
+5387007=
+{
+	name="Andicid"
+	culture="wigazan"
+}
+5387008=
+{
+	name="Dagaricus"
+	culture="wigazan"
+}
+5387009=
+{
+	name="Dagarica"
+	culture="wigazan"
+}
+5387010=
+{
+	name="Dagarices"
+	culture="wigazan"
+}
+5387011=
+{
+	name="Dagaricid"
+	culture="wigazan"
+}
+5387012=
+{
+	name="Gelimerus"
+	culture="wigazan"
+}
+5387013=
+{
+	name="Gelimera"
+	culture="wigazan"
+}
+5387014=
+{
+	name="Gelimeres"
+	culture="wigazan"
+}
+5387015=
+{
+	name="Gelimerian"
+	culture="wigazan"
+}
+5387016=
+{
+	name="Geroldus"
+	culture="wigazan"
+}
+5387017=
+{
+	name="Gerolda"
+	culture="wigazan"
+}
+5387018=
+{
+	name="Geroldes"
+	culture="wigazan"
+}
+5387019=
+{
+	name="Geroldian"
+	culture="wigazan"
+}
+5387020=
+{
+	name="Malaricus"
+	culture="wigazan"
+}
+5387021=
+{
+	name="Malarica"
+	culture="wigazan"
+}
+5387022=
+{
+	name="Malarici"
+	culture="wigazan"
+}
+5387023=
+{
+	name="Malaricid"
+	culture="wigazan"
+}
+5387024=
+{
+	name="Marbodus"
+	culture="wigazan"
+}
+5387025=
+{
+	name="Marboda"
+	culture="wigazan"
+}
+5387026=
+{
+	name="Marbodes"
+	culture="wigazan"
+}
+5387027=
+{
+	name="Marbodian"
+	culture="wigazan"
+}
+5387028=
+{
+	name="Theodus"
+	culture="wigazan"
+}
+5387029=
+{
+	name="Theoda"
+	culture="wigazan"
+}
+5387030=
+{
+	name="Theodes"
+	culture="wigazan"
+}
+5387031=
+{
+	name="Theodian"
+	culture="wigazan"
+}
+5387032=
+{
+	name="Marcolus"
+	culture="wigazan"
+}
+5387033=
+{
+	name="Marcola"
+	culture="wigazan"
+}
+5387034=
+{
+	name="Marcoles"
+	culture="wigazan"
+}
+5387035=
+{
+	name="Marcolian"
+	culture="wigazan"
+}
+5387036=
+{
+	name="Sigid"
+	culture="wigazan"
+}
+5387037=
+{
+	name="Sigida"
+	culture="wigazan"
+}
+5387038=
+{
+	name="Sigi"
+	culture="wigazan"
+}
+5387039=
+{
+	name="Sigid"
+	culture="wigazan"
+}
+5387040=
+{
+	name="Rigleikus"
+	culture="wigazan"
+}
+5387041=
+{
+	name="Rigleika"
+	culture="wigazan"
+}
+5387042=
+{
+	name="Rigleikes"
+	culture="wigazan"
+}
+5387043=
+{
+	name="Rigleikid"
+	culture="wigazan"
+}
+5387044=
+{
+	name="Tancreid"
+	culture="wigazan"
+}
+5387045=
+{
+	name="Tancra"
+	culture="wigazan"
+}
+5387046=
+{
+	name="Tancri"
+	culture="wigazan"
+}
+5387047=
+{
+	name="Tancrid"
+	culture="wigazan"
+}
+5387048=
+{
+	name="Malogrus"
+	culture="wigazan"
+}
+5387049=
+{
+	name="Malogra"
+	culture="wigazan"
+}
+5387050=
+{
+	name="Malogri"
+	culture="wigazan"
+}
+5387051=
+{
+	name="Malogrian"
+	culture="wigazan"
+}
+5387052=
+{
+	name="Gundrud"
+	culture="wigazan"
+}
+5387053=
+{
+	name="Gundruda"
+	culture="wigazan"
+}
+5387054=
+{
+	name="Gundrudii"
+	culture="wigazan"
+}
+5387055=
+{
+	name="Gundrid"
+	culture="wigazan"
+}
+5387056=
+{
+	name="Segimandrus"
+	culture="wigazan"
+}
+5387057=
+{
+	name="Segimandra"
+	culture="wigazan"
+}
+5387058=
+{
+	name="Segimandri"
+	culture="wigazan"
+}
+5387059=
+{
+	name="Segimandrid"
+	culture="wigazan"
+}
+5387060=
+{
+	name="Dwaldus"
+	culture="wigazan"
+}
+5387061=
+{
+	name="Dwalda"
+	culture="wigazan"
+}
+5387062=
+{
+	name="Dwaldes"
+	culture="wigazan"
+}
+5387063=
+{
+	name="Dwaldid"
+	culture="wigazan"
+}
+5387064=
+{
+	name="Merobaudes"
+	culture="wigazan"
+}
+5387065=
+{
+	name="Merobauda"
+	culture="wigazan"
+}
+5387066=
+{
+	name="Merobaudes"
+	culture="wigazan"
+}
+5387067=
+{
+	name="Merobaudian"
+	culture="wigazan"
+}
+5387068=
+{
+	name="Eidgid"
+	culture="wigazan"
+}
+5387069=
+{
+	name="Eidgida"
+	culture="wigazan"
+}
+5387070=
+{
+	name="Eidiges"
+	culture="wigazan"
+}
+5387071=
+{
+	name="Eidigian"
+	culture="wigazan"
+}
+5387072=
+{
+	name="Gerhaucres"
+	culture="wigazan"
+}
+5387073=
+{
+	name="Gerhaucra"
+	culture="wigazan"
+}
+5387074=
+{
+	name="Gerhaucres"
+	culture="wigazan"
+}
+5387075=
+{
+	name="Gerhaucrian"
+	culture="wigazan"
+}
+5387076=
+{
+	name="Hildganes"
+	culture="wigazan"
+}
+5387077=
+{
+	name="Hildgana"
+	culture="wigazan"
+}
+5387078=
+{
+	name="Hildganes"
+	culture="wigazan"
+}
+5387079=
+{
+	name="Hildganid"
+	culture="wigazan"
+}
+5387080=
+{
+	name="Hramdrid"
+	culture="wigazan"
+}
+5387081=
+{
+	name="Hramdra"
+	culture="wigazan"
+}
+5387082=
+{
+	name="Hramdri"
+	culture="wigazan"
+}
+5387083=
+{
+	name="Hramrid"
+	culture="wigazan"
+}
+5387084=
+{
+	name="Ingohdres"
+	culture="wigazan"
+}
+5387085=
+{
+	name="Ingohdra"
+	culture="wigazan"
+}
+5387086=
+{
+	name="Ingohdres"
+	culture="wigazan"
+}
+5387087=
+{
+	name="Ingohdrid"
+	culture="wigazan"
+}
+5387088=
+{
+	name="Ingrammus"
+	culture="wigazan"
+}
+5387089=
+{
+	name="Ingramma"
+	culture="wigazan"
+}
+5387090=
+{
+	name="Ingrammii"
+	culture="wigazan"
+}
+5387091=
+{
+	name="Ingrammid"
+	culture="wigazan"
+}
+5387092=
+{
+	name="Malactus"
+	culture="wigazan"
+}
+5387093=
+{
+	name="Malacta"
+	culture="wigazan"
+}
+5387094=
+{
+	name="Malactii"
+	culture="wigazan"
+}
+5387095=
+{
+	name="Malactian"
+	culture="wigazan"
+}

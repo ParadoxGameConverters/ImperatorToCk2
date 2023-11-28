@@ -84,6 +84,9 @@
     <CopyFileToFolders Include="DataFiles\provinceConversionCore.txt">
       <Filter>Data Files\Configuration</Filter>
     </CopyFileToFolders>
+    <CopyFileToFolders Include="DataFiles\provinceConversionInvictus.txt">
+      <Filter>Data Files\Configuration</Filter>
+    </CopyFileToFolders>
     <CopyFileToFolders Include="DataFiles\provinceNames.txt">
       <Filter>Data Files\Configuration</Filter>
     </CopyFileToFolders>

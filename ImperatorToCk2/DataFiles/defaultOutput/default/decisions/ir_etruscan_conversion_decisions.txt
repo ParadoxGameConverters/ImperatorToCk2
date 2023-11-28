@@ -1,0 +1,1402 @@
+targetted_decisions = {
+
+	# Etruscan character may convert to lanistian
+	irck2_convert_to_lanistian = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = etruscan
+			capital_scope = {
+				OR = {
+					region = custom_irck2_dalmatia
+					region = custom_irck2_romania
+				}
+			}
+			any_realm_province = {
+				culture = lanistian
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = etruscan }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = etruscan
+			capital_scope = {
+				OR = {
+					region = custom_irck2_dalmatia
+					region = custom_irck2_romania
+				}
+			}
+			any_realm_province = {
+				culture = lanistian
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = lanistian
+			}
+			culture = lanistian
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Etruscan ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = etruscan
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = etruscan }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = lanistian }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = lanistian }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = lanistian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = lanistian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = lanistian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = lanistian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = lanistian
+				}
+			}
+		}
+	}
+
+
+	# Etruscan character may convert to qutumi
+	irck2_convert_to_qutumi = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = etruscan
+			capital_scope = {
+				OR = {
+					region = custom_irck2_france
+					region = custom_irck2_occitania
+				}
+			}
+			any_realm_province = {
+				culture = qutumi
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = etruscan }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = etruscan
+			capital_scope = {
+				OR = {
+					region = custom_irck2_france
+					region = custom_irck2_occitania
+				}
+			}
+			any_realm_province = {
+				culture = qutumi
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = qutumi
+			}
+			culture = qutumi
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Etruscan ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = etruscan
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = etruscan }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = qutumi }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = qutumi }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = qutumi
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = qutumi
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = qutumi
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = qutumi
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = qutumi
+				}
+			}
+		}
+	}
+
+
+	# Etruscan character may convert to Carthago Novan
+	irck2_convert_to_tulari = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = etruscan
+			capital_scope = {
+				OR = {
+					region = custom_irck2_catalonia
+					region = custom_irck2_spain
+					region = custom_irck2_portugal
+				}
+			}
+			any_realm_province = {
+				culture = tulari
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = etruscan }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = etruscan
+			capital_scope = {
+				OR = {
+					region = custom_irck2_catalonia
+					region = custom_irck2_spain
+					region = custom_irck2_portugal
+				}
+			}
+			any_realm_province = {
+				culture = tulari
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = tulari
+			}
+			culture = tulari
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Etruscan ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = etruscan
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = etruscan }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = tulari }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = tulari }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = tulari
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = tulari
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = tulari
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = tulari
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = tulari
+				}
+			}
+		}
+	}
+
+
+	# Etruscan character may convert to rasnan
+	irck2_convert_to_rasnan = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = etruscan
+			capital_scope = {
+				region = custom_irck2_sardinia
+			}
+			any_realm_province = {
+				culture = rasnan
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = etruscan }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = etruscan
+			capital_scope = {
+				region = custom_irck2_sardinia
+			}
+			any_realm_province = {
+				culture = rasnan
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = rasnan
+			}
+			culture = rasnan
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Etruscan ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = etruscan
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = etruscan }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = rasnan }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = rasnan }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = rasnan
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = rasnan
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = rasnan
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = rasnan
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = rasnan
+				}
+			}
+		}
+	}
+
+
+	# Etruscan character may convert to lemnian
+	irck2_convert_to_lemnian = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = etruscan
+			capital_scope = {
+				region = custom_irck2_greece
+			}
+			any_realm_province = {
+				culture = lemnian
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = etruscan }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = etruscan
+			capital_scope = {
+				region = custom_irck2_greece
+			}
+			any_realm_province = {
+				culture = lemnian
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = lemnian
+			}
+			culture = lemnian
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Etruscan ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = etruscan
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = etruscan }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = lemnian }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = lemnian }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = lemnian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = lemnian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = lemnian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = lemnian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = lemnian
+				}
+			}
+		}
+	}
+
+	# Etruscan character may convert to nerian
+	irck2_convert_to_nerian = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = etruscan
+			capital_scope = {
+				region = custom_irck2_britannia
+			}
+			any_realm_province = {
+				culture = nerian
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = etruscan }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = etruscan
+			capital_scope = {
+				region = custom_irck2_britannia
+			}
+			any_realm_province = {
+				culture = nerian
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = nerian
+			}
+			culture = nerian
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Etruscan ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = etruscan
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = etruscan }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = nerian }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = nerian }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = nerian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = nerian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = nerian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = nerian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = nerian
+				}
+			}
+		}
+	}
+
+	# Etruscan character may convert to karthazian
+	irck2_convert_to_karthazian = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = etruscan
+			capital_scope = {
+				region = custom_irck2_north_africa
+			}
+			any_realm_province = {
+				culture = karthazian
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = etruscan }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = etruscan
+			capital_scope = {
+				region = custom_irck2_north_africa
+			}
+			any_realm_province = {
+				culture = karthazian
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = karthazian
+			}
+			culture = karthazian
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Etruscan ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = etruscan
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = etruscan }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = karthazian }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = karthazian }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = karthazian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = karthazian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = karthazian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = karthazian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = karthazian
+				}
+			}
+		}
+	}
+
+	# Etruscan character may convert to fasenian
+	irck2_convert_to_fasenian = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = etruscan
+			capital_scope = {
+				region = custom_irck2_levant
+			}
+			any_realm_province = {
+				culture = fasenian
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = etruscan }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = etruscan
+			capital_scope = {
+				region = custom_irck2_levant
+			}
+			any_realm_province = {
+				culture = fasenian
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = fasenian
+			}
+			culture = fasenian
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Etruscan ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = etruscan
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = etruscan }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = fasenian }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = fasenian }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = fasenian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = fasenian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = fasenian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = fasenian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = fasenian
+				}
+			}
+		}
+	}
+	
+# Etruscan character may convert to falan
+	irck2_convert_to_falan = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = etruscan
+			capital_scope = {
+				OR = {
+					region = custom_irck2_germania
+					region = world_europe_north
+				}
+			}
+			any_realm_province = {
+				culture = falan
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = etruscan }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = etruscan
+			capital_scope = {
+				OR = {
+					region = custom_irck2_germania
+					region = world_europe_north
+				}
+			}
+			any_realm_province = {
+				culture = falan
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = falan
+			}
+			culture = falan
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Etruscan ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = etruscan
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = etruscan }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = falan }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = falan }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = falan
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = falan
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = falan
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = falan
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = falan
+				}
+			}
+		}
+	}
+	
+# Etruscan character may convert to sazlei
+	irck2_convert_to_sazlei = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = etruscan
+			capital_scope = {
+				region = custom_irck2_poland
+			}
+			any_realm_province = {
+				culture = sazlei
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = etruscan }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = etruscan
+			capital_scope = {
+				region = custom_irck2_poland
+			}
+			any_realm_province = {
+				culture = sazlei
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = sazlei
+			}
+			culture = sazlei
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Etruscan ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = etruscan
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = etruscan }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = sazlei }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = sazlei }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = sazlei
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = sazlei
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = sazlei
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = sazlei
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = sazlei
+				}
+			}
+		}
+	}
+
+	# Etruscan character may convert to mutnian
+	irck2_convert_to_mutnian = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = etruscan
+			capital_scope = {
+				region = custom_irck2_egypt
+			}
+			any_realm_province = {
+				culture = mutnian
+			}
+			OR = {
+				year = 500
+				top_liege = {
+					NOT = { culture = etruscan }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = etruscan
+			capital_scope = {
+				region = custom_irck2_egypt
+			}
+			any_realm_province = {
+				culture = mutnian
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = mutnian
+			}
+			culture = mutnian
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Etruscan ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = etruscan
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = etruscan }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = mutnian }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = mutnian }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = mutnian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = mutnian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = mutnian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = mutnian
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = mutnian
+				}
+			}
+		}
+	}
+
+
+#####################################################################
+#End Bracket
+#####################################################################
+
+}

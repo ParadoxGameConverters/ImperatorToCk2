@@ -1,0 +1,580 @@
+5389000=
+{
+	name="Ambonus"
+	culture="atrebatian"
+}
+5389001=
+{
+	name="Ambona"
+	culture="atrebatian"
+}
+5389002=
+{
+	name="Ambonii"
+	culture="atrebatian"
+}
+5389003=
+{
+	name="Ambonid"
+	culture="atrebatian"
+}
+5389004=
+{
+	name="Auaroses"
+	culture="atrebatian"
+}
+5389005=
+{
+	name="Auarosa"
+	culture="atrebatian"
+}
+5389006=
+{
+	name="Auarosii"
+	culture="atrebatian"
+}
+5389007=
+{
+	name="Auarosian"
+	culture="atrebatian"
+}
+5389008=
+{
+	name="Audaxus"
+	culture="atrebatian"
+}
+5389009=
+{
+	name="Audaxa"
+	culture="atrebatian"
+}
+5389010=
+{
+	name="Audaxii"
+	culture="atrebatian"
+}
+5389011=
+{
+	name="Audaxian"
+	culture="atrebatian"
+}
+5389012=
+{
+	name="Carosus"
+	culture="atrebatian"
+}
+5389013=
+{
+	name="Carosa"
+	culture="atrebatian"
+}
+5389014=
+{
+	name="Carosii"
+	culture="atrebatian"
+}
+5389015=
+{
+	name="Carosian"
+	culture="atrebatian"
+}
+5389016=
+{
+	name="Culchus"
+	culture="atrebatian"
+}
+5389017=
+{
+	name="Culcha"
+	culture="atrebatian"
+}
+5389018=
+{
+	name="Culchi"
+	culture="atrebatian"
+}
+5389019=
+{
+	name="Culchian"
+	culture="atrebatian"
+}
+5389020=
+{
+	name="Leukus"
+	culture="atrebatian"
+}
+5389021=
+{
+	name="Leuka"
+	culture="atrebatian"
+}
+5389022=
+{
+	name="Leuki"
+	culture="atrebatian"
+}
+5389023=
+{
+	name="Leukian"
+	culture="atrebatian"
+}
+5389024=
+{
+	name="Mandonus"
+	culture="atrebatian"
+}
+5389025=
+{
+	name="Mandonia"
+	culture="atrebatian"
+}
+5389026=
+{
+	name="Mandonii"
+	culture="atrebatian"
+}
+5389027=
+{
+	name="Mandonian"
+	culture="atrebatian"
+}
+5389028=
+{
+	name="Punicus"
+	culture="atrebatian"
+}
+5389029=
+{
+	name="Punica"
+	culture="atrebatian"
+}
+5389030=
+{
+	name="Punici"
+	culture="atrebatian"
+}
+5389031=
+{
+	name="Punician"
+	culture="atrebatian"
+}
+5389032=
+{
+	name="Tautalus"
+	culture="atrebatian"
+}
+5389033=
+{
+	name="Tautala"
+	culture="atrebatian"
+}
+5389034=
+{
+	name="Tautalii"
+	culture="atrebatian"
+}
+5389035=
+{
+	name="Tautalid"
+	culture="atrebatian"
+}
+5389036=
+{
+	name="Correius"
+	culture="atrebatian"
+}
+5389037=
+{
+	name="Correia"
+	culture="atrebatian"
+}
+5389038=
+{
+	name="Correid"
+	culture="atrebatian"
+}
+5389039=
+{
+	name="Correian"
+	culture="atrebatian"
+}
+5389040=
+{
+	name="Divicus"
+	culture="atrebatian"
+}
+5389041=
+{
+	name="Divica"
+	culture="atrebatian"
+}
+5389042=
+{
+	name="Divici"
+	culture="atrebatian"
+}
+5389043=
+{
+	name="Divicid"
+	culture="atrebatian"
+}
+5389044=
+{
+	name="Duratus"
+	culture="atrebatian"
+}
+5389045=
+{
+	name="Durata"
+	culture="atrebatian"
+}
+5389046=
+{
+	name="Duratii"
+	culture="atrebatian"
+}
+5389047=
+{
+	name="Duratian"
+	culture="atrebatian"
+}
+5389048=
+{
+	name="Elitovus"
+	culture="atrebatian"
+}
+5389049=
+{
+	name="Elitova"
+	culture="atrebatian"
+}
+5389050=
+{
+	name="Elitovii"
+	culture="atrebatian"
+}
+5389051=
+{
+	name="Elitovian"
+	culture="atrebatian"
+}
+5389052=
+{
+	name="Galbus"
+	culture="atrebatian"
+}
+5389053=
+{
+	name="Galba"
+	culture="atrebatian"
+}
+5389054=
+{
+	name="Galbi"
+	culture="atrebatian"
+}
+5389055=
+{
+	name="Galbid"
+	culture="atrebatian"
+}
+5389056=
+{
+	name="Iacus"
+	culture="atrebatian"
+}
+5389057=
+{
+	name="Iaca"
+	culture="atrebatian"
+}
+5389058=
+{
+	name="Iaci"
+	culture="atrebatian"
+}
+5389059=
+{
+	name="Iacid"
+	culture="atrebatian"
+}
+5389060=
+{
+	name="Marganus"
+	culture="atrebatian"
+}
+5389061=
+{
+	name="Margana"
+	culture="atrebatian"
+}
+5389062=
+{
+	name="Marganii"
+	culture="atrebatian"
+}
+5389063=
+{
+	name="Marganid"
+	culture="atrebatian"
+}
+5389064=
+{
+	name="Sinatus"
+	culture="atrebatian"
+}
+5389065=
+{
+	name="Sinata"
+	culture="atrebatian"
+}
+5389066=
+{
+	name="Sinatii"
+	culture="atrebatian"
+}
+5389067=
+{
+	name="Sinatid"
+	culture="atrebatian"
+}
+5389068=
+{
+	name="Vodenosus"
+	culture="atrebatian"
+}
+5389069=
+{
+	name="Vodenosa"
+	culture="atrebatian"
+}
+5389070=
+{
+	name="Vodenosii"
+	culture="atrebatian"
+}
+5389071=
+{
+	name="Vodenosian"
+	culture="atrebatian"
+}
+5389072=
+{
+	name="Indutius"
+	culture="atrebatian"
+}
+5389073=
+{
+	name="Indutia"
+	culture="atrebatian"
+}
+5389074=
+{
+	name="Indutii"
+	culture="atrebatian"
+}
+5389075=
+{
+	name="Indutian"
+	culture="atrebatian"
+}
+5389076=
+{
+	name="Dumnus"
+	culture="atrebatian"
+}
+5389077=
+{
+	name="Dumna"
+	culture="atrebatian"
+}
+5389078=
+{
+	name="Dumnii"
+	culture="atrebatian"
+}
+5389079=
+{
+	name="Dumnid"
+	culture="atrebatian"
+}
+5389080=
+{
+	name="Epatticus"
+	culture="atrebatian"
+}
+5389081=
+{
+	name="Epattica"
+	culture="atrebatian"
+}
+5389082=
+{
+	name="Epatticii"
+	culture="atrebatian"
+}
+5389083=
+{
+	name="Epatticid"
+	culture="atrebatian"
+}
+5389084=
+{
+	name="Teutomalus"
+	culture="atrebatian"
+}
+5389085=
+{
+	name="Teutomala"
+	culture="atrebatian"
+}
+5389086=
+{
+	name="Teutomalii"
+	culture="atrebatian"
+}
+5389087=
+{
+	name="Teutomalian"
+	culture="atrebatian"
+}
+5389088=
+{
+	name="Viridorrius"
+	culture="atrebatian"
+}
+5389089=
+{
+	name="Viridorria"
+	culture="atrebatian"
+}
+5389090=
+{
+	name="Viridorrii"
+	culture="atrebatian"
+}
+5389091=
+{
+	name="Viridorrian"
+	culture="atrebatian"
+}
+5389092=
+{
+	name="Magunnus"
+	culture="atrebatian"
+}
+5389093=
+{
+	name="Magunna"
+	culture="atrebatian"
+}
+5389094=
+{
+	name="Magunnii"
+	culture="atrebatian"
+}
+5389095=
+{
+	name="Magunnid"
+	culture="atrebatian"
+}
+5389096=
+{
+	name="Brennus"
+	culture="atrebatian"
+}
+5389097=
+{
+	name="Brenna"
+	culture="atrebatian"
+}
+5389098=
+{
+	name="Brennii"
+	culture="atrebatian"
+}
+5389099=
+{
+	name="Brennid"
+	culture="atrebatian"
+}
+5389100=
+{
+	name="Boius"
+	culture="atrebatian"
+}
+5389101=
+{
+	name="Boia"
+	culture="atrebatian"
+}
+5389102=
+{
+	name="Boii"
+	culture="atrebatian"
+}
+5389103=
+{
+	name="Boian"
+	culture="atrebatian"
+}
+5389104=
+{
+	name="Tannus"
+	culture="atrebatian"
+}
+5389105=
+{
+	name="Tanna"
+	culture="atrebatian"
+}
+5389106=
+{
+	name="Tanni"
+	culture="atrebatian"
+}
+5389107=
+{
+	name="Tannid"
+	culture="atrebatian"
+}
+5389108=
+{
+	name="Iccuius"
+	culture="atrebatian"
+}
+5389109=
+{
+	name="Iccuia"
+	culture="atrebatian"
+}
+5389110=
+{
+	name="Iccui"
+	culture="atrebatian"
+}
+5389111=
+{
+	name="Iccian"
+	culture="atrebatian"
+}
+5389112=
+{
+	name="Galanus"
+	culture="atrebatian"
+}
+5389113=
+{
+	name="Galana"
+	culture="atrebatian"
+}
+5389114=
+{
+	name="Galanii"
+	culture="atrebatian"
+}
+5389115=
+{
+	name="Galanid"
+	culture="atrebatian"
+}

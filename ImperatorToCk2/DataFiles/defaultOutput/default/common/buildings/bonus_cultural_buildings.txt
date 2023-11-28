@@ -1,0 +1,1262 @@
+#New Buildings by Nick Robertson
+
+castle = {
+	ca_culture_group_plashurii_1 = {
+		desc = ca_culture_group_plashurii_1_desc
+		potential = {
+			OR = {
+				culture = plashurii
+
+
+				has_building = ca_culture_group_plashurii_1
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = plashurii
+
+
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				OR = {
+					culture = plashurii
+
+
+				}
+			}
+		}
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		camel_cavalry = 30
+		camel_cavalry_defensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_group_plashurii_2 = {
+		desc = ca_culture_group_plashurii_1_desc
+		potential = {
+			OR = {
+				culture = plashurii
+
+
+				has_building = ca_culture_group_plashurii_1
+				has_building = ca_culture_group_plashurii_2
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = plashurii
+
+
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				OR = {
+					culture = plashurii
+
+
+				}
+			}
+		}
+		upgrades_from = ca_culture_group_plashurii_1
+		gold_cost = 300
+		build_time = 1095
+		camel_cavalry = 40
+		camel_cavalry_defensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_group_plashurii_3 = {
+		desc = ca_culture_group_plashurii_1_desc
+		potential = {
+			OR = {
+				culture = plashurii
+
+
+				has_building = ca_culture_group_plashurii_1
+				has_building = ca_culture_group_plashurii_2
+				has_building = ca_culture_group_plashurii_3
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = plashurii
+
+
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				OR = {
+					culture = plashurii
+
+
+				}
+			}
+		}
+		upgrades_from = ca_culture_group_plashurii_2
+		gold_cost = 400
+		build_time = 2190
+		camel_cavalry = 50
+		camel_cavalry_defensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_group_plashurii_4 = {
+		desc = ca_culture_group_plashurii_1_desc
+		potential = {
+			OR = {
+				culture = plashurii
+
+
+				has_building = ca_culture_group_plashurii_1
+				has_building = ca_culture_group_plashurii_2
+				has_building = ca_culture_group_plashurii_3
+				has_building = ca_culture_group_plashurii_4
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = plashurii
+
+
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4 
+			ROOT = {
+				OR = {
+					culture = plashurii
+
+
+				}
+			}
+		}
+		upgrades_from = ca_culture_group_plashurii_3
+		gold_cost = 500
+		build_time = 2190
+		camel_cavalry = 60
+		camel_cavalry_defensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	
+	ca_culture_group_chaldean_1 = {
+		desc = ca_culture_group_chaldean_1_desc
+		potential = {
+			OR = {
+				culture_group = semitic_group
+
+
+				has_building = ca_culture_group_chaldean_1
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture_group = semitic_group
+
+
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				OR = {
+					culture_group = semitic_group
+
+
+				}
+			}
+		}
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		archers_offensive = 0.05
+		archers = 20
+		heavy_infantry = 20
+		heavy_infantry_defensive = 0.10
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_group_chaldean_2 = {
+		desc = ca_culture_group_chaldean_1_desc
+		potential = {
+			OR = {
+				culture_group = semitic_group
+
+
+				has_building = ca_culture_group_chaldean_1
+				has_building = ca_culture_group_chaldean_2
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture_group = semitic_group
+
+
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				OR = {
+					culture_group = semitic_group
+
+
+				}
+			}
+		}
+		upgrades_from = ca_culture_group_chaldean_1
+		gold_cost = 300
+		build_time = 1095
+		archers_offensive = 0.10
+		archers = 30
+		heavy_infantry = 30
+		heavy_infantry_defensive = 0.05
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_group_chaldean_3 = {
+		desc = ca_culture_group_chaldean_1_desc
+		potential = {
+			OR = {
+				culture_group = semitic_group
+
+
+				has_building = ca_culture_group_chaldean_1
+				has_building = ca_culture_group_chaldean_2
+				has_building = ca_culture_group_chaldean_3
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture_group = semitic_group
+
+
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				OR = {
+					culture_group = semitic_group
+
+
+				}
+			}
+		}
+		upgrades_from = ca_culture_group_chaldean_2
+		gold_cost = 400
+		build_time = 2190
+		archers_offensive = 0.05
+		archers = 35
+		heavy_infantry = 35
+		heavy_infantry_defensive = 0.05
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_group_chaldean_4 = {
+		desc = ca_culture_group_chaldean_1_desc
+		potential = {
+			OR = {
+				culture_group = semitic_group
+
+
+				has_building = ca_culture_group_chaldean_1
+				has_building = ca_culture_group_chaldean_2
+				has_building = ca_culture_group_chaldean_3
+				has_building = ca_culture_group_chaldean_4
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture_group = semitic_group
+
+
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4 
+			ROOT = {
+				OR = {
+					culture_group = semitic_group
+
+
+				}
+			}
+		}
+		upgrades_from = ca_culture_group_chaldean_3
+		gold_cost = 500
+		build_time = 2190
+		archers_offensive = 0.10
+		archers = 45
+		heavy_infantry = 45
+		heavy_infantry_defensive = 0.10
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+ca_culture_group_carthaginian_1 = {
+		desc = ca_culture_group_carthaginian_1_desc
+		potential = {
+			OR = {
+				culture = carthaginian
+
+
+				has_building = ca_culture_group_carthaginian_1
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = carthaginian
+
+
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				OR = {
+					culture = carthaginian
+
+
+				}
+			}
+		}
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		war_elephants = 6
+		war_elephants_offensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_group_carthaginian_2 = {
+		desc = ca_culture_group_carthaginian_1_desc
+		potential = {
+			OR = {
+				culture = carthaginian
+
+
+				has_building = ca_culture_group_carthaginian_1
+				has_building = ca_culture_group_carthaginian_2
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = carthaginian
+
+
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				OR = {
+					culture = carthaginian
+
+
+				}
+			}
+		}
+		upgrades_from = ca_culture_group_carthaginian_1
+		gold_cost = 300
+		build_time = 1095
+		war_elephants = 10
+		war_elephants_offensive = 0.05
+		war_elephants_defensive = 0.10
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_group_carthaginian_3 = {
+		desc = ca_culture_group_carthaginian_1_desc
+		potential = {
+			OR = {
+				culture = carthaginian
+
+
+				has_building = ca_culture_group_carthaginian_1
+				has_building = ca_culture_group_carthaginian_2
+				has_building = ca_culture_group_carthaginian_3
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = carthaginian
+
+
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				OR = {
+					culture = carthaginian
+
+
+				}
+			}
+		}
+		upgrades_from = ca_culture_group_carthaginian_2
+		gold_cost = 400
+		build_time = 2190
+		war_elephants = 22
+		war_elephants_offensive = 0.05
+		war_elephants_defensive = 0.10
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_group_carthaginian_4 = {
+		desc = ca_culture_group_carthaginian_1_desc
+		potential = {
+			OR = {
+				culture = carthaginian
+
+
+				has_building = ca_culture_group_carthaginian_1
+				has_building = ca_culture_group_carthaginian_2
+				has_building = ca_culture_group_carthaginian_3
+				has_building = ca_culture_group_carthaginian_4
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = carthaginian
+
+
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4 
+			ROOT = {
+				OR = {
+					culture = carthaginian
+
+
+				}
+			}
+		}
+		upgrades_from = ca_culture_group_carthaginian_3
+		gold_cost = 500
+		build_time = 2190
+		war_elephants = 22
+		war_elephants_offensive = 0.05
+		war_elephants_defensive = 0.05
+		local_revolt_risk = -0.01
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	
+	ca_culture_group_phoenician_coastal_1 = {
+		desc = ca_culture_group_phoenician_coastal_1_desc
+		potential = {
+			OR = {
+				culture = phoenician
+				has_building = ca_culture_group_phoenician_coastal_1
+			}
+			port = yes
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = phoenician
+
+
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				OR = {
+					culture = phoenician
+
+
+				}
+			}
+		}
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		galleys = 3
+		pikemen = 5
+		archers = 10
+		pikemen_defensive = 0.05
+		archers_defensive = 0.05
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_group_phoenician_coastal_2 = {
+		desc = ca_culture_group_phoenician_coastal_1_desc
+		potential = {
+			OR = {
+				culture = phoenician
+
+
+				has_building = ca_culture_group_phoenician_coastal_1
+				has_building = ca_culture_group_phoenician_coastal_2
+			}
+			port = yes
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = phoenician
+
+
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				OR = {
+					culture = phoenician
+
+
+				}
+			}
+		}
+		upgrades_from = ca_culture_group_phoenician_coastal_1
+		gold_cost = 300
+		build_time = 1095
+		galleys = 3
+		pikemen = 10
+		archers = 10
+		pikemen_defensive = 0.10
+		archers_defensive = 0.10
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_group_phoenician_coastal_3 = {
+		desc = ca_culture_group_phoenician_coastal_1_desc
+		potential = {
+			OR = {
+				culture = phoenician
+
+
+				has_building = ca_culture_group_phoenician_coastal_1
+				has_building = ca_culture_group_phoenician_coastal_2
+				has_building = ca_culture_group_phoenician_coastal_3
+			}
+			port = yes
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = phoenician
+
+
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				OR = {
+					culture = phoenician
+
+
+				}
+			}
+		}
+		upgrades_from = ca_culture_group_phoenician_coastal_2
+		gold_cost = 400
+		build_time = 2190
+		galleys = 4
+		pikemen = 10
+		archers = 15
+		pikemen_defensive = 0.10
+		archers_defensive = 0.10
+		ai_creation_factor = 99
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_group_phoenician_coastal_4 = {
+		desc = ca_culture_group_phoenician_coastal_1_desc
+		potential = {
+			OR = {
+				culture = phoenician
+
+
+				has_building = ca_culture_group_phoenician_coastal_1
+				has_building = ca_culture_group_phoenician_coastal_2
+				has_building = ca_culture_group_phoenician_coastal_3
+				has_building = ca_culture_group_phoenician_coastal_4
+			}
+			port = yes
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = phoenician
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4 
+			ROOT = {
+				OR = {
+					culture = phoenician
+
+
+				}
+			}
+		}
+		upgrades_from = ca_culture_group_phoenician_coastal_3
+		gold_cost = 500
+		build_time = 2190
+		galleys = 4
+		pikemen = 15
+		archers = 15
+		pikemen_defensive = 0.10
+		archers_defensive = 0.10
+		ai_creation_factor = 98
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_group_phoenician_inland_1 = {
+		desc = ca_culture_group_phoenician_inland_1_desc
+		potential = {
+			OR = {
+				culture = phoenician
+				has_building = ca_culture_group_phoenician_inland_1
+			}
+			port = no
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = phoenician
+
+
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				OR = {
+					culture = phoenician
+
+
+				}
+			}
+		}
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		tax_income = 1
+		pikemen = 5
+		archers = 10
+		pikemen_defensive = 0.05
+		archers_defensive = 0.05
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_group_phoenician_inland_2 = {
+		desc = ca_culture_group_phoenician_inland_1_desc
+		potential = {
+			OR = {
+				culture = phoenician
+
+
+				has_building = ca_culture_group_phoenician_inland_1
+				has_building = ca_culture_group_phoenician_inland_2
+			}
+			port = no
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = phoenician
+
+
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				OR = {
+					culture = phoenician
+
+
+				}
+			}
+		}
+		upgrades_from = ca_culture_group_phoenician_inland_1
+		gold_cost = 300
+		build_time = 1095
+		tax_income = 1
+		pikemen = 10
+		archers = 10
+		pikemen_defensive = 0.10
+		archers_defensive = 0.10
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_group_phoenician_inland_3 = {
+		desc = ca_culture_group_phoenician_inland_1_desc
+		potential = {
+			OR = {
+				culture = phoenician
+
+
+				has_building = ca_culture_group_phoenician_inland_1
+				has_building = ca_culture_group_phoenician_inland_2
+				has_building = ca_culture_group_phoenician_inland_3
+			}
+			port = no
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = phoenician
+
+
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				OR = {
+					culture = phoenician
+
+
+				}
+			}
+		}
+		upgrades_from = ca_culture_group_phoenician_inland_2
+		gold_cost = 400
+		build_time = 2190
+		tax_income = 2
+		pikemen = 10
+		archers = 15
+		pikemen_defensive = 0.10
+		archers_defensive = 0.10
+		ai_creation_factor = 99
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_group_phoenician_inland_4 = {
+		desc = ca_culture_group_phoenician_inland_1_desc
+		potential = {
+			OR = {
+				culture = phoenician
+
+
+				has_building = ca_culture_group_phoenician_inland_1
+				has_building = ca_culture_group_phoenician_inland_2
+				has_building = ca_culture_group_phoenician_inland_3
+				has_building = ca_culture_group_phoenician_inland_4
+			}
+			port = no
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = phoenician
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4 
+			ROOT = {
+				OR = {
+					culture = phoenician
+
+
+				}
+			}
+		}
+		upgrades_from = ca_culture_group_phoenician_inland_3
+		gold_cost = 500
+		build_time = 2190
+		tax_income = 2
+		pikemen = 15
+		archers = 15
+		pikemen_defensive = 0.10
+		archers_defensive = 0.10
+		ai_creation_factor = 98
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_group_punic_group_1 = {
+		desc = ca_culture_group_punic_group_1_desc
+		potential = {
+			OR = {
+				AND = {
+					culture_group = punic
+					NOT = { culture = carthaginian }
+					NOT = { culture = phoenician }
+				}
+				has_building = ca_culture_group_punic_group_1
+			}
+			port = no
+		}
+		is_active_trigger = {
+			ROOT = {
+				AND = {
+					culture_group = punic
+					NOT = { culture = carthaginian }
+					NOT = { culture = phoenician }
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				OR = {
+					culture = phoenician
+
+
+				}
+			}
+		}
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		pikemen = 15
+		archers = 15
+		pikemen_defensive = 0.10
+		archers_defensive = 0.10
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_group_punic_group_2 = {
+		desc = ca_culture_group_punic_group_1_desc
+		potential = {
+			OR = {
+			AND = {
+					culture_group = punic
+					NOT = { culture = carthaginian }
+					NOT = { culture = phoenician }
+				}				has_building = ca_culture_group_punic_group_1
+				has_building = ca_culture_group_punic_group_2
+			}
+			port = no
+		}
+		is_active_trigger = {
+			ROOT = {
+				AND = {
+					culture_group = punic
+					NOT = { culture = carthaginian }
+					NOT = { culture = phoenician }
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				AND = {
+					culture_group = punic
+					NOT = { culture = carthaginian }
+					NOT = { culture = phoenician }
+				}
+			}
+		}
+		upgrades_from = ca_culture_group_punic_group_1
+		gold_cost = 300
+		build_time = 1095
+		pikemen = 20
+		archers = 20
+		pikemen_defensive = 0.10
+		archers_defensive = 0.10
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_group_punic_group_3 = {
+		desc = ca_culture_group_punic_group_1_desc
+		potential = {
+			OR = {
+				AND = {
+					culture_group = punic
+					NOT = { culture = carthaginian }
+					NOT = { culture = phoenician }
+				}				has_building = ca_culture_group_punic_group_1
+				has_building = ca_culture_group_punic_group_2
+				has_building = ca_culture_group_punic_group_3
+			}
+			port = no
+		}
+		is_active_trigger = {
+			ROOT = {
+				AND = {
+					culture_group = punic
+					NOT = { culture = carthaginian }
+					NOT = { culture = phoenician }
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				AND = {
+					culture_group = punic
+					NOT = { culture = carthaginian }
+					NOT = { culture = phoenician }
+				}
+			}
+		}
+		upgrades_from = ca_culture_group_punic_group_2
+		gold_cost = 400
+		build_time = 2190
+		pikemen = 25
+		archers = 25
+		pikemen_defensive = 0.10
+		archers_defensive = 0.10
+		ai_creation_factor = 99
+
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_group_punic_group_4 = {
+		desc = ca_culture_group_punic_group_1_desc
+		potential = {
+			OR = {
+			AND = {
+					culture_group = punic
+					NOT = { culture = carthaginian }
+					NOT = { culture = phoenician }
+				}				has_building = ca_culture_group_punic_group_1
+				has_building = ca_culture_group_punic_group_2
+				has_building = ca_culture_group_punic_group_3
+				has_building = ca_culture_group_punic_group_4
+			}
+			port = no
+		}
+		is_active_trigger = {
+			ROOT = {
+				AND = {
+					culture_group = punic
+					NOT = { culture = carthaginian }
+					NOT = { culture = phoenician }
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4 
+			ROOT = {
+				AND = {
+					culture_group = punic
+					NOT = { culture = carthaginian }
+					NOT = { culture = phoenician }
+				}
+			}
+		}
+		upgrades_from = ca_culture_group_punic_group_3
+		gold_cost = 500
+		build_time = 2190
+		pikemen = 30
+		archers = 30
+		pikemen_defensive = 0.10
+		archers_defensive = 0.10
+		ai_creation_factor = 98
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_group_iberian_1 = {
+		desc = ca_culture_group_iberian_1_desc
+		potential = {
+			OR = { 
+				culture = basque
+				has_building = ca_culture_group_iberian_1
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				culture_group = iberian
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				culture_group = iberian
+			}
+		}
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		light_cavalry = 30
+		light_cavalry_offensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_group_iberian_2 = {
+		desc = ca_culture_group_iberian_1_desc
+		potential = {
+			OR = { 
+				culture = basque
+				has_building = ca_culture_group_iberian_1
+				has_building = ca_culture_group_iberian_2
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				culture_group = iberian
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				culture_group = iberian
+			}
+		}
+		upgrades_from = ca_culture_group_iberian_1
+		gold_cost = 300
+		build_time = 1095
+		light_cavalry = 40
+		light_cavalry_offensive = 0.15
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_group_iberian_3 = {
+		desc = ca_culture_group_iberian_1_desc
+		potential = {
+			OR = { 
+				culture = basque
+				has_building = ca_culture_group_iberian_1
+				has_building = ca_culture_group_iberian_2
+				has_building = ca_culture_group_iberian_3
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				culture_group = iberian
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				culture_group = iberian
+			}
+		}
+		upgrades_from = ca_culture_group_iberian_2
+		gold_cost = 400
+		build_time = 2190
+		light_cavalry = 50
+		light_cavalry_offensive = 0.15
+		ai_creation_factor = 99
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_group_iberian_4 = {
+		desc = ca_culture_group_iberian_1_desc
+		potential = {
+			OR = { 
+				culture = basque
+				has_building = ca_culture_group_iberian_1
+				has_building = ca_culture_group_iberian_2
+				has_building = ca_culture_group_iberian_3
+				has_building = ca_culture_group_iberian_4
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				culture_group = iberian
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+				culture_group = iberian
+			}
+		}
+		upgrades_from = ca_culture_group_iberian_3
+		gold_cost = 500
+		build_time = 2190
+		light_cavalry = 60
+		light_cavalry_offensive = 0.15
+		ai_creation_factor = 98
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_group_galatian_1 = {
+		desc = ca_culture_group_galatian_1_desc
+		potential = {
+			OR = {
+				culture = galatian
+				has_building = ca_culture_group_galatian_1
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = galatian
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				OR = {
+					culture = galatian
+				}
+			}
+		}
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		heavy_infantry = 30
+		heavy_infantry_offensive = 0.10
+		military_techpoints = 0.02
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_group_galatian_2 = {
+		desc = ca_culture_group_galatian_1_desc
+		potential = {
+			OR = {
+				culture = galatian
+				has_building = ca_culture_group_galatian_1
+				has_building = ca_culture_group_galatian_2
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = galatian
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				OR = {
+					culture = galatian
+				}
+			}
+		}
+		upgrades_from = ca_culture_group_galatian_1
+		gold_cost = 300
+		build_time = 1095
+		heavy_infantry = 40
+		heavy_infantry_offensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_group_galatian_3 = {
+		desc = ca_culture_group_galatian_1_desc
+		potential = {
+			OR = {
+				culture = galatian
+				has_building = ca_culture_group_galatian_1
+				has_building = ca_culture_group_galatian_2
+				has_building = ca_culture_group_galatian_3
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = galatian
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				OR = {
+					culture = galatian
+				}
+			}
+		}
+		upgrades_from = ca_culture_group_galatian_2
+		gold_cost = 400
+		build_time = 2190
+		heavy_infantry = 50
+		heavy_infantry_offensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_group_galatian_4 = {
+		desc = ca_culture_group_galatian_1_desc
+		potential = {
+			OR = {
+				culture = galatian
+				has_building = ca_culture_group_galatian_1
+				has_building = ca_culture_group_galatian_2
+				has_building = ca_culture_group_galatian_3
+				has_building = ca_culture_group_galatian_4
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = galatian
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+				OR = {
+					culture = galatian
+				}
+			}
+		}
+		upgrades_from = ca_culture_group_galatian_3
+		gold_cost = 500
+		build_time = 2190
+		heavy_infantry = 60
+		heavy_infantry_offensive = 0.10
+		tech_growth_modifier = 0.1
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+}

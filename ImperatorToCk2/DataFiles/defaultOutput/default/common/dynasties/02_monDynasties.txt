@@ -1,0 +1,71 @@
+#From Tianxia
+
+5393630 = {
+	name = "Pegu"
+	culture = mon
+}
+
+5393631 = {
+	name = "Migadeippange"
+	culture = mon
+}
+
+5393632 = {
+	name = "Wareru"
+	culture = mon
+}
+
+5393633 = {
+	name = "Zein Pun"
+	culture = mon
+}
+
+5393634 = {
+	name = "Thaton"
+	culture = mon
+}
+
+5393219 = {
+	name = "Hariphunchai"
+	culture = mon
+}
+
+5393678 = {
+	name = "Atikuyaburi"
+	culture = mon
+}
+
+5393679 = {
+	name = "Lampang"
+	culture = mon
+}
+
+5393681 = {
+	name = "Lavo"
+	culture = mon
+}
+
+5393682 = {
+	name = "Supannabhum"
+	culture = mon
+}
+
+5393683 = {
+	name = "Phimai"
+	culture = mon
+}
+
+5393687 = {
+	name = "Myeik" # Was Mergui, but that name was not used before Europeans showed up...
+	culture = mon
+}
+
+5393692 = {
+	name = "Dagon"
+	culture = mon
+}
+
+5393086 = {
+	name = "Ngapudaw"
+	culture = mon
+}

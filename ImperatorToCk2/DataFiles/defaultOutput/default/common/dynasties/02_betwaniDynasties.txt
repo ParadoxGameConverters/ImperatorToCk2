@@ -1,0 +1,580 @@
+5364000=
+{
+	name="Ambonus"
+	culture="betwani"
+}
+5364001=
+{
+	name="Ambona"
+	culture="betwani"
+}
+5364002=
+{
+	name="Ambonii"
+	culture="betwani"
+}
+5364003=
+{
+	name="Ambonid"
+	culture="betwani"
+}
+5364004=
+{
+	name="Auaroses"
+	culture="betwani"
+}
+5364005=
+{
+	name="Auarosa"
+	culture="betwani"
+}
+5364006=
+{
+	name="Auarosii"
+	culture="betwani"
+}
+5364007=
+{
+	name="Auarosian"
+	culture="betwani"
+}
+5364008=
+{
+	name="Audaxus"
+	culture="betwani"
+}
+5364009=
+{
+	name="Audaxa"
+	culture="betwani"
+}
+5364010=
+{
+	name="Audaxii"
+	culture="betwani"
+}
+5364011=
+{
+	name="Audaxian"
+	culture="betwani"
+}
+5364012=
+{
+	name="Carosus"
+	culture="betwani"
+}
+5364013=
+{
+	name="Carosa"
+	culture="betwani"
+}
+5364014=
+{
+	name="Carosii"
+	culture="betwani"
+}
+5364015=
+{
+	name="Carosian"
+	culture="betwani"
+}
+5364016=
+{
+	name="Culchus"
+	culture="betwani"
+}
+5364017=
+{
+	name="Culcha"
+	culture="betwani"
+}
+5364018=
+{
+	name="Culchi"
+	culture="betwani"
+}
+5364019=
+{
+	name="Culchian"
+	culture="betwani"
+}
+5364020=
+{
+	name="Leukus"
+	culture="betwani"
+}
+5364021=
+{
+	name="Leuka"
+	culture="betwani"
+}
+5364022=
+{
+	name="Leuki"
+	culture="betwani"
+}
+5364023=
+{
+	name="Leukian"
+	culture="betwani"
+}
+5364024=
+{
+	name="Mandonus"
+	culture="betwani"
+}
+5364025=
+{
+	name="Mandonia"
+	culture="betwani"
+}
+5364026=
+{
+	name="Mandonii"
+	culture="betwani"
+}
+5364027=
+{
+	name="Mandonian"
+	culture="betwani"
+}
+5364028=
+{
+	name="Punicus"
+	culture="betwani"
+}
+5364029=
+{
+	name="Punica"
+	culture="betwani"
+}
+5364030=
+{
+	name="Punici"
+	culture="betwani"
+}
+5364031=
+{
+	name="Punician"
+	culture="betwani"
+}
+5364032=
+{
+	name="Tautalus"
+	culture="betwani"
+}
+5364033=
+{
+	name="Tautala"
+	culture="betwani"
+}
+5364034=
+{
+	name="Tautalii"
+	culture="betwani"
+}
+5364035=
+{
+	name="Tautalid"
+	culture="betwani"
+}
+5364036=
+{
+	name="Correius"
+	culture="betwani"
+}
+5364037=
+{
+	name="Correia"
+	culture="betwani"
+}
+5364038=
+{
+	name="Correid"
+	culture="betwani"
+}
+5364039=
+{
+	name="Correian"
+	culture="betwani"
+}
+5364040=
+{
+	name="Divicus"
+	culture="betwani"
+}
+5364041=
+{
+	name="Divica"
+	culture="betwani"
+}
+5364042=
+{
+	name="Divici"
+	culture="betwani"
+}
+5364043=
+{
+	name="Divicid"
+	culture="betwani"
+}
+5364044=
+{
+	name="Duratus"
+	culture="betwani"
+}
+5364045=
+{
+	name="Durata"
+	culture="betwani"
+}
+5364046=
+{
+	name="Duratii"
+	culture="betwani"
+}
+5364047=
+{
+	name="Duratian"
+	culture="betwani"
+}
+5364048=
+{
+	name="Elitovus"
+	culture="betwani"
+}
+5364049=
+{
+	name="Elitova"
+	culture="betwani"
+}
+5364050=
+{
+	name="Elitovii"
+	culture="betwani"
+}
+5364051=
+{
+	name="Elitovian"
+	culture="betwani"
+}
+5364052=
+{
+	name="Galbus"
+	culture="betwani"
+}
+5364053=
+{
+	name="Galba"
+	culture="betwani"
+}
+5364054=
+{
+	name="Galbi"
+	culture="betwani"
+}
+5364055=
+{
+	name="Galbid"
+	culture="betwani"
+}
+5364056=
+{
+	name="Iacus"
+	culture="betwani"
+}
+5364057=
+{
+	name="Iaca"
+	culture="betwani"
+}
+5364058=
+{
+	name="Iaci"
+	culture="betwani"
+}
+5364059=
+{
+	name="Iacid"
+	culture="betwani"
+}
+5364060=
+{
+	name="Marganus"
+	culture="betwani"
+}
+5364061=
+{
+	name="Margana"
+	culture="betwani"
+}
+5364062=
+{
+	name="Marganii"
+	culture="betwani"
+}
+5364063=
+{
+	name="Marganid"
+	culture="betwani"
+}
+5364064=
+{
+	name="Sinatus"
+	culture="betwani"
+}
+5364065=
+{
+	name="Sinata"
+	culture="betwani"
+}
+5364066=
+{
+	name="Sinatii"
+	culture="betwani"
+}
+5364067=
+{
+	name="Sinatid"
+	culture="betwani"
+}
+5364068=
+{
+	name="Vodenosus"
+	culture="betwani"
+}
+5364069=
+{
+	name="Vodenosa"
+	culture="betwani"
+}
+5364070=
+{
+	name="Vodenosii"
+	culture="betwani"
+}
+5364071=
+{
+	name="Vodenosian"
+	culture="betwani"
+}
+5364072=
+{
+	name="Indutius"
+	culture="betwani"
+}
+5364073=
+{
+	name="Indutia"
+	culture="betwani"
+}
+5364074=
+{
+	name="Indutii"
+	culture="betwani"
+}
+5364075=
+{
+	name="Indutian"
+	culture="betwani"
+}
+5364076=
+{
+	name="Dumnus"
+	culture="betwani"
+}
+5364077=
+{
+	name="Dumna"
+	culture="betwani"
+}
+5364078=
+{
+	name="Dumnii"
+	culture="betwani"
+}
+5364079=
+{
+	name="Dumnid"
+	culture="betwani"
+}
+5364080=
+{
+	name="Epatticus"
+	culture="betwani"
+}
+5364081=
+{
+	name="Epattica"
+	culture="betwani"
+}
+5364082=
+{
+	name="Epatticii"
+	culture="betwani"
+}
+5364083=
+{
+	name="Epatticid"
+	culture="betwani"
+}
+5364084=
+{
+	name="Teutomalus"
+	culture="betwani"
+}
+5364085=
+{
+	name="Teutomala"
+	culture="betwani"
+}
+5364086=
+{
+	name="Teutomalii"
+	culture="betwani"
+}
+5364087=
+{
+	name="Teutomalian"
+	culture="betwani"
+}
+5364088=
+{
+	name="Viridorrius"
+	culture="betwani"
+}
+5364089=
+{
+	name="Viridorria"
+	culture="betwani"
+}
+5364090=
+{
+	name="Viridorrii"
+	culture="betwani"
+}
+5364091=
+{
+	name="Viridorrian"
+	culture="betwani"
+}
+5364092=
+{
+	name="Magunnus"
+	culture="betwani"
+}
+5364093=
+{
+	name="Magunna"
+	culture="betwani"
+}
+5364094=
+{
+	name="Magunnii"
+	culture="betwani"
+}
+5364095=
+{
+	name="Magunnid"
+	culture="betwani"
+}
+5364096=
+{
+	name="Brennus"
+	culture="betwani"
+}
+5364097=
+{
+	name="Brenna"
+	culture="betwani"
+}
+5364098=
+{
+	name="Brennii"
+	culture="betwani"
+}
+5364099=
+{
+	name="Brennid"
+	culture="betwani"
+}
+5364100=
+{
+	name="Boius"
+	culture="betwani"
+}
+5364101=
+{
+	name="Boia"
+	culture="betwani"
+}
+5364102=
+{
+	name="Boii"
+	culture="betwani"
+}
+5364103=
+{
+	name="Boian"
+	culture="betwani"
+}
+5364104=
+{
+	name="Tannus"
+	culture="betwani"
+}
+5364105=
+{
+	name="Tanna"
+	culture="betwani"
+}
+5364106=
+{
+	name="Tanni"
+	culture="betwani"
+}
+5364107=
+{
+	name="Tannid"
+	culture="betwani"
+}
+5364108=
+{
+	name="Iccuius"
+	culture="betwani"
+}
+5364109=
+{
+	name="Iccuia"
+	culture="betwani"
+}
+5364110=
+{
+	name="Iccui"
+	culture="betwani"
+}
+5364111=
+{
+	name="Iccian"
+	culture="betwani"
+}
+5364112=
+{
+	name="Galanus"
+	culture="betwani"
+}
+5364113=
+{
+	name="Galana"
+	culture="betwani"
+}
+5364114=
+{
+	name="Galanii"
+	culture="betwani"
+}
+5364115=
+{
+	name="Galanid"
+	culture="betwani"
+}

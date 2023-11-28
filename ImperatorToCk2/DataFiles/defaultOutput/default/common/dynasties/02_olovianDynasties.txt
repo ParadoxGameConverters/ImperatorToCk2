@@ -1,0 +1,159 @@
+5359008=
+{
+	name="Obroditen"
+	culture="olovian"
+}
+5359009=
+{
+	name="z Liubic"
+	culture="olovian"
+	#religion="catholic"
+}
+5359010=
+{
+	name="Grzymala"
+	culture="olovian"
+	#religion="catholic"
+}
+5359011=
+{
+	name="Jastrzebiec"
+	culture="olovian"
+	#religion="catholic"
+}
+5359012=
+{
+	name="Lodzia"
+	culture="olovian"
+	#religion="catholic"
+}
+5359013=
+{
+	name="Lubicz"
+	culture="olovian"
+	#religion="catholic"
+}
+5359014 = {
+   name="Nalecz"
+   culture="olovian"
+   #religion="catholic"
+}
+5359015 = {
+   name="Gniewosz"
+   culture="olovian"
+   #religion="catholic"
+}
+
+5359016 = {
+   name="z Roztoki"
+   culture="olovian"
+   #religion="catholic"
+}
+
+5359017 ={
+   name="ze Slupska"
+   culture="olovian"
+   #religion="catholic"
+}
+5359018 ={
+   name="z Wagrow"
+   culture="olovian"
+   #religion="catholic"
+}
+5359019 ={
+   name="Zirzipani"
+   culture="olovian"
+   #religion="catholic"
+}
+5359020 ={
+   name="Doleczanie"
+   culture="olovian"
+   #religion="catholic"
+}
+5359021 ={
+   name="Gryfita"
+   culture="olovian"
+   #religion="catholic"
+}
+5359022 ={
+   name="Wend"
+   culture="olovian"
+   #religion="catholic"
+}
+5359023 = {
+	name = "Swienca"
+	culture = olovian
+}
+5359024 = {
+	name = "Slaweka"
+	culture = olovian
+}
+#
+5359025 = {
+	name = "Swidnicki"
+	culture = olovian
+}
+5359026 = {
+	name = "Branicki"
+	culture = olovian
+}
+5359027 = {
+	name = "Glogowski"
+	culture = olovian
+}
+5359028 = {
+	name = "Bogorski"
+	culture = olovian
+}
+5359029 = {
+	name = "Lisy"
+	culture = olovian
+}
+5359030 = {
+	name = "Wielkolovski"
+	culture = olovian
+}
+5359031 = {
+	name = "Czartoryski"
+	culture = olovian
+}
+5359032 = {
+	name = "Hroznatid"
+	culture = olovian
+}
+5359033 = {
+	name = "Hrabišid"
+	culture = olovian
+}
+5359034 = {
+	name = "Markvartid"
+	culture = olovian
+}
+5359035 = {
+	name="Vršovic"
+	culture="olovian"
+}
+5359036 = {
+	name="Bavorid"
+	culture="olovian"
+}
+5359037 = {
+	name="Olovnínid"
+	culture="olovian"
+}
+5359038 = {
+	name="Gamrat"
+	culture="olovian"
+}
+5359039 = {
+	name="Kolanka"
+	culture="olovian"
+}
+5359040 = {
+	name="Giese"
+	culture="olovian"
+}
+5359041 = {
+	name="Tarnowski"
+	culture="olovian"
+}

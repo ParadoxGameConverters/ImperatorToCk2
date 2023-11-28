@@ -111,6 +111,7 @@ noric,celtic_pannonian
 boian,celtic_pannonian
 eravisci,celtic_pannonian
 teurian,celtic_pannonian
+cotinian,celtic_pannonian
 galatian,galatian
 
 #Gaelic
@@ -204,8 +205,8 @@ phazani,maghreb_arabic
 lotophagoi,maghreb_arabic
 gyzantian,maghreb_arabic
 moyan,maghreb_arabic
-alutan,maghreb_arabic
-boran,maghreb_arabic
+#alutan,maghreb_arabic
+#boran,maghreb_arabic
 autolalean,maghreb_arabic
 lixitoi,maghreb_arabic
 perorsian,maghreb_arabic
@@ -234,31 +235,40 @@ pannonian,arberian
 iapodian,arberian
 
 #Scythian
-scythian,saka
-sarmatian,saka
-roxolanian,saka
+scythian,royal_scythian
+agathyrsian,royal_scythian
+sarmatian,sarmatian
+siraci,sarmatian
+roxolanian,iazyges
 kharesmian,saka
 derbiccan,saka
-sindi,saka
-siraci,saka
-maeotian,saka
 saka,saka
 sakan,saka
-thyssagetaen,saka
-legian,saka
-agathyrsian,saka
-gelonian,saka
+khotanese,saka
+sindi,circassian
+maeotian,circassian
+thyssagetaen,sarmatian
+gelonian,royal_scythian
+alani,alan
+jurcan,sarmatian
+massagetaean,saka
+cimmerian,cimmerian
 
 #Arabian
-hadhrami,bedouin_arabic
-qatabanian,bedouin_arabic
-sheban,bedouin_arabic
-minaean,bedouin_arabic
-himjar,bedouin_arabic
+hadhrami,south_arabian
+qatabanian,south_arabian
+sheban,south_arabian
+minaean,south_arabian
+himjar,south_arabian
+samad,south_arabian
+adite,south_arabian
+kindite,south_arabian
 makan,bedouin_arabic
 taif,bedouin_arabic
 thamudi,bedouin_arabic
 qedarite,bedouin_arabic
+gerrhan,bedouin_arabic
+yamama,bedouin_arabic
 nabatean,nabatean
 
 #Israeli
@@ -286,6 +296,7 @@ colchian,georgian
 #Dagestani
 
 albanian,caucasian_albanian
+legian,caucasian_albanian
 
 #Iberic
 
@@ -353,10 +364,24 @@ babylonian,babylonian
 #NubianAndEthiopian
 
 puntic,somali
+berberian,somali
+avalitian,somali
 aksumite,ethiopian
+athagaun,ethiopian
+ona,ethiopian
+daamoti,ethiopian
 meroitic,nubian
 blemmyan,nubian
 lower_nubian,nubian
+napatan,nubian
+
+moyan,nubian
+alutan,nubian
+boran,nubian
+nubian,nubian
+adabulian,nubian
+rhizophagian,nubian
+kumuzan,nubian
 
 #Tibetan
 
@@ -367,7 +392,7 @@ sumpa,sumpa
 
 #Persian
 
-elamite,persian
+elamite,elamite
 utian,persian
 pasargadi,persian
 sagartian,persian
@@ -375,12 +400,12 @@ uxian,persian
 amardian,persian
 cossian,persian
 cadusian,persian
-parthian,persian
 median,persian
 hyrcanian,persian
 sattagydian,persian
 sarangian,persian
 carmanian,persian
+parthian,parthian_culture
 pactyan,afghan
 gedrosian,baloch
 parecanian,baloch
@@ -415,15 +440,26 @@ atavi,hindustani
 #WesternIndian
 
 lankan,sinhala
+dhivehi,sinhala
 gandhari,panjabi
 dardic,panjabi
 #mayChangeToKashmiri
+sivi,panjabi
+purus,panjabi
 sindhi,sindhi
 avanti,rajput
+kaccha,rajput
+matsya,rajput
 saurashtran,gujurati
+rathikan,gujurati
 shauraseni,hindustani
+kosala,hindustani
+kuru,hindustani
 maharashtran,marathi
 vidharban,marathi
+mulaka,marathi
+cedi,marathi
+mitanni,neo_mitanni
 
 #Dravidian
 kannadan,kannada
@@ -457,7 +493,9 @@ neuric,protoslavic
 budinian,protoslavic
 chernolian,protoslavic
 melanchlaenian,protoslavic
-androphagian,protoslavic
+
+#Finnic
+androphagian,ugricbaltic
 
 #Mayan
 mayan,mayan
@@ -466,3 +504,82 @@ totomec,olmec
 olmec,olmec
 zoque,olmec
 tol,tol
+
+#Burmese
+shan,shan
+pyu,pyu
+rhakine,mon
+mon,mon
+pubu,wa
+
+#150BC start date mod
+aorsi,sarmatian
+tauri,dahi_scythian
+pundra,bengali
+#savara,bengali
+pulinda,bengali
+vrji,bengali
+greco_persian,seleucian
+karduchoi,parthian_culture
+mazices,maghreb_arabic
+machlyes,maghreb_arabic
+andhra,telugu
+asmaka,telugu
+kuntala,telugu
+chola,tamil
+pandya,tamil
+kerala,tamil
+greco_bactrian,bactrian
+
+#Realm Divide mod
+syriac,assyrian
+babylonian_late,babylonian
+brittonic,welsh
+welsh,welsh
+cumbrian,welsh
+pictish,pictish
+breton,breton
+cornish,breton
+gaelic,irish
+laigin,irish
+cruthin,irish
+connachtan,irish
+erainnian,irish
+ossorian,irish
+ulaid,irish
+dalcassian,irish
+eoganachtan,irish
+gaulish,gallic
+gallaic,celtiberian
+beja,nubian
+afar,somali
+somali,somali
+agaw,ethiopian
+demotic,ancient_egyptian
+frankish,old_frankish
+gothic,gothic
+norse,norse
+svear,norse
+gotar,norse
+danish,norse
+gutnish,norse
+angrivarii,old_saxon
+aviones,old_saxon
+reudigni,old_saxon
+warini,old_saxon
+jutish,old_saxon
+saxon,old_saxon
+alemanni,suebi
+suevian,suebi
+quadian,suebi
+thuringian,suebi
+baiuvarian,suebi
+vangionic,suebi
+variscian,suebi
+ossetian,alan
+iazyges,iazyges
+roxolani,iazyges
+makurian,nubian
+nobatian,nubian
+alodian,nubian
+coptic,coptic

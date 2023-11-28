@@ -404,14 +404,8 @@ public class Processing
 
     }
 
-    public static String[] importRegionList (int totProv, String impDir) throws IOException
+    public static String[] importRegionList (int totProv, String regionDir) throws IOException
     {
-
-        String VM = "\\";
-        VM = VM.substring(0);
-
-        FileInputStream fileIn= new FileInputStream("regionConverter.txt");
-        Scanner scnr= new Scanner(fileIn);
 
         int flag = 0;
         String ckName = "debug";
@@ -419,20 +413,41 @@ public class Processing
         int aqq = 1;
         boolean endOrNot = true;
         String qaaa = "debug";
-        String[] provList;   // Owner Culture Religeon PopTotal Buildings
+        String[] provList;
         provList = new String[totProv];
+        
+        ArrayList<String> regions = Importer.importRegions(regionDir+"map_data/regions.txt");
+        
+        String[] provAreas = importAreas(regionDir+"map_data/areas.txt",totProv);
 
-        qaaa = scnr.nextLine();
+        
 
         try {
-            while (endOrNot = true){
-                qaaa = scnr.nextLine();
-                provList = importRegion (provList,(impDir+VM+"game"+VM+"setup"+VM+"provinces"+VM+"00_"+qaaa+".txt"),qaaa);
+            while (endOrNot = true){ //Goes through and get's each province for each region
+                int regionID = 1;
+                while (regionID < regions.size()) {
+                qaaa = regions.get(regionID);
+                String[] regionList = qaaa.split(",");
+                String provArea = provAreas[aqq];
+                int regionCount = 1;
+                while (regionCount < regionList.length){
+                    String selectedArea = regionList[regionCount];
+                    if (selectedArea.equals(provArea)) {
+                        //System.out.println(regionList[0]+"_QA " + "Area: "+selectedArea);
+                        provList[aqq] = regionList[0];
+                        //System.out.println(provList[aqq]);
+                        regionCount = 1 + regionList.length;
+                    }
+                    regionCount = regionCount + 1;
+                }
+                
+                regionID = regionID + 1;
+                }
                 aqq = aqq + 1;
 
             }
 
-        }catch (java.util.NoSuchElementException exception){
+        }catch (java.lang.IndexOutOfBoundsException exception){
             endOrNot = false;
 
         }   
@@ -471,6 +486,78 @@ public class Processing
 
                 }catch (java.lang.NumberFormatException exception) {
                 }
+                aqq = aqq + 1;    
+            }
+        }catch (java.util.NoSuchElementException exception){
+            endOrNot = false;
+
+        }   
+
+        return provList;
+
+    }
+    
+    public static String[] importAreas (String dir,int num) throws IOException
+    {
+
+        FileInputStream fileIn= new FileInputStream(dir);
+        Scanner scnr= new Scanner(fileIn);
+
+        int flag = 0;
+        String ckName = "debug";
+        int aqq = 0;
+        String qaaa = "aa";
+        boolean endOrNot = true;
+
+        int number = 0;
+        
+        String tab = "	";
+        String endBracket = " }".replace(" ","");
+        String endBracket2 = endBracket + " ";
+        
+        String[] provList = new String [num];
+
+        try {
+            while (endOrNot = true){
+                qaaa = scnr.nextLine();
+
+                if (qaaa.contains(" = {") && !qaaa.contains("provinces")) {
+                    String provinceName = qaaa.split(" = ")[0];
+                    while (!qaaa.equals(endBracket) && !qaaa.equals(endBracket2)) {
+                        qaaa = scnr.nextLine();
+                        qaaa = qaaa.replace("  }"," }");
+                        qaaa = qaaa.replace(tab,"");
+                        if (qaaa.contains("provinces = { ")) {
+                            qaaa = qaaa.split(" = ")[1];
+                            qaaa = qaaa.replace("  "," ");
+                            qaaa = qaaa.replace("{","");
+                        }
+                        qaaa = qaaa.replace("   ","");
+                        qaaa = qaaa.replace("  ","");
+                        qaaa = qaaa.replace("	","");
+                        qaaa = qaaa.replace("provinces = { ","");
+                        
+                        if (!qaaa.equals(endBracket) && !qaaa.contains("color") && !qaaa.equals(endBracket2)){
+                            String[] numList = qaaa.split(" ");
+                            int numCount = 0;
+                            while (numCount < numList.length){
+                                try {
+                                    int provID = Integer.parseInt(numList[numCount]);
+                                    provList[provID] = provinceName;
+                                }
+                                
+                                catch (Exception e) {
+                                    
+                                }
+                                numCount = numCount + 1;
+                            }
+                        }
+
+                    }
+                    
+                    qaaa = qaaa.substring(1);    
+                }
+
                 aqq = aqq + 1;    
             }
         }catch (java.util.NoSuchElementException exception){
@@ -573,7 +660,7 @@ public class Processing
         boolean endOrNot = true;
         String qaaa;
         String[] output;   // Owner Culture Religeon PopTotal Buildings
-        output = new String[15000];
+        output = new String[25000];
 
         output[0] = "peq"; //default for no owner, uncolonized province
         output[1] = "99999"; //default for no culture, uncolonized province with 0 pops
@@ -647,11 +734,92 @@ public class Processing
         return output;
 
     }
-
-    public static int combineProvConvList(String source, String destination) throws IOException //combines the two province mapping files into one
+    
+    public static String[] convertProvConvListR (String name, String outputDest) throws IOException //Converts regular format into mapper tool format
     {
 
-        String[] toAdd = convertProvConvList("provinceConversion2.txt","provinceConversion2Formatted.txt");
+        String tab = "	";
+
+        FileInputStream fileIn= new FileInputStream(name);
+        Scanner scnr= new Scanner(fileIn);
+
+        FileOutputStream fileOut= new FileOutputStream(outputDest);
+        PrintWriter out = new PrintWriter(fileOut);
+
+        int flag = 0;
+        boolean endOrNot = true;
+        String qaaa;
+        String[] output;   // Owner Culture Religeon PopTotal Buildings
+        output = new String[15000];
+
+        output[0] = "peq"; //default for no owner, uncolonized province
+        output[1] = "99999"; //default for no culture, uncolonized province with 0 pops
+
+        char bracket1 = 123;
+        char bracket2 = 125;
+
+        String bracket1Str = bracket1+" ";
+
+        bracket1Str = bracket1Str.replace(" ","");
+
+        String bracket2Str = bracket2+" ";
+
+        bracket2Str = bracket2Str.replace(" ","");
+
+        int aq2 = 0;
+        
+        ArrayList<String> oldMappingList = Importer.importBasicFile(name);
+        
+        //ArrayList<String> newMappingList;
+        
+        int ck2Prov = 0;
+
+        try {
+            while (ck2Prov < 3000){
+                int line = 0;
+                String newMap = "link = {";
+                while (line < oldMappingList.size()){
+                    qaaa = oldMappingList.get(line);
+                    //System.out.println(qaaa);
+                    if (!qaaa.contains("#") && !qaaa.equals("")) {
+                        if (qaaa.split(",")[1].equals(Integer.toString(ck2Prov))) {
+                            newMap = newMap + " imperator = "+qaaa.split(",")[0];
+                        }
+                    }
+                    
+                    line = line + 1;
+                    
+                }
+                if (!newMap.equals("link = {")) {
+                    newMap = newMap + " ck2 = " + ck2Prov + " }";
+                    out.println(newMap);
+                }
+                ck2Prov = ck2Prov + 1;
+
+                
+
+            }
+
+        }catch (java.util.NoSuchElementException exception){
+            endOrNot = false;
+
+        }   
+
+        out.flush();
+        fileOut.close();
+
+        fileIn.close();
+        return output;
+
+    }
+
+    public static int combineProvConvList(String source, String source2, String destination) throws IOException
+    //combines the two province mapping files into one
+    //original functionality for the most part depreciated, primarily used to convert source2 into usable format stored at destination
+    {
+
+        //String[] toAdd = convertProvConvList("provinceConversion2.txt","provinceConversion2Formatted.txt");
+        String[] toAdd = convertProvConvList(source2,"provinceConversion2Formatted.txt");
         String VM = "\\"; 
         VM = VM.substring(0);
 
@@ -788,9 +956,9 @@ public class Processing
         return name;
     }
 
-    public static String convertTitle(String name, String rank, String title, String defaultTitle) throws IOException
+    public static String convertTitle(ArrayList<String> mappings, String rank, String title, String defaultTitle) throws IOException
     {// Converts dynamically generated title to vanilla counterpart
-        String tmpTitle = Importer.importCultList(name,rank+"_"+title)[1];//converts title
+        String tmpTitle = Importer.importMappingFromArray(mappings,rank+"_"+title)[1]; //converts title
 
         if (tmpTitle.equals("99999") || tmpTitle.equals("peq")) {//if there is no vanilla match
             return defaultTitle;
@@ -802,7 +970,7 @@ public class Processing
         return title;
     }
 
-    public static ArrayList<String> calculateDuchyNameList (String ck2Dir, String[][] ck2ProvInfo) throws IOException
+    public static ArrayList<String> calculateDuchyNameList (String ck2Dir, String[][] ck2ProvInfo,ArrayList<String> cultureMappings) throws IOException
     {
 
         ArrayList<String> output = new ArrayList<String>(); //owner,culture,duchy
@@ -856,7 +1024,7 @@ public class Processing
                     while (aq3 < countyList.length) {
                         if (countyList[aq3].split("c_")[1].equals(ckProvName)) {
 
-                            provCultTotal = provCultTotal + "," + Output.cultureOutput(ck2ProvInfo[1][aq4]);
+                            provCultTotal = provCultTotal + "," + Output.cultureOutput(cultureMappings,ck2ProvInfo[1][aq4]);
                             provCultTotal = provCultTotal.replace("QQQ,","");
                             provTagTotal = provTagTotal + "," + ck2ProvInfo[0][aq4];
                             provTagTotal = provTagTotal.replace("QQQ,","");
@@ -1405,7 +1573,7 @@ public class Processing
 
     public static void dynamicSplit (String title,String rank,String color,String[] loc,String irFlag,String impGameDir,String capital,
     ArrayList<String[]> flagList,ArrayList<String[]> colorList,ArrayList<String> modFlagGFX,String government,String tagCulture,
-    String ck2Dir, String modDirectory) throws IOException
+    String ck2Dir, ArrayList<String> cultureMappings,String modDirectory) throws IOException
     {
         String country = rank+"_"+title;
         String[] easternEmpire = eastWestNames("Eastern",loc);
@@ -1418,7 +1586,6 @@ public class Processing
         }
         String westTitle = title+"_west";
         String ck2Capital = Importer.importConvList("provinceConversion.txt",Integer.parseInt(capital))[1];
-        tagCulture = Output.cultureOutput(tagCulture);
         //events
         String eventDir = modDirectory+"/events/dynamic_empire_split_"+country+".txt";
         String eventTemplateDirectory = "defaultOutput/templates/events/dynamic_empire_split.txt";
@@ -1748,7 +1915,7 @@ public class Processing
 
             String overlord = impSubjectInfo.get(count).split(",")[0];
             int overlordID = Integer.parseInt(overlord);
-            System.out.println("Overlord " + overlordID + " and Subject " + impSubjectInfo.get(count).split(",")[1] + " looking for " + country);
+            //System.out.println("Overlord " + overlordID + " and Subject " + impSubjectInfo.get(count).split(",")[1] + " looking for " + country);
             if (overlordID == country) {
                 String subject = impSubjectInfo.get(count).split(",")[1];
                 int provCount = 1;
@@ -1756,7 +1923,7 @@ public class Processing
                     if (ck2ProvInfo[0][provCount] != null) {
 
                         if (ck2ProvInfo[0][provCount].equals(subject)) {
-                            System.out.println(ck2ProvInfo[0][provCount] + " set to " + overlord);
+                            //System.out.println(ck2ProvInfo[0][provCount] + " set to " + overlord);
                             ck2ProvInfo[0][provCount] = overlord;
                         }
                     }
@@ -1767,6 +1934,147 @@ public class Processing
         }
 
         return ck2ProvInfo;
+    }
+    
+    public static boolean checkForInvictus(ArrayList<String> modDirs) throws IOException
+    //Checks whether or not user is using Imperator Invictus
+    {
+        int count = 0;
+        while (count < modDirs.size()) {
+            String currentModDir = modDirs.get(count);
+            String currentModDescDir = currentModDir+"/descriptor.mod";
+            //System.out.println(currentModDir);
+            //System.out.println(checkForInvictusID(currentModDir));
+            if (checkForInvictusID(currentModDir)) { //check for Invictus or HMOv2 Steam ID
+                return true;
+            } else { //Check for manual Invictus installations
+                File currentModDescFile = new File(currentModDescDir);
+                if (currentModDescFile.exists()) {
+                    FileInputStream fileIn= new FileInputStream(currentModDescDir);
+                    Scanner scnr= new Scanner(fileIn);
+                    String line = scnr.nextLine();
+                    boolean endOrNot = true;
+                    try {
+                        while (endOrNot = true) {
+                            if (checkForInvictusID(line)) {
+                                return true;
+                            }
+                            else {
+                               line = scnr.nextLine(); 
+                            }
+                        }
+                    }
+                    catch (Exception e) {
+                        endOrNot = false;
+                    }
+                
+                }
+                
+            }
+            count = count + 1;
+        }
+
+        return false;
+    }
+    
+    public static boolean checkForInvictusID(String modDir) throws IOException
+    //Check given directory to see whether or not it has an Invictus-based mod ID in it.
+    //Will create false positive if a user has a file with invModID in name, but shouldn't be an issue due to how long invModID is.
+    {
+        ArrayList<String> invModIDList = new ArrayList(); //List of all known Invictus-based mod ID's
+        invModIDList.add("2532715348");
+        invModIDList.add("2723164890");
+        invModIDList.add("2971810224");
+        invModIDList.add("2651142140");
+        invModIDList.add("2765744228");
+        invModIDList.add("2856497654");
+        invModIDList.add("3014203278");
+        invModIDList.add("3019975862");
+        
+        int count = 0;
+        while (count < invModIDList.size()) {
+            if (modDir.contains(invModIDList.get(count))) {
+               return true;
+            }
+            count = count + 1;
+        }
+
+        return false;
+    }
+    
+    public static void setTechYear(String startDate, String directory) throws IOException
+    //Sets the start year of all technology to align with startDate
+    {
+        String textToReplace = "[startdate]";
+        String techDir = directory+"/history/technology/";
+        String techDir2 = directory+"/common/defines/tech_defines.lua";
+        startDate = startDate.replace(".",",");
+        String startYear = startDate.split(",")[0];
+        File techFileInfo = new File (techDir);
+        String[] techFileList = techFileInfo.list();
+                if (techFileList != null) {
+                    int aq2 = 0;
+                    while (aq2 < techFileList.length) {
+                        String techFile = techFileList[aq2];
+                        Output.replaceInFile(textToReplace,startYear,techDir+techFile);
+                        System.out.println("Replaced "+textToReplace+" with "+startYear+" in "+techDir+techFile);
+                        aq2 = aq2 + 1;
+                    }
+
+                }
+        Output.replaceInFile(textToReplace,startYear,techDir2);
+
+    }
+    
+    public static ArrayList<String> condenseArrayStr(String[] longArray)
+    //Condenses a tag,number array into an ArrayList such that there are no repeat tags
+    {
+        //longArray;
+        int count = 0;
+        ArrayList<Integer> checkedCount = new ArrayList<Integer>();
+        ArrayList<String> shortArray = new ArrayList<String>();
+        //System.out.println("__________ Start __________");
+        while (count < longArray.length) {
+            String element = longArray[count];
+            String identifier = element.split(",")[0];
+            String numStr = element.split(",")[1];
+            if (numStr.equals("null")) {
+                numStr = "0";
+            }
+            int elementNum = Integer.parseInt(numStr);
+            //System.out.println("Checking ID "+identifier+" with "+elementNum+" elements");
+            
+            int count2 = count+1;
+            while (count2 < longArray.length) {
+                String element2 = longArray[count2];
+                String identifier2 = element2.split(",")[0];
+                //System.out.println("Checking ID "+identifier2+" with "+element2.split(",")[1]+" elements");
+                if (identifier.equals(identifier2)) {
+                    String numStr2 = element2.split(",")[1];
+                    if (numStr2.equals("null")) {
+                        numStr2 = "0";
+                    }
+                    int elementNum2 = Integer.parseInt(numStr2);
+                    elementNum = elementNum + elementNum2;
+                    checkedCount.add(count2);
+                    //System.out.println(identifier+" and "+identifier2+" match, adding "+element+" and "+element2);
+                }
+                count2 = count2 + 1;
+            }
+            checkedCount.add(count);
+            String shortArrayItem = identifier+","+Integer.toString(elementNum);
+            shortArray.add(shortArrayItem);
+            count = count + 1;
+            if (checkedCount.contains(count)) {
+                while (checkedCount.contains(count)) {
+                    count = count + 1;
+                }
+            }
+            //System.out.println("__________ NewLine __________");
+        }
+        
+        return shortArray;
+
     }
 
 }

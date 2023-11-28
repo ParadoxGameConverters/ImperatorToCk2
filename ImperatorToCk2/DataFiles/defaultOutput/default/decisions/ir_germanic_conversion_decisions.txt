@@ -17,6 +17,21 @@ targetted_decisions = {
 					region = custom_irck2_italy
 				}
 			}
+			NOT = { 
+				capital_scope = {
+					region = custom_irck2_anatolia_and_georgia
+				}
+			}
+			NOT = { 
+				capital_scope = {
+					region = custom_irck2_britannia
+				}
+			}
+			NOT = { 
+				capital_scope = {
+					region = region = world_india
+				}
+			}
 			any_realm_province = {
 				culture = german
 			}
@@ -36,6 +51,21 @@ targetted_decisions = {
 			NOT = {
 				capital_scope = {
 					region = custom_irck2_italy
+				}
+			}
+			NOT = {
+				capital_scope = {
+					region = custom_irck2_anatolia_and_georgia
+				}
+			}
+			NOT = { 
+				capital_scope = {
+					region = custom_irck2_britannia
+				}
+			}
+			NOT = { 
+				capital_scope = {
+					region = region = world_india
 				}
 			}
 			any_realm_province = {
@@ -626,6 +656,372 @@ targetted_decisions = {
 				num_culture_realm_provs = {
 					value = 10
 					culture = lombard
+				}
+			}
+		}
+	}
+
+	# Suebi character may convert to Wigazan
+	irck2_convert_to_wigazan = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = suebi
+			capital_scope = {
+				region = custom_irck2_anatolia_and_georgia
+			}
+			any_realm_province = {
+				culture = wigazan
+			}
+			OR = {
+				year = 580
+				top_liege = {
+					NOT = { culture = suebi }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = suebi
+			capital_scope = {
+				region = custom_irck2_anatolia_and_georgia
+			}
+			any_realm_province = {
+				culture = wigazan
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = wigazan
+			}
+			culture = wigazan
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Roman ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = suebi
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = suebi }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = wigazan }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = wigazan }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = wigazan
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = wigazan
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = wigazan
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = wigazan
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = wigazan
+				}
+			}
+		}
+	}
+	
+	# Suebi character may convert to Anglo-Suebi
+	irck2_convert_to_anglo_suebi = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = suebi
+			capital_scope = {
+				region = custom_irck2_britannia
+			}
+			any_realm_province = {
+				culture = anglo_suebi
+			}
+			#OR = {
+				#year = 425
+			#	top_liege = {
+			#		NOT = { culture = suebi }
+			#	}
+			#}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = suebi
+			capital_scope = {
+				region = custom_irck2_britannia
+			}
+			any_realm_province = {
+				culture = anglo_suebi
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = anglo_suebi
+			}
+			culture = anglo_suebi
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Roman ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = suebi
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = suebi }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = anglo_suebi }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = anglo_suebi }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = anglo_suebi
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = anglo_suebi
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = anglo_suebi
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = anglo_suebi
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = anglo_suebi
+				}
+			}
+		}
+	}
+	
+# Non-Norse Germanic character may convert to Indo-Germanic
+	irck2_convert_to_indo_germanic = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			OR = { culture = suebi culture = old_saxon culture = old_frankish culture = gothic culture = vandal }
+			capital_scope = {
+				OR = { region = world_asia_minor }
+			}
+			any_realm_province = {
+				culture = indo_germanic
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			OR = { culture = suebi culture = old_saxon culture = old_frankish culture = gothic culture = vandal }
+			capital_scope = {
+				OR = { region = world_asia_minor }
+			}
+			any_realm_province = {
+				culture = indo_germanic
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = indo_germanic
+			}
+			culture = indo_germanic
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Punic ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						OR = { culture = suebi culture = old_saxon culture = old_frankish culture = gothic culture = vandal }
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { OR = { culture = suebi culture = old_saxon culture = old_frankish culture = gothic culture = vandal } }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = indo_germanic }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = indo_germanic }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = indo_germanic
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = indo_germanic
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = indo_germanic
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = indo_germanic
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = indo_germanic
 				}
 			}
 		}
