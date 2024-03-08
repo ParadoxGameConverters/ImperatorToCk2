@@ -829,3 +829,10 @@ custom_irck2_pannonia = {
 	}
 }
 
+custom_irck2_greece_only = {
+	duchies = {
+		#Greece
+		d_adrianopolis d_thrace d_thessalonika d_athens d_aegean_islands d_achaia d_cephalonia d_epirus d_krete d_ohrid
+	}
+}
+

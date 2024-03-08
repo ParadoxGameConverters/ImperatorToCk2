@@ -1711,6 +1711,7 @@ gallic_group = {
 
 	}
 	
+	#By Yuiiut
 	plashurii = {
 		graphical_cultures = { celticgfx }
 		alternate_start = {
@@ -2197,6 +2198,58 @@ east_germanic = {
 		}
 
 		color = { 0.2 0.3 0.3 }
+
+		male_names = {
+			Adeqisio Adoric Agimadus Agriulfum Alamiro Algaster Anila Ansuario Argiovitus Ariamir Arosinda Audeca
+			Badamundus Baldemarius Balderedo Baltarius Baudemiro Becilla Berteiro Bonesindus Boniza Cagildo Cartemiro
+			Chararici Commundus Crodemiro Dagaredus Daildus Damiro Docemiro Donazarius Donegildus Dulcemirus Eboric
+			Egenio_Eugene Eimiro Eirigu Eisindus Eldegotus Eldesindus Elperico Engomiro Ensaldus Ermaric Evosindo Fagildus
+			Felmiro Fralenko Framuldo Francolino Fredoaldus Froatingus Fromildus Frumeiro Gardingus Gaudesindo Gomedei
+			Gomulfus Gresumarus Gudesteus Gumarius Gundivaldo Guntato Gunterotis Heremigar Hermeric Hespanisco Hildemir
+			Hilderic Hunisco Huniscus Leodegasti Leoderigus Leodulfus_Ludolf Leovaldo Lodemiro Magitus Malaredus Malaric Maldras
+			Marcosendus Massilan Mervigius Miro Moderido Nandaricus Nantildo Neufila Nitigis Notarius Odamiro Odemundus
+			Odericus Onemiro Onoricus Osdulfus Osorico Ostromirus Otualdo Pabregildus Pantard Pantinus Pappinus Pederagildu
+			Pennio Pipinus_Pepin Provaredo Quedesendo Quedulfus Quidemiro Quidericus Ragimiro Ragolfus Rakericus Randinus
+			Randuarius Ranisclus Rechiar Rechila Refulfo Reirigus Remismund Remisol Rendericus Ricardo_Richard Richimund Rodomiro
+			Roelindus Romanisco Romarigus Sagatus Saxomero Segomirus Sentarius Sescutus Sisulfus Spanarius Spoderigo Suavarius
+			Sunila Teobald_Theobald Teoderedus Theodemar_Theodemir Todegogia Trasmira Trasoldi Tumtuldo Uittimer Venedario Veremund_Vermudo Viamundus
+			Vidraldus Villisendo Vistremiro Zamarius Zendasindo
+		}
+		female_names = {
+			Acilo Ailo Alatrudia Aliverga Aliverta Aniedrudia Ansetrudia Astriverga Bagina Berina Cenabrida Cisilo Dadilo Dagadruida
+			Desteilli Donadildi Drusilla Ebragundia Ebrildi Eldegundia Emilo Entrudi Ermedrudia Ermildi Espallo Facalo Fagilo Faquilo
+			Fradegundia Framilli Fremosilli Frogildi Froilo Frolio Fronosili Frumildi Frunilo Gelvira Genlo Godoigia Goldrerona Granilo
+			Guandilo Gundiverga Guntedrudia Ildiverga Kindiverga Lallina Liuvilo Mansuara Margilli Mirosinda Penefreda Penetrudia
+			Ragesenda Randilo Raniverta Recerona Recesenda Recesuinda Rezevera Riquilo Rudilo Sabegoto Senuita Sindiverga
+			Sisilli Sisiverta Sitividis Sontrilli Sparuildi Stodildi Suevisco Tanquilli Tederona Tenildi Teodevirga Teodiverta Teodoriga
+			Teudileova Texilli Tractuilli Trasavara Trasmira Trastivigia Vergina Viscaverga Visterlo Vistravara Vistrildi Zanina
+		}
+
+		from_dynasty_prefix = "von "
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 5
+		father_name_chance = 10
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 5
+
+		modifier = default_culture_modifier
+	}
+	
+	old_burgundian = {
+		graphical_cultures = { germangfx }
+		alternate_start = {
+			OR = {
+				year < 1000
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+
+		color = { 0.36 0.22 0.22 }
 
 		male_names = {
 			Adeqisio Adoric Agimadus Agriulfum Alamiro Algaster Anila Ansuario Argiovitus Ariamir Arosinda Audeca
@@ -3108,6 +3161,42 @@ scythian_group = {
 
 		modifier = default_culture_modifier
 	}
+	
+	yarkamii = { #Reference to History on the Hoof: A Scythian Paradox Megacampaign
+		graphical_cultures = { byzantinegfx persiangfx }
+		secondary_event_pictures = bedouin_arabic
+		alternate_start = {
+			OR = {
+				year < 1000 
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+
+		color = { 0.61 0.20 0.66  }
+
+		male_names = {
+			Alysanna Arsa Aryamgula Asi Baga Bahudhiva Bamdaka Bhadra Bradaysaa Brika Capastaka Ceguti Chika Daisai Dharma Dum Dzatsi Gostana Gulai Harka
+			Haskadatta Huyi Hvam Hvarda Hvardamaya Hvimdu Ikam Irasamga Jabgu Jajahasa Kamnai Kayam Kharusa Khina Khuradatta Khvarnarse Kimashana Kimashani
+			Kimatcuna Kirtti Kriti Kunala Kushtana Mamatti Manohara Murlimin Naganpaka Nipandaka Padatcaina Pakyau Phimduka Presamdha Punarrjam Punekula
+			Purgula Raghu Samgai Samgaka Samgalaka Sangrama Sayausa Sham Shambhava Shikshananda Shinganca Shiresala Shirvamdai Shribhadra Shtrugize Shudamgula
+			Shura Sidaka Sihya Siladharma Simhyi Skunkha Sthavira Sudarrjam Sudhana Sumauna Sumtharaka Tayasham Tcusyau Vadhaga Vagiti Vaham Vahana
+			Vardhana Varman Vasudeva Vidakai Vidaram Vijita Vijitasimha Vikrama Virsha Visaram Vishirapumna Visma Ysambasta Zambasta
+			Ytarim Lyam Naradeve Candre Nandake Maisês Gôdigasos Phadious Spithamês Omrasmakos Amôspados Danarasmakos Pharnakiôn Ouarzbalos Iôdesmagos Maldras
+		}
+		female_names = {
+			Vasisthe Areagne Apama Alsamgya Alyonj Armaiti Dharmadasi Khivyaina Maya Nanda Nirmala Praniyata Safali Shandramata Shri Tisyarakshita Vimala Vimalaprabha Yavalac	
+		}
+
+		dukes_called_kings = yes
+
+        from_dynasty_prefix = "nava "
+        male_patronym = "puri "
+        female_patronym = "duda "
+		
+		disinherit_from_blinding = yes
+
+		modifier = default_culture_modifier
+	}
 }
 
 semitic_group = {
@@ -3199,7 +3288,174 @@ semitic_group = {
 		modifier = default_culture_modifier
 	}
 	
+	cardukoi = { #From Invictus, possibly Semetic, but classification unknown and not related to the Hurrians
+		graphical_cultures = { persiangfx }
+		secondary_event_pictures = bedouin_arabic
+
+		color = { 0.5 0.27 0.0 }
+
+		male_names = {
+			Aba_Abba Abahu_Abahu Abaya_Abaya Abaye_Abaya Abayi_Abaya Abba_Abba Abdima 'Abdisho' Abgar Abimalek Abraham_Abraham Abris Abrisius_Abrisius Acacius_Acacius Achan Achina Addai_Thaddeus Adlai Aggai Ahai_Ahha Ahadabui Ahha_Ahha "Akha d'abuh'" Akh-es-Samain Aqib-Alaha Asa_Asa Ashur_Asher Avahu Avda_Abahu Avdima_Avdima Avdimi_Avdima Avina Avira Azai
+			Babaeus_Babaeus Babai_Babaeus Babowai_Babaeus Babwahi_Babaeus Bar Bar-Abba Barba'shimin Bar-Nabha Bar-Talmai Bar-Timai Bar-Tolmai Bustan_Bustan Caiaphas Cephas_Peter Cephus_Peter Chadlai Chama Chanin_Chanin Chanina_Chanin Chaninai_Chanin Chinena_Chanin
+			Chozai_Chozai Chuma Chunya_Chunya Clopas Dadisho' Denha Dikla_Dikla Diklah_Dikla Dimi Dinkha Dunanu Elisha'_Elisha Eliya Emmanuel_Emmanuel Enosh Ezekiel_Ezekiel Farbokht_Farbokht Foma Giwargis_George Grwgari_Gregory Hanina_Chanin Hnanisho' Hozai_Chozai Idan Idra Ila Isaac_Isaac Isho' Isho'yahb Israel_Israel Kaiapha Karna Katsiu Kelaya Laszio_Lazarus Lazar_Lazarus
+			Lazare_Lazarus Lazaro_Lazarus Lazaros_Lazarus Lazarus_Lazarus Lazarz_Lazarus Lazer_Lazarus Lebbaeus Maadai Macabee_Macabee Maccabee_Macabee Magna_Ma'na Makkikha Maluch Ma'na_Ma'na Marabokht_Farbokht Maremmeh Mari Mikha'il_Michael Moqli Muna Nahir_Nahir Nahor_Nahir Nahur_Nahir Narsai Nazuk Nechunya_Chunya
+			Nehor_Nahir Nehorai Niv Nun Nur Oran_Nahir Pappa Paul_Paul Pethion Petros_Peter Petuel Qaligh Qayyoma Raca_Raka Rachim_Chanin Rahim_Chanin Raka_Raka Raz Raziel_Raphael Rubil Saad Saba_Saba Sabah_Saba Sabba'e_Saba Sabrisho'_Sabrisho' Sabr-Ishu_Sabrisho' Salu Samal Sami_Sami Samiy_Sami Sagi_Sagi Sargis Sava_Saba Sawma
+			Shafer Shahdost Shahlufa Shai Shalmai Shama Shamir Shammai Shemaiah Shem'on_Simon Sheraga_Sheraga Shila Shovai Shraga_Sheraga Sima Sliba-zkha Surin Tabbai Taddai_Thaddeus Talia_Talia Taliah_Talia Talmai_Bartholomew Talya_Talia Tam_Thomas
+			Tam'as_Thomas Ta'mhas_Thomas Targhal Tauma Tavi_Tavi Tavish_Tavi Tevis_Tavis Th'amhais_Thomas Thoma_Thomas Timai_Timothy Tiv Toba Todos Tolmai_Bartholomew Tomarsa_Tomarsa Tamuza_Tomarsa Tulmay_Bartholomew Ukba Yahballaha Yanai Ya'qob_Jacob Yeshua_Joshua Yohannan_John Yosip_Joseph Yousef_Joseph Yunanis_John Zerika
+		}
+		female_names = {
+			Adva Alya Anena Anina Bustan_Bustan Chanina Chasina Chayuta_Chayuta China_Hina Chiyuta_Chayuta Dikla_Dikla Diklah_Dikla Diklit_Dikla Duvsha Hanina_Chanin Hasna Hayuta_Chayuta Hina_Hina Ketina Kitra
+			Magdala Mahalia_Mahalia Mahalie_Mahalia Marfa_Martha Mariam_Maria Marta_Martha Marte_Martha Martha_Martha Marthe_Martha Marti_Martha Martita_Martha Mehalia_Mahalia Meiriona_Meirona Meirona_Meirona Morta_Martha
+			Nahara_Nura Nura_Nura Raz Reuma Saba_Saba Sabah_Saba Samantha Sameah_Sami Samee_Sami Sameea_Sami Samiya_Sami Samiyah_Sami Samiyya_Sami Samya_Sami Sava_Saba Shapira Sima Tabatha_Tabitha Tabby_Tabitha Tabetha_Tabitha
+			Tabitha_Tabitha Tadea_Thaddea Talia_Talia Taliah_Talia Talya_Talia Talitha Tam_Thomasa Tamasin_Thomasa Tami_Thomasa Tammy_Thomasa Tamsin_Thomasa Tamsyn_Thomasa Tamzin_Thomasa Thaddea_Thaddea Thomasa_Thomasa Zeita_Zeta Zeta_Zeta
+		}
+
+		from_dynasty_prefix = "of "
+
+		male_patronym = "Bar "
+		female_patronym = "Barta "
+		prefix = yes
+
+		modifier = default_culture_modifier
+	}
+	
 }
+
+dom_group = {
+	alternate_start = { NOT = { has_alternate_start_parameter = { key = special_culture value = animal_world } } }
+	graphical_cultures = { indiangfx muslimgfx }
+
+	ghagar = { # Indo-Aryan Egyptian divergence
+		graphical_cultures = { indiangfx muslimgfx }
+		secondary_event_pictures = bedouin_arabic
+
+		color = { 0.45 0.0 0.0 }
+
+		male_names = {
+			Achalraj_Achalraja Achalraja_Achalraja Adhandev Adityadeva Ajmal Alsi Amir Anangpal_Anangpala Anangpala_Anangpala Anupapala_Anupapala
+			Anuppal_Anupapala "Apara Gangeya" Arjunpal_Arjunpala Arjunpala_Arjunpala Arjunavarman Bacchdev Bachraj Baghpal_Baghpala Baghpala_Baghpala
+			Bahadur-Singh Beejpal_Beejpala Beejpala_Beejpala Bhaadar Bhilpala Bhoj_Bhoja Bhoja_Bhoja Bhojavarman_Bhoja Bhopal Bhumpal_Bhumpala
+			Bhumpala_Bhumpala Birpal_Birpala Birpala_Birpala Bisaldeva Brahmadeva Brahmapala Brahmdevpal Chand Devapala Devavarman Dhanga_Dhanga
+			Dhangadeva_Dhanga Dharmapala Dhaulshaya Dilipapala_Dilipapala Dilippal_Dilipapala Doth Draupad_Draupada Draupada_Draupada Dugarendra
+			Gambhir Ganapatideva Gandadeva Gangeya Ghatamdeva Gopal_Gopala Gopala_Gopala Govindachandra Govindapala Govindaraja_Govindaraja Govindraj_Govindaraja
+			Hamir Hammiravarman Harpal Harsa_Harsa Harshapala_Harsa Hirapal_Hirapala Hirapala_Hirapala Indrapal_Indrapala Indrapala_Indrapala Ishtpala
+			Jaganpal_Jaganpala Jaganpala_Jaganpala Jagatpal_Jagatpala Jagatpala_Jagatpala Jagdev_Jagdeva Jagdeva_Jagdeva Jaidas Jaipal Jaitugideva Jasapala_Jasapala
+			Jaspal_Jasapala Jatanpal_Jatanpala Jatanpala_Jatanpala Jayapala Jayasakti Jayasimha Jayavarman Jhetpal_Jhetpala Jhetpala_Jhetpala Junpala
+			Kailaspal_Kailaspala Kailaspala_Kailaspala Kalkurna Kalyanachandra Kakhopal_Kakhopala Kakhopala_Kakhopala Kamal Kanhad Kanvarpal_Kanvarpala
+			Kanvarpala_Kanvarpala Karnpal Keeratdeva Khadag Khetrapal_Khetrapala Khetrapala_Khetrapala Kiratpal_Kiratpala Kiratpala_Kiratpala Krishnray
+			Krsnapa Kumarapala Kunwar_Kunwar Kunwarpal_Kunwar Ladahachandra Lakshmandeva Lokpala Madanapala Madanavarman Maharana Mahendrapal_Mahendrapala
+			Mahendrapala_Mahendrapala Mahipal_Mahipala Mahipala_Mahipala Mahipata Mahlakadeva Mandandeva Mangaldeva Margdeva Mihira Nagapala Nagdeo Nannuka
+			Naravarman Narayanapala Narpal Nayapala Nihaal Nihalray Paramardideva Pavak Peepalraj Popatraj Pritampal_Pritampala Pritampala_Pritampala Prithipala
+			Prithvi_Prithvi Prithvipal_Prithvi Prithviraj_Prithviraja Prithviraja_Prithviraja Prithvivarman Rahila Rajapala Rajyapala Ramabhadra Ramachandra
+			Rampal_Rampala Rampala_Rampala Rana Rangraj_Rangraja Rangraja_Rangraja Ratnapala Rijhpala Roshandeva Salivaahan Sallaksanavarman Saugandeva Shurapala
+			Sisupal_Sisupala Sisupala_Sisupala Sohanpal Somasi Someshvara Sonpal_Sonpala Sonpala_Sonpala Srichandra Subhatavarman Sukhinpal_Sukhinpala
+			Sukhinpala_Sukhinpala Sulakshanpal Sultanpal_Sultanpala Sultanpala_Sultanpala Surajpal_Surajpala Surajpala_Surajpala Traillokyachandra Tejapala_Tejpal
+			Tejpal_Tejpal Tolpal Trailokyavarman Trilochanpala Udayaditya Udaysangh Uddharandeva Vachhal Vakpati Vapyata Varshapala_Varshapala Varshpal_Varshapala
+			Vasudev Vidurathpal_Vidurathpala Vidurathpala_Vidurathpala Vidyadhara Vigrahapala Vigraharaja Vihangpal Vijayapala Vijayasakti Vinayakapala Vindhyavarman
+			Viramdeva Viravarman Virsinghadeva Yasovarman
+		}
+		female_names = {
+			Akal Anantadevi Damayanti Dattadevi Dehanagadevi Dhruvadevi Dhruvasvamini Hemavati
+			Kakanvati Kalayandevi Kanchuka Kanwar Karmavati Kumaradevi Lakshman Maharani Mahidevi Nattadevi
+			Prabhavati Prabhavatigupta Prasadhanadevi Puppadevi Rajamati Sanyukta Shrimitradevi
+		}
+
+		dynasty_title_names = yes
+		founder_named_dynasties = yes
+
+		castes = yes
+
+		modifier = default_culture_modifier
+	}
+	
+	dom = { # Indo-Aryan Levant-Mesopotamia divergence
+		graphical_cultures = { indiangfx muslimgfx }
+		secondary_event_pictures = bedouin_arabic
+
+		color = { 0.45 0.0 0.0 }
+
+		male_names = {
+			Achalraj_Achalraja Achalraja_Achalraja Adhandev Adityadeva Ajmal Alsi Amir Anangpal_Anangpala Anangpala_Anangpala Anupapala_Anupapala
+			Anuppal_Anupapala "Apara Gangeya" Arjunpal_Arjunpala Arjunpala_Arjunpala Arjunavarman Bacchdev Bachraj Baghpal_Baghpala Baghpala_Baghpala
+			Bahadur-Singh Beejpal_Beejpala Beejpala_Beejpala Bhaadar Bhilpala Bhoj_Bhoja Bhoja_Bhoja Bhojavarman_Bhoja Bhopal Bhumpal_Bhumpala
+			Bhumpala_Bhumpala Birpal_Birpala Birpala_Birpala Bisaldeva Brahmadeva Brahmapala Brahmdevpal Chand Devapala Devavarman Dhanga_Dhanga
+			Dhangadeva_Dhanga Dharmapala Dhaulshaya Dilipapala_Dilipapala Dilippal_Dilipapala Doth Draupad_Draupada Draupada_Draupada Dugarendra
+			Gambhir Ganapatideva Gandadeva Gangeya Ghatamdeva Gopal_Gopala Gopala_Gopala Govindachandra Govindapala Govindaraja_Govindaraja Govindraj_Govindaraja
+			Hamir Hammiravarman Harpal Harsa_Harsa Harshapala_Harsa Hirapal_Hirapala Hirapala_Hirapala Indrapal_Indrapala Indrapala_Indrapala Ishtpala
+			Jaganpal_Jaganpala Jaganpala_Jaganpala Jagatpal_Jagatpala Jagatpala_Jagatpala Jagdev_Jagdeva Jagdeva_Jagdeva Jaidas Jaipal Jaitugideva Jasapala_Jasapala
+			Jaspal_Jasapala Jatanpal_Jatanpala Jatanpala_Jatanpala Jayapala Jayasakti Jayasimha Jayavarman Jhetpal_Jhetpala Jhetpala_Jhetpala Junpala
+			Kailaspal_Kailaspala Kailaspala_Kailaspala Kalkurna Kalyanachandra Kakhopal_Kakhopala Kakhopala_Kakhopala Kamal Kanhad Kanvarpal_Kanvarpala
+			Kanvarpala_Kanvarpala Karnpal Keeratdeva Khadag Khetrapal_Khetrapala Khetrapala_Khetrapala Kiratpal_Kiratpala Kiratpala_Kiratpala Krishnray
+			Krsnapa Kumarapala Kunwar_Kunwar Kunwarpal_Kunwar Ladahachandra Lakshmandeva Lokpala Madanapala Madanavarman Maharana Mahendrapal_Mahendrapala
+			Mahendrapala_Mahendrapala Mahipal_Mahipala Mahipala_Mahipala Mahipata Mahlakadeva Mandandeva Mangaldeva Margdeva Mihira Nagapala Nagdeo Nannuka
+			Naravarman Narayanapala Narpal Nayapala Nihaal Nihalray Paramardideva Pavak Peepalraj Popatraj Pritampal_Pritampala Pritampala_Pritampala Prithipala
+			Prithvi_Prithvi Prithvipal_Prithvi Prithviraj_Prithviraja Prithviraja_Prithviraja Prithvivarman Rahila Rajapala Rajyapala Ramabhadra Ramachandra
+			Rampal_Rampala Rampala_Rampala Rana Rangraj_Rangraja Rangraja_Rangraja Ratnapala Rijhpala Roshandeva Salivaahan Sallaksanavarman Saugandeva Shurapala
+			Sisupal_Sisupala Sisupala_Sisupala Sohanpal Somasi Someshvara Sonpal_Sonpala Sonpala_Sonpala Srichandra Subhatavarman Sukhinpal_Sukhinpala
+			Sukhinpala_Sukhinpala Sulakshanpal Sultanpal_Sultanpala Sultanpala_Sultanpala Surajpal_Surajpala Surajpala_Surajpala Traillokyachandra Tejapala_Tejpal
+			Tejpal_Tejpal Tolpal Trailokyavarman Trilochanpala Udayaditya Udaysangh Uddharandeva Vachhal Vakpati Vapyata Varshapala_Varshapala Varshpal_Varshapala
+			Vasudev Vidurathpal_Vidurathpala Vidurathpala_Vidurathpala Vidyadhara Vigrahapala Vigraharaja Vihangpal Vijayapala Vijayasakti Vinayakapala Vindhyavarman
+			Viramdeva Viravarman Virsinghadeva Yasovarman
+		}
+		female_names = {
+			Akal Anantadevi Damayanti Dattadevi Dehanagadevi Dhruvadevi Dhruvasvamini Hemavati
+			Kakanvati Kalayandevi Kanchuka Kanwar Karmavati Kumaradevi Lakshman Maharani Mahidevi Nattadevi
+			Prabhavati Prabhavatigupta Prasadhanadevi Puppadevi Rajamati Sanyukta Shrimitradevi
+		}
+
+		dynasty_title_names = yes
+		founder_named_dynasties = yes
+
+		castes = yes
+
+		modifier = default_culture_modifier
+	}
+	
+	lom = { # Indo-Aryan Armenian divergence
+		graphical_cultures = { indiangfx muslimgfx }
+		secondary_event_pictures = bedouin_arabic
+
+		color = { 0.45 0.0 0.0 }
+
+		male_names = {
+			Achalraj_Achalraja Achalraja_Achalraja Adhandev Adityadeva Ajmal Alsi Amir Anangpal_Anangpala Anangpala_Anangpala Anupapala_Anupapala
+			Anuppal_Anupapala "Apara Gangeya" Arjunpal_Arjunpala Arjunpala_Arjunpala Arjunavarman Bacchdev Bachraj Baghpal_Baghpala Baghpala_Baghpala
+			Bahadur-Singh Beejpal_Beejpala Beejpala_Beejpala Bhaadar Bhilpala Bhoj_Bhoja Bhoja_Bhoja Bhojavarman_Bhoja Bhopal Bhumpal_Bhumpala
+			Bhumpala_Bhumpala Birpal_Birpala Birpala_Birpala Bisaldeva Brahmadeva Brahmapala Brahmdevpal Chand Devapala Devavarman Dhanga_Dhanga
+			Dhangadeva_Dhanga Dharmapala Dhaulshaya Dilipapala_Dilipapala Dilippal_Dilipapala Doth Draupad_Draupada Draupada_Draupada Dugarendra
+			Gambhir Ganapatideva Gandadeva Gangeya Ghatamdeva Gopal_Gopala Gopala_Gopala Govindachandra Govindapala Govindaraja_Govindaraja Govindraj_Govindaraja
+			Hamir Hammiravarman Harpal Harsa_Harsa Harshapala_Harsa Hirapal_Hirapala Hirapala_Hirapala Indrapal_Indrapala Indrapala_Indrapala Ishtpala
+			Jaganpal_Jaganpala Jaganpala_Jaganpala Jagatpal_Jagatpala Jagatpala_Jagatpala Jagdev_Jagdeva Jagdeva_Jagdeva Jaidas Jaipal Jaitugideva Jasapala_Jasapala
+			Jaspal_Jasapala Jatanpal_Jatanpala Jatanpala_Jatanpala Jayapala Jayasakti Jayasimha Jayavarman Jhetpal_Jhetpala Jhetpala_Jhetpala Junpala
+			Kailaspal_Kailaspala Kailaspala_Kailaspala Kalkurna Kalyanachandra Kakhopal_Kakhopala Kakhopala_Kakhopala Kamal Kanhad Kanvarpal_Kanvarpala
+			Kanvarpala_Kanvarpala Karnpal Keeratdeva Khadag Khetrapal_Khetrapala Khetrapala_Khetrapala Kiratpal_Kiratpala Kiratpala_Kiratpala Krishnray
+			Krsnapa Kumarapala Kunwar_Kunwar Kunwarpal_Kunwar Ladahachandra Lakshmandeva Lokpala Madanapala Madanavarman Maharana Mahendrapal_Mahendrapala
+			Mahendrapala_Mahendrapala Mahipal_Mahipala Mahipala_Mahipala Mahipata Mahlakadeva Mandandeva Mangaldeva Margdeva Mihira Nagapala Nagdeo Nannuka
+			Naravarman Narayanapala Narpal Nayapala Nihaal Nihalray Paramardideva Pavak Peepalraj Popatraj Pritampal_Pritampala Pritampala_Pritampala Prithipala
+			Prithvi_Prithvi Prithvipal_Prithvi Prithviraj_Prithviraja Prithviraja_Prithviraja Prithvivarman Rahila Rajapala Rajyapala Ramabhadra Ramachandra
+			Rampal_Rampala Rampala_Rampala Rana Rangraj_Rangraja Rangraja_Rangraja Ratnapala Rijhpala Roshandeva Salivaahan Sallaksanavarman Saugandeva Shurapala
+			Sisupal_Sisupala Sisupala_Sisupala Sohanpal Somasi Someshvara Sonpal_Sonpala Sonpala_Sonpala Srichandra Subhatavarman Sukhinpal_Sukhinpala
+			Sukhinpala_Sukhinpala Sulakshanpal Sultanpal_Sultanpala Sultanpala_Sultanpala Surajpal_Surajpala Surajpala_Surajpala Traillokyachandra Tejapala_Tejpal
+			Tejpal_Tejpal Tolpal Trailokyavarman Trilochanpala Udayaditya Udaysangh Uddharandeva Vachhal Vakpati Vapyata Varshapala_Varshapala Varshpal_Varshapala
+			Vasudev Vidurathpal_Vidurathpala Vidurathpala_Vidurathpala Vidyadhara Vigrahapala Vigraharaja Vihangpal Vijayapala Vijayasakti Vinayakapala Vindhyavarman
+			Viramdeva Viravarman Virsinghadeva Yasovarman
+		}
+		female_names = {
+			Akal Anantadevi Damayanti Dattadevi Dehanagadevi Dhruvadevi Dhruvasvamini Hemavati
+			Kakanvati Kalayandevi Kanchuka Kanwar Karmavati Kumaradevi Lakshman Maharani Mahidevi Nattadevi
+			Prabhavati Prabhavatigupta Prasadhanadevi Puppadevi Rajamati Sanyukta Shrimitradevi
+		}
+
+		dynasty_title_names = yes
+		founder_named_dynasties = yes
+
+		castes = yes
+
+		modifier = default_culture_modifier
+	}
+	
+}
+
 
 
 

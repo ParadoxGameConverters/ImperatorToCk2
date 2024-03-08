@@ -970,7 +970,8 @@ public class Processing
         return title;
     }
 
-    public static ArrayList<String> calculateDuchyNameList (String ck2Dir, String[][] ck2ProvInfo,ArrayList<String> cultureMappings) throws IOException
+    public static ArrayList<String> calculateDuchyNameList (String ck2Dir, String[][] ck2ProvInfo,ArrayList<String> cultureMappings,
+    ArrayList<String> duchies) throws IOException
     {
 
         ArrayList<String> output = new ArrayList<String>(); //owner,culture,duchy
@@ -979,7 +980,7 @@ public class Processing
 
         int aq2 = 0;
 
-        ArrayList<String> duchies = Importer.importDuchyNameList(ck2Dir);
+        //ArrayList<String> duchies = Importer.importDuchyNameList(ck2Dir);
 
         ArrayList<String> provNameList = new ArrayList<String>();
 
@@ -1585,7 +1586,8 @@ public class Processing
             eastTitle = "byzantium";
         }
         String westTitle = title+"_west";
-        String ck2Capital = Importer.importConvList("provinceConversion.txt",Integer.parseInt(capital))[1];
+        //String ck2Capital = Importer.importConvList("provinceConversion.txt",Integer.parseInt(capital))[1];
+        String ck2Capital = capital;
         //events
         String eventDir = modDirectory+"/events/dynamic_empire_split_"+country+".txt";
         String eventTemplateDirectory = "defaultOutput/templates/events/dynamic_empire_split.txt";
@@ -2075,6 +2077,147 @@ public class Processing
         
         return shortArray;
 
+    }
+    
+    public static String removeComments(String comment)
+    //Sets the start year of all technology to align with startDate
+    {
+        try {
+            comment = comment.split("#")[0];
+        } catch (java.lang.ArrayIndexOutOfBoundsException exception) {
+            comment = "";
+        }
+        
+        return comment;
+
+    }
+    
+    public static String cutQuotes(String word)
+    //Cut off quotes ("Bob" becomes Bob)
+    {
+        String newWord = word.substring(1,word.length()-1);
+
+        return newWord; //if no pop found, return null
+    }
+    
+    public static ArrayList<String[]> getConstituentCounties(ArrayList<String> duchyMappings,ArrayList<String[]> ck2Geo)
+    {
+        ArrayList<String[]> newCk2Geo = new ArrayList<String[]>();
+        int count = 0;
+        while (count < ck2Geo.size()) {
+            String[] ck2Region = ck2Geo.get(count);
+            String[] regComponents = ck2Region[1].split(",");
+            String ck2RegionName = ck2Region[0];
+            int count2 = 0;
+            while (count2 < regComponents.length) {
+                String selectedComponent = regComponents[count2];
+                int count3 = 0;
+                while (count3 < duchyMappings.size()) {
+                    String[] duchy = duchyMappings.get(count3).split(",");
+                    if (duchy[0].equals(selectedComponent) && duchy.length > 1) {
+                        //System.out.println(duchy[0]+" Matches up with "+selectedComponent+" in "+ck2RegionName);
+                        count3 = count3 + duchyMappings.size();
+                        int count4 = 2;
+                        selectedComponent = duchy[1];
+                        while (count4 < duchy.length) {
+                            selectedComponent = selectedComponent + "," + duchy[count4];
+                            count4 = count4 + 1;
+                        }
+                    }
+                    //String duchyCounties = selectedDuchy[count3];
+                    
+                    count3 = count3 + 1;
+                }
+                regComponents[count2] = selectedComponent;
+                
+                count2 = count2 + 1;
+            }
+            int count5 = 1;
+            String tmpNewRegComponent = regComponents[0];
+            while (count5 < regComponents.length) {
+                tmpNewRegComponent = tmpNewRegComponent + "," + regComponents[count5];
+                count5 = count5 + 1;
+            }
+            ck2Region[1] = tmpNewRegComponent;
+            //System.out.println(ck2Region[0] + ": " + ck2Region[1]);
+            newCk2Geo.add(ck2Region);
+            count = count + 1;
+        }
+
+        return newCk2Geo;
+    }
+    
+    public static boolean checkGeo(String ck2County, ArrayList<String[]> ck2Geo, String geoName)
+    {
+        int count = 0;
+        
+        while (count < ck2Geo.size()) {
+            String[] ck2Region = ck2Geo.get(count);
+            String regionName = ck2Region[0];
+            if (regionName.equals(geoName)) {
+                String[] regionCounties = ck2Region[1].split(",");
+                int count2 = 0;
+                while (count2 < regionCounties.length) {
+                    String regionCounty = regionCounties[count2];
+                    if (regionCounty.equals(ck2County)) {
+                        return true;
+                    }
+                    
+                    count2 = count2 + 1;
+                }
+            }
+            
+            count = count + 1;
+            
+        }
+
+        return false;
+    }
+    
+    public static String[][] assignNamesToProvs(String[][] ck2ProvInfo, int totalCKProv, String dir) throws IOException
+    {
+        int count = 0;
+        
+        while (count < totalCKProv) {
+            String provinceName = "";
+            provinceName = importNames("a",count,dir)[0];
+            
+            provinceName = formatProvName(provinceName);
+
+            if (count == 103) { //Leon in Brittany and Spain have the same name in definition.csv
+                provinceName = "french_leon";  
+            }
+            
+            ck2ProvInfo[5][count] = provinceName;
+            
+            count = count + 1;
+            
+        }
+
+        return ck2ProvInfo;
+    }
+    
+    public static ArrayList<String[]> convertAllCapitals(ArrayList<String[]> impTagInfo) throws IOException
+    {
+        int count = 0;
+        
+        while (count < impTagInfo.size()) {
+            String[] impTag = impTagInfo.get(count);
+            String oldCapital = impTag[5];
+            int oldCapitalInt = Integer.parseInt(oldCapital);
+            String newCapital = Importer.importConvList("provinceConversion.txt",oldCapitalInt)[1];
+            if (newCapital.equals("99999")) {
+                System.out.println("Warning, I:R province "+oldCapital+" is unmapped!");
+                newCapital = "69";
+            }
+            impTag[5] = newCapital;
+            impTagInfo.set(count,impTag);
+            
+            count = count + 1;
+            
+        }
+
+        return impTagInfo;
     }
 
 }

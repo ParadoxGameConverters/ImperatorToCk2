@@ -71,3 +71,13 @@ k_ALA,k_alania
 
 #Timeline Extender
 e_WRE,e_roman_empire_west
+
+#Realm Divide
+e_SAS,e_persia
+e_REM,e_roman_empire
+e_BEM,e_byzantium
+k_SXN,k_saxony
+k_SWD,k_sweden
+k_DNS,k_denmark
+k_ALN,k_alania
+k_FRA,k_france

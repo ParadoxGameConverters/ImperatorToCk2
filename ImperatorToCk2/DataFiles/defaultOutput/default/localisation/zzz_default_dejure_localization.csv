@@ -1,6 +1,10 @@
 #Localization for all default titles used for dejure calculation
 #Will only be used in case tag didn't exist in in I:R
 
+k_cambria;Cambria;Cambria;Kambrien;;Cambria;;;;;;;;;x
+k_cambria_adj;Cambrian;Cambrian;Kambrisch;;Cambrian;;;;;;;;;x
+k_laessina;Laessina;Laessina;Laessinland;;Laessin;;;;;;;;;x
+k_laessina_adj;Laessin;Laessin;Laessisch;;Laessin;;;;;;;;;x
 e_GAU;Gaul;Gaul;Gaul;;Gaul;;;;;;;;;x
 e_GAU_adj;Gallic;Gallic;Gallic;;Gallic;;;;;;;;;x
 k_GAU;Gaul;Gaul;Gaul;;Gaul;;;;;;;;;x
@@ -73,4 +77,3 @@ k_TUR;Turdetania;Turdétanie;Turdetanien;;turdetana;;;;;;;;;x
 k_TUR_adj;Turdetanian;Turdétanien;Turdetanische;;turdetano;;;;;;;;;x
 k_NMT;Neo-Mitanni Kingdom;Neo-Mitanni Kingdom;Neumitanni Königsreich;;Neo-Mitanni Kingdom;;;;;;;;;x
 k_NMT_adj;Neo-Mitanni;Neo-Mitanni;Neumitanni;;Neo-Mitanni;;;;;;;;;x
-

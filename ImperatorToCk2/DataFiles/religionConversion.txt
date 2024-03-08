@@ -1,15 +1,15 @@
 #IR Religion,CK2 Religion,argument=x(optional),argument2=x(optional),ect.
-#Arguments can be culture=culture_name,tagCulture=culture_name,year=x
-#culture checks the specific character/province, tagCulture checks the tag that owns the character/province, and year checks if x <= converted year
+#Arguments can be culture=culture_name, tagCulture=culture_name, year=x, ck2Region=x
+#culture checks the specific character/province, tagCulture checks the tag that owns the character/province, and year checks if x <= converted year (If converted year is after x year, then use mapping)
 #All arguments in mapping must be true for mapping to be used
 #Comments must be placed on their own line separate from the mapping, and any invalid mapping will be ignored by the converter
 #The first valid mapping will always take priority
 
 roman_pantheon,hellenic_pagan
+italic_pantheon,hellenic_pagan
 carthaginian_pantheon,canaanite
 druidism,druidic
 germanic_religion,norse_pagan
-christianity,proto_orthodox
 judaism,jewish
 zoroaster,zoroastrian
 buddhism,buddhist
@@ -35,6 +35,7 @@ slavic,slavic_pagan
 tengri,tengri_pagan
 mesoamerican_religion,mayan_pagan
 new_armenian_religion,khaldic
+anahitic_religion,khaldic
 ajivika,ajivika
 agama,hindu
 puntic_religion,waaqi
@@ -44,6 +45,7 @@ mithra_religion,mithraic
 vaksh_religion,khurmazta
 nilotic_pantheon,west_african_pagan
 nuragic_pantheon,nuragic
+hurrian_pantheon,hurrian
 
 #Matrist/We'Ra Split
 matrist_religion,slavic_pagan,tagCulture=protoslavic
@@ -51,6 +53,44 @@ matrist_religion,baltic_pagan,tagCulture=aestian
 matrist_religion,slavic_pagan,culture=protoslavic
 #Fallback
 matrist_religion,baltic_pagan
+
+#Christianity from Timeline extender
+
+#Germanic Christian peoples will convert as Arian
+christianity,arian,year=200,culture=gothic
+christianity,arian,year=200,culture=vandal
+christianity,arian,year=200,culture=old_burgundian
+christianity,arian,year=200,culture=norse
+christianity,arian,year=200,culture=lombard
+christianity,arian,year=200,culture=old_frankish
+christianity,arian,year=200,culture=suebi
+christianity,arian,year=200,culture=old_saxon
+
+#Until Charceledonian split decision is setup, split at 450
+christianity,miaphysite,year=450,culture=armenian
+christianity,catholic,year=450,ck2Region=world_europe_west_brittania
+christianity,catholic,year=450,ck2Region=world_europe_west_germania
+christianity,catholic,year=450,ck2Region=world_europe_west_francia
+christianity,catholic,year=450,ck2Region=world_europe_west_iberia
+christianity,catholic,year=450,ck2Region=world_europe_south_italy
+christianity,catholic,year=450,ck2Region=custom_irck2_north_africa
+christianity,catholic,year=450,ck2Region=custom_irck2_poland_slavic
+christianity,catholic,year=450,ck2Region=world_europe_north
+christianity,catholic,year=450,ck2Region=custom_irck2_pannonia
+christianity,catholic,year=450,ck2Region=custom_irck2_croatia
+christianity,miaphysite,year=450,ck2Region=custom_irck2_egypt
+christianity,miaphysite,year=450,ck2Region=world_africa_east
+christianity,orthodox,year=450,ck2Region=custom_irck2_bulgaria
+christianity,orthodox,year=450,ck2Region=world_europe_south_east
+christianity,orthodox,year=450,ck2Region=world_asia_minor
+christianity,orthodox,year=450,ck2Region=world_middle_east_jerusalem 
+christianity,orthodox,year=450,ck2Region=custom_irck2_rus
+christianity,nestorian,year=450
+
+
+christianity,nicene,year=200
+
+christianity,proto_orthodox
 
 #Realm Divide mod
 arian_christian,arian
@@ -61,3 +101,16 @@ manichaeism_religion,manichean
 donatist_christian,donatism
 priscillian_christian,priscillianism
 monophysite_christian,monophysite
+eastern_christian,monophysite
+
+christian_religion,catholic,ck2Region=world_europe_west_brittania
+christian_religion,catholic,ck2Region=world_europe_west_germania
+christian_religion,catholic,ck2Region=world_europe_west_francia
+christian_religion,catholic,ck2Region=world_europe_west_iberia
+christian_religion,catholic,ck2Region=world_europe_south_italy
+christian_religion,catholic,ck2Region=custom_irck2_north_africa
+christian_religion,catholic,ck2Region=custom_irck2_poland_slavic
+christian_religion,catholic,ck2Region=world_europe_north
+christian_religion,catholic,ck2Region=custom_irck2_pannonia
+christian_religion,catholic,ck2Region=custom_irck2_croatia
+christian_religion,orthodox

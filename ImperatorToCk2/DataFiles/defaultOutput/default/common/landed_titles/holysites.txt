@@ -466,3 +466,62 @@ c_lhasa={ #No historical basis
 	holy_site = bamar_pagan_reformed
 }
 
+#Hurrian
+
+c_edessa={ #Closest to Wassukani
+	holy_site = hurrian
+	holy_site = hurrian_reformed
+}
+c_antiocheia={ #Ugarit
+	holy_site = hurrian
+	holy_site = hurrian_reformed
+}
+c_mosul={ #Site of the Assyrian capital
+	holy_site = hurrian
+	holy_site = hurrian_reformed
+}
+c_cairo={ #Capital of Egypt, No historical basis
+	holy_site = hurrian
+	holy_site = hurrian_reformed
+}
+c_galatia={ #Capital of the Hittites, No historical basis
+	holy_site = hurrian
+	holy_site = hurrian_reformed
+}
+
+#Nicene - Same as Proto-Orthodox
+
+c_jerusalem={ #Holiest of Cities
+	holy_site = nicene
+}
+c_roma={ # Saints Paul and Peter
+	holy_site = nicene
+}
+c_antiocheia={ # Very Important to early Christianity
+	holy_site = nicene
+}
+c_alexandria={ # Mark the Evangelist
+	holy_site = nicene
+}
+c_ephesos={ # Saint John the Beloved 
+	holy_site = nicene
+}
+
+#Arianism
+
+c_jerusalem={ # Holiest of Cities
+	holy_site = arian
+}
+c_alexandria={ # Where Arius preached from
+	holy_site = arian
+}
+c_roma={ # Saints Paul and Peter
+	holy_site = arian
+}
+c_tunis={ #Capital of the Vandals
+	holy_site = arian
+}
+c_toledo={ #Capital of the Visigoths
+	holy_site = arian
+}
+

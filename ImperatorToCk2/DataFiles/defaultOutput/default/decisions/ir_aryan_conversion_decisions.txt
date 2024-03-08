@@ -1,8 +1,8 @@
 targetted_decisions = {
 
 
-	# Saka character may convert to Indo-Scythian
-	irck2_convert_to_indo_scythian = {
+	# Indo-Aryan character may convert to Dom
+	irck2_convert_to_dom = {
 		only_playable = yes
 
 		filter = self
@@ -11,17 +11,21 @@ targetted_decisions = {
 
 		potential = {
 			is_playable = yes
-			culture = saka
+			culture_group = indo_aryan_group
+			NOT = { culture = neo_mitanni }
 			capital_scope = {
-				region = world_india
+				region = custom_irck2_levant
 			}
 			any_realm_province = {
-				culture = indo_scythian
+				culture = dom
 			}
 			OR = {
-				year = 125
+				year = 450
 				top_liege = {
-					NOT = { culture = saka }
+					OR = {
+						NOT = { culture_group = indo_aryan_group }
+						culture = neo_mitanni
+					}
 				}
 			}
 			NOT = { government = chinese_imperial_government }
@@ -30,12 +34,12 @@ targetted_decisions = {
 			}
 		}
 		allow = {
-			culture = saka
+			culture = dom
 			capital_scope = {
-				region = world_india
+				region = custom_irck2_levant
 			}
 			any_realm_province = {
-				culture = indo_scythian
+				culture = dom
 			}
 		}
 		effect = {
@@ -45,9 +49,9 @@ targetted_decisions = {
 					employer = { character = ROOT }
 					dynasty = ROOT
 				}
-				culture = indo_scythian
+				culture = dom
 			}
-			culture = indo_scythian
+			culture = dom
 		}
 		revoke_allowed = {
 			always = no
@@ -59,7 +63,7 @@ targetted_decisions = {
 				factor = 0
 				OR = {
 					top_liege = {
-						culture = saka
+						culture = dom
 						OR = {
 							tier = emperor
 							#num_of_king_titles = 2
@@ -68,7 +72,7 @@ targetted_decisions = {
 
 					AND = {
 						independent = no
-						top_liege = { culture = saka }
+						top_liege = { culture = dom }
 					}
 				}
 			}
@@ -80,290 +84,53 @@ targetted_decisions = {
 			modifier = {
 				factor = 0.01
 				capital_scope = {
-					NOT = { culture = indo_scythian }
+					NOT = { culture = dom }
 				}
 			}
 			modifier = {
 				factor = 2.0
-				liege = { culture = indo_scythian }
+				liege = { culture = dom }
 			}
 			modifier = {
 				factor = 1.1
 				num_culture_realm_provs = {
 					value = 2
-					culture = indo_scythian
+					culture = dom
 				}
 			}
 			modifier = {
 				factor = 1.1
 				num_culture_realm_provs = {
 					value = 4
-					culture = indo_scythian
+					culture = dom
 				}
 			}
 			modifier = {
 				factor = 1.1
 				num_culture_realm_provs = {
 					value = 6
-					culture = indo_scythian
+					culture = dom
 				}
 			}
 			modifier = {
 				factor = 1.1
 				num_culture_realm_provs = {
 					value = 8
-					culture = indo_scythian
+					culture = dom
 				}
 			}
 			modifier = {
 				factor = 1.1
 				num_culture_realm_provs = {
 					value = 10
-					culture = indo_scythian
-				}
-			}
-		}
-	}
-
-# Sarmatian or Scythian character may convert to Iazyges
-	irck2_convert_to_iazyges = {
-		only_playable = yes
-
-		filter = self
-		ai_target_filter = self
-		ai_check_interval = 12
-
-		potential = {
-			is_playable = yes
-			OR = { culture = sarmatian culture = royal_scythian }
-			capital_scope = {
-				OR = { region = custom_irck2_pannonia region = custom_irck2_dalmatia }
-			}
-			any_realm_province = {
-				culture = iazyges
-			}
-			NOT = { government = chinese_imperial_government }
-			NOT = {
-				has_alternate_start_parameter = { key = culture_names value = random }
-			}
-		}
-		allow = {
-			OR = { culture = sarmatian culture = royal_scythian }
-			capital_scope = {
-				OR = { region = custom_irck2_pannonia region = custom_irck2_dalmatia }
-			}
-			any_realm_province = {
-				culture = iazyges
-			}
-		}
-		effect = {
-			any_courtier = {
-				limit = {
-					culture = ROOT
-					employer = { character = ROOT }
-					dynasty = ROOT
-				}
-				culture = iazyges
-			}
-			culture = iazyges
-		}
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 1
-
-			modifier = { #If Ruler has 2 king titles, is emperor, or is under Punic ruler, will not do
-				factor = 0
-				OR = {
-					top_liege = {
-						OR = { culture = sarmatian culture = royal_scythian }
-						OR = {
-							tier = emperor
-							#num_of_king_titles = 2
-						}
-					}
-
-					AND = {
-						independent = no
-						top_liege = { OR = { culture = sarmatian culture = royal_scythian } }
-					}
-				}
-			}
-
-			modifier = {
-				#factor = 0.5 # Slow it down a bit
-			}
-
-			modifier = {
-				factor = 0.01
-				capital_scope = {
-					NOT = { culture = iazyges }
-				}
-			}
-			modifier = {
-				factor = 2.0
-				liege = { culture = iazyges }
-			}
-			modifier = {
-				factor = 1.1
-				num_culture_realm_provs = {
-					value = 2
-					culture = iazyges
-				}
-			}
-			modifier = {
-				factor = 1.1
-				num_culture_realm_provs = {
-					value = 4
-					culture = iazyges
-				}
-			}
-			modifier = {
-				factor = 1.1
-				num_culture_realm_provs = {
-					value = 6
-					culture = iazyges
-				}
-			}
-			modifier = {
-				factor = 1.1
-				num_culture_realm_provs = {
-					value = 8
-					culture = iazyges
-				}
-			}
-			modifier = {
-				factor = 1.1
-				num_culture_realm_provs = {
-					value = 10
-					culture = iazyges
-				}
-			}
-		}
-	}
-
-
-# Sarmatian or Scythian character may convert to Nemedian
-	irck2_convert_to_nemedian = {
-		only_playable = yes
-
-		filter = self
-		ai_target_filter = self
-		ai_check_interval = 12
-
-		potential = {
-			is_playable = yes
-			OR = { culture = sarmatian culture = royal_scythian }
-			capital_scope = {
-				region = custom_irck2_britannia
-			}
-			any_realm_province = {
-				culture = nemedian
-			}
-			NOT = { government = chinese_imperial_government }
-			NOT = {
-				has_alternate_start_parameter = { key = culture_names value = random }
-			}
-		}
-		allow = {
-			OR = { culture = sarmatian culture = royal_scythian }
-			capital_scope = {
-				region = custom_irck2_britannia
-			}
-			any_realm_province = {
-				culture = nemedian
-			}
-		}
-		effect = {
-			any_courtier = {
-				limit = {
-					culture = ROOT
-					employer = { character = ROOT }
-					dynasty = ROOT
-				}
-				culture = nemedian
-			}
-			culture = nemedian
-		}
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 1
-
-			modifier = { #If Ruler has 2 king titles, is emperor, or is under Punic ruler, will not do
-				factor = 0
-				OR = {
-					top_liege = {
-						OR = { culture = sarmatian culture = royal_scythian }
-						OR = {
-							tier = emperor
-							#num_of_king_titles = 2
-						}
-					}
-
-					AND = {
-						independent = no
-						top_liege = { OR = { culture = sarmatian culture = royal_scythian } }
-					}
-				}
-			}
-
-			modifier = {
-				#factor = 0.5 # Slow it down a bit
-			}
-
-			modifier = {
-				factor = 0.01
-				capital_scope = {
-					NOT = { culture = nemedian }
-				}
-			}
-			modifier = {
-				factor = 2.0
-				liege = { culture = nemedian }
-			}
-			modifier = {
-				factor = 1.1
-				num_culture_realm_provs = {
-					value = 2
-					culture = nemedian
-				}
-			}
-			modifier = {
-				factor = 1.1
-				num_culture_realm_provs = {
-					value = 4
-					culture = nemedian
-				}
-			}
-			modifier = {
-				factor = 1.1
-				num_culture_realm_provs = {
-					value = 6
-					culture = nemedian
-				}
-			}
-			modifier = {
-				factor = 1.1
-				num_culture_realm_provs = {
-					value = 8
-					culture = nemedian
-				}
-			}
-			modifier = {
-				factor = 1.1
-				num_culture_realm_provs = {
-					value = 10
-					culture = nemedian
+					culture = dom
 				}
 			}
 		}
 	}
 	
-# Sarmatian or Scythian character may convert to Yarkamii
-	irck2_convert_to_yarkamii = {
+	# Indo-Aryan character may convert to Ghagar
+	irck2_convert_to_ghagar = {
 		only_playable = yes
 
 		filter = self
@@ -372,12 +139,22 @@ targetted_decisions = {
 
 		potential = {
 			is_playable = yes
-			OR = { culture = sarmatian culture = royal_scythian }
+			culture_group = indo_aryan_group
+			NOT = { culture = neo_mitanni }
 			capital_scope = {
-				region = custom_irck2_greece_only
+				region = custom_irck2_egypt
 			}
 			any_realm_province = {
-				culture = yarkamii
+				culture = ghagar
+			}
+			OR = {
+				year = 450
+				top_liege = {
+					OR = {
+						NOT = { culture_group = indo_aryan_group }
+						culture = neo_mitanni
+					}
+				}
 			}
 			NOT = { government = chinese_imperial_government }
 			NOT = {
@@ -385,12 +162,12 @@ targetted_decisions = {
 			}
 		}
 		allow = {
-			OR = { culture = sarmatian culture = royal_scythian }
+			culture = ghagar
 			capital_scope = {
-				region = custom_irck2_greece_only
+				region = custom_irck2_egypt
 			}
 			any_realm_province = {
-				culture = yarkamii
+				culture = ghagar
 			}
 		}
 		effect = {
@@ -400,9 +177,9 @@ targetted_decisions = {
 					employer = { character = ROOT }
 					dynasty = ROOT
 				}
-				culture = yarkamii
+				culture = ghagar
 			}
-			culture = yarkamii
+			culture = ghagar
 		}
 		revoke_allowed = {
 			always = no
@@ -410,11 +187,11 @@ targetted_decisions = {
 		ai_will_do = {
 			factor = 1
 
-			modifier = { #If Ruler has 2 king titles, is emperor, or is under Punic ruler, will not do
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Roman ruler, will not do
 				factor = 0
 				OR = {
 					top_liege = {
-						OR = { culture = sarmatian culture = royal_scythian }
+						culture = ghagar
 						OR = {
 							tier = emperor
 							#num_of_king_titles = 2
@@ -423,7 +200,7 @@ targetted_decisions = {
 
 					AND = {
 						independent = no
-						top_liege = { OR = { culture = sarmatian culture = royal_scythian } }
+						top_liege = { culture = ghagar }
 					}
 				}
 			}
@@ -435,50 +212,181 @@ targetted_decisions = {
 			modifier = {
 				factor = 0.01
 				capital_scope = {
-					NOT = { culture = yarkamii }
+					NOT = { culture = ghagar }
 				}
 			}
 			modifier = {
 				factor = 2.0
-				liege = { culture = yarkamii }
+				liege = { culture = ghagar }
 			}
 			modifier = {
 				factor = 1.1
 				num_culture_realm_provs = {
 					value = 2
-					culture = yarkamii
+					culture = ghagar
 				}
 			}
 			modifier = {
 				factor = 1.1
 				num_culture_realm_provs = {
 					value = 4
-					culture = yarkamii
+					culture = ghagar
 				}
 			}
 			modifier = {
 				factor = 1.1
 				num_culture_realm_provs = {
 					value = 6
-					culture = yarkamii
+					culture = ghagar
 				}
 			}
 			modifier = {
 				factor = 1.1
 				num_culture_realm_provs = {
 					value = 8
-					culture = yarkamii
+					culture = ghagar
 				}
 			}
 			modifier = {
 				factor = 1.1
 				num_culture_realm_provs = {
 					value = 10
-					culture = yarkamii
+					culture = ghagar
 				}
 			}
 		}
 	}
+	
+	# Indo-Aryan character may convert to Lom
+	irck2_convert_to_lom = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture_group = indo_aryan_group
+			NOT = { culture = neo_mitanni }
+			capital_scope = {
+				region = custom_irck2_montana
+			}
+			any_realm_province = {
+				culture = lom
+			}
+			OR = {
+				year = 450
+				top_liege = {
+					OR = {
+						NOT = { culture_group = indo_aryan_group }
+						culture = neo_mitanni
+					}
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			culture = lom
+			capital_scope = {
+				region = custom_irck2_montana
+			}
+			any_realm_province = {
+				culture = lom
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = lom
+			}
+			culture = lom
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Roman ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = lom
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = lom }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = lom }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = lom }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = lom
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = lom
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = lom
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = lom
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = lom
+				}
+			}
+		}
+	}
+
+
+
 
 
 #####################################################################

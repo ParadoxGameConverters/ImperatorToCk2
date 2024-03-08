@@ -1,3 +1,9 @@
+#Imperator:Rome culture,CK2 culture
+#Note: Whenever creating a new CK2 culture, in addition to the definition in either
+#00_cultures.txt or 50_convertedCultures.txt, a list of possible dynasties must be
+#added to common\dynasties, and a dejure mapping must be added to dejureConversion.txt.
+#Otherwise, without dejure mapping, culture won't have a correct dejure liege generated for it
+
 #Greek
 
 bosporan,greek
@@ -187,6 +193,7 @@ lombards,lombard
 egyptian,ancient_egyptian
 upper_egyptian,ancient_egyptian
 middle_egyptian,ancient_egyptian
+oasis_egyptian,ancient_egyptian
 
 #NorthAfrican
 
@@ -247,6 +254,7 @@ sakan,saka
 khotanese,saka
 sindi,circassian
 maeotian,circassian
+abasgoi,circassian
 thyssagetaen,sarmatian
 gelonian,royal_scythian
 alani,alan
@@ -292,11 +300,15 @@ mariandynian,thracian
 #Georgian
 ibero,georgian
 colchian,georgian
+suani,georgian
+lazi,georgian
+sasperian,georgian
 
 #Dagestani
 
 albanian,caucasian_albanian
 legian,caucasian_albanian
+caspian,caspian
 
 #Iberic
 
@@ -360,6 +372,7 @@ armenian,armenian
 aramaic,assyrian
 assyrian,assyrian
 babylonian,babylonian
+cardukoi,cardukoi
 
 #NubianAndEthiopian
 
@@ -533,10 +546,15 @@ greco_bactrian,bactrian
 
 #Realm Divide mod
 syriac,assyrian
-babylonian_late,babylonian
+palmyrene,assyrian
+mandaean,assyrian
+hatran,assyrian
+babylonian_late,assyrian
 brittonic,welsh
 welsh,welsh
 cumbrian,welsh
+attacotti,welsh
+bernaccian,welsh
 pictish,pictish
 breton,breton
 cornish,breton
@@ -549,6 +567,7 @@ ossorian,irish
 ulaid,irish
 dalcassian,irish
 eoganachtan,irish
+manx,manx
 gaulish,gallic
 gallaic,celtiberian
 beja,nubian
@@ -557,7 +576,12 @@ somali,somali
 agaw,ethiopian
 demotic,ancient_egyptian
 frankish,old_frankish
+batavian,old_frankish
 gothic,gothic
+gepidian,gothic
+taifali,gothic
+burgundian,old_burgundian
+scirian,vandal
 norse,norse
 svear,norse
 gotar,norse
@@ -576,6 +600,7 @@ thuringian,suebi
 baiuvarian,suebi
 vangionic,suebi
 variscian,suebi
+alan,alan
 ossetian,alan
 iazyges,iazyges
 roxolani,iazyges
@@ -583,3 +608,50 @@ makurian,nubian
 nobatian,nubian
 alodian,nubian
 coptic,coptic
+sardinian,sardinian
+corsican,italian
+sicilian,italian
+gallo_roman,frankish
+ibero_roman,catalan
+illyro_roman,dalmatian
+daco_roman,romanian
+pannonian_roman,romanian
+thraco_roman,romanian
+roman_germanic,laessin
+roman_briton,cambrian
+galindian,aestian
+curonian,aestian
+semigallian,aestian
+selonian,aestian
+veneti,protoslavic
+antae,protoslavic
+polanian,protoslavic
+polabian,protoslavic
+sorbian,protoslavic
+vistulan,protoslavic
+lendian,protoslavic
+sclaveni,protoslavic
+laz_culture,georgian
+tzannic,georgian
+georgian,georgian
+abasgian,circassian
+arabic,bedouin_arabic
+adnanites,bedouin_arabic
+qahtanite,bedouin_arabic
+persian,persian
+tajik,persian
+kurdish,kurdish
+baloch,baloch
+afghan,afghan
+khwarezmian,sogdian
+dahaean,saka
+laguatan,maghreb_arabic
+afri,maghreb_arabic
+anatolian,greek
+samaritan,hebrew
+bulgar,bolghar
+oghuric,bolghar
+sabir,bolghar
+barsil,bolghar
+avar,avar
+altaic,huna

@@ -15,6 +15,7 @@ dacian,e_DAC,k_DAC
 etruscan,e_roman_empire,k_ETR
 gallic,e_GAU,k_GAU
 gothic,e_germany,k_pomerania
+old_burgundian,e_germany,k_pomerania
 hebrew,e_persia,k_jerusalem
 hellenistic,e_ALX,k_ALX
 iberic,e_HBR,k_TUR
@@ -49,6 +50,8 @@ royal_scythian,e_pontic_steppe,k_SCY
 iazyges,e_pontic_steppe,k_SCY
 sarmatian,e_pontic_steppe,k_SCY
 circassian,e_pontic_steppe,k_SCY
+caspian,e_persia,k_ALB
+cardukoi,e_persia,k_iraq
 
 persian,e_persia,k_persia
 greek,e_HLA,k_byzantium
@@ -97,6 +100,7 @@ tamil,e_deccan,k_tamilakam
 telugu,e_deccan,k_telingana
 prussian,e_wendish_empire,k_lithuania
 ugricbaltic,e_scandinavia,k_estonia
+kurdish,e_persia,k_persia
 
 saxon,e_britannia,k_england
 lombard,e_germany,k_lombardy
@@ -112,6 +116,15 @@ huna,e_turkestan,k_khiva
 
 protoslavic,e_russia,k_ruthenia
 galatian,e_GAU,k_GLT
+
+romanian,e_carpathia,k_dacia
+dalmatian,e_italy,k_croatia
+catalan,e_spain,k_aragon
+italian,e_italy,k_sicily
+sardinian,e_italy,k_sardinia
+frankish,e_france,k_france
+cambrian,e_britannia,k_cambria
+coptic,e_byzantium,k_egypt
 
 mayan,e_MHQ,k_MHQ
 olmec,e_MHQ,k_MHQ

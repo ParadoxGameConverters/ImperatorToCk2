@@ -102,7 +102,7 @@ public class Main
             ArrayList<String[]> impProvInfoList = new ArrayList<String[]>();
 
             String[][] ck2ProvInfo;   // Array list of array lists...
-            ck2ProvInfo = new String[5][irProvTot];
+            ck2ProvInfo = new String[6][irProvTot];
 
             //[0] is owner, [1] is culture, [2] is religion, [3] is calculated from pop
             int totalPop = 0;//pop total
@@ -435,6 +435,8 @@ public class Main
             int aq5 = 0;
             int aq6 = 0;
             String[] irOwners;
+            
+            ck2ProvInfo = Processing.assignNamesToProvs(ck2ProvInfo,totalCKProv,ck2Dir);
 
             while( aq2 < totalCKProv) { // Calculate province ownership
                 if (ck2TagTotals[aq2] != null)  {
@@ -512,7 +514,10 @@ public class Main
                 aq2 = aq2 + 1;
             }
 
-            ArrayList<String> dejureDuchies = Processing.calculateDuchyNameList(ck2Dir,ck2ProvInfo,cultureMappings);
+            ArrayList<String> duchyMappings = Importer.importDuchyNameList(ck2Dir);
+            ArrayList<String> dejureDuchies = Processing.calculateDuchyNameList(ck2Dir,ck2ProvInfo,cultureMappings,duchyMappings);
+            ArrayList<String[]> ck2Geo = Importer.importCK2Geo();
+            ck2Geo = Processing.getConstituentCounties(duchyMappings,ck2Geo);
 
             aq2 = 0;
             LOGGER.info("Province religion and culture calculated");
@@ -579,12 +584,16 @@ public class Main
             impCharInfoList = Characters.importChar(saveCharacters,compressedOrNot);
 
             impDynList = Characters.importDynasty(saveDynasty);
+            
+            impTagInfo = Processing.convertAllCapitals(impTagInfo);
 
             //Array
 
             try {
                 try {
                     while (flag == 0) {
+                        /////TEST
+                        //impTagInfo.get(aq4)[5] = Importer.importConvList("provinceConversion.txt",Integer.parseInt(impTagInfo.get(aq4)[5]))[1];
 
                         if (!ck2HasLand[aq4].equals ("yes") && ck2LandTot[aq4] > 0) { //if has no land but has subjects, eat subjects to prevent shattering
                             ck2ProvInfo = Processing.annexSubjects(aq4,totCountries,ck2ProvInfo,impSubjectInfo);
@@ -617,7 +626,7 @@ public class Main
                                     impTagInfo.get(aq4)[0] = Processing.convertTitle(titleMappings,rank,impTagInfo.get(aq4)[21],impTagInfo.get(aq4)[0]);
                                     convertedCharacters = Output.titleCreation(impTagInfo.get(aq4)[0],tempNum2,impTagInfo.get(aq4)[3],impTagInfo.get(aq4)[17],
                                     impTagInfo.get(aq4)[5],rank,"no_liege",date,republicOption,Character[7],impDynList,impCharInfoList,convertedCharacters,aq4,
-                                    impTagInfo.get(aq4)[17],cultureMappings,religionMappings,impTagInfo,modDirectory);
+                                    impTagInfo.get(aq4)[17],cultureMappings,religionMappings,impTagInfo,ck2ProvInfo,ck2Geo,modDirectory);
                                     //LOGGER.info("Free Nation at " + aq4);
                                 } else { //if tag is subject
                                     String[] subjectInfo = impSubjectInfo.get(subjectOrNot).split(",");
@@ -649,7 +658,7 @@ public class Main
                                             convertedCharacters = Output.titleCreation(impTagInfo.get(aq4)[0],tempNum2,impTagInfo.get(aq4)[3],
                                             impTagInfo.get(aq4)[17],impTagInfo.get(aq4)[5],rank,overlord,date,republicOption,Character[7],impDynList,
                                             impCharInfoList,convertedCharacters,aq4,overlordGov,cultureMappings,religionMappings,
-                                            impTagInfo,modDirectory);
+                                            impTagInfo,ck2ProvInfo,ck2Geo,modDirectory);
                                             //LOGGER.info("Subject Nation at " + aq4 + " Overlord is " + subjectInfo[0]);
                                         }
 
@@ -661,22 +670,25 @@ public class Main
                                         if (!rank.equals("c")) {//if below duchy, don't generate titular county title
                                             convertedCharacters = Output.titleCreation(impTagInfo.get(aq4)[0],tempNum2,impTagInfo.get(aq4)[3],impTagInfo.get(aq4)[17],
                                             impTagInfo.get(aq4)[5],rank,overlord,date,republicOption,Character[7],impDynList,impCharInfoList,
-                                            convertedCharacters,aq4,overlordGov,cultureMappings,religionMappings,impTagInfo,modDirectory);
+                                            convertedCharacters,aq4,overlordGov,cultureMappings,religionMappings,impTagInfo,ck2ProvInfo,ck2Geo,modDirectory);
                                         }
                                         //LOGGER.info("Tributary Nation at " + aq4 + " Overlord is " + subjectInfo[0]);
                                     }
                                 }
 
-                                //LOGGER.info (impTagInfo.get(aq4)[16] + " rules " + impTagInfo.get(aq4)[0] + "_" + aq4);
+                                LOGGER.info (impTagInfo.get(aq4)[16] + " rules " + impTagInfo.get(aq4)[0] + "_" + aq4);
                                 
                                 String convCharacterCulture = Output.cultureOutput(cultureMappings,Character[1]);
                                 String charCountryCulture = impTagInfo.get(aq4)[6];
+                                int charCountryCapital = Integer.parseInt(impTagInfo.get(aq4)[5]);
+                                String charCountryCapitalCounty = ck2ProvInfo[5][charCountryCapital];
                                 String convCharacterReligion = Output.religionOutput(religionMappings,convCharacterCulture,charCountryCulture,date,
-                                    Character[2]);
+                                    Character[2],charCountryCapitalCounty,ck2Geo);
+                                //System.out.println("Capital for "+Character[0]+" is "+charCountryCapital+"|"+charCountryCapitalCounty+", rel = "+convCharacterReligion);
                                 convertedCharacters = Output.characterCreation(tempNum2, convCharacterCulture,convCharacterReligion,
                                     Character[3],Character[0],Character[7],Character[4],Character[8],Character[10],Character[11],Character[12],Character[13],Character[14],
                                     Character[15],impTagInfo.get(aq4)[17],"q","q",convertedCharacters,impCharInfoList,date,cultureMappings,
-                                    religionMappings,impTagInfo,modDirectory);
+                                    religionMappings,impTagInfo,ck2ProvInfo,ck2Geo,modDirectory);
                                 //LOGGER.config ("c");
 
 
@@ -723,14 +735,14 @@ public class Main
                                     
                                     convertedCharacters = Output.titleCreation(impTagInfo.get(aq4)[0],tempNum2,capitalColor,impTagInfo.get(aq4)[17],
                                     impTagInfo.get(aq4)[5],subRank,"no_liege",date,republicOption,Character[7],impDynList,impCharInfoList,convertedCharacters,
-                                    aq4,impTagInfo.get(aq4)[17],cultureMappings,religionMappings,impTagInfo,modDirectory);
+                                    aq4,impTagInfo.get(aq4)[17],cultureMappings,religionMappings,impTagInfo,ck2ProvInfo,ck2Geo,modDirectory);
 
                                     
-                                    String capitalName = "PROV"+impTagInfo.get(aq4)[5]; //use name of capital for generated kingdom
+                                    String capitalName = "PROV"+impTagInfo.get(aq4)[24]; //use name of capital for generated kingdom
                                     String[] capitalLoc = importer.importLocalisation(locList,capitalName,rulerDynasty);
                                     //String[] capitalLoc = Importer.importProvLocalisation(impGameDir,capitalName);
                                     if (capitalLoc[0].equals(capitalName)) { //In the event I:R prov has no name, use CK2 prov name
-                                        capitalName = Importer.importConvList("provinceConversion.txt",Integer.parseInt(impTagInfo.get(aq4)[5]))[1];
+                                        //capitalName = Importer.importConvList("provinceConversion.txt",Integer.parseInt(impTagInfo.get(aq4)[5]))[1];
                                         capitalName = Processing.importNames("a",Integer.parseInt(capitalName),ck2Dir)[0];
                                         capitalLoc = (capitalName+","+capitalName).split(",");
                                     }
@@ -765,20 +777,22 @@ public class Main
                                         if (!subRank.equals("c")) {//For duchies, don't create governorship titles
                                             convertedCharacters = Output.titleCreation(govRegID,governorID,Processing.randomizeColor(),"no","none",subRank,
                                             impTagInfo.get(aq4)[0],date,republicOption,Character[7],impDynList,impCharInfoList,convertedCharacters,aq4,
-                                            "govq",cultureMappings,religionMappings,impTagInfo,modDirectory);
+                                            "govq",cultureMappings,religionMappings,impTagInfo,ck2ProvInfo,ck2Geo,modDirectory);
                                             Output.copyFlag(ck2Dir,modDirectory,subRank,impTagInfo.get(aq4)[5],govRegID); //default flag for governorships
                                         }
                                         
                                         govCharacter = impCharInfoList.get(Integer.parseInt(governor));
                                         String govCharCulture = Output.cultureOutput(cultureMappings,govCharacter[1]);
                                         String govCountryCulture = impTagInfo.get(aq4)[6];
+                                        int govCountryCapital = Integer.parseInt(impTagInfo.get(aq4)[5]);
+                                        String govCountryCapitalCounty = ck2ProvInfo[5][govCountryCapital];
                                         String govCharReligion = Output.religionOutput(religionMappings,govCharCulture,govCountryCulture,date,
-                                            govCharacter[2]);
+                                            govCharacter[2],govCountryCapitalCounty,ck2Geo);
                                         convertedCharacters = Output.characterCreation(governorID, govCharCulture,
                                             govCharReligion,govCharacter[3],govCharacter[0],govCharacter[7],govCharacter[4],
                                             govCharacter[8],govCharacter[10],govCharacter[11],govCharacter[12],govCharacter[13],
                                             govCharacter[14],govCharacter[15],saveCharacters,"q","q",convertedCharacters,impCharInfoList,date,
-                                            cultureMappings,religionMappings,impTagInfo,modDirectory);
+                                            cultureMappings,religionMappings,impTagInfo,ck2ProvInfo,ck2Geo,modDirectory);
                                             
                                         String governorDynasty = Characters.searchDynasty(impDynList,govCharacter[7]);
                                         
@@ -856,7 +870,7 @@ public class Main
                                 } //English adjective endings
 
                                 dynCult = output.cultureOutput(cultureMappings,dynCult);
-                                dynRel = output.religionOutput(religionMappings,dynCult,dynCult,date,dynRel);
+                                dynRel = output.religionOutput(religionMappings,dynCult,dynCult,date,dynRel,ck2ProvInfo[5][aq4],ck2Geo);
 
                                 String dynCharName = importedInfo[0] + "icus"; //county_name-icus, temporary naming solution instead of Glorious_Debug
 
@@ -866,12 +880,13 @@ public class Main
 
                                 Output.dynastyCreation("of "+importedInfo[0],ruler,"debug",modDirectory);
                                 Output.characterCreation(ruler,dynCult,dynRel,dynCharAge,dynCharName,ruler,"69","q","5","5","5","5","0","0",
-                                saveCharacters,"q","q",convertedCharacters,impCharInfoList,date,cultureMappings,religionMappings,impTagInfo,modDirectory);
+                                saveCharacters,"q","q",convertedCharacters,impCharInfoList,date,cultureMappings,religionMappings,impTagInfo,ck2ProvInfo,ck2Geo,
+                                modDirectory);
                                 String greyShade = Processing.randomizeColorGrey();
 
                                 convertedCharacters = Output.titleCreation("dynamic"+aq4,ruler,greyShade,"no",Integer.toString(aq4),"d","no_liege",date,republicOption,
                                 "noDynasty",impDynList,impCharInfoList,convertedCharacters,aq4,Integer.toString(aq4),cultureMappings,religionMappings,
-                                impTagInfo,modDirectory);
+                                impTagInfo,ck2ProvInfo,ck2Geo,modDirectory);
                                 Output.localizationCreation(dynLoc,"dynamic"+aq4,"d",modDirectory);
                                 Output.copyFlag(ck2Dir,modDirectory,"d",Integer.toString(aq4),"dynamic"+aq4);
 
@@ -890,7 +905,7 @@ public class Main
                                     aq7 = 0;
                                     String overlordCapital = impTagInfo.get(tempNum2b)[5];
                                     
-                                    overlordCapital = Importer.importConvList("provinceConversion.txt",Integer.parseInt(overlordCapital))[1];
+                                    //overlordCapital = Importer.importConvList("provinceConversion.txt",Integer.parseInt(overlordCapital))[1];
                                     if (overlordCapital.equals("99999")) { //unmapped capital province detected, set 1 as default
                                         LOGGER.info("Warning, I:R province "+impTagInfo.get(tempNum2b)[5]+" is unmapped!");
                                         overlordCapital = "69";
@@ -969,7 +984,7 @@ public class Main
                                     overlord = impTagInfo.get(overlordID)[22]+"_"+impTagInfo.get(overlordID)[0];
                                     
                                     String overlordCapital = impTagInfo.get(overlordID)[5];
-                                    overlordCapital = Importer.importConvList("provinceConversion.txt",Integer.parseInt(overlordCapital))[1];
+                                    //overlordCapital = Importer.importConvList("provinceConversion.txt",Integer.parseInt(overlordCapital))[1];
                                     if (overlordCapital.equals(Integer.toString(aq4))) {
                                         ruler = impTagInfo.get(overlordID)[16];
                                         gov = impTagInfo.get(overlordID)[17];
@@ -991,6 +1006,7 @@ public class Main
                             }
                             //LOGGER.info("Creating province "+importedInfo[0]+" at ID "+aq4+" ruled by "+ruler);
                             
+                            //importedInfo[0];
                             String provCult = Output.cultureOutput(cultureMappings,ck2ProvInfo[1][aq4]);
                             int provOwner = Integer.parseInt(ck2ProvInfo[0][aq4]);
                             String provOwnerCult;
@@ -999,7 +1015,9 @@ public class Main
                             } else {
                                provOwnerCult = impTagInfo.get(provOwner)[6]; 
                             }
-                            String provReligion = Output.religionOutput(religionMappings,provCult,provOwnerCult,date,ck2ProvInfo[2][aq4]);
+                            String provReligion = Output.religionOutput(religionMappings,provCult,provOwnerCult,date,ck2ProvInfo[2][aq4],
+                            ck2ProvInfo[5][aq4],ck2Geo);
+                            //String provReligion = Output.religionOutput(religionMappings,provCult,provOwnerCult,date,ck2ProvInfo[2][aq4],countyName,ck2Geo);
                             Output.provinceCreation(Integer.toString(aq4),provCult,provReligion,modDirectory, importedInfo[1],importedInfo[0],gov,
                                 ck2PopTotals[aq4],bList,
                                 saveMonuments,republicOption,aq4);

@@ -210,6 +210,16 @@ irck2_convert_to_iazyges;Embrace Iazyges Culture;Embrace Iazyges Culture;Embrace
 irck2_convert_to_iazyges_desc;You and your unlanded Scythian and Sarmatian relatives convert to Iazyges Culture;You and your unlanded Scythian and Sarmatian relatives convert to Iazyges Culture;You and your unlanded Scythian and Sarmatian relatives convert to Iazyges Culture;;You and your unlanded Scythian and Sarmatian relatives convert to Iazyges Culture;;;;;;;;;x
 irck2_convert_to_nemedian;Embrace Nemedian Culture;Embrace Nemedian Culture;Embrace Nemedian Culture;;Embrace Nemedian Culture;;;;;;;;;x
 irck2_convert_to_nemedian_desc;You and your unlanded Scythian and Sarmatian relatives convert to Nemedian Culture;You and your unlanded Scythian and Sarmatian relatives convert to Nemedian Culture;You and your unlanded Scythian and Sarmatian relatives convert to Nemedian Culture;;You and your unlanded Scythian and Sarmatian relatives convert to Nemedian Culture;;;;;;;;;x
+irck2_convert_to_yarkamii;Embrace Yarkamii Culture;Embrace Yarkamii Culture;Embrace Yarkamii Culture;;Embrace Yarkamii Culture;;;;;;;;;x
+irck2_convert_to_yarkamii_desc;You and your unlanded Scythian and Sarmatian relatives convert to Yarkamii Culture;You and your unlanded Scythian and Sarmatian relatives convert to Yarkamii Culture;You and your unlanded Scythian and Sarmatian relatives convert to Yarkamii Culture;;You and your unlanded Scythian and Sarmatian relatives convert to Yarkamii Culture;;;;;;;;;x
+
+#Indo-Aryan split
+irck2_convert_to_dom;Embrace Dom Culture;Embrace Dom Culture;Embrace Dom Culture;;Embrace Dom Culture;;;;;;;;;x
+irck2_convert_to_dom_desc;You and your unlanded Indo-Aryan relatives convert to Dom Culture;You and your unlanded Indo-Aryan relatives convert to Dom Culture;You and your unlanded Indo-Aryan relatives convert to Dom Culture;;You and your unlanded Indo-Aryan relatives convert to Dom Culture;;;;;;;;;x
+irck2_convert_to_ghagar;Embrace Ghagar Culture;Embrace Ghagar Culture;Embrace Ghagar Culture;;Embrace Ghagar Culture;;;;;;;;;x
+irck2_convert_to_ghagar_desc;You and your unlanded Indo-Aryan relatives convert to Ghagar Culture;You and your unlanded Indo-Aryan relatives convert to Ghagar Culture;You and your unlanded Indo-Aryan relatives convert to Ghagar Culture;;You and your unlanded Indo-Aryan relatives convert to Ghagar Culture;;;;;;;;;x
+irck2_convert_to_lom;Embrace Lom Culture;Embrace Lom Culture;Embrace Lom Culture;;Embrace Lom Culture;;;;;;;;;x
+irck2_convert_to_lom_desc;You and your unlanded Indo-Aryan relatives convert to Lom Culture;You and your unlanded Indo-Aryan relatives convert to Lom Culture;You and your unlanded Indo-Aryan relatives convert to Lom Culture;;You and your unlanded Indo-Aryan relatives convert to Lom Culture;;;;;;;;;x
 
 #Empires
 irck2_create_e_italy;Create Italia;Create Italia;Machen Italien;;Create Italia;;;;;;;;;x
