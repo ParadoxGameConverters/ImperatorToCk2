@@ -101,7 +101,7 @@ manichaeism_religion,manichean
 donatist_christian,donatism
 priscillian_christian,priscillianism
 monophysite_christian,monophysite
-eastern_christian,monophysite
+eastern_christian,miaphysite
 
 christian_religion,catholic,ck2Region=world_europe_west_brittania
 christian_religion,catholic,ck2Region=world_europe_west_germania

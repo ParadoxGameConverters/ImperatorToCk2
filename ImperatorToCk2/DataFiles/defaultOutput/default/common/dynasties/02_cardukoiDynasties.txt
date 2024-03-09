@@ -1,0 +1,750 @@
+5398000=
+{
+	name="Marduk-beli"
+	culture="cardukoi"
+}
+5398001=
+{
+	name="Marduk-belshunu"
+	culture="cardukoi"
+}
+5398002=
+{
+	name="Marduk-eriba"
+	culture="cardukoi"
+}
+5398003=
+{
+	name="Marduk-etir"
+	culture="cardukoi"
+}
+5398004=
+{
+	name="Marduk-ibni"
+	culture="cardukoi"
+}
+5398005=
+{
+	name="Marduk-iddin"
+	culture="cardukoi"
+}
+5398006=
+{
+	name="Marduk-uballit"
+	culture="cardukoi"
+}
+5398007=
+{
+	name="Kidin-Marduk"
+	culture="cardukoi"
+}
+5398008=
+{
+	name="Lusthammar-Marduk"
+	culture="cardukoi"
+}
+5398009=
+{
+	name="Nidinti-Marduk"
+	culture="cardukoi"
+}
+5398010=
+{
+	name="Rihat-Marduk"
+	culture="cardukoi"
+}
+5398011=
+{
+	name="Shamshi-Marduk"
+	culture="cardukoi"
+}
+5398012=
+{
+	name="Shipqat-Marduk"
+	culture="cardukoi"
+}
+5398013=
+{
+	name="Tanittu-Marduk"
+	culture="cardukoi"
+}
+5398014=
+{
+	name="Tukulti-Marduk"
+	culture="cardukoi"
+}
+5398015=
+{
+	name="Bel-beli"
+	culture="cardukoi"
+}
+5398016=
+{
+	name="Bel-belshunu"
+	culture="cardukoi"
+}
+5398017=
+{
+	name="Bel-eriba"
+	culture="cardukoi"
+}
+5398018=
+{
+	name="Bel-etir"
+	culture="cardukoi"
+}
+5398019=
+{
+	name="Bel-ibni"
+	culture="cardukoi"
+}
+5398020=
+{
+	name="Bel-iddin"
+	culture="cardukoi"
+}
+5398021=
+{
+	name="Bel-uballit"
+	culture="cardukoi"
+}
+5398022=
+{
+	name="Kidin-Bel"
+	culture="cardukoi"
+}
+5398023=
+{
+	name="Lusthammar-Bel"
+	culture="cardukoi"
+}
+5398024=
+{
+	name="Nidinti-Bel"
+	culture="cardukoi"
+}
+5398025=
+{
+	name="Rihat-Bel"
+	culture="cardukoi"
+}
+5398026=
+{
+	name="Shamshi-Bel"
+	culture="cardukoi"
+}
+5398027=
+{
+	name="Shipqat-Bel"
+	culture="cardukoi"
+}
+5398028=
+{
+	name="Tanittu-Bel"
+	culture="cardukoi"
+}
+5398029=
+{
+	name="Tukulti-Bel"
+	culture="cardukoi"
+}
+5398030=
+{
+	name="Shamash-beli"
+	culture="cardukoi"
+}
+5398031=
+{
+	name="Shamash-belshunu"
+	culture="cardukoi"
+}
+5398032=
+{
+	name="Shamash-eriba"
+	culture="cardukoi"
+}
+5398033=
+{
+	name="Shamash-etir"
+	culture="cardukoi"
+}
+5398034=
+{
+	name="Shamash-ibni"
+	culture="cardukoi"
+}
+5398035=
+{
+	name="Shamash-iddin"
+	culture="cardukoi"
+}
+5398036=
+{
+	name="Shamash-uballit"
+	culture="cardukoi"
+}
+5398037=
+{
+	name="Kidin-Shamash"
+	culture="cardukoi"
+}
+5398038=
+{
+	name="Lusthammar-Shamash"
+	culture="cardukoi"
+}
+5398039=
+{
+	name="Nidinti-Shamash"
+	culture="cardukoi"
+}
+5398040=
+{
+	name="Rihat-Shamash"
+	culture="cardukoi"
+}
+5398041=
+{
+	name="Shamshi-Shamash"
+	culture="cardukoi"
+}
+5398042=
+{
+	name="Shipqat-Shamash"
+	culture="cardukoi"
+}
+5398043=
+{
+	name="Tanittu-Shamash"
+	culture="cardukoi"
+}
+5398044=
+{
+	name="Tukulti-Shamash"
+	culture="cardukoi"
+}
+5398045=
+{
+	name="Ashshur-beli"
+	culture="cardukoi"
+}
+5398046=
+{
+	name="Ashshur-belshunu"
+	culture="cardukoi"
+}
+5398047=
+{
+	name="Ashshur-eriba"
+	culture="cardukoi"
+}
+5398048=
+{
+	name="Ashshur-etir"
+	culture="cardukoi"
+}
+5398049=
+{
+	name="Ashshur-ibni"
+	culture="cardukoi"
+}
+5398050=
+{
+	name="Ashshur-iddin"
+	culture="cardukoi"
+}
+5398051=
+{
+	name="Ashshur-uballit"
+	culture="cardukoi"
+}
+5398052=
+{
+	name="Kidin-Ashshur"
+	culture="cardukoi"
+}
+5398053=
+{
+	name="Lusthammar-Ashshur"
+	culture="cardukoi"
+}
+5398054=
+{
+	name="Nidinti-Ashshur"
+	culture="cardukoi"
+}
+5398055=
+{
+	name="Rihat-Ashshur"
+	culture="cardukoi"
+}
+5398056=
+{
+	name="Shamshi-Ashshur"
+	culture="cardukoi"
+}
+5398057=
+{
+	name="Shipqat-Ashshur"
+	culture="cardukoi"
+}
+5398058=
+{
+	name="Tanittu-Ashshur"
+	culture="cardukoi"
+}
+5398059=
+{
+	name="Tukulti-Ashshur"
+	culture="cardukoi"
+}
+5398060=
+{
+	name="Ishtar-beli"
+	culture="cardukoi"
+}
+5398061=
+{
+	name="Ishtar-belshunu"
+	culture="cardukoi"
+}
+5398062=
+{
+	name="Ishtar-eriba"
+	culture="cardukoi"
+}
+5398063=
+{
+	name="Ishtar-etir"
+	culture="cardukoi"
+}
+5398064=
+{
+	name="Ishtar-ibni"
+	culture="cardukoi"
+}
+5398065=
+{
+	name="Ishtar-iddin"
+	culture="cardukoi"
+}
+5398066=
+{
+	name="Ishtar-uballit"
+	culture="cardukoi"
+}
+5398067=
+{
+	name="Kidin-Ishtar"
+	culture="cardukoi"
+}
+5398068=
+{
+	name="Lusthammar-Ishtar"
+	culture="cardukoi"
+}
+5398069=
+{
+	name="Nidinti-Ishtar"
+	culture="cardukoi"
+}
+5398070=
+{
+	name="Rihat-Ishtar"
+	culture="cardukoi"
+}
+5398071=
+{
+	name="Shamshi-Ishtar"
+	culture="cardukoi"
+}
+5398072=
+{
+	name="Shipqat-Ishtar"
+	culture="cardukoi"
+}
+5398073=
+{
+	name="Tanittu-Ishtar"
+	culture="cardukoi"
+}
+5398074=
+{
+	name="Tukulti-Ishtar"
+	culture="cardukoi"
+}
+5398075=
+{
+	name="Adad-beli"
+	culture="cardukoi"
+}
+5398076=
+{
+	name="Adad-belshunu"
+	culture="cardukoi"
+}
+5398077=
+{
+	name="Adad-eriba"
+	culture="cardukoi"
+}
+5398078=
+{
+	name="Adad-etir"
+	culture="cardukoi"
+}
+5398079=
+{
+	name="Adad-ibni"
+	culture="cardukoi"
+}
+5398080=
+{
+	name="Adad-iddin"
+	culture="cardukoi"
+}
+5398081=
+{
+	name="Adad-uballit"
+	culture="cardukoi"
+}
+5398082=
+{
+	name="Kidin-Adad"
+	culture="cardukoi"
+}
+5398083=
+{
+	name="Lusthammar-Adad"
+	culture="cardukoi"
+}
+5398084=
+{
+	name="Nidinti-Adad"
+	culture="cardukoi"
+}
+5398085=
+{
+	name="Rihat-Adad"
+	culture="cardukoi"
+}
+5398086=
+{
+	name="Shamshi-Adad"
+	culture="cardukoi"
+}
+5398087=
+{
+	name="Shipqat-Adad"
+	culture="cardukoi"
+}
+5398088=
+{
+	name="Tanittu-Adad"
+	culture="cardukoi"
+}
+5398089=
+{
+	name="Tukulti-Adad"
+	culture="cardukoi"
+}
+5398090=
+{
+	name="Nergal-beli"
+	culture="cardukoi"
+}
+5398091=
+{
+	name="Nergal-belshunu"
+	culture="cardukoi"
+}
+5398092=
+{
+	name="Nergal-eriba"
+	culture="cardukoi"
+}
+5398093=
+{
+	name="Nergal-etir"
+	culture="cardukoi"
+}
+5398094=
+{
+	name="Nergal-ibni"
+	culture="cardukoi"
+}
+5398095=
+{
+	name="Nergal-iddin"
+	culture="cardukoi"
+}
+5398096=
+{
+	name="Nergal-uballit"
+	culture="cardukoi"
+}
+5398097=
+{
+	name="Kidin-Nergal"
+	culture="cardukoi"
+}
+5398098=
+{
+	name="Lusthammar-Nergal"
+	culture="cardukoi"
+}
+5398099=
+{
+	name="Nidinti-Nergal"
+	culture="cardukoi"
+}
+5398100=
+{
+	name="Rihat-Nergal"
+	culture="cardukoi"
+}
+5398101=
+{
+	name="Shamshi-Nergal"
+	culture="cardukoi"
+}
+5398102=
+{
+	name="Shipqat-Nergal"
+	culture="cardukoi"
+}
+5398103=
+{
+	name="Tanittu-Nergal"
+	culture="cardukoi"
+}
+5398104=
+{
+	name="Tukulti-Nergal"
+	culture="cardukoi"
+}
+5398105=
+{
+	name="Sin-beli"
+	culture="cardukoi"
+}
+5398106=
+{
+	name="Sin-belshunu"
+	culture="cardukoi"
+}
+5398107=
+{
+	name="Sin-eriba"
+	culture="cardukoi"
+}
+5398108=
+{
+	name="Sin-etir"
+	culture="cardukoi"
+}
+5398109=
+{
+	name="Sin-ibni"
+	culture="cardukoi"
+}
+5398110=
+{
+	name="Sin-iddin"
+	culture="cardukoi"
+}
+5398111=
+{
+	name="Sin-uballit"
+	culture="cardukoi"
+}
+5398112=
+{
+	name="Kidin-Sin"
+	culture="cardukoi"
+}
+5398113=
+{
+	name="Lusthammar-Sin"
+	culture="cardukoi"
+}
+5398114=
+{
+	name="Nidinti-Sin"
+	culture="cardukoi"
+}
+5398115=
+{
+	name="Rihat-Sin"
+	culture="cardukoi"
+}
+5398116=
+{
+	name="Shamshi-Sin"
+	culture="cardukoi"
+}
+5398117=
+{
+	name="Shipqat-Sin"
+	culture="cardukoi"
+}
+5398118=
+{
+	name="Tanittu-Sin"
+	culture="cardukoi"
+}
+5398119=
+{
+	name="Tukulti-Sin"
+	culture="cardukoi"
+}
+5398120=
+{
+	name="Enlil-beli"
+	culture="cardukoi"
+}
+5398121=
+{
+	name="Enlil-belshunu"
+	culture="cardukoi"
+}
+5398122=
+{
+	name="Enlil-eriba"
+	culture="cardukoi"
+}
+5398123=
+{
+	name="Enlil-etir"
+	culture="cardukoi"
+}
+5398124=
+{
+	name="Enlil-ibni"
+	culture="cardukoi"
+}
+5398125=
+{
+	name="Enlil-iddin"
+	culture="cardukoi"
+}
+5398126=
+{
+	name="Enlil-uballit"
+	culture="cardukoi"
+}
+5398127=
+{
+	name="Kidin-Enlil"
+	culture="cardukoi"
+}
+5398128=
+{
+	name="Lusthammar-Enlil"
+	culture="cardukoi"
+}
+5398129=
+{
+	name="Nidinti-Enlil"
+	culture="cardukoi"
+}
+5398130=
+{
+	name="Rihat-Enlil"
+	culture="cardukoi"
+}
+5398131=
+{
+	name="Shamshi-Enlil"
+	culture="cardukoi"
+}
+5398132=
+{
+	name="Shipqat-Enlil"
+	culture="cardukoi"
+}
+5398133=
+{
+	name="Tanittu-Enlil"
+	culture="cardukoi"
+}
+5398134=
+{
+	name="Tukulti-Enlil"
+	culture="cardukoi"
+}
+5398135=
+{
+	name="Ninurta-beli"
+	culture="cardukoi"
+}
+5398136=
+{
+	name="Ninurta-belshunu"
+	culture="cardukoi"
+}
+5398137=
+{
+	name="Ninurta-eriba"
+	culture="cardukoi"
+}
+5398138=
+{
+	name="Ninurta-etir"
+	culture="cardukoi"
+}
+5398139=
+{
+	name="Ninurta-ibni"
+	culture="cardukoi"
+}
+5398140=
+{
+	name="Ninurta-iddin"
+	culture="cardukoi"
+}
+5398141=
+{
+	name="Ninurta-uballit"
+	culture="cardukoi"
+}
+5398142=
+{
+	name="Kidin-Ninurta"
+	culture="cardukoi"
+}
+5398143=
+{
+	name="Lusthammar-Ninurta"
+	culture="cardukoi"
+}
+5398144=
+{
+	name="Nidinti-Ninurta"
+	culture="cardukoi"
+}
+5398145=
+{
+	name="Rihat-Ninurta"
+	culture="cardukoi"
+}
+5398146=
+{
+	name="Shamshi-Ninurta"
+	culture="cardukoi"
+}
+5398147=
+{
+	name="Shipqat-Ninurta"
+	culture="cardukoi"
+}
+5398148=
+{
+	name="Tanittu-Ninurta"
+	culture="cardukoi"
+}
+5398149=
+{
+	name="Tukulti-Ninurta"
+	culture="cardukoi"
+}

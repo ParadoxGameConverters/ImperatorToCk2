@@ -92,7 +92,6 @@ public class Output
                 int count2 = 0;
                 boolean passedCheck = true;
                 while (count2 < numArgs) { //check all arguments, if all are true, return culture
-                    //System.out.println(numArgs);
                     int argBeingChecked = count2+2;
                     String[] relArgument = ck2ReligionInfo[argBeingChecked].split("=");
                     if (relArgument[0].equals("culture")) {
@@ -165,8 +164,6 @@ public class Output
         }
 
         if (!capital.equals("none")) { //governorships don't have set capitals
-
-            //capital = Importer.importConvList("provinceConversion.txt",Integer.parseInt(capital))[1];
 
             out.println (tab+"capital = "+capital);
 
@@ -1230,10 +1227,6 @@ public class Output
 
     public static void copyFlag(String ck2Dir, String modDirectory, String rank, String prov, String tag) throws IOException //copies flag files
     {
-
-        //if (!tag.contains("dynamic") && !tag.contains("__")) { //if the tag is dynamically generated or is governorship, already uses CK II province ID
-            //prov = Importer.importConvList("provinceConversion.txt",Integer.parseInt(prov))[1];
-        //}
 
         prov = Processing.importNames("a",Integer.parseInt(prov),ck2Dir)[0];
         prov = Processing.formatProvName(prov);

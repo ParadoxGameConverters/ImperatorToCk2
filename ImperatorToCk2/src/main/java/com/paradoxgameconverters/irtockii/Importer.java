@@ -1348,8 +1348,6 @@ public class Importer
                 qaaa = qaaa.replace("    ",tab); //Some flags have strange formatting
                 qaaa = qaaa.replace(" color2=",tab+"color2="); //Some flags have strange formatting
                 if (qaaa.contains("#") && !qaaa.equals("#") && qaaa.charAt(0)!= '#') {
-                    //System.out.println(qaaa);
-                    //qaaa = qaaa.replace("#","~QQQQ~");
                     qaaa = qaaa.split("#")[0];
                 }
                 if (qaaa.contains( "=" ) && output[0].equals("unnamedFlag")) {
@@ -1440,8 +1438,6 @@ public class Importer
                         qaaa = qaaa.replace(" color2=",tab+"color2="); // to fix Invictus Barbaricum Countries file formatting
                         qaaa = qaaa.replace(" texture=",tab+"texture="); // to fix Invictus Barbaricum Countries file formatting
                         if (qaaa.contains("#") && !qaaa.equals("#")) {
-                            //System.out.println(qaaa);
-                            //qaaa = qaaa.replace("#","~QQQQ~");
                             qaaa = qaaa.split("#")[0];
                         }
                         if (qaaa.split("=").length != 2) { //if using unusual formatting
@@ -1506,12 +1502,8 @@ public class Importer
                                     embColor1 = "rgb," + embColor1.substring(2,embColor1.length()-2);
                                 }
                                 else if (qaaa.contains("hsv ")) {
-                                    //System.out.println(qaaa);
                                     embColor1 = embColor1.split("hsv ")[1];
-                                    //System.out.println(embColor1);
                                     embColor1 = embColor1.split(tab)[0]; //Invictus formatting
-                                    //System.out.println(embColor1);
-                                    //embColor1 = "hsv," + embColor1.substring(2,output[2].length()-2);
                                     embColor1 = "hsv," + embColor1.substring(2,embColor1.length()-2);
                                 }
                             }
@@ -1704,8 +1696,6 @@ public class Importer
         Scanner scnr= new Scanner(fileIn);
 
         ArrayList<String[]> impColorList= new ArrayList<String[]>();
-        
-        //System.out.println(name);
 
         String tab = "	";
 
@@ -1800,7 +1790,6 @@ public class Importer
     
     public static ArrayList<String> importRegions (String name) throws IOException //list of all regions
     {
-        //System.out.println(name);
 
         FileInputStream fileIn= new FileInputStream(name);
         Scanner scnr= new Scanner(fileIn);
@@ -1835,8 +1824,6 @@ public class Importer
                     }
 
                     String tmpOutput = output;
-                    
-                    //System.out.println(tmpOutput);
 
                     impRegionList.add(tmpOutput);
 
@@ -1885,9 +1872,6 @@ public class Importer
                 String modDir = modDirs.get(aqq)+"/localization/english";
                 try {
                     importModLoc(modDir,modDirs,moddedLoc);
-                    //System.out.println("Dir: "+modDirs.get(aqq));
-                    //System.out.println("Loc total: "+test.size());
-                    //moddedLoc.addAll(importModLoc(modDir,modDirs,moddedLoc));
                 } catch (java.lang.OutOfMemoryError exception) { //User has many mods with too many lines of localization to handle in memory
                     aqq = 1 + modDirs.size(); 
                 }

@@ -1,0 +1,155 @@
+5399008=
+{
+	name="Chawda"
+	culture="dom"
+}
+5399009=
+{
+	name="Bhil"
+	culture="dom"
+	#religion="catholic"
+}
+5399010=
+{
+	name="Kathi"
+	culture="dom"
+	#religion="catholic"
+}
+5399011=
+{
+	name="Maitraka"
+	culture="dom"
+	#religion="catholic"
+}
+5399012=
+{
+	name="Varahas"
+	culture="dom"
+	#religion="catholic"
+}
+5399013=
+{
+	name="Calukya"
+	culture="dom"
+	#religion="catholic"
+}
+5399014 = {
+   name="Solanki"
+   culture="dom"
+   #religion="catholic"
+}
+5399015 = {
+   name="Sankhyavat"
+   culture="dom"
+   #religion="catholic"
+}
+
+5399016 = {
+   name="Jhuti"
+   culture="dom"
+   #religion="catholic"
+}
+
+5399017 ={
+   name="Kahlon"
+   culture="dom"
+   #religion="catholic"
+}
+5399018 ={
+   name="Nagra"
+   culture="dom"
+   #religion="catholic"
+}
+5399019 ={
+   name="Utpala"
+   culture="dom"
+   #religion="catholic"
+}
+5399020 ={
+   name="Karkota"
+   culture="dom"
+   #religion="catholic"
+}
+5399021 ={
+   name="Jewlia"
+   culture="dom"
+   #religion="catholic"
+}
+5399022 ={
+   name="Kacchapaghata"
+   culture="dom"
+   #religion="catholic"
+}
+5399023 = {
+	name = "Vagada"
+	culture = dom
+}
+5399024 = {
+	name = "Gujar"
+	culture = dom
+}
+#
+5399025 = {
+	name = "Burdak"
+	culture = dom
+}
+5399026 = {
+	name = "Chhinda"
+	culture = dom
+}
+5399027 = {
+	name = "Panwar"
+	culture = dom
+}
+5399028 = {
+	name = "Bargujar"
+	culture = dom
+}
+5399029 = {
+	name = "Guhilot"
+	culture = dom
+}
+5399030 = {
+	name = "Dahiya"
+	culture = dom
+}
+5399031 = {
+	name = "Ghanshani"
+	culture = dom
+}
+5399032 = {
+	name = "Lohi"
+	culture = dom
+}
+5399033 = {
+	name = "Notanni"
+	culture = dom
+}
+5399035 = {
+	name="Gaitonde"
+	culture="dom"
+}
+5399036 = {
+	name="Ruddha"
+	culture="dom"
+}
+5399037 = {
+	name="Sinda"
+	culture="dom"
+}
+5399038 = {
+	name="Nandelid"
+	culture="dom"
+}
+5399039 = {
+	name="Satadhanva"
+	culture="dom"
+}
+5399040 = {
+	name="Katyuri"
+	culture="dom"
+}
+5399041 = {
+	name="Kangra"
+	culture="dom"
+}

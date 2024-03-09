@@ -3329,7 +3329,7 @@ dom_group = {
 		graphical_cultures = { indiangfx muslimgfx }
 		secondary_event_pictures = bedouin_arabic
 
-		color = { 0.45 0.0 0.0 }
+		color = { 0.58 0.0 0.0 }
 
 		male_names = {
 			Achalraj_Achalraja Achalraja_Achalraja Adhandev Adityadeva Ajmal Alsi Amir Anangpal_Anangpala Anangpala_Anangpala Anupapala_Anupapala
@@ -3415,7 +3415,7 @@ dom_group = {
 		graphical_cultures = { indiangfx muslimgfx }
 		secondary_event_pictures = bedouin_arabic
 
-		color = { 0.45 0.0 0.0 }
+		color = { 0.47 0.17 0.22 }
 
 		male_names = {
 			Achalraj_Achalraja Achalraja_Achalraja Adhandev Adityadeva Ajmal Alsi Amir Anangpal_Anangpala Anangpala_Anangpala Anupapala_Anupapala

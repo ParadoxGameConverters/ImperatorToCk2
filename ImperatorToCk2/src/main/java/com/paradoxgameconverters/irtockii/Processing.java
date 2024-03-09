@@ -980,8 +980,6 @@ public class Processing
 
         int aq2 = 0;
 
-        //ArrayList<String> duchies = Importer.importDuchyNameList(ck2Dir);
-
         ArrayList<String> provNameList = new ArrayList<String>();
 
         while (aqq < 3000) {
@@ -1586,7 +1584,6 @@ public class Processing
             eastTitle = "byzantium";
         }
         String westTitle = title+"_west";
-        //String ck2Capital = Importer.importConvList("provinceConversion.txt",Integer.parseInt(capital))[1];
         String ck2Capital = capital;
         //events
         String eventDir = modDirectory+"/events/dynamic_empire_split_"+country+".txt";
@@ -2124,7 +2121,6 @@ public class Processing
                             count4 = count4 + 1;
                         }
                     }
-                    //String duchyCounties = selectedDuchy[count3];
                     
                     count3 = count3 + 1;
                 }
