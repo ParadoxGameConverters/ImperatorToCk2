@@ -729,6 +729,7 @@ public class Importer
                 while (aqq < locList.size()){
 
                     String qaaa = locList.get(aqq);
+                    qaaa = qaaa.replace(": ",":0 ");
                     try {
                         if (qaaa.charAt(0) != ' ') {//If loc lacks leading space, add a space
                             qaaa = " " + qaaa;
