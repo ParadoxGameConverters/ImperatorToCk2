@@ -1,0 +1,155 @@
+5400008=
+{
+	name="Chawda"
+	culture="lom"
+}
+5400009=
+{
+	name="Bhil"
+	culture="lom"
+	#religion="catholic"
+}
+5400010=
+{
+	name="Kathi"
+	culture="lom"
+	#religion="catholic"
+}
+5400011=
+{
+	name="Maitraka"
+	culture="lom"
+	#religion="catholic"
+}
+5400012=
+{
+	name="Varahas"
+	culture="lom"
+	#religion="catholic"
+}
+5400013=
+{
+	name="Calukya"
+	culture="lom"
+	#religion="catholic"
+}
+5400014 = {
+   name="Solanki"
+   culture="lom"
+   #religion="catholic"
+}
+5400015 = {
+   name="Sankhyavat"
+   culture="lom"
+   #religion="catholic"
+}
+
+5400016 = {
+   name="Jhuti"
+   culture="lom"
+   #religion="catholic"
+}
+
+5400017 ={
+   name="Kahlon"
+   culture="lom"
+   #religion="catholic"
+}
+5400018 ={
+   name="Nagra"
+   culture="lom"
+   #religion="catholic"
+}
+5400019 ={
+   name="Utpala"
+   culture="lom"
+   #religion="catholic"
+}
+5400020 ={
+   name="Karkota"
+   culture="lom"
+   #religion="catholic"
+}
+5400021 ={
+   name="Jewlia"
+   culture="lom"
+   #religion="catholic"
+}
+5400022 ={
+   name="Kacchapaghata"
+   culture="lom"
+   #religion="catholic"
+}
+5400023 = {
+	name = "Vagada"
+	culture = lom
+}
+5400024 = {
+	name = "Gujar"
+	culture = lom
+}
+#
+5400025 = {
+	name = "Burdak"
+	culture = lom
+}
+5400026 = {
+	name = "Chhinda"
+	culture = lom
+}
+5400027 = {
+	name = "Panwar"
+	culture = lom
+}
+5400028 = {
+	name = "Bargujar"
+	culture = lom
+}
+5400029 = {
+	name = "Guhilot"
+	culture = lom
+}
+5400030 = {
+	name = "Dahiya"
+	culture = lom
+}
+5400031 = {
+	name = "Ghanshani"
+	culture = lom
+}
+5400032 = {
+	name = "Lohi"
+	culture = lom
+}
+5400033 = {
+	name = "Notanni"
+	culture = lom
+}
+5400035 = {
+	name="Gaitonde"
+	culture="lom"
+}
+5400036 = {
+	name="Ruddha"
+	culture="lom"
+}
+5400037 = {
+	name="Sinda"
+	culture="lom"
+}
+5400038 = {
+	name="Nandelid"
+	culture="lom"
+}
+5400039 = {
+	name="Satadhanva"
+	culture="lom"
+}
+5400040 = {
+	name="Katyuri"
+	culture="lom"
+}
+5400041 = {
+	name="Kangra"
+	culture="lom"
+}

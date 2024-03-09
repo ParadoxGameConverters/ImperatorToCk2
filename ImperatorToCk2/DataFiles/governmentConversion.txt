@@ -9,6 +9,7 @@ democratic_republic,republic
 plutocratic_republic,republic
 athenian_republic,republic
 dictatorship,republic
+punic_republic,republic
 
 #Monarchies
 

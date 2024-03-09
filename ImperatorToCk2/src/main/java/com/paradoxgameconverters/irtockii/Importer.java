@@ -158,7 +158,7 @@ public class Importer
         String vmm = scnr.nextLine();
         String qaaa = vmm;
         String[] output;   // Owner Culture Religeon PopTotal Buildings
-        output = new String[24];
+        output = new String[25];
 
         output[0] = "9999"; //default for no tag
         output[1] = "6969"; //default for no flag seed
@@ -181,6 +181,7 @@ public class Importer
         output[21] = "9999"; //default for no historical tag used in nation formation
         output[22] = "k"; //default for no rank, ranks are not stored in the save file, will be calculated during output
         output[23] = "noFlag"; //default for no flag
+        output[24] = "4529"; //default for no original capital (Province of Olbia)
 
         impTagInfo.add(output); //default entry at ID 0
 
@@ -346,6 +347,8 @@ public class Importer
                                     if (output[21].equals("9999")) { //failsafe if somehow there is no historical tag
                                         output[21] = output[0];
                                     }
+                                    
+                                    output[24] = output[5]; //set original capital not to be changed
 
                                     String[] tmpOutput = new String[output.length];
 
@@ -381,6 +384,7 @@ public class Importer
                                     output[21] = "9999"; //default for no historical tag used in nation formation
                                     output[22] = "k"; //default for no rank, ranks are not stored in the save file, will be calculated during output
                                     output[23] = "noFlag"; //default for no flag
+                                    output[24] = "4529"; //default for no original capital (Province of Olbia)
 
                                 }
                             }
@@ -725,6 +729,7 @@ public class Importer
                 while (aqq < locList.size()){
 
                     String qaaa = locList.get(aqq);
+                    qaaa = qaaa.replace(": ",":0 ");
                     try {
                         if (qaaa.charAt(0) != ' ') {//If loc lacks leading space, add a space
                             qaaa = " " + qaaa;
@@ -774,6 +779,9 @@ public class Importer
             output[0] = revoltNames[1] + " Revolt";
             output[1] = revoltNames[1] + " Revolter";
         }
+        
+        output[0] = output[0].split(quote+" #")[0];
+        output[1] = output[1].split(quote+" #")[0];
 
         if (output[0].charAt(0) == '[') { //For countries which use a dynasty name for their country, like the Seleukid Empire
             output[1] = dynasty;
@@ -1173,6 +1181,8 @@ public class Importer
         String countyWord2 = "            "+tab+"c";//Bohemia and Moravia use different formatting
         String countyWord3 = "            c";
         String countyWord4 = tab3+tab+"c";
+        String countyWord5 = "           "+tab+tab+"c";//Bohemia again
+        String countyWord6 = "           "+tab+"c";//Bohemia
 
         ArrayList<String> duchies = new ArrayList<String>();
 
@@ -1189,12 +1199,16 @@ public class Importer
                     duchies.add(duchyList);
 
                     duchyList = qaaa.split(" = ")[0].replace(tab,"");
+                    duchyList = duchyList.replace(" ",""); //Bohemia
+                    duchyList = duchyList.split("=")[0]; //Gondar
                     aqq = aqq + 1;
                 }
 
                 if (qaaa.split("_")[0].equals(countyWord) || qaaa.split("_")[0].equals(countyWord2) || qaaa.split("_")[0].equals(countyWord3) ||
-                qaaa.split("_")[0].equals(countyWord4)) {
+                qaaa.split("_")[0].equals(countyWord4) || qaaa.split("_")[0].equals(countyWord5) || qaaa.split("_")[0].equals(countyWord6)) {
                     String county = qaaa.split(" = ")[0].replace(tab,"");
+                    county = county.replace(" ","");//Bohemia
+                    county = county.split("=")[0]; //Pecs
                     duchyList = duchyList + "," + county;
                     qaaa = scnr.nextLine();
                 }
@@ -1334,6 +1348,9 @@ public class Importer
                 qaaa = qaaa.replace(" =","=");
                 qaaa = qaaa.replace("    ",tab); //Some flags have strange formatting
                 qaaa = qaaa.replace(" color2=",tab+"color2="); //Some flags have strange formatting
+                if (qaaa.contains("#") && !qaaa.equals("#") && qaaa.charAt(0)!= '#') {
+                    qaaa = qaaa.split("#")[0];
+                }
                 if (qaaa.contains( "=" ) && output[0].equals("unnamedFlag")) {
                     output[0] = qaaa.split("=")[0];
                 }
@@ -1421,6 +1438,9 @@ public class Importer
                         
                         qaaa = qaaa.replace(" color2=",tab+"color2="); // to fix Invictus Barbaricum Countries file formatting
                         qaaa = qaaa.replace(" texture=",tab+"texture="); // to fix Invictus Barbaricum Countries file formatting
+                        if (qaaa.contains("#") && !qaaa.equals("#")) {
+                            qaaa = qaaa.split("#")[0];
+                        }
                         if (qaaa.split("=").length != 2) { //if using unusual formatting
                             if (qaaa.contains("texture=")) {
                                 embTexture = qaaa.split("texture=")[1];
@@ -1485,7 +1505,7 @@ public class Importer
                                 else if (qaaa.contains("hsv ")) {
                                     embColor1 = embColor1.split("hsv ")[1];
                                     embColor1 = embColor1.split(tab)[0]; //Invictus formatting
-                                    embColor1 = "hsv," + embColor1.substring(2,output[2].length()-2);
+                                    embColor1 = "hsv," + embColor1.substring(2,embColor1.length()-2);
                                 }
                             }
                             else if (qaaa.contains( "color2=" ) || qaaa.contains("color2 =") ) {
@@ -1677,8 +1697,6 @@ public class Importer
         Scanner scnr= new Scanner(fileIn);
 
         ArrayList<String[]> impColorList= new ArrayList<String[]>();
-        
-        //System.out.println(name);
 
         String tab = "	";
 
@@ -1773,7 +1791,6 @@ public class Importer
     
     public static ArrayList<String> importRegions (String name) throws IOException //list of all regions
     {
-        //System.out.println(name);
 
         FileInputStream fileIn= new FileInputStream(name);
         Scanner scnr= new Scanner(fileIn);
@@ -1808,8 +1825,6 @@ public class Importer
                     }
 
                     String tmpOutput = output;
-                    
-                    //System.out.println(tmpOutput);
 
                     impRegionList.add(tmpOutput);
 
@@ -1858,9 +1873,6 @@ public class Importer
                 String modDir = modDirs.get(aqq)+"/localization/english";
                 try {
                     importModLoc(modDir,modDirs,moddedLoc);
-                    //System.out.println("Dir: "+modDirs.get(aqq));
-                    //System.out.println("Loc total: "+test.size());
-                    //moddedLoc.addAll(importModLoc(modDir,modDirs,moddedLoc));
                 } catch (java.lang.OutOfMemoryError exception) { //User has many mods with too many lines of localization to handle in memory
                     aqq = 1 + modDirs.size(); 
                 }
@@ -2188,6 +2200,73 @@ public class Importer
         }   
 
         return allMatches;
+
+    }
+    
+    public static ArrayList<String[]> importCK2Geo () throws IOException
+    {
+
+        String VM = "\\";
+        VM = VM.substring(0);
+        String tab = "	";
+        char quote = '"';
+        String name = "defaultOutput/default/map/geographical_region.txt";
+        FileInputStream fileIn= new FileInputStream(name);
+        Scanner scnr= new Scanner(fileIn);
+
+        int flag = 0;
+
+        boolean endOrNot = true;
+        String qaaa;
+        qaaa = scnr.nextLine();
+        ArrayList<String[]> geography = new ArrayList<String[]>();
+        
+        String idNum;
+
+        try {
+            while (endOrNot = true){
+
+                qaaa = scnr.nextLine();
+                qaaa = Processing.removeComments(qaaa);
+                qaaa = qaaa.replace(tab,"");
+
+                if (qaaa.contains(" = {")){
+                    String geoName = qaaa.split(" = ")[0];
+                    String compositeGeo = "Q";
+                    qaaa = scnr.nextLine();
+                    while (!qaaa.equals("}")) {
+                        qaaa = Processing.removeComments(qaaa);
+                        if (qaaa.contains("c_") || qaaa.contains("d_")) {
+                            qaaa = qaaa.replace(tab,"");
+                            qaaa = qaaa.replace("  "," ");
+                            if (compositeGeo.equals("Q")) {
+                                compositeGeo = qaaa.replace(" ",",");
+                            } else {
+                                compositeGeo = compositeGeo + "," + qaaa.replace(" ",",");
+                            }
+                            
+                        }
+                        qaaa = scnr.nextLine();
+                    }
+                    String endingChar = compositeGeo.substring(compositeGeo.length()-1,compositeGeo.length());
+                    if (endingChar.equals(",")) {
+                        compositeGeo = compositeGeo.substring(0,compositeGeo.length()-1);
+                    }
+                    String[] output = new String[2];
+                    output[0] = geoName;
+                    output[1] = compositeGeo;
+                    //System.out.println(geoName + ": " + compositeGeo);
+                    geography.add(output);
+                }
+
+            }
+
+        }catch (java.util.NoSuchElementException exception){
+            endOrNot = false;
+
+        }   
+
+        return geography;
 
     }
 

@@ -4984,7 +4984,7 @@ iranian = {
 		modifier = default_culture_modifier
 	}
 	
-	#By Nick Robertson
+	#By Yuiiut
 	parthian_culture = {
 		graphical_cultures = { persiangfx }
 		secondary_event_pictures = bedouin_arabic
@@ -5022,7 +5022,7 @@ iranian = {
 		modifier = default_culture_modifier
 	}
 	
-	#By Nick Robertson
+	#By Yuiiut
 	indo_parthian = {
 		graphical_cultures = { indiangfx }
 		secondary_event_pictures = bedouin_arabic
@@ -5061,7 +5061,7 @@ iranian = {
 		modifier = default_culture_modifier
 	}
 	
-	#By Nick Robertson
+	#By Yuiiut
 	indo_scythian = {
         graphical_cultures = { persiangfx } #arabicgfx
 		secondary_event_pictures = bedouin_arabic
@@ -5085,6 +5085,27 @@ iranian = {
         from_dynasty_prefix = "nava "
         male_patronym = "puri "
         female_patronym = "duda "
+
+		modifier = default_culture_modifier
+	}
+	
+	#Intermixed Pre-Indo-Europeans and Persians
+	caspian = {
+		graphical_cultures = { persiangfx }
+		secondary_event_pictures = bedouin_arabic
+
+		color = { 0.68 0.4 0.37 }
+
+		male_names = {
+			Smbat Khachik Ashot Arsham Zariadres Hamazasp Vardan Artawazd Mzez Eruand Orontes Mithranes Kherkhes Khozrid Sames Arshames Trdat Tigran Zareh Artashes Arshak Vagharsh Khosrow Varazdat Vasak Ashusha Varazvaghan Hmayeak Vahan Sahak Zarmihr Nikhor
+		}
+		female_names = {
+			Tigranuhi Vanuhi Mihrana Asatera Ariazate Aka Ghadana Erato Zarmandukht Pharantzem Mahbanu Zenobia Satenik
+		}
+
+		from_dynasty_prefix = "ve "
+
+		prefix = no
 
 		modifier = default_culture_modifier
 	}

@@ -115,6 +115,13 @@ nemedian;Nemedian;Nemedian;Nemedische;;Nemedian;;;;;;;;;x
 anglo_suebi;Anglo-Suebi;Anglo-Suebi;Anglosuebische;;Anglo-Suebi;;;;;;;;;x
 atrebatian;Atrebatian;Atrebatian;Atrebatische;;Atrebatian;;;;;;;;;x
 indo_germanic;Indo-Germanic;Indo-Germanic;Indiengermanische;;Indo-Germanic;;;;;;;;;x
+yarkamii;Yarkamii;Yarkamii;Yarkamische;;Yarkamii;;;;;;;;;x
+caspian;Caspian;Caspian;Kaspische;;Caspian;;;;;;;;;x
+cardukoi;Karduchoi;Karduchoi;Karduchische;;Karduchoi;;;;;;;;;x
+dom;Dom;Dom;Domische;;Dom;;;;;;;;;x
+lom;Lom;Lom;Lomische;;Lom;;;;;;;;;x
+ghagar;Ghagar;Ghagar;Ghagarische;;Ghagar;;;;;;;;;x
+old_burgundian;Burgundian;Burgundian;Burgundische;;Burgundian;;;;;;;;;x
 #From Tianxia
 pyu;Pyu;Pyu;Pyuische;;Pyu;;;;;;;;;x
 shan;Shan;shan;Shan;;Shan;;;;;;;;;x
@@ -135,6 +142,7 @@ oriental_romance;Oriental Romance;Oriental Romance;Ostromanische;;Oriental Roman
 atlanto_slavic;Atlanto-Slavic;Atlanto-Slavic;Atlantischslavische;;Atlanto-Slavic;;;;;;;;;x
 scythian_group;Scythian;Scythe;Skythe;;Escita;;;;;;;;;x
 semitic_group;Chaldean;Chaldéen;Chaldäisch;;Caldaico;;;;;;;;;x
+dom_group;Dom;Dom;Domische;;Dom;;;;;;;;;x
 #From Tianxia
 burmese_group;Burmic;Burmic;Burmisch;;Burmic;;;;;;;;;x
 tai_kadai_group;Tai-Kadai;Tai-Kadai;Taikadaisch;;Tai-Kadai;;;;;;;;;x

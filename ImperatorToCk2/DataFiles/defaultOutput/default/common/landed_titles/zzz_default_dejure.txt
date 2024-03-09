@@ -1,3 +1,13 @@
+k_cambria = {
+	color={ 215 158 66 }
+	color2={ 215 158 66 }
+}
+
+k_laessina = {
+	color={ 215 159 128 }
+	color2={ 215 159 128 }
+}
+
 e_GAU = {
 	color={ 94 130 94 }
 	color2={ 94 130 94 }

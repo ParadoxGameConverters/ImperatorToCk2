@@ -449,3 +449,29 @@ d_bamar_pagan_reformed = {
 	
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 }
+
+d_hurrian_reformed = {
+	color={ 0.45 0.46 0.92 }
+	color2={ 0.45 0.46 0.92 }
+	
+	capital = 1183 #	Bost
+	
+	title = "HEAD_HURRIAN_PRIEST"
+	title_female = "HEAD_HURRIAN_PRIESTESS"
+	foa = "HEAD_PRIEST_FOA"
+	
+	short_name = yes
+	
+	# Always exists
+	landless = yes	
+	
+	# Controls a religion
+	controls_religion = hurrian_reformed
+	
+	religion = hurrian_reformed
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}

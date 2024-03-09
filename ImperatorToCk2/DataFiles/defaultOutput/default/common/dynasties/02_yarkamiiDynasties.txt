@@ -1,0 +1,178 @@
+5396008=
+{
+	name="Burtasid"
+	culture="yarkamii"
+}
+5396009=
+{
+	name="Alauni"
+	culture="yarkamii"
+	
+}
+5396010=
+{
+	name="Halani"
+	culture="yarkamii"
+	
+}
+5396011=
+{
+	name="Shoana"
+	culture="yarkamii"
+	
+}
+5396012=
+{
+	name="Senty"
+	culture="yarkamii"
+	
+}
+5396013=
+{
+	name="Ovseti"
+	culture="yarkamii"
+	
+}
+5396014 = {
+   name="Tsærasantæ"
+   culture="yarkamii"
+   
+}
+5396015 = {
+   name="Ælbegatæ"
+   culture="yarkamii"
+   
+}
+
+5396016 = {
+   name="Ardasentæ"
+   culture="yarkamii"
+   
+}
+
+5396017 ={
+   name="Bekkuyzartæ"
+   culture="yarkamii"
+   
+}
+5396018 ={
+   name="Gæbæratæ"
+   culture="yarkamii"
+   
+}
+5396019 ={
+   name="Dzæræhohtæ"
+   culture="yarkamii"
+   
+}
+5396020 ={
+   name="Dzebysatæ"
+   culture="yarkamii"
+   
+}
+5396021 ={
+   name="Djerdjitæ"
+   culture="yarkamii"
+   
+}
+5396022 ={
+   name="Guyrdzybetæ"
+   culture="yarkamii"
+   
+}
+5396023 = {
+	name = "Zændjiatæ"
+	culture = yarkamii
+}
+5396024 = {
+	name = "Kærkuystæ"
+	culture = yarkamii
+}
+5396025 = {
+	name = "Djykkajtæ"
+	culture = yarkamii
+}
+5396026 = {
+	name = "Godjysatæ"
+	culture = yarkamii
+}
+5396027 = {
+	name = "Magkætæ"
+	culture = yarkamii
+}
+5396028 = {
+	name = "Pærræstatæ"
+	culture = yarkamii
+}
+5396029 = {
+	name = "Hetægkatæ"
+	culture = yarkamii
+}
+5396030 = {
+	name = "Hædarcatæ"
+	culture = yarkamii
+}
+5396031 = {
+	name = "Tuallægtæ"
+	culture = yarkamii
+}
+5396032 = {
+	name = "Færniatæ"
+	culture = yarkamii
+}
+5396033 = {
+	name = "Ephraimid"
+	culture = yarkamii
+}
+5396034 = {
+	name = "Tandelatæ"
+	culture = yarkamii
+}
+5396035 = {
+	name = "Tsæykostæ"
+	culture = yarkamii
+}
+5396036 = {
+	name = "Sozanatæ"
+	culture = yarkamii
+}
+5396037 = {
+	name = "Skirwilteitis"
+	culture = yarkamii
+}
+5396038 = {
+	name = "Mærzojtæ"
+	culture = yarkamii
+}
+5396039 = {
+	name = "Zmbalani"
+	culture = yarkamii
+}
+5396040 = {
+	name = "Sathisi"
+	culture = yarkamii
+}
+5396041 = {
+	name = "Totrazi"
+	culture = yarkamii
+}
+5396042 = {
+	name = "Yarkam"
+	culture = yarkamii
+}
+5396043 = {
+	name = "Kausika"
+	culture = yarkamii
+}
+5396044 = {
+	name = "Agarid"
+	culture = yarkamii
+}
+5396045 = {
+	name = "Lyam"
+	culture = yarkamii
+}
+5396046 = {
+	name = "Ytarim"
+	culture = yarkamii
+}

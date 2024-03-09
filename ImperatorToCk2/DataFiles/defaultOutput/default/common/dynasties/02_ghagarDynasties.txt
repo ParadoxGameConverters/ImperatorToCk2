@@ -1,0 +1,155 @@
+5401008=
+{
+	name="Chawda"
+	culture="ghagar"
+}
+5401009=
+{
+	name="Bhil"
+	culture="ghagar"
+	#religion="catholic"
+}
+5401010=
+{
+	name="Kathi"
+	culture="ghagar"
+	#religion="catholic"
+}
+5401011=
+{
+	name="Maitraka"
+	culture="ghagar"
+	#religion="catholic"
+}
+5401012=
+{
+	name="Varahas"
+	culture="ghagar"
+	#religion="catholic"
+}
+5401013=
+{
+	name="Calukya"
+	culture="ghagar"
+	#religion="catholic"
+}
+5401014 = {
+   name="Solanki"
+   culture="ghagar"
+   #religion="catholic"
+}
+5401015 = {
+   name="Sankhyavat"
+   culture="ghagar"
+   #religion="catholic"
+}
+
+5401016 = {
+   name="Jhuti"
+   culture="ghagar"
+   #religion="catholic"
+}
+
+5401017 ={
+   name="Kahlon"
+   culture="ghagar"
+   #religion="catholic"
+}
+5401018 ={
+   name="Nagra"
+   culture="ghagar"
+   #religion="catholic"
+}
+5401019 ={
+   name="Utpala"
+   culture="ghagar"
+   #religion="catholic"
+}
+5401020 ={
+   name="Karkota"
+   culture="ghagar"
+   #religion="catholic"
+}
+5401021 ={
+   name="Jewlia"
+   culture="ghagar"
+   #religion="catholic"
+}
+5401022 ={
+   name="Kacchapaghata"
+   culture="ghagar"
+   #religion="catholic"
+}
+5401023 = {
+	name = "Vagada"
+	culture = ghagar
+}
+5401024 = {
+	name = "Gujar"
+	culture = ghagar
+}
+#
+5401025 = {
+	name = "Burdak"
+	culture = ghagar
+}
+5401026 = {
+	name = "Chhinda"
+	culture = ghagar
+}
+5401027 = {
+	name = "Panwar"
+	culture = ghagar
+}
+5401028 = {
+	name = "Bargujar"
+	culture = ghagar
+}
+5401029 = {
+	name = "Guhilot"
+	culture = ghagar
+}
+5401030 = {
+	name = "Dahiya"
+	culture = ghagar
+}
+5401031 = {
+	name = "Ghanshani"
+	culture = ghagar
+}
+5401032 = {
+	name = "Lohi"
+	culture = ghagar
+}
+5401033 = {
+	name = "Notanni"
+	culture = ghagar
+}
+5401035 = {
+	name="Gaitonde"
+	culture="ghagar"
+}
+5401036 = {
+	name="Ruddha"
+	culture="ghagar"
+}
+5401037 = {
+	name="Sinda"
+	culture="ghagar"
+}
+5401038 = {
+	name="Nandelid"
+	culture="ghagar"
+}
+5401039 = {
+	name="Satadhanva"
+	culture="ghagar"
+}
+5401040 = {
+	name="Katyuri"
+	culture="ghagar"
+}
+5401041 = {
+	name="Kangra"
+	culture="ghagar"
+}

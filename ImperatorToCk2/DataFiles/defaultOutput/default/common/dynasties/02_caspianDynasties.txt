@@ -1,0 +1,505 @@
+5397000=
+{
+	name="Abeghean"
+	culture="caspian"
+}
+5397001=
+{
+	name="Abeghean"
+	culture="caspian"
+}
+5397002=
+{
+	name="Abegheans"
+	culture="caspian"
+}
+5397003=
+{
+	name="Abegheanid"
+	culture="caspian"
+}
+5397004=
+{
+	name="Amatuni"
+	culture="caspian"
+}
+5397005=
+{
+	name="Amatuni"
+	culture="caspian"
+}
+5397006=
+{
+	name="Amatunis"
+	culture="caspian"
+}
+5397007=
+{
+	name="Amatunid"
+	culture="caspian"
+}
+5397008=
+{
+	name="Andzevatsi"
+	culture="caspian"
+}
+5397009=
+{
+	name="Andzevatsi"
+	culture="caspian"
+}
+5397010=
+{
+	name="Andzevatsis"
+	culture="caspian"
+}
+5397011=
+{
+	name="Andzevatsid"
+	culture="caspian"
+}
+5397012=
+{
+	name="Artsruni"
+	culture="caspian"
+}
+5397013=
+{
+	name="Artsruni"
+	culture="caspian"
+}
+5397014=
+{
+	name="Artsrunis"
+	culture="caspian"
+}
+5397015=
+{
+	name="Artsrunid"
+	culture="caspian"
+}
+5397016=
+{
+	name="Bagean"
+	culture="caspian"
+}
+5397017=
+{
+	name="Bagean"
+	culture="caspian"
+}
+5397018=
+{
+	name="Bageans"
+	culture="caspian"
+}
+5397019=
+{
+	name="Bagid"
+	culture="caspian"
+}
+5397020=
+{
+	name="Bagratid"
+	culture="caspian"
+}
+5397021=
+{
+	name="Bagratid"
+	culture="caspian"
+}
+5397022=
+{
+	name="Bagratids"
+	culture="caspian"
+}
+5397023=
+{
+	name="Bagratid"
+	culture="caspian"
+}
+5397024=
+{
+	name="Bznuni"
+	culture="caspian"
+}
+5397025=
+{
+	name="Bznuni"
+	culture="caspian"
+}
+5397026=
+{
+	name="Bznunis"
+	culture="caspian"
+}
+5397027=
+{
+	name="Bznunid"
+	culture="caspian"
+}
+5397028=
+{
+	name="Dimaksean"
+	culture="caspian"
+}
+5397029=
+{
+	name="Dimaksean"
+	culture="caspian"
+}
+5397030=
+{
+	name="Dimakseans"
+	culture="caspian"
+}
+5397031=
+{
+	name="Dimakid"
+	culture="caspian"
+}
+5397032=
+{
+	name="Ensayatsi"
+	culture="caspian"
+}
+5397033=
+{
+	name="Ensayatsi"
+	culture="caspian"
+}
+5397034=
+{
+	name="Ensayatsis"
+	culture="caspian"
+}
+5397035=
+{
+	name="Ensayatsid"
+	culture="caspian"
+}
+5397036=
+{
+	name="Gabeghean"
+	culture="caspian"
+}
+5397037=
+{
+	name="Gabeghean"
+	culture="caspian"
+}
+5397038=
+{
+	name="Gabegheans"
+	culture="caspian"
+}
+5397039=
+{
+	name="Gabeghid"
+	culture="caspian"
+}
+5397040=
+{
+	name="Gntuni"
+	culture="caspian"
+}
+5397041=
+{
+	name="Gntuni"
+	culture="caspian"
+}
+5397042=
+{
+	name="Gntunis"
+	culture="caspian"
+}
+5397043=
+{
+	name="Gntunid"
+	culture="caspian"
+}
+5397044=
+{
+	name="Gnuni"
+	culture="caspian"
+}
+5397045=
+{
+	name="Gnuni"
+	culture="caspian"
+}
+5397046=
+{
+	name="Gnunis"
+	culture="caspian"
+}
+5397047=
+{
+	name="Gnunid"
+	culture="caspian"
+}
+5397048=
+{
+	name="Habuzhean"
+	culture="caspian"
+}
+5397049=
+{
+	name="Habuzhean"
+	culture="caspian"
+}
+5397050=
+{
+	name="Habuzheans"
+	culture="caspian"
+}
+5397051=
+{
+	name="Habuzhid"
+	culture="caspian"
+}
+5397052=
+{
+	name="Hashteank"
+	culture="caspian"
+}
+5397053=
+{
+	name="Hashteank"
+	culture="caspian"
+}
+5397054=
+{
+	name="Hashteanks"
+	culture="caspian"
+}
+5397055=
+{
+	name="Hashteank"
+	culture="caspian"
+}
+5397056=
+{
+	name="Hawnuni"
+	culture="caspian"
+}
+5397057=
+{
+	name="Hawnuni"
+	culture="caspian"
+}
+5397058=
+{
+	name="Hawnunis"
+	culture="caspian"
+}
+5397059=
+{
+	name="Hawnunid"
+	culture="caspian"
+}
+5397060=
+{
+	name="Kajberuni"
+	culture="caspian"
+}
+5397061=
+{
+	name="Kajberuni"
+	culture="caspian"
+}
+5397062=
+{
+	name="Kajberunis"
+	culture="caspian"
+}
+5397063=
+{
+	name="Kajberunid"
+	culture="caspian"
+}
+5397064=
+{
+	name="Kamsarakan"
+	culture="caspian"
+}
+5397065=
+{
+	name="Kamsarakan"
+	culture="caspian"
+}
+5397066=
+{
+	name="Kamsarakans"
+	culture="caspian"
+}
+5397067=
+{
+	name="Kamsarakanid"
+	culture="caspian"
+}
+5397068=
+{
+	name="Koghean"
+	culture="caspian"
+}
+5397069=
+{
+	name="Koghean"
+	culture="caspian"
+}
+5397070=
+{
+	name="Kogheans"
+	culture="caspian"
+}
+5397071=
+{
+	name="Koghid"
+	culture="caspian"
+}
+5397072=
+{
+	name="Mamikonean"
+	culture="caspian"
+}
+5397073=
+{
+	name="Mamikonean"
+	culture="caspian"
+}
+5397074=
+{
+	name="Mamikoneans"
+	culture="caspian"
+}
+5397075=
+{
+	name="Mamikonid"
+	culture="caspian"
+}
+5397076=
+{
+	name="Manawazean"
+	culture="caspian"
+}
+5397077=
+{
+	name="Manawazean"
+	culture="caspian"
+}
+5397078=
+{
+	name="Manawazeans"
+	culture="caspian"
+}
+5397079=
+{
+	name="Manawazid"
+	culture="caspian"
+}
+5397080=
+{
+	name="Mandakuni"
+	culture="caspian"
+}
+5397081=
+{
+	name="Mandakuni"
+	culture="caspian"
+}
+5397082=
+{
+	name="Mandakunis"
+	culture="caspian"
+}
+5397083=
+{
+	name="Mandakunid"
+	culture="caspian"
+}
+5397084=
+{
+	name="Paluni"
+	culture="caspian"
+}
+5397085=
+{
+	name="Paluni"
+	culture="caspian"
+}
+5397086=
+{
+	name="Palunis"
+	culture="caspian"
+}
+5397087=
+{
+	name="Palunid"
+	culture="caspian"
+}
+5397088=
+{
+	name="Oroduni"
+	culture="caspian"
+}
+5397089=
+{
+	name="Oroduni"
+	culture="caspian"
+}
+5397090=
+{
+	name="Orodunis"
+	culture="caspian"
+}
+5397091=
+{
+	name="Orodunid"
+	culture="caspian"
+}
+5397092=
+{
+	name="Eruanduni"
+	culture="caspian"
+}
+5397093=
+{
+	name="Eruanduni"
+	culture="caspian"
+}
+5397094=
+{
+	name="Eruandunis"
+	culture="caspian"
+}
+5397095=
+{
+	name="Eruandunid"
+	culture="caspian"
+}
+5397096=
+{
+	name="Orontid"
+	culture="caspian"
+}
+5397097=
+{
+	name="Orontid"
+	culture="caspian"
+}
+5397098=
+{
+	name="Orontids"
+	culture="caspian"
+}
+5397099=
+{
+	name="Orontid"
+	culture="caspian"
+}
+5397100=
+{
+	name="Ropsean"
+	culture="caspian"
+}

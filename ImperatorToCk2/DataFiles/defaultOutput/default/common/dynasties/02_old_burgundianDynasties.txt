@@ -1,0 +1,480 @@
+5402000=
+{
+	name="Tuome"
+	culture="old_burgundian"
+}
+5402001=
+{
+	name="Tuoma"
+	culture="old_burgundian"
+}
+5402002=
+{
+	name="Tuomes"
+	culture="old_burgundian"
+}
+5402003=
+{
+	name="Tuomid"
+	culture="old_burgundian"
+}
+5402004=
+{
+	name="Andicus"
+	culture="old_burgundian"
+}
+5402005=
+{
+	name="Andica"
+	culture="old_burgundian"
+}
+5402006=
+{
+	name="Andices"
+	culture="old_burgundian"
+}
+5402007=
+{
+	name="Andicid"
+	culture="old_burgundian"
+}
+5402008=
+{
+	name="Dagaricus"
+	culture="old_burgundian"
+}
+5402009=
+{
+	name="Dagarica"
+	culture="old_burgundian"
+}
+5402010=
+{
+	name="Dagarices"
+	culture="old_burgundian"
+}
+5402011=
+{
+	name="Dagaricid"
+	culture="old_burgundian"
+}
+5402012=
+{
+	name="Gelimerus"
+	culture="old_burgundian"
+}
+5402013=
+{
+	name="Gelimera"
+	culture="old_burgundian"
+}
+5402014=
+{
+	name="Gelimeres"
+	culture="old_burgundian"
+}
+5402015=
+{
+	name="Gelimerian"
+	culture="old_burgundian"
+}
+5402016=
+{
+	name="Geroldus"
+	culture="old_burgundian"
+}
+5402017=
+{
+	name="Gerolda"
+	culture="old_burgundian"
+}
+5402018=
+{
+	name="Geroldes"
+	culture="old_burgundian"
+}
+5402019=
+{
+	name="Geroldian"
+	culture="old_burgundian"
+}
+5402020=
+{
+	name="Malaricus"
+	culture="old_burgundian"
+}
+5402021=
+{
+	name="Malarica"
+	culture="old_burgundian"
+}
+5402022=
+{
+	name="Malarici"
+	culture="old_burgundian"
+}
+5402023=
+{
+	name="Malaricid"
+	culture="old_burgundian"
+}
+5402024=
+{
+	name="Marbodus"
+	culture="old_burgundian"
+}
+5402025=
+{
+	name="Marboda"
+	culture="old_burgundian"
+}
+5402026=
+{
+	name="Marbodes"
+	culture="old_burgundian"
+}
+5402027=
+{
+	name="Marbodian"
+	culture="old_burgundian"
+}
+5402028=
+{
+	name="Theodus"
+	culture="old_burgundian"
+}
+5402029=
+{
+	name="Theoda"
+	culture="old_burgundian"
+}
+5402030=
+{
+	name="Theodes"
+	culture="old_burgundian"
+}
+5402031=
+{
+	name="Theodian"
+	culture="old_burgundian"
+}
+5402032=
+{
+	name="Marcolus"
+	culture="old_burgundian"
+}
+5402033=
+{
+	name="Marcola"
+	culture="old_burgundian"
+}
+5402034=
+{
+	name="Marcoles"
+	culture="old_burgundian"
+}
+5402035=
+{
+	name="Marcolian"
+	culture="old_burgundian"
+}
+5402036=
+{
+	name="Sigid"
+	culture="old_burgundian"
+}
+5402037=
+{
+	name="Sigida"
+	culture="old_burgundian"
+}
+5402038=
+{
+	name="Sigi"
+	culture="old_burgundian"
+}
+5402039=
+{
+	name="Sigid"
+	culture="old_burgundian"
+}
+5402040=
+{
+	name="Rigleikus"
+	culture="old_burgundian"
+}
+5402041=
+{
+	name="Rigleika"
+	culture="old_burgundian"
+}
+5402042=
+{
+	name="Rigleikes"
+	culture="old_burgundian"
+}
+5402043=
+{
+	name="Rigleikid"
+	culture="old_burgundian"
+}
+5402044=
+{
+	name="Tancreid"
+	culture="old_burgundian"
+}
+5402045=
+{
+	name="Tancra"
+	culture="old_burgundian"
+}
+5402046=
+{
+	name="Tancri"
+	culture="old_burgundian"
+}
+5402047=
+{
+	name="Tancrid"
+	culture="old_burgundian"
+}
+5402048=
+{
+	name="Malogrus"
+	culture="old_burgundian"
+}
+5402049=
+{
+	name="Malogra"
+	culture="old_burgundian"
+}
+5402050=
+{
+	name="Malogri"
+	culture="old_burgundian"
+}
+5402051=
+{
+	name="Malogrian"
+	culture="old_burgundian"
+}
+5402052=
+{
+	name="Gundrud"
+	culture="old_burgundian"
+}
+5402053=
+{
+	name="Gundruda"
+	culture="old_burgundian"
+}
+5402054=
+{
+	name="Gundrudii"
+	culture="old_burgundian"
+}
+5402055=
+{
+	name="Gundrid"
+	culture="old_burgundian"
+}
+5402056=
+{
+	name="Segimandrus"
+	culture="old_burgundian"
+}
+5402057=
+{
+	name="Segimandra"
+	culture="old_burgundian"
+}
+5402058=
+{
+	name="Segimandri"
+	culture="old_burgundian"
+}
+5402059=
+{
+	name="Segimandrid"
+	culture="old_burgundian"
+}
+5402060=
+{
+	name="Dwaldus"
+	culture="old_burgundian"
+}
+5402061=
+{
+	name="Dwalda"
+	culture="old_burgundian"
+}
+5402062=
+{
+	name="Dwaldes"
+	culture="old_burgundian"
+}
+5402063=
+{
+	name="Dwaldid"
+	culture="old_burgundian"
+}
+5402064=
+{
+	name="Merobaudes"
+	culture="old_burgundian"
+}
+5402065=
+{
+	name="Merobauda"
+	culture="old_burgundian"
+}
+5402066=
+{
+	name="Merobaudes"
+	culture="old_burgundian"
+}
+5402067=
+{
+	name="Merobaudian"
+	culture="old_burgundian"
+}
+5402068=
+{
+	name="Eidgid"
+	culture="old_burgundian"
+}
+5402069=
+{
+	name="Eidgida"
+	culture="old_burgundian"
+}
+5402070=
+{
+	name="Eidiges"
+	culture="old_burgundian"
+}
+5402071=
+{
+	name="Eidigian"
+	culture="old_burgundian"
+}
+5402072=
+{
+	name="Gerhaucres"
+	culture="old_burgundian"
+}
+5402073=
+{
+	name="Gerhaucra"
+	culture="old_burgundian"
+}
+5402074=
+{
+	name="Gerhaucres"
+	culture="old_burgundian"
+}
+5402075=
+{
+	name="Gerhaucrian"
+	culture="old_burgundian"
+}
+5402076=
+{
+	name="Hildganes"
+	culture="old_burgundian"
+}
+5402077=
+{
+	name="Hildgana"
+	culture="old_burgundian"
+}
+5402078=
+{
+	name="Hildganes"
+	culture="old_burgundian"
+}
+5402079=
+{
+	name="Hildganid"
+	culture="old_burgundian"
+}
+5402080=
+{
+	name="Hramdrid"
+	culture="old_burgundian"
+}
+5402081=
+{
+	name="Hramdra"
+	culture="old_burgundian"
+}
+5402082=
+{
+	name="Hramdri"
+	culture="old_burgundian"
+}
+5402083=
+{
+	name="Hramrid"
+	culture="old_burgundian"
+}
+5402084=
+{
+	name="Ingohdres"
+	culture="old_burgundian"
+}
+5402085=
+{
+	name="Ingohdra"
+	culture="old_burgundian"
+}
+5402086=
+{
+	name="Ingohdres"
+	culture="old_burgundian"
+}
+5402087=
+{
+	name="Ingohdrid"
+	culture="old_burgundian"
+}
+5402088=
+{
+	name="Ingrammus"
+	culture="old_burgundian"
+}
+5402089=
+{
+	name="Ingramma"
+	culture="old_burgundian"
+}
+5402090=
+{
+	name="Ingrammii"
+	culture="old_burgundian"
+}
+5402091=
+{
+	name="Ingrammid"
+	culture="old_burgundian"
+}
+5402092=
+{
+	name="Malactus"
+	culture="old_burgundian"
+}
+5402093=
+{
+	name="Malacta"
+	culture="old_burgundian"
+}
+5402094=
+{
+	name="Malactii"
+	culture="old_burgundian"
+}
+5402095=
+{
+	name="Malactian"
+	culture="old_burgundian"
+}

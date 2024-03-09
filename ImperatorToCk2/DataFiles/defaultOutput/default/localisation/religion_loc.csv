@@ -25,6 +25,7 @@ mithraic;Mithraic;Mithraic;Mithraische;;Mithraic;;;;;;;;;x
 voxite;Voxite;Voxite;Voxische;;Voxite;;;;;;;;;x
 nuragic;Nuragic;Nuragic;Nuragische;;Nuragic;;;;;;;;;x
 bamar_pagan;Natic;Natic;Natische;;Natic;;;;;;;;;x
+hurrian;Hurrian;Hourrite;Hurrische;;Hurrita;;;;;;;;;x
 
 #reformed religions
 canaanite_reformed;Canaanite;Canaannéenne;Kanaanische;;Canaanita;;;;;;;;;x
@@ -47,6 +48,7 @@ mithraic_reformed;Mithraic;Mithraic;Mithraische;;Mithraic;;;;;;;;;x
 voxite_reformed;Voxite;Voxite;Voxische;;Voxite;;;;;;;;;x
 nuragic_reformed;Nuragic;Nuragic;Nuragische;;Nuragic;;;;;;;;;x
 bamar_pagan_reformed;Natic;Natic;Natische;;Natic;;;;;;;;;x
+hurrian_reformed;Hurrian;Hourrite;Hurrische;;Hurrita;;;;;;;;;x
 
 #religion descriptions
 canaanite_DESC;The Canaanite religion venerates a number of Gods and their aspects, in a polytheistic manner. Baal is regarded as the chief deity in a complex hierarchy of lesser gods, which were often worshiped at shrines found on mountains or hilltops.;La religion cananéenne vénère un certain nombre de dieux et leurs divers aspects, de façon polythéiste. Ba'l est considéré comme le principal dieu au sein d'une hiérarchie complexe de divinités mineures, très souvent vénérées dans des sanctuaires situés au sommet des montagnes et des collines.;Kanaanische;;Canaanita;;;;;;;;;x
@@ -72,7 +74,7 @@ mithraic_DESC;The religion of the Medians focusses primarily on the god Mithra r
 voxite_DESC;Combining the beliefs from the people of the river Vakhsh (Oxus), the Heptadic religion of the Steppe, and the Zoroastrian beliefs of the Persians, Voxite takes on its own identity as a cultural and religious melting pot which reveres their own local gods amongst more familiar gods of other peoples.;Voxite;Voxische;;Voxite;;;;;;;;;x
 nuragic_DESC;Nuragic is a belief that stretches back to the Bronze Age of Corsica and Sardinia. Filled with cults of animals and wells, most central to Nuragic belief is the Henotheistic belief in a Father God known by many names, including Sardo, Sid Addir, and more.;Nuragic;Nuragische;;Nuragic;;;;;;;;;x
 bamar_pagan_DESC;Nats are spirits worshipped by the peoples who live along the Irrawaddy River, whom were influenced by Buddhist and Hindu personalities. Nats take the form of saints, people who have died violently, and village guardians.;Natic;Natische;;Natic;;;;;;;;;x
-mithraic_DESC;The religion of the Medians focusses primarily on the god Mithra rather than Ahura Mazda. It is the direct descendant of the ancient Pre-Zoroastrian beliefs of Persia. The rise of the Achaemenids would see both high and low points, many times favoring Mazdaist Zoroastrianism, but to this day it remains with the people of Medes.;Mithraic;Mithraische;;Mithraic;;;;;;;;;x
+hurrian_DESC;The Hurrians worshiped a great number of gods derived from various different cultures of the Near East. The main gods in the Hurrian pantheon were Teshub, the mighty weather god, and his wife Hebat, the mother goddess. A special class of figures venerated by the Hurrians were so-called Sarrena, deified kings and heroes.;Les Hourrites adoraient un grand nombre de dieux issus de diverses cultures du Proche-Orient. Les principaux dieux du panthéon hourrite étaient Teshub, le puissant dieu du temps, et son épouse Hébat, la déesse mère. Une classe spéciale de personnages vénérés par les Hourrites était celle appelée Sarrena, des rois et des héros déifiés.;Die Hurriter verehrten eine große Anzahl von Göttern, die aus verschiedenen Kulturen des Nahen Ostens stammten. Die Hauptgötter im hurritischen Pantheon waren Teshub, der mächtige Wettergott, und seine Frau Hebat, die Muttergöttin. Eine besondere Klasse von Figuren, die von den Hurritern verehrt wurden, waren die sogenannten Sarrena, vergöttlichte Könige und Helden.;;Los hurritas adoraban a un gran número de dioses derivados de diversas culturas del Cercano Oriente. Los principales dioses del panteón hurrita eran Teshub, el poderoso dios del tiempo, y su esposa Hebat, la diosa madre. Una clase especial de figuras veneradas por los hurritas eran las llamadas Sarrena, reyes y héroes deificados.;;;;;;;;;x
 
 #reformed religion descriptions
 canaanite_reformed_DESC;The Canaanite religion venerates a number of Gods and their aspects, in a polytheistic manner. Baal is regarded as the chief deity in a complex hierarchy of lesser gods, which were often worshiped at shrines found on mountains or hilltops.;La religion cananéenne vénère un certain nombre de dieux et leurs divers aspects, de façon polythéiste. Ba'l est considéré comme le principal dieu au sein d'une hiérarchie complexe de divinités mineures, très souvent vénérées dans des sanctuaires situés au sommet des montagnes et des collines.;Kanaanische;;Canaanita;;;;;;;;;x
@@ -91,6 +93,7 @@ mayan_reformed_DESC;Mayan religion covers a range of Mesoamerican polytheistic t
 voxite_reformed_DESC;Combining the beliefs from the people of the river Vakhsh (Oxus), the Heptadic religion of the Steppe, and the Zoroastrian beliefs of the Persians, Voxite takes on its own identity as a cultural and religious melting pot which reveres their own local gods amongst more familiar gods of other peoples.;Voxite;Voxische;;Voxite;;;;;;;;;x
 nuragic_reformed_DESC;Nuragic is a belief that stretches back to the Bronze Age of Corsica and Sardinia. Filled with cults of animals and wells, most central to Nuragic belief is the Henotheistic belief in a Father God known by many names, including Sardo, Sid Addir, and more.;Nuragic;Nuragische;;Nuragic;;;;;;;;;x
 bamar_pagan_reformed_DESC;Nats are spirits worshipped by the peoples who live along the Irrawaddy River, whom were influenced by Buddhist and Hindu personalities. Nats take the form of saints, people who have died violently, and village guardians.;Natic;Natische;;Natic;;;;;;;;;x
+hurrian_reformed_DESC;The Hurrians worshiped a great number of gods derived from various different cultures of the Near East. The main gods in the Hurrian pantheon were Teshub, the mighty weather god, and his wife Hebat, the mother goddess. A special class of figures venerated by the Hurrians were so-called Sarrena, deified kings and heroes.;Les Hourrites adoraient un grand nombre de dieux issus de diverses cultures du Proche-Orient. Les principaux dieux du panthéon hourrite étaient Teshub, le puissant dieu du temps, et son épouse Hébat, la déesse mère. Une classe spéciale de personnages vénérés par les Hourrites était celle appelée Sarrena, des rois et des héros déifiés.;Die Hurriter verehrten eine große Anzahl von Göttern, die aus verschiedenen Kulturen des Nahen Ostens stammten. Die Hauptgötter im hurritischen Pantheon waren Teshub, der mächtige Wettergott, und seine Frau Hebat, die Muttergöttin. Eine besondere Klasse von Figuren, die von den Hurritern verehrt wurden, waren die sogenannten Sarrena, vergöttlichte Könige und Helden.;;Los hurritas adoraban a un gran número de dioses derivados de diversas culturas del Cercano Oriente. Los principales dioses del panteón hurrita eran Teshub, el poderoso dios del tiempo, y su esposa Hebat, la diosa madre. Una clase especial de figuras veneradas por los hurritas eran las llamadas Sarrena, reyes y héroes deificados.;;;;;;;;;x
 
 #religion groups
 polytheistic;Polytheistic;Polythéiste;Polytheistische;;Politeísta;;;;;;;;;x
@@ -261,6 +264,9 @@ dumuzi;Dumuzi;Dumuzi;Dumuzi;;Dumuzi;;;;;;;;;x
 tiamat;Tiamat;Tiamat;Tiamat;;Tiamat;;;;;;;;;x
 lamashtu;Lamashtu;Lamashtu;Lamashtu;;Lamashtu;;;;;;;;;x
 
+#Hurrian details
+hurrian_scripture;The Kumarbi Cycle;Le cycle Kumarbi;Der Kumarbi-Zyklus;;El ciclo de Kumarbi;;;;;;;;;x
+
 #Reformed
 HEAD_DRUID_PRIEST;High Druid;High Druid;Hochdruid;;High Druid;;;;;;;;;x
 HEAD_DRUID_PRIESTESS;High Druidess;High Druidess;Hochdruid;;High Druidess;;;;;;;;;x
@@ -330,6 +336,10 @@ d_canaanite_reformed;The High Cannanite Priesthood;The High Cannanite Priesthood
 HEAD_BAMAR_PRIEST;Shaman;Shaman;Shaman;;Shaman;;;;;;;;;x
 HEAD_BAMAR_PRIESTESS;Shaman;Shaman;Shaman;;Shaman;;;;;;;;;x
 d_bamar_pagan_reformed;The High Natic Priesthood;The High Natic Priesthood;The High Natic Priesthood;;The High Natic Priesthood;;;;;;;;;x
+
+HEAD_HURRIAN_PRIEST;Shankunni;Shankunni;Shankunni;;Shankunni;;;;;;;;;x
+HEAD_HURRIAN_PRIESTESS;Entanni;Entanni;Entanni;;Entanni;;;;;;;;;x
+d_hurrian_reformed;The Songwriters;Les auteurs-compositeurs;Die Liedschreiber;;Los compositores;;;;;;;;;x
 
 # Below is WtWSMS
 ###### nicene/chalcedonian;;;;;;;;;;;;x
