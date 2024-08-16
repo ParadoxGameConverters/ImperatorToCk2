@@ -23,6 +23,7 @@ thracian,greek
 cretan,greek
 greco_pontic,greek
 italiotian,magnagreek
+enetoian,magnagreek
 massalian,massalian
 cyrenaican,cyrenaican
 argolian,greek
@@ -223,6 +224,7 @@ daphnitaean,maghreb_arabic
 capariensian,maghreb_arabic
 abannaean,maghreb_arabic
 cetianian,maghreb_arabic
+melanogaetulian,maghreb_arabic
 
 #Illyrian
 
@@ -406,12 +408,12 @@ sumpa,sumpa
 #Persian
 
 elamite,elamite
+uxian,elamite
+cossian,elamite
 utian,persian
 pasargadi,persian
 sagartian,persian
-uxian,persian
 amardian,persian
-cossian,persian
 cadusian,persian
 median,persian
 hyrcanian,persian
@@ -509,6 +511,9 @@ melanchlaenian,protoslavic
 
 #Finnic
 androphagian,ugricbaltic
+fennic,ugricbaltic
+volgaic,meshchera
+mordvin,mordvin
 
 #Mayan
 mayan,mayan
@@ -655,3 +660,25 @@ sabir,bolghar
 barsil,bolghar
 avar,avar
 altaic,huna
+
+#Gift of the Nile mod
+lesser_armenian,armenian
+sophene,armenian
+arzasha,armenian
+syriac,assyrian
+hittite,cilician
+dilmunite,babylonian
+avarite_egyptian,ancient_egyptian
+danetic_egyptian,ancient_egyptian
+neithic_egyptian,ancient_egyptian
+wadjetic_egyptian,ancient_egyptian
+mafkatian_egyptian,ancient_egyptian
+siwan_egyptian,ancient_egyptian
+tenuwan_egyptian,ancient_egyptian
+akhenite_egyptian,ancient_egyptian
+hethedetian,ancient_egyptian
+deshretic_egyptian,ancient_egyptian
+retenuan,ancient_egyptian
+alashiyan,phoenician
+syrion,phoenician
+hyksos,neo_hyksos

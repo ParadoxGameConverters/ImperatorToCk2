@@ -24,7 +24,7 @@ l_english:
  DEJUREYESTIP:"Dynamically generates de jure kingdoms and empires based off of the save file, strongly recommended."
  DEJURENO:"Use vanilla CK2 de jure setup"
  DEJURENOTIP:"Use vanilla CK2 de jure kingdoms and empires for the chosen start date. Warning: All countries from I:R save will become titular titles under this option, and countries may randomly turn into others, like Rome becoming Germany."
-
+ 
  REPUBLICOPTION: "Republic Conversion Options"
  REPUBLICOPTIONTIP: "How should I:R republics convert in CK2?"
  REPMER: "Merchant Republics"
@@ -33,3 +33,24 @@ l_english:
  REPREPTIP:"Imperator:Rome republics will convert as regular CK2 republics. Warning: regular CK2 republics are unplayable. Do not select if you played as a republic in I:R!"
  REPFEU:"Feudal Monarchies"
  REPFEUTIP:"Imperator:Rome republics will convert as CK2 feudal monarchies. The Republic DLC will not be required in order to continue a game played as an I:R republic."
+ 
+ NOMAD:"Steppe Nomad Conversion"
+ NOMADTIP:"Which tribes should get the CK2 nomad government form?"
+ NOMADALL:"All Migratory Tribes"
+ NOMADALLTIP:"All I:R migratory tribes, regardless of culture, will become CK2 nomads. Embrace the horde! (Requires the Horse Lords DLC)"
+ NOMADCULTURE:"Steppe Cultures Only [recommended]"
+ NOMADCULTURETIP:"Only migratory tribes with a horse-based, steppe nomad culture (such as the Scythians) will become CK2 nomads. (Requires the Horse Lords DLC)"
+ NOMADNONE:"None - Tribes Remain Tribes"
+ NOMADNONETIP:"All tribes from Imperator:Rome will convert as regular CK2 tribes. The Horse Lords DLC is not required."
+ 
+ BIGMODS:"Major Overhaul Mods"
+ BIGMODSTIP:"Were you using a mod which expands/changes the map?"
+ BIGMODSAUTO:"Auto-Detect [recommended]"
+ BIGMODSAUTOTIP:"Automatically detect which supported mods, if any, you were using. Note: Auto-Detect only works with Steam mods, and manual installations will not be detected."
+ BIGMODSINVICTUS:"Yes, Imperator:Invictus"
+ BIGMODSINVICTUSTIP:"Use province mappings designed for the Imperator:Invictus mod. Recommended if using a manual or non-Steam installation of Imperator:Invictus."
+ BIGMODSINVICTUS1_7:"Yes, Old Invictus (pre-1.8)"
+ BIGMODSINVICTUS1_7TIP:"Use province mappings designed for old Imperator:Invictus saves from before patch 1.8. Recommended for Invictus campaigns which started before July 2024."
+ BIGMODSVANILLA:"No (Vanilla Map)"
+ BIGMODSVANILLATIP:"Use province mappings designed for vanilla. Recommended if converting either an unmodded save game or one with mods that do not alter the map."
+

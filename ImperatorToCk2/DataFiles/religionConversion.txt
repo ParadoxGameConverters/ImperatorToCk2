@@ -10,7 +10,6 @@ italic_pantheon,hellenic_pagan
 carthaginian_pantheon,canaanite
 druidism,druidic
 germanic_religion,norse_pagan
-judaism,jewish
 zoroaster,zoroastrian
 buddhism,buddhist
 hindu,hindu
@@ -46,6 +45,18 @@ vaksh_religion,khurmazta
 nilotic_pantheon,west_african_pagan
 nuragic_pantheon,nuragic
 hurrian_pantheon,hurrian
+uralic_pantheon,finnish_pagan
+hatti_religion,hattian
+
+#Israelite/Samaritan Split
+judaism,samaritan,tagTag=d_SMA
+judaism,samaritan,tagTag=k_SMA
+judaism,samaritan,tagTag=e_SMA
+judaism,samaritan,tagTag=d_SMJ
+judaism,samaritan,tagTag=k_SMJ
+judaism,samaritan,tagTag=e_SMJ
+#Fallback
+judaism,jewish
 
 #Matrist/We'Ra Split
 matrist_religion,slavic_pagan,tagCulture=protoslavic
@@ -53,6 +64,9 @@ matrist_religion,baltic_pagan,tagCulture=aestian
 matrist_religion,slavic_pagan,culture=protoslavic
 #Fallback
 matrist_religion,baltic_pagan
+
+#Timeline Extender Pagans
+hunnic_huna_animism,tengri_pagan
 
 #Christianity from Timeline extender
 
@@ -100,8 +114,8 @@ roman_pagan,hellenic_pagan
 manichaeism_religion,manichean
 donatist_christian,donatism
 priscillian_christian,priscillianism
-monophysite_christian,monophysite
-eastern_christian,miaphysite
+monophysite_christian,miaphysite
+eastern_christian,monophysite
 
 christian_religion,catholic,ck2Region=world_europe_west_brittania
 christian_religion,catholic,ck2Region=world_europe_west_germania
@@ -114,3 +128,9 @@ christian_religion,catholic,ck2Region=world_europe_north
 christian_religion,catholic,ck2Region=custom_irck2_pannonia
 christian_religion,catholic,ck2Region=custom_irck2_croatia
 christian_religion,orthodox
+
+#Gift of the Nile Mod
+aten_religion,atenism
+sobek_religion,atenism
+kushite_pantheon,egyptian
+elamite_pantheon,sumerian

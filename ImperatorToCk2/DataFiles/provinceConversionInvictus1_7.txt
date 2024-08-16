@@ -25,7 +25,7 @@
 	link = { imperator = 820 imperator = 848 imperator = 847 imperator = 853 imperator = 805 imperator = 814 imperator = 804 ck2 = 709 } # Sahlala, Alagma, Dausara, Ichnae, Amphipolis Syrias, Barbalissus, Soura -> Asas
 	link = { imperator = 852 imperator = 798 imperator = 794 imperator = 793 ck2 = 733 } # Chaonia, Hadad, Cyrrhus, Gindaros -> Aleppo
 	link = { imperator = 821 imperator = 854 imperator = 819 imperator = 849 imperator = 809 imperator = 807 imperator = 808 ck2 = 708 } # Resaina, Ganaba, Carrhae, Ballatha, Europos, Bambyce, Beselatha -> Tell Bashir
-	link = { imperator = 877 imperator = 838 imperator = 840 imperator = 879 imperator = 818 imperator = 844 imperator = 855 imperator = 871 imperator = 817 imperator = 6397 ck2 = 699 } # Barsalium, Charmodara, Arsameia, Barbare, Adma, Orontessos, Siphrios, Marde, Batnai, Barzala -> Edessa
+	link = { imperator = 877 imperator = 838 imperator = 840 imperator = 879 imperator = 818 imperator = 844 imperator = 855 imperator = 871 imperator = 817 imperator = 6397 ck2 = 699 } # Barsalium, Charmodara, Arsameia, Barbare, Adma, Antiochia Arabis, Siphrios, Marde, Batnai, Barzala -> Edessa
 	link = { imperator = 800 ck2 = 729 } # Gennaes -> Al-Sukhnah
 	link = { imperator = 850 imperator = 775 imperator = 756 imperator = 816 ck2 = 731 } # Amsareddi, Heliaramia, Cunna, Theleda -> Homs
 	link = { imperator = 754 imperator = 801 imperator = 815 imperator = 802 imperator = 803 imperator = 755 ck2 = 730 } # Palmyra, Helela, Seriane, Oriza, Resafa, Veriaraca -> Palmyra
@@ -91,18 +91,12 @@
 	link = { imperator = 1751 imperator = 1747 imperator = 1736 imperator = 1752 imperator = 1581 imperator = 1582 imperator = 1579 imperator = 1564 imperator = 1566 imperator = 1567 imperator = 1569 imperator = 1568 imperator = 1570 imperator = 1576 ck2 = 681 } # Barantea, Gymnias, Vagharshakert, Chorzene, Eruandashat, Ani, Ashnak, Kolchion, Didima, Bagauna, Paracata, Hariza, Armaouira, Kainepolis Syracene -> Ani
 	link = { imperator = 5902 imperator = 6208 imperator = 6205 imperator = 6204 imperator = 5901 imperator = 5898 imperator = 6207 imperator = 6203 imperator = 5900 imperator = 5896 ck2 = 1811 } # Reama, Khochy, Uyoro, Urghalat, Porach, Shachel, Urviygra, Ghalat, Dryna, Sarden -> Kalaus
 	link = { imperator = 9089 imperator = 8957 imperator = 9090 imperator = 9092 imperator = 9095 imperator = 9100 imperator = 9098 imperator = 9097 imperator = 9101 ck2 = 1815 } # Api, Kokkamys, Tabiti, Airma, Tavah, Saioi, Datah, Partu, Baivar -> Yeruslan
-	link = { imperator = 9314 imperator = 9335 ck2 = 608 } # Pors, Juuri -> Lower Volga
-	link = { imperator = 9091 imperator = 9088 imperator = 9093 imperator = 9094 imperator = 9096 imperator = 9315 ck2 = 1814 } # Xsay, Stana, Wantah, Arya, Darga, Kymos -> Uvek
+	link = { imperator = 9091 imperator = 9088 imperator = 9093 imperator = 9094 imperator = 9096 ck2 = 1814 } # Xsay, Stana, Wantah, Arya, Darga -> Uvek
 	link = { imperator = 8960 imperator = 8961 imperator = 8962 imperator = 8966 imperator = 8969 imperator = 8967 imperator = 8968 imperator = 9086 imperator = 9081 imperator = 9087 imperator = 9082 ck2 = 1812 } # Shungay, Akhtuba, Sary Su, Ilicha, Bulukhta, Zhitkur, Saykhin, Zyrenka, Riza, Waru, Mauka -> Saqsin
 	link = { imperator = 6214 imperator = 6215 imperator = 6216 imperator = 6217 imperator = 6209 imperator = 6206 imperator = 6211 imperator = 6213 imperator = 6220 imperator = 6221 imperator = 5904 imperator = 6218 imperator = 6210 imperator = 6212 ck2 = 605 } # Zhuna, Urghat, Vyalke, Ogron, Ydomor, Ketsk, Urgenarcha, Achkhacsh, Uryennik, Zhelk, Mylla, Mennichak, Ghenarcha, Ygrre -> Manych
 	link = { imperator = 5888 imperator = 6190 imperator = 6192 imperator = 6193 imperator = 6201 imperator = 6202 imperator = 5899 imperator = 6200 ck2 = 607 } # Techka, Kichpa, Syutnich, Zhev, Agharite, Irkant, Gura, Urvel -> Sarpa
 	link = { imperator = 5893 imperator = 5892 imperator = 5891 imperator = 5890 imperator = 5932 imperator = 5894 imperator = 5889 imperator = 5895 imperator = 5933 ck2 = 606 } # Creasch, Sechem, Avrar, Mykon, Manar, Kyta, Donol, Vynikka, Vylda -> Yegorlyk
-	link = { imperator = 9336 ck2 = 1665 } # Istudak -> Yelets
 	link = { imperator = 8566 imperator = 8567 imperator = 8569 imperator = 8568 imperator = 8565 imperator = 8562 imperator = 8563 imperator = 8571 imperator = 8570 imperator = 9055 imperator = 9046 imperator = 9047 imperator = 8564 imperator = 9057 ck2 = 566 } # Bila, Kupyansk, Kozynka, Horyane, Rovenki, Kurennoe, Tikhaya Sosna, Artilne, Volchya, Ragas, Zweris, Kirmis, Chernyanka, Sausas -> Sugrov
-	link = { imperator = 9332 imperator = 9328 imperator = 9333 imperator = 9329 ck2 = 579 } # Tuvo, Purgine, Kirga, Ine -> Mordva
-	link = { imperator = 9317 imperator = 9316 imperator = 9323 ck2 = 609 } # Gola, Teste, Kjelj -> Syrt
-	link = { imperator = 9326 imperator = 9327 imperator = 9331 imperator = 9330 ck2 = 591 } # Rungo, Moncen, Udoma, Suv -> Cheremisa
-	link = { imperator = 9320 imperator = 9324 imperator = 9325 imperator = 9319 imperator = 9318 imperator = 9321 imperator = 9322 ck2 = 592 } # Gyrys, Vergiz, Pilge, Jyv, Kovny, Asnyd, Makso -> Burtasy
 	link = { imperator = 9067 imperator = 9063 imperator = 9060 imperator = 9059 imperator = 9061 imperator = 9064 imperator = 9066 imperator = 9065 imperator = 9062 imperator = 9068 imperator = 9058 ck2 = 593 } # Aerac, Vite, Kirsnas, Naktis, Tab, Mud, Citras, Cyrg, Peus, Aerdyn, Wetusas -> Khopyor
 	link = { imperator = 8963 imperator = 8965 imperator = 8964 imperator = 9076 imperator = 9080 imperator = 9084 imperator = 9085 imperator = 9083 imperator = 9078 imperator = 9077 imperator = 9073 imperator = 9069 imperator = 9070 imperator = 9071 imperator = 9072 imperator = 9074 imperator = 9075 imperator = 9079 ck2 = 595 } # Karpovka, Olene, Ilovlya, Medu, Gaita, Vadasz, Zurka, Vaski, Cigra, Ajam, Rast, Paoi, Cyxt, Kalm, Arv, Carm, Capi, Nahapana -> Don-Portage
 	link = { imperator = 6188 imperator = 6198 imperator = 6191 imperator = 6197 imperator = 6199 imperator = 6196 imperator = 6194 imperator = 6195 imperator = 6185 imperator = 6183 imperator = 6186 imperator = 6182 imperator = 6184 imperator = 6181 imperator = 8552 imperator = 8551 imperator = 8553 imperator = 8554 imperator = 8555 imperator = 8556 imperator = 8557 imperator = 8559 imperator = 8560 imperator = 8558 imperator = 8561 ck2 = 594 } # Vyrni, Urgast, Khang, Urghno, Ydologh, Volat, Urzhev, Urvolat, Ollo, Yuty, Urgenkh, Ighkoy, Yovolat, Achkach, Liska, Krepkaya, Bazki, Kalmykovskii, Bolshoi, Berezovaya, Tikhaya, Bogucharka, Titarevka, Olkhovaya, Komyshna -> Sarkel
@@ -123,18 +117,11 @@
 	link = { imperator = 6078 imperator = 6089 imperator = 6076 imperator = 6235 imperator = 6237 imperator = 6236 imperator = 6233 imperator = 6234 imperator = 6239 ck2 = 1631 } # Notghi, Vurdant, Krueng, Anakkesta, Arforom, Forom, Urschelats, Myanik, Sitha -> Zaslav
 	link = { imperator = 6081 imperator = 6080 imperator = 6079 imperator = 6077 imperator = 6073 ck2 = 1648 } # Kyrtik, Oschka, Vryank, Ghanilkatta, Vonnet -> Medjybij
 	link = { imperator = 6104 imperator = 6105 imperator = 6099 imperator = 6096 imperator = 6094 imperator = 6095 imperator = 6103 imperator = 6087 imperator = 6075 imperator = 6083 imperator = 6082 imperator = 6074 ck2 = 1647 } # Maske, Gonoska, Onskoet, Vyelinat, Akhynt, Siskary, Vashschka, Hkar, Mechkeht, Vyrketin, Donts, Tiersi -> Vinnytsia
-	link = { imperator = 8466 ck2 = 576 } # Blagoveshchenskaya -> Bryansk
+	link = { imperator = 8466 imperator = 9132 ck2 = 576 } # Blagoveshchenskaya, Asras -> Bryansk
 	link = { imperator = 8463 imperator = 8465 imperator = 8471 imperator = 9124 imperator = 9123 ck2 = 1656 } # Slot, Rechitsa, Mglin, Neba, Zwaisda -> Starodub
 	link = { imperator = 8424 imperator = 8455 imperator = 8456 imperator = 8457 imperator = 8462 imperator = 8461 imperator = 8450 ck2 = 554 } # Teteriv, Lyubech, Kuchynivka, Tyutyunnytsya, Zamhlay, Hrabiv, Dnipro -> Chernigov
 	link = { imperator = 8473 imperator = 8470 imperator = 8415 imperator = 8459 imperator = 8469 ck2 = 1671 } # Medovyi, Sejm, Velykyi, Kleven, Grunya -> Rylsk
 	link = { imperator = 9053 imperator = 9054 ck2 = 1666 } # Ranka, Inzu -> Karachev
-	link = { imperator = 9334 ck2 = 580 } # Sedej -> Ryazan
-	link = { imperator = 9339 ck2 = 575 } # Nerkka -> Moskva
-	link = { imperator = 9338 ck2 = 1678 } # Lupsadak -> Orekhovo-Zuyevo
-	link = { imperator = 9368 ck2 = 577 } # Kursa -> Pronsk
-	link = { imperator = 9337 ck2 = 578 } # Kanci -> Tula
-	link = { imperator = 9369 ck2 = 1679 } # Udar -> Serpukhov
-	link = { imperator = 9340 imperator = 9341 ck2 = 1650 } # Hanha, Tammi -> Vorotynsk
 	link = { imperator = 9048 imperator = 9049 imperator = 9050 imperator = 9056 imperator = 9051 ck2 = 1634 } # Derwa, Medja, Lapas, Krauja, Karo -> Novosil
 	link = { imperator = 8464 imperator = 8467 imperator = 8472 imperator = 8474 imperator = 9052 imperator = 8480 ck2 = 1676 } # Sudist, Lupuznya, Snezhet, Zhuchok, Swo, Rybnitsa -> Kromy
 	link = { imperator = 8416 imperator = 8458 imperator = 8452 imperator = 8460 imperator = 8468 ck2 = 567 } # Tereshkivka, Melnya, Desna, Ret, Turochka -> Novgorod Seversky
@@ -152,12 +139,10 @@
 	link = { } # NOTHING -> DROPPED
 	link = { imperator = 5394 imperator = 6800 imperator = 6801 imperator = 5396 imperator = 6802 imperator = 5397 imperator = 6799 imperator = 5395 imperator = 6708 imperator = 7240 imperator = 6709 imperator = 6683 imperator = 9236 imperator = 9238 imperator = 9237 imperator = 9239 ck2 = 626 } # Khiva, Aratha, Jirbend, Ghore, Varakhsha, Shenia, Zamakshahr, Dharakh, Amul, Zariaspa, Rapete, Erbend, Qarako'l, Sho'rtakli, Nar Gyz, Sarymay -> Khiva
 	link = { imperator = 5477 imperator = 6797 imperator = 6796 imperator = 6798 imperator = 6803 imperator = 6804 ck2 = 1791 } # Kilich, Vezir, Qanga, Shahsenem, Gurganj, Mizdaqahn -> Urgench
-	link = { imperator = 8906 imperator = 8908 imperator = 8907 imperator = 9299 imperator = 9301 ck2 = 1850 } # Kaynbulak, Sel, Sapibulak, Patinasana, Arzatam -> Or
-	link = { imperator = 9303 ck2 = 1848 } # Mimvam -> Sakmara
-	link = { imperator = 9298 imperator = 9297 imperator = 9296 imperator = 9300 ck2 = 895 } # Harsta, Diti, Abhras, Ipasyam -> Yaik
+	link = { imperator = 8906 imperator = 8908 imperator = 8914 imperator = 8907 ck2 = 1850 } # Kaynbulak, Sel, Embi, Sapibulak -> Or
 	link = { imperator = 9037 imperator = 9036 imperator = 9041 imperator = 9038 imperator = 9042 ck2 = 1870 } # Edug, Zoza, Soma, Bezin, Vega -> Boqtybay
 	link = { imperator = 8898 imperator = 8903 imperator = 8905 imperator = 8902 imperator = 8897 imperator = 8985 imperator = 8916 imperator = 8984 imperator = 8986 imperator = 8987 ck2 = 622 } # Kez Kara, Baykadam, Shalkar, Shagar, Saksaul, Zhalauly, Karabulak, Kayta, Yrgyz, Balta -> Aral
-	link = { imperator = 8910 imperator = 8909 imperator = 8914 imperator = 9302 imperator = 9304 ck2 = 896 } # Sagiz, Kenkiyak, Embi, Vasnam, Dahyuupati -> Aqtobe
+	link = { imperator = 8910 imperator = 8909 ck2 = 896 } # Sagiz, Kenkiyak -> Aqtobe
 	link = { imperator = 8919 imperator = 8918 imperator = 8917 ck2 = 1851 } # Ashchiy, Tobusken, Dzhaindy -> Mughalzhar
 	link = { imperator = 8920 imperator = 8921 imperator = 8929 imperator = 8928 imperator = 8922 imperator = 8926 imperator = 8933 ck2 = 1793 } # Qamysty, Karaoba, Azgyl, Tugarakchan, Tugyrakshan, Shomishtikol, Aksha -> Emba Steppe
 	link = { imperator = 8900 imperator = 8899 imperator = 8915 imperator = 8923 imperator = 8904 ck2 = 623 } # Kektikshe, Bozoy, Chagan, Qosbulaq, Quqyq -> Kutan Bulak
@@ -199,7 +184,7 @@
 	link = { imperator = 6741 imperator = 6743 ck2 = 1440 } # Yutian, Shiyan -> Khotan
 	link = { imperator = 6772 imperator = 6758 imperator = 6744 imperator = 6761 imperator = 6757 ck2 = 1439 } # Irkeshtam, Surkhab, Kashgar, Kasia, Shachi -> Kashgar
 	link = { imperator = 6774 imperator = 6775 imperator = 6773 imperator = 6736 imperator = 6735 ck2 = 1423 } # Karamyk, Kabyk, Gulka, Osh, Dawan -> Fergana
-	link = { imperator = 6697 imperator = 6690 imperator = 6700 imperator = 6687 ck2 = 1544 } # Margineia, Termez, Petra Arimazou, Gazaba -> Chaghaniyan
+	link = { imperator = 6697 imperator = 6690 imperator = 6700 imperator = 6687 ck2 = 1544 } # Margineia, Antiocheia Tarmita, Petra Arimazou, Gazaba -> Chaghaniyan
 	link = { imperator = 6628 imperator = 6638 imperator = 6640 imperator = 6614 ck2 = 1189 } # Nysa Paropamisadarum, Paros Paropamisadorum, Alkon, Cartana -> Bamian
 	link = { imperator = 4328 imperator = 7657 imperator = 4323 imperator = 4300 imperator = 4367 imperator = 4301 ck2 = 1342 } # Plagira, Purushapura, Takht-i-Bahi, Pushkalavati, Arjunava, Nagarahara -> Purushapura
 	link = { imperator = 6625 imperator = 6611 imperator = 6608 imperator = 6641 imperator = 6612 imperator = 6613 imperator = 6609 ck2 = 1185 } # Kapissa, Alexandria ad Caucasum, Kaboura, Naulibis, Kophen, Andaka, Ortespane -> Kabul
@@ -234,13 +219,11 @@
 	link = { imperator = 5474 imperator = 5475 imperator = 5476 imperator = 5481 imperator = 5486 ck2 = 625 } # Khrischatach, Bela, Sthura, Zantem, Sechoria -> Usturt
 	link = { imperator = 5466 imperator = 5463 imperator = 5462 imperator = 5461 imperator = 5460 imperator = 5459 imperator = 5473 imperator = 5458 ck2 = 1788 } # Shakthara, Ziri, Yetteka, Khanash, Garam, Azkoi, Dyram, Dnem -> Kara Bogaz
 	link = { imperator = 5467 imperator = 5469 imperator = 5464 imperator = 5470 imperator = 5465 imperator = 5468 ck2 = 624 } # Teike, Byrshchre, Karon, Vyenim, Mroshika, Shachkra -> Mangyshlak
-	link = { imperator = 8911 imperator = 8913 imperator = 9305 imperator = 9306 ck2 = 897 } # Koptogay, Babatay, Vamva, Mimrito -> Ilek
-	link = { imperator = 8936 imperator = 8934 imperator = 8937 imperator = 8935 imperator = 8912 imperator = 9116 imperator = 9308 ck2 = 1852 } # Shoba, Mukur, Zelshargan, Kuyandy, Segizsay, Dhokia, Zamri -> Utva
+	link = { imperator = 8911 imperator = 8913 ck2 = 897 } # Koptogay, Babatay -> Ilek
+	link = { imperator = 8936 imperator = 8934 imperator = 8937 imperator = 8935 imperator = 8912 imperator = 9116 ck2 = 1852 } # Shoba, Mukur, Zelshargan, Kuyandy, Segizsay, Dhokia -> Utva
 	link = { imperator = 8931 } # Kenbay -> DROPPED
 	link = { imperator = 5498 imperator = 5499 imperator = 5915 imperator = 5914 imperator = 8930 ck2 = 621 } # Vyoros, Satticha, Alsita, Kholan, Imankara -> Kangly
-	link = { imperator = 9311 imperator = 9313 imperator = 9312 imperator = 9310 imperator = 9370 ck2 = 616 } # Zer, Dzek, Polo, Kodzuv, Kutny -> Bandja
-	link = { imperator = 9307 imperator = 9309 imperator = 9114 ck2 = 1849 } # Bobuv, Ostny, Sparga -> Irtek
-	link = { imperator = 8941 imperator = 8942 imperator = 9108 imperator = 9109 imperator = 9107 imperator = 9105 imperator = 8943 imperator = 8947 imperator = 9103 imperator = 9106 imperator = 9110 imperator = 9111 imperator = 9115 imperator = 9104 imperator = 9113 imperator = 9112 ck2 = 1813 } # Chokun, Kamekol, Opoin, Oitosyros, Oirpata, Kissar, Krugli, Zhanaqala, Batya, Amazo, Raiwant, Levedi, Bartatu, Hurasa, Uluki, Uase -> Ryn
+	link = { imperator = 8941 imperator = 8942 imperator = 9108 imperator = 9109 imperator = 9107 imperator = 9105 imperator = 8943 imperator = 8947 imperator = 9103 imperator = 9106 imperator = 9110 imperator = 9111 imperator = 9114 imperator = 9115 imperator = 9104 imperator = 9113 imperator = 9112 ck2 = 1813 } # Chokun, Kamekol, Opoin, Oitosyros, Oirpata, Kissar, Krugli, Zhanaqala, Batya, Amazo, Raiwant, Levedi, Sparga, Bartatu, Hurasa, Uluki, Uase -> Ryn
 	link = { imperator = 8950 imperator = 8949 imperator = 8948 imperator = 8952 imperator = 8953 imperator = 8958 imperator = 8954 imperator = 9102 imperator = 9099 ck2 = 617 } # Sasyktau, Dymar, Kazanka, Burli, Nausha, Sasan, Sapak, Batesa, Skula -> Uzen
 	link = { imperator = 5912 imperator = 5913 imperator = 5881 imperator = 8944 imperator = 8939 imperator = 8938 imperator = 8932 imperator = 8945 imperator = 5880 imperator = 8940 imperator = 8946 ck2 = 618 } # Azgar, Nassin, Gyechk, Bangazy, Orlik, Tortkuduk, Makat, Ardembey, Ruta, Inder, Taskuduk -> Atyrau
 	link = { imperator = 5877 imperator = 5878 imperator = 5879 imperator = 6231 imperator = 5911 imperator = 6232 imperator = 5910 imperator = 5909 ck2 = 620 } # Enim, Atar, Gyoria, Ashina, Usch, Schelats, Uvra, Norom -> Itil
@@ -254,10 +237,10 @@
 	link = { imperator = 1727 imperator = 1726 imperator = 1725 imperator = 1724 imperator = 1723 imperator = 1720 imperator = 1717 imperator = 1711 imperator = 1722 imperator = 1728 imperator = 1701 imperator = 1706 ck2 = 677 } # Kissa, Apsaros, Bathys Limen, Apasidam, Pichvnari, Phasis, Chaladidi, Telephis, Vashnari, Morthoula, Goderdzi Pass, Rhodopolis -> Guria
 	link = { comment = "# EasternAnatolia" }
 	link = { imperator = 1954 imperator = 173 imperator = 205 imperator = 1799 imperator = 1818 imperator = 1978 imperator = 1951 imperator = 1794 imperator = 1900 imperator = 1888 imperator = 1788 imperator = 1800 ck2 = 760 } # Garsaura, Koropassos, Zeila, Mazaka, Ouenasa, Salambriai, Tyana, Korama, Sasima, Podandus, Nora, Soandos -> Tyana
-	link = { imperator = 1769 imperator = 1766 imperator = 1767 imperator = 1768 imperator = 1778 imperator = 1779 imperator = 1842 imperator = 1782 imperator = 7845 imperator = 7844 imperator = 1765 imperator = 1733 imperator = 1771 ck2 = 706 } # Sabos, Altintepe, Eriza, Til, Chorsabia, Olotoedariza, Zara, Dasteira, Ani, Zimara, Koubina, Pisingara, Analibna -> Koloneia
+	link = { imperator = 1769 imperator = 1766 imperator = 1767 imperator = 1768 imperator = 1778 imperator = 1779 imperator = 1842 imperator = 1782 imperator = 7845 imperator = 7844 imperator = 1765 imperator = 1733 imperator = 1771 ck2 = 706 } # Sabos, Arane, Eriza, Til, Chorsabia, Olotoedariza, Zara, Dasteira, Ani, Zimara, Koubina, Pisingara, Analibna -> Koloneia
 	link = { imperator = 1744 imperator = 1698 imperator = 1762 imperator = 1764 imperator = 483 ck2 = 703 } # Karana, Sinara, Bagariza, Bizana, Artales -> Karin
 	link = { imperator = 1847 imperator = 1849 imperator = 1891 imperator = 1893 imperator = 1848 imperator = 1851 imperator = 1805 imperator = 1803 imperator = 1796 imperator = 1850 ck2 = 737 } # Bithias, Tonosa, Karnalis, Dasmenda, Zoana, Euspena, Anisa, Herpha, Arasaxa, Goundousa -> Kaisereia
-	link = { imperator = 1773 imperator = 1772 imperator = 1761 imperator = 1757 imperator = 1759 imperator = 1760 imperator = 1763 imperator = 1770 imperator = 1776 imperator = 1781 ck2 = 704 } # Tzantzakon, Sediska, Charton, Kaballa, Sper, Sinoria, Tareina, Satala, Arauraka, Basgoedariza -> Theodosiopolis
+	link = { imperator = 1773 imperator = 1772 imperator = 1761 imperator = 1757 imperator = 1759 imperator = 1760 imperator = 1763 imperator = 1770 imperator = 1776 imperator = 1781 ck2 = 704 } # Zigana, Sediska, Charton, Kaballa, Sper, Sinoria, Tareina, Satala, Arauraka, Basgoedariza -> Theodosiopolis
 	link = { imperator = 1797 imperator = 1734 imperator = 1775 imperator = 1732 imperator = 1731 imperator = 1730 imperator = 1729 ck2 = 678 } # Koralla, Trapezous, Magnana, Hyssos, Ophis, Rhizaion, Athenai Pontikai -> Trapezous
 	link = { imperator = 1792 imperator = 1793 imperator = 1786 imperator = 1795 imperator = 1801 imperator = 1787 imperator = 1798 imperator = 1783 ck2 = 705 } # Kabeira, Side Pontike, Sauronisena, Kotyora, Matouasko, Danai, Kerasous, Anniaka -> Chaldea
 	link = { imperator = 219 imperator = 329 imperator = 224 imperator = 225 imperator = 215 imperator = 221 imperator = 220 imperator = 223 imperator = 227 imperator = 316 ck2 = 1930 } # Salon, Dableis, Gordioukome, Lagania, Krateia, Peion, Oinoe Ikarias, Legna, Trokna, Midaion -> Claudiopolis
@@ -307,8 +290,8 @@
 	link = { imperator = 8371 imperator = 8370 imperator = 8372 imperator = 8389 imperator = 8365 imperator = 8360 imperator = 8359 imperator = 8364 ck2 = 837 } # Boussemghoun, Arbaouats, Sefra, Sfissifa, Bourzeg, Figuig, Lahmar, Fendi -> Tendara
 	link = { imperator = 8366 imperator = 8367 imperator = 8368 imperator = 8369 imperator = 8373 ck2 = 833 } # Laghouat, Aflou, Bayadh, Krakda, Brezina -> Askedal
 	link = { imperator = 8379 imperator = 8380 imperator = 8377 imperator = 8378 imperator = 8381 imperator = 8376 imperator = 8375 imperator = 8383 imperator = 8382 imperator = 8384 imperator = 8385 imperator = 8374 imperator = 8386 ck2 = 828 } # Slimane, Mcif, Khoubana, Gahra, Hamel, Errich, Dechret Kamra, Moudjebara, Chioukh, Djelfa, Ibel, Messaad, Teboucha -> Laghouat
-	link = { imperator = 3176 imperator = 3174 imperator = 3170 imperator = 3173 imperator = 3156 imperator = 3151 imperator = 3157 imperator = 3134 imperator = 3142 imperator = 3136 imperator = 3132 imperator = 3133 imperator = 3152 imperator = 3155 imperator = 3154 imperator = 3169 imperator = 3171 imperator = 3172 imperator = 3153 ck2 = 823 } # Aurasius Inferior, Claudi, Lambafundi, Burgus Gaetulia, Nicivibus, Macri, Lemellia, Equizeto, Aras, Ausum, Tatiliti, Zabi, Thubunae, Aqua Viva, Gemellae, Badias, Tabudium, Aurasius Superior, Mesarietta -> Biskra
-	link = { imperator = 3184 imperator = 3182 imperator = 3168 imperator = 3207 imperator = 3206 imperator = 3186 imperator = 3204 imperator = 3198 imperator = 3205 imperator = 3197 imperator = 3248 imperator = 3209 imperator = 3237 imperator = 3216 imperator = 3214 imperator = 3213 imperator = 3215 imperator = 3167 imperator = 3203 imperator = 3208 imperator = 3247 imperator = 3185 imperator = 3187 ck2 = 1728 } # Thalades, Bagai, Mascula Tiberia, Vegesela, Ad Aquas Caesaris, Ubaza Castellum, Vatari, Cillium, Menegesum, Sufetula, Thugga Terebenthina, Thala Musulamia, Obba, Funda Thavagalensis, Thaesactum, Vasampus, Casaea, Macomades, Theveste, Ammaedara, Althiburos, Leges Maiores, Midili -> Tébessa
+	link = { imperator = 3187 imperator = 3185 imperator = 3176 imperator = 3174 imperator = 3170 imperator = 3173 imperator = 3156 imperator = 3151 imperator = 3157 imperator = 3134 imperator = 3142 imperator = 3136 imperator = 3132 imperator = 3133 imperator = 3152 imperator = 3155 imperator = 3154 imperator = 3169 imperator = 3171 imperator = 3172 imperator = 3153 ck2 = 823 } # Midili, Leges Maiores, Aurasius Inferior, Claudi, Lambafundi, Burgus Gaetulia, Nicivibus, Macri, Lemellia, Equizeto, Aras, Ausum, Tatiliti, Zabi, Thubunae, Aqua Viva, Gemellae, Badias, Tabudium, Aurasius Superior, Mesarietta -> Biskra
+	link = { imperator = 3184 imperator = 3182 imperator = 3168 imperator = 3207 imperator = 3206 imperator = 3186 imperator = 3204 imperator = 3198 imperator = 3205 imperator = 3197 imperator = 3248 imperator = 3209 imperator = 3237 imperator = 3216 imperator = 3214 imperator = 3213 imperator = 3215 imperator = 3167 imperator = 3203 imperator = 3208 imperator = 3247 ck2 = 1728 } # Thalades, Bagai, Mascula Tiberia, Vegesela, Ad Aquas Caesaris, Ubaza Castellum, Vatari, Cillium, Menegesum, Sufetula, Thugga Terebenthina, Thala Musulamia, Obba, Funda Thavagalensis, Thaesactum, Vasampus, Casaea, Macomades, Theveste, Ammaedara, Althiburos -> Tébessa
 	link = { imperator = 3232 imperator = 3217 imperator = 3218 imperator = 3221 imperator = 3355 imperator = 3164 imperator = 3163 imperator = 3181 imperator = 3166 imperator = 3219 imperator = 3220 imperator = 3165 ck2 = 821 } # Simitthus, Madauros, Tipasa, Zattara, Fabatianum, Thibilis, Cirta, Sigus, Gadiaufala, Marcimeni, Saltus Sorothensis, Nattabutum -> Constantine
 	link = { imperator = 3229 imperator = 3161 imperator = 3227 imperator = 3226 imperator = 3225 imperator = 3231 imperator = 3224 imperator = 3223 imperator = 3228 ck2 = 820 } # Tuniza, Chullu, Rusicade, Culucitanis, Hippo Regius, Pagus Malarensium, Asuccuris, Calama, Celtianis -> Annaba
 	link = { comment = "# Iberia" }
@@ -525,32 +508,15 @@
 	link = { imperator = 8484 imperator = 8485 imperator = 8486 ck2 = 1655 } # Lysobyki, Starorzecze, Seroczyn -> Volkovysk
 	link = { imperator = 8488 imperator = 8491 imperator = 8492 imperator = 8440 imperator = 8489 imperator = 8490 imperator = 8487 imperator = 8442 imperator = 8441 imperator = 8532 ck2 = 1654 } # Biebrzankski, Monki, Grodno, Gorodische, Kulesze, Bialystok, Bielsk, Loktyshi, Vygonoschanskoye, Zavolochitsky -> Novogrodek
 	link = { imperator = 8541 imperator = 8544 ck2 = 418 } # Sarro, Krasnaya -> Orsha
-	link = { imperator = 9398 imperator = 9393 ck2 = 415 } # Kickedak, Keuci -> Luki
-	link = { imperator = 9363 imperator = 9362 imperator = 9365 ck2 = 412 } # Lampi, Hiici, Neiti -> Torzhok
-	link = { imperator = 9358 imperator = 9361 ck2 = 1668 } # Ukteksa, Kutodak -> Rzheva
-	link = { imperator = 9399 imperator = 9400 imperator = 9357 imperator = 9359 ck2 = 410 } # Tuhma, Purdak, Jarvi, Katketak -> Toropets
-	link = { imperator = 9352 imperator = 9355 ck2 = 568 } # Tallatak, Valadak -> Smolensk
-	link = { imperator = 9353 imperator = 9354 ck2 = 417 } # Maito, Mukka -> Vitebsk
-	link = { imperator = 9396 imperator = 9397 ck2 = 419 } # Inhiminen, Kadus -> Polotsk
-	link = { imperator = 9390 ck2 = 413 } # Leulu -> Pskov
-	link = { imperator = 9394 imperator = 9385 imperator = 9383 ck2 = 1663 } # Coppi, Kantadak, Hiiri -> Izborsk
-	link = { imperator = 9395 imperator = 9386 ck2 = 416 } # Nalja, Jauhadak -> Latgale
 	link = { imperator = 8524 imperator = 8525 imperator = 8527 imperator = 8528 imperator = 8526 imperator = 8522 imperator = 8521 imperator = 8523 imperator = 8540 imperator = 8542 ck2 = 934 } # Izha, Dyagili, Plissa, Yelnya, Guta, Svirkos, Braslaw, Narachanski, Lunichno, Lepiel -> Lukoml
 	link = { imperator = 8447 imperator = 8449 imperator = 8446 imperator = 8445 imperator = 8444 ck2 = 1653 } # Vasilievicy, Brahin, Dikoye, Chervonoye, Salihorsk -> Slutsk
-	link = { imperator = 9348 imperator = 9356 ck2 = 1672 } # Jasen, Alu -> Zubtsov
-	link = { imperator = 9342 imperator = 9350 ck2 = 1677 } # Nitodak, Oraca -> Naro-Fominsk
-	link = { imperator = 9349 ck2 = 570 } # Mustajoki -> Tver
-	link = { imperator = 9344 imperator = 9343 ck2 = 587 } # Rappana, Suurima -> Mozhaysk
-	link = { imperator = 9345 ck2 = 1682 } # Kuntadak -> Kozelsk
-	link = { imperator = 9346 imperator = 9351 imperator = 9347 ck2 = 569 } # Pihti, Marehtidak, Orko -> Vyazma
-	link = { imperator = 9129 imperator = 9131 imperator = 9127 imperator = 9132 ck2 = 933 } # Sirdis, Ungnis, Bartei, Asras -> Roslavl
+	link = { imperator = 9129 imperator = 9131 imperator = 9127 ck2 = 933 } # Sirdis, Ungnis, Bartei -> Roslavl
 	link = { imperator = 9126 imperator = 9128 imperator = 9130 ck2 = 551 } # Nawas, Bajatei, Gintei -> Mstislavl
 	link = { imperator = 8451 imperator = 9122 imperator = 9121 imperator = 9125 ck2 = 553 } # Gomel, Meno, Sulnis, Zeme -> Lyubech
 	link = { imperator = 8549 imperator = 8548 imperator = 8546 imperator = 8448 imperator = 8547 imperator = 8545 imperator = 8543 ck2 = 1659 } # Chavusy, Ryasna, Gory, Milohrad, Mogilev, Shlou, Lukomlskoye -> Drutsk
 	link = { imperator = 8536 imperator = 8539 imperator = 8537 imperator = 8529 imperator = 8533 imperator = 8534 imperator = 8538 imperator = 8530 imperator = 8535 imperator = 8531 ck2 = 550 } # Sharai, Smarhon, Minsk, Naliboki, Dzyarzhynsk, Berezina, Byerazino, Kapyl, Kremok, Slutsk -> Minsk
 	link = { imperator = 8502 imperator = 8498 imperator = 8495 imperator = 8493 imperator = 8496 imperator = 8500 imperator = 8504 imperator = 8507 imperator = 8503 imperator = 8499 ck2 = 420 } # Timofeevo, Vistytis, Dob, Sniardwy, Wigierski, Dzukjos, Paezeriai, Aristava, Borodinskoye, Orija -> Vilnius
 	link = { imperator = 8514 imperator = 8509 imperator = 8505 imperator = 8510 imperator = 8506 imperator = 8515 imperator = 8511 ck2 = 1590 } # Sartu, Joniskis, Glitu, Zirnajai, Tytuvenu, Grazutes, Asvejos -> Nalsia
-	link = { imperator = 9384 imperator = 9381 imperator = 9387 ck2 = 1594 } # Mendak, Keerdak, Niini -> Jersika
 	link = { imperator = 8519 imperator = 8518 imperator = 8520 imperator = 8516 imperator = 8513 ck2 = 1591 } # Jekabpils, Viku, Garais, Paliene, Birzu -> Selija
 	link = { imperator = 7818 imperator = 8512 imperator = 8517 ck2 = 374 } # Careotaia Borealis, Bauska, Daugava -> Zemgale
 	link = { imperator = 7819 imperator = 7808 imperator = 8508 imperator = 8501 ck2 = 1597 } # Careotaia Australis, Rubonia, Zagares, Pagramancio -> Deltuva
@@ -622,20 +588,6 @@
 	link = { imperator = 8844 imperator = 8845 imperator = 8846 imperator = 8816 ck2 = 864 } # Qamra, Dharghat, Mawqaq, Baqaa -> Hail
 	link = { imperator = 4608 imperator = 4610 imperator = 4621 imperator = 4620 imperator = 4626 imperator = 4625 imperator = 4609 imperator = 4622 imperator = 4619 imperator = 4617 imperator = 4616 imperator = 4615 imperator = 4720 imperator = 4627 ck2 = 1536 } # Phoinikon Kome, Raunathou Kome, Harenae, Alaura, Arga, Charamithas, Egra, Iuthra, Apudia Vallis, Mochoura, Ausara, Dedan, Eroe, Rayyis -> Khaybar
 	link = { imperator = 4645 imperator = 4644 imperator = 4643 imperator = 4642 imperator = 4641 imperator = 4691 ck2 = 1532 } # Mouza Emporion, Aliou Kome, Laupas, Adedou Kome, Badeo, Harazia Vallis -> Zabid
-	link = { imperator = 9382 ck2 = 379 } # Nooli -> Tartu
-	link = { imperator = 9378 imperator = 9379 ck2 = 1598 } # Nato, Leemi -> Järva
-	link = { imperator = 9380 ck2 = 1595 } # Loodak -> Talava
-	link = { imperator = 9374 ck2 = 375 } # Parna -> Liivimaa
-	link = { imperator = 9376 imperator = 9375 ck2 = 1596 } # Cina, Saicen -> Riga
-	link = { imperator = 9404 imperator = 9403 imperator = 9391 ck2 = 414 } # Elpes, Ema, Ceketek -> Novgorod
-	link = { imperator = 9367 imperator = 9366 ck2 = 1652 } # Murtadak, Seeni -> Borovichi
-	link = { imperator = 9402 imperator = 9364 imperator = 9360 ck2 = 1667 } # Jalka, Koira, Oikeda -> Kholm
-	link = { imperator = 9401 ck2 = 1662 } # Imedak -> Rusa
-	link = { imperator = 9389 imperator = 9388 imperator = 9392 ck2 = 1661 } # Minija, Sisalikko, Hapci -> Gdov
-	link = { imperator = 9377 ck2 = 380 } # Ohut -> Narva
-	link = { imperator = 9372 ck2 = 378 } # Kosk -> Kalevan
-	link = { imperator = 9373 ck2 = 377 } # Anoppi -> Läänemaa
-	link = { imperator = 9371 ck2 = 376 } # Soodak -> Saaremaa
 	link = { imperator = 4717 imperator = 4716 imperator = 4714 ck2 = 720 } # Gaiapolis, Tiamat, Hegra -> Al 'Ula
 	link = { imperator = 4718 imperator = 7559 imperator = 7560 imperator = 4721 imperator = 7561 imperator = 8815 ck2 = 717 } # Thapaua, Godala, Afarun, Durnatha, Sakaka, Jubbah -> Al Jawf
 	link = { imperator = 4602 imperator = 4603 imperator = 4606 imperator = 4613 imperator = 4601 imperator = 4612 imperator = 4611 imperator = 4604 imperator = 4605 imperator = 4715 imperator = 4713 imperator = 4607 ck2 = 721 } # Leuke Kome, Modiana, Hippou Kome, Aybara, Baclanaza, Relicta, Madiama Felix, Laba, Soaka, Demne, Achroua, Badais -> Tabuk
@@ -682,7 +634,7 @@
 	link = { imperator = 5513 imperator = 5506 imperator = 5504 imperator = 5503 imperator = 5502 imperator = 5522 imperator = 5512 imperator = 5509 imperator = 5505 imperator = 5510 imperator = 5511 ck2 = 2007 } # Parammon, Tchonemyris, Hibis, Gibra, Gebara, Debiri, Thenete, Kellis, Amura, Mothis, Trimithis -> Farafra
 	link = { imperator = 5501 imperator = 5500 imperator = 549 imperator = 552 imperator = 554 imperator = 555 imperator = 558 imperator = 560 ck2 = 795 } # Pohe, Erebe, Hermopolis Magna, Koussai, Pokis, Hypsele, Tripheion, Thinis -> Asyut
 	link = { imperator = 5520 imperator = 5518 imperator = 5517 imperator = 5515 imperator = 5508 imperator = 5516 imperator = 5507 ck2 = 1782 } # Cataphri, Hameka, Precariton, Sykaminia, Kysis, Perusekh, Tabenesse -> Kharga
-	link = { imperator = 5545 imperator = 5527 imperator = 5528 imperator = 5523 imperator = 5525 imperator = 5524 imperator = 5526 imperator = 5529 imperator = 5514 ck2 = 801 } # Thumat, Tablamum, Elassa, Farafra, Tawar, Bishaya, Minqar, Poka, Farafra -> Bahariya
+	link = { imperator = 5545 imperator = 5527 imperator = 5528 imperator = 5523 imperator = 5525 imperator = 5524 imperator = 5526 imperator = 5529 imperator = 5514 ck2 = 801 } # Thumat, Tablamum, Elassa, Farafra, Tawar, Bishaya, Minqar, Poka, Siwa -> Bahariya
 	link = { imperator = 5554 imperator = 5550 imperator = 5551 imperator = 5555 imperator = 5537 imperator = 5539 imperator = 5538 imperator = 5540 imperator = 5544 imperator = 5536 imperator = 5542 imperator = 5543 imperator = 5541 imperator = 8121 imperator = 8122 ck2 = 803 } # Sanus, Alexandrou Parembole, Varias, Carnasa, Ammon, Zethin, Gargara, Areg, Gerum, Sitra, Murta, Magrab, Shunne, Tubat, Jaghbub -> Siwa
 	link = { imperator = 7535 imperator = 7521 ck2 = 1344 } # Maphoris, Aualites -> Zeila
 	link = { imperator = 7533 imperator = 7523 imperator = 7527 imperator = 7534 imperator = 7522 imperator = 8682 imperator = 8684 imperator = 8683 imperator = 8701 imperator = 8667 imperator = 8669 imperator = 8668 imperator = 8672 imperator = 8673 imperator = 8695 imperator = 8696 imperator = 8697 imperator = 8699 imperator = 8677 imperator = 8674 ck2 = 872 } # Salweyn, Moundou, Khoor Shoora, Amaitaia, Malao, Shalcaw, Jidali, Ceerigabo, Afweyn, Isis, Barkhadle, Bagan, Suuqsade, Gidheys, Aelal, Xood, Danano, Gar Adag, Goyar, Seeto -> Berbera
@@ -1108,9 +1060,9 @@
 	link = { imperator = 3575 imperator = 3576 imperator = 152 imperator = 153 imperator = 154 ck2 = 321 } # Placentia, Florentiola, Parma, Forum Novum, Rubra -> Parma
 	link = { imperator = 151 imperator = 149 ck2 = 322 } # Regium Lepidum, Mutina -> Modena
 	link = { imperator = 137 imperator = 138 ck2 = 323 } # Luna, Luca -> Lucca
-	link = { imperator = 3515 imperator = 3514 imperator = 3516 imperator = 3513 imperator = 3512 imperator = 3511 ck2 = 324 } # Aleria, Ouagon, Sermigion, Kanelate, Rhopikon, Alouka -> Corsica
-	link = { imperator = 3495 imperator = 3493 imperator = 3492 imperator = 3485 imperator = 3482 imperator = 3491 ck2 = 325 } # Hydata, Tharros, Othoca, Gurgua, Samas, Lacon -> Arborea
-	link = { imperator = 3481 imperator = 3483 imperator = 3484 imperator = 3490 imperator = 3486 ck2 = 326 } # Sulcis, Nura, Karali, Serdan, Sarcapos -> Cagliari
+	link = { imperator = 3515 imperator = 3514 imperator = 3516 imperator = 3513 imperator = 3512 imperator = 3511 ck2 = 324 } # Aleria, Mariana, Sermigion, Kentourinon, Rhopikon, Alouka -> Corsica
+	link = { imperator = 3495 imperator = 3493 imperator = 3492 imperator = 3485 imperator = 3482 imperator = 3491 ck2 = 325 } # Aquae Hypsitanae, Tharros, Neapolis Sardoa, Sardopatoris, Hydata Neapolitana, Lesa -> Arborea
+	link = { imperator = 3481 imperator = 3483 imperator = 3484 imperator = 3490 imperator = 3486 ck2 = 326 } # Sulcis, Nora, Caralis, Sestis, Ferraria -> Cagliari
 	link = { imperator = 127 imperator = 126 imperator = 128 imperator = 136 ck2 = 327 } # Ilva, Populonia, Vada Volaterrana, Pisae -> Pisa
 	link = { imperator = 129 imperator = 135 imperator = 134 imperator = 139 ck2 = 328 } # Volaterrae, Valvata, Florentia, Pistoriae -> Florence
 	link = { imperator = 123 imperator = 122 imperator = 132 ck2 = 329 } # Iguvium, Urbinum, Sarsina -> Urbino
@@ -1209,7 +1161,7 @@
 	link = { imperator = 4244 imperator = 4238 imperator = 4237 imperator = 4236 imperator = 4233 imperator = 4231 imperator = 4227 imperator = 4232 imperator = 4234 imperator = 4229 imperator = 4228 imperator = 4226 imperator = 4224 imperator = 4225 imperator = 4223 imperator = 4221 imperator = 4217 imperator = 4220 ck2 = 507 } # Tylis, Novae, Nikopolis, Emporium Discoduraterae, Storgosia, Asamus, Oescus, Ad Putea, Melta, Longinopara, Trullensium, Vicus Siamus, Cebrus, Tautiomosis, Almus, Montana, Ratiaria, Combustica -> Nikopolis
 	link = { imperator = 479 imperator = 4245 imperator = 4259 imperator = 4240 imperator = 4239 ck2 = 508 } # Kabyle, Haemiana, Zikideba, Prista, Trimammium -> Dorostotum
 	link = { imperator = 4248 imperator = 4249 imperator = 4250 imperator = 4254 imperator = 4255 imperator = 4257 imperator = 4256 imperator = 4251 imperator = 4253 imperator = 4252 imperator = 4246 imperator = 4243 imperator = 4242 imperator = 4241 ck2 = 509 } # Odessus, Krounoi, Tirizis, Callatis, Tomis, Sacidava, Tropaeum, Parthenopolis, Palmatis, Helis, Silistra, Abritus, Transmarisca, Appiara -> Karvuna
-	link = { imperator = 4512 imperator = 4513 imperator = 4516 imperator = 4519 imperator = 4520 imperator = 4517 imperator = 4515 imperator = 4512 imperator = 4514 imperator = 4518 ck2 = 510 } # Axiopolis, Histria, Argamum, Halmyris, Troesmis, Libida, Capidava, Axiopolis, Carsium, Troismis -> Constantia
+	link = { imperator = 4512 imperator = 4513 imperator = 4516 imperator = 4519 imperator = 4520 imperator = 4517 imperator = 4515 imperator = 4512 imperator = 4514 imperator = 4518 ck2 = 510 } # Axiopolis, Histria, Argamum, Halmyris, Troesmis, Libida, Skenopsis, Axiopolis, Kios Skythike, Beroe Skythike -> Constantia
 	link = { imperator = 4804 imperator = 4802 imperator = 4801 imperator = 4924 imperator = 4923 imperator = 4925 imperator = 4931 imperator = 4932 ck2 = 511 } # Britolagia, Agarusia, Polondava, Inatius, Acritones, Volumis, Loricata, Millianum -> Galati
 	link = { imperator = 4523 imperator = 4524 imperator = 4525 imperator = 4918 imperator = 4920 imperator = 4917 imperator = 4916 imperator = 4928 ck2 = 512 } # Kremniskoi, Aipolion, Tyras, Lepton, Agrana, Alitora, Mirum, Leptidava -> Belgorod
 	link = { imperator = 4803 imperator = 4825 imperator = 4913 ck2 = 513 } # Rhamidava, Montibus, Piroboridava -> Bârlad
@@ -1247,7 +1199,7 @@
 	link = { imperator = 248 imperator = 250 imperator = 271 imperator = 320 imperator = 321 imperator = 249 imperator = 303 imperator = 306 imperator = 304 imperator = 273 ck2 = 742 } # Myrleia, Helge, Attea, Ariste, Kybellion, Apollonia Rhyndakos, Synaos, Ankyra Sidera, Hyssa, Inde -> Prusa
 	link = { imperator = 252 imperator = 254 imperator = 253 imperator = 251 imperator = 269 imperator = 337 imperator = 272 imperator = 276 imperator = 7908 ck2 = 743 } # Kyzikos, Zeleia, Daskyleion, Miletopolis, Pericharaxis, Pioniai, Hiera Germe, Apollonia Mysias, Antigoneia Kyzikene -> Kyzikos
 	link = { imperator = 255 imperator = 256 imperator = 261 imperator = 257 imperator = 258 imperator = 259 imperator = 281 imperator = 265 imperator = 264 imperator = 262 imperator = 268 imperator = 260 imperator = 267 ck2 = 744 } # Parium, Lampsakos, Abydos, Ilion, Polymedion, Assos, Adramyttion, Argiza, Baris Mysias, Kolonai, Skepsis, Kebren, Kale Peuke -> Abydos
-	link = { imperator = 282 imperator = 279 imperator = 285 imperator = 287 imperator = 296 imperator = 298 imperator = 278 imperator = 275 imperator = 299 ck2 = 745 } # Atarna, Elaea, Kyme, Smyrna, Temnos, Aigai, Pergamon, Iasos, Maiboza -> Smyrna
+	link = { imperator = 282 imperator = 279 imperator = 285 imperator = 287 imperator = 296 imperator = 298 imperator = 278 imperator = 275 imperator = 299 ck2 = 745 } # Atarna, Elaea, Kyme, Smyrna, Magnesia, Aigai, Pergamon, Iasos, Maiboza -> Smyrna
 	link = { imperator = 295 imperator = 294 imperator = 291 imperator = 288 imperator = 289 imperator = 290 imperator = 1969 imperator = 1966 imperator = 1968 imperator = 1973 imperator = 1972 imperator = 1974 ck2 = 746 } # Hypaipa, Larisa Ionias, Colophon, Tecybeleneos, Erythrai, Ephesos, Magnesia pros Maiandro, Tralles, Alexandreia pros to Latmo, Miletos, Priene, Samos -> Ephesos
 	link = { imperator = 1653 imperator = 1970 imperator = 1981 imperator = 1977 imperator = 1967 imperator = 1963 imperator = 1956 imperator = 1957 imperator = 1997 imperator = 1989 imperator = 1987 imperator = 1985 imperator = 1984 imperator = 1980 imperator = 1992 imperator = 1990 imperator = 1960 imperator = 171 imperator = 159 imperator = 1991 imperator = 1995 imperator = 1993 imperator = 1998 imperator = 156 imperator = 160 imperator = 161 imperator = 162 imperator = 164 imperator = 1876 imperator = 7947 imperator = 7948 imperator = 7942 imperator = 7934 imperator = 7949 imperator = 7951 imperator = 7939 imperator = 7938 imperator = 310 ck2 = 747 } # Kalymnos, Kos, Halikarnassos, Mylasa, Alabanda, Harpasa, Tabai, Kidrama, Boubon, Kaunos, Knidos, Idyma, Thera Karias, Stratonikeia, Telmessos, Oinoanda, Lagbe, Isinda, Choma, Podalia, Xanthos, Tlos, Patara, Myra, Arykanda, Limyra, Olympos, Phaselis, Physkos, Balboura, Kadyanda, Daidala, Keramos, Kandyba, Kitanaura, Hyllarima, Bargasa, Leros -> Lykia
 	link = { imperator = 1953 imperator = 1952 imperator = 1962 imperator = 1948 imperator = 1947 imperator = 308 imperator = 7941 ck2 = 748 } # Saleia Salbakes, Aphrodisias, Athymbra, Diospolis Lykou, Apollonia Maiandrou, Blaoundos, Kranaos -> Laodikeia
@@ -1294,7 +1246,7 @@
 	link = { imperator = 8193 imperator = 8192 imperator = 8191 imperator = 8189 imperator = 8173 imperator = 8194 imperator = 8174 imperator = 8175 imperator = 8178 imperator = 8168 imperator = 8169 imperator = 8179 imperator = 8184 imperator = 8164 imperator = 8166 imperator = 8163 imperator = 8162 imperator = 8171 imperator = 8181 imperator = 8182 imperator = 8190 ck2 = 1732 } # Tajhiri, Qatrun, Izam, Majdul, Traghen, Mastutah, Murzuq, Dujal, Sharraba, Garama, Zinchekra, Baghira, Tisit, Gelah, Lecksair, Chlef, Sabha, Gadduwah, Zuwila, Tmessa, Terbu -> Djado
 	link = { imperator = 8145 imperator = 8141 imperator = 8140 imperator = 8139 imperator = 8146 imperator = 8147 imperator = 8149 imperator = 8161 ck2 = 1731 } # Wilyan, Fuqaha, Jufrah, Zala, Tamshin, Mughattah, Umm Abid, Samnu -> Zawila
 	link = { imperator = 8137 imperator = 8136 imperator = 8138 imperator = 8142 imperator = 8143 imperator = 8195 imperator = 8144 imperator = 8196 imperator = 8197 ck2 = 1722 } # Tagrifet, Talhah, Meduin, Waddan, Hun, Jashalam, Socna, Gholaia, Zayden -> Tadjrift
-	link = { imperator = 8125 imperator = 8129 imperator = 8130 imperator = 8128 imperator = 8126 imperator = 8127 imperator = 8131 imperator = 8132 imperator = 8133 imperator = 8134 ck2 = 807 } # Mawahi, Bu Athla, Sahabi, Augila, Gicherra, Gialo, Kalanshah, Jabbanah, Maradah, Jafr -> Senoussi
+	link = { imperator = 8125 imperator = 8129 imperator = 8130 imperator = 8128 imperator = 8126 imperator = 8127 imperator = 8131 imperator = 8132 imperator = 8133 ck2 = 807 } # Mawahi, Bu Athla, Sahabi, Augila, Gicherra, Gialo, Kalanshah, Jabbanah, Maradah -> Senoussi
 	link = { imperator = 3367 imperator = 3368 imperator = 3369 imperator = 3370 imperator = 3371 imperator = 3372 ck2 = 805 } # Petras Mikros, Batrachos, Gonia, Antipyrgos, Kyrthanion, Menelaos -> Tobruk
 	link = { imperator = 3359 imperator = 3358 imperator = 3360 imperator = 3362 imperator = 3361 imperator = 3363 imperator = 3364 imperator = 3365 imperator = 3366 ck2 = 806 } # Balagrae, Phykous, Kyrene, Agabis, Apollonia Kyrenaike, Darnis, Marandis, Aziris, Paliouros -> Cyrenaica
 	link = { imperator = 3344 imperator = 3346 imperator = 3347 imperator = 3348 imperator = 3349 imperator = 3350 imperator = 3351 imperator = 3352 imperator = 3353 imperator = 3357 imperator = 3354 ck2 = 808 } # Serapeion, Amastor, Talliamunera, Chersis, Zau Taberna, Euesperides, Chairekla, Hadrianopolis, Taucheira, Barke, Ptolemais -> Benghazi
@@ -1309,7 +1261,7 @@
 	link = { imperator = 3289 imperator = 3291 imperator = 3292 imperator = 3290 imperator = 3202 ck2 = 814 } # Bennafa, Tacape, Arelliorum, Aves, Silesva -> Gabes
 	link = { imperator = 3200 imperator = 3199 imperator = 3211 imperator = 3273 imperator = 3279 imperator = 3212 imperator = 3274 imperator = 3272 imperator = 3239 imperator = 3236 imperator = 3246 imperator = 3210 ck2 = 815 } # Oviscae, Nara Maxyesia, Masclinae, Aquae Casae, Vicus Augusti, Aquae Regiae, Mediccera, Muzuc, Uzappa, Assuras, Mactaris, Sufes -> Kairouan
 	link = { imperator = 3275 imperator = 3276 imperator = 3277 imperator = 3278 imperator = 3280 imperator = 3283 imperator = 3287 imperator = 3285 imperator = 3288 imperator = 3286 imperator = 3281 imperator = 3282 imperator = 3284 ck2 = 816 } # Ulizibbira, Hadrametum, Leptis Minor, Thapsus, Acholla, Usula, Taparura, Thaenae, Macomades Minores, Aeliae, Bararus, Thysdrus, Cercina -> Mahdia
-	link = { imperator = 3255 imperator = 3252 imperator = 3253 imperator = 3256 imperator = 3259 imperator = 3251 imperator = 3250 imperator = 3249 imperator = 3242 imperator = 3240 imperator = 3243 imperator = 3244 imperator = 3245 imperator = 3254 imperator = 1470 ck2 = 817 } # Missua, Carpis, Nepheris, Carthago, Uzali Sar, Membressa, Uthina, Ziqua, Abthugni, Seressi, Feradi Maius, Pupput, Curubis, Kerkouane, Cossyra -> Tunis
+	link = { imperator = 3255 imperator = 3252 imperator = 3253 imperator = 3256 imperator = 3259 imperator = 3251 imperator = 3250 imperator = 3249 imperator = 3242 imperator = 3240 imperator = 3243 imperator = 3244 imperator = 3245 imperator = 3254 ck2 = 817 } # Missua, Carpis, Nepheris, Carthago, Uzali Sar, Membressa, Uthina, Ziqua, Abthugni, Seressi, Feradi Maius, Pupput, Curubis, Kerkouane -> Tunis
 	link = { imperator = 3233 imperator = 3265 imperator = 3267 imperator = 3271 imperator = 3269 imperator = 3268 imperator = 3234 imperator = 3235 imperator = 3238 imperator = 3241 ck2 = 818 } # Bulla Regia, Thimida Bure, Numluli, Thignica, Thugga, Aunobaris, Sicca Veneria, Lares, Zama Regia, Furnos Maius -> Medjerda
 	link = { imperator = 3257 imperator = 3258 imperator = 3262 imperator = 3230 imperator = 3264 imperator = 3263 imperator = 3260 imperator = 3261 ck2 = 819 } # Utica, Hippo Diarrhytus, Kinna Thabracania, Thabraca, Septimia, Rucuma, Matar, Thisika -> Bizerte
 	link = { imperator = 1469 ck2 = 826 } # Mago -> Menorca
@@ -1317,10 +1269,10 @@
 	link = { imperator = 1712 imperator = 31 imperator = 26 imperator = 5 imperator = 6 ck2 = 851 } # Antinum, Venafrum, Fregellae, Fundi, Capua -> Capua
 	link = { imperator = 30 imperator = 27 imperator = 24 imperator = 28 imperator = 107 imperator = 108 ck2 = 929 } # Aufidena, Fucens, Peltuinum, Corfinium, Interamnia, Matrinum -> Aquila
 	link = { imperator = 9 imperator = 1713 ck2 = 935 } # Pompeii, Nuceria -> Amalfi
-	link = { imperator = 3488 imperator = 3487 ck2 = 1560 } # Sulki Tyrsen, Tyrsenia -> Ogliastra
-	link = { imperator = 3506 imperator = 3505 imperator = 3504 imperator = 3503 imperator = 3489 ck2 = 1574 } # Longones, Tibula, Phausiane, Thorpè, Kares -> Gallura
-	link = { imperator = 3502 imperator = 3501 imperator = 3500 imperator = 3499 imperator = 3497 imperator = 3494 imperator = 3496 imperator = 3498 ck2 = 1576 } # Lesa, Luguido, Libisonis, Nure, Carbia, Sanaphar, Gurulis, Makopsis -> Torres
-	link = { imperator = 3510 imperator = 3509 imperator = 3508 imperator = 3507 ck2 = 1577 } # Saone, Pauka, Phikaria, Rhoubra -> Cinarca
+	link = { imperator = 3488 imperator = 3487 ck2 = 1560 } # Sulcis, Porticenses -> Ogliastra
+	link = { imperator = 3506 imperator = 3505 imperator = 3504 imperator = 3503 imperator = 3489 ck2 = 1574 } # Viniolae, Portus Tibulae, Olbia, Coclearia, Fanum Carisi -> Gallura
+	link = { imperator = 3502 imperator = 3501 imperator = 3500 imperator = 3499 imperator = 3497 imperator = 3494 imperator = 3496 imperator = 3498 ck2 = 1576 } # Sorabile, Erycinum, Turris Libisonis, Nymphaios Limen, Hermaion Akron, Cornus, Gurulis, Makopsis -> Torres
+	link = { imperator = 3510 imperator = 3509 imperator = 3508 imperator = 3507 ck2 = 1577 } # Ourkinion, Pauka, Phikaria, Rhoubra -> Cinarca
 	link = { imperator = 3010 ck2 = 1608 } # Valtudurum -> Montbéliard
 	link = { imperator = 2427 imperator = 2429 imperator = 2428 ck2 = 1609 } # Segobodium, Tilena, Varcia -> Portois
 	link = { imperator = 3611 imperator = 3612 ck2 = 1610 } # Salassia, Eudracinum -> Aosta
@@ -1353,10 +1305,7 @@
 	link = { imperator = 124 imperator = 130 imperator = 131 imperator = 140 ck2 = 1713 } # Cortona, Sena Iulia, Arretium, Faesulae -> Arezzo
 	link = { imperator = 3547 imperator = 3546 imperator = 3545 ck2 = 1714 } # Savo, Albom Ingaunom, Album Intimilium -> Noli
 	link = { imperator = 3337 imperator = 3338 imperator = 3339 imperator = 3340 imperator = 3341 imperator = 3342 imperator = 3343 imperator = 3345 ck2 = 1721 } # Digdida Selorum, Arae Philaenorum, Automalax, Mendrion, Astrochonda, Kainon, Corniclanum, Chorotus -> Ajadabiya
-	link = { imperator = 9455 imperator = 9456 imperator = 9454 imperator = 9448 imperator = 9453 imperator = 9457 imperator = 9458 imperator = 9459 imperator = 9460 imperator = 9452 ck2 = 829 } # Rmel, Dahoua, Berriane, Aroui, Ghardaia, Metlili, Sebseb, Brhel, Mansoura, Zelfana -> Ghardaia
-	link = { imperator = 9437 imperator = 9443 imperator = 9445 imperator = 9444 imperator = 9447 imperator = 9446 imperator = 9449 imperator = 9436 imperator = 9450 imperator = 9451 ck2 = 1729 } # Touggourt, Goug, Hajira, Alia, Sahane, Guerrara, Ardjoun, Mrara, Ngoussa, Ouargla -> Tuggurt
-	link = { imperator = 9442 imperator = 9441 imperator = 9440 imperator = 9439 imperator = 9438 imperator = 9435 imperator = 9434 imperator = 9433 imperator = 9432 ck2 = 1727 } # Magrane, Reguiba, Oued, Ouensa, Khobna, Djamaa, Mghair, Still, Haouch -> Arigh
-	link = { imperator = 8256 imperator = 8255 imperator = 8254 imperator = 8253 imperator = 8251 imperator = 8249 imperator = 8247 imperator = 8246 imperator = 8248 imperator = 8257 ck2 = 1725 } # Rjim Maatoug, Faouar, Ghidma, Jamnah, Turris Tamaleni, Tabria, Tibubuci, Tisavar, Bezereos, Talib -> Suf
+	link = { imperator = 8257 imperator = 8256 imperator = 8255 imperator = 8254 imperator = 8253 imperator = 8251 imperator = 8249 imperator = 8247 imperator = 8246 imperator = 8248 ck2 = 1725 } # Talib, Rjim Maatoug, Faouar, Ghidma, Jamnah, Turris Tamaleni, Tabria, Tibubuci, Tisavar, Bezereos -> Suf
 	link = { imperator = 3201 imperator = 3196 imperator = 3190 imperator = 3189 imperator = 3188 imperator = 3193 imperator = 3195 imperator = 3194 imperator = 3191 ck2 = 1726 } # Tabira, Capsa Iustiniana, Thiges, Ad Speculum, Casae Nigrae, Cerva, Gemellia, Thelepte, Castra Neptitana -> Gafsa
 	link = { imperator = 458 imperator = 457 imperator = 456 imperator = 401 ck2 = 1881 } # Chaleion, Naupaktos, Thermon, Hypate -> Naupaktos
 	link = { imperator = 366 imperator = 386 imperator = 371 imperator = 369 imperator = 365 ck2 = 1882 } # Tragilos, Asseros, Euporia, Sirra, Amphipolis -> Serrae

@@ -3771,6 +3771,7 @@ muslim = {
 		intermarry = shiite
 		intermarry = hurufi
 		intermarry = qarmatian
+		intermarry = atenism #According to Wikipedia, the Druze beleive that their religion descends from Atenism, holding Akhenaten in high regard
 	}
 	hurufi = {
 		graphical_culture = muslimgfx
