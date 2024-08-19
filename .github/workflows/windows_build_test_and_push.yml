@@ -12,7 +12,7 @@ jobs:
   build_local:
     name: Build and publish local
     if: github.repository_owner == 'ParadoxGameConverters'
-    runs-on: [ self-hosted, windows, noramdisk ]
+    runs-on: [ self-hosted, windows ]
     
     steps:
       - uses: actions/checkout@v3
