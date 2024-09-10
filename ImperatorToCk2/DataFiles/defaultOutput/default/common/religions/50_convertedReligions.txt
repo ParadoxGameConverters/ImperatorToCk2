@@ -88,6 +88,7 @@ polytheistic = {
 		intermarry = cybelene
 		intermarry = canaanite_reformed
 		intermarry = hurrian
+		intermarry = hattian
 	}
 
 
@@ -578,6 +579,7 @@ polytheistic = {
 
 		intermarry = cybelene_reformed
 		intermarry = hurrian
+		intermarry = hattian
 	}
 
 	scythian_reformed = {
@@ -747,6 +749,7 @@ polytheistic = {
 		intermarry = canaanite
 		intermarry = mithraic
 		intermarry = hurrian
+		intermarry = hattian
 	}
 
 	armazic_reformed = {
@@ -1075,6 +1078,7 @@ polytheistic = {
 		intermarry = canaanite
 		intermarry = cybelene
 		intermarry = hurrian
+		intermarry = hattian
 	}
 	
 	mayan_reformed = {
@@ -1641,11 +1645,11 @@ polytheistic = {
 		high_god_name = Teshub
 
 		god_names = {
-			elil ea_god nergal ninlil nabu shamash ishtar ningirsu dumuzi
+			Shaushka Tasmishu Silver Enlil Hutena Hutelluri Ea
 		}
 
 		evil_god_names = {
-			tiamat lamashtu
+			Anu Kumarbi Allani Lamma
 		}
 
 		religious_clothing_head = 14
@@ -1709,6 +1713,95 @@ polytheistic = {
 		intermarry = egyptian
 		intermarry = khaldic
 		intermarry = armazic
+		intermarry = hattian
+	}
+	
+	hattian_reformed = {
+		graphical_culture = persiangfx
+
+		icon = 129
+		heresy_icon = 130
+
+		color = { 0.88 0.88 0.88 }
+
+		crusade_name = GREAT_HOLY_WAR
+		use_new_crusade = yes
+		crusade_cb = new_crusade
+		scripture_name = hattian_scripture
+		priest_title = NORMAL_HATTIAN_PRIEST
+
+		high_god_name = Hannahanna
+
+		god_names = {
+			Hapantali Shulinkatte Zaparwa Kasku Taru Talipinu Estan Hatepinu Katahzipuri Inaras
+		}
+
+		evil_god_names = {
+			Illuyanka
+		}
+
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+
+		priests_can_marry = yes
+		female_temple_holders = yes
+		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
+		allow_looting = yes
+		max_consorts = 3
+
+		allow_in_ruler_designer = no
+
+		intermarry = hattian
+	}
+	
+	hattian = {
+		graphical_culture = persiangfx
+
+		icon = 128
+		heresy_icon = 130
+
+		color = { 0.78 0.78 0.78 }
+
+		crusade_name = GREAT_HOLY_WAR
+		use_new_crusade = yes
+		crusade_cb = new_crusade
+		scripture_name = hattian_scripture
+		priest_title = PRIEST
+
+		high_god_name = Hannahanna
+
+		god_names = {
+			Hapantali Shulinkatte Zaparwa Kasku Taru Talipinu Estan Hatepinu Katahzipuri Inaras
+		}
+
+		evil_god_names = {
+			Illuyanka
+		}
+
+		reformed = hattian_reformed
+
+		religious_clothing_head = 14
+		religious_clothing_priest = 3
+
+		priests_can_marry = yes
+		dislike_tribal_organization = yes
+		can_demand_religious_conversion = no
+		allow_looting = yes
+		female_temple_holders = yes
+		max_consorts = 3
+
+		intermarry = hattian_reformed
+
+		intermarry = canaanite
+		intermarry = cybelene
+		intermarry = sumerian
+		intermarry = canaanite
+		intermarry = hellenic_pagan
+		intermarry = egyptian
+		intermarry = khaldic
+		intermarry = armazic
+		intermarry = hurrian
 	}
 
 
