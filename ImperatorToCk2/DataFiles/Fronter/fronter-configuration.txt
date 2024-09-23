@@ -9,7 +9,7 @@ pagesCommitIdUrl = "https://paradoxgameconverters.com/commit_ids/ImperatorToCk2.
 displayName = IMPTOCK2DISPLAYNAME
 sourceGame = IMPERATOR
 targetGame = CK2GAME
-autoGenerateModsFrom = ImperatorModPath
+#autoGenerateModsFrom = ImperatorModPath
 
 requiredFile = {
 	name = SaveGame

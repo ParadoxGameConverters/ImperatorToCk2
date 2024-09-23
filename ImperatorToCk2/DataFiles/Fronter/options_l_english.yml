@@ -36,9 +36,9 @@ l_english:
  
  NOMAD:"Steppe Nomad Conversion"
  NOMADTIP:"Which tribes should get the CK2 nomad government form?"
- NOMADALL:"All Migratory Tribes"
+ NOMADALL:"All Migratory Tribes [not recommended]"
  NOMADALLTIP:"All I:R migratory tribes, regardless of culture, will become CK2 nomads. Embrace the horde! (Requires the Horse Lords DLC)"
- NOMADCULTURE:"Steppe Cultures Only [recommended]"
+ NOMADCULTURE:"Steppe Cultures Only"
  NOMADCULTURETIP:"Only migratory tribes with a horse-based, steppe nomad culture (such as the Scythians) will become CK2 nomads. (Requires the Horse Lords DLC)"
  NOMADNONE:"None - Tribes Remain Tribes"
  NOMADNONETIP:"All tribes from Imperator:Rome will convert as regular CK2 tribes. The Horse Lords DLC is not required."
