@@ -66,53 +66,53 @@ province_event = {
 
 #################################################
 
-# Province culture changes from Egyptian to Egyptian Arab in Sinai and Arabia 
-province_event = {
-	id = IR_KMT.2001
-	desc = EVTDESC_IR_KMT_2001
-	picture = GFX_evt_stone_church
-	border = GFX_event_normal_frame_diplomacy
-
-	trigger = {
-		should_evolve_cultures_trigger = yes
-		year = 300
-		culture = ancient_egyptian
-		region = world_middle_east_arabia
-		NOT = {
-			owner = {
-				top_liege = {
-					culture = ancient_egyptian
-					OR = {
-						tier = emperor
-						#num_of_king_titles = 2
-					}
-				}
-			}
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 600
-		modifier = {
-			factor = 0.3
-			OR = {
-				has_game_rule = {
-					name = culture_conversion
-					value = faster_melting_pots
-				}
-				has_game_rule = {
-					name = culture_conversion
-					value = faster_melting_pots_and_slower_normal
-				}
-			}
-		}
-	}
-
-	option = {
-		name = EVTOPTA_IR_KMT_2001
-		culture = egyptian_arabic
-	}
-}
+## Province culture changes from Egyptian to Egyptian Arab in Sinai and Arabia 
+#province_event = {
+#	id = IR_KMT.2001
+#	desc = EVTDESC_IR_KMT_2001
+#	picture = GFX_evt_stone_church
+#	border = GFX_event_normal_frame_diplomacy
+#
+#	trigger = {
+#		should_evolve_cultures_trigger = yes
+#		year = 300
+#		culture = ancient_egyptian
+#		region = world_middle_east_arabia
+#		NOT = {
+#			owner = {
+#				top_liege = {
+#					culture = ancient_egyptian
+#					OR = {
+#						tier = emperor
+#						#num_of_king_titles = 2
+#					}
+#				}
+#			}
+#		}
+#	}
+#
+#	mean_time_to_happen = {
+#		months = 600
+#		modifier = {
+#			factor = 0.3
+#			OR = {
+#				has_game_rule = {
+#					name = culture_conversion
+#					value = faster_melting_pots
+#				}
+#				has_game_rule = {
+#					name = culture_conversion
+#					value = faster_melting_pots_and_slower_normal
+#				}
+#			}
+#		}
+#	}
+#
+#	option = {
+#		name = EVTOPTA_IR_KMT_2001
+#		culture = egyptian_arabic
+#	}
+#}
 
 
 #################################################
