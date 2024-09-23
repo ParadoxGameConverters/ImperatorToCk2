@@ -62,6 +62,64 @@ option = {
 }
 
 option = {
+	name = nomad
+	displayName = NOMAD
+	tooltip = NOMADTIP
+	radioSelector = {
+		radioOption = {
+			name = nomadAll
+			displayName = NOMADALL
+			tooltip = NOMADALLTIP
+			default = false
+		}
+		radioOption = {
+			name = nomadCulture
+			displayName = NOMADCULTURE
+			tooltip = NOMADCULTURETIP
+			default = true
+		}
+		radioOption = {
+			name = nomadNone
+			displayName = NOMADNONE
+			tooltip = NOMADNONETIP
+			default = false
+		}
+	}
+}
+
+option = {
+	name = bigMods
+	displayName = BIGMODS
+	tooltip = BIGMODSTIP
+	radioSelector = {
+		radioOption = {
+			name = bigModsAuto
+			displayName = BIGMODSAUTO
+			tooltip = BIGMODSAUTOTIP
+			default = true
+		}
+		radioOption = {
+			name = bigModsInvictus
+			displayName = BIGMODSINVICTUS
+			tooltip = BIGMODSINVICTUSTIP
+			default = false
+		}
+		radioOption = {
+			name = bigModsInvictus1_7
+			displayName = BIGMODSINVICTUS1_7
+			tooltip = BIGMODSINVICTUS1_7TIP
+			default = false
+		}
+		radioOption = {
+			name = bigModsVanilla
+			displayName = BIGMODSVANILLA
+			tooltip = BIGMODSVANILLATIP
+			default = false
+		}
+	}
+}
+
+option = {
 	name = output_name
 	displayName = MODNAME
 	tooltip = MODNAMETIP

@@ -491,7 +491,7 @@ public class Importer
 
         String qaaa;
         String[] output;   // Owner Culture Religeon PopTotal Buildings
-        output = new String[11];
+        output = new String[13];
 
         output[0] = "bad"; //default for no CK II game directory
         output[1] = "bad"; //default for no IR game directory
@@ -503,7 +503,9 @@ public class Importer
         output[7] = "bad"; //default for no year choice
         output[8] = "bad"; //default for no custom year date
         output[9] = "bad"; //default for no dejure conversion
-        output[10] = "bad"; //default for no dejure conversion
+        output[10] = "bad"; //default for no republic conversion
+        output[11] = "bad"; //default for no nomad conversion
+        output[12] = "bad"; //default for no big mod selection
 
         try {
             while (endOrNot = true){
@@ -561,6 +563,16 @@ public class Importer
                 else if (qaaa.split(" = ")[0].equals("republic")){
                     output[10] = qaaa.split(" = ")[1];
                     output[10] = output[10].substring(1,output[10].length()-1);
+
+                }
+                else if (qaaa.split(" = ")[0].equals("nomad")){
+                    output[11] = qaaa.split(" = ")[1];
+                    output[11] = output[11].substring(1,output[11].length()-1);
+
+                }
+                else if (qaaa.split(" = ")[0].equals("bigMods")){
+                    output[12] = qaaa.split(" = ")[1];
+                    output[12] = output[12].substring(1,output[12].length()-1);
 
                 }
 
@@ -1398,15 +1410,11 @@ public class Importer
                         output[3] = output[3].replace("  "," ");
                         if (qaaa.contains("rgb ")) {
                             output[3] = output[3].split("rgb ")[1];
-                            //output[3] = output[3].split(" }")[0];
-                            //output[3] = "rgb," + output[3].substring(2,output[3].length()-1);
                             output[3] = output[3].split(tab)[0]; //Invictus formatting
                             output[3] = "rgb," + output[3].substring(2,output[3].length()-2);
                         }
                         else if (qaaa.contains("hsv ")) {
                             output[3] = output[3].split("hsv ")[1];
-                            //output[3] = output[3].split(" }")[0];
-                            //output[3] = "hsv," + output[3].substring(2,output[3].length()-1);
                             output[3] = output[3].split(tab)[0]; //Invictus formatting
                             output[3] = "hsv," + output[3].substring(2,output[3].length()-2);
                         } else {
@@ -1568,15 +1576,31 @@ public class Importer
                                     qaaa = qaaa.replace("= ","=");
                                     qaaa = qaaa.replace(" =","=");
                                     qaaa = qaaa.replace("    ",tab);
+                                    String qaaaNoTab = qaaa.replace(tab,"");
                                     if (qaaa.contains("scale=")) {
                                         embScale = qaaa.split("=")[1];
                                         embScale = embScale.split(tab)[0];
-                                        embScale = embScale.substring(2,embScale.length()-2);
+                                        if (qaaaNoTab.equals("scale={")) { //very rare edge case where scale is split across lines
+                                            qaaa = scnr.nextLine();
+                                            embScale = qaaa.replace(tab,"");
+                                            embScale = embScale.replace("    ","");
+                                            //System.out.println("Edge case at "+qaaa);
+                                            
+                                        } else { //normal
+                                            embScale = embScale.substring(2,embScale.length()-2);
+                                        }
                                     }
                                     if (qaaa.contains("position=")) {
                                         embPos = qaaa.split("=")[1];
                                         embPos = embPos.split(tab)[0];
-                                        embPos = embPos.substring(2,embPos.length()-2);
+                                        if (qaaaNoTab.equals("position={")) { //very rare edge case where position is split across lines
+                                            qaaa = scnr.nextLine();
+                                            embPos = qaaa.replace(tab,"");
+                                            embPos = embPos.replace("    ","");
+                                            //System.out.println("Edge case at "+qaaa);
+                                        } else { //normal
+                                            embPos = embPos.substring(2,embPos.length()-2);
+                                        }
                                     }
                                     if (qaaa.contains("rotation=")) {
                                         if (!qaaa.split("=")[0].contains("#")) {

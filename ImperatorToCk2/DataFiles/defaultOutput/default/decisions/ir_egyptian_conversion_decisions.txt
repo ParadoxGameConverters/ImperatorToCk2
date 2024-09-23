@@ -1,0 +1,250 @@
+targetted_decisions = {
+
+
+	# Ancient Egyptian character may convert to Coptic
+	irck2_convert_to_coptic = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = ancient_egyptian
+			any_realm_province = {
+				culture = coptic
+			}
+			OR = {
+				year = 200
+				top_liege = {
+					NOT = { culture = ancient_egyptian }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			#culture = ancient_egyptian
+			religion_group = christian
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+					religion_group = christian
+				}
+				culture = coptic
+			}
+			culture = coptic
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Ancient Egyptian Christian ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = ancient_egyptian
+						religion_group = christian
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = ancient_egyptian }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = coptic }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = coptic }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = coptic
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = coptic
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = coptic
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = coptic
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = coptic
+				}
+			}
+		}
+	}
+
+
+	# Ancient Egyptian character may convert to Egyptian Arab
+	irck2_convert_to_egyptian_arabic = {
+		only_playable = yes
+
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 12
+
+		potential = {
+			is_playable = yes
+			culture = ancient_egyptian
+			any_realm_province = {
+				culture = egyptian_arabic
+			}
+			OR = {
+				year = 200
+				top_liege = {
+					NOT = { culture = ancient_egyptian }
+				}
+			}
+			NOT = { government = chinese_imperial_government }
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+		}
+		allow = {
+			#culture = ancient_egyptian
+			OR = {
+				religion_group = muslim
+				religion = arabic
+				religion = arabic_reformed
+			}
+		}
+		effect = {
+			any_courtier = {
+				limit = {
+					culture = ROOT
+					employer = { character = ROOT }
+					dynasty = ROOT
+					OR = { religion_group = muslim religion = arabic religion = arabic_reformed }
+				}
+				culture = egyptian_arabic
+			}
+			culture = egyptian_arabic
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { #If Ruler has 2 king titles, is emperor, or is under Ancient Egyptian Christian ruler, will not do
+				factor = 0
+				OR = {
+					top_liege = {
+						culture = ancient_egyptian
+						OR = { religion_group = muslim religion = arabic religion = arabic_reformed }
+						OR = {
+							tier = emperor
+							#num_of_king_titles = 2
+						}
+					}
+
+					AND = {
+						independent = no
+						top_liege = { culture = ancient_egyptian }
+					}
+				}
+			}
+
+			modifier = {
+				#factor = 0.5 # Slow it down a bit
+			}
+
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = egyptian_arabic }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = egyptian_arabic }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = egyptian_arabic
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = egyptian_arabic
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = egyptian_arabic
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = egyptian_arabic
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = egyptian_arabic
+				}
+			}
+		}
+	}
+
+
+#####################################################################
+#End Bracket
+#####################################################################
+
+}

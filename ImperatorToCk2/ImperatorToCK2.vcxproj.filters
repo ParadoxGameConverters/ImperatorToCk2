@@ -111,6 +111,12 @@
     <CopyFileToFolders Include="DataFiles\magick.exe">
       <Filter>Data Files\Configuration</Filter>
     </CopyFileToFolders>
+    <CopyFileToFolders Include="DataFiles\modMappings.txt">
+      <Filter>Data Files\Configuration</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="DataFiles\provinceConversionInvictus1_7.txt">
+      <Filter>Data Files\Configuration</Filter>
+    </CopyFileToFolders>
     <CopyFileToFolders Include="DataFiles\governmentConversion.txt" />
   </ItemGroup>
 </Project>

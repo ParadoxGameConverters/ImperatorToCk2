@@ -1,4 +1,7 @@
-#I:R government,CK2 government,rank required (optional)
+#I:R government,CK2 government,parameters(optional)
+#Arguments can be tagCulture=culture_name, nomadSetting=nomad_setting
+#All arguments in mapping must be true for mapping to be used
+
 
 #Republics
 
@@ -18,6 +21,31 @@ aristocratic_monarchy,monarchy
 stratocratic_monarchy,monarchy
 theocratic_monarchy,monarchy
 plutocratic_monarchy,monarchy
+nomarchy,monarchy
+egyptian_dynasty,monarchy
+assyrian_imperium,monarchy
+piratical_diarchy,monarchy
+
+#Nomads
+
+tribal_chiefdom,nomad,setting=nomadAll
+tribal_chiefdom,nomad,tagCulture=royal_scythian,setting=nomadCulture
+tribal_chiefdom,nomad,tagCulture=sarmatian,setting=nomadCulture
+tribal_chiefdom,nomad,tagCulture=iazyges,setting=nomadCulture
+tribal_chiefdom,nomad,tagCulture=saka,setting=nomadCulture
+tribal_chiefdom,nomad,tagCulture=alan,setting=nomadCulture
+tribal_chiefdom,nomad,tagCulture=cimmerian,setting=nomadCulture
+tribal_chiefdom,nomad,tagCulture=parthian_culture,setting=nomadCulture
+tribal_chiefdom,nomad,tagCulture=nemedian,setting=nomadCulture
+tribal_chiefdom,nomad,tagCulture=khazar,setting=nomadCulture
+tribal_chiefdom,nomad,tagCulture=turkish,setting=nomadCulture
+tribal_chiefdom,nomad,tagCulture=bolghar,setting=nomadCulture
+tribal_chiefdom,nomad,tagCulture=avar,setting=nomadCulture
+tribal_chiefdom,nomad,tagCulture=hunnic,setting=nomadCulture
+tribal_chiefdom,nomad,tagCulture=huna,setting=nomadCulture
+tribal_chiefdom,nomad,tagCulture=mongol,setting=nomadCulture
+steppe_empire,nomad
+steppe_horde,nomad
 
 #Tribes
 

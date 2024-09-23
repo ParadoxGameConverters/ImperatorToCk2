@@ -86,6 +86,10 @@ public class Main
             String impDirSave = configDirectories[4];
             
             String republicOption = configDirectories[10];
+            
+            String nomadOption = configDirectories[11];
+            
+            String bigMods = configDirectories[12];
 
             directories.modFolders (Dir,modName); //Creating the folders to write the mod files
             //along with nessicery sub-folders
@@ -261,6 +265,14 @@ public class Main
                 LOGGER.warning("Error with Republic Conversion Option! Defaulting to Merchant Republic");
                 republicOption = ("repMer");
             }
+            if (nomadOption.equals("bad")) { //If something goes wrong with reading the republic option, default to repMer
+                LOGGER.warning("Error with Steppe Nomad Conversion Option! Defaulting to Culture-Based Conversion");
+                nomadOption = ("nomadCulture");
+            }
+            
+            ArrayList<String> converterSettings = new ArrayList<String>();
+            converterSettings.add(republicOption);
+            converterSettings.add(nomadOption);
             
             ArrayList<String> govMap = Importer.importBasicFile("governmentConversion.txt"); //government mappings
             LOGGER.info("Importing mod directories...");
@@ -268,10 +280,29 @@ public class Main
             ArrayList<String> modDirs = Importer.importModDirs(impDirSave,irModDir);
             ArrayList<String> modFlagGFX = Importer.importModFlagDirs(modDirs); //flag gfx files
             ArrayList<String> modRegion = Importer.importModRegionDirs(modDirs); //flag gfx files
-            boolean hasInvictus = Processing.checkForInvictus(modDirs);
+            ArrayList<String> modIDMappings = Importer.importBasicFile("modMappings.txt"); //list of supported major map overhaul mods
+            boolean hasInvictus = false;
+            boolean hasInvictus1_7 = false;
+            if (bigMods.equals("bad")) {
+                LOGGER.warning("Error with Major Overhaul Mods option! Defaulting to Auto-Detect");
+                bigMods = "bigModsAuto";
+            }
+            if (bigMods.equals("bigModsInvictus")) {
+                hasInvictus = true;
+            } else if (bigMods.equals("bigModsInvictus1_7")) {
+                hasInvictus1_7 = true;
+            } else if (bigMods.equals("bigModsAuto")) {
+                hasInvictus = Processing.checkForModID(modDirs,modIDMappings,"invictus");
+                if (!hasInvictus) { //if no invictus, check for invictus1_7
+                    hasInvictus1_7 = Processing.checkForModID(modDirs,modIDMappings,"invictus1_7");
+                }
+            }
             if (hasInvictus) { //switch to Invictus mappings
                 LOGGER.info("Imperator:Invictus detected in save file! Switching to Invictus mappings");
                 provinceMappingSource = "provinceConversionInvictus.txt";
+            } else if (hasInvictus1_7) { //mappings for pre-1.8 Invictus versions
+                LOGGER.info("Pre-1.8 Imperator:Invictus detected in save file! Switching to Pre-1.8 Invictus mappings");
+                provinceMappingSource = "provinceConversionInvictus1_7.txt";
             }
 
             LOGGER.info("Importing flag information...");
@@ -609,7 +640,8 @@ public class Main
 
                                 int subjectOrNot = Processing.checkSubjectList(aq4,impSubjectInfo);
                                 //LOGGER.config("subjectOrNot at " + aq4 + " is " + subjectOrNot);
-                                impTagInfo.get(aq4)[17] = Processing.checkGovList(impTagInfo.get(aq4)[17],govMap); //converted government type
+                                impTagInfo.get(aq4)[17] = Processing.checkGovList(impTagInfo.get(aq4)[17],govMap,impTagInfo.get(aq4)[6],impTagInfo.get(aq4)[0],
+                                converterSettings); //converted government type
                                 
                                 Character = impCharInfoList.get(Integer.parseInt(impTagInfo.get(aq4)[16]));
                                 String rulerDynasty = Characters.searchDynasty(impDynList,Character[7]);
@@ -624,13 +656,13 @@ public class Main
                                     impTagInfo.get(aq4)[0] = Processing.convertTitle(titleMappings,rank,impTagInfo.get(aq4)[21],impTagInfo.get(aq4)[0]);
                                     convertedCharacters = Output.titleCreation(impTagInfo.get(aq4)[0],tempNum2,impTagInfo.get(aq4)[3],impTagInfo.get(aq4)[17],
                                     impTagInfo.get(aq4)[5],rank,"no_liege",date,republicOption,Character[7],impDynList,impCharInfoList,convertedCharacters,aq4,
-                                    impTagInfo.get(aq4)[17],cultureMappings,religionMappings,impTagInfo,ck2ProvInfo,ck2Geo,modDirectory);
+                                    impTagInfo.get(aq4)[17],cultureMappings,religionMappings,impTagInfo,ck2ProvInfo,ck2Geo,converterSettings,modDirectory);
                                     //LOGGER.info("Free Nation at " + aq4);
                                 } else { //if tag is subject
                                     String[] subjectInfo = impSubjectInfo.get(subjectOrNot).split(",");
                                     int overlordID = Integer.parseInt(subjectInfo[0]);
                                     String overlord = impTagInfo.get(overlordID)[0];
-                                    String overlordGov = Processing.checkGovList(impTagInfo.get(Integer.parseInt(subjectInfo[0]))[17],govMap);
+                                    ///String overlordGov = Processing.checkGovList(impTagInfo.get(Integer.parseInt(subjectInfo[0]))[17],govMap);
                                     String overlordRank = "k";
 
                                     if (ck2LandTot[Integer.parseInt(subjectInfo[0])] >= empireRank || 
@@ -648,6 +680,12 @@ public class Main
 
                                     impTagInfo.get(aq4)[0] = Processing.convertTitle(titleMappings,rank,impTagInfo.get(aq4)[21],impTagInfo.get(aq4)[0]);
                                     overlord = Processing.convertTitle(titleMappings,overlordRank,impTagInfo.get(overlordID)[21],impTagInfo.get(overlordID)[0]);
+                                    String overlordGov = impTagInfo.get(overlordID)[17];
+                                        if (!overlordGov.equals("republic") && !overlordGov.equals("monarchy") && !overlordGov.equals("tribal")
+                                        && !overlordGov.equals("imperium") && !overlordGov.equals("nomad") && !overlordGov.equals("palace")) {
+                                            overlordGov = Processing.checkGovList(impTagInfo.get(overlordID)[17],govMap,impTagInfo.get(overlordID)[6],
+                                           impTagInfo.get(overlordID)[0],converterSettings);
+                                        }
                                     //overlord = overlord.substring(2,overlord.length());
 
                                     if (subjectInfo[2].equals ("feudatory") || subjectInfo[2].equals ("satrapy") || subjectInfo[2].equals ("client_state")) { 
@@ -656,7 +694,7 @@ public class Main
                                             convertedCharacters = Output.titleCreation(impTagInfo.get(aq4)[0],tempNum2,impTagInfo.get(aq4)[3],
                                             impTagInfo.get(aq4)[17],impTagInfo.get(aq4)[5],rank,overlord,date,republicOption,Character[7],impDynList,
                                             impCharInfoList,convertedCharacters,aq4,overlordGov,cultureMappings,religionMappings,
-                                            impTagInfo,ck2ProvInfo,ck2Geo,modDirectory);
+                                            impTagInfo,ck2ProvInfo,ck2Geo,converterSettings,modDirectory);
                                             //LOGGER.info("Subject Nation at " + aq4 + " Overlord is " + subjectInfo[0]);
                                         }
 
@@ -668,7 +706,7 @@ public class Main
                                         if (!rank.equals("c")) {//if below duchy, don't generate titular county title
                                             convertedCharacters = Output.titleCreation(impTagInfo.get(aq4)[0],tempNum2,impTagInfo.get(aq4)[3],impTagInfo.get(aq4)[17],
                                             impTagInfo.get(aq4)[5],rank,overlord,date,republicOption,Character[7],impDynList,impCharInfoList,
-                                            convertedCharacters,aq4,overlordGov,cultureMappings,religionMappings,impTagInfo,ck2ProvInfo,ck2Geo,modDirectory);
+                                            convertedCharacters,aq4,overlordGov,cultureMappings,religionMappings,impTagInfo,ck2ProvInfo,ck2Geo,converterSettings,modDirectory);
                                         }
                                         //LOGGER.info("Tributary Nation at " + aq4 + " Overlord is " + subjectInfo[0]);
                                     }
@@ -676,17 +714,24 @@ public class Main
 
                                 //LOGGER.info (impTagInfo.get(aq4)[16] + " rules " + impTagInfo.get(aq4)[0] + "_" + aq4);
                                 
-                                String convCharacterCulture = Output.cultureOutput(cultureMappings,Character[1]);
+                                String convCharacterCulture = "";
                                 String charCountryCulture = impTagInfo.get(aq4)[6];
+                                if (impTagInfo.get(aq4)[17].equals("nomad")) { //if nomad, set ruler culture to state culture
+                                    //otherwise, all nomadic vassals will become tribal vassals
+                                    convCharacterCulture = charCountryCulture;
+                                } else {
+                                    convCharacterCulture = Output.cultureOutput(cultureMappings,Character[1]);
+                                }
+                                String charCountryTag = impTagInfo.get(aq4)[0];
                                 int charCountryCapital = Integer.parseInt(impTagInfo.get(aq4)[5]);
                                 String charCountryCapitalCounty = ck2ProvInfo[5][charCountryCapital];
                                 String convCharacterReligion = Output.religionOutput(religionMappings,convCharacterCulture,charCountryCulture,date,
-                                    Character[2],charCountryCapitalCounty,ck2Geo);
+                                    Character[2],charCountryCapitalCounty,ck2Geo,charCountryTag,converterSettings);
                                 //System.out.println("Capital for "+Character[0]+" is "+charCountryCapital+"|"+charCountryCapitalCounty+", rel = "+convCharacterReligion);
                                 convertedCharacters = Output.characterCreation(tempNum2, convCharacterCulture,convCharacterReligion,
                                     Character[3],Character[0],Character[7],Character[4],Character[8],Character[10],Character[11],Character[12],Character[13],Character[14],
                                     Character[15],impTagInfo.get(aq4)[17],"q","q",convertedCharacters,impCharInfoList,date,cultureMappings,
-                                    religionMappings,impTagInfo,ck2ProvInfo,ck2Geo,modDirectory);
+                                    religionMappings,impTagInfo,ck2ProvInfo,ck2Geo,converterSettings,modDirectory);
 
 
                                 Output.dynastyCreation(rulerDynasty,Character[7],Character[16],modDirectory);
@@ -732,7 +777,7 @@ public class Main
                                     
                                     convertedCharacters = Output.titleCreation(impTagInfo.get(aq4)[0],tempNum2,capitalColor,impTagInfo.get(aq4)[17],
                                     impTagInfo.get(aq4)[5],subRank,"no_liege",date,republicOption,Character[7],impDynList,impCharInfoList,convertedCharacters,
-                                    aq4,impTagInfo.get(aq4)[17],cultureMappings,religionMappings,impTagInfo,ck2ProvInfo,ck2Geo,modDirectory);
+                                    aq4,impTagInfo.get(aq4)[17],cultureMappings,religionMappings,impTagInfo,ck2ProvInfo,ck2Geo,converterSettings,modDirectory);
 
                                     
                                     String capitalName = "PROV"+impTagInfo.get(aq4)[24]; //use name of capital for generated kingdom
@@ -759,42 +804,88 @@ public class Main
                                 }
                                 
                                 impTagInfo.get(aq4)[22] = rank;
+                                String greatFamilies = "";
+                                if (impTagInfo.get(aq4)[17].equals("nomad")) {
+                                    String tagIDStr = Integer.toString(aq4);
+                                    greatFamilies = Characters.getMajorFamilies(impDynList,tagIDStr);
+                                }
+                                int greatFamilyNumber = 0;
 
                                 //governor conversion
                                 if (impTagInfo.get(aq4)[20] != "none" && subjectOrNot == 9999) {
                                     governorships = impTagInfo.get(aq4)[20].split(",");
                                     while (aq7 < governorships.length) {
                                         governor = governorships[aq7].split("~")[1]; 
-                                        governorID = Integer.toString(tempNum + Integer.parseInt(governor)); 
                                         govReg = governorships[aq7].split("~")[0]; 
                                         govRegID = impTagInfo.get(aq4)[0]+"__"+govReg; 
+                                        if (impTagInfo.get(aq4)[17].equals("nomad")) { //nomad governor conversion
+                                            //assign 1 governorship to each family head, leave the rest directly owned by the ruler
+                                            //System.out.println("Generating nomad governors for "+impTagInfo.get(aq4)[17]);
+                                            String[] greatFamilyList = greatFamilies.split(",");
+                                            int greatFamilyListLen = greatFamilyList.length-1;
+                                            greatFamilyNumber = greatFamilyNumber + 1;
+                                            if (greatFamilyNumber < greatFamilyListLen) {
+                                                String selectedFamily = greatFamilyList[greatFamilyNumber];//
+                                                if (selectedFamily.equals(Character[7])) {//ignore ruler family
+                                                    greatFamilyNumber = greatFamilyNumber + 1;
+                                                    selectedFamily = greatFamilyList[greatFamilyNumber];
+                                                }
+                                                if (aq7 < greatFamilyListLen) { //cede governorship to head of family
+                                                    //System.out.println("Selected family: "+selectedFamily);
+                                                    String[] dynasty = Characters.searchWholeDynasty(impDynList,selectedFamily);
+                                                    String head = Processing.calcHead(impCharInfoList,dynasty[4]);
+                                                    //System.out.println("Head: "+head);
+                                                    impTagInfo.get(aq4)[20] = Processing.modifyGovernor(impTagInfo.get(aq4)[20],govReg,head);
+                                                    governor = head;
+                                                } else { //cede governorship back to overlord
+                                                    governor = "0";
+                                                    impTagInfo.get(aq4)[20] = Processing.modifyGovernor(impTagInfo.get(aq4)[20],govReg,impTagInfo.get(aq4)[16]);
+                                                }
+                                            } else { //cede governorship back to overlord
+                                                governor = "0";
+                                                impTagInfo.get(aq4)[20] = Processing.modifyGovernor(impTagInfo.get(aq4)[20],govReg,impTagInfo.get(aq4)[16]);
+                                            }
+                                        }
+                                        
+                                        governorID = Integer.toString(tempNum + Integer.parseInt(governor)); 
 
                                         if (!subRank.equals("c")) {//For duchies, don't create governorship titles
                                             convertedCharacters = Output.titleCreation(govRegID,governorID,Processing.randomizeColor(),"no","none",subRank,
                                             impTagInfo.get(aq4)[0],date,republicOption,Character[7],impDynList,impCharInfoList,convertedCharacters,aq4,
-                                            "govq",cultureMappings,religionMappings,impTagInfo,ck2ProvInfo,ck2Geo,modDirectory);
+                                            "govq",cultureMappings,religionMappings,impTagInfo,ck2ProvInfo,ck2Geo,converterSettings,modDirectory);
                                             Output.copyFlag(ck2Dir,modDirectory,subRank,impTagInfo.get(aq4)[5],govRegID); //default flag for governorships
                                         }
                                         
-                                        govCharacter = impCharInfoList.get(Integer.parseInt(governor));
-                                        String govCharCulture = Output.cultureOutput(cultureMappings,govCharacter[1]);
-                                        String govCountryCulture = impTagInfo.get(aq4)[6];
-                                        int govCountryCapital = Integer.parseInt(impTagInfo.get(aq4)[5]);
-                                        String govCountryCapitalCounty = ck2ProvInfo[5][govCountryCapital];
-                                        String govCharReligion = Output.religionOutput(religionMappings,govCharCulture,govCountryCulture,date,
-                                            govCharacter[2],govCountryCapitalCounty,ck2Geo);
-                                        convertedCharacters = Output.characterCreation(governorID, govCharCulture,
-                                            govCharReligion,govCharacter[3],govCharacter[0],govCharacter[7],govCharacter[4],
-                                            govCharacter[8],govCharacter[10],govCharacter[11],govCharacter[12],govCharacter[13],
-                                            govCharacter[14],govCharacter[15],saveCharacters,"q","q",convertedCharacters,impCharInfoList,date,
-                                            cultureMappings,religionMappings,impTagInfo,ck2ProvInfo,ck2Geo,modDirectory);
+                                        if (!governor.equals("0")) { //if there's a valid governor, generate character
+                                            govCharacter = impCharInfoList.get(Integer.parseInt(governor));
+                                            String govCharCulture = "";
+                                            String govCountryCulture = impTagInfo.get(aq4)[6];
+                                            if (impTagInfo.get(aq4)[17].equals("nomad")) {
+                                                govCharCulture = govCountryCulture;
+                                            }
+                                            else { 
+                                                govCharCulture = Output.cultureOutput(cultureMappings,govCharacter[1]);
+                                            }
+                                            String govCountryTag = impTagInfo.get(aq4)[0];
+                                            int govCountryCapital = Integer.parseInt(impTagInfo.get(aq4)[5]);
+                                            String govCountryCapitalCounty = ck2ProvInfo[5][govCountryCapital];
+                                            String govCharReligion = Output.religionOutput(religionMappings,govCharCulture,govCountryCulture,date,
+                                                govCharacter[2],govCountryCapitalCounty,ck2Geo,govCountryTag,converterSettings);
+                                            convertedCharacters = Output.characterCreation(governorID, govCharCulture,
+                                                govCharReligion,govCharacter[3],govCharacter[0],govCharacter[7],govCharacter[4],
+                                                govCharacter[8],govCharacter[10],govCharacter[11],govCharacter[12],govCharacter[13],
+                                                govCharacter[14],govCharacter[15],saveCharacters,"q","q",convertedCharacters,impCharInfoList,date,
+                                                cultureMappings,religionMappings,impTagInfo,ck2ProvInfo,ck2Geo,converterSettings,modDirectory);
                                             
-                                        String governorDynasty = Characters.searchDynasty(impDynList,govCharacter[7]);
+                                            String governorDynasty = Characters.searchDynasty(impDynList,govCharacter[7]);
                                         
-                                        Output.dynastyCreation(governorDynasty,govCharacter[7],govCharacter[16],modDirectory);
+                                            Output.dynastyCreation(governorDynasty,govCharacter[7],govCharacter[16],modDirectory);
+                                        }
+                                        
 
                                         aq7 = aq7 + 1;
                                     }
+                                    //System.out.println(impTagInfo.get(aq4)[20]);
 
                                 }
 
@@ -806,11 +897,11 @@ public class Main
 
                 }catch (java.util.NoSuchElementException exception){
                     flag = 1;
-                    //LOGGER.config("NoSuchElementException and flag = 1");
+                    LOGGER.config("NoSuchElementException and flag = 1");
                 }
             }catch (java.lang.ArrayIndexOutOfBoundsException exception){
                 flag = 1;
-                //LOGGER.config("ArrayIndexOutOfBoundsException and flag = 1" + "_" + aq4);
+                LOGGER.config("ArrayIndexOutOfBoundsException and flag = 1" + "_" + aq4);
             }
             aq4 = 0;
             aq7 = 0;
@@ -865,7 +956,7 @@ public class Main
                                 } //English adjective endings
 
                                 dynCult = output.cultureOutput(cultureMappings,dynCult);
-                                dynRel = output.religionOutput(religionMappings,dynCult,dynCult,date,dynRel,ck2ProvInfo[5][aq4],ck2Geo);
+                                dynRel = output.religionOutput(religionMappings,dynCult,dynCult,date,dynRel,ck2ProvInfo[5][aq4],ck2Geo,"notag",converterSettings);
 
                                 String dynCharName = importedInfo[0] + "icus"; //county_name-icus, temporary naming solution instead of Glorious_Debug
 
@@ -876,12 +967,12 @@ public class Main
                                 Output.dynastyCreation("of "+importedInfo[0],ruler,"debug",modDirectory);
                                 Output.characterCreation(ruler,dynCult,dynRel,dynCharAge,dynCharName,ruler,"69","q","5","5","5","5","0","0",
                                 saveCharacters,"q","q",convertedCharacters,impCharInfoList,date,cultureMappings,religionMappings,impTagInfo,ck2ProvInfo,ck2Geo,
-                                modDirectory);
+                                converterSettings,modDirectory);
                                 String greyShade = Processing.randomizeColorGrey();
 
                                 convertedCharacters = Output.titleCreation("dynamic"+aq4,ruler,greyShade,"no",Integer.toString(aq4),"d","no_liege",date,republicOption,
                                 "noDynasty",impDynList,impCharInfoList,convertedCharacters,aq4,Integer.toString(aq4),cultureMappings,religionMappings,
-                                impTagInfo,ck2ProvInfo,ck2Geo,modDirectory);
+                                impTagInfo,ck2ProvInfo,ck2Geo,converterSettings,modDirectory);
                                 Output.localizationCreation(dynLoc,"dynamic"+aq4,"d",modDirectory);
                                 Output.copyFlag(ck2Dir,modDirectory,"d",Integer.toString(aq4),"dynamic"+aq4);
 
@@ -984,7 +1075,12 @@ public class Main
                                         tempNum2q = Integer.parseInt(ruler) + tempNum;
                                         ruler = Integer.toString(tempNum2q);
                                     } else { //if does not own capital, check if both are merchant republics
-                                        String overlordGov = Processing.checkGovList(impTagInfo.get(overlordID)[17],govMap);
+                                        String overlordGov = impTagInfo.get(overlordID)[17];
+                                        if (!overlordGov.equals("republic") && !overlordGov.equals("monarchy") && !overlordGov.equals("tribal")
+                                        && !overlordGov.equals("imperium") && !overlordGov.equals("nomad") && !overlordGov.equals("palace")) {
+                                            overlordGov = Processing.checkGovList(impTagInfo.get(overlordID)[17],govMap,impTagInfo.get(overlordID)[6],
+                                           impTagInfo.get(overlordID)[0],converterSettings);
+                                        }
                                         String overlordRank = impTagInfo.get(overlordID)[22];
                                         if (overlordGov.equals("republic") && gov.equals("republic") && republicOption.equals("repMer")) {
                                             gov = "monarchy"; //Merchant republics under merchant republics crash CK2
@@ -1002,13 +1098,16 @@ public class Main
                             String provCult = Output.cultureOutput(cultureMappings,ck2ProvInfo[1][aq4]);
                             int provOwner = Integer.parseInt(ck2ProvInfo[0][aq4]);
                             String provOwnerCult;
+                            String provOwnerTag;
                             if (provOwner == 9999) { //If province is uncolonized, use province culture as country culture
                                 provOwnerCult = provCult;
+                                provOwnerTag = "notag"; 
                             } else {
                                provOwnerCult = impTagInfo.get(provOwner)[6]; 
+                               provOwnerTag = impTagInfo.get(provOwner)[0]; 
                             }
                             String provReligion = Output.religionOutput(religionMappings,provCult,provOwnerCult,date,ck2ProvInfo[2][aq4],
-                            ck2ProvInfo[5][aq4],ck2Geo);
+                            ck2ProvInfo[5][aq4],ck2Geo,provOwnerTag,converterSettings);
                             Output.provinceCreation(Integer.toString(aq4),provCult,provReligion,modDirectory, importedInfo[1],importedInfo[0],gov,
                                 ck2PopTotals[aq4],bList,
                                 saveMonuments,republicOption,aq4);

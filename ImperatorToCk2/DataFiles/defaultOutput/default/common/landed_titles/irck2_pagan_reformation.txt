@@ -475,3 +475,29 @@ d_hurrian_reformed = {
 	
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 }
+
+d_hattian_reformed = {
+	color={ 0.88 0.88 0.88 }
+	color2={ 0.88 0.88 0.88 }
+	
+	capital = 1183 #	Bost
+	
+	title = "HEAD_HATTIAN_PRIEST"
+	title_female = "HEAD_HATTIAN_PRIESTESS"
+	foa = "HEAD_PRIEST_FOA"
+	
+	short_name = yes
+	
+	# Always exists
+	landless = yes	
+	
+	# Controls a religion
+	controls_religion = hattian_reformed
+	
+	religion = hattian_reformed
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}

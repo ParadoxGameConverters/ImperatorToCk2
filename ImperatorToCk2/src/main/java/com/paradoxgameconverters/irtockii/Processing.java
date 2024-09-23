@@ -111,6 +111,9 @@ public class Processing
                 if (qaaa.split(",")[0].equals(provID)){
                     endOrNot = false;
                     ckName = qaaa.split(",")[4];
+                    if (provIDnum == 103) { //Leon in Brittany and Spain have the same name in definition.csv
+                        ckName = "french_leon";  
+                    }
                     output[0] = ckName;
                     output[1] = importCK2ProvFile(ck2Dir,provIDnum,ckName)[0];
 
@@ -313,6 +316,27 @@ public class Processing
 
             provName = "kyzyl-su";
         }
+        
+        else if (provName.equals("naro_fominsk")) {
+
+            provName = "naro-fominsk";
+        }
+        
+        else if (provName.equals("orekhovo_zouievo")) {
+
+            provName = "orekhovo-zouievo";
+        }
+        
+        else if (provName.equals("monkhkhairkhan")) {
+
+            provName = "monkh_khairkhan";
+        }
+        
+        else if (provName.equals("suvraga_khairkan")) {
+
+            provName = "suvraga_khairkhan";
+        }
+        
 
         if (provName.equals ("error")) {
             flag = 3;  
@@ -340,6 +364,8 @@ public class Processing
                                 qaaa = qaaa.replace(bracket2,"");
                                 qaaa = qaaa.replace("=","");
                                 qaaa = qaaa.replace(" ","");
+                                qaaa = qaaa.replace(tab,"");
+                                qaaa = qaaa.split("#")[0]; //purge comments
                                 if (output != null) {
                                     output = output + "," + qaaa.split(" =")[0];
                                 } else { output = qaaa.split(" =")[0]; }
@@ -1377,7 +1403,7 @@ public class Processing
         return "a";
     }
 
-    public static String checkGovList (String gov, ArrayList<String> govMap) throws IOException //Imports government mappings
+    public static String checkGovListOLD (String gov, ArrayList<String> govMap) throws IOException //Imports government mappings
     {
 
         int flag = 0;
@@ -1418,6 +1444,24 @@ public class Processing
         }   
 
         return output;
+
+    }
+    
+    public static String checkGovList (String gov, ArrayList<String> govMap, String tagCulture, String tagTag, ArrayList<String> settings) throws IOException 
+    //Imports government mappings
+    {
+
+        //, String tagTag, String nomadSetting
+        
+        String ck2Culture = "a";
+        String date = "100.1.1";
+        
+        String ck2County = "none";
+        ArrayList<String[]> ck2Geo = new ArrayList<String[]>();
+
+        String govOutput = Output.religionOutput(govMap,ck2Culture,tagCulture,date,gov,ck2County,ck2Geo,tagTag,settings);
+
+        return govOutput;
 
     }
 
@@ -1935,7 +1979,7 @@ public class Processing
         return ck2ProvInfo;
     }
     
-    public static boolean checkForInvictus(ArrayList<String> modDirs) throws IOException
+    public static boolean checkForModID(ArrayList<String> modDirs,ArrayList<String> modIDMappings, String modMappingID) throws IOException
     //Checks whether or not user is using Imperator Invictus
     {
         int count = 0;
@@ -1944,7 +1988,7 @@ public class Processing
             String currentModDescDir = currentModDir+"/descriptor.mod";
             //System.out.println(currentModDir);
             //System.out.println(checkForInvictusID(currentModDir));
-            if (checkForInvictusID(currentModDir)) { //check for Invictus or HMOv2 Steam ID
+            if (checkForModID(currentModDir,modIDMappings,modMappingID)) { //check for Invictus or HMOv2 Steam ID
                 return true;
             } else { //Check for manual Invictus installations
                 File currentModDescFile = new File(currentModDescDir);
@@ -1955,7 +1999,7 @@ public class Processing
                     boolean endOrNot = true;
                     try {
                         while (endOrNot = true) {
-                            if (checkForInvictusID(line)) {
+                            if (checkForModID(line,modIDMappings,modMappingID)) {
                                 return true;
                             }
                             else {
@@ -1976,19 +2020,26 @@ public class Processing
         return false;
     }
     
-    public static boolean checkForInvictusID(String modDir) throws IOException
+    public static boolean checkForModID(String modDir,ArrayList<String> modIDMappings, String modMappingID) throws IOException
     //Check given directory to see whether or not it has an Invictus-based mod ID in it.
     //Will create false positive if a user has a file with invModID in name, but shouldn't be an issue due to how long invModID is.
     {
         ArrayList<String> invModIDList = new ArrayList(); //List of all known Invictus-based mod ID's
-        invModIDList.add("2532715348");
-        invModIDList.add("2723164890");
-        invModIDList.add("2971810224");
-        invModIDList.add("2651142140");
-        invModIDList.add("2765744228");
-        invModIDList.add("2856497654");
-        invModIDList.add("3014203278");
-        invModIDList.add("3019975862");
+        
+        int modMappingCount = 0;
+        while (modMappingCount < modIDMappings.size()) {
+            String rawImport = modIDMappings.get(modMappingCount);
+            if (rawImport.contains(",")) {
+                rawImport = rawImport.split("#")[0]; //ignores comments
+                String[] currentModID = rawImport.split(",");
+                if (currentModID[1].equals(modMappingID)) {
+                    invModIDList.add(currentModID[0]);
+                }
+            }
+            
+            modMappingCount = modMappingCount + 1;
+        }
+        
         
         int count = 0;
         while (count < invModIDList.size()) {
@@ -2214,6 +2265,27 @@ public class Processing
         }
 
         return impTagInfo;
+    }
+    
+    public static String modifyGovernor(String governorships, String region, String newGovernor) throws IOException
+    {
+        int count = 0;
+        String[] governorshipList = governorships.split(",");
+        
+        while (count < governorshipList.length) {
+            String govInfo = governorshipList[count];
+            String selectedRegion = govInfo.split("~")[0];
+            if (selectedRegion.equals(region)) {
+                String repackagedGovernorship = selectedRegion+"~"+newGovernor;
+                governorships = governorships.replace(govInfo,repackagedGovernorship);
+                count = 1 + governorshipList.length;
+            }
+            
+            count = count + 1;
+            
+        }
+
+        return governorships;
     }
 
 }

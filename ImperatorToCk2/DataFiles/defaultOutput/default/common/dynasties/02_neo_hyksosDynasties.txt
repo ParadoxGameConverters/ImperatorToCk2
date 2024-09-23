@@ -1,0 +1,480 @@
+5403000=
+{
+	name="Abbarid"
+	culture="neo_hyksos"
+}
+5403001=
+{
+	name="Abbarid"
+	culture="neo_hyksos"
+}
+5403002=
+{
+	name="Abbarid"
+	culture="neo_hyksos"
+}
+5403003=
+{
+	name="Abbarid"
+	culture="neo_hyksos"
+}
+5403004=
+{
+	name="Adonibaal"
+	culture="neo_hyksos"
+}
+5403005=
+{
+	name="Adonibaalid"
+	culture="neo_hyksos"
+}
+5403006=
+{
+	name="Adonibaalid"
+	culture="neo_hyksos"
+}
+5403007=
+{
+	name="Adonibaalid"
+	culture="neo_hyksos"
+}
+5403008=
+{
+	name="Ahirom"
+	culture="neo_hyksos"
+}
+5403009=
+{
+	name="Ahiromid"
+	culture="neo_hyksos"
+}
+5403010=
+{
+	name="Ahiromid"
+	culture="neo_hyksos"
+}
+5403011=
+{
+	name="Ahiromid"
+	culture="neo_hyksos"
+}
+5403012=
+{
+	name="Baalhannid"
+	culture="neo_hyksos"
+}
+5403013=
+{
+	name="Baalhannid"
+	culture="neo_hyksos"
+}
+5403014=
+{
+	name="Baalhannid"
+	culture="neo_hyksos"
+}
+5403015=
+{
+	name="Baalhannid"
+	culture="neo_hyksos"
+}
+5403016=
+{
+	name="Baalid"
+	culture="neo_hyksos"
+}
+5403017=
+{
+	name="Baalid"
+	culture="neo_hyksos"
+}
+5403018=
+{
+	name="Baalid"
+	culture="neo_hyksos"
+}
+5403019=
+{
+	name="Baalid"
+	culture="neo_hyksos"
+}
+5403020=
+{
+	name="Barca"
+	culture="neo_hyksos"
+}
+5403021=
+{
+	name="Barca"
+	culture="neo_hyksos"
+}
+5403022=
+{
+	name="Barcid"
+	culture="neo_hyksos"
+}
+5403023=
+{
+	name="Barcid"
+	culture="neo_hyksos"
+}
+5403024=
+{
+	name="Bodona"
+	culture="neo_hyksos"
+}
+5403025=
+{
+	name="Bodona"
+	culture="neo_hyksos"
+}
+5403026=
+{
+	name="Bodonid"
+	culture="neo_hyksos"
+}
+5403027=
+{
+	name="Bodonid"
+	culture="neo_hyksos"
+}
+5403028=
+{
+	name="Bostara"
+	culture="neo_hyksos"
+}
+5403029=
+{
+	name="Bostara"
+	culture="neo_hyksos"
+}
+5403030=
+{
+	name="Bostarid"
+	culture="neo_hyksos"
+}
+5403031=
+{
+	name="Bostarid"
+	culture="neo_hyksos"
+}
+5403032=
+{
+	name="Chelbesid"
+	culture="neo_hyksos"
+}
+5403033=
+{
+	name="Chelbesid"
+	culture="neo_hyksos"
+}
+5403034=
+{
+	name="Chelbesid"
+	culture="neo_hyksos"
+}
+5403035=
+{
+	name="Chelbesid"
+	culture="neo_hyksos"
+}
+5403036=
+{
+	name="Eshbaalid"
+	culture="neo_hyksos"
+}
+5403037=
+{
+	name="Eshbaalid"
+	culture="neo_hyksos"
+}
+5403038=
+{
+	name="Eshbaalid"
+	culture="neo_hyksos"
+}
+5403039=
+{
+	name="Eshbaalid"
+	culture="neo_hyksos"
+}
+5403040=
+{
+	name="Eugorid"
+	culture="neo_hyksos"
+}
+5403041=
+{
+	name="Eugorid"
+	culture="neo_hyksos"
+}
+5403042=
+{
+	name="Eugorid"
+	culture="neo_hyksos"
+}
+5403043=
+{
+	name="Eugorid"
+	culture="neo_hyksos"
+}
+5403044=
+{
+	name="Hannid"
+	culture="neo_hyksos"
+}
+5403045=
+{
+	name="Hannid"
+	culture="neo_hyksos"
+}
+5403046=
+{
+	name="Hannid"
+	culture="neo_hyksos"
+}
+5403047=
+{
+	name="Hannid"
+	culture="neo_hyksos"
+}
+5403048=
+{
+	name="Hiramid"
+	culture="neo_hyksos"
+}
+5403049=
+{
+	name="Hiramid"
+	culture="neo_hyksos"
+}
+5403050=
+{
+	name="Hiramid"
+	culture="neo_hyksos"
+}
+5403051=
+{
+	name="Hiramid"
+	culture="neo_hyksos"
+}
+5403052=
+{
+	name="Mago"
+	culture="neo_hyksos"
+}
+5403053=
+{
+	name="Mago"
+	culture="neo_hyksos"
+}
+5403054=
+{
+	name="Magid"
+	culture="neo_hyksos"
+}
+5403055=
+{
+	name="Magid"
+	culture="neo_hyksos"
+}
+5403056=
+{
+	name="Mattanid"
+	culture="neo_hyksos"
+}
+5403057=
+{
+	name="Mattanid"
+	culture="neo_hyksos"
+}
+5403058=
+{
+	name="Mattanid"
+	culture="neo_hyksos"
+}
+5403059=
+{
+	name="Mattanid"
+	culture="neo_hyksos"
+}
+5403060=
+{
+	name="Metallid"
+	culture="neo_hyksos"
+}
+5403061=
+{
+	name="Metallid"
+	culture="neo_hyksos"
+}
+5403062=
+{
+	name="Metallid"
+	culture="neo_hyksos"
+}
+5403063=
+{
+	name="Metallid"
+	culture="neo_hyksos"
+}
+5403064=
+{
+	name="Milkiramid"
+	culture="neo_hyksos"
+}
+5403065=
+{
+	name="Milkiramid"
+	culture="neo_hyksos"
+}
+5403066=
+{
+	name="Milkiramid"
+	culture="neo_hyksos"
+}
+5403067=
+{
+	name="Milkiramid"
+	culture="neo_hyksos"
+}
+5403068=
+{
+	name="Philosirid"
+	culture="neo_hyksos"
+}
+5403069=
+{
+	name="Philosirid"
+	culture="neo_hyksos"
+}
+5403070=
+{
+	name="Philosirid"
+	culture="neo_hyksos"
+}
+5403071=
+{
+	name="Philosirid"
+	culture="neo_hyksos"
+}
+5403072=
+{
+	name="Gisgo"
+	culture="neo_hyksos"
+}
+5403073=
+{
+	name="Gisgo"
+	culture="neo_hyksos"
+}
+5403074=
+{
+	name="Gisgoid"
+	culture="neo_hyksos"
+}
+5403075=
+{
+	name="Gisgoid"
+	culture="neo_hyksos"
+}
+5403076=
+{
+	name="Gerbalid"
+	culture="neo_hyksos"
+}
+5403077=
+{
+	name="Gerbalid"
+	culture="neo_hyksos"
+}
+5403078=
+{
+	name="Gerbalid"
+	culture="neo_hyksos"
+}
+5403079=
+{
+	name="Gerbalid"
+	culture="neo_hyksos"
+}
+5403080=
+{
+	name="Hammid"
+	culture="neo_hyksos"
+}
+5403081=
+{
+	name="Hammid"
+	culture="neo_hyksos"
+}
+5403082=
+{
+	name="Hammid"
+	culture="neo_hyksos"
+}
+5403083=
+{
+	name="Hammid"
+	culture="neo_hyksos"
+}
+5403084=
+{
+	name="Eugarid"
+	culture="neo_hyksos"
+}
+5403085=
+{
+	name="Eugarid"
+	culture="neo_hyksos"
+}
+5403086=
+{
+	name="Eugarid"
+	culture="neo_hyksos"
+}
+5403087=
+{
+	name="Eugarid"
+	culture="neo_hyksos"
+}
+5403088=
+{
+	name="Mashhid"
+	culture="neo_hyksos"
+}
+5403089=
+{
+	name="Mashhid"
+	culture="neo_hyksos"
+}
+5403090=
+{
+	name="Mashhid"
+	culture="neo_hyksos"
+}
+5403091=
+{
+	name="Mashhid"
+	culture="neo_hyksos"
+}
+5403092=
+{
+	name="Ummashid"
+	culture="neo_hyksos"
+}
+5403093=
+{
+	name="Ummashid"
+	culture="neo_hyksos"
+}
+5403094=
+{
+	name="Ummashid"
+	culture="neo_hyksos"
+}
+5403095=
+{
+	name="Ummashid"
+	culture="neo_hyksos"
+}

@@ -100,6 +100,8 @@ tamil,e_deccan,k_tamilakam
 telugu,e_deccan,k_telingana
 prussian,e_wendish_empire,k_lithuania
 ugricbaltic,e_scandinavia,k_estonia
+meshchera,e_idel_ural,k_volga_bulgaria
+mordvin,e_idel_ural,k_volga_bulgaria
 kurdish,e_persia,k_persia
 
 saxon,e_britannia,k_england
@@ -133,3 +135,5 @@ tol,e_MHQ,k_MHQ
 shan,e_bengal,k_bengal
 pyu,e_bengal,k_bengal
 mon,e_bengal,k_bengal
+
+neo_hyksos,e_EGT,k_EGT

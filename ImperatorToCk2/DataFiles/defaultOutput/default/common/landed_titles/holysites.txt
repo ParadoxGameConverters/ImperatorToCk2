@@ -525,3 +525,26 @@ c_toledo={ #Capital of the Visigoths
 	holy_site = arian
 }
 
+#Hattian
+
+c_galatia={ #Capital and holy city of the Hittites and Hatti
+	holy_site = hattian
+	holy_site = hattian_reformed
+}
+c_edessa={ #Closest to Wassukani
+	holy_site = hattian
+	holy_site = hattian_reformed
+}
+c_sinope={ #Site of Zalpa, which is possibly Zalpuwa
+	holy_site = hattian
+	holy_site = hattian_reformed
+}
+c_ikonion={ #Site of Catalhuyuk, to whom the Hatti were possibly related
+	holy_site = hattian
+	holy_site = hattian_reformed
+}
+c_lykia={
+	holy_site = hattian
+	holy_site = hattian_reformed
+}
+

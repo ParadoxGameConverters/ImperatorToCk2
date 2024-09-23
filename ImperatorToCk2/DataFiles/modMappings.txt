@@ -1,0 +1,13 @@
+#For checking major map overhaul mods that'd need to use another set of province mappings
+#Options are invictus and invictus1_7
+
+2532715348,invictus
+2723164890,invictus1_7
+2971810224,invictus1_7
+2651142140,invictus1_7
+2765744228,invictus1_7
+2856497654,invictus
+3014203278,invictus1_7
+3019975862,invictus1_7
+3181950031,invictus1_7
+

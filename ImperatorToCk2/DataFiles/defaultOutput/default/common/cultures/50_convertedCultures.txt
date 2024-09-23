@@ -543,6 +543,49 @@ punic = {
 		modifier = default_culture_modifier
 
 	}
+	neo_hyksos = {
+		graphical_cultures = { levantinegfx byzantinegfx }
+		alternate_start = {
+			OR = {
+				year < 1000
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+
+		color = { 0.58 0.68 0.56 }
+
+		# Þ 222 þ 254 Ð 208 ð 240 æ
+
+		male_names = {
+			Abbar Abdmelqart Adonibaal Agbal Ahirom Azimilik Baal Baalhanno Bodashtart Bodo Bodmelqart Bomilcar Bostar Boulomenus Carthalo Chelbes
+			Eshbaal Eugoras Germelqart Hamilcar Hannibal Hanno Hasdrubal Himilco Hiram Mago Maharbal Mattan Metallo Milkherem Milkiram
+			Paltibaal Philosir Boodes Bomical Gisgo Malchus Abdhamon Abibaal Abirami Ahumm Eshmounhilles Eshmouniaton Itthobaal
+			Ummashtart Melqartshama Batnoam Urumilki Yehomilk Yadamilk Baaliaton Barekbaal Gerbaal Gerimilki Khiletzbaal Tabnit Yutpan Zimrida
+			Danel Kanmi Maharbaal Milkpilles Melqartpilles Milkyaton Massinissa Hiempsal Juba
+		}
+		female_names = {
+			Abdosir Arishat Astarte Batnoam Dido Shayna Sophonisba Tamar Adiya Tabua Yapa Ytab Suhaima Huldu Mashah Gamila Asherah Izavel Iezabel Elissa Muttunbaal
+		}
+
+		from_dynasty_prefix = "of "
+
+		prefix = no # The patronym is added as a suffix
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		seafarer = yes
+
+		modifier = default_culture_modifier
+
+	}
 }
 
 
@@ -804,19 +847,13 @@ pre_indo_european = {
 		# Þ 222 þ 254 Ð 208 ð 240 æ
 
 		male_names = {
-			Amtnie Amuni Anche Anthai Aninas Arunth Araz Arzni Arnth Autu Aule Cei Ceile Ceisi
-			Cire Cnaive Clate Cruthni Cuinte Cursni Fapi Felce Felsnas Fulu Hapre Hirumina Husi
-			Carcuna Carthasie Ceisie Cavie Larce Laris Larth Larthuza Laucie Lauche Lethei
-			Licine Lucer Mamurce Marce Murila Numna Pesna Petru Plikasnas Plute Presnte
-			Pumpu Puplie Cupe Ranazu Rasce Ruvfe Ruifre Sanchuna Scarpe Sethre Spitus Spurie Squrie
-			Tarchi Teitur Thefri Thucer Ticusna Tite Tlesna Tursikina Tusnute Uchsie Uchulni Usele
-			Vel Velchaie Velthur Venel Vetus Vipie
+			Azi Elkganu Enike Esimne "Esst'u" Estanu Esumne Kanise "Kat'iave" Ketanu Kgaisuru Kgika Klevie Knuse
+			Laseke Lassanu Lasta "Last'e" "Lat'ur" Lavise Lavisie Lumene Munie Phausu Phelturie Phelzurie Phrima Phutikgi
+			Pitale "Pit'amne" "Pit'iave" "Pit'ie" Piti Pitie Piri "Reit'e" Reituse Remie Tarie Tenakgi Terunie Tnake "T'arie" Tula 
+			Tulanu Ustitsu "Valt'ikie" Vassa Vatsanu "Velt'ie" 
 		}
 		female_names = {
-			Anina Aprthni Apunei Arunthia Arzna Arntha Ati Aula Ceia Culni Cursi Cusua Fasthi
-			Hasthi Hercnei Kanuta Larthi Lethi Luci Matun Metli Numni Pulia Racu Ramtha Ranthu
-			Ravnthu Satlnei Sela Semni Sethri Squria Squlina Tanchuil Tarcha Teituri Thanchvil
-			Thana Thefrina Thestia Thuceru Ticusnei Titi Veli Velchina Venela Vesi Vipi
+			Aruse Arusna Kara Kari Kgari Kgeli Kgevisiana Lavise Lavissa Perkusi Phelna Piri Remi Siara
 		}
 
 		from_dynasty_prefix = "of "
