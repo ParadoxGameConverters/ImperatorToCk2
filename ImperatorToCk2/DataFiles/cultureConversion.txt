@@ -120,6 +120,7 @@ eravisci,celtic_pannonian
 teurian,celtic_pannonian
 cotinian,celtic_pannonian
 galatian,galatian
+tylian,galatian
 
 #Gaelic
 
