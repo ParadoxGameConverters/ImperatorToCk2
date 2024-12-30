@@ -81,7 +81,7 @@ Imperator:Invictus mod Paradox Mods Website link: https://mods.paradoxplaza.com/
  - AND ALL THE OTHERS WHO GAVE THEIR INPUT ON THE FORUM AND DISCORD -
  
  Credit to ImageMagick Studio LLC for their ImageMagick software (magick.exe) used to generate Imperator:Rome flags.
- Note: Neither ImageMagick Studio LLC nor their affiliates ensorse the Imperator:Rome to Crusader Kings II Converter, nor do they endorse the Paradox Game
+ Note: Neither ImageMagick Studio LLC nor their affiliates endorse the Imperator:Rome to Crusader Kings II Converter, nor do they endorse the Paradox Game
  Converters Group or this redistribution of their software.
  
  Below is the license under which ImageMagick Studio LLC's ImageMagick software (magick.exe) is redistributed:
