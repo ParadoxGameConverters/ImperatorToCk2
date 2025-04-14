@@ -1,0 +1,100 @@
+5411000=
+{
+	name="Utruwasu"
+	culture="hatti_culture"
+}
+5411001=
+{
+	name="Temetteni"
+	culture="hatti_culture"
+}
+5411002=
+{
+	name="Simnuman"
+	culture="hatti_culture"
+}
+5411003=
+{
+	name="Walkui"
+	culture="hatti_culture"
+}
+5411004=
+{
+	name="Huhasarma"
+	culture="hatti_culture"
+}
+5411005=
+{
+	name="Walahsina"
+	culture="hatti_culture"
+}
+5411006=
+{
+	name="Ashapala"
+	culture="hatti_culture"
+}
+5411007=
+{
+	name="Immaraziti"
+	culture="hatti_culture"
+}
+5411008=
+{
+	name="Hasarti"
+	culture="hatti_culture"
+}
+5411009=
+{
+	name="Tarhupiya"
+	culture="hatti_culture"
+}
+5411010=
+{
+	name="Niwalla"
+	culture="hatti_culture"
+}
+5411011=
+{
+	name="Piha"
+	culture="hatti_culture"
+}
+5411012=
+{
+	name="Tawaniyama"
+	culture="hatti_culture"
+}
+5411013=
+{
+	name="Takuhili"
+	culture="hatti_culture"
+}
+5411014=
+{
+	name="Zuzzu"
+	culture="hatti_culture"
+}
+5411015=
+{
+	name="Zuru"
+	culture="hatti_culture"
+}
+5411016=
+{
+	name="Siptikuni"
+	culture="hatti_culture"
+}
+5411017=
+{
+	name="Pazzu"
+	culture="hatti_culture"
+}
+5411018=
+{
+	name="Zida"
+	culture="hatti_culture"
+}
+5411019=
+{
+	name="Attaniya"
+	culture="hatti_culture"
+}

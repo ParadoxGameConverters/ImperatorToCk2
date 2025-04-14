@@ -1358,6 +1358,7 @@ public class Importer
                 qaaa = qaaa.replace(" = ","=");
                 qaaa = qaaa.replace("= ","=");
                 qaaa = qaaa.replace(" =","=");
+                qaaa = qaaa.replace(quote+" ",quote+"");
                 qaaa = qaaa.replace("    ",tab); //Some flags have strange formatting
                 qaaa = qaaa.replace(" color2=",tab+"color2="); //Some flags have strange formatting
                 if (qaaa.contains("#") && !qaaa.equals("#") && qaaa.charAt(0)!= '#') {
@@ -1442,6 +1443,7 @@ public class Importer
                         qaaa = qaaa.replace(" = ","=");
                         qaaa = qaaa.replace("= ","=");
                         qaaa = qaaa.replace(" =","=");
+                        qaaa = qaaa.replace(quote+" ",quote+"");
                         qaaa = qaaa.replace("    ",tab); // to fix Invictus Judea Countries file formatting
                         
                         qaaa = qaaa.replace(" color2=",tab+"color2="); // to fix Invictus Barbaricum Countries file formatting

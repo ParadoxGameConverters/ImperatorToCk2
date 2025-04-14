@@ -1,0 +1,212 @@
+5412008=
+{
+	name="Kantakouzenos"
+	culture="minoan"
+	religion="orthodox"
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 8
+			texture_internal = 45
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+5412009=
+{
+	name="Palaiologos"
+	culture="minoan"
+	religion="orthodox"
+	coat_of_arms=
+	{
+		data=
+		{
+0 3 0 32 0 0 0 			}
+		religion="catholic"
+	}
+	used_for_random=no
+}
+5412010=
+{
+	name="Komnenos"
+	culture="minoan"
+}
+5412011=
+{
+	name="Macrodoukas"
+	culture="minoan"
+	religion="orthodox"
+}
+5412012=
+{
+	name="Aineidas"
+	culture="minoan"
+}
+5412013=
+{
+	name="Kantakouzenos"
+	culture="minoan"
+}
+5412014 = {
+	name="Pegonitissos"
+	culture="minoan"
+	religion="orthodox"
+	coat_of_arms=
+	{
+		data=
+		{
+0 0 0 26 7 0 0 			}
+		religion="orthodox"
+	}
+}
+5412015 = {
+	name="Angelos"
+	culture="minoan"
+	religion="orthodox"
+	coat_of_arms=
+	{
+		data=
+		{
+0 5 0 9 0 0 0 			}
+		religion="catholic"
+	}
+}
+
+5412016 = {
+	name="Kastriotis"
+	culture="minoan"
+}
+
+5412017 ={
+	name="Doukas Kamateros"
+	culture="minoan"
+}
+5412018 ={
+	name="Kamateros"
+	culture="minoan"
+	religion="orthodox"
+}
+5412019 ={
+	name="Skleros"
+	culture="minoan"
+	religion="orthodox"
+	coat_of_arms=
+	{
+		data=
+		{
+0 5 0 18 0 0 0 			}
+		religion="catholic"
+	}
+}
+5412020 ={
+	name="Palaiologos"
+	culture="minoan"
+	religion="orthodox"
+}
+5412021 ={
+	name="Makrembolites"
+	culture="minoan"
+	religion="orthodox"
+	coat_of_arms=
+	{
+		data=
+		{
+0 1 0 2 2 1 0 			}
+		religion="orthodox"
+	}
+}
+5412022 ={
+	name="Botaneiates"
+	culture="minoan"
+	religion="orthodox"
+	coat_of_arms=
+	{
+		data=
+		{
+0 8 0 36 0 0 0 			}
+		religion="catholic"
+	}
+}
+5412023 = {
+	name="Aaron"
+	culture="minoan"
+}
+5412024 = {
+	name = "Ljauelgeitis"
+	culture = magnaminoan
+}
+5412025 = {
+	name="Grammatikos"
+	culture="minoan"
+}
+5412026 = {
+	name="Zeno"
+	culture="minoan"
+}
+5412027 = {
+	name="Bua Spatas"
+	culture="minoan"
+}
+5412028 = {
+	name="Karatzas"
+	culture="minoan"
+}
+5412029 = {
+	name="Amiroutzes"
+	culture="minoan"
+}
+5412030 = {
+	name="Bessarion"
+	culture="minoan"
+}
+5412031 = {
+	name="Chalkokondyles"
+	culture="minoan"
+}
+5412032 = {
+	name="Gazis"
+	culture="minoan"
+}
+5412033 = {
+	name="Kallistos"
+	culture="minoan"
+}
+5412034 = {
+	name="Kladas"
+	culture="minoan"
+}
+5412035 = {
+	name="de Patras"
+	culture="minoan"
+}
+5412036 = {
+	name="Gemistus"
+	culture="minoan"
+}
+5412037 = {
+	name="Allatios"
+	culture="minoan"
+}
+5412038 = {
+	name="Chalcocondyles"
+	culture="minoan"
+}
+5412039 = {
+	name="Korniaktos"
+	culture="minoan"
+}
+5412040 = {
+	name="Damaskenos"
+	culture="minoan"
+}
+5412041 = {
+	name="Heraclides"
+	culture="minoan"
+}
+5412042 = {
+	name="Kallokratos"
+	culture="minoan"
+}

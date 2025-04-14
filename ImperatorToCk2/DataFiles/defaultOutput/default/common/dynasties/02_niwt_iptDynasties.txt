@@ -1,0 +1,500 @@
+5416000=
+{
+	name="Ahmid"
+	culture="niwt_ipt"
+}
+5416001=
+{
+	name="Ahmid"
+	culture="niwt_ipt"
+}
+5416002=
+{
+	name="Ahmid"
+	culture="niwt_ipt"
+}
+5416003=
+{
+	name="Ahmid"
+	culture="niwt_ipt"
+}
+5416004=
+{
+	name="Galestus"
+	culture="niwt_ipt"
+}
+5416005=
+{
+	name="Galestid"
+	culture="niwt_ipt"
+}
+5416006=
+{
+	name="Galestid"
+	culture="niwt_ipt"
+}
+5416007=
+{
+	name="Galestid"
+	culture="niwt_ipt"
+}
+5416008=
+{
+	name="Kenamus"
+	culture="niwt_ipt"
+}
+5416009=
+{
+	name="Kenamid"
+	culture="niwt_ipt"
+}
+5416010=
+{
+	name="Kenamid"
+	culture="niwt_ipt"
+}
+5416011=
+{
+	name="Kenamid"
+	culture="niwt_ipt"
+}
+5416012=
+{
+	name="Naravid"
+	culture="niwt_ipt"
+}
+5416013=
+{
+	name="Naravid"
+	culture="niwt_ipt"
+}
+5416014=
+{
+	name="Naravid"
+	culture="niwt_ipt"
+}
+5416015=
+{
+	name="Naravid"
+	culture="niwt_ipt"
+}
+5416016=
+{
+	name="Penamus"
+	culture="niwt_ipt"
+}
+5416017=
+{
+	name="Penamid"
+	culture="niwt_ipt"
+}
+5416018=
+{
+	name="Penamid"
+	culture="niwt_ipt"
+}
+5416019=
+{
+	name="Penamid"
+	culture="niwt_ipt"
+}
+5416020=
+{
+	name="Senuid"
+	culture="niwt_ipt"
+}
+5416021=
+{
+	name="Senuid"
+	culture="niwt_ipt"
+}
+5416022=
+{
+	name="Senuid"
+	culture="niwt_ipt"
+}
+5416023=
+{
+	name="Senuid"
+	culture="niwt_ipt"
+}
+5416024=
+{
+	name="Setnid"
+	culture="niwt_ipt"
+}
+5416025=
+{
+	name="Setnid"
+	culture="niwt_ipt"
+}
+5416026=
+{
+	name="Setnid"
+	culture="niwt_ipt"
+}
+5416027=
+{
+	name="Setnid"
+	culture="niwt_ipt"
+}
+5416028=
+{
+	name="Arganid"
+	culture="niwt_ipt"
+}
+5416029=
+{
+	name="Arganid"
+	culture="niwt_ipt"
+}
+5416030=
+{
+	name="Arganid"
+	culture="niwt_ipt"
+}
+5416031=
+{
+	name="Arganid"
+	culture="niwt_ipt"
+}
+5416032=
+{
+	name="Psammid"
+	culture="niwt_ipt"
+}
+5416033=
+{
+	name="Psammid"
+	culture="niwt_ipt"
+}
+5416034=
+{
+	name="Psammid"
+	culture="niwt_ipt"
+}
+5416035=
+{
+	name="Psammid"
+	culture="niwt_ipt"
+}
+5416036=
+{
+	name="Philothid"
+	culture="niwt_ipt"
+}
+5416037=
+{
+	name="Philothid"
+	culture="niwt_ipt"
+}
+5416038=
+{
+	name="Philothid"
+	culture="niwt_ipt"
+}
+5416039=
+{
+	name="Philothid"
+	culture="niwt_ipt"
+}
+5416040=
+{
+	name="Timolid"
+	culture="niwt_ipt"
+}
+5416041=
+{
+	name="Timolid"
+	culture="niwt_ipt"
+}
+5416042=
+{
+	name="Timolid"
+	culture="niwt_ipt"
+}
+5416043=
+{
+	name="Timolid"
+	culture="niwt_ipt"
+}
+5416044=
+{
+	name="Zosid"
+	culture="niwt_ipt"
+}
+5416045=
+{
+	name="Zosid"
+	culture="niwt_ipt"
+}
+5416046=
+{
+	name="Zosid"
+	culture="niwt_ipt"
+}
+5416047=
+{
+	name="Zosid"
+	culture="niwt_ipt"
+}
+5416048=
+{
+	name="Phileid"
+	culture="niwt_ipt"
+}
+5416049=
+{
+	name="Phileid"
+	culture="niwt_ipt"
+}
+5416050=
+{
+	name="Phileid"
+	culture="niwt_ipt"
+}
+5416051=
+{
+	name="Phileid"
+	culture="niwt_ipt"
+}
+5416052=
+{
+	name="Nicodemid"
+	culture="niwt_ipt"
+}
+5416053=
+{
+	name="Nicodemid"
+	culture="niwt_ipt"
+}
+5416054=
+{
+	name="Nicodemid"
+	culture="niwt_ipt"
+}
+5416055=
+{
+	name="Nicodemid"
+	culture="niwt_ipt"
+}
+5416056=
+{
+	name="Nefarid"
+	culture="niwt_ipt"
+}
+5416057=
+{
+	name="Nefarid"
+	culture="niwt_ipt"
+}
+5416058=
+{
+	name="Nefarid"
+	culture="niwt_ipt"
+}
+5416059=
+{
+	name="Nefarid"
+	culture="niwt_ipt"
+}
+5416060=
+{
+	name="Bastid"
+	culture="niwt_ipt"
+}
+5416061=
+{
+	name="Bastid"
+	culture="niwt_ipt"
+}
+5416062=
+{
+	name="Bastid"
+	culture="niwt_ipt"
+}
+5416063=
+{
+	name="Bastid"
+	culture="niwt_ipt"
+}
+5416064=
+{
+	name="Xeneid"
+	culture="niwt_ipt"
+}
+5416065=
+{
+	name="Xeneid"
+	culture="niwt_ipt"
+}
+5416066=
+{
+	name="Xeneid"
+	culture="niwt_ipt"
+}
+5416067=
+{
+	name="Xeneid"
+	culture="niwt_ipt"
+}
+5416068=
+{
+	name="Naravid"
+	culture="niwt_ipt"
+}
+5416069=
+{
+	name="Naravid"
+	culture="niwt_ipt"
+}
+5416070=
+{
+	name="Naravid"
+	culture="niwt_ipt"
+}
+5416071=
+{
+	name="Naravid"
+	culture="niwt_ipt"
+}
+5416072=
+{
+	name="Ezanid"
+	culture="niwt_ipt"
+}
+5416073=
+{
+	name="Ezanid"
+	culture="niwt_ipt"
+}
+5416074=
+{
+	name="Ezanid"
+	culture="niwt_ipt"
+}
+5416075=
+{
+	name="Ezanid"
+	culture="niwt_ipt"
+}
+5416076=
+{
+	name="Ahmid"
+	culture="niwt_ipt"
+}
+5416077=
+{
+	name="Ahmid"
+	culture="niwt_ipt"
+}
+5416078=
+{
+	name="Ahmid"
+	culture="niwt_ipt"
+}
+5416079=
+{
+	name="Ahmid"
+	culture="niwt_ipt"
+}
+5416080=
+{
+	name="Alarus"
+	culture="niwt_ipt"
+}
+5416081=
+{
+	name="Alara"
+	culture="niwt_ipt"
+}
+5416082=
+{
+	name="Alarid"
+	culture="niwt_ipt"
+}
+5416083=
+{
+	name="Alarid"
+	culture="niwt_ipt"
+}
+5416084=
+{
+	name="Harsiotes"
+	culture="niwt_ipt"
+}
+5416085=
+{
+	name="Harsiotes"
+	culture="niwt_ipt"
+}
+5416086=
+{
+	name="Harsiotid"
+	culture="niwt_ipt"
+}
+5416087=
+{
+	name="Harsiotid"
+	culture="niwt_ipt"
+}
+5416088=
+{
+	name="Henus"
+	culture="niwt_ipt"
+}
+5416089=
+{
+	name="Hena"
+	culture="niwt_ipt"
+}
+5416090=
+{
+	name="Henid"
+	culture="niwt_ipt"
+}
+5416091=
+{
+	name="Henid"
+	culture="niwt_ipt"
+}
+5416092=
+{
+	name="Ibus"
+	culture="niwt_ipt"
+}
+5416093=
+{
+	name="Iba"
+	culture="niwt_ipt"
+}
+5416094=
+{
+	name="Ibid"
+	culture="niwt_ipt"
+}
+5416095=
+{
+	name="Ibid"
+	culture="niwt_ipt"
+}
+5416096=
+{
+	name="Khabbash"
+	culture="niwt_ipt"
+}
+5416097=
+{
+	name="Khabbash"
+	culture="niwt_ipt"
+}
+5416098=
+{
+	name="Khabbashid"
+	culture="niwt_ipt"
+}
+5416099=
+{
+	name="Khabbashid"
+	culture="niwt_ipt"
+}

@@ -1,0 +1,500 @@
+5410000=
+{
+	name="Aramid"
+	culture="trojan"
+}
+5410001=
+{
+	name="Aramid"
+	culture="trojan"
+}
+5410002=
+{
+	name="Aramids"
+	culture="trojan"
+}
+5410003=
+{
+	name="Aramid"
+	culture="trojan"
+}
+5410004=
+{
+	name="Arid"
+	culture="trojan"
+}
+5410005=
+{
+	name="Arid"
+	culture="trojan"
+}
+5410006=
+{
+	name="Arids"
+	culture="trojan"
+}
+5410007=
+{
+	name="Arid"
+	culture="trojan"
+}
+5410008=
+{
+	name="Arkhid"
+	culture="trojan"
+}
+5410009=
+{
+	name="Arkhid"
+	culture="trojan"
+}
+54100010=
+{
+	name="Arkhids"
+	culture="trojan"
+}
+5410011=
+{
+	name="Arkhid"
+	culture="trojan"
+}
+5410012=
+{
+	name="Asinid"
+	culture="trojan"
+}
+5410013=
+{
+	name="Asinid"
+	culture="trojan"
+}
+5410014=
+{
+	name="Asinids"
+	culture="trojan"
+}
+5410015=
+{
+	name="Asinid"
+	culture="trojan"
+}
+5410016=
+{
+	name="Arsacid"
+	culture="trojan"
+}
+5410017=
+{
+	name="Arsacid"
+	culture="trojan"
+}
+5410018=
+{
+	name="Arsacids"
+	culture="trojan"
+}
+5410019=
+{
+	name="Arsacid"
+	culture="trojan"
+}
+5410020=
+{
+	name="Deiocid"
+	culture="trojan"
+}
+5410021=
+{
+	name="Deiocid"
+	culture="trojan"
+}
+5410022=
+{
+	name="Deiocids"
+	culture="trojan"
+}
+5410023=
+{
+	name="Deiocid"
+	culture="trojan"
+}
+5410024=
+{
+	name="Menid"
+	culture="trojan"
+}
+5410025=
+{
+	name="Menid"
+	culture="trojan"
+}
+5410026=
+{
+	name="Menids"
+	culture="trojan"
+}
+5410027=
+{
+	name="Menid"
+	culture="trojan"
+}
+5410028=
+{
+	name="Pacorid"
+	culture="trojan"
+}
+5410029=
+{
+	name="Pacorid"
+	culture="trojan"
+}
+5410030=
+{
+	name="Pacorids"
+	culture="trojan"
+}
+5410031=
+{
+	name="Pacorid"
+	culture="trojan"
+}
+5410032=
+{
+	name="Savacid"
+	culture="trojan"
+}
+5410033=
+{
+	name="Savacid"
+	culture="trojan"
+}
+5410034=
+{
+	name="Savacids"
+	culture="trojan"
+}
+5410035=
+{
+	name="Savacid"
+	culture="trojan"
+}
+5410036=
+{
+	name="Vardanid"
+	culture="trojan"
+}
+5410037=
+{
+	name="Vardanid"
+	culture="trojan"
+}
+5410038=
+{
+	name="Vardanids"
+	culture="trojan"
+}
+5410039=
+{
+	name="Vardanid"
+	culture="trojan"
+}
+5410040=
+{
+	name="Suren"
+	culture="trojan"
+}
+5410041=
+{
+	name="Suren"
+	culture="trojan"
+}
+5410042=
+{
+	name="Surenids"
+	culture="trojan"
+}
+5410043=
+{
+	name="Surenid"
+	culture="trojan"
+}
+5410044=
+{
+	name="Karin"
+	culture="trojan"
+}
+5410045=
+{
+	name="Karin"
+	culture="trojan"
+}
+5410046=
+{
+	name="Karinids"
+	culture="trojan"
+}
+5410047=
+{
+	name="Karinid"
+	culture="trojan"
+}
+5410048=
+{
+	name="Gaumatid"
+	culture="trojan"
+}
+5410049=
+{
+	name="Gaumatid"
+	culture="trojan"
+}
+5410050=
+{
+	name="Gaumatids"
+	culture="trojan"
+}
+5410051=
+{
+	name="Gaumatid"
+	culture="trojan"
+}
+5410052=
+{
+	name="Gobryasid"
+	culture="trojan"
+}
+5410053=
+{
+	name="Gobryasid"
+	culture="trojan"
+}
+5410054=
+{
+	name="Gobryasids"
+	culture="trojan"
+}
+5410055=
+{
+	name="Gobryasid"
+	culture="trojan"
+}
+5410056=
+{
+	name="Hydarnid"
+	culture="trojan"
+}
+5410057=
+{
+	name="Hydarnid"
+	culture="trojan"
+}
+5410058=
+{
+	name="Hydarnids"
+	culture="trojan"
+}
+5410059=
+{
+	name="Hydarnid"
+	culture="trojan"
+}
+5410060=
+{
+	name="Smerdid"
+	culture="trojan"
+}
+5410061=
+{
+	name="Smerdid"
+	culture="trojan"
+}
+5410062=
+{
+	name="Smerdids"
+	culture="trojan"
+}
+5410063=
+{
+	name="Smerdid"
+	culture="trojan"
+}
+5410064=
+{
+	name="Vivanid"
+	culture="trojan"
+}
+5410065=
+{
+	name="Vivanid"
+	culture="trojan"
+}
+5410066=
+{
+	name="Vivanids"
+	culture="trojan"
+}
+5410067=
+{
+	name="Vivanid"
+	culture="trojan"
+}
+5410068=
+{
+	name="Xerxid"
+	culture="trojan"
+}
+5410069=
+{
+	name="Xerxid"
+	culture="trojan"
+}
+5410070=
+{
+	name="Xerxids"
+	culture="trojan"
+}
+5410071=
+{
+	name="Xerxid"
+	culture="trojan"
+}
+5410072=
+{
+	name="Abadanid"
+	culture="trojan"
+}
+5410073=
+{
+	name="Abadanid"
+	culture="trojan"
+}
+5410074=
+{
+	name="Abadanids"
+	culture="trojan"
+}
+5410075=
+{
+	name="Abadanid"
+	culture="trojan"
+}
+5410076=
+{
+	name="Orontid"
+	culture="trojan"
+}
+5410077=
+{
+	name="Orontid"
+	culture="trojan"
+}
+5410078=
+{
+	name="Orontids"
+	culture="trojan"
+}
+5410079=
+{
+	name="Orontid"
+	culture="trojan"
+}
+5410080=
+{
+	name="Atropatid"
+	culture="trojan"
+}
+5410081=
+{
+	name="Atropatid"
+	culture="trojan"
+}
+5410082=
+{
+	name="Atropatids"
+	culture="trojan"
+}
+5410083=
+{
+	name="Atropatid"
+	culture="trojan"
+}
+5410084=
+{
+	name="Mithridatid"
+	culture="trojan"
+}
+5410085=
+{
+	name="Mithridatid"
+	culture="trojan"
+}
+5410086=
+{
+	name="Mithridatids"
+	culture="trojan"
+}
+5410087=
+{
+	name="Mithridatid"
+	culture="trojan"
+}
+5410088=
+{
+	name="Artiaxid"
+	culture="trojan"
+}
+5410089=
+{
+	name="Artiaxid"
+	culture="trojan"
+}
+5410090=
+{
+	name="Artiaxids"
+	culture="trojan"
+}
+5410091=
+{
+	name="Artiaxid"
+	culture="trojan"
+}
+5410092=
+{
+	name="Sassanid"
+	culture="trojan"
+}
+5410093=
+{
+	name="Sassanid"
+	culture="trojan"
+}
+5410094=
+{
+	name="Sassanids"
+	culture="trojan"
+}
+5410095=
+{
+	name="Sassanid"
+	culture="trojan"
+}
+5410096=
+{
+	name="Mihranid"
+	culture="trojan"
+}
+5410097=
+{
+	name="Mihranid"
+	culture="trojan"
+}
+5410098=
+{
+	name="Mihranids"
+	culture="trojan"
+}
+5410099=
+{
+	name="Mihranid"
+	culture="trojan"
+}

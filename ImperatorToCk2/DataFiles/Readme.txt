@@ -58,6 +58,7 @@ Siawosh - Testing
 កាបូន២៦ - Testing, Advice, Natic Religion Icon
 Diskianterezh - Noric Divergence cultures
 Yuiiut - data files (Scythian Rework, Parthian Cultures, Buildings, Retinues, and 150BC mappings)
+Goji - Testing
 
 The When The World Stopped Making Sense (WtWSMS) mod team for allowing the converter to use their content, their mod can be found either on Steam or their forum thread.
 WtWSMS mod Steam link: https://steamcommunity.com/sharedfiles/filedetails/?id=1247380029
@@ -77,6 +78,9 @@ Timeline Extender mod Forum link: https://forum.paradoxplaza.com/forum/threads/m
 The Imperator:Invictus mod for allowing the converter to use its descriptions for converted Invictus religions. It can be found either on Steam or on the Paradox Mods Website.
 Imperator:Invictus mod Steam link: https://steamcommunity.com/sharedfiles/filedetails/?id=2532715348
 Imperator:Invictus mod Paradox Mods Website link: https://mods.paradoxplaza.com/mods/27170/Any
+
+The Bronze Age Reborn mod for allowing the converter to use its namelists for Bronze Age cultures. It can be found on Steam.
+Bronze Age Reborn mod Steam link: https://steamcommunity.com/sharedfiles/filedetails/?id=2448788091
 
  - AND ALL THE OTHERS WHO GAVE THEIR INPUT ON THE FORUM AND DISCORD -
  

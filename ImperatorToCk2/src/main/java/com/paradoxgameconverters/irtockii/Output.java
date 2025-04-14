@@ -1285,6 +1285,7 @@ public class Output
         //output[2] format = hsvOrRgb,r g b
         //output[3] format = hsvOrRgb,r g b
         // output[4] format is texture~_~color1~_~color2~_~scale~_~position~_~rotation~~(nextEmblem)
+        //System.out.println("Attempting to create "+tag+" + "+flagID);
         int aqq = 1;
         int flag = 0;
         while (aqq < flagList.size() && flag == 0) {
@@ -1305,9 +1306,11 @@ public class Output
                 int aq3 = 0;
                 while (aq3 < flagGFXList.size()) {
                     if (flagGFXList.get(aq3).contains(flagSource[1])) {
+                        //System.out.println("AQ3");
                         pattern = flagGFXList.get(aq3);
                         aq3 = flagGFXList.size();
                     }
+                    //System.out.println(flagSource[1] + " "+aq3 + " " + flagGFXList.size());
                     aq3 = aq3 + 1;
                 }
 
@@ -1331,6 +1334,8 @@ public class Output
                     String eRot= emblem[5];
                     String eNameOld = "defaultOutput/flagDev/emblem"+aq2+"Old"+".gif";
                     String eName = "defaultOutput/flagDev/emblem"+aq2+".gif";
+                    
+                    //System.out.println(emblemList[aq2] + " "+aq2 + " " + emblemList.length);
 
                     int aq4 = 0;
                     while (aq4 < flagGFXList.size()) {

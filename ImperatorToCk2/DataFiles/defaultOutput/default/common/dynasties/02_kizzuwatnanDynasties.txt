@@ -1,0 +1,500 @@
+5417000=
+{
+	name="Aramid"
+	culture="kizzuwatnan"
+}
+5417001=
+{
+	name="Aramid"
+	culture="kizzuwatnan"
+}
+5417002=
+{
+	name="Aramids"
+	culture="kizzuwatnan"
+}
+5417003=
+{
+	name="Aramid"
+	culture="kizzuwatnan"
+}
+5417004=
+{
+	name="Arid"
+	culture="kizzuwatnan"
+}
+5417005=
+{
+	name="Arid"
+	culture="kizzuwatnan"
+}
+5417006=
+{
+	name="Arids"
+	culture="kizzuwatnan"
+}
+5417007=
+{
+	name="Arid"
+	culture="kizzuwatnan"
+}
+5417008=
+{
+	name="Arkhid"
+	culture="kizzuwatnan"
+}
+5417009=
+{
+	name="Arkhid"
+	culture="kizzuwatnan"
+}
+54170010=
+{
+	name="Arkhids"
+	culture="kizzuwatnan"
+}
+5417011=
+{
+	name="Arkhid"
+	culture="kizzuwatnan"
+}
+5417012=
+{
+	name="Asinid"
+	culture="kizzuwatnan"
+}
+5417013=
+{
+	name="Asinid"
+	culture="kizzuwatnan"
+}
+5417014=
+{
+	name="Asinids"
+	culture="kizzuwatnan"
+}
+5417015=
+{
+	name="Asinid"
+	culture="kizzuwatnan"
+}
+5417016=
+{
+	name="Arsacid"
+	culture="kizzuwatnan"
+}
+5417017=
+{
+	name="Arsacid"
+	culture="kizzuwatnan"
+}
+5417018=
+{
+	name="Arsacids"
+	culture="kizzuwatnan"
+}
+5417019=
+{
+	name="Arsacid"
+	culture="kizzuwatnan"
+}
+5417020=
+{
+	name="Deiocid"
+	culture="kizzuwatnan"
+}
+5417021=
+{
+	name="Deiocid"
+	culture="kizzuwatnan"
+}
+5417022=
+{
+	name="Deiocids"
+	culture="kizzuwatnan"
+}
+5417023=
+{
+	name="Deiocid"
+	culture="kizzuwatnan"
+}
+5417024=
+{
+	name="Menid"
+	culture="kizzuwatnan"
+}
+5417025=
+{
+	name="Menid"
+	culture="kizzuwatnan"
+}
+5417026=
+{
+	name="Menids"
+	culture="kizzuwatnan"
+}
+5417027=
+{
+	name="Menid"
+	culture="kizzuwatnan"
+}
+5417028=
+{
+	name="Pacorid"
+	culture="kizzuwatnan"
+}
+5417029=
+{
+	name="Pacorid"
+	culture="kizzuwatnan"
+}
+5417030=
+{
+	name="Pacorids"
+	culture="kizzuwatnan"
+}
+5417031=
+{
+	name="Pacorid"
+	culture="kizzuwatnan"
+}
+5417032=
+{
+	name="Savacid"
+	culture="kizzuwatnan"
+}
+5417033=
+{
+	name="Savacid"
+	culture="kizzuwatnan"
+}
+5417034=
+{
+	name="Savacids"
+	culture="kizzuwatnan"
+}
+5417035=
+{
+	name="Savacid"
+	culture="kizzuwatnan"
+}
+5417036=
+{
+	name="Vardanid"
+	culture="kizzuwatnan"
+}
+5417037=
+{
+	name="Vardanid"
+	culture="kizzuwatnan"
+}
+5417038=
+{
+	name="Vardanids"
+	culture="kizzuwatnan"
+}
+5417039=
+{
+	name="Vardanid"
+	culture="kizzuwatnan"
+}
+5417040=
+{
+	name="Suren"
+	culture="kizzuwatnan"
+}
+5417041=
+{
+	name="Suren"
+	culture="kizzuwatnan"
+}
+5417042=
+{
+	name="Surenids"
+	culture="kizzuwatnan"
+}
+5417043=
+{
+	name="Surenid"
+	culture="kizzuwatnan"
+}
+5417044=
+{
+	name="Karin"
+	culture="kizzuwatnan"
+}
+5417045=
+{
+	name="Karin"
+	culture="kizzuwatnan"
+}
+5417046=
+{
+	name="Karinids"
+	culture="kizzuwatnan"
+}
+5417047=
+{
+	name="Karinid"
+	culture="kizzuwatnan"
+}
+5417048=
+{
+	name="Gaumatid"
+	culture="kizzuwatnan"
+}
+5417049=
+{
+	name="Gaumatid"
+	culture="kizzuwatnan"
+}
+5417050=
+{
+	name="Gaumatids"
+	culture="kizzuwatnan"
+}
+5417051=
+{
+	name="Gaumatid"
+	culture="kizzuwatnan"
+}
+5417052=
+{
+	name="Gobryasid"
+	culture="kizzuwatnan"
+}
+5417053=
+{
+	name="Gobryasid"
+	culture="kizzuwatnan"
+}
+5417054=
+{
+	name="Gobryasids"
+	culture="kizzuwatnan"
+}
+5417055=
+{
+	name="Gobryasid"
+	culture="kizzuwatnan"
+}
+5417056=
+{
+	name="Hydarnid"
+	culture="kizzuwatnan"
+}
+5417057=
+{
+	name="Hydarnid"
+	culture="kizzuwatnan"
+}
+5417058=
+{
+	name="Hydarnids"
+	culture="kizzuwatnan"
+}
+5417059=
+{
+	name="Hydarnid"
+	culture="kizzuwatnan"
+}
+5417060=
+{
+	name="Smerdid"
+	culture="kizzuwatnan"
+}
+5417061=
+{
+	name="Smerdid"
+	culture="kizzuwatnan"
+}
+5417062=
+{
+	name="Smerdids"
+	culture="kizzuwatnan"
+}
+5417063=
+{
+	name="Smerdid"
+	culture="kizzuwatnan"
+}
+5417064=
+{
+	name="Vivanid"
+	culture="kizzuwatnan"
+}
+5417065=
+{
+	name="Vivanid"
+	culture="kizzuwatnan"
+}
+5417066=
+{
+	name="Vivanids"
+	culture="kizzuwatnan"
+}
+5417067=
+{
+	name="Vivanid"
+	culture="kizzuwatnan"
+}
+5417068=
+{
+	name="Xerxid"
+	culture="kizzuwatnan"
+}
+5417069=
+{
+	name="Xerxid"
+	culture="kizzuwatnan"
+}
+5417070=
+{
+	name="Xerxids"
+	culture="kizzuwatnan"
+}
+5417071=
+{
+	name="Xerxid"
+	culture="kizzuwatnan"
+}
+5417072=
+{
+	name="Abadanid"
+	culture="kizzuwatnan"
+}
+5417073=
+{
+	name="Abadanid"
+	culture="kizzuwatnan"
+}
+5417074=
+{
+	name="Abadanids"
+	culture="kizzuwatnan"
+}
+5417075=
+{
+	name="Abadanid"
+	culture="kizzuwatnan"
+}
+5417076=
+{
+	name="Orontid"
+	culture="kizzuwatnan"
+}
+5417077=
+{
+	name="Orontid"
+	culture="kizzuwatnan"
+}
+5417078=
+{
+	name="Orontids"
+	culture="kizzuwatnan"
+}
+5417079=
+{
+	name="Orontid"
+	culture="kizzuwatnan"
+}
+5417080=
+{
+	name="Atropatid"
+	culture="kizzuwatnan"
+}
+5417081=
+{
+	name="Atropatid"
+	culture="kizzuwatnan"
+}
+5417082=
+{
+	name="Atropatids"
+	culture="kizzuwatnan"
+}
+5417083=
+{
+	name="Atropatid"
+	culture="kizzuwatnan"
+}
+5417084=
+{
+	name="Mithridatid"
+	culture="kizzuwatnan"
+}
+5417085=
+{
+	name="Mithridatid"
+	culture="kizzuwatnan"
+}
+5417086=
+{
+	name="Mithridatids"
+	culture="kizzuwatnan"
+}
+5417087=
+{
+	name="Mithridatid"
+	culture="kizzuwatnan"
+}
+5417088=
+{
+	name="Artiaxid"
+	culture="kizzuwatnan"
+}
+5417089=
+{
+	name="Artiaxid"
+	culture="kizzuwatnan"
+}
+5417090=
+{
+	name="Artiaxids"
+	culture="kizzuwatnan"
+}
+5417091=
+{
+	name="Artiaxid"
+	culture="kizzuwatnan"
+}
+5417092=
+{
+	name="Sassanid"
+	culture="kizzuwatnan"
+}
+5417093=
+{
+	name="Sassanid"
+	culture="kizzuwatnan"
+}
+5417094=
+{
+	name="Sassanids"
+	culture="kizzuwatnan"
+}
+5417095=
+{
+	name="Sassanid"
+	culture="kizzuwatnan"
+}
+5417096=
+{
+	name="Mihranid"
+	culture="kizzuwatnan"
+}
+5417097=
+{
+	name="Mihranid"
+	culture="kizzuwatnan"
+}
+5417098=
+{
+	name="Mihranids"
+	culture="kizzuwatnan"
+}
+5417099=
+{
+	name="Mihranid"
+	culture="kizzuwatnan"
+}

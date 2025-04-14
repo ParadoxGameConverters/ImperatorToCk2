@@ -4,6 +4,7 @@
 #Kingdoms should only be generated in duchies
 
 ancient_egyptian,e_EGT,k_EGT
+alasiyan,e_persia,k_PPN
 babylonian,e_persia,k_iraq
 belgae,e_GAU,k_BGG
 carthaginian,e_CAR,k_CAR
@@ -11,29 +12,42 @@ caucasian_albanian,e_persia,k_ALB
 celtiberian,e_HBR,k_CBR
 celtic_pannonian,e_GAU,k_NRM
 cilician,e_HLA,k_anatolia
+cycladic,e_HLA,k_KRE
 dacian,e_DAC,k_DAC
 etruscan,e_roman_empire,k_ETR
+eblaite,e_persia,k_syria
 gallic,e_GAU,k_GAU
 gothic,e_germany,k_pomerania
+gutian,e_persia,k_iraq
 old_burgundian,e_germany,k_pomerania
+hatti_culture,e_HLA,k_anatolia
 hebrew,e_persia,k_jerusalem
 hellenistic,e_ALX,k_ALX
+hurrian,e_persia,k_HUR
 iberic,e_HBR,k_TUR
 isaurian,e_HLA,k_anatolia
+kizzuwatnan,e_HLA,k_anatolia
 lepontic,e_GAU,k_BOI
 lusitanian,e_HBR,k_LST
 lycian,e_HLA,k_anatolia
+minoan,e_HLA,k_KRE
 nabatean,e_arabia,k_arabia
+niwt_ipt,e_EGT,k_EGT
 nuragic,e_HBR,k_SAR
 old_ligurian,e_roman_empire,k_ETR
 paphlagonian,e_HLA,k_PAP
+pelasgian,e_HLA,k_PLG
+per_sheklesh,e_EGT,k_EGT
 phoenician,e_persia,k_PPN
 phrygian,e_HLA,k_anatolia
 rhaetian,e_roman_empire,k_RAE
 sabellian,e_roman_empire,k_ROM
 siculian,e_roman_empire,k_ROM
+sumerian,e_persia,k_iraq
 thracian,e_DAC,k_thrace
+trojan,e_HLA,k_anatolia
 turdetanian,e_HBR,k_TUR
+ugaritic,e_persia,k_PPN
 vandal,e_germany,k_pomerania
 venetic,e_roman_empire,k_VNT
 aestian,e_wendish_empire,k_lithuania
@@ -118,6 +132,7 @@ huna,e_turkestan,k_khiva
 
 protoslavic,e_russia,k_ruthenia
 galatian,e_GAU,k_GLT
+indo_germanic,e_IGK,k_IGK
 
 romanian,e_carpathia,k_dacia
 dalmatian,e_italy,k_croatia
