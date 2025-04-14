@@ -1,90 +1,90 @@
 5406000=
 {
 	name="Nanniya-Meskilak"
-	culture="sumerian"
+	culture="sumerian_culture"
 }
 5406001=
 {
 	name="Sabit-Nanshe"
-	culture="sumerian"
+	culture="sumerian_culture"
 }
 5406002=
 {
 	name="Akurgal-Geshtinanna"
-	culture="sumerian"
+	culture="sumerian_culture"
 }
 5406003=
 {
 	name="Lugula-Ningal"
-	culture="sumerian"
+	culture="sumerian_culture"
 }
 5406004=
 {
 	name="Udul-Utu"
-	culture="sumerian"
+	culture="sumerian_culture"
 }
 5406005=
 {
 	name="Shulgi-Ninhursag"
-	culture="sumerian"
+	culture="sumerian_culture"
 }
 5406006=
 {
 	name="Kakug-Ninlil"
-	culture="sumerian"
+	culture="sumerian_culture"
 }
 5406007=
 {
 	name="Nanni-Enlil"
-	culture="sumerian"
+	culture="sumerian_culture"
 }
 5406008=
 {
 	name="Enmerkar-Ninazu"
-	culture="sumerian"
+	culture="sumerian_culture"
 }
 5406009=
 {
 	name="Melem-Ishtaran"
-	culture="sumerian"
+	culture="sumerian_culture"
 }
 5406010=
 {
 	name="Pirigme-Ishkur"
-	culture="sumerian"
+	culture="sumerian_culture"
 }
 5406011=
 {
 	name="Puzur-Nintinugga"
-	culture="sumerian"
+	culture="sumerian_culture"
 }
 5406012=
 {
 	name="Lugula-Ereshkigal"
-	culture="sumerian"
+	culture="sumerian_culture"
 }
 5406013=
 {
 	name="Zumudar-Nisaba"
-	culture="sumerian"
+	culture="sumerian_culture"
 }
 5406014=
 {
 	name="Nanni-Dumuzid"
-	culture="sumerian"
+	culture="sumerian_culture"
 }
 5406015=
 {
 	name="Ishu-Enki"
-	culture="sumerian"
+	culture="sumerian_culture"
 }
 5406016=
 {
 	name="Gar-Nanna"
-	culture="sumerian"
+	culture="sumerian_culture"
 }
 5406017=
 {
 	name="Ishu-Inanna"
-	culture="sumerian"
+	culture="sumerian_culture"
 }

@@ -382,7 +382,7 @@ aramaic,assyrian
 assyrian,assyrian
 babylonian,babylonian
 cardukoi,cardukoi
-sumerian,sumerian
+sumerian,sumerian_culture
 eblaite,eblaite
 
 #NubianAndEthiopian

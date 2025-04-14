@@ -43,7 +43,7 @@ phrygian,e_HLA,k_anatolia
 rhaetian,e_roman_empire,k_RAE
 sabellian,e_roman_empire,k_ROM
 siculian,e_roman_empire,k_ROM
-sumerian,e_persia,k_iraq
+sumerian_culture,e_persia,k_iraq
 thracian,e_DAC,k_thrace
 trojan,e_HLA,k_anatolia
 turdetanian,e_HBR,k_TUR
