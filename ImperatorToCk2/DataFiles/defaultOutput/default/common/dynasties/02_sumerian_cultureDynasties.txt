@@ -1,0 +1,90 @@
+5406000=
+{
+	name="Nanniya-Meskilak"
+	culture="sumerian_culture"
+}
+5406001=
+{
+	name="Sabit-Nanshe"
+	culture="sumerian_culture"
+}
+5406002=
+{
+	name="Akurgal-Geshtinanna"
+	culture="sumerian_culture"
+}
+5406003=
+{
+	name="Lugula-Ningal"
+	culture="sumerian_culture"
+}
+5406004=
+{
+	name="Udul-Utu"
+	culture="sumerian_culture"
+}
+5406005=
+{
+	name="Shulgi-Ninhursag"
+	culture="sumerian_culture"
+}
+5406006=
+{
+	name="Kakug-Ninlil"
+	culture="sumerian_culture"
+}
+5406007=
+{
+	name="Nanni-Enlil"
+	culture="sumerian_culture"
+}
+5406008=
+{
+	name="Enmerkar-Ninazu"
+	culture="sumerian_culture"
+}
+5406009=
+{
+	name="Melem-Ishtaran"
+	culture="sumerian_culture"
+}
+5406010=
+{
+	name="Pirigme-Ishkur"
+	culture="sumerian_culture"
+}
+5406011=
+{
+	name="Puzur-Nintinugga"
+	culture="sumerian_culture"
+}
+5406012=
+{
+	name="Lugula-Ereshkigal"
+	culture="sumerian_culture"
+}
+5406013=
+{
+	name="Zumudar-Nisaba"
+	culture="sumerian_culture"
+}
+5406014=
+{
+	name="Nanni-Dumuzid"
+	culture="sumerian_culture"
+}
+5406015=
+{
+	name="Ishu-Enki"
+	culture="sumerian_culture"
+}
+5406016=
+{
+	name="Gar-Nanna"
+	culture="sumerian_culture"
+}
+5406017=
+{
+	name="Ishu-Inanna"
+	culture="sumerian_culture"
+}

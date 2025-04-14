@@ -163,6 +163,8 @@ pict,pictish
 #Punic
 carthaginian,carthaginian
 phoenician,phoenician
+alasiyan,alasiyan
+ugaritic,ugaritic
 
 #Germanic
 suebian,suebi
@@ -188,7 +190,7 @@ istvaeonic,old_frankish
 franks,old_frankish
 anglosaxon,saxon
 lombards,lombard
-
+indo_germanic,indo_germanic
 
 #Egyptian
 
@@ -196,6 +198,8 @@ egyptian,ancient_egyptian
 upper_egyptian,ancient_egyptian
 middle_egyptian,ancient_egyptian
 oasis_egyptian,ancient_egyptian
+per_sheklesh,per_sheklesh
+niwt_ipt,niwt_ipt
 
 #NorthAfrican
 
@@ -365,6 +369,8 @@ oroandian,isaurian
 paphlagonian,paphlagonian
 cilician,cilician
 kennataian,cilician
+trojan,trojan
+kizzuwatnan,kizzuwatnan
 
 #Armenian
 
@@ -376,6 +382,8 @@ aramaic,assyrian
 assyrian,assyrian
 babylonian,babylonian
 cardukoi,cardukoi
+sumerian,sumerian_culture
+eblaite,eblaite
 
 #NubianAndEthiopian
 
@@ -530,6 +538,26 @@ pyu,pyu
 rhakine,mon
 mon,mon
 pubu,wa
+
+#Hurrian
+hurrian,hurrian_culture
+syro_hurrian,hurrian_culture
+subarian,hurrian_culture
+tukri,hurrian_culture
+lullubi,hurrian_culture
+gutian,gutian
+
+#PreGreek
+cycladic,cycladic
+minoan,minoan
+leleges,minoan
+telchines,minoan
+kadmeian,pelasgian
+sithonian,pelasgian
+kranaoi,pelasgian
+kuretes,pelasgian
+phthiotai,pelasgian
+mukanai,pelasgian
 
 #150BC start date mod
 aorsi,sarmatian

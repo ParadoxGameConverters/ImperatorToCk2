@@ -45,6 +45,7 @@ vaksh_religion,khurmazta
 nilotic_pantheon,west_african_pagan
 nuragic_pantheon,nuragic
 hurrian_pantheon,hurrian
+hurrian_religion,hurrian
 uralic_pantheon,finnish_pagan
 hatti_religion,hattian
 

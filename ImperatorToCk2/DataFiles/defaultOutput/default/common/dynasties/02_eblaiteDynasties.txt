@@ -1,0 +1,501 @@
+5407000=
+{
+	name="Marduk-beli"
+	culture="eblaite"
+}
+5407001=
+{
+	name="Marduk-belshunu"
+	culture="eblaite"
+}
+5407002=
+{
+	name="Marduk-eriba"
+	culture="eblaite"
+}
+5407003=
+{
+	name="Marduk-etir"
+	culture="eblaite"
+}
+5407004=
+{
+	name="Marduk-ibni"
+	culture="eblaite"
+}
+5407005=
+{
+	name="Marduk-iddin"
+	culture="eblaite"
+}
+5407006=
+{
+	name="Marduk-uballit"
+	culture="eblaite"
+}
+5407007=
+{
+	name="Kidin-Marduk"
+	culture="eblaite"
+}
+5407008=
+{
+	name="Lusthammar-Marduk"
+	culture="eblaite"
+}
+5407009=
+{
+	name="Nidinti-Marduk"
+	culture="eblaite"
+}
+5407010=
+{
+	name="Rihat-Marduk"
+	culture="eblaite"
+}
+5407011=
+{
+	name="Shamshi-Marduk"
+	culture="eblaite"
+}
+5407012=
+{
+	name="Shipqat-Marduk"
+	culture="eblaite"
+}
+5407013=
+{
+	name="Tanittu-Marduk"
+	culture="eblaite"
+}
+5407014=
+{
+	name="Tukulti-Marduk"
+	culture="eblaite"
+}
+5407015=
+{
+	name="Bel-beli"
+	culture="eblaite"
+}
+5407016=
+{
+	name="Bel-belshunu"
+	culture="eblaite"
+}
+5407017=
+{
+	name="Bel-eriba"
+	culture="eblaite"
+}
+5407018=
+{
+	name="Bel-etir"
+	culture="eblaite"
+}
+5407019=
+{
+	name="Bel-ibni"
+	culture="eblaite"
+}
+5407020=
+{
+	name="Bel-iddin"
+	culture="eblaite"
+}
+5407021=
+{
+	name="Bel-uballit"
+	culture="eblaite"
+}
+5407022=
+{
+	name="Kidin-Bel"
+	culture="eblaite"
+}
+5407023=
+{
+	name="Lusthammar-Bel"
+	culture="eblaite"
+}
+5407024=
+{
+	name="Nidinti-Bel"
+	culture="eblaite"
+}
+5407025=
+{
+	name="Rihat-Bel"
+	culture="eblaite"
+}
+5407026=
+{
+	name="Shamshi-Bel"
+	culture="eblaite"
+}
+5407027=
+{
+	name="Shipqat-Bel"
+	culture="eblaite"
+}
+5407028=
+{
+	name="Tanittu-Bel"
+	culture="eblaite"
+}
+5407029=
+{
+	name="Tukulti-Bel"
+	culture="eblaite"
+}
+5407030=
+{
+	name="Shamash-beli"
+	culture="eblaite"
+}
+5407031=
+{
+	name="Shamash-belshunu"
+	culture="eblaite"
+}
+5407032=
+{
+	name="Shamash-eriba"
+	culture="eblaite"
+}
+5407033=
+{
+	name="Shamash-etir"
+	culture="eblaite"
+}
+5407034=
+{
+	name="Shamash-ibni"
+	culture="eblaite"
+}
+5407035=
+{
+	name="Shamash-iddin"
+	culture="eblaite"
+}
+5407036=
+{
+	name="Shamash-uballit"
+	culture="eblaite"
+}
+5407037=
+{
+	name="Kidin-Shamash"
+	culture="eblaite"
+}
+5407038=
+{
+	name="Lusthammar-Shamash"
+	culture="eblaite"
+}
+5407039=
+{
+	name="Nidinti-Shamash"
+	culture="eblaite"
+}
+5407040=
+{
+	name="Rihat-Shamash"
+	culture="eblaite"
+}
+5407041=
+{
+	name="Shamshi-Shamash"
+	culture="eblaite"
+}
+5407042=
+{
+	name="Shipqat-Shamash"
+	culture="eblaite"
+}
+5407043=
+{
+	name="Tanittu-Shamash"
+	culture="eblaite"
+}
+5407044=
+{
+	name="Tukulti-Shamash"
+	culture="eblaite"
+}
+5407045=
+{
+	name="Ashshur-beli"
+	culture="eblaite"
+}
+5407046=
+{
+	name="Ashshur-belshunu"
+	culture="eblaite"
+}
+5407047=
+{
+	name="Ashshur-eriba"
+	culture="eblaite"
+}
+5407048=
+{
+	name="Ashshur-etir"
+	culture="eblaite"
+}
+5407049=
+{
+	name="Ashshur-ibni"
+	culture="eblaite"
+}
+5407050=
+{
+	name="Ashshur-iddin"
+	culture="eblaite"
+}
+5407051=
+{
+	name="Ashshur-uballit"
+	culture="eblaite"
+}
+5407052=
+{
+	name="Kidin-Ashshur"
+	culture="eblaite"
+}
+5407053=
+{
+	name="Lusthammar-Ashshur"
+	culture="eblaite"
+}
+5407054=
+{
+	name="Nidinti-Ashshur"
+	culture="eblaite"
+}
+5407055=
+{
+	name="Rihat-Ashshur"
+	culture="eblaite"
+}
+5407056=
+{
+	name="Shamshi-Ashshur"
+	culture="eblaite"
+}
+5407057=
+{
+	name="Shipqat-Ashshur"
+	culture="eblaite"
+}
+5407058=
+{
+	name="Tanittu-Ashshur"
+	culture="eblaite"
+}
+5407059=
+{
+	name="Tukulti-Ashshur"
+	culture="eblaite"
+}
+5407060=
+{
+	name="Ishtar-beli"
+	culture="eblaite"
+}
+5407061=
+{
+	name="Ishtar-belshunu"
+	culture="eblaite"
+}
+5407062=
+{
+	name="Ishtar-eriba"
+	culture="eblaite"
+}
+5407063=
+{
+	name="Ishtar-etir"
+	culture="eblaite"
+}
+5407064=
+{
+	name="Ishtar-ibni"
+	culture="eblaite"
+}
+5407065=
+{
+	name="Ishtar-iddin"
+	culture="eblaite"
+}
+5407066=
+{
+	name="Ishtar-uballit"
+	culture="eblaite"
+}
+5407067=
+{
+	name="Kidin-Ishtar"
+	culture="eblaite"
+}
+5407068=
+{
+	name="Lusthammar-Ishtar"
+	culture="eblaite"
+}
+5407069=
+{
+	name="Nidinti-Ishtar"
+	culture="eblaite"
+}
+5407070=
+{
+	name="Rihat-Ishtar"
+	culture="eblaite"
+}
+5407071=
+{
+	name="Shamshi-Ishtar"
+	culture="eblaite"
+}
+5407072=
+{
+	name="Shipqat-Ishtar"
+	culture="eblaite"
+}
+5407073=
+{
+	name="Tanittu-Ishtar"
+	culture="eblaite"
+}
+5407074=
+{
+	name="Tukulti-Ishtar"
+	culture="eblaite"
+}
+5407075=
+{
+	name="Adad-beli"
+	culture="eblaite"
+}
+5407076=
+{
+	name="Adad-belshunu"
+	culture="eblaite"
+}
+5407077=
+{
+	name="Adad-eriba"
+	culture="eblaite"
+}
+5407078=
+{
+	name="Adad-etir"
+	culture="eblaite"
+}
+5407079=
+{
+	name="Adad-ibni"
+	culture="eblaite"
+}
+5407080=
+{
+	name="Adad-iddin"
+	culture="eblaite"
+}
+5407081=
+{
+	name="Adad-uballit"
+	culture="eblaite"
+}
+5407082=
+{
+	name="Kidin-Adad"
+	culture="eblaite"
+}
+5407083=
+{
+	name="Lusthammar-Adad"
+	culture="eblaite"
+}
+5407084=
+{
+	name="Nidinti-Adad"
+	culture="eblaite"
+}
+5407085=
+{
+	name="Rihat-Adad"
+	culture="eblaite"
+}
+5407086=
+{
+	name="Shamshi-Adad"
+	culture="eblaite"
+}
+5407087=
+{
+	name="Shipqat-Adad"
+	culture="eblaite"
+}
+5407088=
+{
+	name="Tanittu-Adad"
+	culture="eblaite"
+}
+5407089=
+{
+	name="Tukulti-Adad"
+	culture="eblaite"
+}
+5407090=
+{
+	name="Nergal-beli"
+	culture="eblaite"
+}
+5407091=
+{
+	name="Nergal-belshunu"
+	culture="eblaite"
+}
+5407092=
+{
+	name="Nergal-eriba"
+	culture="eblaite"
+}
+5407093=
+{
+	name="Nergal-etir"
+	culture="eblaite"
+}
+5407094=
+{
+	name="Nergal-ibni"
+	culture="eblaite"
+}
+5407095=
+{
+	name="Nergal-iddin"
+	culture="eblaite"
+}
+5407096=
+{
+	name="Nergal-uballit"
+	culture="eblaite"
+}
+5407097=
+{
+	name="Kidin-Nergal"
+	culture="eblaite"
+}
+5407098=
+{
+	name="Lusthammar-Nergal"
+	culture="eblaite"
+}
+5407099=
+{
+	name="Nidinti-Nergal"
+	culture="eblaite"
+}
+

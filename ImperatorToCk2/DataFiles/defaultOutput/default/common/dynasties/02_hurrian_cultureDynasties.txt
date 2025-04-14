@@ -1,0 +1,130 @@
+5404000=
+{
+	name="Atal-sen-Teshub"
+	culture="hurrian_culture"
+}
+5404001=
+{
+	name="Biridaswa-Kumarbi"
+	culture="hurrian_culture"
+}
+5404002=
+{
+	name="Kikkula-Shaushka"
+	culture="hurrian_culture"
+}
+5404003=
+{
+	name="Kirta-Hebat"
+	culture="hurrian_culture"
+}
+5404004=
+{
+	name="Mattiwaza-Sharruma"
+	culture="hurrian_culture"
+}
+5404005=
+{
+	name="Parattarna-Shimegi"
+	culture="hurrian_culture"
+}
+5404006=
+{
+	name="Parsatatar-Kushuh"
+	culture="hurrian_culture"
+}
+5404007=
+{
+	name="Sattawaza-Hutena"
+	culture="hurrian_culture"
+}
+5404008=
+{
+	name="Saushtatar-Hutelluri"
+	culture="hurrian_culture"
+}
+5404009=
+{
+	name="Shuttarna-Sumuqan"
+	culture="hurrian_culture"
+}
+5404010=
+{
+	name="Tehiptilla-Ashtabil"
+	culture="hurrian_culture"
+}
+5404011=
+{
+	name="Tushratta-Ningal"
+	culture="hurrian_culture"
+}
+5404012=
+{
+	name="Hui-zzi-Tashmisu"
+	culture="hurrian_culture"
+}
+5404013=
+{
+	name="Hupa-zza-Kubaba"
+	culture="hurrian_culture"
+}
+5404014=
+{
+	name="Elhip-ninu-Ashtabil"
+	culture="hurrian_culture"
+}
+5404015=
+{
+	name="Iku-za-Ebrimusha"
+	culture="hurrian_culture"
+}
+5404016=
+{
+	name="Nana-kka-Nabarbi"
+	culture="hurrian_culture"
+}
+5404017=
+{
+	name="Ilu-Ila-Pirinki"
+	culture="hurrian_culture"
+}
+5404018=
+{
+	name="Tagis-nati-e-Hebat"
+	culture="hurrian_culture"
+}
+5404019=
+{
+	name="Tagu-zza-Sharruma"
+	culture="hurrian_culture"
+}
+5404020=
+{
+	name="Uzu-na-n-Nubadig"
+	culture="hurrian_culture"
+}
+5404021=
+{
+	name="Wari-kipa-Pirinki"
+	culture="hurrian_culture"
+}
+5404022=
+{
+	name="Zuzu-Tashmisu"
+	culture="hurrian_culture"
+}
+5404023=
+{
+	name="Tadukhepa-Allani"
+	culture="hurrian_culture"
+}
+5404024=
+{
+	name="Ahahuia-Ebrimusha"
+	culture="hurrian_culture"
+}
+5404025=
+{
+	name="Ahassunu-Nubadig"
+	culture="hurrian_culture"
+}

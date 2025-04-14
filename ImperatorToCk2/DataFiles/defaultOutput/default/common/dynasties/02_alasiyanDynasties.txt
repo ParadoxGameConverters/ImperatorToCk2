@@ -1,0 +1,480 @@
+5408000=
+{
+	name="Abbarid"
+	culture="alasiyan"
+}
+5408001=
+{
+	name="Abbarid"
+	culture="alasiyan"
+}
+5408002=
+{
+	name="Abbarid"
+	culture="alasiyan"
+}
+5408003=
+{
+	name="Abbarid"
+	culture="alasiyan"
+}
+5408004=
+{
+	name="Adonibaal"
+	culture="alasiyan"
+}
+5408005=
+{
+	name="Adonibaalid"
+	culture="alasiyan"
+}
+5408006=
+{
+	name="Adonibaalid"
+	culture="alasiyan"
+}
+5408007=
+{
+	name="Adonibaalid"
+	culture="alasiyan"
+}
+5408008=
+{
+	name="Ahirom"
+	culture="alasiyan"
+}
+5408009=
+{
+	name="Ahiromid"
+	culture="alasiyan"
+}
+5408010=
+{
+	name="Ahiromid"
+	culture="alasiyan"
+}
+5408011=
+{
+	name="Ahiromid"
+	culture="alasiyan"
+}
+5408012=
+{
+	name="Baalhannid"
+	culture="alasiyan"
+}
+5408013=
+{
+	name="Baalhannid"
+	culture="alasiyan"
+}
+5408014=
+{
+	name="Baalhannid"
+	culture="alasiyan"
+}
+5408015=
+{
+	name="Baalhannid"
+	culture="alasiyan"
+}
+5408016=
+{
+	name="Baalid"
+	culture="alasiyan"
+}
+5408017=
+{
+	name="Baalid"
+	culture="alasiyan"
+}
+5408018=
+{
+	name="Baalid"
+	culture="alasiyan"
+}
+5408019=
+{
+	name="Baalid"
+	culture="alasiyan"
+}
+5408020=
+{
+	name="Barca"
+	culture="alasiyan"
+}
+5408021=
+{
+	name="Barca"
+	culture="alasiyan"
+}
+5408022=
+{
+	name="Barcid"
+	culture="alasiyan"
+}
+5408023=
+{
+	name="Barcid"
+	culture="alasiyan"
+}
+5408024=
+{
+	name="Bodona"
+	culture="alasiyan"
+}
+5408025=
+{
+	name="Bodona"
+	culture="alasiyan"
+}
+5408026=
+{
+	name="Bodonid"
+	culture="alasiyan"
+}
+5408027=
+{
+	name="Bodonid"
+	culture="alasiyan"
+}
+5408028=
+{
+	name="Bostara"
+	culture="alasiyan"
+}
+5408029=
+{
+	name="Bostara"
+	culture="alasiyan"
+}
+5408030=
+{
+	name="Bostarid"
+	culture="alasiyan"
+}
+5408031=
+{
+	name="Bostarid"
+	culture="alasiyan"
+}
+5408032=
+{
+	name="Chelbesid"
+	culture="alasiyan"
+}
+5408033=
+{
+	name="Chelbesid"
+	culture="alasiyan"
+}
+5408034=
+{
+	name="Chelbesid"
+	culture="alasiyan"
+}
+5408035=
+{
+	name="Chelbesid"
+	culture="alasiyan"
+}
+5408036=
+{
+	name="Eshbaalid"
+	culture="alasiyan"
+}
+5408037=
+{
+	name="Eshbaalid"
+	culture="alasiyan"
+}
+5408038=
+{
+	name="Eshbaalid"
+	culture="alasiyan"
+}
+5408039=
+{
+	name="Eshbaalid"
+	culture="alasiyan"
+}
+5408040=
+{
+	name="Eugorid"
+	culture="alasiyan"
+}
+5408041=
+{
+	name="Eugorid"
+	culture="alasiyan"
+}
+5408042=
+{
+	name="Eugorid"
+	culture="alasiyan"
+}
+5408043=
+{
+	name="Eugorid"
+	culture="alasiyan"
+}
+5408044=
+{
+	name="Hannid"
+	culture="alasiyan"
+}
+5408045=
+{
+	name="Hannid"
+	culture="alasiyan"
+}
+5408046=
+{
+	name="Hannid"
+	culture="alasiyan"
+}
+5408047=
+{
+	name="Hannid"
+	culture="alasiyan"
+}
+5408048=
+{
+	name="Hiramid"
+	culture="alasiyan"
+}
+5408049=
+{
+	name="Hiramid"
+	culture="alasiyan"
+}
+5408050=
+{
+	name="Hiramid"
+	culture="alasiyan"
+}
+5408051=
+{
+	name="Hiramid"
+	culture="alasiyan"
+}
+5408052=
+{
+	name="Mago"
+	culture="alasiyan"
+}
+5408053=
+{
+	name="Mago"
+	culture="alasiyan"
+}
+5408054=
+{
+	name="Magid"
+	culture="alasiyan"
+}
+5408055=
+{
+	name="Magid"
+	culture="alasiyan"
+}
+5408056=
+{
+	name="Mattanid"
+	culture="alasiyan"
+}
+5408057=
+{
+	name="Mattanid"
+	culture="alasiyan"
+}
+5408058=
+{
+	name="Mattanid"
+	culture="alasiyan"
+}
+5408059=
+{
+	name="Mattanid"
+	culture="alasiyan"
+}
+5408060=
+{
+	name="Metallid"
+	culture="alasiyan"
+}
+5408061=
+{
+	name="Metallid"
+	culture="alasiyan"
+}
+5408062=
+{
+	name="Metallid"
+	culture="alasiyan"
+}
+5408063=
+{
+	name="Metallid"
+	culture="alasiyan"
+}
+5408064=
+{
+	name="Milkiramid"
+	culture="alasiyan"
+}
+5408065=
+{
+	name="Milkiramid"
+	culture="alasiyan"
+}
+5408066=
+{
+	name="Milkiramid"
+	culture="alasiyan"
+}
+5408067=
+{
+	name="Milkiramid"
+	culture="alasiyan"
+}
+5408068=
+{
+	name="Philosirid"
+	culture="alasiyan"
+}
+5408069=
+{
+	name="Philosirid"
+	culture="alasiyan"
+}
+5408070=
+{
+	name="Philosirid"
+	culture="alasiyan"
+}
+5408071=
+{
+	name="Philosirid"
+	culture="alasiyan"
+}
+5408072=
+{
+	name="Gisgo"
+	culture="alasiyan"
+}
+5408073=
+{
+	name="Gisgo"
+	culture="alasiyan"
+}
+5408074=
+{
+	name="Gisgoid"
+	culture="alasiyan"
+}
+5408075=
+{
+	name="Gisgoid"
+	culture="alasiyan"
+}
+5408076=
+{
+	name="Gerbalid"
+	culture="alasiyan"
+}
+5408077=
+{
+	name="Gerbalid"
+	culture="alasiyan"
+}
+5408078=
+{
+	name="Gerbalid"
+	culture="alasiyan"
+}
+5408079=
+{
+	name="Gerbalid"
+	culture="alasiyan"
+}
+5408080=
+{
+	name="Hammid"
+	culture="alasiyan"
+}
+5408081=
+{
+	name="Hammid"
+	culture="alasiyan"
+}
+5408082=
+{
+	name="Hammid"
+	culture="alasiyan"
+}
+5408083=
+{
+	name="Hammid"
+	culture="alasiyan"
+}
+5408084=
+{
+	name="Eugarid"
+	culture="alasiyan"
+}
+5408085=
+{
+	name="Eugarid"
+	culture="alasiyan"
+}
+5408086=
+{
+	name="Eugarid"
+	culture="alasiyan"
+}
+5408087=
+{
+	name="Eugarid"
+	culture="alasiyan"
+}
+5408088=
+{
+	name="Mashhid"
+	culture="alasiyan"
+}
+5408089=
+{
+	name="Mashhid"
+	culture="alasiyan"
+}
+5408090=
+{
+	name="Mashhid"
+	culture="alasiyan"
+}
+5408091=
+{
+	name="Mashhid"
+	culture="alasiyan"
+}
+5408092=
+{
+	name="Ummashid"
+	culture="alasiyan"
+}
+5408093=
+{
+	name="Ummashid"
+	culture="alasiyan"
+}
+5408094=
+{
+	name="Ummashid"
+	culture="alasiyan"
+}
+5408095=
+{
+	name="Ummashid"
+	culture="alasiyan"
+}

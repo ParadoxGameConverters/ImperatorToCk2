@@ -1,0 +1,212 @@
+5414008=
+{
+	name="Kantakouzenos"
+	culture="pelasgian"
+	religion="orthodox"
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 8
+			texture_internal = 45
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+5414009=
+{
+	name="Palaiologos"
+	culture="pelasgian"
+	religion="orthodox"
+	coat_of_arms=
+	{
+		data=
+		{
+0 3 0 32 0 0 0 			}
+		religion="catholic"
+	}
+	used_for_random=no
+}
+5414010=
+{
+	name="Komnenos"
+	culture="pelasgian"
+}
+5414011=
+{
+	name="Macrodoukas"
+	culture="pelasgian"
+	religion="orthodox"
+}
+5414012=
+{
+	name="Aineidas"
+	culture="pelasgian"
+}
+5414013=
+{
+	name="Kantakouzenos"
+	culture="pelasgian"
+}
+5414014 = {
+	name="Pegonitissos"
+	culture="pelasgian"
+	religion="orthodox"
+	coat_of_arms=
+	{
+		data=
+		{
+0 0 0 26 7 0 0 			}
+		religion="orthodox"
+	}
+}
+5414015 = {
+	name="Angelos"
+	culture="pelasgian"
+	religion="orthodox"
+	coat_of_arms=
+	{
+		data=
+		{
+0 5 0 9 0 0 0 			}
+		religion="catholic"
+	}
+}
+
+5414016 = {
+	name="Kastriotis"
+	culture="pelasgian"
+}
+
+5414017 ={
+	name="Doukas Kamateros"
+	culture="pelasgian"
+}
+5414018 ={
+	name="Kamateros"
+	culture="pelasgian"
+	religion="orthodox"
+}
+5414019 ={
+	name="Skleros"
+	culture="pelasgian"
+	religion="orthodox"
+	coat_of_arms=
+	{
+		data=
+		{
+0 5 0 18 0 0 0 			}
+		religion="catholic"
+	}
+}
+5414020 ={
+	name="Palaiologos"
+	culture="pelasgian"
+	religion="orthodox"
+}
+5414021 ={
+	name="Makrembolites"
+	culture="pelasgian"
+	religion="orthodox"
+	coat_of_arms=
+	{
+		data=
+		{
+0 1 0 2 2 1 0 			}
+		religion="orthodox"
+	}
+}
+5414022 ={
+	name="Botaneiates"
+	culture="pelasgian"
+	religion="orthodox"
+	coat_of_arms=
+	{
+		data=
+		{
+0 8 0 36 0 0 0 			}
+		religion="catholic"
+	}
+}
+5414023 = {
+	name="Aaron"
+	culture="pelasgian"
+}
+5414024 = {
+	name = "Ljauelgeitis"
+	culture = magnapelasgian
+}
+5414025 = {
+	name="Grammatikos"
+	culture="pelasgian"
+}
+5414026 = {
+	name="Zeno"
+	culture="pelasgian"
+}
+5414027 = {
+	name="Bua Spatas"
+	culture="pelasgian"
+}
+5414028 = {
+	name="Karatzas"
+	culture="pelasgian"
+}
+5414029 = {
+	name="Amiroutzes"
+	culture="pelasgian"
+}
+5414030 = {
+	name="Bessarion"
+	culture="pelasgian"
+}
+5414031 = {
+	name="Chalkokondyles"
+	culture="pelasgian"
+}
+5414032 = {
+	name="Gazis"
+	culture="pelasgian"
+}
+5414033 = {
+	name="Kallistos"
+	culture="pelasgian"
+}
+5414034 = {
+	name="Kladas"
+	culture="pelasgian"
+}
+5414035 = {
+	name="de Patras"
+	culture="pelasgian"
+}
+5414036 = {
+	name="Gemistus"
+	culture="pelasgian"
+}
+5414037 = {
+	name="Allatios"
+	culture="pelasgian"
+}
+5414038 = {
+	name="Chalcocondyles"
+	culture="pelasgian"
+}
+5414039 = {
+	name="Korniaktos"
+	culture="pelasgian"
+}
+5414040 = {
+	name="Damaskenos"
+	culture="pelasgian"
+}
+5414041 = {
+	name="Heraclides"
+	culture="pelasgian"
+}
+5414042 = {
+	name="Kallokratos"
+	culture="pelasgian"
+}

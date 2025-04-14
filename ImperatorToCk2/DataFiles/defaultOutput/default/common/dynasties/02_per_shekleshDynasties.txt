@@ -1,0 +1,500 @@
+5415000=
+{
+	name="Ahmid"
+	culture="per_sheklesh"
+}
+5415001=
+{
+	name="Ahmid"
+	culture="per_sheklesh"
+}
+5415002=
+{
+	name="Ahmid"
+	culture="per_sheklesh"
+}
+5415003=
+{
+	name="Ahmid"
+	culture="per_sheklesh"
+}
+5415004=
+{
+	name="Galestus"
+	culture="per_sheklesh"
+}
+5415005=
+{
+	name="Galestid"
+	culture="per_sheklesh"
+}
+5415006=
+{
+	name="Galestid"
+	culture="per_sheklesh"
+}
+5415007=
+{
+	name="Galestid"
+	culture="per_sheklesh"
+}
+5415008=
+{
+	name="Kenamus"
+	culture="per_sheklesh"
+}
+5415009=
+{
+	name="Kenamid"
+	culture="per_sheklesh"
+}
+5415010=
+{
+	name="Kenamid"
+	culture="per_sheklesh"
+}
+5415011=
+{
+	name="Kenamid"
+	culture="per_sheklesh"
+}
+5415012=
+{
+	name="Naravid"
+	culture="per_sheklesh"
+}
+5415013=
+{
+	name="Naravid"
+	culture="per_sheklesh"
+}
+5415014=
+{
+	name="Naravid"
+	culture="per_sheklesh"
+}
+5415015=
+{
+	name="Naravid"
+	culture="per_sheklesh"
+}
+5415016=
+{
+	name="Penamus"
+	culture="per_sheklesh"
+}
+5415017=
+{
+	name="Penamid"
+	culture="per_sheklesh"
+}
+5415018=
+{
+	name="Penamid"
+	culture="per_sheklesh"
+}
+5415019=
+{
+	name="Penamid"
+	culture="per_sheklesh"
+}
+5415020=
+{
+	name="Senuid"
+	culture="per_sheklesh"
+}
+5415021=
+{
+	name="Senuid"
+	culture="per_sheklesh"
+}
+5415022=
+{
+	name="Senuid"
+	culture="per_sheklesh"
+}
+5415023=
+{
+	name="Senuid"
+	culture="per_sheklesh"
+}
+5415024=
+{
+	name="Setnid"
+	culture="per_sheklesh"
+}
+5415025=
+{
+	name="Setnid"
+	culture="per_sheklesh"
+}
+5415026=
+{
+	name="Setnid"
+	culture="per_sheklesh"
+}
+5415027=
+{
+	name="Setnid"
+	culture="per_sheklesh"
+}
+5415028=
+{
+	name="Arganid"
+	culture="per_sheklesh"
+}
+5415029=
+{
+	name="Arganid"
+	culture="per_sheklesh"
+}
+5415030=
+{
+	name="Arganid"
+	culture="per_sheklesh"
+}
+5415031=
+{
+	name="Arganid"
+	culture="per_sheklesh"
+}
+5415032=
+{
+	name="Psammid"
+	culture="per_sheklesh"
+}
+5415033=
+{
+	name="Psammid"
+	culture="per_sheklesh"
+}
+5415034=
+{
+	name="Psammid"
+	culture="per_sheklesh"
+}
+5415035=
+{
+	name="Psammid"
+	culture="per_sheklesh"
+}
+5415036=
+{
+	name="Philothid"
+	culture="per_sheklesh"
+}
+5415037=
+{
+	name="Philothid"
+	culture="per_sheklesh"
+}
+5415038=
+{
+	name="Philothid"
+	culture="per_sheklesh"
+}
+5415039=
+{
+	name="Philothid"
+	culture="per_sheklesh"
+}
+5415040=
+{
+	name="Timolid"
+	culture="per_sheklesh"
+}
+5415041=
+{
+	name="Timolid"
+	culture="per_sheklesh"
+}
+5415042=
+{
+	name="Timolid"
+	culture="per_sheklesh"
+}
+5415043=
+{
+	name="Timolid"
+	culture="per_sheklesh"
+}
+5415044=
+{
+	name="Zosid"
+	culture="per_sheklesh"
+}
+5415045=
+{
+	name="Zosid"
+	culture="per_sheklesh"
+}
+5415046=
+{
+	name="Zosid"
+	culture="per_sheklesh"
+}
+5415047=
+{
+	name="Zosid"
+	culture="per_sheklesh"
+}
+5415048=
+{
+	name="Phileid"
+	culture="per_sheklesh"
+}
+5415049=
+{
+	name="Phileid"
+	culture="per_sheklesh"
+}
+5415050=
+{
+	name="Phileid"
+	culture="per_sheklesh"
+}
+5415051=
+{
+	name="Phileid"
+	culture="per_sheklesh"
+}
+5415052=
+{
+	name="Nicodemid"
+	culture="per_sheklesh"
+}
+5415053=
+{
+	name="Nicodemid"
+	culture="per_sheklesh"
+}
+5415054=
+{
+	name="Nicodemid"
+	culture="per_sheklesh"
+}
+5415055=
+{
+	name="Nicodemid"
+	culture="per_sheklesh"
+}
+5415056=
+{
+	name="Nefarid"
+	culture="per_sheklesh"
+}
+5415057=
+{
+	name="Nefarid"
+	culture="per_sheklesh"
+}
+5415058=
+{
+	name="Nefarid"
+	culture="per_sheklesh"
+}
+5415059=
+{
+	name="Nefarid"
+	culture="per_sheklesh"
+}
+5415060=
+{
+	name="Bastid"
+	culture="per_sheklesh"
+}
+5415061=
+{
+	name="Bastid"
+	culture="per_sheklesh"
+}
+5415062=
+{
+	name="Bastid"
+	culture="per_sheklesh"
+}
+5415063=
+{
+	name="Bastid"
+	culture="per_sheklesh"
+}
+5415064=
+{
+	name="Xeneid"
+	culture="per_sheklesh"
+}
+5415065=
+{
+	name="Xeneid"
+	culture="per_sheklesh"
+}
+5415066=
+{
+	name="Xeneid"
+	culture="per_sheklesh"
+}
+5415067=
+{
+	name="Xeneid"
+	culture="per_sheklesh"
+}
+5415068=
+{
+	name="Naravid"
+	culture="per_sheklesh"
+}
+5415069=
+{
+	name="Naravid"
+	culture="per_sheklesh"
+}
+5415070=
+{
+	name="Naravid"
+	culture="per_sheklesh"
+}
+5415071=
+{
+	name="Naravid"
+	culture="per_sheklesh"
+}
+5415072=
+{
+	name="Ezanid"
+	culture="per_sheklesh"
+}
+5415073=
+{
+	name="Ezanid"
+	culture="per_sheklesh"
+}
+5415074=
+{
+	name="Ezanid"
+	culture="per_sheklesh"
+}
+5415075=
+{
+	name="Ezanid"
+	culture="per_sheklesh"
+}
+5415076=
+{
+	name="Ahmid"
+	culture="per_sheklesh"
+}
+5415077=
+{
+	name="Ahmid"
+	culture="per_sheklesh"
+}
+5415078=
+{
+	name="Ahmid"
+	culture="per_sheklesh"
+}
+5415079=
+{
+	name="Ahmid"
+	culture="per_sheklesh"
+}
+5415080=
+{
+	name="Alarus"
+	culture="per_sheklesh"
+}
+5415081=
+{
+	name="Alara"
+	culture="per_sheklesh"
+}
+5415082=
+{
+	name="Alarid"
+	culture="per_sheklesh"
+}
+5415083=
+{
+	name="Alarid"
+	culture="per_sheklesh"
+}
+5415084=
+{
+	name="Harsiotes"
+	culture="per_sheklesh"
+}
+5415085=
+{
+	name="Harsiotes"
+	culture="per_sheklesh"
+}
+5415086=
+{
+	name="Harsiotid"
+	culture="per_sheklesh"
+}
+5415087=
+{
+	name="Harsiotid"
+	culture="per_sheklesh"
+}
+5415088=
+{
+	name="Henus"
+	culture="per_sheklesh"
+}
+5415089=
+{
+	name="Hena"
+	culture="per_sheklesh"
+}
+5415090=
+{
+	name="Henid"
+	culture="per_sheklesh"
+}
+5415091=
+{
+	name="Henid"
+	culture="per_sheklesh"
+}
+5415092=
+{
+	name="Ibus"
+	culture="per_sheklesh"
+}
+5415093=
+{
+	name="Iba"
+	culture="per_sheklesh"
+}
+5415094=
+{
+	name="Ibid"
+	culture="per_sheklesh"
+}
+5415095=
+{
+	name="Ibid"
+	culture="per_sheklesh"
+}
+5415096=
+{
+	name="Khabbash"
+	culture="per_sheklesh"
+}
+5415097=
+{
+	name="Khabbash"
+	culture="per_sheklesh"
+}
+5415098=
+{
+	name="Khabbashid"
+	culture="per_sheklesh"
+}
+5415099=
+{
+	name="Khabbashid"
+	culture="per_sheklesh"
+}

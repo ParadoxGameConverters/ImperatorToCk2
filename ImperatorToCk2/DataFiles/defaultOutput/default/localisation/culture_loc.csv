@@ -123,6 +123,20 @@ lom;Lom;Lom;Lomische;;Lom;;;;;;;;;x
 ghagar;Ghagar;Ghagar;Ghagarische;;Ghagar;;;;;;;;;x
 old_burgundian;Burgundian;Burgundian;Burgundische;;Burgundian;;;;;;;;;x
 neo_hyksos;Neo-Hyksos;Neo-Hyksos;Neuhyksos;;Neo-Hyksos;;;;;;;;;x
+hurrian_culture;Hurrian;Hourrite;Hurrische;;Hurrita;;;;;;;;;x
+gutian;Gutian;Gutian;Gutische;;Gutian;;;;;;;;;x
+sumerian_culture;Sumerian;Sumérien;Sumerisch;;Sumerio;;;;;;;;;x
+eblaite;Eblaite;Éblaïte;Eblait;;Eblaíta;;;;;;;;;x
+alasiyan;Alasiyan;Alasiyan;Alasiyisch;;Alasiyan;;;;;;;;;x
+ugaritic;Ugaritic;Ougaritique;Ugaritisch;;Ugarítico;;;;;;;;;x
+trojan;Trojan;Troyen;Trojisch;;Troyano;;;;;;;;;x
+hatti_culture;Hatti;Hatti;Hattisch;;Hatti;;;;;;;;;x
+minoan;Minoan;Minoen;Minoisch;;Minoico;;;;;;;;;x
+cycladic;Cycladic;Cycladique;Kykladen;;Cicládica;;;;;;;;;x
+pelasgian;Pelasgian;Pélasgien;Pelasgisch;;Pelasgo;;;;;;;;;x
+per_sheklesh;Per-Sheklesh;Per-Sheklesh;Per-Shekleshisch;;Per-Sheklesh;;;;;;;;;x
+niwt_ipt;Niwt-Ipt;Niwt-Ipt;Niwt-Iptisch;;Neo-Hyksos;;;;;;;;;x
+kizzuwatnan;Kizzuwatnan;Kizzuwatnan;Kizzuwatnisch;;Kizzuwatnan;;;;;;;;;x
 #From Tianxia
 pyu;Pyu;Pyu;Pyuische;;Pyu;;;;;;;;;x
 shan;Shan;shan;Shan;;Shan;;;;;;;;;x
@@ -144,6 +158,7 @@ atlanto_slavic;Atlanto-Slavic;Atlanto-Slavic;Atlantischslavische;;Atlanto-Slavic
 scythian_group;Scythian;Scythe;Skythe;;Escita;;;;;;;;;x
 semitic_group;Chaldean;Chaldéen;Chaldäisch;;Caldaico;;;;;;;;;x
 dom_group;Dom;Dom;Domische;;Dom;;;;;;;;;x
+hurrian_group;Hurrian;Hourrite;Hurrische;;Hurrita;;;;;;;;;x
 #From Tianxia
 burmese_group;Burmic;Burmic;Burmisch;;Burmic;;;;;;;;;x
 tai_kadai_group;Tai-Kadai;Tai-Kadai;Taikadaisch;;Tai-Kadai;;;;;;;;;x

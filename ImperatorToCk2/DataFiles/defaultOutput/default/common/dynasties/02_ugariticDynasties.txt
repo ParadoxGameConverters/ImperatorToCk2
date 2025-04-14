@@ -1,0 +1,480 @@
+5409000=
+{
+	name="Abbarid"
+	culture="ugaritic"
+}
+5409001=
+{
+	name="Abbarid"
+	culture="ugaritic"
+}
+5409002=
+{
+	name="Abbarid"
+	culture="ugaritic"
+}
+5409003=
+{
+	name="Abbarid"
+	culture="ugaritic"
+}
+5409004=
+{
+	name="Adonibaal"
+	culture="ugaritic"
+}
+5409005=
+{
+	name="Adonibaalid"
+	culture="ugaritic"
+}
+5409006=
+{
+	name="Adonibaalid"
+	culture="ugaritic"
+}
+5409007=
+{
+	name="Adonibaalid"
+	culture="ugaritic"
+}
+5409008=
+{
+	name="Ahirom"
+	culture="ugaritic"
+}
+5409009=
+{
+	name="Ahiromid"
+	culture="ugaritic"
+}
+5409010=
+{
+	name="Ahiromid"
+	culture="ugaritic"
+}
+5409011=
+{
+	name="Ahiromid"
+	culture="ugaritic"
+}
+5409012=
+{
+	name="Baalhannid"
+	culture="ugaritic"
+}
+5409013=
+{
+	name="Baalhannid"
+	culture="ugaritic"
+}
+5409014=
+{
+	name="Baalhannid"
+	culture="ugaritic"
+}
+5409015=
+{
+	name="Baalhannid"
+	culture="ugaritic"
+}
+5409016=
+{
+	name="Baalid"
+	culture="ugaritic"
+}
+5409017=
+{
+	name="Baalid"
+	culture="ugaritic"
+}
+5409018=
+{
+	name="Baalid"
+	culture="ugaritic"
+}
+5409019=
+{
+	name="Baalid"
+	culture="ugaritic"
+}
+5409020=
+{
+	name="Barca"
+	culture="ugaritic"
+}
+5409021=
+{
+	name="Barca"
+	culture="ugaritic"
+}
+5409022=
+{
+	name="Barcid"
+	culture="ugaritic"
+}
+5409023=
+{
+	name="Barcid"
+	culture="ugaritic"
+}
+5409024=
+{
+	name="Bodona"
+	culture="ugaritic"
+}
+5409025=
+{
+	name="Bodona"
+	culture="ugaritic"
+}
+5409026=
+{
+	name="Bodonid"
+	culture="ugaritic"
+}
+5409027=
+{
+	name="Bodonid"
+	culture="ugaritic"
+}
+5409028=
+{
+	name="Bostara"
+	culture="ugaritic"
+}
+5409029=
+{
+	name="Bostara"
+	culture="ugaritic"
+}
+5409030=
+{
+	name="Bostarid"
+	culture="ugaritic"
+}
+5409031=
+{
+	name="Bostarid"
+	culture="ugaritic"
+}
+5409032=
+{
+	name="Chelbesid"
+	culture="ugaritic"
+}
+5409033=
+{
+	name="Chelbesid"
+	culture="ugaritic"
+}
+5409034=
+{
+	name="Chelbesid"
+	culture="ugaritic"
+}
+5409035=
+{
+	name="Chelbesid"
+	culture="ugaritic"
+}
+5409036=
+{
+	name="Eshbaalid"
+	culture="ugaritic"
+}
+5409037=
+{
+	name="Eshbaalid"
+	culture="ugaritic"
+}
+5409038=
+{
+	name="Eshbaalid"
+	culture="ugaritic"
+}
+5409039=
+{
+	name="Eshbaalid"
+	culture="ugaritic"
+}
+5409040=
+{
+	name="Eugorid"
+	culture="ugaritic"
+}
+5409041=
+{
+	name="Eugorid"
+	culture="ugaritic"
+}
+5409042=
+{
+	name="Eugorid"
+	culture="ugaritic"
+}
+5409043=
+{
+	name="Eugorid"
+	culture="ugaritic"
+}
+5409044=
+{
+	name="Hannid"
+	culture="ugaritic"
+}
+5409045=
+{
+	name="Hannid"
+	culture="ugaritic"
+}
+5409046=
+{
+	name="Hannid"
+	culture="ugaritic"
+}
+5409047=
+{
+	name="Hannid"
+	culture="ugaritic"
+}
+5409048=
+{
+	name="Hiramid"
+	culture="ugaritic"
+}
+5409049=
+{
+	name="Hiramid"
+	culture="ugaritic"
+}
+5409050=
+{
+	name="Hiramid"
+	culture="ugaritic"
+}
+5409051=
+{
+	name="Hiramid"
+	culture="ugaritic"
+}
+5409052=
+{
+	name="Mago"
+	culture="ugaritic"
+}
+5409053=
+{
+	name="Mago"
+	culture="ugaritic"
+}
+5409054=
+{
+	name="Magid"
+	culture="ugaritic"
+}
+5409055=
+{
+	name="Magid"
+	culture="ugaritic"
+}
+5409056=
+{
+	name="Mattanid"
+	culture="ugaritic"
+}
+5409057=
+{
+	name="Mattanid"
+	culture="ugaritic"
+}
+5409058=
+{
+	name="Mattanid"
+	culture="ugaritic"
+}
+5409059=
+{
+	name="Mattanid"
+	culture="ugaritic"
+}
+5409060=
+{
+	name="Metallid"
+	culture="ugaritic"
+}
+5409061=
+{
+	name="Metallid"
+	culture="ugaritic"
+}
+5409062=
+{
+	name="Metallid"
+	culture="ugaritic"
+}
+5409063=
+{
+	name="Metallid"
+	culture="ugaritic"
+}
+5409064=
+{
+	name="Milkiramid"
+	culture="ugaritic"
+}
+5409065=
+{
+	name="Milkiramid"
+	culture="ugaritic"
+}
+5409066=
+{
+	name="Milkiramid"
+	culture="ugaritic"
+}
+5409067=
+{
+	name="Milkiramid"
+	culture="ugaritic"
+}
+5409068=
+{
+	name="Philosirid"
+	culture="ugaritic"
+}
+5409069=
+{
+	name="Philosirid"
+	culture="ugaritic"
+}
+5409070=
+{
+	name="Philosirid"
+	culture="ugaritic"
+}
+5409071=
+{
+	name="Philosirid"
+	culture="ugaritic"
+}
+5409072=
+{
+	name="Gisgo"
+	culture="ugaritic"
+}
+5409073=
+{
+	name="Gisgo"
+	culture="ugaritic"
+}
+5409074=
+{
+	name="Gisgoid"
+	culture="ugaritic"
+}
+5409075=
+{
+	name="Gisgoid"
+	culture="ugaritic"
+}
+5409076=
+{
+	name="Gerbalid"
+	culture="ugaritic"
+}
+5409077=
+{
+	name="Gerbalid"
+	culture="ugaritic"
+}
+5409078=
+{
+	name="Gerbalid"
+	culture="ugaritic"
+}
+5409079=
+{
+	name="Gerbalid"
+	culture="ugaritic"
+}
+5409080=
+{
+	name="Hammid"
+	culture="ugaritic"
+}
+5409081=
+{
+	name="Hammid"
+	culture="ugaritic"
+}
+5409082=
+{
+	name="Hammid"
+	culture="ugaritic"
+}
+5409083=
+{
+	name="Hammid"
+	culture="ugaritic"
+}
+5409084=
+{
+	name="Eugarid"
+	culture="ugaritic"
+}
+5409085=
+{
+	name="Eugarid"
+	culture="ugaritic"
+}
+5409086=
+{
+	name="Eugarid"
+	culture="ugaritic"
+}
+5409087=
+{
+	name="Eugarid"
+	culture="ugaritic"
+}
+5409088=
+{
+	name="Mashhid"
+	culture="ugaritic"
+}
+5409089=
+{
+	name="Mashhid"
+	culture="ugaritic"
+}
+5409090=
+{
+	name="Mashhid"
+	culture="ugaritic"
+}
+5409091=
+{
+	name="Mashhid"
+	culture="ugaritic"
+}
+5409092=
+{
+	name="Ummashid"
+	culture="ugaritic"
+}
+5409093=
+{
+	name="Ummashid"
+	culture="ugaritic"
+}
+5409094=
+{
+	name="Ummashid"
+	culture="ugaritic"
+}
+5409095=
+{
+	name="Ummashid"
+	culture="ugaritic"
+}

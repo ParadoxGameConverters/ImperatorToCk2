@@ -1,0 +1,130 @@
+5405000=
+{
+	name="Agum-Duniash"
+	culture="gutian"
+}
+5405001=
+{
+	name="Arshanta-Gidar"
+	culture="gutian"
+}
+5405002=
+{
+	name="Gab-Indash"
+	culture="gutian"
+}
+5405003=
+{
+	name="Hurba-Bugash"
+	culture="gutian"
+}
+5405004=
+{
+	name="Gurzar-Duzagash"
+	culture="gutian"
+}
+5405005=
+{
+	name="Shipta-Alban"
+	culture="gutian"
+}
+5405006=
+{
+	name="Gandash-Mirizir"
+	culture="gutian"
+}
+5405007=
+{
+	name="Kunigi-Maruttash"
+	culture="gutian"
+}
+5405008=
+{
+	name="Badar-Akmul"
+	culture="gutian"
+}
+5405009=
+{
+	name="Dakash-Laguda"
+	culture="gutian"
+}
+5405010=
+{
+	name="Mushia-Kassu"
+	culture="gutian"
+}
+5405011=
+{
+	name="Purna-Sah"
+	culture="gutian"
+}
+5405012=
+{
+	name="Ipashi-Sali"
+	culture="gutian"
+}
+5405013=
+{
+	name="Ashlulu-Kamulla"
+	culture="gutian"
+}
+5405014=
+{
+	name="Uzibi-Nanai"
+	culture="gutian"
+}
+5405015=
+{
+	name="Kadash-Miriash"
+	culture="gutian"
+}
+5405016=
+{
+	name="Hala-Shihu"
+	culture="gutian"
+}
+5405017=
+{
+	name="Ukin-Shipak"
+	culture="gutian"
+}
+5405018=
+{
+	name="Barhu-Shikme"
+	culture="gutian"
+}
+5405019=
+{
+	name="Ambaru-Shugurra"
+	culture="gutian"
+}
+5405020=
+{
+	name="Gabnila-Sah"
+	culture="gutian"
+}
+5405021=
+{
+	name="Kukla-Shimalia"
+	culture="gutian"
+}
+5405022=
+{
+	name="Apa-Zini"
+	culture="gutian"
+}
+5405023=
+{
+	name="Huta-Tassi"
+	culture="gutian"
+}
+5405024=
+{
+	name="Manudi-Turgu"
+	culture="gutian"
+}
+5405025=
+{
+	name="Ulam-Kassu"
+	culture="gutian"
+}
