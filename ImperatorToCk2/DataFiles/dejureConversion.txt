@@ -23,7 +23,7 @@ old_burgundian,e_germany,k_pomerania
 hatti_culture,e_HLA,k_anatolia
 hebrew,e_persia,k_jerusalem
 hellenistic,e_ALX,k_ALX
-hurrian,e_persia,k_HUR
+hurrian_culture,e_persia,k_HUR
 iberic,e_HBR,k_TUR
 isaurian,e_HLA,k_anatolia
 kizzuwatnan,e_HLA,k_anatolia
