@@ -559,6 +559,9 @@ kuretes,pelasgian
 phthiotai,pelasgian
 mukanai,pelasgian
 
+#PreAnatolian
+hatti,hatti_culture
+
 #150BC start date mod
 aorsi,sarmatian
 tauri,dahi_scythian
