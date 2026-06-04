@@ -1,6 +1,5 @@
 package com.paradoxgameconverters.irtockii;
 
-
 import java.util.Scanner;
 import java.io.IOException;
 import java.io.FileInputStream;
@@ -18,7 +17,7 @@ public class Characters
 {
     private int x;
 
-    public static ArrayList<String[]> importChar (String name,int compressedOrNot) throws IOException
+    public static ArrayList<String[]> importChar (String name,int compressedOrNot,int cutoff) throws IOException
     {
 
         String tab = "	";
@@ -32,6 +31,8 @@ public class Characters
         String keyWord = "1={";
 
         int aqq = 0;
+        
+        int idCount = 0;
 
         ArrayList<String[]> impCharList= new ArrayList<String[]>();
 
@@ -186,8 +187,29 @@ public class Characters
                             tmpOutput[aq2] = output[aq2];
                             aq2 = aq2 + 1;
                         }
+                        
+                        int tmpSpouse = -1;
+                        
+                        if (!tmpOutput[14].equals("none")) {
+                            tmpSpouse = Integer.parseInt(tmpOutput[14]);
+                        }
+                        
+                        if (cutoff > -1) { //if relatives are above the cutoff point, purge in order to save memory
+                            //Children will never have an ID higher then their parents
+                            if (tmpSpouse < cutoff) {
+                                tmpOutput[14] = "0";
+                            }
+                        }
+                        
+                        if (cutoff <= -1 || idCount >= cutoff) { //Only add to memory if above the cutoff point
+                            impCharList.add(tmpOutput);
+                        } else {
+                            impCharList.add(null);
+                        }
+                        
+                        idCount = idCount + 1;
 
-                        impCharList.add(tmpOutput);
+                        //impCharList.add(tmpOutput);
 
                         output[0] = "noName"; //default for no owner, uncolonized province
                         output[1] = "noCulture"; //default for no culture, uncolonized province with 0 pops
