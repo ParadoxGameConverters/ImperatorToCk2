@@ -616,8 +616,27 @@ public class Main
             String govReg;
             String govRegID;
             String[] govCharacter;
+            
+            //int cutoffNum = 450000;
+            int cutoffNum = -1;
+            int emergencyCount = 5;
+            boolean characterLoop = true;
+            while (characterLoop && emergencyCount > 0) { //Will continously attempt with increasingly-high cutoffNum, up to emergencyCount
+                try {
+                    impCharInfoList = Characters.importChar(saveCharacters,compressedOrNot,cutoffNum);
+                    characterLoop = false;
+                } catch (java.lang.OutOfMemoryError exception){ //Replace likely long-dead characters with null as a fail-safe for memory-related crashes
+                    LOGGER.warning("Error! Ran out of memory while converting characters, attempting to purge characters below ID "+cutoffNum+".");
+                    //System.out.println("Error! Ran out of memory while converting characters, attempting to purge characters below ID "+cutoffNum+".");
+                    cutoffNum = cutoffNum + 450000;
+                } 
+                emergencyCount = emergencyCount - 1;
+                if (emergencyCount <= 0) {
+                    LOGGER.warning("Warning! Emergency cutoff point reached, aborting character conversion");
+                }
+            }
 
-            impCharInfoList = Characters.importChar(saveCharacters,compressedOrNot);
+            //impCharInfoList = Characters.importChar(saveCharacters,compressedOrNot,cutoffNum);
 
             impDynList = Characters.importDynasty(saveDynasty);
             
