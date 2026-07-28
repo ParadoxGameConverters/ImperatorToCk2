@@ -745,16 +745,19 @@ public class Importer
                     qaaa = qaaa.replace(":1 ",":0 ");
                     qaaa = qaaa.replace(": ",":0 ");
                     qaaa = qaaa.replace(":0  ",":0 "); //It is possible to have 2 spaces
-                    String[] qaaaSplit = qaaa.split(":");
-                    String qaaaIdentifier = qaaaSplit[0];
                     try {
-                        if (qaaa.charAt(0) != ' ') {//If loc lacks leading space, add a space
+                        String firstChar = qaaa.charAt(0)+"";
+                        //System.out.println(firstChar);
+                        if (!firstChar.equals(" ")) {//If loc lacks leading space, add a space
                             qaaa = " " + qaaa;
                         }
                     } catch (java.lang.StringIndexOutOfBoundsException exception) {
                         
                     }
+                    String[] qaaaSplit = qaaa.split(":");
+                    String qaaaIdentifier = qaaaSplit[0];
 
+                    //System.out.println(qaaaIdentifier+"| "+tag+"|");
                     if (qaaaIdentifier.equals(" "+tag) && !name && !qaaaIdentifier.equals("")){
                         //if previously found, will not overwrite first entry, and will ignore blank information (tag:0 "")
                         output[0] = qaaaSplit[1];
