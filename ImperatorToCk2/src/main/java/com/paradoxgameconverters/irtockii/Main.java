@@ -766,6 +766,12 @@ public class Main
 
                                 try {
                                     locName = importer.importLocalisation(locList,impTagInfo.get(aq4)[19],rulerDynasty);
+                                    if (locName[0].equals(impTagInfo.get(aq4)[19])) {
+                                        LOGGER.warning("Warning, no name found for "+impTagInfo.get(aq4)[19]+"!");
+                                    }
+                                    if (locName[1].equals(impTagInfo.get(aq4)[19])) {
+                                        LOGGER.warning("Warning, no adjective found for "+impTagInfo.get(aq4)[19]+"!");
+                                    }
                                 } catch (Exception e) {
                                     LOGGER.warning("Exception created while generating loc "+impTagInfo.get(aq4)[19]+" for "+impTagInfo.get(aq4)[0]+
                                     ", aborting loc generation");
