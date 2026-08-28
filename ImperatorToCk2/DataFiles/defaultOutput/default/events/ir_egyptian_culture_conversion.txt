@@ -66,7 +66,7 @@ province_event = {
 
 #################################################
 
-## Province culture changes from Egyptian to Egyptian Arab in Sinai and Arabia 
+## Province culture changes from Egyptian to Egyptian Arab in Sinai and Arabia
 #province_event = {
 #	id = IR_KMT.2001
 #	desc = EVTDESC_IR_KMT_2001

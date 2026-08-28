@@ -7,78 +7,78 @@
 {
 	name="Alauni"
 	culture="royal_scythian"
-	
+
 }
 5382010=
 {
 	name="Halani"
 	culture="royal_scythian"
-	
+
 }
 5382011=
 {
 	name="Shoana"
 	culture="royal_scythian"
-	
+
 }
 5382012=
 {
 	name="Senty"
 	culture="royal_scythian"
-	
+
 }
 5382013=
 {
 	name="Ovseti"
 	culture="royal_scythian"
-	
+
 }
 5382014 = {
    name="Tsærasantæ"
    culture="royal_scythian"
-   
+
 }
 5382015 = {
    name="Ælbegatæ"
    culture="royal_scythian"
-   
+
 }
 
 5382016 = {
    name="Ardasentæ"
    culture="royal_scythian"
-   
+
 }
 
 5382017 ={
    name="Bekkuyzartæ"
    culture="royal_scythian"
-   
+
 }
 5382018 ={
    name="Gæbæratæ"
    culture="royal_scythian"
-   
+
 }
 5382019 ={
    name="Dzæræhohtæ"
    culture="royal_scythian"
-   
+
 }
 5382020 ={
    name="Dzebysatæ"
    culture="royal_scythian"
-   
+
 }
 5382021 ={
    name="Djerdjitæ"
    culture="royal_scythian"
-   
+
 }
 5382022 ={
    name="Guyrdzybetæ"
    culture="royal_scythian"
-   
+
 }
 5382023 = {
 	name = "Zændjiatæ"

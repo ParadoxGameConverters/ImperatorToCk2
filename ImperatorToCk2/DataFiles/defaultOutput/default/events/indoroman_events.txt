@@ -6,12 +6,12 @@ narrative_event = {
 	desc = "EVTDESCindoromans"
 	major = yes
 	hide_from = yes
-	
+
 	picture = "GFX_Roman_Empire_Restored"
 	border = "GFX_event_narrative_frame_war"
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = {
 	set_global_flag = indo_roman_arrival
 	activate_title = { title = e_indo_roman_empire status = yes }
@@ -117,8 +117,8 @@ narrative_event = {
 					set_name = "Romalan Empire"
 	                adjective = "Romalan"
 					}
-					
-					
+
+
 					set_title_landless = { title = THIS status = yes }
 					set_title_flag = temporary_landless_title
 		            add_law = crown_authority_2
@@ -371,13 +371,13 @@ narrative_event = {
              casus_belli = indoroman_invasion
             }
 			}
-		
+
 	}
-	
+
 	option = {
 		name = "indoromanone"
 	}
-	
+
 		option = {
 		name = "indoromantwo"
 		trigger = {
@@ -392,9 +392,9 @@ character_event = {
 	id = indoromans.2
 	hide_window = yes
 	is_triggered_only = yes
-	
+
 	immediate = {
-	
+
 			create_character = {
 			random_traits = no
 			dynasty = 1069096
@@ -440,7 +440,7 @@ character_event = {
 				new_bloodline = {
 				set_description = "bloodofwalakrios_desc"
 				}
-			}				
+			}
 		}
 			create_character = {
 			random_traits = no
@@ -483,9 +483,9 @@ character_event = {
 				new_bloodline = {
 				set_description = "bloodofbritanon_desc"
 				}
-			}				
+			}
 		}
-		
+
 		create_character = {
 			random_traits = no
 			dynasty = 1342326
@@ -503,7 +503,7 @@ character_event = {
             stewardship = 11
             intrigue = 2
             learning = 16
-			
+
 			health = 7
 			trait = skilled_tactician
 			trait = one_eyed
@@ -534,7 +534,7 @@ character_event = {
 				}
 			}
 		}
-		
+
 		create_character = {
 			random_traits = no
 			dynasty = 10632096
@@ -553,9 +553,9 @@ character_event = {
             stewardship = 11
             intrigue = 2
             learning = 16
-			
+
 			health = 6
-			trait = freckles_3 
+			trait = freckles_3
 			trait = holy_warrior
 			trait = content
 			trait = charitable
@@ -875,21 +875,21 @@ character_event = {
 # Praetorian Captain gets Praetorian trait
 character_event = {
 	id = indoromans.3105
-	hide_window = yes	
+	hide_window = yes
 	only_rulers = yes
 	min_age = 14
 	capable_only = yes
 	prisoner = no
-	
+
 	trigger = {
 		has_landed_title = d_indo_praetorians
 		NOT = { trait = praetorian_ultra }
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	immediate = {
 		add_trait = praetorian_ultra
 	}
@@ -898,16 +898,16 @@ character_event = {
 character_event = {
 	id = indoromans.377454
 	hide_window = yes
-	
+
 	trigger = {
 	NOT = { has_global_flag = western_expedition_success }
 	has_landed_title = k_western_expedition
 	realm_size = 55
 	war = no
 	}
-	
+
 	immediate = {
-	set_global_flag = western_expedition_success 
+	set_global_flag = western_expedition_success
 	any_character = {
 	limit = {
 	has_character_flag = hektorios_hardrada
@@ -929,7 +929,7 @@ character_event = {
 character_event = {
 	id = indoromans.377435
 	hide_window = yes
-	
+
 	trigger = {
 	has_landed_title = k_walakrios_expedition
 	NOT = {
@@ -939,7 +939,7 @@ character_event = {
 	}
 	war = no
 	}
-	
+
 	immediate = {
 	k_walakrios_expedition = {
 	unsafe_destroy_landed_title = THIS
@@ -950,7 +950,7 @@ character_event = {
 character_event = {
 	id = indoromans.37743
 	hide_window = yes
-	
+
 	trigger = {
 	has_landed_title = k_walakrios_expedition
 	NOT = {
@@ -960,7 +960,7 @@ character_event = {
 	}
 	war = no
 	}
-	
+
 	immediate = {
 	k_walakrios_expedition = {
 	unsafe_destroy_landed_title = THIS
@@ -971,7 +971,7 @@ character_event = {
 character_event = {
 	id = indoromans.690504
 	hide_window = yes
-	
+
 	trigger = {
 	OR = {
 	has_landed_title = e_indo_roman_empire
@@ -984,7 +984,7 @@ character_event = {
 	government = indoroman_imperial_government
 	}
 	}
-	
+
 	immediate = {
 	set_government_type = indoroman_imperial_government
 	}
@@ -993,21 +993,21 @@ character_event = {
 # Rome Deserves Respect
 character_event = {
 	id = indoromans.3106
-	hide_window = yes	
+	hide_window = yes
 	only_rulers = yes
 	min_age = 14
 	capable_only = yes
 	prisoner = no
-	
+
 	trigger = {
 		has_landed_title = e_indo_roman_empire
 		NOT = { trait = indo_roman_augustus }
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	immediate = {
 	    add_infamy = -100
 		add_trait = indo_roman_augustus
@@ -1034,12 +1034,12 @@ character_event = {
 
 character_event = {
 	id = indoromans.3177
-	hide_window = yes	
+	hide_window = yes
 	only_rulers = yes
 	min_age = 14
 	capable_only = yes
 	prisoner = no
-	
+
 	trigger = {
 	    OR = {
 		has_landed_title = e_orientis
@@ -1051,11 +1051,11 @@ character_event = {
 		NOT = { trait = celestial_augustus }
 		has_global_flag = orientis_is_chinese_pretender
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	immediate = {
 	    add_infamy = -100
 		add_trait = celestial_augustus
@@ -1064,12 +1064,12 @@ character_event = {
 
 character_event = {
 	id = indoromans.31777
-	hide_window = yes	
+	hide_window = yes
 	only_rulers = yes
 	min_age = 14
 	capable_only = yes
 	prisoner = no
-	
+
 	trigger = {
 	    NOR = {
 		has_landed_title = e_orientis
@@ -1077,11 +1077,11 @@ character_event = {
 		}
 		trait = celestial_augustus
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	immediate = {
 	    add_infamy = -100
 		add_trait = celestial_augustus
@@ -1090,17 +1090,17 @@ character_event = {
 
 character_event = {
 	id = indoromans.3107
-	hide_window = yes	
-	
+	hide_window = yes
+
 	has_dlc = "Legacy of Rome"
 	trigger = {
 		trait = indo_roman_augustus
 		NOT = { has_landed_title = e_indo_roman_empire }
 		is_alive = yes
 	}
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = EVTOPTALoR.46
 		remove_trait = indo_roman_augustus
@@ -1110,7 +1110,7 @@ character_event = {
 character_event = {
 	id = indoromans.3473756 #spare me the barony
 	hide_window = yes
-	
+
 	trigger = {
 	has_landed_title = e_indo_roman_empire
 	primary_title = {
@@ -1124,7 +1124,7 @@ character_event = {
 	mean_time_to_happen = {
 	days = 1
 	}
-	
+
 	immediate = {
 	any_demesne_title = {
 		limit = {
@@ -1146,7 +1146,7 @@ character_event = {
 character_event = {
 	id = indoromans.365328
 	hide_window = yes
-	
+
 	trigger = {
 	OR = {
 	has_landed_title = k_walakrios_expedition
@@ -1160,7 +1160,7 @@ character_event = {
 	}
 	}
 	is_triggered_only = yes
-	
+
 	immediate = {
 	primary_title = {
 	set_title_landless = { title = THIS status = yes }
@@ -1171,7 +1171,7 @@ character_event = {
 character_event = {
 	id = indoromans.60504
 	hide_window = yes
-	
+
 	trigger = {
 	has_landed_title = e_indo_roman_empire
 	NOT = { has_global_flag = ire_settled }
@@ -1179,14 +1179,14 @@ character_event = {
 	AND = {
 	OR = {
 	has_landed_title = c_bikrampur
-	any_realm_lord = { 
+	any_realm_lord = {
 	has_landed_title = c_bikrampur
 	}
 	}
-	
+
 	OR = {
 	has_landed_title = c_karmanta
-	any_realm_lord = { 
+	any_realm_lord = {
 	has_landed_title = c_karmanta
 	}
 	}
@@ -1197,17 +1197,17 @@ character_event = {
 	}
 	war = no
 	}
-	
+
 	mean_time_to_happen = {
 	days = 3
 	}
-	
+
 	immediate = {
 	set_global_flag = ire_settled
 		e_indo_roman_empire = {
 		clr_title_flag = temporary_landless_title
 		}
-		add_character_modifier = { 
+		add_character_modifier = {
 		name = madman_of_deccan
 		duration = -1
 		}
@@ -1225,7 +1225,7 @@ character_event = {
 character_event = {
 	id = indoromans.60579
 	hide_window = yes
-	
+
 	trigger = {
 	has_landed_title = e_britannica
 	e_britannica = {
@@ -1233,11 +1233,11 @@ character_event = {
 	}
 	war = no
 	}
-	
+
 	mean_time_to_happen = {
 	days = 1
 	}
-	
+
 	immediate = {
 		e_britannica = {
 		clr_title_flag = temporary_landless_title
@@ -1273,9 +1273,9 @@ character_event = {
 	desc = "EVTDESCireevntten"
 	picture = GFX_evt_emissary_byzantine
 	border = GFX_event_normal_frame_intrigue
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = {
 	culture = romanoindian
 	k_vietia = {
@@ -1305,14 +1305,14 @@ character_event = {
 	trait = brave
 	religion = orthodox
 	}
-		
+
 			new_character = {
 			d_vieti_seniores = {
 			grant_title = PREV
 			}
 			add_trait = strong
 			primary_title = { gender_succ = true_cognatic }
-			any_demesne_title = { add_law = status_of_women_4 } 
+			any_demesne_title = { add_law = status_of_women_4 }
 			set_defacto_liege = PREV
 			wealth = 70
 		}
@@ -1326,15 +1326,15 @@ character_event = {
 	if = {
 	limit = {
 	NOT = {
-	c_karmanta = { 
-	location = { 
-	num_of_max_settlements = 7 
+	c_karmanta = {
+	location = {
+	num_of_max_settlements = 7
 	}
 	}
 	}
 	}
 	c_karmanta = {
-	location = { 
+	location = {
 	add_holding_slot = 1
 	}
 	}
@@ -1342,15 +1342,15 @@ character_event = {
 	if = {
 	limit = {
 	NOT = {
-	c_karmanta = { 
-	location = { 
-	num_of_max_settlements = 7 
+	c_karmanta = {
+	location = {
+	num_of_max_settlements = 7
 	}
 	}
 	}
 	}
 	c_karmanta = {
-	location = { 
+	location = {
 	add_holding_slot = 1
 	}
 	}
@@ -1358,15 +1358,15 @@ character_event = {
 	if = {
 	limit = {
 	NOT = {
-	c_karmanta = { 
-	location = { 
-	num_of_max_settlements = 7 
+	c_karmanta = {
+	location = {
+	num_of_max_settlements = 7
 	}
 	}
 	}
 	}
 	c_karmanta = {
-	location = { 
+	location = {
 	add_holding_slot = 1
 	}
 	}
@@ -1374,15 +1374,15 @@ character_event = {
 	if = {
 	limit = {
 	NOT = {
-	c_bikrampur = { 
-	location = { 
-	num_of_max_settlements = 7 
+	c_bikrampur = {
+	location = {
+	num_of_max_settlements = 7
 	}
 	}
 	}
 	}
 	c_bikrampur = {
-	location = { 
+	location = {
 	add_holding_slot = 1
 	}
 	}
@@ -1390,15 +1390,15 @@ character_event = {
 	if = {
 	limit = {
 	NOT = {
-	c_bikrampur = { 
-	location = { 
-	num_of_max_settlements = 7 
+	c_bikrampur = {
+	location = {
+	num_of_max_settlements = 7
 	}
 	}
 	}
 	}
 	c_bikrampur = {
-	location = { 
+	location = {
 	add_holding_slot = 1
 	}
 	}
@@ -1406,15 +1406,15 @@ character_event = {
 	if = {
 	limit = {
 	NOT = {
-	c_bikrampur = { 
-	location = { 
-	num_of_max_settlements = 7 
+	c_bikrampur = {
+	location = {
+	num_of_max_settlements = 7
 	}
 	}
 	}
 	}
 	c_bikrampur = {
-	location = { 
+	location = {
 	add_holding_slot = 1
 	}
 	}
@@ -1426,7 +1426,7 @@ character_event = {
 	set_coa = d_cocciromalus
 	location = {
 	if = {
-	limit = { 
+	limit = {
 	has_empty_holding = yes
 	}
 	build_holding = {
@@ -1458,7 +1458,7 @@ character_event = {
 	adjective = "Solromalan"
 	location = {
 	if = {
-	limit = { 
+	limit = {
 	has_empty_holding = yes
 	}
 	build_holding = {
@@ -1467,7 +1467,7 @@ character_event = {
 	}
 	}
 	if = {
-	limit = { 
+	limit = {
 	has_empty_holding = yes
 	}
 	build_holding = {
@@ -1475,7 +1475,7 @@ character_event = {
 	holder = ROOT
 	}
 	}
-	}	
+	}
 	}
 	c_samatata = {
 	de_jure_liege = d_solromalus
@@ -1483,7 +1483,7 @@ character_event = {
 	c_srihatta = {
 	de_jure_liege = d_solromalus
 	}
-	
+
 	c_lhoyu = {
 	de_jure_liege = d_arcadi
 	}
@@ -1496,7 +1496,7 @@ character_event = {
 	c_haruppeswara = {
 	de_jure_liege = d_arcadi
 	}
-	
+
 	c_kamarupanagara = {
 	de_jure_liege = d_arcadi_upper
 	}
@@ -1506,7 +1506,7 @@ character_event = {
 	c_dimapur = {
 	de_jure_liege = d_arcadi_upper
 	}
-	
+
 	c_candradvipa = {
 	de_jure_liege = d_maria
 	}
@@ -1538,8 +1538,8 @@ character_event = {
 	c_mudgagiri = {
 	de_jure_liege = d_kalvarea
 	}
-	
-	
+
+
 	c_kotivarsa = {
 	de_jure_liege = d_fidellia
 	}
@@ -1555,7 +1555,7 @@ character_event = {
 	c_simaramapura = {
 	de_jure_liege = d_fidellia
 	}
-	
+
 	c_nabadwipa = {
 	de_jure_liege = d_syrica
 	}
@@ -1568,7 +1568,7 @@ character_event = {
 	c_mallabhum = {
 	de_jure_liege = d_syrica
 	}
-	
+
 	c_kusinagara = {
 	de_jure_liege = d_western_dominium
 	}
@@ -1587,13 +1587,13 @@ character_event = {
 	c_sasaram = {
 	de_jure_liege = d_western_dominium
 	}
-	
+
 	c_chunar = {
 	de_jure_liege = d_western_dominium
 	}
-	
+
 	}
-	
+
 	option = {
 		name = "ireevntten.1"
 		custom_tooltip = { text = ir_finish_off_the_west }
@@ -1636,9 +1636,9 @@ character_event = {
             }
 			}
 			}
-			
-			
-		hidden_tooltip = {	
+
+
+		hidden_tooltip = {
 		if = {
 		limit = {
 		any_character = {
@@ -1650,7 +1650,7 @@ character_event = {
 		has_character_flag = mighty_brit_khan
 		}
 		any_demesne_title = {
-		if = { 
+		if = {
 		is_landless_type_title = no
 		}
 		grant_title = event_target:big_emps
@@ -1669,7 +1669,7 @@ character_event = {
 		spawn_fantastic_commander_effect = yes
 		spawn_fantastic_commander_effect = yes
 		spawn_great_commander_effect = yes
-		liege = { 
+		liege = {
 			capital_scope = {
 				save_event_target_as = khanspot
 			}
@@ -1924,7 +1924,7 @@ any_character = {
 	    unsafe_destroy_landed_title = THIS
 	    }
 		any_demesne_title = {
-		if = { 
+		if = {
 		is_landless_type_title = no
 		}
 		grant_title = event_target:big_emps
@@ -1976,7 +1976,7 @@ any_character = {
 			trait = robust
 			trait = dull
 		}
-		new_character = { 
+		new_character = {
 		set_character_flag = is_cadius_cyrus
 		}
 		create_character = {
@@ -2004,7 +2004,7 @@ any_character = {
 			trait = just
 			trait = strategist
 		}
-		new_character = { 
+		new_character = {
 		set_character_flag = is_julian_non_apostate
 		}
 		create_random_soldier = {
@@ -2020,7 +2020,7 @@ any_character = {
 		}
 		}
 	}
-	
+
 		option = {
 		name = "ireevntten.2"
 		custom_tooltip = { text = ir_join_britanon }
@@ -2035,7 +2035,7 @@ any_character = {
 		save_event_target_as = big_emps
 		}
 		}
-		hidden_tooltip = {	
+		hidden_tooltip = {
 		if = {
 		limit = {
 		any_character = {
@@ -2047,7 +2047,7 @@ any_character = {
 		has_character_flag = mighty_brit_khan
 		}
 		any_demesne_title = {
-		if = { 
+		if = {
 		is_landless_type_title = no
 		}
 		grant_title = event_target:big_emps
@@ -2066,7 +2066,7 @@ any_character = {
 		spawn_fantastic_commander_effect = yes
 		spawn_fantastic_commander_effect = yes
 		spawn_great_commander_effect = yes
-		liege = { 
+		liege = {
 			capital_scope = {
 				save_event_target_as = khanspot
 			}
@@ -2324,7 +2324,7 @@ any_character = {
 	    unsafe_destroy_landed_title = THIS
 	    }
 		any_demesne_title = {
-		if = { 
+		if = {
 		is_landless_type_title = no
 		}
 		grant_title = event_target:big_emps
@@ -2376,7 +2376,7 @@ any_character = {
 			trait = robust
 			trait = dull
 		}
-		new_character = { 
+		new_character = {
 		set_character_flag = is_cadius_cyrus
 		}
 		create_character = {
@@ -2404,7 +2404,7 @@ any_character = {
 			trait = just
 			trait = strategist
 		}
-		new_character = { 
+		new_character = {
 		set_character_flag = is_julian_non_apostate
 		}
 		create_random_soldier = {
@@ -2420,7 +2420,7 @@ any_character = {
 		}
 		}
 	}
-	
+
 	option = {
 		name = "ireevntten.3"
 		custom_tooltip = { text = ir_join_wally }
@@ -2434,9 +2434,9 @@ any_character = {
 		ROOT = {
 		save_event_target_as = big_emps
 		}
-	
+
 		}
-		hidden_tooltip = {	
+		hidden_tooltip = {
 		if = {
 		limit = {
 		any_character = {
@@ -2448,7 +2448,7 @@ any_character = {
 		has_character_flag = mighty_brit_khan
 		}
 		any_demesne_title = {
-		if = { 
+		if = {
 		is_landless_type_title = no
 		}
 		grant_title = event_target:big_emps
@@ -2467,7 +2467,7 @@ any_character = {
 		spawn_fantastic_commander_effect = yes
 		spawn_fantastic_commander_effect = yes
 		spawn_great_commander_effect = yes
-		liege = { 
+		liege = {
 			capital_scope = {
 				save_event_target_as = khanspot
 			}
@@ -2722,7 +2722,7 @@ any_character = {
 	    unsafe_destroy_landed_title = THIS
 	    }
 		any_demesne_title = {
-		if = { 
+		if = {
 		is_landless_type_title = no
 		}
 		grant_title = event_target:big_emps
@@ -2774,7 +2774,7 @@ any_character = {
 			trait = robust
 			trait = dull
 		}
-		new_character = { 
+		new_character = {
 		set_character_flag = is_cadius_cyrus
 		}
 		create_character = {
@@ -2802,7 +2802,7 @@ any_character = {
 			trait = just
 			trait = strategist
 		}
-		new_character = { 
+		new_character = {
 		set_character_flag = is_julian_non_apostate
 		}
 		create_random_soldier = {
@@ -2866,11 +2866,11 @@ character_event = {
 	picture = GFX_evt_china_rebel_general
 
 	is_triggered_only = yes
-	
+
 	immediate = {
-	
+
 	}
-	
+
 	option = {
 	name = "ireevnteleven.1"
 	character_event = { id = indoromans.12 days = 15 }
@@ -2889,7 +2889,7 @@ character_event = {
 	save_global_event_target_as = my_good_fren_cadius
 	}
     }
-	
+
 	option = {
 	name = "ireevnteleven.2"
 	ai_chance = {
@@ -2962,11 +2962,11 @@ character_event = {
 	picture = GFX_evt_pilgrims_epic_journey
 
 	is_triggered_only = yes
-	
+
 	immediate = {
-	
+
 	}
-	
+
 	option = {
 	name = "ireevnttwelve.1"
 	character_event = { id = indoromans.13 days = 60 }
@@ -2983,7 +2983,7 @@ character_event = {
 	add_trait = depressed
 	}
 	40 = {
-	
+
 	}
 	}
 	}
@@ -2991,7 +2991,7 @@ character_event = {
 	add_trait = proud
 	}
     }
-	
+
 	option = {
 	name = "ireevnttwelve.2"
 	character_event = { id = indoromans.13 days = 140 }
@@ -3018,7 +3018,7 @@ character_event = {
 	hide_window = yes
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 	random_independent_ruler = {
             limit = {
@@ -3070,11 +3070,11 @@ character_event = {
     border = GFX_event_normal_frame_diplomacy
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 
 	}
-	
+
 	option = {
 	name = "ireevntfifteen.1"
 	custom_tooltip = {
@@ -3091,7 +3091,7 @@ character_event = {
 	years = 5
 	}
     }
-	
+
 	option = {
 	name = "ireevntfifteen.2"
 	character_event = { id = indoromans.16 days = 50 }
@@ -3120,7 +3120,7 @@ character_event = {
 	}
 	}
     }
-	
+
 	option = {
 	name = "ireevntfifteen.3"
 	character_event = { id = indoromans.16 days = 22 }
@@ -3128,7 +3128,7 @@ character_event = {
 	to = FROM
 	value = 0.5
 	min = 10
-	} 
+	}
 	random_independent_ruler = {
 	limit = {
 	has_landed_title = e_indo_roman_empire
@@ -3151,7 +3151,7 @@ character_event = {
 	}
     }
 
-	
+
 	option = {
 	name = "ireevntfifteen.4"
 	custom_tooltip = { text = ir_flattered_generals }
@@ -3187,17 +3187,17 @@ character_event = {
 	picture = GFX_evt_carriage_default
 
 	is_triggered_only = yes
-	
+
 	immediate = {
-	
+
 	}
-	
+
 	option = {
 	name = "ireevntsixteen.1"
 	character_event = { id = indoromans.17 days = 120 }
-	set_character_flag = proto_walakriotic_texts 
+	set_character_flag = proto_walakriotic_texts
     }
-	
+
 	option = {
 	name = "ireevntsixteen.2"
 	character_event = { id = indoromans.17 days = 120 }
@@ -3207,7 +3207,7 @@ character_event = {
 	}
 	set_character_flag = wally_of_a_thousand_tongues
     }
-	
+
 	option = {
 	name = "ireevntsixteen.3"
 	trigger = {
@@ -3271,7 +3271,7 @@ character_event = {
 	picture = GFX_evt_pilgrims_epic_journey_desert
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 	any_character = {
 	limit = {
@@ -3286,7 +3286,7 @@ character_event = {
 	# health = -4 #character development complete, commencing George RR Martin protocols
 	}
 	}
-	
+
 	option = {
 	name = "ireevntseventeen.1"
 	trigger = { has_character_flag = proto_walakriotic_texts }
@@ -3325,11 +3325,11 @@ character_event = {
 	picture = GFX_evt_pilgrims_epic_journey_desert
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 
 	}
-	
+
 	option = {
 	name = "ireevnteighteen.1"
 	character_event = { id = indoromans.19 days = 40 }
@@ -3345,11 +3345,11 @@ character_event = {
 	picture = GFX_evt_pilgrims_epic_journey_desert
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 
 	}
-	
+
 	option = {
 	name = "ireevntnineteen.1"
 	character_event = { id = indoromans.20 days = 10 }
@@ -3365,11 +3365,11 @@ character_event = {
 	picture = GFX_evt_pilgrims_epic_journey_desert
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 
 	}
-	
+
 	option = {
 	name = "ireevnttwenty.1"
 	character_event = { id = indoromans.21 days = 100 }
@@ -3382,13 +3382,13 @@ character_event = {
 	}
 
     }
-	
+
 	option = {
 	name = "ireevnttwenty.2"
 	character_event = { id = indoromans.21 days = 100 }
 
     }
-	
+
 	option = {
 	name = "ireevnttwenty.3"
 	character_event = { id = indoromans.21 days = 100 }
@@ -3419,17 +3419,17 @@ character_event = {
     border = GFX_event_normal_frame_diplomacy
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 
 	}
-	
+
 	option = {
 	name = "ireevnttwentyone.1"
 	character_event = { id = indoromans.22 days = 15 }
 
     }
-	
+
 	option = {
 	name = "ireevnttwentyone.2"
 	random = {
@@ -3451,17 +3451,17 @@ character_event = {
     border = GFX_event_normal_frame_diplomacy
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 
 	}
-	
+
 	option = {
 	name = "ireevnttwentytwo.1"
 	character_event = { id = indoromans.23 days = 3 }
 
     }
-	
+
 	option = {
 	name = "ireevnttwentytwo.2"
 	trigger = {
@@ -3483,11 +3483,11 @@ character_event = {
     border = GFX_event_normal_frame_diplomacy
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 
 	}
-	
+
 	option = {
 	name = "ireevnttwentythree.1"
 	set_character_flag = wally_stonks
@@ -3570,7 +3570,7 @@ character_event = {
 						trigger = {
 							NOT = {
 								has_artifact = chinese_arm_protector
-							} 
+							}
 						}
 						add_artifact = chinese_arm_protector
 						new_artifact = {
@@ -3769,7 +3769,7 @@ character_event = {
 						trigger = {
 							NOT = {
 								has_artifact = chinese_arm_protector
-							} 
+							}
 						}
 						add_artifact = chinese_arm_protector
 						new_artifact = {
@@ -3945,7 +3945,7 @@ character_event = {
 		}
 
     }
-	
+
 	option = {
 	name = "ireevnttwentythree.2"
 	trigger = {
@@ -4087,25 +4087,25 @@ character_event = {
 	title = "EVTNAMEireevnttwentyfive"
 	desc = {
         text = EVTDESCireevnttwentyfive
-        trigger = { 
+        trigger = {
 		any_character = {
-		has_character_flag = wally_traitor 
+		has_character_flag = wally_traitor
 		}
 		}
     }
 	desc = {
         text = EVTDESCireevnttwentyfive_B
-        trigger = { 
+        trigger = {
 		any_character = {
-		has_character_flag = wally_stonks 
+		has_character_flag = wally_stonks
 		}
 		}
     }
 	desc = {
         text = EVTDESCireevnttwentyfive_C
-        trigger = { 
+        trigger = {
 		any_character = {
-		has_character_flag = walakrios_raider_ending 
+		has_character_flag = walakrios_raider_ending
 		}
 		}
     }
@@ -4113,7 +4113,7 @@ character_event = {
     border = GFX_event_normal_frame_martial
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 	any_character = {
 	limit = {
@@ -4128,12 +4128,12 @@ character_event = {
 	health = -4 #character development complete, commencing George RR Martin protocols
 	}
 	}
-	
+
 	option = {
 	name = "ireevnttwentyfive.1"
-	trigger = { 
+	trigger = {
 	any_character = {
-	has_character_flag = wally_traitor 
+	has_character_flag = wally_traitor
 	}
 	}
 	any_character = {
@@ -4153,12 +4153,12 @@ character_event = {
 	change_variable = { which = prosperity_value value = 8 }
 	}
 	c_bikrampur = {
-	location = { 
+	location = {
 	change_variable = { which = prosperity_value value = 32 }
 	}
 	}
 	c_karmanta = {
-	location = { 
+	location = {
 	change_variable = { which = prosperity_value value = 32 }
 	}
 	}
@@ -4166,22 +4166,22 @@ character_event = {
 	}
 
     }
-	
+
 	option = {
 	name = "ireevnttwentyfive.2"
 	trigger = {
 	any_character = {
 	OR = {
-	has_character_flag = wally_stonks 
-	has_character_flag = walakrios_raider_ending 
+	has_character_flag = wally_stonks
+	has_character_flag = walakrios_raider_ending
 	}
 	}
 	}
 	any_character = {
 	limit = {
 	OR = {
-	has_character_flag = wally_stonks 
-	has_character_flag = walakrios_raider_ending 
+	has_character_flag = wally_stonks
+	has_character_flag = walakrios_raider_ending
 	}
 	}
 	reverse_opinion = {
@@ -4200,13 +4200,13 @@ character_event = {
 	title = "EVTNAMEireevnttwentysix"
 	desc = {
         text = EVTDESCireevnttwentysix
-        trigger = { 
+        trigger = {
 		NOT = { has_character_flag = sieged_down_major_han_city }
 		}
     }
 	desc = {
         text = EVTDESCireevnttwentysix_B
-        trigger = { 
+        trigger = {
 		has_character_flag = sieged_down_major_han_city
 		}
     }
@@ -4214,13 +4214,13 @@ character_event = {
     border = GFX_event_normal_frame_martial
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 	}
-	
+
 	option = {
 	name = "ireevnttwentysix.1"
-	trigger = { 
+	trigger = {
 	NOT = { has_character_flag = sieged_down_major_han_city }
 	}
 	event_target:my_good_fren_julian = {
@@ -4246,7 +4246,7 @@ character_event = {
 	health = -0.1
 
     }
-	
+
 	option = {
 	name = "ireevnttwentysix.2"
 	trigger = {
@@ -4265,11 +4265,11 @@ character_event = {
 	picture = GFX_evt_siege
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 
 	}
-	
+
 	option = {
 	name = "ireevntquasitwentyseven.1"
 	character_event = { id = indoromans.27 days = 3 }
@@ -4283,30 +4283,30 @@ character_event = {
 	title = "EVTNAMEireevnttwentyseven"
 	desc = {
         text = EVTDESCireevnttwentyseven
-        trigger = { 
+        trigger = {
 		NOT = { has_character_modifier = multilingual }
 		}
     }
 	desc = {
         text = EVTDESCireevnttwentyseven_B
-        trigger = { 
+        trigger = {
 		has_character_modifier = multilingual
 		}
     }
 	picture = GFX_evt_siege
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 
 	}
-	
+
 	option = {
 	name = "ireevnttwentyseven.1"
 	character_event = { id = indoromans.28 days = 3 }
 
     }
-	
+
 	option = {
 	name = "ireevnttwentyseven.2"
 	trigger = {
@@ -4340,7 +4340,7 @@ character_event = {
 	character_event = { id = indoromans.28 days = 3 }
 
     }
-	
+
 	option = {
 	name = "ireevnttwentyseven.3"
 	trigger = {
@@ -4359,13 +4359,13 @@ character_event = {
 	title = "EVTNAMEireevnttwentyeight"
 	desc = {
         text = EVTDESCireevnttwentyeight
-        trigger = { 
+        trigger = {
 		has_character_flag = wally_rescued_a_child
 		}
     }
 	desc = {
         text = EVTDESCireevnttwentyeight_B
-        trigger = { 
+        trigger = {
 		NOT = { has_character_flag = wally_rescued_a_child }
 		}
     }
@@ -4373,7 +4373,7 @@ character_event = {
     border = GFX_event_normal_frame_war
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 	if = {
 	limit = {
@@ -4420,13 +4420,13 @@ character_event = {
 	}
 
 	}
-	
+
 	option = {
 	name = "ireevnttwentyeight.1"
 	custom_tooltip = { text = ir_your_generals_dont_learn }
 	character_event = { id = indoromans.29 days = 3 }
     }
-	
+
 	option = {
 	name = "ireevnttwentyeight.2"
 	set_character_flag = generals_know_ambitions
@@ -4470,11 +4470,11 @@ character_event = {
     border = GFX_event_normal_frame_diplomacy
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 
 	}
-	
+
 	option = {
 	name = "ireevnttwentynine.1"
 	custom_tooltip = { text = ir_failure_not_an_option }
@@ -4490,7 +4490,7 @@ character_event = {
 	character_event = { id = indoromans.30 days = 10 }
 
     }
-	
+
 	option = {
 	name = "ireevnttwentynine.2"
 	custom_tooltip = { text = ir_failure_not_an_option }
@@ -4500,7 +4500,7 @@ character_event = {
 	custom_tooltip = { text = ir_invasion_continue }
 	set_character_flag = first_battle_victorious
 	}
-	add_character_modifier = { 
+	add_character_modifier = {
 	name = vieti_seniores_massacred
 	years = 10
 	}
@@ -4515,13 +4515,13 @@ character_event = {
 	title = "EVTNAMEireevntthirty"
 	desc = {
         text = EVTDESCireevntthirty
-        trigger = { 
+        trigger = {
 		NOT = { has_character_flag = first_battle_victorious }
 		}
     }
 	desc = {
         text = EVTDESCireevntthirty_B
-        trigger = { 
+        trigger = {
 		has_character_flag = first_battle_victorious
 		}
     }
@@ -4529,10 +4529,10 @@ character_event = {
     border = GFX_event_normal_frame_martial
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 	}
-	
+
 	option = {
 	name = "ireevntthirty.1"
 	add_trait = one_legged
@@ -4540,7 +4540,7 @@ character_event = {
 	limit = { NOT = { trait = depressed } }
 	add_trait = depressed
 	}
-	trigger = { 
+	trigger = {
 	NOT = { has_character_flag = first_battle_victorious }
 	}
 	event_target:my_good_fren_julian = {
@@ -4597,7 +4597,7 @@ character_event = {
 	}
 
     }
-	
+
 	option = {
 	name = "ireevntthirty.2"
 	trigger = {
@@ -4618,11 +4618,11 @@ character_event = {
     border = GFX_event_normal_frame_diplomacy
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 
 	}
-	
+
 	option = {
 	name = "ireevntthirtythree.1"
 	character_event = { id = indoromans.32 days = 4 }
@@ -4636,16 +4636,16 @@ character_event = {
 	title = "EVTNAMEireevntthirtytwo"
 	desc = {
         text = EVTDESCireevntthirtytwo
-        trigger = { 
-		NAND = { 
-		has_character_modifier = vieti_seniores_massacred 
+        trigger = {
+		NAND = {
+		has_character_modifier = vieti_seniores_massacred
 		has_character_flag = generals_know_ambitions
 		}
 		}
     }
 	desc = {
         text = EVTDESCireevntthirtytwo_B #bestgirl
-        trigger = { 
+        trigger = {
 		has_character_modifier = vieti_seniores_massacred
 		has_character_flag = generals_know_ambitions
 		}
@@ -4654,10 +4654,10 @@ character_event = {
     border = GFX_event_normal_frame_martial
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 	}
-	
+
 	option = {
 	name = "ireevntthirtytwo.1"
 	trigger = {
@@ -4673,7 +4673,7 @@ character_event = {
 	character_event = { id = indoromans.34 days = 3 }
 
     }
-	
+
 	option = {
 	name = "ireevntthirtytwo.2"
 	trigger = {
@@ -4714,11 +4714,11 @@ character_event = {
     border = GFX_event_normal_frame_diplomacy
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 
 	}
-	
+
 	option = {
 	name = "ireevntthirtyfour.1"
 	offmap_china = {
@@ -4738,11 +4738,11 @@ character_event = {
     border = GFX_event_normal_frame_diplomacy
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 
 	}
-	
+
 	option = {
 	name = "ireevntthirtyfive.1"
 	if = {
@@ -4784,8 +4784,8 @@ character_event = {
 	}
 	}
 
-  
-	
+
+
 	option = {
 	name = "ireevntthirtyfive.2"
 	set_character_flag = walakrios_raider_ending
@@ -4863,7 +4863,7 @@ character_event = {
 						trigger = {
 							NOT = {
 								has_artifact = chinese_arm_protector
-							} 
+							}
 						}
 						add_artifact = chinese_arm_protector
 						new_artifact = {
@@ -5062,7 +5062,7 @@ character_event = {
 						trigger = {
 							NOT = {
 								has_artifact = chinese_arm_protector
-							} 
+							}
 						}
 						add_artifact = chinese_arm_protector
 						new_artifact = {
@@ -5261,7 +5261,7 @@ character_event = {
 						trigger = {
 							NOT = {
 								has_artifact = chinese_arm_protector
-							} 
+							}
 						}
 						add_artifact = chinese_arm_protector
 						new_artifact = {
@@ -5460,7 +5460,7 @@ character_event = {
 						trigger = {
 							NOT = {
 								has_artifact = chinese_arm_protector
-							} 
+							}
 						}
 						add_artifact = chinese_arm_protector
 						new_artifact = {
@@ -5606,19 +5606,19 @@ character_event = {
 					health = 6
 					random_traits = yes
 				}
-			
+
 			new_character = {
 				remove_trait = clubfooted
                 remove_trait = harelip
-                remove_trait = hunchback 
+                remove_trait = hunchback
                 remove_trait = lisp
                 remove_trait = stutter
                 remove_trait = ugly
                 remove_trait = dwarf
-                remove_trait = weak	
-				
+                remove_trait = weak
+
 				add_trait = fair
-				
+
 				random = {
 					chance = 35
 					add_trait = strong
@@ -5711,7 +5711,7 @@ character_event = {
 						trigger = {
 							NOT = {
 								has_artifact = chinese_arm_protector
-							} 
+							}
 						}
 						add_artifact = chinese_arm_protector
 						new_artifact = {
@@ -5910,7 +5910,7 @@ character_event = {
 						trigger = {
 							NOT = {
 								has_artifact = chinese_arm_protector
-							} 
+							}
 						}
 						add_artifact = chinese_arm_protector
 						new_artifact = {
@@ -6109,7 +6109,7 @@ character_event = {
 						trigger = {
 							NOT = {
 								has_artifact = chinese_arm_protector
-							} 
+							}
 						}
 						add_artifact = chinese_arm_protector
 						new_artifact = {
@@ -6347,7 +6347,7 @@ character_event = {
 						trigger = {
 							NOT = {
 								has_artifact = chinese_arm_protector
-							} 
+							}
 						}
 						add_artifact = chinese_arm_protector
 						new_artifact = {
@@ -6552,7 +6552,7 @@ character_event = {
 						trigger = {
 							NOT = {
 								has_artifact = chinese_arm_protector
-							} 
+							}
 						}
 						add_artifact = chinese_arm_protector
 						new_artifact = {
@@ -6700,11 +6700,11 @@ character_event = {
     border = GFX_event_normal_frame_diplomacy
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 
 	}
-	
+
 	option = {
 	name = "ireevntthirtysix.1"
 	character_event = { id = indoromans.37 days = 7 }
@@ -6721,11 +6721,11 @@ character_event = {
     border = GFX_event_normal_frame_diplomacy
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 
 	}
-	
+
 	option = {
 	name = "ireevntthirtyseven.1"
 	character_event = { id = indoromans.38 days = 1 }
@@ -6742,11 +6742,11 @@ character_event = {
     border = GFX_event_normal_frame_diplomacy
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 
 	}
-	
+
 	option = {
 	name = "ireevntthirtyeight.1"
 	custom_tooltip = { text = ir_failure_not_an_option }
@@ -6780,7 +6780,7 @@ character_event = {
 
 
     }
-	
+
 	option = {
 	name = "ireevntthirtyeight.2"
 	trigger = {
@@ -6805,7 +6805,7 @@ character_event = {
 
 
     }
-	
+
 	option = {
 	name = "ireevntthirtyeight.3"
 	trigger = {
@@ -6836,13 +6836,13 @@ character_event = {
 	title = "EVTNAMEireevntthirtynine"
 	desc = {
         text = EVTDESCireevntthirtynine
-        trigger = { 
+        trigger = {
 		NOT = { has_character_flag = second_battle_victorious }
 		}
     }
 	desc = {
         text = EVTDESCireevntthirtynine_B
-        trigger = { 
+        trigger = {
 		has_character_flag = second_battle_victorious
 		}
     }
@@ -6850,10 +6850,10 @@ character_event = {
     border = GFX_event_normal_frame_martial
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 	}
-	
+
 	option = {
 	name = "ireevntthirtynine.1"
 	custom_tooltip = { text = ir_oof_ow_owie }
@@ -6864,7 +6864,7 @@ character_event = {
 	limit = { NOT = { trait = depressed } }
 	add_trait = depressed
 	}
-	trigger = { 
+	trigger = {
 	NOT = { has_character_flag = second_battle_victorious }
 	}
 	event_target:my_good_fren_julian = {
@@ -6921,7 +6921,7 @@ character_event = {
 	}
 
     }
-	
+
 	option = {
 	name = "ireevntthirtynine.2"
 	trigger = {
@@ -6942,11 +6942,11 @@ character_event = {
     border = GFX_event_normal_frame_diplomacy
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 
 	}
-	
+
 	option = {
 	name = "ireevntforty.1"
 	character_event = { id = indoromans.41 days = 1 }
@@ -6963,17 +6963,17 @@ character_event = {
     border = GFX_event_normal_frame_diplomacy
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 
 	}
-	
+
 	option = {
 	name = "ireevntfortyone.1"
 	character_event = { id = indoromans.42 days = 1 }
 
     }
-	
+
 	option = {
 	name = "ireevntfortyone.2"
 	trigger = {
@@ -6994,7 +6994,7 @@ character_event = {
 	}
 	custom_tooltip = { text = ir_gaming_against_the_emperor_trait }
 	}
-	
+
 	character_event = { id = indoromans.42 days = 1 }
 
     }
@@ -7009,7 +7009,7 @@ character_event = {
     border = GFX_event_normal_frame_war
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 	scaled_wealth = { value = 2.5 min = 420 max = 1400 }
 	hidden_tooltip = {
@@ -7085,7 +7085,7 @@ character_event = {
 						trigger = {
 							NOT = {
 								has_artifact = chinese_arm_protector
-							} 
+							}
 						}
 						add_artifact = chinese_arm_protector
 						new_artifact = {
@@ -7282,7 +7282,7 @@ character_event = {
 						trigger = {
 							NOT = {
 								has_artifact = chinese_arm_protector
-							} 
+							}
 						}
 						add_artifact = chinese_arm_protector
 						new_artifact = {
@@ -7479,7 +7479,7 @@ character_event = {
 						trigger = {
 							NOT = {
 								has_artifact = chinese_arm_protector
-							} 
+							}
 						}
 						add_artifact = chinese_arm_protector
 						new_artifact = {
@@ -7682,7 +7682,7 @@ character_event = {
 						trigger = {
 							NOT = {
 								has_artifact = chinese_arm_protector
-							} 
+							}
 						}
 						add_artifact = chinese_arm_protector
 						new_artifact = {
@@ -7879,7 +7879,7 @@ character_event = {
 						trigger = {
 							NOT = {
 								has_artifact = chinese_arm_protector
-							} 
+							}
 						}
 						add_artifact = chinese_arm_protector
 						new_artifact = {
@@ -8076,7 +8076,7 @@ character_event = {
 						trigger = {
 							NOT = {
 								has_artifact = chinese_arm_protector
-							} 
+							}
 						}
 						add_artifact = chinese_arm_protector
 						new_artifact = {
@@ -8229,7 +8229,7 @@ character_event = {
 	}
 	}
 	}
-	
+
 	option = {
 	name = "ireevntfortytwo.1"
 	add_trait = depressed
@@ -8292,7 +8292,7 @@ character_event = {
 	}
 	set_defacto_liege = event_target:red_indo_emperor
 	}
-	
+
 	option = {
 	name = "ireevntfortytwo.2"
 	custom_tooltip = { text = ir_give_china_to_the_child }
@@ -8540,7 +8540,7 @@ character_event = {
 						set_offmap_holder = event_target:invasion_of_china_claimant
 						clr_offmap_flag = no_succession_news
 						clr_offmap_flag = rename_override
-						
+
 					}
 					any_player = {
 						limit = {
@@ -8558,7 +8558,7 @@ character_event = {
     }
 
     }
-	
+
 	option = {
 	name = "ireevntfortytwo.3"
 	save_event_target_as = invasion_of_china_claimant
@@ -8591,9 +8591,9 @@ character_event = {
 	abdicate_to = event_target:next_wally
 	set_player_character = event_target:next_wally
 	transfer_scaled_wealth = { to = event_target:next_wally value = all }
-	any_artifact = {					
-	transfer_artifact = {				
-	from = PREV			
+	any_artifact = {
+	transfer_artifact = {
+	from = PREV
 	to = event_target:next_wally
 	}
 	}
@@ -8750,7 +8750,7 @@ character_event = {
 						set_offmap_holder = event_target:invasion_of_china_claimant
 						clr_offmap_flag = no_succession_news
 						clr_offmap_flag = rename_override
-						
+
 					}
 					any_player = {
 						limit = {
@@ -8767,7 +8767,7 @@ character_event = {
 
     }
 	}
-	
+
 
 }
 
@@ -8777,7 +8777,7 @@ narrative_event = {
 	desc = "EVTDESCireevnthektoriosplan"
 	picture = GFX_evt_china_diplomatic_success
     border = GFX_event_narrative_frame_war
-	
+
 	trigger = {
 	has_landed_title = e_indo_roman_empire
 	NOT = { has_global_flag = hektorios_proposed_expedition }
@@ -8785,21 +8785,21 @@ narrative_event = {
 	AND = {
 	OR = {
 	has_landed_title = c_mansura
-	any_realm_lord = { 
+	any_realm_lord = {
 	has_landed_title = c_mansura
 	}
 	}
-	
+
 	OR = {
 	has_landed_title = c_siwistan
-	any_realm_lord = { 
+	any_realm_lord = {
 	has_landed_title = c_siwistan
 	}
 	}
-	
+
 	OR = {
 	has_landed_title = c_aror
-	any_realm_lord = { 
+	any_realm_lord = {
 	has_landed_title = c_aror
 	}
 	}
@@ -8815,17 +8815,17 @@ narrative_event = {
 	}
 	}
 	}
-	
+
 	mean_time_to_happen = {
 	days = 5
 	}
-	
+
 	immediate = {
 	save_event_target_as = red_indo_emperor
 	set_global_flag = hektorios_proposed_expedition
 
 	}
-	
+
 	option = {
 	name = "ireevnthktrios.1"
 	custom_tooltip = { text = ir_join_hektorios }
@@ -8860,7 +8860,7 @@ narrative_event = {
 			age = 30
 		}
 	any_demesne_title = {
-	if = { 
+	if = {
 	is_landless_type_title = no
 	}
 	grant_title = event_target:red_indo_emperor
@@ -8966,7 +8966,7 @@ narrative_event = {
 
 
 	}
-	
+
 	option = {
 	name = "ireevnthktrios.2"
 	custom_tooltip = { text = ir_join_hektorios }
@@ -9002,7 +9002,7 @@ narrative_event = {
 			age = 30
 		}
 	any_demesne_title = {
-	if = { 
+	if = {
 	is_landless_type_title = no
 	}
 	grant_title = event_target:red_indo_emperor
@@ -9134,7 +9134,7 @@ narrative_event = {
 		}
 		}
 	}
-	
+
 }
 
 character_event = {
@@ -9145,11 +9145,11 @@ character_event = {
     border = GFX_event_normal_frame_war
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 
 	}
-	
+
 	option = {
 	name = "ireevntfortythree.1"
 	custom_tooltip = { text = ir_hektorios1 }
@@ -9182,9 +9182,9 @@ character_event = {
 	}
 	any_independent_ruler = {
 	limit = {
-	NOR = { 
+	NOR = {
 	has_landed_title = e_indo_roman_empire
-	has_landed_title = e_britannica 
+	has_landed_title = e_britannica
 	}
 	any_realm_province = {
 	OR = {
@@ -9201,9 +9201,9 @@ character_event = {
     }
 	}
 	}
-	
+
     }
-	
+
 	option = {
 	name = "ireevntfortythree.2"
 	hidden_tooltip = {
@@ -9211,9 +9211,9 @@ character_event = {
 	set_global_flag = hektorios_arabia
 	any_independent_ruler = {
 	limit = {
-	NOR = { 
+	NOR = {
 	has_landed_title = e_indo_roman_empire
-	has_landed_title = e_britannica 
+	has_landed_title = e_britannica
 	}
 	any_realm_province = {
 	OR = {
@@ -9227,9 +9227,9 @@ character_event = {
     }
 	}
 	}
-	
+
     }
-	
+
 	option = {
 	name = "ireevntfortythree.3"
 	custom_tooltip = { text = ir_hektorios3 }
@@ -9237,9 +9237,9 @@ character_event = {
 	set_global_flag = hektorios_ethiopia
 	any_independent_ruler = {
 	limit = {
-	NOR = { 
+	NOR = {
 	has_landed_title = e_indo_roman_empire
-	has_landed_title = e_britannica 
+	has_landed_title = e_britannica
 	}
 	any_realm_province = {
 	OR = {
@@ -9253,9 +9253,9 @@ character_event = {
     }
 	}
 	}
-	
-	
-	
+
+
+
     }
 
 }
@@ -9265,7 +9265,7 @@ character_event = {
 character_event = {
 	id = indoromans.7777 #Overpower this
 	hide_window = yes
-	
+
 	trigger = {
 	has_landed_title = e_indo_roman_empire
 	war_with = e_china_west_governor
@@ -9274,13 +9274,13 @@ character_event = {
 	has_character_flag = anti_china_spray
 	}
 	}
-	
+
 	mean_time_to_happen = {
 	days = 1
 	}
-	
 
-	
+
+
 	immediate = {
 	spawn_great_commander_effect = yes
 	spawn_great_commander_effect = yes
@@ -9457,17 +9457,17 @@ character_event = {
 	id = indoromans.6969
 	hide_window = yes
 	is_triggered_only = yes
-	
+
 	mean_time_to_happen = {
 	days = 1
 	}
-	
+
 	immediate = {
 	add_infamy = -100
 	event_target:ya_boi_sheogorath = {
 	culture = romanoindian
 	}
-	
+
 	random_realm_character = {
 	limit = { has_character_flag = we_are_evil_praetorian_man }
 	d_latin_praetorians = {
@@ -9511,7 +9511,7 @@ character_event = {
 	#	attrition = 0.25
 	#	}
 	}
-	
+
 	any_realm_province = {
 	limit = { any_neighbor_province = { province = 1131 } }
 	culture = romanoindian

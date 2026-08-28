@@ -1,22 +1,22 @@
 # hair, mouth, chin, nose, eyes, cheek, ear, neck
 spriteTypes = {
-	
+
 	spriteType = {
 		name = "PORTRAIT_romanoindianfx_child_male"
 		texturefile = "gfx\\characters\\default_son.tga"
 		noOfFrames = 1
 		norefcount = yes
 	}
-	
+
 	spriteType = {
 		name = "PORTRAIT_romanoindianfx_child_female"
 		texturefile = "gfx\\characters\\default_daughter.tga"
 		noOfFrames = 1
 		norefcount = yes
 	}
-	
+
 	### Roman Male ####
-	
+
 	spriteType = {
 		name = "GFX_romano_indian_male_clothes_behind"
 		texturefile = "gfx\\characters\\romano_indian_male\\romano_indian_male_clothes_behind.dds"
@@ -83,7 +83,7 @@ spriteTypes = {
 			"GFX_character_blinded_eyes:p10"
 			"GFX_character_possessed:p30"
 			"GFX_romano_indian_male_clothes:p3:c2"
-			"GFX_byzantine_male_headgear_mid:p5:c3"			
+			"GFX_byzantine_male_headgear_mid:p5:c3"
 			"GFX_byzantine_male_beard:p4:h:y"
 			"GFX_frankish_male_overlayer_mid:p31"
 			"GFX_character_eyepatch:p13:y:o32x63"
@@ -105,7 +105,7 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			
+
 			{ 10 10 10 } { 90 90 90 } { 255 255 255 } #Light Black
 			{ 10 10 10 } { 70 70 70 } { 255 255 255 } #Black
 			{ 36 35 29 } { 170 133 74 } { 255 255 255 } #Chestnut
@@ -123,10 +123,10 @@ spriteTypes = {
 			{ 73 44 24 } #Brown 03
 			{ 57 175 60 } #Green
 		}
-		
+
 		headgear_that_hides_hair = { 5 6 10 }
 	}
-	
+
 	# middle age
 	portraitType = {
 		name = "PORTRAIT_romanoindianfx_male1"
@@ -186,7 +186,7 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			
+
 			{ 10 10 10 } { 90 90 90 } { 255 255 255 } #Light Black
 			{ 10 10 10 } { 70 70 70 } { 255 255 255 } #Black
 			{ 36 35 29 } { 170 133 74 } { 255 255 255 } #Chestnut
@@ -204,10 +204,10 @@ spriteTypes = {
 			{ 73 44 24 } #Brown 03
 			{ 57 175 60 } #Green
 		}
-		
+
 		headgear_that_hides_hair = { 5 6 10 }
 	}
-	
+
 	# old age
 	portraitType = {
 		name = "PORTRAIT_romanoindianfx_male2"
@@ -267,14 +267,14 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			
+
 			{ 10 10 10 } { 148 148 148 } { 255 255 255 } #Light Black turned white
 			{ 10 10 10 } { 110 110 110 } { 255 255 255 } #Black turned white
 			{ 36 35 29 } { 154 144 128 } { 255 255 255 } #Chestnut turned white
 			{ 10 10 10 } { 124 110 100 } { 255 255 255 } #Light Brown turned white
 			{ 20 12 8 } { 97 97 97 } { 255 255 255 } #Dark Brown turned white
 			{ 20 12 8 } { 97 97 97 } { 255 255 255 } #Dark Brown turned white
-		
+
 		}
 
 		eye_color_index = 9
@@ -286,7 +286,7 @@ spriteTypes = {
 			{ 73 44 24 } #Brown 03
 			{ 57 175 60 } #Green
 		}
-		
+
 		headgear_that_hides_hair = { 5 6 10 }
 	}
 	# CULTURE_INDEX: 0 = clothes behind, 1 = headgear behind, 2 = clothes, 3 = headgear mid, 4 = clothes infront, 5 = headgear
@@ -321,19 +321,19 @@ spriteTypes = {
 		noOfFrames = 12
 		norefcount = yes
 	}
-	
+
 #	spriteType = {
 #		name = "GFX_western_female_headgear_behind_mid"
 #		texturefile = "gfx\\characters\\western_female\\western_female_headgear_behind_mid.dds"
 #		noOfFrames = 12
 #		norefcount = yes
 #	}
-	
-	
-	
+
+
+
 	# CULTURE_INDEX: 0 = clothes behind, 1 = headgear behind, 2 = clothes, 3 = headgear mid, 4 = clothes infront, 5 = headgear
 
-	# Roman FEMALE 
+	# Roman FEMALE
 	portraitType = {
 		name = "PORTRAIT_romanoindianfx_female"
 		effectFile = "gfx/FX/portrait.lua"
@@ -351,7 +351,7 @@ spriteTypes = {
 			"GFX_western_female_base:p2"                        #4
 			"GFX_western_female_neck:d0"                        #5
 			"GFX_western_female_cheeks:d4"               #6
-			"GFX_western_female_chin:d1" 
+			"GFX_western_female_chin:d1"
 			"GFX_character_western_female_physique:p21"                       #7
 			"GFX_western_female_mouth:d2:o72x48"                       #8
 			"GFX_western_female_nose:d3:o80x65"                        #9
@@ -405,7 +405,7 @@ spriteTypes = {
 			{ 73 44 24 } #Brown 03
 			{ 57 175 60 } #Green
 		}
-		
+
 		headgear_that_hides_hair = { }
 	}
 
@@ -428,7 +428,7 @@ spriteTypes = {
 			"GFX_western_female_neck_midage:d0"
 			"GFX_western_female_cheeks_midage:d4"
 			"GFX_western_female_chin_midage:d1"
-			"GFX_character_western_female_physique:p21"  
+			"GFX_character_western_female_physique:p21"
 			"GFX_western_female_mouth_midage:d2:o72x49"
 			"GFX_western_female_nose_midage:d3:o80x64"
 			"GFX_western_female_eyes_midage:d6:o46x76"
@@ -470,7 +470,7 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-		
+
 			{ 10 10 10 } { 90 90 90 } { 255 255 255 } #Light Black
 			{ 10 10 10 } { 70 70 70 } { 255 255 255 } #Black
 			{ 36 35 29 } { 170 133 74 } { 255 255 255 } #Chestnut
@@ -488,7 +488,7 @@ spriteTypes = {
 			{ 73 44 24 } #Brown 03
 			{ 57 175 60 } #Green
 		}
-		
+
 		headgear_that_hides_hair = { }
 	}
 
@@ -511,7 +511,7 @@ spriteTypes = {
 			"GFX_western_female_neck_oldage:d0"
 			"GFX_western_female_cheeks_oldage:d4"
 			"GFX_western_female_chin_oldage:d1"
-			"GFX_character_western_female_physique:p21"  
+			"GFX_character_western_female_physique:p21"
 			"GFX_western_female_mouth_oldage:d2:o72x50"
 			"GFX_western_female_nose_oldage:d3:o79x64"
 			"GFX_western_female_eyes_oldage:d6:o47x74"
@@ -553,14 +553,14 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-		
+
 			{ 10 10 10 } { 148 148 148 } { 255 255 255 } #Light Black turned white
 			{ 10 10 10 } { 110 110 110 } { 255 255 255 } #Black turned white
 			{ 36 35 29 } { 154 144 128 } { 255 255 255 } #Chestnut turned white
 			{ 10 10 10 } { 124 110 100 } { 255 255 255 } #Light Brown turned white
 			{ 20 12 8 } { 97 97 97 } { 255 255 255 } #Dark Brown turned white
 			{ 20 12 8 } { 97 97 97 } { 255 255 255 } #Dark Brown turned white
-		
+
 		}
 
 		eye_color_index = 9
@@ -572,7 +572,7 @@ spriteTypes = {
 			{ 73 44 24 } #Brown 03
 			{ 57 175 60 } #Green
 		}
-		
+
 		headgear_that_hides_hair = { }
 	}
 }

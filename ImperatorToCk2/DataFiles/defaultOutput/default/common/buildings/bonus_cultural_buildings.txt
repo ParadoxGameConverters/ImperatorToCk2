@@ -20,8 +20,8 @@ castle = {
 				}
 			}
 		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 0 
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
 			ROOT = {
 				OR = {
 					culture = plashurii
@@ -36,7 +36,7 @@ castle = {
 		camel_cavalry = 30
 		camel_cavalry_defensive = 0.15
 		ai_creation_factor = 101
-		
+
 		extra_tech_building_start = 0.8
 	}
 	ca_culture_group_plashurii_2 = {
@@ -59,7 +59,7 @@ castle = {
 				}
 			}
 		}
-		trigger = { 
+		trigger = {
 			TECH_CASTLE_CONSTRUCTION = 1
 			ROOT = {
 				OR = {
@@ -75,7 +75,7 @@ castle = {
 		camel_cavalry = 40
 		camel_cavalry_defensive = 0.15
 		ai_creation_factor = 101
-		
+
 		extra_tech_building_start = 0.8
 	}
 	ca_culture_group_plashurii_3 = {
@@ -99,7 +99,7 @@ castle = {
 				}
 			}
 		}
-		trigger = { 
+		trigger = {
 			TECH_CASTLE_CONSTRUCTION = 2
 			ROOT = {
 				OR = {
@@ -115,7 +115,7 @@ castle = {
 		camel_cavalry = 50
 		camel_cavalry_defensive = 0.15
 		ai_creation_factor = 101
-		
+
 		extra_tech_building_start = 0.8
 	}
 	ca_culture_group_plashurii_4 = {
@@ -140,8 +140,8 @@ castle = {
 				}
 			}
 		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4 
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 4
 			ROOT = {
 				OR = {
 					culture = plashurii
@@ -156,10 +156,10 @@ castle = {
 		camel_cavalry = 60
 		camel_cavalry_defensive = 0.15
 		ai_creation_factor = 101
-		
+
 		extra_tech_building_start = 0.8
 	}
-	
+
 	ca_culture_group_chaldean_1 = {
 		desc = ca_culture_group_chaldean_1_desc
 		potential = {
@@ -179,8 +179,8 @@ castle = {
 				}
 			}
 		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 0 
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
 			ROOT = {
 				OR = {
 					culture_group = semitic_group
@@ -197,7 +197,7 @@ castle = {
 		heavy_infantry = 20
 		heavy_infantry_defensive = 0.10
 		ai_creation_factor = 101
-		
+
 		extra_tech_building_start = 0.8
 	}
 	ca_culture_group_chaldean_2 = {
@@ -220,7 +220,7 @@ castle = {
 				}
 			}
 		}
-		trigger = { 
+		trigger = {
 			TECH_CASTLE_CONSTRUCTION = 1
 			ROOT = {
 				OR = {
@@ -238,7 +238,7 @@ castle = {
 		heavy_infantry = 30
 		heavy_infantry_defensive = 0.05
 		ai_creation_factor = 101
-		
+
 		extra_tech_building_start = 0.8
 	}
 	ca_culture_group_chaldean_3 = {
@@ -262,7 +262,7 @@ castle = {
 				}
 			}
 		}
-		trigger = { 
+		trigger = {
 			TECH_CASTLE_CONSTRUCTION = 2
 			ROOT = {
 				OR = {
@@ -280,7 +280,7 @@ castle = {
 		heavy_infantry = 35
 		heavy_infantry_defensive = 0.05
 		ai_creation_factor = 101
-		
+
 		extra_tech_building_start = 0.8
 	}
 	ca_culture_group_chaldean_4 = {
@@ -305,8 +305,8 @@ castle = {
 				}
 			}
 		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4 
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 4
 			ROOT = {
 				OR = {
 					culture_group = semitic_group
@@ -323,7 +323,7 @@ castle = {
 		heavy_infantry = 45
 		heavy_infantry_defensive = 0.10
 		ai_creation_factor = 101
-		
+
 		extra_tech_building_start = 0.8
 	}
 ca_culture_group_carthaginian_1 = {
@@ -345,8 +345,8 @@ ca_culture_group_carthaginian_1 = {
 				}
 			}
 		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 0 
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
 			ROOT = {
 				OR = {
 					culture = carthaginian
@@ -361,7 +361,7 @@ ca_culture_group_carthaginian_1 = {
 		war_elephants = 6
 		war_elephants_offensive = 0.15
 		ai_creation_factor = 101
-		
+
 		extra_tech_building_start = 0.8
 	}
 	ca_culture_group_carthaginian_2 = {
@@ -384,7 +384,7 @@ ca_culture_group_carthaginian_1 = {
 				}
 			}
 		}
-		trigger = { 
+		trigger = {
 			TECH_CASTLE_CONSTRUCTION = 1
 			ROOT = {
 				OR = {
@@ -401,7 +401,7 @@ ca_culture_group_carthaginian_1 = {
 		war_elephants_offensive = 0.05
 		war_elephants_defensive = 0.10
 		ai_creation_factor = 101
-		
+
 		extra_tech_building_start = 0.8
 	}
 	ca_culture_group_carthaginian_3 = {
@@ -425,7 +425,7 @@ ca_culture_group_carthaginian_1 = {
 				}
 			}
 		}
-		trigger = { 
+		trigger = {
 			TECH_CASTLE_CONSTRUCTION = 2
 			ROOT = {
 				OR = {
@@ -442,7 +442,7 @@ ca_culture_group_carthaginian_1 = {
 		war_elephants_offensive = 0.05
 		war_elephants_defensive = 0.10
 		ai_creation_factor = 101
-		
+
 		extra_tech_building_start = 0.8
 	}
 	ca_culture_group_carthaginian_4 = {
@@ -467,8 +467,8 @@ ca_culture_group_carthaginian_1 = {
 				}
 			}
 		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4 
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 4
 			ROOT = {
 				OR = {
 					culture = carthaginian
@@ -485,10 +485,10 @@ ca_culture_group_carthaginian_1 = {
 		war_elephants_defensive = 0.05
 		local_revolt_risk = -0.01
 		ai_creation_factor = 101
-		
+
 		extra_tech_building_start = 0.8
 	}
-	
+
 	ca_culture_group_phoenician_coastal_1 = {
 		desc = ca_culture_group_phoenician_coastal_1_desc
 		potential = {
@@ -507,8 +507,8 @@ ca_culture_group_carthaginian_1 = {
 				}
 			}
 		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 0 
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
 			ROOT = {
 				OR = {
 					culture = phoenician
@@ -526,7 +526,7 @@ ca_culture_group_carthaginian_1 = {
 		pikemen_defensive = 0.05
 		archers_defensive = 0.05
 		ai_creation_factor = 101
-		
+
 		extra_tech_building_start = 0.8
 	}
 	ca_culture_group_phoenician_coastal_2 = {
@@ -550,7 +550,7 @@ ca_culture_group_carthaginian_1 = {
 				}
 			}
 		}
-		trigger = { 
+		trigger = {
 			TECH_CASTLE_CONSTRUCTION = 1
 			ROOT = {
 				OR = {
@@ -569,7 +569,7 @@ ca_culture_group_carthaginian_1 = {
 		pikemen_defensive = 0.10
 		archers_defensive = 0.10
 		ai_creation_factor = 100
-		
+
 		extra_tech_building_start = 0.8
 	}
 	ca_culture_group_phoenician_coastal_3 = {
@@ -594,7 +594,7 @@ ca_culture_group_carthaginian_1 = {
 				}
 			}
 		}
-		trigger = { 
+		trigger = {
 			TECH_CASTLE_CONSTRUCTION = 2
 			ROOT = {
 				OR = {
@@ -613,7 +613,7 @@ ca_culture_group_carthaginian_1 = {
 		pikemen_defensive = 0.10
 		archers_defensive = 0.10
 		ai_creation_factor = 99
-		
+
 		extra_tech_building_start = 0.8
 	}
 	ca_culture_group_phoenician_coastal_4 = {
@@ -637,8 +637,8 @@ ca_culture_group_carthaginian_1 = {
 				}
 			}
 		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4 
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 4
 			ROOT = {
 				OR = {
 					culture = phoenician
@@ -656,7 +656,7 @@ ca_culture_group_carthaginian_1 = {
 		pikemen_defensive = 0.10
 		archers_defensive = 0.10
 		ai_creation_factor = 98
-		
+
 		extra_tech_building_start = 0.8
 	}
 	ca_culture_group_phoenician_inland_1 = {
@@ -677,8 +677,8 @@ ca_culture_group_carthaginian_1 = {
 				}
 			}
 		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 0 
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
 			ROOT = {
 				OR = {
 					culture = phoenician
@@ -696,7 +696,7 @@ ca_culture_group_carthaginian_1 = {
 		pikemen_defensive = 0.05
 		archers_defensive = 0.05
 		ai_creation_factor = 101
-		
+
 		extra_tech_building_start = 0.8
 	}
 	ca_culture_group_phoenician_inland_2 = {
@@ -720,7 +720,7 @@ ca_culture_group_carthaginian_1 = {
 				}
 			}
 		}
-		trigger = { 
+		trigger = {
 			TECH_CASTLE_CONSTRUCTION = 1
 			ROOT = {
 				OR = {
@@ -739,7 +739,7 @@ ca_culture_group_carthaginian_1 = {
 		pikemen_defensive = 0.10
 		archers_defensive = 0.10
 		ai_creation_factor = 100
-		
+
 		extra_tech_building_start = 0.8
 	}
 	ca_culture_group_phoenician_inland_3 = {
@@ -764,7 +764,7 @@ ca_culture_group_carthaginian_1 = {
 				}
 			}
 		}
-		trigger = { 
+		trigger = {
 			TECH_CASTLE_CONSTRUCTION = 2
 			ROOT = {
 				OR = {
@@ -783,7 +783,7 @@ ca_culture_group_carthaginian_1 = {
 		pikemen_defensive = 0.10
 		archers_defensive = 0.10
 		ai_creation_factor = 99
-		
+
 		extra_tech_building_start = 0.8
 	}
 	ca_culture_group_phoenician_inland_4 = {
@@ -807,8 +807,8 @@ ca_culture_group_carthaginian_1 = {
 				}
 			}
 		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4 
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 4
 			ROOT = {
 				OR = {
 					culture = phoenician
@@ -826,7 +826,7 @@ ca_culture_group_carthaginian_1 = {
 		pikemen_defensive = 0.10
 		archers_defensive = 0.10
 		ai_creation_factor = 98
-		
+
 		extra_tech_building_start = 0.8
 	}
 	ca_culture_group_punic_group_1 = {
@@ -851,8 +851,8 @@ ca_culture_group_carthaginian_1 = {
 				}
 			}
 		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 0 
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
 			ROOT = {
 				OR = {
 					culture = phoenician
@@ -869,7 +869,7 @@ ca_culture_group_carthaginian_1 = {
 		pikemen_defensive = 0.10
 		archers_defensive = 0.10
 		ai_creation_factor = 101
-		
+
 		extra_tech_building_start = 0.8
 	}
 	ca_culture_group_punic_group_2 = {
@@ -894,7 +894,7 @@ ca_culture_group_carthaginian_1 = {
 				}
 			}
 		}
-		trigger = { 
+		trigger = {
 			TECH_CASTLE_CONSTRUCTION = 1
 			ROOT = {
 				AND = {
@@ -912,7 +912,7 @@ ca_culture_group_carthaginian_1 = {
 		pikemen_defensive = 0.10
 		archers_defensive = 0.10
 		ai_creation_factor = 100
-		
+
 		extra_tech_building_start = 0.8
 	}
 	ca_culture_group_punic_group_3 = {
@@ -938,7 +938,7 @@ ca_culture_group_carthaginian_1 = {
 				}
 			}
 		}
-		trigger = { 
+		trigger = {
 			TECH_CASTLE_CONSTRUCTION = 2
 			ROOT = {
 				AND = {
@@ -957,7 +957,7 @@ ca_culture_group_carthaginian_1 = {
 		archers_defensive = 0.10
 		ai_creation_factor = 99
 
-		
+
 		extra_tech_building_start = 0.8
 	}
 	ca_culture_group_punic_group_4 = {
@@ -984,8 +984,8 @@ ca_culture_group_carthaginian_1 = {
 				}
 			}
 		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 4 
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 4
 			ROOT = {
 				AND = {
 					culture_group = punic
@@ -1002,13 +1002,13 @@ ca_culture_group_carthaginian_1 = {
 		pikemen_defensive = 0.10
 		archers_defensive = 0.10
 		ai_creation_factor = 98
-		
+
 		extra_tech_building_start = 0.8
 	}
 	ca_culture_group_iberian_1 = {
 		desc = ca_culture_group_iberian_1_desc
 		potential = {
-			OR = { 
+			OR = {
 				culture = basque
 				has_building = ca_culture_group_iberian_1
 			}
@@ -1018,8 +1018,8 @@ ca_culture_group_carthaginian_1 = {
 				culture_group = iberian
 			}
 		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 0 
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
 			ROOT = {
 				culture_group = iberian
 			}
@@ -1030,13 +1030,13 @@ ca_culture_group_carthaginian_1 = {
 		light_cavalry = 30
 		light_cavalry_offensive = 0.15
 		ai_creation_factor = 101
-		
+
 		extra_tech_building_start = 0.8
 	}
 	ca_culture_group_iberian_2 = {
 		desc = ca_culture_group_iberian_1_desc
 		potential = {
-			OR = { 
+			OR = {
 				culture = basque
 				has_building = ca_culture_group_iberian_1
 				has_building = ca_culture_group_iberian_2
@@ -1047,7 +1047,7 @@ ca_culture_group_carthaginian_1 = {
 				culture_group = iberian
 			}
 		}
-		trigger = { 
+		trigger = {
 			TECH_CASTLE_CONSTRUCTION = 1
 			ROOT = {
 				culture_group = iberian
@@ -1059,13 +1059,13 @@ ca_culture_group_carthaginian_1 = {
 		light_cavalry = 40
 		light_cavalry_offensive = 0.15
 		ai_creation_factor = 100
-		
+
 		extra_tech_building_start = 0.8
 	}
 	ca_culture_group_iberian_3 = {
 		desc = ca_culture_group_iberian_1_desc
 		potential = {
-			OR = { 
+			OR = {
 				culture = basque
 				has_building = ca_culture_group_iberian_1
 				has_building = ca_culture_group_iberian_2
@@ -1077,7 +1077,7 @@ ca_culture_group_carthaginian_1 = {
 				culture_group = iberian
 			}
 		}
-		trigger = { 
+		trigger = {
 			TECH_CASTLE_CONSTRUCTION = 2
 			ROOT = {
 				culture_group = iberian
@@ -1089,13 +1089,13 @@ ca_culture_group_carthaginian_1 = {
 		light_cavalry = 50
 		light_cavalry_offensive = 0.15
 		ai_creation_factor = 99
-		
+
 		extra_tech_building_start = 0.8
 	}
 	ca_culture_group_iberian_4 = {
 		desc = ca_culture_group_iberian_1_desc
 		potential = {
-			OR = { 
+			OR = {
 				culture = basque
 				has_building = ca_culture_group_iberian_1
 				has_building = ca_culture_group_iberian_2
@@ -1108,7 +1108,7 @@ ca_culture_group_carthaginian_1 = {
 				culture_group = iberian
 			}
 		}
-		trigger = { 
+		trigger = {
 			TECH_CASTLE_CONSTRUCTION = 4
 			ROOT = {
 				culture_group = iberian
@@ -1120,7 +1120,7 @@ ca_culture_group_carthaginian_1 = {
 		light_cavalry = 60
 		light_cavalry_offensive = 0.15
 		ai_creation_factor = 98
-		
+
 		extra_tech_building_start = 0.8
 	}
 	ca_culture_group_galatian_1 = {
@@ -1138,8 +1138,8 @@ ca_culture_group_carthaginian_1 = {
 				}
 			}
 		}
-		trigger = { 
-			TECH_CASTLE_CONSTRUCTION = 0 
+		trigger = {
+			TECH_CASTLE_CONSTRUCTION = 0
 			ROOT = {
 				OR = {
 					culture = galatian
@@ -1153,7 +1153,7 @@ ca_culture_group_carthaginian_1 = {
 		heavy_infantry_offensive = 0.10
 		military_techpoints = 0.02
 		ai_creation_factor = 101
-		
+
 		extra_tech_building_start = 0.8
 	}
 	ca_culture_group_galatian_2 = {
@@ -1172,7 +1172,7 @@ ca_culture_group_carthaginian_1 = {
 				}
 			}
 		}
-		trigger = { 
+		trigger = {
 			TECH_CASTLE_CONSTRUCTION = 1
 			ROOT = {
 				OR = {
@@ -1186,7 +1186,7 @@ ca_culture_group_carthaginian_1 = {
 		heavy_infantry = 40
 		heavy_infantry_offensive = 0.15
 		ai_creation_factor = 101
-		
+
 		extra_tech_building_start = 0.8
 	}
 	ca_culture_group_galatian_3 = {
@@ -1206,7 +1206,7 @@ ca_culture_group_carthaginian_1 = {
 				}
 			}
 		}
-		trigger = { 
+		trigger = {
 			TECH_CASTLE_CONSTRUCTION = 2
 			ROOT = {
 				OR = {
@@ -1220,7 +1220,7 @@ ca_culture_group_carthaginian_1 = {
 		heavy_infantry = 50
 		heavy_infantry_offensive = 0.15
 		ai_creation_factor = 101
-		
+
 		extra_tech_building_start = 0.8
 	}
 	ca_culture_group_galatian_4 = {
@@ -1241,7 +1241,7 @@ ca_culture_group_carthaginian_1 = {
 				}
 			}
 		}
-		trigger = { 
+		trigger = {
 			TECH_CASTLE_CONSTRUCTION = 4
 			ROOT = {
 				OR = {
@@ -1256,7 +1256,7 @@ ca_culture_group_carthaginian_1 = {
 		heavy_infantry_offensive = 0.10
 		tech_growth_modifier = 0.1
 		ai_creation_factor = 101
-		
+
 		extra_tech_building_start = 0.8
 	}
 }

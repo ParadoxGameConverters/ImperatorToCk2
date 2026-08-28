@@ -7,78 +7,78 @@
 {
 	name="Algibarteitis"
 	culture="protoslavic"
-	
+
 }
 5336010=
 {
 	name="Algimanteitis"
 	culture="protoslavic"
-	
+
 }
 5336011=
 {
 	name="Alginoreitis"
 	culture="protoslavic"
-	
+
 }
 5336012=
 {
 	name="Daumanteitis"
 	culture="protoslavic"
-	
+
 }
 5336013=
 {
 	name="Dautawteitis"
 	culture="protoslavic"
-	
+
 }
 5336014 = {
    name="Dauwaldeitis"
    culture="protoslavic"
-   
+
 }
 5336015 = {
    name="Dauwilteitis"
    culture="protoslavic"
-   
+
 }
 
 5336016 = {
    name="Genbuteitis"
    culture="protoslavic"
-   
+
 }
 
 5336017 ={
    name="Genmanteitis"
    culture="protoslavic"
-   
+
 }
 5336018 ={
    name="Genwilteitis"
    culture="protoslavic"
-   
+
 }
 5336019 ={
    name="Girdelgeitis"
    culture="protoslavic"
-   
+
 }
 5336020 ={
    name="Girdwilteitis"
    culture="protoslavic"
-   
+
 }
 5336021 ={
    name="Girtawteitis"
    culture="protoslavic"
-   
+
 }
 5336022 ={
    name="Giwenbuteitis"
    culture="protoslavic"
-   
+
 }
 5336023 = {
 	name = "Ljaubarteitis"

@@ -7,78 +7,78 @@
 {
 	name="Jorjani"
 	culture="indo_parthian"
-	
+
 }
 5384010=
 {
 	name="Ghurid"
 	culture="indo_parthian"
-	
+
 }
 5384011=
 {
 	name="Samanid"
 	culture="indo_parthian"
-	
+
 }
 5384012=
 {
 	name="Saffarid"
 	culture="indo_parthian"
-	
+
 }
 5384013=
 {
 	name="Bamid"
 	culture="indo_parthian"
-	
+
 }
 5384014 = {
    name="Sirjani"
    culture="indo_parthian"
-   
+
 }
 5384015 = {
    name="Furgid"
    culture="indo_parthian"
-   
+
 }
 
 5384016 = {
    name="Burhanid"
    culture="indo_parthian"
-   
+
 }
 
 5384017 ={
    name="Kartid"
    culture="indo_parthian"
-   
+
 }
 5384018 ={
    name="Bavandid"
    culture="indo_parthian"
-   
+
 }
 5384019 ={
    name="Baduspanid"
    culture="indo_parthian"
-   
+
 }
 5384020 ={
    name="Mihrabanid"
    culture="indo_parthian"
-   
+
 }
 5384021 ={
    name="Safavid"
    culture="indo_parthian"
-   
+
 }
 5384022 ={
    name="Gilani"
    culture="indo_parthian"
-   
+
 }
 5384023 = {
 	name = "Sarbadar"

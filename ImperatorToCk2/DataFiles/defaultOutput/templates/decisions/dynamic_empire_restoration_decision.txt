@@ -3,10 +3,10 @@ decisions = {
 		only_independent = yes
 		is_high_prio = yes
 		ai_check_interval = 24
-		
+
 		potential = {
 			is_playable = yes
-			OR = { 
+			OR = {
 				has_landed_title = e_TAG_east
 				has_landed_title = e_TAG_west
 			}

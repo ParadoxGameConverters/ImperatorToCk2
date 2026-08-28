@@ -262,17 +262,17 @@ targetted_decisions = {
 		potential = {
 			is_playable = yes
 			culture = aestian
-			NOT = { 
+			NOT = {
 				capital_scope = {
 					region = custom_irck2_lithuania
 				}
 			}
-			NOT = { 
+			NOT = {
 				capital_scope = {
 					region = custom_irck2_latvia
 				}
 			}
-			NOT = { 
+			NOT = {
 				capital_scope = {
 					region = custom_irck2_britannia
 				}

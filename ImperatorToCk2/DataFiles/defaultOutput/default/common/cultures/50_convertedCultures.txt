@@ -58,7 +58,7 @@ punic = {
 		modifier = default_culture_modifier
 
 	}
-	
+
 	#Punic Divergance cultures
 	carthago_novan = { #Iberian Punic
 		graphical_cultures = { levantinegfx byzantinegfx }
@@ -103,7 +103,7 @@ punic = {
 		modifier = default_culture_modifier
 
 	}
-	
+
 	ziqanmakom = { #German and Scandinavian Punic
 		graphical_cultures = { levantinegfx byzantinegfx }
 		alternate_start = {
@@ -147,7 +147,7 @@ punic = {
 		modifier = default_culture_modifier
 
 	}
-	
+
 	ysthyalm = { #French Punic
 		graphical_cultures = { levantinegfx byzantinegfx }
 		alternate_start = {
@@ -191,7 +191,7 @@ punic = {
 		modifier = default_culture_modifier
 
 	}
-	
+
 	taliaite = { #Italian Punic
 		graphical_cultures = { levantinegfx byzantinegfx }
 		alternate_start = {
@@ -235,7 +235,7 @@ punic = {
 		modifier = default_culture_modifier
 
 	}
-	
+
 	pmpese = { #Sardinian Punic
 		graphical_cultures = { levantinegfx byzantinegfx }
 		alternate_start = {
@@ -279,7 +279,7 @@ punic = {
 		modifier = default_culture_modifier
 
 	}
-	
+
 	mlachthi = { #Carpathian Punic
 		graphical_cultures = { levantinegfx byzantinegfx }
 		alternate_start = {
@@ -323,7 +323,7 @@ punic = {
 		modifier = default_culture_modifier
 
 	}
-	
+
 	epicrateian = { #Greek Punic
 		graphical_cultures = { levantinegfx byzantinegfx }
 		alternate_start = {
@@ -367,7 +367,7 @@ punic = {
 		modifier = default_culture_modifier
 
 	}
-	
+
 	sidonian = { #Levantine Punic
 		graphical_cultures = { levantinegfx byzantinegfx }
 		alternate_start = {
@@ -411,7 +411,7 @@ punic = {
 		modifier = default_culture_modifier
 
 	}
-	
+
 	sythchy = { #Polish Punic
 		graphical_cultures = { levantinegfx byzantinegfx }
 		alternate_start = {
@@ -455,7 +455,7 @@ punic = {
 		modifier = default_culture_modifier
 
 	}
-	
+
 	pretan = { #British Punic
 		graphical_cultures = { levantinegfx byzantinegfx }
 		alternate_start = {
@@ -499,7 +499,7 @@ punic = {
 		modifier = default_culture_modifier
 
 	}
-	
+
 	#Non-Carthaginians
 
 	phoenician = {
@@ -931,8 +931,8 @@ pre_indo_european = {
 		male_names = {
 			Azi Elkganu Enike Esimne Essthu Estanu Esumne Kanise Kathiave Ketanu Kgaisuru Kgika Klevie Knuse
 			Laseke Lassanu Lasta Lasthe Lathur Lavise Lavisie Lumene Munie Phausu Phelturie Phelzurie Phrima Phutikgi
-			Pitale Pithamne Pithiave Pithie Piti Pitie Piri Reithe Reituse Remie Tarie Tenakgi Terunie Tnake Tharie Tula 
-			Tulanu Ustitsu Valthikie_Voltignos Vassa Vatsanu_Vasseno Velthie 
+			Pitale Pithamne Pithiave Pithie Piti Pitie Piri Reithe Reituse Remie Tarie Tenakgi Terunie Tnake Tharie Tula
+			Tulanu Ustitsu Valthikie_Voltignos Vassa Vatsanu_Vasseno Velthie
 		}
 		female_names = {
 			Aruse Arusna Kara Kari Kgari Kgeli Kgevisiana Lavise Lavissa Perkusi Phelna Piri Remi Siara
@@ -986,7 +986,7 @@ pre_indo_european = {
 
 		modifier = default_culture_modifier
 	}
-	
+
 	lemnian = { #Etruscan-split Greece
 		graphical_cultures = { romangfx southerngfx trueoccitangfx occitangfx }
 		alternate_start = {
@@ -1029,7 +1029,7 @@ pre_indo_european = {
 		pat_grm_name_chance = 50
 		mat_grm_name_chance = 50
 		mother_name_chance = 0
-		
+
 		disinherit_from_blinding = yes
 
 		modifier = default_culture_modifier
@@ -1081,7 +1081,7 @@ pre_indo_european = {
 		modifier = default_culture_modifier
 
 	}
-	
+
 	tulari = { #Etruscan-split Iberia
 		graphical_cultures = { romangfx southerngfx trueoccitangfx occitangfx }
 		alternate_start = {
@@ -1128,7 +1128,7 @@ pre_indo_european = {
 		modifier = default_culture_modifier
 
 	}
-	
+
 	karthazian = { #Etruscan-split North Africa
 		graphical_cultures = { romangfx southerngfx trueoccitangfx occitangfx }
 		alternate_start = {
@@ -1171,13 +1171,13 @@ pre_indo_european = {
 		pat_grm_name_chance = 50
 		mat_grm_name_chance = 50
 		mother_name_chance = 0
-		
+
 		seafarer = yes
 
 		modifier = default_culture_modifier
 
 	}
-	
+
 	mutnian = { #Etruscan-split Egypt
 		graphical_cultures = { romangfx southerngfx trueoccitangfx occitangfx }
 		alternate_start = {
@@ -1224,7 +1224,7 @@ pre_indo_european = {
 		modifier = default_culture_modifier
 
 	}
-	
+
 	nerian = { #Etruscan-split Britain
 		graphical_cultures = { romangfx southerngfx trueoccitangfx occitangfx }
 		alternate_start = {
@@ -1271,7 +1271,7 @@ pre_indo_european = {
 		modifier = default_culture_modifier
 
 	}
-	
+
 	lanistian = { #Etruscan-split Illyria/Pannonia, Etruscan word for gladiator in reference to Sparticus
 		graphical_cultures = { romangfx southerngfx trueoccitangfx occitangfx }
 		alternate_start = {
@@ -1318,7 +1318,7 @@ pre_indo_european = {
 		modifier = default_culture_modifier
 
 	}
-	
+
 	fasenian = { #Etruscan-split Levant/Mesopotamia, word for sandy in Etruscan
 		graphical_cultures = { romangfx southerngfx trueoccitangfx occitangfx }
 		alternate_start = {
@@ -1365,7 +1365,7 @@ pre_indo_european = {
 		modifier = default_culture_modifier
 
 	}
-	
+
 	rasnan = { #Etruscan-split Sardinia
 		graphical_cultures = { romangfx southerngfx trueoccitangfx occitangfx }
 		alternate_start = {
@@ -1412,7 +1412,7 @@ pre_indo_european = {
 		modifier = default_culture_modifier
 
 	}
-	
+
 	sazlei = { #Etruscan-split Poland
 		graphical_cultures = { romangfx southerngfx trueoccitangfx occitangfx }
 		alternate_start = {
@@ -1459,7 +1459,7 @@ pre_indo_european = {
 		modifier = default_culture_modifier
 
 	}
-	
+
 	falan = { #Etruscan-split Germania
 		graphical_cultures = { romangfx southerngfx trueoccitangfx occitangfx }
 		alternate_start = {
@@ -1672,7 +1672,7 @@ gallic_group = {
 		modifier = default_culture_modifier
 
 	}
-	
+
 	atrebatian = {
 		graphical_cultures = { celticgfx }
 		alternate_start = {
@@ -1778,7 +1778,7 @@ gallic_group = {
 		modifier = default_culture_modifier
 
 	}
-	
+
 	galatian = {
 		graphical_cultures = { celticgfx }
 		alternate_start = {
@@ -1831,7 +1831,7 @@ gallic_group = {
 		modifier = default_culture_modifier
 
 	}
-	
+
 	#By Yuiiut
 	plashurii = {
 		graphical_cultures = { celticgfx }
@@ -1991,9 +1991,9 @@ gallic_group = {
 		modifier = default_culture_modifier
 
 	}
-	
+
 	#Noric divergence cultures by Diskianterezh
-	
+
 	ghasettian = {
 		graphical_cultures = { celticgfx }
 
@@ -2182,7 +2182,7 @@ gallic_group = {
 		modifier = default_culture_modifier
 
 	}
-	
+
 
 }
 
@@ -2360,7 +2360,7 @@ east_germanic = {
 
 		modifier = default_culture_modifier
 	}
-	
+
 	old_burgundian = {
 		graphical_cultures = { germangfx }
 		alternate_start = {
@@ -2460,7 +2460,7 @@ northern_romance = {
 		mat_grm_name_chance = 60
 		mother_name_chance = 10
 	}
-	
+
 	laessin = { #Roman-split Germania, taken from EU4 to Victoria II
 		graphical_cultures = { frankishgfx westerngfx trueoccitangfx }
 		alternate_start = {
@@ -2509,7 +2509,7 @@ northern_romance = {
 		mat_grm_name_chance = 60
 		mother_name_chance = 10
 	}
-	
+
 	rhogian = { #Roman-split Poland, names taken from EU4 to Victoria II
 		graphical_cultures = { frankishgfx westerngfx trueoccitangfx }
 		alternate_start = {
@@ -2617,7 +2617,7 @@ afro_romance_group = {
 		mat_grm_name_chance = 40
 		mother_name_chance = 5
 	}
-	
+
 	antonian = { #Roman-split Egyptian
 		graphical_cultures = { italiangfx southerngfx }
 
@@ -2672,7 +2672,7 @@ afro_romance_group = {
 		mat_grm_name_chance = 40
 		mother_name_chance = 5
 	}
-	
+
 	chadian = { #Roman-split West and Central African
 		graphical_cultures = { italiangfx southerngfx }
 
@@ -2727,7 +2727,7 @@ afro_romance_group = {
 		mat_grm_name_chance = 40
 		mother_name_chance = 5
 	}
-	
+
 	nilan = { #Roman-split West and Central African
 		graphical_cultures = { italiangfx southerngfx }
 
@@ -2848,7 +2848,7 @@ oriental_romance = {
 		mat_grm_name_chance = 40
 		mother_name_chance = 5
 	}
-	
+
 	bazramani = { #Roman-split Persia, taken from EU4 to Victoria II
 		graphical_cultures = { italiangfx southerngfx }
 
@@ -2897,7 +2897,7 @@ oriental_romance = {
 		mat_grm_name_chance = 40
 		mother_name_chance = 5
 	}
-	
+
 	romanoindian = { #Roman-split India
 		graphical_cultures = { romanoindianfx romangfx southerngfx }
 
@@ -2950,7 +2950,7 @@ oriental_romance = {
 		mat_grm_name_chance = 40
 		mother_name_chance = 5
 	}
-	
+
 	montanan = { #Roman-split South Caucases
 		graphical_cultures = { italiangfx southerngfx }
 
@@ -3011,7 +3011,7 @@ oriental_romance = {
 		mat_grm_name_chance = 40
 		mother_name_chance = 5
 	}
-	
+
 	azdi = { #Roman-split Arabia
 		graphical_cultures = { italiangfx southerngfx }
 
@@ -3103,7 +3103,7 @@ atlanto_slavic = {
 
 		modifier = default_culture_modifier
 	}
-	
+
 	olovian = { #British Slavic
 		graphical_cultures = { westernslavicgfx }
 
@@ -3131,12 +3131,12 @@ atlanto_slavic = {
 	}
 }
 scythian_group = {
-	royal_scythian = { 
+	royal_scythian = {
 		graphical_cultures = { persiangfx }
 		secondary_event_pictures = bedouin_arabic
 		alternate_start = {
 			OR = {
-				year < 1000 
+				year < 1000
 				has_alternate_start_parameter = { key = culture value = full_random }
 			}
 		}
@@ -3152,7 +3152,7 @@ scythian_group = {
 			Vardhana Varman Vasudeva Vidakai Vidaram Vijita Vijitasimha Vikrama Virsha Visaram Vishirapumna Visma Ysambasta Zambasta
 		}
 		female_names = {
-			Alsamgya Alyonj Armaiti Dharmadasi Khivyaina Maya Nanda Nirmala Praniyata Safali Shandramata Shri Tisyarakshita Vimala Vimalaprabha Yavalac	
+			Alsamgya Alyonj Armaiti Dharmadasi Khivyaina Maya Nanda Nirmala Praniyata Safali Shandramata Shri Tisyarakshita Vimala Vimalaprabha Yavalac
 		}
 
 		dukes_called_kings = yes
@@ -3163,12 +3163,12 @@ scythian_group = {
 
 		modifier = default_culture_modifier
 	}
-	
+
 	sarmatian = {
 		graphical_cultures = { persiangfx }
 		alternate_start = {
 			OR = {
-				year < 1000 
+				year < 1000
 				has_alternate_start_parameter = { key = culture value = full_random }
 			}
 		}
@@ -3184,7 +3184,7 @@ scythian_group = {
 			Vardhana Varman Vasudeva Vidakai Vidaram Vijita Vijitasimha Vikrama Virsha Visaram Vishirapumna Visma Ysambasta Zambasta
 		}
 		female_names = {
-			Alsamgya Alyonj Armaiti Dharmadasi Khivyaina Maya Nanda Nirmala Praniyata Safali Shandramata Shri Tisyarakshita Vimala Vimalaprabha Yavalac	
+			Alsamgya Alyonj Armaiti Dharmadasi Khivyaina Maya Nanda Nirmala Praniyata Safali Shandramata Shri Tisyarakshita Vimala Vimalaprabha Yavalac
 		}
 
 		dukes_called_kings = yes
@@ -3199,7 +3199,7 @@ scythian_group = {
 		graphical_cultures = { persiangfx }
 		alternate_start = {
 			OR = {
-				year < 1000 
+				year < 1000
 				has_alternate_start_parameter = { key = culture value = full_random }
 			}
 		}
@@ -3215,7 +3215,7 @@ scythian_group = {
 			Vardhana Varman Vasudeva Vidakai Vidaram Vijita Vijitasimha Vikrama Virsha Visaram Vishirapumna Visma Ysambasta Zambasta
 		}
 		female_names = {
-			Alsamgya Alyonj Armaiti Dharmadasi Khivyaina Maya Nanda Nirmala Praniyata Safali Shandramata Shri Tisyarakshita Vimala Vimalaprabha Yavalac	
+			Alsamgya Alyonj Armaiti Dharmadasi Khivyaina Maya Nanda Nirmala Praniyata Safali Shandramata Shri Tisyarakshita Vimala Vimalaprabha Yavalac
 		}
 
 		dukes_called_kings = yes
@@ -3255,7 +3255,7 @@ scythian_group = {
 		graphical_cultures = { persiangfx celticgfx }
 		alternate_start = {
 			OR = {
-				year < 1000 
+				year < 1000
 				has_alternate_start_parameter = { key = culture value = full_random }
 			}
 		}
@@ -3271,7 +3271,7 @@ scythian_group = {
 			Vardhana Varman Vasudeva Vidakai Vidaram Vijita Vijitasimha Vikrama Virsha Visaram Vishirapumna Visma Ysambasta Zambasta Nemed
 		}
 		female_names = {
-			Alsamgya Alyonj Armaiti Dharmadasi Khivyaina Maya Nanda Nirmala Praniyata Safali Shandramata Shri Tisyarakshita Vimala Vimalaprabha Yavalac	
+			Alsamgya Alyonj Armaiti Dharmadasi Khivyaina Maya Nanda Nirmala Praniyata Safali Shandramata Shri Tisyarakshita Vimala Vimalaprabha Yavalac
 		}
 
 		dukes_called_kings = yes
@@ -3282,13 +3282,13 @@ scythian_group = {
 
 		modifier = default_culture_modifier
 	}
-	
+
 	yarkamii = { #Reference to History on the Hoof: A Scythian Paradox Megacampaign
 		graphical_cultures = { byzantinegfx persiangfx }
 		secondary_event_pictures = bedouin_arabic
 		alternate_start = {
 			OR = {
-				year < 1000 
+				year < 1000
 				has_alternate_start_parameter = { key = culture value = full_random }
 			}
 		}
@@ -3305,7 +3305,7 @@ scythian_group = {
 			Ytarim Lyam Naradeve Candre Nandake Maisês Gôdigasos Phadious Spithamês Omrasmakos Amôspados Danarasmakos Pharnakiôn Ouarzbalos Iôdesmagos Maldras
 		}
 		female_names = {
-			Vasisthe Areagne Apama Alsamgya Alyonj Armaiti Dharmadasi Khivyaina Maya Nanda Nirmala Praniyata Safali Shandramata Shri Tisyarakshita Vimala Vimalaprabha Yavalac	
+			Vasisthe Areagne Apama Alsamgya Alyonj Armaiti Dharmadasi Khivyaina Maya Nanda Nirmala Praniyata Safali Shandramata Shri Tisyarakshita Vimala Vimalaprabha Yavalac
 		}
 
 		dukes_called_kings = yes
@@ -3313,7 +3313,7 @@ scythian_group = {
         from_dynasty_prefix = "nava "
         male_patronym = "puri "
         female_patronym = "duda "
-		
+
 		disinherit_from_blinding = yes
 
 		modifier = default_culture_modifier
@@ -3323,7 +3323,7 @@ scythian_group = {
 semitic_group = {
 	graphical_cultures = { westerngfx }
 	alternate_start = { NOT = { has_alternate_start_parameter = { key = special_culture value = animal_world } } }
-	
+
 	assyrian = { #Moved from Byzantine group
 		graphical_cultures = { persiangfx }
 		secondary_event_pictures = bedouin_arabic
@@ -3354,8 +3354,8 @@ semitic_group = {
 
 		modifier = default_culture_modifier
 	}
-	
-	
+
+
 	babylonian = {
 		graphical_cultures = { persiangfx }
 		secondary_event_pictures = bedouin_arabic
@@ -3408,7 +3408,7 @@ semitic_group = {
 
 		modifier = default_culture_modifier
 	}
-	
+
 	cardukoi = { #From Invictus, possibly Semetic, but classification unknown and not related to the Hurrians
 		graphical_cultures = { persiangfx }
 		secondary_event_pictures = bedouin_arabic
@@ -3439,8 +3439,8 @@ semitic_group = {
 
 		modifier = default_culture_modifier
 	}
-	
-	sumerian_culture = { 
+
+	sumerian_culture = {
 		graphical_cultures = { persiangfx }
 		secondary_event_pictures = bedouin_arabic
 
@@ -3469,7 +3469,7 @@ semitic_group = {
 
 		modifier = default_culture_modifier
 	}
-	
+
 	eblaite = { #Same names as Babylonian
 		graphical_cultures = { persiangfx }
 		secondary_event_pictures = bedouin_arabic
@@ -3522,9 +3522,9 @@ semitic_group = {
 
 		modifier = default_culture_modifier
 	}
-	
-	
-	
+
+
+
 }
 
 dom_group = {
@@ -3573,7 +3573,7 @@ dom_group = {
 
 		modifier = default_culture_modifier
 	}
-	
+
 	dom = { # Indo-Aryan Levant-Mesopotamia divergence
 		graphical_cultures = { indiangfx muslimgfx }
 		secondary_event_pictures = bedouin_arabic
@@ -3616,7 +3616,7 @@ dom_group = {
 
 		modifier = default_culture_modifier
 	}
-	
+
 	lom = { # Indo-Aryan Armenian divergence
 		graphical_cultures = { indiangfx muslimgfx }
 		secondary_event_pictures = bedouin_arabic
@@ -3659,14 +3659,14 @@ dom_group = {
 
 		modifier = default_culture_modifier
 	}
-	
+
 }
 
 hurrian_group = {
 	graphical_cultures = { westerngfx }
 	alternate_start = { NOT = { has_alternate_start_parameter = { key = special_culture value = animal_world } } }
-	
-	hurrian_culture = { 
+
+	hurrian_culture = {
 		graphical_cultures = { persiangfx }
 		secondary_event_pictures = bedouin_arabic
 
@@ -3711,7 +3711,7 @@ hurrian_group = {
 
 		modifier = default_culture_modifier
 	}
-	
+
 	gutian = { #Their language is unknown
 		graphical_cultures = { persiangfx }
 		secondary_event_pictures = bedouin_arabic
@@ -3733,9 +3733,9 @@ hurrian_group = {
 
 		modifier = default_culture_modifier
 	}
-	
-	
-	
+
+
+
 }
 
 

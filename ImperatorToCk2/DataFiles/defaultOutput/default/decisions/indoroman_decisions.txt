@@ -38,7 +38,7 @@ decisions = {
 		is_high_prio = yes
 		only_playable = yes
 		ai_check_interval = 24
-		
+
 		ai_will_do = {
 		factor = 15
 		}
@@ -80,14 +80,14 @@ decisions = {
 		trait = praetorian_ultra
 		religion = orthodox
 		}
-		
+
 			new_character = {
 			d_indo_praetorians = {
 			grant_title = PREV
 			}
 			hidden_effect = {
 			primary_title = { gender_succ = true_cognatic }
-			any_demesne_title = { add_law = status_of_women_4 } 
+			any_demesne_title = { add_law = status_of_women_4 }
 			}
 			set_defacto_liege = PREV
 			wealth = 100
@@ -98,11 +98,11 @@ decisions = {
 			sound_effect = generic_click_01
 		}
 	}
-	
+
 		form_knights_of_saint_thomas = {
 		is_high_prio = yes
 		only_playable = yes
-		
+
 		ai_will_do = {
 		factor = 15
 		}
@@ -176,22 +176,22 @@ decisions = {
 			sound_effect = generic_click_01
 		}
 	}
-	
+
 	}
-	
+
 		employ_hero_of_rome = {
 		ai = no
 		only_playable = yes
-		
+
 		ai_will_do = {
 		factor = 4
 		}
-		
+
 		ai_check_interval = 120
 
 		potential = {
 		has_landed_title = e_indo_roman_empire
-		
+
 		}
 		allow = {
 			prestige = 75
@@ -256,7 +256,7 @@ decisions = {
 			always = no
 		}
 	}
-	
+
 		reform_comitatenses = {
 		is_high_prio = yes
 		only_playable = yes
@@ -269,7 +269,7 @@ decisions = {
 			}
 			has_landed_title = e_indo_roman_empire
 		}
-		
+
 		ai_will_do = {
 		factor = 7
 		}
@@ -303,7 +303,7 @@ decisions = {
 						disband_on_peace = no
 						maintenance_multiplier = 0.1
 						earmark = comitatenses_guard
-					}	
+					}
 					spawn_unit = {
 						owner = ROOT
 						province = PREV
@@ -341,7 +341,7 @@ decisions = {
 			sound_effect = generic_click_01
 		}
 	}
-	
+
 	employ_a_roman_sculptor = {
 		only_playable = yes
 		ai_check_interval = 36
@@ -394,7 +394,7 @@ decisions = {
 			}
 		}
 	}
-	
+
 	acquire_stabby_spatha = {
 		only_playable = yes
 		ai_check_interval = 36
@@ -448,6 +448,6 @@ decisions = {
 		}
 	}
 
-	
+
 	}
 

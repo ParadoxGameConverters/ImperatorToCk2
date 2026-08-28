@@ -306,7 +306,7 @@ c_antiocheia ={ # Very Important to early Christianity
 c_alexandria ={ # Mark the Evangelist
 	holy_site = proto_orthodox
 }
-c_ephesos={ # Saint John the Beloved 
+c_ephesos={ # Saint John the Beloved
 	holy_site = proto_orthodox
 }
 
@@ -503,7 +503,7 @@ c_antiocheia={ # Very Important to early Christianity
 c_alexandria={ # Mark the Evangelist
 	holy_site = nicene
 }
-c_ephesos={ # Saint John the Beloved 
+c_ephesos={ # Saint John the Beloved
 	holy_site = nicene
 }
 

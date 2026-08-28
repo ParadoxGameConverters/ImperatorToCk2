@@ -11,12 +11,12 @@ spriteTypes = {
     name = "GFX_form_knights_of_saint_thomas"
     texturefile = "gfx\\interface\\decision_icon_form_knights_of_thomas.dds"
   }
-  
+
     spriteType = {
     name = "GFX_employ_hero_of_rome"
     texturefile = "gfx\\interface\\decision_icon_recruit_hero.dds"
   }
-  
+
     spriteType = {
     name = "GFX_reform_comitatenses"
     texturefile = "gfx\\interface\\decision_icon_reform_comitatenses.dds"

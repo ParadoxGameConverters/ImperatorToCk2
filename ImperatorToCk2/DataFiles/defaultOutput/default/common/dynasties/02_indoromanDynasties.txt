@@ -202,35 +202,35 @@
 #From the Indo-Roman mod
 
 6969706 = {
-	name="Romalus"   
+	name="Romalus"
 	culture="romanoindian"
 	#used_for_random=no
 
 }
 
 1069096 = {
-	name="Walakrian"   
+	name="Walakrian"
 	culture="romanoindian"
 	#used_for_random=no
 
 }
 
 1342326 = {
-	name="Abenitatus" 
+	name="Abenitatus"
 	culture="romanoindian"
 	#used_for_random=no
 
 }
 
 10690966 = {
-	name="Britannican"   
+	name="Britannican"
 	culture="romanoindian"
 	#used_for_random=no
 
 }
 
 10632096 = {
-	name="Draco"   
+	name="Draco"
 	culture="romanoindian"
 	#used_for_random=no
 

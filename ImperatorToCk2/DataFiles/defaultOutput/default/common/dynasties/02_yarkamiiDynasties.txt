@@ -7,78 +7,78 @@
 {
 	name="Alauni"
 	culture="yarkamii"
-	
+
 }
 5396010=
 {
 	name="Halani"
 	culture="yarkamii"
-	
+
 }
 5396011=
 {
 	name="Shoana"
 	culture="yarkamii"
-	
+
 }
 5396012=
 {
 	name="Senty"
 	culture="yarkamii"
-	
+
 }
 5396013=
 {
 	name="Ovseti"
 	culture="yarkamii"
-	
+
 }
 5396014 = {
    name="Tsærasantæ"
    culture="yarkamii"
-   
+
 }
 5396015 = {
    name="Ælbegatæ"
    culture="yarkamii"
-   
+
 }
 
 5396016 = {
    name="Ardasentæ"
    culture="yarkamii"
-   
+
 }
 
 5396017 ={
    name="Bekkuyzartæ"
    culture="yarkamii"
-   
+
 }
 5396018 ={
    name="Gæbæratæ"
    culture="yarkamii"
-   
+
 }
 5396019 ={
    name="Dzæræhohtæ"
    culture="yarkamii"
-   
+
 }
 5396020 ={
    name="Dzebysatæ"
    culture="yarkamii"
-   
+
 }
 5396021 ={
    name="Djerdjitæ"
    culture="yarkamii"
-   
+
 }
 5396022 ={
    name="Guyrdzybetæ"
    culture="yarkamii"
-   
+
 }
 5396023 = {
 	name = "Zændjiatæ"

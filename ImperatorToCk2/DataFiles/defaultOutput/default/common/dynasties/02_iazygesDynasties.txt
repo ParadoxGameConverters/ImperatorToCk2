@@ -7,78 +7,78 @@
 {
 	name="Alauni"
 	culture="iazyges"
-	
+
 }
 5381010=
 {
 	name="Halani"
 	culture="iazyges"
-	
+
 }
 5381011=
 {
 	name="Shoana"
 	culture="iazyges"
-	
+
 }
 5381012=
 {
 	name="Senty"
 	culture="iazyges"
-	
+
 }
 5381013=
 {
 	name="Ovseti"
 	culture="iazyges"
-	
+
 }
 5381014 = {
    name="Tsærasantæ"
    culture="iazyges"
-   
+
 }
 5381015 = {
    name="Ælbegatæ"
    culture="iazyges"
-   
+
 }
 
 5381016 = {
    name="Ardasentæ"
    culture="iazyges"
-   
+
 }
 
 5381017 ={
    name="Bekkuyzartæ"
    culture="iazyges"
-   
+
 }
 5381018 ={
    name="Gæbæratæ"
    culture="iazyges"
-   
+
 }
 5381019 ={
    name="Dzæræhohtæ"
    culture="iazyges"
-   
+
 }
 5381020 ={
    name="Dzebysatæ"
    culture="iazyges"
-   
+
 }
 5381021 ={
    name="Djerdjitæ"
    culture="iazyges"
-   
+
 }
 5381022 ={
    name="Guyrdzybetæ"
    culture="iazyges"
-   
+
 }
 5381023 = {
 	name = "Zændjiatæ"

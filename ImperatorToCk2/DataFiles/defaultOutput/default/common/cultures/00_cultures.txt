@@ -405,7 +405,7 @@ central_germanic = {
 
 		modifier = default_culture_modifier
 	}
-	
+
 	wigazan = {
 		graphical_cultures = { germangfx }
 		alternate_start = {
@@ -457,7 +457,7 @@ central_germanic = {
 
 		modifier = default_culture_modifier
 	}
-	
+
 	anglo_suebi = {
 		graphical_cultures = { englishgfx germangfx }
 		alternate_start = {
@@ -515,7 +515,7 @@ central_germanic = {
 
 		modifier = default_culture_modifier
 	}
-	
+
 	indo_germanic = {
 		graphical_cultures = { indiangfx germangfx }
 		secondary_event_pictures = bedouin_arabic
@@ -565,7 +565,7 @@ central_germanic = {
 		pat_grm_name_chance = 10
 		mat_grm_name_chance = 50
 		mother_name_chance = 5
-		
+
 		castes = yes
 
 		modifier = default_culture_modifier
@@ -1120,10 +1120,10 @@ latin = {
 		alternate_start = { has_alternate_start_parameter = { key = culture value = full_random } }
 
 		male_names = {
-			Aulis Aufilus Baitis Banttieis Bantieis Caisidis Cauius Ceis Efiis Eviis Gavis Gaavis Gnaivis Gaius Heirene Heirens Heris Kailenus Kaisillieis Kerins Kerrins Kluvatz Kumnis Luvkis Lukidel Mamercis Maras Maraeus Minaz Minis Marius Mettius Minatus Minathis Mais Marahis Minis Mitilis Mudis Melmis Nuvis Niumsis Oufilus Ovisos Pakis Rufiis Stenis Statis Stenis Titus Trebis Uvis Veliis Venelis Vinux Uhtavis Vibis Uvis 
-            Arghillus Cauius Caeso Charitus Egnatius Lucius Minas Minis Niumsis Numerius Nounis Obellius Publius Pompo Popdis Postumus Sextus Seppius Statis Titus Trebius Vibius 
-            Aulus Afidius Ahal Alez Amerens Atiedias Atiedian Cais Casilate Cureias Cumnios Blaisius Duquius Efieus Faletnus Fucius Hoius Iatinos Iuquos Kunos Lucius 
-            Museias Nero Numisius Nauius Ouius Paukis Pacius Petronius Publius Paie Peiersias Peraznanios Punicates Rufer Ruthius Salius Septimos Sextus Servius 
+			Aulis Aufilus Baitis Banttieis Bantieis Caisidis Cauius Ceis Efiis Eviis Gavis Gaavis Gnaivis Gaius Heirene Heirens Heris Kailenus Kaisillieis Kerins Kerrins Kluvatz Kumnis Luvkis Lukidel Mamercis Maras Maraeus Minaz Minis Marius Mettius Minatus Minathis Mais Marahis Minis Mitilis Mudis Melmis Nuvis Niumsis Oufilus Ovisos Pakis Rufiis Stenis Statis Stenis Titus Trebis Uvis Veliis Venelis Vinux Uhtavis Vibis Uvis
+            Arghillus Cauius Caeso Charitus Egnatius Lucius Minas Minis Niumsis Numerius Nounis Obellius Publius Pompo Popdis Postumus Sextus Seppius Statis Titus Trebius Vibius
+            Aulus Afidius Ahal Alez Amerens Atiedias Atiedian Cais Casilate Cureias Cumnios Blaisius Duquius Efieus Faletnus Fucius Hoius Iatinos Iuquos Kunos Lucius
+            Museias Nero Numisius Nauius Ouius Paukis Pacius Petronius Publius Paie Peiersias Peraznanios Punicates Rufer Ruthius Salius Septimos Sextus Servius
             Sertor Spector Tetteies Titus Variens Vibius Vipius Vibis Vufiuneus Vesticius
             Alaponis Arax Avis Avdiis Auilis Bannis Bantinis Cauius Caris Gavis Gnaius Heirens Helvos Heris Itiis Itius Kerrins Keis Kluvaz Luvkis Loikis Luktiis Maras Minaz Minis Minios Mais Mamereks Marahis Makis Metis Numsis Niumsis Numpsius Nympsius Nouios Nopsis Uvis Uhtavis Pakis pakul Pumpuf Perkens Plasos Polliis Silis Sossos Spedis Spellis Stenis Trebis Trebas Ouddiis Ovidius Varis Vibis
 		}
@@ -1165,22 +1165,22 @@ latin = {
 		male_names = {
 			Aimos Afros Aplisikos Arsoetigo Bagsono Egotore Egests Ersinos Egotor Egetor Enogenes
 		    Enokleves Fonts Fougonts Fugios Fremaistos Hostihevos Iante Iuvants Kantes Karamnos Lamusos Muskials
-		    Naisons Osts Oppos Pilpots Pledes Verkano Voltiomnos Veignos Vante Vants Votos Voltigene Voltigenes 
-		    Akuts Fremo Fremaistos Keutinos Ktulistos Moldo Resunkos Suros Tomatorios Vantkenio 		
+		    Naisons Osts Oppos Pilpots Pledes Verkano Voltiomnos Veignos Vante Vants Votos Voltigene Voltigenes
+		    Akuts Fremo Fremaistos Keutinos Ktulistos Moldo Resunkos Suros Tomatorios Vantkenio
 		    Albarenos Alero Anteto Andetico Aplisikos Arbos Ariuns Askolo Afros Atto Baito Bellenes Boiialns
 		    Boiio Boios Broicoko Broico Budicako Buticakos Deipiiariko Deipiiaris Dilliko Dillis Ebos Einaios Einao Eneicos
 		    Eneis Eneto Enetios Ennons Feugo Fonto Fremaistios Gaio Gaiios Graiko Henotos Houvos Hovos Hutto Huttos Kastiko
-		    Kastis Kataks Kello Kellos Kolo Klutavis Ametiko Ametis Kvito Lants Lante Lavsko Lemetor Luks Metso 
-		    Moldono Muskials Muskialo Nagalkno Nagalo Naisonko Naisons Naisos Okicaiko Okicais Ossoko 
+		    Kastis Kataks Kello Kellos Kolo Klutavis Ametiko Ametis Kvito Lants Lante Lavsko Lemetor Luks Metso
+		    Moldono Muskials Muskialo Nagalkno Nagalo Naisonko Naisons Naisos Okicaiko Okicais Ossoko
 		    Ossos Panarios Panaros Pelonikos Pelonis Pletes Raitevios Raitevos Reitos Resunkos Resuns Rebetono
 		    Sikos Siaks Segtios Taino Tekios Turico Trosto Trisikos Uko Urkleios Urkles Usedis Uposetios Vantkes Vasseno Veignos Veimes Vennonis
 		    Vennon Verkondar Verkvalos
 		}
 		female_names = {
-			Aima Aklona Andeta Afra Aplisia Arsoetiga Bagsonia Egotora Egesta Ersina Egotora Egetora 
+			Aima Aklona Andeta Afra Aplisia Arsoetiga Bagsonia Egotora Egesta Ersina Egotora Egetora
 			Enokleva Fetiana Fonta Fougonta Fugia Fukssia Fremaista Frutana Hostiheva Ianta Iuvanta Kanta Lamusa Muskiala
 			Naisona Neirka Nerka Osta Ostia Oppa Pilpota Pleda Verkana Veigna Vanta Vota
-			Akuta Frema Fremaistina Keutina Ktulista Molda Resunkia Suria Tomatoria Vantkenia		
+			Akuta Frema Fremaistina Keutina Ktulista Molda Resunkia Suria Tomatoria Vantkenia
 			Apia Askolia Ataina Atta Baitonia Brigdina Bukka Ebua Efa Iuanta Ituria Ikeveioneia Kolia
 			Kuikuta Makna Moldona Musta Ostina Otnia Reitia Rebetona Taina Trostia Urkleia Urkleina
 			Usedica Vantkenia Venna Verkondarna
@@ -1382,7 +1382,7 @@ latin = {
 
 		male_names = {
 		    Alero_Alero Arbos_Arbos Atto_Atto Aviro Butijakos_Butijakos Deivolaijos Ebos_Ebos Enno_Enno Eskaiva Gaijos_Gaius Goltanos Fouvos_Houvos Fovos_Houvos Fugenes Futtos_Huttos Kastikos_Kastikos Kellos_Kellos Kuges Kuijuta_Kuikuta Luks_Luks Melinks Metso_Metso Oppos_Oppos Ostiankos Ostis_Osts Ostiaris Kvartio Suros Tideimes Turijo_Turijo Turijones Veimes_Veimes Votos_Voto
-		    Kadriakos Kuges Lavskos_Lavskos Padros Pletuves Vants_Vants Verkvalos_Verkvalos 
+		    Kadriakos Kuges Lavskos_Lavskos Padros Pletuves Vants_Vants Verkvalos_Verkvalos
 		    Afros_Afros Aimos_Aimos Akuts_Akuts Ariuns_Ariuns Bellenes_Bellenes Egests_Egests Ennons Enogenes_Enogenes Enokleves Fonts_Fontes Fougons_Fougontes Fremaistos_Fremaistos Fugios_Fugios Graikos_Graikos Hostihavos_Hostihavos Iuvants_Iuvants Kantes_Kantes Karanmns_Karanmns Katulstos_Katulstos Keutinos_Keutinos Krumelons Kvito_Kvito Lants_Lants Lemetor_Lemetor Lemetos_Lemetor Leso Moldo_Moldo Moldonkeo Molon Moloto Moltons Nagalknos_Nagalknos Naisos_Naisos Ostios Osts_Osts Pilpots_Pilpots Pledes_Pledes Pupons Raitevios_Raitevios Sikos_Sikos Tivales Uko_Uko Vants_Vants Vasseno_Vasseno Veignos_Veignos Vilkenis Viseiio Voltigens_Voltigens Voltignos_Voltignos Voltiomnos_Voltiomnos Voto_Voto
 		}
 		female_names = {
@@ -1793,7 +1793,7 @@ byzantine = {
 
 		modifier = default_culture_modifier
 	}
-	
+
 	magnagreek = {
 		graphical_cultures = { byzantinegfx }
 
@@ -1834,7 +1834,7 @@ byzantine = {
 
 		modifier = default_culture_modifier
 	}
-	
+
 	massalian = {
 		graphical_cultures = { byzantinegfx }
 
@@ -1875,7 +1875,7 @@ byzantine = {
 
 		modifier = default_culture_modifier
 	}
-	
+
 	cyrenaican = {
 		graphical_cultures = { byzantinegfx }
 
@@ -1916,7 +1916,7 @@ byzantine = {
 
 		modifier = default_culture_modifier
 	}
-	
+
 	indogreek = {
 		graphical_cultures = { byzantinegfx }
 
@@ -1957,7 +1957,7 @@ byzantine = {
 
 		modifier = default_culture_modifier
 	}
-	
+
 	empurian = {
 		graphical_cultures = { byzantinegfx }
 
@@ -1998,7 +1998,7 @@ byzantine = {
 
 		modifier = default_culture_modifier
 	}
-	
+
 	histrian = {
 		graphical_cultures = { byzantinegfx }
 
@@ -2039,7 +2039,7 @@ byzantine = {
 
 		modifier = default_culture_modifier
 	}
-	
+
 	bactrian = {
 		graphical_cultures = { byzantinegfx }
 
@@ -2080,7 +2080,7 @@ byzantine = {
 
 		modifier = default_culture_modifier
 	}
-	
+
 	ptolemaic = {
 		graphical_cultures = { byzantinegfx }
 
@@ -2121,7 +2121,7 @@ byzantine = {
 
 		modifier = default_culture_modifier
 	}
-	
+
 	leucaethiopian = {
 		graphical_cultures = { byzantinegfx }
 
@@ -2162,7 +2162,7 @@ byzantine = {
 
 		modifier = default_culture_modifier
 	}
-	
+
 	pulian = {
 		graphical_cultures = { byzantinegfx }
 
@@ -2203,7 +2203,7 @@ byzantine = {
 
 		modifier = default_culture_modifier
 	}
-	
+
 	seleucian = {
 		graphical_cultures = { byzantinegfx }
 
@@ -2244,7 +2244,7 @@ byzantine = {
 
 		modifier = default_culture_modifier
 	}
-	
+
 	tylosi = {
 		graphical_cultures = { byzantinegfx }
 
@@ -2500,7 +2500,7 @@ byzantine = {
 
 		seafarer = yes
 	}
-	
+
 	trojan = {
 		graphical_cultures = { byzantinegfx }
 
@@ -2532,7 +2532,7 @@ byzantine = {
 
 		modifier = default_culture_modifier
 	}
-	
+
 	kizzuwatnan = {
 		graphical_cultures = { byzantinegfx }
 
@@ -2591,7 +2591,7 @@ byzantine = {
 
 		modifier = default_culture_modifier
 	}
-	
+
 	hatti_culture = { #Ancient Pre-Hittite people of Anatolia
 		graphical_cultures = { byzantinegfx }
 
@@ -2700,24 +2700,24 @@ byzantine = {
 
 		disinherit_from_blinding = yes
 	}
-	
+
 	circassian = {
 		graphical_cultures = { byzantinegfx }
 
 		color = { 0.31 0.10 0.58 }
 
 		male_names = {
-			Petrezok Verzacht Belzebuk Parsabok Smbat Stepanos Stephen Tachat Taniel Daniel Tatoul Tigran Tornik 
-			Tornik Tovmas Thomas Thoros Theodore Trdat Vache Vachagan Vagharshak Vahag Vahan Vahram Vakhtank Varazdat 			
-			Vartan Vassak Vesd Vrtanes Zakare Zarmihr Bougatchik Tanachouk Sibok Atsymtchouk Toutaryk Ezgbold Koudadik Kavklytch Kanoukov 
+			Petrezok Verzacht Belzebuk Parsabok Smbat Stepanos Stephen Tachat Taniel Daniel Tatoul Tigran Tornik
+			Tornik Tovmas Thomas Thoros Theodore Trdat Vache Vachagan Vagharshak Vahag Vahan Vahram Vakhtank Varazdat
+			Vartan Vassak Vesd Vrtanes Zakare Zarmihr Bougatchik Tanachouk Sibok Atsymtchouk Toutaryk Ezgbold Koudadik Kavklytch Kanoukov
 			Temriouk Tazriout Tchiourak Baachik Machik Boulgairouk Namstriouk Chopchouk Mait Kanboulat Koudenet Khoudenet Otchikan Damaniouk Domaniouk
 			Isbouldoug Anzarouk Chimgalei Kanglytchev Bitemriouk Cholokh Tachbsaroukov Papchouk Oslonbek Iansokh Kaitouk Nastriouk Nartchov Pchimakha
-			Iansokh Ademir Kazanalp Boudatcheis Sountchelei Olegouk Khotokiouki Ildar Tchapolov Saltankoul Saouslan Tazryt Okhlov Moudar 
+			Iansokh Ademir Kazanalp Boudatcheis Sountchelei Olegouk Khotokiouki Ildar Tchapolov Saltankoul Saouslan Tazryt Okhlov Moudar
 			Kounmourza Kanchov Slanbek inarmas Klytch Sataltanmagnout Kazy
 		}
 		female_names = {
-			Zuliyzhan Susane Babishe Zmroukhd Adrine Elsapet Sarine Khazbiika Kheeda Kurbiika Laila Laliita Lamaara Liiza Looli 
-			Lulii Maali Maaret Madiina Makka Maliika Malkan Marjam Marzhan Milaana Nurbiika Nurishat Nuura Peet'mat Qoqa  
+			Zuliyzhan Susane Babishe Zmroukhd Adrine Elsapet Sarine Khazbiika Kheeda Kurbiika Laila Laliita Lamaara Liiza Looli
+			Lulii Maali Maaret Madiina Makka Maliika Malkan Marjam Marzhan Milaana Nurbiika Nurishat Nuura Peet'mat Qoqa
 		}
 
 		from_dynasty_prefix = "ve "
@@ -2730,7 +2730,7 @@ byzantine = {
 
 		modifier = default_culture_modifier
 	}
-	
+
 	minoan = {
 		graphical_cultures = { byzantinegfx }
 
@@ -2769,8 +2769,8 @@ byzantine = {
 
 		disinherit_from_blinding = yes
 
-	}	
-	
+	}
+
 	cycladic = {
 		graphical_cultures = { byzantinegfx }
 
@@ -2810,7 +2810,7 @@ byzantine = {
 		disinherit_from_blinding = yes
 
 	}
-	
+
 	pelasgian = {
 		graphical_cultures = { byzantinegfx }
 
@@ -2850,10 +2850,10 @@ byzantine = {
 		disinherit_from_blinding = yes
 
 	}
-	
-	
-	
-	
+
+
+
+
 }
 
 celtic = {
@@ -3456,9 +3456,9 @@ baltic = {
 
 		modifier = default_culture_modifier
 	}
-	
+
 	zvejian = {
-	
+
 		graphical_cultures = { ugricgfx }
 
 		color = { 0.37 0.35 0.22 }
@@ -4313,8 +4313,8 @@ east_slavic = {
 
 		modifier = default_culture_modifier
 	}
-	
-	berzanian = { #Protoslavic divergence in the Baltic 
+
+	berzanian = { #Protoslavic divergence in the Baltic
 		graphical_cultures = { easternslavicgfx }
 
 		color = { 0.31 0.6 0.15 }
@@ -4354,7 +4354,7 @@ east_slavic = {
 
 		modifier = default_culture_modifier
 	}
-	
+
 	vapian = { #Protoslavic divergence in Anatolia
 		graphical_cultures = { easternslavicgfx }
 
@@ -4392,12 +4392,12 @@ east_slavic = {
 		pat_grm_name_chance = 30
 		mat_grm_name_chance = 30
 		mother_name_chance = 0
-		
+
 		disinherit_from_blinding = yes
 
 		modifier = default_culture_modifier
 	}
-	
+
 	protoslavic = {
 		graphical_cultures = { easternslavicgfx westernslavicgfx croatsouthslavicgfx serbsouthslavicgfx }
 
@@ -4590,7 +4590,7 @@ west_slavic = {
 		from_dynasty_prefix = "of "
 		male_patronym = "uvssýn"
 		female_patronym = "ovacéra"
-		
+
 		seafarer = yes
 
 		modifier = default_culture_modifier
@@ -5191,84 +5191,84 @@ iranian = {
 
 		modifier = default_culture_modifier
 	}
-	
+
 	#By Yuiiut
 	parthian_culture = {
 		graphical_cultures = { persiangfx }
 		secondary_event_pictures = bedouin_arabic
 		alternate_start = {
 			OR = {
-				year < 1000 
+				year < 1000
 				has_alternate_start_parameter = { key = culture value = full_random }
 			}
 		}
-  
+
 		color = { 0.7 0.1 0.2 }
-  
+
 		male_names = {
-			Ardumanish_Ardumanish Ariyabrdhna_Ariyabrdhna Ariyamna_Ariyamna Arshaka_Arshaka Arshama_Arshama Artavardiya_Artavardiya Artaxshasa_Artaxshasa 
-			Arxa_Arkha Aryawratha_Aryawratha Asina_Asina Aspacanah_Aspacanah Atamaita_Atamaita Athiyabaushna_Athiyabaushna Aturpat_Aturpat Bagabigna_Bagabigna 
-			Bagabuxsha_Bagabuxsha Bardiya_Bardiya Cincixri_Cincixri Cinnamus Cisantaxma_Cisantaxma Cishpi_Cishpi Dadarshi_Dadarshi Darayavahu_Darayavahu 
-			Datuvahya_Datuvahya Frada_Frada Fravarti_Fravarti Gaubaruva_Gaubaruva Gotarzes_Gotarzes Haldita_Haldita Haxamanish_Haxamanish Imanish_Imanish 
-			Kambuyija_Kambuyija Kuru_Kuru Marduniya_Marduniya Martiya_Martiya Mithradatha_Mithridates Orodes_Orodes Osroes_Osroes Pacorus_Pacorus 
-			Parthamaspates Phraates_Phraates Phrataphernes_Phrataphernes Phriapatius Sanatruk_Sanatruk Taxmaspada_Taxmaspada Thuxra_Thuxra Turdat_Turdat Upadarma_Upadarma 
-			Utana_Utana Uvaxshtra_Uvaxshtra Vahauka_Vahauka Vahumisa_Vahumisa Vahyavishdapaya_Vahyavishdapaya Vahyazdata_Vahyazdata Valakhsh Vardanes_Vardanes 
-			Vayaspara_Vayaspara Vindafarnah_Vindafarnah Vindarna_Vindarna Vishtaspa_Vishtaspa Vonones_Vonones Xshathrita_Xshathrita Xshayarshan_Xshayarshan		
+			Ardumanish_Ardumanish Ariyabrdhna_Ariyabrdhna Ariyamna_Ariyamna Arshaka_Arshaka Arshama_Arshama Artavardiya_Artavardiya Artaxshasa_Artaxshasa
+			Arxa_Arkha Aryawratha_Aryawratha Asina_Asina Aspacanah_Aspacanah Atamaita_Atamaita Athiyabaushna_Athiyabaushna Aturpat_Aturpat Bagabigna_Bagabigna
+			Bagabuxsha_Bagabuxsha Bardiya_Bardiya Cincixri_Cincixri Cinnamus Cisantaxma_Cisantaxma Cishpi_Cishpi Dadarshi_Dadarshi Darayavahu_Darayavahu
+			Datuvahya_Datuvahya Frada_Frada Fravarti_Fravarti Gaubaruva_Gaubaruva Gotarzes_Gotarzes Haldita_Haldita Haxamanish_Haxamanish Imanish_Imanish
+			Kambuyija_Kambuyija Kuru_Kuru Marduniya_Marduniya Martiya_Martiya Mithradatha_Mithridates Orodes_Orodes Osroes_Osroes Pacorus_Pacorus
+			Parthamaspates Phraates_Phraates Phrataphernes_Phrataphernes Phriapatius Sanatruk_Sanatruk Taxmaspada_Taxmaspada Thuxra_Thuxra Turdat_Turdat Upadarma_Upadarma
+			Utana_Utana Uvaxshtra_Uvaxshtra Vahauka_Vahauka Vahumisa_Vahumisa Vahyavishdapaya_Vahyavishdapaya Vahyazdata_Vahyazdata Valakhsh Vardanes_Vardanes
+			Vayaspara_Vayaspara Vindafarnah_Vindafarnah Vindarna_Vindarna Vishtaspa_Vishtaspa Vonones_Vonones Xshathrita_Xshathrita Xshayarshan_Xshayarshan
 		}
 		female_names = {
-			Asabana_Asabana Barsine_Barsine Dughdho-Va_Dughdho-Va Eredat-Fedhri_Eredat-Fedhri Franghad_Franghad Frenay_Frenay Huchithra_Huchithra Humaya_Humaya 
-			Hutaosa_Hutaosa Hvaredhay_Hvaredhay Hvovi_Hvovi Jagkrut_Jagkrut Kanuka_Kanuka Paesanghanu_Paesanghanu Pouruchista_Pouruchista Srutat-Fedhri_Srutat-Fedhri 
-			Thriti_Thriti Tushnamatay_Tushnamatay Urudhayant_Urudhayant Ushtavaiti_Ushtavaiti Uxshenti_Uxshenti Vadhut_Vadhut Vanghu-Fedhri_Vanghu-Fedhri Vispa-Thaurvo-Ashtray_Vispa-Thaurvo-Ashtray 
-			Zairichi_Zairichi		
+			Asabana_Asabana Barsine_Barsine Dughdho-Va_Dughdho-Va Eredat-Fedhri_Eredat-Fedhri Franghad_Franghad Frenay_Frenay Huchithra_Huchithra Humaya_Humaya
+			Hutaosa_Hutaosa Hvaredhay_Hvaredhay Hvovi_Hvovi Jagkrut_Jagkrut Kanuka_Kanuka Paesanghanu_Paesanghanu Pouruchista_Pouruchista Srutat-Fedhri_Srutat-Fedhri
+			Thriti_Thriti Tushnamatay_Tushnamatay Urudhayant_Urudhayant Ushtavaiti_Ushtavaiti Uxshenti_Uxshenti Vadhut_Vadhut Vanghu-Fedhri_Vanghu-Fedhri Vispa-Thaurvo-Ashtray_Vispa-Thaurvo-Ashtray
+			Zairichi_Zairichi
 		}
-  
+
 		dynasty_title_names = yes
 		male_patronym = "zade"
 		female_patronym = "dokht"
 		prefix = no
-  
+
 		modifier = default_culture_modifier
 	}
-	
+
 	#By Yuiiut
 	indo_parthian = {
 		graphical_cultures = { indiangfx }
 		secondary_event_pictures = bedouin_arabic
 		alternate_start = {
 			OR = {
-				year < 1000 
+				year < 1000
 				has_alternate_start_parameter = { key = culture value = full_random }
 			}
 		}
-  
+
 		color = { 0.8 0.1 0.3 }
-  
+
 		male_names = {
-			Ardumanish_Ardumanish Ariyabrdhna_Ariyabrdhna Ariyamna_Ariyamna Arshaka_Arshaka Arshama_Arshama Artavardiya_Artavardiya Artaxshasa_Artaxshasa 
-			Arxa_Arkha Aryawratha_Aryawratha Asina_Asina Aspacanah_Aspacanah Atamaita_Atamaita Athiyabaushna_Athiyabaushna Aturpat_Aturpat Bagabigna_Bagabigna 
-			Bagabuxsha_Bagabuxsha Bardiya_Bardiya Cincixri_Cincixri Cinnamus Cisantaxma_Cisantaxma Cishpi_Cishpi Dadarshi_Dadarshi Darayavahu_Darayavahu 
-			Datuvahya_Datuvahya Frada_Frada Fravarti_Fravarti Gaubaruva_Gaubaruva Gotarzes_Gotarzes Haldita_Haldita Haxamanish_Haxamanish Imanish_Imanish 
-			Kambuyija_Kambuyija Kuru_Kuru Marduniya_Marduniya Martiya_Martiya Mithradatha_Mithridates Orodes_Orodes Osroes_Osroes Pacorus_Pacorus 
-			Parthamaspates Phraates_Phraates Phrataphernes_Phrataphernes Phriapatius Sanatruk_Sanatruk Taxmaspada_Taxmaspada Thuxra_Thuxra Turdat_Turdat Upadarma_Upadarma 
-			Utana_Utana Uvaxshtra_Uvaxshtra Vahauka_Vahauka Vahumisa_Vahumisa Vahyavishdapaya_Vahyavishdapaya Vahyazdata_Vahyazdata Valakhsh Vardanes_Vardanes 
-			Vayaspara_Vayaspara Vindafarnah_Vindafarnah Vindarna_Vindarna Vishtaspa_Vishtaspa Vonones_Vonones Xshathrita_Xshathrita Xshayarshan_Xshayarshan		
+			Ardumanish_Ardumanish Ariyabrdhna_Ariyabrdhna Ariyamna_Ariyamna Arshaka_Arshaka Arshama_Arshama Artavardiya_Artavardiya Artaxshasa_Artaxshasa
+			Arxa_Arkha Aryawratha_Aryawratha Asina_Asina Aspacanah_Aspacanah Atamaita_Atamaita Athiyabaushna_Athiyabaushna Aturpat_Aturpat Bagabigna_Bagabigna
+			Bagabuxsha_Bagabuxsha Bardiya_Bardiya Cincixri_Cincixri Cinnamus Cisantaxma_Cisantaxma Cishpi_Cishpi Dadarshi_Dadarshi Darayavahu_Darayavahu
+			Datuvahya_Datuvahya Frada_Frada Fravarti_Fravarti Gaubaruva_Gaubaruva Gotarzes_Gotarzes Haldita_Haldita Haxamanish_Haxamanish Imanish_Imanish
+			Kambuyija_Kambuyija Kuru_Kuru Marduniya_Marduniya Martiya_Martiya Mithradatha_Mithridates Orodes_Orodes Osroes_Osroes Pacorus_Pacorus
+			Parthamaspates Phraates_Phraates Phrataphernes_Phrataphernes Phriapatius Sanatruk_Sanatruk Taxmaspada_Taxmaspada Thuxra_Thuxra Turdat_Turdat Upadarma_Upadarma
+			Utana_Utana Uvaxshtra_Uvaxshtra Vahauka_Vahauka Vahumisa_Vahumisa Vahyavishdapaya_Vahyavishdapaya Vahyazdata_Vahyazdata Valakhsh Vardanes_Vardanes
+			Vayaspara_Vayaspara Vindafarnah_Vindafarnah Vindarna_Vindarna Vishtaspa_Vishtaspa Vonones_Vonones Xshathrita_Xshathrita Xshayarshan_Xshayarshan
 		}
 		female_names = {
-			Asabana_Asabana Barsine_Barsine Dughdho-Va_Dughdho-Va Eredat-Fedhri_Eredat-Fedhri Franghad_Franghad Frenay_Frenay Huchithra_Huchithra Humaya_Humaya 
-			Hutaosa_Hutaosa Hvaredhay_Hvaredhay Hvovi_Hvovi Jagkrut_Jagkrut Kanuka_Kanuka Paesanghanu_Paesanghanu Pouruchista_Pouruchista Srutat-Fedhri_Srutat-Fedhri 
-			Thriti_Thriti Tushnamatay_Tushnamatay Urudhayant_Urudhayant Ushtavaiti_Ushtavaiti Uxshenti_Uxshenti Vadhut_Vadhut Vanghu-Fedhri_Vanghu-Fedhri Vispa-Thaurvo-Ashtray_Vispa-Thaurvo-Ashtray 
-			Zairichi_Zairichi		
+			Asabana_Asabana Barsine_Barsine Dughdho-Va_Dughdho-Va Eredat-Fedhri_Eredat-Fedhri Franghad_Franghad Frenay_Frenay Huchithra_Huchithra Humaya_Humaya
+			Hutaosa_Hutaosa Hvaredhay_Hvaredhay Hvovi_Hvovi Jagkrut_Jagkrut Kanuka_Kanuka Paesanghanu_Paesanghanu Pouruchista_Pouruchista Srutat-Fedhri_Srutat-Fedhri
+			Thriti_Thriti Tushnamatay_Tushnamatay Urudhayant_Urudhayant Ushtavaiti_Ushtavaiti Uxshenti_Uxshenti Vadhut_Vadhut Vanghu-Fedhri_Vanghu-Fedhri Vispa-Thaurvo-Ashtray_Vispa-Thaurvo-Ashtray
+			Zairichi_Zairichi
 		}
-  
+
 		male_patronym = "zade"
 		female_patronym = "dokht"
 		prefix = no
-		
+
 		founder_named_dynasties = yes
-  
+
 		modifier = default_culture_modifier
 	}
-	
+
 	#By Yuiiut
 	indo_scythian = {
         graphical_cultures = { persiangfx } #arabicgfx
@@ -5296,7 +5296,7 @@ iranian = {
 
 		modifier = default_culture_modifier
 	}
-	
+
 	#Intermixed Pre-Indo-Europeans and Persians
 	caspian = {
 		graphical_cultures = { persiangfx }
@@ -5443,7 +5443,7 @@ east_african = {
 
 		modifier = default_culture_modifier
 	}
-	
+
 	per_sheklesh = { #Egyptian Italy
 		graphical_cultures = { arabicgfx muslimgfx }
 		secondary_event_pictures = bedouin_arabic
@@ -5468,7 +5468,7 @@ east_african = {
 
 		modifier = default_culture_modifier
 	}
-	
+
 	niwt_ipt = { #Egyptian Carthage
 		graphical_cultures = { arabicgfx muslimgfx }
 		secondary_event_pictures = bedouin_arabic
@@ -5490,7 +5490,7 @@ east_african = {
 
 		founder_named_dynasties = yes
 		dukes_called_kings = yes
-		
+
 		seafarer = yes
 
 		modifier = default_culture_modifier
@@ -5677,7 +5677,7 @@ mesoamerican = {
 
 		modifier = default_culture_modifier
 	}
-	
+
 	mayan = {
 		graphical_cultures = { mesoamericangfx }
 		color = { 0.50 0.10 0.70 }
@@ -5687,10 +5687,10 @@ mesoamerican = {
 		used_for_random = no
 
 		male_names = {
-			"Can Ek" "Balam Quitze" "Kan Boar" "Yax Kuk Mok" "Ah Can" "Vahxaqui Caam" "Ah Cacao" "Cham Bahlun" 
-			"Pacal Balam" "Yaxum Balam" "Butz Chan" "Chaan Muan" "Yax Pac" "Ahpop-Achi" "Kan Bahlun Mo" Cocom 
-			Pacal Ahmok Arana Bakan Bor Cocaib Cocoja Conache Cotuja Gucamatz Hnuyg Kayom Kukumatz 
-			Mochcouoh Nohochacyum Oxib Queh Tecunuman Tutul Xiu Tziquin Vataki Yumcaaz Zotz Ahkinxok "Cu Ix" 
+			"Can Ek" "Balam Quitze" "Kan Boar" "Yax Kuk Mok" "Ah Can" "Vahxaqui Caam" "Ah Cacao" "Cham Bahlun"
+			"Pacal Balam" "Yaxum Balam" "Butz Chan" "Chaan Muan" "Yax Pac" "Ahpop-Achi" "Kan Bahlun Mo" Cocom
+			Pacal Ahmok Arana Bakan Bor Cocaib Cocoja Conache Cotuja Gucamatz Hnuyg Kayom Kukumatz
+			Mochcouoh Nohochacyum Oxib Queh Tecunuman Tutul Xiu Tziquin Vataki Yumcaaz Zotz Ahkinxok "Cu Ix"
 			Ahmik Anoki Chogan Dasan Elki Honon Jacy Len
 		}
 		female_names = {
@@ -5714,7 +5714,7 @@ mesoamerican = {
 
 		modifier = default_culture_modifier
 	}
-	
+
 	olmec = {
 		graphical_cultures = { mesoamericangfx }
 		color = { 0.30 0.18 0.35 }
@@ -5724,10 +5724,10 @@ mesoamerican = {
 		used_for_random = no
 
 		male_names = {
-			"Can Ek" "Balam Quitze" "Kan Boar" "Yax Kuk Mok" "Ah Can" "Vahxaqui Caam" "Ah Cacao" "Cham Bahlun" 
-			"Pacal Balam" "Yaxum Balam" "Butz Chan" "Chaan Muan" "Yax Pac" "Ahpop-Achi" "Kan Bahlun Mo" Cocom 
-			Pacal Ahmok Arana Bakan Bor Cocaib Cocoja Conache Cotuja Gucamatz Hnuyg Kayom Kukumatz 
-			Mochcouoh Nohochacyum Oxib Queh Tecunuman Tutul Xiu Tziquin Vataki Yumcaaz Zotz Ahkinxok "Cu Ix" 
+			"Can Ek" "Balam Quitze" "Kan Boar" "Yax Kuk Mok" "Ah Can" "Vahxaqui Caam" "Ah Cacao" "Cham Bahlun"
+			"Pacal Balam" "Yaxum Balam" "Butz Chan" "Chaan Muan" "Yax Pac" "Ahpop-Achi" "Kan Bahlun Mo" Cocom
+			Pacal Ahmok Arana Bakan Bor Cocaib Cocoja Conache Cotuja Gucamatz Hnuyg Kayom Kukumatz
+			Mochcouoh Nohochacyum Oxib Queh Tecunuman Tutul Xiu Tziquin Vataki Yumcaaz Zotz Ahkinxok "Cu Ix"
 			Ahmik Anoki Chogan Dasan Elki Honon Jacy Len
 		}
 		female_names = {
@@ -5751,7 +5751,7 @@ mesoamerican = {
 
 		modifier = default_culture_modifier
 	}
-	
+
 	tol = {
 		graphical_cultures = { mesoamericangfx }
 		color = { 0.70 0.07 0.80 }
@@ -5761,10 +5761,10 @@ mesoamerican = {
 		used_for_random = no
 
 		male_names = {
-			"Can Ek" "Balam Quitze" "Kan Boar" "Yax Kuk Mok" "Ah Can" "Vahxaqui Caam" "Ah Cacao" "Cham Bahlun" 
-			"Pacal Balam" "Yaxum Balam" "Butz Chan" "Chaan Muan" "Yax Pac" "Ahpop-Achi" "Kan Bahlun Mo" Cocom 
-			Pacal Ahmok Arana Bakan Bor Cocaib Cocoja Conache Cotuja Gucamatz Hnuyg Kayom Kukumatz 
-			Mochcouoh Nohochacyum Oxib Queh Tecunuman Tutul Xiu Tziquin Vataki Yumcaaz Zotz Ahkinxok "Cu Ix" 
+			"Can Ek" "Balam Quitze" "Kan Boar" "Yax Kuk Mok" "Ah Can" "Vahxaqui Caam" "Ah Cacao" "Cham Bahlun"
+			"Pacal Balam" "Yaxum Balam" "Butz Chan" "Chaan Muan" "Yax Pac" "Ahpop-Achi" "Kan Bahlun Mo" Cocom
+			Pacal Ahmok Arana Bakan Bor Cocaib Cocoja Conache Cotuja Gucamatz Hnuyg Kayom Kukumatz
+			Mochcouoh Nohochacyum Oxib Queh Tecunuman Tutul Xiu Tziquin Vataki Yumcaaz Zotz Ahkinxok "Cu Ix"
 			Ahmik Anoki Chogan Dasan Elki Honon Jacy Len
 		}
 		female_names = {

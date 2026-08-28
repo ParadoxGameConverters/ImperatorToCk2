@@ -12,22 +12,22 @@ targetted_decisions = {
 		potential = {
 			is_playable = yes
 			culture = suebi
-			NOT = { 
+			NOT = {
 				capital_scope = {
 					region = custom_irck2_italy
 				}
 			}
-			NOT = { 
+			NOT = {
 				capital_scope = {
 					region = custom_irck2_anatolia_and_georgia
 				}
 			}
-			NOT = { 
+			NOT = {
 				capital_scope = {
 					region = custom_irck2_britannia
 				}
 			}
-			NOT = { 
+			NOT = {
 				capital_scope = {
 					region = region = world_india
 				}
@@ -58,12 +58,12 @@ targetted_decisions = {
 					region = custom_irck2_anatolia_and_georgia
 				}
 			}
-			NOT = { 
+			NOT = {
 				capital_scope = {
 					region = custom_irck2_britannia
 				}
 			}
-			NOT = { 
+			NOT = {
 				capital_scope = {
 					region = region = world_india
 				}
@@ -784,7 +784,7 @@ targetted_decisions = {
 			}
 		}
 	}
-	
+
 	# Suebi character may convert to Anglo-Suebi
 	irck2_convert_to_anglo_suebi = {
 		only_playable = yes
@@ -908,7 +908,7 @@ targetted_decisions = {
 			}
 		}
 	}
-	
+
 # Non-Norse Germanic character may convert to Indo-Germanic
 	irck2_convert_to_indo_germanic = {
 		only_playable = yes

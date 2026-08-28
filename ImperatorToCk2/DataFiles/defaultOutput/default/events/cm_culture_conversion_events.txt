@@ -33,18 +33,18 @@ province_event = {
 			NOT = {	culture = pictish }
 		}
 		NOT = {
-			owner = { 
-				top_liege = { 
-					culture = pictish 
+			owner = {
+				top_liege = {
+					culture = pictish
 					OR = {
 						tier = emperor
 						num_of_king_titles = 2
 					}
-				} 
+				}
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 1200
 		modifier = {
@@ -80,24 +80,24 @@ province_event = {
 		NOT = { religion_group = muslim }
 		region = world_europe_west_francia
 		NOT = {
-			owner = { 
-				top_liege = { 
-					culture = visigothic 
+			owner = {
+				top_liege = {
+					culture = visigothic
 					OR = {
 						tier = emperor
 						num_of_king_titles = 2
 					}
-				} 
+				}
 			}
 		}
 		NOT = {
-			owner = { 
+			owner = {
 				religion_head = { culture = visigothic }
 			}
 		}
 		year = 850
 	}
-	
+
 	mean_time_to_happen = {
 		months = 3600
 		modifier = {
@@ -145,24 +145,24 @@ province_event = {
 			NOT = { holding_type = nomad }
 		}
 		NOT = {
-			owner = { 
-				top_liege = { 
-					culture = visigothic 
+			owner = {
+				top_liege = {
+					culture = visigothic
 					OR = {
 						tier = emperor
 						num_of_king_titles = 2
 					}
-				} 
+				}
 			}
 		}
 		NOT = {
-			owner = { 
+			owner = {
 				religion_head = { culture = visigothic }
 			}
 		}
 		year = 850
 	}
-	
+
 	mean_time_to_happen = {
 		months = 3600
 		modifier = {
@@ -210,24 +210,24 @@ province_event = {
 			NOT = { holding_type = nomad }
 		}
 		NOT = {
-			owner = { 
-				top_liege = { 
-					culture = visigothic 
+			owner = {
+				top_liege = {
+					culture = visigothic
 					OR = {
 						tier = emperor
 						num_of_king_titles = 2
 					}
-				} 
+				}
 			}
 		}
 		NOT = {
-			owner = { 
+			owner = {
 				religion_head = { culture = visigothic }
 			}
 		}
 		year = 850
 	}
-	
+
 	mean_time_to_happen = {
 		months = 3600
 		modifier = {
@@ -275,24 +275,24 @@ province_event = {
 			NOT = { holding_type = nomad }
 		}
 		NOT = {
-			owner = { 
-				top_liege = { 
-					culture = visigothic 
+			owner = {
+				top_liege = {
+					culture = visigothic
 					OR = {
 						tier = emperor
 						num_of_king_titles = 2
 					}
-				} 
+				}
 			}
 		}
 		NOT = {
-			owner = { 
+			owner = {
 				religion_head = { culture = visigothic }
 			}
 		}
 		year = 850
 	}
-	
+
 	mean_time_to_happen = {
 		months = 3600
 		modifier = {
@@ -357,7 +357,7 @@ province_event = {
 			NOT = { holding_type = nomad }
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 1200
 		modifier = {

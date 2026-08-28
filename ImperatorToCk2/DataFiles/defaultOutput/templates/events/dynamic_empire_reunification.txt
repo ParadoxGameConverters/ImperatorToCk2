@@ -18,21 +18,21 @@ narrative_event = {
 	title = EVTNAMEIR_EMPIRE_RES_e_TAG.20
 	desc = {
 		text = EVTDESCIR_EMPIRE_RES_e_TAG.20
-		trigger = { 
+		trigger = {
 			is_alternate_start = no
 		}
 	}
 	desc = {
 		text = EVTDESCIR_EMPIRE_RES_e_TAG20_HF
-		trigger = { 
+		trigger = {
 			is_alternate_start = yes
 		}
 	}
-	
+
 	picture = GFX_evt_rome_restored_byzantine
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -41,7 +41,7 @@ narrative_event = {
 			set_character_flag = achievement_legacy_of_rome
 		}
 	}
-	
+
 	option = {
 		name = EVTOPTAIR_EMPIRE_RES_e_TAG.20
 		hidden_tooltip = {
@@ -71,7 +71,7 @@ narrative_event = {
 				copy_title_laws = e_TAG_east
 				copy_title_history = e_TAG_east
 			}
-			
+
 		}
 		if {
 			limit = {
@@ -83,7 +83,7 @@ narrative_event = {
 				copy_title_laws = e_TAG_west
 				copy_title_history = e_TAG_west
 			}
-			
+
 		}
 		e_TAG_east = {
 			show_scope_change = no
@@ -123,7 +123,7 @@ narrative_event = {
 				type = e_TAG_empire_restoration_bloodline
 			}
 		}
-		
+
 	}
 }
 
@@ -133,21 +133,21 @@ narrative_event = {
 	title = EVTNAMEIR_EMPIRE_RES_e_TAG.21
 	desc = {
 		text = EVTDESCIR_EMPIRE_RES_e_TAG.21
-		trigger = { 
+		trigger = {
 			is_alternate_start = no
 		}
 	}
 	desc = {
 		text = EVTDESCIR_EMPIRE_RES_e_TAG21_HF
-		trigger = { 
+		trigger = {
 			is_alternate_start = yes
 		}
 	}
-	
+
 	picture = GFX_evt_rome_restored_byzantine
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = EVTOPTAIR_EMPIRE_RES_e_TAG.21
 		trigger = {

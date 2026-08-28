@@ -7,7 +7,7 @@ irck2_imperial_reconquest_e_TAG = {
 	check_de_jure_tier = DUKE # this scans all dejure duchies for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
 
 	allowed_to_target_tributaries = no
-	
+
 	sort_priority = 1900
 
 	can_use_gui = {
@@ -34,7 +34,7 @@ irck2_imperial_reconquest_e_TAG = {
 			#de_jure_liege_or_above = k_carinthia
 		}
 	}
-	
+
 	is_valid = {
 		ROOT = {
 			independent = yes
@@ -46,29 +46,29 @@ irck2_imperial_reconquest_e_TAG = {
 		hidden_tooltip = { fire_haruspicy_event_effect = yes }
 		if = {
 			limit = { defender = { is_offmap_governor = offmap_china } }
-			attacker = {  
+			attacker = {
 				sound_effect = china_angered_emperor
-				detract_grace_super_huge_effect = yes 
+				detract_grace_super_huge_effect = yes
 			}
 		}
 	}
-	
+
 	on_success = {
 		ROOT = {
 			participation_scaled_prestige = 100
 		}
 		any_attacker = {
 			limit = { NOT = { character = ROOT } }
-			hidden_tooltip = { 
+			hidden_tooltip = {
 				participation_scaled_prestige = 100
 			}
 		}
-		
+
 		FROM = { prestige = -100 }
 	}
 
 	on_success_title = {
-		custom_tooltip = { 
+		custom_tooltip = {
 			text = other_invasion_succ_tip
 			hidden_tooltip = {
 				ROOT = {
@@ -119,7 +119,7 @@ irck2_imperial_reconquest_e_TAG = {
 		}
 		any_defender = {
 			limit = { NOT = { character = FROM } }
-			hidden_tooltip = { 
+			hidden_tooltip = {
 				participation_scaled_piety = 100
 				participation_scaled_prestige = 200
 				if = {
@@ -135,7 +135,7 @@ irck2_imperial_reconquest_e_TAG = {
 	attacker_ai_victory_worth = {
 		factor = -1 # always accept
 	}
-	
+
 	attacker_ai_defeat_worth = {
 		factor = 100
 	}
@@ -143,7 +143,7 @@ irck2_imperial_reconquest_e_TAG = {
 	defender_ai_victory_worth = {
 		factor = -1 # always accept
 	}
-	
+
 	defender_ai_defeat_worth = {
 		factor = 100
 	}

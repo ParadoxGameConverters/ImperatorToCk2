@@ -1,16 +1,16 @@
 e_indo_roman_empire = {
 	color={ 185 0 7 }
 	color2={ 185 0 7 }
-	
+
 	 capital = 1131
 
 	short_name = yes
-	
+
 	purple_born_heirs = yes
-	
+
 	culture = romanoindian
 	#religion = orthodox
-	
+
 	allow = {
 		always = no # Only created through special event
 	}
@@ -19,16 +19,16 @@ e_indo_roman_empire = {
 e_orientis = {
 	color={ 180 87 116 }
 	color2={ 141 0 43 }
-	
+
 	capital = 1131
 
 	short_name = yes
-	
+
 	purple_born_heirs = yes
-	
+
 	culture = romanoindian
 	#religion = orthodox
-	
+
 	allow = {
 		always = no # Only created through special event
 	}
@@ -38,19 +38,19 @@ e_orientis = {
 e_britannica = {
 	color={ 122 49 111 }
 	color2={ 212 175 55 }
-	
+
 	capital = 1131
-	
+
 	title = "Khagan Primus"
 	title_female = "Khatun Primus"
 
 	short_name = yes
-	
+
 	capital = 1457
-	
+
 	culture = romanoindian
 	#religion = orthodox
-	
+
 	allow = {
 		always = no # Only created through special event
 	}
@@ -60,16 +60,16 @@ d_indo_praetorians = {
 	color={ 99 2 58 }
 	color2={ 99 2 58 }
 
-	
-	# Parent Religion 
+
+	# Parent Religion
 	religion = orthodox
 
         capital = 1131
 
 	graphical_culture = holygfx
-	
+
 	culture = romanoindian
-	
+
 	mercenary = yes
 
 	title = "CAPTAIN"
@@ -78,14 +78,14 @@ d_indo_praetorians = {
 
 	# Always exists
 	landless = yes
-	
+
 	# Cannot be held as a secondary title
 	primary = yes
-	
+
 	replace_captain_on_death = yes
-	
+
 	strength_growth_per_century = 0.10
-	
+
 	mercenary_type = Scholae_Palatinae_composition
 }
 
@@ -93,14 +93,14 @@ d_vieti_seniores = {
 	color={ 13 0 0 }
 	color2={ 164 0 5 }
 
-	
-	# Parent Religion 
+
+	# Parent Religion
 	religion = orthodox
 
         capital = 1131
-	
+
 	culture = romanoindian
-	
+
 	mercenary = yes
 
 	title = "CAPTAIN"
@@ -109,14 +109,14 @@ d_vieti_seniores = {
 
 	# Always exists
 	landless = yes
-	
+
 	# Cannot be held as a secondary title
 	primary = yes
-	
+
 	replace_captain_on_death = yes
-	
+
 	strength_growth_per_century = 0.04
-	
+
 	mercenary_type = vieti_seniores
 }
 
@@ -125,8 +125,8 @@ k_walakrios_expedition = {
 	color2={ 135 39 90 }
 	short_name = yes
 
-	
-	# Parent Religion 
+
+	# Parent Religion
 	religion = orthodox
 
 	culture = romanoindian
@@ -141,8 +141,8 @@ k_western_expedition = {
 	color2={ 187 0 7 }
 	short_name = yes
 
-	
-	# Parent Religion 
+
+	# Parent Religion
 	religion = orthodox
 
 	culture = romanoindian
@@ -157,8 +157,8 @@ d_latin_praetorians = {
 	color2={ 99 2 68 }
 	short_name = yes
 
-	
-	# Parent Religion 
+
+	# Parent Religion
 	religion = orthodox
 
 	culture = romanoindian
@@ -171,27 +171,27 @@ d_latin_praetorians = {
 d_knights_of_saint_thomas = {
 
 	color={ 130 15 125 }
-	
+
 	#graphical_culture = holygfx
-	
+
 	capital = 1131
 
 	title = "GRANDMASTER"
 	foa = "GRANDMASTER_FOA"
-	
+
 	# Always exists
 	landless = yes
-	
+
 	holy_order = yes
-	
-	# Parent Religion 
+
+	# Parent Religion
 	religion = orthodox
-	
+
 	culture = bengali
-	
+
 	# Cannot be held as a secondary title
 	primary = yes
-	
+
 	# Extra income due to donations, etc
 	monthly_income = 2 # (Must be an integer between 1 and 512)
 
@@ -202,8 +202,8 @@ d_occiromalus = {
 	color={ 206 101 111 }
 	color2={ 242 208 210 }
 
-	
-	# Parent Religion 
+
+	# Parent Religion
 	religion = orthodox
 
 	culture = romanoindian
@@ -214,8 +214,8 @@ d_solromalus = {
 	color={ 234 192 65 }
 	color2={ 239 208 113 }
 
-	
-	# Parent Religion 
+
+	# Parent Religion
 	religion = orthodox
 
 	culture = romanoindian
@@ -238,8 +238,8 @@ k_romala = {
 	color={ 186 68 74 }
 	color2={ 254 254 254 }
 
-	
-	# Parent Religion 
+
+	# Parent Religion
 	religion = orthodox
 
 	culture = romanoindian
@@ -250,8 +250,8 @@ k_vietia = {
 	color={ 99 25 29 }
 	color2={ 7 7 7 }
 
-	
-	# Parent Religion 
+
+	# Parent Religion
 	religion = orthodox
 
 	culture = romanoindian
@@ -262,8 +262,8 @@ k_arcadi = {
 	color={ 247 211 183 }
 	color2={ 160 116 78 }
 
-	
-	# Parent Religion 
+
+	# Parent Religion
 	religion = orthodox
 
 	culture = romanoindian
@@ -274,8 +274,8 @@ d_arcadi_upper = {
 	color={ 227 201 183 }
 	color2={ 99 34 34 }
 
-	
-	# Parent Religion 
+
+	# Parent Religion
 	religion = orthodox
 
 	culture = romanoindian
@@ -286,8 +286,8 @@ d_arcadi = {
 	color={ 172 178 178 }
 	color2={ 130 13 13 }
 
-	
-	# Parent Religion 
+
+	# Parent Religion
 	religion = orthodox
 
 	culture = romanoindian
@@ -298,8 +298,8 @@ d_kalvarea = {
 	color={ 88 58 31 }
 	color2={ 120 29 35 }
 
-	
-	# Parent Religion 
+
+	# Parent Religion
 	religion = orthodox
 
 	culture = romanoindian
@@ -310,8 +310,8 @@ d_fidellia = {
 	color={ 106 102 153 }
 	color2={ 127 39 102 }
 
-	
-	# Parent Religion 
+
+	# Parent Religion
 	religion = orthodox
 
 	culture = romanoindian
@@ -322,8 +322,8 @@ d_maria = {
 	color={ 57 52 110 }
 	color2={ 134 176 226 }
 
-	
-	# Parent Religion 
+
+	# Parent Religion
 	religion = orthodox
 
 	culture = romanoindian
@@ -334,8 +334,8 @@ d_syrica = {
 	color={ 227 168 110 }
 	color2={ 187 0 7 }
 
-	
-	# Parent Religion 
+
+	# Parent Religion
 	religion = orthodox
 
 	culture = romanoindian
@@ -346,8 +346,8 @@ d_western_dominium = {
 	color={ 234 192 65 }
 	color2={ 58 2 58 }
 
-	
-	# Parent Religion 
+
+	# Parent Religion
 	religion = orthodox
 
 	culture = romanoindian
@@ -358,8 +358,8 @@ k_yindu_dominium = {
 	color={ 126 192 219 }
 	color2={ 6 190 75 }
 
-	
-	# Parent Religion 
+
+	# Parent Religion
 	religion = orthodox
 
 	culture = romanoindian

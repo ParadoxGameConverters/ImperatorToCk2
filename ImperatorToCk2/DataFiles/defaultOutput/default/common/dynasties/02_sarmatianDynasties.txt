@@ -7,78 +7,78 @@
 {
 	name="Alauni"
 	culture="sarmatian"
-	
+
 }
 5380010=
 {
 	name="Halani"
 	culture="sarmatian"
-	
+
 }
 5380011=
 {
 	name="Shoana"
 	culture="sarmatian"
-	
+
 }
 5380012=
 {
 	name="Senty"
 	culture="sarmatian"
-	
+
 }
 5380013=
 {
 	name="Ovseti"
 	culture="sarmatian"
-	
+
 }
 5380014 = {
    name="Tsærasantæ"
    culture="sarmatian"
-   
+
 }
 5380015 = {
    name="Ælbegatæ"
    culture="sarmatian"
-   
+
 }
 
 5380016 = {
    name="Ardasentæ"
    culture="sarmatian"
-   
+
 }
 
 5380017 ={
    name="Bekkuyzartæ"
    culture="sarmatian"
-   
+
 }
 5380018 ={
    name="Gæbæratæ"
    culture="sarmatian"
-   
+
 }
 5380019 ={
    name="Dzæræhohtæ"
    culture="sarmatian"
-   
+
 }
 5380020 ={
    name="Dzebysatæ"
    culture="sarmatian"
-   
+
 }
 5380021 ={
    name="Djerdjitæ"
    culture="sarmatian"
-   
+
 }
 5380022 ={
    name="Guyrdzybetæ"
    culture="sarmatian"
-   
+
 }
 5380023 = {
 	name = "Zændjiatæ"
